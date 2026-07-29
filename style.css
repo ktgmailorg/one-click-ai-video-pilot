@@ -2090,6 +2090,285 @@ footer p {
   color: white;
 }
 
+.access-hero,
+.access-flow,
+.access-boundaries,
+.access-help {
+  width: min(1400px, calc(100% - 64px));
+  margin: 0 auto;
+}
+
+.access-hero {
+  min-height: 620px;
+  padding: 95px 0 105px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(360px, 0.55fr);
+  gap: 100px;
+  align-items: center;
+}
+
+.access-hero h1 {
+  max-width: 900px;
+  margin: 0;
+  font-size: clamp(58px, 6.8vw, 102px);
+  line-height: 0.91;
+  letter-spacing: -0.072em;
+}
+
+.access-hero > div > p:not(.section-kicker) {
+  max-width: 760px;
+  margin: 34px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.72;
+}
+
+.access-policy-card {
+  padding: 32px;
+  border: 1px solid #3d3830;
+  border-top: 8px solid var(--orange);
+  border-radius: 5px;
+  background: var(--night);
+  color: white;
+  box-shadow: 18px 18px 0 #ded6c9;
+}
+
+.access-policy-card span {
+  color: #f9b889;
+  font-family: "Courier New", monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.access-policy-card strong {
+  margin-top: 10px;
+  display: block;
+  font-size: 24px;
+}
+
+.access-policy-card p {
+  margin: 10px 0 0;
+  color: #c5bdb2;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.access-policy-card hr {
+  margin: 28px 0;
+  border: 0;
+  border-top: 1px solid #494238;
+}
+
+.access-flow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--ink);
+  border-left: 1px solid var(--ink);
+}
+
+.access-flow > article {
+  min-height: 540px;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 20px;
+  border-right: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  background: var(--white);
+}
+
+.access-flow > article > span {
+  color: var(--orange-dark);
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+}
+
+.access-step-state {
+  margin: 0;
+  color: var(--orange-dark);
+  font-family: "Courier New", monospace;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.access-flow h2 {
+  margin: 70px 0 18px;
+  font-size: 34px;
+  line-height: 1.02;
+  letter-spacing: -0.047em;
+}
+
+.access-flow article > div > p:not(.access-step-state) {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.68;
+}
+
+.access-flow code,
+.access-boundaries code {
+  color: var(--orange-dark);
+}
+
+.access-flow .button {
+  width: 100%;
+  margin-top: 34px;
+}
+
+.verified-identity {
+  margin-top: 34px;
+  padding: 17px;
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 12px;
+  align-items: center;
+  border: 1px solid #9ec9ad;
+  border-radius: 4px;
+  background: #e6f2e9;
+}
+
+.verified-identity > span {
+  width: 31px;
+  height: 31px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #27673d;
+  color: white;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.verified-identity strong,
+.verified-identity small {
+  display: block;
+}
+
+.verified-identity strong {
+  font-size: 13px;
+}
+
+.verified-identity small {
+  margin-top: 4px;
+  color: #42624d;
+  font-size: 10px;
+}
+
+.resource-actions {
+  margin-top: 34px;
+  display: grid;
+  gap: 12px;
+}
+
+.resource-actions .button {
+  margin-top: 0;
+}
+
+.resource-actions > a:not(.button) {
+  color: var(--orange-dark);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.access-message {
+  width: min(1400px, calc(100% - 64px));
+  margin: 28px auto 0;
+  padding: 18px 22px;
+  border-left: 5px solid var(--orange);
+  background: var(--white);
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.access-message.success {
+  border-color: #33764a;
+  background: #e6f2e9;
+  color: #245536;
+}
+
+.access-message.error {
+  border-color: #a63c21;
+  background: #f8e5df;
+  color: #7b2d19;
+}
+
+.access-message.setup {
+  border-color: var(--orange);
+  background: #f6eee5;
+  color: #554c42;
+}
+
+.access-boundaries {
+  padding: 125px 0;
+  display: grid;
+  grid-template-columns: 0.62fr 1.38fr;
+  gap: 100px;
+}
+
+.access-boundaries h2 {
+  margin: 0;
+  font-size: clamp(43px, 5vw, 72px);
+  line-height: 0.99;
+  letter-spacing: -0.055em;
+}
+
+.access-boundaries .boundary-list {
+  margin-top: 0;
+}
+
+.access-help {
+  margin-bottom: 110px;
+  padding: 36px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 70px;
+  align-items: center;
+  border: 1px solid var(--ink);
+  background: var(--white);
+  box-shadow: 11px 11px 0 #ded6c9;
+}
+
+.access-help h2 {
+  margin: 0;
+  font-size: 30px;
+  letter-spacing: -0.04em;
+}
+
+.access-help p {
+  max-width: 800px;
+  margin: 13px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.access-help > div:last-child {
+  display: grid;
+  gap: 15px;
+  justify-items: end;
+}
+
+.access-help a {
+  color: var(--orange-dark);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.access-help button {
+  padding: 10px 15px;
+  border: 1px solid var(--ink);
+  border-radius: 3px;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
 @media (max-width: 1080px) {
   .nav-links a:not(.nav-cta) {
     display: none;
@@ -2184,6 +2463,19 @@ footer p {
 
   .output-row {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .access-hero,
+  .access-boundaries {
+    grid-template-columns: 1fr;
+  }
+
+  .access-policy-card {
+    max-width: 620px;
+  }
+
+  .access-flow {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -2509,6 +2801,51 @@ footer p {
 
   .operator-disclosure {
     padding: 80px 16px;
+  }
+
+  .access-hero,
+  .access-flow,
+  .access-boundaries,
+  .access-help,
+  .access-message {
+    width: min(100% - 32px, 1400px);
+  }
+
+  .access-hero {
+    min-height: 0;
+    padding: 72px 0 82px;
+    gap: 55px;
+  }
+
+  .access-hero h1 {
+    font-size: 53px;
+  }
+
+  .access-policy-card {
+    box-shadow: 9px 9px 0 #ded6c9;
+  }
+
+  .access-flow > article {
+    min-height: 460px;
+    padding: 25px;
+  }
+
+  .access-flow h2 {
+    margin-top: 45px;
+  }
+
+  .access-boundaries {
+    padding: 90px 0;
+  }
+
+  .access-help {
+    margin-bottom: 80px;
+    grid-template-columns: 1fr;
+    box-shadow: 6px 6px 0 #ded6c9;
+  }
+
+  .access-help > div:last-child {
+    justify-items: start;
   }
 }
 

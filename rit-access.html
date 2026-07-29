@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Verified RIT access portal for the One-Click AI Video Generator."
+    >
+    <meta name="robots" content="noindex">
+    <title>RIT Access · One-Click AI Video Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./access.js" defer></script>
+  </head>
+  <body class="access-page">
+    <main>
+      <nav class="site-nav" aria-label="RIT access navigation">
+        <a class="wordmark" href="./index.html" aria-label="Return to the pilot site">
+          <span class="wordmark-mark" aria-hidden="true">1</span>
+          <span>One-Click AI<small>Verified RIT Access</small></span>
+        </a>
+        <div class="nav-links">
+          <a href="./professor-guide.html">Professor guide</a>
+          <a href="./local-studio.html">Technical guide</a>
+          <a class="nav-cta" href="./index.html">Pilot site</a>
+        </div>
+      </nav>
+
+      <header class="access-hero">
+        <div>
+          <p class="section-kicker">Identity-verified access</p>
+          <h1>One RIT sign-in. One verified GitHub account.</h1>
+          <p>
+            RIT Google verifies university affiliation. GitHub authorization
+            verifies the exact GitHub account receiving repository access.
+            Neither email text nor an unverified username is trusted.
+          </p>
+        </div>
+        <aside class="access-policy-card">
+          <span>Automatic permission</span>
+          <strong>Repository read access</strong>
+          <p>Enough to clone, install, and run the local studio.</p>
+          <hr>
+          <span>Manual approval</span>
+          <strong>Contributor write access</strong>
+          <p>Granted separately through the RIT Contributors team.</p>
+        </aside>
+      </header>
+
+      <section class="access-flow" aria-label="Access steps">
+        <article data-step="rit">
+          <span>01</span>
+          <div>
+            <p class="access-step-state" id="rit-step-state">Checking configuration</p>
+            <h2>Verify your RIT Google account</h2>
+            <p>
+              Google must return a verified account from the
+              <code>rit.edu</code> Workspace domain. Being signed into a
+              personal Gmail account is not sufficient.
+            </p>
+            <a id="rit-sign-in" class="button button-primary" href="/api/auth/google-start" hidden>
+              Continue with RIT Google <span aria-hidden="true">↗</span>
+            </a>
+            <div id="rit-identity" class="verified-identity" hidden>
+              <span aria-hidden="true">✓</span>
+              <div><strong id="rit-name">RIT participant</strong><small id="rit-email"></small></div>
+            </div>
+          </div>
+        </article>
+
+        <article data-step="github">
+          <span>02</span>
+          <div>
+            <p class="access-step-state" id="github-step-state">RIT verification required first</p>
+            <h2>Verify the GitHub account</h2>
+            <p>
+              GitHub authorization identifies your signed-in account. The site
+              then sends that account a read-only invitation to the private
+              implementation repository.
+            </p>
+            <a id="github-connect" class="button button-primary" href="/api/auth/github-start" hidden>
+              Connect GitHub and request access <span aria-hidden="true">↗</span>
+            </a>
+            <div id="github-identity" class="verified-identity" hidden>
+              <span aria-hidden="true">✓</span>
+              <div><strong>GitHub connected</strong><small id="github-login"></small></div>
+            </div>
+          </div>
+        </article>
+
+        <article data-step="access">
+          <span>03</span>
+          <div>
+            <p class="access-step-state" id="access-step-state">Complete both identity checks</p>
+            <h2>Accept the GitHub invitation</h2>
+            <p>
+              GitHub controls the final acceptance step. Once accepted, clone
+              with GitHub Desktop and launch the browser studio locally.
+            </p>
+            <div id="resource-actions" class="resource-actions" hidden>
+              <a class="button button-primary" href="https://github.com/ktgmailorg/video-generator-rit/invitations">Review GitHub invitation <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/ktgmailorg/video-generator-rit">Open private repository</a>
+              <a href="http://127.0.0.1:4173">Open installed local studio</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="access-message" class="access-message" role="status" aria-live="polite" hidden></section>
+
+      <section class="access-boundaries">
+        <div>
+          <p class="section-kicker">Safety boundary</p>
+          <h2>Automatic access is deliberately narrow.</h2>
+        </div>
+        <div class="boundary-list">
+          <div><span>01</span><p>Only Google-verified <code>@rit.edu</code> Workspace identities qualify.</p></div>
+          <div><span>02</span><p>The invited GitHub account must authorize itself; users cannot type someone else's username.</p></div>
+          <div><span>03</span><p>Automatic access is read-only. Push, administration, and RIT Contributors team membership require human approval.</p></div>
+          <div><span>04</span><p>OAuth tokens are used server-side for the immediate identity check and are not placed in browser storage.</p></div>
+          <div><span>05</span><p>GitHub model weights, credentials, official brand assets, and course files remain separate from repository access.</p></div>
+        </div>
+      </section>
+
+      <section class="access-help">
+        <div>
+          <h2>Access did not work?</h2>
+          <p>
+            Confirm you selected your RIT Google account, accepted both
+            authorization screens, and are signed into the intended GitHub
+            account. Organization policy may require the invitation to be
+            approved by an administrator.
+          </p>
+        </div>
+        <div>
+          <a href="mailto:kt7432@rit.edu?subject=RIT%20video%20repository%20access">kt7432@rit.edu</a>
+          <button id="sign-out" type="button" hidden>Sign out</button>
+        </div>
+      </section>
+
+      <footer>
+        <div><strong>One-Click AI Video Generator</strong><span>An official project of the RIT AI Club</span></div>
+        <p>Identity verification grants project access, not institutional production certification.</p>
+        <a href="./index.html">Return to pilot site ↑</a>
+      </footer>
+    </main>
+  </body>
+</html>
