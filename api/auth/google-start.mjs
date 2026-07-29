@@ -32,7 +32,7 @@ export default function handler(request, response) {
   );
   authorization.searchParams.set("response_type", "code");
   authorization.searchParams.set("scope", "openid email profile");
-  authorization.searchParams.set("hd", "rit.edu");
+  authorization.searchParams.set("hd", "g.rit.edu");
   authorization.searchParams.set("nonce", nonce);
   authorization.searchParams.set("state", state);
   authorization.searchParams.set("prompt", "select_account");

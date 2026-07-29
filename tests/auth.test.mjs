@@ -58,7 +58,7 @@ test("RIT Google verification accepts the RIT Google alias domain", () => {
     {
       email: "FACULTY@G.RIT.EDU",
       email_verified: true,
-      hd: "rit.edu",
+      hd: "g.rit.edu",
       nonce: "expected",
       sub: "google-123",
       name: "Faculty Member",
@@ -80,7 +80,7 @@ test("RIT Google verification requires the hosted domain and nonce", () => {
         },
         "expected",
       ),
-    /verified for rit\.edu/i,
+    /verified RIT Google Workspace/i,
   );
   assert.throws(
     () =>
@@ -94,7 +94,7 @@ test("RIT Google verification requires the hosted domain and nonce", () => {
         },
         "expected",
       ),
-    /verified for rit\.edu/i,
+    /verified RIT Google Workspace/i,
   );
   assert.throws(
     () =>

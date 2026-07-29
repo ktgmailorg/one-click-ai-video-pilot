@@ -43,7 +43,7 @@ following server-side:
 - OAuth audience and issuer
 - OAuth nonce
 - `email_verified: true`
-- Hosted-domain claim exactly `rit.edu`
+- Hosted-domain claim exactly `g.rit.edu` or `rit.edu`
 - Email suffix exactly `@g.rit.edu` or `@rit.edu`
 
 Record the client ID and client secret.
