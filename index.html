@@ -10,7 +10,7 @@
     <meta property="og:title" content="One-Click AI Video Generator · RIT Pilot Program">
     <meta
       property="og:description"
-      content="Propose a supervised 2–5 minute RIT educational video pilot."
+      content="Propose a supervised RIT educational video pilot, from a short explainer to a full-length lesson."
    >
     <meta
       property="og:image"
@@ -45,15 +45,15 @@
           <h1>Turn reviewed course material into a video you can <em>trust and revisit.</em></h1>
           <p class="hero-lede">
             A source-grounded, provider-agnostic production workflow for short
-            educational and research explainers—with human approval built into
-            every consequential stage.
+            explainers or full-length lessons—with human approval built into
+            every consequential stage and no fixed duration limit.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#interest">
-              Propose a 2–5 minute pilot <span aria-hidden="true">↗</span>
+              Propose a course-video pilot <span aria-hidden="true">↗</span>
             </a>
             <a class="button button-secondary" href="#examples">
-              Watch all 12 examples <span aria-hidden="true">↓</span>
+              Watch all 16 examples <span aria-hidden="true">↓</span>
             </a>
           </div>
           <p class="hero-note">Built for supervised RIT pilots—not campus-wide production deployment.</p>
@@ -143,14 +143,15 @@
         <div class="section-heading split-heading">
           <div>
             <p class="section-kicker">Academic-area showcase</p>
-            <h2>One-minute examples across RIT disciplines.</h2>
+            <h2>Captioned examples across RIT disciplines.</h2>
           </div>
           <div>
             <p>
-              These ten source-grounded demonstrations show the same workflow
+              These fourteen source-grounded demonstrations show the same workflow
               applied across major academic areas. Each includes synchronized
               captions, a transcript, source metadata, and automated quality
-              checks.
+              checks. They are intentionally brief for browsing; the production
+              system can build full-length lessons without a fixed time cap.
             </p>
             <p class="showcase-disclosure">
               <strong>Course-draft status:</strong> these demonstrations are
@@ -330,6 +331,74 @@
               <a href="./examples/individualized-study-question/sources.json">Sources</a>
             </div>
           </article>
+
+          <article class="showcase-card">
+            <div class="showcase-card-heading">
+              <span>Mathematics</span><b>Course draft</b>
+            </div>
+            <h3>How a Derivative Captures Local Change</h3>
+            <video controls playsinline preload="metadata" poster="./examples/mathematics-local-derivative/poster.png">
+              <source src="./examples/mathematics-local-derivative/video.mp4" type="video/mp4">
+              <track default kind="captions" src="./examples/mathematics-local-derivative/captions.vtt" srclang="en" label="English">
+              Your browser does not support embedded video.
+            </video>
+            <div class="showcase-card-meta"><span>1:02 · Female narration</span><span>Automated QA passed</span></div>
+            <div class="showcase-card-links">
+              <a href="./examples/mathematics-local-derivative/transcript.txt">Transcript</a>
+              <a href="./examples/mathematics-local-derivative/sources.json">Sources</a>
+            </div>
+          </article>
+
+          <article class="showcase-card">
+            <div class="showcase-card-heading">
+              <span>Cybersecurity</span><b>Course draft</b>
+            </div>
+            <h3>How to Check a Suspicious Message</h3>
+            <video controls playsinline preload="metadata" poster="./examples/cybersecurity-phishing-check/poster.png">
+              <source src="./examples/cybersecurity-phishing-check/video.mp4" type="video/mp4">
+              <track default kind="captions" src="./examples/cybersecurity-phishing-check/captions.vtt" srclang="en" label="English">
+              Your browser does not support embedded video.
+            </video>
+            <div class="showcase-card-meta"><span>1:04 · Female narration</span><span>Automated QA passed</span></div>
+            <div class="showcase-card-links">
+              <a href="./examples/cybersecurity-phishing-check/transcript.txt">Transcript</a>
+              <a href="./examples/cybersecurity-phishing-check/sources.json">Sources</a>
+            </div>
+          </article>
+
+          <article class="showcase-card">
+            <div class="showcase-card-heading">
+              <span>Photography</span><b>Course draft</b>
+            </div>
+            <h3>How the Exposure Triangle Shapes an Image</h3>
+            <video controls playsinline preload="metadata" poster="./examples/photography-exposure-triangle/poster.png">
+              <source src="./examples/photography-exposure-triangle/video.mp4" type="video/mp4">
+              <track default kind="captions" src="./examples/photography-exposure-triangle/captions.vtt" srclang="en" label="English">
+              Your browser does not support embedded video.
+            </video>
+            <div class="showcase-card-meta"><span>1:02 · Female narration</span><span>Automated QA passed</span></div>
+            <div class="showcase-card-links">
+              <a href="./examples/photography-exposure-triangle/transcript.txt">Transcript</a>
+              <a href="./examples/photography-exposure-triangle/sources.json">Sources</a>
+            </div>
+          </article>
+
+          <article class="showcase-card">
+            <div class="showcase-card-heading">
+              <span>Psychology</span><b>Course draft</b>
+            </div>
+            <h3>Why Correlation Is Not Causation</h3>
+            <video controls playsinline preload="metadata" poster="./examples/psychology-correlation-causation/poster.png">
+              <source src="./examples/psychology-correlation-causation/video.mp4" type="video/mp4">
+              <track default kind="captions" src="./examples/psychology-correlation-causation/captions.vtt" srclang="en" label="English">
+              Your browser does not support embedded video.
+            </video>
+            <div class="showcase-card-meta"><span>1:02 · Female narration</span><span>Automated QA passed</span></div>
+            <div class="showcase-card-links">
+              <a href="./examples/psychology-correlation-causation/transcript.txt">Transcript</a>
+              <a href="./examples/psychology-correlation-causation/sources.json">Sources</a>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -447,11 +516,13 @@ npm run rit-video -- produce --narration-voice female</code></pre>
         <div class="pilot-card">
           <div>
             <p class="section-kicker light">The first pilot cohort</p>
-            <h2>One focused idea. One short video. Four review moments.</h2>
+            <h2>One focused idea. One reviewable video. Four review moments.</h2>
             <p>
               We are inviting a small number of RIT faculty members,
               departments, staff teams, and campus organizations to test a
-              practical use case with the project team.
+              practical use case with the project team. A pilot may be a short
+              proof of concept or a full-length lesson; there is no software-imposed
+              duration limit, and the production scope is agreed during review.
             </p>
           </div>
           <div class="pilot-terms">
@@ -465,10 +536,10 @@ npm run rit-video -- produce --narration-voice female</code></pre>
           </div>
         </div>
         <div class="pilot-timeline">
-          <div><span>Week 1</span><strong>Scope + sources</strong><p>Choose one objective and approve the source material.</p></div>
-          <div><span>Week 1</span><strong>Script review</strong><p>Review claims, narration, citations, and pronunciations.</p></div>
-          <div><span>Week 2</span><strong>Visual review</strong><p>Approve diagrams, generated assets, and descriptions.</p></div>
-          <div><span>Week 2</span><strong>Release review</strong><p>Check captions, transcript, QA report, and final master.</p></div>
+          <div><span>Phase 1</span><strong>Scope + sources</strong><p>Choose objectives, intended length, and approved source material.</p></div>
+          <div><span>Phase 2</span><strong>Script review</strong><p>Review claims, narration, citations, and pronunciations.</p></div>
+          <div><span>Phase 3</span><strong>Visual review</strong><p>Approve diagrams, generated assets, and descriptions.</p></div>
+          <div><span>Phase 4</span><strong>Release review</strong><p>Check captions, transcript, QA report, and final master.</p></div>
         </div>
         <div class="contributor-access">
           <div><p class="section-kicker light">Contributor access</p><h3>Private repository. Verified RIT contributors.</h3></div>

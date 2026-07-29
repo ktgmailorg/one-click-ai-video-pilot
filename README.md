@@ -5,9 +5,11 @@ media for the official RIT AI Club project. The implementation repository,
 provider traces, and contributor materials remain private.
 
 The page is intentionally conservative: it describes a supervised,
-source-grounded 2–5 minute pilot; identifies current capabilities and
-limitations; provides verified-RIT contributor instructions; and includes a
-captioned low-level computer-architecture competency example.
+source-grounded pilot with no fixed duration limit; identifies current
+capabilities and limitations; provides verified-RIT contributor instructions;
+and includes captioned examples across sixteen educational topics. Short
+demonstrations are used for browsing, while the workflow also supports
+full-length lessons.
 
 The public `professor-guide.html` provides a nontechnical faculty quick start,
 including pilot preparation, private GitHub access, GitHub Desktop cloning,
