@@ -1,0 +1,31 @@
+NARRATOR: Suppose a motor should hold one thousand revolutions per minute, but the
+
+sensor reports nine hundred. NARRATOR: The controller does not command a correction from
+
+the target alone.
+
+NARRATOR: It first computes tracking error: the desired output minus the measured output.
+
+NARRATOR: Here, the error is positive one hundred revolutions per minute. NARRATOR: The
+
+proportional term reacts to the error right now.
+
+NARRATOR: The integral term accumulates error over time, helping remove a persistent offset.
+
+NARRATOR: The derivative term responds to how quickly error is changing, which can
+
+anticipate motion and reduce overshoot.
+
+NARRATOR: Their weighted sum becomes the control input sent to the system.
+
+NARRATOR: After the motor responds, the sensor measures again and the loop repeats.
+
+NARRATOR: Larger gains are not automatically better: poor tuning can create overshoot,
+
+noise sensitivity, or oscillation.
+
+NARRATOR: Engineers start with performance requirements, tune deliberately, and keep the
+
+controller as simple as the application allows.
+
+NARRATOR: A PI controller may be enough when derivative action adds little value.

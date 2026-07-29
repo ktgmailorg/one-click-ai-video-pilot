@@ -1,0 +1,78 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:04.277
+NARRATOR: Suppose a motor should hold one
+thousand revolutions per minute, but the
+
+2
+00:00:04.277 --> 00:00:07.902
+sensor reports nine hundred. NARRATOR: The
+controller does not command a correction from
+
+3
+00:00:07.902 --> 00:00:08.738
+the target alone.
+
+4
+00:00:08.738 --> 00:00:13.495
+NARRATOR: It first computes tracking error:
+the desired output minus the measured output.
+
+5
+00:00:13.495 --> 00:00:17.339
+NARRATOR: Here, the error is positive one
+hundred revolutions per minute. NARRATOR: The
+
+6
+00:00:17.339 --> 00:00:19.705
+proportional term reacts to the error right
+now.
+
+7
+00:00:19.705 --> 00:00:25.052
+NARRATOR: The integral term accumulates error
+over time, helping remove a persistent offset.
+
+8
+00:00:25.052 --> 00:00:29.750
+NARRATOR: The derivative term responds to how
+quickly error is changing, which can
+
+9
+00:00:29.750 --> 00:00:31.557
+anticipate motion and reduce overshoot.
+
+10
+00:00:31.557 --> 00:00:35.469
+NARRATOR: Their weighted sum becomes the
+control input sent to the system.
+
+11
+00:00:35.570 --> 00:00:39.640
+NARRATOR: After the motor responds, the sensor
+measures again and the loop repeats.
+
+12
+00:00:39.640 --> 00:00:45.066
+NARRATOR: Larger gains are not automatically
+better: poor tuning can create overshoot,
+
+13
+00:00:45.066 --> 00:00:46.874
+noise sensitivity, or oscillation.
+
+14
+00:00:46.874 --> 00:00:51.450
+NARRATOR: Engineers start with performance
+requirements, tune deliberately, and keep the
+
+15
+00:00:51.450 --> 00:00:54.362
+controller as simple as the application
+allows.
+
+16
+00:00:54.362 --> 00:00:58.818
+NARRATOR: A PI controller may be enough when
+derivative action adds little value.
