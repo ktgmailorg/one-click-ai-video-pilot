@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Faculty and contributor guide for the local One-Click AI Video Studio."
+    >
+    <title>Local Studio Guide · One-Click AI Video Generator</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="guide-page">
+    <main>
+      <nav class="site-nav" aria-label="Guide navigation">
+        <a class="wordmark" href="./index.html" aria-label="Return to the pilot site">
+          <span class="wordmark-mark" aria-hidden="true">1</span>
+          <span>One-Click AI<small>Local Studio Guide</small></span>
+        </a>
+        <div class="nav-links">
+          <a href="./index.html#software">Software overview</a>
+          <a href="https://github.com/ktgmailorg/video-generator-rit">Private repository</a>
+          <a class="nav-cta" href="http://127.0.0.1:4173">Open local studio</a>
+        </div>
+      </nav>
+
+      <header class="guide-hero">
+        <p class="section-kicker">Browser interface · local execution</p>
+        <h1>One browser form. A complete video pipeline on the machine beside it.</h1>
+        <p>
+          The studio is designed so faculty members do not need to operate a
+          command line. After the local companion is installed once, the
+          professor opens the studio, adds a script or transcript, and creates
+          a reviewable draft.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="http://127.0.0.1:4173">Open the installed studio <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="./index.html#interest">Request a team-operated pilot</a>
+        </div>
+      </header>
+
+      <section class="guide-status">
+        <div><strong>Browser</strong><span>Faculty control surface</span></div>
+        <div><strong>Local</strong><span>Bonsai and media tools</span></div>
+        <div><strong>Recorded</strong><span>Artifacts and run lock</span></div>
+        <div><strong>Reviewed</strong><span>Human release decision</span></div>
+      </section>
+
+      <section class="guide-content">
+        <article>
+          <p class="section-kicker">Recommended faculty path</p>
+          <h2>The professor should use the studio—not install the stack.</h2>
+          <p>
+            For the first pilot cohort, an AI Club project member installs and
+            verifies the local companion on an RIT-controlled machine. The
+            professor then uses only the browser interface. This keeps model,
+            driver, codec, and provider maintenance out of the course workflow.
+          </p>
+          <ol class="guide-steps">
+            <li><span>01</span><div><strong>Open the local studio</strong><p>Double-click the companion launcher. It starts the local service and opens <code>127.0.0.1:4173</code> in the default browser.</p></div></li>
+            <li><span>02</span><div><strong>Add reviewed material</strong><p>Paste a corrected script or load a text, Markdown, SRT, or VTT file. Add the instructor-approved source notes used to verify the narration.</p></div></li>
+            <li><span>03</span><div><strong>Choose production options</strong><p>Select the configured local voice or an available female/male preset. Keep deterministic educational diagrams, or use the configured ComfyUI image route.</p></div></li>
+            <li><span>04</span><div><strong>Create the draft</strong><p>Bonsai structures beat titles and visual directions without rewriting the narration. The pipeline then produces speech, visuals, captions, transcript, thumbnail, video, QA, and run record.</p></div></li>
+            <li><span>05</span><div><strong>Review before release</strong><p>Download the draft and accessibility files. Script, visual, accessibility, and release decisions remain human approval gates.</p></div></li>
+          </ol>
+        </article>
+
+        <aside class="guide-recommendation">
+          <span>Operational recommendation</span>
+          <h3>Team-operated first; self-service after the pilot proves stable.</h3>
+          <p>
+            Faculty time should go toward subject accuracy and learning design.
+            The project team should own initial setup, model updates, rendering
+            support, and recovery. Technical faculty may self-host the identical
+            companion when desired.
+          </p>
+        </aside>
+      </section>
+
+      <section class="guide-stack">
+        <div class="section-heading split-heading">
+          <div><p class="section-kicker">What runs locally</p><h2>The browser is simple because the companion is doing the work.</h2></div>
+          <p>
+            The Vercel pilot page never receives the script or source pack. The
+            local studio talks directly to the configured runtimes on the same
+            machine and records exactly which models and artifacts were used.
+          </p>
+        </div>
+        <div class="stack-grid">
+          <article><span>Planning</span><h3>PrismML Bonsai 27B</h3><p>Served through llama.cpp's OpenAI-compatible endpoint. The exact model-file SHA-256 is required and recorded.</p><code>127.0.0.1:8080/v1</code></article>
+          <article><span>Visuals</span><h3>SVG or ComfyUI</h3><p>Inspectable course diagrams are the default. A configured local ComfyUI workflow can supply optional generated images.</p><code>127.0.0.1:8188</code></article>
+          <article><span>Narration</span><h3>Piper or Edge TTS</h3><p>Local Piper voice profiles keep restricted narration on device. The compatibility path offers selectable Emma and Andrew voices.</p><code>speech.synthesize</code></article>
+          <article><span>Alignment</span><h3>whisper.cpp</h3><p>Local timestamp alignment supports corrected VTT, SRT, and transcript output when the speech provider does not return timing.</p><code>speech.transcribe</code></article>
+          <article><span>Composition</span><h3>FFmpeg + Sharp</h3><p>The pinned compositor normalizes visual assets, renders H.264/AAC, creates the thumbnail, and records checksums.</p><code>1920×1080 · 29.97 fps</code></article>
+          <article><span>Replay</span><h3>Content-addressed cache</h3><p>Accepted provider outputs are frozen by hash. Frozen replay prohibits new provider and network calls.</p><code>record → frozen</code></article>
+        </div>
+      </section>
+
+      <section class="guide-install">
+        <div>
+          <p class="section-kicker light">Verified contributor setup</p>
+          <h2>Install once. Launch with a double-click afterward.</h2>
+          <p>
+            Contributors receive the private repository and platform launcher.
+            The macOS <code>start-studio.command</code> and Windows
+            <code>start-studio.bat</code> launch the browser interface. The
+            project team supplies the approved local configuration and model
+            locations for the pilot machine.
+          </p>
+        </div>
+        <pre><code>git clone https://github.com/ktgmailorg/video-generator-rit.git
+cd video-generator-rit
+npm ci
+
+# Verify the local provider stack.
+npm run rit-video -- doctor --config video.config.local.json
+
+# Start the browser studio.
+npm run studio -- --config video.config.local.json</code></pre>
+        <div class="guide-note">
+          <strong>Before a Bonsai studio is marked ready</strong>
+          <ul>
+            <li>Node.js 22, FFmpeg, and FFprobe pass the local check.</li>
+            <li>The Bonsai model path and SHA-256 are configured.</li>
+            <li>llama.cpp responds on the loopback address.</li>
+            <li>The selected Piper and whisper.cpp models are installed.</li>
+            <li>ComfyUI is optional unless generated visuals are selected.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="guide-policy">
+        <div><p class="section-kicker">Data boundary</p><h2>Local means local by policy, not by guesswork.</h2></div>
+        <div class="boundary-list">
+          <div><span>01</span><p>The companion binds to <code>127.0.0.1</code> and refuses a public network bind.</p></div>
+          <div><span>02</span><p>Restricted and student-identifying material can route only to profiles declared <code>executionLocation: local</code>.</p></div>
+          <div><span>03</span><p>Provider checks must pass before the Create button becomes available.</p></div>
+          <div><span>04</span><p>Normal logs exclude secrets and raw prompts; job input files use owner-only permissions.</p></div>
+          <div><span>05</span><p>The result is labeled and treated as a draft until the required review records cover its exact checksums.</p></div>
+        </div>
+      </section>
+
+      <footer>
+        <div><strong>One-Click AI Video Generator</strong><span>An official project of the RIT AI Club</span></div>
+        <p>The local studio is pilot software, not a campus-wide production service.</p>
+        <a href="./index.html">Return to pilot site ↑</a>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -29,6 +29,7 @@
         </a>
         <div class="nav-links">
           <a href="#examples">Examples</a>
+          <a href="#software">Software</a>
           <a href="#workflow">Workflow</a>
           <a href="#pilot">Pilot</a>
           <a href="#standards">Standards</a>
@@ -328,6 +329,73 @@
             </div>
           </article>
         </div>
+      </section>
+
+      <section class="section software-section" id="software">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="section-kicker">Software access</p>
+            <h2>Use the complete system without making setup the assignment.</h2>
+          </div>
+          <p>
+            The pilot is backed by the working Node.js CLI and provider SDK—not
+            a video-only mockup. It can plan from reviewed sources, synthesize
+            narration, render educational visuals, create captions and
+            transcripts, run quality checks, and package the result end to end.
+          </p>
+        </div>
+
+        <div class="software-grid">
+          <article class="software-path recommended-path">
+            <div class="software-path-topline">
+              <span>Faculty and staff pilots</span><b>Recommended</b>
+            </div>
+            <h3>Your subject expertise; our production setup.</h3>
+            <p>
+              No local installation is required. You provide instructor-approved,
+              non-sensitive source material and review the script, visuals,
+              accessibility work, and final release. The project team operates
+              the pipeline on an RIT-controlled machine.
+            </p>
+            <ul>
+              <li>Lowest setup and support burden</li>
+              <li>Consistent toolchain and reproducible rendering</li>
+              <li>Best fit for the first supervised pilot cohort</li>
+            </ul>
+            <a class="button button-primary" href="#interest">Propose a team-operated pilot <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="software-path">
+            <div class="software-path-topline">
+              <span>Technical contributors</span><b>Local option</b>
+            </div>
+            <h3>Run the full CLI on your own machine.</h3>
+            <p>
+              Verified RIT contributors can access the private repository and
+              connect local or hosted providers. Local profiles support
+              OpenAI-compatible model servers, Bonsai 27B through llama.cpp,
+              ComfyUI, Piper, and whisper.cpp. Model weights are installed
+              separately.
+            </p>
+            <pre><code>git clone https://github.com/ktgmailorg/video-generator-rit.git
+cd video-generator-rit
+npm ci
+npm run rit-video -- doctor
+npm run rit-video -- produce --narration-voice female</code></pre>
+            <div class="software-actions">
+              <a class="button button-primary" href="http://127.0.0.1:4173">Open local studio <span aria-hidden="true">↗</span></a>
+              <a class="software-guide-link" href="./local-studio.html">Read the local setup guide</a>
+              <a class="software-guide-link" href="https://github.com/ktgmailorg/video-generator-rit">Open private contributor repository</a>
+              <span>Node.js 22 · FFmpeg · provider runtimes</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="software-policy">
+          <strong>Data rule:</strong> restricted information and
+          student-identifying material may use local providers only. Hosted
+          routes are blocked before any prompt or file leaves the machine.
+        </p>
       </section>
 
       <section class="section workflow-section" id="workflow">
