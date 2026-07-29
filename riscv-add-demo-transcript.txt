@@ -1,0 +1,91 @@
+NARRATOR: Computer architecture becomes easier when we separate what software is promised
+
+from how hardware keeps that promise.
+
+NARRATOR: The RISC-V instruction set defines what an ADD instruction means and how its
+
+fields are encoded.
+
+NARRATOR: A classic five-stage pipeline is one microarchitecture that can implement that
+
+contract.
+
+NARRATOR: We will trace one RV32I instruction: add x5, x6, x7.
+
+NARRATOR: In this RV32I example, the instruction word is hexadecimal zero zero
+
+seven three zero two B three.
+
+NARRATOR: The opcode, funct three, and funct seven fields select register-register ADD.
+
+NARRATOR: The source fields name x6 and x7.
+
+NARRATOR: The destination field names x5.
+
+NARRATOR: Decode is not guessing from assembly text; the hardware receives these exact bits.
+
+NARRATOR: Assume the program counter is zero x one thousand and this teaching example uses
+
+32-bit RV32I instructions without the compressed extension.
+
+NARRATOR: Fetch uses that address to read the instruction word, while the sequential next
+
+address becomes zero x one thousand four.
+
+NARRATOR: Decode separates the fields, generates control signals, and asks the
+
+register file for x6 and x7.
+
+NARRATOR: Suppose x6 contains nineteen and x7 contains twenty-three.
+
+NARRATOR: In Execute, operand-select logic sends both register values to the arithmetic
+
+logic unit.
+
+NARRATOR: The ADD control selects integer addition, producing forty-two.
+
+NARRATOR: For RV32I, ADD keeps the low thirty-two bits of the result.
+
+NARRATOR: Arithmetic overflow does not raise an exception.
+
+NARRATOR: ADD does not need a data-memory read or write.
+
+NARRATOR: In this five-stage teaching processor, the value still advances through
+
+the pipeline registers that separate Execute, Memory, and Write Back.
+
+NARRATOR: Those registers keep the result, destination number, and write-enable control
+
+aligned.
+
+NARRATOR: At Write Back, the processor commits forty-two into x5.
+
+NARRATOR: The payoff appears when more instructions follow.
+
+NARRATOR: While ADD is in Execute, a second independent instruction can be in Decode and a
+
+third can be in Fetch.
+
+NARRATOR: After the pipeline fills, this idealized sequence can complete one
+
+instruction per cycle.
+
+NARRATOR: That improves throughput.
+
+NARRATOR: It does not mean one instruction suddenly crosses all five stages in one cycle.
+
+NARRATOR: This clean timing chart assumes independent instructions and available
+
+hardware.
+
+NARRATOR: If the next instruction needs x5 before normal writeback, the processor has a
+
+data hazard.
+
+NARRATOR: It may forward the result or insert a bubble.
+
+NARRATOR: Branches create control hazards because already-fetched work may be wrong.
+
+NARRATOR: Real pipelines add detection and recovery logic, but the governing rule stays
+
+simple: preserve the ISA result first, then optimize throughput.

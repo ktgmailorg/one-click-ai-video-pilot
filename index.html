@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A pilot-ready, source-grounded educational video workflow from the RIT AI Club."
+    />
+    <meta property="og:title" content="One-Click AI Video Generator · RIT Pilot Program" />
+    <meta
+      property="og:description"
+      content="Propose a supervised 2–5 minute RIT educational video pilot."
+    />
+    <meta
+      property="og:image"
+      content="https://ktgmailorg.github.io/one-click-ai-video-pilot/og.png"
+    />
+    <title>One-Click AI Video Generator · RIT Pilot Program</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./form.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="wordmark" href="#top" aria-label="One-Click AI Video Generator home">
+          <span class="wordmark-mark" aria-hidden="true">1</span>
+          <span>One-Click AI<small>Video Generator</small></span>
+        </a>
+        <div class="nav-links">
+          <a href="#example">Example</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#pilot">Pilot</a>
+          <a href="#standards">Standards</a>
+          <a class="nav-cta" href="#interest">Propose a pilot</a>
+        </div>
+      </nav>
+
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow"><span aria-hidden="true"></span>RIT AI Club · Controlled pilot program</p>
+          <h1>Turn reviewed course material into a video you can <em>trust and revisit.</em></h1>
+          <p class="hero-lede">
+            A source-grounded, provider-agnostic production workflow for short
+            educational and research explainers—with human approval built into
+            every consequential stage.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#interest">
+              Propose a 2–5 minute pilot <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button button-secondary" href="#example">
+              Watch the examples <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+          <p class="hero-note">Built for supervised RIT pilots—not campus-wide production deployment.</p>
+        </div>
+
+        <div class="hero-system" aria-label="Workflow overview">
+          <div class="system-topline">
+            <span>Recorded workflow</span><span class="system-status">Pilot ready</span>
+          </div>
+          <div class="system-route">
+            <div class="route-item"><span>Input</span><strong>Reviewed source pack</strong></div>
+            <span class="route-arrow" aria-hidden="true">→</span>
+            <div class="route-item"><span>Plan</span><strong>EpisodeSpec v2</strong></div>
+            <span class="route-arrow" aria-hidden="true">→</span>
+            <div class="route-item"><span>Release</span><strong>Accessible package</strong></div>
+          </div>
+          <div class="approval-stack">
+            <div><span>01</span><strong>Script + evidence</strong><b>Required</b></div>
+            <div><span>02</span><strong>Visual treatment</strong><b>Required</b></div>
+            <div><span>03</span><strong>Final release</strong><b>Required</b></div>
+          </div>
+          <div class="system-hash"><span>Replay signature</span><code>sha256: 9d6a…4c21</code></div>
+        </div>
+      </section>
+
+      <section class="signal-strip" aria-label="Key project facts">
+        <div><strong>8</strong><span>model capabilities</span></div>
+        <div><strong>3</strong><span>human approval gates</span></div>
+        <div><strong>0</strong><span>network calls in frozen replay</span></div>
+        <div><strong>1</strong><span>reviewable release package</span></div>
+      </section>
+
+      <section class="section example-section" id="example">
+        <div class="example-copy">
+          <p class="section-kicker">Competency example</p>
+          <h2>Follow one RISC‑V instruction through a CPU.</h2>
+          <p>
+            This 2 minute 49 second source-grounded lesson traces
+            <code>add x5, x6, x7</code> through a five-stage teaching processor.
+            It separates the RISC‑V ISA contract from one possible
+            implementation, then explains throughput and data hazards.
+          </p>
+          <dl class="example-facts">
+            <div><dt>Sources</dt><dd>RISC‑V specification + UC Berkeley CS61C</dd></div>
+            <div><dt>Review package</dt><dd>Captions, transcript, bibliography, claims, QA</dd></div>
+            <div><dt>Reproducibility</dt><dd>Frozen replay · SHA‑256 verified</dd></div>
+          </dl>
+        </div>
+        <div class="video-shell competency-video">
+          <div class="video-label"><span>Course example · 2:49</span><span>Captions included</span></div>
+          <video controls preload="metadata" poster="./riscv-add-demo-poster.png">
+            <source src="./riscv-add-demo.mp4" type="video/mp4" />
+            <track default kind="captions" src="./riscv-add-demo.vtt" srcLang="en" label="English" />
+            Your browser does not support embedded video.
+          </video>
+          <div class="video-footer">
+            <a href="./riscv-add-demo-transcript.txt">Read the transcript</a>
+            <a href="./riscv-add-demo-bibliography.md">View the bibliography</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section demo-section" id="demo">
+        <div class="section-heading">
+          <p class="section-kicker">See the workflow</p>
+          <h2>A short, captioned introduction.</h2>
+          <p>
+            This 83-second demonstration was produced by the same recorded
+            pipeline it describes. Captions are available from the player controls.
+          </p>
+        </div>
+        <div class="video-shell">
+          <div class="video-label"><span>Demo · 83 seconds</span><span>Captions included</span></div>
+          <video controls preload="metadata" poster="./pilot-demo-poster.png">
+            <source src="./pilot-demo.mp4" type="video/mp4" />
+            <track default kind="captions" src="./pilot-demo.vtt" srcLang="en" label="English" />
+            Your browser does not support embedded video.
+          </video>
+          <div class="video-footer">
+            <a href="./pilot-demo-transcript.txt">Read the transcript</a>
+            <span>H.264 · 1080p · closed captions</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section workflow-section" id="workflow">
+        <div class="section-heading split-heading">
+          <div><p class="section-kicker">How it works</p><h2>Automation with an audit trail.</h2></div>
+          <p>
+            The model is never the release authority. Sources, outputs, model
+            revisions, approvals, and final checksums remain visible to the
+            people responsible for the course material.
+          </p>
+        </div>
+        <div class="local-model-card">
+          <div><span>Main pilot planner</span><strong>PrismML Bonsai 27B · binary 1-bit</strong></div>
+          <p>
+            Topic planning defaults to a local Q1_0 model served through
+            llama.cpp. Course prompts stay on the pilot machine, the exact
+            model-file digest is recorded, and accepted responses are frozen.
+            The RISC‑V reference master uses an authored storyboard and does
+            not claim model authorship.
+          </p>
+          <b>Local execution</b>
+        </div>
+        <div class="capability-grid">
+          <article><span>01</span><h3>Start with reviewed material</h3><p>Bring an instructor-approved topic, source pack, research paper, document, or authored storyboard.</p></article>
+          <article><span>02</span><h3>Build a traceable plan</h3><p>Prepare objectives, narration, visual directions, claims, citations, and accessibility notes.</p></article>
+          <article><span>03</span><h3>Review before production</h3><p>Approve the exact script and evidence before narration or generated media is accepted.</p></article>
+          <article><span>04</span><h3>Use explicit providers</h3><p>Text, speech, images, video, transcription, and embeddings use approved local or hosted routes.</p></article>
+          <article><span>05</span><h3>Freeze accepted results</h3><p>Every accepted artifact is checksummed and retained for exact replay without another model call.</p></article>
+          <article><span>06</span><h3>Release an accessible package</h3><p>Export video, captions, transcripts, chapters, bibliography, disclosures, and QA reports.</p></article>
+        </div>
+      </section>
+
+      <section class="section pilot-section" id="pilot">
+        <div class="pilot-card">
+          <div>
+            <p class="section-kicker light">The first pilot cohort</p>
+            <h2>One focused idea. One short video. Four review moments.</h2>
+            <p>
+              We are inviting a small number of RIT faculty members,
+              departments, staff teams, and campus organizations to test a
+              practical use case with the project team.
+            </p>
+          </div>
+          <div class="pilot-terms">
+            <span>Typical pilot fit</span>
+            <ul>
+              <li>A concise lesson students revisit outside class</li>
+              <li>A research concept that benefits from visual explanation</li>
+              <li>A technical process difficult to communicate in slides</li>
+              <li>An accessibility-first alternative to an existing text resource</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pilot-timeline" aria-label="Pilot stages">
+          <div><span>Week 1</span><strong>Scope + sources</strong><p>Choose one objective and approve the source material.</p></div>
+          <div><span>Week 1</span><strong>Script review</strong><p>Review claims, narration, citations, and pronunciations.</p></div>
+          <div><span>Week 2</span><strong>Visual review</strong><p>Approve diagrams, generated assets, and descriptions.</p></div>
+          <div><span>Week 2</span><strong>Release review</strong><p>Check captions, transcript, QA report, and final master.</p></div>
+        </div>
+        <div class="contributor-access">
+          <div><p class="section-kicker light">Contributor access</p><h3>Private repository. Verified RIT contributors.</h3></div>
+          <div>
+            <p>
+              Students, faculty, and staff who want to contribute should use
+              the pilot form with an <strong>@rit.edu</strong> address and
+              select “Student contributor” or the closest matching role.
+            </p>
+            <p>
+              We verify RIT affiliation, discuss the intended contribution,
+              and grant private repository access when the scope fits. Model
+              weights are installed separately and never bundled with the project.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section standards-section" id="standards">
+        <div class="section-heading split-heading">
+          <div><p class="section-kicker">Responsible by design</p><h2>Clear boundaries for an honest pilot.</h2></div>
+          <p>
+            The project helps people produce and review course media. It does
+            not replace instructor judgment, accessibility review, brand
+            authority, or publishing responsibility.
+          </p>
+        </div>
+        <div class="boundary-list">
+          <div><span>01</span><p>The current pilot is team-operated and CLI-based, not a graphical editor.</p></div>
+          <div><span>02</span><p>Pilot inputs must be instructor-approved and non-sensitive.</p></div>
+          <div><span>03</span><p>Hosted AI is never used for restricted or student-identifying data.</p></div>
+          <div><span>04</span><p>Every pilot includes script, visual, accessibility, and release review.</p></div>
+          <div><span>05</span><p>Panopto packaging is supported; publishing remains a deliberate manual step.</p></div>
+          <div><span>06</span><p>No official RIT logo treatment is applied without central brand approval.</p></div>
+        </div>
+      </section>
+
+      <section class="section interest-section" id="interest">
+        <div class="interest-copy">
+          <p class="section-kicker">Pilot interest</p>
+          <h2>Bring us one idea worth explaining well.</h2>
+          <p>
+            Tell us the educational or research communication problem—not the
+            final production specification. We will follow up through your RIT
+            email to decide whether the use case fits this pilot.
+          </p>
+          <div class="interest-expectation">
+            <strong>What happens next</strong>
+            <ol>
+              <li>We review the use case and data classification.</li>
+              <li>We schedule a short scoping conversation if it fits.</li>
+              <li>No source material is collected through this form.</li>
+            </ol>
+          </div>
+        </div>
+
+        <form class="interest-form" id="pilot-interest-form">
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" autocomplete="name" required maxlength="100" />
+            </div>
+            <div class="field">
+              <label for="email">RIT email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required pattern=".+@rit\.edu$" />
+              <p class="field-hint">Use your @rit.edu address.</p>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="role">Your role</label>
+              <select id="role" name="role" required>
+                <option value="">Select one</option>
+                <option>Faculty</option>
+                <option>Department or staff team</option>
+                <option>Student contributor</option>
+                <option>Campus organization</option>
+                <option>Central media or accessibility</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="area">Department, course, or organization</label>
+              <input id="area" name="area" required maxlength="140" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="topic">Possible topic or use case</label>
+            <textarea id="topic" name="topic" required maxlength="1200"></textarea>
+            <p class="field-hint">Do not paste source material, student records, or restricted information.</p>
+          </div>
+          <div class="field checkbox">
+            <input id="dataAcknowledged" name="dataAcknowledged" type="checkbox" required />
+            <label for="dataAcknowledged">
+              <span>
+                I understand that this public page stores no form data. Submit
+                opens an email draft addressed to the project lead. I will not
+                include student records, restricted information, or source files.
+              </span>
+            </label>
+          </div>
+          <p class="privacy-note">
+            Data handling: this static page does not collect or store your
+            answers. Your browser opens a draft in your email application, and
+            you decide whether to send it from your RIT account.
+          </p>
+          <button class="submit-button" type="submit">Open RIT email draft</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+          <p class="field-hint">
+            If no email app opens, write to
+            <a href="mailto:kt7432@rit.edu?subject=RIT%20video%20pilot%20interest">kt7432@rit.edu</a>.
+          </p>
+        </form>
+      </section>
+
+      <footer>
+        <div><strong>One-Click AI Video Generator</strong><span>An official project of the RIT AI Club</span></div>
+        <p>Pilot-ready, source-grounded, and human-reviewed. This site uses no official RIT logo assets.</p>
+        <a href="#top">Back to top ↑</a>
+      </footer>
+    </main>
+  </body>
+</html>
