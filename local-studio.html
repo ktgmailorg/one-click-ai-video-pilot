@@ -61,7 +61,7 @@
           <ol class="guide-steps">
             <li><span>01</span><div><strong>Open the local studio</strong><p>Double-click the companion launcher. It starts the local service and opens <code>127.0.0.1:4173</code> in the default browser.</p></div></li>
             <li><span>02</span><div><strong>Add reviewed material</strong><p>Paste a corrected script, or choose AI transcript drafting and provide a learning objective plus instructor-approved source notes. Text, Markdown, SRT, and VTT files can be loaded directly.</p></div></li>
-            <li><span>03</span><div><strong>Choose production options</strong><p>Select the configured local voice or an available female/male preset. Keep deterministic educational diagrams, or use the configured ComfyUI image route.</p></div></li>
+            <li><span>03</span><div><strong>Choose production options</strong><p>Select an approved narration profile. Keep deterministic educational diagrams, or use the configured ComfyUI image route.</p></div></li>
             <li><span>04</span><div><strong>Create the draft</strong><p>When requested, Bonsai first creates a recorded source-grounded transcript draft. It then structures beat titles and visual directions. The pipeline produces speech, visuals, captions, transcript, thumbnail, video, QA, and run record automatically.</p></div></li>
             <li><span>05</span><div><strong>Review before release</strong><p>Download the draft and accessibility files. Script, visual, accessibility, and release decisions remain human approval gates.</p></div></li>
           </ol>
@@ -94,7 +94,7 @@
         <div class="stack-grid">
           <article><span>Planning</span><h3>PrismML Bonsai 27B</h3><p>Served through llama.cpp's OpenAI-compatible endpoint. The exact model-file SHA-256 is required and recorded.</p><code>127.0.0.1:8080/v1</code></article>
           <article><span>Visuals</span><h3>SVG or ComfyUI</h3><p>Inspectable course diagrams are the default. A configured local ComfyUI workflow can supply optional generated images.</p><code>127.0.0.1:8188</code></article>
-          <article><span>Narration</span><h3>Piper or Edge TTS</h3><p>Local Piper voice profiles keep restricted narration on device. The compatibility path offers selectable Emma and Andrew voices.</p><code>speech.synthesize</code></article>
+          <article><span>Narration</span><h3>Piper or Edge TTS</h3><p>Local Piper voice profiles keep restricted narration on device. The compatibility path supports selectable configured voices.</p><code>speech.synthesize</code></article>
           <article><span>Alignment</span><h3>whisper.cpp</h3><p>Local timestamp alignment supports corrected VTT, SRT, and transcript output when the speech provider does not return timing.</p><code>speech.transcribe</code></article>
           <article><span>Composition</span><h3>FFmpeg + Sharp</h3><p>The pinned compositor normalizes visual assets, renders H.264/AAC, creates the thumbnail, and records checksums.</p><code>1920×1080 · 29.97 fps</code></article>
           <article><span>Replay</span><h3>Content-addressed cache</h3><p>Accepted provider outputs are frozen by hash. Frozen replay prohibits new provider and network calls.</p><code>record → frozen</code></article>
