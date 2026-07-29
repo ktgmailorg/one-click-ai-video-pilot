@@ -55,7 +55,8 @@
             <h2>Verify your RIT Google account</h2>
             <p>
               Google must return a verified account from the
-              <code>rit.edu</code> Workspace domain. Being signed into a
+              <code>rit.edu</code> Workspace domain. RIT Google addresses
+              normally end in <code>@g.rit.edu</code>; being signed into a
               personal Gmail account is not sufficient.
             </p>
             <a id="rit-sign-in" class="button button-primary" href="/api/auth/google-start" hidden>
@@ -114,7 +115,7 @@
           <h2>Automatic access is deliberately narrow.</h2>
         </div>
         <div class="boundary-list">
-          <div><span>01</span><p>Only Google-verified <code>@rit.edu</code> Workspace identities qualify.</p></div>
+          <div><span>01</span><p>Only Google-verified <code>@g.rit.edu</code> or <code>@rit.edu</code> identities in RIT's Workspace qualify.</p></div>
           <div><span>02</span><p>The invited GitHub account must authorize itself; users cannot type someone else's username.</p></div>
           <div><span>03</span><p>Automatic access is read-only. Push, administration, and RIT Contributors team membership require human approval.</p></div>
           <div><span>04</span><p>OAuth tokens are used server-side for the immediate identity check and are not placed in browser storage.</p></div>

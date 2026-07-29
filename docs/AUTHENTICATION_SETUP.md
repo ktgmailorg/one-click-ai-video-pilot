@@ -2,7 +2,8 @@
 
 The public site contains a disabled-by-default identity flow:
 
-1. Google verifies a signed-in `rit.edu` Workspace account.
+1. Google verifies a signed-in RIT Workspace account. RIT Google email
+   addresses normally end in `@g.rit.edu`.
 2. GitHub verifies the exact GitHub account controlled by that person.
 3. The backend sends that verified GitHub account a read-only invitation to
    `ktgmailorg/video-generator-rit`.
@@ -43,7 +44,7 @@ following server-side:
 - OAuth nonce
 - `email_verified: true`
 - Hosted-domain claim exactly `rit.edu`
-- Email suffix exactly `@rit.edu`
+- Email suffix exactly `@g.rit.edu` or `@rit.edu`
 
 Record the client ID and client secret.
 

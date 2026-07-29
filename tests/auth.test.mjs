@@ -53,10 +53,10 @@ test("session cookies are secure and readable server-side", () => {
   assert.equal(sessionFromRequest(request).email, "faculty@rit.edu");
 });
 
-test("RIT Google verification requires the hosted domain and nonce", () => {
+test("RIT Google verification accepts the RIT Google alias domain", () => {
   const identity = assertRitGoogleClaims(
     {
-      email: "FACULTY@RIT.EDU",
+      email: "FACULTY@G.RIT.EDU",
       email_verified: true,
       hd: "rit.edu",
       nonce: "expected",
@@ -65,13 +65,30 @@ test("RIT Google verification requires the hosted domain and nonce", () => {
     },
     "expected",
   );
-  assert.equal(identity.email, "faculty@rit.edu");
+  assert.equal(identity.email, "faculty@g.rit.edu");
+});
+
+test("RIT Google verification requires the hosted domain and nonce", () => {
   assert.throws(
     () =>
       assertRitGoogleClaims(
         {
           email: "faculty@gmail.com",
           email_verified: true,
+          nonce: "expected",
+          sub: "google-123",
+        },
+        "expected",
+      ),
+    /verified for rit\.edu/i,
+  );
+  assert.throws(
+    () =>
+      assertRitGoogleClaims(
+        {
+          email: "faculty@notrit.edu",
+          email_verified: true,
+          hd: "rit.edu",
           nonce: "expected",
           sub: "google-123",
         },

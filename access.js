@@ -28,7 +28,7 @@ function queryMessage() {
     showMessage("This GitHub account already has repository access.", "success");
   }
   const errors = {
-    rit_sign_in: "RIT sign-in could not be verified. Select a Google Workspace account from the rit.edu domain.",
+    rit_sign_in: "RIT sign-in could not be verified. Select your RIT Google account, normally ending in @g.rit.edu.",
     rit_required: "Verify your RIT Google account before connecting GitHub.",
     github_access: "GitHub access could not be completed. Confirm the intended GitHub account and try again.",
   };
