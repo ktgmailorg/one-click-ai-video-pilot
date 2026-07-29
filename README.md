@@ -9,6 +9,11 @@ source-grounded 2–5 minute pilot; identifies current capabilities and
 limitations; provides verified-RIT contributor instructions; and includes a
 captioned low-level computer-architecture competency example.
 
+The public `professor-guide.html` provides a nontechnical faculty quick start,
+including pilot preparation, private GitHub access, GitHub Desktop cloning,
+browser-studio operation, data boundaries, review requirements, and
+troubleshooting. Technical provider setup remains in `local-studio.html`.
+
 The interest form stores nothing on GitHub Pages. It opens a prefilled email
 draft addressed to the project lead, and the visitor chooses whether to send it
 from an RIT account.

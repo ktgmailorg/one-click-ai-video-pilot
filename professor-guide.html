@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="A step-by-step faculty guide for joining and operating an RIT One-Click AI Video Generator pilot."
+    >
+    <meta property="og:title" content="Professor Guide · One-Click AI Video Generator">
+    <meta
+      property="og:description"
+      content="Prepare materials, request access, create a draft, and review an accessible RIT course-video package."
+    >
+    <meta
+      property="og:image"
+      content="https://one-click-ai-video-pilot.vercel.app/og.png"
+    >
+    <title>Professor Guide · One-Click AI Video Generator</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="guide-page professor-page">
+    <main>
+      <nav class="site-nav" aria-label="Professor guide navigation">
+        <a class="wordmark" href="./index.html" aria-label="Return to the pilot site">
+          <span class="wordmark-mark" aria-hidden="true">1</span>
+          <span>One-Click AI<small>Professor Guide</small></span>
+        </a>
+        <div class="nav-links">
+          <a href="#prepare">Prepare</a>
+          <a href="#access">GitHub access</a>
+          <a href="#create">Create</a>
+          <a href="#review">Review</a>
+          <a href="#help">Help</a>
+          <a class="nav-cta" href="./index.html#interest">Propose a pilot</a>
+        </div>
+      </nav>
+
+      <header class="professor-hero">
+        <div>
+          <p class="section-kicker">Faculty quick start · supervised pilot</p>
+          <h1>Bring the expertise. The studio handles the production steps.</h1>
+          <p>
+            This guide explains what to prepare, how to receive private project
+            access, what to click in the browser studio, and what must be
+            reviewed before a video is used in a course.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#choose">Choose your path <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="http://127.0.0.1:4173">Open installed studio <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <aside class="professor-outcome">
+          <span>One reviewed input</span>
+          <strong>Script or transcript</strong>
+          <i aria-hidden="true">↓</i>
+          <span>One browser action</span>
+          <strong>Create draft video</strong>
+          <i aria-hidden="true">↓</i>
+          <span>One review package</span>
+          <strong>Video + captions + transcript + QA</strong>
+        </aside>
+      </header>
+
+      <section class="professor-notice" aria-label="Pilot status">
+        <strong>What this is:</strong>
+        <span>A pilot-ready, source-grounded production assistant operated with human review.</span>
+        <strong>What this is not:</strong>
+        <span>An automatic publishing service or a substitute for instructor, accessibility, and brand approval.</span>
+      </section>
+
+      <section class="professor-section" id="choose">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="section-kicker">Step 1 · Choose a path</p>
+            <h2>Start with the support level that fits you.</h2>
+          </div>
+          <p>
+            Both paths use the same reviewable workflow. The difference is who
+            maintains the local models and production tools.
+          </p>
+        </div>
+        <div class="path-cards">
+          <article class="path-card path-recommended">
+            <div><span>Most faculty pilots</span><b>Recommended</b></div>
+            <h3>Team-operated</h3>
+            <p>
+              An RIT AI Club project member prepares the machine and runs the
+              local companion. You provide approved material, use the browser
+              form, and make the academic and release decisions.
+            </p>
+            <ul>
+              <li>No model or command-line setup</li>
+              <li>Consistent pilot configuration</li>
+              <li>Direct support during production</li>
+            </ul>
+            <a class="button button-primary" href="./index.html#interest">Request this path <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="path-card">
+            <div><span>Faculty and contributors</span><b>Self-service</b></div>
+            <h3>Run it locally</h3>
+            <p>
+              Request private GitHub access and install the companion on your
+              own computer. After the one-time setup, normal production happens
+              in the browser and starts with a double-click.
+            </p>
+            <ul>
+              <li>Local model and data control</li>
+              <li>Repeatable project configuration</li>
+              <li>Suitable for technical contributors</li>
+            </ul>
+            <a class="button button-secondary" href="#access">See access steps <span aria-hidden="true">↓</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="professor-section prepare-section" id="prepare">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="section-kicker">Step 2 · Prepare</p>
+            <h2>Begin with a small, reviewable lesson.</h2>
+          </div>
+          <p>
+            The initial pilot is one 2–5 minute video based on
+            instructor-approved, non-sensitive source material.
+          </p>
+        </div>
+        <div class="checklist-grid">
+          <article>
+            <span aria-hidden="true">01</span>
+            <h3>One learning objective</h3>
+            <p>State what a student should understand or be able to do after watching.</p>
+          </article>
+          <article>
+            <span aria-hidden="true">02</span>
+            <h3>Corrected narration</h3>
+            <p>Provide a script, transcript, Markdown file, VTT, or SRT that reflects your intended wording.</p>
+          </article>
+          <article>
+            <span aria-hidden="true">03</span>
+            <h3>Reviewed sources</h3>
+            <p>Include notes, extracts, citations, URLs, and pronunciations needed to verify factual claims.</p>
+          </article>
+          <article>
+            <span aria-hidden="true">04</span>
+            <h3>Data classification</h3>
+            <p>Identify whether the material is public, internal, or restricted before choosing providers.</p>
+          </article>
+        </div>
+        <div class="do-not-submit">
+          <strong>Do not place these in the public interest form</strong>
+          <p>
+            Student records, grades, disability information, protected
+            research, credentials, restricted source files, or personally
+            identifying student material. The public form opens an email draft
+            and is only for discussing the pilot.
+          </p>
+        </div>
+      </section>
+
+      <section class="professor-section access-section" id="access">
+        <div class="access-heading">
+          <p class="section-kicker light">Step 3 · Private GitHub access</p>
+          <h2>Verified RIT participants can receive the complete source.</h2>
+          <p>
+            Repository access is optional for a team-operated pilot. It is
+            required for self-service installation or code contributions.
+          </p>
+        </div>
+        <ol class="access-steps">
+          <li><span>1</span><div><strong>Submit your request</strong><p>Use an <code>@rit.edu</code> address and include the GitHub username that should receive access.</p></div></li>
+          <li><span>2</span><div><strong>Complete verification</strong><p>The project team confirms RIT affiliation and the intended pilot or contribution.</p></div></li>
+          <li><span>3</span><div><strong>Accept the invitation</strong><p>Sign into the named GitHub account and accept the private-repository invitation.</p></div></li>
+          <li><span>4</span><div><strong>Download the project</strong><p>Use GitHub Desktop for the simplest installation path, or clone the repository from a terminal.</p></div></li>
+        </ol>
+        <div class="github-desktop">
+          <div>
+            <span>No-command-line option</span>
+            <h3>Use GitHub Desktop</h3>
+            <ol>
+              <li>Install and sign into GitHub Desktop.</li>
+              <li>Choose <strong>File → Clone repository</strong>.</li>
+              <li>Select <strong>URL</strong>.</li>
+              <li>Enter <code>https://github.com/ktgmailorg/video-generator-rit.git</code>.</li>
+              <li>Choose a folder and select <strong>Clone</strong>.</li>
+            </ol>
+          </div>
+          <div class="access-boundary">
+            <strong>Repository access does not include</strong>
+            <ul>
+              <li>AI model weights or licensed fonts</li>
+              <li>Official RIT logo files</li>
+              <li>Course files or student information</li>
+              <li>Provider credentials</li>
+            </ul>
+            <a href="https://github.com/ktgmailorg/video-generator-rit">Open the private repository <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="professor-section launch-section" id="launch">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="section-kicker">Step 4 · Launch</p>
+            <h2>After setup, begin with a double-click.</h2>
+          </div>
+          <p>
+            The local companion opens the browser interface. Keep its small
+            launcher window open until production is finished.
+          </p>
+        </div>
+        <div class="launch-grid">
+          <article>
+            <span>macOS</span>
+            <h3>Double-click <code>start-studio.command</code></h3>
+            <p>If macOS requests confirmation, choose <strong>Open</strong>. First launch may take longer while dependencies are prepared.</p>
+          </article>
+          <article>
+            <span>Windows</span>
+            <h3>Double-click <code>start-studio.bat</code></h3>
+            <p>Keep the companion window open. Closing it stops local production and disconnects the browser interface.</p>
+          </article>
+          <article class="launch-address">
+            <span>Browser address</span>
+            <h3><a href="http://127.0.0.1:4173">127.0.0.1:4173</a></h3>
+            <p>This address opens only on the computer running the companion. It is not a public or campus-network server.</p>
+          </article>
+        </div>
+        <p class="browser-boundary">
+          The public Vercel site shows examples and documentation. It does not
+          receive your source material or run Bonsai. The local browser page
+          connects directly to the companion and models on your computer.
+        </p>
+      </section>
+
+      <section class="professor-section create-section" id="create">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="section-kicker">Step 5 · Create</p>
+            <h2>Seven choices from material to draft.</h2>
+          </div>
+          <p>
+            The Create button remains disabled until the configured providers
+            pass their readiness checks.
+          </p>
+        </div>
+        <ol class="create-steps">
+          <li><span>01</span><div><strong>Confirm “Ready”</strong><p>If the studio reports a provider problem, contact the operator rather than bypassing the check.</p></div></li>
+          <li><span>02</span><div><strong>Name the video</strong><p>Use a descriptive course-facing title.</p></div></li>
+          <li><span>03</span><div><strong>Add the narration</strong><p>Paste the corrected text or load a text, Markdown, VTT, or SRT file.</p></div></li>
+          <li><span>04</span><div><strong>Add reviewed source notes</strong><p>Provide the evidence needed to verify the lesson's factual claims.</p></div></li>
+          <li><span>05</span><div><strong>Choose a voice</strong><p>Use the configured local voice or select an available female or male preset.</p></div></li>
+          <li><span>06</span><div><strong>Choose visuals</strong><p>Use deterministic educational diagrams by default. Generated images require an approved ComfyUI route.</p></div></li>
+          <li><span>07</span><div><strong>Create the draft</strong><p>Confirm the data route, select <em>Create draft video</em>, and leave the companion open.</p></div></li>
+        </ol>
+        <ul class="output-row" aria-label="Generated files">
+          <li>MP4 video</li>
+          <li>VTT + SRT captions</li>
+          <li>Transcript</li>
+          <li>Thumbnail</li>
+          <li>QA reports</li>
+          <li>Run lock</li>
+        </ul>
+      </section>
+
+      <section class="professor-section review-section" id="review">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="section-kicker">Step 6 · Review</p>
+            <h2>A generated draft is the beginning of review—not the release.</h2>
+          </div>
+          <p>
+            Each approval applies to exact checksums. Changing covered material
+            invalidates the corresponding approval so reviewers know what they
+            actually approved.
+          </p>
+        </div>
+        <div class="review-grid">
+          <article><span>01</span><h3>Script + evidence</h3><p>Verify objectives, claims, citations, equations, pronunciations, and AI disclosure.</p></article>
+          <article><span>02</span><h3>Visual treatment</h3><p>Check diagram accuracy, readable text, licensing, contrast, and visual descriptions.</p></article>
+          <article><span>03</span><h3>Accessibility</h3><p>Correct captions and transcript; confirm meaningful visuals are verbalized or described.</p></article>
+          <article><span>04</span><h3>Final release</h3><p>Watch the complete master and approve the exact video and accompanying package.</p></article>
+        </div>
+      </section>
+
+      <section class="professor-section help-section" id="help">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="section-kicker">Troubleshooting</p>
+            <h2>Start with the message you can see.</h2>
+          </div>
+          <p>
+            Do not send restricted material, credentials, or raw sensitive
+            traces when requesting help.
+          </p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>The local studio does not open</summary>
+            <p>Confirm the launcher window is still open, then visit <code>http://127.0.0.1:4173</code>. Stop and restart the launcher if needed. Another computer's <code>127.0.0.1</code> address will not work.</p>
+          </details>
+          <details>
+            <summary>The Create button is disabled</summary>
+            <p>A required provider failed its readiness check. Record the displayed message and contact the project operator. Do not bypass the check or change the data classification.</p>
+          </details>
+          <details>
+            <summary>GitHub says the repository does not exist</summary>
+            <p>Private repositories look unavailable until the invitation is accepted. Confirm that you are signed into the exact GitHub account invited by the project team.</p>
+          </details>
+          <details>
+            <summary>Bonsai or generated visuals are unavailable</summary>
+            <p>The project operator should verify the Bonsai model digest and local endpoint. Generated images additionally require the approved ComfyUI workflow. Deterministic diagrams remain available without ComfyUI.</p>
+          </details>
+          <details>
+            <summary>The draft reports source or accessibility blockers</summary>
+            <p>This indicates incomplete release evidence, not necessarily a failed render. Correct the source metadata, captions, descriptions, or script; generate a new draft; and repeat review.</p>
+          </details>
+        </div>
+        <div class="help-contact">
+          <div>
+            <span>Include in a help request</span>
+            <p>Your course or department, the displayed readiness message, the failed stage, and whether the material is public, internal, or restricted.</p>
+          </div>
+          <div>
+            <a class="button button-primary" href="./index.html#interest">Request a pilot or support <span aria-hidden="true">↗</span></a>
+            <a href="mailto:kt7432@rit.edu?subject=One-Click%20AI%20Video%20support">kt7432@rit.edu</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="operator-disclosure">
+        <div>
+          <p class="section-kicker light">For the project operator</p>
+          <h2>Technical Bonsai setup lives in the contributor guide.</h2>
+          <p>
+            The operator must supply the approved configuration, model paths,
+            exact model checksum, local runtimes, and health checks before
+            declaring a faculty machine ready.
+          </p>
+        </div>
+        <a class="button button-secondary" href="./local-studio.html">Open technical local-studio guide <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <footer>
+        <div><strong>One-Click AI Video Generator</strong><span>An official project of the RIT AI Club</span></div>
+        <p>This guide covers a supervised pilot. It does not represent campus-wide production certification.</p>
+        <a href="./index.html">Return to pilot site ↑</a>
+      </footer>
+    </main>
+  </body>
+</html>
