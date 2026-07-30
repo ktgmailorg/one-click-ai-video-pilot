@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "llvm-frontend",
+      "title": "My First Language Frontend with LLVM",
+      "uri": "https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/",
+      "author": "LLVM Project",
+      "content": "LLVM's Kaleidoscope tutorial builds a language frontend incrementally. A lexer groups input characters into tokens. A parser applies language grammar and operator precedence to construct an abstract syntax tree whose nodes represent expressions, function prototypes, and definitions. Code generation lowers validated AST nodes into LLVM intermediate representation. Later stages add optimization, just-in-time execution, control flow, mutable variables, object-file generation, and debug information. The tutorial emphasizes that each representation has a specific contract and that language features must be reflected consistently across lexing, parsing, AST design, and code generation.",
+      "type": "note",
+      "verified": true
+    },
+    {
+      "id": "llvm-langref",
+      "title": "LLVM Language Reference Manual",
+      "uri": "https://llvm.org/docs/LangRef.html",
+      "author": "LLVM Project",
+      "content": "LLVM IR is a typed, low-level intermediate representation organized into modules, functions, basic blocks, and instructions. Control flow is explicit through terminators and basic-block edges. Values have types, instructions define and use values, and static single assignment form gives each register-like value one definition. A frontend must produce valid IR that obeys dominance, type, control-flow, and calling-convention rules. Verification catches structural violations before later optimization or code generation. IR is neither source syntax nor final machine code; it is a stable transformation boundary that makes analyses and target-independent optimizations possible.",
+      "type": "note",
+      "verified": true
+    }
+  ]
+}

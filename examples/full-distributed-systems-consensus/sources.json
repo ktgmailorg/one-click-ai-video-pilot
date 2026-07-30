@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "raft-paper",
+      "title": "In Search of an Understandable Consensus Algorithm",
+      "uri": "https://raft.github.io/raft.pdf",
+      "author": "Diego Ongaro and John Ousterhout",
+      "content": "Raft is a consensus algorithm for managing a replicated log. Servers occupy follower, candidate, or leader roles and advance through numbered terms. Randomized election timeouts help a candidate obtain votes and become leader. The leader accepts client commands, appends log entries, and replicates them to followers. An entry becomes committed according to majority and term rules, after which servers apply it to their state machines in order. Raft's election restriction, log-matching property, and commitment rules preserve safety across delays, restarts, and message loss. A majority is required for progress, so loss of quorum affects availability without permitting conflicting committed histories.",
+      "type": "note",
+      "verified": true
+    },
+    {
+      "id": "mit-distributed-systems",
+      "title": "MIT 6.5840 Distributed Systems",
+      "uri": "https://pdos.csail.mit.edu/6.824/",
+      "author": "MIT PDOS",
+      "content": "MIT's distributed systems course studies abstraction, implementation, and performance in systems made from multiple networked computers. Core problems include concurrency, partial failure, replication, fault tolerance, and consistency. Labs use replicated services and Raft to connect algorithms with executable behavior under dropped messages, crashed servers, and changing timing. Distributed correctness requires explicit assumptions because a slow node can be indistinguishable from a failed node, messages can be delayed or duplicated, and retries can repeat an operation. Tests must explore schedules and failures rather than only the no-failure path.",
+      "type": "note",
+      "verified": true
+    }
+  ]
+}

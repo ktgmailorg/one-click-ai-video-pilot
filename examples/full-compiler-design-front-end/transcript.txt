@@ -1,0 +1,319 @@
+NARRATOR: We begin by examining how raw source code transforms into meaningful units through
+
+lexical analysis.
+
+NARRATOR: A lexer groups input characters into tokens, stripping away whitespace and comments
+
+to isolate operators, identifiers, and literals.
+
+NARRATOR: Consider the expression 'x + 5'.
+
+NARRATOR: The lexer recognizes 'x' as an identifier token, '+' as an operator token,
+
+and '5' as a numeric token.
+
+NARRATOR: This separation is crucial because it isolates syntactic structure from semantic
+
+meaning.
+
+NARRATOR: By treating each token as a discrete symbol, the compiler can process language
+
+constructs uniformly.
+
+NARRATOR: The lexer operates as a state machine that scans characters sequentially,
+
+building tokens based on predefined patterns.
+
+NARRATOR: This foundational step ensures that subsequent stages receive clean, structured
+
+input rather than unprocessed character streams.
+
+NARRATOR: Understanding tokenization reveals how compilers manage language syntax before
+
+attempting,
+
+NARRATOR: Once tokens are isolated, the parser applies language grammar and operator
+
+precedence to construct an abstract syntax tree whose nodes represent expressions,
+
+function prototypes, and definitions.
+
+NARRATOR: The parser consumes the token stream and validates syntactic structure against
+
+formal grammar rules.
+
+NARRATOR: For example, it checks that an identifier is followed by a valid operator or
+
+assignment symbol.
+
+NARRATOR: Operator precedence determines evaluation order, ensuring that multiplication
+
+binds tighter than addition.
+
+NARRATOR: The parser builds a hierarchical structure that mirrors the program's logical
+
+organization.
+
+NARRATOR: This step transforms a flat sequence of tokens into a tree that preserves nesting
+
+and relationships.
+
+NARRATOR: By enforcing grammar rules, the parser catches structural errors early,
+
+preventing malformed code from reaching semantic analysis.
+
+NARRATOR: The parser's output becomes the foundation for subsequent validation and low
+
+NARRATOR: The abstract syntax tree captures the program's logical structure without
+
+retaining syntactic details like parentheses or whitespace.
+
+NARRATOR: Each node represents a specific language construct, such as an expression,
+
+function prototype, or variable definition.
+
+NARRATOR: For our example, the tree contains a binary expression node with two child nodes
+
+representing the left and right operands.
+
+NARRATOR: This hierarchical organization enables efficient traversal and analysis.
+
+NARRATOR: The AST serves as a stable intermediate representation that separates
+
+language semantics from implementation details.
+
+NARRATOR: By standardizing program structure, the AST allows compilers to apply uniform
+
+transformations across different language features.
+
+NARRATOR: Developers can inspect the tree to verify that the parser correctly interpreted
+
+the source code.
+
+NARRATOR: The tree's structure directly influences how subsequent stages validate
+
+types and generate code.
+
+NARRATOR: Maint
+
+NARRATOR: After parsing, the compiler performs semantic checks to verify that the program
+
+adheres to language rules beyond syntax.
+
+NARRATOR: These checks include type validation, scope resolution, and symbol table
+
+lookups.
+
+NARRATOR: For instance, the compiler verifies that the identifier 'x' is declared and
+
+assigned a compatible type before allowing arithmetic operations.
+
+NARRATOR: Symbol information tracks variable names, their types, and scopes, enabling
+
+precise error reporting.
+
+NARRATOR: If a type mismatch occurs, the compiler flags the issue immediately,
+
+preventing invalid operations from propagating.
+
+NARRATOR: Semantic analysis ensures that the program's meaning is consistent and
+
+well-formed.
+
+NARRATOR: By validating types and scopes early, the compiler reduces downstream errors
+
+and improves optimization opportunities.
+
+NARRATOR: This stage bridges the gap between syntactic structure and runtime behavior.
+
+NARRATOR: Once semantic validation passes, the compiler lowers the validated AST nodes into
+
+LLVM intermediate representation.
+
+NARRATOR: This transformation converts high-level language constructs into a
+
+standardized, target-independent format.
+
+NARRATOR: The lowering process maps AST nodes to specific IR instructions, ensuring that
+
+each operation corresponds to a valid machine operation.
+
+NARRATOR: For example, the binary expression node becomes an addition instruction in the
+
+IR.
+
+NARRATOR: This step abstracts away language-specific syntax, enabling uniform
+
+optimization and code generation across different architectures.
+
+NARRATOR: The intermediate representation serves as a stable boundary between front-end
+
+analysis and back-end code generation.
+
+NARRATOR: By standardizing the program structure, the compiler can apply
+
+target-independent optimizations safely.
+
+NARRATOR: Lowering also ensures that all language features are reflected consistently
+
+across the pipeline.
+
+NARRATOR: LLVM IR is a typed, low-level intermediate representation organized into
+
+modules, functions, basic blocks, and instructions.
+
+NARRATOR: This structure provides a clear hierarchy for program analysis and
+
+optimization.
+
+NARRATOR: Modules contain functions, which are divided into basic blocks that represent
+
+straight-line code sequences.
+
+NARRATOR: Each instruction operates on typed values, ensuring type safety throughout the
+
+program.
+
+NARRATOR: The IR's explicit control flow through terminators and basic-block edges
+
+allows the compiler to analyze execution paths systematically.
+
+NARRATOR: Values are defined exactly once using static single assignment form, which
+
+simplifies data flow analysis.
+
+NARRATOR: This design eliminates ambiguity in variable usage, enabling precise optimization
+
+passes.
+
+NARRATOR: The IR's structure makes it possible to apply target-independent transformations
+
+while preserving program semantics.
+
+NARRATOR: A frontend must produce valid IR that obeys dominance, type, control-flow, and
+
+calling-convention rules.
+
+NARRATOR: Verification catches structural violations before later optimization or code
+
+generation.
+
+NARRATOR: This step ensures that the intermediate representation is well-formed and
+
+ready for transformation.
+
+NARRATOR: The compiler checks that all values are defined before use, that types match
+
+across operations, and that control flow terminates correctly.
+
+NARRATOR: If violations are detected, the compiler reports precise errors, preventing
+
+invalid code from reaching optimization passes.
+
+NARRATOR: Verification acts as a safety net, ensuring that the IR maintains semantic
+
+integrity throughout the compilation pipeline.
+
+NARRATOR: By enforcing these rules early, the compiler reduces the risk of incorrect
+
+optimizations and improves overall code quality.
+
+NARRATOR: This boundary separates front-end validation from back-end transformation,
+
+allowing each stage,
+
+NARRATOR: Code generation translates the verified intermediate representation into
+
+target-specific machine code.
+
+NARRATOR: This process maps IR instructions to assembly or binary instructions, handling
+
+register allocation, instruction selection, and scheduling.
+
+NARRATOR: The compiler ensures that the generated code respects the target
+
+architecture's constraints while preserving the program's semantics.
+
+NARRATOR: Optimization boundaries define where target-independent transformations end and
+
+target-specific code generation begins.
+
+NARRATOR: This separation allows the compiler to apply universal optimizations before
+
+committing to a specific architecture.
+
+NARRATOR: The generated code is then linked and executed, completing the compilation
+
+pipeline.
+
+NARRATOR: By maintaining a clear division between optimization and code generation, the
+
+compiler ensures that transformations are both safe and efficient.
+
+NARRATOR: This stage bridges the gap between abstract program logic,
+
+NARRATOR: Diagnostics provide precise error messages that guide developers in fixing
+
+compilation issues.
+
+NARRATOR: The compiler analyzes the intermediate representation to identify type
+
+mismatches, undefined variables, and control flow violations.
+
+NARRATOR: These checks occur at multiple stages, ensuring that errors are caught early
+
+and accurately.
+
+NARRATOR: For example, if a variable is used before declaration, the compiler reports a
+
+precise location and suggests a fix.
+
+NARRATOR: Diagnostics also include warnings for potential issues like unused variables or
+
+deprecated features.
+
+NARRATOR: By providing actionable feedback, the compiler improves developer productivity
+
+and reduces debugging time.
+
+NARRATOR: Effective diagnostics are essential for maintaining code quality and ensuring that
+
+programs compile correctly.
+
+NARRATOR: This stage completes the front-end pipeline by ensuring that all errors are
+
+identified and reported before code generation.
+
+NARRATOR: To trace one expression through the front-end pipeline, we follow 'x + 5' from raw
+
+text to intermediate representation.
+
+NARRATOR: The lexer groups characters into tokens: identifier 'x', operator '+', and
+
+number '5'.
+
+NARRATOR: The parser applies grammar rules to construct an abstract syntax tree with a
+
+binary expression node.
+
+NARRATOR: Semantic checks verify that 'x' is declared and typed correctly.
+
+NARRATOR: The compiler then lowers the AST node into LLVM intermediate representation,
+
+producing an addition instruction.
+
+NARRATOR: Verification ensures the IR obeys dominance and type rules.
+
+NARRATOR: Finally, code generation maps the instruction to target-specific assembly.
+
+NARRATOR: This trace demonstrates how each stage transforms the expression while
+
+preserving semantics.
+
+NARRATOR: By understanding this pipeline, developers can debug compilation issues and
+
+optimize code effectively.
+
+NARRATOR: The tutorial emphasizes that each representation has a specific contract and
+
+that,

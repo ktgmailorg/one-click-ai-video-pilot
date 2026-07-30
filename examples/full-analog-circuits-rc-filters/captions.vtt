@@ -1,0 +1,555 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:07.639
+NARRATOR: We begin by adopting the lumped
+circuit abstraction, which treats components
+
+2
+00:00:07.639 --> 00:00:13.963
+as localized entities where internal
+electromagnetic wave propagation is negligible
+
+3
+00:00:13.963 --> 00:00:17.125
+compared to signal travel times.
+
+4
+00:00:17.125 --> 00:00:25.687
+NARRATOR: This assumption allows us to model
+circuits as interconnected nodes and branches
+
+5
+00:00:25.687 --> 00:00:28.321
+rather than distributed fields.
+
+6
+00:00:28.321 --> 00:00:36.438
+NARRATOR: Imagine a simple battery connected
+to a resistor through short wires; the voltage
+
+7
+00:00:36.438 --> 00:00:42.815
+appears instantaneously across the resistor
+because the physical dimensions are tiny
+
+8
+00:00:42.815 --> 00:00:45.714
+relative to the signal wavelength.
+
+9
+00:00:45.714 --> 00:00:52.604
+NARRATOR: This abstraction holds when the
+circuit size is much smaller than the signal's
+
+10
+00:00:52.604 --> 00:00:58.017
+wavelength, ensuring that voltage and current
+are well-defined at each node.
+
+11
+00:00:58.017 --> 00:01:03.500
+NARRATOR: We will consistently use this model
+throughout our analysis.
+
+12
+00:01:03.650 --> 00:01:10.507
+NARRATOR: Next, we establish consistent
+reference polarities and current directions
+
+13
+00:01:10.507 --> 00:01:12.564
+for every element.
+
+14
+00:01:12.564 --> 00:01:20.324
+NARRATOR: This systematic approach prevents
+sign errors and ensures our equations reflect
+
+15
+00:01:20.324 --> 00:01:21.617
+physical reality.
+
+16
+00:01:21.617 --> 00:01:29.822
+NARRATOR: For example, if we assign the
+positive terminal of a battery to the top node
+
+17
+00:01:29.822 --> 00:01:35.977
+and define current flowing clockwise through
+the resistor, we must maintain these
+
+18
+00:01:35.977 --> 00:01:38.028
+conventions throughout the analysis.
+
+19
+00:01:38.028 --> 00:01:45.278
+NARRATOR: The direction we choose is
+arbitrary, but consistency is critical.
+
+20
+00:01:45.278 --> 00:01:52.914
+NARRATOR: When we later write equations, a
+positive voltage drop across a resistor means
+
+21
+00:01:52.914 --> 00:02:00.005
+current flows from the higher to lower
+potential, while a negative value indicates
+
+22
+00:02:00.005 --> 00:02:03.278
+the actual direction opposes our assumption.
+
+23
+00:02:03.278 --> 00:02:11.350
+NARRATOR: This disciplined labeling simplifies
+solving the resulting algebraic system.
+
+24
+00:02:11.498 --> 00:02:18.973
+NARRATOR: With reference directions set, we
+apply Kirchhoff's current and voltage laws to
+
+25
+00:02:18.973 --> 00:02:20.698
+constrain the circuit.
+
+26
+00:02:20.698 --> 00:02:28.906
+NARRATOR: Kirchhoff's current law states that
+the sum of currents entering any node equals
+
+27
+00:02:28.906 --> 00:02:31.251
+zero, reflecting charge conservation.
+
+28
+00:02:31.251 --> 00:02:39.388
+NARRATOR: Kirchhoff's voltage law requires
+that the sum of voltage drops around any
+
+29
+00:02:39.388 --> 00:02:43.769
+closed loop equals zero, reflecting energy
+conservation.
+
+30
+00:02:43.769 --> 00:02:52.037
+NARRATOR: For our series circuit, we write one
+KCL equation at the top node and one KVL
+
+31
+00:02:52.037 --> 00:02:53.983
+equation around the loop.
+
+32
+00:02:53.983 --> 00:03:00.399
+NARRATOR: These constraints reduce the number
+of unknowns and provide the structural
+
+33
+00:03:00.399 --> 00:03:03.073
+framework for solving the circuit.
+
+34
+00:03:03.073 --> 00:03:10.592
+NARRATOR: We then combine these with element
+laws to form a complete set of equations that
+
+35
+00:03:10.592 --> 00:03:13.412
+uniquely determine all voltages and currents.
+
+36
+00:03:13.562 --> 00:03:21.830
+NARRATOR: We now introduce the constitutive
+relations that describe how resistors and
+
+37
+00:03:21.830 --> 00:03:23.208
+capacitors behave.
+
+38
+00:03:23.208 --> 00:03:31.726
+NARRATOR: A resistor obeys Ohm's law, where
+voltage drop equals resistance times current.
+
+39
+00:03:31.726 --> 00:03:39.956
+NARRATOR: A capacitor relates current to the
+rate of voltage change, storing electric-field
+
+40
+00:03:39.956 --> 00:03:44.387
+energy as charge accumulates on its plates.
+
+41
+00:03:44.387 --> 00:03:52.032
+NARRATOR: These relations are fundamental
+because they connect electrical quantities to
+
+42
+00:03:52.032 --> 00:03:53.422
+physical mechanisms.
+
+43
+00:03:53.422 --> 00:04:02.156
+NARRATOR: For example, when current flows into
+a capacitor, voltage rises proportionally to
+
+44
+00:04:02.156 --> 00:04:04.172
+the accumulated charge.
+
+45
+00:04:04.172 --> 00:04:11.646
+NARRATOR: We use these laws alongside
+Kirchhoff constraints to build the complete
+
+46
+00:04:11.646 --> 00:04:18.496
+mathematical model of the circuit, ensuring
+every element's behavior is accurately
+
+47
+00:04:18.496 --> 00:04:19.119
+represented.
+
+48
+00:04:19.274 --> 00:04:27.809
+NARRATOR: When we combine a resistor and
+capacitor in series, the circuit exhibits a
+
+49
+00:04:27.809 --> 00:04:33.295
+characteristic time constant, tau, defined as
+resistance times capacitance.
+
+50
+00:04:33.295 --> 00:04:39.027
+NARRATOR: This value determines how quickly
+the circuit responds to changes.
+
+51
+00:04:39.027 --> 00:04:46.748
+NARRATOR: For example, if tau equals one
+second, the capacitor voltage will reach
+
+52
+00:04:46.748 --> 00:04:52.688
+approximately 63 percent of its final value
+after one second.
+
+53
+00:04:52.688 --> 00:04:59.788
+NARRATOR: The time constant emerges naturally
+from solving the differential equation that
+
+54
+00:04:59.788 --> 00:05:01.563
+governs the circuit.
+
+55
+00:05:01.563 --> 00:05:08.364
+NARRATOR: It represents the intrinsic speed of
+the system, balancing the resistor's
+
+56
+00:05:08.364 --> 00:05:14.599
+opposition to current flow with the
+capacitor's ability to store charge.
+
+57
+00:05:14.599 --> 00:05:21.590
+NARRATOR: Understanding tau allows us to
+predict response times without solving the
+
+58
+00:05:21.590 --> 00:05:23.920
+full equation every time.
+
+59
+00:05:24.074 --> 00:05:31.592
+NARRATOR: We now analyze how the capacitor
+charges and discharges when connected to a
+
+60
+00:05:31.592 --> 00:05:32.666
+voltage source.
+
+61
+00:05:32.666 --> 00:05:40.534
+NARRATOR: During charging, current flows from
+the source through the resistor into the
+
+62
+00:05:40.534 --> 00:05:44.166
+capacitor, causing voltage to rise
+exponentially.
+
+63
+00:05:44.166 --> 00:05:52.259
+NARRATOR: The differential equation governing
+this process yields a solution where voltage
+
+64
+00:05:52.259 --> 00:05:55.631
+approaches the source value asymptotically.
+
+65
+00:05:55.631 --> 00:06:03.021
+NARRATOR: Discharging occurs when the source
+is removed and the capacitor releases its
+
+66
+00:06:03.021 --> 00:06:05.863
+stored energy through the resistor.
+
+67
+00:06:05.863 --> 00:06:13.561
+NARRATOR: The voltage decays exponentially,
+following the same time constant but in
+
+68
+00:06:13.561 --> 00:06:14.202
+reverse.
+
+69
+00:06:14.202 --> 00:06:20.888
+NARRATOR: These behaviors demonstrate how
+energy transfers between the electric field
+
+70
+00:06:20.888 --> 00:06:28.790
+and the resistor, with the resistor
+dissipating energy as heat while the capacitor
+
+71
+00:06:28.790 --> 00:06:30.613
+temporarily stores it.
+
+72
+00:06:30.770 --> 00:06:38.403
+NARRATOR: We distinguish between transient and
+steady-state behavior to understand long-term
+
+73
+00:06:38.403 --> 00:06:39.791
+circuit operation.
+
+74
+00:06:39.791 --> 00:06:46.755
+NARRATOR: The transient phase occurs
+immediately after a change, characterized by
+
+75
+00:06:46.755 --> 00:06:52.452
+exponential charging or discharging governed
+by the time constant.
+
+76
+00:06:52.452 --> 00:06:59.678
+NARRATOR: The steady state emerges after
+several time constants, when the capacitor
+
+77
+00:06:59.678 --> 00:07:03.291
+voltage stabilizes at the source value.
+
+78
+00:07:03.291 --> 00:07:09.917
+NARRATOR: Initial capacitor voltage is
+continuous unless an impulse supplies
+
+79
+00:07:09.917 --> 00:07:15.880
+unbounded current, ensuring no sudden jumps in
+stored energy.
+
+80
+00:07:15.880 --> 00:07:22.372
+NARRATOR: Final steady-state behavior can be
+checked independently by replacing the
+
+81
+00:07:22.372 --> 00:07:27.684
+capacitor with a short circuit, which
+simplifies the analysis.
+
+82
+00:07:27.684 --> 00:07:35.755
+NARRATOR: This separation allows us to verify
+solutions and predict long-term performance
+
+83
+00:07:35.755 --> 00:07:39.791
+without solving the full differential
+equation.
+
+84
+00:07:39.938 --> 00:07:49.102
+NARRATOR: We now examine how the RC circuit
+functions as a low-pass filter, attenuating
+
+85
+00:07:49.102 --> 00:07:53.030
+high-frequency signals while passing
+low-frequency ones.
+
+86
+00:07:53.030 --> 00:08:00.163
+NARRATOR: When the input voltage changes
+slowly, the capacitor has time to charge
+
+87
+00:08:00.163 --> 00:08:05.102
+fully, allowing the output to follow the input
+closely.
+
+88
+00:08:05.102 --> 00:08:13.944
+NARRATOR: When the input changes rapidly, the
+capacitor cannot charge quickly enough, so the
+
+89
+00:08:13.944 --> 00:08:17.102
+output voltage lags and attenuates.
+
+90
+00:08:17.102 --> 00:08:24.272
+NARRATOR: This frequency-dependent behavior
+arises because the capacitor's impedance
+
+91
+00:08:24.272 --> 00:08:27.459
+decreases with increasing frequency.
+
+92
+00:08:27.459 --> 00:08:36.527
+NARRATOR: The circuit thus acts as a smooth
+filter, removing rapid fluctuations while
+
+93
+00:08:36.527 --> 00:08:38.620
+preserving slow variations.
+
+94
+00:08:38.620 --> 00:08:46.019
+NARRATOR: This property is essential in audio
+and signal processing applications where
+
+95
+00:08:46.019 --> 00:08:49.102
+clean, stable signals are required.
+
+96
+00:08:49.250 --> 00:08:57.820
+NARRATOR: We define the cutoff frequency,
+omega_c, as the point where the output voltage
+
+97
+00:08:57.820 --> 00:09:02.717
+drops to 35 percent of its input value.
+
+98
+00:09:02.717 --> 00:09:09.052
+NARRATOR: This frequency is inversely
+proportional to the time constant, calculated
+
+99
+00:09:09.052 --> 00:09:11.932
+as one divided by tau.
+
+100
+00:09:11.932 --> 00:09:20.542
+NARRATOR: Signals with frequencies below
+omega_c pass through with minimal attenuation,
+
+101
+00:09:20.542 --> 00:09:26.021
+while signals above omega_c are significantly
+reduced.
+
+102
+00:09:26.021 --> 00:09:33.296
+NARRATOR: The cutoff frequency provides a
+clear boundary for the circuit's frequency
+
+103
+00:09:33.296 --> 00:09:38.753
+response, indicating the highest frequency it
+can effectively transmit.
+
+104
+00:09:38.753 --> 00:09:45.730
+NARRATOR: By adjusting the resistor or
+capacitor values, we can shift this boundary
+
+105
+00:09:45.730 --> 00:09:48.414
+to filter different signal ranges.
+
+106
+00:09:48.414 --> 00:09:56.458
+NARRATOR: This parameter is crucial for
+designing filters that meet specific frequency
+
+107
+00:09:56.458 --> 00:09:57.128
+requirements.
+
+108
+00:09:57.290 --> 00:10:05.847
+NARRATOR: Finally, we calculate the complete
+step response and verify energy conservation.
+
+109
+00:10:05.847 --> 00:10:14.153
+NARRATOR: When a voltage step is applied, the
+capacitor charges exponentially, and the
+
+110
+00:10:14.153 --> 00:10:17.347
+resistor dissipates energy as heat.
+
+111
+00:10:17.347 --> 00:10:24.972
+NARRATOR: The total energy stored in the
+capacitor equals the energy supplied by the
+
+112
+00:10:24.972 --> 00:10:29.329
+source minus the energy dissipated in the
+resistor.
+
+113
+00:10:29.329 --> 00:10:37.645
+NARRATOR: Limiting cases at zero time, long
+time, zero frequency, and high frequency
+
+114
+00:10:37.645 --> 00:10:40.204
+provide useful error checks.
+
+115
+00:10:40.204 --> 00:10:46.281
+NARRATOR: Time-domain step response and
+frequency-domain filtering are complementary
+
+116
+00:10:46.281 --> 00:10:51.007
+descriptions of the same linear circuit
+behavior.
+
+117
+00:10:51.007 --> 00:10:58.802
+NARRATOR: By solving the differential equation
+and verifying these checks, we ensure our
+
+118
+00:10:58.802 --> 00:11:02.400
+solution is accurate and physically
+meaningful.

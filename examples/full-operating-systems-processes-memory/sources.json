@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "mit-xv6-book",
+      "title": "xv6: a simple, Unix-like teaching operating system",
+      "uri": "https://pdos.csail.mit.edu/6.828/2025/xv6/book-riscv-rev5.pdf",
+      "author": "MIT PDOS",
+      "content": "The xv6 book presents a small Unix-like operating system for teaching. A process combines a private user address space with kernel-maintained execution state. User programs request protected services through system calls, which deliberately transfer control into the kernel. The kernel multiplexes processors among runnable processes, saves and restores register state during context switches, and uses page tables to translate virtual addresses. Virtual memory gives each process an isolated address space while allowing the kernel to control physical memory and selected sharing. Traps provide a common mechanism for system calls, device interrupts, and faults. Correct analysis distinguishes user code, privileged kernel code, hardware translation, and scheduler state.",
+      "type": "note",
+      "verified": true
+    },
+    {
+      "id": "posix-fork",
+      "title": "POSIX fork() specification",
+      "uri": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/fork.html",
+      "author": "The Open Group",
+      "content": "POSIX fork creates a new process. The child begins with a logical copy of the parent's process image but has a distinct process identifier and separate subsequent execution. The call returns different values in parent and child, enabling each branch to choose its behavior. File descriptors and other inherited resources follow defined sharing rules. Implementations may use copy-on-write virtual memory so pages are copied only after a write, but that optimization must preserve the specified process behavior. Process creation, execution replacement, waiting, and termination form a lifecycle whose resource ownership and failure cases must be handled explicitly.",
+      "type": "note",
+      "verified": true
+    }
+  ]
+}

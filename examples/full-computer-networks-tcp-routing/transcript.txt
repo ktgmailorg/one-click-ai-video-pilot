@@ -1,0 +1,269 @@
+NARRATOR: Begin by visualizing how data travels from your device to a remote server
+
+through distinct layers.
+
+NARRATOR: Encapsulation wraps application data into transport segments, which then nest
+
+inside IP packets, and finally sit atop local link frames.
+
+NARRATOR: This layered approach isolates failures: if a router drops an IP packet, the
+
+transport layer simply retries without corrupting the application data.
+
+NARRATOR: Think of it like mailing a letter: the message is the application payload, the
+
+envelope is the IP packet, and the postal box is the link frame.
+
+NARRATOR: Each layer handles only its specific job, making the system modular and easier to
+
+debug.
+
+NARRATOR: When you examine a packet capture, you will see these boundaries clearly marked,
+
+allowing you to trace exactly where a request enters or exits each layer.
+
+NARRATOR: Next, examine how IP addressing directs packets across heterogeneous networks.
+
+NARRATOR: Each router inspects the destination IP address and consults its routing table to
+
+determine the next hop.
+
+NARRATOR: The hop limit field in the IPv6 header counts remaining hops, decrementing
+
+with every forward to prevent infinite loops.
+
+NARRATOR: Routers operate on a best-effort basis, meaning they forward packets without
+
+guaranteeing delivery, order, or integrity.
+
+NARRATOR: If a link fails, the router simply drops the packet, leaving reliability to
+
+higher layers.
+
+NARRATOR: This design keeps routers lightweight and fast, allowing them to handle
+
+massive traffic volumes while pushing complex recovery logic to the endpoints.
+
+NARRATOR: When you trace a request, you will see the hop limit decrease with each router,
+
+revealing the path length before the packet reaches its final destination.
+
+NARRATOR: Now, shift focus to the transport layer, where TCP establishes reliable
+
+connections between endpoints.
+
+NARRATOR: TCP uses a strict state machine that begins with a three-way handshake to negotiate
+
+parameters and confirm connectivity.
+
+NARRATOR: Once established, the connection maintains a shared sequence space, ensuring
+
+every byte is tracked.
+
+NARRATOR: The protocol does not care about the underlying network conditions; it only cares
+
+about delivering the correct byte stream to the application.
+
+NARRATOR: If a segment is lost, the receiver will not acknowledge it, triggering the sender
+
+to retransmit.
+
+NARRATOR: This state-driven approach guarantees that applications receive complete,
+
+ordered data regardless of network chaos.
+
+NARRATOR: When you monitor a connection, you will see the state transition from SYN to
+
+ESTABLISHED, confirming that both endpoints are ready to exchange data.
+
+NARRATOR: Sequence numbers are the backbone of TCP's reliability, assigning a unique number
+
+to every byte sent.
+
+NARRATOR: The receiver tracks these numbers and sends acknowledgments that explicitly
+
+identify which sequence space has been received.
+
+NARRATOR: If a segment with sequence number 100 is missing, the receiver will not
+
+acknowledge 100, even if it received 101 and 102.
+
+NARRATOR: This selective acknowledgment forces the sender to retransmit only the missing
+
+data.
+
+NARRATOR: The sender maintains a sliding window of unacknowledged bytes, adjusting its
+
+pace based on feedback.
+
+NARRATOR: This mechanism ensures that applications never see gaps or duplicates in
+
+their data stream.
+
+NARRATOR: When you analyze a packet trace, you will see the sequence numbers increment
+
+steadily, with acknowledgment gaps clearly marking where retransmissions are needed.
+
+NARRATOR: When acknowledgments are delayed or lost, TCP triggers retransmission through
+
+carefully managed timers.
+
+NARRATOR: The sender sets a retransmission timer for each unacknowledged segment,
+
+starting at a base value and increasing with each timeout.
+
+NARRATOR: If the timer expires without receiving an acknowledgment, the sender
+
+resends the exact same segment.
+
+NARRATOR: This ensures that lost data eventually reaches the receiver.
+
+NARRATOR: The protocol also handles duplicate segments gracefully by ignoring them once
+
+acknowledged, preventing the receiver from processing the same data twice.
+
+NARRATOR: This timer-driven recovery balances responsiveness with stability, avoiding
+
+unnecessary retransmissions while guaranteeing eventual delivery.
+
+NARRATOR: When you observe a slow connection, you will see timer values increase, revealing
+
+how TCP adapts to network delays.
+
+NARRATOR: Flow control prevents a fast sender from overwhelming a slow receiver by using
+
+receive windows.
+
+NARRATOR: The receiver advertises how much buffer space is available, and the sender must
+
+not exceed this limit.
+
+NARRATOR: If the receiver's buffer fills up, it stops sending acknowledgments, causing the
+
+sender's window to shrink.
+
+NARRATOR: This backpressure mechanism ensures that neither side runs out of memory or drops
+
+data.
+
+NARRATOR: The window size adjusts dynamically based on network conditions and application
+
+processing speed.
+
+NARRATOR: By coordinating pacing, flow control maintains efficiency while protecting receiver
+
+resources.
+
+NARRATOR: When you monitor a large file transfer, you will see the window size expand
+
+and contract, revealing how TCP adapts to receiver capacity.
+
+NARRATOR: Congestion awareness allows TCP to detect network overload and adjust its sending
+
+rate accordingly.
+
+NARRATOR: When routers become saturated, they may drop packets or increase delay, which TCP
+
+interprets as congestion.
+
+NARRATOR: The protocol responds by reducing its sending window and increasing the
+
+retransmission timer, effectively slowing down to avoid further loss.
+
+NARRATOR: This self-regulating mechanism prevents network collapse and ensures fair
+
+bandwidth sharing among competing flows.
+
+NARRATOR: By reacting to congestion signals, TCP maintains stability under heavy load.
+
+NARRATOR: When you analyze a congested network, you will see the sending rate drop
+
+and window size shrink, revealing how TCP adapts to avoid overwhelming the
+
+infrastructure.
+
+NARRATOR: Diagnosing an end-to-end request requires tracing the packet through each layer
+
+and identifying where it fails.
+
+NARRATOR: Start by checking the link layer for frame errors, then examine the IP layer for
+
+routing issues or hop limit exhaustion.
+
+NARRATOR: If the packet reaches the transport layer, verify TCP sequence numbers and
+
+acknowledgments for gaps or duplicates.
+
+NARRATOR: Use packet captures to observe how timers and windows adjust during delays or
+
+losses.
+
+NARRATOR: By correlating layer-specific symptoms with application-level failures, you
+
+can pinpoint whether the issue lies in routing, congestion, or receiver capacity.
+
+NARRATOR: This systematic approach transforms complex network problems into manageable,
+
+layer-by-layer investigations.
+
+NARRATOR: When you test a slow website, you will see exactly which layer is causing the
+
+bottleneck.
+
+NARRATOR: Apply these concepts to a real-world scenario by following a structured diagnostic
+
+checklist.
+
+NARRATOR: First, verify IP reachability using ping and examine hop limits to confirm routing
+
+paths.
+
+NARRATOR: Next, capture TCP traffic and inspect sequence numbers for gaps or
+
+duplicates.
+
+NARRATOR: Check for retransmission timers and window sizes to identify congestion or flow
+
+control issues.
+
+NARRATOR: Correlate these findings with application performance to isolate the root
+
+cause.
+
+NARRATOR: This methodical process ensures you address the exact layer causing the failure.
+
+NARRATOR: By practicing this checklist, you will develop the ability to troubleshoot
+
+network issues efficiently and accurately.
+
+NARRATOR: When you test a failing connection, you will see exactly which step reveals the
+
+problem.
+
+NARRATOR: Mastering these concepts requires integrating layering, encapsulation, and
+
+transport reliability into a cohesive mental model.
+
+NARRATOR: Remember that IP handles best-effort forwarding while TCP manages reliability, flow
+
+control, and congestion awareness.
+
+NARRATOR: When diagnosing issues, always trace the packet from the application down to the
+
+link layer, checking each boundary for anomalies.
+
+NARRATOR: Use sequence numbers and acknowledgments to verify data integrity, and
+
+monitor timers and windows to understand pacing.
+
+NARRATOR: This layered reasoning transforms complex network behavior into predictable,
+
+manageable patterns.
+
+NARRATOR: By practicing these skills, you will confidently diagnose and resolve end-to-end
+
+request failures.
+
+NARRATOR: When you test a network, you will see exactly how each layer contributes to the
+
+final outcome.

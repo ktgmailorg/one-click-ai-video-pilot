@@ -16,7 +16,6 @@
         "Connect correctness and performance claims to assumptions"
       ],
       "paths": [
-        "Computer Science",
         "Computing & Engineering"
       ],
       "duration": "8:02",
@@ -41,7 +40,6 @@
         "Explain admissibility, consistency, completeness, and optimality"
       ],
       "paths": [
-        "Computer Science",
         "Computing & Engineering"
       ],
       "duration": "8:12",
@@ -66,7 +64,6 @@
         "Test behavior systematically and diagnose failures"
       ],
       "paths": [
-        "Computer Science",
         "Computing & Engineering"
       ],
       "duration": "8:19",
@@ -91,7 +88,6 @@
         "Explain indexes and transaction boundaries"
       ],
       "paths": [
-        "Computer Science",
         "Computing & Engineering"
       ],
       "duration": "8:08",
@@ -101,6 +97,102 @@
       "captions": "./examples/full-relational-data-management/captions.vtt",
       "transcript": "./examples/full-relational-data-management/transcript.txt",
       "sources": "./examples/full-relational-data-management/sources.json"
+    },
+    {
+      "id": "full-compiler-design-front-end",
+      "title": "Compiler Design: From Source Text to Intermediate Representation",
+      "area": "Computing",
+      "subject": "Compiler Design",
+      "format": "Full lesson",
+      "level": "Introductory",
+      "description": "Transform one expression from characters to tokens, syntax, semantic meaning, intermediate representation, and executable code.",
+      "outcomes": [
+        "Define and distinguish between lexical analysis, parsing, and semantic analysis by explaining how each stage transforms raw text into structured program representations.",
+        "Construct a mental model of how an abstract syntax tree is validated through semantic checks and symbol table lookups before lowering to an intermediate representation.",
+        "Trace a single expression through the front-end pipeline by identifying tokenization, grammar rules, AST node creation, type verification, and final intermediate representation generation."
+      ],
+      "paths": [
+        "Computing & Engineering",
+        "STEM Foundations"
+      ],
+      "aiContribution": {
+        "stage": "source-grounded planning and narration draft",
+        "provider": "local-openai-compatible",
+        "model": "prism-ml/Bonsai-27B-gguf",
+        "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
+        "humanReviewRequired": true
+      },
+      "duration": "10:02",
+      "durationSeconds": 602,
+      "poster": "./examples/full-compiler-design-front-end/poster.png",
+      "video": "./examples/full-compiler-design-front-end/video.mp4",
+      "captions": "./examples/full-compiler-design-front-end/captions.vtt",
+      "transcript": "./examples/full-compiler-design-front-end/transcript.txt",
+      "sources": "./examples/full-compiler-design-front-end/sources.json"
+    },
+    {
+      "id": "full-computer-networks-tcp-routing",
+      "title": "Computer Networks: Packets, IP Routing, and Reliable TCP",
+      "area": "Computing",
+      "subject": "Computer Networks",
+      "format": "Full lesson",
+      "level": "Introductory",
+      "description": "Follow data through network layers and explain how IP forwarding and TCP reliability cooperate without hiding delay, loss, or congestion.",
+      "outcomes": [
+        "Students will explain how network layering and encapsulation separate local link frames, IP packets, and transport data to isolate failure domains.",
+        "Students will demonstrate how IP addressing and routing use hop limits and best-effort forwarding to direct packets across heterogeneous networks without guaranteeing delivery.",
+        "Students will analyze TCP sequence numbers, acknowledgments, retransmission, and flow control to diagnose and resolve end-to-end request failures."
+      ],
+      "paths": [
+        "Computing & Engineering",
+        "STEM Foundations"
+      ],
+      "aiContribution": {
+        "stage": "source-grounded planning and narration draft",
+        "provider": "local-openai-compatible",
+        "model": "prism-ml/Bonsai-27B-gguf",
+        "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
+        "humanReviewRequired": true
+      },
+      "duration": "8:43",
+      "durationSeconds": 523,
+      "poster": "./examples/full-computer-networks-tcp-routing/poster.png",
+      "video": "./examples/full-computer-networks-tcp-routing/video.mp4",
+      "captions": "./examples/full-computer-networks-tcp-routing/captions.vtt",
+      "transcript": "./examples/full-computer-networks-tcp-routing/transcript.txt",
+      "sources": "./examples/full-computer-networks-tcp-routing/sources.json"
+    },
+    {
+      "id": "full-distributed-systems-consensus",
+      "title": "Distributed Systems: Replication, Failures, and Raft Consensus",
+      "area": "Computing",
+      "subject": "Distributed Systems",
+      "format": "Full lesson",
+      "level": "Introductory",
+      "description": "Reason about partial failure and trace a client command through leader election, replicated logs, majority commitment, and recovery.",
+      "outcomes": [
+        "By the end of this lesson, learners will be able to trace a client command through a three-node Raft cluster and identify the exact sequence of log replication and commit steps.",
+        "By the end of this lesson, learners will be able to explain how majority quorums and term-based voting prevent conflicting committed histories during network partitions.",
+        "By the end of this lesson, learners will be able to design a client retry strategy that avoids duplicate operations while maintaining system availability during partial failures."
+      ],
+      "paths": [
+        "Computing & Engineering",
+        "STEM Foundations"
+      ],
+      "aiContribution": {
+        "stage": "source-grounded planning and narration draft",
+        "provider": "local-openai-compatible",
+        "model": "prism-ml/Bonsai-27B-gguf",
+        "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
+        "humanReviewRequired": true
+      },
+      "duration": "11:00",
+      "durationSeconds": 660,
+      "poster": "./examples/full-distributed-systems-consensus/poster.png",
+      "video": "./examples/full-distributed-systems-consensus/video.mp4",
+      "captions": "./examples/full-distributed-systems-consensus/captions.vtt",
+      "transcript": "./examples/full-distributed-systems-consensus/transcript.txt",
+      "sources": "./examples/full-distributed-systems-consensus/sources.json"
     },
     {
       "id": "full-riscv-pipeline",
@@ -118,7 +210,6 @@
         "Explain forwarding, stalls, flushing, latency, and throughput"
       ],
       "paths": [
-        "Computer Science",
         "Computing & Engineering",
         "STEM Foundations"
       ],
@@ -127,6 +218,38 @@
       "captions": "./examples/full-riscv-pipeline/captions.vtt",
       "transcript": "./examples/full-riscv-pipeline/transcript.txt",
       "sources": "./examples/full-riscv-pipeline/sources.json"
+    },
+    {
+      "id": "full-operating-systems-processes-memory",
+      "title": "Operating Systems: Processes, System Calls, and Virtual Memory",
+      "area": "Computing",
+      "subject": "Operating Systems",
+      "format": "Full lesson",
+      "level": "Introductory",
+      "description": "Trace how an operating system isolates processes, crosses the kernel boundary, schedules work, and maps virtual memory to physical resources.",
+      "outcomes": [
+        "Students will accurately describe how user and kernel modes enforce process isolation through hardware privilege levels and system call traps.",
+        "Students will trace a single program operation through the OS lifecycle, identifying context switches, page table translations, and scheduler decisions at each stage.",
+        "Students will evaluate process creation and resource inheritance by applying POSIX fork semantics and copy-on-write virtual memory principles to real-world scenarios."
+      ],
+      "paths": [
+        "Computing & Engineering",
+        "STEM Foundations"
+      ],
+      "aiContribution": {
+        "stage": "source-grounded planning and narration draft",
+        "provider": "local-openai-compatible",
+        "model": "prism-ml/Bonsai-27B-gguf",
+        "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
+        "humanReviewRequired": true
+      },
+      "duration": "8:53",
+      "durationSeconds": 533,
+      "poster": "./examples/full-operating-systems-processes-memory/poster.png",
+      "video": "./examples/full-operating-systems-processes-memory/video.mp4",
+      "captions": "./examples/full-operating-systems-processes-memory/captions.vtt",
+      "transcript": "./examples/full-operating-systems-processes-memory/transcript.txt",
+      "sources": "./examples/full-operating-systems-processes-memory/sources.json"
     },
     {
       "id": "full-phishing-defense",
@@ -142,7 +265,6 @@
         "Report and respond to suspected compromise"
       ],
       "paths": [
-        "Computer Science",
         "Computing & Engineering",
         "Digital Literacy"
       ],
@@ -153,6 +275,70 @@
       "captions": "./examples/full-phishing-defense/captions.vtt",
       "transcript": "./examples/full-phishing-defense/transcript.txt",
       "sources": "./examples/full-phishing-defense/sources.json"
+    },
+    {
+      "id": "full-analog-circuits-rc-filters",
+      "title": "Analog Circuits: RC Dynamics and First-Order Filters",
+      "area": "Engineering",
+      "subject": "Electrical Engineering",
+      "format": "Full lesson",
+      "level": "Introductory",
+      "description": "Build and analyze a first-order RC circuit from conservation laws through transient response, time constant, and low-pass behavior.",
+      "outcomes": [
+        "Students will correctly assign consistent reference polarities and current directions to all circuit elements before writing equations.",
+        "Students will apply Kirchhoff’s current and voltage laws to derive and solve the governing equations for first-order RC circuits.",
+        "Students will calculate the RC time constant, predict charging/discharging transients, and verify steady-state behavior using energy and frequency-domain checks."
+      ],
+      "paths": [
+        "Computing & Engineering",
+        "STEM Foundations"
+      ],
+      "aiContribution": {
+        "stage": "source-grounded planning and narration draft",
+        "provider": "local-openai-compatible",
+        "model": "prism-ml/Bonsai-27B-gguf",
+        "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
+        "humanReviewRequired": true
+      },
+      "duration": "11:02",
+      "durationSeconds": 662,
+      "poster": "./examples/full-analog-circuits-rc-filters/poster.png",
+      "video": "./examples/full-analog-circuits-rc-filters/video.mp4",
+      "captions": "./examples/full-analog-circuits-rc-filters/captions.vtt",
+      "transcript": "./examples/full-analog-circuits-rc-filters/transcript.txt",
+      "sources": "./examples/full-analog-circuits-rc-filters/sources.json"
+    },
+    {
+      "id": "full-fluid-mechanics-continuity-bernoulli",
+      "title": "Fluid Mechanics: Continuity, Pressure, and Bernoulli’s Equation",
+      "area": "Engineering",
+      "subject": "Fluid Mechanics",
+      "format": "Full lesson",
+      "level": "Introductory",
+      "description": "Apply conservation of mass and energy to flow through changing area while stating exactly when Bernoulli’s equation is valid.",
+      "outcomes": [
+        "Define a control volume and explain how mass conservation governs flow through it.",
+        "Calculate mass flow rate and apply the continuity equation to relate area, velocity, and density.",
+        "Apply Bernoulli's equation to a narrowing-pipe scenario while identifying valid assumptions and invalid applications."
+      ],
+      "paths": [
+        "Computing & Engineering",
+        "STEM Foundations"
+      ],
+      "aiContribution": {
+        "stage": "source-grounded planning and narration draft",
+        "provider": "local-openai-compatible",
+        "model": "prism-ml/Bonsai-27B-gguf",
+        "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
+        "humanReviewRequired": true
+      },
+      "duration": "11:23",
+      "durationSeconds": 683,
+      "poster": "./examples/full-fluid-mechanics-continuity-bernoulli/poster.png",
+      "video": "./examples/full-fluid-mechanics-continuity-bernoulli/video.mp4",
+      "captions": "./examples/full-fluid-mechanics-continuity-bernoulli/captions.vtt",
+      "transcript": "./examples/full-fluid-mechanics-continuity-bernoulli/transcript.txt",
+      "sources": "./examples/full-fluid-mechanics-continuity-bernoulli/sources.json"
     },
     {
       "id": "full-pid-control-systems",
@@ -178,6 +364,70 @@
       "captions": "./examples/full-pid-control-systems/captions.vtt",
       "transcript": "./examples/full-pid-control-systems/transcript.txt",
       "sources": "./examples/full-pid-control-systems/sources.json"
+    },
+    {
+      "id": "full-signals-sampling-fourier",
+      "title": "Signals and Systems: Sampling, Convolution, and Fourier Reasoning",
+      "area": "Engineering",
+      "subject": "Signals and Systems",
+      "format": "Full lesson",
+      "level": "Introductory",
+      "description": "Connect time-domain signals, LTI systems, convolution, frequency response, sampling, and aliasing in one coherent analysis.",
+      "outcomes": [
+        "Define and distinguish continuous versus discrete signals by identifying their time-domain representation and mathematical properties.",
+        "Model linear time-invariant systems using impulse responses and convolution, explaining how system behavior emerges from input-output relationships.",
+        "Apply sampling theory to reconstruct bandlimited signals, identify aliasing artifacts, and trace a sinusoidal signal through a filter and sampler to verify frequency preservation."
+      ],
+      "paths": [
+        "Computing & Engineering",
+        "STEM Foundations"
+      ],
+      "aiContribution": {
+        "stage": "source-grounded planning and narration draft",
+        "provider": "local-openai-compatible",
+        "model": "prism-ml/Bonsai-27B-gguf",
+        "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
+        "humanReviewRequired": true
+      },
+      "duration": "11:37",
+      "durationSeconds": 697,
+      "poster": "./examples/full-signals-sampling-fourier/poster.png",
+      "video": "./examples/full-signals-sampling-fourier/video.mp4",
+      "captions": "./examples/full-signals-sampling-fourier/captions.vtt",
+      "transcript": "./examples/full-signals-sampling-fourier/transcript.txt",
+      "sources": "./examples/full-signals-sampling-fourier/sources.json"
+    },
+    {
+      "id": "full-solid-mechanics-stress-strain",
+      "title": "Solid Mechanics: Equilibrium, Stress, Strain, and Material Limits",
+      "area": "Engineering",
+      "subject": "Solid Mechanics",
+      "format": "Full lesson",
+      "level": "Introductory",
+      "description": "Move from a free-body diagram to internal load, stress, strain, deformation, material limits, and an engineering design check.",
+      "outcomes": [
+        "By the end of this lesson, learners will be able to construct accurate free-body diagrams and apply translational and rotational equilibrium to solve for unknown forces and moments",
+        "By the end of this lesson, learners will be able to calculate internal normal and shear stresses, relate them to normal strain and elastic modulus, and interpret stress-strain data",
+        "By the end of this lesson, learners will be able to perform a complete axial-member calculation with correct units, evaluate yielding and fracture limits, and apply safety factors"
+      ],
+      "paths": [
+        "Computing & Engineering",
+        "STEM Foundations"
+      ],
+      "aiContribution": {
+        "stage": "source-grounded planning and narration draft",
+        "provider": "local-openai-compatible",
+        "model": "prism-ml/Bonsai-27B-gguf",
+        "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
+        "humanReviewRequired": true
+      },
+      "duration": "11:25",
+      "durationSeconds": 685,
+      "poster": "./examples/full-solid-mechanics-stress-strain/poster.png",
+      "video": "./examples/full-solid-mechanics-stress-strain/video.mp4",
+      "captions": "./examples/full-solid-mechanics-stress-strain/captions.vtt",
+      "transcript": "./examples/full-solid-mechanics-stress-strain/transcript.txt",
+      "sources": "./examples/full-solid-mechanics-stress-strain/sources.json"
     },
     {
       "id": "full-oxygen-transport",
@@ -267,7 +517,6 @@
         "Follow one instruction through a teaching pipeline"
       ],
       "paths": [
-        "Computer Science",
         "Computing & Engineering",
         "STEM Foundations"
       ],
@@ -385,7 +634,6 @@
         "Verify a request through an independent channel"
       ],
       "paths": [
-        "Computer Science",
         "Computing & Engineering",
         "Digital Literacy"
       ],

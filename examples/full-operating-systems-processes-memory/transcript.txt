@@ -1,0 +1,273 @@
+NARRATOR: Begin by visualizing two distinct execution environments operating
+
+simultaneously on the same hardware.
+
+NARRATOR: User mode handles everyday application logic, while kernel mode manages
+
+hardware resources and enforces security boundaries.
+
+NARRATOR: When a user program needs to access protected services, it deliberately triggers a
+
+system call that transfers control into the kernel.
+
+NARRATOR: This deliberate handoff prevents unauthorized hardware manipulation.
+
+NARRATOR: Imagine a web browser requesting a network socket; the browser code cannot
+
+directly talk to the network card.
+
+NARRATOR: Instead, it issues a system call, causing the CPU to switch to kernel mode,
+
+where the OS validates the request and executes the appropriate hardware driver.
+
+NARRATOR: This separation ensures that a buggy application cannot crash the entire system or
+
+access another program's data.
+
+NARRATOR: The kernel acts as a strict gatekeeper, only allowing operations that
+
+follow defined,
+
+NARRATOR: Next, observe how the kernel manages multiple applications running on a single
+
+processor.
+
+NARRATOR: When one program finishes its current task or waits for input, the scheduler
+
+must pause it and start another.
+
+NARRATOR: This transition is called a context switch.
+
+NARRATOR: During this moment, the kernel saves the complete register state of the paused
+
+process, including instruction pointers and stack addresses.
+
+NARRATOR: It then restores the saved registers of the next process.
+
+NARRATOR: Think of it like a theater stage manager who saves every actor's costume and
+
+notes before calling the next performer.
+
+NARRATOR: If the kernel failed to save these registers, the next program would resume with
+
+corrupted data or crash immediately.
+
+NARRATOR: The scheduler continuously evaluates which process is ready to run, ensuring fair
+
+CPU distribution without manual intervention.
+
+NARRATOR: This automatic handoff keeps the system responsive even when dozens of
+
+applications compete.
+
+NARRATOR: Consider how the CPU actually recognizes when to pause user code and enter
+
+the kernel.
+
+NARRATOR: This happens through a hardware mechanism called a trap.
+
+NARRATOR: Traps are not just for system calls; they also handle device interrupts and memory
+
+faults.
+
+NARRATOR: When a trap occurs, the CPU automatically switches to kernel mode and
+
+jumps to a specific handler routine.
+
+NARRATOR: Imagine a doorbell ringing in a house: the resident (user mode) is
+
+interrupted, and the homeowner (kernel) comes to check the source.
+
+NARRATOR: This unified trap mechanism simplifies OS design because the same hardware
+
+signal can trigger different software responses depending on the context.
+
+NARRATOR: Whether it is a keyboard press, a disk error, or a network request, the trap
+
+ensures the kernel intercepts the event before it disrupts normal execution.
+
+NARRATOR: Now, examine how the OS maps the vast virtual address space of a program to
+
+limited physical memory.
+
+NARRATOR: Each process maintains its own page table, which acts like a detailed directory.
+
+NARRATOR: When the program accesses a specific virtual address, the hardware consults this
+
+table to find the corresponding physical location.
+
+NARRATOR: If the page is not currently loaded in RAM, the kernel triggers a page fault and
+
+loads the required data from disk.
+
+NARRATOR: This translation happens transparently, allowing programs to use large,
+
+contiguous address spaces without worrying about physical memory constraints.
+
+NARRATOR: Imagine a library catalog that translates shelf locations into actual room
+
+numbers.
+
+NARRATOR: Without this system, programs would need to manually calculate every memory
+
+address, making development nearly impossible.
+
+NARRATOR: The page table ensures that virtual addresses remain stable while physical memory
+
+is dynamically managed.
+
+NARRATOR: Virtual memory extends this translation system to guarantee strict process
+
+isolation.
+
+NARRATOR: Each process receives its own private address space, meaning one program
+
+cannot accidentally or maliciously read another's data.
+
+NARRATOR: The kernel controls which physical pages are mapped to which virtual addresses,
+
+allowing it to enforce security boundaries.
+
+NARRATOR: When a process terminates, the kernel simply removes its page table entries,
+
+instantly freeing the memory.
+
+NARRATOR: This design enables multiple applications to run simultaneously without
+
+interfering with each other's data structures.
+
+NARRATOR: Imagine separate rooms in a building where each resident has their own private
+
+space, but the building manager controls which rooms are open.
+
+NARRATOR: This isolation prevents data corruption and ensures system stability, even
+
+when applications crash or behave unpredictably.
+
+NARRATOR: Let's trace how a new process begins execution.
+
+NARRATOR: When a program calls fork, the kernel creates a new process image that is a
+
+logical copy of the parent.
+
+NARRATOR: The child receives a unique process identifier and starts executing independently.
+
+NARRATOR: This duplication happens at the process level, not the memory level.
+
+NARRATOR: Imagine a photocopy machine that duplicates the entire document but allows the
+
+copy to be edited separately.
+
+NARRATOR: The parent and child now follow different execution paths, each managing its
+
+own resources.
+
+NARRATOR: This mechanism enables parallel execution and modular program design.
+
+NARRATOR: The kernel ensures that the child process has all the necessary initialization
+
+data to start correctly, while maintaining strict separation from the parent's subsequent
+
+operations.
+
+NARRATOR: After the fork operation completes, the parent and child processes receive
+
+different return values.
+
+NARRATOR: This distinction allows each process to immediately determine its role and choose
+
+its execution path.
+
+NARRATOR: The parent typically continues with its original task, while the child branches
+
+into a new routine.
+
+NARRATOR: Imagine a traffic light system where the main controller sends a signal to a side
+
+car, allowing the side car to take a different route.
+
+NARRATOR: This return value mechanism enables flexible program architecture, allowing
+
+developers to implement complex workflows without hardcoding every possible scenario.
+
+NARRATOR: The kernel ensures that the return values are correctly passed through the system
+
+call interface, maintaining the expected behavior across different operating systems.
+
+NARRATOR: When a process is created, it inherits certain resources from its parent,
+
+such as file descriptors and memory mappings.
+
+NARRATOR: These inherited resources follow strict sharing rules that determine whether
+
+they are duplicated, shared, or restricted.
+
+NARRATOR: Imagine a family recipe book where each family member gets a copy, but some pages
+
+are marked as shared for collaboration.
+
+NARRATOR: The kernel enforces these rules to prevent resource leaks and ensure proper
+
+cleanup.
+
+NARRATOR: If a parent closes a file descriptor, the child may still access it
+
+depending on the sharing mode.
+
+NARRATOR: This inheritance model allows applications to pass resources between
+
+processes efficiently while maintaining control over access permissions.
+
+NARRATOR: The kernel tracks these references to ensure they are released when no longer
+
+needed.
+
+NARRATOR: To improve efficiency, many systems implement copy-on-write virtual memory.
+
+NARRATOR: Instead of duplicating all memory pages when a process forks, the kernel shares
+
+the same physical pages between parent and child.
+
+NARRATOR: Pages are only copied when one process attempts to write to them.
+
+NARRATOR: Imagine two readers sharing a single textbook; they can read simultaneously without
+
+duplication.
+
+NARRATOR: If one reader tries to edit a page, the system creates a private copy for that
+
+specific page.
+
+NARRATOR: This optimization reduces memory usage and speeds up process creation.
+
+NARRATOR: However, the kernel must carefully track write attempts to ensure the original
+
+data remains intact for the other process.
+
+NARRATOR: This approach preserves the expected process behavior while maximizing resource
+
+efficiency.
+
+NARRATOR: Finally, consider the complete lifecycle of a process from creation to
+
+termination.
+
+NARRATOR: The kernel manages execution replacement, waiting states, and termination
+
+events, ensuring that resources are properly reclaimed.
+
+NARRATOR: If a process crashes or exits unexpectedly, the kernel must handle the
+
+failure gracefully, cleaning up memory and releasing file descriptors.
+
+NARRATOR: Imagine a theater production where actors leave early; the stage manager must
+
+reset the set and notify other performers.
+
+NARRATOR: The kernel tracks every resource ownership and failure case to maintain system
+
+stability.
+
+NARRATOR: This disciplined lifecycle management prevents memory leaks and ensures
+
+that the operating system remains responsive even when applications encounter errors.

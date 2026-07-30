@@ -1,0 +1,235 @@
+NARRATOR: We begin by adopting the lumped circuit abstraction, which treats components
+
+as localized entities where internal electromagnetic wave propagation is negligible
+
+compared to signal travel times.
+
+NARRATOR: This assumption allows us to model circuits as interconnected nodes and branches
+
+rather than distributed fields.
+
+NARRATOR: Imagine a simple battery connected to a resistor through short wires; the voltage
+
+appears instantaneously across the resistor because the physical dimensions are tiny
+
+relative to the signal wavelength.
+
+NARRATOR: This abstraction holds when the circuit size is much smaller than the signal's
+
+wavelength, ensuring that voltage and current are well-defined at each node.
+
+NARRATOR: We will consistently use this model throughout our analysis.
+
+NARRATOR: Next, we establish consistent reference polarities and current directions
+
+for every element.
+
+NARRATOR: This systematic approach prevents sign errors and ensures our equations reflect
+
+physical reality.
+
+NARRATOR: For example, if we assign the positive terminal of a battery to the top node
+
+and define current flowing clockwise through the resistor, we must maintain these
+
+conventions throughout the analysis.
+
+NARRATOR: The direction we choose is arbitrary, but consistency is critical.
+
+NARRATOR: When we later write equations, a positive voltage drop across a resistor means
+
+current flows from the higher to lower potential, while a negative value indicates
+
+the actual direction opposes our assumption.
+
+NARRATOR: This disciplined labeling simplifies solving the resulting algebraic system.
+
+NARRATOR: With reference directions set, we apply Kirchhoff's current and voltage laws to
+
+constrain the circuit.
+
+NARRATOR: Kirchhoff's current law states that the sum of currents entering any node equals
+
+zero, reflecting charge conservation.
+
+NARRATOR: Kirchhoff's voltage law requires that the sum of voltage drops around any
+
+closed loop equals zero, reflecting energy conservation.
+
+NARRATOR: For our series circuit, we write one KCL equation at the top node and one KVL
+
+equation around the loop.
+
+NARRATOR: These constraints reduce the number of unknowns and provide the structural
+
+framework for solving the circuit.
+
+NARRATOR: We then combine these with element laws to form a complete set of equations that
+
+uniquely determine all voltages and currents.
+
+NARRATOR: We now introduce the constitutive relations that describe how resistors and
+
+capacitors behave.
+
+NARRATOR: A resistor obeys Ohm's law, where voltage drop equals resistance times current.
+
+NARRATOR: A capacitor relates current to the rate of voltage change, storing electric-field
+
+energy as charge accumulates on its plates.
+
+NARRATOR: These relations are fundamental because they connect electrical quantities to
+
+physical mechanisms.
+
+NARRATOR: For example, when current flows into a capacitor, voltage rises proportionally to
+
+the accumulated charge.
+
+NARRATOR: We use these laws alongside Kirchhoff constraints to build the complete
+
+mathematical model of the circuit, ensuring every element's behavior is accurately
+
+represented.
+
+NARRATOR: When we combine a resistor and capacitor in series, the circuit exhibits a
+
+characteristic time constant, tau, defined as resistance times capacitance.
+
+NARRATOR: This value determines how quickly the circuit responds to changes.
+
+NARRATOR: For example, if tau equals one second, the capacitor voltage will reach
+
+approximately 63 percent of its final value after one second.
+
+NARRATOR: The time constant emerges naturally from solving the differential equation that
+
+governs the circuit.
+
+NARRATOR: It represents the intrinsic speed of the system, balancing the resistor's
+
+opposition to current flow with the capacitor's ability to store charge.
+
+NARRATOR: Understanding tau allows us to predict response times without solving the
+
+full equation every time.
+
+NARRATOR: We now analyze how the capacitor charges and discharges when connected to a
+
+voltage source.
+
+NARRATOR: During charging, current flows from the source through the resistor into the
+
+capacitor, causing voltage to rise exponentially.
+
+NARRATOR: The differential equation governing this process yields a solution where voltage
+
+approaches the source value asymptotically.
+
+NARRATOR: Discharging occurs when the source is removed and the capacitor releases its
+
+stored energy through the resistor.
+
+NARRATOR: The voltage decays exponentially, following the same time constant but in
+
+reverse.
+
+NARRATOR: These behaviors demonstrate how energy transfers between the electric field
+
+and the resistor, with the resistor dissipating energy as heat while the capacitor
+
+temporarily stores it.
+
+NARRATOR: We distinguish between transient and steady-state behavior to understand long-term
+
+circuit operation.
+
+NARRATOR: The transient phase occurs immediately after a change, characterized by
+
+exponential charging or discharging governed by the time constant.
+
+NARRATOR: The steady state emerges after several time constants, when the capacitor
+
+voltage stabilizes at the source value.
+
+NARRATOR: Initial capacitor voltage is continuous unless an impulse supplies
+
+unbounded current, ensuring no sudden jumps in stored energy.
+
+NARRATOR: Final steady-state behavior can be checked independently by replacing the
+
+capacitor with a short circuit, which simplifies the analysis.
+
+NARRATOR: This separation allows us to verify solutions and predict long-term performance
+
+without solving the full differential equation.
+
+NARRATOR: We now examine how the RC circuit functions as a low-pass filter, attenuating
+
+high-frequency signals while passing low-frequency ones.
+
+NARRATOR: When the input voltage changes slowly, the capacitor has time to charge
+
+fully, allowing the output to follow the input closely.
+
+NARRATOR: When the input changes rapidly, the capacitor cannot charge quickly enough, so the
+
+output voltage lags and attenuates.
+
+NARRATOR: This frequency-dependent behavior arises because the capacitor's impedance
+
+decreases with increasing frequency.
+
+NARRATOR: The circuit thus acts as a smooth filter, removing rapid fluctuations while
+
+preserving slow variations.
+
+NARRATOR: This property is essential in audio and signal processing applications where
+
+clean, stable signals are required.
+
+NARRATOR: We define the cutoff frequency, omega_c, as the point where the output voltage
+
+drops to 35 percent of its input value.
+
+NARRATOR: This frequency is inversely proportional to the time constant, calculated
+
+as one divided by tau.
+
+NARRATOR: Signals with frequencies below omega_c pass through with minimal attenuation,
+
+while signals above omega_c are significantly reduced.
+
+NARRATOR: The cutoff frequency provides a clear boundary for the circuit's frequency
+
+response, indicating the highest frequency it can effectively transmit.
+
+NARRATOR: By adjusting the resistor or capacitor values, we can shift this boundary
+
+to filter different signal ranges.
+
+NARRATOR: This parameter is crucial for designing filters that meet specific frequency
+
+requirements.
+
+NARRATOR: Finally, we calculate the complete step response and verify energy conservation.
+
+NARRATOR: When a voltage step is applied, the capacitor charges exponentially, and the
+
+resistor dissipates energy as heat.
+
+NARRATOR: The total energy stored in the capacitor equals the energy supplied by the
+
+source minus the energy dissipated in the resistor.
+
+NARRATOR: Limiting cases at zero time, long time, zero frequency, and high frequency
+
+provide useful error checks.
+
+NARRATOR: Time-domain step response and frequency-domain filtering are complementary
+
+descriptions of the same linear circuit behavior.
+
+NARRATOR: By solving the differential equation and verifying these checks, we ensure our
+
+solution is accurate and physically meaningful.

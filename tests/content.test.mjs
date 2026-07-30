@@ -14,6 +14,14 @@ const newExamples = [
   "full-algorithm-analysis",
   "full-relational-data-management",
   "full-ai-search-foundations",
+  "full-operating-systems-processes-memory",
+  "full-computer-networks-tcp-routing",
+  "full-compiler-design-front-end",
+  "full-distributed-systems-consensus",
+  "full-analog-circuits-rc-filters",
+  "full-signals-sampling-fourier",
+  "full-fluid-mechanics-continuity-bernoulli",
+  "full-solid-mechanics-stress-strain",
 ];
 
 test("the pilot page advertises the learning platform and has no duration cap", async () => {
@@ -40,17 +48,17 @@ test("the learning platform exposes accessible, device-local course progress", a
   assert.doesNotMatch(html, /female narration/i);
 });
 
-test("the course catalog contains twenty-five complete, unique lessons", async () => {
+test("the course catalog contains thirty-three complete, unique lessons", async () => {
   const catalog = JSON.parse(
     await readFile(new URL("course-catalog.json", root), "utf8"),
   );
   assert.equal(catalog.schemaVersion, 1);
-  assert.equal(catalog.courses.length, 25);
-  assert.equal(new Set(catalog.courses.map((course) => course.id)).size, 25);
+  assert.equal(catalog.courses.length, 33);
+  assert.equal(new Set(catalog.courses.map((course) => course.id)).size, 33);
   const fullLessons = catalog.courses.filter(
     (course) => course.format === "Full lesson",
   );
-  assert.equal(fullLessons.length, 10);
+  assert.equal(fullLessons.length, 18);
   assert.ok(fullLessons.every((course) => course.durationSeconds >= 480));
 
   for (const course of catalog.courses) {
@@ -78,24 +86,40 @@ test("the course catalog contains twenty-five complete, unique lessons", async (
   }
 });
 
-test("the learning platform has a dedicated Computer Science video section", async () => {
+test("Computer Science lessons remain part of the unified course catalog", async () => {
   const html = await readFile(new URL("learn.html", root), "utf8");
-  assert.match(html, /id="computer-science"/);
-  assert.match(html, /id="cs-featured-grid"/);
+  assert.doesNotMatch(html, /id="computer-science"/);
+  assert.doesNotMatch(html, /Dedicated Computer Science series/);
   assert.doesNotMatch(html, /href="\.\/cs-pathway\.html"/);
 
   const catalog = JSON.parse(
     await readFile(new URL("course-catalog.json", root), "utf8"),
   );
-  const csCourses = catalog.courses.filter((course) =>
-    course.paths.includes("Computer Science"),
+  const csCourses = catalog.courses.filter(
+    (course) =>
+      course.area === "Computer Science" ||
+      course.subject === "Computer Architecture" ||
+      course.subject.includes("Cybersecurity"),
   );
   assert.ok(csCourses.length >= 8);
+  assert.ok(
+    csCourses.every((course) =>
+      course.paths.includes("Computing & Engineering"),
+    ),
+  );
   for (const id of [
     "full-programming-foundations",
     "full-algorithm-analysis",
     "full-relational-data-management",
     "full-ai-search-foundations",
+    "full-operating-systems-processes-memory",
+    "full-computer-networks-tcp-routing",
+    "full-compiler-design-front-end",
+    "full-distributed-systems-consensus",
+    "full-analog-circuits-rc-filters",
+    "full-signals-sampling-fourier",
+    "full-fluid-mechanics-continuity-bernoulli",
+    "full-solid-mechanics-stress-strain",
   ]) {
     assert.equal(
       catalog.courses.find((course) => course.id === id)?.format,

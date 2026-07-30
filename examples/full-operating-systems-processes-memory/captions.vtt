@@ -1,0 +1,644 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:04.445
+NARRATOR: Begin by visualizing two distinct
+execution environments operating
+
+2
+00:00:04.445 --> 00:00:06.887
+simultaneously on the same hardware.
+
+3
+00:00:06.887 --> 00:00:12.335
+NARRATOR: User mode handles everyday
+application logic, while kernel mode manages
+
+4
+00:00:12.335 --> 00:00:15.306
+hardware resources and enforces security
+boundaries.
+
+5
+00:00:15.306 --> 00:00:20.777
+NARRATOR: When a user program needs to access
+protected services, it deliberately triggers a
+
+6
+00:00:20.777 --> 00:00:23.903
+system call that transfers control into the
+kernel.
+
+7
+00:00:23.903 --> 00:00:28.711
+NARRATOR: This deliberate handoff prevents
+unauthorized hardware manipulation.
+
+8
+00:00:28.711 --> 00:00:33.555
+NARRATOR: Imagine a web browser requesting a
+network socket; the browser code cannot
+
+9
+00:00:33.555 --> 00:00:35.790
+directly talk to the network card.
+
+10
+00:00:35.790 --> 00:00:41.977
+NARRATOR: Instead, it issues a system call,
+causing the CPU to switch to kernel mode,
+
+11
+00:00:41.977 --> 00:00:46.926
+where the OS validates the request and
+executes the appropriate hardware driver.
+
+12
+00:00:46.926 --> 00:00:53.394
+NARRATOR: This separation ensures that a buggy
+application cannot crash the entire system or
+
+13
+00:00:53.394 --> 00:00:55.242
+access another program's data.
+
+14
+00:00:55.242 --> 00:00:59.965
+NARRATOR: The kernel acts as a strict
+gatekeeper, only allowing operations that
+
+15
+00:00:59.965 --> 00:01:00.752
+follow defined,
+
+16
+00:01:00.866 --> 00:01:06.232
+NARRATOR: Next, observe how the kernel manages
+multiple applications running on a single
+
+17
+00:01:06.232 --> 00:01:06.645
+processor.
+
+18
+00:01:06.645 --> 00:01:11.680
+NARRATOR: When one program finishes its
+current task or waits for input, the scheduler
+
+19
+00:01:11.680 --> 00:01:13.838
+must pause it and start another.
+
+20
+00:01:13.838 --> 00:01:16.759
+NARRATOR: This transition is called a context
+switch.
+
+21
+00:01:16.759 --> 00:01:22.669
+NARRATOR: During this moment, the kernel saves
+the complete register state of the paused
+
+22
+00:01:22.669 --> 00:01:25.624
+process, including instruction pointers and
+stack addresses.
+
+23
+00:01:25.624 --> 00:01:29.247
+NARRATOR: It then restores the saved registers
+of the next process.
+
+24
+00:01:29.247 --> 00:01:34.649
+NARRATOR: Think of it like a theater stage
+manager who saves every actor's costume and
+
+25
+00:01:34.649 --> 00:01:36.810
+notes before calling the next performer.
+
+26
+00:01:36.810 --> 00:01:42.703
+NARRATOR: If the kernel failed to save these
+registers, the next program would resume with
+
+27
+00:01:42.703 --> 00:01:44.668
+corrupted data or crash immediately.
+
+28
+00:01:44.668 --> 00:01:50.941
+NARRATOR: The scheduler continuously evaluates
+which process is ready to run, ensuring fair
+
+29
+00:01:50.941 --> 00:01:53.354
+CPU distribution without manual intervention.
+
+30
+00:01:53.354 --> 00:01:59.039
+NARRATOR: This automatic handoff keeps the
+system responsive even when dozens of
+
+31
+00:01:59.039 --> 00:01:59.986
+applications compete.
+
+32
+00:02:00.146 --> 00:02:05.079
+NARRATOR: Consider how the CPU actually
+recognizes when to pause user code and enter
+
+33
+00:02:05.079 --> 00:02:05.784
+the kernel.
+
+34
+00:02:05.784 --> 00:02:09.522
+NARRATOR: This happens through a hardware
+mechanism called a trap.
+
+35
+00:02:09.522 --> 00:02:14.735
+NARRATOR: Traps are not just for system calls;
+they also handle device interrupts and memory
+
+36
+00:02:14.735 --> 00:02:15.083
+faults.
+
+37
+00:02:15.083 --> 00:02:19.979
+NARRATOR: When a trap occurs, the CPU
+automatically switches to kernel mode and
+
+38
+00:02:19.979 --> 00:02:22.238
+jumps to a specific handler routine.
+
+39
+00:02:22.238 --> 00:02:27.811
+NARRATOR: Imagine a doorbell ringing in a
+house: the resident (user mode) is
+
+40
+00:02:27.811 --> 00:02:32.098
+interrupted, and the homeowner (kernel) comes
+to check the source.
+
+41
+00:02:32.098 --> 00:02:37.504
+NARRATOR: This unified trap mechanism
+simplifies OS design because the same hardware
+
+42
+00:02:37.504 --> 00:02:42.009
+signal can trigger different software
+responses depending on the context.
+
+43
+00:02:42.009 --> 00:02:47.882
+NARRATOR: Whether it is a keyboard press, a
+disk error, or a network request, the trap
+
+44
+00:02:47.882 --> 00:02:51.919
+ensures the kernel intercepts the event before
+it disrupts normal execution.
+
+45
+00:02:52.034 --> 00:02:58.372
+NARRATOR: Now, examine how the OS maps the
+vast virtual address space of a program to
+
+46
+00:02:58.372 --> 00:02:59.560
+limited physical memory.
+
+47
+00:02:59.560 --> 00:03:04.573
+NARRATOR: Each process maintains its own page
+table, which acts like a detailed directory.
+
+48
+00:03:04.573 --> 00:03:09.896
+NARRATOR: When the program accesses a specific
+virtual address, the hardware consults this
+
+49
+00:03:09.896 --> 00:03:12.762
+table to find the corresponding physical
+location.
+
+50
+00:03:12.762 --> 00:03:17.975
+NARRATOR: If the page is not currently loaded
+in RAM, the kernel triggers a page fault and
+
+51
+00:03:17.975 --> 00:03:19.815
+loads the required data from disk.
+
+52
+00:03:19.815 --> 00:03:25.333
+NARRATOR: This translation happens
+transparently, allowing programs to use large,
+
+53
+00:03:25.333 --> 00:03:30.300
+contiguous address spaces without worrying
+about physical memory constraints.
+
+54
+00:03:30.300 --> 00:03:35.657
+NARRATOR: Imagine a library catalog that
+translates shelf locations into actual room
+
+55
+00:03:35.657 --> 00:03:36.103
+numbers.
+
+56
+00:03:36.103 --> 00:03:41.866
+NARRATOR: Without this system, programs would
+need to manually calculate every memory
+
+57
+00:03:41.866 --> 00:03:44.267
+address, making development nearly impossible.
+
+58
+00:03:44.267 --> 00:03:49.936
+NARRATOR: The page table ensures that virtual
+addresses remain stable while physical memory
+
+59
+00:03:49.936 --> 00:03:51.244
+is dynamically managed.
+
+60
+00:03:51.386 --> 00:03:57.584
+NARRATOR: Virtual memory extends this
+translation system to guarantee strict process
+
+61
+00:03:57.584 --> 00:03:58.147
+isolation.
+
+62
+00:03:58.147 --> 00:04:03.818
+NARRATOR: Each process receives its own
+private address space, meaning one program
+
+63
+00:04:03.818 --> 00:04:07.126
+cannot accidentally or maliciously read
+another's data.
+
+64
+00:04:07.126 --> 00:04:12.354
+NARRATOR: The kernel controls which physical
+pages are mapped to which virtual addresses,
+
+65
+00:04:12.354 --> 00:04:14.767
+allowing it to enforce security boundaries.
+
+66
+00:04:14.767 --> 00:04:20.570
+NARRATOR: When a process terminates, the
+kernel simply removes its page table entries,
+
+67
+00:04:20.570 --> 00:04:22.356
+instantly freeing the memory.
+
+68
+00:04:22.356 --> 00:04:27.394
+NARRATOR: This design enables multiple
+applications to run simultaneously without
+
+69
+00:04:27.394 --> 00:04:30.417
+interfering with each other's data structures.
+
+70
+00:04:30.417 --> 00:04:35.268
+NARRATOR: Imagine separate rooms in a building
+where each resident has their own private
+
+71
+00:04:35.268 --> 00:04:38.733
+space, but the building manager controls which
+rooms are open.
+
+72
+00:04:38.733 --> 00:04:44.040
+NARRATOR: This isolation prevents data
+corruption and ensures system stability, even
+
+73
+00:04:44.040 --> 00:04:46.935
+when applications crash or behave
+unpredictably.
+
+74
+00:04:47.066 --> 00:04:50.434
+NARRATOR: Let's trace how a new process begins
+execution.
+
+75
+00:04:50.434 --> 00:04:55.478
+NARRATOR: When a program calls fork, the
+kernel creates a new process image that is a
+
+76
+00:04:55.478 --> 00:04:57.054
+logical copy of the parent.
+
+77
+00:04:57.054 --> 00:05:02.743
+NARRATOR: The child receives a unique process
+identifier and starts executing independently.
+
+78
+00:05:02.743 --> 00:05:07.653
+NARRATOR: This duplication happens at the
+process level, not the memory level.
+
+79
+00:05:07.653 --> 00:05:13.015
+NARRATOR: Imagine a photocopy machine that
+duplicates the entire document but allows the
+
+80
+00:05:13.015 --> 00:05:15.077
+copy to be edited separately.
+
+81
+00:05:15.077 --> 00:05:21.234
+NARRATOR: The parent and child now follow
+different execution paths, each managing its
+
+82
+00:05:21.234 --> 00:05:22.181
+own resources.
+
+83
+00:05:22.181 --> 00:05:27.092
+NARRATOR: This mechanism enables parallel
+execution and modular program design.
+
+84
+00:05:27.092 --> 00:05:32.175
+NARRATOR: The kernel ensures that the child
+process has all the necessary initialization
+
+85
+00:05:32.175 --> 00:05:36.867
+data to start correctly, while maintaining
+strict separation from the parent's subsequent
+
+86
+00:05:36.867 --> 00:05:37.258
+operations.
+
+87
+00:05:37.370 --> 00:05:42.850
+NARRATOR: After the fork operation completes,
+the parent and child processes receive
+
+88
+00:05:42.850 --> 00:05:44.220
+different return values.
+
+89
+00:05:44.220 --> 00:05:49.847
+NARRATOR: This distinction allows each process
+to immediately determine its role and choose
+
+90
+00:05:49.847 --> 00:05:51.146
+its execution path.
+
+91
+00:05:51.146 --> 00:05:55.808
+NARRATOR: The parent typically continues with
+its original task, while the child branches
+
+92
+00:05:55.808 --> 00:05:57.243
+into a new routine.
+
+93
+00:05:57.243 --> 00:06:02.408
+NARRATOR: Imagine a traffic light system where
+the main controller sends a signal to a side
+
+94
+00:06:02.408 --> 00:06:05.636
+car, allowing the side car to take a different
+route.
+
+95
+00:06:05.636 --> 00:06:10.910
+NARRATOR: This return value mechanism enables
+flexible program architecture, allowing
+
+96
+00:06:10.910 --> 00:06:16.184
+developers to implement complex workflows
+without hardcoding every possible scenario.
+
+97
+00:06:16.184 --> 00:06:21.742
+NARRATOR: The kernel ensures that the return
+values are correctly passed through the system
+
+98
+00:06:21.742 --> 00:06:25.712
+call interface, maintaining the expected
+behavior across different operating systems.
+
+99
+00:06:25.850 --> 00:06:30.850
+NARRATOR: When a process is created, it
+inherits certain resources from its parent,
+
+100
+00:06:30.850 --> 00:06:33.542
+such as file descriptors and memory mappings.
+
+101
+00:06:33.542 --> 00:06:38.362
+NARRATOR: These inherited resources follow
+strict sharing rules that determine whether
+
+102
+00:06:38.362 --> 00:06:40.991
+they are duplicated, shared, or restricted.
+
+103
+00:06:40.991 --> 00:06:46.529
+NARRATOR: Imagine a family recipe book where
+each family member gets a copy, but some pages
+
+104
+00:06:46.529 --> 00:06:48.606
+are marked as shared for collaboration.
+
+105
+00:06:48.606 --> 00:06:53.628
+NARRATOR: The kernel enforces these rules to
+prevent resource leaks and ensure proper
+
+106
+00:06:53.628 --> 00:06:54.014
+cleanup.
+
+107
+00:06:54.014 --> 00:06:58.290
+NARRATOR: If a parent closes a file
+descriptor, the child may still access it
+
+108
+00:06:58.290 --> 00:06:59.817
+depending on the sharing mode.
+
+109
+00:06:59.817 --> 00:07:05.096
+NARRATOR: This inheritance model allows
+applications to pass resources between
+
+110
+00:07:05.096 --> 00:07:09.320
+processes efficiently while maintaining
+control over access permissions.
+
+111
+00:07:09.320 --> 00:07:13.522
+NARRATOR: The kernel tracks these references
+to ensure they are released when no longer
+
+112
+00:07:13.522 --> 00:07:13.822
+needed.
+
+113
+00:07:13.970 --> 00:07:19.366
+NARRATOR: To improve efficiency, many systems
+implement copy-on-write virtual memory.
+
+114
+00:07:19.366 --> 00:07:24.813
+NARRATOR: Instead of duplicating all memory
+pages when a process forks, the kernel shares
+
+115
+00:07:24.813 --> 00:07:27.925
+the same physical pages between parent and
+child.
+
+116
+00:07:27.925 --> 00:07:31.700
+NARRATOR: Pages are only copied when one
+process attempts to write to them.
+
+117
+00:07:31.700 --> 00:07:38.226
+NARRATOR: Imagine two readers sharing a single
+textbook; they can read simultaneously without
+
+118
+00:07:38.226 --> 00:07:38.728
+duplication.
+
+119
+00:07:38.728 --> 00:07:44.697
+NARRATOR: If one reader tries to edit a page,
+the system creates a private copy for that
+
+120
+00:07:44.697 --> 00:07:45.399
+specific page.
+
+121
+00:07:45.399 --> 00:07:50.743
+NARRATOR: This optimization reduces memory
+usage and speeds up process creation.
+
+122
+00:07:50.743 --> 00:07:55.759
+NARRATOR: However, the kernel must carefully
+track write attempts to ensure the original
+
+123
+00:07:55.759 --> 00:07:58.460
+data remains intact for the other process.
+
+124
+00:07:58.460 --> 00:08:04.049
+NARRATOR: This approach preserves the expected
+process behavior while maximizing resource
+
+125
+00:08:04.049 --> 00:08:04.557
+efficiency.
+
+126
+00:08:04.682 --> 00:08:09.639
+NARRATOR: Finally, consider the complete
+lifecycle of a process from creation to
+
+127
+00:08:09.639 --> 00:08:10.052
+termination.
+
+128
+00:08:10.052 --> 00:08:15.109
+NARRATOR: The kernel manages execution
+replacement, waiting states, and termination
+
+129
+00:08:15.109 --> 00:08:18.649
+events, ensuring that resources are properly
+reclaimed.
+
+130
+00:08:18.649 --> 00:08:24.136
+NARRATOR: If a process crashes or exits
+unexpectedly, the kernel must handle the
+
+131
+00:08:24.136 --> 00:08:27.935
+failure gracefully, cleaning up memory and
+releasing file descriptors.
+
+132
+00:08:27.935 --> 00:08:33.299
+NARRATOR: Imagine a theater production where
+actors leave early; the stage manager must
+
+133
+00:08:33.299 --> 00:08:36.188
+reset the set and notify other performers.
+
+134
+00:08:36.188 --> 00:08:42.050
+NARRATOR: The kernel tracks every resource
+ownership and failure case to maintain system
+
+135
+00:08:42.050 --> 00:08:42.501
+stability.
+
+136
+00:08:42.501 --> 00:08:47.263
+NARRATOR: This disciplined lifecycle
+management prevents memory leaks and ensures
+
+137
+00:08:47.263 --> 00:08:52.501
+that the operating system remains responsive
+even when applications encounter errors.

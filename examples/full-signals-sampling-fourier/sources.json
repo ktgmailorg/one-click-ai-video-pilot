@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "mit-signals",
+      "title": "MIT 6.003 Signals and Systems",
+      "uri": "https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/",
+      "author": "MIT OpenCourseWare",
+      "content": "MIT 6.003 covers continuous-time and discrete-time signals; complex exponential representations; linear, time-invariant systems; differential and difference equations; convolution; impulse, step, and frequency responses; Fourier, Laplace, and Z-transform representations; and sampling. An LTI system is characterized by its response to an impulse, and convolution combines that impulse response with an arbitrary input. Complex exponentials are eigenfunctions of LTI systems, so frequency response describes how magnitude and phase change by frequency. Equivalent time- and frequency-domain views should produce consistent predictions.",
+      "type": "note",
+      "verified": true
+    },
+    {
+      "id": "mit-sampling",
+      "title": "MIT 6.003 Lecture 21: Sampling",
+      "uri": "https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/12e6e5d7567fca2e993ef8563fef5a60_MIT6_003F11_lec21.pdf",
+      "author": "MIT OpenCourseWare",
+      "content": "Sampling represents a continuous-time signal by values taken at discrete times. Periodic sampling creates repeated copies of the signal spectrum separated by the sampling frequency. If those copies overlap, different continuous frequencies become indistinguishable after sampling; this is aliasing. A bandlimited signal can be reconstructed when the sample rate and anti-alias filtering prevent spectral overlap. Increasing sample rate does not repair aliasing that already occurred before conversion. A correct workflow identifies the signal bandwidth, applies appropriate analog filtering, selects a sample rate with margin, and verifies reconstruction assumptions.",
+      "type": "note",
+      "verified": true
+    }
+  ]
+}

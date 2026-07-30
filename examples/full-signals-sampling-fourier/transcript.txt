@@ -1,0 +1,253 @@
+NARRATOR: We begin by distinguishing how signals exist in time.
+
+NARRATOR: A continuous signal varies smoothly without interruption, like the voltage across
+
+a capacitor charging gradually.
+
+NARRATOR: Mathematically, we describe it with a function that accepts any real number for
+
+time.
+
+NARRATOR: A discrete signal, however, only exists at specific, separate moments.
+
+NARRATOR: Think of a metronome ticking or a digital audio file recording sound only at
+
+fixed intervals.
+
+NARRATOR: The key difference lies in the domain: continuous signals use real-valued
+
+time, while discrete signals use integer indices.
+
+NARRATOR: This distinction shapes how we analyze, store, and process information in
+
+engineering systems.
+
+NARRATOR: Understanding this boundary is essential before we model how systems respond
+
+to these different input types.
+
+NARRATOR: Next, we model how systems process these signals.
+
+NARRATOR: A linear time-invariant system behaves consistently regardless of when you
+
+apply an input.
+
+NARRATOR: Linearity means doubling the input doubles the output, and time-invariance means
+
+the system's behavior doesn't shift over time.
+
+NARRATOR: We characterize such systems using differential equations for continuous domains
+
+or difference equations for discrete domains.
+
+NARRATOR: These equations capture how the system's internal state evolves.
+
+NARRATOR: By solving them, we predict output behavior without simulating every possible
+
+input.
+
+NARRATOR: This mathematical framework allows us to analyze complex circuits or
+
+communication channels using fundamental building blocks rather than trial-and-error
+
+experimentation.
+
+NARRATOR: To fully understand an LTI system, we examine its response to a single,
+
+instantaneous spike called an impulse.
+
+NARRATOR: This impulse response reveals exactly how the system reacts to any arbitrary
+
+input.
+
+NARRATOR: When we feed a general signal into the system, the output emerges from combining
+
+the impulse response with the input through convolution.
+
+NARRATOR: Convolution mathematically slides the impulse response across the input, scales
+
+it, and sums the products at each time point.
+
+NARRATOR: This operation captures how past inputs influence the current output.
+
+NARRATOR: By mastering convolution, we can predict system behavior for complex waveforms
+
+without solving differential equations from scratch, making it a cornerstone of signal
+
+processing analysis.
+
+NARRATOR: To analyze signals across frequencies, we use complex exponentials.
+
+NARRATOR: These functions oscillate with constant magnitude while rotating in the
+
+complex plane, making them ideal for representing sinusoidal waves.
+
+NARRATOR: The Fourier representation decomposes any signal into a sum of these
+
+complex exponentials, revealing its frequency content.
+
+NARRATOR: Instead of working with time-domain waveforms, we shift to the frequency domain
+
+where signals become vectors of complex coefficients.
+
+NARRATOR: This transformation simplifies system analysis because multiplication in the
+
+frequency domain corresponds to convolution in the time domain.
+
+NARRATOR: Engineers use this view to design filters and modulators by manipulating
+
+frequency components directly rather than solving differential equations.
+
+NARRATOR: The frequency response describes how an LTI system modifies different frequency
+
+components.
+
+NARRATOR: It shows both magnitude attenuation and phase shift across the spectrum.
+
+NARRATOR: When a signal passes through a system, each complex exponential component
+
+gets scaled and rotated according to the system's frequency response at that specific
+
+frequency.
+
+NARRATOR: This means filters can selectively amplify or suppress certain frequencies while
+
+preserving others.
+
+NARRATOR: By examining the magnitude plot, we see which frequencies pass through unchanged,
+
+and the phase plot reveals timing delays.
+
+NARRATOR: Consistent predictions between time and frequency domains confirm our model
+
+accurately captures the system's behavior, allowing reliable design of audio equalizers
+
+or communication channels.
+
+NARRATOR: When we convert a continuous signal to digital form, we sample it at regular
+
+intervals.
+
+NARRATOR: This process creates repeated copies of the original spectrum, spaced by the
+
+sampling frequency.
+
+NARRATOR: Each copy represents the same frequency content but shifted in the frequency
+
+domain.
+
+NARRATOR: If the original signal contains frequencies higher than half the sampling
+
+rate, these shifted copies will overlap with the base spectrum.
+
+NARRATOR: This overlap makes distinct frequencies indistinguishable after sampling,
+
+a phenomenon called aliasing.
+
+NARRATOR: To prevent this, we must ensure the signal is bandlimited and apply anti-aliasing
+
+filters before sampling.
+
+NARRATOR: Proper sampling preserves the original frequency information without
+
+distortion.
+
+NARRATOR: Reconstructing a continuous signal from discrete samples requires careful
+
+workflow planning.
+
+NARRATOR: First, we identify the signal's maximum frequency to determine its bandwidth.
+
+NARRATOR: Next, we apply an analog low-pass filter to remove frequencies above half the
+
+sampling rate, preventing spectral overlap.
+
+NARRATOR: We then select a sample rate with sufficient margin to avoid aliasing entirely.
+
+NARRATOR: Finally, we verify that the reconstruction process accurately recovers the
+
+original waveform.
+
+NARRATOR: Increasing the sample rate after aliasing has occurred cannot repair the lost
+
+information, as the overlapping frequencies are permanently mixed.
+
+NARRATOR: This systematic approach ensures digital systems faithfully represent analog
+
+signals for further processing or storage.
+
+NARRATOR: Let's trace a single sinusoidal signal through a practical filter and sampler.
+
+NARRATOR: The input is a pure tone at a specific frequency.
+
+NARRATOR: The filter first shapes the spectrum, attenuating unwanted frequencies
+
+while preserving the target tone.
+
+NARRATOR: The sampler then captures this filtered signal at discrete time points.
+
+NARRATOR: If the tone's frequency falls within the passband and below the Nyquist limit, the
+
+sampled values will accurately represent the original wave.
+
+NARRATOR: We can verify this by reconstructing the samples and comparing them to the input.
+
+NARRATOR: This end-to-end trace demonstrates how filtering and sampling work together to
+
+preserve frequency information while enabling digital processing.
+
+NARRATOR: Engineers use this principle to design communication systems that transmit
+
+audio or data without distortion.
+
+NARRATOR: A fundamental principle in signals and systems is that equivalent time- and
+
+frequency-domain views must produce consistent predictions.
+
+NARRATOR: When we analyze a system using differential equations in the time domain, we
+
+should get the same output as when we use convolution with the impulse response.
+
+NARRATOR: Similarly, frequency-domain multiplication should match time-domain
+
+results.
+
+NARRATOR: This consistency allows engineers to switch between domains based on which is
+
+mathematically simpler.
+
+NARRATOR: For example, we might solve a complex circuit using Laplace transforms in
+
+the frequency domain, then verify the results by simulating the time-domain response.
+
+NARRATOR: This cross-validation ensures our models accurately capture physical behavior
+
+and prevents design errors in real-world applications.
+
+NARRATOR: To apply these concepts, we use a practical analysis checklist.
+
+NARRATOR: First, identify whether the signal is continuous or discrete and determine its
+
+bandwidth.
+
+NARRATOR: Next, model the system as LTI and obtain its impulse response.
+
+NARRATOR: Verify that the signal frequency falls within the passband and below the
+
+Nyquist rate.
+
+NARRATOR: Apply anti-aliasing filtering if necessary, then select a sample rate with
+
+margin.
+
+NARRATOR: Finally, trace the signal through the filter and sampler, checking that
+
+reconstructed values match the original.
+
+NARRATOR: This checklist ensures systematic design, prevents aliasing, and validates
+
+frequency preservation.
+
+NARRATOR: By following these steps, engineers can confidently build reliable signal
+
+processing systems that meet performance requirements across diverse applications.

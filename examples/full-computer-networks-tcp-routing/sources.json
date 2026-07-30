@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "rfc-9293",
+      "title": "RFC 9293: Transmission Control Protocol",
+      "uri": "https://www.rfc-editor.org/rfc/rfc9293.html",
+      "author": "IETF",
+      "content": "RFC 9293 specifies TCP as a reliable, in-order byte-stream protocol between endpoints. Connections use sequence numbers, acknowledgments, checksums, retransmission, receive windows, and a defined state machine. TCP segments travel inside an internet protocol and may be lost, duplicated, delayed, or reordered. Reliability is therefore an endpoint behavior rather than a property guaranteed by each link. Acknowledgments identify received sequence space, timers trigger retransmission, and flow control prevents a sender from overrunning receiver capacity. Connection establishment and termination use explicit state transitions, and robust implementations must handle duplicate or unexpected segments according to the specification.",
+      "type": "note",
+      "verified": true
+    },
+    {
+      "id": "rfc-8200",
+      "title": "RFC 8200: Internet Protocol, Version 6",
+      "uri": "https://www.rfc-editor.org/rfc/rfc8200.html",
+      "author": "IETF",
+      "content": "RFC 8200 specifies IPv6. An IPv6 packet has a fixed base header containing source and destination addresses, payload length, next-header information, hop limit, and traffic-related fields. Routers forward packets toward a destination while decrementing the hop limit; they do not provide TCP-style reliability. Extension headers carry optional internet-layer information in a defined order. The network layer offers best-effort datagram delivery, while transport protocols and applications decide how to detect and recover from loss. Layered reasoning separates a local link frame, an IP packet forwarded across networks, and the transport data interpreted only at endpoints.",
+      "type": "note",
+      "verified": true
+    }
+  ]
+}

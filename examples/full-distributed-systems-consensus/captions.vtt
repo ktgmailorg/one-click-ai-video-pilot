@@ -1,0 +1,554 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:07.807
+NARRATOR: Distributed systems operate across
+multiple networked computers where components
+
+2
+00:00:07.807 --> 00:00:10.910
+inevitably experience partial failure.
+
+3
+00:00:10.910 --> 00:00:18.803
+NARRATOR: When a node slows down, it becomes
+indistinguishable from a crashed server,
+
+4
+00:00:18.803 --> 00:00:24.875
+forcing designers to make explicit assumptions
+about timing and communication.
+
+5
+00:00:24.875 --> 00:00:33.607
+NARRATOR: This uncertainty means we cannot
+rely on simple timeouts to detect outages.
+
+6
+00:00:33.607 --> 00:00:42.471
+NARRATOR: Instead, we must design protocols
+that tolerate delayed messages, duplicated
+
+7
+00:00:42.471 --> 00:00:46.500
+transmissions, and unpredictable network
+schedules.
+
+8
+00:00:46.500 --> 00:00:54.357
+NARRATOR: Understanding these constraints is
+the first step toward building reliable
+
+9
+00:00:54.357 --> 00:01:01.500
+consensus mechanisms that survive real-world
+network chaos without assuming perfect
+
+10
+00:01:01.500 --> 00:01:05.071
+synchronization or instantaneous failure
+detection.
+
+11
+00:01:05.210 --> 00:01:11.841
+NARRATOR: To guarantee consistency across
+multiple nodes, we replicate state machines
+
+12
+00:01:11.841 --> 00:01:17.267
+that process identical operations in the exact
+same order.
+
+13
+00:01:17.267 --> 00:01:25.190
+NARRATOR: Each server maintains a local copy
+of the system state, but the critical
+
+14
+00:01:25.190 --> 00:01:31.981
+challenge is ensuring they apply operations in
+identical sequences despite network delays.
+
+15
+00:01:31.981 --> 00:01:39.064
+NARRATOR: If servers apply commands
+differently, the system diverges into
+
+16
+00:01:39.064 --> 00:01:40.481
+conflicting states.
+
+17
+00:01:40.481 --> 00:01:48.794
+NARRATOR: By forcing all nodes to execute the
+same sequence of operations, we eliminate
+
+18
+00:01:48.794 --> 00:01:49.981
+state divergence.
+
+19
+00:01:49.981 --> 00:01:56.747
+NARRATOR: This approach transforms distributed
+coordination into a single-threaded execution
+
+20
+00:01:56.747 --> 00:02:05.543
+problem, where correctness depends entirely on
+the order of applied operations rather than
+
+21
+00:02:05.543 --> 00:02:08.249
+complex distributed state synchronization.
+
+22
+00:02:08.402 --> 00:02:15.415
+NARRATOR: To enforce identical execution
+order, we use a replicated log where every
+
+23
+00:02:15.415 --> 00:02:19.191
+command is appended as a sequential entry.
+
+24
+00:02:19.191 --> 00:02:27.347
+NARRATOR: Each log entry contains a unique
+term number and a sequence index, creating a
+
+25
+00:02:27.347 --> 00:02:30.066
+total order across all servers.
+
+26
+00:02:30.066 --> 00:02:37.392
+NARRATOR: When a client submits a request, the
+leader appends it to its log before
+
+27
+00:02:37.392 --> 00:02:38.369
+acknowledging success.
+
+28
+00:02:38.369 --> 00:02:45.334
+NARRATOR: Followers replicate the entry by
+appending it to their own logs at the same
+
+29
+00:02:45.334 --> 00:02:45.798
+index.
+
+30
+00:02:45.798 --> 00:02:52.736
+NARRATOR: This log structure ensures that
+every server records the exact same operations
+
+31
+00:02:52.736 --> 00:02:55.405
+in the exact same order.
+
+32
+00:02:55.405 --> 00:03:04.311
+NARRATOR: The log becomes the single source of
+truth for system state, preventing conflicting
+
+33
+00:03:04.311 --> 00:03:10.673
+histories and enabling reliable recovery after
+crashes or network partitions.
+
+34
+00:03:10.826 --> 00:03:17.579
+NARRATOR: A leader is elected to coordinate
+log replication and client requests.
+
+35
+00:03:17.579 --> 00:03:25.030
+NARRATOR: Servers start as followers and
+transition to candidates when they miss
+
+36
+00:03:25.030 --> 00:03:25.651
+heartbeats.
+
+37
+00:03:25.651 --> 00:03:34.347
+NARRATOR: Randomized election timeouts prevent
+split votes by staggering candidate timeouts.
+
+38
+00:03:34.347 --> 00:03:42.038
+NARRATOR: When a candidate requests votes, it
+increments a term number and includes its
+
+39
+00:03:42.038 --> 00:03:43.686
+log's last entry.
+
+40
+00:03:43.686 --> 00:03:50.883
+NARRATOR: Followers grant votes only if the
+candidate's log is at least as up-to-date.
+
+41
+00:03:50.883 --> 00:03:58.133
+NARRATOR: Once a candidate receives votes from
+a majority, it becomes leader for that term.
+
+42
+00:03:58.133 --> 00:04:05.901
+NARRATOR: Terms provide a logical clock that
+prevents stale leaders from interfering with
+
+43
+00:04:05.901 --> 00:04:14.267
+newer elections, ensuring only the most recent
+leader can commit entries and maintain system
+
+44
+00:04:14.267 --> 00:04:14.865
+progress.
+
+45
+00:04:15.002 --> 00:04:23.521
+NARRATOR: Progress requires a majority quorum
+of nodes to agree on log entries and
+
+46
+00:04:23.521 --> 00:04:24.130
+leadership.
+
+47
+00:04:24.130 --> 00:04:32.755
+NARRATOR: A majority ensures that any two
+quorums share at least one node, preventing
+
+48
+00:04:32.755 --> 00:04:33.987
+conflicting decisions.
+
+49
+00:04:33.987 --> 00:04:41.386
+NARRATOR: If a network partition isolates a
+minority, the majority partition continues
+
+50
+00:04:41.386 --> 00:04:44.469
+operating while the minority stalls.
+
+51
+00:04:44.469 --> 00:04:51.434
+NARRATOR: This design prioritizes safety over
+availability during splits.
+
+52
+00:04:51.434 --> 00:04:57.420
+NARRATOR: The quorum requirement guarantees
+that committed entries are durable across
+
+53
+00:04:57.420 --> 00:05:02.862
+restarts and that only one leader can exist
+per term.
+
+54
+00:05:02.862 --> 00:05:11.172
+NARRATOR: Without a majority, the system
+cannot safely commit operations or elect a new
+
+55
+00:05:11.172 --> 00:05:17.702
+leader, ensuring that conflicting histories
+are never permitted during network failures.
+
+56
+00:05:17.858 --> 00:05:25.808
+NARRATOR: The leader replicates log entries to
+followers by sending AppendEntries RPCs.
+
+57
+00:05:25.808 --> 00:05:34.744
+NARRATOR: Each RPC includes the leader's term,
+the index of the entry to replicate, and the
+
+58
+00:05:34.744 --> 00:05:35.861
+entry itself.
+
+59
+00:05:35.861 --> 00:05:41.611
+NARRATOR: Followers respond with success or
+failure based on log matching.
+
+60
+00:05:41.611 --> 00:05:49.429
+NARRATOR: If a follower's log conflicts, the
+leader backs off and retries with a lower
+
+61
+00:05:49.429 --> 00:05:49.950
+index.
+
+62
+00:05:49.950 --> 00:05:56.843
+NARRATOR: This process ensures all followers
+eventually match the leader's log.
+
+63
+00:05:56.843 --> 00:06:04.648
+NARRATOR: The log-matching property guarantees
+that if two logs contain an entry with the
+
+64
+00:06:04.648 --> 00:06:09.665
+same index and term, all preceding entries are
+identical.
+
+65
+00:06:09.665 --> 00:06:17.211
+NARRATOR: This property enables reliable
+recovery and prevents divergent states during
+
+66
+00:06:17.211 --> 00:06:26.129
+message loss or server restarts, maintaining a
+consistent replicated log across the cluster.
+
+67
+00:06:26.282 --> 00:06:33.973
+NARRATOR: An entry becomes committed when it
+is replicated to a majority of servers and the
+
+68
+00:06:33.973 --> 00:06:36.857
+leader's term matches the entry's term.
+
+69
+00:06:36.857 --> 00:06:43.821
+NARRATOR: This rule ensures that only entries
+from the current leader are committed,
+
+70
+00:06:43.821 --> 00:06:47.571
+preventing stale leaders from overwriting
+newer data.
+
+71
+00:06:47.571 --> 00:06:53.785
+NARRATOR: Once committed, the entry is applied
+to the state machine in order.
+
+72
+00:06:53.785 --> 00:07:01.435
+NARRATOR: The commit rule relies on the
+log-matching property to guarantee that all
+
+73
+00:07:01.435 --> 00:07:06.142
+servers applying the entry share identical
+preceding history.
+
+74
+00:07:06.142 --> 00:07:13.175
+NARRATOR: This prevents conflicting state
+updates and ensures that committed operations
+
+75
+00:07:13.175 --> 00:07:15.732
+are durable across crashes.
+
+76
+00:07:15.732 --> 00:07:22.764
+NARRATOR: The term-based commitment rule also
+handles leader changes gracefully, ensuring
+
+77
+00:07:22.764 --> 00:07:28.517
+that only the most recent leader's entries are
+finalized.
+
+78
+00:07:28.658 --> 00:07:35.988
+NARRATOR: Safety ensures that committed
+entries are never lost or overwritten, while
+
+79
+00:07:35.988 --> 00:07:40.875
+liveness guarantees that the system continues
+making progress.
+
+80
+00:07:40.875 --> 00:07:49.015
+NARRATOR: Raft prioritizes safety by refusing
+to commit entries from stale leaders and
+
+81
+00:07:49.015 --> 00:07:50.893
+requiring majority agreement.
+
+82
+00:07:50.893 --> 00:07:57.744
+NARRATOR: Liveness is maintained through
+randomized election timeouts and leader
+
+83
+00:07:57.744 --> 00:07:58.429
+heartbeats.
+
+84
+00:07:58.429 --> 00:08:05.792
+NARRATOR: When a leader fails, followers
+detect the absence of heartbeats and trigger
+
+85
+00:08:05.792 --> 00:08:06.358
+elections.
+
+86
+00:08:06.358 --> 00:08:14.750
+NARRATOR: If a majority is available, a new
+leader is elected and replication resumes.
+
+87
+00:08:14.750 --> 00:08:21.804
+NARRATOR: If a minority is isolated, the
+system stalls but remains safe.
+
+88
+00:08:21.804 --> 00:08:28.704
+NARRATOR: This trade-off ensures that the
+system never commits conflicting histories,
+
+89
+00:08:28.704 --> 00:08:36.858
+even at the cost of temporary unavailability
+during network partitions or leader failures.
+
+90
+00:08:37.010 --> 00:08:44.606
+NARRATOR: Clients must retry operations when
+they receive no response, but retries can
+
+91
+00:08:44.606 --> 00:08:49.281
+cause duplicate commands if the original
+request succeeded.
+
+92
+00:08:49.281 --> 00:08:56.549
+NARRATOR: To handle this, clients include a
+unique request ID with each operation.
+
+93
+00:08:56.549 --> 00:09:03.498
+NARRATOR: The server checks if the ID has
+already been processed and returns the cached
+
+94
+00:09:03.498 --> 00:09:04.888
+result if so.
+
+95
+00:09:04.888 --> 00:09:11.835
+NARRATOR: This idempotency mechanism prevents
+duplicate state updates.
+
+96
+00:09:11.835 --> 00:09:18.988
+NARRATOR: Retries are essential for
+availability during network delays or leader
+
+97
+00:09:18.988 --> 00:09:19.638
+elections.
+
+98
+00:09:19.638 --> 00:09:28.777
+NARRATOR: By combining unique request IDs with
+server-side deduplication, clients can safely
+
+99
+00:09:28.777 --> 00:09:32.585
+retry without risking conflicting operations.
+
+100
+00:09:32.585 --> 00:09:40.181
+NARRATOR: This approach ensures that clients
+can recover from transient failures while
+
+101
+00:09:40.181 --> 00:09:45.245
+maintaining system consistency and avoiding
+duplicate state mutations.
+
+102
+00:09:45.410 --> 00:09:52.590
+NARRATOR: Tracing a command through a
+three-node cluster reveals how Raft
+
+103
+00:09:52.590 --> 00:09:53.895
+coordinates consensus.
+
+104
+00:09:53.895 --> 00:10:00.938
+NARRATOR: A client sends a request to the
+leader, which appends it to its log and
+
+105
+00:10:00.938 --> 00:10:02.699
+replicates it to followers.
+
+106
+00:10:02.699 --> 00:10:09.648
+NARRATOR: Once a majority acknowledges the
+entry, the leader commits it and applies it to
+
+107
+00:10:09.648 --> 00:10:11.038
+its state machine.
+
+108
+00:10:11.038 --> 00:10:16.592
+NARRATOR: Followers apply the entry in order
+after replication.
+
+109
+00:10:16.592 --> 00:10:23.894
+NARRATOR: If the leader fails, followers
+detect the missing heartbeats and trigger
+
+110
+00:10:23.894 --> 00:10:24.502
+elections.
+
+111
+00:10:24.502 --> 00:10:31.251
+NARRATOR: A new leader is elected, and
+replication resumes from the last committed
+
+112
+00:10:31.251 --> 00:10:31.770
+entry.
+
+113
+00:10:31.770 --> 00:10:39.708
+NARRATOR: This trace demonstrates how partial
+failures, log replication, and majority
+
+114
+00:10:39.708 --> 00:10:44.038
+quorums work together to maintain consistency.
+
+115
+00:10:44.038 --> 00:10:52.534
+NARRATOR: The process ensures that every
+command is processed exactly once, even during
+
+116
+00:10:52.534 --> 00:10:59.723
+network delays or node crashes, providing a
+reliable foundation for distributed
+
+117
+00:10:59.723 --> 00:11:00.377
+applications.
