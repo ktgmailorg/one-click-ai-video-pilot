@@ -1,0 +1,229 @@
+NARRATOR: Begin by framing Introduction to Machine Learning Workflow as a question about
+
+inputs, decisions, and observable results.
+
+NARRATOR: Machine-learning workflows separate data preparation, training, validation,
+
+testing, model selection, and evaluation.
+
+NARRATOR: Consider this worked case: A developer uses a pipeline to standardize
+
+features, train a classifier, and evaluate accuracy without mixing training and testing
+
+data.
+
+NARRATOR: On screen, display a horizontal flowchart with six labeled nodes connected by
+
+arrows, representing the sequential workflow stages.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Data Preparation and Leakage Prevention precisely enough that
+
+another learner could test the definition.
+
+NARRATOR: Preprocessing must be fitted only on permitted training data to avoid leakage.
+
+NARRATOR: Consider this worked case: Scaling features using the mean and standard deviation
+
+calculated solely from the training set before splitting the data.
+
+NARRATOR: On screen, show a split diagram with 'Training Data' and 'Test Data' boxes,
+
+highlighting that preprocessing parameters are derived exclusively from the training box.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: With the foundation in place, examine how Supervised vs. Unsupervised
+
+Learning operates in a concrete sequence.
+
+NARRATOR: Supervised methods learn a mapping from examples paired with target labels.
+
+NARRATOR: Consider this worked case: Classifying email as spam or ham uses labeled
+
+data, whereas clustering customers by purchasing behavior uses unlabeled data.
+
+NARRATOR: On screen, present two side-by-side icons: a labeled dataset with a target column
+
+for supervised learning, and a scatter plot of unlabeled points for unsupervised learning.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in Statistical Analysis and Data Visualization
+
+and make the decision criteria explicit.
+
+NARRATOR: Topics include: Mathematical background of machine learning (for example
+
+statistical analysis and visualization of data), Bayesian decision theory, parametric
+
+and non-parameteric classification models (for example, SVMs and Nearest Neighbor models) and
+
+neural network models (for example Convolutional, Recurrent, and Deep Neural
+
+Networks).
+
+NARRATOR: Consider this worked case: Plotting a histogram and box plot to detect outliers
+
+and skewness before selecting a regression model.
+
+NARRATOR: On screen, render a composite image showing a histogram, a box plot, and a scatter
+
+plot with a regression line, each labeled with its statistical purpose.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Apply Bayesian Decision Theory to a worked situation instead of treating it as an
+
+isolated definition.
+
+NARRATOR: The NIST AI Risk Management Framework organizes work around Govern, Map,
+
+Measure, and Manage.
+
+NARRATOR: Consider this worked case: Calculating the posterior probability of a
+
+medical diagnosis given a test result, using prior prevalence and test
+
+sensitivity/specificity.
+
+NARRATOR: On screen, illustrate a Bayesian update cycle with three boxes: Prior,
+
+Likelihood, and Posterior, connected by arrows showing probability adjustment.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in Parametric Classification Models, including what improves
+
+and what becomes more difficult.
+
+NARRATOR: An introduction to both foundational and modern machine learning theories and
+
+algorithms, and their application in classification and regression.
+
+NARRATOR: Consider this worked case: Training an SVM on a dataset of handwritten digits to
+
+draw a hyperplane that separates correct from incorrect digit classifications.
+
+NARRATOR: On screen, draw a 2D scatter plot with a straight decision boundary line,
+
+highlighting the margin distance between the boundary and the nearest data points.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around Non-Parametric Classification Models with an
+
+edge case and identify which assumption controls the outcome.
+
+NARRATOR: Unsupervised methods identify structure without target labels.
+
+NARRATOR: Consider this worked case: Assigning a new customer to a segment by finding the
+
+three closest historical customers in feature space and taking their majority class.
+
+NARRATOR: On screen, show a 2D plot with a query point surrounded by a circle,
+
+highlighting the three nearest training points and their assigned labels.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Neural Network Architectures to diagnose a failure by separating symptoms,
+
+causes, and corrective action.
+
+NARRATOR: Risk analysis considers data quality and uncertainty.
+
+NARRATOR: Consider this worked case: Using a Convolutional Neural Network to detect edges
+
+and textures in images, or a Recurrent Neural Network to predict the next word in a sentence
+
+sequence.
+
+NARRATOR: On screen, display a simplified diagram of a three-layer neural network with
+
+input, hidden, and output nodes, showing weighted connections and activation functions.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Model Evaluation and Hyperparameter Selection to the earlier ideas
+
+and explain how the pieces work as one system.
+
+NARRATOR: Evaluation metrics must match the task and the cost of different errors.
+
+NARRATOR: Consider this worked case: Using precision and recall for imbalanced
+
+classification tasks, and tuning learning rate via cross-validation before testing on
+
+held-out data.
+
+NARRATOR: On screen, show a confusion matrix and a learning curve graph, with annotations
+
+indicating metric selection and cross-validation folds.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+
+guide a new analysis.
+
+NARRATOR: It also considers robustness, privacy, security, transparency, and fairness.
+
+NARRATOR: Consider this worked case: Before deployment, verify that preprocessing
+
+parameters were not fitted on test data, check for bias in predictions across demographic
+
+groups, and schedule post-deployment monitoring.
+
+NARRATOR: On screen, list a five-item checklist with checkboxes: Data Quality
+
+Verified, Leakage Prevented, Metrics Matched, Fairness Audited, Monitoring Scheduled.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.
