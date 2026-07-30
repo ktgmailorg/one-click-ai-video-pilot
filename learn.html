@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="A searchable, accessible learning catalog of source-grounded RIT AI Club educational video lessons."
+    >
+    <meta property="og:title" content="Learning Platform · One-Click AI Video Generator">
+    <meta
+      property="og:description"
+      content="Explore full lessons and focused learning modules with captions, transcripts, outcomes, and sources."
+    >
+    <meta property="og:image" content="https://one-click-ai-video-pilot.vercel.app/og.png">
+    <title>Learning Platform · One-Click AI Video Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./learn.js" defer></script>
+  </head>
+  <body class="learn-page">
+    <main>
+      <nav class="site-nav" aria-label="Learning platform navigation">
+        <a class="wordmark" href="./index.html" aria-label="Return to the pilot site">
+          <span class="wordmark-mark" aria-hidden="true">1</span>
+          <span>One-Click AI<small>Learning Platform</small></span>
+        </a>
+        <div class="nav-links">
+          <a href="#paths">Learning paths</a>
+          <a href="#catalog">Course catalog</a>
+          <a href="./professor-guide.html">Professor guide</a>
+          <a href="./rit-access.html">RIT sign in</a>
+          <a class="nav-cta" href="./index.html#interest">Propose a course</a>
+        </div>
+      </nav>
+
+      <header class="learn-hero">
+        <div>
+          <p class="section-kicker">Professor-ready learning catalog</p>
+          <h1>Teach, assign, and learn from one accessible catalog.</h1>
+          <p>
+            Explore full lessons and focused modules across computing,
+            engineering, science, mathematics, liberal arts, design, business,
+            health, accessibility, and sustainability. Every entry includes
+            captions, a transcript, learning outcomes, and source information.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#catalog">Browse 17 course videos <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="#paths">Choose a learning path <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <aside class="learn-progress-panel" aria-labelledby="progress-heading">
+          <div class="learn-progress-topline">
+            <span id="progress-heading">Your browser progress</span>
+            <button id="reset-progress" type="button">Reset</button>
+          </div>
+          <strong id="progress-percent">0%</strong>
+          <div
+            class="learn-progress-track"
+            role="progressbar"
+            aria-label="Course completion"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="0"
+          >
+            <span id="progress-fill"></span>
+          </div>
+          <div class="learn-progress-stats">
+            <div><b id="completed-count">0</b><span>completed</span></div>
+            <div><b id="learning-time">0 min</b><span>completed time</span></div>
+            <div><b id="catalog-count">17</b><span>available</span></div>
+          </div>
+          <p>Progress stays on this device. No learning activity is transmitted or added to an RIT record.</p>
+        </aside>
+      </header>
+
+      <section class="continue-section" id="continue-learning" hidden>
+        <div>
+          <span>Continue learning</span>
+          <strong id="continue-title"></strong>
+          <p id="continue-description"></p>
+        </div>
+        <button class="button button-primary" id="continue-button" type="button">
+          Resume lesson <span aria-hidden="true">→</span>
+        </button>
+      </section>
+
+      <section class="learn-section" id="paths">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="section-kicker">Guided learning paths</p>
+            <h2>Start with a goal, not a file list.</h2>
+          </div>
+          <p>
+            Select a path to filter the catalog. Professors can use these as
+            starting sequences, then assign individual videos or propose a new
+            source-grounded lesson for their course.
+          </p>
+        </div>
+        <div class="learning-path-grid">
+          <button type="button" data-path="STEM Foundations">
+            <span>01</span><strong>STEM Foundations</strong>
+            <small>Calculus, science, engineering, health, and computing fundamentals</small>
+          </button>
+          <button type="button" data-path="Computing &amp; Engineering">
+            <span>02</span><strong>Computing &amp; Engineering</strong>
+            <small>Architecture, cybersecurity, feedback, resonance, and technical reasoning</small>
+          </button>
+          <button type="button" data-path="Research &amp; Evidence">
+            <span>03</span><strong>Research &amp; Evidence</strong>
+            <small>Primary sources, causal claims, sustainability, business, and study design</small>
+          </button>
+          <button type="button" data-path="Visual Communication">
+            <span>04</span><strong>Visual Communication</strong>
+            <small>Design hierarchy, photography, captions, and accessible media</small>
+          </button>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="catalog">
+        <div class="catalog-heading">
+          <div>
+            <p class="section-kicker">Video course catalog</p>
+            <h2>Find the right lesson.</h2>
+          </div>
+          <p id="catalog-status" role="status" aria-live="polite">Loading course catalog…</p>
+        </div>
+
+        <form class="catalog-filters" id="catalog-filters">
+          <label class="catalog-search">
+            <span>Search</span>
+            <input id="course-search" type="search" placeholder="Title, subject, outcome, or keyword">
+          </label>
+          <label>
+            <span>Academic area</span>
+            <select id="area-filter">
+              <option value="">All areas</option>
+            </select>
+          </label>
+          <label>
+            <span>Format</span>
+            <select id="format-filter">
+              <option value="">All formats</option>
+            </select>
+          </label>
+          <label>
+            <span>Level</span>
+            <select id="level-filter">
+              <option value="">All levels</option>
+            </select>
+          </label>
+          <button type="reset">Clear filters</button>
+        </form>
+
+        <div class="active-path" id="active-path" hidden>
+          <span>Learning path</span>
+          <strong id="active-path-name"></strong>
+          <button type="button" id="clear-path">Show all courses</button>
+        </div>
+
+        <div class="course-grid" id="course-grid" aria-busy="true"></div>
+        <div class="catalog-empty" id="catalog-empty" hidden>
+          <strong>No course videos match those filters.</strong>
+          <p>Clear the filters or propose a new topic for the catalog.</p>
+          <a href="./index.html#interest">Propose a course-video pilot</a>
+        </div>
+      </section>
+
+      <section class="faculty-use-section">
+        <div>
+          <p class="section-kicker light">For faculty use</p>
+          <h2>Use a lesson as-is, assign it, or build the next one.</h2>
+        </div>
+        <ol>
+          <li><span>01</span><div><strong>Preview</strong><p>Review the complete video, transcript, learning outcomes, and sources.</p></div></li>
+          <li><span>02</span><div><strong>Approve</strong><p>Verify disciplinary accuracy, accessibility, and fit for your specific course.</p></div></li>
+          <li><span>03</span><div><strong>Assign</strong><p>Share the approved media through your normal course or Panopto workflow.</p></div></li>
+          <li><span>04</span><div><strong>Extend</strong><p>Propose a new topic using instructor-approved, non-sensitive source material.</p></div></li>
+        </ol>
+        <p class="faculty-boundary">
+          This pilot catalog is not an LMS and does not report grades,
+          enrollment, completion, or student records. Course-specific use
+          remains subject to instructor, accessibility, and release approval.
+        </p>
+      </section>
+
+      <dialog class="lesson-dialog" id="lesson-dialog" aria-labelledby="lesson-title">
+        <div class="lesson-dialog-header">
+          <div>
+            <span id="lesson-format"></span>
+            <h2 id="lesson-title"></h2>
+          </div>
+          <button id="lesson-close" type="button" aria-label="Close lesson">×</button>
+        </div>
+        <p id="lesson-description"></p>
+        <video id="lesson-video" controls playsinline preload="metadata"></video>
+        <div class="lesson-dialog-body">
+          <section>
+            <h3>Learning outcomes</h3>
+            <ul id="lesson-outcomes"></ul>
+          </section>
+          <section>
+            <h3>Learning resources</h3>
+            <div class="lesson-resource-links">
+              <a id="lesson-transcript" href="#">Transcript</a>
+              <a id="lesson-captions" href="#">Caption file</a>
+              <a id="lesson-sources" href="#">Sources</a>
+            </div>
+          </section>
+        </div>
+        <button class="lesson-complete-button" id="lesson-complete" type="button">Mark lesson complete</button>
+      </dialog>
+    </main>
+
+    <footer>
+      <span>One-Click AI Video Generator · An official project of the RIT AI Club</span>
+      <div>
+        <a href="./index.html">Pilot home</a>
+        <a href="./professor-guide.html">Professor guide</a>
+        <a href="./index.html#standards">Standards</a>
+        <a href="./index.html#interest">Propose a course</a>
+      </div>
+    </footer>
+  </body>
+</html>
