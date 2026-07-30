@@ -1,0 +1,239 @@
+NARRATOR: Begin by framing Introduction to Processor Architecture as a question about
+
+inputs, decisions, and observable results.
+
+NARRATOR: Computer Architecture is a study of the design of both modern and classic computer
+
+hardware.
+
+NARRATOR: Consider this worked case: A modern CPU processes instructions by fetching,
+
+decoding, and executing them in a pipeline, while classic architectures like the Von
+
+Neumann model separate instruction and data storage.
+
+NARRATOR: On screen, display a side-by-side diagram of a classic Von Neumann architecture
+
+and a modern pipelined CPU, highlighting the fetch-decode-execute cycle.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Registers and Data Formats precisely enough that another learner
+
+could test the definition.
+
+NARRATOR: Store instructions transfer register data to memory.
+
+NARRATOR: Consider this worked case: In RISC-V, integer registers x1 through x31 hold
+
+software-visible values, while x0 always reads as zero, ensuring predictable data handling.
+
+NARRATOR: On screen, show a register file layout with labeled x0-x31, emphasizing x0's
+
+zero-value constraint and data flow into/from memory.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: With the foundation in place, examine how Instruction Set and Operation
+
+Codes operates in a concrete sequence.
+
+NARRATOR: The RISC-V ISA defines programmer-visible instructions, registers,
+
+memory operations, control transfer, exceptions, and ordering behavior.
+
+NARRATOR: Consider this worked case: Load instructions transfer data from memory into
+
+registers, while store instructions transfer register data to memory, forming the core data
+
+movement mechanism.
+
+NARRATOR: On screen, illustrate a load/store instruction cycle with arrows showing data
+
+flow from memory to register (load) and register to memory (store).
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in Control Flow and Branching and make the
+
+decision criteria explicit.
+
+NARRATOR: Branch and jump instructions change control flow.
+
+NARRATOR: Consider this worked case: Conditional branches redirect execution to
+
+different memory addresses when specific register values meet a condition, enabling
+
+loops and decision trees.
+
+NARRATOR: On screen, draw a control flow graph with a branch instruction splitting into two
+
+paths, labeled with condition outcomes.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Apply Memory Hierarchy and Addressing to a worked situation instead of
+
+treating it as an isolated definition.
+
+NARRATOR: Topics include: a review of classical computer architectures; the design
+
+of operation codes and addressing modes, data formats, and their implementation; internal
+
+and external bus structures; architectural features to support virtual storage and
+
+page-replacement policies, high-level language features, and operating systems.
+
+NARRATOR: Consider this worked case: Direct addressing loads data from a fixed memory
+
+address into a register, while indirect addressing uses a register value as the memory
+
+address.
+
+NARRATOR: On screen, compare direct vs. indirect addressing with memory maps, showing
+
+register-to-memory address resolution steps.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in User Mode vs. Privileged Kernel Mode, including what
+
+improves and what becomes more difficult.
+
+NARRATOR: Analysis distinguishes user mode, privileged kernel code, hardware translation,
+
+interrupt state, resource ownership, and synchronization invariants.
+
+NARRATOR: Consider this worked case: User mode runs unprivileged applications, while
+
+privileged kernel code handles system calls and manages hardware resources securely.
+
+NARRATOR: On screen, show a two-tier memory model with user space and kernel space,
+
+highlighting permission bits and privilege levels.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around System Calls and Traps with an edge case and
+
+identify which assumption controls the outcome.
+
+NARRATOR: A system call transfers control from user code to a privileged kernel service.
+
+NARRATOR: Consider this worked case: When a process requests file I/O, a system call
+
+switches to kernel mode, and a trap captures registers to resume execution after
+
+completion.
+
+NARRATOR: On screen, illustrate the system call sequence: user code -> trap -> kernel
+
+service -> return to user mode, with state capture points.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Page Tables and Virtual Memory to diagnose a failure by separating symptoms,
+
+causes, and corrective action.
+
+NARRATOR: Page tables map virtual addresses to physical memory with permission bits.
+
+NARRATOR: Consider this worked case: A page table entry translates a virtual address to a
+
+physical frame, with read/write/execute bits controlling access permissions.
+
+NARRATOR: On screen, display a page table structure with virtual address bits, frame
+
+number, and permission bits, showing translation steps.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Scheduling and Context Switching to the earlier ideas and explain how
+
+the pieces work as one system.
+
+NARRATOR: The scheduler selects runnable processes and switches processor context.
+
+NARRATOR: Consider this worked case: When a process blocks on I/O, the scheduler picks
+
+another runnable process and saves the current processor state for later restoration.
+
+NARRATOR: On screen, show a process scheduler with a ready queue, blocked queue, and context
+
+switch mechanism, highlighting state preservation.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+
+guide a new analysis.
+
+NARRATOR: Architecture analysis preserves data dependencies, control dependencies, and
+
+architectural state.
+
+NARRATOR: Consider this worked case: A simulation tracks register values, memory
+
+operations, and control flow to verify that architectural state remains consistent across
+
+instructions.
+
+NARRATOR: On screen, provide a checklist template with fields for architectural state,
+
+data dependencies, control dependencies, and simulation output validation.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.

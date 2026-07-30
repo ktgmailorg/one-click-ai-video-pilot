@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "rit-csci-453",
+      "title": "RIT CSCI-453 Computer Architecture catalog description",
+      "type": "note",
+      "uri": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02=",
+      "author": "Rochester Institute of Technology",
+      "content": "Computer Architecture is a study of the design of both modern and classic computer hardware. Topics include: a review of classical computer architectures; the design of operation codes and addressing modes, data formats, and their implementation; internal and external bus structures; architectural features to support virtual storage and page-replacement policies, high-level language features, and operating systems. Students will write programs which simulate the organization of several different processor architectures to help further their understanding of design choices. Prerequisites: CSCI-352 or 4003-440 or equivalent courses. Contact Hours: Lecture 3 Typically Offered: Spring",
+      "excerpt": "Computer Architecture is a study of the design of both modern and classic computer hardware. Topics include: a review of classical computer architectures; the design of operation codes and addressing modes, data formats, and their implementation; internal and external bus structures; architectural features to support virtual storage and page-replacement policies, high-level language features, and operating systems. Students will write programs which simulate the organization of several different processor architectures to help further their understanding of design choices. Prerequisites: CSCI-352 or 4003-440 or equivalent courses. Contact Hours: Lecture 3 Typically Offered: Spring",
+      "catalogPage": 755,
+      "verified": true
+    },
+    {
+      "id": "mit-xv6-book",
+      "title": "xv6: a simple, Unix-like teaching operating system",
+      "uri": "https://pdos.csail.mit.edu/6.828/2023/xv6/book-riscv-rev3.pdf",
+      "author": "MIT PDOS",
+      "content": "The xv6 book explains processes, system calls, traps, page tables, scheduling, locking, file systems, devices, concurrency, and isolation in a small Unix-like kernel. A process combines an address space with execution state and operating-system resources. A system call transfers control from user code to a privileged kernel service. A trap records processor state so the kernel can handle a system call, exception, or interrupt. Page tables map virtual addresses to physical memory with permission bits. The scheduler selects runnable processes and switches processor context. Locks protect invariants when concurrent execution can access shared state. The file system organizes persistent data through inodes, directories, and logged updates. Analysis distinguishes user mode, privileged kernel code, hardware translation, interrupt state, resource ownership, and synchronization invariants.",
+      "type": "note",
+      "verified": true
+    },
+    {
+      "id": "riscv-unprivileged",
+      "title": "The RISC-V Instruction Set Manual, Unprivileged ISA",
+      "uri": "https://riscv.org/technical/specifications/",
+      "author": "RISC-V International",
+      "content": "The RISC-V ISA defines programmer-visible instructions, registers, memory operations, control transfer, exceptions, and ordering behavior. Integer register x0 always reads as zero, while the remaining integer registers hold software-visible values. Load instructions transfer data from memory into registers. Store instructions transfer register data to memory. Branch and jump instructions change control flow. Exceptions report conditions that require a defined transfer of control. Memory-ordering rules constrain how memory operations may be observed. Architecture analysis preserves data dependencies, control dependencies, and architectural state.",
+      "type": "note",
+      "verified": true
+    }
+  ]
+}

@@ -1,0 +1,569 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:07.062
+NARRATOR: Begin by framing Introduction to
+Processor Architecture as a question about
+
+2
+00:00:07.062 --> 00:00:09.984
+inputs, decisions, and observable results.
+
+3
+00:00:09.984 --> 00:00:16.517
+NARRATOR: Computer Architecture is a study of
+the design of both modern and classic computer
+
+4
+00:00:16.517 --> 00:00:16.953
+hardware.
+
+5
+00:00:16.953 --> 00:00:23.006
+NARRATOR: Consider this worked case: A modern
+CPU processes instructions by fetching,
+
+6
+00:00:23.006 --> 00:00:29.562
+decoding, and executing them in a pipeline,
+while classic architectures like the Von
+
+7
+00:00:29.562 --> 00:00:33.093
+Neumann model separate instruction and data
+storage.
+
+8
+00:00:33.093 --> 00:00:40.692
+NARRATOR: On screen, display a side-by-side
+diagram of a classic Von Neumann architecture
+
+9
+00:00:40.692 --> 00:00:45.953
+and a modern pipelined CPU, highlighting the
+fetch-decode-execute cycle.
+
+10
+00:00:45.953 --> 00:00:52.135
+NARRATOR: List the givens before choosing a
+method, because an unstated assumption can
+
+11
+00:00:52.135 --> 00:00:53.562
+change the conclusion.
+
+12
+00:00:53.562 --> 00:00:59.249
+NARRATOR: This establishes the vocabulary and
+scope needed for the remaining sections.
+
+13
+00:00:59.354 --> 00:01:05.515
+NARRATOR: Now define Registers and Data
+Formats precisely enough that another learner
+
+14
+00:01:05.515 --> 00:01:07.569
+could test the definition.
+
+15
+00:01:07.569 --> 00:01:12.241
+NARRATOR: Store instructions transfer register
+data to memory.
+
+16
+00:01:12.241 --> 00:01:20.797
+NARRATOR: Consider this worked case: In
+RISC-V, integer registers x1 through x31 hold
+
+17
+00:01:20.797 --> 00:01:28.694
+software-visible values, while x0 always reads
+as zero, ensuring predictable data handling.
+
+18
+00:01:28.694 --> 00:01:37.804
+NARRATOR: On screen, show a register file
+layout with labeled x0-x31, emphasizing x0's
+
+19
+00:01:37.804 --> 00:01:42.710
+zero-value constraint and data flow into/from
+memory.
+
+20
+00:01:42.710 --> 00:01:49.589
+NARRATOR: Separate the formal definition from
+an implementation detail, then identify what
+
+21
+00:01:49.589 --> 00:01:51.882
+evidence would distinguish them.
+
+22
+00:01:51.882 --> 00:01:58.132
+NARRATOR: A precise definition makes later
+examples easier to evaluate and revise.
+
+23
+00:01:58.132 --> 00:02:05.461
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+24
+00:02:05.461 --> 00:02:07.460
+throughout the analysis.
+
+25
+00:02:07.562 --> 00:02:13.591
+NARRATOR: With the foundation in place,
+examine how Instruction Set and Operation
+
+26
+00:02:13.591 --> 00:02:16.605
+Codes operates in a concrete sequence.
+
+27
+00:02:16.605 --> 00:02:23.301
+NARRATOR: The RISC-V ISA defines
+programmer-visible instructions, registers,
+
+28
+00:02:23.301 --> 00:02:29.996
+memory operations, control transfer,
+exceptions, and ordering behavior.
+
+29
+00:02:29.996 --> 00:02:36.878
+NARRATOR: Consider this worked case: Load
+instructions transfer data from memory into
+
+30
+00:02:36.878 --> 00:02:44.333
+registers, while store instructions transfer
+register data to memory, forming the core data
+
+31
+00:02:44.333 --> 00:02:45.480
+movement mechanism.
+
+32
+00:02:45.480 --> 00:02:52.890
+NARRATOR: On screen, illustrate a load/store
+instruction cycle with arrows showing data
+
+33
+00:02:52.890 --> 00:02:59.683
+flow from memory to register (load) and
+register to memory (store).
+
+34
+00:02:59.683 --> 00:03:06.715
+NARRATOR: Follow every arrow in order and name
+the state before and after each transition.
+
+35
+00:03:06.715 --> 00:03:12.308
+NARRATOR: The trace converts an abstract
+statement into an inspectable sequence.
+
+36
+00:03:12.434 --> 00:03:19.418
+NARRATOR: Next, compare the choices involved
+in Control Flow and Branching and make the
+
+37
+00:03:19.418 --> 00:03:20.915
+decision criteria explicit.
+
+38
+00:03:20.915 --> 00:03:25.384
+NARRATOR: Branch and jump instructions change
+control flow.
+
+39
+00:03:25.384 --> 00:03:31.084
+NARRATOR: Consider this worked case:
+Conditional branches redirect execution to
+
+40
+00:03:31.084 --> 00:03:37.354
+different memory addresses when specific
+register values meet a condition, enabling
+
+41
+00:03:37.354 --> 00:03:39.634
+loops and decision trees.
+
+42
+00:03:39.634 --> 00:03:46.852
+NARRATOR: On screen, draw a control flow graph
+with a branch instruction splitting into two
+
+43
+00:03:46.852 --> 00:03:49.258
+paths, labeled with condition outcomes.
+
+44
+00:03:49.258 --> 00:03:55.746
+NARRATOR: Compare alternatives against the
+same constraints so the evaluation does not
+
+45
+00:03:55.746 --> 00:03:57.368
+move the goalposts.
+
+46
+00:03:57.368 --> 00:04:04.227
+NARRATOR: Using shared criteria turns a
+preference into a defensible technical choice.
+
+47
+00:04:04.227 --> 00:04:11.458
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+48
+00:04:11.458 --> 00:04:13.430
+throughout the analysis.
+
+49
+00:04:13.538 --> 00:04:19.640
+NARRATOR: Apply Memory Hierarchy and
+Addressing to a worked situation instead of
+
+50
+00:04:19.640 --> 00:04:22.691
+treating it as an isolated definition.
+
+51
+00:04:22.691 --> 00:04:29.365
+NARRATOR: Topics include: a review of
+classical computer architectures; the design
+
+52
+00:04:29.365 --> 00:04:36.647
+of operation codes and addressing modes, data
+formats, and their implementation; internal
+
+53
+00:04:36.647 --> 00:04:43.321
+and external bus structures; architectural
+features to support virtual storage and
+
+54
+00:04:43.321 --> 00:04:48.175
+page-replacement policies, high-level language
+features, and operating systems.
+
+55
+00:04:48.175 --> 00:04:54.689
+NARRATOR: Consider this worked case: Direct
+addressing loads data from a fixed memory
+
+56
+00:04:54.689 --> 00:05:01.705
+address into a register, while indirect
+addressing uses a register value as the memory
+
+57
+00:05:01.705 --> 00:05:02.206
+address.
+
+58
+00:05:02.206 --> 00:05:10.327
+NARRATOR: On screen, compare direct vs.
+indirect addressing with memory maps, showing
+
+59
+00:05:10.327 --> 00:05:13.034
+register-to-memory address resolution steps.
+
+60
+00:05:13.034 --> 00:05:19.816
+NARRATOR: Work from the concrete inputs to the
+result, checking units, types, or invariants
+
+61
+00:05:19.816 --> 00:05:21.269
+at each step.
+
+62
+00:05:21.269 --> 00:05:26.300
+NARRATOR: The worked case shows both how to
+apply the method and how to check it.
+
+63
+00:05:26.402 --> 00:05:33.113
+NARRATOR: Examine the tradeoffs in User Mode
+vs. Privileged Kernel Mode, including what
+
+64
+00:05:33.113 --> 00:05:36.211
+improves and what becomes more difficult.
+
+65
+00:05:36.211 --> 00:05:43.941
+NARRATOR: Analysis distinguishes user mode,
+privileged kernel code, hardware translation,
+
+66
+00:05:43.941 --> 00:05:49.352
+interrupt state, resource ownership, and
+synchronization invariants.
+
+67
+00:05:49.352 --> 00:05:55.773
+NARRATOR: Consider this worked case: User mode
+runs unprivileged applications, while
+
+68
+00:05:55.773 --> 00:06:02.195
+privileged kernel code handles system calls
+and manages hardware resources securely.
+
+69
+00:06:02.195 --> 00:06:09.458
+NARRATOR: On screen, show a two-tier memory
+model with user space and kernel space,
+
+70
+00:06:09.458 --> 00:06:12.570
+highlighting permission bits and privilege
+levels.
+
+71
+00:06:12.570 --> 00:06:19.059
+NARRATOR: State the benefit, the cost, and the
+condition under which the tradeoff is
+
+72
+00:06:19.059 --> 00:06:19.523
+acceptable.
+
+73
+00:06:19.523 --> 00:06:26.726
+NARRATOR: Making the tradeoff visible prevents
+a local improvement from hiding a larger cost.
+
+74
+00:06:26.834 --> 00:06:33.963
+NARRATOR: Stress-test the reasoning around
+System Calls and Traps with an edge case and
+
+75
+00:06:33.963 --> 00:06:37.018
+identify which assumption controls the
+outcome.
+
+76
+00:06:37.018 --> 00:06:43.237
+NARRATOR: A system call transfers control from
+user code to a privileged kernel service.
+
+77
+00:06:43.237 --> 00:06:50.378
+NARRATOR: Consider this worked case: When a
+process requests file I/O, a system call
+
+78
+00:06:50.378 --> 00:06:57.008
+switches to kernel mode, and a trap captures
+registers to resume execution after
+
+79
+00:06:57.008 --> 00:06:57.518
+completion.
+
+80
+00:06:57.518 --> 00:07:04.573
+NARRATOR: On screen, illustrate the system
+call sequence: user code -> trap -> kernel
+
+81
+00:07:04.573 --> 00:07:09.612
+service -> return to user mode, with state
+capture points.
+
+82
+00:07:09.612 --> 00:07:15.685
+NARRATOR: Change one assumption at a time and
+observe which part of the reasoning no longer
+
+83
+00:07:15.685 --> 00:07:16.065
+holds.
+
+84
+00:07:16.065 --> 00:07:22.518
+NARRATOR: The edge case reveals the boundary
+of the claim without discarding the useful
+
+85
+00:07:22.518 --> 00:07:23.440
+core idea.
+
+86
+00:07:23.546 --> 00:07:31.029
+NARRATOR: Use Page Tables and Virtual Memory
+to diagnose a failure by separating symptoms,
+
+87
+00:07:31.029 --> 00:07:33.167
+causes, and corrective action.
+
+88
+00:07:33.167 --> 00:07:39.667
+NARRATOR: Page tables map virtual addresses to
+physical memory with permission bits.
+
+89
+00:07:39.667 --> 00:07:48.981
+NARRATOR: Consider this worked case: A page
+table entry translates a virtual address to a
+
+90
+00:07:48.981 --> 00:07:53.949
+physical frame, with read/write/execute bits
+controlling access permissions.
+
+91
+00:07:53.949 --> 00:08:00.997
+NARRATOR: On screen, display a page table
+structure with virtual address bits, frame
+
+92
+00:08:00.997 --> 00:08:04.792
+number, and permission bits, showing
+translation steps.
+
+93
+00:08:04.792 --> 00:08:10.579
+NARRATOR: Locate the first point where
+observed behavior diverges from expected
+
+94
+00:08:10.579 --> 00:08:14.261
+behavior, then test the smallest plausible
+cause.
+
+95
+00:08:14.261 --> 00:08:20.123
+NARRATOR: The diagnosis is strongest when
+another person can reproduce the observation
+
+96
+00:08:20.123 --> 00:08:21.589
+and the test.
+
+97
+00:08:21.698 --> 00:08:27.704
+NARRATOR: Connect Scheduling and Context
+Switching to the earlier ideas and explain how
+
+98
+00:08:27.704 --> 00:08:30.476
+the pieces work as one system.
+
+99
+00:08:30.476 --> 00:08:36.710
+NARRATOR: The scheduler selects runnable
+processes and switches processor context.
+
+100
+00:08:36.710 --> 00:08:43.634
+NARRATOR: Consider this worked case: When a
+process blocks on I/O, the scheduler picks
+
+101
+00:08:43.634 --> 00:08:49.569
+another runnable process and saves the current
+processor state for later restoration.
+
+102
+00:08:49.569 --> 00:08:57.269
+NARRATOR: On screen, show a process scheduler
+with a ready queue, blocked queue, and context
+
+103
+00:08:57.269 --> 00:08:59.835
+switch mechanism, highlighting state
+preservation.
+
+104
+00:08:59.835 --> 00:09:09.010
+NARRATOR: Explain each connection explicitly
+and verify that information retains the same
+
+105
+00:09:09.010 --> 00:09:11.304
+meaning across representations.
+
+106
+00:09:11.304 --> 00:09:18.109
+NARRATOR: The synthesis matters only if every
+connection remains supported by the original
+
+107
+00:09:18.109 --> 00:09:18.632
+evidence.
+
+108
+00:09:18.746 --> 00:09:24.357
+NARRATOR: Finish with Practical Analysis
+Checklist as a practical checklist that can
+
+109
+00:09:24.357 --> 00:09:26.227
+guide a new analysis.
+
+110
+00:09:26.227 --> 00:09:33.054
+NARRATOR: Architecture analysis preserves data
+dependencies, control dependencies, and
+
+111
+00:09:33.054 --> 00:09:34.571
+architectural state.
+
+112
+00:09:34.571 --> 00:09:41.804
+NARRATOR: Consider this worked case: A
+simulation tracks register values, memory
+
+113
+00:09:41.804 --> 00:09:49.694
+operations, and control flow to verify that
+architectural state remains consistent across
+
+114
+00:09:49.694 --> 00:09:50.352
+instructions.
+
+115
+00:09:50.352 --> 00:09:57.402
+NARRATOR: On screen, provide a checklist
+template with fields for architectural state,
+
+116
+00:09:57.402 --> 00:10:02.102
+data dependencies, control dependencies, and
+simulation output validation.
+
+117
+00:10:02.102 --> 00:10:09.871
+NARRATOR: For each checklist item, record the
+evidence, the remaining uncertainty, and the
+
+118
+00:10:09.871 --> 00:10:11.664
+next verification step.
+
+119
+00:10:11.664 --> 00:10:17.516
+NARRATOR: The result is a repeatable
+procedure, not a conclusion that depends on
+
+120
+00:10:17.516 --> 00:10:18.867
+memory or intuition.

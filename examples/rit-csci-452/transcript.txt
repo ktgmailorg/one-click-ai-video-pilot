@@ -1,0 +1,239 @@
+NARRATOR: Begin by framing 1.
+
+NARRATOR: Multiprogramming Environment Overview as a question about inputs,
+
+decisions, and observable results.
+
+NARRATOR: A process combines an address space with execution state and operating-system
+
+resources.
+
+NARRATOR: Consider this worked case: A server running multiple web requests simultaneously
+
+uses separate address spaces for each process to prevent memory corruption.
+
+NARRATOR: On screen, display a diagram showing three isolated process bubbles sharing a
+
+central CPU and memory bus, with arrows indicating context switches.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define 2.
+
+NARRATOR: Process Definition and State precisely enough that another learner could
+
+test the definition.
+
+NARRATOR: Locks protect invariants when concurrent execution can access shared state.
+
+NARRATOR: Consider this worked case: Each running application maintains its own stack,
+
+heap, and open file descriptors, preventing data leakage between applications.
+
+NARRATOR: On screen, show a split-screen comparison of a process structure containing
+
+an address space block, execution state register, and resource list.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: With the foundation in place, examine how 3.
+
+NARRATOR: User Mode vs. Privileged Kernel Mode operates in a concrete sequence.
+
+NARRATOR: Analysis distinguishes user mode, privileged kernel code, hardware translation,
+
+interrupt state, resource ownership, and synchronization invariants.
+
+NARRATOR: Consider this worked case: A user program cannot directly modify the page table
+
+or interrupt controller registers without triggering a protection fault.
+
+NARRATOR: On screen, illustrate a two-tiered architecture diagram with a 'User Mode' zone
+
+and a 'Kernel Mode' zone separated by a security boundary line.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in 4.
+
+NARRATOR: System Call Mechanism and make the decision criteria explicit.
+
+NARRATOR: A system call transfers control from user code to a privileged kernel service.
+
+NARRATOR: Consider this worked case: Calling read() from a user program triggers a trap
+
+that switches execution to the kernel's file system driver.
+
+NARRATOR: On screen, draw a flowchart showing user code invoking a system call,
+
+transitioning to kernel code, and returning control with results.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Apply 5.
+
+NARRATOR: Trap Handling and Processor State to a worked situation instead of treating it as
+
+an isolated definition.
+
+NARRATOR: A trap records processor state so the kernel can handle a system call,
+
+exception, or interrupt.
+
+NARRATOR: Consider this worked case: When an interrupt occurs, the CPU automatically saves
+
+the instruction pointer, registers, and flags to a stack frame for later restoration.
+
+NARRATOR: On screen, display a stack diagram showing saved registers and the instruction
+
+pointer pushed onto the kernel stack during a trap.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in 6.
+
+NARRATOR: Virtual to Physical Memory Mapping, including what improves and what becomes more
+
+difficult.
+
+NARRATOR: Page tables map virtual addresses to physical memory with permission bits.
+
+NARRATOR: Consider this worked case: A virtual address is decomposed into a page number and
+
+offset, then translated by the MMU using the page table to locate the actual physical
+
+frame.
+
+NARRATOR: On screen, show a two-column table mapping virtual page numbers to physical page
+
+numbers, with checkmarks indicating read/write/execute permissions.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around 7.
+
+NARRATOR: RISC-V ISA and Memory Operations with an edge case and identify which
+
+assumption controls the outcome.
+
+NARRATOR: The RISC-V ISA defines programmer-visible instructions, registers,
+
+memory operations, control transfer, exceptions, and ordering behavior.
+
+NARRATOR: Consider this worked case: Load instructions transfer data from memory into
+
+registers, while store instructions transfer register data to memory according to defined
+
+rules.
+
+NARRATOR: On screen, present a side-by-side comparison of a load instruction and a store
+
+instruction with register and memory operand labels.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use 8.
+
+NARRATOR: Memory Ordering and Dependencies to diagnose a failure by separating symptoms,
+
+causes, and corrective action.
+
+NARRATOR: Memory-ordering rules constrain how memory operations may be observed.
+
+NARRATOR: Consider this worked case: A compiler or CPU may reorder independent memory
+
+accesses for performance, but must maintain the relative order of dependent operations.
+
+NARRATOR: On screen, show a sequence of memory operations with arrows indicating dependency
+
+chains and ordering constraints between them.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect 9.
+
+NARRATOR: Locks and Concurrency Invariants to the earlier ideas and explain how the pieces
+
+work as one system.
+
+NARRATOR: Exceptions report conditions that require a defined transfer of control.
+
+NARRATOR: Consider this worked case: A mutex lock ensures that only one process can modify
+
+the process control block at a time during context switching.
+
+NARRATOR: On screen, illustrate a lock acquisition and release cycle with two
+
+concurrent threads waiting for and releasing a shared resource.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with 10.
+
+NARRATOR: Practical Analysis Checklist as a practical checklist that can guide a new
+
+analysis.
+
+NARRATOR: Application of operating system concepts to the design of hardware interfaces
+
+for a multiprogramming environment.
+
+NARRATOR: Consider this worked case: A driver must validate interrupt flags, update page
+
+table entries, and acquire locks before modifying shared device registers.
+
+NARRATOR: On screen, list a checklist with checkboxes for: interrupt handling, page table
+
+validation, lock acquisition, and isolation verification.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.

@@ -1,0 +1,303 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Begin by framing Introduction to Processor Architecture as a question about inputs, decisions, and observable results. Computer Architecture is a study of the design of both modern and classic computer hardware. Consider this worked case: A modern CPU processes instructions by fetching, decoding, and executing them in a pipeline, while classic architectures like the Von Neumann model separate instruction and data storage. On screen, display a side-by-side diagram of a classic Von Neumann architecture and a modern pipelined CPU, highlighting the fetch-decode-execute cycle. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 59,
+      "title": "Introduction to Processor Architecture",
+      "visualDirection": "template:academic-process | Display a side-by-side diagram of a classic Von Neumann architecture and a modern pipelined CPU, highlighting the fetch-decode-execute cycle."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Now define Registers and Data Formats precisely enough that another learner could test the definition. Store instructions transfer register data to memory. Consider this worked case: In RISC-V, integer registers x1 through x31 hold software-visible values, while x0 always reads as zero, ensuring predictable data handling. On screen, show a register file layout with labeled x0-x31, emphasizing x0's zero-value constraint and data flow into/from memory. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 57,
+      "title": "Registers and Data Formats",
+      "visualDirection": "template:academic-process | Show a register file layout with labeled x0-x31, emphasizing x0's zero-value constraint and data flow into/from memory."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "With the foundation in place, examine how Instruction Set and Operation Codes operates in a concrete sequence. The RISC-V ISA defines programmer-visible instructions, registers, memory operations, control transfer, exceptions, and ordering behavior. Consider this worked case: Load instructions transfer data from memory into registers, while store instructions transfer register data to memory, forming the core data movement mechanism. On screen, illustrate a load/store instruction cycle with arrows showing data flow from memory to register (load) and register to memory (store). Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "plannedSeconds": 57,
+      "title": "Instruction Set and Operation Codes",
+      "visualDirection": "template:academic-process | Illustrate a load/store instruction cycle with arrows showing data flow from memory to register (load) and register to memory (store)."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "Next, compare the choices involved in Control Flow and Branching and make the decision criteria explicit. Branch and jump instructions change control flow. Consider this worked case: Conditional branches redirect execution to different memory addresses when specific register values meet a condition, enabling loops and decision trees. On screen, draw a control flow graph with a branch instruction splitting into two paths, labeled with condition outcomes. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 57,
+      "title": "Control Flow and Branching",
+      "visualDirection": "template:academic-process | Draw a control flow graph with a branch instruction splitting into two paths, labeled with condition outcomes."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Apply Memory Hierarchy and Addressing to a worked situation instead of treating it as an isolated definition. Topics include: a review of classical computer architectures; the design of operation codes and addressing modes, data formats, and their implementation; internal and external bus structures; architectural features to support virtual storage and page-replacement policies, high-level language features, and operating systems. Consider this worked case: Direct addressing loads data from a fixed memory address into a register, while indirect addressing uses a register value as the memory address. On screen, compare direct vs. indirect addressing with memory maps, showing register-to-memory address resolution steps. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 70,
+      "title": "Memory Hierarchy and Addressing",
+      "visualDirection": "template:academic-process | Compare direct vs. indirect addressing with memory maps, showing register-to-memory address resolution steps."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "Examine the tradeoffs in User Mode vs. Privileged Kernel Mode, including what improves and what becomes more difficult. Analysis distinguishes user mode, privileged kernel code, hardware translation, interrupt state, resource ownership, and synchronization invariants. Consider this worked case: User mode runs unprivileged applications, while privileged kernel code handles system calls and manages hardware resources securely. On screen, show a two-tier memory model with user space and kernel space, highlighting permission bits and privilege levels. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "plannedSeconds": 55,
+      "title": "User Mode vs. Privileged Kernel Mode",
+      "visualDirection": "template:academic-process | Show a two-tier memory model with user space and kernel space, highlighting permission bits and privilege levels."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "Stress-test the reasoning around System Calls and Traps with an edge case and identify which assumption controls the outcome. A system call transfers control from user code to a privileged kernel service. Consider this worked case: When a process requests file I/O, a system call switches to kernel mode, and a trap captures registers to resume execution after completion. On screen, illustrate the system call sequence: user code -> trap -> kernel service -> return to user mode, with state capture points. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 61,
+      "title": "System Calls and Traps",
+      "visualDirection": "template:academic-process | Illustrate the system call sequence: user code -> trap -> kernel service -> return to user mode, with state capture points."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "Use Page Tables and Virtual Memory to diagnose a failure by separating symptoms, causes, and corrective action. Page tables map virtual addresses to physical memory with permission bits. Consider this worked case: A page table entry translates a virtual address to a physical frame, with read/write/execute bits controlling access permissions. On screen, display a page table structure with virtual address bits, frame number, and permission bits, showing translation steps. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 55,
+      "title": "Page Tables and Virtual Memory",
+      "visualDirection": "template:academic-process | Display a page table structure with virtual address bits, frame number, and permission bits, showing translation steps."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Connect Scheduling and Context Switching to the earlier ideas and explain how the pieces work as one system. The scheduler selects runnable processes and switches processor context. Consider this worked case: When a process blocks on I/O, the scheduler picks another runnable process and saves the current processor state for later restoration. On screen, show a process scheduler with a ready queue, blocked queue, and context switch mechanism, highlighting state preservation. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 55,
+      "title": "Scheduling and Context Switching",
+      "visualDirection": "template:academic-process | Show a process scheduler with a ready queue, blocked queue, and context switch mechanism, highlighting state preservation."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Architecture analysis preserves data dependencies, control dependencies, and architectural state. Consider this worked case: A simulation tracks register values, memory operations, and control flow to verify that architectural state remains consistent across instructions. On screen, provide a checklist template with fields for architectural state, data dependencies, control dependencies, and simulation output validation. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 55,
+      "title": "Practical Analysis Checklist",
+      "visualDirection": "template:academic-process | Provide a checklist template with fields for architectural state, data dependencies, control dependencies, and simulation output validation."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "rit-csci-453"
+      ],
+      "text": "Computer Architecture is a study of the design of both modern and classic computer hardware.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "riscv-unprivileged"
+      ],
+      "text": "Store instructions transfer register data to memory.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "riscv-unprivileged"
+      ],
+      "text": "The RISC-V ISA defines programmer-visible instructions, registers, memory operations, control transfer, exceptions, and ordering behavior.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "riscv-unprivileged"
+      ],
+      "text": "Branch and jump instructions change control flow.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "rit-csci-453"
+      ],
+      "text": "Topics include: a review of classical computer architectures; the design of operation codes and addressing modes, data formats, and their implementation; internal and external bus structures; architectural features to support virtual storage and page-replacement policies, high-level language features, and operating systems.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "mit-xv6-book"
+      ],
+      "text": "Analysis distinguishes user mode, privileged kernel code, hardware translation, interrupt state, resource ownership, and synchronization invariants.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "mit-xv6-book"
+      ],
+      "text": "A system call transfers control from user code to a privileged kernel service.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "mit-xv6-book"
+      ],
+      "text": "Page tables map virtual addresses to physical memory with permission bits.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "mit-xv6-book"
+      ],
+      "text": "The scheduler selects runnable processes and switches processor context.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "riscv-unprivileged"
+      ],
+      "text": "Architecture analysis preserves data dependencies, control dependencies, and architectural state.",
+      "verified": true
+    }
+  ],
+  "id": "csci-453-computer-architecture-foundations-lesson-blueprint",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "Rochester Institute of Technology",
+      "excerpt": "Computer Architecture is a study of the design of both modern and classic computer hardware. Topics include: a review of classical computer architectures; the design of operation codes and addressing modes, data formats, and their implementation; internal and external bus structures; architectural features to support virtual storage and page-replacement policies, high-level language features, and operating systems. Students will write programs which simulate the organization of several different processor architectures to help further their understanding of design choices. Prerequisites: CSCI-352 or 4003-440 or equivalent courses. Contact Hours: Lecture 3 Typically Offered: Spring",
+      "id": "rit-csci-453",
+      "sha256": "459ed83269409d9f79889e5356a4fd324f1aab9cc1852f73f27515886ac1d1f9",
+      "title": "RIT CSCI-453 Computer Architecture catalog description",
+      "type": "note",
+      "uri": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02=",
+      "verified": true
+    },
+    {
+      "author": "MIT PDOS",
+      "excerpt": "The xv6 book explains processes, system calls, traps, page tables, scheduling, locking, file systems, devices, concurrency, and isolation in a small Unix-like kernel. A process combines an address space with execution state and operating-system resources. A system call transfers control from user code to a privileged kernel service. A trap records processor state so the kernel can handle a system call, exception, or interrupt. Page tables map virtual addresses to physical memory with permission bits. The scheduler selects runnable processes and switches processor context. Locks protect invariants when concurrent execution can access shared state. The file system organizes persistent data through inodes, directories, and logged updates. Analysis distinguishes user mode, privileged kernel co",
+      "id": "mit-xv6-book",
+      "sha256": "38ce71a9d754dfeb4999bf3785859ea08c5809175524375356e2e975438749e3",
+      "title": "xv6: a simple, Unix-like teaching operating system",
+      "type": "note",
+      "uri": "https://pdos.csail.mit.edu/6.828/2023/xv6/book-riscv-rev3.pdf",
+      "verified": true
+    },
+    {
+      "author": "RISC-V International",
+      "excerpt": "The RISC-V ISA defines programmer-visible instructions, registers, memory operations, control transfer, exceptions, and ordering behavior. Integer register x0 always reads as zero, while the remaining integer registers hold software-visible values. Load instructions transfer data from memory into registers. Store instructions transfer register data to memory. Branch and jump instructions change control flow. Exceptions report conditions that require a defined transfer of control. Memory-ordering rules constrain how memory operations may be observed. Architecture analysis preserves data dependencies, control dependencies, and architectural state.",
+      "id": "riscv-unprivileged",
+      "sha256": "a27fd29d5bf2cdfaf0bc3c9d84bd4e9441dc438af0858e2e14e91d52af5b52b7",
+      "title": "The RISC-V Instruction Set Manual, Unprivileged ISA",
+      "type": "note",
+      "uri": "https://riscv.org/technical/specifications/",
+      "verified": true
+    }
+  ],
+  "title": "CSCI-453: Computer Architecture - Foundations Lesson Blueprint"
+}
