@@ -1,0 +1,237 @@
+NARRATOR: Begin by framing Lesson Title: Foundations of Data Mining as a question about
+
+inputs, decisions, and observable results.
+
+NARRATOR: The emphasis is on how to use data mining to describe datasets rather than making
+
+predictions.
+
+NARRATOR: Consider this worked case: A retail company analyzes transaction logs to identify
+
+customer purchase frequency and product affinity clusters.
+
+NARRATOR: On screen, display a split-screen graphic: left side shows a scatter plot of
+
+customer purchases over time, right side shows a simple bar chart of top-selling products,
+
+with a caption reading 'Descriptive Analysis vs. Predictive Forecasting'.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Lesson Title: Data Storage Foundations precisely enough that
+
+another learner could test the definition.
+
+NARRATOR: Real-world datasets are often large and can be stored in either main memory or a
+
+database.
+
+NARRATOR: Consider this worked case: A small customer list fits in RAM for rapid iteration,
+
+while a national sales database requires a relational system for structured storage and
+
+integrity.
+
+NARRATOR: On screen, show a simple diagram comparing a RAM block (labeled 'Main Memory')
+
+with a database server (labeled 'Database'), connected by an arrow labeled 'Storage
+
+Selection Based on Scale and Access Needs'.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: With the foundation in place, examine how Lesson Title: Knowledge Discovery
+
+Process operates in a concrete sequence.
+
+NARRATOR: Topics include knowledge discovery process; data exploration and cleaning; and
+
+data mining algorithms.
+
+NARRATOR: Consider this worked case: Researchers first load a medical dataset,
+
+remove duplicate patient records, apply clustering algorithms, and then document
+
+disease correlation patterns.
+
+NARRATOR: On screen, create a circular flowchart with four labeled stages: 'Data
+
+Loading', 'Cleaning', 'Algorithm Application', 'Interpretation', with arrows connecting each
+
+stage sequentially.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in Lesson Title: Data Exploration Basics and
+
+make the decision criteria explicit.
+
+NARRATOR: Data mining projects and a term paper are required.
+
+NARRATOR: Consider this worked case: An analyst uses summary statistics and frequency
+
+tables to detect outliers in temperature sensor readings before proceeding to modeling.
+
+NARRATOR: On screen, display a table with columns for 'Metric', 'Value', and 'Status',
+
+showing rows for 'Mean', 'Median', 'Missing Count', and 'Outlier Flag' with checkmarks for
+
+completed checks.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Apply Lesson Title: Data Cleaning Techniques to a worked situation instead of
+
+treating it as an isolated definition.
+
+NARRATOR: Constraints reject states that violate declared data rules.
+
+NARRATOR: Consider this worked case: A dataset with inconsistent date formats is converted to
+
+ISO 8601, and null values are imputed using median substitution.
+
+NARRATOR: On screen, show a before-and-after data snippet: left side shows messy entries
+
+like 'Jan 1, 2023' and 'N/A', right side shows cleaned entries '2023-01-01' and '15.5', with
+
+a label 'Cleaning Workflow'.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in Lesson Title: Graph Data Modeling, including what
+
+improves and what becomes more difficult.
+
+NARRATOR: Property graph models represent domain entities as nodes.
+
+NARRATOR: Consider this worked case: A social network graph stores users as nodes,
+
+friendships as directed edges, and attributes like 'age' and 'location' as node properties.
+
+NARRATOR: On screen, render a simple graph with three nodes labeled 'User A', 'User B',
+
+'User C', connected by bidirectional edges labeled 'Friend', each node showing a small
+
+property box with 'age' and 'role'.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around Lesson Title: Relational Data Modeling with an
+
+edge case and identify which assumption controls the outcome.
+
+NARRATOR: Relational systems organize data with tables, rows, columns, and declared
+
+types.
+
+NARRATOR: Consider this worked case: A university database stores students in one
+
+table and courses in another, linked by a foreign key in an enrollment table.
+
+NARRATOR: On screen, draw two rectangular tables side-by-side: left table 'Students'
+
+with columns 'ID', 'Name', 'Major'; right table 'Enrollments' with columns 'StudentID',
+
+'CourseID', 'Credit', with a dashed line connecting them labeled 'Foreign Key Link'.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Lesson Title: Data Mining Algorithms Overview to diagnose a failure by
+
+separating symptoms, causes, and corrective action.
+
+NARRATOR: In this course, students will learn the basic principles and algorithms of data
+
+mining.
+
+NARRATOR: Consider this worked case: Clustering algorithms segment customers into
+
+high-value, medium-value, and low-value groups based on purchase history.
+
+NARRATOR: On screen, display a simple bar chart with three segments labeled 'High
+
+Value', 'Medium Value', 'Low Value', and a caption reading 'Algorithm Output: Customer
+
+Segmentation'.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Lesson Title: Constraints and Indexes to the earlier ideas and explain
+
+how the pieces work as one system.
+
+NARRATOR: Indexes provide additional access paths for selected queries.
+
+NARRATOR: Consider this worked case: A 'age' column constraint prevents negative values,
+
+and an index on 'email' speeds up user lookup operations.
+
+NARRATOR: On screen, show a database table with a red 'X' over a negative age entry, and
+
+a blue arrow pointing to a search bar labeled 'Indexed Column' with a speed icon.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with Lesson Title: Practical Analysis Checklist as a practical checklist
+
+that can guide a new analysis.
+
+NARRATOR: Queries select, join, aggregate, insert, update, and delete data.
+
+NARRATOR: Consider this worked case: A team checks for missing values, validates algorithm
+
+output against domain knowledge, and archives the cleaning script for future reference.
+
+NARRATOR: On screen, list four checklist items with checkboxes: 'Data Quality Verified',
+
+'Model Selected', 'Results Documented', 'Reproducibility Confirmed', with a clean,
+
+minimalist design.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.
