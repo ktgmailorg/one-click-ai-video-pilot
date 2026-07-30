@@ -1,0 +1,227 @@
+NARRATOR: Begin by framing Program Overview and Status as a question about inputs,
+
+decisions, and observable results.
+
+NARRATOR: When registered for co-op, students are considered by RIT to have full-time
+
+status.
+
+NARRATOR: Consider this worked case: A student enrolled in CSCI-499 for the fall semester is
+
+counted as a full-time undergraduate for financial aid and housing purposes.
+
+NARRATOR: On screen, display a simple badge graphic labeled 'Full-Time Status' next to a
+
+calendar showing a 14-week span.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Time Commitment Requirements precisely enough that another
+
+learner could test the definition.
+
+NARRATOR: In order to register for co-op for either fall or spring semester, we expect that
+
+students will work a minimum of 14 weeks and work a minimum of 35 hours per week.
+
+NARRATOR: Consider this worked case: A student planning a spring co-op must schedule at least
+
+490 hours of work spread across the semester.
+
+NARRATOR: On screen, show a bar chart comparing a 14-week minimum schedule against a
+
+12-week schedule, highlighting the 35-hour weekly threshold.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: With the foundation in place, examine how Prerequisite Coursework operates
+
+in a concrete sequence.
+
+NARRATOR: Students must complete a student co-op work report for each term for which they
+
+are registered; students are also evaluated each term by their supervisor.
+
+NARRATOR: Consider this worked case: A student who has not taken CSCI-099 must enroll in it
+
+first to become eligible for the co-op program.
+
+NARRATOR: On screen, create a linear prerequisite flowchart: 'CSCI-099' ->
+
+'Eligible for CSCI-499 Co-op'.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in Student Work Report Requirement and make
+
+the decision criteria explicit.
+
+NARRATOR: A satisfactory grade is given for co-op when both a completed student co-op work
+
+report and a completed, corresponding supervisor evaluation are received and when
+
+both documents are generally consistent.
+
+NARRATOR: Consider this worked case: A student working on a software development project must
+
+submit a written report detailing their tasks, challenges, and outcomes.
+
+NARRATOR: On screen, show a document template with sections for 'Project Description',
+
+'Technical Implementation', and 'Learning Outcomes'.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Apply Supervisor Evaluation Requirement to a worked situation instead of
+
+treating it as an isolated definition.
+
+NARRATOR: Students perform professional work related to Computer Science.
+
+NARRATOR: Consider this worked case: A supervisor reviews the student's code commits
+
+and deliverables to provide a formal performance evaluation.
+
+NARRATOR: On screen, display a two-column comparison: 'Student Report' vs. 'Supervisor
+
+Evaluation' with a checkmark indicating consistency.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Examine the tradeoffs in Grading Consistency Standard, including what improves
+
+and what becomes more difficult.
+
+NARRATOR: Robust security should be designed and implemented when appropriate.
+
+NARRATOR: Consider this worked case: If the student report describes a database migration
+
+but the supervisor evaluation focuses solely on UI testing, the grade is not satisfactory.
+
+NARRATOR: On screen, use a Venn diagram showing the overlap between 'Student Report
+
+Content' and 'Supervisor Evaluation Content' as the grading zone.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around Ethical Computing Principles with an edge case
+
+and identify which assumption controls the outcome.
+
+NARRATOR: Professionals should strive to achieve high quality in both processes and
+
+products.
+
+NARRATOR: Consider this worked case: A co-op student developing an AI model must audit
+
+training data for bias and document limitations to prevent harmful outcomes.
+
+NARRATOR: On screen, present a checklist graphic with icons for 'Avoid Harm',
+
+'Honesty', 'High Quality', and 'Respect Privacy'.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Responsible Research Communication to diagnose a failure by
+
+separating symptoms, causes, and corrective action.
+
+NARRATOR: Responsible technical communication distinguishes claims from evidence.
+
+NARRATOR: Consider this worked case: A student's co-op report must include a
+
+literature review section that cites existing algorithms before presenting new results.
+
+NARRATOR: On screen, show a side-by-side comparison of a 'Misleading Claim'
+
+(highlighted in red) versus a 'Responsible Claim' (highlighted in green) with citations.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Research Integrity and Transparency to the earlier ideas and explain
+
+how the pieces work as one system.
+
+NARRATOR: Limitations and threats to validity should be made visible.
+
+NARRATOR: Consider this worked case: A co-op project report must include a dedicated
+
+section listing data collection constraints and potential biases in the experimental
+
+setup.
+
+NARRATOR: On screen, create a template slide with a 'Limitations & Threats' box and a
+
+'Conflicts Disclosure' field to be filled by students.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+
+guide a new analysis.
+
+NARRATOR: They should maintain high standards of professional competence, conduct, and
+
+ethical practice.
+
+NARRATOR: Consider this worked case: Before final submission, a student checks that their
+
+14-week schedule is logged, their report matches the supervisor's evaluation, and all
+
+ethical guidelines are met.
+
+NARRATOR: On screen, display a final checklist graphic with four checkboxes: '14-Week/35-Hr
+
+Commitment', 'Report-Evaluation Consistency', 'Ethical Compliance', 'Research Transparency'.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.
