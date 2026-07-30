@@ -1,0 +1,591 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:07.479
+NARRATOR: Begin by framing Lesson Title:
+Foundations of Cybersecurity Principles as a
+
+2
+00:00:07.479 --> 00:00:11.812
+question about inputs, decisions, and
+observable results.
+
+3
+00:00:11.812 --> 00:00:18.813
+NARRATOR: It will cover cybersecurity
+principles, policies and mechanisms; core
+
+4
+00:00:18.813 --> 00:00:26.514
+knowledge areas of data, software, component,
+connection, system, human, organizational and
+
+5
+00:00:26.514 --> 00:00:32.815
+societal security; and crosscutting concepts
+of confidentiality, integrity, availability,
+
+6
+00:00:32.815 --> 00:00:37.015
+risk, adversarial thinking, and systems
+thinking.
+
+7
+00:00:37.015 --> 00:00:43.749
+NARRATOR: Consider this worked case: A
+hospital's electronic health records must
+
+8
+00:00:43.749 --> 00:00:49.871
+remain confidential from unauthorized users,
+maintain integrity against tampering, and
+
+9
+00:00:49.871 --> 00:00:54.156
+remain available during peak patient intake
+hours.
+
+10
+00:00:54.156 --> 00:01:02.096
+NARRATOR: On screen, display a simple Venn
+diagram showing the overlapping circles of
+
+11
+00:01:02.096 --> 00:01:08.203
+confidentiality, integrity, and availability,
+with a central 'Secure System' label.
+
+12
+00:01:08.203 --> 00:01:14.182
+NARRATOR: List the givens before choosing a
+method, because an unstated assumption can
+
+13
+00:01:14.182 --> 00:01:15.562
+change the conclusion.
+
+14
+00:01:15.562 --> 00:01:21.781
+NARRATOR: This establishes the vocabulary and
+scope needed for the remaining sections.
+
+15
+00:01:21.890 --> 00:01:27.217
+NARRATOR: Now define Lesson Title:
+Cryptographic Standards and Confidentiality
+
+16
+00:01:27.217 --> 00:01:32.543
+precisely enough that another learner could
+test the definition.
+
+17
+00:01:32.543 --> 00:01:38.746
+NARRATOR: Encryption supports confidentiality
+when keys and modes are used correctly.
+
+18
+00:01:38.746 --> 00:01:47.874
+NARRATOR: Consider this worked case: AES-256
+encryption with proper key management ensures
+
+19
+00:01:47.874 --> 00:01:53.959
+patient data remains unreadable to
+unauthorized personnel, satisfying
+
+20
+00:01:53.959 --> 00:01:55.480
+confidentiality requirements.
+
+21
+00:01:55.480 --> 00:02:04.678
+NARRATOR: On screen, show a flowchart:
+Plaintext -> Encryption Algorithm (AES-256) ->
+
+22
+00:02:04.678 --> 00:02:10.043
+Ciphertext, with a lock icon labeled
+'Confidentiality'.
+
+23
+00:02:10.043 --> 00:02:16.558
+NARRATOR: Separate the formal definition from
+an implementation detail, then identify what
+
+24
+00:02:16.558 --> 00:02:18.730
+evidence would distinguish them.
+
+25
+00:02:18.730 --> 00:02:25.324
+NARRATOR: A precise definition makes later
+examples easier to evaluate and revise.
+
+26
+00:02:25.324 --> 00:02:32.457
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+27
+00:02:32.457 --> 00:02:34.402
+throughout the analysis.
+
+28
+00:02:34.514 --> 00:02:41.518
+NARRATOR: With the foundation in place,
+examine how Lesson Title: Integrity and
+
+29
+00:02:41.518 --> 00:02:45.604
+Authentication Mechanisms operates in a
+concrete sequence.
+
+30
+00:02:45.604 --> 00:02:52.359
+NARRATOR: Message authentication and digital
+signatures address integrity and authenticity
+
+31
+00:02:52.359 --> 00:02:54.385
+in different ways.
+
+32
+00:02:54.385 --> 00:03:01.091
+NARRATOR: Consider this worked case: A digital
+signature on a software update verifies the
+
+33
+00:03:01.091 --> 00:03:06.839
+developer's identity and confirms the code has
+not been modified during transmission.
+
+34
+00:03:06.839 --> 00:03:13.974
+NARRATOR: On screen, display a side-by-side
+comparison: Hash-based message authentication
+
+35
+00:03:13.974 --> 00:03:19.682
+(integrity check) vs. Digital signature
+(integrity + authenticity).
+
+36
+00:03:19.682 --> 00:03:26.854
+NARRATOR: Follow every arrow in order and name
+the state before and after each transition.
+
+37
+00:03:26.854 --> 00:03:32.526
+NARRATOR: The trace converts an abstract
+statement into an inspectable sequence.
+
+38
+00:03:32.642 --> 00:03:39.493
+NARRATOR: Next, compare the choices involved
+in Lesson Title: Secure Software Development
+
+39
+00:03:39.493 --> 00:03:44.060
+Framework (SSDF) and make the decision
+criteria explicit.
+
+40
+00:03:44.060 --> 00:03:50.104
+NARRATOR: The Secure Software Development
+Framework groups practices into four practice
+
+41
+00:03:50.104 --> 00:03:50.654
+groups.
+
+42
+00:03:50.654 --> 00:03:57.051
+NARRATOR: Consider this worked case: A
+development team uses the 'Prepare the
+
+43
+00:03:57.051 --> 00:04:03.449
+Organization' group to establish secure coding
+standards and training before writing any
+
+44
+00:04:03.449 --> 00:04:03.982
+code.
+
+45
+00:04:03.982 --> 00:04:11.536
+NARRATOR: On screen, create a four-step
+circular diagram labeled with the four SSDF
+
+46
+00:04:11.536 --> 00:04:16.185
+practice groups, connected by arrows
+indicating iterative flow.
+
+47
+00:04:16.185 --> 00:04:22.910
+NARRATOR: Compare alternatives against the
+same constraints so the evaluation does not
+
+48
+00:04:22.910 --> 00:04:24.591
+move the goalposts.
+
+49
+00:04:24.591 --> 00:04:31.388
+NARRATOR: Using shared criteria turns a
+preference into a defensible technical choice.
+
+50
+00:04:31.514 --> 00:04:37.554
+NARRATOR: Apply Lesson Title: Security
+Requirements and Verification to a worked
+
+51
+00:04:37.554 --> 00:04:42.495
+situation instead of treating it as an
+isolated definition.
+
+52
+00:04:42.495 --> 00:04:49.043
+NARRATOR: Verification provides evidence that
+selected practices and controls were
+
+53
+00:04:49.043 --> 00:04:49.698
+performed.
+
+54
+00:04:49.698 --> 00:04:55.758
+NARRATOR: Consider this worked case: A
+compliance officer reviews a checklist to
+
+55
+00:04:55.758 --> 00:05:01.313
+verify that all encryption standards and
+access controls were implemented before
+
+56
+00:05:01.313 --> 00:05:02.323
+software release.
+
+57
+00:05:02.323 --> 00:05:09.325
+NARRATOR: On screen, show a checklist graphic
+with checkboxes next to security requirements,
+
+58
+00:05:09.325 --> 00:05:12.557
+highlighting 'Verification' as the final step.
+
+59
+00:05:12.557 --> 00:05:18.811
+NARRATOR: Work from the concrete inputs to the
+result, checking units, types, or invariants
+
+60
+00:05:18.811 --> 00:05:20.151
+at each step.
+
+61
+00:05:20.151 --> 00:05:25.167
+NARRATOR: The worked case shows both how to
+apply the method and how to check it.
+
+62
+00:05:25.274 --> 00:05:31.595
+NARRATOR: Examine the tradeoffs in Lesson
+Title: Vulnerability Management and Response,
+
+63
+00:05:31.595 --> 00:05:36.192
+including what improves and what becomes more
+difficult.
+
+64
+00:05:36.192 --> 00:05:42.556
+NARRATOR: Respond to Vulnerabilities
+identifies, analyzes, remediates, and learns
+
+65
+00:05:42.556 --> 00:05:44.677
+from discovered weaknesses.
+
+66
+00:05:44.677 --> 00:05:51.982
+NARRATOR: Consider this worked case: After a
+penetration test reveals an unpatched database
+
+67
+00:05:51.982 --> 00:05:58.163
+vulnerability, the team patches the code,
+updates documentation, and trains developers
+
+68
+00:05:58.163 --> 00:06:00.411
+on secure input validation.
+
+69
+00:06:00.411 --> 00:06:09.563
+NARRATOR: On screen, display a feedback loop
+diagram: Vulnerability Discovery -> Analysis
+
+70
+00:06:09.563 --> 00:06:12.614
+-> Remediation -> Learning/Improvement.
+
+71
+00:06:12.614 --> 00:06:18.826
+NARRATOR: State the benefit, the cost, and the
+condition under which the tradeoff is
+
+72
+00:06:18.826 --> 00:06:19.270
+acceptable.
+
+73
+00:06:19.270 --> 00:06:26.708
+NARRATOR: Making the tradeoff visible prevents
+a local improvement from hiding a larger cost.
+
+74
+00:06:26.834 --> 00:06:32.952
+NARRATOR: Stress-test the reasoning around
+Lesson Title: Adversarial Thinking and Threat
+
+75
+00:06:32.952 --> 00:06:39.627
+Modeling with an edge case and identify which
+assumption controls the outcome.
+
+76
+00:06:39.627 --> 00:06:47.462
+NARRATOR: Security reasoning identifies
+assets, trust boundaries, threats, controls,
+
+77
+00:06:47.462 --> 00:06:51.815
+evidence, residual risk, and responsibilities.
+
+78
+00:06:51.815 --> 00:06:58.237
+NARRATOR: Consider this worked case: An
+analyst maps a web application's trust
+
+79
+00:06:58.237 --> 00:07:05.729
+boundary, identifies a potential SQL injection
+threat, and assigns a control to validate all
+
+80
+00:07:05.729 --> 00:07:06.799
+user inputs.
+
+81
+00:07:06.799 --> 00:07:13.080
+NARRATOR: On screen, show a trust boundary
+diagram with internal assets, external
+
+82
+00:07:13.080 --> 00:07:17.268
+threats, and a labeled 'Control' zone between
+them.
+
+83
+00:07:17.268 --> 00:07:23.400
+NARRATOR: Change one assumption at a time and
+observe which part of the reasoning no longer
+
+84
+00:07:23.400 --> 00:07:23.783
+holds.
+
+85
+00:07:23.783 --> 00:07:30.168
+NARRATOR: The edge case reveals the boundary
+of the claim without discarding the useful
+
+86
+00:07:30.168 --> 00:07:31.080
+core idea.
+
+87
+00:07:31.202 --> 00:07:38.156
+NARRATOR: Use Lesson Title: Systems Thinking
+and Crosscutting Concepts to diagnose a
+
+88
+00:07:38.156 --> 00:07:42.792
+failure by separating symptoms, causes, and
+corrective action.
+
+89
+00:07:42.792 --> 00:07:48.843
+NARRATOR: This course provides a broad
+introduction to cybersecurity principles and
+
+90
+00:07:48.843 --> 00:07:54.895
+practices, and emphasizes policies and
+mechanisms for building secure and trusted
+
+91
+00:07:54.895 --> 00:07:55.995
+computer systems.
+
+92
+00:07:55.995 --> 00:08:02.964
+NARRATOR: Consider this worked case: A policy
+requiring multi-factor authentication reduces
+
+93
+00:08:02.964 --> 00:08:09.933
+risk by addressing both human behavior and
+system access points simultaneously.
+
+94
+00:08:09.933 --> 00:08:18.145
+NARRATOR: On screen, create a layered system
+model showing data, software, human, and
+
+95
+00:08:18.145 --> 00:08:23.198
+policy layers, with arrows indicating
+cross-cutting security concepts.
+
+96
+00:08:23.198 --> 00:08:29.042
+NARRATOR: Locate the first point where
+observed behavior diverges from expected
+
+97
+00:08:29.042 --> 00:08:32.761
+behavior, then test the smallest plausible
+cause.
+
+98
+00:08:32.761 --> 00:08:38.586
+NARRATOR: The diagnosis is strongest when
+another person can reproduce the observation
+
+99
+00:08:38.586 --> 00:08:40.042
+and the test.
+
+100
+00:08:40.154 --> 00:08:45.965
+NARRATOR: Connect Lesson Title: Privacy,
+Ethics, and Legal Compliance to the earlier
+
+101
+00:08:45.965 --> 00:08:50.807
+ideas and explain how the pieces work as one
+system.
+
+102
+00:08:50.807 --> 00:08:57.041
+NARRATOR: Topics in privacy, and legal and
+ethical aspects will also be emphasized.
+
+103
+00:08:57.041 --> 00:09:03.424
+NARRATOR: Consider this worked case: A
+healthcare app implements data minimization
+
+104
+00:09:03.424 --> 00:09:09.807
+and consent mechanisms to comply with privacy
+regulations while maintaining security.
+
+105
+00:09:09.807 --> 00:09:17.640
+NARRATOR: On screen, display a balance scale
+graphic with 'Security' on one side and
+
+106
+00:09:17.640 --> 00:09:21.557
+'Privacy/Ethics/Legal' on the other, labeled
+'Balanced Design'.
+
+107
+00:09:21.557 --> 00:09:30.582
+NARRATOR: Explain each connection explicitly
+and verify that information retains the same
+
+108
+00:09:30.582 --> 00:09:32.838
+meaning across representations.
+
+109
+00:09:32.838 --> 00:09:39.468
+NARRATOR: The synthesis matters only if every
+connection remains supported by the original
+
+110
+00:09:39.468 --> 00:09:39.978
+evidence.
+
+111
+00:09:40.082 --> 00:09:45.944
+NARRATOR: Finish with Lesson Title: Practical
+Analysis Checklist as a practical checklist
+
+112
+00:09:45.944 --> 00:09:48.875
+that can guide a new analysis.
+
+113
+00:09:48.875 --> 00:09:54.847
+NARRATOR: This course requires the knowledge
+of computer science theory and concepts of
+
+114
+00:09:54.847 --> 00:09:55.766
+computer systems.
+
+115
+00:09:55.766 --> 00:10:02.985
+NARRATOR: Consider this worked case: An
+auditor reviews a cloud migration plan against
+
+116
+00:10:02.985 --> 00:10:09.092
+the checklist to verify encryption, access
+controls, backup availability, and risk
+
+117
+00:10:09.092 --> 00:10:10.203
+mitigation steps.
+
+118
+00:10:10.203 --> 00:10:17.449
+NARRATOR: On screen, show a printable
+checklist template with columns for
+
+119
+00:10:17.449 --> 00:10:22.060
+'Component', 'Confidentiality', 'Integrity',
+'Availability', 'Risk Level', and
+
+120
+00:10:22.060 --> 00:10:22.719
+'Mitigation'.
+
+121
+00:10:22.719 --> 00:10:30.222
+NARRATOR: For each checklist item, record the
+evidence, the remaining uncertainty, and the
+
+122
+00:10:30.222 --> 00:10:31.953
+next verification step.
+
+123
+00:10:31.953 --> 00:10:37.755
+NARRATOR: The result is a repeatable
+procedure, not a conclusion that depends on
+
+124
+00:10:37.755 --> 00:10:39.094
+memory or intuition.

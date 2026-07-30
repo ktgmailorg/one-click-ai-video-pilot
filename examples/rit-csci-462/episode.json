@@ -1,0 +1,303 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Begin by framing Lesson Title: Foundations of Cryptographic Systems as a question about inputs, decisions, and observable results. The course also provides an introduction to data integrity and authentication. Consider this worked case: AES encryption uses a symmetric key to transform plaintext into ciphertext, ensuring only authorized parties can read the message. On screen, display a side-by-side comparison of plaintext and ciphertext with a symmetric key lock icon, labeled 'Confidentiality via AES'. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 55,
+      "title": "Lesson Title: Foundations of Cryptographic Systems",
+      "visualDirection": "template:academic-process | Display a side-by-side comparison of plaintext and ciphertext with a symmetric key lock icon, labeled 'Confidentiality via AES'."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Now define Lesson Title: Classical Cryptosystems Overview precisely enough that another learner could test the definition. It covers classical cryptosystems, private-key cryptosystems (including DES and AES), hashing and public-key cryptosystems (including RSA). Consider this worked case: The Caesar cipher shifts each letter by a fixed number, demonstrating how simple substitution can be broken with frequency analysis. On screen, show a Caesar cipher alphabet wheel with 'A' shifting to 'D', annotated with 'Substitution Vulnerability'. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "plannedSeconds": 55,
+      "title": "Lesson Title: Classical Cryptosystems Overview",
+      "visualDirection": "template:academic-process | Show a Caesar cipher alphabet wheel with 'A' shifting to 'D', annotated with 'Substitution Vulnerability'."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "With the foundation in place, examine how Lesson Title: Private-Key Cryptosystems operates in a concrete sequence. Encryption supports confidentiality when keys and modes are used correctly. Consider this worked case: DES and AES require the same key for encrypting and decrypting data, making them fast but dependent on secure key distribution. On screen, illustrate a two-way arrow between 'Sender' and 'Receiver' with a single key symbol, labeled 'Symmetric Key Exchange'. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 58,
+      "title": "Lesson Title: Private-Key Cryptosystems",
+      "visualDirection": "template:academic-process | Illustrate a two-way arrow between 'Sender' and 'Receiver' with a single key symbol, labeled 'Symmetric Key Exchange'."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "Next, compare the choices involved in Lesson Title: Public-Key Cryptosystems and make the decision criteria explicit. The Secure Software Development Framework groups practices into four practice groups. Consider this worked case: RSA uses a public key for encryption and a private key for decryption, solving the key distribution problem in symmetric systems. On screen, draw a split key icon: 'Public Key' (open hand) and 'Private Key' (closed fist), labeled 'Asymmetric Key Pair'. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "plannedSeconds": 55,
+      "title": "Lesson Title: Public-Key Cryptosystems",
+      "visualDirection": "template:academic-process | Draw a split key icon: 'Public Key' (open hand) and 'Private Key' (closed fist), labeled 'Asymmetric Key Pair'."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Apply Lesson Title: Hashing Functions to a worked situation instead of treating it as an isolated definition. Produce Well-Secured Software addresses security requirements, design, verification, and release. Consider this worked case: SHA-256 generates a unique 256-bit hash for a document, where altering any bit changes the entire output. On screen, show a document entering a hash function box, outputting a long hex string, labeled 'Integrity Check via SHA-256'. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 55,
+      "title": "Lesson Title: Hashing Functions",
+      "visualDirection": "template:academic-process | Show a document entering a hash function box, outputting a long hex string, labeled 'Integrity Check via SHA-256'."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "Examine the tradeoffs in Lesson Title: Data Integrity and Authentication, including what improves and what becomes more difficult. Message authentication and digital signatures address integrity and authenticity in different ways. Consider this worked case: A digital signature uses the sender's private key to sign a message, which the receiver verifies with the public key. On screen, display a document with a signature stamp and a verification checkmark, labeled 'Authenticity via Digital Signatures'. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "plannedSeconds": 55,
+      "title": "Lesson Title: Data Integrity and Authentication",
+      "visualDirection": "template:academic-process | Display a document with a signature stamp and a verification checkmark, labeled 'Authenticity via Digital Signatures'."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "Stress-test the reasoning around Lesson Title: Key Management Practices with an edge case and identify which assumption controls the outcome. Key management covers generation, distribution, storage, use, rotation, revocation, and destruction. Consider this worked case: Keys must be stored in hardware security modules and rotated regularly to limit exposure if compromised. On screen, show a key lifecycle diagram: 'Generate' -> 'Store' -> 'Use' -> 'Rotate' -> 'Destroy', with lock icons at each stage. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 57,
+      "title": "Lesson Title: Key Management Practices",
+      "visualDirection": "template:academic-process | Show a key lifecycle diagram: 'Generate' -> 'Store' -> 'Use' -> 'Rotate' -> 'Destroy', with lock icons at each stage."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "Use Lesson Title: Modes of Operation to diagnose a failure by separating symptoms, causes, and corrective action. Modes of operation define how a primitive processes data larger than one block. Consider this worked case: CBC mode uses a chaining value to link blocks, preventing pattern repetition in encrypted output. On screen, illustrate a block cipher processing two blocks with a feedback loop, labeled 'CBC Mode Chaining'. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 55,
+      "title": "Lesson Title: Modes of Operation",
+      "visualDirection": "template:academic-process | Illustrate a block cipher processing two blocks with a feedback loop, labeled 'CBC Mode Chaining'."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Connect Lesson Title: Security Implementation & Validation to the earlier ideas and explain how the pieces work as one system. Security depends on the complete protocol and implementation, not only an algorithm name. Consider this worked case: Timing attacks can exploit variable execution times in cryptographic libraries, requiring constant-time implementations for validation. On screen, show a security checklist with items: 'Algorithm Validated', 'Implementation Tested', 'Side-Channel Mitigated', labeled 'Validation Checklist'. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 55,
+      "title": "Lesson Title: Security Implementation & Validation",
+      "visualDirection": "template:academic-process | Show a security checklist with items: 'Algorithm Validated', 'Implementation Tested', 'Side-Channel Mitigated', labeled 'Validation Checklist'."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "Finish with Lesson Title: Practical Analysis Checklist as a practical checklist that can guide a new analysis. Cryptographic standards define approved algorithms and parameters. Consider this worked case: A secure system uses AES for confidentiality, SHA-256 for integrity, RSA for authentication, and follows NIST key management standards. On screen, display a practical analysis checklist with checkboxes: 'Confidentiality Mechanism', 'Integrity Check', 'Authentication Method', 'Key Management', 'Implementation Validated'. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 55,
+      "title": "Lesson Title: Practical Analysis Checklist",
+      "visualDirection": "template:academic-process | Display a practical analysis checklist with checkboxes: 'Confidentiality Mechanism', 'Integrity Check', 'Authentication Method', 'Key Management', 'Implementation Validated'."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "rit-csci-462"
+      ],
+      "text": "The course also provides an introduction to data integrity and authentication.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "rit-csci-462"
+      ],
+      "text": "It covers classical cryptosystems, private-key cryptosystems (including DES and AES), hashing and public-key cryptosystems (including RSA).",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "nist-cryptographic-standards"
+      ],
+      "text": "Encryption supports confidentiality when keys and modes are used correctly.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "nist-ssdf"
+      ],
+      "text": "The Secure Software Development Framework groups practices into four practice groups.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "nist-ssdf"
+      ],
+      "text": "Produce Well-Secured Software addresses security requirements, design, verification, and release.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "nist-cryptographic-standards"
+      ],
+      "text": "Message authentication and digital signatures address integrity and authenticity in different ways.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "nist-cryptographic-standards"
+      ],
+      "text": "Key management covers generation, distribution, storage, use, rotation, revocation, and destruction.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "nist-cryptographic-standards"
+      ],
+      "text": "Modes of operation define how a primitive processes data larger than one block.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "nist-cryptographic-standards"
+      ],
+      "text": "Security depends on the complete protocol and implementation, not only an algorithm name.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "nist-cryptographic-standards"
+      ],
+      "text": "Cryptographic standards define approved algorithms and parameters.",
+      "verified": true
+    }
+  ],
+  "id": "csci-462-introduction-to-cryptography-foundations-application",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "Rochester Institute of Technology",
+      "excerpt": "This course provides an introduction to cryptography, its mathematical foundations, and its relation to security. It covers classical cryptosystems, private-key cryptosystems (including DES and AES), hashing and public-key cryptosystems (including RSA). The course also provides an introduction to data integrity and authentication. Students cannot take and receive credit for this course if they have credit for CSCI-662. Prerequisites: (CSCI-243 or SWEN-262 or CSEC-202) and (MATH-190 or MATH-200) or equivalent courses. Contact Hours: Lecture 3 Typically Offered: Fall, Spring, Summer",
+      "id": "rit-csci-462",
+      "sha256": "47ac8a1cadc182bbf1abad983028ceccc4e593c7e3f5d4e99566898fa60000ee",
+      "title": "RIT CSCI-462 Introduction to Cryptography catalog description",
+      "type": "note",
+      "uri": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02=",
+      "verified": true
+    },
+    {
+      "author": "National Institute of Standards and Technology",
+      "excerpt": "The Secure Software Development Framework groups practices into four practice groups. Prepare the Organization establishes people, processes, and technology for secure development. Protect the Software prevents unauthorized access to code and development artifacts. Produce Well-Secured Software addresses security requirements, design, verification, and release. Respond to Vulnerabilities identifies, analyzes, remediates, and learns from discovered weaknesses. Security requirements should be tracked throughout development. Verification provides evidence that selected practices and controls were performed. Security reasoning identifies assets, trust boundaries, threats, controls, evidence, residual risk, and responsibilities.",
+      "id": "nist-ssdf",
+      "sha256": "17c15c6a3a522d311732bc0022c92ccb85de44ca6a09bde629c605eafbbaf442",
+      "title": "NIST Secure Software Development Framework",
+      "type": "note",
+      "uri": "https://csrc.nist.gov/pubs/sp/800/218/final",
+      "verified": true
+    },
+    {
+      "author": "National Institute of Standards and Technology",
+      "excerpt": "Cryptographic standards define approved algorithms and parameters. Encryption supports confidentiality when keys and modes are used correctly. Message authentication and digital signatures address integrity and authenticity in different ways. Random number generation supports keys, nonces, and other security parameters. Key management covers generation, distribution, storage, use, rotation, revocation, and destruction. Modes of operation define how a primitive processes data larger than one block. Validation checks implementations against specified requirements. Security depends on the complete protocol and implementation, not only an algorithm name. Analysis also considers side channels and migration requirements.",
+      "id": "nist-cryptographic-standards",
+      "sha256": "a50096140c969dba44c56eabec718ea39e693d3bb01255ae0cb21fa71c53c7e4",
+      "title": "NIST Cryptographic Standards and Guidelines",
+      "type": "note",
+      "uri": "https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines",
+      "verified": true
+    }
+  ],
+  "title": "CSCI-462: Introduction to Cryptography - Foundations & Application"
+}

@@ -1,0 +1,539 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:07.449
+NARRATOR: Begin by framing Lesson Title:
+Foundations of Cryptographic Systems as a
+
+2
+00:00:07.449 --> 00:00:11.765
+question about inputs, decisions, and
+observable results.
+
+3
+00:00:11.765 --> 00:00:17.466
+NARRATOR: The course also provides an
+introduction to data integrity and
+
+4
+00:00:17.466 --> 00:00:17.984
+authentication.
+
+5
+00:00:17.984 --> 00:00:25.508
+NARRATOR: Consider this worked case: AES
+encryption uses a symmetric key to transform
+
+6
+00:00:25.508 --> 00:00:31.874
+plaintext into ciphertext, ensuring only
+authorized parties can read the message.
+
+7
+00:00:31.875 --> 00:00:39.622
+NARRATOR: On screen, display a side-by-side
+comparison of plaintext and ciphertext with a
+
+8
+00:00:39.622 --> 00:00:44.390
+symmetric key lock icon, labeled
+'Confidentiality via AES'.
+
+9
+00:00:44.390 --> 00:00:50.560
+NARRATOR: List the givens before choosing a
+method, because an unstated assumption can
+
+10
+00:00:50.560 --> 00:00:51.984
+change the conclusion.
+
+11
+00:00:51.984 --> 00:00:57.656
+NARRATOR: This establishes the vocabulary and
+scope needed for the remaining sections.
+
+12
+00:00:57.770 --> 00:01:04.420
+NARRATOR: Now define Lesson Title: Classical
+Cryptosystems Overview precisely enough that
+
+13
+00:01:04.420 --> 00:01:08.048
+another learner could test the definition.
+
+14
+00:01:08.048 --> 00:01:15.732
+NARRATOR: It covers classical cryptosystems,
+private-key cryptosystems (including DES and
+
+15
+00:01:15.732 --> 00:01:21.110
+AES), hashing and public-key cryptosystems
+(including RSA).
+
+16
+00:01:21.110 --> 00:01:28.241
+NARRATOR: Consider this worked case: The
+Caesar cipher shifts each letter by a fixed
+
+17
+00:01:28.241 --> 00:01:33.844
+number, demonstrating how simple substitution
+can be broken with frequency analysis.
+
+18
+00:01:33.844 --> 00:01:41.392
+NARRATOR: On screen, show a Caesar cipher
+alphabet wheel with 'A' shifting to 'D',
+
+19
+00:01:41.392 --> 00:01:43.548
+annotated with 'Substitution Vulnerability'.
+
+20
+00:01:43.548 --> 00:01:50.380
+NARRATOR: Separate the formal definition from
+an implementation detail, then identify what
+
+21
+00:01:50.380 --> 00:01:52.657
+evidence would distinguish them.
+
+22
+00:01:52.657 --> 00:01:59.344
+NARRATOR: A precise definition makes later
+examples easier to evaluate and revise.
+
+23
+00:01:59.450 --> 00:02:05.948
+NARRATOR: With the foundation in place,
+examine how Lesson Title: Private-Key
+
+24
+00:02:05.948 --> 00:02:09.493
+Cryptosystems operates in a concrete sequence.
+
+25
+00:02:09.493 --> 00:02:15.806
+NARRATOR: Encryption supports confidentiality
+when keys and modes are used correctly.
+
+26
+00:02:15.806 --> 00:02:23.459
+NARRATOR: Consider this worked case: DES and
+AES require the same key for encrypting and
+
+27
+00:02:23.459 --> 00:02:29.071
+decrypting data, making them fast but
+dependent on secure key distribution.
+
+28
+00:02:29.071 --> 00:02:36.252
+NARRATOR: On screen, illustrate a two-way
+arrow between 'Sender' and 'Receiver' with a
+
+29
+00:02:36.252 --> 00:02:40.118
+single key symbol, labeled 'Symmetric Key
+Exchange'.
+
+30
+00:02:40.118 --> 00:02:47.290
+NARRATOR: Follow every arrow in order and name
+the state before and after each transition.
+
+31
+00:02:47.290 --> 00:02:52.899
+NARRATOR: The trace converts an abstract
+statement into an inspectable sequence.
+
+32
+00:02:52.899 --> 00:02:59.738
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+33
+00:02:59.738 --> 00:03:01.603
+throughout the analysis.
+
+34
+00:03:01.706 --> 00:03:08.795
+NARRATOR: Next, compare the choices involved
+in Lesson Title: Public-Key Cryptosystems and
+
+35
+00:03:08.795 --> 00:03:11.749
+make the decision criteria explicit.
+
+36
+00:03:11.749 --> 00:03:18.008
+NARRATOR: The Secure Software Development
+Framework groups practices into four practice
+
+37
+00:03:18.008 --> 00:03:18.577
+groups.
+
+38
+00:03:18.577 --> 00:03:26.366
+NARRATOR: Consider this worked case: RSA uses
+a public key for encryption and a private key
+
+39
+00:03:26.366 --> 00:03:31.234
+for decryption, solving the key distribution
+problem in symmetric systems.
+
+40
+00:03:31.234 --> 00:03:39.292
+NARRATOR: On screen, draw a split key icon:
+'Public Key' (open hand) and 'Private Key'
+
+41
+00:03:39.292 --> 00:03:42.515
+(closed fist), labeled 'Asymmetric Key Pair'.
+
+42
+00:03:42.515 --> 00:03:49.215
+NARRATOR: Compare alternatives against the
+same constraints so the evaluation does not
+
+43
+00:03:49.215 --> 00:03:50.890
+move the goalposts.
+
+44
+00:03:50.890 --> 00:03:57.437
+NARRATOR: Using shared criteria turns a
+preference into a defensible technical choice.
+
+45
+00:03:57.554 --> 00:04:03.499
+NARRATOR: Apply Lesson Title: Hashing
+Functions to a worked situation instead of
+
+46
+00:04:03.499 --> 00:04:06.472
+treating it as an isolated definition.
+
+47
+00:04:06.472 --> 00:04:12.484
+NARRATOR: Produce Well-Secured Software
+addresses security requirements, design,
+
+48
+00:04:12.484 --> 00:04:14.738
+verification, and release.
+
+49
+00:04:14.738 --> 00:04:22.715
+NARRATOR: Consider this worked case: SHA-256
+generates a unique 256-bit hash for a
+
+50
+00:04:22.715 --> 00:04:28.238
+document, where altering any bit changes the
+entire output.
+
+51
+00:04:28.238 --> 00:04:37.847
+NARRATOR: On screen, show a document entering
+a hash function box, outputting a long hex
+
+52
+00:04:37.847 --> 00:04:41.691
+string, labeled 'Integrity Check via SHA-256'.
+
+53
+00:04:41.691 --> 00:04:48.215
+NARRATOR: Work from the concrete inputs to the
+result, checking units, types, or invariants
+
+54
+00:04:48.215 --> 00:04:49.613
+at each step.
+
+55
+00:04:49.613 --> 00:04:54.660
+NARRATOR: The worked case shows both how to
+apply the method and how to check it.
+
+56
+00:04:54.770 --> 00:05:01.263
+NARRATOR: Examine the tradeoffs in Lesson
+Title: Data Integrity and Authentication,
+
+57
+00:05:01.263 --> 00:05:05.985
+including what improves and what becomes more
+difficult.
+
+58
+00:05:05.985 --> 00:05:12.643
+NARRATOR: Message authentication and digital
+signatures address integrity and authenticity
+
+59
+00:05:12.643 --> 00:05:14.641
+in different ways.
+
+60
+00:05:14.641 --> 00:05:21.020
+NARRATOR: Consider this worked case: A digital
+signature uses the sender's private key to
+
+61
+00:05:21.020 --> 00:05:26.032
+sign a message, which the receiver verifies
+with the public key.
+
+62
+00:05:26.032 --> 00:05:34.540
+NARRATOR: On screen, display a document with a
+signature stamp and a verification checkmark,
+
+63
+00:05:34.540 --> 00:05:37.579
+labeled 'Authenticity via Digital Signatures'.
+
+64
+00:05:37.579 --> 00:05:43.864
+NARRATOR: State the benefit, the cost, and the
+condition under which the tradeoff is
+
+65
+00:05:43.864 --> 00:05:44.313
+acceptable.
+
+66
+00:05:44.313 --> 00:05:51.501
+NARRATOR: Making the tradeoff visible prevents
+a local improvement from hiding a larger cost.
+
+67
+00:05:51.602 --> 00:05:58.243
+NARRATOR: Stress-test the reasoning around
+Lesson Title: Key Management Practices with an
+
+68
+00:05:58.243 --> 00:06:03.223
+edge case and identify which assumption
+controls the outcome.
+
+69
+00:06:03.223 --> 00:06:10.794
+NARRATOR: Key management covers generation,
+distribution, storage, use, rotation,
+
+70
+00:06:10.794 --> 00:06:13.317
+revocation, and destruction.
+
+71
+00:06:13.317 --> 00:06:20.713
+NARRATOR: Consider this worked case: Keys must
+be stored in hardware security modules and
+
+72
+00:06:20.713 --> 00:06:24.411
+rotated regularly to limit exposure if
+compromised.
+
+73
+00:06:24.411 --> 00:06:31.420
+NARRATOR: On screen, show a key lifecycle
+diagram: 'Generate' -> 'Store' -> 'Use' ->
+
+74
+00:06:31.420 --> 00:06:35.926
+'Rotate' -> 'Destroy', with lock icons at each
+stage.
+
+75
+00:06:35.926 --> 00:06:41.912
+NARRATOR: Change one assumption at a time and
+observe which part of the reasoning no longer
+
+76
+00:06:41.912 --> 00:06:42.286
+holds.
+
+77
+00:06:42.286 --> 00:06:48.671
+NARRATOR: The edge case reveals the boundary
+of the claim without discarding the useful
+
+78
+00:06:48.671 --> 00:06:49.583
+core idea.
+
+79
+00:06:49.706 --> 00:06:56.995
+NARRATOR: Use Lesson Title: Modes of Operation
+to diagnose a failure by separating symptoms,
+
+80
+00:06:56.995 --> 00:06:59.077
+causes, and corrective action.
+
+81
+00:06:59.077 --> 00:07:05.200
+NARRATOR: Modes of operation define how a
+primitive processes data larger than one
+
+82
+00:07:05.200 --> 00:07:05.671
+block.
+
+83
+00:07:05.671 --> 00:07:12.803
+NARRATOR: Consider this worked case: CBC mode
+uses a chaining value to link blocks,
+
+84
+00:07:12.803 --> 00:07:15.859
+preventing pattern repetition in encrypted
+output.
+
+85
+00:07:15.859 --> 00:07:23.612
+NARRATOR: On screen, illustrate a block cipher
+processing two blocks with a feedback loop,
+
+86
+00:07:23.612 --> 00:07:25.827
+labeled 'CBC Mode Chaining'.
+
+87
+00:07:25.827 --> 00:07:31.509
+NARRATOR: Locate the first point where
+observed behavior diverges from expected
+
+88
+00:07:31.509 --> 00:07:35.124
+behavior, then test the smallest plausible
+cause.
+
+89
+00:07:35.124 --> 00:07:41.062
+NARRATOR: The diagnosis is strongest when
+another person can reproduce the observation
+
+90
+00:07:41.062 --> 00:07:42.546
+and the test.
+
+91
+00:07:42.650 --> 00:07:48.042
+NARRATOR: Connect Lesson Title: Security
+Implementation & Validation to the earlier
+
+92
+00:07:48.042 --> 00:07:52.943
+ideas and explain how the pieces work as one
+system.
+
+93
+00:07:52.943 --> 00:07:58.836
+NARRATOR: Security depends on the complete
+protocol and implementation, not only an
+
+94
+00:07:58.836 --> 00:07:59.818
+algorithm name.
+
+95
+00:07:59.818 --> 00:08:07.571
+NARRATOR: Consider this worked case: Timing
+attacks can exploit variable execution times
+
+96
+00:08:07.571 --> 00:08:12.740
+in cryptographic libraries, requiring
+constant-time implementations for validation.
+
+97
+00:08:12.740 --> 00:08:20.990
+NARRATOR: On screen, show a security checklist
+with items: 'Algorithm Validated',
+
+98
+00:08:20.990 --> 00:08:26.240
+'Implementation Tested', 'Side-Channel
+Mitigated', labeled 'Validation Checklist'.
+
+99
+00:08:26.240 --> 00:08:35.165
+NARRATOR: Explain each connection explicitly
+and verify that information retains the same
+
+100
+00:08:35.165 --> 00:08:37.396
+meaning across representations.
+
+101
+00:08:37.396 --> 00:08:44.564
+NARRATOR: The synthesis matters only if every
+connection remains supported by the original
+
+102
+00:08:44.564 --> 00:08:45.115
+evidence.
+
+103
+00:08:45.218 --> 00:08:51.237
+NARRATOR: Finish with Lesson Title: Practical
+Analysis Checklist as a practical checklist
+
+104
+00:08:51.237 --> 00:08:54.246
+that can guide a new analysis.
+
+105
+00:08:54.246 --> 00:09:00.386
+NARRATOR: Cryptographic standards define
+approved algorithms and parameters.
+
+106
+00:09:00.386 --> 00:09:09.256
+NARRATOR: Consider this worked case: A secure
+system uses AES for confidentiality, SHA-256
+
+107
+00:09:09.256 --> 00:09:16.761
+for integrity, RSA for authentication, and
+follows NIST key management standards.
+
+108
+00:09:16.761 --> 00:09:24.402
+NARRATOR: On screen, display a practical
+analysis checklist with checkboxes:
+
+109
+00:09:24.402 --> 00:09:29.750
+'Confidentiality Mechanism', 'Integrity
+Check', 'Authentication Method', 'Key
+
+110
+00:09:29.750 --> 00:09:32.042
+Management', 'Implementation Validated'.
+
+111
+00:09:32.042 --> 00:09:39.685
+NARRATOR: For each checklist item, record the
+evidence, the remaining uncertainty, and the
+
+112
+00:09:39.685 --> 00:09:41.449
+next verification step.
+
+113
+00:09:41.449 --> 00:09:47.390
+NARRATOR: The result is a repeatable
+procedure, not a conclusion that depends on
+
+114
+00:09:47.390 --> 00:09:48.761
+memory or intuition.

@@ -1,0 +1,303 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Begin by framing Lesson Title: Foundations of Cybersecurity Principles as a question about inputs, decisions, and observable results. It will cover cybersecurity principles, policies and mechanisms; core knowledge areas of data, software, component, connection, system, human, organizational and societal security; and crosscutting concepts of confidentiality, integrity, availability, risk, adversarial thinking, and systems thinking. Consider this worked case: A hospital's electronic health records must remain confidential from unauthorized users, maintain integrity against tampering, and remain available during peak patient intake hours. On screen, display a simple Venn diagram showing the overlapping circles of confidentiality, integrity, and availability, with a central 'Secure System' label. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 68,
+      "title": "Lesson Title: Foundations of Cybersecurity Principles",
+      "visualDirection": "template:academic-process | Display a simple Venn diagram showing the overlapping circles of confidentiality, integrity, and availability, with a central 'Secure System' label."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Now define Lesson Title: Cryptographic Standards and Confidentiality precisely enough that another learner could test the definition. Encryption supports confidentiality when keys and modes are used correctly. Consider this worked case: AES-256 encryption with proper key management ensures patient data remains unreadable to unauthorized personnel, satisfying confidentiality requirements. On screen, show a flowchart: Plaintext -> Encryption Algorithm (AES-256) -> Ciphertext, with a lock icon labeled 'Confidentiality'. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 57,
+      "title": "Lesson Title: Cryptographic Standards and Confidentiality",
+      "visualDirection": "template:academic-process | Show a flowchart: Plaintext -> Encryption Algorithm (AES-256) -> Ciphertext, with a lock icon labeled 'Confidentiality'."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "With the foundation in place, examine how Lesson Title: Integrity and Authentication Mechanisms operates in a concrete sequence. Message authentication and digital signatures address integrity and authenticity in different ways. Consider this worked case: A digital signature on a software update verifies the developer's identity and confirms the code has not been modified during transmission. On screen, display a side-by-side comparison: Hash-based message authentication (integrity check) vs. Digital signature (integrity + authenticity). Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "plannedSeconds": 55,
+      "title": "Lesson Title: Integrity and Authentication Mechanisms",
+      "visualDirection": "template:academic-process | Display a side-by-side comparison: Hash-based message authentication (integrity check) vs. Digital signature (integrity + authenticity)."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "Next, compare the choices involved in Lesson Title: Secure Software Development Framework (SSDF) and make the decision criteria explicit. The Secure Software Development Framework groups practices into four practice groups. Consider this worked case: A development team uses the 'Prepare the Organization' group to establish secure coding standards and training before writing any code. On screen, create a four-step circular diagram labeled with the four SSDF practice groups, connected by arrows indicating iterative flow. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "plannedSeconds": 55,
+      "title": "Lesson Title: Secure Software Development Framework (SSDF)",
+      "visualDirection": "template:academic-process | Create a four-step circular diagram labeled with the four SSDF practice groups, connected by arrows indicating iterative flow."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Apply Lesson Title: Security Requirements and Verification to a worked situation instead of treating it as an isolated definition. Verification provides evidence that selected practices and controls were performed. Consider this worked case: A compliance officer reviews a checklist to verify that all encryption standards and access controls were implemented before software release. On screen, show a checklist graphic with checkboxes next to security requirements, highlighting 'Verification' as the final step. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 56,
+      "title": "Lesson Title: Security Requirements and Verification",
+      "visualDirection": "template:academic-process | Show a checklist graphic with checkboxes next to security requirements, highlighting 'Verification' as the final step."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "Examine the tradeoffs in Lesson Title: Vulnerability Management and Response, including what improves and what becomes more difficult. Respond to Vulnerabilities identifies, analyzes, remediates, and learns from discovered weaknesses. Consider this worked case: After a penetration test reveals an unpatched database vulnerability, the team patches the code, updates documentation, and trains developers on secure input validation. On screen, display a feedback loop diagram: Vulnerability Discovery -> Analysis -> Remediation -> Learning/Improvement. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "plannedSeconds": 55,
+      "title": "Lesson Title: Vulnerability Management and Response",
+      "visualDirection": "template:academic-process | Display a feedback loop diagram: Vulnerability Discovery -> Analysis -> Remediation -> Learning/Improvement."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "Stress-test the reasoning around Lesson Title: Adversarial Thinking and Threat Modeling with an edge case and identify which assumption controls the outcome. Security reasoning identifies assets, trust boundaries, threats, controls, evidence, residual risk, and responsibilities. Consider this worked case: An analyst maps a web application's trust boundary, identifies a potential SQL injection threat, and assigns a control to validate all user inputs. On screen, show a trust boundary diagram with internal assets, external threats, and a labeled 'Control' zone between them. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 61,
+      "title": "Lesson Title: Adversarial Thinking and Threat Modeling",
+      "visualDirection": "template:academic-process | Show a trust boundary diagram with internal assets, external threats, and a labeled 'Control' zone between them."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "Use Lesson Title: Systems Thinking and Crosscutting Concepts to diagnose a failure by separating symptoms, causes, and corrective action. This course provides a broad introduction to cybersecurity principles and practices, and emphasizes policies and mechanisms for building secure and trusted computer systems. Consider this worked case: A policy requiring multi-factor authentication reduces risk by addressing both human behavior and system access points simultaneously. On screen, create a layered system model showing data, software, human, and policy layers, with arrows indicating cross-cutting security concepts. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 62,
+      "title": "Lesson Title: Systems Thinking and Crosscutting Concepts",
+      "visualDirection": "template:academic-process | Create a layered system model showing data, software, human, and policy layers, with arrows indicating cross-cutting security concepts."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Connect Lesson Title: Privacy, Ethics, and Legal Compliance to the earlier ideas and explain how the pieces work as one system. Topics in privacy, and legal and ethical aspects will also be emphasized. Consider this worked case: A healthcare app implements data minimization and consent mechanisms to comply with privacy regulations while maintaining security. On screen, display a balance scale graphic with 'Security' on one side and 'Privacy/Ethics/Legal' on the other, labeled 'Balanced Design'. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 55,
+      "title": "Lesson Title: Privacy, Ethics, and Legal Compliance",
+      "visualDirection": "template:academic-process | Display a balance scale graphic with 'Security' on one side and 'Privacy/Ethics/Legal' on the other, labeled 'Balanced Design'."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "Finish with Lesson Title: Practical Analysis Checklist as a practical checklist that can guide a new analysis. This course requires the knowledge of computer science theory and concepts of computer systems. Consider this worked case: An auditor reviews a cloud migration plan against the checklist to verify encryption, access controls, backup availability, and risk mitigation steps. On screen, show a printable checklist template with columns for 'Component', 'Confidentiality', 'Integrity', 'Availability', 'Risk Level', and 'Mitigation'. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 57,
+      "title": "Lesson Title: Practical Analysis Checklist",
+      "visualDirection": "template:academic-process | Show a printable checklist template with columns for 'Component', 'Confidentiality', 'Integrity', 'Availability', 'Risk Level', and 'Mitigation'."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "rit-csci-455"
+      ],
+      "text": "It will cover cybersecurity principles, policies and mechanisms; core knowledge areas of data, software, component, connection, system, human, organizational and societal security; and crosscutting concepts of confidentiality, integrity, availability, risk, adversarial thinking, and systems thinking.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "nist-cryptographic-standards"
+      ],
+      "text": "Encryption supports confidentiality when keys and modes are used correctly.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "nist-cryptographic-standards"
+      ],
+      "text": "Message authentication and digital signatures address integrity and authenticity in different ways.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "nist-ssdf"
+      ],
+      "text": "The Secure Software Development Framework groups practices into four practice groups.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "nist-ssdf"
+      ],
+      "text": "Verification provides evidence that selected practices and controls were performed.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "nist-ssdf"
+      ],
+      "text": "Respond to Vulnerabilities identifies, analyzes, remediates, and learns from discovered weaknesses.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "nist-ssdf"
+      ],
+      "text": "Security reasoning identifies assets, trust boundaries, threats, controls, evidence, residual risk, and responsibilities.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "rit-csci-455"
+      ],
+      "text": "This course provides a broad introduction to cybersecurity principles and practices, and emphasizes policies and mechanisms for building secure and trusted computer systems.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "rit-csci-455"
+      ],
+      "text": "Topics in privacy, and legal and ethical aspects will also be emphasized.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "rit-csci-455"
+      ],
+      "text": "This course requires the knowledge of computer science theory and concepts of computer systems.",
+      "verified": true
+    }
+  ],
+  "id": "csci-455-principles-of-cybersecurity-foundations-lesson-blueprin",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "Rochester Institute of Technology",
+      "excerpt": "This course provides a broad introduction to cybersecurity principles and practices, and emphasizes policies and mechanisms for building secure and trusted computer systems. It will cover cybersecurity principles, policies and mechanisms; core knowledge areas of data, software, component, connection, system, human, organizational and societal security; and crosscutting concepts of confidentiality, integrity, availability, risk, adversarial thinking, and systems thinking. Topics in privacy, and legal and ethical aspects will also be emphasized. Presentations, reports and projects are required. Students cannot take and receive credit for this course if they have credit for CSCI-655. This course requires the knowledge of computer science theory and concepts of computer systems. Prerequisites:",
+      "id": "rit-csci-455",
+      "sha256": "620cc21a498d20671c78a7ac74f45983a599b9d2c7ac7c992b0f2e2f8d82d50d",
+      "title": "RIT CSCI-455 Principles of Cybersecurity catalog description",
+      "type": "note",
+      "uri": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02=",
+      "verified": true
+    },
+    {
+      "author": "National Institute of Standards and Technology",
+      "excerpt": "The Secure Software Development Framework groups practices into four practice groups. Prepare the Organization establishes people, processes, and technology for secure development. Protect the Software prevents unauthorized access to code and development artifacts. Produce Well-Secured Software addresses security requirements, design, verification, and release. Respond to Vulnerabilities identifies, analyzes, remediates, and learns from discovered weaknesses. Security requirements should be tracked throughout development. Verification provides evidence that selected practices and controls were performed. Security reasoning identifies assets, trust boundaries, threats, controls, evidence, residual risk, and responsibilities.",
+      "id": "nist-ssdf",
+      "sha256": "17c15c6a3a522d311732bc0022c92ccb85de44ca6a09bde629c605eafbbaf442",
+      "title": "NIST Secure Software Development Framework",
+      "type": "note",
+      "uri": "https://csrc.nist.gov/pubs/sp/800/218/final",
+      "verified": true
+    },
+    {
+      "author": "National Institute of Standards and Technology",
+      "excerpt": "Cryptographic standards define approved algorithms and parameters. Encryption supports confidentiality when keys and modes are used correctly. Message authentication and digital signatures address integrity and authenticity in different ways. Random number generation supports keys, nonces, and other security parameters. Key management covers generation, distribution, storage, use, rotation, revocation, and destruction. Modes of operation define how a primitive processes data larger than one block. Validation checks implementations against specified requirements. Security depends on the complete protocol and implementation, not only an algorithm name. Analysis also considers side channels and migration requirements.",
+      "id": "nist-cryptographic-standards",
+      "sha256": "a50096140c969dba44c56eabec718ea39e693d3bb01255ae0cb21fa71c53c7e4",
+      "title": "NIST Cryptographic Standards and Guidelines",
+      "type": "note",
+      "uri": "https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines",
+      "verified": true
+    }
+  ],
+  "title": "CSCI-455: Principles of Cybersecurity - Foundations Lesson Blueprint"
+}
