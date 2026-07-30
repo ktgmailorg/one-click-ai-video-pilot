@@ -1,0 +1,633 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:02.283
+NARRATOR: Programming begins before code.
+
+2
+00:00:02.283 --> 00:00:07.729
+NARRATOR: Start by stating what information
+enters the program, what result must leave it,
+
+3
+00:00:07.729 --> 00:00:10.063
+and which constraints must always hold.
+
+4
+00:00:10.063 --> 00:00:16.206
+NARRATOR: For a grade calculator, inputs may
+be scores and weights; the output may be a
+
+5
+00:00:16.206 --> 00:00:17.742
+numeric average and category.
+
+6
+00:00:17.742 --> 00:00:22.257
+NARRATOR: Write ordinary examples, boundary
+examples, and invalid examples.
+
+7
+00:00:22.257 --> 00:00:27.181
+NARRATOR: This creates a behavioral contract
+that can be checked independently of syntax.
+
+8
+00:00:27.181 --> 00:00:31.045
+NARRATOR: Then identify the transformations
+between input and output.
+
+9
+00:00:31.045 --> 00:00:36.144
+NARRATOR: A clear contract prevents a common
+failure: writing statements that run without
+
+10
+00:00:36.144 --> 00:00:38.890
+knowing whether they solve the intended
+problem.
+
+11
+00:00:38.890 --> 00:00:44.805
+NARRATOR: Code is an executable representation
+of a model, so the model must be
+
+12
+00:00:44.805 --> 00:00:45.650
+understandable first.
+
+13
+00:00:45.770 --> 00:00:48.908
+NARRATOR: A program stores information as
+values.
+
+14
+00:00:48.908 --> 00:00:54.333
+NARRATOR: Numbers support arithmetic, strings
+represent text, Boolean values represent
+
+15
+00:00:54.333 --> 00:00:58.130
+true-or-false conditions, and collections
+group related values.
+
+16
+00:00:58.130 --> 00:01:03.478
+NARRATOR: A variable is a name bound to a
+value, not a permanent box with one fixed
+
+17
+00:01:03.478 --> 00:01:03.793
+meaning.
+
+18
+00:01:03.793 --> 00:01:07.110
+NARRATOR: Assignment changes which value a
+name refers to.
+
+19
+00:01:07.110 --> 00:01:12.717
+NARRATOR: Good names express the role of the
+data: total cost is clearer than t.
+
+20
+00:01:12.717 --> 00:01:15.707
+Representation choices affect the rest of the
+design.
+
+21
+00:01:15.707 --> 00:01:21.054
+NARRATOR: A date stored as one ambiguous
+string is harder to validate than separate
+
+22
+00:01:21.054 --> 00:01:22.964
+year, month, and day values.
+
+23
+00:01:22.964 --> 00:01:28.539
+NARRATOR: Ask what operations the program
+needs, what invalid states are possible, and
+
+24
+00:01:28.539 --> 00:01:31.969
+which representation makes correct behavior
+easiest to express.
+
+25
+00:01:32.114 --> 00:01:34.206
+NARRATOR: Expressions compute values.
+
+26
+00:01:34.206 --> 00:01:39.396
+NARRATOR: Arithmetic operators combine
+numbers; comparison operators produce Boolean
+
+27
+00:01:39.396 --> 00:01:42.280
+results; Boolean operators combine conditions.
+
+28
+00:01:42.280 --> 00:01:44.410
+NARRATOR: Evaluation order matters.
+
+29
+00:01:44.410 --> 00:01:49.430
+NARRATOR: Multiplication normally occurs
+before addition, but parentheses make the
+
+30
+00:01:49.430 --> 00:01:52.944
+intended grouping explicit and easier to
+review.
+
+31
+00:01:52.944 --> 00:01:57.944
+NARRATOR: Avoid packing an entire algorithm
+into one clever expression.
+
+32
+00:01:57.944 --> 00:02:02.679
+NARRATOR: Intermediate names can expose
+meaning and provide places to inspect
+
+33
+00:02:02.679 --> 00:02:03.109
+behavior.
+
+34
+00:02:03.109 --> 00:02:07.921
+NARRATOR: Types matter too: adding numbers
+differs from concatenating text, and
+
+35
+00:02:07.921 --> 00:02:10.546
+converting user input should be deliberate.
+
+36
+00:02:10.546 --> 00:02:15.176
+NARRATOR: When an expression behaves
+unexpectedly, evaluate it from the inside
+
+37
+00:02:15.176 --> 00:02:21.489
+outward, inspect each intermediate value, and
+confirm that the data type and unit match the
+
+38
+00:02:21.489 --> 00:02:22.331
+intended calculation.
+
+39
+00:02:22.490 --> 00:02:24.825
+NARRATOR: A conditional represents a decision.
+
+40
+00:02:24.825 --> 00:02:29.391
+NARRATOR: Each condition should correspond to
+a meaningful rule in the problem.
+
+41
+00:02:29.391 --> 00:02:31.840
+NARRATOR: Order matters when ranges overlap.
+
+42
+00:02:31.840 --> 00:02:38.263
+NARRATOR: In a grading rule, check the highest
+threshold first or express non-overlapping
+
+43
+00:02:38.263 --> 00:02:39.251
+intervals explicitly.
+
+44
+00:02:39.251 --> 00:02:44.659
+NARRATOR: Include a final else only when a
+meaningful default or invalid case exists.
+
+45
+00:02:44.659 --> 00:02:48.980
+NARRATOR: Deeply nested conditions are
+difficult to reason about, so simplify
+
+46
+00:02:48.980 --> 00:02:54.480
+repeated tests and extract named helper
+functions when a decision has its own concept.
+
+47
+00:02:54.480 --> 00:02:59.765
+NARRATOR: Test conditions at boundaries:
+exactly zero, exactly the threshold, just
+
+48
+00:02:59.765 --> 00:03:01.687
+below, and just above.
+
+49
+00:03:01.687 --> 00:03:06.937
+NARRATOR: A condition is correct only when
+both the true path and the false path match
+
+50
+00:03:06.937 --> 00:03:07.593
+the specification.
+
+51
+00:03:07.730 --> 00:03:09.848
+NARRATOR: Loops express repetition.
+
+52
+00:03:09.848 --> 00:03:15.320
+NARRATOR: A for loop naturally processes each
+item in a collection, while a while loop
+
+53
+00:03:15.320 --> 00:03:17.144
+repeats until a condition changes.
+
+54
+00:03:17.144 --> 00:03:21.770
+NARRATOR: Every loop needs a clear
+initialization, update, and termination
+
+55
+00:03:21.770 --> 00:03:22.233
+argument.
+
+56
+00:03:22.233 --> 00:03:26.506
+NARRATOR: An invariant describes what remains
+true after each iteration.
+
+57
+00:03:26.506 --> 00:03:32.209
+NARRATOR: In a running total, the invariant
+may be that total equals the sum of all items
+
+58
+00:03:32.209 --> 00:03:33.215
+processed so far.
+
+59
+00:03:33.215 --> 00:03:37.157
+NARRATOR: This idea makes loops easier to
+prove and debug.
+
+60
+00:03:37.157 --> 00:03:42.628
+NARRATOR: Watch for off-by-one errors, empty
+collections, and updates that never occur.
+
+61
+00:03:42.628 --> 00:03:47.584
+NARRATOR: Print tracing can help during
+development, but a final design should make
+
+62
+00:03:47.584 --> 00:03:52.541
+the loop's purpose visible through names and
+structure rather than relying on debugging
+
+63
+00:03:52.541 --> 00:03:52.922
+output.
+
+64
+00:03:53.066 --> 00:03:56.880
+NARRATOR: A function gives one piece of
+behavior a name and a boundary.
+
+65
+00:03:56.880 --> 00:04:01.250
+NARRATOR: Parameters describe what the
+function needs; the return value describes
+
+66
+00:04:01.250 --> 00:04:02.442
+what it produces.
+
+67
+00:04:02.442 --> 00:04:08.510
+NARRATOR: Prefer a function that completes one
+coherent responsibility over a long function
+
+68
+00:04:08.510 --> 00:04:15.044
+that reads input, calculates, prints, modifies
+global state, and handles every error at once.
+
+69
+00:04:15.044 --> 00:04:20.156
+NARRATOR: Pure calculation functions are
+especially easy to test because the same
+
+70
+00:04:20.156 --> 00:04:23.564
+inputs produce the same outputs without hidden
+dependencies.
+
+71
+00:04:23.564 --> 00:04:28.754
+NARRATOR: Avoid using global variables when a
+parameter or return value would make the
+
+72
+00:04:28.754 --> 00:04:29.495
+dependency explicit.
+
+73
+00:04:29.495 --> 00:04:34.418
+NARRATOR: Good decomposition follows concepts
+in the problem: validate score, compute
+
+74
+00:04:34.418 --> 00:04:39.788
+weighted average, and format result are
+meaningful units that can be reviewed
+
+75
+00:04:39.788 --> 00:04:40.235
+separately.
+
+76
+00:04:40.370 --> 00:04:43.342
+NARRATOR: Collections are not interchangeable
+containers.
+
+77
+00:04:43.342 --> 00:04:47.322
+NARRATOR: A list preserves order and can
+contain repeated values.
+
+78
+00:04:47.322 --> 00:04:51.659
+NARRATOR: A tuple represents an ordered
+grouping that is not changed in place.
+
+79
+00:04:51.659 --> 00:04:54.899
+NARRATOR: A set emphasizes membership and
+uniqueness.
+
+80
+00:04:54.899 --> 00:04:58.916
+NARRATOR: A dictionary maps keys to values for
+direct lookup.
+
+81
+00:04:58.916 --> 00:05:02.552
+NARRATOR: Choose according to the operations
+the problem requires.
+
+82
+00:05:02.552 --> 00:05:07.840
+NARRATOR: If student records are repeatedly
+retrieved by identifier, a dictionary may
+
+83
+00:05:07.840 --> 00:05:11.365
+express the relationship better than scanning
+a list.
+
+84
+00:05:11.365 --> 00:05:15.205
+NARRATOR: If order matters, a set alone is
+insufficient.
+
+85
+00:05:15.205 --> 00:05:20.456
+NARRATOR: Consider empty collections,
+duplicate keys or values, and whether mutation
+
+86
+00:05:20.456 --> 00:05:21.888
+should be allowed.
+
+87
+00:05:21.888 --> 00:05:27.810
+NARRATOR: Representation is part of algorithm
+design because it determines both clarity and
+
+88
+00:05:27.810 --> 00:05:28.266
+performance.
+
+89
+00:05:28.394 --> 00:05:34.323
+NARRATOR: Programs interact with files, users,
+networks, and data that may be missing or
+
+90
+00:05:34.323 --> 00:05:34.747
+malformed.
+
+91
+00:05:34.747 --> 00:05:40.002
+NARRATOR: Validate predictable constraints
+close to the boundary: required fields,
+
+92
+00:05:40.002 --> 00:05:42.629
+numeric ranges, and allowed choices.
+
+93
+00:05:42.629 --> 00:05:47.520
+NARRATOR: Exceptions handle operations that
+fail despite the intended call, such as
+
+94
+00:05:47.520 --> 00:05:50.780
+converting nonnumeric text or opening a
+missing file.
+
+95
+00:05:50.780 --> 00:05:54.900
+NARRATOR: Catch only exceptions the program
+can respond to meaningfully.
+
+96
+00:05:54.900 --> 00:06:00.210
+NARRATOR: A broad catch that silently
+continues can hide defects and corrupt
+
+97
+00:06:00.210 --> 00:06:00.652
+results.
+
+98
+00:06:00.652 --> 00:06:06.235
+NARRATOR: Error messages should explain what
+failed and what the user can do next without
+
+99
+00:06:06.235 --> 00:06:06.979
+exposing secrets.
+
+100
+00:06:06.979 --> 00:06:11.912
+NARRATOR: Separate the normal path from
+recovery so that correct behavior remains
+
+101
+00:06:11.912 --> 00:06:12.323
+readable.
+
+102
+00:06:12.323 --> 00:06:18.375
+NARRATOR: Robustness is not the absence of
+errors; it is controlled, observable behavior
+
+103
+00:06:18.375 --> 00:06:19.772
+when errors occur.
+
+104
+00:06:19.922 --> 00:06:24.451
+NARRATOR: Testing converts the behavioral
+contract into repeatable evidence.
+
+105
+00:06:24.451 --> 00:06:28.711
+NARRATOR: Begin with a small normal case whose
+answer can be calculated by hand.
+
+106
+00:06:28.711 --> 00:06:34.740
+NARRATOR: Add boundary cases, such as an empty
+collection, one item, the maximum allowed
+
+107
+00:06:34.740 --> 00:06:37.754
+value, and values immediately around a
+threshold.
+
+108
+00:06:37.754 --> 00:06:41.185
+NARRATOR: Add invalid cases and confirm the
+intended error.
+
+109
+00:06:41.185 --> 00:06:46.822
+NARRATOR: Each test should identify one
+behavior and produce a clear failure when that
+
+110
+00:06:46.822 --> 00:06:47.627
+behavior changes.
+
+111
+00:06:47.627 --> 00:06:53.397
+NARRATOR: Tests do not prove the absence of
+every defect, but they protect known
+
+112
+00:06:53.397 --> 00:06:55.458
+requirements and make refactoring safer.
+
+113
+00:06:55.458 --> 00:07:00.945
+NARRATOR: When a defect is found, first create
+a test that reproduces it, then repair the
+
+114
+00:07:00.945 --> 00:07:04.374
+code and keep the test as a permanent
+regression check.
+
+115
+00:07:04.514 --> 00:07:07.410
+NARRATOR: A dependable workflow is iterative.
+
+116
+00:07:07.410 --> 00:07:11.453
+NARRATOR: Define inputs, outputs, constraints,
+and examples.
+
+117
+00:07:11.453 --> 00:07:15.242
+NARRATOR: Choose representations that support
+the required operations.
+
+118
+00:07:15.242 --> 00:07:18.316
+NARRATOR: Write the smallest correct step and
+observe it.
+
+119
+00:07:18.316 --> 00:07:21.708
+NARRATOR: Add conditions and loops with
+explicit reasoning.
+
+120
+00:07:21.708 --> 00:07:25.599
+NARRATOR: Extract functions around coherent
+responsibilities.
+
+121
+00:07:25.599 --> 00:07:29.859
+NARRATOR: Validate external input and handle
+recoverable failures.
+
+122
+00:07:29.859 --> 00:07:33.507
+NARRATOR: Turn examples and boundaries into
+automated tests.
+
+123
+00:07:33.507 --> 00:07:37.474
+NARRATOR: Then revise names and structure
+without changing behavior.
+
+124
+00:07:37.474 --> 00:07:42.081
+NARRATOR: This process scales better than
+writing the whole program and debugging at the
+
+125
+00:07:42.081 --> 00:07:42.410
+end.
+
+126
+00:07:42.410 --> 00:07:46.936
+NARRATOR: Syntax makes instructions
+executable, but reliability comes from the
+
+127
+00:07:46.936 --> 00:07:52.820
+chain of reasoning that connects the original
+problem to data, control flow, functions,
+
+128
+00:07:52.820 --> 00:07:56.441
+tests, and a result another person can
+understand.
+
+129
+00:07:56.441 --> 00:08:01.587
+NARRATOR: Before calling the program complete,
+ask another person to run one normal example
+
+130
+00:08:01.587 --> 00:08:04.527
+and one failure case from the written
+contract.
+
+131
+00:08:04.527 --> 00:08:10.169
+NARRATOR: Their questions often reveal hidden
+assumptions about units, input format, or
+
+132
+00:08:10.169 --> 00:08:11.109
+expected output.
+
+133
+00:08:11.109 --> 00:08:16.035
+NARRATOR: Record those assumptions as
+validation rules, documentation, or tests so
+
+134
+00:08:16.035 --> 00:08:19.170
+the next revision begins with stronger
+evidence.

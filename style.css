@@ -3034,6 +3034,69 @@ footer p {
   color: #245536;
 }
 
+.cs-video-section {
+  width: min(100% - 72px, 1400px);
+  margin: 0 auto;
+  padding: 120px 0;
+  border-top: 1px solid var(--ink);
+}
+
+.cs-series-stats {
+  margin: 45px 0 34px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  gap: 1px;
+}
+
+.cs-series-stats div {
+  min-height: 120px;
+  padding: 24px;
+  display: grid;
+  align-content: center;
+  gap: 6px;
+  background: var(--night);
+  color: var(--white);
+}
+
+.cs-series-stats b {
+  color: var(--orange);
+  font-size: 34px;
+  letter-spacing: -0.04em;
+}
+
+.cs-series-stats span {
+  color: #cfc6ba;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cs-featured-grid {
+  margin-top: 0;
+}
+
+.cs-show-all {
+  margin-top: 30px;
+  min-height: 56px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cs-show-all:hover {
+  background: var(--orange);
+}
+
 .cs-pathway-callout {
   width: min(100% - 72px, 1400px);
   margin: 32px auto 0;
@@ -3568,6 +3631,15 @@ footer p {
   .continue-section,
   .faculty-use-section {
     width: min(100% - 32px, 1400px);
+  }
+
+  .cs-video-section {
+    width: min(100% - 32px, 1400px);
+    padding: 80px 0;
+  }
+
+  .cs-series-stats {
+    grid-template-columns: 1fr;
   }
 
   .cs-pathway-callout,

@@ -10,6 +10,10 @@ const newExamples = [
   "cybersecurity-phishing-check",
   "photography-exposure-triangle",
   "psychology-correlation-causation",
+  "full-programming-foundations",
+  "full-algorithm-analysis",
+  "full-relational-data-management",
+  "full-ai-search-foundations",
 ];
 
 test("the pilot page advertises the learning platform and has no duration cap", async () => {
@@ -36,17 +40,17 @@ test("the learning platform exposes accessible, device-local course progress", a
   assert.doesNotMatch(html, /female narration/i);
 });
 
-test("the course catalog contains twenty-one complete, unique lessons", async () => {
+test("the course catalog contains twenty-five complete, unique lessons", async () => {
   const catalog = JSON.parse(
     await readFile(new URL("course-catalog.json", root), "utf8"),
   );
   assert.equal(catalog.schemaVersion, 1);
-  assert.equal(catalog.courses.length, 21);
-  assert.equal(new Set(catalog.courses.map((course) => course.id)).size, 21);
+  assert.equal(catalog.courses.length, 25);
+  assert.equal(new Set(catalog.courses.map((course) => course.id)).size, 25);
   const fullLessons = catalog.courses.filter(
     (course) => course.format === "Full lesson",
   );
-  assert.equal(fullLessons.length, 6);
+  assert.equal(fullLessons.length, 10);
   assert.ok(fullLessons.every((course) => course.durationSeconds >= 480));
 
   for (const course of catalog.courses) {
@@ -74,22 +78,30 @@ test("the course catalog contains twenty-one complete, unique lessons", async ()
   }
 });
 
-test("the Computer Science pathway preserves prerequisites and links available coverage", async () => {
-  const map = JSON.parse(
-    await readFile(new URL("cs-degree-map.json", root), "utf8"),
-  );
-  assert.equal(map.catalogYear, "2026–2027");
-  assert.equal(map.courses.length, 15);
-  assert.equal(new Set(map.courses.map((course) => course.code)).size, 15);
-  const systems = map.courses.find((course) => course.code === "CSCI 250");
-  assert.deepEqual(systems.prerequisites, ["CSCI 243", "MATH 190"]);
-  assert.ok(systems.linkedLessons.includes("full-riscv-pipeline"));
-  assert.match(map.disclaimer, /not an official degree audit/i);
+test("the learning platform has a dedicated Computer Science video section", async () => {
+  const html = await readFile(new URL("learn.html", root), "utf8");
+  assert.match(html, /id="computer-science"/);
+  assert.match(html, /id="cs-featured-grid"/);
+  assert.doesNotMatch(html, /href="\.\/cs-pathway\.html"/);
 
-  const html = await readFile(new URL("cs-pathway.html", root), "utf8");
-  assert.match(html, /Learning map—not advising/);
-  assert.match(html, /id="cs-stage-list"/);
-  assert.match(html, /official RIT program/);
+  const catalog = JSON.parse(
+    await readFile(new URL("course-catalog.json", root), "utf8"),
+  );
+  const csCourses = catalog.courses.filter((course) =>
+    course.paths.includes("Computer Science"),
+  );
+  assert.ok(csCourses.length >= 8);
+  for (const id of [
+    "full-programming-foundations",
+    "full-algorithm-analysis",
+    "full-relational-data-management",
+    "full-ai-search-foundations",
+  ]) {
+    assert.equal(
+      catalog.courses.find((course) => course.id === id)?.format,
+      "Full lesson",
+    );
+  }
 });
 
 for (const slug of newExamples) {

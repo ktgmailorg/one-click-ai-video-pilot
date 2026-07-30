@@ -1,0 +1,558 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:04.451
+NARRATOR: Algorithm analysis begins by
+separating three layers.
+
+2
+00:00:04.451 --> 00:00:09.081
+NARRATOR: The problem states the required
+relationship between inputs and outputs.
+
+3
+00:00:09.081 --> 00:00:12.869
+NARRATOR: An algorithm is a
+language-independent procedure for producing
+
+4
+00:00:12.869 --> 00:00:13.711
+the output.
+
+5
+00:00:13.711 --> 00:00:18.922
+NARRATOR: An implementation expresses that
+procedure in a programming language and on a
+
+6
+00:00:18.922 --> 00:00:19.323
+machine.
+
+7
+00:00:19.323 --> 00:00:25.261
+NARRATOR: Two programs may implement the same
+algorithm, and two algorithms may solve the
+
+8
+00:00:25.261 --> 00:00:27.806
+same problem with very different costs.
+
+9
+00:00:27.806 --> 00:00:33.398
+NARRATOR: State assumptions about input size,
+allowed operations, and required correctness
+
+10
+00:00:33.398 --> 00:00:34.923
+before comparing performance.
+
+11
+00:00:34.923 --> 00:00:40.102
+NARRATOR: Otherwise a faster-looking program
+may be solving an easier problem or relying on
+
+12
+00:00:40.102 --> 00:00:42.691
+an operation whose cost has been ignored.
+
+13
+00:00:42.691 --> 00:00:47.576
+NARRATOR: Analysis makes comparisons
+meaningful by fixing the question first.
+
+14
+00:00:47.690 --> 00:00:51.160
+NARRATOR: Performance cannot rescue an
+incorrect result.
+
+15
+00:00:51.160 --> 00:00:56.994
+NARRATOR: A correctness argument begins with
+preconditions describing allowed inputs and a
+
+16
+00:00:56.994 --> 00:00:59.425
+postcondition describing the required output.
+
+17
+00:00:59.425 --> 00:01:04.404
+NARRATOR: For iterative algorithms, a loop
+invariant connects the work already completed
+
+18
+00:01:04.404 --> 00:01:06.479
+to the work that remains.
+
+19
+00:01:06.479 --> 00:01:12.156
+NARRATOR: Show that the invariant is true
+initially, preserved by each iteration, and
+
+20
+00:01:12.156 --> 00:01:15.650
+strong enough to imply the postcondition at
+termination.
+
+21
+00:01:15.650 --> 00:01:21.934
+NARRATOR: For recursive algorithms, prove the
+base case and show that correct solutions to
+
+22
+00:01:21.934 --> 00:01:25.076
+smaller subproblems produce a correct larger
+solution.
+
+23
+00:01:25.076 --> 00:01:29.650
+NARRATOR: Test examples help find
+counterexamples, but a proof explains why
+
+24
+00:01:29.650 --> 00:01:31.313
+every allowed case works.
+
+25
+00:01:31.313 --> 00:01:36.262
+NARRATOR: Correctness and performance are
+separate claims, and both need evidence.
+
+26
+00:01:36.386 --> 00:01:39.167
+NARRATOR: To analyze cost, define n.
+
+27
+00:01:39.167 --> 00:01:44.542
+NARRATOR: It may be the number of array
+elements, graph vertices and edges, digits in
+
+28
+00:01:44.542 --> 00:01:47.050
+an integer, or dimensions of a matrix.
+
+29
+00:01:47.050 --> 00:01:52.037
+NARRATOR: Then define which operations count
+as constant time in the chosen model.
+
+30
+00:01:52.037 --> 00:01:56.624
+NARRATOR: Array access and machine-word
+arithmetic may be constant under a
+
+31
+00:01:56.624 --> 00:02:01.629
+random-access model, but arithmetic on
+integers with thousands of digits is not.
+
+32
+00:02:01.629 --> 00:02:06.977
+NARRATOR: Hash-table lookup is commonly
+expected constant time under assumptions, not
+
+33
+00:02:06.977 --> 00:02:09.894
+guaranteed constant time for every input.
+
+34
+00:02:09.894 --> 00:02:11.489
+NARRATOR: State these choices.
+
+35
+00:02:11.489 --> 00:02:16.297
+NARRATOR: An asymptotic result without an
+input measure or model is incomplete.
+
+36
+00:02:16.297 --> 00:02:22.223
+NARRATOR: The model is an abstraction, but a
+useful abstraction exposes dominant structure
+
+37
+00:02:22.223 --> 00:02:24.958
+while remaining connected to implementation
+reality.
+
+38
+00:02:25.106 --> 00:02:30.298
+NARRATOR: Asymptotic notation describes growth
+beyond a sufficiently large input.
+
+39
+00:02:30.298 --> 00:02:36.617
+NARRATOR: Big O is an upper bound: after some
+threshold, the cost is no more than a constant
+
+40
+00:02:36.617 --> 00:02:38.372
+multiple of the comparison function.
+
+41
+00:02:38.372 --> 00:02:40.247
+NARRATOR: Omega is a lower bound.
+
+42
+00:02:40.247 --> 00:02:44.175
+NARRATOR: Theta states both and therefore
+gives a tight growth class.
+
+43
+00:02:44.175 --> 00:02:49.905
+NARRATOR: Big O is not automatically worst
+case; worst, average, and best case describe
+
+44
+00:02:49.905 --> 00:02:53.589
+which inputs are considered, while O describes
+a bound.
+
+45
+00:02:53.589 --> 00:03:00.822
+NARRATOR: A function in Theta of n is also in
+O of n squared, but the looser statement hides
+
+46
+00:03:00.822 --> 00:03:01.203
+information.
+
+47
+00:03:01.203 --> 00:03:06.854
+NARRATOR: Use the tightest justified class and
+state which case is being analyzed.
+
+48
+00:03:06.854 --> 00:03:12.143
+NARRATOR: Constants and lower-order terms
+disappear asymptotically, not because they
+
+49
+00:03:12.143 --> 00:03:15.846
+never matter, but because growth eventually
+dominates.
+
+50
+00:03:15.986 --> 00:03:22.160
+NARRATOR: Constant, logarithmic, linear, n log
+n, quadratic, polynomial, and exponential
+
+51
+00:03:22.160 --> 00:03:24.966
+growth describe very different scaling.
+
+52
+00:03:24.966 --> 00:03:30.156
+NARRATOR: Doubling n barely changes a
+logarithmic cost, doubles a linear cost,
+
+53
+00:03:30.156 --> 00:03:37.076
+roughly doubles plus an additional factor for
+n log n, quadruples a quadratic cost, and can
+
+54
+00:03:37.076 --> 00:03:39.239
+multiply an exponential cost enormously.
+
+55
+00:03:39.239 --> 00:03:43.780
+NARRATOR: This ordering guides design choices
+before low-level optimization.
+
+56
+00:03:43.780 --> 00:03:49.490
+NARRATOR: A carefully optimized quadratic
+algorithm can beat a linear one on tiny
+
+57
+00:03:49.490 --> 00:03:53.882
+inputs, but as n grows the growth-rate
+advantage eventually dominates.
+
+58
+00:03:53.882 --> 00:03:58.078
+NARRATOR: Use realistic input ranges and
+memory constraints too.
+
+59
+00:03:58.078 --> 00:04:03.160
+NARRATOR: Asymptotics predict scaling; they do
+not replace measurement or permit ignoring
+
+60
+00:04:03.160 --> 00:04:06.548
+large constants when the deployment range is
+known.
+
+61
+00:04:06.674 --> 00:04:11.203
+NARRATOR: For a loop, count how many times the
+body runs and the cost of each run.
+
+62
+00:04:11.203 --> 00:04:16.228
+NARRATOR: A loop from zero to n minus one with
+constant body work is linear.
+
+63
+00:04:16.228 --> 00:04:22.095
+NARRATOR: Two independent loops in sequence
+add, so linear plus linear remains linear.
+
+64
+00:04:22.095 --> 00:04:27.478
+NARRATOR: Perfectly nested loops of n
+iterations multiply to n squared.
+
+65
+00:04:27.478 --> 00:04:33.842
+NARRATOR: But bounds may depend on the outer
+index, producing a sum such as one plus two
+
+66
+00:04:33.842 --> 00:04:36.088
+through n, still Theta n squared.
+
+67
+00:04:36.088 --> 00:04:40.412
+NARRATOR: A loop that repeatedly halves the
+remaining size is logarithmic.
+
+68
+00:04:40.412 --> 00:04:44.506
+NARRATOR: Read the update and bounds rather
+than counting indentation.
+
+69
+00:04:44.506 --> 00:04:48.371
+NARRATOR: If the body calls another algorithm,
+include that cost.
+
+70
+00:04:48.371 --> 00:04:53.805
+NARRATOR: Writing the sum explicitly often
+turns intuition into a defensible result.
+
+71
+00:04:53.930 --> 00:04:58.012
+NARRATOR: A recursive algorithm's cost can be
+modeled with a recurrence.
+
+72
+00:04:58.012 --> 00:05:03.369
+NARRATOR: Merge sort divides an input into two
+halves, recursively sorts each half, and
+
+73
+00:05:03.369 --> 00:05:09.874
+performs linear merging, giving T of n equals
+two T of n over two plus Theta n.
+
+74
+00:05:09.874 --> 00:05:14.556
+NARRATOR: A recursion tree shows
+logarithmically many levels with linear total
+
+75
+00:05:14.556 --> 00:05:17.961
+work per level, producing Theta n log n.
+
+76
+00:05:17.961 --> 00:05:22.877
+NARRATOR: Other recurrences behave differently
+depending on the number and size of
+
+77
+00:05:22.877 --> 00:05:24.925
+subproblems and the combination cost.
+
+78
+00:05:24.925 --> 00:05:30.056
+NARRATOR: State a base case and avoid applying
+a memorized theorem without checking its
+
+79
+00:05:30.056 --> 00:05:30.423
+conditions.
+
+80
+00:05:30.423 --> 00:05:35.761
+NARRATOR: Recurrences are not only algebra;
+they mirror the structure of the algorithm and
+
+81
+00:05:35.761 --> 00:05:37.668
+reveal where the work accumulates.
+
+82
+00:05:37.802 --> 00:05:42.190
+NARRATOR: An algorithm is often a sequence of
+data-structure operations.
+
+83
+00:05:42.190 --> 00:05:47.863
+NARRATOR: Searching an unsorted array is
+linear, while a balanced search tree can
+
+84
+00:05:47.863 --> 00:05:50.481
+support logarithmic lookup and ordered
+traversal.
+
+85
+00:05:50.481 --> 00:05:55.109
+NARRATOR: A hash table can provide expected
+constant-time lookup under assumptions but
+
+86
+00:05:55.109 --> 00:05:57.037
+does not preserve sorted order.
+
+87
+00:05:57.037 --> 00:06:01.894
+NARRATOR: A heap makes repeated minimum
+extraction efficient without supporting every
+
+88
+00:06:01.894 --> 00:06:02.777
+search efficiently.
+
+89
+00:06:02.777 --> 00:06:07.313
+NARRATOR: The right structure follows the
+operations the problem performs most often,
+
+90
+00:06:07.313 --> 00:06:11.093
+the guarantees it requires, and the memory it
+can afford.
+
+91
+00:06:11.093 --> 00:06:14.690
+NARRATOR: Include construction cost, not just
+query cost.
+
+92
+00:06:14.690 --> 00:06:20.366
+NARRATOR: A structure that accelerates one
+operation may slow updates or use more space.
+
+93
+00:06:20.366 --> 00:06:25.098
+NARRATOR: Time-space tradeoffs are algorithmic
+choices, not afterthoughts.
+
+94
+00:06:25.250 --> 00:06:30.365
+NARRATOR: Benchmarks reveal constants, cache
+behavior, interpreter overhead, input
+
+95
+00:06:30.365 --> 00:06:35.480
+distributions, and implementation defects that
+an abstract model omits.
+
+96
+00:06:35.480 --> 00:06:41.880
+NARRATOR: Measure representative inputs, vary
+n systematically, repeat trials, and record
+
+97
+00:06:41.880 --> 00:06:43.044
+the environment.
+
+98
+00:06:43.044 --> 00:06:48.197
+NARRATOR: Avoid timing unrelated setup unless
+it is part of the operation being evaluated.
+
+99
+00:06:48.197 --> 00:06:53.044
+NARRATOR: Plot time against candidate growth
+functions and investigate discrepancies.
+
+100
+00:06:53.044 --> 00:06:59.428
+NARRATOR: A benchmark on five sizes cannot
+prove asymptotic complexity, and an asymptotic
+
+101
+00:06:59.428 --> 00:07:03.847
+proof cannot predict an exact runtime on one
+laptop.
+
+102
+00:07:03.847 --> 00:07:05.876
+NARRATOR: Use both forms of evidence.
+
+103
+00:07:05.876 --> 00:07:11.499
+NARRATOR: Analysis explains expected scaling
+under a model; measurement checks how a
+
+104
+00:07:11.499 --> 00:07:14.779
+particular implementation and workload behave
+in reality.
+
+105
+00:07:14.906 --> 00:07:18.287
+NARRATOR: A complete analysis answers eight
+questions.
+
+106
+00:07:18.287 --> 00:07:21.514
+NARRATOR: What problem and input domain are
+being solved?
+
+107
+00:07:21.514 --> 00:07:23.287
+NARRATOR: Why is the algorithm correct?
+
+108
+00:07:23.287 --> 00:07:26.016
+NARRATOR: What quantity defines input size?
+
+109
+00:07:26.016 --> 00:07:28.733
+NARRATOR: Which model assigns costs to
+operations?
+
+110
+00:07:28.733 --> 00:07:34.958
+NARRATOR: Are we discussing worst, average,
+expected, amortized, or best case?
+
+111
+00:07:34.958 --> 00:07:37.343
+NARRATOR: What tight time and space bounds
+follow?
+
+112
+00:07:37.343 --> 00:07:40.850
+NARRATOR: Which data-structure assumptions
+support those bounds?
+
+113
+00:07:40.850 --> 00:07:43.861
+NARRATOR: What do measurements show over the
+intended range?
+
+114
+00:07:43.861 --> 00:07:48.019
+NARRATOR: This checklist prevents Big O from
+becoming a decorative label.
+
+115
+00:07:48.019 --> 00:07:53.586
+NARRATOR: The goal is an argument another
+person can inspect: the algorithm returns the
+
+116
+00:07:53.586 --> 00:07:58.358
+right answer, the derivation follows its
+structure, the assumptions are visible, and
+
+117
+00:07:58.358 --> 00:08:01.539
+the measured implementation behaves
+consistently with the claim.

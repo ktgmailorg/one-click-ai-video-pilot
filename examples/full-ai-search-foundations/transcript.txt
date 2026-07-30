@@ -1,0 +1,261 @@
+NARRATOR: Artificial intelligence can be organized around agents.
+
+NARRATOR: An agent receives percepts through sensors and affects an environment through
+
+actuators.
+
+NARRATOR: A thermostat senses temperature and controls heating; a game agent observes a
+
+board and selects moves.
+
+NARRATOR: Calling an action intelligent requires a performance objective and
+
+information assumptions.
+
+NARRATOR: A rational agent selects the action expected to perform best given its percept
+
+history and knowledge, not one guaranteed to succeed in every uncertain world.
+
+NARRATOR: The environment may be fully or partially observable, deterministic or
+
+stochastic, static or changing.
+
+NARRATOR: These properties determine which representations and algorithms are
+
+appropriate.
+
+NARRATOR: Begin by specifying the task environment rather than choosing an AI
+
+technique because it is fashionable.
+
+NARRATOR: A reflex agent maps the current situation to an action, such as braking when
+
+an obstacle is close.
+
+NARRATOR: Reflexes can be fast and effective when local rules cover the environment.
+
+NARRATOR: A planning agent represents possible future states and evaluates action sequences
+
+before acting.
+
+NARRATOR: Planning becomes valuable when an action's benefit depends on later consequences
+
+or when several routes compete.
+
+NARRATOR: It also has a cost: the state space can grow rapidly, the model may be wrong, and
+
+the world may change during computation.
+
+NARRATOR: Many real systems combine layers—fast safety reflexes around a slower
+
+planner.
+
+NARRATOR: The design question is not whether planning is always smarter, but which
+
+consequences must be represented to meet the performance objective.
+
+NARRATOR: Search requires a precise formulation.
+
+NARRATOR: A state contains the information needed to choose future actions.
+
+NARRATOR: Actions specify available choices.
+
+NARRATOR: The transition model predicts the next state.
+
+NARRATOR: Action cost measures the value spent.
+
+NARRATOR: The start state identifies the initial condition, and a goal test recognizes
+
+success.
+
+NARRATOR: In route finding, a state may be a location, actions may follow roads, and cost
+
+may represent distance or time.
+
+NARRATOR: Include too little state and the model cannot predict consequences; include
+
+irrelevant detail and the search space becomes needlessly large.
+
+NARRATOR: The formulation determines what solutions mean before any algorithm explores
+
+them.
+
+NARRATOR: A correct algorithm on the wrong state representation solves the wrong problem
+
+efficiently.
+
+NARRATOR: The state space is a graph of possible configurations and transitions.
+
+NARRATOR: A search algorithm builds a tree of paths from the start.
+
+NARRATOR: The same state may appear multiple times because different paths reach it.
+
+NARRATOR: Tree search can therefore revisit cycles forever or repeat expensive work.
+
+NARRATOR: Graph search maintains an explored set or best-known cost information to control
+
+repeated expansion.
+
+NARRATOR: But duplicate handling must match the algorithm.
+
+NARRATOR: In cost-based search, reaching a known state through a cheaper path may require
+
+updating the frontier.
+
+NARRATOR: A search node often stores a state, parent, action, path cost, and depth so the
+
+final action sequence can be reconstructed.
+
+NARRATOR: State equality and hashing are part of the algorithm's correctness.
+
+NARRATOR: Breadth-first search uses a first-in, first-out frontier and explores by
+
+depth.
+
+NARRATOR: With equal action costs, the first goal found has the fewest actions.
+
+NARRATOR: Its frontier can require large memory.
+
+NARRATOR: Depth-first search uses a stack and pursues one branch before backtracking.
+
+NARRATOR: It can use less frontier memory but may spend a long time down an unhelpful branch
+
+and does not generally find the shortest solution.
+
+NARRATOR: Graph search and finite-state assumptions affect completeness.
+
+NARRATOR: Neither strategy understands action cost beyond depth.
+
+NARRATOR: Choose according to the guarantee the problem needs, not a slogan that one is
+
+faster.
+
+NARRATOR: A small example with unequal edge costs exposes why fewest actions and least
+
+total cost are different objectives.
+
+NARRATOR: Uniform-cost search orders the frontier by path cost g of n.
+
+NARRATOR: It may explore a deeper path before a shallow one when the deeper path is cheaper.
+
+NARRATOR: With nonnegative costs and appropriate graph-search handling, the first
+
+removed goal is optimal.
+
+NARRATOR: The algorithm needs a priority queue and must track the best cost found for states.
+
+NARRATOR: A cheaper path to an existing frontier state should replace or supersede the
+
+expensive one.
+
+NARRATOR: Uniform-cost search uses no estimate of remaining distance, so it can expand many
+
+states in directions that are cheap so far but far from a goal.
+
+NARRATOR: It provides a baseline for understanding how informed search adds
+
+guidance without giving up cost reasoning.
+
+NARRATOR: A heuristic h of n uses problem knowledge to estimate remaining cost.
+
+NARRATOR: Straight-line distance can guide geographic routing because it is inexpensive
+
+and related to travel distance.
+
+NARRATOR: Greedy best-first search chooses the state with smallest h, focusing on apparent
+
+closeness while ignoring the cost already paid.
+
+NARRATOR: It can be fast but is not generally optimal or complete in all settings.
+
+NARRATOR: A heuristic should be cheaper to compute than the search work it saves.
+
+NARRATOR: Zero is always an uninformative baseline for nonnegative costs.
+
+NARRATOR: Better heuristics distinguish promising states while respecting the
+
+guarantees required by the algorithm.
+
+NARRATOR: Heuristic design is representation design: it encodes a simplified view of the
+
+problem.
+
+NARRATOR: A star balances the cost accumulated so far, g, with the heuristic estimate to the
+
+goal, h.
+
+NARRATOR: If h is zero, A star behaves like uniform-cost search.
+
+NARRATOR: If g is ignored, behavior resembles greedy search.
+
+NARRATOR: The sum estimates total solution cost through a frontier node.
+
+NARRATOR: An admissible heuristic never overestimates the true remaining optimal cost.
+
+NARRATOR: Consistency requires that the heuristic at one state be no greater than
+
+one-step cost plus the heuristic at the successor.
+
+NARRATOR: Under standard conditions, these properties support optimality and efficient
+
+graph-search handling.
+
+NARRATOR: A star's memory use can still be substantial, and a highly accurate heuristic
+
+may itself be expensive.
+
+NARRATOR: Guarantees depend on the exact assumptions and implementation.
+
+NARRATOR: A returned path is only one dimension of quality.
+
+NARRATOR: Completeness asks whether an algorithm will find a solution when one exists
+
+under stated conditions.
+
+NARRATOR: Optimality asks whether the solution minimizes the defined cost.
+
+NARRATOR: Time and space can be estimated by states expanded and stored, often in terms of
+
+branching factor and solution depth.
+
+NARRATOR: Practical evaluation also measures frontier size, duplicate handling, and
+
+heuristic computation.
+
+NARRATOR: Most importantly, a mathematically optimal path in an inaccurate model may be
+
+poor in the real environment.
+
+NARRATOR: Costs, transitions, and goals must represent what users actually value.
+
+NARRATOR: Search evaluation joins algorithmic guarantees with model validation rather than
+
+treating them as separate worlds.
+
+NARRATOR: A complete search design answers nine questions.
+
+NARRATOR: What performance objective defines rational behavior?
+
+NARRATOR: What information does each state contain?
+
+NARRATOR: Which actions and transitions are possible?
+
+NARRATOR: What does path cost represent?
+
+NARRATOR: What are the start and goal conditions?
+
+NARRATOR: Which frontier rule matches the required guarantee?
+
+NARRATOR: How are repeated states and cheaper paths handled?
+
+NARRATOR: If a heuristic is used, what does it estimate and what properties can be justified?
+
+NARRATOR: Finally, how do time, memory, solution quality, and model error behave on
+
+representative cases?
+
+NARRATOR: Artificial intelligence is not produced by naming an algorithm.
+
+NARRATOR: It comes from connecting a clear environment model to a decision process whose
+
+behavior can be explained and tested.

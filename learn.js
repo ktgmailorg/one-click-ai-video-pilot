@@ -75,10 +75,10 @@ function matches(course) {
   );
 }
 
-function courseCard(course) {
+function courseCard(course, { assignId = true } = {}) {
   const article = document.createElement("article");
   article.className = "learn-card";
-  article.id = `course-${course.id}`;
+  if (assignId) article.id = `course-${course.id}`;
 
   const image = document.createElement("img");
   image.src = course.poster;
@@ -196,6 +196,46 @@ function updateContinue() {
   document.querySelector("#continue-button").onclick = () => openLesson(course);
 }
 
+function updateComputerScienceSeries() {
+  const csCourses = courses.filter(
+    (course) =>
+      course.area === "Computer Science" ||
+      course.paths.includes("Computer Science") ||
+      course.subject === "Computer Architecture" ||
+      course.subject.includes("Cybersecurity"),
+  );
+  const fullLessons = csCourses.filter(
+    (course) => course.format === "Full lesson",
+  );
+  const minutes = Math.round(
+    csCourses.reduce((sum, course) => sum + course.durationSeconds, 0) / 60,
+  );
+  document.querySelector("#cs-series-count").textContent = String(csCourses.length);
+  document.querySelector("#cs-full-count").textContent = String(fullLessons.length);
+  document.querySelector("#cs-series-time").textContent = `${minutes} min`;
+  document
+    .querySelector("#cs-featured-grid")
+    .replaceChildren(
+      ...csCourses
+        .sort(
+          (left, right) =>
+            (left.format === "Full lesson" ? 0 : 1) -
+              (right.format === "Full lesson" ? 0 : 1) ||
+            left.title.localeCompare(right.title),
+        )
+        .map((course) => courseCard(course, { assignId: false })),
+    );
+  document.querySelector("#cs-show-all").addEventListener("click", () => {
+    selectedPath = "Computer Science";
+    activePathName.textContent = selectedPath;
+    activePath.hidden = false;
+    for (const button of pathButtons) {
+      button.setAttribute("aria-pressed", "false");
+    }
+    render();
+  });
+}
+
 function openLesson(course) {
   currentCourse = course;
   progress.recent = course.id;
@@ -310,6 +350,7 @@ fetch(catalogUrl)
     addOptions(formatFilter, unique(courses.map((course) => course.format)));
     addOptions(levelFilter, unique(courses.map((course) => course.level)));
     updateProgress();
+    updateComputerScienceSeries();
     render();
   })
   .catch(() => {

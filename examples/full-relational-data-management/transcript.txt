@@ -1,0 +1,249 @@
+NARRATOR: Data management begins with a model, not a query.
+
+NARRATOR: A relation is commonly presented as a table.
+
+NARRATOR: Columns represent attributes with defined domains, and rows represent tuples
+
+describing instances.
+
+NARRATOR: A students table might contain a student identifier and name; an enrollments
+
+table can represent the relationship between students and course sections.
+
+NARRATOR: Every column needs one meaning, one unit, and an appropriate type.
+
+NARRATOR: Avoid storing several values in one cell or repeating groups of columns.
+
+NARRATOR: A schema is a contract about the shape and interpretation of stored data.
+
+NARRATOR: If the meaning is ambiguous, technically valid SQL can still produce
+
+meaningless results.
+
+NARRATOR: A key is an attribute or minimal set of attributes that uniquely identifies a row.
+
+NARRATOR: A table may have several candidate keys; one is selected as the primary key.
+
+NARRATOR: Stable generated identifiers are often useful, but a generated key does not
+
+remove the need to enforce real-world uniqueness when required.
+
+NARRATOR: A foreign key stores a value that must match a referenced key, representing a
+
+declared relationship.
+
+NARRATOR: An enrollment can reference one student and one section.
+
+NARRATOR: Foreign-key constraints prevent orphaned references, but designers must choose
+
+what should happen when referenced data changes or is deleted.
+
+NARRATOR: Keys give relationships executable structure rather than leaving them as comments
+
+or naming conventions.
+
+NARRATOR: Types define which values a column can represent.
+
+NARRATOR: Constraints narrow those values to the valid states of the application.
+
+NARRATOR: Not null requires a value.
+
+NARRATOR: Check constraints express conditions such as a nonnegative quantity.
+
+NARRATOR: Unique constraints prevent duplicates.
+
+NARRATOR: Primary and foreign keys enforce identity and references.
+
+NARRATOR: Put durable invariants in the database when every application must obey
+
+them.
+
+NARRATOR: Validation in a user interface improves feedback, but it can be bypassed by
+
+another client or import.
+
+NARRATOR: Constraints also need careful scope: a rule involving current time or external
+
+state may not behave like a stable row invariant.
+
+NARRATOR: Good constraints make invalid data difficult to store and failures explicit.
+
+NARRATOR: A basic select statement identifies source tables, filters rows with a where
+
+condition, and projects the columns or expressions to return.
+
+NARRATOR: The result is itself a table-like relation.
+
+NARRATOR: SQL describes the desired result more than a step-by-step loop, allowing the
+
+database to choose an execution plan.
+
+NARRATOR: Be precise about null: it represents missing or unknown information and does not
+
+behave like an ordinary value in comparisons.
+
+NARRATOR: Use IS NULL rather than equals null.
+
+NARRATOR: Ordering is not guaranteed unless an ORDER BY clause requests it.
+
+NARRATOR: Select only needed columns, use meaningful aliases, and verify the result on a
+
+tiny hand-checkable dataset before trusting a large output.
+
+NARRATOR: Joins reconstruct relationships stored across tables.
+
+NARRATOR: An inner join keeps combinations that satisfy the join condition.
+
+NARRATOR: A left outer join also keeps unmatched rows from the left side, filling
+
+missing right-side values with nulls.
+
+NARRATOR: Always identify the intended cardinality: one to one, one to many, or many
+
+to many through an associative table.
+
+NARRATOR: A missing predicate creates a Cartesian product, while an incomplete
+
+predicate can silently duplicate results.
+
+NARRATOR: Qualify ambiguous column names and inspect row counts before and after the join.
+
+NARRATOR: Ask what one result row represents.
+
+NARRATOR: If that sentence is unclear, aggregation and reporting built on the join
+
+will also be unclear.
+
+NARRATOR: Count, sum, average, minimum, and maximum summarize rows.
+
+NARRATOR: Group by determines which rows share one output group.
+
+NARRATOR: If a query groups by course, each result row represents one course.
+
+NARRATOR: Columns in the select list must either define that grain or be aggregated.
+
+NARRATOR: Where filters individual rows before grouping; having filters groups after
+
+aggregation.
+
+NARRATOR: Null handling matters because many aggregates ignore null values.
+
+NARRATOR: Distinct may remove duplicates, but using it to hide a faulty join masks the real
+
+problem.
+
+NARRATOR: State the result grain in words, create a small example, and verify that every
+
+join and group preserves the intended meaning.
+
+NARRATOR: A poorly designed table may repeat the same course title, instructor office, or
+
+department name across hundreds of enrollment rows.
+
+NARRATOR: Repetition creates anomalies: one update can leave conflicting versions,
+
+deleting the last enrollment can erase course information, and inserting a course may
+
+require a fake enrollment.
+
+NARRATOR: Normalization analyzes which attributes depend on which keys and separates
+
+different kinds of facts into related tables.
+
+NARRATOR: Decomposition should preserve the ability to reconstruct necessary information
+
+through joins and enforce dependencies where possible.
+
+NARRATOR: Normalization is not a command to maximize table count.
+
+NARRATOR: It is a reasoning tool for storing each durable fact in a controlled place while
+
+keeping the model usable.
+
+NARRATOR: An index is an auxiliary structure that helps the database locate rows without
+
+scanning every row.
+
+NARRATOR: A B-tree index often supports equality and range conditions on its leading
+
+keys.
+
+NARRATOR: Unique indexes can also enforce uniqueness.
+
+NARRATOR: Indexes are not free.
+
+NARRATOR: Inserts, updates, and deletes must maintain them, they consume storage, and an
+
+index that does not match query predicates may not be used.
+
+NARRATOR: The query planner estimates costs and chooses among scans and join strategies.
+
+NARRATOR: Index columns based on important workload patterns, then inspect actual plans
+
+and measurements.
+
+NARRATOR: Adding an index to every column can make writes slower without improving the
+
+queries that matter.
+
+NARRATOR: Many business actions require several statements to succeed as one unit.
+
+NARRATOR: A transfer may subtract from one account and add to another.
+
+NARRATOR: If the process fails between those statements, the database must not preserve
+
+half a transfer.
+
+NARRATOR: A transaction begins a unit of work and ends with commit to make changes durable
+
+or rollback to discard them.
+
+NARRATOR: Concurrent transactions also need isolation rules so interleaving operations do
+
+not produce invalid results.
+
+NARRATOR: Keep transactions as short as practical, handle failures explicitly, and do
+
+not assume that application code alone can restore consistency after every crash.
+
+NARRATOR: Transaction boundaries should match the atomic action users and business rules
+
+recognize.
+
+NARRATOR: A professional database design answers nine questions.
+
+NARRATOR: What does each table and row represent?
+
+NARRATOR: Which keys identify rows and connect relations?
+
+NARRATOR: Which constraints prevent invalid states?
+
+NARRATOR: What is the grain of each query result?
+
+NARRATOR: Do join predicates match the intended cardinality?
+
+NARRATOR: Are repeated facts creating anomalies?
+
+NARRATOR: Which workload justifies each index?
+
+NARRATOR: Which changes must commit atomically?
+
+NARRATOR: What do query plans and measurements show on realistic data?
+
+NARRATOR: SQL syntax is only the surface.
+
+NARRATOR: Trustworthy data systems come from preserving meaning and integrity while giving
+
+applications efficient, testable ways to derive results and apply changes.
+
+NARRATOR: Finish by testing the schema with a tiny dataset that contains a valid
+
+relationship, a missing reference, a duplicate, a null, and a transaction that must
+
+roll back.
+
+NARRATOR: Then inspect the actual query plan for the most important read.
+
+NARRATOR: Those checks connect the conceptual model to enforceable behavior and measured
+
+performance.
