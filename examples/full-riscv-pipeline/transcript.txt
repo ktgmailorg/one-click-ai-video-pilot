@@ -1,0 +1,321 @@
+NARRATOR: By the end of this lesson, you will be able to trace one RISC-V ADD instruction
+
+from its thirty-two encoded bits to the value written into a destination register.
+
+NARRATOR: You will also be able to explain why a pipeline improves throughput, identify data
+
+and control hazards, and distinguish architectural correctness from implementation
+
+speed.
+
+NARRATOR: Our worked instruction is add x5, x6, x7.
+
+NARRATOR: We will use a classic five-stage teaching pipeline: Instruction Fetch,
+
+Instruction Decode, Execute, Memory Access, and Write Back.
+
+NARRATOR: That pipeline is not the only possible processor design.
+
+NARRATOR: It is a clear model for seeing how encoded instructions become coordinated data
+
+movement and control.
+
+NARRATOR: First, separate the contract from the machinery.
+
+NARRATOR: The RISC-V ISA says what ADD means: read two source registers, add their values,
+
+and write the low XLEN bits into the destination register.
+
+NARRATOR: It also specifies the instruction fields that identify that operation.
+
+NARRATOR: Software depends on this promise.
+
+NARRATOR: Internally, one processor might execute an instruction in several simple
+
+stages, another might issue multiple instructions at once, and a small controller
+
+might reuse hardware across many cycles.
+
+NARRATOR: Those designs may look very different, yet a correct implementation must
+
+produce the same software-visible result.
+
+NARRATOR: This distinction keeps our reasoning disciplined: begin with what must happen, then
+
+study how one pipeline makes it happen.
+
+NARRATOR: The processor receives bits, not assembly text.
+
+NARRATOR: Our instruction word is hexadecimal zero zero seven three zero two B three.
+
+NARRATOR: Reading the R-type fields from bit thirty-one down to bit zero gives funct seven,
+
+rs2, rs1, funct three, rd, and opcode.
+
+NARRATOR: The opcode says this is a register-register arithmetic instruction.
+
+NARRATOR: Funct three and funct seven narrow that family to ADD.
+
+NARRATOR: The rs1 field is binary zero zero one one zero, which names x6.
+
+NARRATOR: The rs2 field names x7.
+
+NARRATOR: The rd field names x5.
+
+NARRATOR: Decode therefore extracts both the operation and the register addresses from one
+
+fixed-width word.
+
+NARRATOR: The assembly form is a human-readable rendering of those exact
+
+fields.
+
+NARRATOR: Assume the program counter contains zero x one thousand.
+
+NARRATOR: Fetch presents that address to instruction memory and receives the
+
+thirty-two-bit ADD word.
+
+NARRATOR: At the same time, the processor forms the sequential next address, zero x one
+
+thousand four.
+
+NARRATOR: That plus-four step is valid for this RV32I teaching example because we are not
+
+using compressed instructions.
+
+NARRATOR: Fetch does not yet know whether control flow will remain sequential.
+
+NARRATOR: A branch or jump may later redirect the program counter.
+
+NARRATOR: For now, the current address, instruction bits, and predicted next address
+
+must remain aligned as the instruction moves forward.
+
+NARRATOR: Pipeline state records the information the Decode stage will need on the
+
+next clock cycle.
+
+NARRATOR: In Decode, the instruction fields drive two related jobs.
+
+NARRATOR: First, the register file uses rs1 and rs2 as read addresses.
+
+NARRATOR: If x6 contains nineteen and x7 contains twenty-three, those values appear on
+
+the two read ports.
+
+NARRATOR: Second, control logic interprets the opcode and function fields.
+
+NARRATOR: It selects an integer addition, chooses two register operands for the ALU,
+
+disables a data-memory write, and enables a later register write to x5.
+
+NARRATOR: Data alone is not enough.
+
+NARRATOR: The destination register number and every control decision needed by later stages
+
+must advance beside the operands.
+
+NARRATOR: If a value and its control signal become misaligned, the processor could compute
+
+correctly but write the result to the wrong place.
+
+NARRATOR: The Execute stage supplies nineteen and twenty-three to the arithmetic logic unit.
+
+NARRATOR: Operand-select controls choose the two register values, and the ALU control
+
+selects addition.
+
+NARRATOR: The result is forty-two.
+
+NARRATOR: In RV32I, XLEN is thirty-two, so ADD retains the low thirty-two bits of the
+
+mathematical sum.
+
+NARRATOR: If the signed mathematical result exceeds the signed range, ADD still produces
+
+the low-bit result; it does not raise an arithmetic-overflow exception.
+
+NARRATOR: The ISA defines that behavior, while the ALU and surrounding control implement it.
+
+NARRATOR: For this example there is no overflow, so the value forty-two and the
+
+destination number x5 advance toward the next stage.
+
+NARRATOR: ADD does not need a data-memory read or write.
+
+NARRATOR: Even so, in this regular five-stage organization it occupies the Memory stage
+
+while its ALU result, destination register, and write-enable bit move through the EX slash
+
+MEM and MEM slash WB pipeline registers.
+
+NARRATOR: A load instruction would use this stage to read data, and a store would write
+
+data.
+
+NARRATOR: ADD simply preserves its result.
+
+NARRATOR: In Write Back, a result-select control chooses the ALU value rather than
+
+memory data, the write-enable signal is asserted, and x5 receives forty-two.
+
+NARRATOR: At that moment the instruction's promised architectural effect becomes visible
+
+in the register file.
+
+NARRATOR: Why split the work into stages?
+
+NARRATOR: Because different instructions can use different hardware during the same cycle.
+
+NARRATOR: While our ADD is in Execute, a following independent instruction can be in
+
+Decode and another can be in Fetch.
+
+NARRATOR: During the next cycle, all three advance.
+
+NARRATOR: After the pipeline fills, this ideal sequence can complete roughly one instruction
+
+per cycle even though each instruction spends several cycles traveling from Fetch to Write
+
+Back.
+
+NARRATOR: That is a throughput improvement, not proof that one instruction has lower
+
+latency.
+
+NARRATOR: The clock period must accommodate the slowest stage plus pipeline-register
+
+overhead, and the ideal completion rate assumes instructions can advance without
+
+interruption.
+
+NARRATOR: Now place sub x8, x5, x9 immediately after the ADD.
+
+NARRATOR: The subtraction needs the new x5 as an input, but ordinary register-file timing
+
+may not provide that value when the subtraction reaches Execute.
+
+NARRATOR: This is a read-after-write hazard: the later instruction reads a register that
+
+the earlier instruction will write.
+
+NARRATOR: Hazard logic compares the source registers of younger instructions with
+
+destination registers already in the pipeline.
+
+NARRATOR: Detecting the name match is only the first step.
+
+NARRATOR: The processor must also know whether the value is ready and where it currently
+
+resides.
+
+NARRATOR: Correctness requires the subtraction to use forty-two, not the stale value
+
+previously stored in x5.
+
+NARRATOR: For an ALU-to-ALU dependency, forwarding can often avoid a full wait for
+
+Write Back.
+
+NARRATOR: A bypass path routes the ADD result from a later pipeline register directly to the
+
+subtraction's ALU input.
+
+NARRATOR: The register file may still contain the old x5, but the operand multiplexer
+
+selects the newer forwarded value.
+
+NARRATOR: Forwarding does not solve every dependency.
+
+NARRATOR: If a load produces data only after Memory Access and the next instruction needs
+
+it immediately, the value may arrive too late for the dependent Execute stage.
+
+NARRATOR: Hazard control then freezes selected pipeline state and inserts a bubble.
+
+NARRATOR: One cycle of lost throughput is preferable to an incorrect result.
+
+NARRATOR: Branches create a different uncertainty.
+
+NARRATOR: Fetch wants a next address every cycle, but the branch decision and target may
+
+not be known immediately.
+
+NARRATOR: A simple processor can wait.
+
+NARRATOR: A faster design may predict a direction and continue fetching.
+
+NARRATOR: If the prediction is wrong, the processor redirects the program counter and
+
+flushes younger wrong-path instructions before they change architectural state.
+
+NARRATOR: A flush is not merely erasing a diagram box.
+
+NARRATOR: It disables the invalid instructions' control effects so they cannot
+
+write registers or memory.
+
+NARRATOR: Prediction can improve average performance, but recovery logic preserves
+
+correctness when speculation is wrong.
+
+NARRATOR: Performance language needs precision.
+
+NARRATOR: In an idealized scalar pipeline, the steady-state cycles per instruction can
+
+approach one.
+
+NARRATOR: Real execution includes pipeline filling and draining, data stalls, control
+
+redirects, cache delays, and other constraints.
+
+NARRATOR: A useful first model is actual CPI equals the ideal baseline plus the average
+
+stall cost per instruction.
+
+NARRATOR: This is not a universal performance equation for every processor; it is a teaching
+
+decomposition.
+
+NARRATOR: Clock rate also matters.
+
+NARRATOR: Deeper pipelines can shorten some stage delays, but they add registers, control
+
+complexity, and potentially larger recovery penalties.
+
+NARRATOR: Architecture evaluation therefore considers both work completed per cycle and
+
+the duration of each cycle.
+
+NARRATOR: We began with the word zero x zero zero seven three zero two B three.
+
+NARRATOR: Decode identified ADD, rs1 x6, rs2 x7, and destination x5.
+
+NARRATOR: Fetch read the instruction at zero x one thousand.
+
+NARRATOR: Decode read nineteen and twenty-three.
+
+NARRATOR: Execute produced forty-two.
+
+NARRATOR: Memory Access performed no data-memory operation.
+
+NARRATOR: Write Back committed forty-two to x5.
+
+NARRATOR: Independent instructions could overlap, while dependencies or branches
+
+required forwarding, stalls, redirects, or flushing.
+
+NARRATOR: To test your understanding, ask four questions about any instruction: What
+
+operation do the bits encode?
+
+NARRATOR: Which values enter each stage?
+
+NARRATOR: Which control signals must travel with them?
+
+NARRATOR: And can any younger instruction proceed without violating the ISA result?
+
+NARRATOR: If you can answer those, you can reason about the pipeline rather than merely
+
+memorize its five boxes.

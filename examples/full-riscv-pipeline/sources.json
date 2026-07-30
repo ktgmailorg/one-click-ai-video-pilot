@@ -1,0 +1,40 @@
+{
+  "sources": [
+    {
+      "id": "riscv-isa",
+      "title": "RISC-V Unprivileged ISA Specification, Version 20260120",
+      "type": "url",
+      "uri": "https://docs.riscv.org/reference/isa/unpriv/unpriv-index.html",
+      "author": "RISC-V International",
+      "content": "RISC-V is an open standard instruction set architecture. RV32I has XLEN equal to 32 and a base programmer's model with 32 integer registers plus a program counter. R-type register-register arithmetic includes opcode, rd, funct3, rs1, rs2, and funct7 fields. ADD reads rs1 and rs2, writes the low XLEN bits of their sum to rd, and ignores arithmetic overflow rather than trapping. ADD uses opcode 0110011, funct3 000, and funct7 0000000.",
+      "verified": true
+    },
+    {
+      "id": "cs61c-five-stage",
+      "title": "The RISC-V 5-Stage Pipeline",
+      "type": "url",
+      "uri": "https://notes.cs61c.org/content/pipeline/five-stage-pipeline/",
+      "author": "UC Berkeley CS61C",
+      "content": "The five-stage teaching pipeline separates work into Instruction Fetch, Instruction Decode, Execute, Memory Access, and Write Back. Fetch reads an instruction using the program counter. Decode determines the operation and reads the register file. Execute uses the arithmetic logic unit. Memory Access serves loads and stores. Write Back updates the register file. Pipeline registers retain the data and control signals required by later stages.",
+      "verified": true
+    },
+    {
+      "id": "cs61c-performance",
+      "title": "Pipelining Performance Metrics",
+      "type": "url",
+      "uri": "https://notes.cs61c.org/content/pipeline/",
+      "author": "UC Berkeley CS61C",
+      "content": "Pipelining overlaps stages from different instructions to increase throughput. Throughput is completed work per unit time, while latency is the time for one instruction or task. An ideal filled scalar pipeline can approach one completed instruction per cycle, but stage delay, pipeline-register overhead, filling, draining, and stalls affect actual performance.",
+      "verified": true
+    },
+    {
+      "id": "cs61c-hazards",
+      "title": "Pipeline Hazards and Data Forwarding",
+      "type": "url",
+      "uri": "https://notes.cs61c.org/content/pipeline-hazards/",
+      "author": "UC Berkeley CS61C",
+      "content": "Structural, data, and control hazards can prevent an instruction from executing in its planned cycle. Read-after-write dependencies can require forwarding or stalling. Forwarding routes a ready value from a later pipeline register to an earlier consumer without waiting for normal writeback. When a needed value is not ready, hazard control can insert a bubble. Control hazards can be handled with stalling, prediction, redirection, and flushing so wrong-path instructions do not update architectural state.",
+      "verified": true
+    }
+  ]
+}

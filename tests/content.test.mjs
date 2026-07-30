@@ -4,21 +4,24 @@ import test from "node:test";
 
 const root = new URL("../", import.meta.url);
 const newExamples = [
+  "full-riscv-pipeline",
+  "full-derivative-foundations",
   "mathematics-local-derivative",
   "cybersecurity-phishing-check",
   "photography-exposure-triangle",
   "psychology-correlation-causation",
 ];
 
-test("the pilot page advertises sixteen real examples and no duration cap", async () => {
+test("the pilot page advertises eighteen real examples and no duration cap", async () => {
   const html = await readFile(new URL("index.html", root), "utf8");
   assert.equal(
     (html.match(/<article class="showcase-card">/g) || []).length,
-    14,
+    16,
   );
-  assert.match(html, /Watch all 16 examples/);
+  assert.match(html, /Watch all 18 examples/);
   assert.match(html, /no fixed duration limit/i);
   assert.doesNotMatch(html, /2[–-]5 minute pilot/i);
+  assert.doesNotMatch(html, /female narration/i);
 });
 
 for (const slug of newExamples) {
