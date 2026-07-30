@@ -1,0 +1,566 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:07.213
+NARRATOR: Begin by framing Course Scope and
+Paradigm Introduction as a question about
+
+2
+00:00:07.213 --> 00:00:09.968
+inputs, decisions, and observable results.
+
+3
+00:00:09.968 --> 00:00:15.968
+NARRATOR: The goal of this course is to
+introduce the students to a programming
+
+4
+00:00:15.968 --> 00:00:21.111
+paradigm and an appropriate programming
+language chosen from those that are currently
+
+5
+00:00:21.111 --> 00:00:24.968
+important or that show high promise of
+becoming important.
+
+6
+00:00:24.968 --> 00:00:30.757
+NARRATOR: Consider this worked case: Students
+might explore object-oriented programming in
+
+7
+00:00:30.757 --> 00:00:36.546
+Python or functional concepts in Rust,
+depending on the instructor's selection.
+
+8
+00:00:36.546 --> 00:00:43.745
+NARRATOR: On screen, display a slide with the
+course title, paradigm/language options, and a
+
+9
+00:00:43.745 --> 00:00:47.859
+note that specifics are posted prior to
+registration.
+
+10
+00:00:47.859 --> 00:00:54.016
+NARRATOR: List the givens before choosing a
+method, because an unstated assumption can
+
+11
+00:00:54.016 --> 00:00:55.437
+change the conclusion.
+
+12
+00:00:55.437 --> 00:01:01.421
+NARRATOR: This establishes the vocabulary and
+scope needed for the remaining sections.
+
+13
+00:01:01.538 --> 00:01:07.109
+NARRATOR: Now define Language Reference
+Structure precisely enough that another
+
+14
+00:01:07.109 --> 00:01:09.894
+learner could test the definition.
+
+15
+00:01:09.894 --> 00:01:17.654
+NARRATOR: The Python language reference
+specifies lexical analysis, data model
+
+16
+00:01:17.654 --> 00:01:24.639
+behavior, execution, expressions, statements,
+functions, classes, exceptions, and module
+
+17
+00:01:24.639 --> 00:01:26.191
+import semantics.
+
+18
+00:01:26.191 --> 00:01:32.778
+NARRATOR: Consider this worked case: The
+Python reference documents how names are bound
+
+19
+00:01:32.778 --> 00:01:38.858
+to objects within namespaces and scopes, and
+how expressions produce values while
+
+20
+00:01:38.858 --> 00:01:40.378
+statements control execution.
+
+21
+00:01:40.378 --> 00:01:48.519
+NARRATOR: On screen, show a diagram of a
+language reference document with callouts for
+
+22
+00:01:48.519 --> 00:01:53.753
+'lexical analysis', 'data model', 'execution',
+and 'module import semantics'.
+
+23
+00:01:53.753 --> 00:02:00.457
+NARRATOR: Separate the formal definition from
+an implementation detail, then identify what
+
+24
+00:02:00.457 --> 00:02:02.691
+evidence would distinguish them.
+
+25
+00:02:02.691 --> 00:02:09.050
+NARRATOR: A precise definition makes later
+examples easier to evaluate and revise.
+
+26
+00:02:09.170 --> 00:02:15.675
+NARRATOR: With the foundation in place,
+examine how Object Identity and Namespaces
+
+27
+00:02:15.675 --> 00:02:18.385
+operates in a concrete sequence.
+
+28
+00:02:18.385 --> 00:02:23.198
+NARRATOR: Names are bound to objects within
+namespaces and scopes.
+
+29
+00:02:23.198 --> 00:02:29.731
+NARRATOR: Consider this worked case: A
+variable assignment like `x = 10` binds the
+
+30
+00:02:29.731 --> 00:02:37.198
+name `x` to an integer object with a specific
+identity and value in the current scope.
+
+31
+00:02:37.198 --> 00:02:44.127
+NARRATOR: On screen, illustrate two boxes
+labeled 'Namespace' and 'Scope', with arrows
+
+32
+00:02:44.127 --> 00:02:49.901
+pointing to object boxes showing 'identity',
+'type', and 'value' attributes.
+
+33
+00:02:49.901 --> 00:02:57.276
+NARRATOR: Follow every arrow in order and name
+the state before and after each transition.
+
+34
+00:02:57.276 --> 00:03:02.869
+NARRATOR: The trace converts an abstract
+statement into an inspectable sequence.
+
+35
+00:03:02.978 --> 00:03:10.027
+NARRATOR: Next, compare the choices involved
+in Control Flow and Exceptions and make the
+
+36
+00:03:10.027 --> 00:03:11.537
+decision criteria explicit.
+
+37
+00:03:11.537 --> 00:03:17.799
+NARRATOR: Exceptions interrupt normal control
+flow until a matching handler processes them
+
+38
+00:03:17.799 --> 00:03:19.365
+or they propagate.
+
+39
+00:03:19.365 --> 00:03:25.467
+NARRATOR: Consider this worked case: A
+`try-except` block catches a `ValueError`
+
+40
+00:03:25.467 --> 00:03:31.568
+during input parsing, preventing the program
+from crashing and allowing recovery.
+
+41
+00:03:31.568 --> 00:03:38.559
+NARRATOR: On screen, draw a flowchart showing
+normal execution path, an exception trigger, a
+
+42
+00:03:38.559 --> 00:03:43.552
+handler block, and a propagation path if no
+match exists.
+
+43
+00:03:43.552 --> 00:03:50.415
+NARRATOR: Compare alternatives against the
+same constraints so the evaluation does not
+
+44
+00:03:50.415 --> 00:03:52.131
+move the goalposts.
+
+45
+00:03:52.131 --> 00:03:58.974
+NARRATOR: Using shared criteria turns a
+preference into a defensible technical choice.
+
+46
+00:03:59.090 --> 00:04:06.311
+NARRATOR: Apply Import System Mechanics to a
+worked situation instead of treating it as an
+
+47
+00:04:06.311 --> 00:04:07.274
+isolated definition.
+
+48
+00:04:07.274 --> 00:04:14.064
+NARRATOR: The import system searches for
+modules and binds loaded modules into a
+
+49
+00:04:14.064 --> 00:04:14.586
+namespace.
+
+50
+00:04:14.586 --> 00:04:21.129
+NARRATOR: Consider this worked case: Running
+`import math` loads the math module and binds
+
+51
+00:04:21.129 --> 00:04:25.336
+its functions into the current namespace for
+direct access.
+
+52
+00:04:25.336 --> 00:04:32.586
+NARRATOR: On screen, show a file system tree
+with a 'modules' folder, an arrow pointing to
+
+53
+00:04:32.586 --> 00:04:37.571
+a namespace box, and a label indicating
+'search path' and 'binding'.
+
+54
+00:04:37.571 --> 00:04:43.940
+NARRATOR: Work from the concrete inputs to the
+result, checking units, types, or invariants
+
+55
+00:04:43.940 --> 00:04:45.305
+at each step.
+
+56
+00:04:45.305 --> 00:04:50.289
+NARRATOR: The worked case shows both how to
+apply the method and how to check it.
+
+57
+00:04:50.402 --> 00:04:56.794
+NARRATOR: Examine the tradeoffs in Compiler
+Phases and Separation of Concerns, including
+
+58
+00:04:56.794 --> 00:05:00.523
+what improves and what becomes more difficult.
+
+59
+00:05:00.523 --> 00:05:08.279
+NARRATOR: Compiler work separates parsing and
+semantic analysis from lowering, verification,
+
+60
+00:05:08.279 --> 00:05:11.805
+optimization, and target-specific code
+generation.
+
+61
+00:05:11.805 --> 00:05:19.942
+NARRATOR: Consider this worked case: Source
+code is first parsed into an abstract syntax
+
+62
+00:05:19.942 --> 00:05:25.173
+tree, then semantically analyzed, lowered to
+intermediate representation, verified,
+
+63
+00:05:25.173 --> 00:05:29.242
+optimized, and finally compiled to machine
+code.
+
+64
+00:05:29.242 --> 00:05:38.387
+NARRATOR: On screen, create a horizontal
+pipeline diagram with five stages: 'Parsing',
+
+65
+00:05:38.387 --> 00:05:42.198
+'Semantic Analysis', 'Lowering',
+'Verification/Optimization', 'Code
+
+66
+00:05:42.198 --> 00:05:46.008
+Generation', with arrows connecting them.
+
+67
+00:05:46.008 --> 00:05:52.337
+NARRATOR: State the benefit, the cost, and the
+condition under which the tradeoff is
+
+68
+00:05:52.337 --> 00:05:52.789
+acceptable.
+
+69
+00:05:52.789 --> 00:06:00.289
+NARRATOR: Making the tradeoff visible prevents
+a local improvement from hiding a larger cost.
+
+70
+00:06:00.410 --> 00:06:06.263
+NARRATOR: Stress-test the reasoning around
+Intermediate Representation Basics with an
+
+71
+00:06:06.263 --> 00:06:11.531
+edge case and identify which assumption
+controls the outcome.
+
+72
+00:06:11.531 --> 00:06:19.377
+NARRATOR: LLVM IR is a typed, SSA-based
+intermediate representation with explicit
+
+73
+00:06:19.377 --> 00:06:25.797
+instructions, basic blocks, functions, memory
+operations, and control flow.
+
+74
+00:06:25.797 --> 00:06:32.610
+NARRATOR: Consider this worked case: An IR
+function contains basic blocks where each
+
+75
+00:06:32.610 --> 00:06:38.375
+block ends with a terminator instruction,
+ensuring explicit control flow paths.
+
+76
+00:06:38.375 --> 00:06:44.307
+NARRATOR: On screen, render a simplified IR
+snippet showing a function with two basic
+
+77
+00:06:44.307 --> 00:06:51.934
+blocks, a terminator instruction at the end of
+each, and a phi instruction at the start of a
+
+78
+00:06:51.934 --> 00:06:52.781
+merge block.
+
+79
+00:06:52.781 --> 00:06:58.885
+NARRATOR: Change one assumption at a time and
+observe which part of the reasoning no longer
+
+80
+00:06:58.885 --> 00:06:59.266
+holds.
+
+81
+00:06:59.266 --> 00:07:05.582
+NARRATOR: The edge case reveals the boundary
+of the claim without discarding the useful
+
+82
+00:07:05.582 --> 00:07:06.484
+core idea.
+
+83
+00:07:06.602 --> 00:07:13.494
+NARRATOR: Use Phi Instructions and Control
+Flow to diagnose a failure by separating
+
+84
+00:07:13.494 --> 00:07:16.145
+symptoms, causes, and corrective action.
+
+85
+00:07:16.145 --> 00:07:22.111
+NARRATOR: Phi instructions select values
+according to the predecessor control-flow
+
+86
+00:07:22.111 --> 00:07:22.708
+edge.
+
+87
+00:07:22.708 --> 00:07:29.103
+NARRATOR: Consider this worked case: A phi
+instruction at the start of a block merges
+
+88
+00:07:29.103 --> 00:07:34.645
+different variable values depending on whether
+the loop condition was true or false.
+
+89
+00:07:34.645 --> 00:07:40.483
+NARRATOR: On screen, draw a diamond-shaped
+control flow graph with two incoming edges
+
+90
+00:07:40.483 --> 00:07:46.322
+labeled 'True' and 'False', and a phi
+instruction at the merge point selecting
+
+91
+00:07:46.322 --> 00:07:48.567
+values based on the edge.
+
+92
+00:07:48.567 --> 00:07:54.191
+NARRATOR: Locate the first point where
+observed behavior diverges from expected
+
+93
+00:07:54.191 --> 00:07:57.770
+behavior, then test the smallest plausible
+cause.
+
+94
+00:07:57.770 --> 00:08:03.545
+NARRATOR: The diagnosis is strongest when
+another person can reproduce the observation
+
+95
+00:08:03.545 --> 00:08:04.989
+and the test.
+
+96
+00:08:05.090 --> 00:08:10.841
+NARRATOR: Connect Memory Operations and
+Verification to the earlier ideas and explain
+
+97
+00:08:10.841 --> 00:08:14.196
+how the pieces work as one system.
+
+98
+00:08:14.196 --> 00:08:19.352
+NARRATOR: Load and store instructions make
+memory access explicit.
+
+99
+00:08:19.352 --> 00:08:25.892
+NARRATOR: Consider this worked case: A store
+instruction writes a value to a specific
+
+100
+00:08:25.892 --> 00:08:32.432
+memory address, and the verifier checks that
+the type matches the memory location before
+
+101
+00:08:32.432 --> 00:08:32.899
+execution.
+
+102
+00:08:32.899 --> 00:08:39.641
+NARRATOR: On screen, show a memory map with
+labeled addresses, a 'store' instruction
+
+103
+00:08:39.641 --> 00:08:46.383
+pointing to an address, and a 'verifier' icon
+highlighting a type mismatch error.
+
+104
+00:08:46.383 --> 00:08:55.333
+NARRATOR: Explain each connection explicitly
+and verify that information retains the same
+
+105
+00:08:55.333 --> 00:08:57.571
+meaning across representations.
+
+106
+00:08:57.571 --> 00:09:04.216
+NARRATOR: The synthesis matters only if every
+connection remains supported by the original
+
+107
+00:09:04.216 --> 00:09:04.727
+evidence.
+
+108
+00:09:04.850 --> 00:09:09.692
+NARRATOR: Finish with Debugging and
+Decomposition Strategies as a practical
+
+109
+00:09:09.692 --> 00:09:13.081
+checklist that can guide a new analysis.
+
+110
+00:09:13.081 --> 00:09:20.625
+NARRATOR: Debugging separates syntax, runtime,
+and logical failures, while decomposition and
+
+111
+00:09:20.625 --> 00:09:25.425
+abstraction reduce the number of interacting
+concerns.
+
+112
+00:09:25.425 --> 00:09:32.058
+NARRATOR: Consider this worked case: A
+developer uses a debugger to isolate a runtime
+
+113
+00:09:32.058 --> 00:09:38.690
+error in a function, then refactors the code
+into smaller modules to simplify testing.
+
+114
+00:09:38.690 --> 00:09:44.342
+NARRATOR: On screen, display a checklist
+graphic with three categories: 'Syntax',
+
+115
+00:09:44.342 --> 00:09:52.049
+'Runtime', 'Logical', each with a checkbox and
+a brief description of what to look for.
+
+116
+00:09:52.049 --> 00:09:59.654
+NARRATOR: For each checklist item, record the
+evidence, the remaining uncertainty, and the
+
+117
+00:09:59.654 --> 00:10:01.409
+next verification step.
+
+118
+00:10:01.409 --> 00:10:07.388
+NARRATOR: The result is a repeatable
+procedure, not a conclusion that depends on
+
+119
+00:10:07.388 --> 00:10:08.768
+memory or intuition.

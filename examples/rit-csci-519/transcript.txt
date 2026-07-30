@@ -1,0 +1,245 @@
+NARRATOR: Begin by framing Pipeline Foundation: Vertex Processing as a question
+
+about inputs, decisions, and observable results.
+
+NARRATOR: The OpenGL graphics pipeline processes vertices through programmable shader
+
+stages.
+
+NARRATOR: Consider this worked case: Vertex attributes like position and normal are passed
+
+from the application to the vertex shader for initial transformation.
+
+NARRATOR: On screen, display a flowchart showing vertices entering the vertex shader
+
+stage with labeled input/output attributes.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Now define Primitive Assembly precisely enough that another learner could
+
+test the definition.
+
+NARRATOR: Primitive assembly groups vertices into points, lines, or triangles.
+
+NARRATOR: Consider this worked case: Three consecutive vertex indices are connected to
+
+form a triangle primitive that defines a planar surface.
+
+NARRATOR: On screen, show a wireframe triangle with numbered vertex indices and a line
+
+connecting them to a primitive assembly buffer.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: With the foundation in place, examine how View Volume Clipping operates in a
+
+concrete sequence.
+
+NARRATOR: Clipping removes portions outside the view volume.
+
+NARRATOR: Consider this worked case: A triangle extending beyond the camera's frustum
+
+is clipped at the clipping plane boundaries.
+
+NARRATOR: On screen, illustrate a 3D cube with a frustum overlay, highlighting clipped edges
+
+and the resulting clipped polygon.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Next, compare the choices involved in Rasterization Conversion and make the
+
+decision criteria explicit.
+
+NARRATOR: Rasterization converts primitives into fragment candidates.
+
+NARRATOR: Consider this worked case: Each triangle is subdivided into a set of pixels,
+
+generating a fragment for every covered pixel.
+
+NARRATOR: On screen, show a subdivided triangle with a rasterization mask indicating
+
+which pixels are covered.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Then summarize what the example demonstrates, what it does not establish, and
+
+what evidence would be needed next.
+
+NARRATOR: Apply Interpolation Values to a worked situation instead of treating it as an
+
+isolated definition.
+
+NARRATOR: Interpolation produces per-fragment values from vertex outputs.
+
+NARRATOR: Consider this worked case: Color and normal values are linearly interpolated across
+
+the triangle to determine per-fragment properties.
+
+NARRATOR: On screen, display a triangle with gradient shading showing interpolated color
+
+values moving from vertex to fragment.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Examine the tradeoffs in Fragment Processing, including what improves and what
+
+becomes more difficult.
+
+NARRATOR: Fragment processing computes values for framebuffer operations.
+
+NARRATOR: Consider this worked case: The fragment shader calculates final color, alpha,
+
+and depth values for each pixel.
+
+NARRATOR: On screen, show a fragment shader code snippet with labeled inputs and outputs
+
+mapping to framebuffer writes.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Stress-test the reasoning around Depth Testing Visibility with an edge case and
+
+identify which assumption controls the outcome.
+
+NARRATOR: Depth testing resolves visibility according to stored depth values.
+
+NARRATOR: Consider this worked case: A fragment is discarded if its computed depth
+
+exceeds the stored depth value in the depth buffer.
+
+NARRATOR: On screen, illustrate a depth buffer comparison with a foreground fragment passing
+
+and a background fragment failing.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Blending Operations to diagnose a failure by separating symptoms, causes, and
+
+corrective action.
+
+NARRATOR: Blending combines a fragment result with an existing framebuffer value.
+
+NARRATOR: Consider this worked case: Alpha blending mixes the new fragment color with the
+
+existing pixel color using a specified blend factor.
+
+NARRATOR: On screen, show a split screen with a semi-transparent overlay blending onto a
+
+base image using a blend equation.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Coordinate Spaces and Sampling to the earlier ideas and explain how
+
+the pieces work as one system.
+
+NARRATOR: Coordinate spaces, sampling, and numerical precision must remain explicit.
+
+NARRATOR: Consider this worked case: Texture coordinates are explicitly mapped from object
+
+space to UV space to avoid sampling artifacts.
+
+NARRATOR: On screen, display a texture coordinate grid on a 3D surface with explicit
+
+UV mapping lines and sampling points.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+
+guide a new analysis.
+
+NARRATOR: Visual correctness follows from explicit conventions, assumptions, sampling
+
+decisions, and measurable error.
+
+NARRATOR: Consider this worked case: A checklist verifies explicit coordinate
+
+mappings, proper sampling rates, and error bounds before rendering.
+
+NARRATOR: On screen, show a checklist graphic with checkboxes for explicit conventions,
+
+sampling decisions, measurable error, and assumptions.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.

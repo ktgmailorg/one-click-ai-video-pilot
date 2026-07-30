@@ -1,0 +1,233 @@
+NARRATOR: Begin by framing Course Foundations and Framework Overview as a question about
+
+inputs, decisions, and observable results.
+
+NARRATOR: The NIST AI Risk Management Framework organizes work around Govern, Map,
+
+Measure, and Manage.
+
+NARRATOR: Consider this worked case: Govern establishes policies for AI risk, Map
+
+documents context and intended use, Measure analyzes risks, and Manage prioritizes
+
+responses.
+
+NARRATOR: On screen, display a four-quadrant diagram labeled Govern, Map, Measure, Manage
+
+with brief icons representing policy, context, metrics, and response.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Govern Phase and Accountability precisely enough that another
+
+learner could test the definition.
+
+NARRATOR: Govern establishes policies, responsibilities, and accountability for AI
+
+risk.
+
+NARRATOR: Consider this worked case: Institutional AI governance policies define
+
+who is accountable for security tool deployment and risk mitigation.
+
+NARRATOR: On screen, show a flowchart starting with 'Govern' branching to 'Policy',
+
+'Responsibility', and 'Accountability' nodes.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: With the foundation in place, examine how Map Phase and Context
+
+Documentation operates in a concrete sequence.
+
+NARRATOR: Map documents context, intended use, affected people, and potential impacts.
+
+NARRATOR: Consider this worked case: Mapping a biometric authentication system requires
+
+documenting user demographics, intended access levels, and privacy impacts.
+
+NARRATOR: On screen, illustrate a context-mapping template with fields for
+
+'Context', 'Intended Use', 'Affected People', and 'Potential Impacts'.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Next, compare the choices involved in Measure Phase and Risk Analysis and make
+
+the decision criteria explicit.
+
+NARRATOR: Measure uses qualitative and quantitative methods to analyze identified
+
+risks.
+
+NARRATOR: Consider this worked case: Quantitative metrics like false positive rates
+
+and qualitative reviews of model bias are used to measure AI security tool risks.
+
+NARRATOR: On screen, display a split graphic showing 'Qualitative Methods' (checklists,
+
+reviews) and 'Quantitative Methods' (graphs, metrics).
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Apply Manage Phase and Post-Deployment Monitoring to a worked
+
+situation instead of treating it as an isolated definition.
+
+NARRATOR: Manage prioritizes risks and allocates resources for response and
+
+monitoring.
+
+NARRATOR: Consider this worked case: Post-deployment monitoring of an AI firewall
+
+detects distribution shift and triggers resource reallocation for updated threat
+
+models.
+
+NARRATOR: On screen, render a circular lifecycle diagram with 'Manage' feeding back
+
+into 'Map' and 'Measure' to show continuous monitoring.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in Supervised vs Unsupervised Workflows, including what
+
+improves and what becomes more difficult.
+
+NARRATOR: Supervised methods learn a mapping from examples paired with target labels.
+
+NARRATOR: Consider this worked case: Supervised learning trains an intrusion
+
+detection system on labeled attack logs, whereas unsupervised learning clusters network
+
+traffic to find anomalies.
+
+NARRATOR: On screen, contrast two flow diagrams: one showing labeled data feeding a
+
+model, the other showing unlabeled data feeding a clustering algorithm.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around Data Preprocessing and Leakage Prevention with
+
+an edge case and identify which assumption controls the outcome.
+
+NARRATOR: Preprocessing must be fitted only on permitted training data to avoid leakage.
+
+NARRATOR: Consider this worked case: Scaling features using only training set statistics
+
+prevents test data information from contaminating the model's evaluation.
+
+NARRATOR: On screen, show a pipeline graphic with a 'Fit on Training Data' step and a
+
+'Transform Training and Test' step, highlighting the boundary.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Pipelines and Consistent Transformations to diagnose a failure by
+
+separating symptoms, causes, and corrective action.
+
+NARRATOR: Pipelines combine preprocessing and estimators so the same transformations are
+
+applied consistently.
+
+NARRATOR: Consider this worked case: A scikit-learn pipeline ensures that the same
+
+normalization and feature selection steps are applied to both training and test data for
+
+fair evaluation.
+
+NARRATOR: On screen, illustrate a single pipeline block containing preprocessing steps
+
+followed by an estimator, with arrows showing consistent data flow.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Cross-Validation and Evaluation Metrics to the earlier ideas and
+
+explain how the pieces work as one system.
+
+NARRATOR: Evaluation metrics must match the task and the cost of different errors.
+
+NARRATOR: Consider this worked case: K-fold cross-validation ensures robust performance
+
+estimates, while precision and recall are chosen based on the cost of false positives
+
+versus false negatives in intrusion detection.
+
+NARRATOR: On screen, display a k-fold cross-validation diagram with data splits and
+
+a table comparing metric selection to error cost scenarios.
+
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+
+guide a new analysis.
+
+NARRATOR: It also considers robustness, privacy, security, transparency, and fairness.
+
+NARRATOR: Consider this worked case: A deployment checklist verifies that the AI
+
+model's robustness against distribution shift, privacy safeguards, security controls,
+
+transparency reports, and fairness audits are all documented.
+
+NARRATOR: On screen, present a checklist graphic with five checkboxes labeled
+
+'Robustness', 'Privacy', 'Security', 'Transparency', and 'Fairness' alongside brief
+
+validation criteria.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.

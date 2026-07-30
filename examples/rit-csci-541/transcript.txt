@@ -1,0 +1,237 @@
+NARRATOR: Begin by framing Course Scope and Paradigm Introduction as a question about
+
+inputs, decisions, and observable results.
+
+NARRATOR: The goal of this course is to introduce the students to a programming
+
+paradigm and an appropriate programming language chosen from those that are currently
+
+important or that show high promise of becoming important.
+
+NARRATOR: Consider this worked case: Students might explore object-oriented programming in
+
+Python or functional concepts in Rust, depending on the instructor's selection.
+
+NARRATOR: On screen, display a slide with the course title, paradigm/language options, and a
+
+note that specifics are posted prior to registration.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Language Reference Structure precisely enough that another
+
+learner could test the definition.
+
+NARRATOR: The Python language reference specifies lexical analysis, data model
+
+behavior, execution, expressions, statements, functions, classes, exceptions, and module
+
+import semantics.
+
+NARRATOR: Consider this worked case: The Python reference documents how names are bound
+
+to objects within namespaces and scopes, and how expressions produce values while
+
+statements control execution.
+
+NARRATOR: On screen, show a diagram of a language reference document with callouts for
+
+'lexical analysis', 'data model', 'execution', and 'module import semantics'.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: With the foundation in place, examine how Object Identity and Namespaces
+
+operates in a concrete sequence.
+
+NARRATOR: Names are bound to objects within namespaces and scopes.
+
+NARRATOR: Consider this worked case: A variable assignment like `x = 10` binds the
+
+name `x` to an integer object with a specific identity and value in the current scope.
+
+NARRATOR: On screen, illustrate two boxes labeled 'Namespace' and 'Scope', with arrows
+
+pointing to object boxes showing 'identity', 'type', and 'value' attributes.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in Control Flow and Exceptions and make the
+
+decision criteria explicit.
+
+NARRATOR: Exceptions interrupt normal control flow until a matching handler processes them
+
+or they propagate.
+
+NARRATOR: Consider this worked case: A `try-except` block catches a `ValueError`
+
+during input parsing, preventing the program from crashing and allowing recovery.
+
+NARRATOR: On screen, draw a flowchart showing normal execution path, an exception trigger, a
+
+handler block, and a propagation path if no match exists.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Apply Import System Mechanics to a worked situation instead of treating it as an
+
+isolated definition.
+
+NARRATOR: The import system searches for modules and binds loaded modules into a
+
+namespace.
+
+NARRATOR: Consider this worked case: Running `import math` loads the math module and binds
+
+its functions into the current namespace for direct access.
+
+NARRATOR: On screen, show a file system tree with a 'modules' folder, an arrow pointing to
+
+a namespace box, and a label indicating 'search path' and 'binding'.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in Compiler Phases and Separation of Concerns, including
+
+what improves and what becomes more difficult.
+
+NARRATOR: Compiler work separates parsing and semantic analysis from lowering, verification,
+
+optimization, and target-specific code generation.
+
+NARRATOR: Consider this worked case: Source code is first parsed into an abstract syntax
+
+tree, then semantically analyzed, lowered to intermediate representation, verified,
+
+optimized, and finally compiled to machine code.
+
+NARRATOR: On screen, create a horizontal pipeline diagram with five stages: 'Parsing',
+
+'Semantic Analysis', 'Lowering', 'Verification/Optimization', 'Code
+
+Generation', with arrows connecting them.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around Intermediate Representation Basics with an
+
+edge case and identify which assumption controls the outcome.
+
+NARRATOR: LLVM IR is a typed, SSA-based intermediate representation with explicit
+
+instructions, basic blocks, functions, memory operations, and control flow.
+
+NARRATOR: Consider this worked case: An IR function contains basic blocks where each
+
+block ends with a terminator instruction, ensuring explicit control flow paths.
+
+NARRATOR: On screen, render a simplified IR snippet showing a function with two basic
+
+blocks, a terminator instruction at the end of each, and a phi instruction at the start of a
+
+merge block.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Phi Instructions and Control Flow to diagnose a failure by separating
+
+symptoms, causes, and corrective action.
+
+NARRATOR: Phi instructions select values according to the predecessor control-flow
+
+edge.
+
+NARRATOR: Consider this worked case: A phi instruction at the start of a block merges
+
+different variable values depending on whether the loop condition was true or false.
+
+NARRATOR: On screen, draw a diamond-shaped control flow graph with two incoming edges
+
+labeled 'True' and 'False', and a phi instruction at the merge point selecting
+
+values based on the edge.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Memory Operations and Verification to the earlier ideas and explain
+
+how the pieces work as one system.
+
+NARRATOR: Load and store instructions make memory access explicit.
+
+NARRATOR: Consider this worked case: A store instruction writes a value to a specific
+
+memory address, and the verifier checks that the type matches the memory location before
+
+execution.
+
+NARRATOR: On screen, show a memory map with labeled addresses, a 'store' instruction
+
+pointing to an address, and a 'verifier' icon highlighting a type mismatch error.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with Debugging and Decomposition Strategies as a practical
+
+checklist that can guide a new analysis.
+
+NARRATOR: Debugging separates syntax, runtime, and logical failures, while decomposition and
+
+abstraction reduce the number of interacting concerns.
+
+NARRATOR: Consider this worked case: A developer uses a debugger to isolate a runtime
+
+error in a function, then refactors the code into smaller modules to simplify testing.
+
+NARRATOR: On screen, display a checklist graphic with three categories: 'Syntax',
+
+'Runtime', 'Logical', each with a checkbox and a brief description of what to look for.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.

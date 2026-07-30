@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "rit-csci-541",
+      "title": "RIT CSCI-541 Programming Skills catalog description",
+      "type": "note",
+      "uri": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02=",
+      "author": "Rochester Institute of Technology",
+      "content": "The goal of this course is to introduce the students to a programming paradigm and an appropriate programming language chosen from those that are currently important or that show high promise of becoming important. A significant portion of the learning curve occurs through programming assignments with exemplary solutions discussed later in class. The instructor will post specifics prior to registration. With the approval of the program coordinator, the course can be taken for credit more than once, provided each instance deals with a different paradigm and language. Prerequisites: CSCI-344 or equivalent course. Contact Hours: Lecture 3 Typically Offered: Fall, Spring",
+      "excerpt": "The goal of this course is to introduce the students to a programming paradigm and an appropriate programming language chosen from those that are currently important or that show high promise of becoming important. A significant portion of the learning curve occurs through programming assignments with exemplary solutions discussed later in class. The instructor will post specifics prior to registration. With the approval of the program coordinator, the course can be taken for credit more than once, provided each instance deals with a different paradigm and language. Prerequisites: CSCI-344 or equivalent course. Contact Hours: Lecture 3 Typically Offered: Fall, Spring",
+      "catalogPage": 758,
+      "verified": true
+    },
+    {
+      "id": "python-language-reference",
+      "title": "Python Language Reference",
+      "uri": "https://docs.python.org/3/reference/",
+      "author": "Python Software Foundation",
+      "content": "The Python language reference specifies lexical analysis, data model behavior, execution, expressions, statements, functions, classes, exceptions, and module import semantics. Python objects have identity, a type, and a value. Names are bound to objects within namespaces and scopes. Expressions produce values, while statements control execution and bindings. Exceptions interrupt normal control flow until a matching handler processes them or they propagate. The import system searches for modules and binds loaded modules into a namespace. Programs should be reasoned about through explicit state, control flow, data representation, contracts, tests, and observable behavior. Debugging separates syntax, runtime, and logical failures, while decomposition and abstraction reduce the number of interacting concerns.",
+      "type": "note",
+      "verified": true
+    },
+    {
+      "id": "llvm-language-reference",
+      "title": "LLVM Language Reference Manual",
+      "uri": "https://llvm.org/docs/LangRef.html",
+      "author": "LLVM Project",
+      "content": "LLVM IR is a typed, SSA-based intermediate representation with explicit instructions, basic blocks, functions, memory operations, and control flow. A module contains global values, functions, declarations, and metadata. A function contains basic blocks, and every basic block ends with a terminator instruction. Phi instructions select values according to the predecessor control-flow edge. Load and store instructions make memory access explicit. Valid IR must satisfy structural and typing rules. The verifier reports IR that violates those rules. Compiler work separates parsing and semantic analysis from lowering, verification, optimization, and target-specific code generation.",
+      "type": "note",
+      "verified": true
+    }
+  ]
+}

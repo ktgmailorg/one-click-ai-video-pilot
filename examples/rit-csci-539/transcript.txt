@@ -1,0 +1,243 @@
+NARRATOR: Begin by framing Course Scope and Faculty Flexibility as a question about
+
+inputs, decisions, and observable results.
+
+NARRATOR: Specific course details (such as prerequisites, course seminar, format,
+
+learning outcomes, assessment methods, and resource needs) will be determined by the
+
+faculty member(s) who propose a specific seminar course in this area.
+
+NARRATOR: Consider this worked case: A faculty member might propose a seminar focused on AI
+
+ethics, while another might focus on computer vision, each setting their own prerequisites
+
+and assessment methods.
+
+NARRATOR: On screen, create an editable process diagram for Course Scope and Faculty
+
+Flexibility with labeled inputs, decisions, state changes, and a checked output.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define NIST AI Risk Management Framework: Govern precisely enough that
+
+another learner could test the definition.
+
+NARRATOR: The NIST AI Risk Management Framework organizes work around Govern, Map,
+
+Measure, and Manage.
+
+NARRATOR: Consider this worked case: Govern establishes policies, responsibilities, and
+
+accountability for AI risk, ensuring clear ownership of risk management decisions.
+
+NARRATOR: On screen, show a four-step circular diagram labeled Govern, Map, Measure, and
+
+Manage, with arrows indicating the continuous cycle of risk management.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: With the foundation in place, examine how NIST AI Risk Management Framework:
+
+Map operates in a concrete sequence.
+
+NARRATOR: Map documents context, intended use, affected people, and potential impacts.
+
+NARRATOR: Consider this worked case: A team maps a facial recognition system by
+
+documenting its intended use in public spaces, the affected population, and potential impacts
+
+on privacy and bias.
+
+NARRATOR: On screen, display a checklist template with fields for context, intended
+
+use, affected people, and potential impacts, illustrating how to document risk context.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in NIST AI Risk Management Framework: Measure
+
+and make the decision criteria explicit.
+
+NARRATOR: Measure uses qualitative and quantitative methods to analyze identified
+
+risks.
+
+NARRATOR: Consider this worked case: A team measures risk by running quantitative accuracy
+
+tests on training data and conducting qualitative interviews with stakeholders to
+
+assess fairness and transparency.
+
+NARRATOR: On screen, show a split-screen graphic: left side shows quantitative metrics
+
+(accuracy, precision, recall), right side shows qualitative indicators (stakeholder
+
+feedback, fairness audits, transparency reports).
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Apply NIST AI Risk Management Framework: Manage to a worked situation
+
+instead of treating it as an isolated definition.
+
+NARRATOR: Manage prioritizes risks and allocates resources for response and
+
+monitoring.
+
+NARRATOR: Consider this worked case: A team prioritizes high-risk items, allocates budget
+
+for monitoring, and schedules regular audits to track system behavior and context changes.
+
+NARRATOR: On screen, display a risk prioritization matrix with quadrants for
+
+likelihood and impact, connected to a resource allocation table and a monitoring schedule.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in Machine-Learning Workflow Separation,
+
+including what improves and what becomes more difficult.
+
+NARRATOR: Machine-learning workflows separate data preparation, training, validation,
+
+testing, model selection, and evaluation.
+
+NARRATOR: Consider this worked case: A workflow separates raw data cleaning from
+
+model training, ensuring that validation and testing sets remain untouched during
+
+hyperparameter tuning.
+
+NARRATOR: On screen, show a linear pipeline diagram with six distinct stages: data
+
+preparation, training, validation, testing, model selection, and evaluation, with arrows
+
+indicating the flow.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around Supervised vs. Unsupervised Methods with an
+
+edge case and identify which assumption controls the outcome.
+
+NARRATOR: Supervised methods learn a mapping from examples paired with target labels.
+
+NARRATOR: Consider this worked case: A supervised method classifies emails as spam or
+
+not using labeled data, whereas an unsupervised method clusters customer behavior
+
+without predefined categories.
+
+NARRATOR: On screen, display two side-by-side examples: left shows labeled data points being
+
+mapped to classes, right shows unlabeled data points being grouped into clusters.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Preprocessing and Leakage Prevention to diagnose a failure by separating
+
+symptoms, causes, and corrective action.
+
+NARRATOR: Preprocessing must be fitted only on permitted training data to avoid leakage.
+
+NARRATOR: Consider this worked case: A team fits a scaling transformer only on the
+
+training split, then applies the same transformation to validation and testing data
+
+to prevent data leakage.
+
+NARRATOR: On screen, show a diagram of a data pipeline where a preprocessing step is applied
+
+only to the training set, with a warning icon indicating that fitting on other data causes
+
+leakage.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Pipelines and Cross-Validation to the earlier ideas and
+
+explain how the pieces work as one system.
+
+NARRATOR: Cross-validation repeats training and validation across defined data splits.
+
+NARRATOR: Consider this worked case: A pipeline ensures that scaling and imputation
+
+are applied identically to every fold during cross-validation, preventing inconsistent
+
+transformations across splits.
+
+NARRATOR: On screen, display a pipeline object with preprocessing steps and an estimator,
+
+connected to a cross-validation loop showing multiple data splits being processed through
+
+the same pipeline.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with Evaluation Metrics and Practical Analysis Checklist as a practical
+
+checklist that can guide a new analysis.
+
+NARRATOR: Evaluation metrics must match the task and the cost of different errors.
+
+NARRATOR: Consider this worked case: A team selects a metric like F1-score for an
+
+imbalanced classification task, ensuring that hyperparameter tuning does not influence the
+
+final test set evaluation.
+
+NARRATOR: On screen, show a checklist with items: 'Metric matches task', 'Cost of errors
+
+considered', 'Hyperparameter selection separate from test evaluation', 'Leakage
+
+checked', 'Distribution shift assessed', 'Unexamined assumptions reviewed'.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.

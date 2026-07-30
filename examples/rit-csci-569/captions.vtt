@@ -1,0 +1,581 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:07.587
+NARRATOR: Begin by framing Course Purpose and
+Flexibility as a question about inputs,
+
+2
+00:00:07.587 --> 00:00:09.906
+decisions, and observable results.
+
+3
+00:00:09.906 --> 00:00:13.906
+NARRATOR: This course examines current topics
+in Theory.
+
+4
+00:00:13.906 --> 00:00:20.877
+NARRATOR: Consider this worked case: A faculty
+member might propose a seminar on modern
+
+5
+00:00:20.877 --> 00:00:25.359
+cryptographic protocols to test student
+interest before full adoption.
+
+6
+00:00:25.359 --> 00:00:32.827
+NARRATOR: On screen, display a slide with the
+course title and a flexible workflow diagram
+
+7
+00:00:32.827 --> 00:00:36.312
+showing faculty proposal leading to course
+pilot.
+
+8
+00:00:36.312 --> 00:00:42.381
+NARRATOR: List the givens before choosing a
+method, because an unstated assumption can
+
+9
+00:00:42.381 --> 00:00:43.781
+change the conclusion.
+
+10
+00:00:43.781 --> 00:00:49.578
+NARRATOR: This establishes the vocabulary and
+scope needed for the remaining sections.
+
+11
+00:00:49.578 --> 00:00:56.649
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+12
+00:00:56.649 --> 00:00:58.578
+throughout the analysis.
+
+13
+00:00:58.682 --> 00:01:04.450
+NARRATOR: Now define Faculty-Determined
+Details precisely enough that another learner
+
+14
+00:01:04.450 --> 00:01:06.757
+could test the definition.
+
+15
+00:01:06.757 --> 00:01:12.107
+NARRATOR: Specific course details (such as
+prerequisites, course seminar, format,
+
+16
+00:01:12.107 --> 00:01:18.528
+learning outcomes, assessment methods, and
+resource needs) will be determined by the
+
+17
+00:01:18.528 --> 00:01:24.413
+faculty member(s) who propose a specific
+seminar course in this area.
+
+18
+00:01:24.413 --> 00:01:30.484
+NARRATOR: Consider this worked case: An
+instructor might choose a seminar format with
+
+19
+00:01:30.484 --> 00:01:37.022
+three lecture hours per term and assign a
+research paper as the primary assessment.
+
+20
+00:01:37.022 --> 00:01:44.026
+NARRATOR: On screen, show a checklist graphic
+listing prerequisites, format, learning
+
+21
+00:01:44.026 --> 00:01:49.756
+outcomes, assessment methods, and resource
+needs as customizable fields.
+
+22
+00:01:49.756 --> 00:01:56.553
+NARRATOR: Separate the formal definition from
+an implementation detail, then identify what
+
+23
+00:01:56.553 --> 00:01:58.819
+evidence would distinguish them.
+
+24
+00:01:58.819 --> 00:02:05.553
+NARRATOR: A precise definition makes later
+examples easier to evaluate and revise.
+
+25
+00:02:05.666 --> 00:02:12.551
+NARRATOR: With the foundation in place,
+examine how Cluster Classification operates in
+
+26
+00:02:12.551 --> 00:02:14.272
+a concrete sequence.
+
+27
+00:02:14.272 --> 00:02:20.975
+NARRATOR: Specific course instances will be
+identified as belonging to the Theory cluster,
+
+28
+00:02:20.975 --> 00:02:24.069
+the Security cluster, or both clusters.
+
+29
+00:02:24.069 --> 00:02:31.225
+NARRATOR: Consider this worked case: A seminar
+on secure key management would be classified
+
+30
+00:02:31.225 --> 00:02:34.803
+under both the Theory and Security clusters.
+
+31
+00:02:34.803 --> 00:02:41.742
+NARRATOR: On screen, present a Venn diagram
+with two overlapping circles labeled 'Theory
+
+32
+00:02:41.742 --> 00:02:48.147
+Cluster' and 'Security Cluster', with a course
+example placed in the intersection.
+
+33
+00:02:48.147 --> 00:02:55.553
+NARRATOR: Follow every arrow in order and name
+the state before and after each transition.
+
+34
+00:02:55.553 --> 00:03:01.147
+NARRATOR: The trace converts an abstract
+statement into an inspectable sequence.
+
+35
+00:03:01.250 --> 00:03:07.462
+NARRATOR: Next, compare the choices involved
+in Contact Hours and make the decision
+
+36
+00:03:07.462 --> 00:03:08.418
+criteria explicit.
+
+37
+00:03:08.418 --> 00:03:12.840
+NARRATOR: Security requirements should be
+tracked throughout development.
+
+38
+00:03:12.840 --> 00:03:19.640
+NARRATOR: Consider this worked case: Students
+attend three weekly sessions, each focusing on
+
+39
+00:03:19.640 --> 00:03:24.871
+a different theoretical or security topic
+proposed by the faculty.
+
+40
+00:03:24.871 --> 00:03:31.867
+NARRATOR: On screen, display a calendar icon
+with three highlighted blocks labeled 'Lecture
+
+41
+00:03:31.867 --> 00:03:38.324
+1', 'Lecture 2', and 'Lecture 3' to indicate
+the required contact hours.
+
+42
+00:03:38.324 --> 00:03:44.899
+NARRATOR: Compare alternatives against the
+same constraints so the evaluation does not
+
+43
+00:03:44.899 --> 00:03:46.543
+move the goalposts.
+
+44
+00:03:46.543 --> 00:03:53.465
+NARRATOR: Using shared criteria turns a
+preference into a defensible technical choice.
+
+45
+00:03:53.465 --> 00:04:00.622
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+46
+00:04:00.622 --> 00:04:02.574
+throughout the analysis.
+
+47
+00:04:02.690 --> 00:04:08.208
+NARRATOR: Apply Cryptographic Standards
+Overview to a worked situation instead of
+
+48
+00:04:08.208 --> 00:04:11.218
+treating it as an isolated definition.
+
+49
+00:04:11.218 --> 00:04:17.155
+NARRATOR: Cryptographic standards define
+approved algorithms and parameters.
+
+50
+00:04:17.155 --> 00:04:25.940
+NARRATOR: Consider this worked case: The NIST
+FIPS 197 standard specifies AES encryption
+
+51
+00:04:25.940 --> 00:04:30.671
+parameters, ensuring consistent algorithm
+usage across systems.
+
+52
+00:04:30.671 --> 00:04:39.172
+NARRATOR: On screen, show a document icon with
+a checklist of approved algorithms and
+
+53
+00:04:39.172 --> 00:04:44.030
+parameters, highlighting 'AES' and 'FIPS 197'
+as examples.
+
+54
+00:04:44.030 --> 00:04:50.438
+NARRATOR: Work from the concrete inputs to the
+result, checking units, types, or invariants
+
+55
+00:04:50.438 --> 00:04:51.811
+at each step.
+
+56
+00:04:51.811 --> 00:04:56.749
+NARRATOR: The worked case shows both how to
+apply the method and how to check it.
+
+57
+00:04:56.749 --> 00:05:03.894
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+58
+00:05:03.894 --> 00:05:05.843
+throughout the analysis.
+
+59
+00:05:05.954 --> 00:05:12.375
+NARRATOR: Examine the tradeoffs in Encryption
+and Confidentiality, including what improves
+
+60
+00:05:12.375 --> 00:05:15.294
+and what becomes more difficult.
+
+61
+00:05:15.294 --> 00:05:21.497
+NARRATOR: Encryption supports confidentiality
+when keys and modes are used correctly.
+
+62
+00:05:21.497 --> 00:05:30.769
+NARRATOR: Consider this worked case: Using AES
+in CBC mode with a properly generated 256-bit
+
+63
+00:05:30.769 --> 00:05:36.950
+key ensures that intercepted ciphertext
+remains unreadable without the key.
+
+64
+00:05:36.950 --> 00:05:43.922
+NARRATOR: On screen, illustrate a lock icon
+with a key turning, showing plaintext
+
+65
+00:05:43.922 --> 00:05:50.357
+transforming into ciphertext, with a note
+emphasizing correct key and mode usage.
+
+66
+00:05:50.357 --> 00:05:56.627
+NARRATOR: State the benefit, the cost, and the
+condition under which the tradeoff is
+
+67
+00:05:56.627 --> 00:05:57.075
+acceptable.
+
+68
+00:05:57.075 --> 00:06:04.497
+NARRATOR: Making the tradeoff visible prevents
+a local improvement from hiding a larger cost.
+
+69
+00:06:04.610 --> 00:06:10.641
+NARRATOR: Stress-test the reasoning around
+Integrity and Authenticity Mechanisms with an
+
+70
+00:06:10.641 --> 00:06:15.575
+edge case and identify which assumption
+controls the outcome.
+
+71
+00:06:15.575 --> 00:06:22.137
+NARRATOR: Message authentication and digital
+signatures address integrity and authenticity
+
+72
+00:06:22.137 --> 00:06:24.106
+in different ways.
+
+73
+00:06:24.106 --> 00:06:30.877
+NARRATOR: Consider this worked case: A digital
+signature verifies the sender's identity and
+
+74
+00:06:30.877 --> 00:06:37.648
+ensures the message hasn't been altered, while
+a message authentication code only checks
+
+75
+00:06:37.648 --> 00:06:38.169
+integrity.
+
+76
+00:06:38.169 --> 00:06:45.671
+NARRATOR: On screen, display two side-by-side
+icons: one showing a digital signature with a
+
+77
+00:06:45.671 --> 00:06:52.102
+verified checkmark, and another showing a
+message authentication tag with an integrity
+
+78
+00:06:52.102 --> 00:06:52.638
+shield.
+
+79
+00:06:52.638 --> 00:06:58.873
+NARRATOR: Change one assumption at a time and
+observe which part of the reasoning no longer
+
+80
+00:06:58.873 --> 00:06:59.263
+holds.
+
+81
+00:06:59.263 --> 00:07:05.784
+NARRATOR: The edge case reveals the boundary
+of the claim without discarding the useful
+
+82
+00:07:05.784 --> 00:07:06.716
+core idea.
+
+83
+00:07:06.842 --> 00:07:14.426
+NARRATOR: Use Random Number Generation and Key
+Management to diagnose a failure by separating
+
+84
+00:07:14.426 --> 00:07:17.135
+symptoms, causes, and corrective action.
+
+85
+00:07:17.135 --> 00:07:23.963
+NARRATOR: Random number generation supports
+keys, nonces, and other security parameters.
+
+86
+00:07:23.963 --> 00:07:31.391
+NARRATOR: Consider this worked case: A secure
+system uses a cryptographically secure random
+
+87
+00:07:31.391 --> 00:07:38.819
+number generator to create unique nonces for
+each encryption session, and rotates keys
+
+88
+00:07:38.819 --> 00:07:41.104
+quarterly to limit exposure.
+
+89
+00:07:41.104 --> 00:07:49.611
+NARRATOR: On screen, show a flowchart with
+arrows connecting 'Random Number Generation'
+
+90
+00:07:49.611 --> 00:07:56.700
+to 'Key Management', listing each sub-step
+(generation, distribution, storage, use,
+
+91
+00:07:56.700 --> 00:08:00.245
+rotation, revocation, destruction) as nodes.
+
+92
+00:08:00.245 --> 00:08:05.840
+NARRATOR: Locate the first point where
+observed behavior diverges from expected
+
+93
+00:08:05.840 --> 00:08:09.401
+behavior, then test the smallest plausible
+cause.
+
+94
+00:08:09.401 --> 00:08:15.301
+NARRATOR: The diagnosis is strongest when
+another person can reproduce the observation
+
+95
+00:08:15.301 --> 00:08:16.776
+and the test.
+
+96
+00:08:16.898 --> 00:08:22.882
+NARRATOR: Connect Secure Software Development
+Framework to the earlier ideas and explain how
+
+97
+00:08:22.882 --> 00:08:25.644
+the pieces work as one system.
+
+98
+00:08:25.644 --> 00:08:31.660
+NARRATOR: The Secure Software Development
+Framework groups practices into four practice
+
+99
+00:08:31.660 --> 00:08:32.207
+groups.
+
+100
+00:08:32.207 --> 00:08:39.268
+NARRATOR: Consider this worked case: Prepare
+the Organization establishes secure
+
+101
+00:08:39.268 --> 00:08:45.623
+development processes, while Respond to
+Vulnerabilities identifies and remediates
+
+102
+00:08:45.623 --> 00:08:47.035
+discovered weaknesses.
+
+103
+00:08:47.035 --> 00:08:56.324
+NARRATOR: On screen, display a four-quadrant
+grid, each quadrant labeled with one practice
+
+104
+00:08:56.324 --> 00:09:03.470
+group name, with brief icons representing
+people/processes (Prepare), code protection
+
+105
+00:09:03.470 --> 00:09:08.472
+(Protect), release/verification (Produce), and
+vulnerability response (Respond).
+
+106
+00:09:08.472 --> 00:09:17.372
+NARRATOR: Explain each connection explicitly
+and verify that information retains the same
+
+107
+00:09:17.372 --> 00:09:19.597
+meaning across representations.
+
+108
+00:09:19.597 --> 00:09:26.547
+NARRATOR: The synthesis matters only if every
+connection remains supported by the original
+
+109
+00:09:26.547 --> 00:09:27.082
+evidence.
+
+110
+00:09:27.194 --> 00:09:32.530
+NARRATOR: Finish with Verification and
+Security Reasoning as a practical checklist
+
+111
+00:09:32.530 --> 00:09:35.440
+that can guide a new analysis.
+
+112
+00:09:35.440 --> 00:09:43.366
+NARRATOR: Security reasoning identifies
+assets, trust boundaries, threats, controls,
+
+113
+00:09:43.366 --> 00:09:47.769
+evidence, residual risk, and responsibilities.
+
+114
+00:09:47.769 --> 00:09:54.139
+NARRATOR: Consider this worked case:
+Verification audits the codebase to confirm
+
+115
+00:09:54.139 --> 00:10:00.510
+that encryption standards are applied
+correctly, while security reasoning maps out
+
+116
+00:10:00.510 --> 00:10:05.143
+system assets and potential threats before
+development begins.
+
+117
+00:10:05.143 --> 00:10:13.017
+NARRATOR: On screen, show a magnifying glass
+icon over a codebase, with a checklist of
+
+118
+00:10:13.017 --> 00:10:19.840
+verification steps, and a separate diagram
+showing a network diagram with labeled assets,
+
+119
+00:10:19.840 --> 00:10:21.940
+trust boundaries, and threats.
+
+120
+00:10:21.940 --> 00:10:29.266
+NARRATOR: For each checklist item, record the
+evidence, the remaining uncertainty, and the
+
+121
+00:10:29.266 --> 00:10:30.956
+next verification step.
+
+122
+00:10:30.956 --> 00:10:36.860
+NARRATOR: The result is a repeatable
+procedure, not a conclusion that depends on
+
+123
+00:10:36.860 --> 00:10:38.222
+memory or intuition.

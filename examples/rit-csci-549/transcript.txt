@@ -1,0 +1,247 @@
+NARRATOR: Begin by framing Course Scope and Faculty Pilot Model as a question about
+
+inputs, decisions, and observable results.
+
+NARRATOR: This course examines current topics in Languages and Tools.
+
+NARRATOR: Consider this worked case: Instructors design semester-specific content
+
+based on emerging industry tools and academic research.
+
+NARRATOR: On screen, display a flowchart showing 'Faculty Proposal' -> 'Seminar Design'
+
+-> 'Cluster Classification (Languages/Tools or Security)' -> 'Contact Hours: Lecture 3'.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Now define Cluster Classification System precisely enough that another learner
+
+could test the definition.
+
+NARRATOR: Specific course instances will be identified as belonging to the Languages and
+
+Tools cluster, the Security cluster, or both clusters.
+
+NARRATOR: Consider this worked case: A course focusing on compiler design and debugging
+
+tools falls under Languages and Tools, while one emphasizing vulnerability scanning targets
+
+Security.
+
+NARRATOR: On screen, show a Venn diagram with two overlapping circles labeled 'Languages and
+
+Tools' and 'Security', with a third region labeled 'Both Clusters' and a fourth labeled
+
+'Languages and Tools Only'.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: With the foundation in place, examine how Secure Software Development
+
+Framework Overview operates in a concrete sequence.
+
+NARRATOR: The Secure Software Development Framework groups practices into four practice
+
+groups.
+
+NARRATOR: Consider this worked case: Prepare the Organization establishes people,
+
+processes, and technology for secure development, while Respond to Vulnerabilities
+
+identifies and remediates discovered weaknesses.
+
+NARRATOR: On screen, create a four-step horizontal pipeline labeled 'Prepare',
+
+'Protect', 'Produce', 'Respond', with each step containing a brief icon representing its
+
+core function.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in Prepare the Organization Practice and make
+
+the decision criteria explicit.
+
+NARRATOR: Prepare the Organization establishes people, processes, and technology for secure
+
+development.
+
+NARRATOR: Consider this worked case: Teams define security policies, train developers on
+
+secure coding standards, and select development environments before writing code.
+
+NARRATOR: On screen, illustrate a checklist with three items: 'People Training', 'Process
+
+Documentation', 'Technology Configuration', each with a checkmark.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Apply Protect the Software Practice to a worked situation instead of treating it
+
+as an isolated definition.
+
+NARRATOR: Protect the Software prevents unauthorized access to code and development
+
+artifacts.
+
+NARRATOR: Consider this worked case: Repositories use role-based access control,
+
+and source code repositories restrict commits to verified developers only.
+
+NARRATOR: On screen, draw a locked vault icon with a key labeled 'Access Control' and a
+
+shield labeled 'Artifact Protection' surrounding a code repository symbol.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in Produce Well-Secured Software Practice, including what
+
+improves and what becomes more difficult.
+
+NARRATOR: Produce Well-Secured Software addresses security requirements, design,
+
+verification, and release.
+
+NARRATOR: Consider this worked case: Developers integrate security requirements
+
+into design documents, run automated verification tests, and sign off on secure
+
+releases.
+
+NARRATOR: On screen, show a document with sections labeled 'Security Requirements',
+
+'Design Review', 'Verification Results', and 'Release Approval' in a sequential layout.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around Respond to Vulnerabilities Practice with an
+
+edge case and identify which assumption controls the outcome.
+
+NARRATOR: Respond to Vulnerabilities identifies, analyzes, remediates, and learns
+
+from discovered weaknesses.
+
+NARRATOR: Consider this worked case: When a vulnerability scanner flags a flaw, the team
+
+patches the code, updates documentation, and trains staff on the new security protocol.
+
+NARRATOR: On screen, create a cycle diagram with arrows connecting 'Identify', 'Analyze',
+
+'Remediate', and 'Learn', forming a continuous improvement loop.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Cryptographic Standards and Confidentiality to diagnose a failure by
+
+separating symptoms, causes, and corrective action.
+
+NARRATOR: Encryption supports confidentiality when keys and modes are used correctly.
+
+NARRATOR: Consider this worked case: AES-256 encryption protects sensitive data in transit,
+
+provided symmetric keys are managed securely and the correct mode of operation is applied.
+
+NARRATOR: On screen, display a padlock icon with a key labeled 'Key Management' and a gear
+
+labeled 'Mode of Operation' above a document labeled 'Confidential Data'.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Integrity, Authenticity, and Key Management to the earlier ideas and
+
+explain how the pieces work as one system.
+
+NARRATOR: Message authentication and digital signatures address integrity and authenticity
+
+in different ways.
+
+NARRATOR: Consider this worked case: Digital signatures verify that a code commit
+
+originated from an authorized developer, and key rotation ensures old cryptographic keys
+
+are securely destroyed after use.
+
+NARRATOR: On screen, show a document with a signature stamp labeled 'Digital Signature'
+
+and a calendar icon labeled 'Key Rotation' next to a trash can labeled 'Secure
+
+Destruction'.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with Modes of Operation and Side Channels as a practical checklist that
+
+can guide a new analysis.
+
+NARRATOR: Modes of operation define how a primitive processes data larger than one
+
+block.
+
+NARRATOR: Consider this worked case: Using CBC mode with a fixed IV compromises security,
+
+whereas GCM mode with a random nonce ensures proper data processing and protection against
+
+side-channel attacks.
+
+NARRATOR: On screen, illustrate two data blocks being processed: one with a flawed
+
+'Fixed IV' warning label, and another with a 'Random Nonce' shield icon, connected by a
+
+flow arrow labeled 'Mode of Operation'.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.

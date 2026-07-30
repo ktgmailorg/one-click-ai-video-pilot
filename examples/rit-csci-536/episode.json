@@ -1,0 +1,303 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Begin by framing Search Engine Pipeline Overview as a question about inputs, decisions, and observable results. Topics include search interfaces, traditional retrieval models (for example, TF-IDF, BM25), modern retrieval techniques (for example, neural reranking and retrieval), search engine evaluation, and search applications (for example, conversational IR, enterprise search). Consider this worked case: When a user searches for 'climate change policies', the system first retrieves relevant documents from an index, then ranks them based on relevance before displaying the top results. On screen, display a horizontal flowchart with three labeled boxes: 'Query Input', 'Index & Retrieval', and 'Ranking & Output', connected by arrows indicating data flow. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 70,
+      "title": "Search Engine Pipeline Overview",
+      "visualDirection": "template:academic-process | Display a horizontal flowchart with three labeled boxes: 'Query Input', 'Index & Retrieval', and 'Ranking & Output', connected by arrows indicating data flow."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Now define Traditional Retrieval Models precisely enough that another learner could test the definition. Map documents context, intended use, affected people, and potential impacts. Consider this worked case: TF-IDF assigns higher scores to terms that appear frequently in a specific document but rarely across the entire corpus, while BM25 adjusts for document length and term saturation. On screen, show a side-by-side comparison table listing 'TF-IDF' and 'BM25', with columns for 'Core Mechanism', 'Key Formula Components', and 'Typical Use Case'. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "plannedSeconds": 57,
+      "title": "Traditional Retrieval Models",
+      "visualDirection": "template:academic-process | Show a side-by-side comparison table listing 'TF-IDF' and 'BM25', with columns for 'Core Mechanism', 'Key Formula Components', and 'Typical Use Case'."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "With the foundation in place, examine how Modern Neural Retrieval operates in a concrete sequence. An introduction to the theories and techniques used to construct search engines. Consider this worked case: A neural reranker re-scores initially retrieved documents by analyzing query-document interactions through transformer-based architectures, improving relevance for complex or ambiguous queries. On screen, illustrate a two-stage pipeline: a traditional retriever outputs a candidate set, which is then passed to a neural reranker that outputs a refined ranked list. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "plannedSeconds": 56,
+      "title": "Modern Neural Retrieval",
+      "visualDirection": "template:academic-process | Illustrate a two-stage pipeline: a traditional retriever outputs a candidate set, which is then passed to a neural reranker that outputs a refined ranked list."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "Next, compare the choices involved in Search Interfaces and make the decision criteria explicit. Students will also review current IR research topics, and complete a group project in which they will design and execute experiments for search engine components. Consider this worked case: A conversational IR interface allows users to ask natural language questions, while an enterprise search interface provides faceted navigation and role-based access controls. On screen, display mockups of two search interfaces: one with a simple text box and autocomplete dropdown, and another with a chat-style prompt and structured filters. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "plannedSeconds": 63,
+      "title": "Search Interfaces",
+      "visualDirection": "template:academic-process | Display mockups of two search interfaces: one with a simple text box and autocomplete dropdown, and another with a chat-style prompt and structured filters."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Apply Search Engine Evaluation to a worked situation instead of treating it as an isolated definition. Evaluation metrics must match the task and the cost of different errors. Consider this worked case: Precision, recall, and mean average precision (MAP) quantify how many relevant documents appear in the top results, while user satisfaction surveys assess perceived usefulness. On screen, present a bar chart comparing precision and recall scores across three different retrieval models, with a legend indicating model names. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 59,
+      "title": "Search Engine Evaluation",
+      "visualDirection": "template:academic-process | Present a bar chart comparing precision and recall scores across three different retrieval models, with a legend indicating model names."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "Examine the tradeoffs in Search Applications, including what improves and what becomes more difficult. Risk analysis considers data quality and uncertainty. Consider this worked case: Conversational IR systems maintain dialogue state and context to answer follow-up questions, while enterprise search integrates with CRM and document management platforms. On screen, create a Venn diagram showing overlapping circles for 'Conversational IR', 'Enterprise Search', and 'Domain-Specific Search', with intersection labels indicating shared features like context awareness and integration capabilities. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "plannedSeconds": 56,
+      "title": "Search Applications",
+      "visualDirection": "template:academic-process | Create a Venn diagram showing overlapping circles for 'Conversational IR', 'Enterprise Search', and 'Domain-Specific Search', with intersection labels indicating shared features like context awareness and integration capabilities."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "Stress-test the reasoning around Machine Learning Workflows in IR with an edge case and identify which assumption controls the outcome. Machine-learning workflows separate data preparation, training, validation, testing, model selection, and evaluation. Consider this worked case: Preprocessing steps like tokenization and vectorization are fitted only on training data, while cross-validation ensures consistent evaluation across multiple data splits. On screen, show a sequential diagram of a machine learning pipeline with labeled stages: 'Data Preparation', 'Training', 'Validation', 'Testing', and 'Model Selection', with arrows indicating forward flow. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 62,
+      "title": "Machine Learning Workflows in IR",
+      "visualDirection": "template:academic-process | Show a sequential diagram of a machine learning pipeline with labeled stages: 'Data Preparation', 'Training', 'Validation', 'Testing', and 'Model Selection', with arrows indicating forward flow."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "Use Evaluation Metrics and Error Analysis to diagnose a failure by separating symptoms, causes, and corrective action. Leakage, distribution shift, overfitting, and unexamined assumptions can invalidate results. Consider this worked case: Using accuracy for ranking tasks often masks poor performance on long-tail queries, while distribution shift between training and test data reduces model reliability in production. On screen, display a checklist graphic with items like 'Metric-Task Alignment', 'Leakage Prevention', 'Distribution Shift Detection', and 'Overfitting Monitoring', each with a checkbox. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 60,
+      "title": "Evaluation Metrics and Error Analysis",
+      "visualDirection": "template:academic-process | Display a checklist graphic with items like 'Metric-Task Alignment', 'Leakage Prevention', 'Distribution Shift Detection', and 'Overfitting Monitoring', each with a checkbox."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Connect Research Topics and Experiment Design to the earlier ideas and explain how the pieces work as one system. It also considers robustness, privacy, security, transparency, and fairness. Consider this worked case: Researchers design experiments to compare neural reranking strategies under varying query complexity, measuring improvements in MAP and latency while monitoring for bias in ranked results. On screen, present a template for an experiment design card with fields for 'Hypothesis', 'Variables', 'Metrics', 'Constraints', and 'Expected Outcomes', formatted as a structured form. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 59,
+      "title": "Research Topics and Experiment Design",
+      "visualDirection": "template:academic-process | Present a template for an experiment design card with fields for 'Hypothesis', 'Variables', 'Metrics', 'Constraints', and 'Expected Outcomes', formatted as a structured form."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Monitoring continues after deployment because context and system behavior can change. Consider this worked case: Instructors and developers use the checklist to verify that indexing covers all required fields, retrieval models are tuned for the target domain, and evaluation metrics reflect real-world performance. On screen, show a printable checklist graphic with sections for 'Indexing Verification', 'Retrieval Tuning', 'Evaluation Validation', and 'Deployment Readiness', each containing three actionable items. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 61,
+      "title": "Practical Analysis Checklist",
+      "visualDirection": "template:academic-process | Show a printable checklist graphic with sections for 'Indexing Verification', 'Retrieval Tuning', 'Evaluation Validation', and 'Deployment Readiness', each containing three actionable items."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "rit-csci-536"
+      ],
+      "text": "Topics include search interfaces, traditional retrieval models (for example, TF-IDF, BM25), modern retrieval techniques (for example, neural reranking and retrieval), search engine evaluation, and search applications (for example, conversational IR, enterprise search).",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "nist-ai-rmf"
+      ],
+      "text": "Map documents context, intended use, affected people, and potential impacts.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "rit-csci-536"
+      ],
+      "text": "An introduction to the theories and techniques used to construct search engines.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "rit-csci-536"
+      ],
+      "text": "Students will also review current IR research topics, and complete a group project in which they will design and execute experiments for search engine components.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "scikit-learn-user-guide"
+      ],
+      "text": "Evaluation metrics must match the task and the cost of different errors.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "nist-ai-rmf"
+      ],
+      "text": "Risk analysis considers data quality and uncertainty.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "scikit-learn-user-guide"
+      ],
+      "text": "Machine-learning workflows separate data preparation, training, validation, testing, model selection, and evaluation.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "scikit-learn-user-guide"
+      ],
+      "text": "Leakage, distribution shift, overfitting, and unexamined assumptions can invalidate results.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "nist-ai-rmf"
+      ],
+      "text": "It also considers robustness, privacy, security, transparency, and fairness.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "nist-ai-rmf"
+      ],
+      "text": "Monitoring continues after deployment because context and system behavior can change.",
+      "verified": true
+    }
+  ],
+  "id": "csci-536-information-retrieval-foundations",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "Rochester Institute of Technology",
+      "excerpt": "An introduction to the theories and techniques used to construct search engines. Topics include search interfaces, traditional retrieval models (e.g., TF-IDF, BM25), modern retrieval techniques (e.g., neural reranking and retrieval), search engine evaluation, and search applications (e.g., conversational IR, enterprise search). Students will also review current IR research topics, and complete a group project in which they will design and execute experiments for search engine components. Prerequisites: CSCI-331 or equivalent course. Students may not take and receive credit for CSCI-536 and CSCI-636. Contact Hours: Lecture 3 Typically Offered: Spring",
+      "id": "rit-csci-536",
+      "sha256": "40ff99c85aba9918e43644ba78c22faa05201e81169d6342638b25c4b832b56c",
+      "title": "RIT CSCI-536 Information Retrieval catalog description",
+      "type": "note",
+      "uri": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02=",
+      "verified": true
+    },
+    {
+      "author": "scikit-learn developers",
+      "excerpt": "Machine-learning workflows separate data preparation, training, validation, testing, model selection, and evaluation. Supervised methods learn a mapping from examples paired with target labels. Unsupervised methods identify structure without target labels. Preprocessing must be fitted only on permitted training data to avoid leakage. Pipelines combine preprocessing and estimators so the same transformations are applied consistently. Cross-validation repeats training and validation across defined data splits. Evaluation metrics must match the task and the cost of different errors. Hyperparameter selection must remain separate from final test evaluation. Leakage, distribution shift, overfitting, and unexamined assumptions can invalidate results.",
+      "id": "scikit-learn-user-guide",
+      "sha256": "517b82514a81768f6a343724d34e1b3f7628fc376722deb2e1fd6dab8694a33d",
+      "title": "scikit-learn User Guide",
+      "type": "note",
+      "uri": "https://scikit-learn.org/stable/user_guide.html",
+      "verified": true
+    },
+    {
+      "author": "National Institute of Standards and Technology",
+      "excerpt": "The NIST AI Risk Management Framework organizes work around Govern, Map, Measure, and Manage. Govern establishes policies, responsibilities, and accountability for AI risk. Map documents context, intended use, affected people, and potential impacts. Measure uses qualitative and quantitative methods to analyze identified risks. Manage prioritizes risks and allocates resources for response and monitoring. Risk analysis considers data quality and uncertainty. It also considers robustness, privacy, security, transparency, and fairness. Monitoring continues after deployment because context and system behavior can change.",
+      "id": "nist-ai-rmf",
+      "sha256": "2d11a55a21dab673df4cec61b6a4d7d5a328f3ea2c5184ecdf74129d8fd088ae",
+      "title": "NIST AI Risk Management Framework",
+      "type": "note",
+      "uri": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "verified": true
+    }
+  ],
+  "title": "CSCI-536: Information Retrieval Foundations"
+}

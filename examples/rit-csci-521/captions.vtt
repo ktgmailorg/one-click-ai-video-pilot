@@ -1,0 +1,584 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:07.503
+NARRATOR: Begin by framing Course Foundations
+and Scope as a question about inputs,
+
+2
+00:00:07.503 --> 00:00:09.796
+decisions, and observable results.
+
+3
+00:00:09.796 --> 00:00:16.700
+NARRATOR: Topics include the knowledge
+discovery process; data exploration and its
+
+4
+00:00:16.700 --> 00:00:22.348
+role; data extraction, cleaning, integration
+and transformation; handling numeric,
+
+5
+00:00:22.348 --> 00:00:30.507
+unstructured, text, web, and other forms of
+data; and ethical issues underlying data
+
+6
+00:00:30.507 --> 00:00:32.390
+preparation and mining.
+
+7
+00:00:32.390 --> 00:00:38.394
+NARRATOR: Consider this worked case: Students
+will review the official course catalog to
+
+8
+00:00:38.394 --> 00:00:43.937
+confirm that data cleaning projects and a
+paper are required for credit.
+
+9
+00:00:43.937 --> 00:00:50.488
+NARRATOR: On screen, display the official
+course catalog excerpt highlighting the
+
+10
+00:00:50.488 --> 00:00:54.062
+knowledge discovery process and required
+deliverables.
+
+11
+00:00:54.062 --> 00:01:00.346
+NARRATOR: List the givens before choosing a
+method, because an unstated assumption can
+
+12
+00:01:00.346 --> 00:01:01.796
+change the conclusion.
+
+13
+00:01:01.796 --> 00:01:07.890
+NARRATOR: This establishes the vocabulary and
+scope needed for the remaining sections.
+
+14
+00:01:08.018 --> 00:01:14.169
+NARRATOR: Now define Data Exploration and Its
+Role precisely enough that another learner
+
+15
+00:01:14.169 --> 00:01:16.061
+could test the definition.
+
+16
+00:01:16.061 --> 00:01:20.155
+NARRATOR: Data cleaning projects and a paper
+are required.
+
+17
+00:01:20.155 --> 00:01:26.070
+NARRATOR: Consider this worked case:
+Instructor will demonstrate how exploratory
+
+18
+00:01:26.070 --> 00:01:32.577
+data analysis reveals missing values and
+outliers in a sample dataset.
+
+19
+00:01:32.577 --> 00:01:40.791
+NARRATOR: On screen, show a split-screen
+comparison of raw data versus explored data
+
+20
+00:01:40.791 --> 00:01:42.686
+highlighting identified anomalies.
+
+21
+00:01:42.686 --> 00:01:49.425
+NARRATOR: Separate the formal definition from
+an implementation detail, then identify what
+
+22
+00:01:49.425 --> 00:01:51.671
+evidence would distinguish them.
+
+23
+00:01:51.671 --> 00:01:58.233
+NARRATOR: A precise definition makes later
+examples easier to evaluate and revise.
+
+24
+00:01:58.233 --> 00:02:05.550
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+25
+00:02:05.550 --> 00:02:07.546
+throughout the analysis.
+
+26
+00:02:07.658 --> 00:02:13.755
+NARRATOR: With the foundation in place,
+examine how Data Extraction and Cleaning
+
+27
+00:02:13.755 --> 00:02:16.295
+operates in a concrete sequence.
+
+28
+00:02:16.295 --> 00:02:21.733
+NARRATOR: Constraints reject states that
+violate declared data rules.
+
+29
+00:02:21.733 --> 00:02:28.132
+NARRATOR: Consider this worked case: Students
+will practice extracting structured data from
+
+30
+00:02:28.132 --> 00:02:33.998
+a CSV file and removing duplicate rows using
+standard cleaning techniques.
+
+31
+00:02:33.998 --> 00:02:40.373
+NARRATOR: On screen, animate the step-by-step
+removal of duplicate rows and standardization
+
+32
+00:02:40.373 --> 00:02:43.561
+of date formats in a spreadsheet.
+
+33
+00:02:43.561 --> 00:02:50.920
+NARRATOR: Follow every arrow in order and name
+the state before and after each transition.
+
+34
+00:02:50.920 --> 00:02:56.795
+NARRATOR: The trace converts an abstract
+statement into an inspectable sequence.
+
+35
+00:02:56.795 --> 00:03:04.198
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+36
+00:03:04.198 --> 00:03:06.217
+throughout the analysis.
+
+37
+00:03:06.338 --> 00:03:12.313
+NARRATOR: Next, compare the choices involved
+in Data Integration and Transformation and
+
+38
+00:03:12.313 --> 00:03:14.803
+make the decision criteria explicit.
+
+39
+00:03:14.803 --> 00:03:21.616
+NARRATOR: Queries select, join, aggregate,
+insert, update, and delete data.
+
+40
+00:03:21.616 --> 00:03:27.800
+NARRATOR: Consider this worked case:
+Instructor will demonstrate merging two
+
+41
+00:03:27.800 --> 00:03:33.366
+relational tables and converting categorical
+variables into numeric codes.
+
+42
+00:03:33.366 --> 00:03:39.236
+NARRATOR: On screen, display a
+before-and-after table showing merged columns
+
+43
+00:03:39.236 --> 00:03:41.584
+and transformed categorical values.
+
+44
+00:03:41.584 --> 00:03:48.297
+NARRATOR: Compare alternatives against the
+same constraints so the evaluation does not
+
+45
+00:03:48.297 --> 00:03:49.975
+move the goalposts.
+
+46
+00:03:49.975 --> 00:03:56.897
+NARRATOR: Using shared criteria turns a
+preference into a defensible technical choice.
+
+47
+00:03:56.897 --> 00:04:04.104
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+48
+00:04:04.104 --> 00:04:06.069
+throughout the analysis.
+
+49
+00:04:06.069 --> 00:04:11.638
+NARRATOR: Then summarize what the example
+demonstrates, what it does not establish, and
+
+50
+00:04:11.638 --> 00:04:14.209
+what evidence would be needed next.
+
+51
+00:04:14.330 --> 00:04:21.014
+NARRATOR: Apply Handling Numeric Data to a
+worked situation instead of treating it as an
+
+52
+00:04:21.014 --> 00:04:21.905
+isolated definition.
+
+53
+00:04:21.905 --> 00:04:27.902
+NARRATOR: This course provides an introduction
+to the concepts and techniques used in
+
+54
+00:04:27.902 --> 00:04:30.670
+preparing data for subsequent data mining.
+
+55
+00:04:30.670 --> 00:04:37.615
+NARRATOR: Consider this worked case: Students
+will calculate the mean and median to impute
+
+56
+00:04:37.615 --> 00:04:42.576
+missing numeric values and apply min-max
+normalization to a dataset.
+
+57
+00:04:42.576 --> 00:04:48.916
+NARRATOR: On screen, show a bar chart
+comparing raw numeric values versus normalized
+
+58
+00:04:48.916 --> 00:04:51.842
+values ranging from 0 to 1.
+
+59
+00:04:51.842 --> 00:04:58.481
+NARRATOR: Work from the concrete inputs to the
+result, checking units, types, or invariants
+
+60
+00:04:58.481 --> 00:04:59.904
+at each step.
+
+61
+00:04:59.904 --> 00:05:05.092
+NARRATOR: The worked case shows both how to
+apply the method and how to check it.
+
+62
+00:05:05.210 --> 00:05:11.833
+NARRATOR: Examine the tradeoffs in Handling
+Unstructured and Text Data, including what
+
+63
+00:05:11.833 --> 00:05:15.144
+improves and what becomes more difficult.
+
+64
+00:05:15.144 --> 00:05:21.847
+NARRATOR: Constraints and indexes support data
+integrity and efficient lookup.
+
+65
+00:05:21.847 --> 00:05:26.772
+NARRATOR: Consider this worked case:
+Instructor will demonstrate converting a
+
+66
+00:05:26.772 --> 00:05:33.175
+paragraph of text into a list of tokens and
+removing common stop words.
+
+67
+00:05:33.175 --> 00:05:39.785
+NARRATOR: On screen, display a word cloud
+transitioning from raw text to a cleaned token
+
+68
+00:05:39.785 --> 00:05:41.988
+list with stop words highlighted.
+
+69
+00:05:41.988 --> 00:05:48.185
+NARRATOR: State the benefit, the cost, and the
+condition under which the tradeoff is
+
+70
+00:05:48.185 --> 00:05:48.628
+acceptable.
+
+71
+00:05:48.628 --> 00:05:55.925
+NARRATOR: Making the tradeoff visible prevents
+a local improvement from hiding a larger cost.
+
+72
+00:05:55.925 --> 00:06:03.107
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+73
+00:06:03.107 --> 00:06:05.066
+throughout the analysis.
+
+74
+00:06:05.186 --> 00:06:12.015
+NARRATOR: Stress-test the reasoning around
+Handling Web Data with an edge case and
+
+75
+00:06:12.015 --> 00:06:15.167
+identify which assumption controls the
+outcome.
+
+76
+00:06:15.167 --> 00:06:22.672
+NARRATOR: Relational systems organize data
+with tables, rows, columns, and declared
+
+77
+00:06:22.672 --> 00:06:23.354
+types.
+
+78
+00:06:23.354 --> 00:06:30.746
+NARRATOR: Consider this worked case: Students
+will scrape a static webpage, parse the HTML
+
+79
+00:06:30.746 --> 00:06:36.026
+structure, and extract structured records
+while respecting server rate limits.
+
+80
+00:06:36.026 --> 00:06:42.630
+NARRATOR: On screen, show a flowchart of the
+web scraping process from request to parsed
+
+81
+00:06:42.630 --> 00:06:43.510
+JSON output.
+
+82
+00:06:43.510 --> 00:06:49.805
+NARRATOR: Change one assumption at a time and
+observe which part of the reasoning no longer
+
+83
+00:06:49.805 --> 00:06:50.198
+holds.
+
+84
+00:06:50.198 --> 00:06:56.542
+NARRATOR: The edge case reveals the boundary
+of the claim without discarding the useful
+
+85
+00:06:56.542 --> 00:06:57.448
+core idea.
+
+86
+00:06:57.554 --> 00:07:04.852
+NARRATOR: Use Data Integrity and Constraints
+to diagnose a failure by separating symptoms,
+
+87
+00:07:04.852 --> 00:07:07.097
+causes, and corrective action.
+
+88
+00:07:07.097 --> 00:07:12.285
+NARRATOR: Indexes provide additional access
+paths for selected queries.
+
+89
+00:07:12.285 --> 00:07:18.824
+NARRATOR: Consider this worked case:
+Instructor will demonstrate how primary keys
+
+90
+00:07:18.824 --> 00:07:25.957
+and foreign keys prevent duplicate and
+orphaned records in a relational database.
+
+91
+00:07:25.957 --> 00:07:33.404
+NARRATOR: On screen, display a database schema
+diagram highlighting primary key and foreign
+
+92
+00:07:33.404 --> 00:07:34.550
+key relationships.
+
+93
+00:07:34.550 --> 00:07:40.260
+NARRATOR: Locate the first point where
+observed behavior diverges from expected
+
+94
+00:07:40.260 --> 00:07:43.894
+behavior, then test the smallest plausible
+cause.
+
+95
+00:07:43.894 --> 00:07:50.519
+NARRATOR: The diagnosis is strongest when
+another person can reproduce the observation
+
+96
+00:07:50.519 --> 00:07:52.175
+and the test.
+
+97
+00:07:52.175 --> 00:07:59.566
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+98
+00:07:59.566 --> 00:08:01.582
+throughout the analysis.
+
+99
+00:08:01.706 --> 00:08:07.442
+NARRATOR: Connect Ethical Issues in Data
+Preparation to the earlier ideas and explain
+
+100
+00:08:07.442 --> 00:08:10.531
+how the pieces work as one system.
+
+101
+00:08:10.531 --> 00:08:14.546
+NARRATOR: Nodes and relationships can carry
+properties.
+
+102
+00:08:14.546 --> 00:08:21.757
+NARRATOR: Consider this worked case: Students
+will review a case study on anonymizing
+
+103
+00:08:21.757 --> 00:08:26.749
+personal data and ensuring fair representation
+in cleaned datasets.
+
+104
+00:08:26.749 --> 00:08:32.916
+NARRATOR: On screen, show a checklist of
+ethical guidelines for data preparation and
+
+105
+00:08:32.916 --> 00:08:33.390
+mining.
+
+106
+00:08:33.390 --> 00:08:42.477
+NARRATOR: Explain each connection explicitly
+and verify that information retains the same
+
+107
+00:08:42.477 --> 00:08:44.749
+meaning across representations.
+
+108
+00:08:44.749 --> 00:08:51.351
+NARRATOR: The synthesis matters only if every
+connection remains supported by the original
+
+109
+00:08:51.351 --> 00:08:51.859
+evidence.
+
+110
+00:08:51.859 --> 00:08:58.918
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+111
+00:08:58.918 --> 00:09:00.843
+throughout the analysis.
+
+112
+00:09:00.962 --> 00:09:06.327
+NARRATOR: Finish with Practical Analysis
+Checklist as a practical checklist that can
+
+113
+00:09:06.327 --> 00:09:08.115
+guide a new analysis.
+
+114
+00:09:08.115 --> 00:09:12.318
+NARRATOR: Labels group nodes that play a
+similar domain role.
+
+115
+00:09:12.318 --> 00:09:20.437
+NARRATOR: Consider this worked case: Students
+will complete a checklist verifying extraction
+
+116
+00:09:20.437 --> 00:09:25.172
+accuracy, cleaning completeness,
+transformation consistency, and ethical
+
+117
+00:09:25.172 --> 00:09:25.849
+compliance.
+
+118
+00:09:25.849 --> 00:09:32.425
+NARRATOR: On screen, display a printable
+checklist template with checkboxes for each
+
+119
+00:09:32.425 --> 00:09:33.521
+verification step.
+
+120
+00:09:33.521 --> 00:09:41.290
+NARRATOR: For each checklist item, record the
+evidence, the remaining uncertainty, and the
+
+121
+00:09:41.290 --> 00:09:43.083
+next verification step.
+
+122
+00:09:43.083 --> 00:09:48.797
+NARRATOR: The result is a repeatable
+procedure, not a conclusion that depends on
+
+123
+00:09:48.797 --> 00:09:50.115
+memory or intuition.
+
+124
+00:09:50.115 --> 00:09:57.014
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+125
+00:09:57.014 --> 00:09:58.896
+throughout the analysis.

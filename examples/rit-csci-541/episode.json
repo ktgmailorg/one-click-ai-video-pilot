@@ -1,0 +1,303 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Begin by framing Course Scope and Paradigm Introduction as a question about inputs, decisions, and observable results. The goal of this course is to introduce the students to a programming paradigm and an appropriate programming language chosen from those that are currently important or that show high promise of becoming important. Consider this worked case: Students might explore object-oriented programming in Python or functional concepts in Rust, depending on the instructor's selection. On screen, display a slide with the course title, paradigm/language options, and a note that specifics are posted prior to registration. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 64,
+      "title": "Course Scope and Paradigm Introduction",
+      "visualDirection": "template:academic-process | Display a slide with the course title, paradigm/language options, and a note that specifics are posted prior to registration."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Now define Language Reference Structure precisely enough that another learner could test the definition. The Python language reference specifies lexical analysis, data model behavior, execution, expressions, statements, functions, classes, exceptions, and module import semantics. Consider this worked case: The Python reference documents how names are bound to objects within namespaces and scopes, and how expressions produce values while statements control execution. On screen, show a diagram of a language reference document with callouts for 'lexical analysis', 'data model', 'execution', and 'module import semantics'. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "plannedSeconds": 59,
+      "title": "Language Reference Structure",
+      "visualDirection": "template:academic-process | Show a diagram of a language reference document with callouts for 'lexical analysis', 'data model', 'execution', and 'module import semantics'."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "With the foundation in place, examine how Object Identity and Namespaces operates in a concrete sequence. Names are bound to objects within namespaces and scopes. Consider this worked case: A variable assignment like `x = 10` binds the name `x` to an integer object with a specific identity and value in the current scope. On screen, illustrate two boxes labeled 'Namespace' and 'Scope', with arrows pointing to object boxes showing 'identity', 'type', and 'value' attributes. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "plannedSeconds": 55,
+      "title": "Object Identity and Namespaces",
+      "visualDirection": "template:academic-process | Illustrate two boxes labeled 'Namespace' and 'Scope', with arrows pointing to object boxes showing 'identity', 'type', and 'value' attributes."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "Next, compare the choices involved in Control Flow and Exceptions and make the decision criteria explicit. Exceptions interrupt normal control flow until a matching handler processes them or they propagate. Consider this worked case: A `try-except` block catches a `ValueError` during input parsing, preventing the program from crashing and allowing recovery. On screen, draw a flowchart showing normal execution path, an exception trigger, a handler block, and a propagation path if no match exists. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "plannedSeconds": 55,
+      "title": "Control Flow and Exceptions",
+      "visualDirection": "template:academic-process | Draw a flowchart showing normal execution path, an exception trigger, a handler block, and a propagation path if no match exists."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Apply Import System Mechanics to a worked situation instead of treating it as an isolated definition. The import system searches for modules and binds loaded modules into a namespace. Consider this worked case: Running `import math` loads the math module and binds its functions into the current namespace for direct access. On screen, show a file system tree with a 'modules' folder, an arrow pointing to a namespace box, and a label indicating 'search path' and 'binding'. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 59,
+      "title": "Import System Mechanics",
+      "visualDirection": "template:academic-process | Show a file system tree with a 'modules' folder, an arrow pointing to a namespace box, and a label indicating 'search path' and 'binding'."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "Examine the tradeoffs in Compiler Phases and Separation of Concerns, including what improves and what becomes more difficult. Compiler work separates parsing and semantic analysis from lowering, verification, optimization, and target-specific code generation. Consider this worked case: Source code is first parsed into an abstract syntax tree, then semantically analyzed, lowered to intermediate representation, verified, optimized, and finally compiled to machine code. On screen, create a horizontal pipeline diagram with five stages: 'Parsing', 'Semantic Analysis', 'Lowering', 'Verification/Optimization', 'Code Generation', with arrows connecting them. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "plannedSeconds": 60,
+      "title": "Compiler Phases and Separation of Concerns",
+      "visualDirection": "template:academic-process | Create a horizontal pipeline diagram with five stages: 'Parsing', 'Semantic Analysis', 'Lowering', 'Verification/Optimization', 'Code Generation', with arrows connecting them."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "Stress-test the reasoning around Intermediate Representation Basics with an edge case and identify which assumption controls the outcome. LLVM IR is a typed, SSA-based intermediate representation with explicit instructions, basic blocks, functions, memory operations, and control flow. Consider this worked case: An IR function contains basic blocks where each block ends with a terminator instruction, ensuring explicit control flow paths. On screen, render a simplified IR snippet showing a function with two basic blocks, a terminator instruction at the end of each, and a phi instruction at the start of a merge block. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 66,
+      "title": "Intermediate Representation Basics",
+      "visualDirection": "template:academic-process | Render a simplified IR snippet showing a function with two basic blocks, a terminator instruction at the end of each, and a phi instruction at the start of a merge block."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "Use Phi Instructions and Control Flow to diagnose a failure by separating symptoms, causes, and corrective action. Phi instructions select values according to the predecessor control-flow edge. Consider this worked case: A phi instruction at the start of a block merges different variable values depending on whether the loop condition was true or false. On screen, draw a diamond-shaped control flow graph with two incoming edges labeled 'True' and 'False', and a phi instruction at the merge point selecting values based on the edge. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 62,
+      "title": "Phi Instructions and Control Flow",
+      "visualDirection": "template:academic-process | Draw a diamond-shaped control flow graph with two incoming edges labeled 'True' and 'False', and a phi instruction at the merge point selecting values based on the edge."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Connect Memory Operations and Verification to the earlier ideas and explain how the pieces work as one system. Load and store instructions make memory access explicit. Consider this worked case: A store instruction writes a value to a specific memory address, and the verifier checks that the type matches the memory location before execution. On screen, show a memory map with labeled addresses, a 'store' instruction pointing to an address, and a 'verifier' icon highlighting a type mismatch error. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 58,
+      "title": "Memory Operations and Verification",
+      "visualDirection": "template:academic-process | Show a memory map with labeled addresses, a 'store' instruction pointing to an address, and a 'verifier' icon highlighting a type mismatch error."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "Finish with Debugging and Decomposition Strategies as a practical checklist that can guide a new analysis. Debugging separates syntax, runtime, and logical failures, while decomposition and abstraction reduce the number of interacting concerns. Consider this worked case: A developer uses a debugger to isolate a runtime error in a function, then refactors the code into smaller modules to simplify testing. On screen, display a checklist graphic with three categories: 'Syntax', 'Runtime', 'Logical', each with a checkbox and a brief description of what to look for. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 62,
+      "title": "Debugging and Decomposition Strategies",
+      "visualDirection": "template:academic-process | Display a checklist graphic with three categories: 'Syntax', 'Runtime', 'Logical', each with a checkbox and a brief description of what to look for."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "rit-csci-541"
+      ],
+      "text": "The goal of this course is to introduce the students to a programming paradigm and an appropriate programming language chosen from those that are currently important or that show high promise of becoming important.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "python-language-reference"
+      ],
+      "text": "The Python language reference specifies lexical analysis, data model behavior, execution, expressions, statements, functions, classes, exceptions, and module import semantics.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "python-language-reference"
+      ],
+      "text": "Names are bound to objects within namespaces and scopes.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "python-language-reference"
+      ],
+      "text": "Exceptions interrupt normal control flow until a matching handler processes them or they propagate.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "python-language-reference"
+      ],
+      "text": "The import system searches for modules and binds loaded modules into a namespace.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "llvm-language-reference"
+      ],
+      "text": "Compiler work separates parsing and semantic analysis from lowering, verification, optimization, and target-specific code generation.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "llvm-language-reference"
+      ],
+      "text": "LLVM IR is a typed, SSA-based intermediate representation with explicit instructions, basic blocks, functions, memory operations, and control flow.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "llvm-language-reference"
+      ],
+      "text": "Phi instructions select values according to the predecessor control-flow edge.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "llvm-language-reference"
+      ],
+      "text": "Load and store instructions make memory access explicit.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "python-language-reference"
+      ],
+      "text": "Debugging separates syntax, runtime, and logical failures, while decomposition and abstraction reduce the number of interacting concerns.",
+      "verified": true
+    }
+  ],
+  "id": "csci-541-programming-skills-foundations-lesson-blueprint",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "Rochester Institute of Technology",
+      "excerpt": "The goal of this course is to introduce the students to a programming paradigm and an appropriate programming language chosen from those that are currently important or that show high promise of becoming important. A significant portion of the learning curve occurs through programming assignments with exemplary solutions discussed later in class. The instructor will post specifics prior to registration. With the approval of the program coordinator, the course can be taken for credit more than once, provided each instance deals with a different paradigm and language. Prerequisites: CSCI-344 or equivalent course. Contact Hours: Lecture 3 Typically Offered: Fall, Spring",
+      "id": "rit-csci-541",
+      "sha256": "b832be6ab6ae1c303c30a41f95f799894bf470d85b5bf574903254d3cc5d8d02",
+      "title": "RIT CSCI-541 Programming Skills catalog description",
+      "type": "note",
+      "uri": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02=",
+      "verified": true
+    },
+    {
+      "author": "Python Software Foundation",
+      "excerpt": "The Python language reference specifies lexical analysis, data model behavior, execution, expressions, statements, functions, classes, exceptions, and module import semantics. Python objects have identity, a type, and a value. Names are bound to objects within namespaces and scopes. Expressions produce values, while statements control execution and bindings. Exceptions interrupt normal control flow until a matching handler processes them or they propagate. The import system searches for modules and binds loaded modules into a namespace. Programs should be reasoned about through explicit state, control flow, data representation, contracts, tests, and observable behavior. Debugging separates syntax, runtime, and logical failures, while decomposition and abstraction reduce the number of inter",
+      "id": "python-language-reference",
+      "sha256": "d97135fb881b335209ef4e10ff196f931a1a1af8b246fb330acc26937dc31a47",
+      "title": "Python Language Reference",
+      "type": "note",
+      "uri": "https://docs.python.org/3/reference/",
+      "verified": true
+    },
+    {
+      "author": "LLVM Project",
+      "excerpt": "LLVM IR is a typed, SSA-based intermediate representation with explicit instructions, basic blocks, functions, memory operations, and control flow. A module contains global values, functions, declarations, and metadata. A function contains basic blocks, and every basic block ends with a terminator instruction. Phi instructions select values according to the predecessor control-flow edge. Load and store instructions make memory access explicit. Valid IR must satisfy structural and typing rules. The verifier reports IR that violates those rules. Compiler work separates parsing and semantic analysis from lowering, verification, optimization, and target-specific code generation.",
+      "id": "llvm-language-reference",
+      "sha256": "a43379c8170e7b9a563e131114cda4ecf3edd42bb450fc24a5d7684fefa888c0",
+      "title": "LLVM Language Reference Manual",
+      "type": "note",
+      "uri": "https://llvm.org/docs/LangRef.html",
+      "verified": true
+    }
+  ],
+  "title": "CSCI-541: Programming Skills - Foundations Lesson Blueprint"
+}

@@ -1,0 +1,257 @@
+NARRATOR: Begin by framing Course Scope and Faculty Flexibility as a question about
+
+inputs, decisions, and observable results.
+
+NARRATOR: This course examines current topics in Systems.
+
+NARRATOR: Consider this worked case: Instructors select specific course instances
+
+belonging to the Distributed Systems, Architecture and Operating Systems, or
+
+Security cluster.
+
+NARRATOR: On screen, display a flowchart showing three selectable cluster paths
+
+(Distributed Systems, Architecture and Operating Systems, Security) converging into a
+
+central 'Seminar in Systems' node.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Secure Software Development Framework Overview precisely
+
+enough that another learner could test the definition.
+
+NARRATOR: The Secure Software Development Framework groups practices into four practice
+
+groups.
+
+NARRATOR: Consider this worked case: Prepare the Organization establishes people,
+
+processes, and technology for secure development.
+
+NARRATOR: On screen, show a four-quadrant diagram labeling each practice group with its
+
+core function.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: With the foundation in place, examine how Prepare the Organization Practice
+
+operates in a concrete sequence.
+
+NARRATOR: Prepare the Organization establishes people, processes, and technology for secure
+
+development.
+
+NARRATOR: Consider this worked case: Teams define security policies and allocate
+
+resources before writing code.
+
+NARRATOR: On screen, illustrate a checklist with three items: 'Define security policies',
+
+'Allocate resources', 'Establish development processes'.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Then summarize what the example demonstrates, what it does not establish, and
+
+what evidence would be needed next.
+
+NARRATOR: Next, compare the choices involved in Protect the Software Practice and make the
+
+decision criteria explicit.
+
+NARRATOR: Protect the Software prevents unauthorized access to code and development
+
+artifacts.
+
+NARRATOR: Consider this worked case: Repositories use role-based access control to
+
+restrict who can view or modify source files.
+
+NARRATOR: On screen, draw a locked vault icon with three access levels: 'Read', 'Write',
+
+'Admin' labeled around it.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Apply Produce Well-Secured Software Practice to a worked situation instead of
+
+treating it as an isolated definition.
+
+NARRATOR: Produce Well-Secured Software addresses security requirements, design,
+
+verification, and release.
+
+NARRATOR: Consider this worked case: Developers verify that security requirements
+
+are met before deploying the final software version.
+
+NARRATOR: On screen, create a pipeline graphic showing 'Requirements' -> 'Design' ->
+
+'Verification' -> 'Release' with checkmarks at each stage.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Examine the tradeoffs in Respond to Vulnerabilities Practice, including what
+
+improves and what becomes more difficult.
+
+NARRATOR: Respond to Vulnerabilities identifies, analyzes, remediates, and learns
+
+from discovered weaknesses.
+
+NARRATOR: Consider this worked case: When a bug is found, the team patches the code and
+
+updates the security documentation.
+
+NARRATOR: On screen, show a circular diagram with arrows labeled 'Identify', 'Analyze',
+
+'Remediate', 'Learn' connecting back to 'Identify'.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Stress-test the reasoning around Security Requirements and Reasoning with an
+
+edge case and identify which assumption controls the outcome.
+
+NARRATOR: Security reasoning identifies assets, trust boundaries, threats, controls,
+
+evidence, residual risk, and responsibilities.
+
+NARRATOR: Consider this worked case: A system tracks user authentication requirements from
+
+design through testing.
+
+NARRATOR: On screen, display a table with columns: 'Asset', 'Trust Boundary', 'Threat',
+
+'Control', 'Evidence', 'Residual Risk', 'Responsibility'.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Use Cryptographic Standards and Confidentiality to diagnose a failure by
+
+separating symptoms, causes, and corrective action.
+
+NARRATOR: Encryption supports confidentiality when keys and modes are used correctly.
+
+NARRATOR: Consider this worked case: AES-256 encryption protects data in transit when
+
+paired with a secure key exchange protocol.
+
+NARRATOR: On screen, show a padlock icon with a key inside, labeled 'AES-256', and a shield
+
+icon labeled 'Confidentiality'.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Connect Integrity, Authenticity, and Key Management to the earlier ideas and
+
+explain how the pieces work as one system.
+
+NARRATOR: Message authentication and digital signatures address integrity and authenticity
+
+in different ways.
+
+NARRATOR: Consider this worked case: Digital signatures verify that a message was sent by a
+
+specific sender without alteration.
+
+NARRATOR: On screen, draw two side-by-side icons: a stamp icon labeled 'Digital
+
+Signature' and a key ring icon labeled 'Key Management'.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with Modes of Operation and Side Channels as a practical checklist that
+
+can guide a new analysis.
+
+NARRATOR: Modes of operation define how a primitive processes data larger than one
+
+block.
+
+NARRATOR: Consider this worked case: CBC mode processes data in blocks, but timing attacks
+
+can expose vulnerabilities if not implemented securely.
+
+NARRATOR: On screen, show a block diagram with arrows showing data flowing through multiple
+
+blocks, labeled 'Mode of Operation'.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.

@@ -1,0 +1,245 @@
+NARRATOR: Begin by framing Course Purpose and Flexibility as a question about inputs,
+
+decisions, and observable results.
+
+NARRATOR: This course examines current topics in Theory.
+
+NARRATOR: Consider this worked case: A faculty member might propose a seminar on modern
+
+cryptographic protocols to test student interest before full adoption.
+
+NARRATOR: On screen, display a slide with the course title and a flexible workflow diagram
+
+showing faculty proposal leading to course pilot.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Now define Faculty-Determined Details precisely enough that another learner
+
+could test the definition.
+
+NARRATOR: Specific course details (such as prerequisites, course seminar, format,
+
+learning outcomes, assessment methods, and resource needs) will be determined by the
+
+faculty member(s) who propose a specific seminar course in this area.
+
+NARRATOR: Consider this worked case: An instructor might choose a seminar format with
+
+three lecture hours per term and assign a research paper as the primary assessment.
+
+NARRATOR: On screen, show a checklist graphic listing prerequisites, format, learning
+
+outcomes, assessment methods, and resource needs as customizable fields.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: With the foundation in place, examine how Cluster Classification operates in
+
+a concrete sequence.
+
+NARRATOR: Specific course instances will be identified as belonging to the Theory cluster,
+
+the Security cluster, or both clusters.
+
+NARRATOR: Consider this worked case: A seminar on secure key management would be classified
+
+under both the Theory and Security clusters.
+
+NARRATOR: On screen, present a Venn diagram with two overlapping circles labeled 'Theory
+
+Cluster' and 'Security Cluster', with a course example placed in the intersection.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in Contact Hours and make the decision
+
+criteria explicit.
+
+NARRATOR: Security requirements should be tracked throughout development.
+
+NARRATOR: Consider this worked case: Students attend three weekly sessions, each focusing on
+
+a different theoretical or security topic proposed by the faculty.
+
+NARRATOR: On screen, display a calendar icon with three highlighted blocks labeled 'Lecture
+
+1', 'Lecture 2', and 'Lecture 3' to indicate the required contact hours.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Apply Cryptographic Standards Overview to a worked situation instead of
+
+treating it as an isolated definition.
+
+NARRATOR: Cryptographic standards define approved algorithms and parameters.
+
+NARRATOR: Consider this worked case: The NIST FIPS 197 standard specifies AES encryption
+
+parameters, ensuring consistent algorithm usage across systems.
+
+NARRATOR: On screen, show a document icon with a checklist of approved algorithms and
+
+parameters, highlighting 'AES' and 'FIPS 197' as examples.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Examine the tradeoffs in Encryption and Confidentiality, including what improves
+
+and what becomes more difficult.
+
+NARRATOR: Encryption supports confidentiality when keys and modes are used correctly.
+
+NARRATOR: Consider this worked case: Using AES in CBC mode with a properly generated 256-bit
+
+key ensures that intercepted ciphertext remains unreadable without the key.
+
+NARRATOR: On screen, illustrate a lock icon with a key turning, showing plaintext
+
+transforming into ciphertext, with a note emphasizing correct key and mode usage.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around Integrity and Authenticity Mechanisms with an
+
+edge case and identify which assumption controls the outcome.
+
+NARRATOR: Message authentication and digital signatures address integrity and authenticity
+
+in different ways.
+
+NARRATOR: Consider this worked case: A digital signature verifies the sender's identity and
+
+ensures the message hasn't been altered, while a message authentication code only checks
+
+integrity.
+
+NARRATOR: On screen, display two side-by-side icons: one showing a digital signature with a
+
+verified checkmark, and another showing a message authentication tag with an integrity
+
+shield.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Random Number Generation and Key Management to diagnose a failure by separating
+
+symptoms, causes, and corrective action.
+
+NARRATOR: Random number generation supports keys, nonces, and other security parameters.
+
+NARRATOR: Consider this worked case: A secure system uses a cryptographically secure random
+
+number generator to create unique nonces for each encryption session, and rotates keys
+
+quarterly to limit exposure.
+
+NARRATOR: On screen, show a flowchart with arrows connecting 'Random Number Generation'
+
+to 'Key Management', listing each sub-step (generation, distribution, storage, use,
+
+rotation, revocation, destruction) as nodes.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Secure Software Development Framework to the earlier ideas and explain how
+
+the pieces work as one system.
+
+NARRATOR: The Secure Software Development Framework groups practices into four practice
+
+groups.
+
+NARRATOR: Consider this worked case: Prepare the Organization establishes secure
+
+development processes, while Respond to Vulnerabilities identifies and remediates
+
+discovered weaknesses.
+
+NARRATOR: On screen, display a four-quadrant grid, each quadrant labeled with one practice
+
+group name, with brief icons representing people/processes (Prepare), code protection
+
+(Protect), release/verification (Produce), and vulnerability response (Respond).
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with Verification and Security Reasoning as a practical checklist
+
+that can guide a new analysis.
+
+NARRATOR: Security reasoning identifies assets, trust boundaries, threats, controls,
+
+evidence, residual risk, and responsibilities.
+
+NARRATOR: Consider this worked case: Verification audits the codebase to confirm
+
+that encryption standards are applied correctly, while security reasoning maps out
+
+system assets and potential threats before development begins.
+
+NARRATOR: On screen, show a magnifying glass icon over a codebase, with a checklist of
+
+verification steps, and a separate diagram showing a network diagram with labeled assets,
+
+trust boundaries, and threats.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.
