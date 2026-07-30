@@ -1,0 +1,247 @@
+NARRATOR: Begin by framing Course Scope & Audience as a question about inputs,
+
+decisions, and observable results.
+
+NARRATOR: This class is restricted to students with at least 4th year standing COMPSCI-BS or
+
+COMPSCI-2M Contact Hours: Lecture 3 It may be used to fulfill one of the following: Writing
+
+Intensive: Program Typically Offered: Fall, Spring, Summer.
+
+NARRATOR: Consider this worked case: A senior software engineer preparing a technical report
+
+for a research grant must follow this course's formatting and ethical guidelines.
+
+NARRATOR: On screen, display a course catalog excerpt highlighting the Writing Intensive
+
+designation, fourth-year restriction, and lecture contact hours.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Document Types in Computer Science precisely enough that another
+
+learner could test the definition.
+
+NARRATOR: Topics include the different forms of writing in computer science (books, theses,
+
+journal articles, technical reports, manuscripts, etc.
+
+NARRATOR: Consider this worked case: A thesis requires a comprehensive literature review and
+
+methodology section, whereas a journal article emphasizes novel findings and concise results.
+
+NARRATOR: On screen, show a comparison chart listing document types alongside their primary
+
+purposes and typical audience expectations.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: With the foundation in place, examine how Algorithm Documentation Standards
+
+operates in a concrete sequence.
+
+NARRATOR: Algorithm analysis connects a precise problem specification to a correctness
+
+argument and resource bounds.
+
+NARRATOR: Consider this worked case: A developer documenting a sorting algorithm must
+
+explicitly state preconditions, postconditions, and time complexity before
+
+presenting pseudocode.
+
+NARRATOR: On screen, display a template for algorithm documentation with labeled sections
+
+for inputs, outputs, correctness arguments, and asymptotic analysis.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Next, compare the choices involved in Asymptotic Notation & Resource Bounds and
+
+make the decision criteria explicit.
+
+NARRATOR: Asymptotic notation describes how resource use grows with input size.
+
+NARRATOR: Consider this worked case: Using Big-O notation, a developer can demonstrate
+
+that a divide-and-conquer sorting algorithm outperforms a linear scan for large datasets.
+
+NARRATOR: On screen, graph input size against resource consumption using logarithmic scales
+
+to illustrate linear, logarithmic, and polynomial growth patterns.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Apply Data Structure Representation Choices to a worked situation instead of
+
+treating it as an isolated definition.
+
+NARRATOR: Representation choices and invariants determine which operations are
+
+efficient and which errors are possible.
+
+NARRATOR: Consider this worked case: Selecting a hash table over a linked list for key-value
+
+storage reduces lookup time from O(n) to O(1) on average, which must be explicitly noted in
+
+technical documentation.
+
+NARRATOR: On screen, show side-by-side diagrams of a hash table and a linked list
+
+with annotated operation costs and collision handling strategies.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in Graph Algorithms & Traversal, including what
+
+improves and what becomes more difficult.
+
+NARRATOR: Graph algorithms operate on vertices and edges to answer reachability, ordering,
+
+connectivity, and path questions.
+
+NARRATOR: Consider this worked case: A network engineer documenting a shortest path algorithm
+
+must explain how adjacency matrices or adjacency lists represent the graph structure.
+
+NARRATOR: On screen, render a directed graph with labeled vertices and edges, highlighting
+
+traversal paths and connectivity metrics.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around Dynamic Programming & Overlapping Subproblems
+
+with an edge case and identify which assumption controls the outcome.
+
+NARRATOR: Dynamic programming records solutions to overlapping subproblems.
+
+NARRATOR: Consider this worked case: A developer documenting a Fibonacci sequence
+
+calculator must show how memoization tables store intermediate results to reduce time
+
+complexity.
+
+NARRATOR: On screen, display a memoization table filling process with arrows indicating
+
+subproblem reuse and final solution assembly.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Visual Data Formatting to diagnose a failure by separating symptoms,
+
+causes, and corrective action.
+
+NARRATOR: ), writing styles of computer scientists, document readability and
+
+usability, documents for career readiness, effective presentations, teamwork and peer
+
+review, research methods, experimentation, documenting mathematics and algorithms, proper
+
+formatting of graphs, figures, and tables, and ethical, social, and professional issues
+
+facing Computer Scientists.
+
+NARRATOR: Consider this worked case: A bar chart comparing algorithm runtimes must
+
+include axis labels, a legend, and consistent units to accurately convey performance
+
+differences.
+
+NARRATOR: On screen, show a before-and-after comparison of a poorly formatted chart versus
+
+a professionally formatted technical figure with clear axes and legends.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Teamwork & Peer Review Practices to the earlier ideas and explain how
+
+the pieces work as one system.
+
+NARRATOR: This course focuses on developing and improving verbal and written communication
+
+skills specific to the discipline of computer science.
+
+NARRATOR: Consider this worked case: A research group uses a standardized peer review
+
+checklist to evaluate algorithm correctness, clarity of notation, and adherence to
+
+formatting standards before submission.
+
+NARRATOR: On screen, display a peer review checklist template with categories for
+
+correctness, readability, formatting, and ethical compliance.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with Ethical & Professional Considerations as a practical checklist that
+
+can guide a new analysis.
+
+NARRATOR: Hash tables map keys to locations and require a collision strategy.
+
+NARRATOR: Consider this worked case: A developer documenting a machine learning model
+
+must disclose training data sources, potential biases, and limitations to maintain
+
+professional integrity.
+
+NARRATOR: On screen, show a professional communication checklist highlighting ethical
+
+disclosure, authorship attribution, and data privacy compliance.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.
