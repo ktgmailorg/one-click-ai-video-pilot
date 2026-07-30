@@ -1,0 +1,303 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Begin by framing Foundations of Algorithm Analysis as a question about inputs, decisions, and observable results. Algorithm analysis connects a precise problem specification to a correctness argument and resource bounds. Consider this worked case: A sorting algorithm must guarantee that the output list contains all input elements in non-decreasing order. On screen, display a side-by-side comparison of a problem statement and its corresponding resource bounds, highlighting the connection between specification and analysis. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 55,
+      "title": "Foundations of Algorithm Analysis",
+      "visualDirection": "template:academic-process | Display a side-by-side comparison of a problem statement and its corresponding resource bounds, highlighting the connection between specification and analysis."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Now define Asymptotic Notation Basics precisely enough that another learner could test the definition. Asymptotic notation describes how resource use grows with input size. Consider this worked case: Big-O notation captures the worst-case growth rate of an algorithm's time complexity as input size increases. On screen, show a graph plotting input size against resource usage, with asymptotic curves labeled to illustrate growth rates. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 56,
+      "title": "Asymptotic Notation Basics",
+      "visualDirection": "template:academic-process | Show a graph plotting input size against resource usage, with asymptotic curves labeled to illustrate growth rates."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "With the foundation in place, examine how Loop Invariants for Correctness operates in a concrete sequence. A loop invariant supports a proof by initialization, maintenance, and termination. Consider this worked case: In a search loop, the invariant states that the target element, if present, must reside in the unexamined portion of the array. On screen, illustrate a loop structure with callouts marking the initialization step, the maintenance condition, and the termination check. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "plannedSeconds": 55,
+      "title": "Loop Invariants for Correctness",
+      "visualDirection": "template:academic-process | Illustrate a loop structure with callouts marking the initialization step, the maintenance condition, and the termination check."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "Next, compare the choices involved in Divide-and-Conquer Strategy and make the decision criteria explicit. Divide-and-conquer algorithms split a problem, solve subproblems, and combine their results. Consider this worked case: Merge sort divides an array into halves, recursively sorts each half, and merges the sorted halves into a single sorted array. On screen, animate a recursive tree structure where each node splits into two subproblems, then merges back up to show the combined result. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "plannedSeconds": 55,
+      "title": "Divide-and-Conquer Strategy",
+      "visualDirection": "template:academic-process | Animate a recursive tree structure where each node splits into two subproblems, then merges back up to show the combined result."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Apply Recurrence Relations to a worked situation instead of treating it as an isolated definition. Recurrences describe the cost of recursive algorithms. Consider this worked case: The recurrence T(n) = 2T(n/2) + O(n) describes the time complexity of merge sort by accounting for splitting and merging costs. On screen, display a recurrence equation alongside a step-by-step expansion showing how subproblem costs accumulate to the total cost. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 55,
+      "title": "Recurrence Relations",
+      "visualDirection": "template:academic-process | Display a recurrence equation alongside a step-by-step expansion showing how subproblem costs accumulate to the total cost."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "Examine the tradeoffs in Graph Algorithms Overview, including what improves and what becomes more difficult. Graph algorithms operate on vertices and edges to answer reachability, ordering, connectivity, and path questions. Consider this worked case: Breadth-first search traverses a graph level by level to find the shortest path in an unweighted graph. On screen, render a graph with vertices and edges, highlighting the traversal order and marking visited nodes to demonstrate reachability and pathfinding. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "plannedSeconds": 55,
+      "title": "Graph Algorithms Overview",
+      "visualDirection": "template:academic-process | Render a graph with vertices and edges, highlighting the traversal order and marking visited nodes to demonstrate reachability and pathfinding."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "Stress-test the reasoning around Dynamic Programming Fundamentals with an edge case and identify which assumption controls the outcome. Dynamic programming records solutions to overlapping subproblems. Consider this worked case: The Fibonacci sequence can be computed efficiently by storing previously calculated values to avoid redundant recursive calls. On screen, show a table filling process where each cell references previously computed values, emphasizing the reuse of subproblem solutions. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 55,
+      "title": "Dynamic Programming Fundamentals",
+      "visualDirection": "template:academic-process | Show a table filling process where each cell references previously computed values, emphasizing the reuse of subproblem solutions."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "Use Core Methods and Data Structures to diagnose a failure by separating symptoms, causes, and corrective action. Core methods include sorting, hashing, trees, graphs, shortest paths, and dynamic programming. Consider this worked case: Hash tables map keys to locations using a collision strategy to enable fast key-value lookups. On screen, display a hash table with keys, hash functions, and collision resolution paths, illustrating how mappings are stored and retrieved. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 55,
+      "title": "Core Methods and Data Structures",
+      "visualDirection": "template:academic-process | Display a hash table with keys, hash functions, and collision resolution paths, illustrating how mappings are stored and retrieved."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Connect Automata and Formal Languages to the earlier ideas and explain how the pieces work as one system. Automata and formal languages describe machines, accepted strings, and computational limits. Consider this worked case: A finite automaton accepts a string if its state transitions follow a defined sequence of symbols leading to an accepting state. On screen, illustrate a state diagram with transitions labeled by input symbols, showing which paths lead to an accepting state and which do not. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 57,
+      "title": "Automata and Formal Languages",
+      "visualDirection": "template:academic-process | Illustrate a state diagram with transitions labeled by input symbols, showing which paths lead to an accepting state and which do not."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. A disciplined solution states inputs and outputs, proves correctness, and then analyzes time and space. Consider this worked case: Before implementing an algorithm, verify that the input/output contract is clear, the correctness proof holds, and the resource bounds are documented. On screen, present a checklist graphic with three boxes labeled 'Input/Output Contract', 'Correctness Proof', and 'Resource Bounds', each with a checkbox for verification. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 59,
+      "title": "Practical Analysis Checklist",
+      "visualDirection": "template:academic-process | Present a checklist graphic with three boxes labeled 'Input/Output Contract', 'Correctness Proof', and 'Resource Bounds', each with a checkbox for verification."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "Algorithm analysis connects a precise problem specification to a correctness argument and resource bounds.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "Asymptotic notation describes how resource use grows with input size.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "A loop invariant supports a proof by initialization, maintenance, and termination.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "Divide-and-conquer algorithms split a problem, solve subproblems, and combine their results.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "Recurrences describe the cost of recursive algorithms.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "Graph algorithms operate on vertices and edges to answer reachability, ordering, connectivity, and path questions.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "Dynamic programming records solutions to overlapping subproblems.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "Core methods include sorting, hashing, trees, graphs, shortest paths, and dynamic programming.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "opendsa"
+      ],
+      "text": "Automata and formal languages describe machines, accepted strings, and computational limits.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "A disciplined solution states inputs and outputs, proves correctness, and then analyzes time and space.",
+      "verified": true
+    }
+  ],
+  "id": "csci-263-honors-introduction-to-computer-science-theory",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "Rochester Institute of Technology",
+      "excerpt": "This course provides a challenging introduction to the theory of computation with an emphasis on problem solving. Topics include formal languages, grammars, auto-mata theory, computability, and complexity. Prerequisites: (MATH-190 or MATH-200) and (CSCI-140 or CSCI-141 or CSCI-242 or SWEN-123 or SWEN-124 or CSECI-123 or CSEC-124 or GCIS-123 or GCIS-124 or GCIS-127) or equivalent courses. Contact Hours: Lecture 3 Typically Offered: Spring",
+      "id": "rit-csci-263",
+      "sha256": "63723b156bd7b96bfdf164aa959f480bdca3e202c599b33f58199b744dcc88b4",
+      "title": "RIT CSCI-263 Honors Introduction to Computer Science Theory catalog description",
+      "type": "note",
+      "uri": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02=",
+      "verified": true
+    },
+    {
+      "author": "MIT OpenCourseWare",
+      "excerpt": "Algorithm analysis connects a precise problem specification to a correctness argument and resource bounds. Asymptotic notation describes how resource use grows with input size. A loop invariant supports a proof by initialization, maintenance, and termination. Divide-and-conquer algorithms split a problem, solve subproblems, and combine their results. Recurrences describe the cost of recursive algorithms. Graph algorithms operate on vertices and edges to answer reachability, ordering, connectivity, and path questions. Dynamic programming records solutions to overlapping subproblems. Core methods include sorting, hashing, trees, graphs, shortest paths, and dynamic programming. A disciplined solution states inputs and outputs, proves correctness, and then analyzes time and space.",
+      "id": "mit-algorithms",
+      "sha256": "e6fdf3e727a4c6044da012714bd877c5bbed1a105b98d51a12449f81cc563b5d",
+      "title": "MIT OpenCourseWare Introduction to Algorithms",
+      "type": "note",
+      "uri": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/",
+      "verified": true
+    },
+    {
+      "author": "OpenDSA Project",
+      "excerpt": "OpenDSA presents data structures and algorithms through executable visualizations and exercises. Lists represent ordered sequences with position-based operations. Stacks use last-in, first-out access, while queues use first-in, first-out access. Trees represent hierarchical relationships and support recursive traversals. Hash tables map keys to locations and require a collision strategy. Graphs can be represented with adjacency structures for traversal and path algorithms. Automata and formal languages describe machines, accepted strings, and computational limits. Representation choices and invariants determine which operations are efficient and which errors are possible.",
+      "id": "opendsa",
+      "sha256": "633e1e27d522c368b0a975e12dbed181afef7f16e4e80dc67f8a0d633e7fc6cc",
+      "title": "OpenDSA",
+      "type": "note",
+      "uri": "https://opendsa-server.cs.vt.edu/",
+      "verified": true
+    }
+  ],
+  "title": "CSCI-263: Honors Introduction to Computer Science Theory"
+}

@@ -1,0 +1,227 @@
+NARRATOR: Begin by framing Foundations of Algorithm Analysis as a question about inputs,
+
+decisions, and observable results.
+
+NARRATOR: Algorithm analysis connects a precise problem specification to a correctness
+
+argument and resource bounds.
+
+NARRATOR: Consider this worked case: A sorting algorithm must guarantee that the output list
+
+contains all input elements in non-decreasing order.
+
+NARRATOR: On screen, display a side-by-side comparison of a problem statement and its
+
+corresponding resource bounds, highlighting the connection between specification and
+
+analysis.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Asymptotic Notation Basics precisely enough that another learner
+
+could test the definition.
+
+NARRATOR: Asymptotic notation describes how resource use grows with input size.
+
+NARRATOR: Consider this worked case: Big-O notation captures the worst-case growth rate
+
+of an algorithm's time complexity as input size increases.
+
+NARRATOR: On screen, show a graph plotting input size against resource usage, with
+
+asymptotic curves labeled to illustrate growth rates.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: With the foundation in place, examine how Loop Invariants for Correctness
+
+operates in a concrete sequence.
+
+NARRATOR: A loop invariant supports a proof by initialization, maintenance, and termination.
+
+NARRATOR: Consider this worked case: In a search loop, the invariant states that the
+
+target element, if present, must reside in the unexamined portion of the array.
+
+NARRATOR: On screen, illustrate a loop structure with callouts marking the
+
+initialization step, the maintenance condition, and the termination check.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in Divide-and-Conquer Strategy and make the
+
+decision criteria explicit.
+
+NARRATOR: Divide-and-conquer algorithms split a problem, solve subproblems, and combine
+
+their results.
+
+NARRATOR: Consider this worked case: Merge sort divides an array into halves, recursively
+
+sorts each half, and merges the sorted halves into a single sorted array.
+
+NARRATOR: On screen, animate a recursive tree structure where each node splits into two
+
+subproblems, then merges back up to show the combined result.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Apply Recurrence Relations to a worked situation instead of treating it as an
+
+isolated definition.
+
+NARRATOR: Recurrences describe the cost of recursive algorithms.
+
+NARRATOR: Consider this worked case: The recurrence T(n) = 2T(n/2) + O(n) describes the
+
+time complexity of merge sort by accounting for splitting and merging costs.
+
+NARRATOR: On screen, display a recurrence equation alongside a step-by-step expansion
+
+showing how subproblem costs accumulate to the total cost.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in Graph Algorithms Overview, including what improves
+
+and what becomes more difficult.
+
+NARRATOR: Graph algorithms operate on vertices and edges to answer reachability, ordering,
+
+connectivity, and path questions.
+
+NARRATOR: Consider this worked case: Breadth-first search traverses a graph level
+
+by level to find the shortest path in an unweighted graph.
+
+NARRATOR: On screen, render a graph with vertices and edges, highlighting the traversal
+
+order and marking visited nodes to demonstrate reachability and pathfinding.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around Dynamic Programming Fundamentals with an edge
+
+case and identify which assumption controls the outcome.
+
+NARRATOR: Dynamic programming records solutions to overlapping subproblems.
+
+NARRATOR: Consider this worked case: The Fibonacci sequence can be computed efficiently
+
+by storing previously calculated values to avoid redundant recursive calls.
+
+NARRATOR: On screen, show a table filling process where each cell references previously
+
+computed values, emphasizing the reuse of subproblem solutions.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Core Methods and Data Structures to diagnose a failure by separating symptoms,
+
+causes, and corrective action.
+
+NARRATOR: Core methods include sorting, hashing, trees, graphs, shortest paths, and
+
+dynamic programming.
+
+NARRATOR: Consider this worked case: Hash tables map keys to locations using a collision
+
+strategy to enable fast key-value lookups.
+
+NARRATOR: On screen, display a hash table with keys, hash functions, and collision resolution
+
+paths, illustrating how mappings are stored and retrieved.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Automata and Formal Languages to the earlier ideas and explain how
+
+the pieces work as one system.
+
+NARRATOR: Automata and formal languages describe machines, accepted strings, and
+
+computational limits.
+
+NARRATOR: Consider this worked case: A finite automaton accepts a string if its state
+
+transitions follow a defined sequence of symbols leading to an accepting state.
+
+NARRATOR: On screen, illustrate a state diagram with transitions labeled by input
+
+symbols, showing which paths lead to an accepting state and which do not.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+
+guide a new analysis.
+
+NARRATOR: A disciplined solution states inputs and outputs, proves correctness, and then
+
+analyzes time and space.
+
+NARRATOR: Consider this worked case: Before implementing an algorithm, verify that the
+
+input/output contract is clear, the correctness proof holds, and the resource
+
+bounds are documented.
+
+NARRATOR: On screen, present a checklist graphic with three boxes labeled 'Input/Output
+
+Contract', 'Correctness Proof', and 'Resource Bounds', each with a checkbox for
+
+verification.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.

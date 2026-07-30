@@ -1,0 +1,206 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "Begin by framing Introduction to Algorithm Analysis as a question about inputs, decisions, and observable results.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "Consider this worked case: A sorting algorithm must guarantee that the output array contains all input elements in non-decreasing order.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "List the givens before choosing a method, because an unstated assumption can change the conclusion.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "Now define Asymptotic Notation Basics precisely enough that another learner could test the definition.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "Consider this worked case: Big-O notation for a nested loop sorting algorithm indicates quadratic time complexity, O(n^2), as input size doubles.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "Separate the formal definition from an implementation detail, then identify what evidence would distinguish them.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "With the foundation in place, examine how Loop Invariants for Correctness operates in a concrete sequence.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "Consider this worked case: In a linear search, the invariant states that the target element, if present, must be in the unexamined portion of the array.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "Follow every arrow in order and name the state before and after each transition.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "Next, compare the choices involved in Divide-and-Conquer Strategy and make the decision criteria explicit.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "Consider this worked case: Merge sort divides an array into halves, recursively sorts each half, and merges the sorted subarrays into a single ordered array.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "Compare alternatives against the same constraints so the evaluation does not move the goalposts.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "Apply Recurrence Relations to a worked situation instead of treating it as an isolated definition.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "Consider this worked case: The recurrence T(n) = 2T(n/2) + O(n) describes the time complexity of merge sort, solved via the Master Theorem.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "Work from the concrete inputs to the result, checking units, types, or invariants at each step.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-06",
+      "shots": [
+        {
+          "id": "beat-06-shot-001",
+          "phrase": "Examine the tradeoffs in Graph Representation, including what improves and what becomes more difficult.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-002",
+          "phrase": "Consider this worked case: An adjacency list for a directed graph stores each vertex followed by a list of its outgoing edges, enabling efficient neighbor lookups.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-003",
+          "phrase": "State the benefit, the cost, and the condition under which the tradeoff is acceptable.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-07",
+      "shots": [
+        {
+          "id": "beat-07-shot-001",
+          "phrase": "Stress-test the reasoning around Graph Traversal Methods with an edge case and identify which assumption controls the outcome.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-002",
+          "phrase": "Consider this worked case: Breadth-first search explores all vertices at a given depth before moving to the next level, ensuring the shortest path in unweighted graphs.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-003",
+          "phrase": "Change one assumption at a time and observe which part of the reasoning no longer holds.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-08",
+      "shots": [
+        {
+          "id": "beat-08-shot-001",
+          "phrase": "Use Data Structure Selection to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-002",
+          "phrase": "Consider this worked case: Choosing a hash table over a linked list for key-value storage reduces lookup time from O(n) to O(1) average case, provided a good collision strategy is used.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-003",
+          "phrase": "Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-09",
+      "shots": [
+        {
+          "id": "beat-09-shot-001",
+          "phrase": "Connect Algorithm Design Process to the earlier ideas and explain how the pieces work as one system.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-002",
+          "phrase": "Consider this worked case: Before coding, a developer specifies the input array and expected sorted output, verifies correctness via trace, and calculates O(n log n) time and O(n) space requirements.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-003",
+          "phrase": "Explain each connection explicitly and verify that information retains the same meaning across representations.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-10",
+      "shots": [
+        {
+          "id": "beat-10-shot-001",
+          "phrase": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-002",
+          "phrase": "Consider this worked case: The checklist confirms that the loop invariant holds, asymptotic bounds are calculated, and graph traversal uses the appropriate adjacency structure for the problem constraints.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-003",
+          "phrase": "For each checklist item, record the evidence, the remaining uncertainty, and the next verification step.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "csci-261-analysis-of-algorithms-foundations-lesson",
+  "schemaVersion": 1
+}

@@ -1,0 +1,553 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:07.018
+NARRATOR: Begin by framing Introduction to
+Algorithmic Analysis as a question about
+
+2
+00:00:07.018 --> 00:00:09.921
+inputs, decisions, and observable results.
+
+3
+00:00:09.921 --> 00:00:16.280
+NARRATOR: Algorithm analysis connects a
+precise problem specification to a correctness
+
+4
+00:00:16.280 --> 00:00:18.593
+argument and resource bounds.
+
+5
+00:00:18.593 --> 00:00:25.104
+NARRATOR: Consider this worked case: When
+designing a search routine, the specification
+
+6
+00:00:25.104 --> 00:00:32.700
+must explicitly state the input data, the
+expected output, and the maximum allowed time
+
+7
+00:00:32.700 --> 00:00:34.328
+or memory usage.
+
+8
+00:00:34.328 --> 00:00:41.031
+NARRATOR: On screen, display a split-screen
+graphic: left side shows a problem statement
+
+9
+00:00:41.031 --> 00:00:48.765
+box, right side shows a graph plotting time
+vs. input size, with a connecting arrow
+
+10
+00:00:48.765 --> 00:00:50.312
+labeled 'Analysis Bridge'.
+
+11
+00:00:50.312 --> 00:00:56.571
+NARRATOR: List the givens before choosing a
+method, because an unstated assumption can
+
+12
+00:00:56.571 --> 00:00:58.015
+change the conclusion.
+
+13
+00:00:58.015 --> 00:01:04.218
+NARRATOR: This establishes the vocabulary and
+scope needed for the remaining sections.
+
+14
+00:01:04.322 --> 00:01:10.782
+NARRATOR: Now define Asymptotic Notation
+Basics precisely enough that another learner
+
+15
+00:01:10.782 --> 00:01:13.131
+could test the definition.
+
+16
+00:01:13.131 --> 00:01:19.334
+NARRATOR: Asymptotic notation describes how
+resource use grows with input size.
+
+17
+00:01:19.334 --> 00:01:26.748
+NARRATOR: Consider this worked case: An
+algorithm that processes each element once and
+
+18
+00:01:26.748 --> 00:01:34.162
+performs a constant number of operations per
+element grows linearly, expressed as O(n).
+
+19
+00:01:34.162 --> 00:01:43.782
+NARRATOR: On screen, show a line graph with
+three curves labeled O(1), O(n), and O(n^2),
+
+20
+00:01:43.782 --> 00:01:48.271
+highlighting the steepness difference as n
+increases.
+
+21
+00:01:48.271 --> 00:01:54.916
+NARRATOR: Separate the formal definition from
+an implementation detail, then identify what
+
+22
+00:01:54.916 --> 00:01:57.131
+evidence would distinguish them.
+
+23
+00:01:57.131 --> 00:02:03.678
+NARRATOR: A precise definition makes later
+examples easier to evaluate and revise.
+
+24
+00:02:03.794 --> 00:02:09.428
+NARRATOR: With the foundation in place,
+examine how Loop Invariants for Correctness
+
+25
+00:02:09.428 --> 00:02:11.775
+operates in a concrete sequence.
+
+26
+00:02:11.775 --> 00:02:18.587
+NARRATOR: A loop invariant supports a proof by
+initialization, maintenance, and termination.
+
+27
+00:02:18.587 --> 00:02:24.481
+NARRATOR: Consider this worked case: In a
+sum-accumulation loop, the invariant 'sum
+
+28
+00:02:24.481 --> 00:02:31.848
+equals the total of all processed elements'
+holds before the loop, remains true after each
+
+29
+00:02:31.848 --> 00:02:36.759
+iteration, and guarantees the final result
+matches the total sum.
+
+30
+00:02:36.759 --> 00:02:45.186
+NARRATOR: On screen, animate a loop counter
+and a running total variable, with checkmarks
+
+31
+00:02:45.186 --> 00:02:49.400
+appearing at 'Initialization', 'Maintenance',
+and 'Termination' stages.
+
+32
+00:02:49.400 --> 00:02:56.837
+NARRATOR: Follow every arrow in order and name
+the state before and after each transition.
+
+33
+00:02:56.837 --> 00:03:02.540
+NARRATOR: The trace converts an abstract
+statement into an inspectable sequence.
+
+34
+00:03:02.666 --> 00:03:09.238
+NARRATOR: Next, compare the choices involved
+in Divide-and-Conquer Strategy and make the
+
+35
+00:03:09.238 --> 00:03:10.881
+decision criteria explicit.
+
+36
+00:03:10.881 --> 00:03:17.157
+NARRATOR: Divide-and-conquer algorithms split
+a problem, solve subproblems, and combine
+
+37
+00:03:17.157 --> 00:03:18.412
+their results.
+
+38
+00:03:18.412 --> 00:03:25.186
+NARRATOR: Consider this worked case: Merge
+sort divides an array into halves, recursively
+
+39
+00:03:25.186 --> 00:03:30.397
+sorts each half, and merges the sorted halves
+back together.
+
+40
+00:03:30.397 --> 00:03:37.780
+NARRATOR: On screen, illustrate a binary tree
+where the root is the full array, children are
+
+41
+00:03:37.780 --> 00:03:44.240
+halves, and leaves are single elements, with
+arrows showing the divide and combine phases.
+
+42
+00:03:44.240 --> 00:03:50.815
+NARRATOR: Compare alternatives against the
+same constraints so the evaluation does not
+
+43
+00:03:50.815 --> 00:03:52.459
+move the goalposts.
+
+44
+00:03:52.459 --> 00:03:59.412
+NARRATOR: Using shared criteria turns a
+preference into a defensible technical choice.
+
+45
+00:03:59.522 --> 00:04:06.505
+NARRATOR: Apply Recurrence Relations to a
+worked situation instead of treating it as an
+
+46
+00:04:06.505 --> 00:04:07.503
+isolated definition.
+
+47
+00:04:07.503 --> 00:04:11.878
+NARRATOR: Recurrences describe the cost of
+recursive algorithms.
+
+48
+00:04:11.878 --> 00:04:22.972
+NARRATOR: Consider this worked case: The merge
+sort recurrence T(n) = 2T(n/2) + O(n) captures
+
+49
+00:04:22.972 --> 00:04:29.628
+the cost of splitting, solving two
+subproblems, and merging.
+
+50
+00:04:29.628 --> 00:04:38.953
+NARRATOR: On screen, display a mathematical
+equation box with T(n) = 2T(n/2) + cn,
+
+51
+00:04:38.953 --> 00:04:47.612
+alongside a small tree diagram showing two
+recursive calls branching from one node.
+
+52
+00:04:47.612 --> 00:04:54.110
+NARRATOR: Work from the concrete inputs to the
+result, checking units, types, or invariants
+
+53
+00:04:54.110 --> 00:04:55.503
+at each step.
+
+54
+00:04:55.503 --> 00:05:00.393
+NARRATOR: The worked case shows both how to
+apply the method and how to check it.
+
+55
+00:05:00.506 --> 00:05:06.565
+NARRATOR: Examine the tradeoffs in Graph
+Representation, including what improves and
+
+56
+00:05:06.565 --> 00:05:08.768
+what becomes more difficult.
+
+57
+00:05:08.768 --> 00:05:15.172
+NARRATOR: Graphs can be represented with
+adjacency structures for traversal and path
+
+58
+00:05:15.172 --> 00:05:15.706
+algorithms.
+
+59
+00:05:15.706 --> 00:05:24.182
+NARRATOR: Consider this worked case: An
+adjacency matrix uses a 2D array where entry
+
+60
+00:05:24.182 --> 00:05:32.659
+(i,j) indicates an edge between vertex i and
+vertex j, enabling direct edge lookup.
+
+61
+00:05:32.659 --> 00:05:39.558
+NARRATOR: On screen, show a 4x4 grid with 1s
+marking edges between nodes, labeled
+
+62
+00:05:39.558 --> 00:05:45.471
+'Adjacency Matrix', next to a list of node
+pairs labeled 'Edge List'.
+
+63
+00:05:45.471 --> 00:05:51.989
+NARRATOR: State the benefit, the cost, and the
+condition under which the tradeoff is
+
+64
+00:05:51.989 --> 00:05:52.455
+acceptable.
+
+65
+00:05:52.455 --> 00:05:59.768
+NARRATOR: Making the tradeoff visible prevents
+a local improvement from hiding a larger cost.
+
+66
+00:05:59.882 --> 00:06:06.077
+NARRATOR: Stress-test the reasoning around
+Data Structure Invariants with an edge case
+
+67
+00:06:06.077 --> 00:06:09.691
+and identify which assumption controls the
+outcome.
+
+68
+00:06:09.691 --> 00:06:14.847
+NARRATOR: Representation choices and
+invariants determine which operations are
+
+69
+00:06:14.847 --> 00:06:18.285
+efficient and which errors are possible.
+
+70
+00:06:18.285 --> 00:06:25.336
+NARRATOR: Consider this worked case: A stack
+invariant requires that the top element is
+
+71
+00:06:25.336 --> 00:06:32.387
+always the most recently added item, ensuring
+O(1) push and pop operations but preventing
+
+72
+00:06:32.387 --> 00:06:33.394
+random access.
+
+73
+00:06:33.394 --> 00:06:39.707
+NARRATOR: On screen, draw a vertical stack
+with a 'top' pointer, showing push adding to
+
+74
+00:06:39.707 --> 00:06:46.441
+the top and pop removing from the top, with a
+lock icon indicating no middle access.
+
+75
+00:06:46.441 --> 00:06:52.603
+NARRATOR: Change one assumption at a time and
+observe which part of the reasoning no longer
+
+76
+00:06:52.603 --> 00:06:52.988
+holds.
+
+77
+00:06:52.988 --> 00:06:59.017
+NARRATOR: The edge case reveals the boundary
+of the claim without discarding the useful
+
+78
+00:06:59.017 --> 00:06:59.878
+core idea.
+
+79
+00:06:59.978 --> 00:07:07.682
+NARRATOR: Use Sorting and Hashing Foundations
+to diagnose a failure by separating symptoms,
+
+80
+00:07:07.682 --> 00:07:10.053
+causes, and corrective action.
+
+81
+00:07:10.053 --> 00:07:17.707
+NARRATOR: Core methods include sorting,
+hashing, trees, graphs, shortest paths, and
+
+82
+00:07:17.707 --> 00:07:19.099
+dynamic programming.
+
+83
+00:07:19.099 --> 00:07:26.396
+NARRATOR: Consider this worked case: Hash
+tables map keys to locations using a hash
+
+84
+00:07:26.396 --> 00:07:33.172
+function, requiring a collision strategy like
+chaining or open addressing to maintain data
+
+85
+00:07:33.172 --> 00:07:33.693
+integrity.
+
+86
+00:07:33.693 --> 00:07:41.077
+NARRATOR: On screen, show a hash table with
+buckets, a key being hashed to a bucket index,
+
+87
+00:07:41.077 --> 00:07:44.552
+and a collision chain resolving via linked
+lists.
+
+88
+00:07:44.552 --> 00:07:50.310
+NARRATOR: Locate the first point where
+observed behavior diverges from expected
+
+89
+00:07:50.310 --> 00:07:53.974
+behavior, then test the smallest plausible
+cause.
+
+90
+00:07:53.974 --> 00:07:59.949
+NARRATOR: The diagnosis is strongest when
+another person can reproduce the observation
+
+91
+00:07:59.949 --> 00:08:01.443
+and the test.
+
+92
+00:08:01.562 --> 00:08:07.495
+NARRATOR: Connect Dynamic Programming Overview
+to the earlier ideas and explain how the
+
+93
+00:08:07.495 --> 00:08:09.777
+pieces work as one system.
+
+94
+00:08:09.777 --> 00:08:15.793
+NARRATOR: Dynamic programming records
+solutions to overlapping subproblems.
+
+95
+00:08:15.793 --> 00:08:21.496
+NARRATOR: Consider this worked case: The
+Fibonacci sequence calculation stores
+
+96
+00:08:21.496 --> 00:08:28.910
+previously computed values in a table to avoid
+redundant recursive calls, reducing time
+
+97
+00:08:28.910 --> 00:08:31.761
+complexity from exponential to linear.
+
+98
+00:08:31.762 --> 00:08:38.349
+NARRATOR: On screen, display a table filling
+row by row with Fibonacci numbers,
+
+99
+00:08:38.349 --> 00:08:42.402
+highlighting how each cell references two
+prior cells.
+
+100
+00:08:42.402 --> 00:08:51.615
+NARRATOR: Explain each connection explicitly
+and verify that information retains the same
+
+101
+00:08:51.615 --> 00:08:53.918
+meaning across representations.
+
+102
+00:08:53.918 --> 00:09:00.926
+NARRATOR: The synthesis matters only if every
+connection remains supported by the original
+
+103
+00:09:00.926 --> 00:09:01.465
+evidence.
+
+104
+00:09:01.586 --> 00:09:06.939
+NARRATOR: Finish with Practical Analysis
+Checklist as a practical checklist that can
+
+105
+00:09:06.939 --> 00:09:08.723
+guide a new analysis.
+
+106
+00:09:08.723 --> 00:09:15.438
+NARRATOR: A disciplined solution states inputs
+and outputs, proves correctness, and then
+
+107
+00:09:15.438 --> 00:09:17.676
+analyzes time and space.
+
+108
+00:09:17.676 --> 00:09:25.215
+NARRATOR: Consider this worked case: Before
+coding, students must document the input
+
+109
+00:09:25.215 --> 00:09:32.754
+format, output format, correctness proof using
+invariants or induction, and derive the
+
+110
+00:09:32.754 --> 00:09:35.895
+time/space complexity using asymptotic
+notation.
+
+111
+00:09:35.895 --> 00:09:44.291
+NARRATOR: On screen, show a checklist graphic
+with four boxes: 'Specify I/O', 'Prove
+
+112
+00:09:44.291 --> 00:09:50.749
+Correctness', 'Derive Complexity', 'Verify
+Invariants', with a green checkmark appearing
+
+113
+00:09:50.749 --> 00:09:51.395
+sequentially.
+
+114
+00:09:51.395 --> 00:09:58.987
+NARRATOR: For each checklist item, record the
+evidence, the remaining uncertainty, and the
+
+115
+00:09:58.987 --> 00:10:00.739
+next verification step.
+
+116
+00:10:00.739 --> 00:10:06.502
+NARRATOR: The result is a repeatable
+procedure, not a conclusion that depends on
+
+117
+00:10:06.502 --> 00:10:07.832
+memory or intuition.
