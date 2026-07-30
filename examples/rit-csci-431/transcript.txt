@@ -1,0 +1,253 @@
+NARRATOR: Begin by framing Pipeline Foundations as a question about inputs,
+
+decisions, and observable results.
+
+NARRATOR: A rigorous pipeline states the task, representation, assumptions, supervision, and
+
+decision rule.
+
+NARRATOR: Consider this worked case: A self-driving car system defines the task as
+
+lane detection, uses grayscale intensity as representation, assumes consistent lighting,
+
+trains on labeled road images, and outputs a binary lane mask.
+
+NARRATOR: On screen, display a four-panel diagram showing task definition,
+
+representation, assumptions, and decision rule, with arrows linking each stage to the
+
+next.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Image Formation Basics precisely enough that another learner could
+
+test the definition.
+
+NARRATOR: Projective geometry relates three-dimensional points to image coordinates.
+
+NARRATOR: Consider this worked case: A 3D building corner projects onto a 2D image
+
+plane, where perspective distortion is corrected using homography matrices derived
+
+from known camera parameters.
+
+NARRATOR: On screen, show a 3D cube with projected 2D coordinates, highlighting how
+
+perspective changes affect pixel mapping.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: With the foundation in place, examine how Appearance Modeling operates in a
+
+concrete sequence.
+
+NARRATOR: Appearance models describe how lighting, material, and viewpoint affect
+
+measured pixels.
+
+NARRATOR: Consider this worked case: A matte white wall and a glossy white wall produce
+
+different pixel intensities under identical illumination, necessitating color-invariant
+
+features for reliable detection.
+
+NARRATOR: On screen, display side-by-side images of the same object under varying
+
+lighting and material conditions, with color histograms overlaid.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Next, compare the choices involved in Motion Estimation and make the decision
+
+criteria explicit.
+
+NARRATOR: Motion estimation compares observations across frames.
+
+NARRATOR: Consider this worked case: A video of a moving car is processed by comparing
+
+consecutive frames to calculate displacement vectors, enabling smooth trajectory
+
+prediction.
+
+NARRATOR: On screen, animate a sequence of frames with tracked object paths overlaid,
+
+showing frame-to-frame comparison.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Apply Object Recognition to a worked situation instead of treating it as an
+
+isolated definition.
+
+NARRATOR: Object recognition maps visual evidence to object hypotheses.
+
+NARRATOR: Consider this worked case: A traffic sign image is analyzed by matching edge
+
+patterns and color distributions to a pre-trained classifier, outputting a 'stop'
+
+label with confidence score.
+
+NARRATOR: On screen, show a traffic sign with bounding boxes, class labels, and confidence
+
+metrics, alongside a decision tree diagram.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in Scene Understanding, including what improves and
+
+what becomes more difficult.
+
+NARRATOR: Scene understanding combines objects, layout, and contextual relationships.
+
+NARRATOR: Consider this worked case: A classroom image is parsed to identify desks,
+
+chairs, and students, with spatial relationships mapped to reconstruct room
+
+layout.
+
+NARRATOR: On screen, display a classroom scene with segmented regions, labeled objects, and a
+
+spatial relationship graph.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Stress-test the reasoning around Image Representation with an edge case and
+
+identify which assumption controls the outcome.
+
+NARRATOR: Computer vision pipelines represent images as numeric arrays.
+
+NARRATOR: Consider this worked case: A color photograph is converted to a 3D array of
+
+height, width, and channels, where each pixel value ranges from 0 to 255.
+
+NARRATOR: On screen, show a color image with a numeric array overlay, highlighting channel
+
+separation and pixel value ranges.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Color Conversion to diagnose a failure by separating symptoms, causes, and
+
+corrective action.
+
+NARRATOR: Color conversion changes the coordinate representation of pixel values.
+
+NARRATOR: Consider this worked case: An RGB image is transformed to HSV space to isolate
+
+green foliage from background noise, improving segmentation accuracy.
+
+NARRATOR: On screen, display RGB, HSV, and LAB color space versions of the same image, with
+
+channel separation visualized.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Connect Filtering and Feature Detection to the earlier ideas and explain how
+
+the pieces work as one system.
+
+NARRATOR: Filtering combines neighboring samples to smooth, sharpen, or detect
+
+structure.
+
+NARRATOR: Consider this worked case: A blurred document image is sharpened using a Sobel
+
+filter, then analyzed with SIFT to extract keypoints for matching.
+
+NARRATOR: On screen, show a before/after image with filter kernels and detected feature
+
+points overlaid.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+
+guide a new analysis.
+
+NARRATOR: Evaluation tests sensitivity to viewpoint, lighting, occlusion, and data
+
+shift.
+
+NARRATOR: Consider this worked case: A face detection system is tested with rotated faces,
+
+different lighting, partial occlusion, and cross-database samples to measure accuracy
+
+drop.
+
+NARRATOR: On screen, display a checklist graphic with checkboxes for viewpoint,
+
+lighting, occlusion, and data shift, alongside performance metrics.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.
