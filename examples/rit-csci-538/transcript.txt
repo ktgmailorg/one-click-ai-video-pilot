@@ -1,0 +1,243 @@
+NARRATOR: Begin by framing Course Foundations and Scope as a question about inputs,
+
+decisions, and observable results.
+
+NARRATOR: In this course, students will explore puzzle solving and creation as a way
+
+of exploring human-inspired algorithm development and the synergy of humans and
+
+computers to develop programmatic solutions.
+
+NARRATOR: Consider this worked case: Students will analyze how a maze-solving program can be
+
+designed to mimic human backtracking rather than using a purely optimal breadth-first
+
+search.
+
+NARRATOR: On screen, display a split-screen graphic: left side shows a grid maze with a
+
+red optimal path, right side shows the same maze with a winding human-like path that
+
+occasionally backtracks.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Logical Puzzles and Constraint Satisfaction precisely enough that
+
+another learner could test the definition.
+
+NARRATOR: Many different types of puzzles will be explored, including logical puzzles, mazes,
+
+optimization puzzles, and word puzzles.
+
+NARRATOR: Consider this worked case: A Sudoku solver uses backtracking to assign digits 1-9
+
+to empty cells while maintaining row, column, and box constraints.
+
+NARRATOR: On screen, show a 9x9 grid with highlighted constraints (e.g., a red circle
+
+around a row) and a step-by-step animation of a cell being filled based on eliminated
+
+options.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: With the foundation in place, examine how Maze Algorithms and Graph
+
+Traversal operates in a concrete sequence.
+
+NARRATOR: Graph algorithms operate on vertices and edges to answer reachability, ordering,
+
+connectivity, and path questions.
+
+NARRATOR: Consider this worked case: A depth-first search explores one corridor until
+
+a dead end, then backtracks to try an alternative route, mirroring human
+
+exploration.
+
+NARRATOR: On screen, render a graph maze with nodes and edges, highlighting the DFS
+
+traversal path in blue and the backtracking steps in gray.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in Optimization Puzzles and Heuristics and
+
+make the decision criteria explicit.
+
+NARRATOR: For each type of puzzle, students will develop and implement both optimal
+
+solving algorithms and algorithms that mimic human solving processes.
+
+NARRATOR: Consider this worked case: A traveling salesman puzzle uses
+
+nearest-neighbor heuristics to quickly generate a route, even if it is not
+
+mathematically optimal.
+
+NARRATOR: On screen, display a city map with cities as nodes and roads as edges, showing a
+
+heuristic path in green versus a shorter optimal path in red.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Apply Word Puzzles and String Processing to a worked situation instead of
+
+treating it as an isolated definition.
+
+NARRATOR: Automata and formal languages describe machines, accepted strings, and
+
+computational limits.
+
+NARRATOR: Consider this worked case: A crossword solver checks candidate words
+
+against a dictionary using prefix matching to validate partial fills.
+
+NARRATOR: On screen, show a crossword grid with a candidate word list scrolling on the
+
+side, highlighting matches that fit the existing letter pattern.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in Algorithmic Paradigms and Data Structures, including what
+
+improves and what becomes more difficult.
+
+NARRATOR: Graphs can be represented with adjacency structures for traversal and path
+
+algorithms.
+
+NARRATOR: Consider this worked case: A stack stores the sequence of moves in a maze solver,
+
+allowing the program to reverse steps when a dead end is reached.
+
+NARRATOR: On screen, illustrate a stack data structure with maze move coordinates being
+
+pushed and popped, synchronized with the maze grid animation.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around Human-Inspired vs. Optimal Approaches with an
+
+edge case and identify which assumption controls the outcome.
+
+NARRATOR: Recurrences describe the cost of recursive algorithms.
+
+NARRATOR: Consider this worked case: A word puzzle solver might prioritize common letters
+
+first, just as humans do, rather than exhaustively checking every permutation.
+
+NARRATOR: On screen, show a side-by-side comparison: left side displays a decision tree
+
+for optimal search, right side shows a branching path that prioritizes high-frequency
+
+letters.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Puzzle Generation and Human Solvability to diagnose a failure by
+
+separating symptoms, causes, and corrective action.
+
+NARRATOR: Finally, they will discuss and solve puzzle hunts, which include puzzles without
+
+any instruction and apparent ambiguity, yet are still uniquely solvable for humans.
+
+NARRATOR: Consider this worked case: A puzzle generator validates each clue against a
+
+solution set to ensure no contradictions exist and that the puzzle is uniquely solvable.
+
+NARRATOR: On screen, display a puzzle generation pipeline: input constraints ->
+
+solver verification -> ambiguity check -> final puzzle output.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Puzzle Hunts and Ambiguity Resolution to the earlier ideas and explain
+
+how the pieces work as one system.
+
+NARRATOR: OpenDSA presents data structures and algorithms through executable visualizations
+
+and exercises.
+
+NARRATOR: Consider this worked case: A hunt puzzle might use a series of interconnected
+
+clues where each answer reveals the next, requiring solvers to infer connections without
+
+explicit rules.
+
+NARRATOR: On screen, show a puzzle hunt board with interconnected clue cards, highlighting
+
+how solving one card unlocks the next through inferred relationships.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+
+guide a new analysis.
+
+NARRATOR: They will also write programs that construct certain types of puzzles with human
+
+solvers in mind.
+
+NARRATOR: Consider this worked case: A checklist confirms that every clue is
+
+necessary, no alternative solutions exist, and the puzzle aligns with the target algorithmic
+
+paradigm.
+
+NARRATOR: On screen, display a checklist graphic with three boxes: 'Unique Solution
+
+Verified', 'Constraint Consistency Checked', 'Difficulty Aligned', each with a toggle
+
+switch for pass/fail.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.

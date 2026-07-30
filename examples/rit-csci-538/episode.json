@@ -1,0 +1,303 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Begin by framing Course Foundations and Scope as a question about inputs, decisions, and observable results. In this course, students will explore puzzle solving and creation as a way of exploring human-inspired algorithm development and the synergy of humans and computers to develop programmatic solutions. Consider this worked case: Students will analyze how a maze-solving program can be designed to mimic human backtracking rather than using a purely optimal breadth-first search. On screen, display a split-screen graphic: left side shows a grid maze with a red optimal path, right side shows the same maze with a winding human-like path that occasionally backtracks. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 68,
+      "title": "Course Foundations and Scope",
+      "visualDirection": "template:academic-process | Display a split-screen graphic: left side shows a grid maze with a red optimal path, right side shows the same maze with a winding human-like path that occasionally backtracks."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Now define Logical Puzzles and Constraint Satisfaction precisely enough that another learner could test the definition. Many different types of puzzles will be explored, including logical puzzles, mazes, optimization puzzles, and word puzzles. Consider this worked case: A Sudoku solver uses backtracking to assign digits 1-9 to empty cells while maintaining row, column, and box constraints. On screen, show a 9x9 grid with highlighted constraints (e.g., a red circle around a row) and a step-by-step animation of a cell being filled based on eliminated options. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "plannedSeconds": 60,
+      "title": "Logical Puzzles and Constraint Satisfaction",
+      "visualDirection": "template:academic-process | Show a 9x9 grid with highlighted constraints (e.g., a red circle around a row) and a step-by-step animation of a cell being filled based on eliminated options."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "With the foundation in place, examine how Maze Algorithms and Graph Traversal operates in a concrete sequence. Graph algorithms operate on vertices and edges to answer reachability, ordering, connectivity, and path questions. Consider this worked case: A depth-first search explores one corridor until a dead end, then backtracks to try an alternative route, mirroring human exploration. On screen, render a graph maze with nodes and edges, highlighting the DFS traversal path in blue and the backtracking steps in gray. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "plannedSeconds": 56,
+      "title": "Maze Algorithms and Graph Traversal",
+      "visualDirection": "template:academic-process | Render a graph maze with nodes and edges, highlighting the DFS traversal path in blue and the backtracking steps in gray."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "Next, compare the choices involved in Optimization Puzzles and Heuristics and make the decision criteria explicit. For each type of puzzle, students will develop and implement both optimal solving algorithms and algorithms that mimic human solving processes. Consider this worked case: A traveling salesman puzzle uses nearest-neighbor heuristics to quickly generate a route, even if it is not mathematically optimal. On screen, display a city map with cities as nodes and roads as edges, showing a heuristic path in green versus a shorter optimal path in red. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "plannedSeconds": 61,
+      "title": "Optimization Puzzles and Heuristics",
+      "visualDirection": "template:academic-process | Display a city map with cities as nodes and roads as edges, showing a heuristic path in green versus a shorter optimal path in red."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Apply Word Puzzles and String Processing to a worked situation instead of treating it as an isolated definition. Automata and formal languages describe machines, accepted strings, and computational limits. Consider this worked case: A crossword solver checks candidate words against a dictionary using prefix matching to validate partial fills. On screen, show a crossword grid with a candidate word list scrolling on the side, highlighting matches that fit the existing letter pattern. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 56,
+      "title": "Word Puzzles and String Processing",
+      "visualDirection": "template:academic-process | Show a crossword grid with a candidate word list scrolling on the side, highlighting matches that fit the existing letter pattern."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "Examine the tradeoffs in Algorithmic Paradigms and Data Structures, including what improves and what becomes more difficult. Graphs can be represented with adjacency structures for traversal and path algorithms. Consider this worked case: A stack stores the sequence of moves in a maze solver, allowing the program to reverse steps when a dead end is reached. On screen, illustrate a stack data structure with maze move coordinates being pushed and popped, synchronized with the maze grid animation. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "plannedSeconds": 57,
+      "title": "Algorithmic Paradigms and Data Structures",
+      "visualDirection": "template:academic-process | Illustrate a stack data structure with maze move coordinates being pushed and popped, synchronized with the maze grid animation."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "Stress-test the reasoning around Human-Inspired vs. Optimal Approaches with an edge case and identify which assumption controls the outcome. Recurrences describe the cost of recursive algorithms. Consider this worked case: A word puzzle solver might prioritize common letters first, just as humans do, rather than exhaustively checking every permutation. On screen, show a side-by-side comparison: left side displays a decision tree for optimal search, right side shows a branching path that prioritizes high-frequency letters. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 57,
+      "title": "Human-Inspired vs. Optimal Approaches",
+      "visualDirection": "template:academic-process | Show a side-by-side comparison: left side displays a decision tree for optimal search, right side shows a branching path that prioritizes high-frequency letters."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "Use Puzzle Generation and Human Solvability to diagnose a failure by separating symptoms, causes, and corrective action. Finally, they will discuss and solve puzzle hunts, which include puzzles without any instruction and apparent ambiguity, yet are still uniquely solvable for humans. Consider this worked case: A puzzle generator validates each clue against a solution set to ensure no contradictions exist and that the puzzle is uniquely solvable. On screen, display a puzzle generation pipeline: input constraints -> solver verification -> ambiguity check -> final puzzle output. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 63,
+      "title": "Puzzle Generation and Human Solvability",
+      "visualDirection": "template:academic-process | Display a puzzle generation pipeline: input constraints -> solver verification -> ambiguity check -> final puzzle output."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Connect Puzzle Hunts and Ambiguity Resolution to the earlier ideas and explain how the pieces work as one system. OpenDSA presents data structures and algorithms through executable visualizations and exercises. Consider this worked case: A hunt puzzle might use a series of interconnected clues where each answer reveals the next, requiring solvers to infer connections without explicit rules. On screen, show a puzzle hunt board with interconnected clue cards, highlighting how solving one card unlocks the next through inferred relationships. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 58,
+      "title": "Puzzle Hunts and Ambiguity Resolution",
+      "visualDirection": "template:academic-process | Show a puzzle hunt board with interconnected clue cards, highlighting how solving one card unlocks the next through inferred relationships."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. They will also write programs that construct certain types of puzzles with human solvers in mind. Consider this worked case: A checklist confirms that every clue is necessary, no alternative solutions exist, and the puzzle aligns with the target algorithmic paradigm. On screen, display a checklist graphic with three boxes: 'Unique Solution Verified', 'Constraint Consistency Checked', 'Difficulty Aligned', each with a toggle switch for pass/fail. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 60,
+      "title": "Practical Analysis Checklist",
+      "visualDirection": "template:academic-process | Display a checklist graphic with three boxes: 'Unique Solution Verified', 'Constraint Consistency Checked', 'Difficulty Aligned', each with a toggle switch for pass/fail."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "rit-csci-538"
+      ],
+      "text": "In this course, students will explore puzzle solving and creation as a way of exploring human-inspired algorithm development and the synergy of humans and computers to develop programmatic solutions.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "rit-csci-538"
+      ],
+      "text": "Many different types of puzzles will be explored, including logical puzzles, mazes, optimization puzzles, and word puzzles.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "Graph algorithms operate on vertices and edges to answer reachability, ordering, connectivity, and path questions.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "rit-csci-538"
+      ],
+      "text": "For each type of puzzle, students will develop and implement both optimal solving algorithms and algorithms that mimic human solving processes.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "opendsa"
+      ],
+      "text": "Automata and formal languages describe machines, accepted strings, and computational limits.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "opendsa"
+      ],
+      "text": "Graphs can be represented with adjacency structures for traversal and path algorithms.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "Recurrences describe the cost of recursive algorithms.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "rit-csci-538"
+      ],
+      "text": "Finally, they will discuss and solve puzzle hunts, which include puzzles without any instruction and apparent ambiguity, yet are still uniquely solvable for humans.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "opendsa"
+      ],
+      "text": "OpenDSA presents data structures and algorithms through executable visualizations and exercises.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "rit-csci-538"
+      ],
+      "text": "They will also write programs that construct certain types of puzzles with human solvers in mind.",
+      "verified": true
+    }
+  ],
+  "id": "csci-538-puzzles-for-computing",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "Rochester Institute of Technology",
+      "excerpt": "In this course, students will explore puzzle solving and creation as a way of exploring human-inspired algorithm development and the synergy of humans and computers to develop programmatic solutions. Many different types of puzzles will be explored, including logical puzzles, mazes, optimization puzzles, and word puzzles. For each type of puzzle, students will develop and implement both optimal solving algorithms and algorithms that mimic human solving processes. They will also write programs that construct certain types of puzzles with human solvers in mind. Finally, they will discuss and solve puzzle hunts, which include puzzles without any instruction and apparent ambiguity, yet are still uniquely solvable for humans. Prerequisites: CSCI-261 or CSCI-264 or IGME-309 or equivalent course.",
+      "id": "rit-csci-538",
+      "sha256": "fa9c483c05c14517de9796c2a0e5fe1505021f13d26301fe01f85d2f6bc92692",
+      "title": "RIT CSCI-538 Puzzles for Computing catalog description",
+      "type": "note",
+      "uri": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02=",
+      "verified": true
+    },
+    {
+      "author": "MIT OpenCourseWare",
+      "excerpt": "Algorithm analysis connects a precise problem specification to a correctness argument and resource bounds. Asymptotic notation describes how resource use grows with input size. A loop invariant supports a proof by initialization, maintenance, and termination. Divide-and-conquer algorithms split a problem, solve subproblems, and combine their results. Recurrences describe the cost of recursive algorithms. Graph algorithms operate on vertices and edges to answer reachability, ordering, connectivity, and path questions. Dynamic programming records solutions to overlapping subproblems. Core methods include sorting, hashing, trees, graphs, shortest paths, and dynamic programming. A disciplined solution states inputs and outputs, proves correctness, and then analyzes time and space.",
+      "id": "mit-algorithms",
+      "sha256": "e6fdf3e727a4c6044da012714bd877c5bbed1a105b98d51a12449f81cc563b5d",
+      "title": "MIT OpenCourseWare Introduction to Algorithms",
+      "type": "note",
+      "uri": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/",
+      "verified": true
+    },
+    {
+      "author": "OpenDSA Project",
+      "excerpt": "OpenDSA presents data structures and algorithms through executable visualizations and exercises. Lists represent ordered sequences with position-based operations. Stacks use last-in, first-out access, while queues use first-in, first-out access. Trees represent hierarchical relationships and support recursive traversals. Hash tables map keys to locations and require a collision strategy. Graphs can be represented with adjacency structures for traversal and path algorithms. Automata and formal languages describe machines, accepted strings, and computational limits. Representation choices and invariants determine which operations are efficient and which errors are possible.",
+      "id": "opendsa",
+      "sha256": "633e1e27d522c368b0a975e12dbed181afef7f16e4e80dc67f8a0d633e7fc6cc",
+      "title": "OpenDSA",
+      "type": "note",
+      "uri": "https://opendsa-server.cs.vt.edu/",
+      "verified": true
+    }
+  ],
+  "title": "CSCI-538: Puzzles for Computing"
+}

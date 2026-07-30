@@ -1,0 +1,303 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Begin by framing Introduction to Search Engine Architecture as a question about inputs, decisions, and observable results. Topics include search interfaces, traditional retrieval models (for example, TF-IDF, BM25), modern retrieval techniques (for example, neural reranking and retrieval), search engine evaluation, and search applications (for example, conversational IR, enterprise search). Consider this worked case: A user types 'machine learning basics' into a search bar, and the system returns a ranked list of documents matching the query terms. On screen, display a horizontal flowchart with three labeled boxes: Query Input, Index/Retrieval, and Ranked Results, connected by arrows indicating data flow. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 66,
+      "title": "Introduction to Search Engine Architecture",
+      "visualDirection": "template:academic-process | Display a horizontal flowchart with three labeled boxes: Query Input, Index/Retrieval, and Ranked Results, connected by arrows indicating data flow."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Now define Query Processing and Preprocessing precisely enough that another learner could test the definition. Map documents context, intended use, affected people, and potential impacts. Consider this worked case: The query 'running shoes' is tokenized into ['running', 'shoes'], with 'running' stemmed to 'run' to match variations like 'runs' or 'ran'. On screen, show a split-screen graphic: left side shows raw query text, right side shows processed tokens with arrows indicating preprocessing steps. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "plannedSeconds": 55,
+      "title": "Query Processing and Preprocessing",
+      "visualDirection": "template:academic-process | Show a split-screen graphic: left side shows raw query text, right side shows processed tokens with arrows indicating preprocessing steps."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "With the foundation in place, examine how Traditional Retrieval: TF-IDF operates in a concrete sequence. Cross-validation repeats training and validation across defined data splits. Consider this worked case: A term appearing frequently in one document but rarely across the corpus receives a high TF-IDF score, boosting its ranking position. On screen, render a bar chart comparing TF-IDF scores for three terms across two documents, highlighting the inverse document frequency component. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 58,
+      "title": "Traditional Retrieval: TF-IDF",
+      "visualDirection": "template:academic-process | Render a bar chart comparing TF-IDF scores for three terms across two documents, highlighting the inverse document frequency component."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "Next, compare the choices involved in Traditional Retrieval: BM25 and make the decision criteria explicit. Risk analysis considers data quality and uncertainty. Consider this worked case: A term appearing at the beginning of a document receives a higher position weight, while the saturation function prevents rare terms from dominating the score. On screen, display a formula breakdown with labeled components: position weight, query length normalization, and saturation function, alongside a sample score calculation. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "plannedSeconds": 55,
+      "title": "Traditional Retrieval: BM25",
+      "visualDirection": "template:academic-process | Display a formula breakdown with labeled components: position weight, query length normalization, and saturation function, alongside a sample score calculation."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Apply Modern Retrieval: Neural Reranking to a worked situation instead of treating it as an isolated definition. Machine-learning workflows separate data preparation, training, validation, testing, model selection, and evaluation. Consider this worked case: A transformer-based reranker reorders a top-100 list of documents by analyzing contextual embeddings, promoting documents with higher semantic alignment. On screen, illustrate a two-stage pipeline: first stage shows traditional retrieval output, second stage shows neural reranker adjusting document order with attention visualization. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 58,
+      "title": "Modern Retrieval: Neural Reranking",
+      "visualDirection": "template:academic-process | Illustrate a two-stage pipeline: first stage shows traditional retrieval output, second stage shows neural reranker adjusting document order with attention visualization."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "Examine the tradeoffs in Modern Retrieval: Dense Retrieval, including what improves and what becomes more difficult. An introduction to the theories and techniques used to construct search engines. Consider this worked case: A query and a document are encoded into 768-dimensional vectors, and the system retrieves the top-k documents with the smallest cosine distance to the query vector. On screen, show a 2D projection of query and document vectors with distance metrics, emphasizing the shared embedding space and cosine similarity calculation. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "plannedSeconds": 59,
+      "title": "Modern Retrieval: Dense Retrieval",
+      "visualDirection": "template:academic-process | Show a 2D projection of query and document vectors with distance metrics, emphasizing the shared embedding space and cosine similarity calculation."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "Stress-test the reasoning around Search Engine Evaluation Metrics with an edge case and identify which assumption controls the outcome. Students will also review current IR research, provide written summaries of current research papers, and complete a group project in which they will design and execute experiments for search engine components. Consider this worked case: MAP calculates the average precision at the top of the ranked list, providing a single score that reflects overall ranking effectiveness. On screen, present a table comparing precision, recall, MAP, and nDCG with brief definitions and a sample calculation for MAP. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 67,
+      "title": "Search Engine Evaluation Metrics",
+      "visualDirection": "template:academic-process | Present a table comparing precision, recall, MAP, and nDCG with brief definitions and a sample calculation for MAP."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "Use Search Applications: Conversational IR to diagnose a failure by separating symptoms, causes, and corrective action. Unsupervised methods identify structure without target labels. Consider this worked case: After a user asks 'What is NLP?', the system retrieves relevant documents and uses the context to answer 'How does NLP work?' in the next turn. On screen, display a dialogue flow with user queries and system responses, highlighting context tracking and retrieval steps at each turn. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 57,
+      "title": "Search Applications: Conversational IR",
+      "visualDirection": "template:academic-process | Display a dialogue flow with user queries and system responses, highlighting context tracking and retrieval steps at each turn."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Connect Search Applications: Enterprise Search to the earlier ideas and explain how the pieces work as one system. Preprocessing must be fitted only on permitted training data to avoid leakage. Consider this worked case: An employee searches for 'Q3 financial report' and filters results by department, date range, and document type to locate the correct internal document. On screen, show a dashboard with search bar, filter panel, and results list, emphasizing access controls and faceted navigation features. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 57,
+      "title": "Search Applications: Enterprise Search",
+      "visualDirection": "template:academic-process | Show a dashboard with search bar, filter panel, and results list, emphasizing access controls and faceted navigation features."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "Finish with Experimental Design for Retrieval Components as a practical checklist that can guide a new analysis. Evaluation metrics must match the task and the cost of different errors. Consider this worked case: Compare a TF-IDF baseline against a BM25 model on a news corpus, measuring MAP and nDCG to determine which ranking algorithm performs better. On screen, create a comparison table with columns for Baseline, Model, Corpus, Metrics, and Results, highlighting controlled experimental variables. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 57,
+      "title": "Experimental Design for Retrieval Components",
+      "visualDirection": "template:academic-process | Create a comparison table with columns for Baseline, Model, Corpus, Metrics, and Results, highlighting controlled experimental variables."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "rit-csci-636"
+      ],
+      "text": "Topics include search interfaces, traditional retrieval models (for example, TF-IDF, BM25), modern retrieval techniques (for example, neural reranking and retrieval), search engine evaluation, and search applications (for example, conversational IR, enterprise search).",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "nist-ai-rmf"
+      ],
+      "text": "Map documents context, intended use, affected people, and potential impacts.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "scikit-learn-user-guide"
+      ],
+      "text": "Cross-validation repeats training and validation across defined data splits.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "nist-ai-rmf"
+      ],
+      "text": "Risk analysis considers data quality and uncertainty.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "scikit-learn-user-guide"
+      ],
+      "text": "Machine-learning workflows separate data preparation, training, validation, testing, model selection, and evaluation.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "rit-csci-636"
+      ],
+      "text": "An introduction to the theories and techniques used to construct search engines.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "rit-csci-636"
+      ],
+      "text": "Students will also review current IR research, provide written summaries of current research papers, and complete a group project in which they will design and execute experiments for search engine components.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "scikit-learn-user-guide"
+      ],
+      "text": "Unsupervised methods identify structure without target labels.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "scikit-learn-user-guide"
+      ],
+      "text": "Preprocessing must be fitted only on permitted training data to avoid leakage.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "scikit-learn-user-guide"
+      ],
+      "text": "Evaluation metrics must match the task and the cost of different errors.",
+      "verified": true
+    }
+  ],
+  "id": "csci-636-information-retrieval-foundations",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "Rochester Institute of Technology",
+      "excerpt": "An introduction to the theories and techniques used to construct search engines. Topics include search interfaces, traditional retrieval models (e.g., TF-IDF, BM25), modern retrieval techniques (e.g., neural reranking and retrieval), search engine evaluation, and search applications (e.g., conversational IR, enterprise search). Students will also review current IR research, provide written summaries of current research papers, and complete a group project in which they will design and execute experiments for search engine components. Prerequisites:(CSCI-603 and CSCI-605 and CSCI-661 with grades of B or better, including familiarity with computer science concepts) or CSCI-331 or equivalent courses. Students may not take and receive credit for both CSCI-636 and CSCI-536. Contact Hours: Lectu",
+      "id": "rit-csci-636",
+      "sha256": "cc291c7b274237b80dc11a6630c7df6a70a6b3685905a04b9183870d35311204",
+      "title": "RIT CSCI-636 Information Retrieval catalog description",
+      "type": "note",
+      "uri": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Graduate_Catalog.pdf?2026-02-02=",
+      "verified": true
+    },
+    {
+      "author": "scikit-learn developers",
+      "excerpt": "Machine-learning workflows separate data preparation, training, validation, testing, model selection, and evaluation. Supervised methods learn a mapping from examples paired with target labels. Unsupervised methods identify structure without target labels. Preprocessing must be fitted only on permitted training data to avoid leakage. Pipelines combine preprocessing and estimators so the same transformations are applied consistently. Cross-validation repeats training and validation across defined data splits. Evaluation metrics must match the task and the cost of different errors. Hyperparameter selection must remain separate from final test evaluation. Leakage, distribution shift, overfitting, and unexamined assumptions can invalidate results.",
+      "id": "scikit-learn-user-guide",
+      "sha256": "517b82514a81768f6a343724d34e1b3f7628fc376722deb2e1fd6dab8694a33d",
+      "title": "scikit-learn User Guide",
+      "type": "note",
+      "uri": "https://scikit-learn.org/stable/user_guide.html",
+      "verified": true
+    },
+    {
+      "author": "National Institute of Standards and Technology",
+      "excerpt": "The NIST AI Risk Management Framework organizes work around Govern, Map, Measure, and Manage. Govern establishes policies, responsibilities, and accountability for AI risk. Map documents context, intended use, affected people, and potential impacts. Measure uses qualitative and quantitative methods to analyze identified risks. Manage prioritizes risks and allocates resources for response and monitoring. Risk analysis considers data quality and uncertainty. It also considers robustness, privacy, security, transparency, and fairness. Monitoring continues after deployment because context and system behavior can change.",
+      "id": "nist-ai-rmf",
+      "sha256": "2d11a55a21dab673df4cec61b6a4d7d5a328f3ea2c5184ecdf74129d8fd088ae",
+      "title": "NIST AI Risk Management Framework",
+      "type": "note",
+      "uri": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "verified": true
+    }
+  ],
+  "title": "CSCI-636: Information Retrieval Foundations"
+}

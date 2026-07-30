@@ -1,0 +1,249 @@
+NARRATOR: Begin by framing Course Foundations and Scope as a question about inputs,
+
+decisions, and observable results.
+
+NARRATOR: This course offers an introduction to supervised machine learning theories and
+
+algorithms, and their application to classification and regression tasks.
+
+NARRATOR: Consider this worked case: Students will implement a basic classification model
+
+using scikit-learn to predict customer churn from tabular data.
+
+NARRATOR: On screen, display a slide showing the course title, duration (8-12 min), and a
+
+simple flowchart linking 'Supervised Learning' to 'Classification/Regression' with a note
+
+about programming assignments.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Mathematical Background and Data Visualization precisely enough that
+
+another learner could test the definition.
+
+NARRATOR: Topics include: Mathematical background of machine learning (for example
+
+statistical analysis and visualization of data), neural models (for example
+
+Convolutional Neural Networks, Recurrent Neural Networks), probabilistic graphical
+
+models (for example Bayesian networks, Markov models), and reinforcement learning.
+
+NARRATOR: Consider this worked case: Students will plot a histogram and scatter plot of
+
+training data to identify outliers and feature correlations before model training.
+
+NARRATOR: On screen, show a split-screen image: left side shows a histogram of a
+
+continuous feature, right side shows a scatter plot of two features, with axes labeled and a
+
+legend indicating 'Training Data Distribution'.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: With the foundation in place, examine how Machine Learning Workflows and
+
+Data Preparation operates in a concrete sequence.
+
+NARRATOR: Machine-learning workflows separate data preparation, training, validation,
+
+testing, model selection, and evaluation.
+
+NARRATOR: Consider this worked case: Students will use a scikit-learn Pipeline to
+
+standardize features and train a logistic regression model without mixing preprocessing
+
+steps across splits.
+
+NARRATOR: On screen, display a horizontal timeline graphic with six labeled nodes: 'Data
+
+Preparation', 'Training', 'Validation', 'Testing', 'Model Selection', 'Evaluation',
+
+connected by arrows indicating sequential execution.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in Preventing Data Leakage and
+
+Cross-Validation and make the decision criteria explicit.
+
+NARRATOR: Preprocessing must be fitted only on permitted training data to avoid leakage.
+
+NARRATOR: Consider this worked case: Students will implement StratifiedKFold
+
+cross-validation to evaluate a random forest classifier, ensuring scaling is applied only
+
+within each fold's training set.
+
+NARRATOR: On screen, show a diagram of a dataset split into 5 folds, with one fold
+
+highlighted as 'Validation' and the others as 'Training', accompanied by a warning icon
+
+labeled 'No Leakage'.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Apply Evaluation Metrics and Error Costs to a worked situation instead of
+
+treating it as an isolated definition.
+
+NARRATOR: Evaluation metrics must match the task and the cost of different errors.
+
+NARRATOR: Consider this worked case: Students will compare precision, recall, and F1-score
+
+for a medical diagnosis classifier, weighting recall higher due to the high cost of false
+
+negatives.
+
+NARRATOR: On screen, display a comparison table with columns for 'Metric', 'Definition',
+
+and 'Use Case', highlighting 'Recall' under 'High Cost of False Negatives' with a red
+
+alert icon.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in Neural Models: CNNs and RNNs, including what improves
+
+and what becomes more difficult.
+
+NARRATOR: Risk analysis considers data quality and uncertainty.
+
+NARRATOR: Consider this worked case: Students will train a CNN on a dataset of handwritten
+
+digits to classify images, and an RNN on a time-series dataset to predict stock prices.
+
+NARRATOR: On screen, show two side-by-side architecture diagrams: left shows a CNN with
+
+convolutional and pooling layers processing an image, right shows an RNN with hidden states
+
+processing a sequence of data points.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around Probabilistic Graphical Models with an edge
+
+case and identify which assumption controls the outcome.
+
+NARRATOR: Programming assignments are required.
+
+NARRATOR: Consider this worked case: Students will construct a Bayesian network to model the
+
+probability of disease given symptoms, using conditional probability tables for each node.
+
+NARRATOR: On screen, display a directed acyclic graph with nodes labeled 'Symptom A',
+
+'Symptom B', and 'Disease', connected by arrows indicating causal relationships, with
+
+probability values annotated on edges.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Reinforcement Learning Basics to diagnose a failure by separating symptoms,
+
+causes, and corrective action.
+
+NARRATOR: Govern establishes policies, responsibilities, and accountability for AI
+
+risk.
+
+NARRATOR: Consider this worked case: Students will train an agent to navigate a grid
+
+environment using Q-learning, adjusting actions based on cumulative reward signals.
+
+NARRATOR: On screen, show a simple grid environment with an agent icon, arrows
+
+indicating possible actions, and a reward value (+1 or -1) displayed at each step, with
+
+a 'Policy' label indicating the learned strategy.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect NIST AI Risk Management Framework to the earlier ideas and explain how
+
+the pieces work as one system.
+
+NARRATOR: The NIST AI Risk Management Framework organizes work around Govern, Map,
+
+Measure, and Manage.
+
+NARRATOR: Consider this worked case: Students will document a risk map for a deployed
+
+recommendation system, identifying potential biases in training data and outlining
+
+monitoring procedures for post-deployment performance.
+
+NARRATOR: On screen, display a four-quadrant diagram labeled 'Govern', 'Map', 'Measure',
+
+'Manage', with each quadrant containing a brief description and a relevant icon (e.g.,
+
+shield for security, magnifying glass for measurement).
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+
+guide a new analysis.
+
+NARRATOR: Leakage, distribution shift, overfitting, and unexamined assumptions can
+
+invalidate results.
+
+NARRATOR: Consider this worked case: Students will complete a checklist verifying that
+
+preprocessing was fitted only on training data, cross-validation was used, evaluation
+
+metrics matched the task, and monitoring plans are in place.
+
+NARRATOR: On screen, create an editable process diagram for Practical Analysis
+
+Checklist with labeled inputs, decisions, state changes, and a checked output.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.

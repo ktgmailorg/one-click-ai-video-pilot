@@ -1,0 +1,555 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:07.213
+NARRATOR: Begin by framing Introduction to
+Search Engine Architecture as a question about
+
+2
+00:00:07.213 --> 00:00:09.968
+inputs, decisions, and observable results.
+
+3
+00:00:09.968 --> 00:00:17.378
+NARRATOR: Topics include search interfaces,
+traditional retrieval models (for example,
+
+4
+00:00:17.378 --> 00:00:25.529
+TF-IDF, BM25), modern retrieval techniques
+(for example, neural reranking and retrieval),
+
+5
+00:00:25.529 --> 00:00:32.939
+search engine evaluation, and search
+applications (for example, conversational IR,
+
+6
+00:00:32.939 --> 00:00:34.421
+enterprise search).
+
+7
+00:00:34.421 --> 00:00:40.468
+NARRATOR: Consider this worked case: A user
+types 'machine learning basics' into a search
+
+8
+00:00:40.468 --> 00:00:46.515
+bar, and the system returns a ranked list of
+documents matching the query terms.
+
+9
+00:00:46.515 --> 00:00:54.553
+NARRATOR: On screen, display a horizontal
+flowchart with three labeled boxes: Query
+
+10
+00:00:54.553 --> 00:01:01.921
+Input, Index/Retrieval, and Ranked Results,
+connected by arrows indicating data flow.
+
+11
+00:01:01.921 --> 00:01:08.167
+NARRATOR: List the givens before choosing a
+method, because an unstated assumption can
+
+12
+00:01:08.167 --> 00:01:09.609
+change the conclusion.
+
+13
+00:01:09.609 --> 00:01:15.609
+NARRATOR: This establishes the vocabulary and
+scope needed for the remaining sections.
+
+14
+00:01:15.722 --> 00:01:22.508
+NARRATOR: Now define Query Processing and
+Preprocessing precisely enough that another
+
+15
+00:01:22.508 --> 00:01:25.593
+learner could test the definition.
+
+16
+00:01:25.593 --> 00:01:32.781
+NARRATOR: Map documents context, intended use,
+affected people, and potential impacts.
+
+17
+00:01:32.781 --> 00:01:39.648
+NARRATOR: Consider this worked case: The query
+'running shoes' is tokenized into ['running',
+
+18
+00:01:39.648 --> 00:01:46.515
+'shoes'], with 'running' stemmed to 'run' to
+match variations like 'runs' or 'ran'.
+
+19
+00:01:46.515 --> 00:01:54.181
+NARRATOR: On screen, show a split-screen
+graphic: left side shows raw query text, right
+
+20
+00:01:54.181 --> 00:01:59.109
+side shows processed tokens with arrows
+indicating preprocessing steps.
+
+21
+00:01:59.109 --> 00:02:05.660
+NARRATOR: Separate the formal definition from
+an implementation detail, then identify what
+
+22
+00:02:05.660 --> 00:02:07.843
+evidence would distinguish them.
+
+23
+00:02:07.843 --> 00:02:14.578
+NARRATOR: A precise definition makes later
+examples easier to evaluate and revise.
+
+24
+00:02:14.690 --> 00:02:21.315
+NARRATOR: With the foundation in place,
+examine how Traditional Retrieval: TF-IDF
+
+25
+00:02:21.315 --> 00:02:24.327
+operates in a concrete sequence.
+
+26
+00:02:24.327 --> 00:02:31.452
+NARRATOR: Cross-validation repeats training
+and validation across defined data splits.
+
+27
+00:02:31.452 --> 00:02:38.507
+NARRATOR: Consider this worked case: A term
+appearing frequently in one document but
+
+28
+00:02:38.507 --> 00:02:45.561
+rarely across the corpus receives a high
+TF-IDF score, boosting its ranking position.
+
+29
+00:02:45.561 --> 00:02:53.426
+NARRATOR: On screen, render a bar chart
+comparing TF-IDF scores for three terms across
+
+30
+00:02:53.426 --> 00:02:57.921
+two documents, highlighting the inverse
+document frequency component.
+
+31
+00:02:57.921 --> 00:03:05.155
+NARRATOR: Follow every arrow in order and name
+the state before and after each transition.
+
+32
+00:03:05.155 --> 00:03:10.968
+NARRATOR: The trace converts an abstract
+statement into an inspectable sequence.
+
+33
+00:03:10.968 --> 00:03:17.916
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+34
+00:03:17.916 --> 00:03:19.811
+throughout the analysis.
+
+35
+00:03:19.922 --> 00:03:27.727
+NARRATOR: Next, compare the choices involved
+in Traditional Retrieval: BM25 and make the
+
+36
+00:03:27.727 --> 00:03:29.528
+decision criteria explicit.
+
+37
+00:03:29.528 --> 00:03:34.387
+NARRATOR: Risk analysis considers data quality
+and uncertainty.
+
+38
+00:03:34.387 --> 00:03:40.979
+NARRATOR: Consider this worked case: A term
+appearing at the beginning of a document
+
+39
+00:03:40.979 --> 00:03:47.099
+receives a higher position weight, while the
+saturation function prevents rare terms from
+
+40
+00:03:47.099 --> 00:03:48.512
+dominating the score.
+
+41
+00:03:48.512 --> 00:03:55.447
+NARRATOR: On screen, display a formula
+breakdown with labeled components: position
+
+42
+00:03:55.447 --> 00:04:02.382
+weight, query length normalization, and
+saturation function, alongside a sample score
+
+43
+00:04:02.382 --> 00:04:03.012
+calculation.
+
+44
+00:04:03.012 --> 00:04:09.687
+NARRATOR: Compare alternatives against the
+same constraints so the evaluation does not
+
+45
+00:04:09.687 --> 00:04:11.356
+move the goalposts.
+
+46
+00:04:11.356 --> 00:04:18.168
+NARRATOR: Using shared criteria turns a
+preference into a defensible technical choice.
+
+47
+00:04:18.290 --> 00:04:24.454
+NARRATOR: Apply Modern Retrieval: Neural
+Reranking to a worked situation instead of
+
+48
+00:04:24.454 --> 00:04:27.536
+treating it as an isolated definition.
+
+49
+00:04:27.536 --> 00:04:33.930
+NARRATOR: Machine-learning workflows separate
+data preparation, training, validation,
+
+50
+00:04:33.930 --> 00:04:37.927
+testing, model selection, and evaluation.
+
+51
+00:04:37.927 --> 00:04:44.867
+NARRATOR: Consider this worked case: A
+transformer-based reranker reorders a top-100
+
+52
+00:04:44.867 --> 00:04:51.806
+list of documents by analyzing contextual
+embeddings, promoting documents with higher
+
+53
+00:04:51.806 --> 00:04:53.068
+semantic alignment.
+
+54
+00:04:53.068 --> 00:05:00.287
+NARRATOR: On screen, illustrate a two-stage
+pipeline: first stage shows traditional
+
+55
+00:05:00.287 --> 00:05:07.506
+retrieval output, second stage shows neural
+reranker adjusting document order with
+
+56
+00:05:07.506 --> 00:05:08.818
+attention visualization.
+
+57
+00:05:08.818 --> 00:05:15.612
+NARRATOR: Work from the concrete inputs to the
+result, checking units, types, or invariants
+
+58
+00:05:15.612 --> 00:05:17.068
+at each step.
+
+59
+00:05:17.068 --> 00:05:22.364
+NARRATOR: The worked case shows both how to
+apply the method and how to check it.
+
+60
+00:05:22.466 --> 00:05:28.671
+NARRATOR: Examine the tradeoffs in Modern
+Retrieval: Dense Retrieval, including what
+
+61
+00:05:28.671 --> 00:05:32.056
+improves and what becomes more difficult.
+
+62
+00:05:32.056 --> 00:05:37.666
+NARRATOR: An introduction to the theories and
+techniques used to construct search engines.
+
+63
+00:05:37.666 --> 00:05:44.513
+NARRATOR: Consider this worked case: A query
+and a document are encoded into
+
+64
+00:05:44.513 --> 00:05:50.307
+768-dimensional vectors, and the system
+retrieves the top-k documents with the
+
+65
+00:05:50.307 --> 00:05:53.994
+smallest cosine distance to the query vector.
+
+66
+00:05:53.994 --> 00:06:01.850
+NARRATOR: On screen, show a 2D projection of
+query and document vectors with distance
+
+67
+00:06:01.850 --> 00:06:07.462
+metrics, emphasizing the shared embedding
+space and cosine similarity calculation.
+
+68
+00:06:07.462 --> 00:06:14.127
+NARRATOR: State the benefit, the cost, and the
+condition under which the tradeoff is
+
+69
+00:06:14.127 --> 00:06:14.603
+acceptable.
+
+70
+00:06:14.603 --> 00:06:21.962
+NARRATOR: Making the tradeoff visible prevents
+a local improvement from hiding a larger cost.
+
+71
+00:06:22.082 --> 00:06:28.408
+NARRATOR: Stress-test the reasoning around
+Search Engine Evaluation Metrics with an edge
+
+72
+00:06:28.408 --> 00:06:32.625
+case and identify which assumption controls
+the outcome.
+
+73
+00:06:32.625 --> 00:06:38.783
+NARRATOR: Students will also review current IR
+research, provide written summaries of current
+
+74
+00:06:38.783 --> 00:06:45.414
+research papers, and complete a group project
+in which they will design and execute
+
+75
+00:06:45.414 --> 00:06:47.782
+experiments for search engine components.
+
+76
+00:06:47.782 --> 00:06:54.588
+NARRATOR: Consider this worked case: MAP
+calculates the average precision at the top of
+
+77
+00:06:54.588 --> 00:07:00.422
+the ranked list, providing a single score that
+reflects overall ranking effectiveness.
+
+78
+00:07:00.422 --> 00:07:08.276
+NARRATOR: On screen, present a table comparing
+precision, recall, MAP, and nDCG with brief
+
+79
+00:07:08.276 --> 00:07:12.203
+definitions and a sample calculation for MAP.
+
+80
+00:07:12.203 --> 00:07:18.262
+NARRATOR: Change one assumption at a time and
+observe which part of the reasoning no longer
+
+81
+00:07:18.262 --> 00:07:18.641
+holds.
+
+82
+00:07:18.641 --> 00:07:24.930
+NARRATOR: The edge case reveals the boundary
+of the claim without discarding the useful
+
+83
+00:07:24.930 --> 00:07:25.828
+core idea.
+
+84
+00:07:25.946 --> 00:07:32.435
+NARRATOR: Use Search Applications:
+Conversational IR to diagnose a failure by
+
+85
+00:07:32.435 --> 00:07:35.974
+separating symptoms, causes, and corrective
+action.
+
+86
+00:07:35.974 --> 00:07:41.739
+NARRATOR: Unsupervised methods identify
+structure without target labels.
+
+87
+00:07:41.739 --> 00:07:49.526
+NARRATOR: Consider this worked case: After a
+user asks 'What is NLP?', the system retrieves
+
+88
+00:07:49.526 --> 00:07:57.833
+relevant documents and uses the context to
+answer 'How does NLP work?' in the next turn.
+
+89
+00:07:57.833 --> 00:08:04.638
+NARRATOR: On screen, display a dialogue flow
+with user queries and system responses,
+
+90
+00:08:04.638 --> 00:08:09.349
+highlighting context tracking and retrieval
+steps at each turn.
+
+91
+00:08:09.349 --> 00:08:15.011
+NARRATOR: Locate the first point where
+observed behavior diverges from expected
+
+92
+00:08:15.011 --> 00:08:18.614
+behavior, then test the smallest plausible
+cause.
+
+93
+00:08:18.614 --> 00:08:24.827
+NARRATOR: The diagnosis is strongest when
+another person can reproduce the observation
+
+94
+00:08:24.827 --> 00:08:26.380
+and the test.
+
+95
+00:08:26.498 --> 00:08:31.905
+NARRATOR: Connect Search Applications:
+Enterprise Search to the earlier ideas and
+
+96
+00:08:31.905 --> 00:08:35.838
+explain how the pieces work as one system.
+
+97
+00:08:35.838 --> 00:08:42.916
+NARRATOR: Preprocessing must be fitted only on
+permitted training data to avoid leakage.
+
+98
+00:08:42.916 --> 00:08:49.472
+NARRATOR: Consider this worked case: An
+employee searches for 'Q3 financial report'
+
+99
+00:08:49.472 --> 00:08:57.120
+and filters results by department, date range,
+and document type to locate the correct
+
+100
+00:08:57.120 --> 00:08:58.213
+internal document.
+
+101
+00:08:58.213 --> 00:09:06.255
+NARRATOR: On screen, show a dashboard with
+search bar, filter panel, and results list,
+
+102
+00:09:06.255 --> 00:09:10.276
+emphasizing access controls and faceted
+navigation features.
+
+103
+00:09:10.276 --> 00:09:19.101
+NARRATOR: Explain each connection explicitly
+and verify that information retains the same
+
+104
+00:09:19.101 --> 00:09:21.307
+meaning across representations.
+
+105
+00:09:21.307 --> 00:09:28.285
+NARRATOR: The synthesis matters only if every
+connection remains supported by the original
+
+106
+00:09:28.285 --> 00:09:28.822
+evidence.
+
+107
+00:09:28.946 --> 00:09:34.902
+NARRATOR: Finish with Experimental Design for
+Retrieval Components as a practical checklist
+
+108
+00:09:34.902 --> 00:09:37.880
+that can guide a new analysis.
+
+109
+00:09:37.880 --> 00:09:44.505
+NARRATOR: Evaluation metrics must match the
+task and the cost of different errors.
+
+110
+00:09:44.505 --> 00:09:53.853
+NARRATOR: Consider this worked case: Compare a
+TF-IDF baseline against a BM25 model on a news
+
+111
+00:09:53.853 --> 00:10:00.864
+corpus, measuring MAP and nDCG to determine
+which ranking algorithm performs better.
+
+112
+00:10:00.864 --> 00:10:09.121
+NARRATOR: On screen, create a comparison table
+with columns for Baseline, Model, Corpus,
+
+113
+00:10:09.121 --> 00:10:13.567
+Metrics, and Results, highlighting controlled
+experimental variables.
+
+114
+00:10:13.567 --> 00:10:21.057
+NARRATOR: For each checklist item, record the
+evidence, the remaining uncertainty, and the
+
+115
+00:10:21.057 --> 00:10:22.786
+next verification step.
+
+116
+00:10:22.786 --> 00:10:28.512
+NARRATOR: The result is a repeatable
+procedure, not a conclusion that depends on
+
+117
+00:10:28.512 --> 00:10:29.833
+memory or intuition.

@@ -1,0 +1,206 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "Begin by framing Course Foundations and Scope as a question about inputs, decisions, and observable results.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "Consider this worked case: Students will implement a basic classification model using scikit-learn to predict customer churn from tabular data.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "List the givens before choosing a method, because an unstated assumption can change the conclusion.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "Now define Mathematical Background and Data Visualization precisely enough that another learner could test the definition.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "Consider this worked case: Students will plot a histogram and scatter plot of training data to identify outliers and feature correlations before model training.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "Separate the formal definition from an implementation detail, then identify what evidence would distinguish them.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "With the foundation in place, examine how Machine Learning Workflows and Data Preparation operates in a concrete sequence.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "Consider this worked case: Students will use a scikit-learn Pipeline to standardize features and train a logistic regression model without mixing preprocessing steps across splits.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "Follow every arrow in order and name the state before and after each transition.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "Next, compare the choices involved in Preventing Data Leakage and Cross-Validation and make the decision criteria explicit.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "Consider this worked case: Students will implement StratifiedKFold cross-validation to evaluate a random forest classifier, ensuring scaling is applied only within each fold's training set.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "Compare alternatives against the same constraints so the evaluation does not move the goalposts.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "Apply Evaluation Metrics and Error Costs to a worked situation instead of treating it as an isolated definition.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "Consider this worked case: Students will compare precision, recall, and F1-score for a medical diagnosis classifier, weighting recall higher due to the high cost of false negatives.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "Work from the concrete inputs to the result, checking units, types, or invariants at each step.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-06",
+      "shots": [
+        {
+          "id": "beat-06-shot-001",
+          "phrase": "Examine the tradeoffs in Neural Models: CNNs and RNNs, including what improves and what becomes more difficult.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-002",
+          "phrase": "Consider this worked case: Students will train a CNN on a dataset of handwritten digits to classify images, and an RNN on a time-series dataset to predict stock prices.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-003",
+          "phrase": "State the benefit, the cost, and the condition under which the tradeoff is acceptable.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-07",
+      "shots": [
+        {
+          "id": "beat-07-shot-001",
+          "phrase": "Stress-test the reasoning around Probabilistic Graphical Models with an edge case and identify which assumption controls the outcome.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-002",
+          "phrase": "Consider this worked case: Students will construct a Bayesian network to model the probability of disease given symptoms, using conditional probability tables for each node.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-003",
+          "phrase": "Change one assumption at a time and observe which part of the reasoning no longer holds.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-08",
+      "shots": [
+        {
+          "id": "beat-08-shot-001",
+          "phrase": "Use Reinforcement Learning Basics to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-002",
+          "phrase": "Consider this worked case: Students will train an agent to navigate a grid environment using Q-learning, adjusting actions based on cumulative reward signals.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-003",
+          "phrase": "Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-09",
+      "shots": [
+        {
+          "id": "beat-09-shot-001",
+          "phrase": "Connect NIST AI Risk Management Framework to the earlier ideas and explain how the pieces work as one system.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-002",
+          "phrase": "Consider this worked case: Students will document a risk map for a deployed recommendation system, identifying potential biases in training data and outlining monitoring procedures for post-deployment performance.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-003",
+          "phrase": "Explain each connection explicitly and verify that information retains the same meaning across representations.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-10",
+      "shots": [
+        {
+          "id": "beat-10-shot-001",
+          "phrase": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-002",
+          "phrase": "Consider this worked case: Students will complete a checklist verifying that preprocessing was fitted only on training data, cross-validation was used, evaluation metrics matched the task, and monitoring plans are in place.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-003",
+          "phrase": "For each checklist item, record the evidence, the remaining uncertainty, and the next verification step.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "csci-635-introduction-to-machine-learning",
+  "schemaVersion": 1
+}
