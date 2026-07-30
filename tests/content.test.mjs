@@ -39,26 +39,35 @@ test("the pilot page advertises the learning platform and has no duration cap", 
 
 test("the learning platform exposes accessible, device-local course progress", async () => {
   const html = await readFile(new URL("learn.html", root), "utf8");
+  const script = await readFile(new URL("learn.js", root), "utf8");
   assert.match(html, /id="course-grid"/);
   assert.match(html, /id="course-search"/);
   assert.match(html, /id="lesson-dialog"/);
   assert.match(html, /id="progress-percent"/);
   assert.match(html, /Progress stays on this device/);
   assert.match(html, /not an LMS/i);
+  assert.match(html, /Download MP4/);
+  assert.match(html, /Copy direct lesson link/);
+  assert.match(script, /searchParams\.set\("course", courseId\)/);
+  assert.match(script, /searchParams\.get\(\s*"course"/);
+  assert.match(script, /navigator\.clipboard\.writeText/);
   assert.doesNotMatch(html, /female narration/i);
 });
 
-test("the course catalog contains thirty-three complete, unique lessons", async () => {
+test("the course catalog contains complete, unique lessons", async () => {
   const catalog = JSON.parse(
     await readFile(new URL("course-catalog.json", root), "utf8"),
   );
   assert.equal(catalog.schemaVersion, 1);
-  assert.equal(catalog.courses.length, 33);
-  assert.equal(new Set(catalog.courses.map((course) => course.id)).size, 33);
+  assert.ok(catalog.courses.length >= 33);
+  assert.equal(
+    new Set(catalog.courses.map((course) => course.id)).size,
+    catalog.courses.length,
+  );
   const fullLessons = catalog.courses.filter(
     (course) => course.format === "Full lesson",
   );
-  assert.equal(fullLessons.length, 18);
+  assert.ok(fullLessons.length >= 18);
   assert.ok(fullLessons.every((course) => course.durationSeconds >= 480));
 
   for (const course of catalog.courses) {

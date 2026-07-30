@@ -2976,6 +2976,14 @@ footer p {
   line-height: 1.6;
 }
 
+.lesson-dialog > .lesson-alignment {
+  padding-top: 0;
+  color: var(--orange-dark);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
 .lesson-dialog video {
   width: 100%;
   display: block;
@@ -3007,13 +3015,24 @@ footer p {
   gap: 8px;
 }
 
-.lesson-resource-links a {
+.lesson-resource-links a,
+.lesson-resource-links button {
   padding: 11px 13px;
   border: 1px solid var(--line);
+  background: var(--white);
   color: var(--orange-dark);
   font-size: 11px;
   font-weight: 800;
   text-decoration: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.lesson-link-status {
+  min-height: 20px;
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 11px;
 }
 
 .lesson-complete-button {

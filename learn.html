@@ -44,7 +44,7 @@
             captions, a transcript, learning outcomes, and source information.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#catalog">Browse 33 course videos <span aria-hidden="true">↓</span></a>
+            <a class="button button-primary" href="#catalog">Browse <span id="hero-catalog-count">course videos</span> <span aria-hidden="true">↓</span></a>
             <a class="button button-secondary" href="#paths">Choose a learning path <span aria-hidden="true">→</span></a>
           </div>
         </div>
@@ -67,7 +67,7 @@
           <div class="learn-progress-stats">
             <div><b id="completed-count">0</b><span>completed</span></div>
             <div><b id="learning-time">0 min</b><span>completed time</span></div>
-            <div><b id="catalog-count">33</b><span>available</span></div>
+            <div><b id="catalog-count">—</b><span>available</span></div>
           </div>
           <p>Progress stays on this device. No learning activity is transmitted or added to an RIT record.</p>
         </aside>
@@ -192,6 +192,7 @@
           <button id="lesson-close" type="button" aria-label="Close lesson">×</button>
         </div>
         <p id="lesson-description"></p>
+        <p id="lesson-alignment" class="lesson-alignment" hidden></p>
         <video id="lesson-video" controls playsinline preload="metadata"></video>
         <div class="lesson-dialog-body">
           <section>
@@ -201,10 +202,13 @@
           <section>
             <h3>Learning resources</h3>
             <div class="lesson-resource-links">
+              <a id="lesson-video-download" href="#" download>Download MP4</a>
               <a id="lesson-transcript" href="#">Transcript</a>
               <a id="lesson-captions" href="#">Caption file</a>
               <a id="lesson-sources" href="#">Sources</a>
+              <button id="lesson-copy-link" type="button">Copy direct lesson link</button>
             </div>
+            <p id="lesson-link-status" class="lesson-link-status" role="status" aria-live="polite"></p>
           </section>
         </div>
         <button class="lesson-complete-button" id="lesson-complete" type="button">Mark lesson complete</button>

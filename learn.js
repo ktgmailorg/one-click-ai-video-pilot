@@ -196,16 +196,34 @@ function updateContinue() {
   document.querySelector("#continue-button").onclick = () => openLesson(course);
 }
 
+function directLessonUrl(courseId) {
+  const url = new URL(window.location.href);
+  url.hash = "";
+  url.searchParams.set("course", courseId);
+  return url;
+}
+
 function openLesson(course) {
   currentCourse = course;
   progress.recent = course.id;
   saveProgress();
   updateContinue();
+  const url = directLessonUrl(course.id);
+  window.history.replaceState({ courseId: course.id }, "", url);
 
   document.querySelector("#lesson-format").textContent =
     `${course.area} · ${course.format} · ${course.duration}`;
   document.querySelector("#lesson-title").textContent = course.title;
   document.querySelector("#lesson-description").textContent = course.description;
+  const alignment = document.querySelector("#lesson-alignment");
+  if (course.catalogAlignment) {
+    alignment.hidden = false;
+    alignment.textContent =
+      `${course.catalogAlignment.courseCode} · ${course.catalogAlignment.relationship}`;
+  } else {
+    alignment.hidden = true;
+    alignment.textContent = "";
+  }
 
   video.pause();
   video.replaceChildren();
@@ -234,6 +252,10 @@ function openLesson(course) {
   document.querySelector("#lesson-transcript").href = course.transcript;
   document.querySelector("#lesson-captions").href = course.captions;
   document.querySelector("#lesson-sources").href = course.sources;
+  document.querySelector("#lesson-video-download").href = course.video;
+  document.querySelector("#lesson-video-download").download =
+    `${course.id}.mp4`;
+  document.querySelector("#lesson-link-status").textContent = "";
   updateDialogCompletion();
   dialog.showModal();
 }
@@ -293,10 +315,28 @@ document.querySelector("#lesson-close").addEventListener("click", closeLesson);
 document.querySelector("#lesson-complete").addEventListener("click", () => {
   if (currentCourse) toggleComplete(currentCourse.id);
 });
+document.querySelector("#lesson-copy-link").addEventListener("click", async () => {
+  if (!currentCourse) return;
+  const status = document.querySelector("#lesson-link-status");
+  try {
+    await navigator.clipboard.writeText(
+      directLessonUrl(currentCourse.id).toString(),
+    );
+    status.textContent = "Direct lesson link copied.";
+  } catch {
+    status.textContent =
+      "Copy the current page address to share this exact lesson.";
+  }
+});
 dialog.addEventListener("click", (event) => {
   if (event.target === dialog) closeLesson();
 });
-dialog.addEventListener("close", () => video.pause());
+dialog.addEventListener("close", () => {
+  video.pause();
+  const url = new URL(window.location.href);
+  url.searchParams.delete("course");
+  window.history.replaceState({}, "", url);
+});
 
 fetch(catalogUrl)
   .then((response) => {
@@ -306,11 +346,20 @@ fetch(catalogUrl)
   .then((data) => {
     if (!Array.isArray(data.courses)) throw new Error("Invalid catalog");
     courses = data.courses;
+    document.querySelector("#hero-catalog-count").textContent =
+      `${courses.length} course videos`;
     addOptions(areaFilter, unique(courses.map((course) => course.area)));
     addOptions(formatFilter, unique(courses.map((course) => course.format)));
     addOptions(levelFilter, unique(courses.map((course) => course.level)));
     updateProgress();
     render();
+    const requestedCourse = new URL(window.location.href).searchParams.get(
+      "course",
+    );
+    const directCourse = courses.find((course) => course.id === requestedCourse);
+    if (directCourse) {
+      openLesson(directCourse);
+    }
   })
   .catch(() => {
     grid.setAttribute("aria-busy", "false");
