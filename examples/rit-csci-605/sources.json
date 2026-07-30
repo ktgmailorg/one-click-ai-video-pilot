@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "rit-csci-605",
+      "title": "RIT CSCI-605 Advanced Object-Oriented Programming Concepts catalog description",
+      "type": "note",
+      "uri": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Graduate_Catalog.pdf?2026-02-02=",
+      "author": "Rochester Institute of Technology",
+      "content": "This course focuses on identifying advanced object-oriented programming concepts and implementing them in the context of specific problems. This course covers advanced concepts such as event-driven programming, design patterns, distributed and concurrent programming, and the use, design and implementation of applications. Assignments (both in class and as homework) requiring a solution to a problem and an implementation in code are an integral part of the course. Note: This course serves as a bridge course for graduate students and cannot be taken by undergraduate students without permission from the CS Undergraduate Program Coordinator. This course is restricted to students in COMPSCI-MS. Contact Hours: Lecture 3 Typically Offered: Fall, Spring",
+      "excerpt": "This course focuses on identifying advanced object-oriented programming concepts and implementing them in the context of specific problems. This course covers advanced concepts such as event-driven programming, design patterns, distributed and concurrent programming, and the use, design and implementation of applications. Assignments (both in class and as homework) requiring a solution to a problem and an implementation in code are an integral part of the course. Note: This course serves as a bridge course for graduate students and cannot be taken by undergraduate students without permission from the CS Undergraduate Program Coordinator. This course is restricted to students in COMPSCI-MS. Contact Hours: Lecture 3 Typically Offered: Fall, Spring",
+      "catalogPage": 264,
+      "verified": true
+    },
+    {
+      "id": "raft-paper",
+      "title": "In Search of an Understandable Consensus Algorithm",
+      "uri": "https://raft.github.io/raft.pdf",
+      "author": "Diego Ongaro and John Ousterhout",
+      "content": "Raft decomposes consensus into leader election, log replication, and safety. Servers move among follower, candidate, and leader states. Terms act as logical clocks and allow servers to identify stale information. A follower starts an election after its election timeout elapses without valid leader communication. A candidate requests votes and becomes leader after receiving votes from a majority. A leader appends client commands to its log and sends entries to followers. An entry becomes committed after the required majority condition is satisfied. Log matching and election restrictions preserve the safety properties described by the algorithm.",
+      "type": "note",
+      "verified": true
+    },
+    {
+      "id": "nist-cloud",
+      "title": "The NIST Definition of Cloud Computing",
+      "uri": "https://csrc.nist.gov/publications/detail/sp/800-145/final",
+      "author": "National Institute of Standards and Technology",
+      "content": "NIST defines cloud computing with five essential characteristics. On-demand self-service allows consumers to provision capabilities without requiring human interaction with each provider. Broad network access makes capabilities available over networks through standard mechanisms. Resource pooling serves multiple consumers with dynamically assigned physical and virtual resources. Rapid elasticity allows capabilities to scale outward and inward according to demand. Measured service monitors and reports resource use. NIST identifies software, platform, and infrastructure service models. NIST also identifies private, community, public, and hybrid deployment models. Sound cloud analysis makes trust boundaries, tenancy, failure domains, scaling assumptions, observability, and responsibility allocation explicit.",
+      "type": "note",
+      "verified": true
+    }
+  ]
+}

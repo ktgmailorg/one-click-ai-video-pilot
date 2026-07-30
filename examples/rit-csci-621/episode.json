@@ -1,0 +1,303 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Begin by framing Introduction to Database System Implementation as a question about inputs, decisions, and observable results. Database system implementation issues are covered next, where the focus is on data structures and algorithms used to implement database management systems. Consider this worked case: Implementing a student enrollment system requires choosing between B-trees for range queries and hash tables for exact-match lookups. On screen, display a split-screen diagram showing a B-tree structure on the left and a hash table structure on the right, with arrows pointing to their respective use cases. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 63,
+      "title": "Introduction to Database System Implementation",
+      "visualDirection": "template:academic-process | Display a split-screen diagram showing a B-tree structure on the left and a hash table structure on the right, with arrows pointing to their respective use cases."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Now define Relational Model Foundations precisely enough that another learner could test the definition. Relational systems organize data with tables, rows, columns, and declared types. Consider this worked case: A 'Students' table contains columns for student_id, name, and email, each with a specific data type like INTEGER or VARCHAR. On screen, show a simple table schema with column names, data types, and a sample row, highlighting the row-column structure. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "plannedSeconds": 55,
+      "title": "Relational Model Foundations",
+      "visualDirection": "template:academic-process | Show a simple table schema with column names, data types, and a sample row, highlighting the row-column structure."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "With the foundation in place, examine how Keys and Constraints operates in a concrete sequence. Primary keys identify rows, while foreign keys express references between tables. Consider this worked case: A 'Courses' table uses a foreign key to reference the 'Students' table, ensuring no course is assigned to a non-existent student. On screen, illustrate two connected tables with a dashed line labeled 'foreign key', showing how a value in one table must match a primary key in the other. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "plannedSeconds": 56,
+      "title": "Keys and Constraints",
+      "visualDirection": "template:academic-process | Illustrate two connected tables with a dashed line labeled 'foreign key', showing how a value in one table must match a primary key in the other."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "Next, compare the choices involved in Query Processing Basics and make the decision criteria explicit. Query planning and physical structures influence performance without changing logical query meaning. Consider this worked case: A SQL query joins 'Students' and 'Courses' tables to list all students and their enrolled courses, while the database optimizer chooses the fastest join order based on indexes. On screen, show a logical query tree on the left and a physical execution plan on the right, with a note indicating that the logical meaning remains unchanged despite different execution paths. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "plannedSeconds": 63,
+      "title": "Query Processing Basics",
+      "visualDirection": "template:academic-process | Show a logical query tree on the left and a physical execution plan on the right, with a note indicating that the logical meaning remains unchanged despite different execution paths."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Apply Indexing and Hashing to a worked situation instead of treating it as an isolated definition. Indexes provide additional access paths for selected queries. Consider this worked case: A hash index on the 'email' column allows the database to locate a student record in constant time without scanning the entire table. On screen, display a hash table with keys mapped to buckets, showing how a query for a specific email resolves directly to its bucket without linear search. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 59,
+      "title": "Indexing and Hashing",
+      "visualDirection": "template:academic-process | Display a hash table with keys mapped to buckets, showing how a query for a specific email resolves directly to its bucket without linear search."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "Examine the tradeoffs in Physical Data Organizations, including what improves and what becomes more difficult. Topics include physical data organizations, indexing and hashing, query processing and optimization, database recovery techniques, transaction management, concurrency control, and database performance evaluation. Consider this worked case: Clustering data by student_id improves performance for queries that frequently filter by student, reducing disk I/O operations. On screen, show a clustered vs. unclustered table layout, with clustered data grouped by student_id and unclustered data scattered randomly, highlighting I/O differences. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "plannedSeconds": 59,
+      "title": "Physical Data Organizations",
+      "visualDirection": "template:academic-process | Show a clustered vs. unclustered table layout, with clustered data grouped by student_id and unclustered data scattered randomly, highlighting I/O differences."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "Stress-test the reasoning around Transaction Management with an edge case and identify which assumption controls the outcome. Transactions group operations into an atomic unit of work. Consider this worked case: A transaction transfers funds between two accounts, and if the debit fails, the credit is automatically rolled back to maintain consistency. On screen, illustrate a transaction flow with 'begin', 'commit', and 'rollback' states, showing how partial failures trigger automatic reversal of all operations. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 57,
+      "title": "Transaction Management",
+      "visualDirection": "template:academic-process | Illustrate a transaction flow with 'begin', 'commit', and 'rollback' states, showing how partial failures trigger automatic reversal of all operations."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "Use Concurrency Control to diagnose a failure by separating symptoms, causes, and corrective action. Isolation controls how concurrent transactions observe one another. Consider this worked case: Two transactions updating the same account balance are serialized so that one completes before the other begins, avoiding lost updates. On screen, show two concurrent transaction timelines with serialization points, demonstrating how isolation levels prevent conflicting reads and writes. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 55,
+      "title": "Concurrency Control",
+      "visualDirection": "template:academic-process | Show two concurrent transaction timelines with serialization points, demonstrating how isolation levels prevent conflicting reads and writes."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Connect Database Performance Evaluation to the earlier ideas and explain how the pieces work as one system. Current research topics in database system implementation are also explored. Consider this worked case: Benchmarking shows that adding a composite index on (department, salary) reduces query execution time by 60% for filtered reports. On screen, display a performance graph comparing query execution times with and without a composite index, highlighting the reduction in I/O and CPU usage. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 55,
+      "title": "Database Performance Evaluation",
+      "visualDirection": "template:academic-process | Display a performance graph comparing query execution times with and without a composite index, highlighting the reduction in I/O and CPU usage."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Constraints and indexes support data integrity and efficient lookup. Consider this worked case: Before deploying a new module, check that primary keys are defined, foreign keys reference valid tables, indexes cover frequent query filters, and isolation levels match concurrency needs. On screen, show a checklist graphic with four boxes: 'Keys & Constraints', 'Indexes & Hashing', 'Transaction Atomicity', 'Isolation & Concurrency', each with a checkbox and brief validation criteria. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 61,
+      "title": "Practical Analysis Checklist",
+      "visualDirection": "template:academic-process | Show a checklist graphic with four boxes: 'Keys & Constraints', 'Indexes & Hashing', 'Transaction Atomicity', 'Isolation & Concurrency', each with a checkbox and brief validation criteria."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "rit-csci-621"
+      ],
+      "text": "Database system implementation issues are covered next, where the focus is on data structures and algorithms used to implement database management systems.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "postgresql-documentation"
+      ],
+      "text": "Relational systems organize data with tables, rows, columns, and declared types.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "postgresql-documentation"
+      ],
+      "text": "Primary keys identify rows, while foreign keys express references between tables.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "postgresql-documentation"
+      ],
+      "text": "Query planning and physical structures influence performance without changing logical query meaning.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "postgresql-documentation"
+      ],
+      "text": "Indexes provide additional access paths for selected queries.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "rit-csci-621"
+      ],
+      "text": "Topics include physical data organizations, indexing and hashing, query processing and optimization, database recovery techniques, transaction management, concurrency control, and database performance evaluation.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "postgresql-documentation"
+      ],
+      "text": "Transactions group operations into an atomic unit of work.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "postgresql-documentation"
+      ],
+      "text": "Isolation controls how concurrent transactions observe one another.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "rit-csci-621"
+      ],
+      "text": "Current research topics in database system implementation are also explored.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "neo4j-graph-data-modeling"
+      ],
+      "text": "Constraints and indexes support data integrity and efficient lookup.",
+      "verified": true
+    }
+  ],
+  "id": "csci-621-foundations-of-database-system-implementation",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "Rochester Institute of Technology",
+      "excerpt": "This course provides a broad introduction to database management systems including data modeling, the relational model, and SQL. Database system implementation issues are covered next, where the focus is on data structures and algorithms used to implement database management systems. Topics include physical data organizations, indexing and hashing, query processing and optimization, database recovery techniques, transaction management, concurrency control, and database performance evaluation. Current research topics in database system implementation are also explored. Programming projects, a term paper, and presentations will be required. Note: Students who take this course may not take CSCI-421 for credit. Prerequisites: CSCI-620 or CSCI-420 or CSCI-420H or equivalent course. May not take",
+      "id": "rit-csci-621",
+      "sha256": "e19566c422aacba0727eec1d5ac485b9a246e431d8e1c53c33c5f4e707246ebc",
+      "title": "RIT CSCI-621 Foundations of Database System Implementation catalog description",
+      "type": "note",
+      "uri": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Graduate_Catalog.pdf?2026-02-02=",
+      "verified": true
+    },
+    {
+      "author": "PostgreSQL Global Development Group",
+      "excerpt": "Relational systems organize data with tables, rows, columns, and declared types. Primary keys identify rows, while foreign keys express references between tables. Constraints reject states that violate declared data rules. Queries select, join, aggregate, insert, update, and delete data. Indexes provide additional access paths for selected queries. Transactions group operations into an atomic unit of work. Isolation controls how concurrent transactions observe one another. Schema design separates entities and relationships, while normalization addresses update anomalies. Query planning and physical structures influence performance without changing logical query meaning.",
+      "id": "postgresql-documentation",
+      "sha256": "78dace39fa20f9b6c60b50ea3ad7bdec2b4145158d18abb33d98d44161515dc0",
+      "title": "PostgreSQL Documentation",
+      "type": "note",
+      "uri": "https://www.postgresql.org/docs/current/",
+      "verified": true
+    },
+    {
+      "author": "Neo4j",
+      "excerpt": "Property graph models represent domain entities as nodes. Relationships connect nodes and have a type and direction. Nodes and relationships can carry properties. Labels group nodes that play a similar domain role. A useful graph model begins from the questions the application must answer. Traversal patterns determine which relationships the application follows. Identity must be explicit when several records may describe the same entity. Constraints and indexes support data integrity and efficient lookup. Direction, cardinality, and update behavior are part of the model.",
+      "id": "neo4j-graph-data-modeling",
+      "sha256": "483b46916371d775d73aae988ad1c144b24364473092fad7e3fe85c189f016da",
+      "title": "Neo4j Graph Data Modeling",
+      "type": "note",
+      "uri": "https://neo4j.com/docs/getting-started/data-modeling/",
+      "verified": true
+    }
+  ],
+  "title": "CSCI-621: Foundations of Database System Implementation"
+}

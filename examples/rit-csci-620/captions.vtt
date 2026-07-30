@@ -1,0 +1,548 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:08.670
+NARRATOR: Begin by framing Lesson Title:
+CSCI-620: Introduction to Big Data as a
+
+2
+00:00:08.670 --> 00:00:13.312
+question about inputs, decisions, and
+observable results.
+
+3
+00:00:13.312 --> 00:00:18.823
+NARRATOR: This course provides a broad
+introduction to the exploration and management
+
+4
+00:00:18.823 --> 00:00:23.875
+of large datasets being generated and used in
+the modern world.
+
+5
+00:00:23.875 --> 00:00:31.118
+NARRATOR: Consider this worked case: Case
+studies examine urban crime, drug research,
+
+6
+00:00:31.118 --> 00:00:35.343
+census data, social networking, and space
+exploration.
+
+7
+00:00:35.343 --> 00:00:43.628
+NARRATOR: On screen, display a slide with the
+course title and a grid of icons representing
+
+8
+00:00:43.628 --> 00:00:49.841
+the five case study domains (crime, drug
+research, census, social networking, space
+
+9
+00:00:49.841 --> 00:00:50.359
+exploration).
+
+10
+00:00:50.359 --> 00:00:56.491
+NARRATOR: List the givens before choosing a
+method, because an unstated assumption can
+
+11
+00:00:56.491 --> 00:00:57.906
+change the conclusion.
+
+12
+00:00:57.906 --> 00:01:03.468
+NARRATOR: This establishes the vocabulary and
+scope needed for the remaining sections.
+
+13
+00:01:03.578 --> 00:01:11.210
+NARRATOR: Now define Lesson Title: Lesson 1:
+Foundations of Big Data precisely enough that
+
+14
+00:01:11.210 --> 00:01:14.481
+another learner could test the definition.
+
+15
+00:01:14.481 --> 00:01:30.111
+NARRATOR: Prereq: (CSCI-603 or CSCI-605 with a
+grade of B or better) or (CSCI-320 or
+
+16
+00:01:30.111 --> 00:01:31.153
+SWEN-344).
+
+17
+00:01:31.153 --> 00:01:37.223
+NARRATOR: Consider this worked case: Students
+must verify their prerequisite status before
+
+18
+00:01:37.223 --> 00:01:39.246
+enrolling in the course.
+
+19
+00:01:39.246 --> 00:01:45.436
+NARRATOR: On screen, show a checklist graphic
+with the prerequisite courses listed and a
+
+20
+00:01:45.436 --> 00:01:46.762
+checkbox for each.
+
+21
+00:01:46.762 --> 00:01:53.594
+NARRATOR: Separate the formal definition from
+an implementation detail, then identify what
+
+22
+00:01:53.594 --> 00:01:55.871
+evidence would distinguish them.
+
+23
+00:01:55.871 --> 00:02:02.559
+NARRATOR: A precise definition makes later
+examples easier to evaluate and revise.
+
+24
+00:02:02.559 --> 00:02:09.642
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+25
+00:02:09.642 --> 00:02:11.574
+throughout the analysis.
+
+26
+00:02:11.690 --> 00:02:18.952
+NARRATOR: With the foundation in place,
+examine how Lesson Title: Lesson 2: Internet
+
+27
+00:02:18.952 --> 00:02:23.421
+Protocol Suite Overview operates in a concrete
+sequence.
+
+28
+00:02:23.421 --> 00:02:30.523
+NARRATOR: Internet hosts implement layered
+link, internet, transport, and application
+
+29
+00:02:30.523 --> 00:02:31.233
+functions.
+
+30
+00:02:31.233 --> 00:02:39.500
+NARRATOR: Consider this worked case: The link
+layer moves frames across a directly connected
+
+31
+00:02:39.500 --> 00:02:44.814
+network, while IP provides best-effort
+datagram delivery across interconnected
+
+32
+00:02:44.814 --> 00:02:45.405
+networks.
+
+33
+00:02:45.405 --> 00:02:52.662
+NARRATOR: On screen, draw a four-layer stack
+diagram with labels for link, internet,
+
+34
+00:02:52.662 --> 00:02:57.686
+transport, and application layers, pointing to
+each layer's function.
+
+35
+00:02:57.686 --> 00:03:05.077
+NARRATOR: Follow every arrow in order and name
+the state before and after each transition.
+
+36
+00:03:05.077 --> 00:03:10.718
+NARRATOR: The trace converts an abstract
+statement into an inspectable sequence.
+
+37
+00:03:10.826 --> 00:03:18.147
+NARRATOR: Next, compare the choices involved
+in Lesson Title: Lesson 3: IP Addressing and
+
+38
+00:03:18.147 --> 00:03:21.807
+Routing and make the decision criteria
+explicit.
+
+39
+00:03:21.807 --> 00:03:25.697
+NARRATOR: Routing selects a next hop toward a
+destination.
+
+40
+00:03:25.697 --> 00:03:32.766
+NARRATOR: Consider this worked case: When a
+packet is sent, the router examines the IP
+
+41
+00:03:32.766 --> 00:03:37.479
+address to determine the optimal path to the
+destination interface.
+
+42
+00:03:37.479 --> 00:03:44.111
+NARRATOR: On screen, illustrate a network
+diagram with two routers, highlighting the IP
+
+43
+00:03:44.111 --> 00:03:50.744
+address on an interface and an arrow showing
+the next hop selection process.
+
+44
+00:03:50.744 --> 00:03:57.269
+NARRATOR: Compare alternatives against the
+same constraints so the evaluation does not
+
+45
+00:03:57.269 --> 00:03:58.900
+move the goalposts.
+
+46
+00:03:58.900 --> 00:04:05.838
+NARRATOR: Using shared criteria turns a
+preference into a defensible technical choice.
+
+47
+00:04:05.954 --> 00:04:12.247
+NARRATOR: Apply Lesson Title: Lesson 4:
+Transport Protocol Functions to a worked
+
+48
+00:04:12.247 --> 00:04:16.966
+situation instead of treating it as an
+isolated definition.
+
+49
+00:04:16.966 --> 00:04:23.029
+NARRATOR: Transport protocols add endpoint
+communication functions above IP.
+
+50
+00:04:23.029 --> 00:04:29.356
+NARRATOR: Consider this worked case:
+Application protocols define the meaning of
+
+51
+00:04:29.356 --> 00:04:35.107
+exchanged data, while transport protocols
+handle the reliable delivery mechanism.
+
+52
+00:04:35.107 --> 00:04:42.720
+NARRATOR: On screen, show a simplified TCP/IP
+model with the transport layer positioned
+
+53
+00:04:42.720 --> 00:04:49.161
+above IP, labeled with 'endpoint communication
+functions' and 'application protocols' above
+
+54
+00:04:49.161 --> 00:04:49.747
+it.
+
+55
+00:04:49.747 --> 00:04:56.245
+NARRATOR: Work from the concrete inputs to the
+result, checking units, types, or invariants
+
+56
+00:04:56.245 --> 00:04:57.638
+at each step.
+
+57
+00:04:57.638 --> 00:05:02.950
+NARRATOR: The worked case shows both how to
+apply the method and how to check it.
+
+58
+00:05:03.074 --> 00:05:10.541
+NARRATOR: Examine the tradeoffs in Lesson
+Title: Lesson 5: TCP Reliability and Byte
+
+59
+00:05:10.541 --> 00:05:15.711
+Streams, including what improves and what
+becomes more difficult.
+
+60
+00:05:15.711 --> 00:05:21.680
+NARRATOR: TCP provides a reliable, ordered
+byte stream between endpoints.
+
+61
+00:05:21.680 --> 00:05:28.157
+NARRATOR: Consider this worked case: Sequence
+numbers identify positions in that byte
+
+62
+00:05:28.157 --> 00:05:33.555
+stream, allowing the receiver to reconstruct
+the original data order.
+
+63
+00:05:33.555 --> 00:05:41.821
+NARRATOR: On screen, display a sequence of
+numbered packets (1, 2, 3) arriving at a
+
+64
+00:05:41.821 --> 00:05:47.883
+receiver, with a visual indicator showing how
+sequence numbers restore order.
+
+65
+00:05:47.883 --> 00:05:54.474
+NARRATOR: State the benefit, the cost, and the
+condition under which the tradeoff is
+
+66
+00:05:54.474 --> 00:05:54.945
+acceptable.
+
+67
+00:05:54.945 --> 00:06:02.055
+NARRATOR: Making the tradeoff visible prevents
+a local improvement from hiding a larger cost.
+
+68
+00:06:02.162 --> 00:06:08.728
+NARRATOR: Stress-test the reasoning around
+Lesson Title: Lesson 6: TCP Acknowledgments
+
+69
+00:06:08.728 --> 00:06:15.890
+and Retransmission with an edge case and
+identify which assumption controls the
+
+70
+00:06:15.890 --> 00:06:16.487
+outcome.
+
+71
+00:06:16.487 --> 00:06:20.612
+NARRATOR: Acknowledgments report which data
+has been received.
+
+72
+00:06:20.612 --> 00:06:27.612
+NARRATOR: Consider this worked case: If a
+packet is lost, the receiver sends an
+
+73
+00:06:27.612 --> 00:06:33.612
+acknowledgment indicating the gap, prompting
+the sender to retransmit the missing data.
+
+74
+00:06:33.612 --> 00:06:40.822
+NARRATOR: On screen, create a timeline graphic
+showing packet transmission, a missing packet,
+
+75
+00:06:40.822 --> 00:06:44.705
+an acknowledgment signal, and a retransmission
+arrow.
+
+76
+00:06:44.705 --> 00:06:50.778
+NARRATOR: Change one assumption at a time and
+observe which part of the reasoning no longer
+
+77
+00:06:50.778 --> 00:06:51.158
+holds.
+
+78
+00:06:51.158 --> 00:06:57.242
+NARRATOR: The edge case reveals the boundary
+of the claim without discarding the useful
+
+79
+00:06:57.242 --> 00:06:58.111
+core idea.
+
+80
+00:06:58.226 --> 00:07:06.906
+NARRATOR: Use Lesson Title: Lesson 7: TCP Flow
+Control and State Management to diagnose a
+
+81
+00:07:06.906 --> 00:07:11.535
+failure by separating symptoms, causes, and
+corrective action.
+
+82
+00:07:11.535 --> 00:07:17.847
+NARRATOR: Flow control prevents a sender from
+exceeding the receiver's advertised capacity.
+
+83
+00:07:17.847 --> 00:07:23.551
+NARRATOR: Consider this worked case: Before
+application data transfer, connection
+
+84
+00:07:23.551 --> 00:07:29.254
+establishment synchronizes endpoint state to
+ensure both sides are ready.
+
+85
+00:07:29.254 --> 00:07:36.510
+NARRATOR: On screen, show a state machine
+diagram with states like 'Establishment',
+
+86
+00:07:36.510 --> 00:07:41.347
+'Data Transfer', and 'Termination', with
+arrows indicating transitions.
+
+87
+00:07:41.347 --> 00:07:47.229
+NARRATOR: Locate the first point where
+observed behavior diverges from expected
+
+88
+00:07:47.229 --> 00:07:50.972
+behavior, then test the smallest plausible
+cause.
+
+89
+00:07:50.972 --> 00:07:57.147
+NARRATOR: The diagnosis is strongest when
+another person can reproduce the observation
+
+90
+00:07:57.147 --> 00:07:58.691
+and the test.
+
+91
+00:07:58.802 --> 00:08:05.309
+NARRATOR: Connect Lesson Title: Lesson 8: Data
+Preparation and Visualization to the earlier
+
+92
+00:08:05.309 --> 00:08:10.314
+ideas and explain how the pieces work as one
+system.
+
+93
+00:08:10.314 --> 00:08:18.057
+NARRATOR: First, practical techniques used in
+exploratory data analysis and mining are
+
+94
+00:08:18.057 --> 00:08:23.864
+introduced; topics include data preparation,
+visualization, statistics for understanding
+
+95
+00:08:23.864 --> 00:08:27.736
+data, and grouping and prediction techniques.
+
+96
+00:08:27.736 --> 00:08:35.851
+NARRATOR: Consider this worked case: Cleaning
+and organizing raw datasets allows analysts to
+
+97
+00:08:35.851 --> 00:08:40.220
+identify patterns and trends through visual
+representations.
+
+98
+00:08:40.220 --> 00:08:46.017
+NARRATOR: On screen, present a
+before-and-after comparison of a messy dataset
+
+99
+00:08:46.017 --> 00:08:51.814
+and a cleaned, visualized chart (e.g., bar
+graph or scatter plot).
+
+100
+00:08:51.814 --> 00:09:00.552
+NARRATOR: Explain each connection explicitly
+and verify that information retains the same
+
+101
+00:09:00.552 --> 00:09:02.736
+meaning across representations.
+
+102
+00:09:02.736 --> 00:09:09.700
+NARRATOR: The synthesis matters only if every
+connection remains supported by the original
+
+103
+00:09:09.700 --> 00:09:10.236
+evidence.
+
+104
+00:09:10.346 --> 00:09:16.785
+NARRATOR: Finish with Lesson Title: Lesson 9:
+Statistics and Grouping/Prediction Techniques
+
+105
+00:09:16.785 --> 00:09:22.639
+as a practical checklist that can guide a new
+analysis.
+
+106
+00:09:22.639 --> 00:09:27.077
+NARRATOR: Retransmission recovers data that is
+presumed lost.
+
+107
+00:09:27.077 --> 00:09:33.401
+NARRATOR: Consider this worked case:
+Statistical methods help quantify uncertainty,
+
+108
+00:09:33.401 --> 00:09:40.358
+while grouping and prediction techniques
+identify clusters and forecast future values.
+
+109
+00:09:40.358 --> 00:09:46.692
+NARRATOR: On screen, display a split screen
+showing a statistical summary table on the
+
+110
+00:09:46.692 --> 00:09:50.764
+left and a clustering/prediction model output
+on the right.
+
+111
+00:09:50.764 --> 00:09:58.254
+NARRATOR: For each checklist item, record the
+evidence, the remaining uncertainty, and the
+
+112
+00:09:58.254 --> 00:09:59.983
+next verification step.
+
+113
+00:09:59.983 --> 00:10:05.810
+NARRATOR: The result is a repeatable
+procedure, not a conclusion that depends on
+
+114
+00:10:05.810 --> 00:10:07.155
+memory or intuition.

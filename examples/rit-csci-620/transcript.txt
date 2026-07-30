@@ -1,0 +1,227 @@
+NARRATOR: Begin by framing Lesson Title: CSCI-620: Introduction to Big Data as a
+
+question about inputs, decisions, and observable results.
+
+NARRATOR: This course provides a broad introduction to the exploration and management
+
+of large datasets being generated and used in the modern world.
+
+NARRATOR: Consider this worked case: Case studies examine urban crime, drug research,
+
+census data, social networking, and space exploration.
+
+NARRATOR: On screen, display a slide with the course title and a grid of icons representing
+
+the five case study domains (crime, drug research, census, social networking, space
+
+exploration).
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Lesson Title: Lesson 1: Foundations of Big Data precisely enough that
+
+another learner could test the definition.
+
+NARRATOR: Prereq: (CSCI-603 or CSCI-605 with a grade of B or better) or (CSCI-320 or
+
+SWEN-344).
+
+NARRATOR: Consider this worked case: Students must verify their prerequisite status before
+
+enrolling in the course.
+
+NARRATOR: On screen, show a checklist graphic with the prerequisite courses listed and a
+
+checkbox for each.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: With the foundation in place, examine how Lesson Title: Lesson 2: Internet
+
+Protocol Suite Overview operates in a concrete sequence.
+
+NARRATOR: Internet hosts implement layered link, internet, transport, and application
+
+functions.
+
+NARRATOR: Consider this worked case: The link layer moves frames across a directly connected
+
+network, while IP provides best-effort datagram delivery across interconnected
+
+networks.
+
+NARRATOR: On screen, draw a four-layer stack diagram with labels for link, internet,
+
+transport, and application layers, pointing to each layer's function.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in Lesson Title: Lesson 3: IP Addressing and
+
+Routing and make the decision criteria explicit.
+
+NARRATOR: Routing selects a next hop toward a destination.
+
+NARRATOR: Consider this worked case: When a packet is sent, the router examines the IP
+
+address to determine the optimal path to the destination interface.
+
+NARRATOR: On screen, illustrate a network diagram with two routers, highlighting the IP
+
+address on an interface and an arrow showing the next hop selection process.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Apply Lesson Title: Lesson 4: Transport Protocol Functions to a worked
+
+situation instead of treating it as an isolated definition.
+
+NARRATOR: Transport protocols add endpoint communication functions above IP.
+
+NARRATOR: Consider this worked case: Application protocols define the meaning of
+
+exchanged data, while transport protocols handle the reliable delivery mechanism.
+
+NARRATOR: On screen, show a simplified TCP/IP model with the transport layer positioned
+
+above IP, labeled with 'endpoint communication functions' and 'application protocols' above
+
+it.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in Lesson Title: Lesson 5: TCP Reliability and Byte
+
+Streams, including what improves and what becomes more difficult.
+
+NARRATOR: TCP provides a reliable, ordered byte stream between endpoints.
+
+NARRATOR: Consider this worked case: Sequence numbers identify positions in that byte
+
+stream, allowing the receiver to reconstruct the original data order.
+
+NARRATOR: On screen, display a sequence of numbered packets (1, 2, 3) arriving at a
+
+receiver, with a visual indicator showing how sequence numbers restore order.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around Lesson Title: Lesson 6: TCP Acknowledgments
+
+and Retransmission with an edge case and identify which assumption controls the
+
+outcome.
+
+NARRATOR: Acknowledgments report which data has been received.
+
+NARRATOR: Consider this worked case: If a packet is lost, the receiver sends an
+
+acknowledgment indicating the gap, prompting the sender to retransmit the missing data.
+
+NARRATOR: On screen, create a timeline graphic showing packet transmission, a missing packet,
+
+an acknowledgment signal, and a retransmission arrow.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Lesson Title: Lesson 7: TCP Flow Control and State Management to diagnose a
+
+failure by separating symptoms, causes, and corrective action.
+
+NARRATOR: Flow control prevents a sender from exceeding the receiver's advertised capacity.
+
+NARRATOR: Consider this worked case: Before application data transfer, connection
+
+establishment synchronizes endpoint state to ensure both sides are ready.
+
+NARRATOR: On screen, show a state machine diagram with states like 'Establishment',
+
+'Data Transfer', and 'Termination', with arrows indicating transitions.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Lesson Title: Lesson 8: Data Preparation and Visualization to the earlier
+
+ideas and explain how the pieces work as one system.
+
+NARRATOR: First, practical techniques used in exploratory data analysis and mining are
+
+introduced; topics include data preparation, visualization, statistics for understanding
+
+data, and grouping and prediction techniques.
+
+NARRATOR: Consider this worked case: Cleaning and organizing raw datasets allows analysts to
+
+identify patterns and trends through visual representations.
+
+NARRATOR: On screen, present a before-and-after comparison of a messy dataset
+
+and a cleaned, visualized chart (e.g., bar graph or scatter plot).
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with Lesson Title: Lesson 9: Statistics and Grouping/Prediction Techniques
+
+as a practical checklist that can guide a new analysis.
+
+NARRATOR: Retransmission recovers data that is presumed lost.
+
+NARRATOR: Consider this worked case: Statistical methods help quantify uncertainty,
+
+while grouping and prediction techniques identify clusters and forecast future values.
+
+NARRATOR: On screen, display a split screen showing a statistical summary table on the
+
+left and a clustering/prediction model output on the right.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.

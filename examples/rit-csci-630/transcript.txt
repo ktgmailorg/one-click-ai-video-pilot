@@ -1,0 +1,237 @@
+NARRATOR: Begin by framing Pipeline Foundations as a question about inputs,
+
+decisions, and observable results.
+
+NARRATOR: A rigorous pipeline states the task, representation, assumptions, supervision, and
+
+decision rule.
+
+NARRATOR: Consider this worked case: A learner maps the inputs, constraints, and observable
+
+result for Pipeline Foundations, then checks each step against the stated claim.
+
+NARRATOR: On screen, show a flowchart with five labeled boxes: Task, Representation,
+
+Assumptions, Supervision, Decision Rule.
+
+NARRATOR: Arrow connects each box sequentially.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Image Representation precisely enough that another learner could
+
+test the definition.
+
+NARRATOR: Computer vision pipelines represent images as numeric arrays.
+
+NARRATOR: Consider this worked case: A 100x100 pixel grayscale image becomes a 10000-element
+
+array where each value ranges from 0 to 255.
+
+NARRATOR: On screen, display a small grid of pixel values next to a corresponding numeric
+
+array representation.
+
+NARRATOR: Highlight the mapping between spatial coordinates and array indices.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: With the foundation in place, examine how Color Conversion operates in a
+
+concrete sequence.
+
+NARRATOR: Color conversion changes the coordinate representation of pixel values.
+
+NARRATOR: Consider this worked case: Converting an RGB image to HSV separates color
+
+information from brightness, allowing algorithms to isolate specific hues regardless
+
+of lighting intensity.
+
+NARRATOR: On screen, show a side-by-side comparison of an RGB image and its HSV
+
+equivalent, with a legend explaining how hue channels isolate color data.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in Filtering and make the decision criteria
+
+explicit.
+
+NARRATOR: Filtering combines neighboring samples to smooth, sharpen, or detect
+
+structure.
+
+NARRATOR: Consider this worked case: A Gaussian blur filter averages adjacent pixel
+
+values to reduce sensor noise and highlight large-scale object boundaries.
+
+NARRATOR: On screen, display a noisy image, a filtered image, and a sliding window overlay
+
+showing how neighboring pixels are averaged.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Apply Feature Methods to a worked situation instead of treating it as an
+
+isolated definition.
+
+NARRATOR: Feature methods locate and describe repeatable image patterns.
+
+NARRATOR: Consider this worked case: SIFT (Scale-Invariant Feature Transform) identifies
+
+keypoints and generates descriptors that remain consistent across scale and rotation
+
+changes.
+
+NARRATOR: On screen, show an image with detected keypoints marked as circles,
+
+connected by lines to corresponding keypoints in a transformed image.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in Calibration, including what improves and what
+
+becomes more difficult.
+
+NARRATOR: Calibration estimates camera parameters needed for geometric measurement.
+
+NARRATOR: Consider this worked case: Using a chessboard pattern, the system calculates
+
+focal length and principal point to map 2D image coordinates to 3D space accurately.
+
+NARRATOR: On screen, display a chessboard grid overlaid on a real-world scene, with a diagram
+
+showing the projection matrix transforming 2D to 3D coordinates.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around Geometric Transforms with an edge case and
+
+identify which assumption controls the outcome.
+
+NARRATOR: Geometric transforms map coordinates between image representations.
+
+NARRATOR: Consider this worked case: Affine transformation adjusts image coordinates to
+
+correct perspective distortion in a tilted photograph.
+
+NARRATOR: On screen, show a distorted image and a corrected image, with a transformation
+
+matrix displayed alongside the coordinate mapping lines.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Use Segmentation to diagnose a failure by separating symptoms, causes, and
+
+corrective action.
+
+NARRATOR: Segmentation assigns pixels or regions to selected categories.
+
+NARRATOR: Consider this worked case: Thresholding separates foreground objects from
+
+the background by classifying pixels based on intensity values above or below a set level.
+
+NARRATOR: On screen, display a binary mask where foreground objects are white and
+
+background is black, overlaid on the original image.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Motion Methods to the earlier ideas and explain how the pieces work
+
+as one system.
+
+NARRATOR: Motion methods compare observations across time.
+
+NARRATOR: Consider this worked case: Optical flow calculates pixel displacement between
+
+consecutive frames to track object movement and estimate velocity.
+
+NARRATOR: On screen, show a sequence of three frames with vector arrows indicating pixel
+
+movement from frame to frame.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Finish with Evaluation & Robustness as a practical checklist that can guide a new
+
+analysis.
+
+NARRATOR: Results depend on sampling, illumination, noise, training data,
+
+thresholds, and evaluation metrics.
+
+NARRATOR: Consider this worked case: Varying the threshold value changes the number of
+
+detected edges, demonstrating how sensitivity to illumination and noise affects detection
+
+accuracy.
+
+NARRATOR: On screen, display a slider adjusting a threshold value, with
+
+corresponding binary masks showing how edge detection changes as the threshold shifts.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.

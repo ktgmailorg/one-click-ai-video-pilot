@@ -1,0 +1,229 @@
+NARRATOR: Begin by framing Lesson Introduction and Course Scope as a question about inputs,
+
+decisions, and observable results.
+
+NARRATOR: This course covers standard and novel techniques for mobile robot programming,
+
+including software architectures, reactive motion control, map building, localization and
+
+path planning.
+
+NARRATOR: Consider this worked case: Students will implement various algorithms in
+
+simulation as well as on a real robot, and investigate and report on current research in
+
+the area.
+
+NARRATOR: On screen, display a slide with the course title, duration (8-12 minutes), and a
+
+simple diagram showing the four main modules: Software Architecture, Reactive Motion
+
+Control, Map Building/Localization, and Path Planning.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Software Architecture Fundamentals precisely enough that another
+
+learner could test the definition.
+
+NARRATOR: Other topics may include multiple robot systems, robot vision and
+
+non-traditional and dynamic robots.
+
+NARRATOR: Consider this worked case: A typical architecture uses a central controller that
+
+routes data between independent modules, allowing each component to be updated without
+
+disrupting the entire system.
+
+NARRATOR: On screen, show a block diagram with four labeled blocks: Sensor Input, Perception,
+
+Planning, and Actuation, connected by data flow arrows.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: With the foundation in place, examine how Reactive Motion Control Basics
+
+operates in a concrete sequence.
+
+NARRATOR: Motion methods compare observations across time.
+
+NARRATOR: Consider this worked case: When an obstacle is detected, the robot adjusts its
+
+heading and speed instantly using a rule-based response function rather than recalculating a
+
+full path.
+
+NARRATOR: On screen, illustrate a simple feedback loop showing sensor input -> decision
+
+logic -> motor command, with a note highlighting 'reactive' vs 'planning' control.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in Map Building Techniques and make the
+
+decision criteria explicit.
+
+NARRATOR: Motion estimation compares observations across frames.
+
+NARRATOR: Consider this worked case: Laser scanners record distance measurements that are
+
+triangulated to populate a grid-based map, which is then updated as the robot moves.
+
+NARRATOR: On screen, display a side-by-side comparison of a blank grid and a populated
+
+grid with distance markers, showing how sensor data fills in spatial information.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Apply Localization Methods to a worked situation instead of treating it as an
+
+isolated definition.
+
+NARRATOR: Students will implement various algorithms in simulation as well as on a real
+
+robot, and investigate and report on current research in the area.
+
+NARRATOR: Consider this worked case: The robot compares its camera feed to a pre-mapped image
+
+bank and calculates the best match to pinpoint its coordinates.
+
+NARRATOR: On screen, show a small inset of a map with a moving robot icon, highlighting the
+
+'current position' and 'matched features' with connecting lines.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in Path Planning Algorithms, including what improves
+
+and what becomes more difficult.
+
+NARRATOR: Projective geometry relates three-dimensional points to image coordinates.
+
+NARRATOR: Consider this worked case: A search algorithm explores possible routes, pruning
+
+dead ends and selecting the shortest path based on distance and energy constraints.
+
+NARRATOR: On screen, render a top-down map with a start point, goal, and multiple route
+
+options, highlighting the selected path in a distinct color.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around Simulation vs. Real Robot Testing with an edge
+
+case and identify which assumption controls the outcome.
+
+NARRATOR: Course offered every other year.
+
+NARRATOR: Consider this worked case: A navigation routine is first tested in a
+
+virtual environment to debug code, then deployed on a wheeled robot to measure
+
+real-time response times.
+
+NARRATOR: On screen, split screen showing a simulation interface on the left and a photo
+
+of a real robot on the right, with a checkmark indicating successful deployment.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Research Investigation and Reporting to diagnose a failure by separating
+
+symptoms, causes, and corrective action.
+
+NARRATOR: Computer vision pipelines represent images as numeric arrays.
+
+NARRATOR: Consider this worked case: A student analyzes a recent paper on dynamic path
+
+planning, summarizes key findings, and proposes a modification for classroom
+
+implementation.
+
+NARRATOR: On screen, display a template for a research report with sections for 'Summary',
+
+'Key Findings', and 'Proposed Modifications', using placeholder text.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Prerequisites and Course Logistics to the earlier ideas and explain how
+
+the pieces work as one system.
+
+NARRATOR: Object recognition maps visual evidence to object hypotheses.
+
+NARRATOR: Consider this worked case: Students must have completed foundational programming
+
+courses before enrolling, ensuring they possess the necessary technical background.
+
+NARRATOR: On screen, list the prerequisites and schedule details in a clean, bulleted
+
+format on a slide, with icons for a book and a calendar.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+
+guide a new analysis.
+
+NARRATOR: Computer vision connects image evidence to models of geometry, appearance,
+
+motion, objects, and scenes.
+
+NARRATOR: Consider this worked case: The checklist includes items like 'Modular code
+
+structure verified', 'Reactive response time < 100ms', 'Map update frequency consistent', and
+
+'Path deviation within tolerance'.
+
+NARRATOR: On screen, show a simple checklist graphic with four boxes, each containing a key
+
+metric and a pass/fail indicator, ready for student annotation.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.

@@ -1,0 +1,545 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:07.606
+NARRATOR: Begin by framing Lesson Introduction
+and Course Scope as a question about inputs,
+
+2
+00:00:07.606 --> 00:00:09.765
+decisions, and observable results.
+
+3
+00:00:09.765 --> 00:00:16.992
+NARRATOR: This course covers standard and
+novel techniques for mobile robot programming,
+
+4
+00:00:16.992 --> 00:00:23.014
+including software architectures, reactive
+motion control, map building, localization and
+
+5
+00:00:23.014 --> 00:00:24.218
+path planning.
+
+6
+00:00:24.218 --> 00:00:29.090
+NARRATOR: Consider this worked case: Students
+will implement various algorithms in
+
+7
+00:00:29.090 --> 00:00:36.176
+simulation as well as on a real robot, and
+investigate and report on current research in
+
+8
+00:00:36.176 --> 00:00:37.062
+the area.
+
+9
+00:00:37.062 --> 00:00:46.012
+NARRATOR: On screen, display a slide with the
+course title, duration (8-12 minutes), and a
+
+10
+00:00:46.012 --> 00:00:52.576
+simple diagram showing the four main modules:
+Software Architecture, Reactive Motion
+
+11
+00:00:52.576 --> 00:00:56.156
+Control, Map Building/Localization, and Path
+Planning.
+
+12
+00:00:56.156 --> 00:01:02.212
+NARRATOR: List the givens before choosing a
+method, because an unstated assumption can
+
+13
+00:01:02.212 --> 00:01:03.609
+change the conclusion.
+
+14
+00:01:03.609 --> 00:01:09.265
+NARRATOR: This establishes the vocabulary and
+scope needed for the remaining sections.
+
+15
+00:01:09.386 --> 00:01:15.436
+NARRATOR: Now define Software Architecture
+Fundamentals precisely enough that another
+
+16
+00:01:15.436 --> 00:01:18.461
+learner could test the definition.
+
+17
+00:01:18.461 --> 00:01:25.164
+NARRATOR: Other topics may include multiple
+robot systems, robot vision and
+
+18
+00:01:25.164 --> 00:01:27.601
+non-traditional and dynamic robots.
+
+19
+00:01:27.601 --> 00:01:34.010
+NARRATOR: Consider this worked case: A typical
+architecture uses a central controller that
+
+20
+00:01:34.010 --> 00:01:39.926
+routes data between independent modules,
+allowing each component to be updated without
+
+21
+00:01:39.926 --> 00:01:41.898
+disrupting the entire system.
+
+22
+00:01:41.898 --> 00:01:50.012
+NARRATOR: On screen, show a block diagram with
+four labeled blocks: Sensor Input, Perception,
+
+23
+00:01:50.012 --> 00:01:54.648
+Planning, and Actuation, connected by data
+flow arrows.
+
+24
+00:01:54.648 --> 00:02:01.082
+NARRATOR: Separate the formal definition from
+an implementation detail, then identify what
+
+25
+00:02:01.082 --> 00:02:03.226
+evidence would distinguish them.
+
+26
+00:02:03.226 --> 00:02:09.742
+NARRATOR: A precise definition makes later
+examples easier to evaluate and revise.
+
+27
+00:02:09.866 --> 00:02:16.062
+NARRATOR: With the foundation in place,
+examine how Reactive Motion Control Basics
+
+28
+00:02:16.062 --> 00:02:18.644
+operates in a concrete sequence.
+
+29
+00:02:18.644 --> 00:02:22.362
+NARRATOR: Motion methods compare observations
+across time.
+
+30
+00:02:22.362 --> 00:02:29.264
+NARRATOR: Consider this worked case: When an
+obstacle is detected, the robot adjusts its
+
+31
+00:02:29.264 --> 00:02:35.673
+heading and speed instantly using a rule-based
+response function rather than recalculating a
+
+32
+00:02:35.673 --> 00:02:36.659
+full path.
+
+33
+00:02:36.659 --> 00:02:44.402
+NARRATOR: On screen, illustrate a simple
+feedback loop showing sensor input -> decision
+
+34
+00:02:44.402 --> 00:02:51.550
+logic -> motor command, with a note
+highlighting 'reactive' vs 'planning' control.
+
+35
+00:02:51.550 --> 00:02:58.987
+NARRATOR: Follow every arrow in order and name
+the state before and after each transition.
+
+36
+00:02:58.987 --> 00:03:04.722
+NARRATOR: The trace converts an abstract
+statement into an inspectable sequence.
+
+37
+00:03:04.826 --> 00:03:10.752
+NARRATOR: Next, compare the choices involved
+in Map Building Techniques and make the
+
+38
+00:03:10.752 --> 00:03:12.119
+decision criteria explicit.
+
+39
+00:03:12.119 --> 00:03:17.416
+NARRATOR: Motion estimation compares
+observations across frames.
+
+40
+00:03:17.416 --> 00:03:23.690
+NARRATOR: Consider this worked case: Laser
+scanners record distance measurements that are
+
+41
+00:03:23.690 --> 00:03:31.010
+triangulated to populate a grid-based map,
+which is then updated as the robot moves.
+
+42
+00:03:31.010 --> 00:03:37.841
+NARRATOR: On screen, display a side-by-side
+comparison of a blank grid and a populated
+
+43
+00:03:37.841 --> 00:03:43.697
+grid with distance markers, showing how sensor
+data fills in spatial information.
+
+44
+00:03:43.697 --> 00:03:50.497
+NARRATOR: Compare alternatives against the
+same constraints so the evaluation does not
+
+45
+00:03:50.497 --> 00:03:52.197
+move the goalposts.
+
+46
+00:03:52.197 --> 00:03:58.775
+NARRATOR: Using shared criteria turns a
+preference into a defensible technical choice.
+
+47
+00:03:58.898 --> 00:04:05.977
+NARRATOR: Apply Localization Methods to a
+worked situation instead of treating it as an
+
+48
+00:04:05.977 --> 00:04:06.988
+isolated definition.
+
+49
+00:04:06.988 --> 00:04:13.350
+NARRATOR: Students will implement various
+algorithms in simulation as well as on a real
+
+50
+00:04:13.350 --> 00:04:18.348
+robot, and investigate and report on current
+research in the area.
+
+51
+00:04:18.348 --> 00:04:25.388
+NARRATOR: Consider this worked case: The robot
+compares its camera feed to a pre-mapped image
+
+52
+00:04:25.388 --> 00:04:30.082
+bank and calculates the best match to pinpoint
+its coordinates.
+
+53
+00:04:30.082 --> 00:04:37.647
+NARRATOR: On screen, show a small inset of a
+map with a moving robot icon, highlighting the
+
+54
+00:04:37.647 --> 00:04:41.207
+'current position' and 'matched features' with
+connecting lines.
+
+55
+00:04:41.207 --> 00:04:47.692
+NARRATOR: Work from the concrete inputs to the
+result, checking units, types, or invariants
+
+56
+00:04:47.692 --> 00:04:49.082
+at each step.
+
+57
+00:04:49.082 --> 00:04:54.222
+NARRATOR: The worked case shows both how to
+apply the method and how to check it.
+
+58
+00:04:54.338 --> 00:05:00.115
+NARRATOR: Examine the tradeoffs in Path
+Planning Algorithms, including what improves
+
+59
+00:05:00.115 --> 00:05:02.741
+and what becomes more difficult.
+
+60
+00:05:02.741 --> 00:05:08.991
+NARRATOR: Projective geometry relates
+three-dimensional points to image coordinates.
+
+61
+00:05:08.991 --> 00:05:15.298
+NARRATOR: Consider this worked case: A search
+algorithm explores possible routes, pruning
+
+62
+00:05:15.298 --> 00:05:22.131
+dead ends and selecting the shortest path
+based on distance and energy constraints.
+
+63
+00:05:22.131 --> 00:05:29.075
+NARRATOR: On screen, render a top-down map
+with a start point, goal, and multiple route
+
+64
+00:05:29.075 --> 00:05:33.241
+options, highlighting the selected path in a
+distinct color.
+
+65
+00:05:33.241 --> 00:05:39.438
+NARRATOR: State the benefit, the cost, and the
+condition under which the tradeoff is
+
+66
+00:05:39.438 --> 00:05:39.881
+acceptable.
+
+67
+00:05:39.881 --> 00:05:46.741
+NARRATOR: Making the tradeoff visible prevents
+a local improvement from hiding a larger cost.
+
+68
+00:05:46.850 --> 00:05:53.976
+NARRATOR: Stress-test the reasoning around
+Simulation vs. Real Robot Testing with an edge
+
+69
+00:05:53.976 --> 00:05:58.362
+case and identify which assumption controls
+the outcome.
+
+70
+00:05:58.362 --> 00:06:01.018
+NARRATOR: Course offered every other year.
+
+71
+00:06:01.018 --> 00:06:07.413
+NARRATOR: Consider this worked case: A
+navigation routine is first tested in a
+
+72
+00:06:07.413 --> 00:06:13.808
+virtual environment to debug code, then
+deployed on a wheeled robot to measure
+
+73
+00:06:13.808 --> 00:06:15.284
+real-time response times.
+
+74
+00:06:15.284 --> 00:06:22.073
+NARRATOR: On screen, split screen showing a
+simulation interface on the left and a photo
+
+75
+00:06:22.073 --> 00:06:27.956
+of a real robot on the right, with a checkmark
+indicating successful deployment.
+
+76
+00:06:27.956 --> 00:06:34.029
+NARRATOR: Change one assumption at a time and
+observe which part of the reasoning no longer
+
+77
+00:06:34.029 --> 00:06:34.409
+holds.
+
+78
+00:06:34.409 --> 00:06:40.875
+NARRATOR: The edge case reveals the boundary
+of the claim without discarding the useful
+
+79
+00:06:40.875 --> 00:06:41.799
+core idea.
+
+80
+00:06:41.906 --> 00:06:48.654
+NARRATOR: Use Research Investigation and
+Reporting to diagnose a failure by separating
+
+81
+00:06:48.654 --> 00:06:51.465
+symptoms, causes, and corrective action.
+
+82
+00:06:51.465 --> 00:06:57.090
+NARRATOR: Computer vision pipelines represent
+images as numeric arrays.
+
+83
+00:06:57.090 --> 00:07:04.615
+NARRATOR: Consider this worked case: A student
+analyzes a recent paper on dynamic path
+
+84
+00:07:04.615 --> 00:07:09.990
+planning, summarizes key findings, and
+proposes a modification for classroom
+
+85
+00:07:09.990 --> 00:07:10.527
+implementation.
+
+86
+00:07:10.527 --> 00:07:18.741
+NARRATOR: On screen, display a template for a
+research report with sections for 'Summary',
+
+87
+00:07:18.741 --> 00:07:23.434
+'Key Findings', and 'Proposed Modifications',
+using placeholder text.
+
+88
+00:07:23.434 --> 00:07:29.039
+NARRATOR: Locate the first point where
+observed behavior diverges from expected
+
+89
+00:07:29.039 --> 00:07:32.605
+behavior, then test the smallest plausible
+cause.
+
+90
+00:07:32.605 --> 00:07:38.505
+NARRATOR: The diagnosis is strongest when
+another person can reproduce the observation
+
+91
+00:07:38.505 --> 00:07:39.980
+and the test.
+
+92
+00:07:40.082 --> 00:07:46.216
+NARRATOR: Connect Prerequisites and Course
+Logistics to the earlier ideas and explain how
+
+93
+00:07:46.216 --> 00:07:49.047
+the pieces work as one system.
+
+94
+00:07:49.047 --> 00:07:55.485
+NARRATOR: Object recognition maps visual
+evidence to object hypotheses.
+
+95
+00:07:55.485 --> 00:08:01.631
+NARRATOR: Consider this worked case: Students
+must have completed foundational programming
+
+96
+00:08:01.631 --> 00:08:07.219
+courses before enrolling, ensuring they
+possess the necessary technical background.
+
+97
+00:08:07.219 --> 00:08:13.248
+NARRATOR: On screen, list the prerequisites
+and schedule details in a clean, bulleted
+
+98
+00:08:13.248 --> 00:08:18.813
+format on a slide, with icons for a book and a
+calendar.
+
+99
+00:08:18.813 --> 00:08:27.751
+NARRATOR: Explain each connection explicitly
+and verify that information retains the same
+
+100
+00:08:27.751 --> 00:08:29.985
+meaning across representations.
+
+101
+00:08:29.985 --> 00:08:36.644
+NARRATOR: The synthesis matters only if every
+connection remains supported by the original
+
+102
+00:08:36.644 --> 00:08:37.156
+evidence.
+
+103
+00:08:37.274 --> 00:08:42.838
+NARRATOR: Finish with Practical Analysis
+Checklist as a practical checklist that can
+
+104
+00:08:42.838 --> 00:08:44.692
+guide a new analysis.
+
+105
+00:08:44.692 --> 00:08:52.255
+NARRATOR: Computer vision connects image
+evidence to models of geometry, appearance,
+
+106
+00:08:52.255 --> 00:08:55.005
+motion, objects, and scenes.
+
+107
+00:08:55.005 --> 00:09:03.000
+NARRATOR: Consider this worked case: The
+checklist includes items like 'Modular code
+
+108
+00:09:03.000 --> 00:09:10.996
+structure verified', 'Reactive response time <
+100ms', 'Map update frequency consistent', and
+
+109
+00:09:10.996 --> 00:09:13.661
+'Path deviation within tolerance'.
+
+110
+00:09:13.661 --> 00:09:21.366
+NARRATOR: On screen, show a simple checklist
+graphic with four boxes, each containing a key
+
+111
+00:09:21.366 --> 00:09:25.989
+metric and a pass/fail indicator, ready for
+student annotation.
+
+112
+00:09:25.989 --> 00:09:33.568
+NARRATOR: For each checklist item, record the
+evidence, the remaining uncertainty, and the
+
+113
+00:09:33.568 --> 00:09:35.317
+next verification step.
+
+114
+00:09:35.317 --> 00:09:41.259
+NARRATOR: The result is a repeatable
+procedure, not a conclusion that depends on
+
+115
+00:09:41.259 --> 00:09:42.630
+memory or intuition.

@@ -1,0 +1,247 @@
+NARRATOR: Begin by framing Course Scope and Prerequisites as a question about inputs,
+
+decisions, and observable results.
+
+NARRATOR: This course is restricted to students in COMPSCI-MS. Consider this worked
+
+case: A graduate student in the COMPSCI-MS program registers for the course without
+
+needing additional approval.
+
+NARRATOR: On screen, display a course eligibility matrix highlighting the COMPSCI-MS
+
+restriction and permission requirement.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Now define Advanced OOP Focus Areas precisely enough that another learner could
+
+test the definition.
+
+NARRATOR: This course focuses on identifying advanced object-oriented programming concepts
+
+and implementing them in the context of specific problems.
+
+NARRATOR: Consider this worked case: Students analyze a real-world application requiring
+
+modular design to isolate complex business logic.
+
+NARRATOR: On screen, show a flowchart mapping core topics: event-driven programming, design
+
+patterns, distributed/concurrent programming, and application implementation.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: With the foundation in place, examine how Event-Driven Programming
+
+Fundamentals operates in a concrete sequence.
+
+NARRATOR: This course covers advanced concepts such as event-driven programming, design
+
+patterns, distributed and concurrent programming, and the use, design and
+
+implementation of applications.
+
+NARRATOR: Consider this worked case: A UI component automatically updates when a network
+
+request completes without polling.
+
+NARRATOR: On screen, illustrate a publisher-subscriber diagram showing decoupled
+
+event emission and subscription.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Next, compare the choices involved in Design Patterns Overview and make the
+
+decision criteria explicit.
+
+NARRATOR: Assignments (both in class and as homework) requiring a solution to a problem
+
+and an implementation in code are an integral part of the course.
+
+NARRATOR: Consider this worked case: Implementing a singleton pattern to manage a
+
+single database connection pool across modules.
+
+NARRATOR: On screen, display a before-and-after code snippet comparing rigid
+
+inheritance to a flexible pattern implementation.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Apply Distributed and Concurrent Programming to a worked situation instead of
+
+treating it as an isolated definition.
+
+NARRATOR: Resource pooling serves multiple consumers with dynamically assigned physical
+
+and virtual resources.
+
+NARRATOR: Consider this worked case: Splitting a data processing workload across multiple CPU
+
+cores to reduce execution time.
+
+NARRATOR: On screen, render a parallel processing diagram showing thread/task
+
+distribution across cores.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Examine the tradeoffs in Cloud Computing Characteristics, including what
+
+improves and what becomes more difficult.
+
+NARRATOR: NIST defines cloud computing with five essential characteristics.
+
+NARRATOR: Consider this worked case: A startup dynamically scales compute resources during a
+
+traffic spike without manual intervention.
+
+NARRATOR: On screen, list the five NIST characteristics with brief definitions and a
+
+scaling graph overlay.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Stress-test the reasoning around Cloud Deployment Models with an edge case and
+
+identify which assumption controls the outcome.
+
+NARRATOR: NIST also identifies private, community, public, and hybrid deployment
+
+models.
+
+NARRATOR: Consider this worked case: A financial institution uses a hybrid model to
+
+keep sensitive data on-premise while using public cloud for analytics.
+
+NARRATOR: On screen, show a Venn diagram comparing private, community, public, and
+
+hybrid deployment boundaries.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Raft Consensus Leader Election to diagnose a failure by separating symptoms,
+
+causes, and corrective action.
+
+NARRATOR: Raft decomposes consensus into leader election, log replication, and safety.
+
+NARRATOR: Consider this worked case: A server becomes leader after receiving votes from a
+
+majority during an election timeout period.
+
+NARRATOR: On screen, animate state transitions (follower -> candidate -> leader) with term
+
+counters and vote requests.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Connect Raft Log Replication and Safety to the earlier ideas and explain how
+
+the pieces work as one system.
+
+NARRATOR: A leader appends client commands to its log and sends entries to followers.
+
+NARRATOR: Consider this worked case: A replicated log ensures all nodes store
+
+identical command sequences before acknowledging client requests.
+
+NARRATOR: On screen, display a log replication sequence showing entry propagation and
+
+majority acknowledgment.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+
+guide a new analysis.
+
+NARRATOR: Sound cloud analysis makes trust boundaries, tenancy, failure domains, scaling
+
+assumptions, observability, and responsibility allocation explicit.
+
+NARRATOR: Consider this worked case: A student reviews a distributed system architecture,
+
+identifies event-driven components, and implements a consensus module in code.
+
+NARRATOR: On screen, provide a checklist template covering: paradigm identification,
+
+pattern selection, concurrency/cloud alignment, and code validation.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.

@@ -1,0 +1,303 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Begin by framing 1. Course Context & Scope as a question about inputs, decisions, and observable results. Specific topics include: expression of algorithms in pseudo-code and a programming language; elementary data structures such as lists, trees and graphs; problem solving using recursion; and debugging and testing. Consider this worked case: Students in COMPSCI-MS will solve structured problems using pseudo-code and a programming language, with assignments requiring both representations. On screen, display a course roadmap graphic showing the ten teaching beats arranged linearly, with a badge indicating 'Graduate Bridge Course (COMPSCI-MS only)' and a note about permission requirements for undergraduates. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 67,
+      "title": "1. Course Context & Scope",
+      "visualDirection": "template:academic-process | Display a course roadmap graphic showing the ten teaching beats arranged linearly, with a badge indicating 'Graduate Bridge Course (COMPSCI-MS only)' and a note about permission requirements for undergraduates."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Now define 2. Disciplined Solution Framework precisely enough that another learner could test the definition. A disciplined solution states inputs and outputs, proves correctness, and then analyzes time and space. Consider this worked case: For a sorting problem, the claim specifies 'sort an array of integers', the proof verifies each element ends in non-decreasing order, and the analysis shows O(n log n) time and O(1) space. On screen, show a three-step flowchart labeled 'Inputs/Outputs', 'Correctness Proof', and 'Resource Analysis', with arrows indicating the mandatory sequence. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "plannedSeconds": 60,
+      "title": "2. Disciplined Solution Framework",
+      "visualDirection": "template:academic-process | Show a three-step flowchart labeled 'Inputs/Outputs', 'Correctness Proof', and 'Resource Analysis', with arrows indicating the mandatory sequence."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "With the foundation in place, examine how 3. Algorithm Analysis & Asymptotics operates in a concrete sequence. Algorithm analysis connects a precise problem specification to a correctness argument and resource bounds. Consider this worked case: If input size doubles, a linear scan's time doubles, while a binary search's time increases by only one additional step, illustrating asymptotic growth. On screen, render a graph comparing two curves: one linear (O(n)) and one logarithmic (O(log n)), with a legend explaining how asymptotic notation captures growth rates. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "plannedSeconds": 59,
+      "title": "3. Algorithm Analysis & Asymptotics",
+      "visualDirection": "template:academic-process | Render a graph comparing two curves: one linear (O(n)) and one logarithmic (O(log n)), with a legend explaining how asymptotic notation captures growth rates."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "Next, compare the choices involved in 4. Loop Invariants & Correctness and make the decision criteria explicit. A loop invariant supports a proof by initialization, maintenance, and termination. Consider this worked case: In a sum loop, the invariant 'sum equals the total of elements processed so far' holds before each iteration, after each update, and when the loop ends. On screen, display a loop structure with three callouts: 'Initialization (before loop)', 'Maintenance (inside loop)', and 'Termination (after loop)', each linked to the invariant statement. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "plannedSeconds": 59,
+      "title": "4. Loop Invariants & Correctness",
+      "visualDirection": "template:academic-process | Display a loop structure with three callouts: 'Initialization (before loop)', 'Maintenance (inside loop)', and 'Termination (after loop)', each linked to the invariant statement."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Apply 5. Divide-and-Conquer Strategy to a worked situation instead of treating it as an isolated definition. Divide-and-conquer algorithms split a problem, solve subproblems, and combine their results. Consider this worked case: Merging two sorted lists involves dividing the combined list into halves, recursively sorting each half, and then merging the sorted halves back together. On screen, illustrate a binary tree where the root is the full problem, children are subproblems, and leaves are base cases, with arrows showing the 'divide', 'solve', and 'combine' phases. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 62,
+      "title": "5. Divide-and-Conquer Strategy",
+      "visualDirection": "template:academic-process | Illustrate a binary tree where the root is the full problem, children are subproblems, and leaves are base cases, with arrows showing the 'divide', 'solve', and 'combine' phases."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "Examine the tradeoffs in 6. Recurrence Relations & Cost, including what improves and what becomes more difficult. Recurrences describe the cost of recursive algorithms. Consider this worked case: The recurrence T(n) = 2T(n/2) + O(n) describes merge sort, where the cost is twice the cost of sorting half the input plus linear time to merge. On screen, show a recursive call tree with labeled nodes, each node's cost calculated using the recurrence formula, and a summary box showing the total cost formula. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "plannedSeconds": 59,
+      "title": "6. Recurrence Relations & Cost",
+      "visualDirection": "template:academic-process | Show a recursive call tree with labeled nodes, each node's cost calculated using the recurrence formula, and a summary box showing the total cost formula."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "Stress-test the reasoning around 7. Elementary Data Structures: Lists & Stacks with an edge case and identify which assumption controls the outcome. Lists represent ordered sequences with position-based operations. Consider this worked case: A stack of function calls pushes new tasks onto the top and pops the most recently added task first, ensuring LIFO behavior during recursion. On screen, draw two side-by-side diagrams: a horizontal list with index pointers and a vertical stack with a 'top' marker and push/pop arrows. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 60,
+      "title": "7. Elementary Data Structures: Lists & Stacks",
+      "visualDirection": "template:academic-process | Draw two side-by-side diagrams: a horizontal list with index pointers and a vertical stack with a 'top' marker and push/pop arrows."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "Use 8. Elementary Data Structures: Queues, Trees, & Hash Tables to diagnose a failure by separating symptoms, causes, and corrective action. Hash tables map keys to locations and require a collision strategy. Consider this worked case: A queue processes tasks in arrival order, a binary tree organizes data hierarchically with parent-child links, and a hash table stores key-value pairs with a fallback strategy for duplicate keys. On screen, create a composite graphic showing a queue with 'front' and 'rear' markers, a tree with root/branch/leaf labels, and a hash table with key buckets and collision chains. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 67,
+      "title": "8. Elementary Data Structures: Queues, Trees, & Hash Tables",
+      "visualDirection": "template:academic-process | Create a composite graphic showing a queue with 'front' and 'rear' markers, a tree with root/branch/leaf labels, and a hash table with key buckets and collision chains."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Connect 9. Graphs & Reachability to the earlier ideas and explain how the pieces work as one system. Graphs can be represented with adjacency structures for traversal and path algorithms. Consider this worked case: An adjacency list for a city map stores each intersection as a vertex and roads as edges, allowing algorithms to find the shortest route between two locations. On screen, render a network graph with labeled vertices and directed edges, highlighting a path from start to end node, and annotate the adjacency list representation below. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 62,
+      "title": "9. Graphs & Reachability",
+      "visualDirection": "template:academic-process | Render a network graph with labeled vertices and directed edges, highlighting a path from start to end node, and annotate the adjacency list representation below."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "Finish with 10. Practical Analysis Checklist as a practical checklist that can guide a new analysis. Asymptotic notation describes how resource use grows with input size. Consider this worked case: Before running code, verify the input matches the specification, check that the output matches expected results, confirm loop invariants hold, and use test cases to catch edge cases. On screen, display a checklist graphic with four boxes: 'Verify Inputs', 'Validate Outputs', 'Check Invariants', 'Debug & Test', each with a checkbox and a brief action prompt. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 62,
+      "title": "10. Practical Analysis Checklist",
+      "visualDirection": "template:academic-process | Display a checklist graphic with four boxes: 'Verify Inputs', 'Validate Outputs', 'Check Invariants', 'Debug & Test', each with a checkbox and a brief action prompt."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "rit-csci-603"
+      ],
+      "text": "Specific topics include: expression of algorithms in pseudo-code and a programming language; elementary data structures such as lists, trees and graphs; problem solving using recursion; and debugging and testing.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "A disciplined solution states inputs and outputs, proves correctness, and then analyzes time and space.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "Algorithm analysis connects a precise problem specification to a correctness argument and resource bounds.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "A loop invariant supports a proof by initialization, maintenance, and termination.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "Divide-and-conquer algorithms split a problem, solve subproblems, and combine their results.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "Recurrences describe the cost of recursive algorithms.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "opendsa"
+      ],
+      "text": "Lists represent ordered sequences with position-based operations.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "opendsa"
+      ],
+      "text": "Hash tables map keys to locations and require a collision strategy.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "opendsa"
+      ],
+      "text": "Graphs can be represented with adjacency structures for traversal and path algorithms.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "Asymptotic notation describes how resource use grows with input size.",
+      "verified": true
+    }
+  ],
+  "id": "csci-603-computational-problem-solving-foundations-lesson-bluepr",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "Rochester Institute of Technology",
+      "excerpt": "This course focuses on the application of computational thinking using a problem-centered approach. Specific topics include: expression of algorithms in pseudo-code and a programming language; elementary data structures such as lists, trees and graphs; problem solving using recursion; and debugging and testing. Assignments (both in class and homework) requiring a pseudo-code solution and implementation in a programming language are an integral part of the course. Note: This course serves as a bridge course for graduate students and cannot be taken by undergraduate students without permission from the CS Undergraduate Program Coordinator. This course is restricted to students in COMPSCI-MS. Contact Hours: Lecture 3 Typically Offered: Fall, Spring",
+      "id": "rit-csci-603",
+      "sha256": "0d1305ebfdec192fb36390ee0a3fd874e41fc1b5e32ad852fdf590c8e00666d3",
+      "title": "RIT CSCI-603 Computational Problem Solving catalog description",
+      "type": "note",
+      "uri": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Graduate_Catalog.pdf?2026-02-02=",
+      "verified": true
+    },
+    {
+      "author": "MIT OpenCourseWare",
+      "excerpt": "Algorithm analysis connects a precise problem specification to a correctness argument and resource bounds. Asymptotic notation describes how resource use grows with input size. A loop invariant supports a proof by initialization, maintenance, and termination. Divide-and-conquer algorithms split a problem, solve subproblems, and combine their results. Recurrences describe the cost of recursive algorithms. Graph algorithms operate on vertices and edges to answer reachability, ordering, connectivity, and path questions. Dynamic programming records solutions to overlapping subproblems. Core methods include sorting, hashing, trees, graphs, shortest paths, and dynamic programming. A disciplined solution states inputs and outputs, proves correctness, and then analyzes time and space.",
+      "id": "mit-algorithms",
+      "sha256": "e6fdf3e727a4c6044da012714bd877c5bbed1a105b98d51a12449f81cc563b5d",
+      "title": "MIT OpenCourseWare Introduction to Algorithms",
+      "type": "note",
+      "uri": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/",
+      "verified": true
+    },
+    {
+      "author": "OpenDSA Project",
+      "excerpt": "OpenDSA presents data structures and algorithms through executable visualizations and exercises. Lists represent ordered sequences with position-based operations. Stacks use last-in, first-out access, while queues use first-in, first-out access. Trees represent hierarchical relationships and support recursive traversals. Hash tables map keys to locations and require a collision strategy. Graphs can be represented with adjacency structures for traversal and path algorithms. Automata and formal languages describe machines, accepted strings, and computational limits. Representation choices and invariants determine which operations are efficient and which errors are possible.",
+      "id": "opendsa",
+      "sha256": "633e1e27d522c368b0a975e12dbed181afef7f16e4e80dc67f8a0d633e7fc6cc",
+      "title": "OpenDSA",
+      "type": "note",
+      "uri": "https://opendsa-server.cs.vt.edu/",
+      "verified": true
+    }
+  ],
+  "title": "CSCI-603: Computational Problem Solving - Foundations Lesson Blueprint"
+}

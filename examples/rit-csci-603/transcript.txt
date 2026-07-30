@@ -1,0 +1,267 @@
+NARRATOR: Begin by framing 1.
+
+NARRATOR: Course Context & Scope as a question about inputs, decisions, and observable
+
+results.
+
+NARRATOR: Specific topics include: expression of algorithms in pseudo-code and a programming
+
+language; elementary data structures such as lists, trees and graphs; problem solving using
+
+recursion; and debugging and testing.
+
+NARRATOR: Consider this worked case: Students in COMPSCI-MS will solve structured problems
+
+using pseudo-code and a programming language, with assignments requiring both
+
+representations.
+
+NARRATOR: On screen, display a course roadmap graphic showing the ten teaching beats
+
+arranged linearly, with a badge indicating 'Graduate Bridge Course (COMPSCI-MS only)' and
+
+a note about permission requirements for undergraduates.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define 2.
+
+NARRATOR: Disciplined Solution Framework precisely enough that another learner could
+
+test the definition.
+
+NARRATOR: A disciplined solution states inputs and outputs, proves correctness, and then
+
+analyzes time and space.
+
+NARRATOR: Consider this worked case: For a sorting problem, the claim specifies 'sort an
+
+array of integers', the proof verifies each element ends in non-decreasing order, and the
+
+analysis shows O(n log n) time and O(1) space.
+
+NARRATOR: On screen, show a three-step flowchart labeled 'Inputs/Outputs',
+
+'Correctness Proof', and 'Resource Analysis', with arrows indicating the mandatory sequence.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: With the foundation in place, examine how 3.
+
+NARRATOR: Algorithm Analysis & Asymptotics operates in a concrete sequence.
+
+NARRATOR: Algorithm analysis connects a precise problem specification to a correctness
+
+argument and resource bounds.
+
+NARRATOR: Consider this worked case: If input size doubles, a linear scan's time doubles,
+
+while a binary search's time increases by only one additional step, illustrating asymptotic
+
+growth.
+
+NARRATOR: On screen, render a graph comparing two curves: one linear (O(n)) and one
+
+logarithmic (O(log n)), with a legend explaining how asymptotic notation captures
+
+growth rates.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in 4.
+
+NARRATOR: Loop Invariants & Correctness and make the decision criteria explicit.
+
+NARRATOR: A loop invariant supports a proof by initialization, maintenance, and termination.
+
+NARRATOR: Consider this worked case: In a sum loop, the invariant 'sum equals the total of
+
+elements processed so far' holds before each iteration, after each update, and when the
+
+loop ends.
+
+NARRATOR: On screen, display a loop structure with three callouts: 'Initialization (before
+
+loop)', 'Maintenance (inside loop)', and 'Termination (after loop)', each linked to the
+
+invariant statement.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Apply 5.
+
+NARRATOR: Divide-and-Conquer Strategy to a worked situation instead of treating it as an
+
+isolated definition.
+
+NARRATOR: Divide-and-conquer algorithms split a problem, solve subproblems, and combine
+
+their results.
+
+NARRATOR: Consider this worked case: Merging two sorted lists involves dividing the
+
+combined list into halves, recursively sorting each half, and then merging the sorted halves
+
+back together.
+
+NARRATOR: On screen, illustrate a binary tree where the root is the full problem, children
+
+are subproblems, and leaves are base cases, with arrows showing the 'divide', 'solve', and
+
+'combine' phases.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in 6.
+
+NARRATOR: Recurrence Relations & Cost, including what improves and what becomes more
+
+difficult.
+
+NARRATOR: Recurrences describe the cost of recursive algorithms.
+
+NARRATOR: Consider this worked case: The recurrence T(n) = 2T(n/2) + O(n) describes
+
+merge sort, where the cost is twice the cost of sorting half the input plus linear time to
+
+merge.
+
+NARRATOR: On screen, show a recursive call tree with labeled nodes, each node's cost
+
+calculated using the recurrence formula, and a summary box showing the total cost formula.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around 7.
+
+NARRATOR: Elementary Data Structures: Lists & Stacks with an edge case and identify which
+
+assumption controls the outcome.
+
+NARRATOR: Lists represent ordered sequences with position-based operations.
+
+NARRATOR: Consider this worked case: A stack of function calls pushes new tasks onto the
+
+top and pops the most recently added task first, ensuring LIFO behavior during
+
+recursion.
+
+NARRATOR: On screen, draw two side-by-side diagrams: a horizontal list with index
+
+pointers and a vertical stack with a 'top' marker and push/pop arrows.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use 8.
+
+NARRATOR: Elementary Data Structures: Queues, Trees, & Hash Tables to diagnose a failure by
+
+separating symptoms, causes, and corrective action.
+
+NARRATOR: Hash tables map keys to locations and require a collision strategy.
+
+NARRATOR: Consider this worked case: A queue processes tasks in arrival order, a binary
+
+tree organizes data hierarchically with parent-child links, and a hash table stores
+
+key-value pairs with a fallback strategy for duplicate keys.
+
+NARRATOR: On screen, create a composite graphic showing a queue with 'front' and
+
+'rear' markers, a tree with root/branch/leaf labels, and a hash table with key buckets and
+
+collision chains.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect 9.
+
+NARRATOR: Graphs & Reachability to the earlier ideas and explain how the pieces work as one
+
+system.
+
+NARRATOR: Graphs can be represented with adjacency structures for traversal and path
+
+algorithms.
+
+NARRATOR: Consider this worked case: An adjacency list for a city map stores each
+
+intersection as a vertex and roads as edges, allowing algorithms to find the shortest route
+
+between two locations.
+
+NARRATOR: On screen, render a network graph with labeled vertices and directed edges,
+
+highlighting a path from start to end node, and annotate the adjacency list representation
+
+below.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with 10.
+
+NARRATOR: Practical Analysis Checklist as a practical checklist that can guide a new
+
+analysis.
+
+NARRATOR: Asymptotic notation describes how resource use grows with input size.
+
+NARRATOR: Consider this worked case: Before running code, verify the input matches the
+
+specification, check that the output matches expected results, confirm loop invariants
+
+hold, and use test cases to catch edge cases.
+
+NARRATOR: On screen, display a checklist graphic with four boxes: 'Verify Inputs',
+
+'Validate Outputs', 'Check Invariants', 'Debug & Test', each with a checkbox and a brief
+
+action prompt.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.
