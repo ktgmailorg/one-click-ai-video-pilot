@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="A curriculum-aligned video learning pathway for the RIT Computer Science BS core."
+    >
+    <meta property="og:title" content="Computer Science BS Learning Path · RIT AI Club">
+    <meta
+      property="og:description"
+      content="Explore prerequisites, course sequence, and available source-grounded lessons across the Computer Science BS."
+    >
+    <meta property="og:image" content="https://one-click-ai-video-pilot.vercel.app/og.png">
+    <title>Computer Science BS Learning Path · One-Click AI</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./cs-pathway.js" defer></script>
+  </head>
+  <body class="learn-page cs-pathway-page">
+    <main>
+      <nav class="site-nav" aria-label="Computer Science learning path navigation">
+        <a class="wordmark" href="./learn.html" aria-label="Return to the learning platform">
+          <span class="wordmark-mark" aria-hidden="true">1</span>
+          <span>One-Click AI<small>CS Degree Path</small></span>
+        </a>
+        <div class="nav-links">
+          <a href="#core">CS core</a>
+          <a href="#requirements">Requirements</a>
+          <a href="./learn.html">All lessons</a>
+          <a href="./professor-guide.html">Professor guide</a>
+          <a class="nav-cta" href="./index.html#interest">Propose a CS lesson</a>
+        </div>
+      </nav>
+
+      <header class="cs-pathway-hero">
+        <div>
+          <p class="section-kicker">Computer Science BS · 2026–2027 learning map</p>
+          <h1>See the prerequisites. Learn the concepts. Build the pathway.</h1>
+          <p>
+            This pathway organizes the supplied RIT Computer Science BS
+            flowchart into a teachable sequence and connects available video
+            lessons to the courses they support.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#core">Explore the CS core <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="./learn.html">Open all course videos <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <aside class="cs-pathway-summary" aria-label="Pathway summary">
+          <span>Curriculum map</span>
+          <strong id="cs-course-count">15</strong>
+          <p>CS, software engineering, and co-op requirements represented</p>
+          <div><b id="cs-covered-count">0</b><span>core courses with lessons now</span></div>
+          <div><b id="cs-lesson-count">0</b><span>linked learning modules</span></div>
+        </aside>
+      </header>
+
+      <section class="cs-pathway-notice">
+        <strong>Learning map—not advising.</strong>
+        <p id="cs-disclaimer">Loading curriculum notes…</p>
+        <a href="https://www.rit.edu/computing/study/computer-science-bs" rel="noreferrer">Check the official RIT program</a>
+      </section>
+
+      <section class="cs-core-section" id="core">
+        <div class="catalog-heading">
+          <div>
+            <p class="section-kicker">Prerequisite sequence</p>
+            <h2>Computer Science core.</h2>
+          </div>
+          <p id="cs-status" role="status" aria-live="polite">Loading course map…</p>
+        </div>
+        <div class="cs-filter-row" role="group" aria-label="Filter the curriculum">
+          <button type="button" data-stage="" aria-pressed="true">All stages</button>
+          <button type="button" data-stage="foundation" aria-pressed="false">Foundation</button>
+          <button type="button" data-stage="systems" aria-pressed="false">Systems</button>
+          <button type="button" data-stage="advanced" aria-pressed="false">Algorithms, data &amp; AI</button>
+          <button type="button" data-stage="professional" aria-pressed="false">Professional depth</button>
+        </div>
+        <div class="cs-stage-list" id="cs-stage-list"></div>
+      </section>
+
+      <section class="cs-requirements-section" id="requirements">
+        <div>
+          <p class="section-kicker light">Degree context</p>
+          <h2>The CS core sits inside a broader education.</h2>
+        </div>
+        <div class="cs-requirements-grid" id="cs-requirements-grid"></div>
+        <ul class="cs-degree-notes" id="cs-degree-notes"></ul>
+      </section>
+
+      <section class="cs-next-section">
+        <div>
+          <p class="section-kicker">Build the catalog with faculty</p>
+          <h2>Every uncovered course is a concrete production roadmap.</h2>
+          <p>
+            Faculty can propose one concept, one unit, or a full sequence using
+            instructor-approved source material. New lessons remain drafts
+            until subject, accessibility, and release review are complete.
+          </p>
+        </div>
+        <a class="button button-primary" href="./index.html#interest">Propose a CS course module <span aria-hidden="true">→</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <span>One-Click AI Video Generator · An official project of the RIT AI Club</span>
+      <div>
+        <a href="./learn.html">Learning platform</a>
+        <a href="./professor-guide.html">Professor guide</a>
+        <a href="./index.html#interest">Propose a course</a>
+      </div>
+    </footer>
+  </body>
+</html>

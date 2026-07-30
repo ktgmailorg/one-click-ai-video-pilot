@@ -3034,6 +3034,379 @@ footer p {
   color: #245536;
 }
 
+.cs-pathway-callout {
+  width: min(100% - 72px, 1400px);
+  margin: 32px auto 0;
+  padding: 30px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 38px;
+  border: 1px solid var(--ink);
+  background: var(--white);
+  box-shadow: 9px 9px 0 #ded6c9;
+}
+
+.cs-pathway-callout > div {
+  display: grid;
+  gap: 7px;
+}
+
+.cs-pathway-callout span {
+  color: var(--orange-dark);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.cs-pathway-callout strong {
+  font-size: 28px;
+  letter-spacing: -0.04em;
+}
+
+.cs-pathway-callout p {
+  max-width: 760px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.cs-pathway-hero,
+.cs-core-section,
+.cs-requirements-section,
+.cs-next-section,
+.cs-pathway-notice {
+  width: min(100% - 72px, 1400px);
+  margin: 0 auto;
+}
+
+.cs-pathway-hero {
+  min-height: 660px;
+  padding: 105px 0 115px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(340px, 0.8fr);
+  gap: clamp(55px, 8vw, 120px);
+  align-items: center;
+}
+
+.cs-pathway-hero h1 {
+  margin: 17px 0 25px;
+  font-size: clamp(58px, 6.4vw, 94px);
+  line-height: 0.94;
+  letter-spacing: -0.06em;
+}
+
+.cs-pathway-hero > div > p:not(.section-kicker) {
+  max-width: 780px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.cs-pathway-summary {
+  padding: 32px;
+  border: 1px solid var(--ink);
+  background: var(--night);
+  color: var(--white);
+  box-shadow: 13px 13px 0 var(--orange);
+}
+
+.cs-pathway-summary > span {
+  color: var(--orange);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.cs-pathway-summary > strong {
+  display: block;
+  margin: 25px 0 4px;
+  font-size: 86px;
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+}
+
+.cs-pathway-summary > p {
+  margin: 0 0 28px;
+  color: #cfc6ba;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.cs-pathway-summary > div {
+  padding: 17px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #50493f;
+}
+
+.cs-pathway-summary > div b {
+  font-size: 25px;
+}
+
+.cs-pathway-summary > div span {
+  max-width: 180px;
+  color: #cfc6ba;
+  font-size: 10px;
+  line-height: 1.45;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.cs-pathway-notice {
+  padding: 20px 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 20px;
+  align-items: center;
+  border: 1px solid var(--ink);
+  background: #ede5d9;
+}
+
+.cs-pathway-notice strong {
+  font-size: 12px;
+}
+
+.cs-pathway-notice p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.cs-pathway-notice a {
+  color: var(--orange-dark);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.cs-core-section {
+  padding: 125px 0;
+}
+
+.cs-filter-row {
+  margin: 48px 0 35px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  gap: 1px;
+}
+
+.cs-filter-row button {
+  min-height: 46px;
+  padding: 0 18px;
+  flex: 1 1 150px;
+  border: 0;
+  background: var(--white);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.cs-filter-row button[aria-pressed="true"],
+.cs-filter-row button:hover {
+  background: var(--orange);
+}
+
+.cs-stage-list {
+  display: grid;
+  gap: 42px;
+}
+
+.cs-stage {
+  border-top: 1px solid var(--ink);
+}
+
+.cs-stage-heading {
+  padding: 23px 0;
+  display: grid;
+  grid-template-columns: 0.35fr 1.45fr auto;
+  gap: 30px;
+  align-items: center;
+}
+
+.cs-stage-heading > span {
+  color: var(--orange-dark);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.cs-stage-heading h3 {
+  margin: 0;
+  font-size: 23px;
+  letter-spacing: -0.035em;
+}
+
+.cs-stage-heading b {
+  color: var(--muted);
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.cs-course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.cs-course-card {
+  min-height: 305px;
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--ink);
+  background: var(--white);
+  box-shadow: 6px 6px 0 rgb(23 20 15 / 9%);
+}
+
+.cs-course-code {
+  color: var(--orange-dark);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.cs-course-card h4 {
+  margin: 13px 0 25px;
+  font-size: 27px;
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+}
+
+.cs-prerequisites {
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.cs-prerequisites b {
+  color: var(--muted);
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.cs-prerequisites p {
+  margin: 7px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.cs-coverage {
+  margin-top: auto;
+  padding-top: 20px;
+  display: grid;
+  gap: 7px;
+}
+
+.cs-coverage strong {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.cs-coverage.available strong {
+  color: #33764a;
+}
+
+.cs-coverage.planned strong {
+  color: var(--muted);
+}
+
+.cs-coverage a {
+  color: var(--orange-dark);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.cs-requirements-section {
+  margin-bottom: 105px;
+  padding: 75px;
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 70px;
+  border: 1px solid var(--ink);
+  background: var(--night);
+  color: var(--white);
+}
+
+.cs-requirements-section h2 {
+  margin: 13px 0 0;
+  font-size: clamp(44px, 5vw, 68px);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.cs-requirements-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  border: 1px solid #50493f;
+  background: #50493f;
+}
+
+.cs-requirements-grid article {
+  min-height: 220px;
+  padding: 22px;
+  background: var(--night);
+}
+
+.cs-requirements-grid h3 {
+  margin: 0;
+  color: var(--orange);
+  font-size: 16px;
+}
+
+.cs-requirements-grid ul,
+.cs-degree-notes {
+  padding-left: 18px;
+  color: #cfc6ba;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.cs-degree-notes {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 25px 20px 0 35px;
+  border-top: 1px solid #50493f;
+}
+
+.cs-next-section {
+  margin-bottom: 105px;
+  padding: 45px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 60px;
+  border: 1px solid var(--ink);
+  background: var(--white);
+}
+
+.cs-next-section h2 {
+  max-width: 850px;
+  margin: 12px 0 20px;
+  font-size: clamp(42px, 5vw, 68px);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+
+.cs-next-section p:not(.section-kicker) {
+  max-width: 780px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
 @media (max-width: 1080px) {
   .nav-links a:not(.nav-cta) {
     display: none;
@@ -3164,6 +3537,19 @@ footer p {
   .catalog-search {
     grid-column: 1 / -1;
   }
+
+  .cs-pathway-hero,
+  .cs-requirements-section {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cs-pathway-summary {
+    max-width: 680px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -3181,6 +3567,15 @@ footer p {
   .catalog-section,
   .continue-section,
   .faculty-use-section {
+    width: min(100% - 32px, 1400px);
+  }
+
+  .cs-pathway-callout,
+  .cs-pathway-hero,
+  .cs-core-section,
+  .cs-requirements-section,
+  .cs-next-section,
+  .cs-pathway-notice {
     width: min(100% - 32px, 1400px);
   }
 
@@ -3644,6 +4039,56 @@ footer p {
     width: calc(100% - 36px);
     margin-right: 18px;
     margin-left: 18px;
+  }
+
+  .cs-pathway-callout,
+  .cs-next-section {
+    padding: 24px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .cs-pathway-hero {
+    min-height: 0;
+    padding: 72px 0 90px;
+    gap: 55px;
+  }
+
+  .cs-pathway-hero h1 {
+    font-size: 53px;
+  }
+
+  .cs-pathway-summary {
+    padding: 24px;
+    box-shadow: 9px 9px 0 var(--orange);
+  }
+
+  .cs-pathway-notice {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-core-section {
+    padding: 90px 0;
+  }
+
+  .cs-stage-heading {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .cs-course-grid,
+  .cs-requirements-section,
+  .cs-requirements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-requirements-section {
+    padding: 50px 24px;
+  }
+
+  .cs-requirements-section h2,
+  .cs-next-section h2 {
+    font-size: 43px;
   }
 }
 

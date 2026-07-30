@@ -1,0 +1,277 @@
+NARRATOR: A controller is useful when a system must reach and maintain a target despite
+
+disturbances and uncertainty.
+
+NARRATOR: Imagine a motor commanded to run at one thousand revolutions per minute.
+
+NARRATOR: An open-loop command may work under one load and miss the target under another.
+
+NARRATOR: Feedback changes the structure of the problem.
+
+NARRATOR: A sensor measures actual speed, the controller compares it with the desired speed,
+
+and the difference becomes an error signal.
+
+NARRATOR: The controller uses that error to change the motor input.
+
+NARRATOR: The new speed is measured again, so correction is continuous rather than a
+
+one-time guess.
+
+NARRATOR: This lesson develops the proportional, integral, and derivative terms,
+
+then connects their behavior to tuning, noise, saturation, and a practical design workflow.
+
+NARRATOR: Start by naming every signal.
+
+NARRATOR: The reference r of t is the desired behavior.
+
+NARRATOR: The measured output y of t is what the sensor reports.
+
+NARRATOR: Their difference, e of t, equals reference minus measured output.
+
+NARRATOR: The controller converts error into a command u of t.
+
+NARRATOR: An actuator applies that command to the plant, which is the physical or simulated
+
+system being controlled.
+
+NARRATOR: Disturbances can enter the plant, while sensor noise can enter the measurement
+
+path.
+
+NARRATOR: This vocabulary prevents a common mistake: the controller does not directly
+
+control the error.
+
+NARRATOR: It changes the plant input, observes the resulting output, and thereby influences
+
+future error.
+
+NARRATOR: Sign conventions also matter.
+
+NARRATOR: With negative feedback, a positive error should normally produce a correction
+
+that increases the output toward the reference.
+
+NARRATOR: The proportional term responds to the error that exists right now.
+
+NARRATOR: Its contribution is K p times e of t.
+
+NARRATOR: If the error doubles, the proportional correction doubles.
+
+NARRATOR: Increasing K p usually makes the response more forceful and can reduce rise
+
+time, but excessive gain can produce overshoot, oscillation, or instability.
+
+NARRATOR: Proportional action alone may also leave a steady offset.
+
+NARRATOR: To hold a load against friction, for example, the actuator may require a nonzero
+
+command.
+
+NARRATOR: If command is proportional to error, a persistent error may be needed to produce
+
+that command.
+
+NARRATOR: This is not a defect in the formula; it is a consequence of the loop and plant.
+
+NARRATOR: The important skill is to connect gain to observed response rather than
+
+memorizing that larger is always better.
+
+NARRATOR: The integral term responds to the history of error.
+
+NARRATOR: Its state grows while error has one sign and shrinks when the sign reverses.
+
+NARRATOR: A small error that persists can therefore produce a large enough correction to
+
+eliminate the offset left by proportional control.
+
+NARRATOR: This makes integral action powerful, but it also introduces memory.
+
+NARRATOR: If the actuator saturates at its maximum while the error remains large, the
+
+integral state can continue accumulating even though the plant cannot respond further.
+
+NARRATOR: When the system finally approaches the target, that stored integral action may
+
+drive it far past the reference.
+
+NARRATOR: This is called integral windup.
+
+NARRATOR: Practical controllers limit, pause, or back-calculate the integral state during
+
+saturation.
+
+NARRATOR: Integral action solves one problem while creating a responsibility to manage its
+
+stored state.
+
+NARRATOR: The derivative term reacts to how quickly the error is changing.
+
+NARRATOR: If the output is racing toward the target, the error may still be positive but
+
+decreasing rapidly.
+
+NARRATOR: A derivative contribution can oppose that motion before the target is crossed,
+
+adding damping and reducing overshoot.
+
+NARRATOR: The difficulty is that differentiation amplifies rapid measurement
+
+changes, including sensor noise.
+
+NARRATOR: Real implementations therefore use a filtered derivative rather than an ideal
+
+mathematical derivative.
+
+NARRATOR: Many controllers also differentiate the measurement instead of the error, which
+
+avoids a large derivative kick when the reference changes suddenly.
+
+NARRATOR: Derivative action is not mandatory.
+
+NARRATOR: A well-tuned PI controller is often sufficient, especially when sensors are noisy
+
+or the plant already has adequate damping.
+
+NARRATOR: A PID controller adds the three contributions into one command.
+
+NARRATOR: Proportional action handles present error, integral action handles accumulated
+
+error, and derivative action responds to trend.
+
+NARRATOR: These descriptions are useful, but the terms interact through the same plant.
+
+NARRATOR: Increasing K p changes the response that the integral and derivative terms
+
+observe.
+
+NARRATOR: Increasing K i may remove offset while reducing stability margin.
+
+NARRATOR: Increasing K d may add damping while increasing noise sensitivity.
+
+NARRATOR: The final command is also bounded by actuator voltage, force, valve opening, or
+
+another physical limit.
+
+NARRATOR: A controller equation without limits, sample time, sensor characteristics,
+
+and plant dynamics is incomplete.
+
+NARRATOR: Good tuning treats the loop as one system rather than adjusting three independent
+
+knobs in isolation.
+
+NARRATOR: A step response turns vague words like fast or stable into measurable criteria.
+
+NARRATOR: Rise time describes how quickly output moves toward the new target.
+
+NARRATOR: Peak overshoot measures how far it exceeds the target.
+
+NARRATOR: Settling time measures how long it takes to remain inside an acceptable band.
+
+NARRATOR: Steady-state error is the remaining difference after transients decay.
+
+NARRATOR: These measures can conflict.
+
+NARRATOR: A gain change that shortens rise time may increase overshoot.
+
+NARRATOR: Integral action that removes final error may lengthen settling.
+
+NARRATOR: Stability is the first requirement: a fast response that grows without bound is
+
+not useful.
+
+NARRATOR: Before tuning, define which measures matter for the application and what
+
+constraints cannot be violated.
+
+NARRATOR: A camera gimbal, temperature chamber, and chemical flow controller should
+
+not share one generic tuning objective.
+
+NARRATOR: A disciplined tuning process begins with safety and requirements.
+
+NARRATOR: Confirm sensor polarity, actuator limits, and a safe test range.
+
+NARRATOR: Start with integral and derivative action disabled.
+
+NARRATOR: Increase proportional gain until the system responds clearly without unacceptable
+
+oscillation.
+
+NARRATOR: Add integral action gradually to remove persistent error, while watching
+
+overshoot and windup.
+
+NARRATOR: Add derivative action only when extra damping is needed and the measurement is
+
+clean enough to support it.
+
+NARRATOR: Then test reference changes, disturbances, load variation, saturation, and
+
+noise.
+
+NARRATOR: This sequence is not a universal proof of optimality, but it makes cause and
+
+effect observable.
+
+NARRATOR: More formal model-based methods can calculate gains, yet every real implementation
+
+still requires validation against unmodeled behavior and physical limits.
+
+NARRATOR: Most PID controllers run in software, so the continuous equation becomes a
+
+sampled algorithm.
+
+NARRATOR: The sample period must be short enough to observe relevant plant dynamics but
+
+not so short that noise dominates.
+
+NARRATOR: The integral becomes a running numerical sum.
+
+NARRATOR: The derivative becomes a filtered difference between samples.
+
+NARRATOR: Output clamping enforces actuator limits, and anti-windup keeps the integral
+
+state consistent with those limits.
+
+NARRATOR: Systems that switch between manual and automatic control also need bumpless
+
+transfer so the stored controller state does not create a sudden command jump.
+
+NARRATOR: Record the sample time and exact algorithm with the gains; K p, K i, and K d
+
+have meaning only within a defined implementation and unit convention.
+
+NARRATOR: A reliable PID analysis answers six questions.
+
+NARRATOR: What are the reference, measured output, error, command, plant, and
+
+disturbances?
+
+NARRATOR: What behavior does proportional, integral, and derivative action contribute in
+
+this loop?
+
+NARRATOR: Which performance measures define success?
+
+NARRATOR: Where can the actuator or sensor saturate?
+
+NARRATOR: How are sample time, filtering, and anti-windup implemented?
+
+NARRATOR: And has the design been tested across the real operating range?
+
+NARRATOR: The goal is not to use all three letters.
+
+NARRATOR: The goal is a stable, understandable controller that meets requirements with
+
+appropriate complexity.
+
+NARRATOR: Sometimes that is P, often PI, and sometimes full PID.
+
+NARRATOR: If you can explain the loop and predict the consequence of each change before
+
+turning a gain, you are tuning as an engineer rather than searching blindly.

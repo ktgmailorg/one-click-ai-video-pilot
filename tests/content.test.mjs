@@ -18,7 +18,7 @@ test("the pilot page advertises the learning platform and has no duration cap", 
     (html.match(/<article class="showcase-card">/g) || []).length,
     16,
   );
-  assert.match(html, /Explore 17 course videos/);
+  assert.match(html, /Learning platform/);
   assert.match(html, /href="\.\/learn\.html"/);
   assert.match(html, /no fixed duration limit/i);
   assert.doesNotMatch(html, /2[–-]5 minute pilot/i);
@@ -36,13 +36,18 @@ test("the learning platform exposes accessible, device-local course progress", a
   assert.doesNotMatch(html, /female narration/i);
 });
 
-test("the course catalog contains seventeen complete, unique lessons", async () => {
+test("the course catalog contains twenty-one complete, unique lessons", async () => {
   const catalog = JSON.parse(
     await readFile(new URL("course-catalog.json", root), "utf8"),
   );
   assert.equal(catalog.schemaVersion, 1);
-  assert.equal(catalog.courses.length, 17);
-  assert.equal(new Set(catalog.courses.map((course) => course.id)).size, 17);
+  assert.equal(catalog.courses.length, 21);
+  assert.equal(new Set(catalog.courses.map((course) => course.id)).size, 21);
+  const fullLessons = catalog.courses.filter(
+    (course) => course.format === "Full lesson",
+  );
+  assert.equal(fullLessons.length, 6);
+  assert.ok(fullLessons.every((course) => course.durationSeconds >= 480));
 
   for (const course of catalog.courses) {
     assert.ok(course.title);
@@ -67,6 +72,24 @@ test("the course catalog contains seventeen complete, unique lessons", async () 
       .filter((line) => line && !line.includes("-->") && line !== "WEBVTT");
     assert.ok(Math.max(...captionLines.map((line) => line.length)) <= 46);
   }
+});
+
+test("the Computer Science pathway preserves prerequisites and links available coverage", async () => {
+  const map = JSON.parse(
+    await readFile(new URL("cs-degree-map.json", root), "utf8"),
+  );
+  assert.equal(map.catalogYear, "2026–2027");
+  assert.equal(map.courses.length, 15);
+  assert.equal(new Set(map.courses.map((course) => course.code)).size, 15);
+  const systems = map.courses.find((course) => course.code === "CSCI 250");
+  assert.deepEqual(systems.prerequisites, ["CSCI 243", "MATH 190"]);
+  assert.ok(systems.linkedLessons.includes("full-riscv-pipeline"));
+  assert.match(map.disclaimer, /not an official degree audit/i);
+
+  const html = await readFile(new URL("cs-pathway.html", root), "utf8");
+  assert.match(html, /Learning map—not advising/);
+  assert.match(html, /id="cs-stage-list"/);
+  assert.match(html, /official RIT program/);
 });
 
 for (const slug of newExamples) {

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-07-29",
+  "updated": "2026-07-30",
   "courses": [
     {
       "id": "full-riscv-pipeline",
@@ -17,12 +17,89 @@
         "Trace data and control through a five-stage pipeline",
         "Explain forwarding, stalls, flushing, latency, and throughput"
       ],
-      "paths": ["Computing & Engineering", "STEM Foundations"],
+      "paths": [
+        "Computing & Engineering",
+        "STEM Foundations"
+      ],
       "poster": "./examples/full-riscv-pipeline/poster.png",
       "video": "./examples/full-riscv-pipeline/video.mp4",
       "captions": "./examples/full-riscv-pipeline/captions.vtt",
       "transcript": "./examples/full-riscv-pipeline/transcript.txt",
       "sources": "./examples/full-riscv-pipeline/sources.json"
+    },
+    {
+      "id": "full-phishing-defense",
+      "title": "Phishing Defense: Recognize, Verify, Report, and Recover",
+      "area": "Computing",
+      "subject": "Cybersecurity and Digital Literacy",
+      "format": "Full lesson",
+      "level": "Introductory",
+      "description": "Practice a complete phishing defense workflow covering manipulation signals, sender and destination inspection, independent verification, authentication protection, reporting, and incident response.",
+      "outcomes": [
+        "Recognize consequential phishing warning signs",
+        "Verify identities and requests through independent channels",
+        "Report and respond to suspected compromise"
+      ],
+      "paths": [
+        "Computing & Engineering",
+        "Digital Literacy"
+      ],
+      "duration": "8:20",
+      "durationSeconds": 500,
+      "poster": "./examples/full-phishing-defense/poster.png",
+      "video": "./examples/full-phishing-defense/video.mp4",
+      "captions": "./examples/full-phishing-defense/captions.vtt",
+      "transcript": "./examples/full-phishing-defense/transcript.txt",
+      "sources": "./examples/full-phishing-defense/sources.json"
+    },
+    {
+      "id": "full-pid-control-systems",
+      "title": "PID Control Systems: From Feedback Error to Practical Tuning",
+      "area": "Engineering",
+      "subject": "Controls and Mechatronics",
+      "format": "Full lesson",
+      "level": "Introductory",
+      "description": "Build a complete PID control model from feedback error through term behavior, performance measurement, tuning, windup protection, filtering, and digital implementation.",
+      "outcomes": [
+        "Explain proportional, integral, and derivative contributions",
+        "Interpret rise time, overshoot, settling, and steady-state error",
+        "Tune and implement a PID loop with practical safeguards"
+      ],
+      "paths": [
+        "Computing & Engineering",
+        "STEM Foundations"
+      ],
+      "duration": "8:52",
+      "durationSeconds": 532,
+      "poster": "./examples/full-pid-control-systems/poster.png",
+      "video": "./examples/full-pid-control-systems/video.mp4",
+      "captions": "./examples/full-pid-control-systems/captions.vtt",
+      "transcript": "./examples/full-pid-control-systems/transcript.txt",
+      "sources": "./examples/full-pid-control-systems/sources.json"
+    },
+    {
+      "id": "full-oxygen-transport",
+      "title": "Oxygen Transport: From Alveolar Gas to Working Tissue",
+      "area": "Health Sciences",
+      "subject": "Anatomy and Physiology",
+      "format": "Full lesson",
+      "level": "Introductory",
+      "description": "Connect ventilation, diffusion, hemoglobin binding, the dissociation curve, perfusion, oxygen content, and tissue delivery as one physiological transport system.",
+      "outcomes": [
+        "Trace oxygen from alveoli to working tissue",
+        "Interpret the oxygen-hemoglobin dissociation curve",
+        "Distinguish oxygen pressure, saturation, content, and delivery"
+      ],
+      "paths": [
+        "STEM Foundations"
+      ],
+      "duration": "8:23",
+      "durationSeconds": 503,
+      "poster": "./examples/full-oxygen-transport/poster.png",
+      "video": "./examples/full-oxygen-transport/video.mp4",
+      "captions": "./examples/full-oxygen-transport/captions.vtt",
+      "transcript": "./examples/full-oxygen-transport/transcript.txt",
+      "sources": "./examples/full-oxygen-transport/sources.json"
     },
     {
       "id": "full-derivative-foundations",
@@ -39,12 +116,39 @@
         "Recognize differentiability and interpret derivative graphs",
         "Apply derivatives to motion and local approximation"
       ],
-      "paths": ["STEM Foundations"],
+      "paths": [
+        "STEM Foundations"
+      ],
       "poster": "./examples/full-derivative-foundations/poster.png",
       "video": "./examples/full-derivative-foundations/video.mp4",
       "captions": "./examples/full-derivative-foundations/captions.vtt",
       "transcript": "./examples/full-derivative-foundations/transcript.txt",
       "sources": "./examples/full-derivative-foundations/sources.json"
+    },
+    {
+      "id": "full-spectroscopy-measurement",
+      "title": "Spectroscopy: Measuring Light to Identify Matter",
+      "area": "Science",
+      "subject": "Physics, Chemistry, and Imaging Science",
+      "format": "Full lesson",
+      "level": "Introductory",
+      "description": "Follow the complete spectroscopy measurement chain from photon energy and characteristic transitions through instrumentation, calibration, reference matching, quantification, and uncertainty.",
+      "outcomes": [
+        "Relate spectral features to light-matter interactions",
+        "Explain spectrometer components and calibration",
+        "Evaluate spectral identification and quantitative claims"
+      ],
+      "paths": [
+        "STEM Foundations",
+        "Research & Evidence"
+      ],
+      "duration": "9:01",
+      "durationSeconds": 541,
+      "poster": "./examples/full-spectroscopy-measurement/poster.png",
+      "video": "./examples/full-spectroscopy-measurement/video.mp4",
+      "captions": "./examples/full-spectroscopy-measurement/captions.vtt",
+      "transcript": "./examples/full-spectroscopy-measurement/transcript.txt",
+      "sources": "./examples/full-spectroscopy-measurement/sources.json"
     },
     {
       "id": "riscv-add-competency",
@@ -60,7 +164,10 @@
         "Separate an ISA contract from a microarchitecture",
         "Follow one instruction through a teaching pipeline"
       ],
-      "paths": ["Computing & Engineering", "STEM Foundations"],
+      "paths": [
+        "Computing & Engineering",
+        "STEM Foundations"
+      ],
       "poster": "./riscv-add-demo-poster.png",
       "video": "./riscv-add-demo.mp4",
       "captions": "./riscv-add-demo.vtt",
@@ -68,109 +175,97 @@
       "sources": "./riscv-add-demo-bibliography.md"
     },
     {
-      "id": "engineering-resonance",
-      "title": "Why Resonance Matters in Mechanical Systems",
-      "area": "Engineering",
-      "subject": "Mechanical Engineering",
+      "id": "ntid-accessible-captions",
+      "title": "How Captions Improve an Educational Video",
+      "area": "Accessibility",
+      "subject": "Accessible Media",
       "format": "Micro-lesson",
-      "level": "Introductory",
-      "duration": "1:04",
-      "durationSeconds": 64,
-      "description": "Connect forcing frequency, natural frequency, damping, and response amplitude in a mechanical system.",
+      "level": "Foundational",
+      "duration": "0:56",
+      "durationSeconds": 56,
+      "description": "See how accurate wording, timing, speaker identification, and meaningful sound cues support access.",
       "outcomes": [
-        "Recognize resonance as a frequency-dependent response",
-        "Explain how damping changes peak response"
+        "Identify essential caption components",
+        "Explain why caption review remains necessary"
       ],
-      "paths": ["Computing & Engineering", "STEM Foundations"],
-      "poster": "./examples/engineering-resonance/poster.png",
-      "video": "./examples/engineering-resonance/video.mp4",
-      "captions": "./examples/engineering-resonance/captions.vtt",
-      "transcript": "./examples/engineering-resonance/transcript.txt",
-      "sources": "./examples/engineering-resonance/sources.json"
+      "paths": [
+        "Visual Communication",
+        "Digital Literacy"
+      ],
+      "poster": "./examples/ntid-accessible-captions/poster.png",
+      "video": "./examples/ntid-accessible-captions/video.mp4",
+      "captions": "./examples/ntid-accessible-captions/captions.vtt",
+      "transcript": "./examples/ntid-accessible-captions/transcript.txt",
+      "sources": "./examples/ntid-accessible-captions/sources.json"
     },
     {
-      "id": "engineering-technology-pid",
-      "title": "How a PID Controller Corrects an Error",
-      "area": "Engineering",
-      "subject": "Controls",
+      "id": "photography-exposure-triangle",
+      "title": "How the Exposure Triangle Shapes an Image",
+      "area": "Art and Design",
+      "subject": "Photography",
       "format": "Micro-lesson",
-      "level": "Introductory",
-      "duration": "0:59",
-      "durationSeconds": 59,
-      "description": "See how proportional, integral, and derivative actions contribute to a feedback controller.",
-      "outcomes": [
-        "Identify the three PID terms",
-        "Relate feedback error to corrective control action"
-      ],
-      "paths": ["Computing & Engineering", "STEM Foundations"],
-      "poster": "./examples/engineering-technology-pid/poster.png",
-      "video": "./examples/engineering-technology-pid/video.mp4",
-      "captions": "./examples/engineering-technology-pid/captions.vtt",
-      "transcript": "./examples/engineering-technology-pid/transcript.txt",
-      "sources": "./examples/engineering-technology-pid/sources.json"
-    },
-    {
-      "id": "science-spectroscopy",
-      "title": "How Spectroscopy Identifies Matter",
-      "area": "Science",
-      "subject": "Physics and Chemistry",
-      "format": "Micro-lesson",
-      "level": "Introductory",
-      "duration": "0:59",
-      "durationSeconds": 59,
-      "description": "Connect energy transitions, characteristic spectra, and the identification of materials.",
-      "outcomes": [
-        "Relate spectral lines to energy transitions",
-        "Explain why spectra can identify substances"
-      ],
-      "paths": ["STEM Foundations"],
-      "poster": "./examples/science-spectroscopy/poster.png",
-      "video": "./examples/science-spectroscopy/video.mp4",
-      "captions": "./examples/science-spectroscopy/captions.vtt",
-      "transcript": "./examples/science-spectroscopy/transcript.txt",
-      "sources": "./examples/science-spectroscopy/sources.json"
-    },
-    {
-      "id": "mathematics-local-derivative",
-      "title": "How a Derivative Captures Local Change",
-      "area": "Mathematics",
-      "subject": "Calculus",
-      "format": "Micro-lesson",
-      "level": "Introductory",
+      "level": "Foundational",
       "duration": "1:02",
       "durationSeconds": 62,
-      "description": "Move from a secant slope to the limiting tangent slope and interpret the derivative as local change.",
+      "description": "Balance aperture, shutter speed, and ISO while recognizing their effects on depth, motion, and noise.",
       "outcomes": [
-        "Distinguish average and instantaneous change",
-        "Interpret the derivative as a tangent slope"
+        "Name the three exposure controls",
+        "Predict the visual tradeoff of changing each control"
       ],
-      "paths": ["STEM Foundations"],
-      "poster": "./examples/mathematics-local-derivative/poster.png",
-      "video": "./examples/mathematics-local-derivative/video.mp4",
-      "captions": "./examples/mathematics-local-derivative/captions.vtt",
-      "transcript": "./examples/mathematics-local-derivative/transcript.txt",
-      "sources": "./examples/mathematics-local-derivative/sources.json"
+      "paths": [
+        "Visual Communication"
+      ],
+      "poster": "./examples/photography-exposure-triangle/poster.png",
+      "video": "./examples/photography-exposure-triangle/video.mp4",
+      "captions": "./examples/photography-exposure-triangle/captions.vtt",
+      "transcript": "./examples/photography-exposure-triangle/transcript.txt",
+      "sources": "./examples/photography-exposure-triangle/sources.json"
     },
     {
-      "id": "health-oxygen-transport",
-      "title": "How Oxygen Moves from Lungs to Tissue",
-      "area": "Health Sciences",
-      "subject": "Physiology",
+      "id": "art-design-hierarchy",
+      "title": "How Visual Hierarchy Guides Attention",
+      "area": "Art and Design",
+      "subject": "Graphic Design",
+      "format": "Micro-lesson",
+      "level": "Foundational",
+      "duration": "0:58",
+      "durationSeconds": 58,
+      "description": "Use scale, contrast, placement, and spacing to guide a viewer through information.",
+      "outcomes": [
+        "Identify common hierarchy cues",
+        "Explain how layout influences reading order"
+      ],
+      "paths": [
+        "Visual Communication"
+      ],
+      "poster": "./examples/art-design-hierarchy/poster.png",
+      "video": "./examples/art-design-hierarchy/video.mp4",
+      "captions": "./examples/art-design-hierarchy/captions.vtt",
+      "transcript": "./examples/art-design-hierarchy/transcript.txt",
+      "sources": "./examples/art-design-hierarchy/sources.json"
+    },
+    {
+      "id": "business-contribution-margin",
+      "title": "How Contribution Margin Supports Decisions",
+      "area": "Business",
+      "subject": "Accounting and Management",
       "format": "Micro-lesson",
       "level": "Introductory",
-      "duration": "1:01",
-      "durationSeconds": 61,
-      "description": "Follow oxygen through alveolar diffusion, hemoglobin transport, and tissue delivery.",
+      "duration": "0:57",
+      "durationSeconds": 57,
+      "description": "Separate sales, variable costs, contribution margin, fixed costs, and profit in a simple operating model.",
       "outcomes": [
-        "Describe the path of oxygen from lungs to tissues",
-        "Explain the role of hemoglobin"
+        "Calculate contribution margin",
+        "Explain how it supports short-run decisions"
       ],
-      "paths": ["STEM Foundations"],
-      "poster": "./examples/health-oxygen-transport/poster.png",
-      "video": "./examples/health-oxygen-transport/video.mp4",
-      "captions": "./examples/health-oxygen-transport/captions.vtt",
-      "transcript": "./examples/health-oxygen-transport/transcript.txt",
-      "sources": "./examples/health-oxygen-transport/sources.json"
+      "paths": [
+        "Research & Evidence"
+      ],
+      "poster": "./examples/business-contribution-margin/poster.png",
+      "video": "./examples/business-contribution-margin/video.mp4",
+      "captions": "./examples/business-contribution-margin/captions.vtt",
+      "transcript": "./examples/business-contribution-margin/transcript.txt",
+      "sources": "./examples/business-contribution-margin/sources.json"
     },
     {
       "id": "cybersecurity-phishing-check",
@@ -186,12 +281,109 @@
         "Recognize common phishing warning signs",
         "Verify a request through an independent channel"
       ],
-      "paths": ["Computing & Engineering", "Digital Literacy"],
+      "paths": [
+        "Computing & Engineering",
+        "Digital Literacy"
+      ],
       "poster": "./examples/cybersecurity-phishing-check/poster.png",
       "video": "./examples/cybersecurity-phishing-check/video.mp4",
       "captions": "./examples/cybersecurity-phishing-check/captions.vtt",
       "transcript": "./examples/cybersecurity-phishing-check/transcript.txt",
       "sources": "./examples/cybersecurity-phishing-check/sources.json"
+    },
+    {
+      "id": "engineering-technology-pid",
+      "title": "How a PID Controller Corrects an Error",
+      "area": "Engineering",
+      "subject": "Controls",
+      "format": "Micro-lesson",
+      "level": "Introductory",
+      "duration": "0:59",
+      "durationSeconds": 59,
+      "description": "See how proportional, integral, and derivative actions contribute to a feedback controller.",
+      "outcomes": [
+        "Identify the three PID terms",
+        "Relate feedback error to corrective control action"
+      ],
+      "paths": [
+        "Computing & Engineering",
+        "STEM Foundations"
+      ],
+      "poster": "./examples/engineering-technology-pid/poster.png",
+      "video": "./examples/engineering-technology-pid/video.mp4",
+      "captions": "./examples/engineering-technology-pid/captions.vtt",
+      "transcript": "./examples/engineering-technology-pid/transcript.txt",
+      "sources": "./examples/engineering-technology-pid/sources.json"
+    },
+    {
+      "id": "engineering-resonance",
+      "title": "Why Resonance Matters in Mechanical Systems",
+      "area": "Engineering",
+      "subject": "Mechanical Engineering",
+      "format": "Micro-lesson",
+      "level": "Introductory",
+      "duration": "1:04",
+      "durationSeconds": 64,
+      "description": "Connect forcing frequency, natural frequency, damping, and response amplitude in a mechanical system.",
+      "outcomes": [
+        "Recognize resonance as a frequency-dependent response",
+        "Explain how damping changes peak response"
+      ],
+      "paths": [
+        "Computing & Engineering",
+        "STEM Foundations"
+      ],
+      "poster": "./examples/engineering-resonance/poster.png",
+      "video": "./examples/engineering-resonance/video.mp4",
+      "captions": "./examples/engineering-resonance/captions.vtt",
+      "transcript": "./examples/engineering-resonance/transcript.txt",
+      "sources": "./examples/engineering-resonance/sources.json"
+    },
+    {
+      "id": "health-oxygen-transport",
+      "title": "How Oxygen Moves from Lungs to Tissue",
+      "area": "Health Sciences",
+      "subject": "Physiology",
+      "format": "Micro-lesson",
+      "level": "Introductory",
+      "duration": "1:01",
+      "durationSeconds": 61,
+      "description": "Follow oxygen through alveolar diffusion, hemoglobin transport, and tissue delivery.",
+      "outcomes": [
+        "Describe the path of oxygen from lungs to tissues",
+        "Explain the role of hemoglobin"
+      ],
+      "paths": [
+        "STEM Foundations"
+      ],
+      "poster": "./examples/health-oxygen-transport/poster.png",
+      "video": "./examples/health-oxygen-transport/video.mp4",
+      "captions": "./examples/health-oxygen-transport/captions.vtt",
+      "transcript": "./examples/health-oxygen-transport/transcript.txt",
+      "sources": "./examples/health-oxygen-transport/sources.json"
+    },
+    {
+      "id": "individualized-study-question",
+      "title": "How to Shape an Interdisciplinary Study Question",
+      "area": "Interdisciplinary",
+      "subject": "Research Design",
+      "format": "Micro-lesson",
+      "level": "Foundational",
+      "duration": "0:58",
+      "durationSeconds": 58,
+      "description": "Turn a broad interest into a shared question, learning goals, course choices, and a project plan.",
+      "outcomes": [
+        "Narrow a broad interdisciplinary interest",
+        "Connect a question to learning goals and evidence"
+      ],
+      "paths": [
+        "Research & Evidence"
+      ],
+      "poster": "./examples/individualized-study-question/poster.png",
+      "video": "./examples/individualized-study-question/video.mp4",
+      "captions": "./examples/individualized-study-question/captions.vtt",
+      "transcript": "./examples/individualized-study-question/transcript.txt",
+      "sources": "./examples/individualized-study-question/sources.json"
     },
     {
       "id": "liberal-arts-primary-sources",
@@ -207,7 +399,9 @@
         "Distinguish observation from interpretation",
         "Form contextual questions about a primary source"
       ],
-      "paths": ["Research & Evidence"],
+      "paths": [
+        "Research & Evidence"
+      ],
       "poster": "./examples/liberal-arts-primary-sources/poster.png",
       "video": "./examples/liberal-arts-primary-sources/video.mp4",
       "captions": "./examples/liberal-arts-primary-sources/captions.vtt",
@@ -228,7 +422,9 @@
         "Distinguish association from a causal claim",
         "Identify the role of a confounding variable"
       ],
-      "paths": ["Research & Evidence"],
+      "paths": [
+        "Research & Evidence"
+      ],
       "poster": "./examples/psychology-correlation-causation/poster.png",
       "video": "./examples/psychology-correlation-causation/video.mp4",
       "captions": "./examples/psychology-correlation-causation/captions.vtt",
@@ -236,88 +432,50 @@
       "sources": "./examples/psychology-correlation-causation/sources.json"
     },
     {
-      "id": "business-contribution-margin",
-      "title": "How Contribution Margin Supports Decisions",
-      "area": "Business",
-      "subject": "Accounting and Management",
+      "id": "mathematics-local-derivative",
+      "title": "How a Derivative Captures Local Change",
+      "area": "Mathematics",
+      "subject": "Calculus",
       "format": "Micro-lesson",
       "level": "Introductory",
-      "duration": "0:57",
-      "durationSeconds": 57,
-      "description": "Separate sales, variable costs, contribution margin, fixed costs, and profit in a simple operating model.",
-      "outcomes": [
-        "Calculate contribution margin",
-        "Explain how it supports short-run decisions"
-      ],
-      "paths": ["Research & Evidence"],
-      "poster": "./examples/business-contribution-margin/poster.png",
-      "video": "./examples/business-contribution-margin/video.mp4",
-      "captions": "./examples/business-contribution-margin/captions.vtt",
-      "transcript": "./examples/business-contribution-margin/transcript.txt",
-      "sources": "./examples/business-contribution-margin/sources.json"
-    },
-    {
-      "id": "art-design-hierarchy",
-      "title": "How Visual Hierarchy Guides Attention",
-      "area": "Art and Design",
-      "subject": "Graphic Design",
-      "format": "Micro-lesson",
-      "level": "Foundational",
-      "duration": "0:58",
-      "durationSeconds": 58,
-      "description": "Use scale, contrast, placement, and spacing to guide a viewer through information.",
-      "outcomes": [
-        "Identify common hierarchy cues",
-        "Explain how layout influences reading order"
-      ],
-      "paths": ["Visual Communication"],
-      "poster": "./examples/art-design-hierarchy/poster.png",
-      "video": "./examples/art-design-hierarchy/video.mp4",
-      "captions": "./examples/art-design-hierarchy/captions.vtt",
-      "transcript": "./examples/art-design-hierarchy/transcript.txt",
-      "sources": "./examples/art-design-hierarchy/sources.json"
-    },
-    {
-      "id": "photography-exposure-triangle",
-      "title": "How the Exposure Triangle Shapes an Image",
-      "area": "Art and Design",
-      "subject": "Photography",
-      "format": "Micro-lesson",
-      "level": "Foundational",
       "duration": "1:02",
       "durationSeconds": 62,
-      "description": "Balance aperture, shutter speed, and ISO while recognizing their effects on depth, motion, and noise.",
+      "description": "Move from a secant slope to the limiting tangent slope and interpret the derivative as local change.",
       "outcomes": [
-        "Name the three exposure controls",
-        "Predict the visual tradeoff of changing each control"
+        "Distinguish average and instantaneous change",
+        "Interpret the derivative as a tangent slope"
       ],
-      "paths": ["Visual Communication"],
-      "poster": "./examples/photography-exposure-triangle/poster.png",
-      "video": "./examples/photography-exposure-triangle/video.mp4",
-      "captions": "./examples/photography-exposure-triangle/captions.vtt",
-      "transcript": "./examples/photography-exposure-triangle/transcript.txt",
-      "sources": "./examples/photography-exposure-triangle/sources.json"
+      "paths": [
+        "STEM Foundations"
+      ],
+      "poster": "./examples/mathematics-local-derivative/poster.png",
+      "video": "./examples/mathematics-local-derivative/video.mp4",
+      "captions": "./examples/mathematics-local-derivative/captions.vtt",
+      "transcript": "./examples/mathematics-local-derivative/transcript.txt",
+      "sources": "./examples/mathematics-local-derivative/sources.json"
     },
     {
-      "id": "ntid-accessible-captions",
-      "title": "How Captions Improve an Educational Video",
-      "area": "Accessibility",
-      "subject": "Accessible Media",
+      "id": "science-spectroscopy",
+      "title": "How Spectroscopy Identifies Matter",
+      "area": "Science",
+      "subject": "Physics and Chemistry",
       "format": "Micro-lesson",
-      "level": "Foundational",
-      "duration": "0:56",
-      "durationSeconds": 56,
-      "description": "See how accurate wording, timing, speaker identification, and meaningful sound cues support access.",
+      "level": "Introductory",
+      "duration": "0:59",
+      "durationSeconds": 59,
+      "description": "Connect energy transitions, characteristic spectra, and the identification of materials.",
       "outcomes": [
-        "Identify essential caption components",
-        "Explain why caption review remains necessary"
+        "Relate spectral lines to energy transitions",
+        "Explain why spectra can identify substances"
       ],
-      "paths": ["Visual Communication", "Digital Literacy"],
-      "poster": "./examples/ntid-accessible-captions/poster.png",
-      "video": "./examples/ntid-accessible-captions/video.mp4",
-      "captions": "./examples/ntid-accessible-captions/captions.vtt",
-      "transcript": "./examples/ntid-accessible-captions/transcript.txt",
-      "sources": "./examples/ntid-accessible-captions/sources.json"
+      "paths": [
+        "STEM Foundations"
+      ],
+      "poster": "./examples/science-spectroscopy/poster.png",
+      "video": "./examples/science-spectroscopy/video.mp4",
+      "captions": "./examples/science-spectroscopy/captions.vtt",
+      "transcript": "./examples/science-spectroscopy/transcript.txt",
+      "sources": "./examples/science-spectroscopy/sources.json"
     },
     {
       "id": "sustainability-lca",
@@ -333,33 +491,15 @@
         "Identify major life-cycle stages",
         "Explain why the system boundary affects comparison"
       ],
-      "paths": ["Research & Evidence", "STEM Foundations"],
+      "paths": [
+        "Research & Evidence",
+        "STEM Foundations"
+      ],
       "poster": "./examples/sustainability-lca/poster.png",
       "video": "./examples/sustainability-lca/video.mp4",
       "captions": "./examples/sustainability-lca/captions.vtt",
       "transcript": "./examples/sustainability-lca/transcript.txt",
       "sources": "./examples/sustainability-lca/sources.json"
-    },
-    {
-      "id": "individualized-study-question",
-      "title": "How to Shape an Interdisciplinary Study Question",
-      "area": "Interdisciplinary",
-      "subject": "Research Design",
-      "format": "Micro-lesson",
-      "level": "Foundational",
-      "duration": "0:58",
-      "durationSeconds": 58,
-      "description": "Turn a broad interest into a shared question, learning goals, course choices, and a project plan.",
-      "outcomes": [
-        "Narrow a broad interdisciplinary interest",
-        "Connect a question to learning goals and evidence"
-      ],
-      "paths": ["Research & Evidence"],
-      "poster": "./examples/individualized-study-question/poster.png",
-      "video": "./examples/individualized-study-question/video.mp4",
-      "captions": "./examples/individualized-study-question/captions.vtt",
-      "transcript": "./examples/individualized-study-question/transcript.txt",
-      "sources": "./examples/individualized-study-question/sources.json"
     }
   ]
 }
