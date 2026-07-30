@@ -45,7 +45,6 @@ async function listPublished() {
   let cursor;
   do {
     const page = await list({
-      prefix: "rit-csci/2025-2026/",
       limit: 1000,
       cursor,
       token,
