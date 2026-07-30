@@ -1,0 +1,303 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Begin by framing Pipeline Overview as a question about inputs, decisions, and observable results. The OpenGL graphics pipeline processes vertices through programmable shader stages. Consider this worked case: A vertex shader modifies position and color attributes for each triangle vertex before they reach the rasterizer. On screen, display a horizontal flowchart with labeled stages: Vertex Shader -> Geometry Shader -> Rasterizer -> Fragment Shader -> Framebuffer. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 57,
+      "title": "Pipeline Overview",
+      "visualDirection": "template:academic-process | Display a horizontal flowchart with labeled stages: Vertex Shader -> Geometry Shader -> Rasterizer -> Fragment Shader -> Framebuffer."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Now define Primitive Assembly precisely enough that another learner could test the definition. Primitive assembly groups vertices into points, lines, or triangles. Consider this worked case: Three connected vertices form a triangle primitive that the rasterizer will convert into a set of pixel candidates. On screen, show a wireframe triangle with vertices labeled A, B, and C, highlighting the edges connecting them. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 55,
+      "title": "Primitive Assembly",
+      "visualDirection": "template:academic-process | Show a wireframe triangle with vertices labeled A, B, and C, highlighting the edges connecting them."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "With the foundation in place, examine how Clipping Process operates in a concrete sequence. Clipping removes portions outside the view volume. Consider this worked case: A large triangle extending beyond the camera's field of view is clipped to fit within the viewport boundaries. On screen, illustrate a triangle partially outside a rectangular viewport, with the clipped portion shaded in gray and the visible portion in white. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 56,
+      "title": "Clipping Process",
+      "visualDirection": "template:academic-process | Illustrate a triangle partially outside a rectangular viewport, with the clipped portion shaded in gray and the visible portion in white."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "Next, compare the choices involved in Rasterization Conversion and make the decision criteria explicit. Rasterization converts primitives into fragment candidates. Consider this worked case: Each pixel within the clipped triangle receives a set of interpolated vertex attributes for processing. On screen, render a grid of pixels covering a triangle, with each pixel showing a small coordinate index and a dot representing the fragment candidate. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 56,
+      "title": "Rasterization Conversion",
+      "visualDirection": "template:academic-process | Render a grid of pixels covering a triangle, with each pixel showing a small coordinate index and a dot representing the fragment candidate."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Apply Interpolation Mechanism to a worked situation instead of treating it as an isolated definition. Interpolation produces per-fragment values from vertex outputs. Consider this worked case: Color and texture coordinates are calculated for each pixel based on the weighted average of the triangle's vertex attributes. On screen, draw a triangle with gradient shading across its surface, showing how values transition smoothly from vertex to vertex. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 55,
+      "title": "Interpolation Mechanism",
+      "visualDirection": "template:academic-process | Draw a triangle with gradient shading across its surface, showing how values transition smoothly from vertex to vertex."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "Examine the tradeoffs in Fragment Processing, including what improves and what becomes more difficult. Fragment processing computes values for framebuffer operations. Consider this worked case: A fragment shader applies a lighting model to each pixel, calculating final color based on material properties and light direction. On screen, show a side-by-side comparison of a wireframe triangle and a fully shaded triangle with computed colors. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 56,
+      "title": "Fragment Processing",
+      "visualDirection": "template:academic-process | Show a side-by-side comparison of a wireframe triangle and a fully shaded triangle with computed colors."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "Stress-test the reasoning around Depth Testing & Visibility with an edge case and identify which assumption controls the outcome. Depth testing resolves visibility according to stored depth values. Consider this worked case: A closer triangle overwrites a farther triangle's pixels because its depth values are smaller than the stored depth buffer. On screen, illustrate two overlapping triangles with depth values displayed as numerical annotations, showing the closer one winning the test. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 56,
+      "title": "Depth Testing & Visibility",
+      "visualDirection": "template:academic-process | Illustrate two overlapping triangles with depth values displayed as numerical annotations, showing the closer one winning the test."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "Use Blending Operations to diagnose a failure by separating symptoms, causes, and corrective action. Blending combines a fragment result with an existing framebuffer value. Consider this worked case: A semi-transparent overlay triangle mixes its computed color with the background color using a specified alpha factor. On screen, display a background rectangle and a semi-transparent triangle on top, with a formula showing alpha blending calculation. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 55,
+      "title": "Blending Operations",
+      "visualDirection": "template:academic-process | Display a background rectangle and a semi-transparent triangle on top, with a formula showing alpha blending calculation."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Connect Coordinate Spaces & Projections to the earlier ideas and explain how the pieces work as one system. Coordinate spaces, sampling, and numerical precision must remain explicit. Consider this worked case: Vertices are transformed from model space to clip space using a projection matrix before being converted to normalized device coordinates. On screen, show a diagram of three nested coordinate spaces (model, view, clip) with arrows indicating transformation flow. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 55,
+      "title": "Coordinate Spaces & Projections",
+      "visualDirection": "template:academic-process | Show a diagram of three nested coordinate spaces (model, view, clip) with arrows indicating transformation flow."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Topics include an introduction to the basic concepts, 2-D and 3-D modeling and transformations, viewing transformations, projections, rendering techniques, graphical software packages and graphics systems. Consider this worked case: Instructors verify that vertex attributes are correctly interpolated, depth buffers are updated, and blending modes match intended visual outcomes. On screen, list a checklist with checkboxes for: 1. Shader stage execution order, 2. Coordinate transformation accuracy, 3. Depth and blending parameter validation. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 63,
+      "title": "Practical Analysis Checklist",
+      "visualDirection": "template:academic-process | List a checklist with checkboxes for: 1. Shader stage execution order, 2. Coordinate transformation accuracy, 3. Depth and blending parameter validation."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "khronos-opengl"
+      ],
+      "text": "The OpenGL graphics pipeline processes vertices through programmable shader stages.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "khronos-opengl"
+      ],
+      "text": "Primitive assembly groups vertices into points, lines, or triangles.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "khronos-opengl"
+      ],
+      "text": "Clipping removes portions outside the view volume.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "khronos-opengl"
+      ],
+      "text": "Rasterization converts primitives into fragment candidates.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "khronos-opengl"
+      ],
+      "text": "Interpolation produces per-fragment values from vertex outputs.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "khronos-opengl"
+      ],
+      "text": "Fragment processing computes values for framebuffer operations.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "khronos-opengl"
+      ],
+      "text": "Depth testing resolves visibility according to stored depth values.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "khronos-opengl"
+      ],
+      "text": "Blending combines a fragment result with an existing framebuffer value.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "khronos-opengl"
+      ],
+      "text": "Coordinate spaces, sampling, and numerical precision must remain explicit.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "rit-csci-510"
+      ],
+      "text": "Topics include an introduction to the basic concepts, 2-D and 3-D modeling and transformations, viewing transformations, projections, rendering techniques, graphical software packages and graphics systems.",
+      "verified": true
+    }
+  ],
+  "id": "csci-510-introduction-to-computer-graphics-lesson-blueprint",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "Rochester Institute of Technology",
+      "excerpt": "Introduction to Computer Graphics is a study of the hardware and software principles of interactive raster graphics. Topics include an introduction to the basic concepts, 2-D and 3-D modeling and transformations, viewing transformations, projections, rendering techniques, graphical software packages and graphics systems. The course will focus on rasterization techniques and emphasize the hardware rasterization pipeline including the use of hardware shaders. Students will use a standard computer graphics API to reinforce concepts and study fundamental computer graphics algorithms. Programming projects will be required. Prerequisites: MATH-241 and (CSCI-243 or SWEN-262) or equivalent courses. Students cannot take and receive credit for this course if they have taken CSCI-610. Contact Hours: ",
+      "id": "rit-csci-510",
+      "sha256": "bb23fd3ecb147438d6885932bee98a1f172f9dda34f34ae15654190c0551d2b7",
+      "title": "RIT CSCI-510 Introduction to Computer Graphics catalog description",
+      "type": "note",
+      "uri": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02=",
+      "verified": true
+    },
+    {
+      "author": "Khronos Group",
+      "excerpt": "The OpenGL graphics pipeline processes vertices through programmable shader stages. Primitive assembly groups vertices into points, lines, or triangles. Clipping removes portions outside the view volume. Rasterization converts primitives into fragment candidates. Interpolation produces per-fragment values from vertex outputs. Fragment processing computes values for framebuffer operations. Depth testing resolves visibility according to stored depth values. Blending combines a fragment result with an existing framebuffer value. Coordinate spaces, sampling, and numerical precision must remain explicit.",
+      "id": "khronos-opengl",
+      "sha256": "46052b795e3789bc9acd6d3e369bae4db3cda0ddce5f3255070c3c397dfd6eb1",
+      "title": "OpenGL Specification and Reference",
+      "type": "note",
+      "uri": "https://registry.khronos.org/OpenGL/",
+      "verified": true
+    },
+    {
+      "author": "MIT OpenCourseWare",
+      "excerpt": "Computer graphics uses geometric models to represent objects and scenes. Transformations position and orient geometry within coordinate systems. Viewing maps a scene through a camera model to an image. Rasterization samples projected primitives on a discrete pixel grid. Shading models how light, material, and geometry determine appearance. Texture mapping associates image data with geometric surfaces. Curves and surfaces provide compact smooth shape representations. Animation changes scene state over time. Ray tracing follows visibility and light paths through a scene. Visual correctness follows from explicit conventions, assumptions, sampling decisions, and measurable error.",
+      "id": "mit-computer-graphics",
+      "sha256": "c3a25932032364ac9a7fc1f511c050ab5fbbb5f32ada2778290599c2a602ec27",
+      "title": "MIT OpenCourseWare Introduction to Computer Graphics",
+      "type": "note",
+      "uri": "https://ocw.mit.edu/courses/6-837-computer-graphics-fall-2012/",
+      "verified": true
+    }
+  ],
+  "title": "CSCI-510: Introduction to Computer Graphics - Lesson Blueprint"
+}
