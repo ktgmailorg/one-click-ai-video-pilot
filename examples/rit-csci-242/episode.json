@@ -1,0 +1,303 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Begin by framing Course Context and Transfer Goals as a question about inputs, decisions, and observable results. This course serves as a means of bringing transfer students with some programming and data structures background to the same skill level that the computer science program's first year students have after completing CSCI 141 and 142. Consider this worked case: A transfer student who completed introductory programming courses will use this course to align their problem-solving and algorithmic skills with the university's first-year CS curriculum. On screen, display a simple flowchart showing a transfer student's prior coursework feeding into CSCI 242, which then aligns with CSCI 141/142 outcomes. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 70,
+      "title": "Course Context and Transfer Goals",
+      "visualDirection": "template:academic-process | Display a simple flowchart showing a transfer student's prior coursework feeding into CSCI 242, which then aligns with CSCI 141/142 outcomes."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Now define Core Course Focus precisely enough that another learner could test the definition. Problem solving skills and the choice and application of appropriate algorithms and data structures are at the core of the course. Consider this worked case: Students will practice selecting a hash table for fast key lookups versus a linked list for frequent insertions, based on the problem's access patterns. On screen, show a side-by-side comparison of a hash table and a linked list with callout boxes highlighting 'fast lookups' and 'frequent insertions' respectively. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "plannedSeconds": 61,
+      "title": "Core Course Focus",
+      "visualDirection": "template:academic-process | Show a side-by-side comparison of a hash table and a linked list with callout boxes highlighting 'fast lookups' and 'frequent insertions' respectively."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "With the foundation in place, examine how Assignment Structure operates in a concrete sequence. Assignments (both in class and for homework) requiring a design and an implementation are an integral part of the course. Consider this worked case: A homework assignment might ask students to draft a pseudocode design for a priority queue before writing the actual code in a supported language. On screen, illustrate a two-step workflow diagram: 'Design Pseudocode' leading to 'Code Implementation', with a larger project icon at the end. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "plannedSeconds": 58,
+      "title": "Assignment Structure",
+      "visualDirection": "template:academic-process | Illustrate a two-step workflow diagram: 'Design Pseudocode' leading to 'Code Implementation', with a larger project icon at the end."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "Next, compare the choices involved in Algorithm Analysis Basics and make the decision criteria explicit. Algorithm analysis connects a precise problem specification to a correctness argument and resource bounds. Consider this worked case: Analyzing a sorting algorithm shows that its time complexity grows quadratically with input size, expressed as O(n^2) in asymptotic notation. On screen, display a graph with input size on the x-axis and resource use on the y-axis, labeled with 'O(n^2)' to show quadratic growth. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "plannedSeconds": 56,
+      "title": "Algorithm Analysis Basics",
+      "visualDirection": "template:academic-process | Display a graph with input size on the x-axis and resource use on the y-axis, labeled with 'O(n^2)' to show quadratic growth."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Apply Asymptotic Notation to a worked situation instead of treating it as an isolated definition. Asymptotic notation describes how resource use grows with input size. Consider this worked case: Using Big-O notation, a linear scan is O(n) while a binary search is O(log n), clearly showing the latter scales better for large datasets. On screen, show a table comparing 'Linear Search' and 'Binary Search' with their respective O(n) and O(log n) labels and brief growth descriptions. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 58,
+      "title": "Asymptotic Notation",
+      "visualDirection": "template:academic-process | Show a table comparing 'Linear Search' and 'Binary Search' with their respective O(n) and O(log n) labels and brief growth descriptions."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "Examine the tradeoffs in Loop Invariants, including what improves and what becomes more difficult. A loop invariant supports a proof by initialization, maintenance, and termination. Consider this worked case: In a loop that sums an array, the invariant 'sum equals the total of elements processed so far' holds true before each iteration and after the loop ends. On screen, display a loop structure with three labeled boxes: 'Initialization', 'Maintenance', and 'Termination', each containing a brief mathematical statement. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "plannedSeconds": 57,
+      "title": "Loop Invariants",
+      "visualDirection": "template:academic-process | Display a loop structure with three labeled boxes: 'Initialization', 'Maintenance', and 'Termination', each containing a brief mathematical statement."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "Stress-test the reasoning around Data Structure Representations with an edge case and identify which assumption controls the outcome. Representation choices and invariants determine which operations are efficient and which errors are possible. Consider this worked case: Choosing an adjacency matrix for a dense graph ensures fast edge lookups, while an adjacency list prevents memory waste on sparse graphs. On screen, show two grid layouts: a full matrix with 'fast lookups' and a linked list of nodes with 'sparse graph' and 'memory efficient' labels. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 62,
+      "title": "Data Structure Representations",
+      "visualDirection": "template:academic-process | Show two grid layouts: a full matrix with 'fast lookups' and a linked list of nodes with 'sparse graph' and 'memory efficient' labels."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "Use Common Data Structures to diagnose a failure by separating symptoms, causes, and corrective action. Lists represent ordered sequences with position-based operations. Consider this worked case: A stack processes function calls by returning the most recently added task first, whereas a queue processes customer orders in the exact order they arrive. On screen, illustrate a stack with items popping from the top and a queue with items entering at the back and leaving at the front, labeled with their access rules. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 61,
+      "title": "Common Data Structures",
+      "visualDirection": "template:academic-process | Illustrate a stack with items popping from the top and a queue with items entering at the back and leaving at the front, labeled with their access rules."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Connect Trees and Graphs to the earlier ideas and explain how the pieces work as one system. Trees represent hierarchical relationships and support recursive traversals. Consider this worked case: A file system directory tree allows recursive folder browsing, and a road network graph uses adjacency lists to calculate the shortest driving route between two cities. On screen, draw a simple tree diagram with parent-child nodes and a graph diagram with nodes and edges, adding arrows to indicate recursive traversal and path finding. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 59,
+      "title": "Trees and Graphs",
+      "visualDirection": "template:academic-process | Draw a simple tree diagram with parent-child nodes and a graph diagram with nodes and edges, adding arrows to indicate recursive traversal and path finding."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. A disciplined solution states inputs and outputs, proves correctness, and then analyzes time and space. Consider this worked case: Before coding a search routine, students check that the input is a sorted array, the output is the index of the target, and the time complexity is O(log n) using binary search. On screen, display a checklist graphic with three boxes: 'State Inputs/Outputs', 'Prove Correctness', and 'Analyze Time/Space', each with a checkbox and brief instruction. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 64,
+      "title": "Practical Analysis Checklist",
+      "visualDirection": "template:academic-process | Display a checklist graphic with three boxes: 'State Inputs/Outputs', 'Prove Correctness', and 'Analyze Time/Space', each with a checkbox and brief instruction."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "rit-csci-242"
+      ],
+      "text": "This course serves as a means of bringing transfer students with some programming and data structures background to the same skill level that the computer science program's first year students have after completing CSCI 141 and 142.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "rit-csci-242"
+      ],
+      "text": "Problem solving skills and the choice and application of appropriate algorithms and data structures are at the core of the course.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "rit-csci-242"
+      ],
+      "text": "Assignments (both in class and for homework) requiring a design and an implementation are an integral part of the course.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "Algorithm analysis connects a precise problem specification to a correctness argument and resource bounds.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "Asymptotic notation describes how resource use grows with input size.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "A loop invariant supports a proof by initialization, maintenance, and termination.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "opendsa"
+      ],
+      "text": "Representation choices and invariants determine which operations are efficient and which errors are possible.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "opendsa"
+      ],
+      "text": "Lists represent ordered sequences with position-based operations.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "opendsa"
+      ],
+      "text": "Trees represent hierarchical relationships and support recursive traversals.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "mit-algorithms"
+      ],
+      "text": "A disciplined solution states inputs and outputs, proves correctness, and then analyzes time and space.",
+      "verified": true
+    }
+  ],
+  "id": "csci-242-computer-science-for-transfer-students-foundations-less",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "Rochester Institute of Technology",
+      "excerpt": "This course serves as a means of bringing transfer students with some programming and data structures background to the same skill level that the computer science program's first year students have after completing CSCI 141 and 142. Problem solving skills and the choice and application of appropriate algorithms and data structures are at the core of the course. Assignments (both in class and for homework) requiring a design and an implementation are an integral part of the course. Larger programming projects are also required. Contact Hours: Lecture/Lab 6 It may be used to fulfill one of the following: GE: Elective, GE: Mathematical Perspective, NTID Math Processes, SMTL: Science/Math Literacy Typically Offered: Fall, Spring",
+      "id": "rit-csci-242",
+      "sha256": "5fa3f526a575d8286f244467711740ad99cdb601fc11e80a02915507b898290b",
+      "title": "RIT CSCI-242 Computer Science for Transfer Students catalog description",
+      "type": "note",
+      "uri": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02=",
+      "verified": true
+    },
+    {
+      "author": "MIT OpenCourseWare",
+      "excerpt": "Algorithm analysis connects a precise problem specification to a correctness argument and resource bounds. Asymptotic notation describes how resource use grows with input size. A loop invariant supports a proof by initialization, maintenance, and termination. Divide-and-conquer algorithms split a problem, solve subproblems, and combine their results. Recurrences describe the cost of recursive algorithms. Graph algorithms operate on vertices and edges to answer reachability, ordering, connectivity, and path questions. Dynamic programming records solutions to overlapping subproblems. Core methods include sorting, hashing, trees, graphs, shortest paths, and dynamic programming. A disciplined solution states inputs and outputs, proves correctness, and then analyzes time and space.",
+      "id": "mit-algorithms",
+      "sha256": "e6fdf3e727a4c6044da012714bd877c5bbed1a105b98d51a12449f81cc563b5d",
+      "title": "MIT OpenCourseWare Introduction to Algorithms",
+      "type": "note",
+      "uri": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/",
+      "verified": true
+    },
+    {
+      "author": "OpenDSA Project",
+      "excerpt": "OpenDSA presents data structures and algorithms through executable visualizations and exercises. Lists represent ordered sequences with position-based operations. Stacks use last-in, first-out access, while queues use first-in, first-out access. Trees represent hierarchical relationships and support recursive traversals. Hash tables map keys to locations and require a collision strategy. Graphs can be represented with adjacency structures for traversal and path algorithms. Automata and formal languages describe machines, accepted strings, and computational limits. Representation choices and invariants determine which operations are efficient and which errors are possible.",
+      "id": "opendsa",
+      "sha256": "633e1e27d522c368b0a975e12dbed181afef7f16e4e80dc67f8a0d633e7fc6cc",
+      "title": "OpenDSA",
+      "type": "note",
+      "uri": "https://opendsa-server.cs.vt.edu/",
+      "verified": true
+    }
+  ],
+  "title": "CSCI-242: Computer Science for Transfer Students - Foundations Lesson Blueprint"
+}

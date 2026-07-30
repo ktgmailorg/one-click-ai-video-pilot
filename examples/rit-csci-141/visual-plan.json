@@ -1,0 +1,206 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "Begin by framing Introduction to Computational Thinking as a question about inputs, decisions, and observable results.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "Consider this worked case: A student defines a problem to find the shortest path in a network, then specifies inputs (graph), outputs (path length), and expected time complexity.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "Annotate with 'specification', 'correctness', and 'bounds' labels.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "Now define Algorithm Expression in Pseudo Code precisely enough that another learner could test the definition.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "Consider this worked case: A student writes a pseudo code function for calculating factorial, then translates it into Python code, noting where comments clarify the logic.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "Add a checkmark icon next to 'syntax matches logic' and a magnifying glass over the indentation area.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "With the foundation in place, examine how Functional vs.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "Dynamic programming records solutions to overlapping subproblems.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "Overlap shows 'both solve the same problem' with a small code snippet in each quadrant.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "Next, compare the choices involved in Control Structures and make the decision criteria explicit.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "Consider this worked case: A student uses a while loop to count down from 10 to 1, updating a counter variable each iteration until the condition fails.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "Highlight the condition check and the update step with distinct colors.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "Apply Problem Solving Using Recursion to a worked situation instead of treating it as an isolated definition.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "Consider this worked case: A student implements a recursive function to traverse a directory tree, calling itself for each subdirectory until an empty folder is found.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "Add arrows showing the call stack unwinding.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-06",
+      "shots": [
+        {
+          "id": "beat-06-shot-001",
+          "phrase": "Examine the tradeoffs in Basic Searching and Sorting, including what improves and what becomes more difficult.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-002",
+          "phrase": "Consider this worked case: A student sorts a list of student IDs alphabetically using bubble sort, then uses binary search to find a specific ID in the sorted list.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-003",
+          "phrase": "State the benefit, the cost, and the condition under which the tradeoff is acceptable.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-07",
+      "shots": [
+        {
+          "id": "beat-07-shot-001",
+          "phrase": "Stress-test the reasoning around Elementary Data Structures: Lists, Trees, Graphs with an edge case and identify which assumption controls the outcome.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-002",
+          "phrase": "Consider this worked case: A student uses a list to track daily expenses, a tree to organize file folders, and a graph to map city bus routes with stops as vertices and routes as edges.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-003",
+          "phrase": "Label each with its primary use case.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-08",
+      "shots": [
+        {
+          "id": "beat-08-shot-001",
+          "phrase": "Use Correctness, Testing, and Debugging to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-002",
+          "phrase": "Consider this worked case: A student tests a sorting algorithm with empty lists, single elements, and duplicates, then uses a debugger to step through a loop to find an off-by-one error.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-003",
+          "phrase": "Each item has a toggle switch that flips from red to green as the student checks them off.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-09",
+      "shots": [
+        {
+          "id": "beat-09-shot-001",
+          "phrase": "Connect Data Structure Representation and Invariants to the earlier ideas and explain how the pieces work as one system.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-002",
+          "phrase": "Consider this worked case: A student chooses an adjacency list over an adjacency matrix for a sparse graph, noting that the invariant 'each edge appears exactly once' keeps memory usage low.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-003",
+          "phrase": "Add a warning icon over the matrix and a checkmark over the list, labeled 'sparse graph invariant'.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-10",
+      "shots": [
+        {
+          "id": "beat-10-shot-001",
+          "phrase": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-002",
+          "phrase": "Consider this worked case: A student reviews a checklist: 'define I/O', 'state loop invariant', 'analyze recurrence', 'verify base case', then proceeds to code the divide-and-conquer algorithm.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-003",
+          "phrase": "Each box has a progress bar that fills as the student completes the step, ending with a 'ready to code' badge.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "csci-141-computer-science-i-foundations-lesson-blueprint",
+  "schemaVersion": 1
+}

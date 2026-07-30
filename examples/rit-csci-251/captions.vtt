@@ -1,0 +1,579 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:07.419
+NARRATOR: Begin by framing Foundations of
+Parallel and Distributed Architecture as a
+
+2
+00:00:07.419 --> 00:00:11.718
+question about inputs, decisions, and
+observable results.
+
+3
+00:00:11.718 --> 00:00:18.701
+NARRATOR: This course is an introduction to
+the organization and programming of systems
+
+4
+00:00:18.701 --> 00:00:20.312
+comprising multiple computers.
+
+5
+00:00:20.312 --> 00:00:27.215
+NARRATOR: Consider this worked case: A web
+server cluster distributes incoming HTTP
+
+6
+00:00:27.215 --> 00:00:32.968
+requests across multiple physical machines to
+handle high traffic loads.
+
+7
+00:00:32.968 --> 00:00:40.305
+NARRATOR: On screen, display a diagram showing
+a single server versus a cluster of three
+
+8
+00:00:40.305 --> 00:00:44.218
+servers connected by a network, highlighting
+load distribution.
+
+9
+00:00:44.218 --> 00:00:50.096
+NARRATOR: List the givens before choosing a
+method, because an unstated assumption can
+
+10
+00:00:50.096 --> 00:00:51.453
+change the conclusion.
+
+11
+00:00:51.453 --> 00:00:57.109
+NARRATOR: This establishes the vocabulary and
+scope needed for the remaining sections.
+
+12
+00:00:57.218 --> 00:01:03.289
+NARRATOR: Now define Multi-Core Computer
+Organization precisely enough that another
+
+13
+00:01:03.289 --> 00:01:06.324
+learner could test the definition.
+
+14
+00:01:06.324 --> 00:01:13.324
+NARRATOR: Topics include the organization of
+multi-core computers, parallel computer
+
+15
+00:01:13.324 --> 00:01:19.624
+clusters, computing grids, client-server
+systems, and peer-to-peer systems; computer
+
+16
+00:01:19.624 --> 00:01:25.924
+networks and network protocols; network
+security; multi-threaded programming; and
+
+17
+00:01:25.924 --> 00:01:27.324
+network programming.
+
+18
+00:01:27.324 --> 00:01:35.689
+NARRATOR: Consider this worked case: A modern
+desktop processor with eight cores can execute
+
+19
+00:01:35.689 --> 00:01:41.664
+eight separate program threads simultaneously,
+reducing execution time for parallelizable
+
+20
+00:01:41.664 --> 00:01:42.261
+workloads.
+
+21
+00:01:42.261 --> 00:01:49.228
+NARRATOR: On screen, show a close-up
+illustration of a CPU die with eight distinct
+
+22
+00:01:49.228 --> 00:01:55.199
+cores, each labeled with a thread ID,
+connected via an internal interconnect.
+
+23
+00:01:55.199 --> 00:02:01.937
+NARRATOR: Separate the formal definition from
+an implementation detail, then identify what
+
+24
+00:02:01.937 --> 00:02:04.183
+evidence would distinguish them.
+
+25
+00:02:04.183 --> 00:02:10.871
+NARRATOR: A precise definition makes later
+examples easier to evaluate and revise.
+
+26
+00:02:10.994 --> 00:02:17.209
+NARRATOR: With the foundation in place,
+examine how Parallel Computer Clusters and
+
+27
+00:02:17.209 --> 00:02:20.834
+Computing Grids operates in a concrete
+sequence.
+
+28
+00:02:20.834 --> 00:02:23.678
+NARRATOR: Programming projects will be
+required.
+
+29
+00:02:23.678 --> 00:02:30.105
+NARRATOR: Consider this worked case: A
+scientific research cluster runs molecular
+
+30
+00:02:30.105 --> 00:02:36.532
+dynamics simulations in parallel, whereas a
+computing grid coordinates thousands of
+
+31
+00:02:36.532 --> 00:02:40.037
+university servers to analyze climate data.
+
+32
+00:02:40.037 --> 00:02:46.506
+NARRATOR: On screen, draw two side-by-side
+network maps: one showing a local cluster with
+
+33
+00:02:46.506 --> 00:02:52.975
+direct links, and another showing a grid with
+regional nodes connected via the internet.
+
+34
+00:02:52.975 --> 00:03:00.350
+NARRATOR: Follow every arrow in order and name
+the state before and after each transition.
+
+35
+00:03:00.350 --> 00:03:05.959
+NARRATOR: The trace converts an abstract
+statement into an inspectable sequence.
+
+36
+00:03:06.074 --> 00:03:12.215
+NARRATOR: Next, compare the choices involved
+in Client-Server and Peer-to-Peer Systems and
+
+37
+00:03:12.215 --> 00:03:14.774
+make the decision criteria explicit.
+
+38
+00:03:14.774 --> 00:03:20.940
+NARRATOR: Modes of operation define how a
+primitive processes data larger than one
+
+39
+00:03:20.940 --> 00:03:21.414
+block.
+
+40
+00:03:21.414 --> 00:03:29.338
+NARRATOR: Consider this worked case: A bank's
+online portal uses a client-server model where
+
+41
+00:03:29.338 --> 00:03:35.565
+users connect to central authentication
+servers, whereas a file-sharing network uses
+
+42
+00:03:35.565 --> 00:03:38.961
+peer-to-peer nodes to exchange documents
+directly.
+
+43
+00:03:38.961 --> 00:03:45.016
+NARRATOR: On screen, illustrate a star
+topology for client-server with a central
+
+44
+00:03:45.016 --> 00:03:51.070
+server node, and a mesh topology for
+peer-to-peer with interconnected user nodes.
+
+45
+00:03:51.070 --> 00:03:57.808
+NARRATOR: Compare alternatives against the
+same constraints so the evaluation does not
+
+46
+00:03:57.808 --> 00:03:59.492
+move the goalposts.
+
+47
+00:03:59.492 --> 00:04:06.320
+NARRATOR: Using shared criteria turns a
+preference into a defensible technical choice.
+
+48
+00:04:06.434 --> 00:04:12.835
+NARRATOR: Apply Computer Networks and Network
+Protocols to a worked situation instead of
+
+49
+00:04:12.835 --> 00:04:15.790
+treating it as an isolated definition.
+
+50
+00:04:15.790 --> 00:04:21.736
+NARRATOR: Security depends on the complete
+protocol and implementation, not only an
+
+51
+00:04:21.736 --> 00:04:22.727
+algorithm name.
+
+52
+00:04:22.727 --> 00:04:30.311
+NARRATOR: Consider this worked case: The
+TCP/IP protocol suite manages packet routing,
+
+53
+00:04:30.311 --> 00:04:37.262
+congestion control, and end-to-end delivery,
+ensuring that data reaches the correct
+
+54
+00:04:37.262 --> 00:04:39.790
+destination despite network failures.
+
+55
+00:04:39.790 --> 00:04:47.145
+NARRATOR: On screen, show a packet traversing
+a network with labeled protocol layers
+
+56
+00:04:47.145 --> 00:04:53.368
+(application, transport, network, link) and a
+status indicator for successful delivery.
+
+57
+00:04:53.368 --> 00:04:59.892
+NARRATOR: Work from the concrete inputs to the
+result, checking units, types, or invariants
+
+58
+00:04:59.892 --> 00:05:01.290
+at each step.
+
+59
+00:05:01.290 --> 00:05:06.102
+NARRATOR: The worked case shows both how to
+apply the method and how to check it.
+
+60
+00:05:06.218 --> 00:05:12.341
+NARRATOR: Examine the tradeoffs in Network
+Security and Data Protection, including what
+
+61
+00:05:12.341 --> 00:05:15.402
+improves and what becomes more difficult.
+
+62
+00:05:15.402 --> 00:05:21.919
+NARRATOR: Protect the Software prevents
+unauthorized access to code and development
+
+63
+00:05:21.919 --> 00:05:22.511
+artifacts.
+
+64
+00:05:22.511 --> 00:05:30.019
+NARRATOR: Consider this worked case: TLS
+encryption secures web traffic by encrypting
+
+65
+00:05:30.019 --> 00:05:36.276
+payloads and using digital certificates to
+authenticate the server, preventing
+
+66
+00:05:36.276 --> 00:05:37.527
+man-in-the-middle attacks.
+
+67
+00:05:37.527 --> 00:05:43.811
+NARRATOR: On screen, display a flowchart
+showing plaintext data entering a TLS
+
+68
+00:05:43.811 --> 00:05:50.620
+handshake, being encrypted with a symmetric
+key, and exiting as ciphertext with an
+
+69
+00:05:50.620 --> 00:05:51.667
+integrity tag.
+
+70
+00:05:51.667 --> 00:05:57.836
+NARRATOR: State the benefit, the cost, and the
+condition under which the tradeoff is
+
+71
+00:05:57.836 --> 00:05:58.277
+acceptable.
+
+72
+00:05:58.277 --> 00:06:05.542
+NARRATOR: Making the tradeoff visible prevents
+a local improvement from hiding a larger cost.
+
+73
+00:06:05.666 --> 00:06:11.096
+NARRATOR: Stress-test the reasoning around
+Cryptographic Standards and Key Management
+
+74
+00:06:11.096 --> 00:06:17.069
+with an edge case and identify which
+assumption controls the outcome.
+
+75
+00:06:17.069 --> 00:06:23.209
+NARRATOR: Cryptographic standards define
+approved algorithms and parameters.
+
+76
+00:06:23.209 --> 00:06:30.619
+NARRATOR: Consider this worked case: AES-256
+encryption with a properly rotated key
+
+77
+00:06:30.619 --> 00:06:37.411
+protects sensitive database records, while a
+nonce ensures each encryption operation
+
+78
+00:06:37.411 --> 00:06:39.881
+produces a unique ciphertext.
+
+79
+00:06:39.881 --> 00:06:47.560
+NARRATOR: On screen, show a key management
+lifecycle diagram with stages: generation,
+
+80
+00:06:47.560 --> 00:06:54.600
+distribution, storage, use, rotation, and
+destruction, each marked with a checkmark.
+
+81
+00:06:54.600 --> 00:07:00.496
+NARRATOR: Change one assumption at a time and
+observe which part of the reasoning no longer
+
+82
+00:07:00.496 --> 00:07:00.865
+holds.
+
+83
+00:07:00.865 --> 00:07:07.250
+NARRATOR: The edge case reveals the boundary
+of the claim without discarding the useful
+
+84
+00:07:07.250 --> 00:07:08.162
+core idea.
+
+85
+00:07:08.282 --> 00:07:14.549
+NARRATOR: Use Multi-Threaded Programming
+Fundamentals to diagnose a failure by
+
+86
+00:07:14.549 --> 00:07:18.310
+separating symptoms, causes, and corrective
+action.
+
+87
+00:07:18.310 --> 00:07:26.560
+NARRATOR: Prepare the Organization establishes
+people, processes, and technology for secure
+
+88
+00:07:26.560 --> 00:07:27.310
+development.
+
+89
+00:07:27.310 --> 00:07:34.920
+NARRATOR: Consider this worked case: A web
+application uses separate threads for handling
+
+90
+00:07:34.920 --> 00:07:40.773
+database queries, user authentication, and
+response generation, coordinated by mutex
+
+91
+00:07:40.773 --> 00:07:43.700
+locks to protect shared variables.
+
+92
+00:07:43.700 --> 00:07:51.239
+NARRATOR: On screen, illustrate a process with
+three threads, each with a stack and shared
+
+93
+00:07:51.239 --> 00:07:55.763
+heap, highlighting a mutex lock protecting a
+critical section.
+
+94
+00:07:55.763 --> 00:08:01.473
+NARRATOR: Locate the first point where
+observed behavior diverges from expected
+
+95
+00:08:01.473 --> 00:08:05.106
+behavior, then test the smallest plausible
+cause.
+
+96
+00:08:05.106 --> 00:08:11.406
+NARRATOR: The diagnosis is strongest when
+another person can reproduce the observation
+
+97
+00:08:11.406 --> 00:08:12.981
+and the test.
+
+98
+00:08:13.082 --> 00:08:18.297
+NARRATOR: Connect Network Programming and
+Distributed Communication to the earlier ideas
+
+99
+00:08:18.297 --> 00:08:22.563
+and explain how the pieces work as one system.
+
+100
+00:08:22.563 --> 00:08:28.607
+NARRATOR: The Secure Software Development
+Framework groups practices into four practice
+
+101
+00:08:28.607 --> 00:08:29.157
+groups.
+
+102
+00:08:29.157 --> 00:08:37.148
+NARRATOR: Consider this worked case: A
+distributed caching system uses UDP multicast
+
+103
+00:08:37.148 --> 00:08:45.139
+to broadcast cache invalidation messages,
+while a RPC framework serializes requests and
+
+104
+00:08:45.139 --> 00:08:48.469
+deserializes responses across network
+boundaries.
+
+105
+00:08:48.469 --> 00:08:57.225
+NARRATOR: On screen, show a sequence diagram
+of an RPC call: client sends request, server
+
+106
+00:08:57.225 --> 00:09:03.063
+processes, server sends response, client
+receives result, with timeout indicators.
+
+107
+00:09:03.063 --> 00:09:11.975
+NARRATOR: Explain each connection explicitly
+and verify that information retains the same
+
+108
+00:09:11.975 --> 00:09:14.203
+meaning across representations.
+
+109
+00:09:14.203 --> 00:09:20.979
+NARRATOR: The synthesis matters only if every
+connection remains supported by the original
+
+110
+00:09:20.979 --> 00:09:21.500
+evidence.
+
+111
+00:09:21.626 --> 00:09:26.885
+NARRATOR: Finish with Secure Software
+Development and Verification as a practical
+
+112
+00:09:26.885 --> 00:09:30.232
+checklist that can guide a new analysis.
+
+113
+00:09:30.232 --> 00:09:35.138
+NARRATOR: Security requirements should be
+tracked throughout development.
+
+114
+00:09:35.138 --> 00:09:42.719
+NARRATOR: Consider this worked case: A
+development team uses a secure software
+
+115
+00:09:42.719 --> 00:09:48.405
+development framework to verify that
+cryptographic libraries are properly
+
+116
+00:09:48.405 --> 00:09:54.091
+integrated, track security requirements, and
+remediate vulnerabilities before release.
+
+117
+00:09:54.091 --> 00:10:00.826
+NARRATOR: On screen, display a four-box
+flowchart labeled Prepare, Protect, Produce,
+
+118
+00:10:00.826 --> 00:10:07.560
+Respond, with arrows showing continuous
+feedback loops and a verification badge.
+
+119
+00:10:07.560 --> 00:10:14.999
+NARRATOR: For each checklist item, record the
+evidence, the remaining uncertainty, and the
+
+120
+00:10:14.999 --> 00:10:16.716
+next verification step.
+
+121
+00:10:16.716 --> 00:10:22.455
+NARRATOR: The result is a repeatable
+procedure, not a conclusion that depends on
+
+122
+00:10:22.455 --> 00:10:23.779
+memory or intuition.

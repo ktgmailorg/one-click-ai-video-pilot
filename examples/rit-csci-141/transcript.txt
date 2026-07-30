@@ -1,0 +1,269 @@
+NARRATOR: Begin by framing Introduction to Computational Thinking as a question about
+
+inputs, decisions, and observable results.
+
+NARRATOR: Algorithm analysis connects a precise problem specification to a correctness
+
+argument and resource bounds.
+
+NARRATOR: Consider this worked case: A student defines a problem to find the shortest path in
+
+a network, then specifies inputs (graph), outputs (path length), and expected time
+
+complexity.
+
+NARRATOR: On screen, display a split screen: left shows a problem statement box, right
+
+shows a flowchart with input/output boxes and a complexity badge.
+
+NARRATOR: Annotate with 'specification', 'correctness', and 'bounds' labels.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Algorithm Expression in Pseudo Code precisely enough that another
+
+learner could test the definition.
+
+NARRATOR: Specific topics covered include: expression of algorithms in pseudo code and a
+
+programming language; functional and imperative programming techniques; control
+
+structures; problem solving using recursion; basic searching and sorting; elementary data
+
+structures such as lists, trees, and graphs; and correctness, testing and debugging.
+
+NARRATOR: Consider this worked case: A student writes a pseudo code function for calculating
+
+factorial, then translates it into Python code, noting where comments clarify the logic.
+
+NARRATOR: On screen, show a side-by-side comparison: left is clean pseudo code with
+
+indentation, right is Python code with syntax highlighting.
+
+NARRATOR: Add a checkmark icon next to 'syntax matches logic' and a magnifying glass over the
+
+indentation area.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: With the foundation in place, examine how Functional vs. Imperative
+
+Programming operates in a concrete sequence.
+
+NARRATOR: Dynamic programming records solutions to overlapping subproblems.
+
+NARRATOR: Consider this worked case: A student compares a recursive factorial function
+
+(functional) with a loop-based factorial function (imperative), noting how each handles
+
+state differently.
+
+NARRATOR: On screen, create a Venn diagram: left circle shows 'pure functions, no side
+
+effects', right shows 'mutable state, step-by-step updates'.
+
+NARRATOR: Overlap shows 'both solve the same problem' with a small code snippet in each
+
+quadrant.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in Control Structures and make the decision
+
+criteria explicit.
+
+NARRATOR: Graphs can be represented with adjacency structures for traversal and path
+
+algorithms.
+
+NARRATOR: Consider this worked case: A student uses a while loop to count down from 10 to 1,
+
+updating a counter variable each iteration until the condition fails.
+
+NARRATOR: On screen, draw a simple flowchart with a decision diamond ('counter > 0?'), a
+
+loop back arrow, and an exit path.
+
+NARRATOR: Highlight the condition check and the update step with distinct colors.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Apply Problem Solving Using Recursion to a worked situation instead of
+
+treating it as an isolated definition.
+
+NARRATOR: Divide-and-conquer algorithms split a problem, solve subproblems, and combine
+
+their results.
+
+NARRATOR: Consider this worked case: A student implements a recursive function to traverse a
+
+directory tree, calling itself for each subdirectory until an empty folder is found.
+
+NARRATOR: On screen, show a nested tree diagram with the top node labeled 'root',
+
+branching into three child nodes, each labeled 'subproblem', and the leaves labeled 'base
+
+case'.
+
+NARRATOR: Add arrows showing the call stack unwinding.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in Basic Searching and Sorting, including what improves
+
+and what becomes more difficult.
+
+NARRATOR: OpenDSA presents data structures and algorithms through executable visualizations
+
+and exercises.
+
+NARRATOR: Consider this worked case: A student sorts a list of student IDs alphabetically
+
+using bubble sort, then uses binary search to find a specific ID in the sorted list.
+
+NARRATOR: On screen, display two columns: left shows an unsorted list transforming into a
+
+sorted list with swap arrows, right shows a sorted list with a pointer highlighting the
+
+target value and a 'found' badge.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around Elementary Data Structures: Lists, Trees,
+
+Graphs with an edge case and identify which assumption controls the outcome.
+
+NARRATOR: Lists represent ordered sequences with position-based operations.
+
+NARRATOR: Consider this worked case: A student uses a list to track daily expenses, a tree to
+
+organize file folders, and a graph to map city bus routes with stops as vertices and routes
+
+as edges.
+
+NARRATOR: On screen, present three icons: a horizontal list with numbered slots, a
+
+pyramid-shaped tree with parent-child links, and a network of dots connected by lines.
+
+NARRATOR: Label each with its primary use case.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Correctness, Testing, and Debugging to diagnose a failure by separating
+
+symptoms, causes, and corrective action.
+
+NARRATOR: A disciplined solution states inputs and outputs, proves correctness, and then
+
+analyzes time and space.
+
+NARRATOR: Consider this worked case: A student tests a sorting algorithm with empty lists,
+
+single elements, and duplicates, then uses a debugger to step through a loop to find an
+
+off-by-one error.
+
+NARRATOR: On screen, show a checklist graphic: 'test empty input', 'test edge case', 'trace
+
+loop variable', 'fix error'.
+
+NARRATOR: Each item has a toggle switch that flips from red to green as the student checks
+
+them off.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Data Structure Representation and Invariants to the earlier
+
+ideas and explain how the pieces work as one system.
+
+NARRATOR: Representation choices and invariants determine which operations are
+
+efficient and which errors are possible.
+
+NARRATOR: Consider this worked case: A student chooses an adjacency list over an adjacency
+
+matrix for a sparse graph, noting that the invariant 'each edge appears exactly once'
+
+keeps memory usage low.
+
+NARRATOR: On screen, display two grid layouts: left shows a dense matrix with many empty
+
+cells, right shows a sparse adjacency list with short chains.
+
+NARRATOR: Add a warning icon over the matrix and a checkmark over the list, labeled 'sparse
+
+graph invariant'.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+
+guide a new analysis.
+
+NARRATOR: Assignments (both in class and for homework) requiring a pseudo code solution and
+
+an implementation are an integral part of the course.
+
+NARRATOR: Consider this worked case: A student reviews a checklist: 'define I/O', 'state loop
+
+invariant', 'analyze recurrence', 'verify base case', then proceeds to code the
+
+divide-and-conquer algorithm.
+
+NARRATOR: On screen, show a clean checklist graphic with four boxes: 'specification',
+
+'correctness proof', 'resource bounds', 'implementation'.
+
+NARRATOR: Each box has a progress bar that fills as the student completes the step,
+
+ending with a 'ready to code' badge.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.

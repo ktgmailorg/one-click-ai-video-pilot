@@ -50,6 +50,10 @@ test("the pilot page separates measured fresh production from cached replay", as
   assert.match(html, /10:06/);
   assert.match(html, /2\.39× real-time throughput/);
   assert.match(html, /3\.85× faster/);
+  assert.match(html, /20:05/);
+  assert.match(html, /5:45/);
+  assert.match(html, /3\.49× aggregate real-time throughput/);
+  assert.match(html, /without blockers or warnings/);
   assert.match(html, /0\.65s/);
   assert.match(html, /621× faster/);
   assert.match(html, /not guaranteed completion times/i);

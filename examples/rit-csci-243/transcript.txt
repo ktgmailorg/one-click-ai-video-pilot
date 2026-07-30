@@ -1,0 +1,259 @@
+NARRATOR: Begin by framing Introduction to Program Structure as a question about inputs,
+
+decisions, and observable results.
+
+NARRATOR: Modes of operation define how a primitive processes data larger than one
+
+block.
+
+NARRATOR: Consider this worked case: A C program divides functionality into functions
+
+and global variables.
+
+NARRATOR: On screen, display a block diagram showing a main function calling three
+
+sub-functions with a shared data structure.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Now define Execution Mechanics Overview precisely enough that another learner
+
+could test the definition.
+
+NARRATOR: Students will be introduced to the details of program structure and the mechanics
+
+of execution as well as supportive operating system features.
+
+NARRATOR: Consider this worked case: A for-loop iterates through an array, updating a
+
+running total each cycle.
+
+NARRATOR: On screen, show a flowchart with a start node, a loop diamond, and exit arrows
+
+based on a boolean condition.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: With the foundation in place, examine how Memory Management Basics operates
+
+in a concrete sequence.
+
+NARRATOR: Protect the Software prevents unauthorized access to code and development
+
+artifacts.
+
+NARRATOR: Consider this worked case: An integer variable stores a fixed-size binary
+
+representation in RAM.
+
+NARRATOR: On screen, illustrate a memory map with labeled addresses, data types, and
+
+pointer offsets.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Then summarize what the example demonstrates, what it does not establish, and
+
+what evidence would be needed next.
+
+NARRATOR: Next, compare the choices involved in Program Translation Process and make the
+
+decision criteria explicit.
+
+NARRATOR: Produce Well-Secured Software addresses security requirements, design,
+
+verification, and release.
+
+NARRATOR: Consider this worked case: A compiler translates C syntax into machine
+
+instructions for the target CPU architecture.
+
+NARRATOR: On screen, present a pipeline diagram showing source code, preprocessor,
+
+compiler, linker, and final executable.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Apply Operating System Integration to a worked situation instead of treating it
+
+as an isolated definition.
+
+NARRATOR: Verification provides evidence that selected practices and controls were
+
+performed.
+
+NARRATOR: Consider this worked case: A file I/O operation requests disk access through an
+
+OS kernel interface.
+
+NARRATOR: On screen, draw a layered diagram with application code, OS API, and kernel
+
+resource managers.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Examine the tradeoffs in Security Design Principles, including what improves and
+
+what becomes more difficult.
+
+NARRATOR: Security depends on the complete protocol and implementation, not only an
+
+algorithm name.
+
+NARRATOR: Consider this worked case: Using AES-256 with proper key management ensures
+
+confidentiality against known attacks.
+
+NARRATOR: On screen, show a key lifecycle diagram covering generation, distribution,
+
+storage, and revocation.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Stress-test the reasoning around Performance Optimization Strategies with an
+
+edge case and identify which assumption controls the outcome.
+
+NARRATOR: Security and performance issues in program design will be discussed.
+
+NARRATOR: Consider this worked case: Replacing nested loops with hash maps reduces average
+
+lookup time from O(n²) to O(1).
+
+NARRATOR: On screen, display a comparison chart of algorithmic time complexity across
+
+different data structures.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Use Secure Development Practices to diagnose a failure by separating symptoms,
+
+causes, and corrective action.
+
+NARRATOR: Security requirements should be tracked throughout development.
+
+NARRATOR: Consider this worked case: Maintaining a threat model document updates
+
+trust boundaries as the codebase evolves.
+
+NARRATOR: On screen, present a checklist template with fields for asset, threat,
+
+control, and residual risk.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Connect Verification and Testing Methods to the earlier ideas and explain how
+
+the pieces work as one system.
+
+NARRATOR: Security reasoning identifies assets, trust boundaries, threats, controls,
+
+evidence, residual risk, and responsibilities.
+
+NARRATOR: Consider this worked case: Static analysis tools scan source code for buffer
+
+overflows before compilation.
+
+NARRATOR: On screen, show a testing workflow diagram linking unit tests, integration tests,
+
+and security scans.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+
+guide a new analysis.
+
+NARRATOR: Analysis also considers side channels and migration requirements.
+
+NARRATOR: Consider this worked case: A secure, performant module validates inputs, manages
+
+memory safely, and follows established standards.
+
+NARRATOR: On screen, display a three-column matrix evaluating code against structure,
+
+performance, and security criteria.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.

@@ -1,0 +1,235 @@
+NARRATOR: Begin by framing Course Foundations & Scope as a question about inputs, decisions,
+
+and observable results.
+
+NARRATOR: This accelerated course covers material from the first-year sequence of
+
+courses and provides the foundation for all subsequent Computer Science courses.
+
+NARRATOR: Consider this worked case: Students will use this course to prepare for advanced
+
+topics like algorithms, data structures, and software engineering.
+
+NARRATOR: On screen, display a course roadmap graphic showing CSCI-140 as the central hub
+
+connecting to advanced CS courses.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Static vs. Dynamic Data Types precisely enough that another learner
+
+could test the definition.
+
+NARRATOR: Topics include tree and graph structures, nested data structures, objects,
+
+classes, inheritance, interfaces, object-oriented collection class libraries for
+
+abstract data types (for example stacks, queues, maps, and trees), and static versus
+
+dynamic data types.
+
+NARRATOR: Consider this worked case: In statically typed languages, variable types are
+
+checked at compile time, whereas dynamically typed languages check types at runtime.
+
+NARRATOR: On screen, show a side-by-side comparison table of static vs. dynamic typing
+
+with code snippets highlighting compile-time vs. runtime type resolution.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: With the foundation in place, examine how Object-Oriented Design Foundations
+
+operates in a concrete sequence.
+
+NARRATOR: Software qualities related to object orientation, namely cohesion, minimal
+
+coupling, modifiability, and extensibility, are all introduced in this course, as well as
+
+a few elementary object-oriented design patterns.
+
+NARRATOR: Consider this worked case: A parent class defines shared behavior, while child
+
+classes inherit and extend that behavior through polymorphism.
+
+NARRATOR: On screen, render a class diagram illustrating inheritance relationships between
+
+a base class and derived classes.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in Abstract Data Types & Collections and make
+
+the decision criteria explicit.
+
+NARRATOR: The Python language reference specifies lexical analysis, data model
+
+behavior, execution, expressions, statements, functions, classes, exceptions, and module
+
+import semantics.
+
+NARRATOR: Consider this worked case: A stack implements last-in-first-out behavior, while a
+
+queue implements first-in-first-out behavior for ordered data processing.
+
+NARRATOR: On screen, animate a stack and queue data structure showing push/pop and
+
+enqueue/dequeue operations with labeled elements.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Apply Software Qualities: Cohesion & Minimal Coupling to a worked situation instead
+
+of treating it as an isolated definition.
+
+NARRATOR: Concepts of object- oriented design are a large part of the course.
+
+NARRATOR: Consider this worked case: High cohesion means a class performs a single,
+
+well-defined purpose, while minimal coupling reduces dependencies between classes.
+
+NARRATOR: On screen, display a before-and-after class diagram showing how
+
+refactoring improves cohesion and reduces coupling.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in Exception Handling & Control Flow, including what
+
+improves and what becomes more difficult.
+
+NARRATOR: Exceptions interrupt normal control flow until a matching handler processes them
+
+or they propagate.
+
+NARRATOR: Consider this worked case: A try-catch block catches a runtime error,
+
+allowing the program to recover or exit gracefully without crashing.
+
+NARRATOR: On screen, show a control flow diagram with a normal path and an exception
+
+path branching to a handler block.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around Compiler & IR Concepts with an edge case and
+
+identify which assumption controls the outcome.
+
+NARRATOR: Compiler work separates parsing and semantic analysis from lowering, verification,
+
+optimization, and target-specific code generation.
+
+NARRATOR: Consider this worked case: LLVM IR serves as a typed, SSA-based intermediate
+
+representation that enables cross-platform optimization and code generation.
+
+NARRATOR: On screen, illustrate a compiler pipeline diagram with stages: parsing,
+
+semantic analysis, lowering, verification, optimization, code generation.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Python Language Model & Execution to diagnose a failure by separating
+
+symptoms, causes, and corrective action.
+
+NARRATOR: Programs should be reasoned about through explicit state, control flow, data
+
+representation, contracts, tests, and observable behavior.
+
+NARRATOR: Consider this worked case: Debugging separates syntax, runtime, and logical
+
+failures, while decomposition and abstraction reduce interacting concerns in Python code.
+
+NARRATOR: On screen, show a Python object model diagram with identity, type, and value
+
+attributes, alongside a debugging workflow flowchart.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Object-Oriented Design Patterns to the earlier ideas and explain how
+
+the pieces work as one system.
+
+NARRATOR: The course stresses problem solving while covering modern software development
+
+techniques and introducing essential software tools.
+
+NARRATOR: Consider this worked case: The singleton pattern ensures a class has only one
+
+instance, while the factory pattern creates objects without specifying exact classes.
+
+NARRATOR: On screen, display a simple UML diagram of a factory pattern with creator,
+
+product, and concrete product classes.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+
+guide a new analysis.
+
+NARRATOR: Valid IR must satisfy structural and typing rules.
+
+NARRATOR: Consider this worked case: A checklist evaluates whether each class has a
+
+single responsibility, limited dependencies, and clear extension points for future
+
+features.
+
+NARRATOR: On screen, show a printable checklist template with checkboxes for
+
+cohesion, coupling, modifiability, and extensibility evaluation.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.

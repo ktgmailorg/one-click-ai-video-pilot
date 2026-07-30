@@ -1,0 +1,206 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "Begin by framing Foundations of Parallel and Distributed Architecture as a question about inputs, decisions, and observable results.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "Consider this worked case: A web server cluster distributes incoming HTTP requests across multiple physical machines to handle high traffic loads.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "List the givens before choosing a method, because an unstated assumption can change the conclusion.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "Now define Multi-Core Computer Organization precisely enough that another learner could test the definition.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "Consider this worked case: A modern desktop processor with eight cores can execute eight separate program threads simultaneously, reducing execution time for parallelizable workloads.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "Separate the formal definition from an implementation detail, then identify what evidence would distinguish them.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "With the foundation in place, examine how Parallel Computer Clusters and Computing Grids operates in a concrete sequence.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "Consider this worked case: A scientific research cluster runs molecular dynamics simulations in parallel, whereas a computing grid coordinates thousands of university servers to analyze climate data.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "Follow every arrow in order and name the state before and after each transition.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "Next, compare the choices involved in Client-Server and Peer-to-Peer Systems and make the decision criteria explicit.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "Consider this worked case: A bank's online portal uses a client-server model where users connect to central authentication servers, whereas a file-sharing network uses peer-to-peer nodes to exchange documents directly.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "Compare alternatives against the same constraints so the evaluation does not move the goalposts.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "Apply Computer Networks and Network Protocols to a worked situation instead of treating it as an isolated definition.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "Consider this worked case: The TCP/IP protocol suite manages packet routing, congestion control, and end-to-end delivery, ensuring that data reaches the correct destination despite network failures.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "Work from the concrete inputs to the result, checking units, types, or invariants at each step.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-06",
+      "shots": [
+        {
+          "id": "beat-06-shot-001",
+          "phrase": "Examine the tradeoffs in Network Security and Data Protection, including what improves and what becomes more difficult.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-002",
+          "phrase": "Consider this worked case: TLS encryption secures web traffic by encrypting payloads and using digital certificates to authenticate the server, preventing man-in-the-middle attacks.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-003",
+          "phrase": "State the benefit, the cost, and the condition under which the tradeoff is acceptable.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-07",
+      "shots": [
+        {
+          "id": "beat-07-shot-001",
+          "phrase": "Stress-test the reasoning around Cryptographic Standards and Key Management with an edge case and identify which assumption controls the outcome.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-002",
+          "phrase": "Consider this worked case: AES-256 encryption with a properly rotated key protects sensitive database records, while a nonce ensures each encryption operation produces a unique ciphertext.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-003",
+          "phrase": "Change one assumption at a time and observe which part of the reasoning no longer holds.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-08",
+      "shots": [
+        {
+          "id": "beat-08-shot-001",
+          "phrase": "Use Multi-Threaded Programming Fundamentals to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-002",
+          "phrase": "Consider this worked case: A web application uses separate threads for handling database queries, user authentication, and response generation, coordinated by mutex locks to protect shared variables.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-003",
+          "phrase": "Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-09",
+      "shots": [
+        {
+          "id": "beat-09-shot-001",
+          "phrase": "Connect Network Programming and Distributed Communication to the earlier ideas and explain how the pieces work as one system.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-002",
+          "phrase": "Consider this worked case: A distributed caching system uses UDP multicast to broadcast cache invalidation messages, while a RPC framework serializes requests and deserializes responses across network boundaries.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-003",
+          "phrase": "Explain each connection explicitly and verify that information retains the same meaning across representations.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-10",
+      "shots": [
+        {
+          "id": "beat-10-shot-001",
+          "phrase": "Finish with Secure Software Development and Verification as a practical checklist that can guide a new analysis.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-002",
+          "phrase": "Consider this worked case: A development team uses a secure software development framework to verify that cryptographic libraries are properly integrated, track security requirements, and remediate vulnerabilities before release.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-003",
+          "phrase": "For each checklist item, record the evidence, the remaining uncertainty, and the next verification step.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "csci-251-concepts-of-parallel-and-distributed-systems",
+  "schemaVersion": 1
+}

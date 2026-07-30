@@ -1,0 +1,206 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "Begin by framing Course Context and Transfer Goals as a question about inputs, decisions, and observable results.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "Consider this worked case: A transfer student who completed introductory programming courses will use this course to align their problem-solving and algorithmic skills with the university's first-year CS curriculum.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "List the givens before choosing a method, because an unstated assumption can change the conclusion.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "Now define Core Course Focus precisely enough that another learner could test the definition.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "Consider this worked case: Students will practice selecting a hash table for fast key lookups versus a linked list for frequent insertions, based on the problem's access patterns.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "Separate the formal definition from an implementation detail, then identify what evidence would distinguish them.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "With the foundation in place, examine how Assignment Structure operates in a concrete sequence.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "Consider this worked case: A homework assignment might ask students to draft a pseudocode design for a priority queue before writing the actual code in a supported language.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "Follow every arrow in order and name the state before and after each transition.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "Next, compare the choices involved in Algorithm Analysis Basics and make the decision criteria explicit.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "Consider this worked case: Analyzing a sorting algorithm shows that its time complexity grows quadratically with input size, expressed as O(n^2) in asymptotic notation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "Compare alternatives against the same constraints so the evaluation does not move the goalposts.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "Apply Asymptotic Notation to a worked situation instead of treating it as an isolated definition.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "Consider this worked case: Using Big-O notation, a linear scan is O(n) while a binary search is O(log n), clearly showing the latter scales better for large datasets.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "Work from the concrete inputs to the result, checking units, types, or invariants at each step.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-06",
+      "shots": [
+        {
+          "id": "beat-06-shot-001",
+          "phrase": "Examine the tradeoffs in Loop Invariants, including what improves and what becomes more difficult.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-002",
+          "phrase": "Consider this worked case: In a loop that sums an array, the invariant 'sum equals the total of elements processed so far' holds true before each iteration and after the loop ends.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-003",
+          "phrase": "State the benefit, the cost, and the condition under which the tradeoff is acceptable.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-07",
+      "shots": [
+        {
+          "id": "beat-07-shot-001",
+          "phrase": "Stress-test the reasoning around Data Structure Representations with an edge case and identify which assumption controls the outcome.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-002",
+          "phrase": "Consider this worked case: Choosing an adjacency matrix for a dense graph ensures fast edge lookups, while an adjacency list prevents memory waste on sparse graphs.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-003",
+          "phrase": "Change one assumption at a time and observe which part of the reasoning no longer holds.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-08",
+      "shots": [
+        {
+          "id": "beat-08-shot-001",
+          "phrase": "Use Common Data Structures to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-002",
+          "phrase": "Consider this worked case: A stack processes function calls by returning the most recently added task first, whereas a queue processes customer orders in the exact order they arrive.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-003",
+          "phrase": "Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-09",
+      "shots": [
+        {
+          "id": "beat-09-shot-001",
+          "phrase": "Connect Trees and Graphs to the earlier ideas and explain how the pieces work as one system.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-002",
+          "phrase": "Consider this worked case: A file system directory tree allows recursive folder browsing, and a road network graph uses adjacency lists to calculate the shortest driving route between two cities.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-003",
+          "phrase": "Explain each connection explicitly and verify that information retains the same meaning across representations.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-10",
+      "shots": [
+        {
+          "id": "beat-10-shot-001",
+          "phrase": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-002",
+          "phrase": "Consider this worked case: Before coding a search routine, students check that the input is a sorted array, the output is the index of the target, and the time complexity is O(log n) using binary search.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-003",
+          "phrase": "For each checklist item, record the evidence, the remaining uncertainty, and the next verification step.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "csci-242-computer-science-for-transfer-students-foundations-less",
+  "schemaVersion": 1
+}

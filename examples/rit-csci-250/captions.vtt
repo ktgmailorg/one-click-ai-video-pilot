@@ -1,0 +1,527 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:07.316
+NARRATOR: Begin by framing Introduction to
+Multilevel Architecture as a question about
+
+2
+00:00:07.316 --> 00:00:10.343
+inputs, decisions, and observable results.
+
+3
+00:00:10.343 --> 00:00:16.703
+NARRATOR: Topics include the digital logic
+level; the micro architecture level; the
+
+4
+00:00:16.703 --> 00:00:23.593
+machine instruction set level; the operating
+system level; and the assembly language level.
+
+5
+00:00:23.593 --> 00:00:30.265
+NARRATOR: Consider this worked case: This
+hierarchy allows developers to write assembly
+
+6
+00:00:30.265 --> 00:00:36.937
+code that directly manipulates registers while
+the OS handles memory and scheduling.
+
+7
+00:00:36.937 --> 00:00:45.100
+NARRATOR: On screen, display a stacked diagram
+showing five layers: digital logic,
+
+8
+00:00:45.100 --> 00:00:51.903
+microarchitecture, instruction set, OS, and
+assembly, with arrows indicating upward
+
+9
+00:00:51.903 --> 00:00:54.624
+abstraction and downward control.
+
+10
+00:00:54.624 --> 00:01:00.693
+NARRATOR: List the givens before choosing a
+method, because an unstated assumption can
+
+11
+00:01:00.693 --> 00:01:02.093
+change the conclusion.
+
+12
+00:01:02.093 --> 00:01:08.046
+NARRATOR: This establishes the vocabulary and
+scope needed for the remaining sections.
+
+13
+00:01:08.162 --> 00:01:14.620
+NARRATOR: Now define Digital Logic and
+Microarchitecture Basics precisely enough that
+
+14
+00:01:14.620 --> 00:01:18.143
+another learner could test the definition.
+
+15
+00:01:18.143 --> 00:01:24.533
+NARRATOR: An introduction to the hardware and
+software organization of computer systems.
+
+16
+00:01:24.533 --> 00:01:32.522
+NARRATOR: Consider this worked case: A simple
+AND gate combines two input signals to produce
+
+17
+00:01:32.522 --> 00:01:37.315
+a single output, enabling complex logic in
+modern processors.
+
+18
+00:01:37.315 --> 00:01:46.515
+NARRATOR: On screen, show a schematic of basic
+logic gates (AND, OR, NOT) connected to form a
+
+19
+00:01:46.515 --> 00:01:49.221
+simple adder, highlighting signal flow.
+
+20
+00:01:49.221 --> 00:01:55.807
+NARRATOR: Separate the formal definition from
+an implementation detail, then identify what
+
+21
+00:01:55.807 --> 00:01:58.002
+evidence would distinguish them.
+
+22
+00:01:58.002 --> 00:02:04.408
+NARRATOR: A precise definition makes later
+examples easier to evaluate and revise.
+
+23
+00:02:04.538 --> 00:02:10.790
+NARRATOR: With the foundation in place,
+examine how Microarchitecture and Instruction
+
+24
+00:02:10.790 --> 00:02:14.769
+Set Interface operates in a concrete sequence.
+
+25
+00:02:14.769 --> 00:02:21.230
+NARRATOR: The RISC-V ISA defines
+programmer-visible instructions, registers,
+
+26
+00:02:21.230 --> 00:02:27.691
+memory operations, control transfer,
+exceptions, and ordering behavior.
+
+27
+00:02:27.691 --> 00:02:33.939
+NARRATOR: Consider this worked case: A branch
+instruction alters the control flow by
+
+28
+00:02:33.939 --> 00:02:39.706
+updating the program counter based on a
+condition evaluated by the CPU.
+
+29
+00:02:39.706 --> 00:02:46.515
+NARRATOR: On screen, illustrate a pipeline
+diagram showing how an instruction moves
+
+30
+00:02:46.515 --> 00:02:50.487
+through fetch, decode, execute, and write-back
+stages.
+
+31
+00:02:50.487 --> 00:02:57.722
+NARRATOR: Follow every arrow in order and name
+the state before and after each transition.
+
+32
+00:02:57.722 --> 00:03:03.456
+NARRATOR: The trace converts an abstract
+statement into an inspectable sequence.
+
+33
+00:03:03.578 --> 00:03:10.588
+NARRATOR: Next, compare the choices involved
+in Machine Instruction Set Level and make the
+
+34
+00:03:10.588 --> 00:03:12.090
+decision criteria explicit.
+
+35
+00:03:12.090 --> 00:03:16.387
+NARRATOR: Branch and jump instructions change
+control flow.
+
+36
+00:03:16.387 --> 00:03:23.312
+NARRATOR: Consider this worked case: A load
+instruction transfers data from a memory
+
+37
+00:03:23.312 --> 00:03:27.574
+address into a specific register for
+subsequent computation.
+
+38
+00:03:27.574 --> 00:03:34.801
+NARRATOR: On screen, display a table mapping
+common RISC-V instructions to their register
+
+39
+00:03:34.801 --> 00:03:38.137
+and memory operands, emphasizing data flow.
+
+40
+00:03:38.137 --> 00:03:44.724
+NARRATOR: Compare alternatives against the
+same constraints so the evaluation does not
+
+41
+00:03:44.724 --> 00:03:46.371
+move the goalposts.
+
+42
+00:03:46.371 --> 00:03:53.262
+NARRATOR: Using shared criteria turns a
+preference into a defensible technical choice.
+
+43
+00:03:53.262 --> 00:04:00.542
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+44
+00:04:00.542 --> 00:04:02.527
+throughout the analysis.
+
+45
+00:04:02.642 --> 00:04:08.223
+NARRATOR: Apply Operating System Level
+Overview to a worked situation instead of
+
+46
+00:04:08.223 --> 00:04:11.013
+treating it as an isolated definition.
+
+47
+00:04:11.013 --> 00:04:18.715
+NARRATOR: Analysis distinguishes user mode,
+privileged kernel code, hardware translation,
+
+48
+00:04:18.715 --> 00:04:24.107
+interrupt state, resource ownership, and
+synchronization invariants.
+
+49
+00:04:24.107 --> 00:04:31.196
+NARRATOR: Consider this worked case: The OS
+allocates CPU time to different processes
+
+50
+00:04:31.196 --> 00:04:35.013
+using a scheduler that prioritizes runnable
+tasks.
+
+51
+00:04:35.013 --> 00:04:42.458
+NARRATOR: On screen, draw a flowchart showing
+process creation, scheduling decision, context
+
+52
+00:04:42.458 --> 00:04:45.560
+switch, and resource allocation steps.
+
+53
+00:04:45.560 --> 00:04:52.483
+NARRATOR: Work from the concrete inputs to the
+result, checking units, types, or invariants
+
+54
+00:04:52.483 --> 00:04:53.966
+at each step.
+
+55
+00:04:53.966 --> 00:04:59.123
+NARRATOR: The worked case shows both how to
+apply the method and how to check it.
+
+56
+00:04:59.234 --> 00:05:05.763
+NARRATOR: Examine the tradeoffs in User Mode
+and Kernel Mode Transitions, including what
+
+57
+00:05:05.763 --> 00:05:08.777
+improves and what becomes more difficult.
+
+58
+00:05:08.777 --> 00:05:14.965
+NARRATOR: A system call transfers control from
+user code to a privileged kernel service.
+
+59
+00:05:14.965 --> 00:05:22.182
+NARRATOR: Consider this worked case: A system
+call transfers control from user code to a
+
+60
+00:05:22.182 --> 00:05:26.512
+privileged kernel service to access hardware
+or manage memory.
+
+61
+00:05:26.512 --> 00:05:32.637
+NARRATOR: On screen, show a side-by-side
+comparison of user mode (restricted
+
+62
+00:05:32.637 --> 00:05:38.762
+permissions) and kernel mode (full hardware
+access) with a transition arrow.
+
+63
+00:05:38.762 --> 00:05:45.105
+NARRATOR: State the benefit, the cost, and the
+condition under which the tradeoff is
+
+64
+00:05:45.105 --> 00:05:45.558
+acceptable.
+
+65
+00:05:45.558 --> 00:05:53.027
+NARRATOR: Making the tradeoff visible prevents
+a local improvement from hiding a larger cost.
+
+66
+00:05:53.138 --> 00:05:59.907
+NARRATOR: Stress-test the reasoning around
+System Calls and Traps Mechanism with an edge
+
+67
+00:05:59.907 --> 00:06:04.072
+case and identify which assumption controls
+the outcome.
+
+68
+00:06:04.072 --> 00:06:10.493
+NARRATOR: A trap records processor state so
+the kernel can handle a system call,
+
+69
+00:06:10.493 --> 00:06:11.869
+exception, or interrupt.
+
+70
+00:06:11.869 --> 00:06:18.683
+NARRATOR: Consider this worked case: When a
+process requests file I/O, a trap records the
+
+71
+00:06:18.683 --> 00:06:24.134
+CPU registers so the kernel can handle the
+request and restore state.
+
+72
+00:06:24.134 --> 00:06:31.604
+NARRATOR: On screen, create a sequence diagram
+showing the trap entry, kernel handling, and
+
+73
+00:06:31.604 --> 00:06:34.806
+return path with state preservation markers.
+
+74
+00:06:34.806 --> 00:06:40.850
+NARRATOR: Change one assumption at a time and
+observe which part of the reasoning no longer
+
+75
+00:06:40.850 --> 00:06:41.228
+holds.
+
+76
+00:06:41.228 --> 00:06:47.489
+NARRATOR: The edge case reveals the boundary
+of the claim without discarding the useful
+
+77
+00:06:47.489 --> 00:06:48.384
+core idea.
+
+78
+00:06:48.506 --> 00:06:56.172
+NARRATOR: Use Virtual Memory and Page Tables
+to diagnose a failure by separating symptoms,
+
+79
+00:06:56.172 --> 00:06:58.362
+causes, and corrective action.
+
+80
+00:06:58.362 --> 00:07:04.924
+NARRATOR: Page tables map virtual addresses to
+physical memory with permission bits.
+
+81
+00:07:04.924 --> 00:07:11.197
+NARRATOR: Consider this worked case: A page
+table entry contains a physical address
+
+82
+00:07:11.197 --> 00:07:16.987
+pointer and permission bits that determine
+access rights for each memory block.
+
+83
+00:07:16.987 --> 00:07:24.037
+NARRATOR: On screen, illustrate a two-level
+page table structure with arrows linking
+
+84
+00:07:24.037 --> 00:07:28.737
+virtual addresses to physical frames,
+highlighting permission bits.
+
+85
+00:07:28.737 --> 00:07:34.571
+NARRATOR: Locate the first point where
+observed behavior diverges from expected
+
+86
+00:07:34.571 --> 00:07:38.284
+behavior, then test the smallest plausible
+cause.
+
+87
+00:07:38.284 --> 00:07:44.034
+NARRATOR: The diagnosis is strongest when
+another person can reproduce the observation
+
+88
+00:07:44.034 --> 00:07:45.471
+and the test.
+
+89
+00:07:45.578 --> 00:07:51.566
+NARRATOR: Connect Concurrency, Locks, and
+Scheduling to the earlier ideas and explain
+
+90
+00:07:51.566 --> 00:07:55.059
+how the pieces work as one system.
+
+91
+00:07:55.059 --> 00:08:00.949
+NARRATOR: Locks protect invariants when
+concurrent execution can access shared state.
+
+92
+00:08:00.949 --> 00:08:09.196
+NARRATOR: Consider this worked case: A mutex
+lock prevents two processes from modifying a
+
+93
+00:08:09.196 --> 00:08:12.731
+shared counter simultaneously, maintaining
+data integrity.
+
+94
+00:08:12.731 --> 00:08:20.082
+NARRATOR: On screen, display a diagram of a
+shared resource with a lock mechanism, showing
+
+95
+00:08:20.082 --> 00:08:23.512
+how processes queue and acquire exclusive
+access.
+
+96
+00:08:23.512 --> 00:08:32.674
+NARRATOR: Explain each connection explicitly
+and verify that information retains the same
+
+97
+00:08:32.674 --> 00:08:34.965
+meaning across representations.
+
+98
+00:08:34.965 --> 00:08:42.060
+NARRATOR: The synthesis matters only if every
+connection remains supported by the original
+
+99
+00:08:42.060 --> 00:08:42.606
+evidence.
+
+100
+00:08:42.722 --> 00:08:48.274
+NARRATOR: Finish with Practical Analysis
+Checklist as a practical checklist that can
+
+101
+00:08:48.274 --> 00:08:50.125
+guide a new analysis.
+
+102
+00:08:50.125 --> 00:08:57.003
+NARRATOR: Architecture analysis preserves data
+dependencies, control dependencies, and
+
+103
+00:08:57.003 --> 00:08:58.531
+architectural state.
+
+104
+00:08:58.531 --> 00:09:05.535
+NARRATOR: Consider this worked case: An
+analyst reviews a process trace to confirm
+
+105
+00:09:05.535 --> 00:09:12.000
+that traps preserved state, locks protected
+invariants, and page tables mapped correctly.
+
+106
+00:09:12.000 --> 00:09:19.035
+NARRATOR: On screen, provide a checklist
+template with boxes for verifying: state
+
+107
+00:09:19.035 --> 00:09:24.312
+preservation, lock invariants, page table
+mappings, and scheduling fairness.
+
+108
+00:09:24.312 --> 00:09:31.891
+NARRATOR: For each checklist item, record the
+evidence, the remaining uncertainty, and the
+
+109
+00:09:31.891 --> 00:09:33.640
+next verification step.
+
+110
+00:09:33.640 --> 00:09:39.480
+NARRATOR: The result is a repeatable
+procedure, not a conclusion that depends on
+
+111
+00:09:39.480 --> 00:09:40.828
+memory or intuition.

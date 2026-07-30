@@ -1,0 +1,243 @@
+NARRATOR: Begin by framing Foundations of Parallel and Distributed Architecture as a
+
+question about inputs, decisions, and observable results.
+
+NARRATOR: This course is an introduction to the organization and programming of systems
+
+comprising multiple computers.
+
+NARRATOR: Consider this worked case: A web server cluster distributes incoming HTTP
+
+requests across multiple physical machines to handle high traffic loads.
+
+NARRATOR: On screen, display a diagram showing a single server versus a cluster of three
+
+servers connected by a network, highlighting load distribution.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Multi-Core Computer Organization precisely enough that another
+
+learner could test the definition.
+
+NARRATOR: Topics include the organization of multi-core computers, parallel computer
+
+clusters, computing grids, client-server systems, and peer-to-peer systems; computer
+
+networks and network protocols; network security; multi-threaded programming; and
+
+network programming.
+
+NARRATOR: Consider this worked case: A modern desktop processor with eight cores can execute
+
+eight separate program threads simultaneously, reducing execution time for parallelizable
+
+workloads.
+
+NARRATOR: On screen, show a close-up illustration of a CPU die with eight distinct
+
+cores, each labeled with a thread ID, connected via an internal interconnect.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: With the foundation in place, examine how Parallel Computer Clusters and
+
+Computing Grids operates in a concrete sequence.
+
+NARRATOR: Programming projects will be required.
+
+NARRATOR: Consider this worked case: A scientific research cluster runs molecular
+
+dynamics simulations in parallel, whereas a computing grid coordinates thousands of
+
+university servers to analyze climate data.
+
+NARRATOR: On screen, draw two side-by-side network maps: one showing a local cluster with
+
+direct links, and another showing a grid with regional nodes connected via the internet.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in Client-Server and Peer-to-Peer Systems and
+
+make the decision criteria explicit.
+
+NARRATOR: Modes of operation define how a primitive processes data larger than one
+
+block.
+
+NARRATOR: Consider this worked case: A bank's online portal uses a client-server model where
+
+users connect to central authentication servers, whereas a file-sharing network uses
+
+peer-to-peer nodes to exchange documents directly.
+
+NARRATOR: On screen, illustrate a star topology for client-server with a central
+
+server node, and a mesh topology for peer-to-peer with interconnected user nodes.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Apply Computer Networks and Network Protocols to a worked situation instead of
+
+treating it as an isolated definition.
+
+NARRATOR: Security depends on the complete protocol and implementation, not only an
+
+algorithm name.
+
+NARRATOR: Consider this worked case: The TCP/IP protocol suite manages packet routing,
+
+congestion control, and end-to-end delivery, ensuring that data reaches the correct
+
+destination despite network failures.
+
+NARRATOR: On screen, show a packet traversing a network with labeled protocol layers
+
+(application, transport, network, link) and a status indicator for successful delivery.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in Network Security and Data Protection, including what
+
+improves and what becomes more difficult.
+
+NARRATOR: Protect the Software prevents unauthorized access to code and development
+
+artifacts.
+
+NARRATOR: Consider this worked case: TLS encryption secures web traffic by encrypting
+
+payloads and using digital certificates to authenticate the server, preventing
+
+man-in-the-middle attacks.
+
+NARRATOR: On screen, display a flowchart showing plaintext data entering a TLS
+
+handshake, being encrypted with a symmetric key, and exiting as ciphertext with an
+
+integrity tag.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around Cryptographic Standards and Key Management
+
+with an edge case and identify which assumption controls the outcome.
+
+NARRATOR: Cryptographic standards define approved algorithms and parameters.
+
+NARRATOR: Consider this worked case: AES-256 encryption with a properly rotated key
+
+protects sensitive database records, while a nonce ensures each encryption operation
+
+produces a unique ciphertext.
+
+NARRATOR: On screen, show a key management lifecycle diagram with stages: generation,
+
+distribution, storage, use, rotation, and destruction, each marked with a checkmark.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Multi-Threaded Programming Fundamentals to diagnose a failure by
+
+separating symptoms, causes, and corrective action.
+
+NARRATOR: Prepare the Organization establishes people, processes, and technology for secure
+
+development.
+
+NARRATOR: Consider this worked case: A web application uses separate threads for handling
+
+database queries, user authentication, and response generation, coordinated by mutex
+
+locks to protect shared variables.
+
+NARRATOR: On screen, illustrate a process with three threads, each with a stack and shared
+
+heap, highlighting a mutex lock protecting a critical section.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Network Programming and Distributed Communication to the earlier ideas
+
+and explain how the pieces work as one system.
+
+NARRATOR: The Secure Software Development Framework groups practices into four practice
+
+groups.
+
+NARRATOR: Consider this worked case: A distributed caching system uses UDP multicast
+
+to broadcast cache invalidation messages, while a RPC framework serializes requests and
+
+deserializes responses across network boundaries.
+
+NARRATOR: On screen, show a sequence diagram of an RPC call: client sends request, server
+
+processes, server sends response, client receives result, with timeout indicators.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with Secure Software Development and Verification as a practical
+
+checklist that can guide a new analysis.
+
+NARRATOR: Security requirements should be tracked throughout development.
+
+NARRATOR: Consider this worked case: A development team uses a secure software
+
+development framework to verify that cryptographic libraries are properly
+
+integrated, track security requirements, and remediate vulnerabilities before release.
+
+NARRATOR: On screen, display a four-box flowchart labeled Prepare, Protect, Produce,
+
+Respond, with arrows showing continuous feedback loops and a verification badge.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.

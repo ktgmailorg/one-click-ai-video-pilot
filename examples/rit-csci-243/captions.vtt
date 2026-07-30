@@ -1,0 +1,595 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:07.300
+NARRATOR: Begin by framing Introduction to
+Program Structure as a question about inputs,
+
+2
+00:00:07.300 --> 00:00:09.531
+decisions, and observable results.
+
+3
+00:00:09.531 --> 00:00:15.755
+NARRATOR: Modes of operation define how a
+primitive processes data larger than one
+
+4
+00:00:15.755 --> 00:00:16.234
+block.
+
+5
+00:00:16.234 --> 00:00:23.159
+NARRATOR: Consider this worked case: A C
+program divides functionality into functions
+
+6
+00:00:23.159 --> 00:00:24.890
+and global variables.
+
+7
+00:00:24.890 --> 00:00:31.101
+NARRATOR: On screen, display a block diagram
+showing a main function calling three
+
+8
+00:00:31.101 --> 00:00:33.968
+sub-functions with a shared data structure.
+
+9
+00:00:33.968 --> 00:00:40.100
+NARRATOR: List the givens before choosing a
+method, because an unstated assumption can
+
+10
+00:00:40.100 --> 00:00:41.515
+change the conclusion.
+
+11
+00:00:41.515 --> 00:00:47.203
+NARRATOR: This establishes the vocabulary and
+scope needed for the remaining sections.
+
+12
+00:00:47.203 --> 00:00:54.397
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+13
+00:00:54.397 --> 00:00:56.359
+throughout the analysis.
+
+14
+00:00:56.474 --> 00:01:02.968
+NARRATOR: Now define Execution Mechanics
+Overview precisely enough that another learner
+
+15
+00:01:02.968 --> 00:01:05.330
+could test the definition.
+
+16
+00:01:05.330 --> 00:01:11.654
+NARRATOR: Students will be introduced to the
+details of program structure and the mechanics
+
+17
+00:01:11.654 --> 00:01:15.720
+of execution as well as supportive operating
+system features.
+
+18
+00:01:15.720 --> 00:01:22.268
+NARRATOR: Consider this worked case: A
+for-loop iterates through an array, updating a
+
+19
+00:01:22.268 --> 00:01:24.283
+running total each cycle.
+
+20
+00:01:24.283 --> 00:01:31.259
+NARRATOR: On screen, show a flowchart with a
+start node, a loop diamond, and exit arrows
+
+21
+00:01:31.259 --> 00:01:33.439
+based on a boolean condition.
+
+22
+00:01:33.439 --> 00:01:40.060
+NARRATOR: Separate the formal definition from
+an implementation detail, then identify what
+
+23
+00:01:40.060 --> 00:01:42.267
+evidence would distinguish them.
+
+24
+00:01:42.267 --> 00:01:48.814
+NARRATOR: A precise definition makes later
+examples easier to evaluate and revise.
+
+25
+00:01:48.938 --> 00:01:55.029
+NARRATOR: With the foundation in place,
+examine how Memory Management Basics operates
+
+26
+00:01:55.029 --> 00:01:57.059
+in a concrete sequence.
+
+27
+00:01:57.059 --> 00:02:03.548
+NARRATOR: Protect the Software prevents
+unauthorized access to code and development
+
+28
+00:02:03.548 --> 00:02:04.138
+artifacts.
+
+29
+00:02:04.138 --> 00:02:10.575
+NARRATOR: Consider this worked case: An
+integer variable stores a fixed-size binary
+
+30
+00:02:10.575 --> 00:02:12.184
+representation in RAM.
+
+31
+00:02:12.184 --> 00:02:18.928
+NARRATOR: On screen, illustrate a memory map
+with labeled addresses, data types, and
+
+32
+00:02:18.928 --> 00:02:19.966
+pointer offsets.
+
+33
+00:02:19.966 --> 00:02:27.497
+NARRATOR: Follow every arrow in order and name
+the state before and after each transition.
+
+34
+00:02:27.497 --> 00:02:33.091
+NARRATOR: The trace converts an abstract
+statement into an inspectable sequence.
+
+35
+00:02:33.091 --> 00:02:40.224
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+36
+00:02:40.224 --> 00:02:42.169
+throughout the analysis.
+
+37
+00:02:42.169 --> 00:02:47.621
+NARRATOR: Then summarize what the example
+demonstrates, what it does not establish, and
+
+38
+00:02:47.621 --> 00:02:50.137
+what evidence would be needed next.
+
+39
+00:02:50.258 --> 00:02:56.933
+NARRATOR: Next, compare the choices involved
+in Program Translation Process and make the
+
+40
+00:02:56.933 --> 00:02:58.473
+decision criteria explicit.
+
+41
+00:02:58.473 --> 00:03:04.814
+NARRATOR: Produce Well-Secured Software
+addresses security requirements, design,
+
+42
+00:03:04.814 --> 00:03:07.192
+verification, and release.
+
+43
+00:03:07.192 --> 00:03:13.973
+NARRATOR: Consider this worked case: A
+compiler translates C syntax into machine
+
+44
+00:03:13.973 --> 00:03:17.364
+instructions for the target CPU architecture.
+
+45
+00:03:17.364 --> 00:03:24.465
+NARRATOR: On screen, present a pipeline
+diagram showing source code, preprocessor,
+
+46
+00:03:24.465 --> 00:03:27.692
+compiler, linker, and final executable.
+
+47
+00:03:27.692 --> 00:03:34.317
+NARRATOR: Compare alternatives against the
+same constraints so the evaluation does not
+
+48
+00:03:34.317 --> 00:03:35.973
+move the goalposts.
+
+49
+00:03:35.973 --> 00:03:42.864
+NARRATOR: Using shared criteria turns a
+preference into a defensible technical choice.
+
+50
+00:03:42.864 --> 00:03:50.218
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+51
+00:03:50.218 --> 00:03:52.223
+throughout the analysis.
+
+52
+00:03:52.346 --> 00:03:58.305
+NARRATOR: Apply Operating System Integration
+to a worked situation instead of treating it
+
+53
+00:03:58.305 --> 00:04:00.139
+as an isolated definition.
+
+54
+00:04:00.139 --> 00:04:06.674
+NARRATOR: Verification provides evidence that
+selected practices and controls were
+
+55
+00:04:06.674 --> 00:04:07.327
+performed.
+
+56
+00:04:07.327 --> 00:04:14.790
+NARRATOR: Consider this worked case: A file
+I/O operation requests disk access through an
+
+57
+00:04:14.790 --> 00:04:16.389
+OS kernel interface.
+
+58
+00:04:16.389 --> 00:04:24.360
+NARRATOR: On screen, draw a layered diagram
+with application code, OS API, and kernel
+
+59
+00:04:24.360 --> 00:04:25.499
+resource managers.
+
+60
+00:04:25.499 --> 00:04:32.074
+NARRATOR: Work from the concrete inputs to the
+result, checking units, types, or invariants
+
+61
+00:04:32.074 --> 00:04:33.483
+at each step.
+
+62
+00:04:33.483 --> 00:04:38.608
+NARRATOR: The worked case shows both how to
+apply the method and how to check it.
+
+63
+00:04:38.608 --> 00:04:45.385
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+64
+00:04:45.385 --> 00:04:47.233
+throughout the analysis.
+
+65
+00:04:47.354 --> 00:04:53.794
+NARRATOR: Examine the tradeoffs in Security
+Design Principles, including what improves and
+
+66
+00:04:53.794 --> 00:04:55.941
+what becomes more difficult.
+
+67
+00:04:55.941 --> 00:05:01.877
+NARRATOR: Security depends on the complete
+protocol and implementation, not only an
+
+68
+00:05:01.877 --> 00:05:02.866
+algorithm name.
+
+69
+00:05:02.866 --> 00:05:11.456
+NARRATOR: Consider this worked case: Using
+AES-256 with proper key management ensures
+
+70
+00:05:11.456 --> 00:05:14.319
+confidentiality against known attacks.
+
+71
+00:05:14.319 --> 00:05:21.624
+NARRATOR: On screen, show a key lifecycle
+diagram covering generation, distribution,
+
+72
+00:05:21.624 --> 00:05:23.616
+storage, and revocation.
+
+73
+00:05:23.616 --> 00:05:29.901
+NARRATOR: State the benefit, the cost, and the
+condition under which the tradeoff is
+
+74
+00:05:29.901 --> 00:05:30.350
+acceptable.
+
+75
+00:05:30.350 --> 00:05:37.538
+NARRATOR: Making the tradeoff visible prevents
+a local improvement from hiding a larger cost.
+
+76
+00:05:37.538 --> 00:05:44.745
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+77
+00:05:44.745 --> 00:05:46.710
+throughout the analysis.
+
+78
+00:05:46.826 --> 00:05:52.507
+NARRATOR: Stress-test the reasoning around
+Performance Optimization Strategies with an
+
+79
+00:05:52.507 --> 00:05:57.619
+edge case and identify which assumption
+controls the outcome.
+
+80
+00:05:57.619 --> 00:06:03.354
+NARRATOR: Security and performance issues in
+program design will be discussed.
+
+81
+00:06:03.354 --> 00:06:11.575
+NARRATOR: Consider this worked case: Replacing
+nested loops with hash maps reduces average
+
+82
+00:06:11.575 --> 00:06:15.369
+lookup time from O(n²) to O(1).
+
+83
+00:06:15.369 --> 00:06:22.407
+NARRATOR: On screen, display a comparison
+chart of algorithmic time complexity across
+
+84
+00:06:22.407 --> 00:06:24.166
+different data structures.
+
+85
+00:06:24.166 --> 00:06:30.210
+NARRATOR: Change one assumption at a time and
+observe which part of the reasoning no longer
+
+86
+00:06:30.210 --> 00:06:30.588
+holds.
+
+87
+00:06:30.588 --> 00:06:37.000
+NARRATOR: The edge case reveals the boundary
+of the claim without discarding the useful
+
+88
+00:06:37.000 --> 00:06:37.916
+core idea.
+
+89
+00:06:37.916 --> 00:06:45.184
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+90
+00:06:45.184 --> 00:06:47.166
+throughout the analysis.
+
+91
+00:06:47.282 --> 00:06:54.147
+NARRATOR: Use Secure Development Practices to
+diagnose a failure by separating symptoms,
+
+92
+00:06:54.147 --> 00:06:56.435
+causes, and corrective action.
+
+93
+00:06:56.435 --> 00:07:01.122
+NARRATOR: Security requirements should be
+tracked throughout development.
+
+94
+00:07:01.122 --> 00:07:07.279
+NARRATOR: Consider this worked case:
+Maintaining a threat model document updates
+
+95
+00:07:07.279 --> 00:07:10.638
+trust boundaries as the codebase evolves.
+
+96
+00:07:10.638 --> 00:07:17.083
+NARRATOR: On screen, present a checklist
+template with fields for asset, threat,
+
+97
+00:07:17.083 --> 00:07:19.231
+control, and residual risk.
+
+98
+00:07:19.232 --> 00:07:24.999
+NARRATOR: Locate the first point where
+observed behavior diverges from expected
+
+99
+00:07:24.999 --> 00:07:28.669
+behavior, then test the smallest plausible
+cause.
+
+100
+00:07:28.669 --> 00:07:34.807
+NARRATOR: The diagnosis is strongest when
+another person can reproduce the observation
+
+101
+00:07:34.807 --> 00:07:36.341
+and the test.
+
+102
+00:07:36.341 --> 00:07:43.522
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+103
+00:07:43.522 --> 00:07:45.481
+throughout the analysis.
+
+104
+00:07:45.602 --> 00:07:51.586
+NARRATOR: Connect Verification and Testing
+Methods to the earlier ideas and explain how
+
+105
+00:07:51.586 --> 00:07:54.348
+the pieces work as one system.
+
+106
+00:07:54.348 --> 00:08:02.033
+NARRATOR: Security reasoning identifies
+assets, trust boundaries, threats, controls,
+
+107
+00:08:02.033 --> 00:08:06.302
+evidence, residual risk, and responsibilities.
+
+108
+00:08:06.302 --> 00:08:13.512
+NARRATOR: Consider this worked case: Static
+analysis tools scan source code for buffer
+
+109
+00:08:13.512 --> 00:08:15.176
+overflows before compilation.
+
+110
+00:08:15.177 --> 00:08:22.692
+NARRATOR: On screen, show a testing workflow
+diagram linking unit tests, integration tests,
+
+111
+00:08:22.692 --> 00:08:24.426
+and security scans.
+
+112
+00:08:24.426 --> 00:08:33.326
+NARRATOR: Explain each connection explicitly
+and verify that information retains the same
+
+113
+00:08:33.326 --> 00:08:35.551
+meaning across representations.
+
+114
+00:08:35.551 --> 00:08:41.993
+NARRATOR: The synthesis matters only if every
+connection remains supported by the original
+
+115
+00:08:41.993 --> 00:08:42.489
+evidence.
+
+116
+00:08:42.489 --> 00:08:49.744
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+117
+00:08:49.744 --> 00:08:51.723
+throughout the analysis.
+
+118
+00:08:51.842 --> 00:08:57.113
+NARRATOR: Finish with Practical Analysis
+Checklist as a practical checklist that can
+
+119
+00:08:57.113 --> 00:08:58.870
+guide a new analysis.
+
+120
+00:08:58.870 --> 00:09:04.901
+NARRATOR: Analysis also considers side
+channels and migration requirements.
+
+121
+00:09:04.901 --> 00:09:12.880
+NARRATOR: Consider this worked case: A secure,
+performant module validates inputs, manages
+
+122
+00:09:12.880 --> 00:09:16.870
+memory safely, and follows established
+standards.
+
+123
+00:09:16.870 --> 00:09:23.870
+NARRATOR: On screen, display a three-column
+matrix evaluating code against structure,
+
+124
+00:09:23.870 --> 00:09:26.416
+performance, and security criteria.
+
+125
+00:09:26.416 --> 00:09:34.033
+NARRATOR: For each checklist item, record the
+evidence, the remaining uncertainty, and the
+
+126
+00:09:34.033 --> 00:09:35.791
+next verification step.
+
+127
+00:09:35.791 --> 00:09:41.669
+NARRATOR: The result is a repeatable
+procedure, not a conclusion that depends on
+
+128
+00:09:41.669 --> 00:09:43.026
+memory or intuition.
+
+129
+00:09:43.026 --> 00:09:50.122
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+130
+00:09:50.122 --> 00:09:52.057
+throughout the analysis.

@@ -1,0 +1,239 @@
+NARRATOR: Begin by framing Course Context and Transfer Goals as a question about inputs,
+
+decisions, and observable results.
+
+NARRATOR: This course serves as a means of bringing transfer students with some
+
+programming and data structures background to the same skill level that the computer science
+
+program's first year students have after completing CSCI 141 and 142.
+
+NARRATOR: Consider this worked case: A transfer student who completed introductory
+
+programming courses will use this course to align their problem-solving and algorithmic
+
+skills with the university's first-year CS curriculum.
+
+NARRATOR: On screen, display a simple flowchart showing a transfer student's prior
+
+coursework feeding into CSCI 242, which then aligns with CSCI 141/142 outcomes.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Core Course Focus precisely enough that another learner could
+
+test the definition.
+
+NARRATOR: Problem solving skills and the choice and application of appropriate
+
+algorithms and data structures are at the core of the course.
+
+NARRATOR: Consider this worked case: Students will practice selecting a hash table for fast
+
+key lookups versus a linked list for frequent insertions, based on the problem's access
+
+patterns.
+
+NARRATOR: On screen, show a side-by-side comparison of a hash table and a linked list
+
+with callout boxes highlighting 'fast lookups' and 'frequent insertions' respectively.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: With the foundation in place, examine how Assignment Structure operates in a
+
+concrete sequence.
+
+NARRATOR: Assignments (both in class and for homework) requiring a design and an
+
+implementation are an integral part of the course.
+
+NARRATOR: Consider this worked case: A homework assignment might ask students to
+
+draft a pseudocode design for a priority queue before writing the actual code in a supported
+
+language.
+
+NARRATOR: On screen, illustrate a two-step workflow diagram: 'Design Pseudocode' leading
+
+to 'Code Implementation', with a larger project icon at the end.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in Algorithm Analysis Basics and make the
+
+decision criteria explicit.
+
+NARRATOR: Algorithm analysis connects a precise problem specification to a correctness
+
+argument and resource bounds.
+
+NARRATOR: Consider this worked case: Analyzing a sorting algorithm shows that its time
+
+complexity grows quadratically with input size, expressed as O(n^2) in asymptotic
+
+notation.
+
+NARRATOR: On screen, display a graph with input size on the x-axis and resource use on
+
+the y-axis, labeled with 'O(n^2)' to show quadratic growth.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Apply Asymptotic Notation to a worked situation instead of treating it as an
+
+isolated definition.
+
+NARRATOR: Asymptotic notation describes how resource use grows with input size.
+
+NARRATOR: Consider this worked case: Using Big-O notation, a linear scan is O(n) while a
+
+binary search is O(log n), clearly showing the latter scales better for large datasets.
+
+NARRATOR: On screen, show a table comparing 'Linear Search' and 'Binary Search' with their
+
+respective O(n) and O(log n) labels and brief growth descriptions.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in Loop Invariants, including what improves and what
+
+becomes more difficult.
+
+NARRATOR: A loop invariant supports a proof by initialization, maintenance, and termination.
+
+NARRATOR: Consider this worked case: In a loop that sums an array, the invariant 'sum equals
+
+the total of elements processed so far' holds true before each iteration and after the loop
+
+ends.
+
+NARRATOR: On screen, display a loop structure with three labeled boxes: 'Initialization',
+
+'Maintenance', and 'Termination', each containing a brief mathematical statement.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around Data Structure Representations with an edge
+
+case and identify which assumption controls the outcome.
+
+NARRATOR: Representation choices and invariants determine which operations are
+
+efficient and which errors are possible.
+
+NARRATOR: Consider this worked case: Choosing an adjacency matrix for a dense graph ensures
+
+fast edge lookups, while an adjacency list prevents memory waste on sparse graphs.
+
+NARRATOR: On screen, show two grid layouts: a full matrix with 'fast lookups' and a linked
+
+list of nodes with 'sparse graph' and 'memory efficient' labels.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Common Data Structures to diagnose a failure by separating symptoms,
+
+causes, and corrective action.
+
+NARRATOR: Lists represent ordered sequences with position-based operations.
+
+NARRATOR: Consider this worked case: A stack processes function calls by returning the most
+
+recently added task first, whereas a queue processes customer orders in the exact order
+
+they arrive.
+
+NARRATOR: On screen, illustrate a stack with items popping from the top and a queue with
+
+items entering at the back and leaving at the front, labeled with their access rules.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Trees and Graphs to the earlier ideas and explain how the pieces work
+
+as one system.
+
+NARRATOR: Trees represent hierarchical relationships and support recursive
+
+traversals.
+
+NARRATOR: Consider this worked case: A file system directory tree allows recursive folder
+
+browsing, and a road network graph uses adjacency lists to calculate the shortest
+
+driving route between two cities.
+
+NARRATOR: On screen, draw a simple tree diagram with parent-child nodes and a graph
+
+diagram with nodes and edges, adding arrows to indicate recursive traversal and path finding.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+
+guide a new analysis.
+
+NARRATOR: A disciplined solution states inputs and outputs, proves correctness, and then
+
+analyzes time and space.
+
+NARRATOR: Consider this worked case: Before coding a search routine, students check that
+
+the input is a sorted array, the output is the index of the target, and the time complexity
+
+is O(log n) using binary search.
+
+NARRATOR: On screen, display a checklist graphic with three boxes: 'State
+
+Inputs/Outputs', 'Prove Correctness', and 'Analyze Time/Space', each with a checkbox and
+
+brief instruction.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.
