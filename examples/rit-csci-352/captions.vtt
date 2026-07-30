@@ -1,0 +1,557 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:07.304
+NARRATOR: Begin by framing Process Model &
+State as a question about inputs, decisions,
+
+2
+00:00:07.304 --> 00:00:08.859
+and observable results.
+
+3
+00:00:08.859 --> 00:00:15.797
+NARRATOR: A process combines an address space
+with execution state and operating-system
+
+4
+00:00:15.797 --> 00:00:16.375
+resources.
+
+5
+00:00:16.375 --> 00:00:23.803
+NARRATOR: Consider this worked case: A running
+web server process maintains its own stack,
+
+6
+00:00:23.803 --> 00:00:28.578
+heap, and open file descriptors while
+executing user-level code.
+
+7
+00:00:28.578 --> 00:00:35.719
+NARRATOR: On screen, show a diagram of a
+process with labeled components: address
+
+8
+00:00:35.719 --> 00:00:39.015
+space, execution state, and resource
+ownership.
+
+9
+00:00:39.015 --> 00:00:43.687
+NARRATOR: Annotate each component with its
+function in the OS model.
+
+10
+00:00:43.687 --> 00:00:49.959
+NARRATOR: List the givens before choosing a
+method, because an unstated assumption can
+
+11
+00:00:49.959 --> 00:00:51.406
+change the conclusion.
+
+12
+00:00:51.406 --> 00:00:57.531
+NARRATOR: This establishes the vocabulary and
+scope needed for the remaining sections.
+
+13
+00:00:57.650 --> 00:01:04.590
+NARRATOR: Now define System Calls & Privilege
+Levels precisely enough that another learner
+
+14
+00:01:04.590 --> 00:01:06.725
+could test the definition.
+
+15
+00:01:06.725 --> 00:01:12.850
+NARRATOR: A system call transfers control from
+user code to a privileged kernel service.
+
+16
+00:01:12.850 --> 00:01:19.566
+NARRATOR: Consider this worked case: When a
+program requests disk I/O, it executes a
+
+17
+00:01:19.566 --> 00:01:25.803
+system call instruction that switches
+execution to the kernel to handle the request.
+
+18
+00:01:25.803 --> 00:01:32.374
+NARRATOR: On screen, display a flowchart
+showing user mode code calling a system call,
+
+19
+00:01:32.374 --> 00:01:38.006
+transitioning to kernel mode, and returning to
+user mode with a result.
+
+20
+00:01:38.006 --> 00:01:44.685
+NARRATOR: Separate the formal definition from
+an implementation detail, then identify what
+
+21
+00:01:44.685 --> 00:01:46.912
+evidence would distinguish them.
+
+22
+00:01:46.912 --> 00:01:53.490
+NARRATOR: A precise definition makes later
+examples easier to evaluate and revise.
+
+23
+00:01:53.618 --> 00:01:59.889
+NARRATOR: With the foundation in place,
+examine how Traps & Processor State operates
+
+24
+00:01:59.889 --> 00:02:01.818
+in a concrete sequence.
+
+25
+00:02:01.818 --> 00:02:08.470
+NARRATOR: A trap records processor state so
+the kernel can handle a system call,
+
+26
+00:02:08.470 --> 00:02:09.896
+exception, or interrupt.
+
+27
+00:02:09.896 --> 00:02:17.250
+NARRATOR: Consider this worked case: When a
+page fault occurs, the CPU traps the faulting
+
+28
+00:02:17.250 --> 00:02:23.624
+instruction, saves the instruction pointer and
+registers, and transfers control to the kernel
+
+29
+00:02:23.624 --> 00:02:24.114
+handler.
+
+30
+00:02:24.114 --> 00:02:30.854
+NARRATOR: On screen, illustrate a trap
+sequence with arrows showing state capture,
+
+31
+00:02:30.854 --> 00:02:34.786
+kernel entry, exception handling, and state
+restoration.
+
+32
+00:02:34.786 --> 00:02:42.114
+NARRATOR: Follow every arrow in order and name
+the state before and after each transition.
+
+33
+00:02:42.114 --> 00:02:47.786
+NARRATOR: The trace converts an abstract
+statement into an inspectable sequence.
+
+34
+00:02:47.906 --> 00:02:55.182
+NARRATOR: Next, compare the choices involved
+in Page Tables & Virtual Memory and make the
+
+35
+00:02:55.182 --> 00:02:56.637
+decision criteria explicit.
+
+36
+00:02:56.637 --> 00:03:03.027
+NARRATOR: Page tables map virtual addresses to
+physical memory with permission bits.
+
+37
+00:03:03.027 --> 00:03:09.043
+NARRATOR: Consider this worked case: A page
+table entry for a read-only code segment
+
+38
+00:03:09.043 --> 00:03:14.199
+contains a valid bit, a present bit, and a
+read-only permission flag.
+
+39
+00:03:14.199 --> 00:03:20.611
+NARRATOR: On screen, show a page table
+structure with columns for virtual address,
+
+40
+00:03:20.611 --> 00:03:25.543
+physical address, and permission bits,
+highlighting how mappings are resolved.
+
+41
+00:03:25.543 --> 00:03:32.256
+NARRATOR: Compare alternatives against the
+same constraints so the evaluation does not
+
+42
+00:03:32.256 --> 00:03:33.934
+move the goalposts.
+
+43
+00:03:33.934 --> 00:03:40.777
+NARRATOR: Using shared criteria turns a
+preference into a defensible technical choice.
+
+44
+00:03:40.898 --> 00:03:48.154
+NARRATOR: Apply Processor Scheduling to a
+worked situation instead of treating it as an
+
+45
+00:03:48.154 --> 00:03:49.191
+isolated definition.
+
+46
+00:03:49.191 --> 00:03:55.426
+NARRATOR: The scheduler selects runnable
+processes and switches processor context.
+
+47
+00:03:55.426 --> 00:04:02.466
+NARRATOR: Consider this worked case: The OS
+scheduler picks a ready process from the run
+
+48
+00:04:02.466 --> 00:04:08.098
+queue, saves the current process's registers,
+and loads the new process's context.
+
+49
+00:04:08.098 --> 00:04:15.474
+NARRATOR: On screen, draw a scheduler loop
+with states: ready queue, running, blocked,
+
+50
+00:04:15.474 --> 00:04:18.879
+and context switch arrows between processes.
+
+51
+00:04:18.879 --> 00:04:25.300
+NARRATOR: Work from the concrete inputs to the
+result, checking units, types, or invariants
+
+52
+00:04:25.300 --> 00:04:26.676
+at each step.
+
+53
+00:04:26.676 --> 00:04:31.785
+NARRATOR: The worked case shows both how to
+apply the method and how to check it.
+
+54
+00:04:31.898 --> 00:04:38.470
+NARRATOR: Examine the tradeoffs in Locks &
+Synchronization, including what improves and
+
+55
+00:04:38.470 --> 00:04:40.660
+what becomes more difficult.
+
+56
+00:04:40.660 --> 00:04:46.941
+NARRATOR: Locks protect invariants when
+concurrent execution can access shared state.
+
+57
+00:04:46.941 --> 00:04:54.650
+NARRATOR: Consider this worked case: A mutex
+lock ensures that only one thread can modify a
+
+58
+00:04:54.650 --> 00:04:58.504
+shared counter at a time, preventing race
+conditions.
+
+59
+00:04:58.504 --> 00:05:04.945
+NARRATOR: On screen, show a lock
+acquisition/release sequence with two
+
+60
+00:05:04.945 --> 00:05:10.097
+concurrent threads, highlighting mutual
+exclusion and invariant protection.
+
+61
+00:05:10.097 --> 00:05:16.558
+NARRATOR: State the benefit, the cost, and the
+condition under which the tradeoff is
+
+62
+00:05:16.558 --> 00:05:17.019
+acceptable.
+
+63
+00:05:17.019 --> 00:05:24.519
+NARRATOR: Making the tradeoff visible prevents
+a local improvement from hiding a larger cost.
+
+64
+00:05:24.519 --> 00:05:31.468
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+65
+00:05:31.468 --> 00:05:33.363
+throughout the analysis.
+
+66
+00:05:33.482 --> 00:05:39.602
+NARRATOR: Stress-test the reasoning around
+Deadlock & Resource Management with an edge
+
+67
+00:05:39.602 --> 00:05:43.682
+case and identify which assumption controls
+the outcome.
+
+68
+00:05:43.682 --> 00:05:51.669
+NARRATOR: Analysis distinguishes user mode,
+privileged kernel code, hardware translation,
+
+69
+00:05:51.669 --> 00:05:57.260
+interrupt state, resource ownership, and
+synchronization invariants.
+
+70
+00:05:57.260 --> 00:06:03.988
+NARRATOR: Consider this worked case: Two
+processes each hold one file descriptor and
+
+71
+00:06:03.988 --> 00:06:09.681
+wait for the other's, creating a circular
+dependency that halts progress.
+
+72
+00:06:09.681 --> 00:06:17.278
+NARRATOR: On screen, illustrate a deadlock
+scenario with two processes and two resources,
+
+73
+00:06:17.278 --> 00:06:21.369
+showing circular wait arrows and resource
+ownership.
+
+74
+00:06:21.369 --> 00:06:27.487
+NARRATOR: Change one assumption at a time and
+observe which part of the reasoning no longer
+
+75
+00:06:27.487 --> 00:06:27.869
+holds.
+
+76
+00:06:27.869 --> 00:06:34.186
+NARRATOR: The edge case reveals the boundary
+of the claim without discarding the useful
+
+77
+00:06:34.186 --> 00:06:35.088
+core idea.
+
+78
+00:06:35.210 --> 00:06:41.692
+NARRATOR: Use Multiprogramming &
+Multiprocessing to diagnose a failure by
+
+79
+00:06:41.692 --> 00:06:45.581
+separating symptoms, causes, and corrective
+action.
+
+80
+00:06:45.581 --> 00:06:51.055
+NARRATOR: Topics include process
+synchronization, interprocess communication,
+
+81
+00:06:51.055 --> 00:06:56.530
+deadlock, multiprogramming and
+multiprocessing, processor scheduling and
+
+82
+00:06:56.530 --> 00:07:05.132
+resource management, memory management, static
+and dynamic relocation, virtual memory, file
+
+83
+00:07:05.132 --> 00:07:13.735
+systems, logical and physical I/O, device
+allocation, I/O processor scheduling, process
+
+84
+00:07:13.735 --> 00:07:16.081
+and resource protection.
+
+85
+00:07:16.081 --> 00:07:22.048
+NARRATOR: Consider this worked case: A server
+handles multiple client requests
+
+86
+00:07:22.048 --> 00:07:27.472
+simultaneously by switching between processes
+on a single CPU core.
+
+87
+00:07:27.472 --> 00:07:34.796
+NARRATOR: On screen, show a CPU core with
+multiple process contexts interleaved,
+
+88
+00:07:34.796 --> 00:07:37.847
+emphasizing time-sharing and resource
+allocation.
+
+89
+00:07:37.847 --> 00:07:43.624
+NARRATOR: Locate the first point where
+observed behavior diverges from expected
+
+90
+00:07:43.624 --> 00:07:47.300
+behavior, then test the smallest plausible
+cause.
+
+91
+00:07:47.300 --> 00:07:53.225
+NARRATOR: The diagnosis is strongest when
+another person can reproduce the observation
+
+92
+00:07:53.225 --> 00:07:54.706
+and the test.
+
+93
+00:07:54.818 --> 00:08:01.263
+NARRATOR: Connect File Systems & I/O to the
+earlier ideas and explain how the pieces work
+
+94
+00:08:01.263 --> 00:08:02.471
+as one system.
+
+95
+00:08:02.471 --> 00:08:09.408
+NARRATOR: The file system organizes persistent
+data through inodes, directories, and logged
+
+96
+00:08:09.408 --> 00:08:09.986
+updates.
+
+97
+00:08:09.986 --> 00:08:16.844
+NARRATOR: Consider this worked case: A
+directory entry points to an inode that stores
+
+98
+00:08:16.844 --> 00:08:21.252
+file metadata, permissions, and block
+addresses for data storage.
+
+99
+00:08:21.252 --> 00:08:28.796
+NARRATOR: On screen, display a file system
+tree with directories, inodes, and block
+
+100
+00:08:28.796 --> 00:08:33.439
+clusters, showing how data is organized and
+updated.
+
+101
+00:08:33.439 --> 00:08:42.439
+NARRATOR: Explain each connection explicitly
+and verify that information retains the same
+
+102
+00:08:42.439 --> 00:08:44.689
+meaning across representations.
+
+103
+00:08:44.689 --> 00:08:51.537
+NARRATOR: The synthesis matters only if every
+connection remains supported by the original
+
+104
+00:08:51.537 --> 00:08:52.064
+evidence.
+
+105
+00:08:52.178 --> 00:08:57.789
+NARRATOR: Finish with Practical Analysis
+Checklist as a practical checklist that can
+
+106
+00:08:57.789 --> 00:08:59.659
+guide a new analysis.
+
+107
+00:08:59.659 --> 00:09:06.434
+NARRATOR: Architecture analysis preserves data
+dependencies, control dependencies, and
+
+108
+00:09:06.434 --> 00:09:07.940
+architectural state.
+
+109
+00:09:07.940 --> 00:09:14.326
+NARRATOR: Consider this worked case: Audit a
+kernel module to ensure all shared variables
+
+110
+00:09:14.326 --> 00:09:19.799
+are protected by locks and that page table
+permissions match access rights.
+
+111
+00:09:19.799 --> 00:09:27.981
+NARRATOR: On screen, provide a checklist
+graphic with checkboxes for each invariant:
+
+112
+00:09:27.981 --> 00:09:34.117
+user/kernel mode, hardware translation,
+interrupt handling, resource ownership, and
+
+113
+00:09:34.117 --> 00:09:34.799
+synchronization.
+
+114
+00:09:34.799 --> 00:09:42.518
+NARRATOR: For each checklist item, record the
+evidence, the remaining uncertainty, and the
+
+115
+00:09:42.518 --> 00:09:44.299
+next verification step.
+
+116
+00:09:44.299 --> 00:09:50.291
+NARRATOR: The result is a repeatable
+procedure, not a conclusion that depends on
+
+117
+00:09:50.291 --> 00:09:51.674
+memory or intuition.

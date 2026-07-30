@@ -1,0 +1,303 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Begin by framing Process Model & State as a question about inputs, decisions, and observable results. A process combines an address space with execution state and operating-system resources. Consider this worked case: A running web server process maintains its own stack, heap, and open file descriptors while executing user-level code. On screen, show a diagram of a process with labeled components: address space, execution state, and resource ownership. Annotate each component with its function in the OS model. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 57,
+      "title": "Process Model & State",
+      "visualDirection": "template:academic-process | Show a diagram of a process with labeled components: address space, execution state, and resource ownership. Annotate each component with its function in the OS model."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Now define System Calls & Privilege Levels precisely enough that another learner could test the definition. A system call transfers control from user code to a privileged kernel service. Consider this worked case: When a program requests disk I/O, it executes a system call instruction that switches execution to the kernel to handle the request. On screen, display a flowchart showing user mode code calling a system call, transitioning to kernel mode, and returning to user mode with a result. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "plannedSeconds": 58,
+      "title": "System Calls & Privilege Levels",
+      "visualDirection": "template:academic-process | Display a flowchart showing user mode code calling a system call, transitioning to kernel mode, and returning to user mode with a result."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "With the foundation in place, examine how Traps & Processor State operates in a concrete sequence. A trap records processor state so the kernel can handle a system call, exception, or interrupt. Consider this worked case: When a page fault occurs, the CPU traps the faulting instruction, saves the instruction pointer and registers, and transfers control to the kernel handler. On screen, illustrate a trap sequence with arrows showing state capture, kernel entry, exception handling, and state restoration. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "plannedSeconds": 56,
+      "title": "Traps & Processor State",
+      "visualDirection": "template:academic-process | Illustrate a trap sequence with arrows showing state capture, kernel entry, exception handling, and state restoration."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "Next, compare the choices involved in Page Tables & Virtual Memory and make the decision criteria explicit. Page tables map virtual addresses to physical memory with permission bits. Consider this worked case: A page table entry for a read-only code segment contains a valid bit, a present bit, and a read-only permission flag. On screen, show a page table structure with columns for virtual address, physical address, and permission bits, highlighting how mappings are resolved. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "plannedSeconds": 55,
+      "title": "Page Tables & Virtual Memory",
+      "visualDirection": "template:academic-process | Show a page table structure with columns for virtual address, physical address, and permission bits, highlighting how mappings are resolved."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Apply Processor Scheduling to a worked situation instead of treating it as an isolated definition. The scheduler selects runnable processes and switches processor context. Consider this worked case: The OS scheduler picks a ready process from the run queue, saves the current process's registers, and loads the new process's context. On screen, draw a scheduler loop with states: ready queue, running, blocked, and context switch arrows between processes. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 55,
+      "title": "Processor Scheduling",
+      "visualDirection": "template:academic-process | Draw a scheduler loop with states: ready queue, running, blocked, and context switch arrows between processes."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "Examine the tradeoffs in Locks & Synchronization, including what improves and what becomes more difficult. Locks protect invariants when concurrent execution can access shared state. Consider this worked case: A mutex lock ensures that only one thread can modify a shared counter at a time, preventing race conditions. On screen, show a lock acquisition/release sequence with two concurrent threads, highlighting mutual exclusion and invariant protection. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 57,
+      "title": "Locks & Synchronization",
+      "visualDirection": "template:academic-process | Show a lock acquisition/release sequence with two concurrent threads, highlighting mutual exclusion and invariant protection."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "Stress-test the reasoning around Deadlock & Resource Management with an edge case and identify which assumption controls the outcome. Analysis distinguishes user mode, privileged kernel code, hardware translation, interrupt state, resource ownership, and synchronization invariants. Consider this worked case: Two processes each hold one file descriptor and wait for the other's, creating a circular dependency that halts progress. On screen, illustrate a deadlock scenario with two processes and two resources, showing circular wait arrows and resource ownership. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 59,
+      "title": "Deadlock & Resource Management",
+      "visualDirection": "template:academic-process | Illustrate a deadlock scenario with two processes and two resources, showing circular wait arrows and resource ownership."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "Use Multiprogramming & Multiprocessing to diagnose a failure by separating symptoms, causes, and corrective action. Topics include process synchronization, interprocess communication, deadlock, multiprogramming and multiprocessing, processor scheduling and resource management, memory management, static and dynamic relocation, virtual memory, file systems, logical and physical I/O, device allocation, I/O processor scheduling, process and resource protection. Consider this worked case: A server handles multiple client requests simultaneously by switching between processes on a single CPU core. On screen, show a CPU core with multiple process contexts interleaved, emphasizing time-sharing and resource allocation. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 65,
+      "title": "Multiprogramming & Multiprocessing",
+      "visualDirection": "template:academic-process | Show a CPU core with multiple process contexts interleaved, emphasizing time-sharing and resource allocation."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Connect File Systems & I/O to the earlier ideas and explain how the pieces work as one system. The file system organizes persistent data through inodes, directories, and logged updates. Consider this worked case: A directory entry points to an inode that stores file metadata, permissions, and block addresses for data storage. On screen, display a file system tree with directories, inodes, and block clusters, showing how data is organized and updated. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 55,
+      "title": "File Systems & I/O",
+      "visualDirection": "template:academic-process | Display a file system tree with directories, inodes, and block clusters, showing how data is organized and updated."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Architecture analysis preserves data dependencies, control dependencies, and architectural state. Consider this worked case: Audit a kernel module to ensure all shared variables are protected by locks and that page table permissions match access rights. On screen, provide a checklist graphic with checkboxes for each invariant: user/kernel mode, hardware translation, interrupt handling, resource ownership, and synchronization. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 55,
+      "title": "Practical Analysis Checklist",
+      "visualDirection": "template:academic-process | Provide a checklist graphic with checkboxes for each invariant: user/kernel mode, hardware translation, interrupt handling, resource ownership, and synchronization."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "mit-xv6-book"
+      ],
+      "text": "A process combines an address space with execution state and operating-system resources.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "mit-xv6-book"
+      ],
+      "text": "A system call transfers control from user code to a privileged kernel service.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "mit-xv6-book"
+      ],
+      "text": "A trap records processor state so the kernel can handle a system call, exception, or interrupt.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "mit-xv6-book"
+      ],
+      "text": "Page tables map virtual addresses to physical memory with permission bits.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "mit-xv6-book"
+      ],
+      "text": "The scheduler selects runnable processes and switches processor context.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "mit-xv6-book"
+      ],
+      "text": "Locks protect invariants when concurrent execution can access shared state.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "mit-xv6-book"
+      ],
+      "text": "Analysis distinguishes user mode, privileged kernel code, hardware translation, interrupt state, resource ownership, and synchronization invariants.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "rit-csci-352"
+      ],
+      "text": "Topics include process synchronization, interprocess communication, deadlock, multiprogramming and multiprocessing, processor scheduling and resource management, memory management, static and dynamic relocation, virtual memory, file systems, logical and physical I/O, device allocation, I/O processor scheduling, process and resource protection.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "mit-xv6-book"
+      ],
+      "text": "The file system organizes persistent data through inodes, directories, and logged updates.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "riscv-unprivileged"
+      ],
+      "text": "Architecture analysis preserves data dependencies, control dependencies, and architectural state.",
+      "verified": true
+    }
+  ],
+  "id": "csci-352-operating-systems-foundations-core-concepts",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "Rochester Institute of Technology",
+      "excerpt": "An in-depth study of operating system concepts. Topics include process synchronization, interprocess communication, deadlock, multiprogramming and multiprocessing, processor scheduling and resource management, memory management, static and dynamic relocation, virtual memory, file systems, logical and physical I/O, device allocation, I/O processor scheduling, process and resource protection. Programming projects involving the development of or modification to operating system kernel features will be required. Prerequisites: CSCI-250 or CMPE-350 or SWEN-340 or equivalent course. Contact Hours: Lecture 3 Typically Offered: Fall",
+      "id": "rit-csci-352",
+      "sha256": "d636f111d03fe0f853c993370bdc4096167e081a7da5de85bce755cc1f70f327",
+      "title": "RIT CSCI-352 Operating Systems catalog description",
+      "type": "note",
+      "uri": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02=",
+      "verified": true
+    },
+    {
+      "author": "MIT PDOS",
+      "excerpt": "The xv6 book explains processes, system calls, traps, page tables, scheduling, locking, file systems, devices, concurrency, and isolation in a small Unix-like kernel. A process combines an address space with execution state and operating-system resources. A system call transfers control from user code to a privileged kernel service. A trap records processor state so the kernel can handle a system call, exception, or interrupt. Page tables map virtual addresses to physical memory with permission bits. The scheduler selects runnable processes and switches processor context. Locks protect invariants when concurrent execution can access shared state. The file system organizes persistent data through inodes, directories, and logged updates. Analysis distinguishes user mode, privileged kernel co",
+      "id": "mit-xv6-book",
+      "sha256": "38ce71a9d754dfeb4999bf3785859ea08c5809175524375356e2e975438749e3",
+      "title": "xv6: a simple, Unix-like teaching operating system",
+      "type": "note",
+      "uri": "https://pdos.csail.mit.edu/6.828/2023/xv6/book-riscv-rev3.pdf",
+      "verified": true
+    },
+    {
+      "author": "RISC-V International",
+      "excerpt": "The RISC-V ISA defines programmer-visible instructions, registers, memory operations, control transfer, exceptions, and ordering behavior. Integer register x0 always reads as zero, while the remaining integer registers hold software-visible values. Load instructions transfer data from memory into registers. Store instructions transfer register data to memory. Branch and jump instructions change control flow. Exceptions report conditions that require a defined transfer of control. Memory-ordering rules constrain how memory operations may be observed. Architecture analysis preserves data dependencies, control dependencies, and architectural state.",
+      "id": "riscv-unprivileged",
+      "sha256": "a27fd29d5bf2cdfaf0bc3c9d84bd4e9441dc438af0858e2e14e91d52af5b52b7",
+      "title": "The RISC-V Instruction Set Manual, Unprivileged ISA",
+      "type": "note",
+      "uri": "https://riscv.org/technical/specifications/",
+      "verified": true
+    }
+  ],
+  "title": "CSCI-352 Operating Systems: Foundations & Core Concepts"
+}

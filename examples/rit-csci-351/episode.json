@@ -1,0 +1,303 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Begin by framing Layered Architecture Overview as a question about inputs, decisions, and observable results. Internet hosts implement layered link, internet, transport, and application functions. Consider this worked case: A packet traverses from the application layer down to the physical layer, where each layer adds headers and encapsulates the payload. On screen, display a vertical stack diagram with labeled layers (Application, Transport, Network, Data Link, Physical) and show a packet being encapsulated layer by layer. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 55,
+      "title": "Layered Architecture Overview",
+      "visualDirection": "template:academic-process | Display a vertical stack diagram with labeled layers (Application, Transport, Network, Data Link, Physical) and show a packet being encapsulated layer by layer."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Now define Physical and Data Link Layers precisely enough that another learner could test the definition. The link layer moves frames across a directly connected network. Consider this worked case: Ethernet frames are transmitted over copper or fiber optic cables, with the physical layer managing signal integrity and the data link layer handling addressing and error detection. On screen, show a side-by-side comparison of a physical layer signal waveform and a data link layer frame structure with MAC addresses and CRC. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "plannedSeconds": 58,
+      "title": "Physical and Data Link Layers",
+      "visualDirection": "template:academic-process | Show a side-by-side comparison of a physical layer signal waveform and a data link layer frame structure with MAC addresses and CRC."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "With the foundation in place, examine how Network Layer and IP Addressing operates in a concrete sequence. IP provides best-effort datagram delivery across interconnected networks. Consider this worked case: IPv4 addresses like 192.168.1.10 assign a unique identifier to a network interface, enabling routers to forward packets toward a destination. On screen, illustrate a router table with source/destination IP addresses and next-hop destinations, highlighting how IP addresses map to interfaces. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 58,
+      "title": "Network Layer and IP Addressing",
+      "visualDirection": "template:academic-process | Illustrate a router table with source/destination IP addresses and next-hop destinations, highlighting how IP addresses map to interfaces."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "Next, compare the choices involved in Routing and Path Selection and make the decision criteria explicit. Routing selects a next hop toward a destination. Consider this worked case: OSPF or BGP algorithms evaluate link costs and topology to compute shortest paths, updating routing tables dynamically. On screen, render a network graph with nodes and weighted edges, showing a routing algorithm tracing a path from source to destination. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 57,
+      "title": "Routing and Path Selection",
+      "visualDirection": "template:academic-process | Render a network graph with nodes and weighted edges, showing a routing algorithm tracing a path from source to destination."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Apply Transport Layer and TCP Basics to a worked situation instead of treating it as an isolated definition. Transport protocols add endpoint communication functions above IP. Consider this worked case: Web browsing uses TCP to ensure that HTML chunks arrive in the correct sequence without gaps or duplicates. On screen, draw a TCP handshake sequence (SYN, SYN-ACK, ACK) with labeled sequence numbers and state transitions. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 55,
+      "title": "Transport Layer and TCP Basics",
+      "visualDirection": "template:academic-process | Draw a TCP handshake sequence (SYN, SYN-ACK, ACK) with labeled sequence numbers and state transitions."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "Examine the tradeoffs in TCP State Machine and Reliability, including what improves and what becomes more difficult. Sequence numbers identify positions in that byte stream. Consider this worked case: When a packet is lost, TCP detects the gap via missing acknowledgments and triggers retransmission to recover the missing data. On screen, display a state diagram showing TCP connection states (CLOSED, LISTEN, ESTABLISHED, FIN_WAIT, etc.) with transition triggers. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 58,
+      "title": "TCP State Machine and Reliability",
+      "visualDirection": "template:academic-process | Display a state diagram showing TCP connection states (CLOSED, LISTEN, ESTABLISHED, FIN_WAIT, etc.) with transition triggers."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "Stress-test the reasoning around Flow Control and Congestion Management with an edge case and identify which assumption controls the outcome. Flow control prevents a sender from exceeding the receiver's advertised capacity. Consider this worked case: The sliding window mechanism in TCP adjusts the send window size based on receiver acknowledgments to avoid overwhelming the network. On screen, animate a sender and receiver with a sliding window, showing how the window shrinks or expands based on ACK feedback. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 59,
+      "title": "Flow Control and Congestion Management",
+      "visualDirection": "template:academic-process | Animate a sender and receiver with a sliding window, showing how the window shrinks or expands based on ACK feedback."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "Use Network Modeling with Graphs to diagnose a failure by separating symptoms, causes, and corrective action. The course covers design of, and algorithms and protocols used in, the physical, data link, network, transport, and application layers in the Internet; methods for modeling and analyzing networks, including graphs, graph algorithms, and discrete event simulation; and an introduction to network science. Consider this worked case: Representing routers as nodes and links as edges allows Dijkstra's algorithm to compute minimum-cost paths for packet routing. On screen, show a network graph with labeled nodes, edges, and weights, alongside a step-by-step visualization of Dijkstra's algorithm exploring paths. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 70,
+      "title": "Network Modeling with Graphs",
+      "visualDirection": "template:academic-process | Show a network graph with labeled nodes, edges, and weights, alongside a step-by-step visualization of Dijkstra's algorithm exploring paths."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Connect Discrete Event Simulation and Analysis to the earlier ideas and explain how the pieces work as one system. Packet loss, duplication, reordering, delay, and endpoint failure must be separated when reasoning about behavior and performance. Consider this worked case: Simulating packet arrivals, processing delays, and queueing times helps identify bottlenecks and optimize routing policies. On screen, present a timeline with discrete events (packet arrival, transmission start, completion, loss) and corresponding queue lengths at routers. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 56,
+      "title": "Discrete Event Simulation and Analysis",
+      "visualDirection": "template:academic-process | Present a timeline with discrete events (packet arrival, transmission start, completion, loss) and corresponding queue lengths at routers."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Correct analysis distinguishes addresses, routes, packets, frames, sockets, and end-to-end state. Consider this worked case: When a connection fails, verify IP addresses, check routing tables, inspect TCP state transitions, and review frame integrity to isolate the issue. On screen, list a checklist with checkboxes for: IP address validation, route table inspection, TCP state verification, frame CRC check, and socket configuration review. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 58,
+      "title": "Practical Analysis Checklist",
+      "visualDirection": "template:academic-process | List a checklist with checkboxes for: IP address validation, route table inspection, TCP state verification, frame CRC check, and socket configuration review."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "rfc-1122"
+      ],
+      "text": "Internet hosts implement layered link, internet, transport, and application functions.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "rfc-1122"
+      ],
+      "text": "The link layer moves frames across a directly connected network.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "rfc-1122"
+      ],
+      "text": "IP provides best-effort datagram delivery across interconnected networks.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "rfc-1122"
+      ],
+      "text": "Routing selects a next hop toward a destination.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "rfc-1122"
+      ],
+      "text": "Transport protocols add endpoint communication functions above IP.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "rfc-9293"
+      ],
+      "text": "Sequence numbers identify positions in that byte stream.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "rfc-9293"
+      ],
+      "text": "Flow control prevents a sender from exceeding the receiver's advertised capacity.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "rit-csci-351"
+      ],
+      "text": "The course covers design of, and algorithms and protocols used in, the physical, data link, network, transport, and application layers in the Internet; methods for modeling and analyzing networks, including graphs, graph algorithms, and discrete event simulation; and an introduction to network science.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "rfc-9293"
+      ],
+      "text": "Packet loss, duplication, reordering, delay, and endpoint failure must be separated when reasoning about behavior and performance.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "rfc-1122"
+      ],
+      "text": "Correct analysis distinguishes addresses, routes, packets, frames, sockets, and end-to-end state.",
+      "verified": true
+    }
+  ],
+  "id": "csci-351-data-communications-and-networks-foundations-lesson-blu",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "Rochester Institute of Technology",
+      "excerpt": "This course is an in-depth study of data communications and networks. The course covers design of, and algorithms and protocols used in, the physical, data link, network, transport, and application layers in the Internet; methods for modeling and analyzing networks, including graphs, graph algorithms, and discrete event simulation; and an introduction to network science. Programming projects will be required. Pre-requisites: CSCI-251 and (MATH-251 or STAT-251 or STAT-205) or equivalent courses. Students cannot take and receive credit for this course if they have taken CSCI-651. Contact Hours: Lecture 3 Typically Offered: Fall",
+      "id": "rit-csci-351",
+      "sha256": "eb13873a9749f96fa8f4e78ebc282bd4a591368366bdfb238c7954a3538ec9f6",
+      "title": "RIT CSCI-351 Data Communications and Networks catalog description",
+      "type": "note",
+      "uri": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02=",
+      "verified": true
+    },
+    {
+      "author": "Internet Engineering Task Force",
+      "excerpt": "Internet hosts implement layered link, internet, transport, and application functions. The link layer moves frames across a directly connected network. IP provides best-effort datagram delivery across interconnected networks. An IP address identifies an interface for internet-layer delivery. Routing selects a next hop toward a destination. Transport protocols add endpoint communication functions above IP. Application protocols define the meaning of exchanged data. Correct analysis distinguishes addresses, routes, packets, frames, sockets, and end-to-end state.",
+      "id": "rfc-1122",
+      "sha256": "a308389bc3de9ce8e81395fa9d4d5de1c689d1167740c6f8ec98fb7efb9c0059",
+      "title": "RFC 1122 Requirements for Internet Hosts",
+      "type": "note",
+      "uri": "https://www.rfc-editor.org/rfc/rfc1122",
+      "verified": true
+    },
+    {
+      "author": "Internet Engineering Task Force",
+      "excerpt": "TCP provides a reliable, ordered byte stream between endpoints. Sequence numbers identify positions in that byte stream. Acknowledgments report which data has been received. Retransmission recovers data that is presumed lost. Flow control prevents a sender from exceeding the receiver's advertised capacity. A TCP connection moves through defined protocol states. Connection establishment synchronizes endpoint state before application data transfer. Packet loss, duplication, reordering, delay, and endpoint failure must be separated when reasoning about behavior and performance.",
+      "id": "rfc-9293",
+      "sha256": "1d112320ca8937ea07856a265978d9670766a69dad82860fefa811ef2c429db9",
+      "title": "RFC 9293 Transmission Control Protocol",
+      "type": "note",
+      "uri": "https://www.rfc-editor.org/rfc/rfc9293",
+      "verified": true
+    }
+  ],
+  "title": "CSCI-351: Data Communications and Networks - Foundations Lesson Blueprint"
+}
