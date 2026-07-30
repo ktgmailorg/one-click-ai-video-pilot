@@ -37,6 +37,19 @@ test("the pilot page advertises the learning platform and has no duration cap", 
   assert.doesNotMatch(html, /female narration/i);
 });
 
+test("the pilot page separates measured fresh production from cached replay", async () => {
+  const html = await readFile(new URL("index.html", root), "utf8");
+  assert.match(html, /Measured production speed/);
+  assert.match(html, /28:49/);
+  assert.match(html, /20:31/);
+  assert.match(html, /1\.41× real-time media throughput/);
+  assert.match(html, /0\.65s/);
+  assert.match(html, /621× faster/);
+  assert.match(html, /not guaranteed completion times/i);
+  assert.match(html, /planning.*verified replay are separate/is);
+  assert.doesNotMatch(html, /10 lessons in 10 minutes/i);
+});
+
 test("the learning platform exposes accessible, device-local course progress", async () => {
   const html = await readFile(new URL("learn.html", root), "utf8");
   const script = await readFile(new URL("learn.js", root), "utf8");

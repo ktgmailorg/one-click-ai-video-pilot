@@ -34,6 +34,7 @@
           <a href="#full-lessons">Examples</a>
           <a href="#software">Software</a>
           <a href="#workflow">Workflow</a>
+          <a href="#performance">Speed</a>
           <a href="#pilot">Pilot</a>
           <a href="#standards">Standards</a>
           <a class="nav-cta" href="#interest">Propose a pilot</a>
@@ -568,6 +569,54 @@ npm run rit-video -- produce --narration-voice configured</code></pre>
           <article><span>04</span><h3>Use explicit providers</h3><p>Text, speech, images, video, transcription, and embeddings use approved local or hosted routes. Narration uses an explicitly configured voice profile.</p></article>
           <article><span>05</span><h3>Freeze accepted results</h3><p>Every accepted artifact is checksummed and retained for exact replay without another model call.</p></article>
           <article><span>06</span><h3>Release an accessible package</h3><p>Export video, captions, transcripts, chapters, bibliography, disclosures, and QA reports.</p></article>
+        </div>
+      </section>
+
+      <section class="section performance-section" id="performance">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="section-kicker">Measured production speed</p>
+            <h2>Faster drafts without hiding what was measured.</h2>
+          </div>
+          <p>
+            These are observed July 2026 reference runs on a 12-core,
+            24&nbsp;GB Apple M4 Pro—not guaranteed completion times. New
+            production, local-model planning, and verified replay are separate
+            workloads.
+          </p>
+        </div>
+
+        <div class="benchmark-grid" aria-label="Reference production benchmarks">
+          <article>
+            <span>Fresh three-lesson batch</span>
+            <strong>28:49 <small>of finished media</small></strong>
+            <p>Produced in 20:31 wall time: 1.41× real-time media throughput.</p>
+          </article>
+          <article>
+            <span>Mean fresh full lesson</span>
+            <strong>6:50 <small>wall time</small></strong>
+            <p>Mean across three source-grounded lessons averaging about 9½ minutes each.</p>
+          </article>
+          <article>
+            <span>Unchanged verified rerender</span>
+            <strong>0.65s <small>for a 9:32 lesson</small></strong>
+            <p>All provider and render artifacts were verified cache hits—about 621× faster than that lesson’s fresh run.</p>
+          </article>
+          <article>
+            <span>Local Bonsai 27B plan</span>
+            <strong>70.7s <small>representative pass</small></strong>
+            <p>One ten-beat CSCI-250 fast plan at roughly 19–24 tokens per second, before narration and rendering.</p>
+          </article>
+        </div>
+
+        <div class="benchmark-method">
+          <strong>Production profile</strong>
+          <p>
+            Deterministic SVG visuals, Edge TTS narration, H.264/AAC at
+            1920×1080 and 30000/1001 fps. Provider latency, source length,
+            model context, cache state, thermal state, and storage speed affect
+            results. Faculty review time is not included.
+          </p>
         </div>
       </section>
 
