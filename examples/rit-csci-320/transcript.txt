@@ -1,0 +1,247 @@
+NARRATOR: Begin by framing Introduction to Data Management as a question about inputs,
+
+decisions, and observable results.
+
+NARRATOR: This course provides a broad introduction to the principles and practice of
+
+modern data management, with an emphasis on the relational database model.
+
+NARRATOR: Consider this worked case: A hospital system uses a relational database to
+
+link patient records, medical history, and appointment schedules.
+
+NARRATOR: On screen, display a simple flowchart showing data flowing from collection
+
+to structured storage and retrieval.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Relational Model Foundations precisely enough that another
+
+learner could test the definition.
+
+NARRATOR: Topics in relational database systems include data modeling; the relational
+
+model; relational algebra; Structured Query Language (SQL); and data quality,
+
+transactions, integrity and security.
+
+NARRATOR: Consider this worked case: An 'Employees' table contains columns for
+
+EmployeeID, Name, Department, and Salary.
+
+NARRATOR: On screen, show a basic table layout with labeled rows and columns, highlighting
+
+the entity-attribute relationship.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: With the foundation in place, examine how Data Modeling Concepts operates in
+
+a concrete sequence.
+
+NARRATOR: A database project is required.
+
+NARRATOR: Consider this worked case: A 'Student' entity relates to a 'Course' entity
+
+through an 'Enrollment' relationship, linking student IDs to course codes.
+
+NARRATOR: On screen, draw a simple ER diagram with Student, Course, and Enrollment boxes and
+
+lines connecting them.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Next, compare the choices involved in Relational Algebra Basics and make the
+
+decision criteria explicit.
+
+NARRATOR: Modes of operation define how a primitive processes data larger than one
+
+block.
+
+NARRATOR: Consider this worked case: A selection operation filters the 'Employees'
+
+table to show only those in the 'Engineering' department.
+
+NARRATOR: On screen, illustrate a before-and-after table showing rows filtered
+
+by a condition using selection notation.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Apply Structured Query Language (SQL) to a worked situation instead of
+
+treating it as an isolated definition.
+
+NARRATOR: Students will also learn approaches to building relational database application
+
+programs.
+
+NARRATOR: Consider this worked case: The command SELECT * FROM Employees WHERE
+
+Department = 'Marketing' retrieves specific records.
+
+NARRATOR: On screen, display a code snippet of the SQL query alongside the resulting filtered
+
+table output.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Examine the tradeoffs in Data Quality Principles, including what improves
+
+and what becomes more difficult.
+
+NARRATOR: Encryption supports confidentiality when keys and modes are used correctly.
+
+NARRATOR: Consider this worked case: Validating that all 'PhoneNumber' fields
+
+follow a standard format prevents duplicate or corrupted contact records.
+
+NARRATOR: On screen, show a checklist graphic with icons for accuracy, completeness,
+
+consistency, and timeliness.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Stress-test the reasoning around Transaction Integrity with an edge case and
+
+identify which assumption controls the outcome.
+
+NARRATOR: Message authentication and digital signatures address integrity and authenticity
+
+in different ways.
+
+NARRATOR: Consider this worked case: A banking transaction updates both account balances
+
+atomically, ensuring neither account is left in an inconsistent state.
+
+NARRATOR: On screen, create a step-by-step diagram showing a transaction process with
+
+ACID checkpoints at each stage.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Database Security Practices to diagnose a failure by separating symptoms,
+
+causes, and corrective action.
+
+NARRATOR: Protect the Software prevents unauthorized access to code and development
+
+artifacts.
+
+NARRATOR: Consider this worked case: Role-based access control limits 'view'
+
+permissions to analysts while restricting 'delete' permissions to administrators.
+
+NARRATOR: On screen, display a permission matrix table showing user roles and their
+
+corresponding database actions.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Connect Application Development Approaches to the earlier ideas and explain
+
+how the pieces work as one system.
+
+NARRATOR: Additional topics include object-oriented and object-relational
+
+databases; semi-structured databases (such as XML); and information retrieval.
+
+NARRATOR: Consider this worked case: An e-commerce platform uses SQL to fetch product
+
+inventory and application code to process checkout orders.
+
+NARRATOR: On screen, sketch a simple architecture diagram with a frontend app,
+
+backend logic, and relational database connected by SQL calls.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+
+guide a new analysis.
+
+NARRATOR: Security requirements should be tracked throughout development.
+
+NARRATOR: Consider this worked case: A developer checks that foreign keys enforce
+
+referential integrity, indexes optimize query performance, and encryption protects sensitive
+
+fields.
+
+NARRATOR: On screen, present a printable checklist graphic with checkboxes for
+
+modeling, querying, integrity, and security verification.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.

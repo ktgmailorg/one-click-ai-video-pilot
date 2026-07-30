@@ -1,0 +1,595 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:07.608
+NARRATOR: Begin by framing Foundations of AI
+System Architecture as a question about
+
+2
+00:00:07.608 --> 00:00:10.515
+inputs, decisions, and observable results.
+
+3
+00:00:10.515 --> 00:00:18.038
+NARRATOR: A rigorous pipeline states the task,
+representation, assumptions, supervision, and
+
+4
+00:00:18.038 --> 00:00:19.406
+decision rule.
+
+5
+00:00:19.406 --> 00:00:25.790
+NARRATOR: Consider this worked case: A learner
+maps the inputs, constraints, and observable
+
+6
+00:00:25.790 --> 00:00:31.683
+result for Foundations of AI System
+Architecture, then checks each step against
+
+7
+00:00:31.683 --> 00:00:33.156
+the stated claim.
+
+8
+00:00:33.156 --> 00:00:40.815
+NARRATOR: On screen, show a five-step pipeline
+diagram labeled Task, Representation,
+
+9
+00:00:40.815 --> 00:00:44.296
+Assumptions, Supervision, and Decision Rule.
+
+10
+00:00:44.296 --> 00:00:50.859
+NARRATOR: Annotate each node with a brief
+label and connect them with arrows to show
+
+11
+00:00:50.859 --> 00:00:51.734
+sequential flow.
+
+12
+00:00:51.734 --> 00:00:57.803
+NARRATOR: List the givens before choosing a
+method, because an unstated assumption can
+
+13
+00:00:57.803 --> 00:00:59.203
+change the conclusion.
+
+14
+00:00:59.203 --> 00:01:04.796
+NARRATOR: This establishes the vocabulary and
+scope needed for the remaining sections.
+
+15
+00:01:04.922 --> 00:01:11.681
+NARRATOR: Now define Image Representation in
+Computer Vision precisely enough that another
+
+16
+00:01:11.681 --> 00:01:14.497
+learner could test the definition.
+
+17
+00:01:14.497 --> 00:01:20.231
+NARRATOR: Computer vision pipelines represent
+images as numeric arrays.
+
+18
+00:01:20.231 --> 00:01:28.380
+NARRATOR: Consider this worked case: A 100x100
+color image is stored as a 30000-element array
+
+19
+00:01:28.380 --> 00:01:34.356
+where each triplet corresponds to red, green,
+and blue pixel values.
+
+20
+00:01:34.356 --> 00:01:41.621
+NARRATOR: On screen, display a small grid of
+pixels transforming into a matrix of numbers.
+
+21
+00:01:41.621 --> 00:01:48.450
+NARRATOR: Highlight one pixel and show its RGB
+values as a numeric triplet.
+
+22
+00:01:48.450 --> 00:01:55.247
+NARRATOR: Separate the formal definition from
+an implementation detail, then identify what
+
+23
+00:01:55.247 --> 00:01:57.512
+evidence would distinguish them.
+
+24
+00:01:57.512 --> 00:02:03.840
+NARRATOR: A precise definition makes later
+examples easier to evaluate and revise.
+
+25
+00:02:03.962 --> 00:02:09.904
+NARRATOR: With the foundation in place,
+examine how Color Conversion and Filtering
+
+26
+00:02:09.904 --> 00:02:12.380
+operates in a concrete sequence.
+
+27
+00:02:12.380 --> 00:02:19.000
+NARRATOR: Filtering combines neighboring
+samples to smooth, sharpen, or detect
+
+28
+00:02:19.000 --> 00:02:19.662
+structure.
+
+29
+00:02:19.662 --> 00:02:26.885
+NARRATOR: Consider this worked case:
+Converting an RGB image to grayscale reduces
+
+30
+00:02:26.885 --> 00:02:31.099
+three channels to one, simplifying edge
+detection.
+
+31
+00:02:31.099 --> 00:02:38.896
+NARRATOR: A Gaussian filter smooths noisy
+pixel values by averaging adjacent samples.
+
+32
+00:02:38.896 --> 00:02:45.943
+NARRATOR: On screen, show a side-by-side
+comparison: original noisy image, grayscale
+
+33
+00:02:45.943 --> 00:02:48.505
+version, and filtered image.
+
+34
+00:02:48.505 --> 00:02:53.911
+NARRATOR: Use arrows to indicate the color
+conversion and filtering steps.
+
+35
+00:02:53.911 --> 00:03:01.615
+NARRATOR: Follow every arrow in order and name
+the state before and after each transition.
+
+36
+00:03:01.615 --> 00:03:07.161
+NARRATOR: The trace converts an abstract
+statement into an inspectable sequence.
+
+37
+00:03:07.274 --> 00:03:13.604
+NARRATOR: Next, compare the choices involved
+in Feature Detection and Calibration and make
+
+38
+00:03:13.604 --> 00:03:15.552
+the decision criteria explicit.
+
+39
+00:03:15.552 --> 00:03:20.395
+NARRATOR: Feature methods locate and describe
+repeatable image patterns.
+
+40
+00:03:20.395 --> 00:03:26.828
+NARRATOR: Consider this worked case: SIFT
+features identify keypoints like corners and
+
+41
+00:03:26.828 --> 00:03:27.364
+edges.
+
+42
+00:03:27.364 --> 00:03:33.948
+NARRATOR: Camera calibration maps real-world
+distances to pixel coordinates using known
+
+43
+00:03:33.948 --> 00:03:35.145
+reference points.
+
+44
+00:03:35.145 --> 00:03:40.020
+NARRATOR: On screen, draw a grid of detected
+feature points on an image.
+
+45
+00:03:40.020 --> 00:03:46.554
+NARRATOR: Overlay a calibration grid showing
+how real-world distances map to image
+
+46
+00:03:46.554 --> 00:03:47.098
+coordinates.
+
+47
+00:03:47.098 --> 00:03:53.824
+NARRATOR: Compare alternatives against the
+same constraints so the evaluation does not
+
+48
+00:03:53.824 --> 00:03:55.505
+move the goalposts.
+
+49
+00:03:55.505 --> 00:04:02.458
+NARRATOR: Using shared criteria turns a
+preference into a defensible technical choice.
+
+50
+00:04:02.570 --> 00:04:09.078
+NARRATOR: Apply Geometric Transforms and
+Segmentation to a worked situation instead of
+
+51
+00:04:09.078 --> 00:04:12.332
+treating it as an isolated definition.
+
+52
+00:04:12.332 --> 00:04:18.598
+NARRATOR: Segmentation assigns pixels or
+regions to selected categories.
+
+53
+00:04:18.598 --> 00:04:24.660
+NARRATOR: Consider this worked case:
+Perspective transform corrects a tilted photo.
+
+54
+00:04:24.660 --> 00:04:30.801
+NARRATOR: Foreground segmentation isolates
+moving objects from a static background.
+
+55
+00:04:30.801 --> 00:04:38.144
+NARRATOR: On screen, show a distorted image
+transforming into a straight, aligned image.
+
+56
+00:04:38.144 --> 00:04:42.035
+NARRATOR: Highlight segmented regions with
+different colors.
+
+57
+00:04:42.035 --> 00:04:48.173
+NARRATOR: Work from the concrete inputs to the
+result, checking units, types, or invariants
+
+58
+00:04:48.173 --> 00:04:49.488
+at each step.
+
+59
+00:04:49.488 --> 00:04:54.316
+NARRATOR: The worked case shows both how to
+apply the method and how to check it.
+
+60
+00:04:54.316 --> 00:05:01.252
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+61
+00:05:01.252 --> 00:05:03.144
+throughout the analysis.
+
+62
+00:05:03.266 --> 00:05:09.089
+NARRATOR: Examine the tradeoffs in Motion
+Estimation and Object Recognition, including
+
+63
+00:05:09.089 --> 00:05:12.794
+what improves and what becomes more difficult.
+
+64
+00:05:12.794 --> 00:05:18.184
+NARRATOR: Motion estimation compares
+observations across frames.
+
+65
+00:05:18.184 --> 00:05:25.165
+NARRATOR: Consider this worked case: Optical
+flow tracks pixel movement between video
+
+66
+00:05:25.165 --> 00:05:25.747
+frames.
+
+67
+00:05:25.747 --> 00:05:32.769
+NARRATOR: A face detector classifies detected
+regions as human faces based on learned
+
+68
+00:05:32.769 --> 00:05:33.309
+patterns.
+
+69
+00:05:33.309 --> 00:05:40.463
+NARRATOR: On screen, display two consecutive
+video frames with arrows showing pixel
+
+70
+00:05:40.463 --> 00:05:41.059
+movement.
+
+71
+00:05:41.059 --> 00:05:46.356
+NARRATOR: Annotate detected faces with
+bounding boxes and labels.
+
+72
+00:05:46.356 --> 00:05:52.656
+NARRATOR: State the benefit, the cost, and the
+condition under which the tradeoff is
+
+73
+00:05:52.656 --> 00:05:53.106
+acceptable.
+
+74
+00:05:53.106 --> 00:06:00.497
+NARRATOR: Making the tradeoff visible prevents
+a local improvement from hiding a larger cost.
+
+75
+00:06:00.602 --> 00:06:07.059
+NARRATOR: Stress-test the reasoning around
+Scene Understanding and Context with an edge
+
+76
+00:06:07.059 --> 00:06:11.364
+case and identify which assumption controls
+the outcome.
+
+77
+00:06:11.364 --> 00:06:17.958
+NARRATOR: Scene understanding combines
+objects, layout, and contextual relationships.
+
+78
+00:06:17.958 --> 00:06:25.935
+NARRATOR: Consider this worked case: A kitchen
+scene is understood by recognizing a stove, a
+
+79
+00:06:25.935 --> 00:06:32.316
+pot, and a person standing near the stove,
+establishing spatial and functional
+
+80
+00:06:32.316 --> 00:06:32.848
+relationships.
+
+81
+00:06:32.848 --> 00:06:40.951
+NARRATOR: On screen, show a kitchen image with
+labeled objects and lines connecting them to
+
+82
+00:06:40.951 --> 00:06:44.192
+indicate relationships (e.g., person near
+stove).
+
+83
+00:06:44.192 --> 00:06:50.369
+NARRATOR: Change one assumption at a time and
+observe which part of the reasoning no longer
+
+84
+00:06:50.369 --> 00:06:50.755
+holds.
+
+85
+00:06:50.755 --> 00:06:57.112
+NARRATOR: The edge case reveals the boundary
+of the claim without discarding the useful
+
+86
+00:06:57.112 --> 00:06:58.020
+core idea.
+
+87
+00:06:58.130 --> 00:07:05.197
+NARRATOR: Use Evaluation and Robustness
+Testing to diagnose a failure by separating
+
+88
+00:07:05.197 --> 00:07:08.142
+symptoms, causes, and corrective action.
+
+89
+00:07:08.142 --> 00:07:15.173
+NARRATOR: Evaluation tests sensitivity to
+viewpoint, lighting, occlusion, and data
+
+90
+00:07:15.173 --> 00:07:15.876
+shift.
+
+91
+00:07:15.876 --> 00:07:22.916
+NARRATOR: Consider this worked case: An AI
+model is tested with images taken at different
+
+92
+00:07:22.916 --> 00:07:29.017
+angles, under bright and dim light, with
+partial occlusions, and from different camera
+
+93
+00:07:29.017 --> 00:07:29.486
+types.
+
+94
+00:07:29.486 --> 00:07:37.227
+NARRATOR: On screen, display a 2x2 grid of
+test images varying in viewpoint, lighting,
+
+95
+00:07:37.227 --> 00:07:39.439
+occlusion, and data shift.
+
+96
+00:07:39.439 --> 00:07:42.564
+NARRATOR: Annotate each with the tested
+condition.
+
+97
+00:07:42.564 --> 00:07:48.351
+NARRATOR: Locate the first point where
+observed behavior diverges from expected
+
+98
+00:07:48.351 --> 00:07:52.033
+behavior, then test the smallest plausible
+cause.
+
+99
+00:07:52.033 --> 00:07:58.633
+NARRATOR: The diagnosis is strongest when
+another person can reproduce the observation
+
+100
+00:07:58.633 --> 00:08:00.283
+and the test.
+
+101
+00:08:00.386 --> 00:08:06.748
+NARRATOR: Connect Practical Analysis Checklist
+to the earlier ideas and explain how the
+
+102
+00:08:06.748 --> 00:08:09.195
+pieces work as one system.
+
+103
+00:08:09.195 --> 00:08:15.146
+NARRATOR: Appearance models describe how
+lighting, material, and viewpoint affect
+
+104
+00:08:15.146 --> 00:08:16.336
+measured pixels.
+
+105
+00:08:16.336 --> 00:08:23.180
+NARRATOR: Consider this worked case: A learner
+maps the inputs, constraints, and observable
+
+106
+00:08:23.180 --> 00:08:30.023
+result for Practical Analysis Checklist, then
+checks each step against the stated claim.
+
+107
+00:08:30.023 --> 00:08:34.726
+NARRATOR: On screen, create a checklist
+graphic with six boxes.
+
+108
+00:08:34.726 --> 00:08:41.128
+NARRATOR: Check off each item as it relates to
+the pipeline components and evaluation
+
+109
+00:08:41.128 --> 00:08:41.585
+criteria.
+
+110
+00:08:41.585 --> 00:08:50.523
+NARRATOR: Explain each connection explicitly
+and verify that information retains the same
+
+111
+00:08:50.523 --> 00:08:52.757
+meaning across representations.
+
+112
+00:08:52.757 --> 00:08:59.417
+NARRATOR: The synthesis matters only if every
+connection remains supported by the original
+
+113
+00:08:59.417 --> 00:08:59.929
+evidence.
+
+114
+00:09:00.050 --> 00:09:06.263
+NARRATOR: Finish with CSCI-331: Introduction
+to Artificial Intelligence - Course
+
+115
+00:09:06.263 --> 00:09:13.718
+Foundations Companion as a practical checklist
+that can guide a new analysis.
+
+116
+00:09:13.718 --> 00:09:20.281
+NARRATOR: Geometric transforms map coordinates
+between image representations.
+
+117
+00:09:20.281 --> 00:09:28.330
+NARRATOR: Consider this worked case: A learner
+maps the inputs, constraints, and observable
+
+118
+00:09:28.330 --> 00:09:34.521
+result for CSCI-331: Introduction to
+Artificial Intelligence - Course Foundations
+
+119
+00:09:34.521 --> 00:09:40.093
+Companion, then checks each step against the
+stated claim.
+
+120
+00:09:40.093 --> 00:09:47.559
+NARRATOR: On screen, show a five-step pipeline
+diagram labeled Task, Representation,
+
+121
+00:09:47.559 --> 00:09:50.953
+Assumptions, Supervision, and Decision Rule.
+
+122
+00:09:50.953 --> 00:09:57.598
+NARRATOR: Annotate each node with a brief
+label and connect them with arrows to show
+
+123
+00:09:57.598 --> 00:09:58.484
+sequential flow.
+
+124
+00:09:58.484 --> 00:10:05.809
+NARRATOR: For each checklist item, record the
+evidence, the remaining uncertainty, and the
+
+125
+00:10:05.809 --> 00:10:07.499
+next verification step.
+
+126
+00:10:07.499 --> 00:10:13.416
+NARRATOR: The result is a repeatable
+procedure, not a conclusion that depends on
+
+127
+00:10:13.416 --> 00:10:14.781
+memory or intuition.

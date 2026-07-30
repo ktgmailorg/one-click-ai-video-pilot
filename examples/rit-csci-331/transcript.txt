@@ -1,0 +1,253 @@
+NARRATOR: Begin by framing Foundations of AI System Architecture as a question about
+
+inputs, decisions, and observable results.
+
+NARRATOR: A rigorous pipeline states the task, representation, assumptions, supervision, and
+
+decision rule.
+
+NARRATOR: Consider this worked case: A learner maps the inputs, constraints, and observable
+
+result for Foundations of AI System Architecture, then checks each step against
+
+the stated claim.
+
+NARRATOR: On screen, show a five-step pipeline diagram labeled Task, Representation,
+
+Assumptions, Supervision, and Decision Rule.
+
+NARRATOR: Annotate each node with a brief label and connect them with arrows to show
+
+sequential flow.
+
+NARRATOR: List the givens before choosing a method, because an unstated assumption can
+
+change the conclusion.
+
+NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+
+NARRATOR: Now define Image Representation in Computer Vision precisely enough that another
+
+learner could test the definition.
+
+NARRATOR: Computer vision pipelines represent images as numeric arrays.
+
+NARRATOR: Consider this worked case: A 100x100 color image is stored as a 30000-element array
+
+where each triplet corresponds to red, green, and blue pixel values.
+
+NARRATOR: On screen, display a small grid of pixels transforming into a matrix of numbers.
+
+NARRATOR: Highlight one pixel and show its RGB values as a numeric triplet.
+
+NARRATOR: Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+
+NARRATOR: With the foundation in place, examine how Color Conversion and Filtering
+
+operates in a concrete sequence.
+
+NARRATOR: Filtering combines neighboring samples to smooth, sharpen, or detect
+
+structure.
+
+NARRATOR: Consider this worked case: Converting an RGB image to grayscale reduces
+
+three channels to one, simplifying edge detection.
+
+NARRATOR: A Gaussian filter smooths noisy pixel values by averaging adjacent samples.
+
+NARRATOR: On screen, show a side-by-side comparison: original noisy image, grayscale
+
+version, and filtered image.
+
+NARRATOR: Use arrows to indicate the color conversion and filtering steps.
+
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in Feature Detection and Calibration and make
+
+the decision criteria explicit.
+
+NARRATOR: Feature methods locate and describe repeatable image patterns.
+
+NARRATOR: Consider this worked case: SIFT features identify keypoints like corners and
+
+edges.
+
+NARRATOR: Camera calibration maps real-world distances to pixel coordinates using known
+
+reference points.
+
+NARRATOR: On screen, draw a grid of detected feature points on an image.
+
+NARRATOR: Overlay a calibration grid showing how real-world distances map to image
+
+coordinates.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Apply Geometric Transforms and Segmentation to a worked situation instead of
+
+treating it as an isolated definition.
+
+NARRATOR: Segmentation assigns pixels or regions to selected categories.
+
+NARRATOR: Consider this worked case: Perspective transform corrects a tilted photo.
+
+NARRATOR: Foreground segmentation isolates moving objects from a static background.
+
+NARRATOR: On screen, show a distorted image transforming into a straight, aligned image.
+
+NARRATOR: Highlight segmented regions with different colors.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Examine the tradeoffs in Motion Estimation and Object Recognition, including
+
+what improves and what becomes more difficult.
+
+NARRATOR: Motion estimation compares observations across frames.
+
+NARRATOR: Consider this worked case: Optical flow tracks pixel movement between video
+
+frames.
+
+NARRATOR: A face detector classifies detected regions as human faces based on learned
+
+patterns.
+
+NARRATOR: On screen, display two consecutive video frames with arrows showing pixel
+
+movement.
+
+NARRATOR: Annotate detected faces with bounding boxes and labels.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Stress-test the reasoning around Scene Understanding and Context with an edge
+
+case and identify which assumption controls the outcome.
+
+NARRATOR: Scene understanding combines objects, layout, and contextual relationships.
+
+NARRATOR: Consider this worked case: A kitchen scene is understood by recognizing a stove, a
+
+pot, and a person standing near the stove, establishing spatial and functional
+
+relationships.
+
+NARRATOR: On screen, show a kitchen image with labeled objects and lines connecting them to
+
+indicate relationships (e.g., person near stove).
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Evaluation and Robustness Testing to diagnose a failure by separating
+
+symptoms, causes, and corrective action.
+
+NARRATOR: Evaluation tests sensitivity to viewpoint, lighting, occlusion, and data
+
+shift.
+
+NARRATOR: Consider this worked case: An AI model is tested with images taken at different
+
+angles, under bright and dim light, with partial occlusions, and from different camera
+
+types.
+
+NARRATOR: On screen, display a 2x2 grid of test images varying in viewpoint, lighting,
+
+occlusion, and data shift.
+
+NARRATOR: Annotate each with the tested condition.
+
+NARRATOR: Locate the first point where observed behavior diverges from expected
+
+behavior, then test the smallest plausible cause.
+
+NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+
+and the test.
+
+NARRATOR: Connect Practical Analysis Checklist to the earlier ideas and explain how the
+
+pieces work as one system.
+
+NARRATOR: Appearance models describe how lighting, material, and viewpoint affect
+
+measured pixels.
+
+NARRATOR: Consider this worked case: A learner maps the inputs, constraints, and observable
+
+result for Practical Analysis Checklist, then checks each step against the stated claim.
+
+NARRATOR: On screen, create a checklist graphic with six boxes.
+
+NARRATOR: Check off each item as it relates to the pipeline components and evaluation
+
+criteria.
+
+NARRATOR: Explain each connection explicitly and verify that information retains the same
+
+meaning across representations.
+
+NARRATOR: The synthesis matters only if every connection remains supported by the original
+
+evidence.
+
+NARRATOR: Finish with CSCI-331: Introduction to Artificial Intelligence - Course
+
+Foundations Companion as a practical checklist that can guide a new analysis.
+
+NARRATOR: Geometric transforms map coordinates between image representations.
+
+NARRATOR: Consider this worked case: A learner maps the inputs, constraints, and observable
+
+result for CSCI-331: Introduction to Artificial Intelligence - Course Foundations
+
+Companion, then checks each step against the stated claim.
+
+NARRATOR: On screen, show a five-step pipeline diagram labeled Task, Representation,
+
+Assumptions, Supervision, and Decision Rule.
+
+NARRATOR: Annotate each node with a brief label and connect them with arrows to show
+
+sequential flow.
+
+NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+
+next verification step.
+
+NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+
+memory or intuition.
