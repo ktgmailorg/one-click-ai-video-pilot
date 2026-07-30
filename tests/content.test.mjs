@@ -3,6 +3,9 @@ import { readFile, stat } from "node:fs/promises";
 import test from "node:test";
 
 const root = new URL("../", import.meta.url);
+const localAssetPattern = /^\.\/[a-z0-9/_\-.]+$/i;
+const hostedVideoPattern =
+  /^https:\/\/[a-z0-9-]+\.public\.blob\.vercel-storage\.com\/[a-z0-9/_\-.]+$/i;
 const newExamples = [
   "full-riscv-pipeline",
   "full-derivative-foundations",
@@ -91,9 +94,15 @@ test("the course catalog contains complete, unique lessons", async () => {
     assert.ok(course.outcomes.length >= 2);
     assert.ok(course.paths.length >= 1);
 
-    for (const key of ["video", "captions", "transcript", "poster", "sources"]) {
-      assert.match(course[key], /^\.\/[a-z0-9/_\-.]+$/i);
+    for (const key of ["captions", "transcript", "poster", "sources"]) {
+      assert.match(course[key], localAssetPattern);
       assert.ok((await stat(new URL(course[key].slice(2), root))).size > 0);
+    }
+
+    if (localAssetPattern.test(course.video)) {
+      assert.ok((await stat(new URL(course.video.slice(2), root))).size > 0);
+    } else {
+      assert.match(course.video, hostedVideoPattern);
     }
 
     const captions = await readFile(

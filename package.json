@@ -6,9 +6,11 @@
     "node": "22.x"
   },
   "scripts": {
+    "media:publish": "node --env-file=.env.local scripts/publish-course-videos.mjs",
     "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {
+    "@vercel/blob": "^2.6.1",
     "jose": "^6.1.2"
   }
 }
