@@ -6,7 +6,7 @@ const baseUrl = new URL(
   option("--base-url") || "https://one-click-ai-video-pilot.vercel.app/",
 );
 const expected = Number.parseInt(option("--expected") || "63", 10);
-const concurrency = Number.parseInt(option("--concurrency") || "8", 10);
+const concurrency = Number.parseInt(option("--concurrency") || "2", 10);
 
 if (!Number.isInteger(expected) || expected < 1) {
   throw new Error("--expected must be a positive integer");
@@ -20,18 +20,34 @@ function option(name) {
   return index >= 0 ? process.argv[index + 1] : "";
 }
 
-async function verifyResponse(url, expectedType, expectedBytes) {
+async function verifyResponse(
+  url,
+  expectedTypes,
+  expectedBytes,
+  redirect = "follow",
+) {
   const response = await fetch(url, {
     method: "HEAD",
-    redirect: "follow",
+    redirect,
     signal: AbortSignal.timeout(15_000),
   });
-  if (!response.ok) {
+  const expectedRedirect =
+    redirect === "manual" && response.status >= 300 && response.status < 400;
+  if (!response.ok && !expectedRedirect) {
     throw new Error(`${url}: HTTP ${response.status}`);
   }
   const contentType = response.headers.get("content-type") || "";
-  if (!contentType.toLowerCase().startsWith(expectedType)) {
-    throw new Error(`${url}: expected ${expectedType}, received ${contentType}`);
+  const allowedTypes = Array.isArray(expectedTypes)
+    ? expectedTypes
+    : [expectedTypes];
+  if (
+    !allowedTypes.some((expectedType) =>
+      contentType.toLowerCase().startsWith(expectedType),
+    )
+  ) {
+    throw new Error(
+      `${url}: expected ${allowedTypes.join(" or ")}, received ${contentType}`,
+    );
   }
   if (expectedBytes) {
     const length = Number.parseInt(
@@ -44,6 +60,18 @@ async function verifyResponse(url, expectedType, expectedBytes) {
       );
     }
   }
+}
+
+async function verifyVideoResponse(url, expectedBytes) {
+  // The public Vercel endpoint declares the correct browser-facing media type.
+  // GitHub's signed release-storage redirect then uses application/octet-stream,
+  // so verify that final response separately for availability and byte size.
+  await verifyResponse(url, "video/mp4", undefined, "manual");
+  await verifyResponse(
+    url,
+    ["video/mp4", "application/octet-stream"],
+    expectedBytes,
+  );
 }
 
 async function mapLimit(values, limit, worker) {
@@ -91,7 +119,7 @@ await mapLimit(localCourses, concurrency, async (course) => {
     throw new Error(`${course.id}: live video checksum metadata differs`);
   }
   await Promise.all([
-    verifyResponse(live.video, "video/mp4", live.videoBytes),
+    verifyVideoResponse(new URL(live.video, baseUrl), live.videoBytes),
     verifyResponse(new URL(live.captions, baseUrl), "text/vtt"),
     verifyResponse(new URL(live.transcript, baseUrl), "text/plain"),
     verifyResponse(new URL(live.poster, baseUrl), "image/"),
