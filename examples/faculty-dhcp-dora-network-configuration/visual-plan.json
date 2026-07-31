@@ -1,0 +1,156 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "When a laptop joins a network, it may know its hardware address but not its local IP address, subnet mask, default gateway, DNS servers, or lease policy.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "It cannot simply send a normal unicast request to a DHCP server because it does not yet know where that server is—or even which subnet it belongs to.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "DHCP bootstraps this uncertainty with a short exchange often remembered as DORA: Discover, Offer, Request, and Acknowledgment.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "The client sends DHCPDISCOVER as a broadcast so any available server or relay on the local network can receive it.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "The message includes a transaction identifier that helps the client match later responses.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "If the server is on another subnet, a DHCP relay listens locally and forwards the request toward the configured server, adding information about the client's network.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-004",
+          "phrase": "This matters because routers normally do not forward broadcasts.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-005",
+          "phrase": "The relay provides controlled cross-subnet reach without placing a DHCP server on every VLAN.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "One or more servers may respond with DHCPOFFER messages containing a proposed address, lease time, and configuration options.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "The client chooses an offer and broadcasts DHCPREQUEST identifying the selected server and address.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "Broadcasting the choice informs the winning server to proceed and allows other servers to withdraw their pending offers.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-004",
+          "phrase": "This is a coordination step, not merely a repeat of the request.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-005",
+          "phrase": "Packet captures reveal the selected-server and requested-address options that make the client's intent explicit.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "The selected server returns DHCPACK, confirming the lease and options.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "The client configures the interface and enters the bound state.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "A lease is temporary.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-004",
+          "phrase": "At the first renewal timer, the client usually unicasts a request to the original server.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-005",
+          "phrase": "If that fails, a later rebinding timer allows broadcast requests to any server.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-006",
+          "phrase": "If the lease expires without renewal, the address must no longer be used.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "Troubleshooting follows the exchange.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "Confirm link and VLAN first.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "Capture whether Discover leaves the client, whether the relay forwards it, whether an Offer returns, and whether Request and Acknowledgment complete.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-004",
+          "phrase": "Then inspect the scope for exhaustion, option errors, reservations, and lease conflicts.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-005",
+          "phrase": "Also ask who is answering: a rogue DHCP server can supply a malicious gateway or DNS setting.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-006",
+          "phrase": "DORA is therefore both an availability workflow and a trust boundary.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "dhcp-dora-how-a-device-gets-its-network-configuration",
+  "schemaVersion": 1
+}

@@ -1,0 +1,163 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, measured, and instructor-ready.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "When a laptop joins a network, it may know its hardware address but not its local IP address, subnet mask, default gateway, DNS servers, or lease policy. It cannot simply send a normal unicast request to a DHCP server because it does not yet know where that server is—or even which subnet it belongs to. DHCP bootstraps this uncertainty with a short exchange often remembered as DORA: Discover, Offer, Request, and Acknowledgment.",
+      "plannedSeconds": 48,
+      "title": "A New Device Knows Almost Nothing",
+      "visualDirection": "template:showcase-dhcp | A laptop joins a LAN with no address; show unknown IP, subnet mask, gateway, and DNS fields."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, measured, and instructor-ready.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "The client sends DHCPDISCOVER as a broadcast so any available server or relay on the local network can receive it. The message includes a transaction identifier that helps the client match later responses. If the server is on another subnet, a DHCP relay listens locally and forwards the request toward the configured server, adding information about the client's network. This matters because routers normally do not forward broadcasts. The relay provides controlled cross-subnet reach without placing a DHCP server on every VLAN.",
+      "plannedSeconds": 48,
+      "title": "Discover: Broadcast the Need",
+      "visualDirection": "template:showcase-dhcp | From CLIENT to BROADCAST to RELAY to SERVER; show DHCPDISCOVER crossing the local segment."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, measured, and instructor-ready.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "One or more servers may respond with DHCPOFFER messages containing a proposed address, lease time, and configuration options. The client chooses an offer and broadcasts DHCPREQUEST identifying the selected server and address. Broadcasting the choice informs the winning server to proceed and allows other servers to withdraw their pending offers. This is a coordination step, not merely a repeat of the request. Packet captures reveal the selected-server and requested-address options that make the client's intent explicit.",
+      "plannedSeconds": 48,
+      "title": "Offer and Request: Choose One Proposal",
+      "visualDirection": "template:showcase-dhcp | Two servers offer different addresses; the client broadcasts DHCPREQUEST naming the selected server and address."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, measured, and instructor-ready.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "The selected server returns DHCPACK, confirming the lease and options. The client configures the interface and enters the bound state. A lease is temporary. At the first renewal timer, the client usually unicasts a request to the original server. If that fails, a later rebinding timer allows broadcast requests to any server. If the lease expires without renewal, the address must no longer be used. These timers let address pools be reused while keeping stable configuration during normal operation.",
+      "plannedSeconds": 48,
+      "title": "Acknowledgment and Lease Lifecycle",
+      "visualDirection": "template:showcase-dhcp | A lease clock marks BOUND, T1 RENEW, T2 REBIND, and EXPIRATION; arrows show unicast then broadcast renewal."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, measured, and instructor-ready.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Troubleshooting follows the exchange. Confirm link and VLAN first. Capture whether Discover leaves the client, whether the relay forwards it, whether an Offer returns, and whether Request and Acknowledgment complete. Then inspect the scope for exhaustion, option errors, reservations, and lease conflicts. Also ask who is answering: a rogue DHCP server can supply a malicious gateway or DNS setting. DORA is therefore both an availability workflow and a trust boundary. Seeing each packet in context turns 'the network is down' into a testable sequence of hypotheses.",
+      "plannedSeconds": 48,
+      "title": "Diagnose with Packets, Scope, and Trust",
+      "visualDirection": "template:showcase-dhcp | Checklist: LINK, VLAN, DISCOVER, RELAY, OFFER, REQUEST, ACK, OPTIONS, LEASE, ROGUE SERVER."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "rfc2131"
+      ],
+      "text": "DHCP provides configuration parameters to Internet hosts and allocates reusable network addresses. Clients and servers exchange discover, offer, request, and acknowledgment messages, and relay agents can forward messages across subnet boundaries.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "rfc2131"
+      ],
+      "text": "DHCP provides configuration parameters to Internet hosts and allocates reusable network addresses. Clients and servers exchange discover, offer, request, and acknowledgment messages, and relay agents can forward messages across subnet boundaries.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "rfc2131"
+      ],
+      "text": "DHCP provides configuration parameters to Internet hosts and allocates reusable network addresses. Clients and servers exchange discover, offer, request, and acknowledgment messages, and relay agents can forward messages across subnet boundaries.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "rfc2131"
+      ],
+      "text": "DHCP provides configuration parameters to Internet hosts and allocates reusable network addresses. Clients and servers exchange discover, offer, request, and acknowledgment messages, and relay agents can forward messages across subnet boundaries.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "hartpence-rit"
+      ],
+      "text": "Bruce Hartpence teaches routing and switching, network services, and large-scale networking, with interests including DHCP, DNS, voice over IP, network security, and machine learning.",
+      "verified": true
+    }
+  ],
+  "id": "dhcp-dora-how-a-device-gets-its-network-configuration",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "IETF",
+      "excerpt": "DHCP provides configuration parameters to Internet hosts and allocates reusable network addresses. Clients and servers exchange discover, offer, request, and acknowledgment messages, and relay agents can forward messages across subnet boundaries.",
+      "id": "rfc2131",
+      "sha256": "f55241f0dc877a0ee399c2a4b5806920c87111a0c3266225853ffec21f666fe5",
+      "title": "RFC 2131 — Dynamic Host Configuration Protocol",
+      "type": "note",
+      "uri": "https://www.rfc-editor.org/rfc/rfc2131",
+      "verified": true
+    },
+    {
+      "author": "Rochester Institute of Technology",
+      "excerpt": "Bruce Hartpence teaches routing and switching, network services, and large-scale networking, with interests including DHCP, DNS, voice over IP, network security, and machine learning.",
+      "id": "hartpence-rit",
+      "sha256": "d57a46cdc674caf0ed6ec6d1c4833fb9fe028c8ab6dcfbd781491c29a7395dba",
+      "title": "Bruce Hartpence — RIT Directory",
+      "type": "note",
+      "uri": "https://www.rit.edu/directory/bhhics-bruce-hartpence",
+      "verified": true
+    }
+  ],
+  "title": "DHCP DORA: How a Device Gets Its Network Configuration"
+}

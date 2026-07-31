@@ -1,0 +1,194 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:06.848
+Quadrature phase-shift keying, or QPSK,
+carries two bits in each symbol.
+
+2
+00:00:06.848 --> 00:00:14.018
+We group the incoming stream into pairs and
+map each pair to one of four points in the
+
+3
+00:00:14.018 --> 00:00:15.611
+in-phase and quadrature plane.
+
+4
+00:00:15.611 --> 00:00:20.598
+Neighboring points are often assigned bit
+patterns that differ by one bit, a Gray
+
+5
+00:00:20.598 --> 00:00:26.297
+mapping that reduces the number of bit errors
+when noise pushes a symbol across one nearby
+
+6
+00:00:26.297 --> 00:00:26.653
+boundary.
+
+7
+00:00:26.653 --> 00:00:32.626
+The constellation is more than a diagram: it
+is the transmitter's vocabulary and the
+
+8
+00:00:32.626 --> 00:00:33.906
+receiver's decision map.
+
+9
+00:00:34.010 --> 00:00:39.249
+Each constellation point supplies two
+coordinates: I for the cosine carrier and Q
+
+10
+00:00:39.249 --> 00:00:40.861
+for the sine carrier.
+
+11
+00:00:40.861 --> 00:00:46.486
+The carriers are ninety degrees apart, so they
+are orthogonal over the symbol interval.
+
+12
+00:00:46.486 --> 00:00:52.514
+We weight them by the chosen coordinates and
+add them to create one real passband waveform.
+
+13
+00:00:52.514 --> 00:00:58.321
+Changing the bit pair changes the carrier
+phase while maintaining a similar envelope.
+
+14
+00:00:58.321 --> 00:01:04.332
+Orthogonality lets the receiver later separate
+the two components, provided timing and
+
+15
+00:01:04.332 --> 00:01:06.837
+carrier reference are sufficiently aligned.
+
+16
+00:01:06.962 --> 00:01:09.359
+A real channel changes what arrives.
+
+17
+00:01:09.359 --> 00:01:13.839
+Thermal noise spreads each ideal point into a
+cloud.
+
+18
+00:01:13.839 --> 00:01:18.500
+Frequency or phase offset rotates the
+constellation.
+
+19
+00:01:18.500 --> 00:01:24.581
+Fading changes amplitude, and multipath can
+smear one symbol into the next.
+
+20
+00:01:24.581 --> 00:01:28.214
+These effects are different and require
+different corrections.
+
+21
+00:01:28.214 --> 00:01:34.900
+A receiver chain may estimate timing, carrier
+phase, channel gain, and equalization before
+
+22
+00:01:34.900 --> 00:01:36.443
+making bit decisions.
+
+23
+00:01:36.443 --> 00:01:43.390
+Looking only at a waveform can hide the
+pattern; the constellation exposes whether
+
+24
+00:01:43.390 --> 00:01:48.200
+uncertainty is random spread, systematic
+rotation, scaling, or intersymbol
+
+25
+00:01:48.200 --> 00:01:48.734
+interference.
+
+26
+00:01:48.842 --> 00:01:54.532
+After synchronization and matched filtering,
+the receiver samples once per symbol and
+
+27
+00:01:54.532 --> 00:01:56.903
+selects the closest valid point.
+
+28
+00:01:56.903 --> 00:02:03.075
+In basic QPSK, the I and Q signs define four
+decision regions.
+
+29
+00:02:03.075 --> 00:02:09.065
+A sample near a boundary is fragile because a
+small noise change can flip the decision.
+
+30
+00:02:09.065 --> 00:02:14.952
+Increasing signal energy separates the
+clusters relative to noise, reducing error
+
+31
+00:02:14.952 --> 00:02:19.234
+probability, but power and bandwidth are
+limited resources.
+
+32
+00:02:19.234 --> 00:02:25.895
+Receiver design therefore balances reliable
+decisions against spectral efficiency, energy,
+
+33
+00:02:25.895 --> 00:02:27.893
+and implementation complexity.
+
+34
+00:02:28.010 --> 00:02:35.035
+The full reasoning chain is compact: group
+bits, map a symbol, modulate orthogonal
+
+35
+00:02:35.035 --> 00:02:40.440
+carriers, pass through the channel,
+synchronize, filter, sample, decide, and
+
+36
+00:02:40.440 --> 00:02:40.980
+decode.
+
+37
+00:02:40.980 --> 00:02:45.017
+To debug a link, compare evidence at each
+boundary.
+
+38
+00:02:45.017 --> 00:02:51.395
+Verify the bit mapping, inspect carrier
+frequency and timing, plot the received
+
+39
+00:02:51.395 --> 00:02:56.710
+constellation, measure error-vector magnitude,
+and compare transmitted with recovered bits.
+
+40
+00:02:56.710 --> 00:03:02.416
+This stepwise view turns an abstract
+modulation formula into a practical
+
+41
+00:03:02.416 --> 00:03:03.454
+engineering workflow.

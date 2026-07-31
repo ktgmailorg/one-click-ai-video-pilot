@@ -1,0 +1,163 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, measured, and instructor-ready.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "A modern many-core processor is not one giant calculator. It is a neighborhood of compute cores, cache banks, accelerators, and memory controllers that must exchange data. A request from one core may need a cache line stored several millimeters away. Shared buses become a bottleneck as core count rises, so designers place a small router beside each tile and connect those routers as a network-on-chip. The central question changes from, 'How fast is this core? ' to, 'How predictably can information move through the whole chip? '",
+      "plannedSeconds": 48,
+      "title": "Why a Chip Needs a Network",
+      "visualDirection": "template:showcase-noc | A many-core network diagram with CORE, ROUTER, CACHE, and MEMORY; illuminate one packet crossing the chip."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, measured, and instructor-ready.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "An application message is divided into packets, and each packet is often divided again into flow-control digits called flits. The header flit identifies the destination. At each router, routing logic chooses an output direction, virtual-channel allocation reserves buffering, switch allocation grants passage, and the crossbar moves the flit onto the next link. These stages can overlap like an assembly line. The animation matters because latency is not one number: it is the sum of serialization, waiting, routing, switching, link travel, and possible contention at every hop.",
+      "plannedSeconds": 48,
+      "title": "Packets, Flits, and Router Decisions",
+      "visualDirection": "template:showcase-noc | Trace a packet from CORE A to ROUTER, VC, SWITCH, LINK, and CORE B, one hop at a time."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, measured, and instructor-ready.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "Now imagine two cores sending traffic through the same output port. Only one can win that cycle. Arbitration selects a packet; the other waits in a buffer. If downstream buffers fill, backpressure propagates toward the senders. This prevents data loss, but it can create long queues and head-of-line blocking. A useful analysis therefore asks four questions: where traffic is injected, which routes it follows, where paths overlap, and how flow control responds. Average latency alone can hide an unstable network whose tail latency grows sharply under bursts.",
+      "plannedSeconds": 48,
+      "title": "Contention and Backpressure",
+      "visualDirection": "template:showcase-noc | From INJECTION to ROUTE to ARBITRATE to FORWARD; show two packets competing and one waiting safely."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, measured, and instructor-ready.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "Wireless links offer a different geometry. Instead of crossing many short router-to-router hops, a packet can use an on-chip antenna to take an express path across the die. That can reduce hop count and long-distance latency, especially for multicast or irregular communication. But the wireless medium is shared. Designers must coordinate access, control interference, budget transmitter energy, and decide which traffic deserves the shortcut. The right comparison is not 'wireless is faster. ' It is whether a hybrid network improves system-level latency and energy for the target workload without creating a new shared bottleneck.",
+      "plannedSeconds": 48,
+      "title": "Wireless Shortcuts Across the Die",
+      "visualDirection": "template:showcase-noc | Overlay long wired multi-hop paths with a wireless express hop; compare distance, setup, and shared-medium access."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, measured, and instructor-ready.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "A professional design review closes the loop with measurable evidence. For performance, inspect zero-load latency, saturation throughput, and tail latency. For energy, separate router, buffer, link, and radio costs. For resilience, ask what happens when a link, router, or wireless channel fails, and whether packets can reroute without deadlock. A hybrid design is valuable only when its benefits survive realistic traffic and faults. The transferable lesson is systems thinking: architecture, communication, workload, and reliability are coupled, so every optimization must be evaluated end to end.",
+      "plannedSeconds": 48,
+      "title": "Design Review: Performance, Energy, and Resilience",
+      "visualDirection": "template:showcase-noc | A trade-off board comparing wired mesh, wireless shortcut, and hybrid design across latency, energy, contention, and fault recovery."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "ganguly-rit"
+      ],
+      "text": "Amlan Ganguly's research includes energy-efficient interconnection architectures for multicore chips using wireless and photonic interconnects, along with robust and failure-resistant networks-on-chip.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "rit-ce"
+      ],
+      "text": "RIT computer engineering connects computer architecture, embedded systems, communications, and networking to the design of computing systems.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "ganguly-rit"
+      ],
+      "text": "Amlan Ganguly's research includes energy-efficient interconnection architectures for multicore chips using wireless and photonic interconnects, along with robust and failure-resistant networks-on-chip.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "ganguly-rit"
+      ],
+      "text": "Amlan Ganguly's research includes energy-efficient interconnection architectures for multicore chips using wireless and photonic interconnects, along with robust and failure-resistant networks-on-chip.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "ganguly-rit"
+      ],
+      "text": "Amlan Ganguly's research includes energy-efficient interconnection architectures for multicore chips using wireless and photonic interconnects, along with robust and failure-resistant networks-on-chip.",
+      "verified": true
+    }
+  ],
+  "id": "wireless-networks-on-chip-moving-data-across-many-core-processor",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "Rochester Institute of Technology",
+      "excerpt": "Amlan Ganguly's research includes energy-efficient interconnection architectures for multicore chips using wireless and photonic interconnects, along with robust and failure-resistant networks-on-chip.",
+      "id": "ganguly-rit",
+      "sha256": "90c0662463126b35d0b079ca1993210379a503e94827e560a3bca2a8a71ff6fe",
+      "title": "Amlan Ganguly — RIT Directory",
+      "type": "note",
+      "uri": "https://www.rit.edu/chai/directory/axgeec-amlan-ganguly",
+      "verified": true
+    },
+    {
+      "author": "Rochester Institute of Technology",
+      "excerpt": "RIT computer engineering connects computer architecture, embedded systems, communications, and networking to the design of computing systems.",
+      "id": "rit-ce",
+      "sha256": "c744f89890e1be28417c1c63a8a26fb05b46a00050e3fa3387a675e5f2ae2af7",
+      "title": "RIT Computer Engineering",
+      "type": "note",
+      "uri": "https://www.rit.edu/engineering/computerengineering",
+      "verified": true
+    }
+  ],
+  "title": "Wireless Networks-on-Chip: Moving Data Across Many-Core Processors"
+}

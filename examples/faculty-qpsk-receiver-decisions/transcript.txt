@@ -1,0 +1,81 @@
+Quadrature phase-shift keying, or QPSK, carries two bits in each symbol.
+
+We group the incoming stream into pairs and map each pair to one of four points in the
+
+in-phase and quadrature plane.
+
+Neighboring points are often assigned bit patterns that differ by one bit, a Gray
+
+mapping that reduces the number of bit errors when noise pushes a symbol across one nearby
+
+boundary.
+
+The constellation is more than a diagram: it is the transmitter's vocabulary and the
+
+receiver's decision map.
+
+Each constellation point supplies two coordinates: I for the cosine carrier and Q
+
+for the sine carrier.
+
+The carriers are ninety degrees apart, so they are orthogonal over the symbol interval.
+
+We weight them by the chosen coordinates and add them to create one real passband waveform.
+
+Changing the bit pair changes the carrier phase while maintaining a similar envelope.
+
+Orthogonality lets the receiver later separate the two components, provided timing and
+
+carrier reference are sufficiently aligned.
+
+A real channel changes what arrives.
+
+Thermal noise spreads each ideal point into a cloud.
+
+Frequency or phase offset rotates the constellation.
+
+Fading changes amplitude, and multipath can smear one symbol into the next.
+
+These effects are different and require different corrections.
+
+A receiver chain may estimate timing, carrier phase, channel gain, and equalization before
+
+making bit decisions.
+
+Looking only at a waveform can hide the pattern; the constellation exposes whether
+
+uncertainty is random spread, systematic rotation, scaling, or intersymbol
+
+interference.
+
+After synchronization and matched filtering, the receiver samples once per symbol and
+
+selects the closest valid point.
+
+In basic QPSK, the I and Q signs define four decision regions.
+
+A sample near a boundary is fragile because a small noise change can flip the decision.
+
+Increasing signal energy separates the clusters relative to noise, reducing error
+
+probability, but power and bandwidth are limited resources.
+
+Receiver design therefore balances reliable decisions against spectral efficiency, energy,
+
+and implementation complexity.
+
+The full reasoning chain is compact: group bits, map a symbol, modulate orthogonal
+
+carriers, pass through the channel, synchronize, filter, sample, decide, and
+
+decode.
+
+To debug a link, compare evidence at each boundary.
+
+Verify the bit mapping, inspect carrier frequency and timing, plot the received
+
+constellation, measure error-vector magnitude, and compare transmitted with recovered bits.
+
+This stepwise view turns an abstract modulation formula into a practical
+
+engineering workflow.

@@ -1,0 +1,51 @@
+{
+  "id": "faculty-qpsk-receiver-decisions",
+  "title": "QPSK: From Bits to Radio Waves and Back",
+  "area": "Engineering Technology",
+  "subject": "Digital Communications",
+  "format": "Faculty pilot showcase",
+  "level": "Intermediate",
+  "description": "Build an intuitive QPSK transmitter and receiver, then see how noise changes constellation decisions and bit errors.",
+  "outcomes": [
+    "Map bit pairs to QPSK symbols",
+    "Explain carrier modulation and receiver sampling",
+    "Relate noise and decision boundaries to bit errors"
+  ],
+  "paths": [
+    "Engineering Technology",
+    "Faculty Pilot Showcases"
+  ],
+  "aiContribution": {
+    "stage": "source-grounded lesson drafting and narration",
+    "provider": "OpenAI Codex",
+    "model": "GPT-5 family authoring assistant; exact revision unavailable",
+    "modelRevision": "unreported",
+    "humanReviewRequired": true
+  },
+  "generationProvenance": [
+    {
+      "stage": "Script and evidence",
+      "provider": "OpenAI Codex",
+      "model": "GPT-5 family authoring assistant; exact revision unavailable",
+      "executionLocation": "hosted",
+      "mode": "source-grounded draft",
+      "humanReviewRequired": true
+    },
+    {
+      "stage": "Narration voice and timestamps",
+      "provider": "edge-tts",
+      "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+      "executionLocation": "hosted",
+      "mode": "recorded",
+      "humanReviewRequired": true
+    },
+    {
+      "stage": "Educational diagrams and composition",
+      "provider": "deterministic-svg-runtime",
+      "model": "No generative model",
+      "executionLocation": "local",
+      "mode": "deterministic",
+      "humanReviewRequired": true
+    }
+  ]
+}

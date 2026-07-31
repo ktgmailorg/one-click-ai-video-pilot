@@ -1,0 +1,91 @@
+A modern many-core processor is not one giant calculator.
+
+It is a neighborhood of compute cores, cache banks, accelerators, and memory controllers
+
+that must exchange data.
+
+A request from one core may need a cache line stored several millimeters away.
+
+Shared buses become a bottleneck as core count rises, so designers place a small router
+
+beside each tile and connect those routers as a network-on-chip.
+
+The central question changes from, 'How fast is this core?
+
+' to, 'How predictably can information move through the whole chip?
+
+'
+
+An application message is divided into packets, and each packet is often divided
+
+again into flow-control digits called flits.
+
+The header flit identifies the destination.
+
+At each router, routing logic chooses an output direction, virtual-channel allocation
+
+reserves buffering, switch allocation grants passage, and the crossbar moves the flit onto
+
+the next link.
+
+These stages can overlap like an assembly line.
+
+The animation matters because latency is not one number: it is the sum of serialization,
+
+waiting, routing, switching, link travel, and possible contention at every hop.
+
+Now imagine two cores sending traffic through the same output port.
+
+Only one can win that cycle.
+
+Arbitration selects a packet; the other waits in a buffer.
+
+If downstream buffers fill, backpressure propagates toward the senders.
+
+This prevents data loss, but it can create long queues and head-of-line blocking.
+
+A useful analysis therefore asks four questions: where traffic is injected, which
+
+routes it follows, where paths overlap, and how flow control responds.
+
+Average latency alone can hide an unstable network whose tail latency grows sharply under
+
+bursts.
+
+Wireless links offer a different geometry.
+
+Instead of crossing many short router-to-router hops, a packet can use an
+
+on-chip antenna to take an express path across the die.
+
+That can reduce hop count and long-distance latency, especially for multicast or irregular
+
+communication.
+
+But the wireless medium is shared.
+
+Designers must coordinate access, control interference, budget transmitter energy, and
+
+decide which traffic deserves the shortcut.
+
+The right comparison is not 'wireless is faster.
+
+' It is whether a hybrid network improves system-level latency and energy for the target
+
+workload without creating a new shared bottleneck.
+
+A professional design review closes the loop with measurable evidence.
+
+For performance, inspect zero-load latency, saturation throughput, and tail latency.
+
+For energy, separate router, buffer, link, and radio costs.
+
+For resilience, ask what happens when a link, router, or wireless channel fails, and whether
+
+packets can reroute without deadlock.
+
+A hybrid design is valuable only when its benefits survive realistic traffic and faults.
+
+The transferable lesson is systems thinking: architecture, communication, workload, and
+
+reliability are coupled, so every optimization must be evaluated end to end.

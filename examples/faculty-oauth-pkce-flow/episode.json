@@ -1,0 +1,173 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, measured, and instructor-ready.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "A student wants a scheduling app to read free-and-busy information from a university calendar. The app should not receive the student's password, and it should not gain unlimited access. OAuth solves this delegation problem. The student is the resource owner. The scheduling app is the client. The university identity service acts as authorization server, and the calendar API is the resource server. Keeping these roles separate is the foundation for reasoning about who authenticates, who grants access, who receives tokens, and who stores protected data.",
+      "plannedSeconds": 48,
+      "title": "The Delegation Problem",
+      "visualDirection": "template:showcase-oauth | Four actors surround a calendar: STUDENT, SCHEDULING APP, AUTHORIZATION SERVER, and CALENDAR API."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, measured, and instructor-ready.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Before redirecting the browser, the client creates two independent values. State binds the returning authorization response to the browser session and helps detect request forgery. The PKCE code verifier is a high-entropy secret held temporarily by the client. The client hashes it to form a code challenge that can safely travel in the authorization request. These mechanisms solve different problems. State protects the transaction's browser context; PKCE later proves that the same client instance redeeming the code initiated the request.",
+      "plannedSeconds": 48,
+      "title": "Prepare State, Verifier, and Challenge",
+      "visualDirection": "template:showcase-oauth | From CLIENT to STATE to VERIFIER to CHALLENGE; show the verifier retained by the client."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, measured, and instructor-ready.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "The browser carries an authorization request to the authorization server with client identifier, redirect URI, requested scope, state, and PKCE challenge. The student authenticates directly with the university service and reviews the requested permission, such as reading calendar availability. The password never passes through the scheduling app. If approved, the authorization server redirects the browser back with a short-lived authorization code and the original state. Because this front channel is visible to the browser and redirects, the code is not yet an access token.",
+      "plannedSeconds": 48,
+      "title": "Front Channel: User Authentication and Consent",
+      "visualDirection": "template:showcase-oauth | From CLIENT to AUTHORIZATION SERVER to CONSENT to CODE; label this path FRONT CHANNEL."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, measured, and instructor-ready.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "The client first verifies that returned state matches the stored value. Its backend then sends the authorization code, redirect URI, and original code verifier directly to the token endpoint over a protected channel. The authorization server hashes the verifier and compares it with the earlier challenge. An attacker who intercepted only the code cannot complete this proof. If checks pass, the server returns a scoped access token and, when policy permits, a refresh token. Tokens remain server-side and should be encrypted at rest, narrowly scoped, and handled as credentials.",
+      "plannedSeconds": 48,
+      "title": "Back Channel: Exchange the Code",
+      "visualDirection": "template:showcase-oauth | From CODE to VERIFIER to TOKEN ENDPOINT to ACCESS TOKEN; label this path BACK CHANNEL."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, measured, and instructor-ready.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "The scheduling backend presents the access token to the calendar API, which validates the token and scope before returning only the authorized data. A security review now walks every boundary: exact redirect-URI matching, state validation, PKCE verification, TLS, minimal scopes, token lifetime, secure storage, revocation, and log redaction. OAuth does not make an application secure automatically. It supplies a protocol for delegated access; the implementation must preserve the protocol's assumptions. The most useful test is to ask what an attacker gains from a stolen code, browser history, log entry, access token, or refresh token.",
+      "plannedSeconds": 48,
+      "title": "Call the API and Review the Boundaries",
+      "visualDirection": "template:showcase-oauth | The client presents a bearer access token to the calendar API; mark browser, client backend, auth server, resource server, logs, and token store boundaries."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "rfc6749"
+      ],
+      "text": "OAuth 2.0 enables a third-party application to obtain limited access to an HTTP service through roles including resource owner, client, authorization server, and resource server. The authorization-code flow separates user authorization from token issuance.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "rfc7636"
+      ],
+      "text": "PKCE mitigates authorization-code interception by binding the authorization request to a high-entropy code verifier. The client sends a derived code challenge first and proves possession of the verifier during token exchange.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "rfc6749"
+      ],
+      "text": "OAuth 2.0 enables a third-party application to obtain limited access to an HTTP service through roles including resource owner, client, authorization server, and resource server. The authorization-code flow separates user authorization from token issuance.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "rfc7636"
+      ],
+      "text": "PKCE mitigates authorization-code interception by binding the authorization request to a high-entropy code verifier. The client sends a derived code challenge first and proves possession of the verifier during token exchange.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "wright-rit"
+      ],
+      "text": "Matthew Wright is chair and professor of cybersecurity with expertise in security, privacy, cyber analytics, adversarial machine learning, and usable security, and teaches Authentication and Security Models.",
+      "verified": true
+    }
+  ],
+  "id": "oauth-2-0-authorization-code-flow-with-pkce",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "IETF",
+      "excerpt": "OAuth 2.0 enables a third-party application to obtain limited access to an HTTP service through roles including resource owner, client, authorization server, and resource server. The authorization-code flow separates user authorization from token issuance.",
+      "id": "rfc6749",
+      "sha256": "11e1de668f5530977c251f1c71d88b2028fa12da2d08c46f817eb26f9326f5e3",
+      "title": "RFC 6749 — OAuth 2.0 Authorization Framework",
+      "type": "note",
+      "uri": "https://www.rfc-editor.org/rfc/rfc6749",
+      "verified": true
+    },
+    {
+      "author": "IETF",
+      "excerpt": "PKCE mitigates authorization-code interception by binding the authorization request to a high-entropy code verifier. The client sends a derived code challenge first and proves possession of the verifier during token exchange.",
+      "id": "rfc7636",
+      "sha256": "95a22c2913f1889a151700bc030cbfc990974096cacb402f9e46027e9c33fe43",
+      "title": "RFC 7636 — Proof Key for Code Exchange",
+      "type": "note",
+      "uri": "https://www.rfc-editor.org/rfc/rfc7636",
+      "verified": true
+    },
+    {
+      "author": "Rochester Institute of Technology",
+      "excerpt": "Matthew Wright is chair and professor of cybersecurity with expertise in security, privacy, cyber analytics, adversarial machine learning, and usable security, and teaches Authentication and Security Models.",
+      "id": "wright-rit",
+      "sha256": "c408275813d9d576dcb439d9344c0518e874b0a1739c0a735f4801fe4a5e8102",
+      "title": "Matthew Wright — RIT Cybersecurity",
+      "type": "note",
+      "uri": "https://www.rit.edu/cybersecurity/directory/mkwics-matthew-wright",
+      "verified": true
+    }
+  ],
+  "title": "OAuth 2.0 Authorization Code Flow with PKCE"
+}
