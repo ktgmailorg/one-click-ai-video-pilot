@@ -11,7 +11,8 @@ export default function handler(request, response) {
     ...configuration,
     accessPolicy: {
       ritGoogleRequired: true,
-      githubIdentityRequired: true,
+      githubIdentityRequired: false,
+      githubIdentityRequiredForInvitation: true,
       automaticPermission: "read",
       writeAccess: "manual-approval",
     },
