@@ -5,12 +5,12 @@
       "shots": [
         {
           "id": "beat-01-shot-001",
-          "phrase": "Begin by framing Module Structure and IR Representation as a question about inputs, decisions, and observable results.",
+          "phrase": "Begin by framing Course Scope and Prerequisites as a question about inputs, decisions, and observable results.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: An LLVM module groups all global variables, function definitions, and type declarations into a single unit before compilation begins.",
+          "phrase": "Consider this worked case: A learner maps the inputs, constraints, and observable result for Course Scope and Prerequisites, then checks each step against the stated claim.",
           "type": "deterministic-svg"
         },
         {
@@ -25,12 +25,12 @@
       "shots": [
         {
           "id": "beat-02-shot-001",
-          "phrase": "Now define Basic Blocks and Control Flow precisely enough that another learner could test the definition.",
+          "phrase": "Now define Problem-Solving Foundations precisely enough that another learner could test the definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: A conditional branch in a function splits into two basic blocks, each terminating with a jump instruction that routes to the next logical step.",
+          "phrase": "Consider this worked case: A learner maps the inputs, constraints, and observable result for Problem-Solving Foundations, then checks each step against the stated claim.",
           "type": "deterministic-svg"
         },
         {
@@ -45,17 +45,17 @@
       "shots": [
         {
           "id": "beat-03-shot-001",
-          "phrase": "With the foundation in place, examine how Phi Instructions and Value Selection operates in a concrete sequence.",
+          "phrase": "With the foundation in place, examine how Core Language Constructs operates in a concrete sequence.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: When two branches converge, a phi instruction chooses the value from the branch that was actually executed during runtime.",
+          "phrase": "g.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-003",
-          "phrase": "Follow every arrow in order and name the state before and after each transition.",
+          "phrase": "Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition.",
           "type": "deterministic-svg"
         }
       ]
@@ -65,12 +65,12 @@
       "shots": [
         {
           "id": "beat-04-shot-001",
-          "phrase": "Next, compare the choices involved in Explicit Memory Operations and make the decision criteria explicit.",
+          "phrase": "Next, compare the choices involved in Functions and Decomposition and make the decision criteria explicit.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: A store instruction assigns a computed value to a specific memory location, while a load instruction retrieves that value for further computation.",
+          "phrase": "Consider this worked case: A learner maps the inputs, constraints, and observable result for Functions and Decomposition, then checks each step against the stated claim.",
           "type": "deterministic-svg"
         },
         {
@@ -85,12 +85,12 @@
       "shots": [
         {
           "id": "beat-05-shot-001",
-          "phrase": "Apply Structural Verification Rules to a worked situation instead of treating it as an isolated definition.",
+          "phrase": "Apply Recursion and Base Cases to a worked situation instead of treating it as an isolated definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: The verifier checks that every basic block ends with a terminator and that all variables are properly typed before the compiler proceeds.",
+          "phrase": "Consider this worked case: A learner maps the inputs, constraints, and observable result for Recursion and Base Cases, then checks each step against the stated claim.",
           "type": "deterministic-svg"
         },
         {
@@ -105,12 +105,12 @@
       "shots": [
         {
           "id": "beat-06-shot-001",
-          "phrase": "Examine the tradeoffs in Compiler Work Separation, including what improves and what becomes more difficult.",
+          "phrase": "Examine the tradeoffs in Data Structures and Representations, including what improves and what becomes more difficult.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: The parser converts source code into an abstract syntax tree, while the semantic analyzer checks types and scopes before the lowering phase begins.",
+          "phrase": "Consider this worked case: A learner maps the inputs, constraints, and observable result for Data Structures and Representations, then checks each step against the stated claim.",
           "type": "deterministic-svg"
         },
         {
@@ -125,12 +125,12 @@
       "shots": [
         {
           "id": "beat-07-shot-001",
-          "phrase": "Stress-test the reasoning around Lexical Analysis and Scoping with an edge case and identify which assumption controls the outcome.",
+          "phrase": "Stress-test the reasoning around Python-Specific Language Mechanics with an edge case and identify which assumption controls the outcome.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: A variable declared inside a function belongs to the function's local scope, while a global variable is bound to the module's namespace.",
+          "phrase": "Consider this worked case: A learner maps the inputs, constraints, and observable result for Python-Specific Language Mechanics, then checks each step against the stated claim.",
           "type": "deterministic-svg"
         },
         {
@@ -145,12 +145,12 @@
       "shots": [
         {
           "id": "beat-08-shot-001",
-          "phrase": "Use Data Model and Execution Model to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "phrase": "Use Correctness and Testing to diagnose a failure by separating symptoms, causes, and corrective action.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: An integer object has a unique memory address, a type tag, and a numeric value, while an assignment statement binds a name to that object.",
+          "phrase": "Consider this worked case: A learner maps the inputs, constraints, and observable result for Correctness and Testing, then checks each step against the stated claim.",
           "type": "deterministic-svg"
         },
         {
@@ -165,12 +165,12 @@
       "shots": [
         {
           "id": "beat-09-shot-001",
-          "phrase": "Connect Exception Handling and Control Flow to the earlier ideas and explain how the pieces work as one system.",
+          "phrase": "Connect Abstraction and Contracts to the earlier ideas and explain how the pieces work as one system.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: When a division by zero occurs, an exception jumps out of the current block and is caught by a try-except handler that logs the error and continues.",
+          "phrase": "Consider this worked case: A learner maps the inputs, constraints, and observable result for Abstraction and Contracts, then checks each step against the stated claim.",
           "type": "deterministic-svg"
         },
         {
@@ -185,12 +185,12 @@
       "shots": [
         {
           "id": "beat-10-shot-001",
-          "phrase": "Finish with Debugging and Decomposition as a practical checklist that can guide a new analysis.",
+          "phrase": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: A syntax error is caught by the parser, a runtime error occurs during execution, and a logical error is fixed by breaking the code into smaller, testable functions.",
+          "phrase": "Consider this worked case: A learner maps the inputs, constraints, and observable result for Practical Analysis Checklist, then checks each step against the stated claim.",
           "type": "deterministic-svg"
         },
         {
@@ -201,6 +201,6 @@
       ]
     }
   ],
-  "episodeId": "introduction-to-programming-language-foundations",
+  "episodeId": "csci-344-programming-language-concepts-foundations",
   "schemaVersion": 1
 }

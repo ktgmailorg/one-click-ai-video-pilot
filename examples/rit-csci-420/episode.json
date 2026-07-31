@@ -13,7 +13,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Course Foundations and Scope as a question about inputs, decisions, and observable results. Real-world datasets are often large and can be stored in either main memory or a database. Consider this worked case: Student teams will load a 100,000-row customer transaction dataset into a relational database for initial exploration. On screen, display a split-screen graphic showing a database schema on the left and an in-memory DataFrame on the right, with arrows indicating data flow between storage types. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "narration": "Begin by framing Course Foundations and Scope as a question about inputs, decisions, and observable results. Real-world datasets are often large and can be stored in either main memory or a database. Consider this worked case: Student teams will load a 100,000-row customer transaction dataset into a relational database for initial exploration. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
       "plannedSeconds": 58,
       "title": "Course Foundations and Scope",
       "visualDirection": "template:academic-process | Display a split-screen graphic showing a database schema on the left and an in-memory DataFrame on the right, with arrows indicating data flow between storage types."
@@ -31,7 +31,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Knowledge Discovery Process precisely enough that another learner could test the definition. The emphasis is on how to use data mining to describe datasets rather than making predictions. Consider this worked case: Instructors will demonstrate how clustering customer purchase patterns reveals market segments without forecasting future sales. On screen, show a flowchart labeled 'Knowledge Discovery Process' with nodes for data collection, cleaning, analysis, and description, explicitly excluding a 'prediction' node. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "narration": "Now define Knowledge Discovery Process precisely enough that another learner could test the definition. The emphasis is on how to use data mining to describe datasets rather than making predictions. Consider this worked case: Instructors will demonstrate how clustering customer purchase patterns reveals market segments without forecasting future sales. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
       "plannedSeconds": 55,
       "title": "Knowledge Discovery Process",
       "visualDirection": "template:academic-process | Show a flowchart labeled 'Knowledge Discovery Process' with nodes for data collection, cleaning, analysis, and description, explicitly excluding a 'prediction' node."
@@ -49,7 +49,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Data Exploration and Cleaning operates in a concrete sequence. Data quality analysis makes missingness, duplicates, inconsistent representation, integrity constraints, sampling, and update behavior explicit. Consider this worked case: Students will run a missingness report on a survey dataset, flagging 15% null values in the 'income' column and removing 3% duplicate records. On screen, render a heatmap of missing values across columns, with a callout box highlighting the 'income' column and a duplicate count badge. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "narration": "With the foundation in place, examine how Data Exploration and Cleaning operates in a concrete sequence. Data quality analysis makes missingness, duplicates, inconsistent representation, integrity constraints, sampling, and update behavior explicit. Consider this worked case: Students will run a missingness report on a survey dataset, flagging 15% null values in the 'income' column and removing 3% duplicate records. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
       "plannedSeconds": 57,
       "title": "Data Exploration and Cleaning",
       "visualDirection": "template:academic-process | Render a heatmap of missing values across columns, with a callout box highlighting the 'income' column and a duplicate count badge."
@@ -67,7 +67,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Data Preparation Workflows and make the decision criteria explicit. Data-analysis workflows separate data preparation, exploratory analysis, training, validation, testing, model selection, and evaluation. Consider this worked case: A pipeline will be built where raw data undergoes imputation and normalization before entering the exploratory analysis phase. On screen, illustrate a horizontal pipeline diagram with seven distinct stages, each labeled with a workflow phase and connected by directional arrows. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "narration": "Next, compare the choices involved in Data Preparation Workflows and make the decision criteria explicit. Data-analysis workflows separate data preparation, exploratory analysis, training, validation, testing, model selection, and evaluation. Consider this worked case: A pipeline will be built where raw data undergoes imputation and normalization before entering the exploratory analysis phase. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
       "plannedSeconds": 55,
       "title": "Data Preparation Workflows",
       "visualDirection": "template:academic-process | Illustrate a horizontal pipeline diagram with seven distinct stages, each labeled with a workflow phase and connected by directional arrows."
@@ -85,7 +85,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Supervised and Unsupervised Methods to a worked situation instead of treating it as an isolated definition. Supervised methods learn mappings from examples paired with target labels, while unsupervised methods identify structure without targets. Consider this worked case: Students will compare a decision tree trained on labeled customer churn data against a k-means clustering run on the same unlabeled features. On screen, display two side-by-side scatter plots: one with labeled points and a decision boundary, the other with unlabeled points and cluster centroids. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "narration": "Apply Supervised and Unsupervised Methods to a worked situation instead of treating it as an isolated definition. Supervised methods learn mappings from examples paired with target labels, while unsupervised methods identify structure without targets. Consider this worked case: Students will compare a decision tree trained on labeled customer churn data against a k-means clustering run on the same unlabeled features. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
       "plannedSeconds": 62,
       "title": "Supervised and Unsupervised Methods",
       "visualDirection": "template:academic-process | Display two side-by-side scatter plots: one with labeled points and a decision boundary, the other with unlabeled points and cluster centroids."
@@ -103,7 +103,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Preprocessing and Leakage Prevention, including what improves and what becomes more difficult. Preprocessing must be fitted only on permitted training data to avoid leakage. Consider this worked case: Instructors will demonstrate scaling a feature using only the training set statistics, then applying the same transformation to the validation set. On screen, show a before-and-after comparison of a feature distribution, with a red 'leakage' warning icon over a graph where validation statistics were incorrectly used for scaling. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "narration": "Examine the tradeoffs in Preprocessing and Leakage Prevention, including what improves and what becomes more difficult. Preprocessing must be fitted only on permitted training data to avoid leakage. Consider this worked case: Instructors will demonstrate scaling a feature using only the training set statistics, then applying the same transformation to the validation set. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
       "plannedSeconds": 58,
       "title": "Preprocessing and Leakage Prevention",
       "visualDirection": "template:academic-process | Show a before-and-after comparison of a feature distribution, with a red 'leakage' warning icon over a graph where validation statistics were incorrectly used for scaling."
@@ -121,7 +121,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Pipelines and Consistency with an edge case and identify which assumption controls the outcome. Pipelines combine transformations and estimators so the same operations are applied consistently. Consider this worked case: A single pipeline object will chain standardization, imputation, and clustering, ensuring identical operations run on every data split. On screen, render a stacked block diagram where each layer represents a transformation or estimator, with a 'consistent application' label spanning the entire stack. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "narration": "Stress-test the reasoning around Pipelines and Consistency with an edge case and identify which assumption controls the outcome. Pipelines combine transformations and estimators so the same operations are applied consistently. Consider this worked case: A single pipeline object will chain standardization, imputation, and clustering, ensuring identical operations run on every data split. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
       "plannedSeconds": 58,
       "title": "Pipelines and Consistency",
       "visualDirection": "template:academic-process | Render a stacked block diagram where each layer represents a transformation or estimator, with a 'consistent application' label spanning the entire stack."
@@ -139,7 +139,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Cross-Validation and Sampling to diagnose a failure by separating symptoms, causes, and corrective action. Cross-validation repeats training and validation across defined splits. Consider this worked case: Students will execute a 5-fold cross-validation routine, rotating the validation set through each dataset partition and recording accuracy scores. On screen, illustrate a circular diagram with five segments, each labeled with a fold number, and arrows showing data rotation between training and validation phases. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "narration": "Use Cross-Validation and Sampling to diagnose a failure by separating symptoms, causes, and corrective action. Cross-validation repeats training and validation across defined splits. Consider this worked case: Students will execute a 5-fold cross-validation routine, rotating the validation set through each dataset partition and recording accuracy scores. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
       "plannedSeconds": 56,
       "title": "Cross-Validation and Sampling",
       "visualDirection": "template:academic-process | Illustrate a circular diagram with five segments, each labeled with a fold number, and arrows showing data rotation between training and validation phases."
@@ -157,7 +157,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Algorithm Selection and Evaluation to the earlier ideas and explain how the pieces work as one system. Grouping, dimensionality reduction, classification, regression, and clustering answer different questions and require appropriate assumptions and metrics. Consider this worked case: Instructors will match a regression model to predicting continuous revenue and a clustering algorithm to segment user behavior, explaining the distinct evaluation metrics for each. On screen, display a decision tree flowchart where each branch leads to an algorithm type, with corresponding metric badges (e.g., RMSE, silhouette score) attached to each leaf. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "narration": "Connect Algorithm Selection and Evaluation to the earlier ideas and explain how the pieces work as one system. Grouping, dimensionality reduction, classification, regression, and clustering answer different questions and require appropriate assumptions and metrics. Consider this worked case: Instructors will match a regression model to predicting continuous revenue and a clustering algorithm to segment user behavior, explaining the distinct evaluation metrics for each. g. , RMSE, silhouette score) attached to each leaf. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
       "plannedSeconds": 63,
       "title": "Algorithm Selection and Evaluation",
       "visualDirection": "template:academic-process | Display a decision tree flowchart where each branch leads to an algorithm type, with corresponding metric badges (e.g., RMSE, silhouette score) attached to each leaf."
@@ -175,7 +175,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Evaluation must match the task and the cost of errors, while distribution shift, missing data, overfitting, and unexamined sampling choices can invalidate conclusions. Consider this worked case: Students will complete a checklist verifying data provenance, checking for distribution drift between train and test sets, and documenting sampling methodology. On screen, show a clean checklist graphic with five checkboxes, each paired with a brief validation step, and a final 'valid conclusions' stamp icon. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Evaluation must match the task and the cost of errors, while distribution shift, missing data, overfitting, and unexamined sampling choices can invalidate conclusions. Consider this worked case: Students will complete a checklist verifying data provenance, checking for distribution drift between train and test sets, and documenting sampling methodology. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
       "plannedSeconds": 63,
       "title": "Practical Analysis Checklist",
       "visualDirection": "template:academic-process | Show a clean checklist graphic with five checkboxes, each paired with a brief validation step, and a final 'valid conclusions' stamp icon."

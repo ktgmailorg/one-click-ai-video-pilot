@@ -1,595 +1,424 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:07.598
-NARRATOR: Begin by framing Course Foundations
-and Scope as a question about inputs,
+00:00:00.050 --> 00:00:08.482
+Begin by framing Course Foundations and Scope
+as a question about inputs, decisions, and
 
 2
-00:00:07.598 --> 00:00:09.921
-decisions, and observable results.
+00:00:08.482 --> 00:00:09.687
+observable results.
 
 3
-00:00:09.921 --> 00:00:16.448
-NARRATOR: This course offers an introduction
-to supervised machine learning theories and
+00:00:09.687 --> 00:00:15.917
+This course offers an introduction to
+supervised machine learning theories and
 
 4
-00:00:16.448 --> 00:00:21.343
+00:00:15.917 --> 00:00:21.015
 algorithms, and their application to
 classification and regression tasks.
 
 5
-00:00:21.343 --> 00:00:27.602
-NARRATOR: Consider this worked case: Students
-will implement a basic classification model
+00:00:21.015 --> 00:00:27.587
+Consider this worked case: Students will
+implement a basic classification model using
 
 6
-00:00:27.602 --> 00:00:32.296
-using scikit-learn to predict customer churn
-from tabular data.
+00:00:27.587 --> 00:00:31.968
+scikit-learn to predict customer churn from
+tabular data.
 
 7
-00:00:32.296 --> 00:00:41.654
-NARRATOR: On screen, display a slide showing
-the course title, duration (8-12 min), and a
+00:00:31.968 --> 00:00:39.027
+List the givens before choosing a method,
+because an unstated assumption can change the
 
 8
-00:00:41.654 --> 00:00:47.893
-simple flowchart linking 'Supervised Learning'
-to 'Classification/Regression' with a note
+00:00:39.027 --> 00:00:39.531
+conclusion.
 
 9
-00:00:47.893 --> 00:00:49.765
-about programming assignments.
+00:00:39.531 --> 00:00:45.187
+This establishes the vocabulary and scope
+needed for the remaining sections.
 
 10
-00:00:49.765 --> 00:00:55.808
-NARRATOR: List the givens before choosing a
-method, because an unstated assumption can
+00:00:45.290 --> 00:00:51.948
+Now define Mathematical Background and Data
+Visualization precisely enough that another
 
 11
-00:00:55.808 --> 00:00:57.203
-change the conclusion.
+00:00:51.948 --> 00:00:54.974
+learner could test the definition.
 
 12
-00:00:57.203 --> 00:01:03.546
-NARRATOR: This establishes the vocabulary and
-scope needed for the remaining sections.
+00:00:54.974 --> 00:01:01.625
+Topics include: Mathematical background of
+machine learning (for example statistical
 
 13
-00:01:03.650 --> 00:01:10.260
-NARRATOR: Now define Mathematical Background
-and Data Visualization precisely enough that
+00:01:01.625 --> 00:01:08.941
+analysis and visualization of data), neural
+models (for example Convolutional Neural
 
 14
-00:01:10.260 --> 00:01:13.865
-another learner could test the definition.
+00:01:08.941 --> 00:01:14.927
+Networks, Recurrent Neural Networks),
+probabilistic graphical models (for example
 
 15
-00:01:13.865 --> 00:01:20.366
-NARRATOR: Topics include: Mathematical
-background of machine learning (for example
+00:01:14.927 --> 00:01:19.583
+Bayesian networks, Markov models), and
+reinforcement learning.
 
 16
-00:01:20.366 --> 00:01:26.867
-statistical analysis and visualization of
-data), neural models (for example
+00:01:19.583 --> 00:01:27.406
+Consider this worked case: Students will plot
+a histogram and scatter plot of training data
 
 17
-00:01:26.867 --> 00:01:32.067
-Convolutional Neural Networks, Recurrent
-Neural Networks), probabilistic graphical
+00:01:27.406 --> 00:01:32.099
+to identify outliers and feature correlations
+before model training.
 
 18
-00:01:32.067 --> 00:01:38.568
-models (for example Bayesian networks, Markov
-models), and reinforcement learning.
+00:01:32.099 --> 00:01:38.744
+Separate the formal definition from an
+implementation detail, then identify what
 
 19
-00:01:38.568 --> 00:01:45.515
-NARRATOR: Consider this worked case: Students
-will plot a histogram and scatter plot of
-
-20
-00:01:45.515 --> 00:01:50.974
-training data to identify outliers and feature
-correlations before model training.
-
-21
-00:01:50.974 --> 00:01:57.987
-NARRATOR: On screen, show a split-screen
-image: left side shows a histogram of a
-
-22
-00:01:57.987 --> 00:02:06.001
-continuous feature, right side shows a scatter
-plot of two features, with axes labeled and a
-
-23
-00:02:06.001 --> 00:02:08.506
-legend indicating 'Training Data
-Distribution'.
-
-24
-00:02:08.506 --> 00:02:15.326
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
-
-25
-00:02:15.326 --> 00:02:17.599
+00:01:38.744 --> 00:01:41.161
 evidence would distinguish them.
 
+20
+00:01:41.161 --> 00:01:47.474
+A precise definition makes later examples
+easier to evaluate and revise.
+
+21
+00:01:47.594 --> 00:01:53.769
+With the foundation in place, examine how
+Machine Learning Workflows and Data
+
+22
+00:01:53.769 --> 00:01:56.856
+Preparation operates in a concrete sequence.
+
+23
+00:01:56.856 --> 00:02:03.762
+Machine-learning workflows separate data
+preparation, training, validation, testing,
+
+24
+00:02:03.762 --> 00:02:07.215
+model selection, and evaluation.
+
+25
+00:02:07.215 --> 00:02:14.357
+Consider this worked case: Students will use a
+scikit-learn Pipeline to standardize features
+
 26
-00:02:17.599 --> 00:02:23.974
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
+00:02:14.357 --> 00:02:20.950
+and train a logistic regression model without
+mixing preprocessing steps across splits.
 
 27
-00:02:24.098 --> 00:02:30.095
-NARRATOR: With the foundation in place,
-examine how Machine Learning Workflows and
+00:02:20.950 --> 00:02:28.075
+Follow every arrow in order and name the state
+before and after each transition.
 
 28
-00:02:30.095 --> 00:02:33.594
-Data Preparation operates in a concrete
-sequence.
+00:02:28.075 --> 00:02:33.840
+The trace converts an abstract statement into
+an inspectable sequence.
 
 29
-00:02:33.594 --> 00:02:39.960
-NARRATOR: Machine-learning workflows separate
-data preparation, training, validation,
+00:02:33.962 --> 00:02:39.985
+Next, compare the choices involved in
+Preventing Data Leakage and Cross-Validation
 
 30
-00:02:39.960 --> 00:02:43.938
-testing, model selection, and evaluation.
+00:02:39.985 --> 00:02:43.271
+and make the decision criteria explicit.
 
 31
-00:02:43.938 --> 00:02:50.407
-NARRATOR: Consider this worked case: Students
-will use a scikit-learn Pipeline to
+00:02:43.271 --> 00:02:50.146
+Preprocessing must be fitted only on permitted
+training data to avoid leakage.
 
 32
-00:02:50.407 --> 00:02:56.337
-standardize features and train a logistic
-regression model without mixing preprocessing
+00:02:50.146 --> 00:02:56.646
+Consider this worked case: Students will
+implement StratifiedKFold cross-validation to
 
 33
-00:02:56.337 --> 00:02:57.954
-steps across splits.
+00:02:56.646 --> 00:03:05.096
+evaluate a random forest classifier, ensuring
+scaling is applied only within each fold's
 
 34
-00:02:57.954 --> 00:03:07.040
-NARRATOR: On screen, display a horizontal
-timeline graphic with six labeled nodes: 'Data
+00:03:05.096 --> 00:03:06.396
+training set.
 
 35
-00:03:07.040 --> 00:03:11.932
-Preparation', 'Training', 'Validation',
-'Testing', 'Model Selection', 'Evaluation',
+00:03:06.396 --> 00:03:13.587
+Compare alternatives against the same
+constraints so the evaluation does not move
 
 36
-00:03:11.932 --> 00:03:16.126
-connected by arrows indicating sequential
-execution.
+00:03:13.587 --> 00:03:14.786
+the goalposts.
 
 37
-00:03:16.126 --> 00:03:23.672
-NARRATOR: Follow every arrow in order and name
-the state before and after each transition.
+00:03:14.786 --> 00:03:21.505
+Using shared criteria turns a preference into
+a defensible technical choice.
 
 38
-00:03:23.672 --> 00:03:29.282
-NARRATOR: The trace converts an abstract
-statement into an inspectable sequence.
+00:03:21.626 --> 00:03:29.470
+Apply Evaluation Metrics and Error Costs to a
+worked situation instead of treating it as an
 
 39
-00:03:29.402 --> 00:03:35.101
-NARRATOR: Next, compare the choices involved
-in Preventing Data Leakage and
+00:03:29.470 --> 00:03:30.451
+isolated definition.
 
 40
-00:03:35.101 --> 00:03:38.727
-Cross-Validation and make the decision
-criteria explicit.
+00:03:30.451 --> 00:03:36.497
+Evaluation metrics must match the task and the
+cost of different errors.
 
 41
-00:03:38.727 --> 00:03:45.352
-NARRATOR: Preprocessing must be fitted only on
-permitted training data to avoid leakage.
+00:03:36.497 --> 00:03:43.449
+Consider this worked case: Students will
+compare precision, recall, and F1-score for a
 
 42
-00:03:45.352 --> 00:03:50.874
-NARRATOR: Consider this worked case: Students
-will implement StratifiedKFold
+00:03:43.449 --> 00:03:50.400
+medical diagnosis classifier, weighting recall
+higher due to the high cost of false
 
 43
-00:03:50.874 --> 00:03:58.237
-cross-validation to evaluate a random forest
-classifier, ensuring scaling is applied only
-
-44
-00:03:58.237 --> 00:04:01.305
-within each fold's training set.
-
-45
-00:04:01.305 --> 00:04:09.532
-NARRATOR: On screen, show a diagram of a
-dataset split into 5 folds, with one fold
-
-46
-00:04:09.532 --> 00:04:16.216
-highlighted as 'Validation' and the others as
-'Training', accompanied by a warning icon
-
-47
-00:04:16.216 --> 00:04:17.758
-labeled 'No Leakage'.
-
-48
-00:04:17.758 --> 00:04:24.345
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
-
-49
-00:04:24.345 --> 00:04:25.992
-move the goalposts.
-
-50
-00:04:25.992 --> 00:04:32.851
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
-
-51
-00:04:32.978 --> 00:04:39.283
-NARRATOR: Apply Evaluation Metrics and Error
-Costs to a worked situation instead of
-
-52
-00:04:39.283 --> 00:04:42.193
-treating it as an isolated definition.
-
-53
-00:04:42.193 --> 00:04:48.693
-NARRATOR: Evaluation metrics must match the
-task and the cost of different errors.
-
-54
-00:04:48.693 --> 00:04:54.820
-NARRATOR: Consider this worked case: Students
-will compare precision, recall, and F1-score
-
-55
-00:04:54.820 --> 00:05:02.479
-for a medical diagnosis classifier, weighting
-recall higher due to the high cost of false
-
-56
-00:05:02.479 --> 00:05:02.990
+00:03:50.400 --> 00:03:50.935
 negatives.
 
+44
+00:03:50.935 --> 00:03:58.391
+Work from the concrete inputs to the result,
+checking units, types, or invariants at each
+
+45
+00:03:58.391 --> 00:03:58.888
+step.
+
+46
+00:03:58.888 --> 00:04:04.154
+The worked case shows both how to apply the
+method and how to check it.
+
+47
+00:04:04.274 --> 00:04:12.983
+Examine the tradeoffs in Neural Models: CNNs
+and RNNs, including what improves and what
+
+48
+00:04:12.983 --> 00:04:14.849
+becomes more difficult.
+
+49
+00:04:14.849 --> 00:04:19.770
+Risk analysis considers data quality and
+uncertainty.
+
+50
+00:04:19.770 --> 00:04:27.606
+Consider this worked case: Students will train
+a CNN on a dataset of handwritten digits to
+
+51
+00:04:27.606 --> 00:04:33.973
+classify images, and an RNN on a time-series
+dataset to predict stock prices.
+
+52
+00:04:33.974 --> 00:04:40.848
+State the benefit, the cost, and the condition
+under which the tradeoff is acceptable.
+
+53
+00:04:40.848 --> 00:04:48.098
+Making the tradeoff visible prevents a local
+improvement from hiding a larger cost.
+
+54
+00:04:48.218 --> 00:04:55.070
+Stress-test the reasoning around Probabilistic
+Graphical Models with an edge case and
+
+55
+00:04:55.070 --> 00:04:58.496
+identify which assumption controls the
+outcome.
+
+56
+00:04:58.496 --> 00:05:01.089
+Programming assignments are required.
+
 57
-00:05:02.990 --> 00:05:08.515
-NARRATOR: On screen, display a comparison
-table with columns for 'Metric', 'Definition',
+00:05:01.089 --> 00:05:08.442
+Consider this worked case: Students will
+construct a Bayesian network to model the
 
 58
-00:05:08.515 --> 00:05:14.960
-and 'Use Case', highlighting 'Recall' under
-'High Cost of False Negatives' with a red
-
-59
-00:05:14.960 --> 00:05:15.881
-alert icon.
-
-60
-00:05:15.881 --> 00:05:22.289
-NARRATOR: Work from the concrete inputs to the
-result, checking units, types, or invariants
-
-61
-00:05:22.289 --> 00:05:23.662
-at each step.
-
-62
-00:05:23.662 --> 00:05:28.646
-NARRATOR: The worked case shows both how to
-apply the method and how to check it.
-
-63
-00:05:28.754 --> 00:05:36.199
-NARRATOR: Examine the tradeoffs in Neural
-Models: CNNs and RNNs, including what improves
-
-64
-00:05:36.199 --> 00:05:39.063
-and what becomes more difficult.
-
-65
-00:05:39.063 --> 00:05:43.907
-NARRATOR: Risk analysis considers data quality
-and uncertainty.
-
-66
-00:05:43.907 --> 00:05:50.837
-NARRATOR: Consider this worked case: Students
-will train a CNN on a dataset of handwritten
-
-67
-00:05:50.837 --> 00:05:57.766
-digits to classify images, and an RNN on a
-time-series dataset to predict stock prices.
-
-68
-00:05:57.766 --> 00:06:04.611
-NARRATOR: On screen, show two side-by-side
-architecture diagrams: left shows a CNN with
-
-69
-00:06:04.611 --> 00:06:11.982
-convolutional and pooling layers processing an
-image, right shows an RNN with hidden states
-
-70
-00:06:11.982 --> 00:06:15.141
-processing a sequence of data points.
-
-71
-00:06:15.141 --> 00:06:21.645
-NARRATOR: State the benefit, the cost, and the
-condition under which the tradeoff is
-
-72
-00:06:21.645 --> 00:06:22.110
-acceptable.
-
-73
-00:06:22.110 --> 00:06:29.516
-NARRATOR: Making the tradeoff visible prevents
-a local improvement from hiding a larger cost.
-
-74
-00:06:29.642 --> 00:06:35.484
-NARRATOR: Stress-test the reasoning around
-Probabilistic Graphical Models with an edge
-
-75
-00:06:35.484 --> 00:06:39.732
-case and identify which assumption controls
-the outcome.
-
-76
-00:06:39.732 --> 00:06:42.373
-NARRATOR: Programming assignments are
-required.
-
-77
-00:06:42.373 --> 00:06:49.760
-NARRATOR: Consider this worked case: Students
-will construct a Bayesian network to model the
-
-78
-00:06:49.760 --> 00:06:56.092
+00:05:08.442 --> 00:05:15.230
 probability of disease given symptoms, using
 conditional probability tables for each node.
 
-79
-00:06:56.092 --> 00:07:04.028
-NARRATOR: On screen, display a directed
-acyclic graph with nodes labeled 'Symptom A',
+59
+00:05:15.230 --> 00:05:21.761
+Change one assumption at a time and observe
+which part of the reasoning no longer holds.
 
-80
-00:07:04.028 --> 00:07:10.743
-'Symptom B', and 'Disease', connected by
-arrows indicating causal relationships, with
+60
+00:05:21.761 --> 00:05:28.652
+The edge case reveals the boundary of the
+claim without discarding the useful core idea.
 
-81
-00:07:10.743 --> 00:07:13.795
-probability values annotated on edges.
+61
+00:05:28.778 --> 00:05:36.602
+Use Reinforcement Learning Basics to diagnose
+a failure by separating symptoms, causes, and
 
-82
-00:07:13.795 --> 00:07:20.133
-NARRATOR: Change one assumption at a time and
-observe which part of the reasoning no longer
+62
+00:05:36.602 --> 00:05:37.806
+corrective action.
 
-83
-00:07:20.133 --> 00:07:20.529
-holds.
+63
+00:05:37.806 --> 00:05:45.681
+Govern establishes policies, responsibilities,
+and accountability for AI risk.
 
-84
-00:07:20.529 --> 00:07:26.941
-NARRATOR: The edge case reveals the boundary
-of the claim without discarding the useful
+64
+00:05:45.681 --> 00:05:53.823
+Consider this worked case: Students will train
+an agent to navigate a grid environment using
 
-85
-00:07:26.941 --> 00:07:27.857
-core idea.
+65
+00:05:53.823 --> 00:05:58.165
+Q-learning, adjusting actions based on
+cumulative reward signals.
 
-86
-00:07:27.962 --> 00:07:34.897
-NARRATOR: Use Reinforcement Learning Basics to
-diagnose a failure by separating symptoms,
+66
+00:05:58.165 --> 00:06:05.899
+Locate the first point where observed behavior
+diverges from expected behavior, then test the
 
-87
-00:07:34.897 --> 00:07:37.208
-causes, and corrective action.
+67
+00:06:05.899 --> 00:06:07.556
+smallest plausible cause.
 
-88
-00:07:37.208 --> 00:07:44.240
-NARRATOR: Govern establishes policies,
-responsibilities, and accountability for AI
+68
+00:06:07.556 --> 00:06:14.977
+The diagnosis is strongest when another person
+can reproduce the observation and the test.
 
-89
-00:07:44.240 --> 00:07:45.021
-risk.
+69
+00:06:15.098 --> 00:06:22.373
+Connect NIST AI Risk Management Framework to
+the earlier ideas and explain how the pieces
 
-90
-00:07:45.021 --> 00:07:52.203
-NARRATOR: Consider this worked case: Students
-will train an agent to navigate a grid
+70
+00:06:22.373 --> 00:06:24.313
+work as one system.
 
-91
-00:07:52.203 --> 00:07:57.333
-environment using Q-learning, adjusting
-actions based on cumulative reward signals.
+71
+00:06:24.313 --> 00:06:31.800
+The NIST AI Risk Management Framework
+organizes work around Govern, Map, Measure,
 
-92
-00:07:57.333 --> 00:08:03.996
-NARRATOR: On screen, show a simple grid
-environment with an agent icon, arrows
+72
+00:06:31.800 --> 00:06:33.048
+and Manage.
 
-93
-00:08:03.996 --> 00:08:11.683
-indicating possible actions, and a reward
-value (+1 or -1) displayed at each step, with
+73
+00:06:33.048 --> 00:06:40.397
+Consider this worked case: Students will
+document a risk map for a deployed
 
-94
-00:08:11.683 --> 00:08:15.271
-a 'Policy' label indicating the learned
-strategy.
-
-95
-00:08:15.271 --> 00:08:21.248
-NARRATOR: Locate the first point where
-observed behavior diverges from expected
-
-96
-00:08:21.248 --> 00:08:25.052
-behavior, then test the smallest plausible
-cause.
-
-97
-00:08:25.052 --> 00:08:31.027
-NARRATOR: The diagnosis is strongest when
-another person can reproduce the observation
-
-98
-00:08:31.027 --> 00:08:32.521
-and the test.
-
-99
-00:08:32.642 --> 00:08:38.983
-NARRATOR: Connect NIST AI Risk Management
-Framework to the earlier ideas and explain how
-
-100
-00:08:38.983 --> 00:08:41.701
-the pieces work as one system.
-
-101
-00:08:41.701 --> 00:08:48.988
-NARRATOR: The NIST AI Risk Management
-Framework organizes work around Govern, Map,
-
-102
-00:08:48.988 --> 00:08:50.810
-Measure, and Manage.
-
-103
-00:08:50.810 --> 00:08:58.511
-NARRATOR: Consider this worked case: Students
-will document a risk map for a deployed
-
-104
-00:08:58.511 --> 00:09:04.012
+74
+00:06:40.397 --> 00:06:46.050
 recommendation system, identifying potential
 biases in training data and outlining
 
-105
-00:09:04.012 --> 00:09:06.763
+75
+00:06:46.050 --> 00:06:48.876
 monitoring procedures for post-deployment
 performance.
 
-106
-00:09:06.763 --> 00:09:13.538
-NARRATOR: On screen, display a four-quadrant
-diagram labeled 'Govern', 'Map', 'Measure',
-
-107
-00:09:13.538 --> 00:09:21.545
-'Manage', with each quadrant containing a
-brief description and a relevant icon (e.g.,
-
-108
-00:09:21.545 --> 00:09:25.857
-shield for security, magnifying glass for
+76
+00:06:48.876 --> 00:06:53.954
+g. , shield for security, magnifying glass for
 measurement).
 
-109
-00:09:25.857 --> 00:09:34.857
-NARRATOR: Explain each connection explicitly
-and verify that information retains the same
+77
+00:06:53.954 --> 00:07:03.329
+Explain each connection explicitly and verify
+that information retains the same meaning
 
-110
-00:09:34.857 --> 00:09:37.107
-meaning across representations.
+78
+00:07:03.329 --> 00:07:04.891
+across representations.
 
-111
-00:09:37.107 --> 00:09:43.868
-NARRATOR: The synthesis matters only if every
-connection remains supported by the original
+79
+00:07:04.891 --> 00:07:12.454
+The synthesis matters only if every connection
+remains supported by the original evidence.
 
-112
-00:09:43.868 --> 00:09:44.388
-evidence.
+80
+00:07:12.578 --> 00:07:19.574
+Finish with Practical Analysis Checklist as a
+practical checklist that can guide a new
 
-113
-00:09:44.498 --> 00:09:49.745
-NARRATOR: Finish with Practical Analysis
-Checklist as a practical checklist that can
+81
+00:07:19.574 --> 00:07:20.074
+analysis.
 
-114
-00:09:49.745 --> 00:09:51.494
-guide a new analysis.
+82
+00:07:20.074 --> 00:07:27.981
+Leakage, distribution shift, overfitting, and
+unexamined assumptions can invalidate results.
 
-115
-00:09:51.494 --> 00:09:57.963
-NARRATOR: Leakage, distribution shift,
-overfitting, and unexamined assumptions can
+83
+00:07:27.981 --> 00:07:34.040
+Consider this worked case: Students will
+complete a checklist verifying that
 
-116
-00:09:57.963 --> 00:09:59.401
-invalidate results.
-
-117
-00:09:59.401 --> 00:10:05.980
-NARRATOR: Consider this worked case: Students
-will complete a checklist verifying that
-
-118
-00:10:05.980 --> 00:10:12.011
+84
+00:07:34.040 --> 00:07:40.098
 preprocessing was fitted only on training
 data, cross-validation was used, evaluation
 
-119
-00:10:12.011 --> 00:10:17.494
+85
+00:07:40.098 --> 00:07:45.606
 metrics matched the task, and monitoring plans
 are in place.
 
-120
-00:10:17.494 --> 00:10:23.565
-NARRATOR: On screen, create an editable
-process diagram for Practical Analysis
+86
+00:07:45.606 --> 00:07:53.690
+For each checklist item, record the evidence,
+the remaining uncertainty, and the next
 
-121
-00:10:23.565 --> 00:10:29.635
-Checklist with labeled inputs, decisions,
-state changes, and a checked output.
+87
+00:07:53.690 --> 00:07:54.934
+verification step.
 
-122
-00:10:29.635 --> 00:10:37.252
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
+88
+00:07:54.934 --> 00:08:01.671
+The result is a repeatable procedure, not a
+conclusion that depends on memory or
 
-123
-00:10:37.252 --> 00:10:39.010
-next verification step.
-
-124
-00:10:39.010 --> 00:10:44.849
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-125
-00:10:44.849 --> 00:10:46.197
-memory or intuition.
+89
+00:08:01.671 --> 00:08:02.152
+intuition.

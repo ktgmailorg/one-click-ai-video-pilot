@@ -5,12 +5,12 @@
       "shots": [
         {
           "id": "beat-01-shot-001",
-          "phrase": "Begin by framing Foundations of Computational Thinking as a question about inputs, decisions, and observable results.",
+          "phrase": "Begin by framing Defining the Computational Problem as a question about inputs, decisions, and observable results.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: A student breaks down a sorting problem into identifying the input list, comparing elements, and arranging them in order before writing pseudo-code.",
+          "phrase": "Consider this worked case: A student must write a function that takes a list of integers and returns the sum of all even numbers, clearly defining the input format and expected output before writing any code.",
           "type": "deterministic-svg"
         },
         {
@@ -25,12 +25,12 @@
       "shots": [
         {
           "id": "beat-02-shot-001",
-          "phrase": "Now define Pseudo-Code and Language Expression precisely enough that another learner could test the definition.",
+          "phrase": "Now define Decomposing with Functions precisely enough that another learner could test the definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: A pseudo-code function for finding the maximum value in a list is converted to Python, preserving the logical flow while adding syntax and type constraints.",
+          "phrase": "Consider this worked case: To calculate the average of a dataset, one function reads the input, a second function filters out non-numeric values, and a third computes the mean, each with clear parameters and return values.",
           "type": "deterministic-svg"
         },
         {
@@ -45,12 +45,12 @@
       "shots": [
         {
           "id": "beat-03-shot-001",
-          "phrase": "With the foundation in place, examine how Elementary Data Structures: Lists operates in a concrete sequence.",
+          "phrase": "With the foundation in place, examine how Understanding Recursion operates in a concrete sequence.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: A student uses a Python list to store test scores, then iterates through it to calculate the average using a simple loop.",
+          "phrase": "Consider this worked case: Calculating the factorial of 5 involves calling the function with 4, then 3, down to 1 (the base case), where the result is returned without further recursive calls.",
           "type": "deterministic-svg"
         },
         {
@@ -65,12 +65,12 @@
       "shots": [
         {
           "id": "beat-04-shot-001",
-          "phrase": "Next, compare the choices involved in Elementary Data Structures: Trees and make the decision criteria explicit.",
+          "phrase": "Next, compare the choices involved in Elementary Data Structures: Lists and make the decision criteria explicit.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: A binary tree represents a file system where directories are nodes and files are leaf nodes, allowing efficient path resolution.",
+          "phrase": "Consider this worked case: A student's grade list [85, 90, 78, 92] allows sequential access to each score and supports operations like appending a new grade or removing the lowest one.",
           "type": "deterministic-svg"
         },
         {
@@ -85,12 +85,12 @@
       "shots": [
         {
           "id": "beat-05-shot-001",
-          "phrase": "Apply Elementary Data Structures: Graphs to a worked situation instead of treating it as an isolated definition.",
+          "phrase": "Apply Elementary Data Structures: Trees to a worked situation instead of treating it as an isolated definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: A student models a city's road network as a graph where intersections are nodes and roads are edges to find the shortest path.",
+          "phrase": "Consider this worked case: A file system directory structure is a tree where the root is the main drive, branches are folders, and leaves are individual files, enabling efficient traversal and organization.",
           "type": "deterministic-svg"
         },
         {
@@ -105,17 +105,17 @@
       "shots": [
         {
           "id": "beat-06-shot-001",
-          "phrase": "Examine the tradeoffs in Recursive Problem Solving, including what improves and what becomes more difficult.",
+          "phrase": "Examine the tradeoffs in Elementary Data Structures: Graphs, including what improves and what becomes more difficult.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: A factorial function calculates n!",
+          "phrase": "Consider this worked case: A social network graph connects users as nodes and friendships as edges, allowing algorithms to find the shortest path between two people or identify communities.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-06-shot-003",
-          "phrase": "On screen, show a recursive call stack expanding downward with each function call, then collapsing upward as base cases return values.",
+          "phrase": "State the benefit, the cost, and the condition under which the tradeoff is acceptable.",
           "type": "deterministic-svg"
         }
       ]
@@ -125,12 +125,12 @@
       "shots": [
         {
           "id": "beat-07-shot-001",
-          "phrase": "Stress-test the reasoning around Debugging and Testing Protocols with an edge case and identify which assumption controls the outcome.",
+          "phrase": "Stress-test the reasoning around Algorithmic Invariants and Correctness with an edge case and identify which assumption controls the outcome.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: A student uses print statements and a test harness to verify that a sorting algorithm correctly handles edge cases like empty lists or single-element lists.",
+          "phrase": "Consider this worked case: In a sorting algorithm, the invariant 'the subarray to the left of the current index is sorted' holds true after each iteration, guaranteeing the final array is fully sorted.",
           "type": "deterministic-svg"
         },
         {
@@ -145,12 +145,12 @@
       "shots": [
         {
           "id": "beat-08-shot-001",
-          "phrase": "Use State and Control Flow Management to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "phrase": "Use Debugging and Testing Strategies to diagnose a failure by separating symptoms, causes, and corrective action.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: A student defines a class with explicit attributes and methods, ensuring that each method updates state according to a documented contract.",
+          "phrase": "Consider this worked case: A tester runs a function with an empty list (boundary case) and a list containing only negative numbers (error case) to verify the program handles these scenarios without crashing.",
           "type": "deterministic-svg"
         },
         {
@@ -165,12 +165,12 @@
       "shots": [
         {
           "id": "beat-09-shot-001",
-          "phrase": "Connect Verification and Local Expander Preparation to the earlier ideas and explain how the pieces work as one system.",
+          "phrase": "Connect Pseudo-code to Implementation to the earlier ideas and explain how the pieces work as one system.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: A student cross-references the pseudo-code implementation with the source excerpts, ensuring that terms like 'basic blocks', 'terminator instruction', and 'namespace' are correctly applied.",
+          "phrase": "Consider this worked case: A student writes a step-by-step pseudo-code description of a binary search algorithm, then converts each step into Python syntax, ensuring the logic remains unchanged.",
           "type": "deterministic-svg"
         },
         {
@@ -190,17 +190,17 @@
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: A student reviews their assignment against the checklist, confirming that pseudo-code and code match, data structures are correctly implemented, recursion is applied, and tests pass.",
+          "phrase": "Consider this worked case: A checklist item asks: 'Does the algorithm handle the edge case where the input list is empty?",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-10-shot-003",
-          "phrase": "For each checklist item, record the evidence, the remaining uncertainty, and the next verification step.",
+          "phrase": "Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition.",
           "type": "deterministic-svg"
         }
       ]
     }
   ],
-  "episodeId": "csci-603-computational-problem-solving",
+  "episodeId": "csci-603-computational-problem-solving-foundations",
   "schemaVersion": 1
 }

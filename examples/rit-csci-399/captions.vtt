@@ -1,577 +1,429 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:07.084
-NARRATOR: Begin by framing Introduction to
-Cooperative Education as a question about
+00:00:00.050 --> 00:00:07.488
+Begin by framing Introduction to Cooperative
+Education as a question about inputs,
 
 2
-00:00:07.084 --> 00:00:10.015
-inputs, decisions, and observable results.
+00:00:07.488 --> 00:00:09.968
+decisions, and observable results.
 
 3
-00:00:10.015 --> 00:00:16.176
-NARRATOR: Cooperative education is a work
-experience designed to supplement the
+00:00:09.968 --> 00:00:17.187
+Cooperative education is a work experience
+designed to supplement the educational
 
 4
-00:00:16.176 --> 00:00:17.296
-educational process.
+00:00:17.187 --> 00:00:17.843
+process.
 
 5
-00:00:17.296 --> 00:00:23.222
-NARRATOR: Consider this worked case: Students
-complete a semester-long software development
+00:00:17.843 --> 00:00:24.621
+Consider this worked case: Students complete a
+semester-long software development project at
 
 6
-00:00:23.222 --> 00:00:28.609
-project at a local tech firm while maintaining
-full-time coursework.
+00:00:24.621 --> 00:00:29.140
+a local tech firm while maintaining full-time
+coursework.
 
 7
-00:00:28.609 --> 00:00:34.461
-NARRATOR: On screen, display a split-screen
-graphic showing a classroom lecture on the
+00:00:29.140 --> 00:00:36.023
+List the givens before choosing a method,
+because an unstated assumption can change the
 
 8
-00:00:34.461 --> 00:00:41.664
-left and a student coding in a corporate
-office on the right, with a central arrow
+00:00:36.023 --> 00:00:36.515
+conclusion.
 
 9
-00:00:41.664 --> 00:00:43.015
-labeled 'Supplementing Education'.
+00:00:36.515 --> 00:00:42.156
+This establishes the vocabulary and scope
+needed for the remaining sections.
 
 10
-00:00:43.015 --> 00:00:49.058
-NARRATOR: List the givens before choosing a
-method, because an unstated assumption can
+00:00:42.266 --> 00:00:49.176
+Now define Part-Time Structure and Scheduling
+precisely enough that another learner could
 
 11
-00:00:49.058 --> 00:00:50.453
-change the conclusion.
+00:00:49.176 --> 00:00:50.903
+test the definition.
 
 12
-00:00:50.453 --> 00:00:56.187
-NARRATOR: This establishes the vocabulary and
-scope needed for the remaining sections.
+00:00:50.903 --> 00:00:54.450
+Activities are done on a part-time basis.
 
 13
-00:00:56.306 --> 00:01:02.309
-NARRATOR: Now define Part-Time Structure and
-Scheduling precisely enough that another
+00:00:54.450 --> 00:01:02.251
+Consider this worked case: The co-op schedule
+allocates approximately 15 hours per week,
 
 14
-00:01:02.309 --> 00:01:05.037
-learner could test the definition.
+00:01:02.251 --> 00:01:09.453
+equivalent to one full-time course credit,
+allowing students to attend lectures and
 
 15
-00:01:05.037 --> 00:01:08.506
-NARRATOR: Activities are done on a part-time
-basis.
+00:01:09.453 --> 00:01:10.653
+complete assignments.
 
 16
-00:01:08.506 --> 00:01:16.079
-NARRATOR: Consider this worked case: The co-op
-schedule allocates approximately 15 hours per
+00:01:10.653 --> 00:01:17.150
+Separate the formal definition from an
+implementation detail, then identify what
 
 17
-00:01:16.079 --> 00:01:23.070
-week, equivalent to one full-time course
-credit, allowing students to attend lectures
-
-18
-00:01:23.070 --> 00:01:24.818
-and complete assignments.
-
-19
-00:01:24.818 --> 00:01:32.882
-NARRATOR: On screen, show a weekly timeline
-calendar highlighting 15 hours of co-op work
-
-20
-00:01:32.882 --> 00:01:37.490
-distributed across weekdays, with academic
-classes marked separately.
-
-21
-00:01:37.490 --> 00:01:44.099
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
-
-22
-00:01:44.099 --> 00:01:46.302
+00:01:17.150 --> 00:01:19.512
 evidence would distinguish them.
 
+18
+00:01:19.512 --> 00:01:25.809
+A precise definition makes later examples
+easier to evaluate and revise.
+
+19
+00:01:25.922 --> 00:01:33.232
+With the foundation in place, examine how
+Prerequisite Requirements operates in a
+
+20
+00:01:33.232 --> 00:01:34.450
+concrete sequence.
+
+21
+00:01:34.450 --> 00:01:36.778
+They should respect privacy.
+
+22
+00:01:36.778 --> 00:01:44.215
+Consider this worked case: A freshman student
+who has not yet taken an introductory
+
 23
-00:01:46.302 --> 00:01:52.912
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
+00:01:44.215 --> 00:01:51.653
+programming course must take CSCI-099 in the
+preceding semester to qualify for the co-op
 
 24
-00:01:53.018 --> 00:01:59.191
-NARRATOR: With the foundation in place,
-examine how Prerequisite Requirements operates
+00:01:51.653 --> 00:01:52.184
+program.
 
 25
-00:01:59.191 --> 00:02:01.436
-in a concrete sequence.
+00:01:52.184 --> 00:01:59.653
+Follow every arrow in order and name the state
+before and after each transition.
 
 26
-00:02:01.436 --> 00:02:03.764
-NARRATOR: They should respect privacy.
+00:01:59.653 --> 00:02:05.575
+The trace converts an abstract statement into
+an inspectable sequence.
 
 27
-00:02:03.764 --> 00:02:10.946
-NARRATOR: Consider this worked case: A
-freshman student who has not yet taken an
+00:02:05.575 --> 00:02:12.630
+Name each dependency explicitly, and keep
+labels and representations consistent
 
 28
-00:02:10.946 --> 00:02:17.103
-introductory programming course must take
-CSCI-099 in the preceding semester to qualify
+00:02:12.630 --> 00:02:14.746
+throughout the analysis.
 
 29
-00:02:17.103 --> 00:02:19.155
-for the co-op program.
+00:02:14.858 --> 00:02:21.398
+Next, compare the choices involved in Term
+Offerings and make the decision criteria
 
 30
-00:02:19.155 --> 00:02:27.902
-NARRATOR: On screen, create a prerequisite
-flowchart showing CSCI-099 as a required
+00:02:21.398 --> 00:02:21.901
+explicit.
 
 31
-00:02:27.902 --> 00:02:33.733
-gateway node before the CSCI-399 co-op course
-node.
+00:02:21.901 --> 00:02:24.667
+They should honor confidentiality.
 
 32
-00:02:33.733 --> 00:02:40.780
-NARRATOR: Follow every arrow in order and name
-the state before and after each transition.
+00:02:24.667 --> 00:02:32.787
+Consider this worked case: Students can enroll
+in the co-op program during any of these three
 
 33
-00:02:40.780 --> 00:02:46.311
-NARRATOR: The trace converts an abstract
-statement into an inspectable sequence.
+00:02:32.787 --> 00:02:38.370
+academic terms, providing flexibility to align
+work experience with career goals.
 
 34
-00:02:46.311 --> 00:02:53.653
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+00:02:38.370 --> 00:02:45.736
+Compare alternatives against the same
+constraints so the evaluation does not move
 
 35
-00:02:53.653 --> 00:02:55.655
-throughout the analysis.
+00:02:45.736 --> 00:02:46.964
+the goalposts.
 
 36
-00:02:55.778 --> 00:03:01.774
-NARRATOR: Next, compare the choices involved
-in Term Offerings and make the decision
+00:02:46.964 --> 00:02:53.682
+Using shared criteria turns a preference into
+a defensible technical choice.
 
 37
-00:03:01.774 --> 00:03:02.696
-criteria explicit.
+00:02:53.682 --> 00:03:00.605
+Name each dependency explicitly, and keep
+labels and representations consistent
 
 38
-00:03:02.696 --> 00:03:05.353
-NARRATOR: They should honor confidentiality.
+00:03:00.605 --> 00:03:02.682
+throughout the analysis.
 
 39
-00:03:05.353 --> 00:03:12.803
-NARRATOR: Consider this worked case: Students
-can enroll in the co-op program during any of
+00:03:02.810 --> 00:03:10.666
+Apply Ethical Foundations in Co-op to a worked
+situation instead of treating it as an
 
 40
-00:03:12.803 --> 00:03:18.266
-these three academic terms, providing
-flexibility to align work experience with
+00:03:10.666 --> 00:03:11.713
+isolated definition.
 
 41
-00:03:18.266 --> 00:03:19.259
-career goals.
+00:03:11.713 --> 00:03:20.025
+The ACM Code directs computing professionals
+to contribute to society and human well-being.
 
 42
-00:03:19.259 --> 00:03:27.587
-NARRATOR: On screen, list the three terms
-(Fall, Spring, Summer) as horizontal buttons
+00:03:20.025 --> 00:03:27.373
+Consider this worked case: A co-op student
+developing a healthcare app must ensure the
 
 43
-00:03:27.587 --> 00:03:32.071
-with checkmarks, indicating availability for
-co-op enrollment.
+00:03:27.373 --> 00:03:34.197
+system does not compromise patient data
+privacy or cause unintended harm to users.
 
 44
-00:03:32.071 --> 00:03:38.771
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
+00:03:34.197 --> 00:03:41.565
+Work from the concrete inputs to the result,
+checking units, types, or invariants at each
 
 45
-00:03:38.771 --> 00:03:40.446
-move the goalposts.
+00:03:41.565 --> 00:03:42.056
+step.
 
 46
-00:03:40.446 --> 00:03:47.399
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
+00:03:42.056 --> 00:03:47.181
+The worked case shows both how to apply the
+method and how to check it.
 
 47
-00:03:47.399 --> 00:03:54.581
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-48
-00:03:54.581 --> 00:03:56.540
-throughout the analysis.
-
-49
-00:03:56.666 --> 00:04:03.408
-NARRATOR: Apply Ethical Foundations in Co-op
-to a worked situation instead of treating it
-
-50
-00:04:03.408 --> 00:04:05.334
-as an isolated definition.
-
-51
-00:04:05.334 --> 00:04:12.433
-NARRATOR: The ACM Code directs computing
-professionals to contribute to society and
-
-52
-00:04:12.433 --> 00:04:13.616
-human well-being.
-
-53
-00:04:13.616 --> 00:04:20.051
-NARRATOR: Consider this worked case: A co-op
-student developing a healthcare app must
-
-54
-00:04:20.051 --> 00:04:26.980
-ensure the system does not compromise patient
-data privacy or cause unintended harm to
-
-55
-00:04:26.980 --> 00:04:27.475
-users.
-
-56
-00:04:27.475 --> 00:04:34.264
-NARRATOR: On screen, display a shield icon
-with three sub-icons representing 'Contribute
-
-57
-00:04:34.264 --> 00:04:38.225
-to Society', 'Avoid Harm', and 'Human
-Well-being'.
-
-58
-00:04:38.225 --> 00:04:44.891
-NARRATOR: Work from the concrete inputs to the
-result, checking units, types, or invariants
-
-59
-00:04:44.891 --> 00:04:46.319
-at each step.
-
-60
-00:04:46.319 --> 00:04:51.459
-NARRATOR: The worked case shows both how to
-apply the method and how to check it.
-
-61
-00:04:51.578 --> 00:04:58.208
-NARRATOR: Examine the tradeoffs in Honesty and
+00:03:47.282 --> 00:03:53.536
+Examine the tradeoffs in Honesty and
 Trustworthiness, including what improves and
 
-62
-00:04:58.208 --> 00:05:00.418
+48
+00:03:53.536 --> 00:03:55.810
 what becomes more difficult.
 
-63
-00:05:00.418 --> 00:05:03.184
-NARRATOR: They should be honest and
-trustworthy.
+49
+00:03:55.810 --> 00:03:58.513
+They should be honest and trustworthy.
 
-64
-00:05:03.184 --> 00:05:10.066
-NARRATOR: Consider this worked case: When
-documenting co-op progress, students must
+50
+00:03:58.513 --> 00:04:05.769
+Consider this worked case: When documenting
+co-op progress, students must accurately
 
-65
-00:05:10.066 --> 00:05:16.322
-accurately report completed tasks and
-challenges without exaggerating results or
+51
+00:04:05.769 --> 00:04:13.025
+report completed tasks and challenges without
+exaggerating results or omitting critical
 
-66
-00:05:16.322 --> 00:05:18.199
-omitting critical failures.
+52
+00:04:13.025 --> 00:04:13.685
+failures.
 
-67
-00:05:18.199 --> 00:05:24.680
-NARRATOR: On screen, show a checklist graphic
-with items like 'Accurate Reporting',
+53
+00:04:13.685 --> 00:04:20.497
+State the benefit, the cost, and the condition
+under which the tradeoff is acceptable.
 
-68
-00:05:24.680 --> 00:05:30.621
-'Transparent Documentation', and 'Trustworthy
-Updates' next to a co-op project dashboard.
+54
+00:04:20.497 --> 00:04:27.856
+Making the tradeoff visible prevents a local
+improvement from hiding a larger cost.
 
-69
-00:05:30.621 --> 00:05:36.732
-NARRATOR: State the benefit, the cost, and the
-condition under which the tradeoff is
+55
+00:04:27.856 --> 00:04:34.851
+Name each dependency explicitly, and keep
+labels and representations consistent
 
-70
-00:05:36.732 --> 00:05:37.168
-acceptable.
-
-71
-00:05:37.168 --> 00:05:44.527
-NARRATOR: Making the tradeoff visible prevents
-a local improvement from hiding a larger cost.
-
-72
-00:05:44.527 --> 00:05:51.550
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-73
-00:05:51.550 --> 00:05:53.465
+56
+00:04:34.851 --> 00:04:36.950
 throughout the analysis.
 
-74
-00:05:53.570 --> 00:05:59.819
-NARRATOR: Stress-test the reasoning around
-Fairness and Non-Discrimination with an edge
+57
+00:04:37.058 --> 00:04:44.077
+Stress-test the reasoning around Fairness and
+Non-Discrimination with an edge case and
 
-75
-00:05:59.819 --> 00:06:04.363
-case and identify which assumption controls
-the outcome.
+58
+00:04:44.077 --> 00:04:47.586
+identify which assumption controls the
+outcome.
 
-76
-00:06:04.363 --> 00:06:08.785
-NARRATOR: They should be fair and take action
-not to discriminate.
+59
+00:04:47.586 --> 00:04:52.148
+They should be fair and take action not to
+discriminate.
 
-77
-00:06:08.785 --> 00:06:16.165
-NARRATOR: Consider this worked case: A co-op
-team must ensure equitable distribution of
+60
+00:04:52.148 --> 00:05:00.365
+Consider this worked case: A co-op team must
+ensure equitable distribution of tasks and
 
-78
-00:06:16.165 --> 00:06:22.410
-tasks and recognition among all members,
-regardless of background or role.
+61
+00:05:00.365 --> 00:05:05.648
+recognition among all members, regardless of
+background or role.
 
-79
-00:06:22.410 --> 00:06:29.010
-NARRATOR: On screen, illustrate a balanced
-scale with 'Equitable Task Distribution' on
+62
+00:05:05.648 --> 00:05:12.289
+Change one assumption at a time and observe
+which part of the reasoning no longer holds.
 
-80
-00:06:29.010 --> 00:06:36.160
-one side and 'Inclusive Recognition' on the
-other, labeled 'Fairness in Co-op Teams'.
+63
+00:05:12.289 --> 00:05:19.054
+The edge case reveals the boundary of the
+claim without discarding the useful core idea.
 
-81
-00:06:36.160 --> 00:06:42.322
-NARRATOR: Change one assumption at a time and
-observe which part of the reasoning no longer
+64
+00:05:19.178 --> 00:05:26.406
+Use Responsible Technical Communication to
+diagnose a failure by separating symptoms,
 
-82
-00:06:42.322 --> 00:06:42.707
-holds.
+65
+00:05:26.406 --> 00:05:29.034
+causes, and corrective action.
 
-83
-00:06:42.707 --> 00:06:49.037
-NARRATOR: The edge case reveals the boundary
-of the claim without discarding the useful
-
-84
-00:06:49.037 --> 00:06:49.941
-core idea.
-
-85
-00:06:50.042 --> 00:06:56.261
-NARRATOR: Use Responsible Technical
-Communication to diagnose a failure by
-
-86
-00:06:56.261 --> 00:06:59.992
-separating symptoms, causes, and corrective
-action.
-
-87
-00:06:59.992 --> 00:07:05.992
-NARRATOR: Responsible technical communication
+66
+00:05:29.034 --> 00:05:35.018
+Responsible technical communication
 distinguishes claims from evidence.
 
+67
+00:05:35.018 --> 00:05:42.107
+Consider this worked case: When presenting
+co-op findings, students must clearly separate
+
+68
+00:05:42.107 --> 00:05:49.196
+their own contributions from existing research
+and provide proper citations for all
+
+69
+00:05:49.196 --> 00:05:50.377
+referenced methods.
+
+70
+00:05:50.378 --> 00:05:57.995
+Locate the first point where observed behavior
+diverges from expected behavior, then test the
+
+71
+00:05:57.995 --> 00:05:59.627
+smallest plausible cause.
+
+72
+00:05:59.627 --> 00:06:07.424
+The diagnosis is strongest when another person
+can reproduce the observation and the test.
+
+73
+00:06:07.538 --> 00:06:14.681
+Connect Research Integrity and Evaluation to
+the earlier ideas and explain how the pieces
+
+74
+00:06:14.681 --> 00:06:16.722
+work as one system.
+
+75
+00:06:16.722 --> 00:06:24.634
+Authors should preserve research integrity and
+avoid plagiarism, fabrication, and
+
+76
+00:06:24.634 --> 00:06:25.425
+falsification.
+
+77
+00:06:25.425 --> 00:06:33.338
+Consider this worked case: Co-op students must
+verify all data sources, accurately report
+
+78
+00:06:33.338 --> 00:06:39.425
+limitations, and never alter results to fit a
+desired conclusion.
+
+79
+00:06:39.425 --> 00:06:48.907
+Explain each connection explicitly and verify
+that information retains the same meaning
+
+80
+00:06:48.907 --> 00:06:50.487
+across representations.
+
+81
+00:06:50.487 --> 00:06:58.128
+The synthesis matters only if every connection
+remains supported by the original evidence.
+
+82
+00:06:58.250 --> 00:07:05.130
+Finish with Practical Analysis Checklist as a
+practical checklist that can guide a new
+
+83
+00:07:05.130 --> 00:07:05.621
+analysis.
+
+84
+00:07:05.621 --> 00:07:12.353
+They should maintain high standards of
+professional competence, conduct, and ethical
+
+85
+00:07:12.353 --> 00:07:12.965
+practice.
+
+86
+00:07:12.965 --> 00:07:21.261
+Consider this worked case: Before submitting a
+co-op project, students check that they have
+
+87
+00:07:21.261 --> 00:07:27.186
+identified stakeholders, documented methods
+for reproducibility, and verified all claims
+
 88
-00:07:05.992 --> 00:07:12.173
-NARRATOR: Consider this worked case: When
-presenting co-op findings, students must
+00:07:27.186 --> 00:07:28.371
+against evidence.
 
 89
-00:07:12.173 --> 00:07:18.915
-clearly separate their own contributions from
-existing research and provide proper citations
+00:07:28.371 --> 00:07:36.293
+For each checklist item, record the evidence,
+the remaining uncertainty, and the next
 
 90
-00:07:18.915 --> 00:07:21.163
-for all referenced methods.
+00:07:36.293 --> 00:07:37.512
+verification step.
 
 91
-00:07:21.163 --> 00:07:28.396
-NARRATOR: On screen, show a document template
-with sections labeled 'Claim', 'Evidence',
+00:07:37.512 --> 00:07:44.133
+The result is a repeatable procedure, not a
+conclusion that depends on memory or
 
 92
-00:07:28.396 --> 00:07:32.616
-'Prior Work', and 'Contribution',
-demonstrating proper structure.
-
-93
-00:07:32.616 --> 00:07:38.155
-NARRATOR: Locate the first point where
-observed behavior diverges from expected
-
-94
-00:07:38.155 --> 00:07:41.679
-behavior, then test the smallest plausible
-cause.
-
-95
-00:07:41.679 --> 00:07:47.617
-NARRATOR: The diagnosis is strongest when
-another person can reproduce the observation
-
-96
-00:07:47.617 --> 00:07:49.101
-and the test.
-
-97
-00:07:49.202 --> 00:07:54.894
-NARRATOR: Connect Research Integrity and
-Evaluation to the earlier ideas and explain
-
-98
-00:07:54.894 --> 00:07:58.214
-how the pieces work as one system.
-
-99
-00:07:58.214 --> 00:08:05.388
-NARRATOR: Authors should preserve research
-integrity and avoid plagiarism, fabrication,
-
-100
-00:08:05.388 --> 00:08:06.823
-and falsification.
-
-101
-00:08:06.823 --> 00:08:13.886
-NARRATOR: Consider this worked case: Co-op
-students must verify all data sources,
-
-102
-00:08:13.886 --> 00:08:20.948
-accurately report limitations, and never alter
-results to fit a desired conclusion.
-
-103
-00:08:20.948 --> 00:08:28.943
-NARRATOR: On screen, create a flowchart
-showing 'Data Collection' -> 'Verification' ->
-
-104
-00:08:28.943 --> 00:08:35.606
-'Accurate Reporting' -> 'Limitations
-Disclosed', with red X marks over
-
-105
-00:08:35.606 --> 00:08:37.605
-'Fabrication' and 'Falsification'.
-
-106
-00:08:37.605 --> 00:08:46.655
-NARRATOR: Explain each connection explicitly
-and verify that information retains the same
-
-107
-00:08:46.655 --> 00:08:48.917
-meaning across representations.
-
-108
-00:08:48.917 --> 00:08:56.186
-NARRATOR: The synthesis matters only if every
-connection remains supported by the original
-
-109
-00:08:56.186 --> 00:08:56.745
-evidence.
-
-110
-00:08:56.858 --> 00:09:02.515
-NARRATOR: Finish with Practical Analysis
-Checklist as a practical checklist that can
-
-111
-00:09:02.515 --> 00:09:04.401
-guide a new analysis.
-
-112
-00:09:04.401 --> 00:09:10.377
-NARRATOR: They should maintain high standards
-of professional competence, conduct, and
-
-113
-00:09:10.377 --> 00:09:11.464
-ethical practice.
-
-114
-00:09:11.464 --> 00:09:18.068
-NARRATOR: Consider this worked case: Before
-submitting a co-op project, students check
-
-115
-00:09:18.068 --> 00:09:23.571
-that they have identified stakeholders,
-documented methods for reproducibility, and
-
-116
-00:09:23.571 --> 00:09:26.323
-verified all claims against evidence.
-
-117
-00:09:26.323 --> 00:09:33.934
-NARRATOR: On screen, display a printable
-checklist with boxes for 'Ethical Review
-
-118
-00:09:33.934 --> 00:09:39.642
-Complete', 'Communication Standards Met',
-'Evaluation Criteria Applied', and 'Sources
-
-119
-00:09:39.642 --> 00:09:40.276
-Cited'.
-
-120
-00:09:40.276 --> 00:09:47.944
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
-
-121
-00:09:47.944 --> 00:09:49.714
-next verification step.
-
-122
-00:09:49.714 --> 00:09:55.706
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-123
-00:09:55.706 --> 00:09:57.089
-memory or intuition.
+00:07:44.133 --> 00:07:44.606
+intuition.

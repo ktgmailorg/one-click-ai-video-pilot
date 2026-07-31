@@ -1,239 +1,227 @@
-NARRATOR: Begin by framing Course Scope and Faculty Pilot Framework as a question about
+Begin by framing Course Scope and Flexibility as a question about inputs, decisions, and
 
-inputs, decisions, and observable results.
+observable results.
 
-NARRATOR: This course examines current topics in Languages and Tools.
+This is intended to allow faculty to pilot potential new undergraduate offerings.
 
-NARRATOR: Consider this worked case: A department head proposes a new undergraduate
+Consider this worked case: A faculty member might propose a seminar on 'Secure Coding
 
-offering focused on compiler design.
+Practices' or 'Natural Language Processing Pipelines' as a pilot course.
 
-NARRATOR: On screen, display a flowchart showing faculty proposal -> pilot course ->
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-cluster classification (Languages and Tools or Security).
+that the final result satisfies the stated condition.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+List the givens before choosing a method, because an unstated assumption can change the
 
-change the conclusion.
+conclusion.
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Now define Cluster Affiliations precisely enough that another learner could test the
 
-throughout the analysis.
+definition.
 
-NARRATOR: Now define Cluster Classification System precisely enough that another learner
+Specific course instances will be identified as belonging to the Languages and Tools
 
-could test the definition.
+cluster, the Security cluster, or both clusters.
 
-NARRATOR: Specific course instances will be identified as belonging to the Languages and
+Consider this worked case: A course focusing on 'Python for Security Analysis' would be
 
-Tools cluster, the Security cluster, or both clusters.
+tagged with both clusters, while a course on 'Graph Algorithms' would belong solely to the
 
-NARRATOR: Consider this worked case: A proposed seminar on memory safety analysis is
+Languages and Tools cluster.
 
-classified under both clusters.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: On screen, show a Venn diagram with two overlapping circles labeled 'Languages and
+that the final result satisfies the stated condition.
 
-Tools' and 'Security', with a course title in the intersection.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Language Reference Structure
+With the foundation in place, examine how Foundational Programming Concepts operates in
 
-operates in a concrete sequence.
+a concrete sequence.
 
-NARRATOR: The Python language reference specifies lexical analysis, data model
+Programming begins with precise problem statements, input and output examples, and
 
-behavior, execution, expressions, statements, functions, classes, exceptions, and module
+algorithms written independently of syntax.
 
-import semantics.
+Consider this worked case: Before writing code, one defines a problem like 'Sort a list
 
-NARRATOR: Consider this worked case: A reference document outlines how Python handles
+of integers' and outlines an algorithm using variables for the list and a loop (control
 
-variable binding and exception propagation.
+structure) to iterate.
 
-NARRATOR: On screen, list the specified reference components in a hierarchical outline
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-format.
+that the final result satisfies the stated condition.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+Follow every arrow in order and name the state before and after each transition.
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.
-
-NARRATOR: Next, compare the choices involved in Object Model and Namespaces and make the
+Next, compare the choices involved in Data Structures and Representation and make the
 
 decision criteria explicit.
 
-NARRATOR: Names are bound to objects within namespaces and scopes.
+Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in
 
-NARRATOR: Consider this worked case: A function call binds the parameter name to a
+first-out access, trees represent hierarchy, and graphs represent connected entities.
 
-specific object instance in the local scope.
+Consider this worked case: A queue data structure is appropriate for modeling a print
 
-NARRATOR: On screen, illustrate a namespace tree with nested scopes and object references
+job spooler where the first job submitted is the first to be processed.
 
-pointing to shared memory addresses.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+that the final result satisfies the stated condition.
 
-move the goalposts.
+Compare alternatives against the same constraints so the evaluation does not move
 
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+the goalposts.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Using shared criteria turns a preference into a defensible technical choice.
 
-throughout the analysis.
+Apply Functions and Decomposition to a worked situation instead of treating it as an
 
-NARRATOR: Apply Control Flow and Exceptions to a worked situation instead of treating it as
+isolated definition.
 
-an isolated definition.
+Functions decompose a solution into named operations with parameters and results.
 
-NARRATOR: Exceptions interrupt normal control flow until a matching handler processes them
+Consider this worked case: A function named 'calculate_average' takes a list of numbers as
 
-or they propagate.
+a parameter and returns a single float value, isolating the math logic from the rest of the
 
-NARRATOR: Consider this worked case: A division by zero triggers an exception that
+program.
 
-jumps to a try-except block.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: On screen, draw a control flow graph with a normal path and an exception path
+that the final result satisfies the stated condition.
 
-branching to a handler node.
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+step.
 
-at each step.
+The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+Examine the tradeoffs in Recursion and Base Cases, including what improves and what
 
-NARRATOR: Examine the tradeoffs in LLVM Intermediate Representation, including what
+becomes more difficult.
 
-improves and what becomes more difficult.
+Recursion solves a problem through smaller instances and requires a base case.
 
-NARRATOR: LLVM IR is a typed, SSA-based intermediate representation with explicit
+Consider this worked case: Calculating the factorial of 5 involves recursively calling
 
-instructions, basic blocks, functions, memory operations, and control flow.
+the function for 4, 3, 2, and 1, with the base case defined as factorial(0) = 1.
 
-NARRATOR: Consider this worked case: A compiler translates a high-level loop into a
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-sequence of LLVM IR basic blocks with phi nodes.
+that the final result satisfies the stated condition.
 
-NARRATOR: On screen, render a simplified LLVM IR module showing a function, basic blocks,
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-and a phi instruction at a merge point.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+Stress-test the reasoning around Python Language Semantics with an edge case and
 
-acceptable.
+identify which assumption controls the outcome.
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+The Python language reference specifies lexical analysis, data model behavior,
 
-NARRATOR: Stress-test the reasoning around Phi Instructions and Control Flow with an edge
+execution, expressions, statements, functions, classes, exceptions, and module import
 
-case and identify which assumption controls the outcome.
+semantics.
 
-NARRATOR: Phi instructions select values according to the predecessor control-flow
+Consider this worked case: When a script imports a module, Python searches for it and
 
-edge.
+binds the module object to a name in the current namespace, allowing subsequent code to
 
-NARRATOR: Consider this worked case: A phi node chooses between two loop iteration values
+access its functions.
 
-based on whether the loop condition was true or false.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: On screen, show a control flow graph with two incoming edges to a block containing
+that the final result satisfies the stated condition.
 
-a phi instruction that selects between two values.
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-holds.
+Use Correctness and Testing to diagnose a failure by separating symptoms, causes, and
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+corrective action.
 
-core idea.
+Correctness arguments, tests, tracing, and debugging compare intended behavior with
 
-NARRATOR: Use Memory Operations and Verification to diagnose a failure by
+observable results, including boundary and error cases.
 
-separating symptoms, causes, and corrective action.
+Consider this worked case: A test suite for a sorting function must include not only sorted
 
-NARRATOR: Load and store instructions make memory access explicit.
+lists but also empty lists, single-element lists, and lists with duplicate values to
 
-NARRATOR: Consider this worked case: The verifier rejects an IR module where a store
+verify robustness.
 
-instruction targets an untyped memory location.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: On screen, display a before-and-after comparison of invalid IR
+that the final result satisfies the stated condition.
 
-(with a type mismatch) and valid IR (with explicit memory types).
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+smallest plausible cause.
 
-behavior, then test the smallest plausible cause.
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
-
-and the test.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.
-
-NARRATOR: Connect Compiler Phase Separation to the earlier ideas and explain how the pieces
+Connect Debugging and Exception Handling to the earlier ideas and explain how the pieces
 
 work as one system.
 
-NARRATOR: Compiler work separates parsing and semantic analysis from lowering, verification,
+Exceptions interrupt normal control flow until a matching handler processes them or they
 
-optimization, and target-specific code generation.
+propagate.
 
-NARRATOR: Consider this worked case: A frontend parser generates ASTs, while a
+Consider this worked case: If a division by zero occurs, Python raises a
 
-backend optimizer restructures the IR for a specific CPU architecture.
+ZeroDivisionError; a try-except block catches this exception, preventing the program from
 
-NARRATOR: On screen, present a linear pipeline diagram with distinct stages: Parsing ->
+crashing and allowing graceful recovery.
 
-Semantic Analysis -> Lowering -> Verification -> Optimization -> Code Generation.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+that the final result satisfies the stated condition.
 
-meaning across representations.
+Explain each connection explicitly and verify that information retains the same meaning
 
-NARRATOR: The synthesis matters only if every connection remains supported by the original
+across representations.
 
-evidence.
+The synthesis matters only if every connection remains supported by the original evidence.
 
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+Finish with Planning and Evaluation Checklist as a practical checklist that can guide a new
 
-guide a new analysis.
+analysis.
 
-NARRATOR: Specific course details (such as prerequisites, course seminar, format,
+Specific course details (such as prerequisites, course seminar, format,
 
 learning outcomes, assessment methods, and resource needs) will be determined by the
 
 faculty member(s) who propose a specific seminar course in this area.
 
-NARRATOR: Consider this worked case: A review checklist verifies that the proposed course
+Consider this worked case: A checklist for a new 'Intro to Python Security' course includes
 
-includes defined learning outcomes, assessment methods, and resource needs.
+verifying that students have basic programming knowledge, defining weekly lecture topics, and
 
-NARRATOR: On screen, show a checklist template with checkboxes for prerequisites, format,
+setting up a final project assessment.
 
-learning outcomes, assessment methods, and resource needs.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+that the final result satisfies the stated condition.
 
-next verification step.
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+verification step.
 
-memory or intuition.
+The result is a repeatable procedure, not a conclusion that depends on memory or
+
+intuition.

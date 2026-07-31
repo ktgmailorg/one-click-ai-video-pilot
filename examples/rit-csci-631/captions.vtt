@@ -1,549 +1,404 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:06.429
-NARRATOR: Begin by framing Pipeline
-Architecture Overview as a question about
+00:00:00.050 --> 00:00:07.014
+Begin by framing Pipeline Architecture
+Overview as a question about inputs,
 
 2
-00:00:06.429 --> 00:00:09.328
-inputs, decisions, and observable results.
+00:00:07.014 --> 00:00:09.546
+decisions, and observable results.
 
 3
-00:00:09.328 --> 00:00:16.015
-NARRATOR: Geometric transforms map coordinates
-between image representations.
+00:00:09.546 --> 00:00:16.140
+Geometric transforms map coordinates between
+image representations.
 
 4
-00:00:16.015 --> 00:00:23.586
-NARRATOR: Consider this worked case: A
-standard pipeline converts a raw camera image
+00:00:16.140 --> 00:00:24.728
+Consider this worked case: A standard pipeline
+converts a raw camera image into a coordinate
 
 5
-00:00:23.586 --> 00:00:30.574
-into a coordinate system, applies lighting
-models, extracts features, and outputs object
+00:00:24.728 --> 00:00:30.453
+system, applies lighting models, extracts
+features, and outputs object hypotheses.
 
 6
-00:00:30.574 --> 00:00:31.156
-hypotheses.
+00:00:30.453 --> 00:00:37.671
+List the givens before choosing a method,
+because an unstated assumption can change the
 
 7
-00:00:31.156 --> 00:00:39.522
-NARRATOR: On screen, display a horizontal
-flowchart with five labeled stages: image
+00:00:37.671 --> 00:00:38.187
+conclusion.
 
 8
-00:00:39.522 --> 00:00:45.099
-acquisition, representation, assumption
-setting, supervision, and decision rule
+00:00:38.187 --> 00:00:43.906
+This establishes the vocabulary and scope
+needed for the remaining sections.
 
 9
-00:00:45.099 --> 00:00:45.796
-application.
+00:00:43.906 --> 00:00:51.021
+Name each dependency explicitly, and keep
+labels and representations consistent
 
 10
-00:00:45.796 --> 00:00:51.814
-NARRATOR: List the givens before choosing a
-method, because an unstated assumption can
+00:00:51.021 --> 00:00:53.156
+throughout the analysis.
 
 11
-00:00:51.814 --> 00:00:53.203
-change the conclusion.
+00:00:53.282 --> 00:01:00.342
+Now define Image Formation & Geometry
+precisely enough that another learner could
 
 12
-00:00:53.203 --> 00:00:58.718
-NARRATOR: This establishes the vocabulary and
-scope needed for the remaining sections.
+00:01:00.342 --> 00:01:02.107
+test the definition.
 
 13
-00:00:58.718 --> 00:01:05.876
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+00:01:02.107 --> 00:01:08.372
+Projective geometry relates three-dimensional
+points to image coordinates.
 
 14
-00:01:05.876 --> 00:01:07.828
-throughout the analysis.
+00:01:08.372 --> 00:01:15.300
+Consider this worked case: A camera lens maps
+a three-dimensional object's vertices to
 
 15
-00:01:07.946 --> 00:01:14.623
-NARRATOR: Now define Image Formation &
-Geometry precisely enough that another learner
+00:01:15.300 --> 00:01:22.228
+specific pixel locations using a projection
+matrix that accounts for focal length and
 
 16
-00:01:14.623 --> 00:01:16.849
-could test the definition.
+00:01:22.228 --> 00:01:23.294
+sensor position.
 
 17
-00:01:16.849 --> 00:01:22.896
-NARRATOR: Projective geometry relates
-three-dimensional points to image coordinates.
+00:01:23.294 --> 00:01:29.894
+Separate the formal definition from an
+implementation detail, then identify what
 
 18
-00:01:22.896 --> 00:01:28.967
-NARRATOR: Consider this worked case: A camera
-lens maps a three-dimensional object's
-
-19
-00:01:28.967 --> 00:01:35.543
-vertices to specific pixel locations using a
-projection matrix that accounts for focal
-
-20
-00:01:35.543 --> 00:01:37.567
-length and sensor position.
-
-21
-00:01:37.567 --> 00:01:44.798
-NARRATOR: On screen, show a diagram of a
-camera projecting 3D world points onto a 2D
-
-22
-00:01:44.798 --> 00:01:49.317
-image plane using perspective lines and a
-focal point marker.
-
-23
-00:01:49.317 --> 00:01:55.646
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
-
-24
-00:01:55.646 --> 00:01:57.755
+00:01:29.894 --> 00:01:32.294
 evidence would distinguish them.
 
+19
+00:01:32.294 --> 00:01:38.731
+A precise definition makes later examples
+easier to evaluate and revise.
+
+20
+00:01:38.834 --> 00:01:45.505
+With the foundation in place, examine how
+Appearance Modeling operates in a concrete
+
+21
+00:01:45.505 --> 00:01:46.018
+sequence.
+
+22
+00:01:46.018 --> 00:01:52.467
+Appearance models describe how lighting,
+material, and viewpoint affect measured
+
+23
+00:01:52.467 --> 00:01:53.112
+pixels.
+
+24
+00:01:53.112 --> 00:01:59.696
+Consider this worked case: A matte surface
+reflects ambient light uniformly, while a
+
 25
-00:01:57.755 --> 00:02:04.395
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
+00:01:59.696 --> 00:02:05.268
+glossy surface creates specular highlights
+that shift with the camera angle.
 
 26
-00:02:04.514 --> 00:02:11.133
-NARRATOR: With the foundation in place,
-examine how Appearance Modeling operates in a
+00:02:05.268 --> 00:02:12.721
+Follow every arrow in order and name the state
+before and after each transition.
 
 27
-00:02:11.133 --> 00:02:12.151
-concrete sequence.
+00:02:12.721 --> 00:02:18.315
+The trace converts an abstract statement into
+an inspectable sequence.
 
 28
-00:02:12.151 --> 00:02:18.323
-NARRATOR: Appearance models describe how
-lighting, material, and viewpoint affect
+00:02:18.434 --> 00:02:25.206
+Next, compare the choices involved in Motion
+Estimation and make the decision criteria
 
 29
-00:02:18.323 --> 00:02:19.557
-measured pixels.
+00:02:25.206 --> 00:02:25.727
+explicit.
 
 30
-00:02:19.557 --> 00:02:25.550
-NARRATOR: Consider this worked case: A matte
-surface reflects ambient light uniformly,
+00:02:25.727 --> 00:02:31.165
+Motion estimation compares observations across
+frames.
 
 31
-00:02:25.550 --> 00:02:32.042
-while a glossy surface creates specular
-highlights that shift with the camera angle.
+00:02:31.165 --> 00:02:39.873
+Consider this worked case: A video sequence of
+a moving car is analyzed by aligning
 
 32
-00:02:32.042 --> 00:02:39.327
-NARRATOR: On screen, display a split image
-showing the same object under two different
+00:02:39.873 --> 00:02:46.259
+corresponding pixels between frames to compute
+velocity vectors and path trajectories.
 
 33
-00:02:39.327 --> 00:02:44.010
-lighting conditions and camera angles,
-highlighting pixel value variations.
+00:02:46.259 --> 00:02:53.129
+Compare alternatives against the same
+constraints so the evaluation does not move
 
 34
-00:02:44.010 --> 00:02:51.292
-NARRATOR: Follow every arrow in order and name
-the state before and after each transition.
+00:02:53.129 --> 00:02:54.274
+the goalposts.
 
 35
-00:02:51.292 --> 00:02:57.010
-NARRATOR: The trace converts an abstract
-statement into an inspectable sequence.
+00:02:54.274 --> 00:03:01.243
+Using shared criteria turns a preference into
+a defensible technical choice.
 
 36
-00:02:57.122 --> 00:03:03.348
-NARRATOR: Next, compare the choices involved
-in Motion Estimation and make the decision
+00:03:01.243 --> 00:03:08.598
+Name each dependency explicitly, and keep
+labels and representations consistent
 
 37
-00:03:03.348 --> 00:03:04.306
-criteria explicit.
-
-38
-00:03:04.306 --> 00:03:09.697
-NARRATOR: Motion estimation compares
-observations across frames.
-
-39
-00:03:09.697 --> 00:03:17.787
-NARRATOR: Consider this worked case: A video
-sequence of a moving car is analyzed by
-
-40
-00:03:17.787 --> 00:03:23.720
-aligning corresponding pixels between frames
-to compute velocity vectors and path
-
-41
-00:03:23.720 --> 00:03:24.259
-trajectories.
-
-42
-00:03:24.259 --> 00:03:32.065
-NARRATOR: On screen, show a side-by-side frame
-comparison with overlaid displacement arrows
-
-43
-00:03:32.065 --> 00:03:36.618
-indicating pixel movement between consecutive
-video frames.
-
-44
-00:03:36.618 --> 00:03:43.268
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
-
-45
-00:03:43.268 --> 00:03:44.931
-move the goalposts.
-
-46
-00:03:44.931 --> 00:03:51.446
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
-
-47
-00:03:51.446 --> 00:03:58.628
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-48
-00:03:58.628 --> 00:04:00.587
+00:03:08.598 --> 00:03:10.805
 throughout the analysis.
 
+38
+00:03:10.922 --> 00:03:17.977
+Apply Object Recognition to a worked situation
+instead of treating it as an isolated
+
+39
+00:03:17.977 --> 00:03:18.481
+definition.
+
+40
+00:03:18.481 --> 00:03:24.684
+Object recognition maps visual evidence to
+object hypotheses.
+
+41
+00:03:24.684 --> 00:03:31.767
+Consider this worked case: A system identifies
+a traffic sign by comparing edge patterns and
+
+42
+00:03:31.767 --> 00:03:37.434
+color distributions in the image to a database
+of known sign templates.
+
+43
+00:03:37.434 --> 00:03:45.301
+Work from the concrete inputs to the result,
+checking units, types, or invariants at each
+
+44
+00:03:45.301 --> 00:03:45.825
+step.
+
+45
+00:03:45.825 --> 00:03:50.481
+The worked case shows both how to apply the
+method and how to check it.
+
+46
+00:03:50.594 --> 00:03:57.946
+Examine the tradeoffs in Scene Understanding,
+including what improves and what becomes more
+
+47
+00:03:57.946 --> 00:03:58.512
+difficult.
+
+48
+00:03:58.512 --> 00:04:05.122
+Scene understanding combines objects, layout,
+and contextual relationships.
+
 49
-00:04:00.698 --> 00:04:07.408
-NARRATOR: Apply Object Recognition to a worked
-situation instead of treating it as an
+00:04:05.122 --> 00:04:12.635
+Consider this worked case: A street scene is
+interpreted by recognizing a pedestrian, a
 
 50
-00:04:07.408 --> 00:04:08.366
-isolated definition.
+00:04:12.635 --> 00:04:19.611
+road, and a building, then assigning semantic
+relationships such as 'standing on' and
 
 51
-00:04:08.366 --> 00:04:14.554
-NARRATOR: Object recognition maps visual
-evidence to object hypotheses.
+00:04:19.611 --> 00:04:20.684
+'adjacent to'.
 
 52
-00:04:14.554 --> 00:04:20.991
-NARRATOR: Consider this worked case: A system
-identifies a traffic sign by comparing edge
+00:04:20.684 --> 00:04:27.872
+State the benefit, the cost, and the condition
+under which the tradeoff is acceptable.
 
 53
-00:04:20.991 --> 00:04:27.429
-patterns and color distributions in the image
-to a database of known sign templates.
+00:04:27.872 --> 00:04:34.950
+Making the tradeoff visible prevents a local
+improvement from hiding a larger cost.
 
 54
-00:04:27.429 --> 00:04:33.457
-NARRATOR: On screen, display a bounding box
-around a detected object with a confidence
+00:04:35.066 --> 00:04:42.119
+Stress-test the reasoning around Image
+Representation & Conversion with an edge case
 
 55
-00:04:33.457 --> 00:04:38.194
-score and a list of matched class hypotheses
-below the box.
+00:04:42.119 --> 00:04:46.234
+and identify which assumption controls the
+outcome.
 
 56
-00:04:38.194 --> 00:04:44.937
-NARRATOR: Work from the concrete inputs to the
-result, checking units, types, or invariants
+00:04:46.234 --> 00:04:51.859
+Computer vision pipelines represent images as
+numeric arrays.
 
 57
-00:04:44.937 --> 00:04:46.382
-at each step.
+00:04:51.859 --> 00:05:00.489
+Consider this worked case: A color image is
+converted from RGB to HSV space to isolate
 
 58
-00:04:46.382 --> 00:04:51.476
-NARRATOR: The worked case shows both how to
-apply the method and how to check it.
-
-59
-00:04:51.578 --> 00:04:57.374
-NARRATOR: Examine the tradeoffs in Scene
-Understanding, including what improves and
-
-60
-00:04:57.374 --> 00:04:59.481
-what becomes more difficult.
-
-61
-00:04:59.481 --> 00:05:06.231
-NARRATOR: Scene understanding combines
-objects, layout, and contextual relationships.
-
-62
-00:05:06.231 --> 00:05:13.144
-NARRATOR: Consider this worked case: A street
-scene is interpreted by recognizing a
-
-63
-00:05:13.144 --> 00:05:19.525
-pedestrian, a road, and a building, then
-assigning semantic relationships such as
-
-64
-00:05:19.525 --> 00:05:22.184
-'standing on' and 'adjacent to'.
-
-65
-00:05:22.184 --> 00:05:29.371
-NARRATOR: On screen, show a labeled scene
-graph with nodes representing objects and
-
-66
-00:05:29.371 --> 00:05:33.793
-edges indicating spatial and contextual
-relationships between them.
-
-67
-00:05:33.793 --> 00:05:40.064
-NARRATOR: State the benefit, the cost, and the
-condition under which the tradeoff is
-
-68
-00:05:40.064 --> 00:05:40.512
-acceptable.
-
-69
-00:05:40.512 --> 00:05:47.902
-NARRATOR: Making the tradeoff visible prevents
-a local improvement from hiding a larger cost.
-
-70
-00:05:48.026 --> 00:05:54.755
-NARRATOR: Stress-test the reasoning around
-Image Representation & Conversion with an edge
-
-71
-00:05:54.755 --> 00:05:59.241
-case and identify which assumption controls
-the outcome.
-
-72
-00:05:59.241 --> 00:06:05.069
-NARRATOR: Computer vision pipelines represent
-images as numeric arrays.
-
-73
-00:06:05.069 --> 00:06:13.425
-NARRATOR: Consider this worked case: A color
-image is converted from RGB to HSV space to
-
-74
-00:06:13.425 --> 00:06:18.647
-isolate luminance information from chromatic
+00:05:00.489 --> 00:05:05.344
+luminance information from chromatic
 variations for better edge detection.
 
-75
-00:06:18.647 --> 00:06:25.936
-NARRATOR: On screen, display a color bar
-showing the RGB to HSV conversion process,
+59
+00:05:05.344 --> 00:05:11.828
+Change one assumption at a time and observe
+which part of the reasoning no longer holds.
 
-76
-00:06:25.936 --> 00:06:31.663
-with a side-by-side comparison of the original
-and converted image channels.
+60
+00:05:11.828 --> 00:05:18.812
+The edge case reveals the boundary of the
+claim without discarding the useful core idea.
 
-77
-00:06:31.663 --> 00:06:37.590
-NARRATOR: Change one assumption at a time and
-observe which part of the reasoning no longer
+61
+00:05:18.914 --> 00:05:26.895
+Use Filtering & Feature Extraction to diagnose
+a failure by separating symptoms, causes, and
 
-78
-00:06:37.590 --> 00:06:37.960
-holds.
+62
+00:05:26.895 --> 00:05:28.035
+corrective action.
 
-79
-00:06:37.960 --> 00:06:44.222
-NARRATOR: The edge case reveals the boundary
-of the claim without discarding the useful
+63
+00:05:28.035 --> 00:05:35.457
+Filtering combines neighboring samples to
+smooth, sharpen, or detect structure.
 
-80
-00:06:44.222 --> 00:06:45.116
-core idea.
+64
+00:05:35.457 --> 00:05:43.560
+Consider this worked case: A Gaussian filter
+smooths a noisy image to reduce high-frequency
 
-81
-00:06:45.242 --> 00:06:52.743
-NARRATOR: Use Filtering & Feature Extraction
-to diagnose a failure by separating symptoms,
+65
+00:05:43.560 --> 00:05:49.348
+noise, and a SIFT detector extracts
+scale-invariant keypoints for matching.
 
-82
-00:06:52.743 --> 00:06:55.051
-causes, and corrective action.
+66
+00:05:49.348 --> 00:05:56.914
+Locate the first point where observed behavior
+diverges from expected behavior, then test the
 
-83
-00:06:55.051 --> 00:07:01.614
-NARRATOR: Filtering combines neighboring
-samples to smooth, sharpen, or detect
+67
+00:05:56.914 --> 00:05:58.535
+smallest plausible cause.
 
-84
-00:07:01.614 --> 00:07:02.270
-structure.
+68
+00:05:58.535 --> 00:06:06.395
+The diagnosis is strongest when another person
+can reproduce the observation and the test.
 
-85
-00:07:02.270 --> 00:07:09.363
-NARRATOR: Consider this worked case: A
-Gaussian filter smooths a noisy image to
+69
+00:06:06.506 --> 00:06:14.081
+Connect Segmentation & Shape Analysis to the
+earlier ideas and explain how the pieces work
 
-86
-00:07:09.363 --> 00:07:14.819
-reduce high-frequency noise, and a SIFT
-detector extracts scale-invariant keypoints
+70
+00:06:14.081 --> 00:06:15.596
+as one system.
 
-87
-00:07:14.819 --> 00:07:15.910
-for matching.
+71
+00:06:15.596 --> 00:06:21.893
+Segmentation assigns pixels or regions to
+selected categories.
 
-88
-00:07:15.910 --> 00:07:23.041
-NARRATOR: On screen, show a before-and-after
-image pair demonstrating noise reduction and a
+72
+00:06:21.893 --> 00:06:29.877
+Consider this worked case: A binary mask
+isolates a vehicle from a background, and
 
-89
-00:07:23.041 --> 00:07:26.332
-heatmap overlay highlighting detected feature
-keypoints.
-
-90
-00:07:26.332 --> 00:07:32.204
-NARRATOR: Locate the first point where
-observed behavior diverges from expected
-
-91
-00:07:32.204 --> 00:07:35.941
-behavior, then test the smallest plausible
-cause.
-
-92
-00:07:35.941 --> 00:07:42.367
-NARRATOR: The diagnosis is strongest when
-another person can reproduce the observation
-
-93
-00:07:42.367 --> 00:07:43.973
-and the test.
-
-94
-00:07:44.090 --> 00:07:50.203
-NARRATOR: Connect Segmentation & Shape
-Analysis to the earlier ideas and explain how
-
-95
-00:07:50.203 --> 00:07:53.024
-the pieces work as one system.
-
-96
-00:07:53.024 --> 00:07:59.055
-NARRATOR: Segmentation assigns pixels or
-regions to selected categories.
-
-97
-00:07:59.055 --> 00:08:06.859
-NARRATOR: Consider this worked case: A binary
-mask isolates a vehicle from a background, and
-
-98
-00:08:06.859 --> 00:08:13.102
+73
+00:06:29.877 --> 00:06:36.721
 contour approximation algorithms reduce the
 boundary to a polygon for further analysis.
 
-99
-00:08:13.102 --> 00:08:20.340
-NARRATOR: On screen, display a segmented image
-with color-coded regions and a simplified
+74
+00:06:36.721 --> 00:06:45.855
+Explain each connection explicitly and verify
+that information retains the same meaning
 
-100
-00:08:20.340 --> 00:08:23.680
-polygon overlay representing the object's
-shape.
+75
+00:06:45.855 --> 00:06:47.377
+across representations.
 
-101
-00:08:23.680 --> 00:08:32.655
-NARRATOR: Explain each connection explicitly
-and verify that information retains the same
+76
+00:06:47.377 --> 00:06:54.362
+The synthesis matters only if every connection
+remains supported by the original evidence.
 
-102
-00:08:32.655 --> 00:08:34.899
-meaning across representations.
+77
+00:06:54.482 --> 00:07:01.522
+Finish with Evaluation & Robustness as a
+practical checklist that can guide a new
 
-103
-00:08:34.899 --> 00:08:41.951
-NARRATOR: The synthesis matters only if every
-connection remains supported by the original
-
-104
-00:08:41.951 --> 00:08:42.493
-evidence.
-
-105
-00:08:42.602 --> 00:08:49.864
-NARRATOR: Finish with Evaluation & Robustness
-as a practical checklist that can guide a new
-
-106
-00:08:49.864 --> 00:08:50.348
+78
+00:07:01.522 --> 00:07:02.025
 analysis.
 
-107
-00:08:50.348 --> 00:08:57.124
-NARRATOR: Evaluation tests sensitivity to
-viewpoint, lighting, occlusion, and data
+79
+00:07:02.025 --> 00:07:09.557
+Evaluation tests sensitivity to viewpoint,
+lighting, occlusion, and data shift.
 
-108
-00:08:57.124 --> 00:08:57.802
-shift.
+80
+00:07:09.557 --> 00:07:17.021
+Consider this worked case: A detection model
+is tested across different camera angles and
 
-109
-00:08:57.802 --> 00:09:03.824
-NARRATOR: Consider this worked case: A
-detection model is tested across different
+81
+00:07:17.021 --> 00:07:22.353
+lighting levels to measure false positive
+rates and localization error.
 
-110
-00:09:03.824 --> 00:09:10.348
-camera angles and lighting levels to measure
-false positive rates and localization error.
+82
+00:07:22.353 --> 00:07:30.546
+For each checklist item, record the evidence,
+the remaining uncertainty, and the next
 
-111
-00:09:10.348 --> 00:09:17.537
-NARRATOR: On screen, show a confusion matrix
-and a heatmap of detection accuracy across
+83
+00:07:30.546 --> 00:07:31.806
+verification step.
 
-112
-00:09:17.537 --> 00:09:21.645
-different environmental conditions like
-lighting and occlusion levels.
+84
+00:07:31.806 --> 00:07:38.281
+The result is a repeatable procedure, not a
+conclusion that depends on memory or
 
-113
-00:09:21.645 --> 00:09:29.135
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
-
-114
-00:09:29.135 --> 00:09:30.864
-next verification step.
-
-115
-00:09:30.864 --> 00:09:36.729
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-116
-00:09:36.729 --> 00:09:38.083
-memory or intuition.
+85
+00:07:38.281 --> 00:07:38.744
+intuition.

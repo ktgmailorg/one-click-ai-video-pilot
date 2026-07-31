@@ -1,227 +1,167 @@
-NARRATOR: Begin by framing Lesson Title: Foundations of Cryptographic Systems as a
+Begin by framing Lesson Title: Foundations of Cryptographic Systems as a question about
 
-question about inputs, decisions, and observable results.
+inputs, decisions, and observable results.
 
-NARRATOR: The course also provides an introduction to data integrity and
+The course also provides an introduction to data integrity and authentication.
 
-authentication.
+Consider this worked case: AES encryption uses a symmetric key to transform plaintext into
 
-NARRATOR: Consider this worked case: AES encryption uses a symmetric key to transform
+ciphertext, ensuring only authorized parties can read the message.
 
-plaintext into ciphertext, ensuring only authorized parties can read the message.
+List the givens before choosing a method, because an unstated assumption can change the
 
-NARRATOR: On screen, display a side-by-side comparison of plaintext and ciphertext with a
+conclusion.
 
-symmetric key lock icon, labeled 'Confidentiality via AES'.
+This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
-
-change the conclusion.
-
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
-
-NARRATOR: Now define Lesson Title: Classical Cryptosystems Overview precisely enough that
+Now define Lesson Title: Classical Cryptosystems Overview precisely enough that
 
 another learner could test the definition.
 
-NARRATOR: It covers classical cryptosystems, private-key cryptosystems (including DES and
+It covers classical cryptosystems, private-key cryptosystems (including DES and AES), hashing
 
-AES), hashing and public-key cryptosystems (including RSA).
+and public-key cryptosystems (including RSA).
 
-NARRATOR: Consider this worked case: The Caesar cipher shifts each letter by a fixed
+Consider this worked case: The Caesar cipher shifts each letter by a fixed number,
 
-number, demonstrating how simple substitution can be broken with frequency analysis.
+demonstrating how simple substitution can be broken with frequency analysis.
 
-NARRATOR: On screen, show a Caesar cipher alphabet wheel with 'A' shifting to 'D',
-
-annotated with 'Substitution Vulnerability'.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Lesson Title: Private-Key
+With the foundation in place, examine how Lesson Title: Private-Key Cryptosystems
 
-Cryptosystems operates in a concrete sequence.
+operates in a concrete sequence.
 
-NARRATOR: Encryption supports confidentiality when keys and modes are used correctly.
+Encryption supports confidentiality when keys and modes are used correctly.
 
-NARRATOR: Consider this worked case: DES and AES require the same key for encrypting and
+Consider this worked case: DES and AES require the same key for encrypting and decrypting
 
-decrypting data, making them fast but dependent on secure key distribution.
+data, making them fast but dependent on secure key distribution.
 
-NARRATOR: On screen, illustrate a two-way arrow between 'Sender' and 'Receiver' with a
+Follow every arrow in order and name the state before and after each transition.
 
-single key symbol, labeled 'Symmetric Key Exchange'.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
-
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Next, compare the choices involved in Lesson Title: Public-Key Cryptosystems and
+Next, compare the choices involved in Lesson Title: Public-Key Cryptosystems and make the
 
-make the decision criteria explicit.
+decision criteria explicit.
 
-NARRATOR: The Secure Software Development Framework groups practices into four practice
+The Secure Software Development Framework groups practices into four practice groups.
 
-groups.
+Consider this worked case: RSA uses a public key for encryption and a private key for
 
-NARRATOR: Consider this worked case: RSA uses a public key for encryption and a private key
+decryption, solving the key distribution problem in symmetric systems.
 
-for decryption, solving the key distribution problem in symmetric systems.
+Compare alternatives against the same constraints so the evaluation does not move
 
-NARRATOR: On screen, draw a split key icon: 'Public Key' (open hand) and 'Private Key'
+the goalposts.
 
-(closed fist), labeled 'Asymmetric Key Pair'.
+Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+Apply Lesson Title: Hashing Functions to a worked situation instead of treating it as an
 
-move the goalposts.
+isolated definition.
 
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+Produce Well-Secured Software addresses security requirements, design, verification,
 
-NARRATOR: Apply Lesson Title: Hashing Functions to a worked situation instead of
+and release.
 
-treating it as an isolated definition.
+Consider this worked case: SHA-256 generates a unique 256-bit hash for a document, where
 
-NARRATOR: Produce Well-Secured Software addresses security requirements, design,
+altering any bit changes the entire output.
 
-verification, and release.
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-NARRATOR: Consider this worked case: SHA-256 generates a unique 256-bit hash for a
+step.
 
-document, where altering any bit changes the entire output.
+The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: On screen, show a document entering a hash function box, outputting a long hex
+Examine the tradeoffs in Lesson Title: Data Integrity and Authentication, including what
 
-string, labeled 'Integrity Check via SHA-256'.
+improves and what becomes more difficult.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+Message authentication and digital signatures address integrity and authenticity in
 
-at each step.
+different ways.
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+Consider this worked case: A digital signature uses the sender's private key to sign a
 
-NARRATOR: Examine the tradeoffs in Lesson Title: Data Integrity and Authentication,
+message, which the receiver verifies with the public key.
 
-including what improves and what becomes more difficult.
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-NARRATOR: Message authentication and digital signatures address integrity and authenticity
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-in different ways.
+Stress-test the reasoning around Lesson Title: Key Management Practices with an edge case and
 
-NARRATOR: Consider this worked case: A digital signature uses the sender's private key to
+identify which assumption controls the outcome.
 
-sign a message, which the receiver verifies with the public key.
-
-NARRATOR: On screen, display a document with a signature stamp and a verification checkmark,
-
-labeled 'Authenticity via Digital Signatures'.
-
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
-
-acceptable.
-
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
-
-NARRATOR: Stress-test the reasoning around Lesson Title: Key Management Practices with an
-
-edge case and identify which assumption controls the outcome.
-
-NARRATOR: Key management covers generation, distribution, storage, use, rotation,
+Key management covers generation, distribution, storage, use, rotation,
 
 revocation, and destruction.
 
-NARRATOR: Consider this worked case: Keys must be stored in hardware security modules and
+Consider this worked case: Keys must be stored in hardware security modules and rotated
 
-rotated regularly to limit exposure if compromised.
+regularly to limit exposure if compromised.
 
-NARRATOR: On screen, show a key lifecycle diagram: 'Generate' -> 'Store' -> 'Use' ->
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-'Rotate' -> 'Destroy', with lock icons at each stage.
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
-
-holds.
-
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
-
-core idea.
-
-NARRATOR: Use Lesson Title: Modes of Operation to diagnose a failure by separating symptoms,
+Use Lesson Title: Modes of Operation to diagnose a failure by separating symptoms,
 
 causes, and corrective action.
 
-NARRATOR: Modes of operation define how a primitive processes data larger than one
+Modes of operation define how a primitive processes data larger than one block.
 
-block.
+Consider this worked case: CBC mode uses a chaining value to link blocks, preventing
 
-NARRATOR: Consider this worked case: CBC mode uses a chaining value to link blocks,
+pattern repetition in encrypted output.
 
-preventing pattern repetition in encrypted output.
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-NARRATOR: On screen, illustrate a block cipher processing two blocks with a feedback loop,
+smallest plausible cause.
 
-labeled 'CBC Mode Chaining'.
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+Connect Lesson Title: Security Implementation & Validation to the earlier ideas and explain
 
-behavior, then test the smallest plausible cause.
+how the pieces work as one system.
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+Security depends on the complete protocol and implementation, not only an algorithm name.
 
-and the test.
+Consider this worked case: Timing attacks can exploit variable execution times in
 
-NARRATOR: Connect Lesson Title: Security Implementation & Validation to the earlier
+cryptographic libraries, requiring constant-time implementations for validation.
 
-ideas and explain how the pieces work as one system.
+Explain each connection explicitly and verify that information retains the same meaning
 
-NARRATOR: Security depends on the complete protocol and implementation, not only an
+across representations.
 
-algorithm name.
+The synthesis matters only if every connection remains supported by the original evidence.
 
-NARRATOR: Consider this worked case: Timing attacks can exploit variable execution times
+Finish with Lesson Title: Practical Analysis Checklist as a practical checklist that can
 
-in cryptographic libraries, requiring constant-time implementations for validation.
+guide a new analysis.
 
-NARRATOR: On screen, show a security checklist with items: 'Algorithm Validated',
+Cryptographic standards define approved algorithms and parameters.
 
-'Implementation Tested', 'Side-Channel Mitigated', labeled 'Validation Checklist'.
+Consider this worked case: A secure system uses AES for confidentiality, SHA-256 for
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+integrity, RSA for authentication, and follows NIST key management standards.
 
-meaning across representations.
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-NARRATOR: The synthesis matters only if every connection remains supported by the original
+verification step.
 
-evidence.
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-NARRATOR: Finish with Lesson Title: Practical Analysis Checklist as a practical checklist
-
-that can guide a new analysis.
-
-NARRATOR: Cryptographic standards define approved algorithms and parameters.
-
-NARRATOR: Consider this worked case: A secure system uses AES for confidentiality, SHA-256
-
-for integrity, RSA for authentication, and follows NIST key management standards.
-
-NARRATOR: On screen, display a practical analysis checklist with checkboxes:
-
-'Confidentiality Mechanism', 'Integrity Check', 'Authentication Method', 'Key
-
-Management', 'Implementation Validated'.
-
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

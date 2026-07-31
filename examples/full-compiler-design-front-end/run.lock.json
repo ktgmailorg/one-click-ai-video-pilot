@@ -1,7 +1,7 @@
 {
   "approvals": [
     {
-      "approvedAt": "2026-07-31T15:16:12.126Z",
+      "approvedAt": "2026-07-31T19:16:12.032Z",
       "notes": "Verifies declared source bindings for draft rendering; instructor and release approval remain required.",
       "reviewer": "Automated source-pack verification (draft)",
       "role": "automation",
@@ -699,7 +699,7 @@
     }
   ],
   "configSha256": "1af49df27e70fea11a58f3f18142de6c1ecbfd0b2e22279621ab8f9b08b809f0",
-  "createdAt": "2026-07-31T15:18:29.213Z",
+  "createdAt": "2026-07-31T19:18:55.445Z",
   "final": {
     "releaseAudit": {
       "blockers": [],
@@ -918,7 +918,7 @@
       "width": 1920
     }
   },
-  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
   "inputSha256": "ad0dcc9b55b3ca6ff77f529c65f11e2a438d6892eb5ff95d42db26e0b46b424d",
   "mode": "record",
   "providers": {
@@ -1480,73 +1480,6 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 24552,
-      "lookupSha256": "dda70cb670def93b05162b2301f7ccf8ecf7ae23d0287540c0f18b1ebd9a8551",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "After parsing, the compiler performs semantic checks to verify that the program adheres to language rules beyond syntax. These checks include type validation, scope resolution, and symbol table lookups. For instance, the compiler verifies that the identifier 'x' is declared and assigned a compatible type before allowing arithmetic operations. Symbol information tracks variable names, their types, and scopes, enabling precise error reporting. If a type mismatch occurs, the compiler flags the issue immediately, preventing invalid operations from propagating. Semantic analysis ensures that the program's meaning is consistent and well-formed. By validating types and scopes early, the compiler reduces downstream errors and improves optimization opportunities. This stage bridges the gap between syntactic structure and runtime behavior."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "95fc0e34f554543ad06799046d669bb401c92090798458cf92da8c956552475f",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/db/db64c49c48e7ff9634aa0dd888f30c93f790d4b2c778d715c080e215de92f486.mp3",
-            "sha256": "db64c49c48e7ff9634aa0dd888f30c93f790d4b2c778d715c080e215de92f486",
-            "size": 341136
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/63/63dd7aea03c878186935858c10f8d53e16bc764d2976d2af9fc19afc0bf89ada.vtt",
-            "sha256": "63dd7aea03c878186935858c10f8d53e16bc764d2976d2af9fc19afc0bf89ada",
-            "size": 1106
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:27:59.702Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
       "durationMs": 28433,
       "lookupSha256": "b8d4d89cc358c848219b402946602507e457da08bc3fd998653ee661d2022f9e",
       "model": "edge-tts-7.2.8",
@@ -1610,140 +1543,6 @@
       "roleName": "narration",
       "schemaVersion": 1,
       "startedAt": "2026-07-30T04:27:34.278Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 31547,
-      "lookupSha256": "50b915304e5bc00386ad1ea67e6d9f3aed15613fd080bdfd87d45f94796ec99d",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "LLVM IR is a typed, low-level intermediate representation organized into modules, functions, basic blocks, and instructions. This structure provides a clear hierarchy for program analysis and optimization. Modules contain functions, which are divided into basic blocks that represent straight-line code sequences. Each instruction operates on typed values, ensuring type safety throughout the program. The IR's explicit control flow through terminators and basic-block edges allows the compiler to analyze execution paths systematically. Values are defined exactly once using static single assignment form, which simplifies data flow analysis. This design eliminates ambiguity in variable usage, enabling precise optimization passes. The IR's structure makes it possible to apply target-independent transformations while preserving program semantics."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "6214aa094000ffa580998f2b0e29c26e4523c9f45ff668979f961806f213289a",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ce/ce9ce6de46df9ccebfecaeedcf2e4b0395e21eef2bc3e351875d66b7886d7f3f.mp3",
-            "sha256": "ce9ce6de46df9ccebfecaeedcf2e4b0395e21eef2bc3e351875d66b7886d7f3f",
-            "size": 358128
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/dd/dd1ddd681ff019ace3a6be5519e549c50bf45dcef32bcf98a9a5ba5d8d053af5.vtt",
-            "sha256": "dd1ddd681ff019ace3a6be5519e549c50bf45dcef32bcf98a9a5ba5d8d053af5",
-            "size": 1115
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:28:14.506Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 28290,
-      "lookupSha256": "4499df1e82f80c7fb78b9bf3b366ab6d4d1e210b8c509496fb8764069664a383",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "Once semantic validation passes, the compiler lowers the validated AST nodes into LLVM intermediate representation. This transformation converts high-level language constructs into a standardized, target-independent format. The lowering process maps AST nodes to specific IR instructions, ensuring that each operation corresponds to a valid machine operation. For example, the binary expression node becomes an addition instruction in the IR. This step abstracts away language-specific syntax, enabling uniform optimization and code generation across different architectures. The intermediate representation serves as a stable boundary between front-end analysis and back-end code generation. By standardizing the program structure, the compiler can apply target-independent optimizations safely. Lowering also ensures that all language features are reflected consistently across the pipeline."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "55ca86d4b39a198b73cc91939fc743404f3349d2710845a7c5e5c58c5e5fa2df",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/53/5310754822f0b002f5d7ce1cda9ca2c70edf19dfff5eeb6c79f8d050c9176c4f.mp3",
-            "sha256": "5310754822f0b002f5d7ce1cda9ca2c70edf19dfff5eeb6c79f8d050c9176c4f",
-            "size": 359136
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/f9/f9cb612b975034212357158b97e186c285e25b1cd539bc87285342e0e6bc64da.vtt",
-            "sha256": "f9cb612b975034212357158b97e186c285e25b1cd539bc87285342e0e6bc64da",
-            "size": 1158
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:28:02.733Z"
     },
     {
       "cacheHit": true,
@@ -1815,8 +1614,8 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 40205,
-      "lookupSha256": "c1258a65a1600f0e0d665ec1c1e5715a3f42f24b45eca6fc0939cf0dfa95ff99",
+      "durationMs": 30785,
+      "lookupSha256": "66ac7acab537e3b9a54313bca63c898e914f725b8318fdee3c1b8567fe42e5c8",
       "model": "edge-tts-7.2.8",
       "profileName": "edge-narration",
       "request": {
@@ -1834,30 +1633,30 @@
         },
         "input": {
           "instructions": "Clear, direct, and conversational.",
-          "text": "The abstract syntax tree captures the program's logical structure without retaining syntactic details like parentheses or whitespace. Each node represents a specific language construct, such as an expression, function prototype, or variable definition. For our example, the tree contains a binary expression node with two child nodes representing the left and right operands. This hierarchical organization enables efficient traversal and analysis. The AST serves as a stable intermediate representation that separates language semantics from implementation details. By standardizing program structure, the AST allows compilers to apply uniform transformations across different language features. Developers can inspect the tree to verify that the parser correctly interpreted the source code. The tree's structure directly influences how subsequent stages validate types and generate code. Maint"
+          "text": "Code generation translates the verified intermediate representation into target-specific machine code. This process maps IR instructions to assembly or binary instructions, handling register allocation, instruction selection, and scheduling. The compiler ensures that the generated code respects the target architecture's constraints while preserving the program's semantics. Optimization boundaries define where target-independent transformations end and target-specific code generation begins. This separation allows the compiler to apply universal optimizations before committing to a specific architecture. The generated code is then linked and executed, completing the compilation pipeline. By maintaining a clear division between optimization and code generation, the compiler ensures that transformations are both safe and efficient. This stage bridges the gap between abstract program logic,"
         },
         "model": "edge-tts-7.2.8",
         "parameters": {},
         "schemaVersion": 1
       },
-      "requestSha256": "d6eec86a431e9655fb176d36af1b7be7021fe926fd0bf33ded86d4dad8259fe6",
+      "requestSha256": "9dd40a1e4f5df2128018a4f99b261e3310cd383999c3e72cff229a7c40ca1a44",
       "result": {
         "artifacts": [
           {
             "extension": ".mp3",
             "filename": "speech.mp3",
             "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/e8/e8d22b3d25ba62ec40786d19a0b66386c1150c479dfa4ed94d1fe8c101785dce.mp3",
-            "sha256": "e8d22b3d25ba62ec40786d19a0b66386c1150c479dfa4ed94d1fe8c101785dce",
-            "size": 371088
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/94/94e2b8111d7642a06929684e5e635171bc8c68b4fcfb58272965e58622eb70a5.mp3",
+            "sha256": "94e2b8111d7642a06929684e5e635171bc8c68b4fcfb58272965e58622eb70a5",
+            "size": 357840
           },
           {
             "extension": ".vtt",
             "filename": "speech.vtt",
             "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/1f/1f27395b867820df2235676ba6df05f343bd7d0bc97145942b12b5245c0cbd69.vtt",
-            "sha256": "1f27395b867820df2235676ba6df05f343bd7d0bc97145942b12b5245c0cbd69",
-            "size": 1194
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/3c/3c391b96fcca85899f1b3f3fa3bb40262595d9746ead7f439bac9eebb886f4b5.vtt",
+            "sha256": "3c391b96fcca85899f1b3f3fa3bb40262595d9746ead7f439bac9eebb886f4b5",
+            "size": 1164
           }
         ],
         "costUsd": null,
@@ -1877,7 +1676,74 @@
       },
       "roleName": "narration",
       "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:27:34.279Z"
+      "startedAt": "2026-07-30T04:28:31.044Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 28290,
+      "lookupSha256": "4499df1e82f80c7fb78b9bf3b366ab6d4d1e210b8c509496fb8764069664a383",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "Once semantic validation passes, the compiler lowers the validated AST nodes into LLVM intermediate representation. This transformation converts high-level language constructs into a standardized, target-independent format. The lowering process maps AST nodes to specific IR instructions, ensuring that each operation corresponds to a valid machine operation. For example, the binary expression node becomes an addition instruction in the IR. This step abstracts away language-specific syntax, enabling uniform optimization and code generation across different architectures. The intermediate representation serves as a stable boundary between front-end analysis and back-end code generation. By standardizing the program structure, the compiler can apply target-independent optimizations safely. Lowering also ensures that all language features are reflected consistently across the pipeline."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "55ca86d4b39a198b73cc91939fc743404f3349d2710845a7c5e5c58c5e5fa2df",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/53/5310754822f0b002f5d7ce1cda9ca2c70edf19dfff5eeb6c79f8d050c9176c4f.mp3",
+            "sha256": "5310754822f0b002f5d7ce1cda9ca2c70edf19dfff5eeb6c79f8d050c9176c4f",
+            "size": 359136
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/f9/f9cb612b975034212357158b97e186c285e25b1cd539bc87285342e0e6bc64da.vtt",
+            "sha256": "f9cb612b975034212357158b97e186c285e25b1cd539bc87285342e0e6bc64da",
+            "size": 1158
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T04:28:02.733Z"
     },
     {
       "cacheHit": true,
@@ -1949,8 +1815,8 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 30785,
-      "lookupSha256": "66ac7acab537e3b9a54313bca63c898e914f725b8318fdee3c1b8567fe42e5c8",
+      "durationMs": 40205,
+      "lookupSha256": "c1258a65a1600f0e0d665ec1c1e5715a3f42f24b45eca6fc0939cf0dfa95ff99",
       "model": "edge-tts-7.2.8",
       "profileName": "edge-narration",
       "request": {
@@ -1968,30 +1834,30 @@
         },
         "input": {
           "instructions": "Clear, direct, and conversational.",
-          "text": "Code generation translates the verified intermediate representation into target-specific machine code. This process maps IR instructions to assembly or binary instructions, handling register allocation, instruction selection, and scheduling. The compiler ensures that the generated code respects the target architecture's constraints while preserving the program's semantics. Optimization boundaries define where target-independent transformations end and target-specific code generation begins. This separation allows the compiler to apply universal optimizations before committing to a specific architecture. The generated code is then linked and executed, completing the compilation pipeline. By maintaining a clear division between optimization and code generation, the compiler ensures that transformations are both safe and efficient. This stage bridges the gap between abstract program logic,"
+          "text": "The abstract syntax tree captures the program's logical structure without retaining syntactic details like parentheses or whitespace. Each node represents a specific language construct, such as an expression, function prototype, or variable definition. For our example, the tree contains a binary expression node with two child nodes representing the left and right operands. This hierarchical organization enables efficient traversal and analysis. The AST serves as a stable intermediate representation that separates language semantics from implementation details. By standardizing program structure, the AST allows compilers to apply uniform transformations across different language features. Developers can inspect the tree to verify that the parser correctly interpreted the source code. The tree's structure directly influences how subsequent stages validate types and generate code. Maint"
         },
         "model": "edge-tts-7.2.8",
         "parameters": {},
         "schemaVersion": 1
       },
-      "requestSha256": "9dd40a1e4f5df2128018a4f99b261e3310cd383999c3e72cff229a7c40ca1a44",
+      "requestSha256": "d6eec86a431e9655fb176d36af1b7be7021fe926fd0bf33ded86d4dad8259fe6",
       "result": {
         "artifacts": [
           {
             "extension": ".mp3",
             "filename": "speech.mp3",
             "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/94/94e2b8111d7642a06929684e5e635171bc8c68b4fcfb58272965e58622eb70a5.mp3",
-            "sha256": "94e2b8111d7642a06929684e5e635171bc8c68b4fcfb58272965e58622eb70a5",
-            "size": 357840
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/e8/e8d22b3d25ba62ec40786d19a0b66386c1150c479dfa4ed94d1fe8c101785dce.mp3",
+            "sha256": "e8d22b3d25ba62ec40786d19a0b66386c1150c479dfa4ed94d1fe8c101785dce",
+            "size": 371088
           },
           {
             "extension": ".vtt",
             "filename": "speech.vtt",
             "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/3c/3c391b96fcca85899f1b3f3fa3bb40262595d9746ead7f439bac9eebb886f4b5.vtt",
-            "sha256": "3c391b96fcca85899f1b3f3fa3bb40262595d9746ead7f439bac9eebb886f4b5",
-            "size": 1164
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/1f/1f27395b867820df2235676ba6df05f343bd7d0bc97145942b12b5245c0cbd69.vtt",
+            "sha256": "1f27395b867820df2235676ba6df05f343bd7d0bc97145942b12b5245c0cbd69",
+            "size": 1194
           }
         ],
         "costUsd": null,
@@ -2011,7 +1877,141 @@
       },
       "roleName": "narration",
       "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:28:31.044Z"
+      "startedAt": "2026-07-30T04:27:34.279Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 24552,
+      "lookupSha256": "dda70cb670def93b05162b2301f7ccf8ecf7ae23d0287540c0f18b1ebd9a8551",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "After parsing, the compiler performs semantic checks to verify that the program adheres to language rules beyond syntax. These checks include type validation, scope resolution, and symbol table lookups. For instance, the compiler verifies that the identifier 'x' is declared and assigned a compatible type before allowing arithmetic operations. Symbol information tracks variable names, their types, and scopes, enabling precise error reporting. If a type mismatch occurs, the compiler flags the issue immediately, preventing invalid operations from propagating. Semantic analysis ensures that the program's meaning is consistent and well-formed. By validating types and scopes early, the compiler reduces downstream errors and improves optimization opportunities. This stage bridges the gap between syntactic structure and runtime behavior."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "95fc0e34f554543ad06799046d669bb401c92090798458cf92da8c956552475f",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/db/db64c49c48e7ff9634aa0dd888f30c93f790d4b2c778d715c080e215de92f486.mp3",
+            "sha256": "db64c49c48e7ff9634aa0dd888f30c93f790d4b2c778d715c080e215de92f486",
+            "size": 341136
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/63/63dd7aea03c878186935858c10f8d53e16bc764d2976d2af9fc19afc0bf89ada.vtt",
+            "sha256": "63dd7aea03c878186935858c10f8d53e16bc764d2976d2af9fc19afc0bf89ada",
+            "size": 1106
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T04:27:59.702Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 31547,
+      "lookupSha256": "50b915304e5bc00386ad1ea67e6d9f3aed15613fd080bdfd87d45f94796ec99d",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "LLVM IR is a typed, low-level intermediate representation organized into modules, functions, basic blocks, and instructions. This structure provides a clear hierarchy for program analysis and optimization. Modules contain functions, which are divided into basic blocks that represent straight-line code sequences. Each instruction operates on typed values, ensuring type safety throughout the program. The IR's explicit control flow through terminators and basic-block edges allows the compiler to analyze execution paths systematically. Values are defined exactly once using static single assignment form, which simplifies data flow analysis. This design eliminates ambiguity in variable usage, enabling precise optimization passes. The IR's structure makes it possible to apply target-independent transformations while preserving program semantics."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "6214aa094000ffa580998f2b0e29c26e4523c9f45ff668979f961806f213289a",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ce/ce9ce6de46df9ccebfecaeedcf2e4b0395e21eef2bc3e351875d66b7886d7f3f.mp3",
+            "sha256": "ce9ce6de46df9ccebfecaeedcf2e4b0395e21eef2bc3e351875d66b7886d7f3f",
+            "size": 358128
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/dd/dd1ddd681ff019ace3a6be5519e549c50bf45dcef32bcf98a9a5ba5d8d053af5.vtt",
+            "sha256": "dd1ddd681ff019ace3a6be5519e549c50bf45dcef32bcf98a9a5ba5d8d053af5",
+            "size": 1115
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T04:28:14.506Z"
     },
     {
       "cacheHit": true,
@@ -2186,8 +2186,27 @@
   ],
   "status": "awaiting-approval",
   "toolchain": {
+    "ffmpeg": {
+      "available": true,
+      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "available": true,
+      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "gitChangedPaths": [
+      "outreach/README.md",
+      "outreach/general-email.md",
+      "outreach/leadership-confirmation.md",
+      "outreach/subject-showcase/reference-manifest.json"
+    ],
+    "gitDirty": true,
+    "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
+    "gitStatusSha256": "add6a4c631c3d463fa2b7e37fa6a50bfab3e6fce98296cf041f8a8d165d4cda8",
     "node": "v22.23.1",
     "platform": "darwin-arm64",
+    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtimeDirty": false,
     "sharp": {
       "aom": "3.14.1",
       "archive": "3.8.8",
@@ -2211,32 +2230,14 @@
       "png": "1.6.58",
       "proxy-libintl": "0.5",
       "rsvg": "2.62.90",
+      "sharp": "0.35.3",
       "tiff": "d01a94b",
       "uhdr": "1acdbed",
       "vips": "8.18.3",
       "webp": "1.6.0",
       "xml2": "2.15.3",
-      "zlib-ng": "2.3.3",
-      "sharp": "0.35.3"
-    },
-    "ffmpeg": {
-      "available": true,
-      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
-    },
-    "ffprobe": {
-      "available": true,
-      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
-    },
-    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
-    "gitDirty": true,
-    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
-    "gitChangedPaths": [
-      "outreach/README.md",
-      "outreach/general-email.md",
-      "outreach/leadership-confirmation.md"
-    ],
-    "runtimeDirty": false,
-    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "zlib-ng": "2.3.3"
+    }
   },
   "totalCostUsd": 0
 }

@@ -9,23 +9,22 @@
     "truePeakDbtp": -1.51
   },
   "audioSampleRate": 48000,
-  "audioStartSeconds": 0,
+  "audioStartSeconds": 0.024,
   "cache": {
-    "draft": false,
+    "draft": true,
     "draftSkipped": false,
-    "master": false,
+    "master": true,
     "sectionCount": 3,
-    "sections": 0
+    "sections": 3
   },
   "draftPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/liberal-arts-primary-sources/work/render/documentary-master.DRAFT.mp4",
   "durationSeconds": 58.821333,
   "encoder": {
-    "codec": "h264_videotoolbox",
-    "mode": "videotoolbox",
-    "prioritizeSpeed": false,
-    "profile": "high",
-    "quality": "80",
-    "realtime": true
+    "codec": "libx264",
+    "crf": "20",
+    "mode": "software",
+    "preset": "veryfast",
+    "threads": "1"
   },
   "frameRate": "30000/1001",
   "height": 1080,
@@ -35,36 +34,36 @@
   "sections": [
     {
       "beatId": "beat-01",
-      "cacheHit": false,
+      "cacheHit": true,
       "durationSeconds": 19.944,
       "output": "beat-01.mp4",
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/liberal-arts-primary-sources/work/render/sections/beat-01.mp4",
-      "renderSignature": "f3323b580a222334b5b35fe5a368bd86d7a50464dd6a33e2e50f710e76219d18",
+      "renderSignature": "bc3902832f1d900f3fd049280c25b9c28d17e2ceaf36924ff1b2b18521022a30",
       "schemaVersion": 1,
-      "sha256": "e0f4bb3c76cd3b98d9be52dba6a3adffaf37929b65cb103a0e1ffd294f41028a"
+      "sha256": "87f8c01dda2d2b192025084d39506f7216c95ff1694f713b1b169d0387622caa"
     },
     {
       "beatId": "beat-02",
-      "cacheHit": false,
+      "cacheHit": true,
       "durationSeconds": 17.256,
       "output": "beat-02.mp4",
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/liberal-arts-primary-sources/work/render/sections/beat-02.mp4",
-      "renderSignature": "5da3536476fc160a3c8d5f943acff25ca72f954e9ca9f6f3b7db2b249b2dd300",
+      "renderSignature": "44f1b450c4fddfeef78bd57cb6b0a4345796ef96b1757296bf6566cd6e38f7fe",
       "schemaVersion": 1,
-      "sha256": "17fce6f57c0472f0c674b106fc670c849e34154011d18abed4d7552c7b0928c3"
+      "sha256": "b9ee181289232ef3df88848db838dc1b674a27b3df21c03e1ced9f45e990e5f1"
     },
     {
       "beatId": "beat-03",
-      "cacheHit": false,
+      "cacheHit": true,
       "durationSeconds": 21.528,
       "output": "beat-03.mp4",
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/liberal-arts-primary-sources/work/render/sections/beat-03.mp4",
-      "renderSignature": "62c51b7f39899c505f20d046013b25f23f6bfef89a10f5998b4a9d8705a465a4",
+      "renderSignature": "e2382da7e2225bacb66ebd5e082deeb791b24286ce6fc3faa023e96cb4265c9e",
       "schemaVersion": 1,
-      "sha256": "c4b57716b42d7f04302b901735e4892d6f15fed86382ef6d64a62e7e78759ed9"
+      "sha256": "08df104a2e0679dd092c6576945d44db031a714c1035d95566802ddcc304f957"
     }
   ],
-  "sha256": "f79bc9ad5c8fc89c1d8dc2d96a94c5aee553eca35051928fef02e187184cc84d",
+  "sha256": "4b99397137b78e2f180e13fb293be045639f0d7568f245f23e822fa44708163d",
   "title": "How to Evaluate a Historical Primary Source",
   "width": 1920
 }

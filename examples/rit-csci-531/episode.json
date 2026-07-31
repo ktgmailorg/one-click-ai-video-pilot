@@ -13,7 +13,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Course Foundations and Prerequisites as a question about inputs, decisions, and observable results. The course will introduce students into the algorithmic foundations and modern methods used for security evaluation and tools design. Consider this worked case: Students must verify they have completed CSCI-351 or the combined 4003-420 and 4003-440 sequence before enrolling. On screen, display a prerequisite flowchart showing CSCI-351 or the 4003-420/4003-440 path leading to CSCI-531 enrollment. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "narration": "Begin by framing Course Foundations and Prerequisites as a question about inputs, decisions, and observable results. The course will introduce students into the algorithmic foundations and modern methods used for security evaluation and tools design. Consider this worked case: Students must verify they have completed CSCI-351 or the combined 4003-420 and 4003-440 sequence before enrolling. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
       "plannedSeconds": 55,
       "title": "Course Foundations and Prerequisites",
       "visualDirection": "template:academic-process | Display a prerequisite flowchart showing CSCI-351 or the 4003-420/4003-440 path leading to CSCI-531 enrollment."
@@ -31,7 +31,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Secure Software Development Framework Overview precisely enough that another learner could test the definition. The Secure Software Development Framework groups practices into four practice groups. Consider this worked case: Prepare the Organization establishes people, processes, and technology for secure development, while Protect the Software prevents unauthorized access to code. On screen, show a four-quadrant diagram labeling each practice group with its core function. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Now define Secure Software Development Framework Overview precisely enough that another learner could test the definition. The Secure Software Development Framework groups practices into four practice groups. Consider this worked case: Prepare the Organization establishes people, processes, and technology for secure development, while Protect the Software prevents unauthorized access to code. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 57,
       "title": "Secure Software Development Framework Overview",
       "visualDirection": "template:academic-process | Show a four-quadrant diagram labeling each practice group with its core function."
@@ -49,7 +49,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Prepare the Organization Practice operates in a concrete sequence. Prepare the Organization establishes people, processes, and technology for secure development. Consider this worked case: A team creates a secure development policy and assigns security roles before writing code begins. On screen, illustrate a checklist of people, processes, and technology setup with icons for each category. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "With the foundation in place, examine how Prepare the Organization Practice operates in a concrete sequence. Prepare the Organization establishes people, processes, and technology for secure development. Consider this worked case: A team creates a secure development policy and assigns security roles before writing code begins. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
       "title": "Prepare the Organization Practice",
       "visualDirection": "template:academic-process | Illustrate a checklist of people, processes, and technology setup with icons for each category."
@@ -67,7 +67,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Protect the Software Practice and make the decision criteria explicit. Protect the Software prevents unauthorized access to code and development artifacts. Consider this worked case: Source code repositories use role-based access control to restrict who can view or modify specific modules. On screen, draw a locked vault icon over a code repository with access control badges indicating restricted permissions. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Next, compare the choices involved in Protect the Software Practice and make the decision criteria explicit. Protect the Software prevents unauthorized access to code and development artifacts. Consider this worked case: Source code repositories use role-based access control to restrict who can view or modify specific modules. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 56,
       "title": "Protect the Software Practice",
       "visualDirection": "template:academic-process | Draw a locked vault icon over a code repository with access control badges indicating restricted permissions."
@@ -85,7 +85,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Produce Well-Secured Software Practice to a worked situation instead of treating it as an isolated definition. Produce Well-Secured Software addresses security requirements, design, verification, and release. Consider this worked case: Developers complete a security requirements document and run automated verification tests before deploying the software. On screen, display a pipeline diagram showing requirements, design, verification, and release stages with checkmarks. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Apply Produce Well-Secured Software Practice to a worked situation instead of treating it as an isolated definition. Produce Well-Secured Software addresses security requirements, design, verification, and release. Consider this worked case: Developers complete a security requirements document and run automated verification tests before deploying the software. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 57,
       "title": "Produce Well-Secured Software Practice",
       "visualDirection": "template:academic-process | Display a pipeline diagram showing requirements, design, verification, and release stages with checkmarks."
@@ -103,7 +103,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Respond to Vulnerabilities Practice, including what improves and what becomes more difficult. Respond to Vulnerabilities identifies, analyzes, remediates, and learns from discovered weaknesses. Consider this worked case: A security audit finds a buffer overflow, which is patched, and the team updates their threat model based on the lesson learned. On screen, show a circular feedback loop with arrows labeled identify, analyze, remediate, and learn. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "narration": "Examine the tradeoffs in Respond to Vulnerabilities Practice, including what improves and what becomes more difficult. Respond to Vulnerabilities identifies, analyzes, remediates, and learns from discovered weaknesses. Consider this worked case: A security audit finds a buffer overflow, which is patched, and the team updates their threat model based on the lesson learned. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
       "plannedSeconds": 55,
       "title": "Respond to Vulnerabilities Practice",
       "visualDirection": "template:academic-process | Show a circular feedback loop with arrows labeled identify, analyze, remediate, and learn."
@@ -121,7 +121,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Security Reasoning Process with an edge case and identify which assumption controls the outcome. Security reasoning identifies assets, trust boundaries, threats, controls, evidence, residual risk, and responsibilities. Consider this worked case: An analyst maps a web application's database as an asset, defines the browser as a trust boundary, and lists SQL injection as a threat. On screen, create a flowchart connecting assets to trust boundaries, then to threats, controls, and residual risk calculations. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "narration": "Stress-test the reasoning around Security Reasoning Process with an edge case and identify which assumption controls the outcome. Security reasoning identifies assets, trust boundaries, threats, controls, evidence, residual risk, and responsibilities. Consider this worked case: An analyst maps a web application's database as an asset, defines the browser as a trust boundary, and lists SQL injection as a threat. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
       "plannedSeconds": 59,
       "title": "Security Reasoning Process",
       "visualDirection": "template:academic-process | Create a flowchart connecting assets to trust boundaries, then to threats, controls, and residual risk calculations."
@@ -139,7 +139,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Cryptographic Standards and Algorithms to diagnose a failure by separating symptoms, causes, and corrective action. Encryption supports confidentiality when keys and modes are used correctly. Consider this worked case: AES-256 is an approved algorithm that provides confidentiality for data at rest when implemented with proper key management. On screen, list approved algorithms like AES and RSA with their corresponding security parameters and use cases. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "narration": "Use Cryptographic Standards and Algorithms to diagnose a failure by separating symptoms, causes, and corrective action. Encryption supports confidentiality when keys and modes are used correctly. Consider this worked case: AES-256 is an approved algorithm that provides confidentiality for data at rest when implemented with proper key management. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
       "plannedSeconds": 55,
       "title": "Cryptographic Standards and Algorithms",
       "visualDirection": "template:academic-process | List approved algorithms like AES and RSA with their corresponding security parameters and use cases."
@@ -157,7 +157,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Modes of Operation and Key Management to the earlier ideas and explain how the pieces work as one system. Modes of operation define how a primitive processes data larger than one block. Consider this worked case: CBC mode processes multi-block data by chaining ciphertext blocks, and key management ensures keys are rotated regularly to limit exposure. On screen, illustrate a block cipher processing multiple data blocks sequentially, alongside a key lifecycle diagram showing rotation and revocation steps. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "narration": "Connect Modes of Operation and Key Management to the earlier ideas and explain how the pieces work as one system. Modes of operation define how a primitive processes data larger than one block. Consider this worked case: CBC mode processes multi-block data by chaining ciphertext blocks, and key management ensures keys are rotated regularly to limit exposure. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
       "plannedSeconds": 57,
       "title": "Modes of Operation and Key Management",
       "visualDirection": "template:academic-process | Illustrate a block cipher processing multiple data blocks sequentially, alongside a key lifecycle diagram showing rotation and revocation steps."
@@ -175,7 +175,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Security Evaluation and Practical Application as a practical checklist that can guide a new analysis. Security depends on the complete protocol and implementation, not only an algorithm name. Consider this worked case: A system using a standard encryption algorithm fails security evaluation because the implementation has a side-channel vulnerability. On screen, show a comparison chart between algorithm name vs. implementation security, highlighting side-channel risks and validation checkpoints. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "narration": "Finish with Security Evaluation and Practical Application as a practical checklist that can guide a new analysis. Security depends on the complete protocol and implementation, not only an algorithm name. Consider this worked case: A system using a standard encryption algorithm fails security evaluation because the implementation has a side-channel vulnerability. implementation security, highlighting side-channel risks and validation checkpoints. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
       "plannedSeconds": 55,
       "title": "Security Evaluation and Practical Application",
       "visualDirection": "template:academic-process | Show a comparison chart between algorithm name vs. implementation security, highlighting side-channel risks and validation checkpoints."

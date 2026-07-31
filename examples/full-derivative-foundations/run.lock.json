@@ -1,7 +1,7 @@
 {
   "approvals": [
     {
-      "approvedAt": "2026-07-31T15:43:55.606Z",
+      "approvedAt": "2026-07-31T19:19:20.571Z",
       "notes": "Verifies declared source bindings for draft rendering; instructor and release approval remain required.",
       "reviewer": "Automated source-pack verification (draft)",
       "role": "automation",
@@ -708,7 +708,7 @@
     }
   ],
   "configSha256": "5838c83d81ca10e3962d36c1d28971c258a49f6538735a16a712864f18a07737",
-  "createdAt": "2026-07-31T15:46:45.185Z",
+  "createdAt": "2026-07-31T19:21:58.605Z",
   "final": {
     "releaseAudit": {
       "blockers": [],
@@ -947,7 +947,7 @@
       "width": 1920
     }
   },
-  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
   "inputSha256": "7aab8c3469b58d98ce1155bb66b451ca4ed742ebaba041f4b0fc8fbb7b62d666",
   "mode": "record",
   "providers": {
@@ -1042,6 +1042,73 @@
       "roleName": "narration",
       "schemaVersion": 1,
       "startedAt": "2026-07-29T23:59:11.071Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 28648,
+      "lookupSha256": "1186c85f8f71f668806c737d303cdd05028da16085f1d3353b11ada51b61de3d",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Connect the algebraic quotient to both the secant line and average velocity.",
+          "text": "Choose an input a and a second input a plus h. The change in input is h. The corresponding change in output is f of a plus h minus f of a. Dividing output change by input change gives the difference quotient. Geometrically, it is the slope of the secant line through the two points. In an application, it is an average rate across the interval. If position changes by one hundred meters over five seconds, the average velocity is twenty meters per second, even if the object moved faster or slower within those five seconds. Average change summarizes an interval. It does not yet isolate what happens at a single instant."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "e940a13ce5a9173130db9fa262be9d1a48cec8b936758352c165ebc71e19e37c",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/13/13f89f49f2b5c0c6b1457ad0f28c5afc0b2b5b37707458898afcc433893e1f12.mp3",
+            "sha256": "13f89f49f2b5c0c6b1457ad0f28c5afc0b2b5b37707458898afcc433893e1f12",
+            "size": 254160
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/a7/a7ffe6d3ebcbd4bf8d0246314bafe2e5e223e4e443c4c125ab4fb84523f9d378.vtt",
+            "sha256": "a7ffe6d3ebcbd4bf8d0246314bafe2e5e223e4e443c4c125ab4fb84523f9d378",
+            "size": 886
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-29T23:59:42.690Z"
     },
     {
       "cacheHit": true,
@@ -1176,140 +1243,6 @@
       "roleName": "narration",
       "schemaVersion": 1,
       "startedAt": "2026-07-30T00:11:54.119Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 30159,
-      "lookupSha256": "a11420bf6d0b136404e9066a874c9fde1486ac2e837616867d5bd79a06149451",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Make clear that f and f prime are different functions linked by slope.",
-          "text": "The previous calculation kept a symbolic, so it did more than find one slope. It produced a rule: for f of x equals x squared, f prime of x equals two x. This new function reports the original curve's tangent slope at every differentiable input. At x equals three, the derivative is six. At x equals negative two, it is negative four. At zero, it is zero. The derivative function has its own graph and domain. Its input is still an x-value from the original problem, while its output is a rate or slope. Thinking of f prime as a function is essential for later topics such as optimization and differential equations."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "fc51c4a631baa2b4333fa2a068119562be37f0f409ba7f8a3561fda06c4fb709",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/7a/7ae058e698af60f64a39a39bc1d4577542f0ab904ba99627a5d661ffc31c6112.mp3",
-            "sha256": "7ae058e698af60f64a39a39bc1d4577542f0ab904ba99627a5d661ffc31c6112",
-            "size": 267264
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/b4/b4a7fb22c8e223efbe5fa73fb659cc4bfd72f8d0d952cc5ddf3edd39ce6ea9b1.vtt",
-            "sha256": "b4a7fb22c8e223efbe5fa73fb659cc4bfd72f8d0d952cc5ddf3edd39ce6ea9b1",
-            "size": 914
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T00:11:23.882Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 28648,
-      "lookupSha256": "1186c85f8f71f668806c737d303cdd05028da16085f1d3353b11ada51b61de3d",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Connect the algebraic quotient to both the secant line and average velocity.",
-          "text": "Choose an input a and a second input a plus h. The change in input is h. The corresponding change in output is f of a plus h minus f of a. Dividing output change by input change gives the difference quotient. Geometrically, it is the slope of the secant line through the two points. In an application, it is an average rate across the interval. If position changes by one hundred meters over five seconds, the average velocity is twenty meters per second, even if the object moved faster or slower within those five seconds. Average change summarizes an interval. It does not yet isolate what happens at a single instant."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "e940a13ce5a9173130db9fa262be9d1a48cec8b936758352c165ebc71e19e37c",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/13/13f89f49f2b5c0c6b1457ad0f28c5afc0b2b5b37707458898afcc433893e1f12.mp3",
-            "sha256": "13f89f49f2b5c0c6b1457ad0f28c5afc0b2b5b37707458898afcc433893e1f12",
-            "size": 254160
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/a7/a7ffe6d3ebcbd4bf8d0246314bafe2e5e223e4e443c4c125ab4fb84523f9d378.vtt",
-            "sha256": "a7ffe6d3ebcbd4bf8d0246314bafe2e5e223e4e443c4c125ab4fb84523f9d378",
-            "size": 886
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-29T23:59:42.690Z"
     },
     {
       "cacheHit": true,
@@ -1515,6 +1448,140 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
+      "durationMs": 30159,
+      "lookupSha256": "a11420bf6d0b136404e9066a874c9fde1486ac2e837616867d5bd79a06149451",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Make clear that f and f prime are different functions linked by slope.",
+          "text": "The previous calculation kept a symbolic, so it did more than find one slope. It produced a rule: for f of x equals x squared, f prime of x equals two x. This new function reports the original curve's tangent slope at every differentiable input. At x equals three, the derivative is six. At x equals negative two, it is negative four. At zero, it is zero. The derivative function has its own graph and domain. Its input is still an x-value from the original problem, while its output is a rate or slope. Thinking of f prime as a function is essential for later topics such as optimization and differential equations."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "fc51c4a631baa2b4333fa2a068119562be37f0f409ba7f8a3561fda06c4fb709",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/7a/7ae058e698af60f64a39a39bc1d4577542f0ab904ba99627a5d661ffc31c6112.mp3",
+            "sha256": "7ae058e698af60f64a39a39bc1d4577542f0ab904ba99627a5d661ffc31c6112",
+            "size": 267264
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/b4/b4a7fb22c8e223efbe5fa73fb659cc4bfd72f8d0d952cc5ddf3edd39ce6ea9b1.vtt",
+            "sha256": "b4a7fb22c8e223efbe5fa73fb659cc4bfd72f8d0d952cc5ddf3edd39ce6ea9b1",
+            "size": 914
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T00:11:23.882Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 26399,
+      "lookupSha256": "6b1424045e55fd62e6fbee6a60f1324771df759fdc80e66d361149ceaa056c83",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Pause between the function value, derivative value, and tangent equation.",
+          "text": "Let f of x equal three x squared minus two x, and find the tangent at x equals one. The derivative function is six x minus two, so f prime of one is four. The point on the original graph is one comma f of one, which is one comma one. Using point-slope form, y minus one equals four times x minus one. This example separates three objects that students often mix together: f of one is the output one; f prime of one is the slope four; and the tangent line is a new linear equation built from both. Always compute the point and the slope before writing the tangent line."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "74df6e87d0ab2ae839db9f4f3fbf07418a24fcc3e5bdce58fd5054ee7a7a72e0",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/be/bef793167445b7f8a86b35923590227fe3defced51b41491b8fa3c7c826a2c99.mp3",
+            "sha256": "bef793167445b7f8a86b35923590227fe3defced51b41491b8fa3c7c826a2c99",
+            "size": 252432
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/16/16f64a9561cf9288fbec4c1bc741044e9650d0c6426d323eec651abd493a9aa6.vtt",
+            "sha256": "16f64a9561cf9288fbec4c1bc741044e9650d0c6426d323eec651abd493a9aa6",
+            "size": 767
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T00:14:05.931Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
       "durationMs": 32901,
       "lookupSha256": "2493472b85937ee3a18c78ffdea365f82df5b0bffad7105b11fabb02db9067f7",
       "model": "edge-tts-7.2.8",
@@ -1649,73 +1716,6 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 26399,
-      "lookupSha256": "6b1424045e55fd62e6fbee6a60f1324771df759fdc80e66d361149ceaa056c83",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Pause between the function value, derivative value, and tangent equation.",
-          "text": "Let f of x equal three x squared minus two x, and find the tangent at x equals one. The derivative function is six x minus two, so f prime of one is four. The point on the original graph is one comma f of one, which is one comma one. Using point-slope form, y minus one equals four times x minus one. This example separates three objects that students often mix together: f of one is the output one; f prime of one is the slope four; and the tangent line is a new linear equation built from both. Always compute the point and the slope before writing the tangent line."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "74df6e87d0ab2ae839db9f4f3fbf07418a24fcc3e5bdce58fd5054ee7a7a72e0",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/be/bef793167445b7f8a86b35923590227fe3defced51b41491b8fa3c7c826a2c99.mp3",
-            "sha256": "bef793167445b7f8a86b35923590227fe3defced51b41491b8fa3c7c826a2c99",
-            "size": 252432
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/16/16f64a9561cf9288fbec4c1bc741044e9650d0c6426d323eec651abd493a9aa6.vtt",
-            "sha256": "16f64a9561cf9288fbec4c1bc741044e9650d0c6426d323eec651abd493a9aa6",
-            "size": 767
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T00:14:05.931Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
       "durationMs": 32334,
       "lookupSha256": "b5f33f119dcae9f400b014bb9b5475cce3603a94409669f6ffa07505b2a7ee55",
       "model": "edge-tts-7.2.8",
@@ -1819,8 +1819,27 @@
   ],
   "status": "awaiting-approval",
   "toolchain": {
+    "ffmpeg": {
+      "available": true,
+      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "available": true,
+      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "gitChangedPaths": [
+      "outreach/README.md",
+      "outreach/general-email.md",
+      "outreach/leadership-confirmation.md",
+      "outreach/subject-showcase/reference-manifest.json"
+    ],
+    "gitDirty": true,
+    "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
+    "gitStatusSha256": "add6a4c631c3d463fa2b7e37fa6a50bfab3e6fce98296cf041f8a8d165d4cda8",
     "node": "v22.23.1",
     "platform": "darwin-arm64",
+    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtimeDirty": false,
     "sharp": {
       "aom": "3.14.1",
       "archive": "3.8.8",
@@ -1844,32 +1863,14 @@
       "png": "1.6.58",
       "proxy-libintl": "0.5",
       "rsvg": "2.62.90",
+      "sharp": "0.35.3",
       "tiff": "d01a94b",
       "uhdr": "1acdbed",
       "vips": "8.18.3",
       "webp": "1.6.0",
       "xml2": "2.15.3",
-      "zlib-ng": "2.3.3",
-      "sharp": "0.35.3"
-    },
-    "ffmpeg": {
-      "available": true,
-      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
-    },
-    "ffprobe": {
-      "available": true,
-      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
-    },
-    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
-    "gitDirty": true,
-    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
-    "gitChangedPaths": [
-      "outreach/README.md",
-      "outreach/general-email.md",
-      "outreach/leadership-confirmation.md"
-    ],
-    "runtimeDirty": false,
-    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "zlib-ng": "2.3.3"
+    }
   },
   "totalCostUsd": 0
 }

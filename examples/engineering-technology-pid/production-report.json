@@ -9,23 +9,22 @@
     "truePeakDbtp": -1.52
   },
   "audioSampleRate": 48000,
-  "audioStartSeconds": 0,
+  "audioStartSeconds": 0.024,
   "cache": {
-    "draft": false,
+    "draft": true,
     "draftSkipped": false,
-    "master": false,
+    "master": true,
     "sectionCount": 3,
-    "sections": 0
+    "sections": 3
   },
   "draftPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/render/documentary-master.DRAFT.mp4",
   "durationSeconds": 59.021333,
   "encoder": {
-    "codec": "h264_videotoolbox",
-    "mode": "videotoolbox",
-    "prioritizeSpeed": false,
-    "profile": "high",
-    "quality": "80",
-    "realtime": true
+    "codec": "libx264",
+    "crf": "20",
+    "mode": "software",
+    "preset": "veryfast",
+    "threads": "1"
   },
   "frameRate": "30000/1001",
   "height": 1080,
@@ -35,36 +34,36 @@
   "sections": [
     {
       "beatId": "beat-01",
-      "cacheHit": false,
+      "cacheHit": true,
       "durationSeconds": 17.136,
       "output": "beat-01.mp4",
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/render/sections/beat-01.mp4",
-      "renderSignature": "adc99a6f746cc4f042212de21d6c56ff0bdb551777d0c9290028b5e76b5ea872",
+      "renderSignature": "7fd90ebcbe325cc42f638b5e1fcbcae554e0f58fa06e6a7a69d282dd5fdc16c4",
       "schemaVersion": 1,
-      "sha256": "fe795621ab35c1972b7384aceadfbf479adba76b73f09f4951ae328ac9cabda3"
+      "sha256": "f5f11ce58f33c18c5fb2261896acef907f84bf2b8323ef8782b5fe50e576ab9f"
     },
     {
       "beatId": "beat-02",
-      "cacheHit": false,
+      "cacheHit": true,
       "durationSeconds": 18.384,
       "output": "beat-02.mp4",
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/render/sections/beat-02.mp4",
-      "renderSignature": "9bbe00e92a02915ea0dd80187c5d032d6004197f536f5875ceb1ca7a3b29757e",
+      "renderSignature": "9e9202118b14084810ec7d5be07079043994d314d730c70acd79d5fb600f392f",
       "schemaVersion": 1,
-      "sha256": "b813c963ea408f79db1d2602a69a407337007f993553a3ab14f251be92f70028"
+      "sha256": "6ea847dba2f2097950e99a2d1cd311667ddbaf31edc7a089051677af767243db"
     },
     {
       "beatId": "beat-03",
-      "cacheHit": false,
+      "cacheHit": true,
       "durationSeconds": 23.352,
       "output": "beat-03.mp4",
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/render/sections/beat-03.mp4",
-      "renderSignature": "d9b77e89443c49300f45150b3baa2b75fd201f466954bb97c44994dc7212ec24",
+      "renderSignature": "1269b9c8c09922b37340a073603aec6acf0f510cc62d6f1384e8127eb1cdfb83",
       "schemaVersion": 1,
-      "sha256": "349e66024c619add2dd0e7490474b84c36cfa6b0aaa106f224f09554307bee84"
+      "sha256": "d17a7f65d25ee43b6bf1ddaa304dcf91ed46ff90cb6ac0cdd689fc6bae742290"
     }
   ],
-  "sha256": "a7fd5c252fdaecee3b58e27c7fb8d4bcd5d51f348932e1558c5edf3fbf4677bf",
+  "sha256": "facedb819c748f076363f77de6bf7035e1bd1e0d0e9e59fce50e0bc1f8e7471e",
   "title": "How a PID Controller Corrects an Error",
   "width": 1920
 }

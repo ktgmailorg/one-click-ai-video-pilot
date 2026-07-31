@@ -13,7 +13,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Course Purpose and Faculty Role as a question about inputs, decisions, and observable results. This is intended to allow faculty to pilot potential new undergraduate offerings. Consider this worked case: A professor proposes a new undergraduate course in theoretical computer science to test its viability before full adoption. On screen, display a slide with the course title and a brief description of the faculty proposal process. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "narration": "Begin by framing Course Purpose and Faculty Role as a question about inputs, decisions, and observable results. This is intended to allow faculty to pilot potential new undergraduate offerings. Consider this worked case: A professor proposes a new undergraduate course in theoretical computer science to test its viability before full adoption. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
       "plannedSeconds": 55,
       "title": "Course Purpose and Faculty Role",
       "visualDirection": "template:academic-process | Display a slide with the course title and a brief description of the faculty proposal process."
@@ -31,7 +31,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Course Classification Clusters precisely enough that another learner could test the definition. Specific course instances will be identified as belonging to the Theory cluster, the Security cluster, or both clusters. Consider this worked case: A proposed course on cryptographic protocols is classified under the Security cluster, while a course on computational complexity falls under the Theory cluster. On screen, show a Venn diagram with two overlapping circles labeled 'Theory Cluster' and 'Security Cluster', with a third circle labeled 'Both Clusters' in the intersection. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "narration": "Now define Course Classification Clusters precisely enough that another learner could test the definition. Specific course instances will be identified as belonging to the Theory cluster, the Security cluster, or both clusters. Consider this worked case: A proposed course on cryptographic protocols is classified under the Security cluster, while a course on computational complexity falls under the Theory cluster. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
       "plannedSeconds": 60,
       "title": "Course Classification Clusters",
       "visualDirection": "template:academic-process | Show a Venn diagram with two overlapping circles labeled 'Theory Cluster' and 'Security Cluster', with a third circle labeled 'Both Clusters' in the intersection."
@@ -49,7 +49,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Faculty-Determined Details operates in a concrete sequence. Specific course details (such as prerequisites, course seminar, format, learning outcomes, assessment methods, and resource needs) will be determined by the faculty member(s) who propose a specific seminar course in this area. Consider this worked case: The proposing faculty member sets the prerequisite to include discrete mathematics and defines the format as a three-hour weekly lecture. On screen, list the specific course details (prerequisites, seminar, format, learning outcomes, assessment methods, resource needs) with checkboxes for faculty to fill in. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "narration": "With the foundation in place, examine how Faculty-Determined Details operates in a concrete sequence. Specific course details (such as prerequisites, course seminar, format, learning outcomes, assessment methods, and resource needs) will be determined by the faculty member(s) who propose a specific seminar course in this area. Consider this worked case: The proposing faculty member sets the prerequisite to include discrete mathematics and defines the format as a three-hour weekly lecture. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
       "plannedSeconds": 63,
       "title": "Faculty-Determined Details",
       "visualDirection": "template:academic-process | List the specific course details (prerequisites, seminar, format, learning outcomes, assessment methods, resource needs) with checkboxes for faculty to fill in."
@@ -67,7 +67,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Stable Process Overview and make the decision criteria explicit. This course examines current topics in Theory. Consider this worked case: The department follows a standardized workflow: faculty submit a proposal, assign cluster(s), define details, and pilot the course. On screen, create a linear flowchart with four steps: Proposal Submission, Cluster Assignment, Detail Planning, and Course Pilot. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Next, compare the choices involved in Stable Process Overview and make the decision criteria explicit. This course examines current topics in Theory. Consider this worked case: The department follows a standardized workflow: faculty submit a proposal, assign cluster(s), define details, and pilot the course. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
       "title": "Stable Process Overview",
       "visualDirection": "template:academic-process | Create a linear flowchart with four steps: Proposal Submission, Cluster Assignment, Detail Planning, and Course Pilot."
@@ -85,7 +85,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Standards for Course Design to a worked situation instead of treating it as an isolated definition. Hash tables map keys to locations and require a collision strategy. Consider this worked case: The learning outcomes specify that students will analyze algorithmic correctness and resource bounds, assessed through a final theoretical proof assignment. On screen, display a table with columns for 'Learning Outcome' and 'Assessment Method', filled with example entries. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "narration": "Apply Standards for Course Design to a worked situation instead of treating it as an isolated definition. Hash tables map keys to locations and require a collision strategy. Consider this worked case: The learning outcomes specify that students will analyze algorithmic correctness and resource bounds, assessed through a final theoretical proof assignment. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
       "plannedSeconds": 55,
       "title": "Standards for Course Design",
       "visualDirection": "template:academic-process | Display a table with columns for 'Learning Outcome' and 'Assessment Method', filled with example entries."
@@ -103,7 +103,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Planning Methods for Resources, including what improves and what becomes more difficult. Asymptotic notation describes how resource use grows with input size. Consider this worked case: The faculty member lists required resources, including a whiteboard, projection system, and specific textbooks on theoretical computer science. On screen, show a checklist graphic with items like 'Whiteboard', 'Projection System', 'Textbooks', and 'Online Resources' for faculty to mark. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "narration": "Examine the tradeoffs in Planning Methods for Resources, including what improves and what becomes more difficult. Asymptotic notation describes how resource use grows with input size. Consider this worked case: The faculty member lists required resources, including a whiteboard, projection system, and specific textbooks on theoretical computer science. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
       "plannedSeconds": 55,
       "title": "Planning Methods for Resources",
       "visualDirection": "template:academic-process | Show a checklist graphic with items like 'Whiteboard', 'Projection System', 'Textbooks', and 'Online Resources' for faculty to mark."
@@ -121,7 +121,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Evaluation Criteria for Proposals with an edge case and identify which assumption controls the outcome. Recurrences describe the cost of recursive algorithms. Consider this worked case: The proposal is evaluated based on whether it meets Theory cluster standards and whether the proposed resources are sufficient for a successful pilot. On screen, create a rubric with criteria: 'Cluster Alignment', 'Feasibility', 'Learning Outcomes', and 'Resource Availability', with scoring scales. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "narration": "Stress-test the reasoning around Evaluation Criteria for Proposals with an edge case and identify which assumption controls the outcome. Recurrences describe the cost of recursive algorithms. Consider this worked case: The proposal is evaluated based on whether it meets Theory cluster standards and whether the proposed resources are sufficient for a successful pilot. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
       "plannedSeconds": 56,
       "title": "Evaluation Criteria for Proposals",
       "visualDirection": "template:academic-process | Create a rubric with criteria: 'Cluster Alignment', 'Feasibility', 'Learning Outcomes', and 'Resource Availability', with scoring scales."
@@ -139,7 +139,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Representative Examples of Theory Courses to diagnose a failure by separating symptoms, causes, and corrective action. OpenDSA presents data structures and algorithms through executable visualizations and exercises. Consider this worked case: A sample Theory cluster course covers loop invariants, divide-and-conquer algorithms, and graph reachability. On screen, list three example course titles with brief descriptions: 'Introduction to Algorithm Analysis', 'Data Structures and Algorithms', 'Formal Languages and Automata'. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "narration": "Use Representative Examples of Theory Courses to diagnose a failure by separating symptoms, causes, and corrective action. OpenDSA presents data structures and algorithms through executable visualizations and exercises. Consider this worked case: A sample Theory cluster course covers loop invariants, divide-and-conquer algorithms, and graph reachability. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
       "plannedSeconds": 55,
       "title": "Representative Examples of Theory Courses",
       "visualDirection": "template:academic-process | List three example course titles with brief descriptions: 'Introduction to Algorithm Analysis', 'Data Structures and Algorithms', 'Formal Languages and Automata'."
@@ -157,7 +157,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Application to Course Planning to the earlier ideas and explain how the pieces work as one system. Dynamic programming records solutions to overlapping subproblems. Consider this worked case: The faculty member reviews the proposal against the evaluation criteria, makes necessary adjustments, and submits the final plan for departmental approval. On screen, show a before-and-after comparison of a course proposal document, highlighting changes made based on evaluation criteria. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "narration": "Connect Application to Course Planning to the earlier ideas and explain how the pieces work as one system. Dynamic programming records solutions to overlapping subproblems. Consider this worked case: The faculty member reviews the proposal against the evaluation criteria, makes necessary adjustments, and submits the final plan for departmental approval. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
       "plannedSeconds": 55,
       "title": "Application to Course Planning",
       "visualDirection": "template:academic-process | Show a before-and-after comparison of a course proposal document, highlighting changes made based on evaluation criteria."
@@ -175,7 +175,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Algorithm analysis connects a precise problem specification to a correctness argument and resource bounds. Consider this worked case: The checklist includes items like 'Proposal submitted', 'Cluster assigned', 'Details defined', 'Resources secured', 'Evaluation criteria met', and 'Pilot approved'. On screen, display a printable checklist graphic with checkboxes for each item, ready for faculty to use during the planning phase. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Algorithm analysis connects a precise problem specification to a correctness argument and resource bounds. Consider this worked case: The checklist includes items like 'Proposal submitted', 'Cluster assigned', 'Details defined', 'Resources secured', 'Evaluation criteria met', and 'Pilot approved'. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
       "plannedSeconds": 56,
       "title": "Practical Analysis Checklist",
       "visualDirection": "template:academic-process | Display a printable checklist graphic with checkboxes for each item, ready for faculty to use during the planning phase."

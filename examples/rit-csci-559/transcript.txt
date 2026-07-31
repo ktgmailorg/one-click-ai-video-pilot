@@ -1,243 +1,193 @@
-NARRATOR: Begin by framing Process Definition and State as a question about inputs,
+Begin by framing Process Definition and State as a question about inputs, decisions, and
 
-decisions, and observable results.
+observable results.
 
-NARRATOR: A process combines an address space with execution state and operating-system
+A process combines an address space with execution state and operating-system
 
 resources.
 
-NARRATOR: Consider this worked case: A web server process maintains its own memory space,
+Consider this worked case: A web server process maintains its own memory space, open
 
-open file descriptors, and CPU scheduling context.
+file descriptors, and CPU scheduling context.
 
-NARRATOR: On screen, display a diagram showing a process boundary with labeled address space,
+List the givens before choosing a method, because an unstated assumption can change the
 
-execution state, and OS resource handles.
+conclusion.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+This establishes the vocabulary and scope needed for the remaining sections.
 
-change the conclusion.
-
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Now define System Call Mechanism precisely enough that another learner could
+Now define System Call Mechanism precisely enough that another learner could test the
 
-test the definition.
+definition.
 
-NARRATOR: A system call transfers control from user code to a privileged kernel service.
+A system call transfers control from user code to a privileged kernel service.
 
-NARRATOR: Consider this worked case: A process invokes a read system call to request data
+Consider this worked case: A process invokes a read system call to request data from a file,
 
-from a file, transitioning to kernel mode.
+transitioning to kernel mode.
 
-NARRATOR: On screen, show a flowchart of control transfer between user space and kernel
-
-space with a labeled system call instruction.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.
-
-NARRATOR: With the foundation in place, examine how Trap Handling and Context
-
-Switching operates in a concrete sequence.
-
-NARRATOR: A trap records processor state so the kernel can handle a system call,
-
-exception, or interrupt.
-
-NARRATOR: Consider this worked case: When a process triggers a page fault, the CPU traps
-
-the fault, saves registers, and transfers to the kernel handler.
-
-NARRATOR: On screen, illustrate a trap sequence with a processor state snapshot,
-
-kernel handler entry, and restored state return.
-
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
-
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
-
-NARRATOR: Next, compare the choices involved in Virtual Memory Mapping and make the
-
-decision criteria explicit.
-
-NARRATOR: Page tables map virtual addresses to physical memory with permission bits.
-
-NARRATOR: Consider this worked case: A page table entry translates a virtual address to a
-
-physical frame while enforcing read/write/execute permissions.
-
-NARRATOR: On screen, render a page table structure with virtual address bits, physical
-
-address bits, and permission flags.
-
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
-
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Apply Process Scheduling to a worked situation instead of treating it as an
+With the foundation in place, examine how Trap Handling and Context Switching operates in a
 
-isolated definition.
+concrete sequence.
 
-NARRATOR: The scheduler selects runnable processes and switches processor context.
+A trap records processor state so the kernel can handle a system call, exception, or
 
-NARRATOR: Consider this worked case: A round-robin scheduler picks the next process
+interrupt.
 
-from the ready queue and saves the current context.
+Consider this worked case: When a process triggers a page fault, the CPU traps the
 
-NARRATOR: On screen, draw a scheduler loop showing ready queue, context save/restore, and
+fault, saves registers, and transfers to the kernel handler.
 
-CPU allocation.
+Follow every arrow in order and name the state before and after each transition.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+The trace converts an abstract statement into an inspectable sequence.
 
-at each step.
+Next, compare the choices involved in Virtual Memory Mapping and make the decision criteria
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+explicit.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Page tables map virtual addresses to physical memory with permission bits.
+
+Consider this worked case: A page table entry translates a virtual address to a physical
+
+frame while enforcing read/write/execute permissions.
+
+Compare alternatives against the same constraints so the evaluation does not move
+
+the goalposts.
+
+Using shared criteria turns a preference into a defensible technical choice.
+
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Examine the tradeoffs in Concurrency and Locking, including what improves and what
+Apply Process Scheduling to a worked situation instead of treating it as an isolated
+
+definition.
+
+The scheduler selects runnable processes and switches processor context.
+
+Consider this worked case: A round-robin scheduler picks the next process from the
+
+ready queue and saves the current context.
+
+Work from the concrete inputs to the result, checking units, types, or invariants at each
+
+step.
+
+The worked case shows both how to apply the method and how to check it.
+
+Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+Examine the tradeoffs in Concurrency and Locking, including what improves and what
 
 becomes more difficult.
 
-NARRATOR: Locks protect invariants when concurrent execution can access shared state.
+Locks protect invariants when concurrent execution can access shared state.
 
-NARRATOR: Consider this worked case: A mutex lock prevents two processes from modifying a
+Consider this worked case: A mutex lock prevents two processes from modifying a shared
 
-shared counter simultaneously.
+counter simultaneously.
 
-NARRATOR: On screen, show a lock acquisition/release sequence with a shared
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-variable and protected critical section.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
-
-acceptable.
-
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Stress-test the reasoning around File System Organization with an edge case and
+Stress-test the reasoning around File System Organization with an edge case and identify
 
-identify which assumption controls the outcome.
+which assumption controls the outcome.
 
-NARRATOR: The file system organizes persistent data through inodes, directories, and logged
+The file system organizes persistent data through inodes, directories, and logged
 
 updates.
 
-NARRATOR: Consider this worked case: An inode stores metadata for a file while directory
+Consider this worked case: An inode stores metadata for a file while directory entries
 
-entries link names to inode references.
+link names to inode references.
 
-NARRATOR: On screen, display a file system tree with inode blocks, directory entries, and
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-journal log entries.
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+Use RISC-V Instruction Set Basics to diagnose a failure by separating symptoms, causes, and
 
-holds.
+corrective action.
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+The RISC-V ISA defines programmer-visible instructions, registers, memory operations,
 
-core idea.
+control transfer, exceptions, and ordering behavior.
 
-NARRATOR: Use RISC-V Instruction Set Basics to diagnose a failure by separating symptoms,
+Consider this worked case: Integer register x0 always reads as zero, while other registers
 
-causes, and corrective action.
+hold software-visible values.
 
-NARRATOR: The RISC-V ISA defines programmer-visible instructions, registers,
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-memory operations, control transfer, exceptions, and ordering behavior.
+smallest plausible cause.
 
-NARRATOR: Consider this worked case: Integer register x0 always reads as zero, while other
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-registers hold software-visible values.
+Connect Memory Ordering and Dependencies to the earlier ideas and explain how the pieces
 
-NARRATOR: On screen, list RISC-V register file with x0 marked as zero and other registers
+work as one system.
 
-showing software values.
+Memory-ordering rules constrain how memory operations may be observed.
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+Consider this worked case: Store buffers ensure that writes are visible to other cores
 
-behavior, then test the smallest plausible cause.
+in a defined architectural order.
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+Explain each connection explicitly and verify that information retains the same meaning
 
-and the test.
+across representations.
 
-NARRATOR: Connect Memory Ordering and Dependencies to the earlier ideas and explain
+The synthesis matters only if every connection remains supported by the original evidence.
 
-how the pieces work as one system.
-
-NARRATOR: Memory-ordering rules constrain how memory operations may be observed.
-
-NARRATOR: Consider this worked case: Store buffers ensure that writes are visible to
-
-other cores in a defined architectural order.
-
-NARRATOR: On screen, show a memory operation sequence with ordering constraints and
-
-dependency arrows.
-
-NARRATOR: Explain each connection explicitly and verify that information retains the same
-
-meaning across representations.
-
-NARRATOR: The synthesis matters only if every connection remains supported by the original
-
-evidence.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-guide a new analysis.
+analysis.
 
-NARRATOR: Analysis distinguishes user mode, privileged kernel code, hardware translation,
+Analysis distinguishes user mode, privileged kernel code, hardware translation, interrupt
 
-interrupt state, resource ownership, and synchronization invariants.
+state, resource ownership, and synchronization invariants.
 
-NARRATOR: Consider this worked case: A security audit checks for proper privilege
+Consider this worked case: A security audit checks for proper privilege separation and
 
-separation and lock invariants in a kernel module.
+lock invariants in a kernel module.
 
-NARRATOR: On screen, provide a checklist template with checkboxes for each analysis
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-category.
+verification step.
 
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-next verification step.
+intuition.
 
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.

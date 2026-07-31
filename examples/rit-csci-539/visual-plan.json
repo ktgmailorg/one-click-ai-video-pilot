@@ -10,7 +10,7 @@
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: A faculty member might propose a seminar focused on AI ethics, while another might focus on computer vision, each setting their own prerequisites and assessment methods.",
+          "phrase": "Specific course details (such as prerequisites, course seminar, format, learning outcomes, assessment methods, and resource needs) will be determined by the faculty member(s) who propose a specific seminar course in this area.",
           "type": "deterministic-svg"
         },
         {
@@ -30,7 +30,7 @@
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: Govern establishes policies, responsibilities, and accountability for AI risk, ensuring clear ownership of risk management decisions.",
+          "phrase": "The NIST AI Risk Management Framework organizes work around Govern, Map, Measure, and Manage.",
           "type": "deterministic-svg"
         },
         {
@@ -50,7 +50,7 @@
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: A team maps a facial recognition system by documenting its intended use in public spaces, the affected population, and potential impacts on privacy and bias.",
+          "phrase": "Map documents context, intended use, affected people, and potential impacts.",
           "type": "deterministic-svg"
         },
         {
@@ -70,7 +70,7 @@
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: A team measures risk by running quantitative accuracy tests on training data and conducting qualitative interviews with stakeholders to assess fairness and transparency.",
+          "phrase": "Measure uses qualitative and quantitative methods to analyze identified risks.",
           "type": "deterministic-svg"
         },
         {
@@ -90,7 +90,7 @@
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: A team prioritizes high-risk items, allocates budget for monitoring, and schedules regular audits to track system behavior and context changes.",
+          "phrase": "Manage prioritizes risks and allocates resources for response and monitoring.",
           "type": "deterministic-svg"
         },
         {
@@ -110,7 +110,7 @@
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: A workflow separates raw data cleaning from model training, ensuring that validation and testing sets remain untouched during hyperparameter tuning.",
+          "phrase": "Machine-learning workflows separate data preparation, training, validation, testing, model selection, and evaluation.",
           "type": "deterministic-svg"
         },
         {
@@ -135,7 +135,7 @@
         },
         {
           "id": "beat-07-shot-003",
-          "phrase": "On screen, display two side-by-side examples: left shows labeled data points being mapped to classes, right shows unlabeled data points being grouped into clusters.",
+          "phrase": "Change one assumption at a time and observe which part of the reasoning no longer holds.",
           "type": "deterministic-svg"
         }
       ]
@@ -150,7 +150,7 @@
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: A team fits a scaling transformer only on the training split, then applies the same transformation to validation and testing data to prevent data leakage.",
+          "phrase": "Preprocessing must be fitted only on permitted training data to avoid leakage.",
           "type": "deterministic-svg"
         },
         {
@@ -170,7 +170,7 @@
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: A pipeline ensures that scaling and imputation are applied identically to every fold during cross-validation, preventing inconsistent transformations across splits.",
+          "phrase": "Cross-validation repeats training and validation across defined data splits.",
           "type": "deterministic-svg"
         },
         {
@@ -190,7 +190,7 @@
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: A team selects a metric like F1-score for an imbalanced classification task, ensuring that hyperparameter tuning does not influence the final test set evaluation.",
+          "phrase": "Evaluation metrics must match the task and the cost of different errors.",
           "type": "deterministic-svg"
         },
         {

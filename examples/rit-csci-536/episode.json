@@ -13,7 +13,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Search Engine Architecture Overview as a question about inputs, decisions, and observable results. An introduction to the theories and techniques used to construct search engines. Consider this worked case: A web crawler indexes HTML pages by extracting text, building an inverted index, and storing term frequencies. On screen, display a flowchart showing query input, index lookup, and result output with labeled components. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Begin by framing Search Engine Architecture Overview as a question about inputs, decisions, and observable results. An introduction to the theories and techniques used to construct search engines. Consider this worked case: A web crawler indexes HTML pages by extracting text, building an inverted index, and storing term frequencies. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 57,
       "title": "Search Engine Architecture Overview",
       "visualDirection": "template:academic-process | Display a flowchart showing query input, index lookup, and result output with labeled components."
@@ -31,7 +31,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Query Processing and Parsing precisely enough that another learner could test the definition. Queries select, join, aggregate, order, and transform data. Consider this worked case: A natural language query like 'climate change effects' is tokenized and normalized to match indexed terms. On screen, show a side-by-side comparison of raw query text versus parsed query components with highlighted tokens. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Now define Query Processing and Parsing precisely enough that another learner could test the definition. Queries select, join, aggregate, order, and transform data. Consider this worked case: A natural language query like 'climate change effects' is tokenized and normalized to match indexed terms. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
       "title": "Query Processing and Parsing",
       "visualDirection": "template:academic-process | Show a side-by-side comparison of raw query text versus parsed query components with highlighted tokens."
@@ -49,7 +49,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Inverted Index Construction operates in a concrete sequence. Indexes provide additional access paths for selected workloads. Consider this worked case: The term 'machine' points to document IDs [101, 105, 112], allowing direct access to containing pages. On screen, render a simplified inverted index table with term columns and document ID lists. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "With the foundation in place, examine how Inverted Index Construction operates in a concrete sequence. Indexes provide additional access paths for selected workloads. Consider this worked case: The term 'machine' points to document IDs [101, 105, 112], allowing direct access to containing pages. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
       "title": "Inverted Index Construction",
       "visualDirection": "template:academic-process | Render a simplified inverted index table with term columns and document ID lists."
@@ -67,7 +67,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in TF-IDF Relevance Scoring and make the decision criteria explicit. Topics include search interfaces, traditional retrieval models (for example, TF-IDF, BM25), modern retrieval techniques (for example, neural reranking and retrieval), search engine evaluation, and search applications (for example, conversational IR, enterprise search). Consider this worked case: A term appearing in many documents receives a lower IDF weight, reducing its relevance score. On screen, illustrate TF-IDF calculation with a small document corpus showing term frequencies and IDF values. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "narration": "Next, compare the choices involved in TF-IDF Relevance Scoring and make the decision criteria explicit. Topics include search interfaces, traditional retrieval models (for example, TF-IDF, BM25), modern retrieval techniques (for example, neural reranking and retrieval), search engine evaluation, and search applications (for example, conversational IR, enterprise search). Consider this worked case: A term appearing in many documents receives a lower IDF weight, reducing its relevance score. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
       "plannedSeconds": 58,
       "title": "TF-IDF Relevance Scoring",
       "visualDirection": "template:academic-process | Illustrate TF-IDF calculation with a small document corpus showing term frequencies and IDF values."
@@ -85,7 +85,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply BM25 Ranking Algorithm to a worked situation instead of treating it as an isolated definition. Students may not take and receive credit for CSCI-536 and CSCI-636. Consider this worked case: Short documents receive higher scores for rare terms, while BM25 adjusts scores based on term position in text. On screen, display a comparison table of TF-IDF versus BM25 scores for the same query across different documents. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "narration": "Apply BM25 Ranking Algorithm to a worked situation instead of treating it as an isolated definition. Students may not take and receive credit for CSCI-536 and CSCI-636. Consider this worked case: Short documents receive higher scores for rare terms, while BM25 adjusts scores based on term position in text. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
       "plannedSeconds": 55,
       "title": "BM25 Ranking Algorithm",
       "visualDirection": "template:academic-process | Display a comparison table of TF-IDF versus BM25 scores for the same query across different documents."
@@ -103,7 +103,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Neural Reranking Techniques, including what improves and what becomes more difficult. Data-analysis workflows separate data preparation, exploratory analysis, training, validation, testing, model selection, and evaluation. Consider this worked case: A transformer-based model scores query-document pairs by analyzing semantic similarity in high-dimensional space. On screen, show a neural network diagram with query and document embeddings merging into a relevance score output. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Examine the tradeoffs in Neural Reranking Techniques, including what improves and what becomes more difficult. Data-analysis workflows separate data preparation, exploratory analysis, training, validation, testing, model selection, and evaluation. Consider this worked case: A transformer-based model scores query-document pairs by analyzing semantic similarity in high-dimensional space. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 57,
       "title": "Neural Reranking Techniques",
       "visualDirection": "template:academic-process | Show a neural network diagram with query and document embeddings merging into a relevance score output."
@@ -121,7 +121,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Search Evaluation Metrics with an edge case and identify which assumption controls the outcome. Query planning and physical storage affect performance without changing logical query meaning. Consider this worked case: Precision measures the fraction of retrieved documents that are relevant, while NDCG accounts for ranking order. On screen, present a precision-recall curve and NDCG graph with labeled axes and example points. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "narration": "Stress-test the reasoning around Search Evaluation Metrics with an edge case and identify which assumption controls the outcome. Query planning and physical storage affect performance without changing logical query meaning. Consider this worked case: Precision measures the fraction of retrieved documents that are relevant, while NDCG accounts for ranking order. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
       "plannedSeconds": 55,
       "title": "Search Evaluation Metrics",
       "visualDirection": "template:academic-process | Present a precision-recall curve and NDCG graph with labeled axes and example points."
@@ -139,7 +139,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Conversational and Enterprise Search to diagnose a failure by separating symptoms, causes, and corrective action. Students will also review current IR research topics, and complete a group project in which they will design and execute experiments for search engine components. Consider this worked case: Enterprise search indexes internal documents with role-based access and contextual filters for business users. On screen, show a dialogue flow for conversational search and a dashboard for enterprise search filters. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "narration": "Use Conversational and Enterprise Search to diagnose a failure by separating symptoms, causes, and corrective action. Students will also review current IR research topics, and complete a group project in which they will design and execute experiments for search engine components. Consider this worked case: Enterprise search indexes internal documents with role-based access and contextual filters for business users. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
       "plannedSeconds": 58,
       "title": "Conversational and Enterprise Search",
       "visualDirection": "template:academic-process | Show a dialogue flow for conversational search and a dashboard for enterprise search filters."
@@ -157,7 +157,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Experimental Design in IR to the earlier ideas and explain how the pieces work as one system. Supervised methods learn mappings from examples paired with target labels, while unsupervised methods identify structure without targets. Consider this worked case: A group project tests BM25 versus neural reranking on a benchmark corpus to measure score improvements. On screen, display an experimental setup diagram with baseline, variant, and evaluation metrics. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "narration": "Connect Experimental Design in IR to the earlier ideas and explain how the pieces work as one system. Supervised methods learn mappings from examples paired with target labels, while unsupervised methods identify structure without targets. Consider this worked case: A group project tests BM25 versus neural reranking on a benchmark corpus to measure score improvements. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
       "plannedSeconds": 55,
       "title": "Experimental Design in IR",
       "visualDirection": "template:academic-process | Display an experimental setup diagram with baseline, variant, and evaluation metrics."
@@ -175,7 +175,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Evaluation must match the task and the cost of errors, while distribution shift, missing data, overfitting, and unexamined sampling choices can invalidate conclusions. Consider this worked case: The checklist verifies index coverage, ranking consistency, metric alignment, and error cost assessment. On screen, show a printable checklist template with checkboxes for each evaluation criterion. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Evaluation must match the task and the cost of errors, while distribution shift, missing data, overfitting, and unexamined sampling choices can invalidate conclusions. Consider this worked case: The checklist verifies index coverage, ranking consistency, metric alignment, and error cost assessment. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
       "plannedSeconds": 55,
       "title": "Practical Analysis Checklist",
       "visualDirection": "template:academic-process | Show a printable checklist template with checkboxes for each evaluation criterion."

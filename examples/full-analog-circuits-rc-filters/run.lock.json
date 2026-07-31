@@ -1,7 +1,7 @@
 {
   "approvals": [
     {
-      "approvedAt": "2026-07-31T15:11:46.335Z",
+      "approvedAt": "2026-07-31T19:12:14.498Z",
       "notes": "Verifies declared source bindings for draft rendering; instructor and release approval remain required.",
       "reviewer": "Automated source-pack verification (draft)",
       "role": "automation",
@@ -515,7 +515,7 @@
     }
   ],
   "configSha256": "dce96435639d9052d6b740bb1ef1c3e11b68869bd9517b33896e8d872b71bf76",
-  "createdAt": "2026-07-31T15:11:47.238Z",
+  "createdAt": "2026-07-31T19:15:27.326Z",
   "final": {
     "releaseAudit": {
       "blockers": [],
@@ -608,9 +608,9 @@
       "cache": {
         "draft": true,
         "draftSkipped": true,
-        "master": true,
+        "master": false,
         "sectionCount": 10,
-        "sections": 10
+        "sections": 0
       },
       "draftPath": "/Users/kt/Documents/video-generator-rit/.demo-output/long-form-lessons/analog-circuits-rc-filters/work/render/documentary-master.core.mp4",
       "durationSeconds": 662.521333,
@@ -630,7 +630,7 @@
       "sections": [
         {
           "beatId": "beat-01",
-          "cacheHit": true,
+          "cacheHit": false,
           "durationSeconds": 63.6,
           "output": "beat-01.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/long-form-lessons/analog-circuits-rc-filters/work/render/sections/beat-01.mp4",
@@ -640,7 +640,7 @@
         },
         {
           "beatId": "beat-02",
-          "cacheHit": true,
+          "cacheHit": false,
           "durationSeconds": 67.848,
           "output": "beat-02.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/long-form-lessons/analog-circuits-rc-filters/work/render/sections/beat-02.mp4",
@@ -650,7 +650,7 @@
         },
         {
           "beatId": "beat-03",
-          "cacheHit": true,
+          "cacheHit": false,
           "durationSeconds": 62.064,
           "output": "beat-03.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/long-form-lessons/analog-circuits-rc-filters/work/render/sections/beat-03.mp4",
@@ -660,7 +660,7 @@
         },
         {
           "beatId": "beat-04",
-          "cacheHit": true,
+          "cacheHit": false,
           "durationSeconds": 65.712,
           "output": "beat-04.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/long-form-lessons/analog-circuits-rc-filters/work/render/sections/beat-04.mp4",
@@ -670,7 +670,7 @@
         },
         {
           "beatId": "beat-05",
-          "cacheHit": true,
+          "cacheHit": false,
           "durationSeconds": 64.8,
           "output": "beat-05.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/long-form-lessons/analog-circuits-rc-filters/work/render/sections/beat-05.mp4",
@@ -680,7 +680,7 @@
         },
         {
           "beatId": "beat-06",
-          "cacheHit": true,
+          "cacheHit": false,
           "durationSeconds": 66.696,
           "output": "beat-06.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/long-form-lessons/analog-circuits-rc-filters/work/render/sections/beat-06.mp4",
@@ -690,7 +690,7 @@
         },
         {
           "beatId": "beat-07",
-          "cacheHit": true,
+          "cacheHit": false,
           "durationSeconds": 69.168,
           "output": "beat-07.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/long-form-lessons/analog-circuits-rc-filters/work/render/sections/beat-07.mp4",
@@ -700,7 +700,7 @@
         },
         {
           "beatId": "beat-08",
-          "cacheHit": true,
+          "cacheHit": false,
           "durationSeconds": 69.312,
           "output": "beat-08.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/long-form-lessons/analog-circuits-rc-filters/work/render/sections/beat-08.mp4",
@@ -710,7 +710,7 @@
         },
         {
           "beatId": "beat-09",
-          "cacheHit": true,
+          "cacheHit": false,
           "durationSeconds": 68.04,
           "output": "beat-09.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/long-form-lessons/analog-circuits-rc-filters/work/render/sections/beat-09.mp4",
@@ -720,7 +720,7 @@
         },
         {
           "beatId": "beat-10",
-          "cacheHit": true,
+          "cacheHit": false,
           "durationSeconds": 65.256,
           "output": "beat-10.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/long-form-lessons/analog-circuits-rc-filters/work/render/sections/beat-10.mp4",
@@ -734,7 +734,7 @@
       "width": 1920
     }
   },
-  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
   "inputSha256": "84864c01fe0f8b875fd9fa51847832ad4fb5da2e83fdd403b652c92a75f7c578",
   "mode": "record",
   "providers": {
@@ -1190,8 +1190,8 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 35502,
-      "lookupSha256": "95a8dd75c7ad614c807e71ec073385b0d86758e04548e5017eba991f5fe359f5",
+      "durationMs": 27946,
+      "lookupSha256": "9282ea23abd21b195b15499d74bd60533e33a5dfe846d3eaa3e8461f770391a0",
       "model": "edge-tts-7.2.8",
       "profileName": "edge-narration",
       "request": {
@@ -1209,30 +1209,30 @@
         },
         "input": {
           "instructions": "Clear, direct, and conversational.",
-          "text": "When we combine a resistor and capacitor in series, the circuit exhibits a characteristic time constant, tau, defined as resistance times capacitance. This value determines how quickly the circuit responds to changes. For example, if tau equals one second, the capacitor voltage will reach approximately 63 percent of its final value after one second. The time constant emerges naturally from solving the differential equation that governs the circuit. It represents the intrinsic speed of the system, balancing the resistor's opposition to current flow with the capacitor's ability to store charge. Understanding tau allows us to predict response times without solving the full equation every time."
+          "text": "We now analyze how the capacitor charges and discharges when connected to a voltage source. During charging, current flows from the source through the resistor into the capacitor, causing voltage to rise exponentially. The differential equation governing this process yields a solution where voltage approaches the source value asymptotically. Discharging occurs when the source is removed and the capacitor releases its stored energy through the resistor. The voltage decays exponentially, following the same time constant but in reverse. These behaviors demonstrate how energy transfers between the electric field and the resistor, with the resistor dissipating energy as heat while the capacitor temporarily stores it."
         },
         "model": "edge-tts-7.2.8",
         "parameters": {},
         "schemaVersion": 1
       },
-      "requestSha256": "f10dfc2c7b079d118540a938012d5cd52be96041d894cd6c9b9263b383184938",
+      "requestSha256": "73dee944f20efe070f88ba141c185db76785e97463e28a1c9e434397a24d771e",
       "result": {
         "artifacts": [
           {
             "extension": ".mp3",
             "filename": "speech.mp3",
             "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/c0/c050845d41ba0e1fe668003c26e844e82caf9aff72fde907fde8716ea1a83e0f.mp3",
-            "sha256": "c050845d41ba0e1fe668003c26e844e82caf9aff72fde907fde8716ea1a83e0f",
-            "size": 388800
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/1f/1f80e6956f5778e1f5ac69b49bfb913cbaba9384b6dbe0b85b00eec5d9a2f5fa.mp3",
+            "sha256": "1f80e6956f5778e1f5ac69b49bfb913cbaba9384b6dbe0b85b00eec5d9a2f5fa",
+            "size": 400176
           },
           {
             "extension": ".vtt",
             "filename": "speech.vtt",
             "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/37/37c4b666b896ce13eb9c71ed06b37d248b5dff0870d831f5810d4aa28f591241.vtt",
-            "sha256": "37c4b666b896ce13eb9c71ed06b37d248b5dff0870d831f5810d4aa28f591241",
-            "size": 898
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/c4/c4bc3f9ac4842c6e082c5e91d07945f0e7bd9dac46e33f732ac9ad7add908714.vtt",
+            "sha256": "c4bc3f9ac4842c6e082c5e91d07945f0e7bd9dac46e33f732ac9ad7add908714",
+            "size": 920
           }
         ],
         "costUsd": null,
@@ -1252,141 +1252,7 @@
       },
       "roleName": "narration",
       "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:27:54.858Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 17990,
-      "lookupSha256": "364f3ee019aa2d97458c3c0dd0f6f1f90524de71b61a61d84fd4fe1cbc100b4c",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "We begin by adopting the lumped circuit abstraction, which treats components as localized entities where internal electromagnetic wave propagation is negligible compared to signal travel times. This assumption allows us to model circuits as interconnected nodes and branches rather than distributed fields. Imagine a simple battery connected to a resistor through short wires; the voltage appears instantaneously across the resistor because the physical dimensions are tiny relative to the signal wavelength. This abstraction holds when the circuit size is much smaller than the signal's wavelength, ensuring that voltage and current are well-defined at each node. We will consistently use this model throughout our analysis."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "d826e0a0b77f1b85df0ddf9860ebe931a208590492305d78a4310bef25507d77",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/83/83ebbddc024676bdf8c1fae6c4f66d2a23984e5d6dae4e9e337ad1137b698af8.mp3",
-            "sha256": "83ebbddc024676bdf8c1fae6c4f66d2a23984e5d6dae4e9e337ad1137b698af8",
-            "size": 381600
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/f8/f8c7872cf98467228a48347e638de78d688317f8c344ffe82d6c8635e0547196.vtt",
-            "sha256": "f8c7872cf98467228a48347e638de78d688317f8c344ffe82d6c8635e0547196",
-            "size": 891
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:27:34.278Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 20558,
-      "lookupSha256": "870eefc1c88b3580d43e5a5fb3c2101937ed921bf988dc23f2075ec639179d55",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "With reference directions set, we apply Kirchhoff's current and voltage laws to constrain the circuit. Kirchhoff's current law states that the sum of currents entering any node equals zero, reflecting charge conservation. Kirchhoff's voltage law requires that the sum of voltage drops around any closed loop equals zero, reflecting energy conservation. For our series circuit, we write one KCL equation at the top node and one KVL equation around the loop. These constraints reduce the number of unknowns and provide the structural framework for solving the circuit. We then combine these with element laws to form a complete set of equations that uniquely determine all voltages and currents."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "0a53ac34dd0b6f1fbf20881814cd7851314fc3c00cc7f74026b80470228d2876",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/3f/3fcc0197a56e74c5b71687c357f6809471033871aa5c411dcb92edf1870642ce.mp3",
-            "sha256": "3fcc0197a56e74c5b71687c357f6809471033871aa5c411dcb92edf1870642ce",
-            "size": 372384
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56e22bb8fb0d58a849f5b73f54830efe111529cba9b056a3edf82a0ad33da2d9.vtt",
-            "sha256": "56e22bb8fb0d58a849f5b73f54830efe111529cba9b056a3edf82a0ad33da2d9",
-            "size": 892
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:27:34.279Z"
+      "startedAt": "2026-07-30T04:27:57.233Z"
     },
     {
       "cacheHit": true,
@@ -1592,8 +1458,8 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 27946,
-      "lookupSha256": "9282ea23abd21b195b15499d74bd60533e33a5dfe846d3eaa3e8461f770391a0",
+      "durationMs": 35502,
+      "lookupSha256": "95a8dd75c7ad614c807e71ec073385b0d86758e04548e5017eba991f5fe359f5",
       "model": "edge-tts-7.2.8",
       "profileName": "edge-narration",
       "request": {
@@ -1611,30 +1477,30 @@
         },
         "input": {
           "instructions": "Clear, direct, and conversational.",
-          "text": "We now analyze how the capacitor charges and discharges when connected to a voltage source. During charging, current flows from the source through the resistor into the capacitor, causing voltage to rise exponentially. The differential equation governing this process yields a solution where voltage approaches the source value asymptotically. Discharging occurs when the source is removed and the capacitor releases its stored energy through the resistor. The voltage decays exponentially, following the same time constant but in reverse. These behaviors demonstrate how energy transfers between the electric field and the resistor, with the resistor dissipating energy as heat while the capacitor temporarily stores it."
+          "text": "When we combine a resistor and capacitor in series, the circuit exhibits a characteristic time constant, tau, defined as resistance times capacitance. This value determines how quickly the circuit responds to changes. For example, if tau equals one second, the capacitor voltage will reach approximately 63 percent of its final value after one second. The time constant emerges naturally from solving the differential equation that governs the circuit. It represents the intrinsic speed of the system, balancing the resistor's opposition to current flow with the capacitor's ability to store charge. Understanding tau allows us to predict response times without solving the full equation every time."
         },
         "model": "edge-tts-7.2.8",
         "parameters": {},
         "schemaVersion": 1
       },
-      "requestSha256": "73dee944f20efe070f88ba141c185db76785e97463e28a1c9e434397a24d771e",
+      "requestSha256": "f10dfc2c7b079d118540a938012d5cd52be96041d894cd6c9b9263b383184938",
       "result": {
         "artifacts": [
           {
             "extension": ".mp3",
             "filename": "speech.mp3",
             "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/1f/1f80e6956f5778e1f5ac69b49bfb913cbaba9384b6dbe0b85b00eec5d9a2f5fa.mp3",
-            "sha256": "1f80e6956f5778e1f5ac69b49bfb913cbaba9384b6dbe0b85b00eec5d9a2f5fa",
-            "size": 400176
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/c0/c050845d41ba0e1fe668003c26e844e82caf9aff72fde907fde8716ea1a83e0f.mp3",
+            "sha256": "c050845d41ba0e1fe668003c26e844e82caf9aff72fde907fde8716ea1a83e0f",
+            "size": 388800
           },
           {
             "extension": ".vtt",
             "filename": "speech.vtt",
             "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/c4/c4bc3f9ac4842c6e082c5e91d07945f0e7bd9dac46e33f732ac9ad7add908714.vtt",
-            "sha256": "c4bc3f9ac4842c6e082c5e91d07945f0e7bd9dac46e33f732ac9ad7add908714",
-            "size": 920
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/37/37c4b666b896ce13eb9c71ed06b37d248b5dff0870d831f5810d4aa28f591241.vtt",
+            "sha256": "37c4b666b896ce13eb9c71ed06b37d248b5dff0870d831f5810d4aa28f591241",
+            "size": 898
           }
         ],
         "costUsd": null,
@@ -1654,7 +1520,141 @@
       },
       "roleName": "narration",
       "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:27:57.233Z"
+      "startedAt": "2026-07-30T04:27:54.858Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 17990,
+      "lookupSha256": "364f3ee019aa2d97458c3c0dd0f6f1f90524de71b61a61d84fd4fe1cbc100b4c",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "We begin by adopting the lumped circuit abstraction, which treats components as localized entities where internal electromagnetic wave propagation is negligible compared to signal travel times. This assumption allows us to model circuits as interconnected nodes and branches rather than distributed fields. Imagine a simple battery connected to a resistor through short wires; the voltage appears instantaneously across the resistor because the physical dimensions are tiny relative to the signal wavelength. This abstraction holds when the circuit size is much smaller than the signal's wavelength, ensuring that voltage and current are well-defined at each node. We will consistently use this model throughout our analysis."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "d826e0a0b77f1b85df0ddf9860ebe931a208590492305d78a4310bef25507d77",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/83/83ebbddc024676bdf8c1fae6c4f66d2a23984e5d6dae4e9e337ad1137b698af8.mp3",
+            "sha256": "83ebbddc024676bdf8c1fae6c4f66d2a23984e5d6dae4e9e337ad1137b698af8",
+            "size": 381600
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/f8/f8c7872cf98467228a48347e638de78d688317f8c344ffe82d6c8635e0547196.vtt",
+            "sha256": "f8c7872cf98467228a48347e638de78d688317f8c344ffe82d6c8635e0547196",
+            "size": 891
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T04:27:34.278Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 20558,
+      "lookupSha256": "870eefc1c88b3580d43e5a5fb3c2101937ed921bf988dc23f2075ec639179d55",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "With reference directions set, we apply Kirchhoff's current and voltage laws to constrain the circuit. Kirchhoff's current law states that the sum of currents entering any node equals zero, reflecting charge conservation. Kirchhoff's voltage law requires that the sum of voltage drops around any closed loop equals zero, reflecting energy conservation. For our series circuit, we write one KCL equation at the top node and one KVL equation around the loop. These constraints reduce the number of unknowns and provide the structural framework for solving the circuit. We then combine these with element laws to form a complete set of equations that uniquely determine all voltages and currents."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "0a53ac34dd0b6f1fbf20881814cd7851314fc3c00cc7f74026b80470228d2876",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/3f/3fcc0197a56e74c5b71687c357f6809471033871aa5c411dcb92edf1870642ce.mp3",
+            "sha256": "3fcc0197a56e74c5b71687c357f6809471033871aa5c411dcb92edf1870642ce",
+            "size": 372384
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56e22bb8fb0d58a849f5b73f54830efe111529cba9b056a3edf82a0ad33da2d9.vtt",
+            "sha256": "56e22bb8fb0d58a849f5b73f54830efe111529cba9b056a3edf82a0ad33da2d9",
+            "size": 892
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T04:27:34.279Z"
     },
     {
       "cacheHit": true,
@@ -1896,8 +1896,27 @@
   ],
   "status": "awaiting-approval",
   "toolchain": {
+    "ffmpeg": {
+      "available": true,
+      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "available": true,
+      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "gitChangedPaths": [
+      "outreach/README.md",
+      "outreach/general-email.md",
+      "outreach/leadership-confirmation.md",
+      "outreach/subject-showcase/reference-manifest.json"
+    ],
+    "gitDirty": true,
+    "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
+    "gitStatusSha256": "add6a4c631c3d463fa2b7e37fa6a50bfab3e6fce98296cf041f8a8d165d4cda8",
     "node": "v22.23.1",
     "platform": "darwin-arm64",
+    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtimeDirty": false,
     "sharp": {
       "aom": "3.14.1",
       "archive": "3.8.8",
@@ -1921,32 +1940,14 @@
       "png": "1.6.58",
       "proxy-libintl": "0.5",
       "rsvg": "2.62.90",
+      "sharp": "0.35.3",
       "tiff": "d01a94b",
       "uhdr": "1acdbed",
       "vips": "8.18.3",
       "webp": "1.6.0",
       "xml2": "2.15.3",
-      "zlib-ng": "2.3.3",
-      "sharp": "0.35.3"
-    },
-    "ffmpeg": {
-      "available": true,
-      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
-    },
-    "ffprobe": {
-      "available": true,
-      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
-    },
-    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
-    "gitDirty": true,
-    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
-    "gitChangedPaths": [
-      "outreach/README.md",
-      "outreach/general-email.md",
-      "outreach/leadership-confirmation.md"
-    ],
-    "runtimeDirty": false,
-    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "zlib-ng": "2.3.3"
+    }
   },
   "totalCostUsd": 0
 }

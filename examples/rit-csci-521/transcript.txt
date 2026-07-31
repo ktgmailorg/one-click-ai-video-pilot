@@ -1,249 +1,197 @@
-NARRATOR: Begin by framing Course Foundations and Scope as a question about inputs,
+Begin by framing Course Foundations and Scope as a question about inputs, decisions, and
 
-decisions, and observable results.
+observable results.
 
-NARRATOR: Topics include the knowledge discovery process; data exploration and its
+Topics include the knowledge discovery process; data exploration and its role; data
 
-role; data extraction, cleaning, integration and transformation; handling numeric,
+extraction, cleaning, integration and transformation; handling numeric,
 
 unstructured, text, web, and other forms of data; and ethical issues underlying data
 
 preparation and mining.
 
-NARRATOR: Consider this worked case: Students will review the official course catalog to
+Consider this worked case: Students will review the official course catalog to confirm
 
-confirm that data cleaning projects and a paper are required for credit.
+that data cleaning projects and a paper are required for credit.
 
-NARRATOR: On screen, display the official course catalog excerpt highlighting the
+List the givens before choosing a method, because an unstated assumption can change the
 
-knowledge discovery process and required deliverables.
+conclusion.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+This establishes the vocabulary and scope needed for the remaining sections.
 
-change the conclusion.
+Now define Data Exploration and Its Role precisely enough that another learner could
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+test the definition.
 
-NARRATOR: Now define Data Exploration and Its Role precisely enough that another learner
+Data cleaning projects and a paper are required.
 
-could test the definition.
+Consider this worked case: Instructor will demonstrate how exploratory data analysis
 
-NARRATOR: Data cleaning projects and a paper are required.
+reveals missing values and outliers in a sample dataset.
 
-NARRATOR: Consider this worked case: Instructor will demonstrate how exploratory
-
-data analysis reveals missing values and outliers in a sample dataset.
-
-NARRATOR: On screen, show a split-screen comparison of raw data versus explored data
-
-highlighting identified anomalies.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.
-
-NARRATOR: With the foundation in place, examine how Data Extraction and Cleaning
-
-operates in a concrete sequence.
-
-NARRATOR: Constraints reject states that violate declared data rules.
-
-NARRATOR: Consider this worked case: Students will practice extracting structured data from
-
-a CSV file and removing duplicate rows using standard cleaning techniques.
-
-NARRATOR: On screen, animate the step-by-step removal of duplicate rows and standardization
-
-of date formats in a spreadsheet.
-
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
-
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Next, compare the choices involved in Data Integration and Transformation and
+With the foundation in place, examine how Data Extraction and Cleaning operates in a concrete
 
-make the decision criteria explicit.
+sequence.
 
-NARRATOR: Queries select, join, aggregate, insert, update, and delete data.
+Constraints reject states that violate declared data rules.
 
-NARRATOR: Consider this worked case: Instructor will demonstrate merging two
+Consider this worked case: Students will practice extracting structured data from a CSV
 
-relational tables and converting categorical variables into numeric codes.
+file and removing duplicate rows using standard cleaning techniques.
 
-NARRATOR: On screen, display a before-and-after table showing merged columns
+Follow every arrow in order and name the state before and after each transition.
 
-and transformed categorical values.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
-
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Then summarize what the example demonstrates, what it does not establish, and
+Next, compare the choices involved in Data Integration and Transformation and make the
 
-what evidence would be needed next.
+decision criteria explicit.
 
-NARRATOR: Apply Handling Numeric Data to a worked situation instead of treating it as an
+Queries select, join, aggregate, insert, update, and delete data.
+
+Consider this worked case: Instructor will demonstrate merging two relational tables and
+
+converting categorical variables into numeric codes.
+
+Compare alternatives against the same constraints so the evaluation does not move
+
+the goalposts.
+
+Using shared criteria turns a preference into a defensible technical choice.
+
+Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+Then summarize what the example demonstrates, what it does not establish, and what evidence
+
+would be needed next.
+
+Apply Handling Numeric Data to a worked situation instead of treating it as an
 
 isolated definition.
 
-NARRATOR: This course provides an introduction to the concepts and techniques used in
+This course provides an introduction to the concepts and techniques used in preparing data
 
-preparing data for subsequent data mining.
+for subsequent data mining.
 
-NARRATOR: Consider this worked case: Students will calculate the mean and median to impute
+Consider this worked case: Students will calculate the mean and median to impute
 
 missing numeric values and apply min-max normalization to a dataset.
 
-NARRATOR: On screen, show a bar chart comparing raw numeric values versus normalized
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-values ranging from 0 to 1.
+step.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+The worked case shows both how to apply the method and how to check it.
 
-at each step.
+Examine the tradeoffs in Handling Unstructured and Text Data, including what improves and
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+what becomes more difficult.
 
-NARRATOR: Examine the tradeoffs in Handling Unstructured and Text Data, including what
+Constraints and indexes support data integrity and efficient lookup.
 
-improves and what becomes more difficult.
+Consider this worked case: Instructor will demonstrate converting a paragraph of text
 
-NARRATOR: Constraints and indexes support data integrity and efficient lookup.
+into a list of tokens and removing common stop words.
 
-NARRATOR: Consider this worked case: Instructor will demonstrate converting a
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-paragraph of text into a list of tokens and removing common stop words.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: On screen, display a word cloud transitioning from raw text to a cleaned token
-
-list with stop words highlighted.
-
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
-
-acceptable.
-
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Stress-test the reasoning around Handling Web Data with an edge case and
+Stress-test the reasoning around Handling Web Data with an edge case and identify which
 
-identify which assumption controls the outcome.
+assumption controls the outcome.
 
-NARRATOR: Relational systems organize data with tables, rows, columns, and declared
+Relational systems organize data with tables, rows, columns, and declared types.
 
-types.
-
-NARRATOR: Consider this worked case: Students will scrape a static webpage, parse the HTML
+Consider this worked case: Students will scrape a static webpage, parse the HTML
 
 structure, and extract structured records while respecting server rate limits.
 
-NARRATOR: On screen, show a flowchart of the web scraping process from request to parsed
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-JSON output.
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+Use Data Integrity and Constraints to diagnose a failure by separating symptoms, causes, and
 
-holds.
+corrective action.
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+Indexes provide additional access paths for selected queries.
 
-core idea.
+Consider this worked case: Instructor will demonstrate how primary keys and foreign keys
 
-NARRATOR: Use Data Integrity and Constraints to diagnose a failure by separating symptoms,
+prevent duplicate and orphaned records in a relational database.
 
-causes, and corrective action.
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-NARRATOR: Indexes provide additional access paths for selected queries.
+smallest plausible cause.
 
-NARRATOR: Consider this worked case: Instructor will demonstrate how primary keys
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-and foreign keys prevent duplicate and orphaned records in a relational database.
-
-NARRATOR: On screen, display a database schema diagram highlighting primary key and foreign
-
-key relationships.
-
-NARRATOR: Locate the first point where observed behavior diverges from expected
-
-behavior, then test the smallest plausible cause.
-
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
-
-and the test.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Connect Ethical Issues in Data Preparation to the earlier ideas and explain
+Connect Ethical Issues in Data Preparation to the earlier ideas and explain how the pieces
 
-how the pieces work as one system.
+work as one system.
 
-NARRATOR: Nodes and relationships can carry properties.
+Nodes and relationships can carry properties.
 
-NARRATOR: Consider this worked case: Students will review a case study on anonymizing
+Consider this worked case: Students will review a case study on anonymizing personal
 
-personal data and ensuring fair representation in cleaned datasets.
+data and ensuring fair representation in cleaned datasets.
 
-NARRATOR: On screen, show a checklist of ethical guidelines for data preparation and
+Explain each connection explicitly and verify that information retains the same meaning
 
-mining.
+across representations.
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+The synthesis matters only if every connection remains supported by the original evidence.
 
-meaning across representations.
-
-NARRATOR: The synthesis matters only if every connection remains supported by the original
-
-evidence.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-guide a new analysis.
+analysis.
 
-NARRATOR: Labels group nodes that play a similar domain role.
+Labels group nodes that play a similar domain role.
 
-NARRATOR: Consider this worked case: Students will complete a checklist verifying extraction
+Consider this worked case: Students will complete a checklist verifying extraction
 
 accuracy, cleaning completeness, transformation consistency, and ethical
 
 compliance.
 
-NARRATOR: On screen, display a printable checklist template with checkboxes for each
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
 verification step.
 
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-next verification step.
+intuition.
 
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.

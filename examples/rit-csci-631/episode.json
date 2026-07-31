@@ -13,7 +13,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Pipeline Architecture Overview as a question about inputs, decisions, and observable results. Geometric transforms map coordinates between image representations. Consider this worked case: A standard pipeline converts a raw camera image into a coordinate system, applies lighting models, extracts features, and outputs object hypotheses. On screen, display a horizontal flowchart with five labeled stages: image acquisition, representation, assumption setting, supervision, and decision rule application. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Begin by framing Pipeline Architecture Overview as a question about inputs, decisions, and observable results. Geometric transforms map coordinates between image representations. Consider this worked case: A standard pipeline converts a raw camera image into a coordinate system, applies lighting models, extracts features, and outputs object hypotheses. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 58,
       "title": "Pipeline Architecture Overview",
       "visualDirection": "template:academic-process | Display a horizontal flowchart with five labeled stages: image acquisition, representation, assumption setting, supervision, and decision rule application."
@@ -31,7 +31,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Image Formation & Geometry precisely enough that another learner could test the definition. Projective geometry relates three-dimensional points to image coordinates. Consider this worked case: A camera lens maps a three-dimensional object's vertices to specific pixel locations using a projection matrix that accounts for focal length and sensor position. On screen, show a diagram of a camera projecting 3D world points onto a 2D image plane using perspective lines and a focal point marker. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "narration": "Now define Image Formation & Geometry precisely enough that another learner could test the definition. Projective geometry relates three-dimensional points to image coordinates. Consider this worked case: A camera lens maps a three-dimensional object's vertices to specific pixel locations using a projection matrix that accounts for focal length and sensor position. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
       "plannedSeconds": 56,
       "title": "Image Formation & Geometry",
       "visualDirection": "template:academic-process | Show a diagram of a camera projecting 3D world points onto a 2D image plane using perspective lines and a focal point marker."
@@ -49,7 +49,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Appearance Modeling operates in a concrete sequence. Appearance models describe how lighting, material, and viewpoint affect measured pixels. Consider this worked case: A matte surface reflects ambient light uniformly, while a glossy surface creates specular highlights that shift with the camera angle. On screen, display a split image showing the same object under two different lighting conditions and camera angles, highlighting pixel value variations. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "narration": "With the foundation in place, examine how Appearance Modeling operates in a concrete sequence. Appearance models describe how lighting, material, and viewpoint affect measured pixels. Consider this worked case: A matte surface reflects ambient light uniformly, while a glossy surface creates specular highlights that shift with the camera angle. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
       "plannedSeconds": 55,
       "title": "Appearance Modeling",
       "visualDirection": "template:academic-process | Display a split image showing the same object under two different lighting conditions and camera angles, highlighting pixel value variations."
@@ -67,7 +67,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Motion Estimation and make the decision criteria explicit. Motion estimation compares observations across frames. Consider this worked case: A video sequence of a moving car is analyzed by aligning corresponding pixels between frames to compute velocity vectors and path trajectories. On screen, show a side-by-side frame comparison with overlaid displacement arrows indicating pixel movement between consecutive video frames. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Next, compare the choices involved in Motion Estimation and make the decision criteria explicit. Motion estimation compares observations across frames. Consider this worked case: A video sequence of a moving car is analyzed by aligning corresponding pixels between frames to compute velocity vectors and path trajectories. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 56,
       "title": "Motion Estimation",
       "visualDirection": "template:academic-process | Show a side-by-side frame comparison with overlaid displacement arrows indicating pixel movement between consecutive video frames."
@@ -85,7 +85,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Object Recognition to a worked situation instead of treating it as an isolated definition. Object recognition maps visual evidence to object hypotheses. Consider this worked case: A system identifies a traffic sign by comparing edge patterns and color distributions in the image to a database of known sign templates. On screen, display a bounding box around a detected object with a confidence score and a list of matched class hypotheses below the box. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "narration": "Apply Object Recognition to a worked situation instead of treating it as an isolated definition. Object recognition maps visual evidence to object hypotheses. Consider this worked case: A system identifies a traffic sign by comparing edge patterns and color distributions in the image to a database of known sign templates. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
       "plannedSeconds": 57,
       "title": "Object Recognition",
       "visualDirection": "template:academic-process | Display a bounding box around a detected object with a confidence score and a list of matched class hypotheses below the box."
@@ -103,7 +103,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Scene Understanding, including what improves and what becomes more difficult. Scene understanding combines objects, layout, and contextual relationships. Consider this worked case: A street scene is interpreted by recognizing a pedestrian, a road, and a building, then assigning semantic relationships such as 'standing on' and 'adjacent to'. On screen, show a labeled scene graph with nodes representing objects and edges indicating spatial and contextual relationships between them. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "narration": "Examine the tradeoffs in Scene Understanding, including what improves and what becomes more difficult. Scene understanding combines objects, layout, and contextual relationships. Consider this worked case: A street scene is interpreted by recognizing a pedestrian, a road, and a building, then assigning semantic relationships such as 'standing on' and 'adjacent to'. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
       "plannedSeconds": 55,
       "title": "Scene Understanding",
       "visualDirection": "template:academic-process | Show a labeled scene graph with nodes representing objects and edges indicating spatial and contextual relationships between them."
@@ -121,7 +121,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Image Representation & Conversion with an edge case and identify which assumption controls the outcome. Computer vision pipelines represent images as numeric arrays. Consider this worked case: A color image is converted from RGB to HSV space to isolate luminance information from chromatic variations for better edge detection. On screen, display a color bar showing the RGB to HSV conversion process, with a side-by-side comparison of the original and converted image channels. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "narration": "Stress-test the reasoning around Image Representation & Conversion with an edge case and identify which assumption controls the outcome. Computer vision pipelines represent images as numeric arrays. Consider this worked case: A color image is converted from RGB to HSV space to isolate luminance information from chromatic variations for better edge detection. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
       "plannedSeconds": 58,
       "title": "Image Representation & Conversion",
       "visualDirection": "template:academic-process | Display a color bar showing the RGB to HSV conversion process, with a side-by-side comparison of the original and converted image channels."
@@ -139,7 +139,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Filtering & Feature Extraction to diagnose a failure by separating symptoms, causes, and corrective action. Filtering combines neighboring samples to smooth, sharpen, or detect structure. Consider this worked case: A Gaussian filter smooths a noisy image to reduce high-frequency noise, and a SIFT detector extracts scale-invariant keypoints for matching. On screen, show a before-and-after image pair demonstrating noise reduction and a heatmap overlay highlighting detected feature keypoints. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "narration": "Use Filtering & Feature Extraction to diagnose a failure by separating symptoms, causes, and corrective action. Filtering combines neighboring samples to smooth, sharpen, or detect structure. Consider this worked case: A Gaussian filter smooths a noisy image to reduce high-frequency noise, and a SIFT detector extracts scale-invariant keypoints for matching. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
       "plannedSeconds": 55,
       "title": "Filtering & Feature Extraction",
       "visualDirection": "template:academic-process | Show a before-and-after image pair demonstrating noise reduction and a heatmap overlay highlighting detected feature keypoints."
@@ -157,7 +157,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Segmentation & Shape Analysis to the earlier ideas and explain how the pieces work as one system. Segmentation assigns pixels or regions to selected categories. Consider this worked case: A binary mask isolates a vehicle from a background, and contour approximation algorithms reduce the boundary to a polygon for further analysis. On screen, display a segmented image with color-coded regions and a simplified polygon overlay representing the object's shape. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "narration": "Connect Segmentation & Shape Analysis to the earlier ideas and explain how the pieces work as one system. Segmentation assigns pixels or regions to selected categories. Consider this worked case: A binary mask isolates a vehicle from a background, and contour approximation algorithms reduce the boundary to a polygon for further analysis. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
       "plannedSeconds": 55,
       "title": "Segmentation & Shape Analysis",
       "visualDirection": "template:academic-process | Display a segmented image with color-coded regions and a simplified polygon overlay representing the object's shape."
@@ -175,7 +175,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Evaluation & Robustness as a practical checklist that can guide a new analysis. Evaluation tests sensitivity to viewpoint, lighting, occlusion, and data shift. Consider this worked case: A detection model is tested across different camera angles and lighting levels to measure false positive rates and localization error. On screen, show a confusion matrix and a heatmap of detection accuracy across different environmental conditions like lighting and occlusion levels. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "narration": "Finish with Evaluation & Robustness as a practical checklist that can guide a new analysis. Evaluation tests sensitivity to viewpoint, lighting, occlusion, and data shift. Consider this worked case: A detection model is tested across different camera angles and lighting levels to measure false positive rates and localization error. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
       "plannedSeconds": 55,
       "title": "Evaluation & Robustness",
       "visualDirection": "template:academic-process | Show a confusion matrix and a heatmap of detection accuracy across different environmental conditions like lighting and occlusion levels."

@@ -1,231 +1,169 @@
-NARRATOR: Begin by framing Pipeline Architecture Overview as a question about
+Begin by framing Pipeline Architecture Overview as a question about inputs,
 
-inputs, decisions, and observable results.
+decisions, and observable results.
 
-NARRATOR: Geometric transforms map coordinates between image representations.
+Geometric transforms map coordinates between image representations.
 
-NARRATOR: Consider this worked case: A standard pipeline converts a raw camera image
+Consider this worked case: A standard pipeline converts a raw camera image into a coordinate
 
-into a coordinate system, applies lighting models, extracts features, and outputs object
+system, applies lighting models, extracts features, and outputs object hypotheses.
 
-hypotheses.
+List the givens before choosing a method, because an unstated assumption can change the
 
-NARRATOR: On screen, display a horizontal flowchart with five labeled stages: image
+conclusion.
 
-acquisition, representation, assumption setting, supervision, and decision rule
+This establishes the vocabulary and scope needed for the remaining sections.
 
-application.
-
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
-
-change the conclusion.
-
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Now define Image Formation & Geometry precisely enough that another learner
+Now define Image Formation & Geometry precisely enough that another learner could
 
-could test the definition.
+test the definition.
 
-NARRATOR: Projective geometry relates three-dimensional points to image coordinates.
+Projective geometry relates three-dimensional points to image coordinates.
 
-NARRATOR: Consider this worked case: A camera lens maps a three-dimensional object's
+Consider this worked case: A camera lens maps a three-dimensional object's vertices to
 
-vertices to specific pixel locations using a projection matrix that accounts for focal
+specific pixel locations using a projection matrix that accounts for focal length and
 
-length and sensor position.
+sensor position.
 
-NARRATOR: On screen, show a diagram of a camera projecting 3D world points onto a 2D
-
-image plane using perspective lines and a focal point marker.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Appearance Modeling operates in a
+With the foundation in place, examine how Appearance Modeling operates in a concrete
 
-concrete sequence.
+sequence.
 
-NARRATOR: Appearance models describe how lighting, material, and viewpoint affect
+Appearance models describe how lighting, material, and viewpoint affect measured
 
-measured pixels.
+pixels.
 
-NARRATOR: Consider this worked case: A matte surface reflects ambient light uniformly,
+Consider this worked case: A matte surface reflects ambient light uniformly, while a
 
-while a glossy surface creates specular highlights that shift with the camera angle.
+glossy surface creates specular highlights that shift with the camera angle.
 
-NARRATOR: On screen, display a split image showing the same object under two different
+Follow every arrow in order and name the state before and after each transition.
 
-lighting conditions and camera angles, highlighting pixel value variations.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+Next, compare the choices involved in Motion Estimation and make the decision criteria
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+explicit.
 
-NARRATOR: Next, compare the choices involved in Motion Estimation and make the decision
+Motion estimation compares observations across frames.
 
-criteria explicit.
+Consider this worked case: A video sequence of a moving car is analyzed by aligning
 
-NARRATOR: Motion estimation compares observations across frames.
+corresponding pixels between frames to compute velocity vectors and path trajectories.
 
-NARRATOR: Consider this worked case: A video sequence of a moving car is analyzed by
+Compare alternatives against the same constraints so the evaluation does not move
 
-aligning corresponding pixels between frames to compute velocity vectors and path
+the goalposts.
 
-trajectories.
+Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: On screen, show a side-by-side frame comparison with overlaid displacement arrows
-
-indicating pixel movement between consecutive video frames.
-
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
-
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Apply Object Recognition to a worked situation instead of treating it as an
+Apply Object Recognition to a worked situation instead of treating it as an isolated
 
-isolated definition.
+definition.
 
-NARRATOR: Object recognition maps visual evidence to object hypotheses.
+Object recognition maps visual evidence to object hypotheses.
 
-NARRATOR: Consider this worked case: A system identifies a traffic sign by comparing edge
+Consider this worked case: A system identifies a traffic sign by comparing edge patterns and
 
-patterns and color distributions in the image to a database of known sign templates.
+color distributions in the image to a database of known sign templates.
 
-NARRATOR: On screen, display a bounding box around a detected object with a confidence
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-score and a list of matched class hypotheses below the box.
+step.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+The worked case shows both how to apply the method and how to check it.
 
-at each step.
+Examine the tradeoffs in Scene Understanding, including what improves and what becomes more
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+difficult.
 
-NARRATOR: Examine the tradeoffs in Scene Understanding, including what improves and
+Scene understanding combines objects, layout, and contextual relationships.
 
-what becomes more difficult.
+Consider this worked case: A street scene is interpreted by recognizing a pedestrian, a
 
-NARRATOR: Scene understanding combines objects, layout, and contextual relationships.
+road, and a building, then assigning semantic relationships such as 'standing on' and
 
-NARRATOR: Consider this worked case: A street scene is interpreted by recognizing a
+'adjacent to'.
 
-pedestrian, a road, and a building, then assigning semantic relationships such as
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-'standing on' and 'adjacent to'.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: On screen, show a labeled scene graph with nodes representing objects and
+Stress-test the reasoning around Image Representation & Conversion with an edge case
 
-edges indicating spatial and contextual relationships between them.
+and identify which assumption controls the outcome.
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+Computer vision pipelines represent images as numeric arrays.
 
-acceptable.
+Consider this worked case: A color image is converted from RGB to HSV space to isolate
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+luminance information from chromatic variations for better edge detection.
 
-NARRATOR: Stress-test the reasoning around Image Representation & Conversion with an edge
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-case and identify which assumption controls the outcome.
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-NARRATOR: Computer vision pipelines represent images as numeric arrays.
+Use Filtering & Feature Extraction to diagnose a failure by separating symptoms, causes, and
 
-NARRATOR: Consider this worked case: A color image is converted from RGB to HSV space to
+corrective action.
 
-isolate luminance information from chromatic variations for better edge detection.
+Filtering combines neighboring samples to smooth, sharpen, or detect structure.
 
-NARRATOR: On screen, display a color bar showing the RGB to HSV conversion process,
+Consider this worked case: A Gaussian filter smooths a noisy image to reduce high-frequency
 
-with a side-by-side comparison of the original and converted image channels.
+noise, and a SIFT detector extracts scale-invariant keypoints for matching.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-holds.
+smallest plausible cause.
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-core idea.
+Connect Segmentation & Shape Analysis to the earlier ideas and explain how the pieces work
 
-NARRATOR: Use Filtering & Feature Extraction to diagnose a failure by separating symptoms,
+as one system.
 
-causes, and corrective action.
+Segmentation assigns pixels or regions to selected categories.
 
-NARRATOR: Filtering combines neighboring samples to smooth, sharpen, or detect
-
-structure.
-
-NARRATOR: Consider this worked case: A Gaussian filter smooths a noisy image to
-
-reduce high-frequency noise, and a SIFT detector extracts scale-invariant keypoints
-
-for matching.
-
-NARRATOR: On screen, show a before-and-after image pair demonstrating noise reduction and a
-
-heatmap overlay highlighting detected feature keypoints.
-
-NARRATOR: Locate the first point where observed behavior diverges from expected
-
-behavior, then test the smallest plausible cause.
-
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
-
-and the test.
-
-NARRATOR: Connect Segmentation & Shape Analysis to the earlier ideas and explain how
-
-the pieces work as one system.
-
-NARRATOR: Segmentation assigns pixels or regions to selected categories.
-
-NARRATOR: Consider this worked case: A binary mask isolates a vehicle from a background, and
+Consider this worked case: A binary mask isolates a vehicle from a background, and
 
 contour approximation algorithms reduce the boundary to a polygon for further analysis.
 
-NARRATOR: On screen, display a segmented image with color-coded regions and a simplified
+Explain each connection explicitly and verify that information retains the same meaning
 
-polygon overlay representing the object's shape.
+across representations.
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+The synthesis matters only if every connection remains supported by the original evidence.
 
-meaning across representations.
-
-NARRATOR: The synthesis matters only if every connection remains supported by the original
-
-evidence.
-
-NARRATOR: Finish with Evaluation & Robustness as a practical checklist that can guide a new
+Finish with Evaluation & Robustness as a practical checklist that can guide a new
 
 analysis.
 
-NARRATOR: Evaluation tests sensitivity to viewpoint, lighting, occlusion, and data
+Evaluation tests sensitivity to viewpoint, lighting, occlusion, and data shift.
 
-shift.
+Consider this worked case: A detection model is tested across different camera angles and
 
-NARRATOR: Consider this worked case: A detection model is tested across different
+lighting levels to measure false positive rates and localization error.
 
-camera angles and lighting levels to measure false positive rates and localization error.
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-NARRATOR: On screen, show a confusion matrix and a heatmap of detection accuracy across
+verification step.
 
-different environmental conditions like lighting and occlusion levels.
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

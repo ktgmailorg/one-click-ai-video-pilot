@@ -10,7 +10,7 @@
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: A `User` instance maintains its own `username` and `sessionToken` values independent of other `User` instances.",
+          "phrase": "A class declares state and behavior, while an object is an instance with its own runtime identity and field state.",
           "type": "deterministic-svg"
         },
         {
@@ -30,7 +30,7 @@
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: A `Vehicle` base class provides `move()` logic, but a `DeliveryTruck` composes a `CargoContainer` object instead of inheriting from `Truck` to avoid rigid hierarchies.",
+          "phrase": "Inheritance allows a class to derive behavior from base classes, while composition connects objects through explicit attributes.",
           "type": "deterministic-svg"
         },
         {
@@ -50,12 +50,12 @@
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: Calling `draw()` on a `Shape` reference invokes `Circle.draw()` or `Square.draw()` depending on the actual object at runtime.",
+          "phrase": "Consider this worked case: Calling `draw()` on a `Shape` reference invokes `Circle.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-003",
-          "phrase": "Follow every arrow in order and name the state before and after each transition.",
+          "phrase": "draw()` depending on the actual object at runtime.",
           "type": "deterministic-svg"
         }
       ]
@@ -75,7 +75,7 @@
         },
         {
           "id": "beat-04-shot-003",
-          "phrase": "Compare alternatives against the same constraints so the evaluation does not move the goalposts.",
+          "phrase": "Using shared criteria turns a preference into a defensible technical choice.",
           "type": "deterministic-svg"
         }
       ]
@@ -90,7 +90,7 @@
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: A `NetworkRequest` throws a `ConnectionTimeoutException` when a server fails to respond, allowing the caller to handle the failure gracefully.",
+          "phrase": "Exceptions separate normal results from abrupt completion.",
           "type": "deterministic-svg"
         },
         {
@@ -110,7 +110,7 @@
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: A `Queue<T>` class ensures that only elements of type `T` are added or removed, eliminating the need for runtime casting.",
+          "phrase": "Generic types express reusable abstractions while preserving compile-time type constraints.",
           "type": "deterministic-svg"
         },
         {
@@ -130,7 +130,7 @@
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: A `UIController` registers a `Button` instance to emit `click` events, triggering a `EventHandler` without direct method calls.",
+          "phrase": "This course covers advanced concepts such as event-driven programming, design patterns, distributed and concurrent programming, and the use, design and implementation of applications.",
           "type": "deterministic-svg"
         },
         {
@@ -150,7 +150,7 @@
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: The `Strategy` pattern allows a `PaymentProcessor` to swap `CreditCard` and `Crypto` algorithms at runtime without modifying the core class.",
+          "phrase": "Python objects have identity, a type, and a value.",
           "type": "deterministic-svg"
         },
         {
@@ -170,7 +170,7 @@
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: A `TaskScheduler` uses thread pools to process independent jobs concurrently, ensuring that shared resources are accessed via synchronized locks or immutable data structures.",
+          "phrase": "Attribute lookup follows defined rules across an instance and its class hierarchy.",
           "type": "deterministic-svg"
         },
         {
@@ -190,7 +190,7 @@
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: Before deploying a `DataProcessor`, developers check that each class has a single responsibility, validates that internal state cannot be corrupted, and confirms that subclasses can replace base classes without breaking contracts.",
+          "phrase": "Object-oriented design should make responsibilities, invariants, dependencies, composition, and substitution behavior explicit.",
           "type": "deterministic-svg"
         },
         {

@@ -1,235 +1,179 @@
-NARRATOR: Begin by framing Course Purpose and Faculty Role as a question about inputs,
+Begin by framing Course Purpose and Faculty Role as a question about inputs, decisions,
 
-decisions, and observable results.
+and observable results.
 
-NARRATOR: This is intended to allow faculty to pilot potential new undergraduate offerings.
+This is intended to allow faculty to pilot potential new undergraduate offerings.
 
-NARRATOR: Consider this worked case: A professor proposes a new undergraduate course
+Consider this worked case: A professor proposes a new undergraduate course in
 
-in theoretical computer science to test its viability before full adoption.
+theoretical computer science to test its viability before full adoption.
 
-NARRATOR: On screen, display a slide with the course title and a brief description of the
+List the givens before choosing a method, because an unstated assumption can change the
 
-faculty proposal process.
+conclusion.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+This establishes the vocabulary and scope needed for the remaining sections.
 
-change the conclusion.
+Now define Course Classification Clusters precisely enough that another learner could
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+test the definition.
 
-NARRATOR: Now define Course Classification Clusters precisely enough that another learner
+Specific course instances will be identified as belonging to the Theory cluster, the
 
-could test the definition.
+Security cluster, or both clusters.
 
-NARRATOR: Specific course instances will be identified as belonging to the Theory cluster,
+Consider this worked case: A proposed course on cryptographic protocols is classified under
 
-the Security cluster, or both clusters.
+the Security cluster, while a course on computational complexity falls under the
 
-NARRATOR: Consider this worked case: A proposed course on cryptographic protocols is
+Theory cluster.
 
-classified under the Security cluster, while a course on computational complexity falls under
-
-the Theory cluster.
-
-NARRATOR: On screen, show a Venn diagram with two overlapping circles labeled 'Theory
-
-Cluster' and 'Security Cluster', with a third circle labeled 'Both Clusters' in the
-
-intersection.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Faculty-Determined Details
+With the foundation in place, examine how Faculty-Determined Details operates in a
 
-operates in a concrete sequence.
+concrete sequence.
 
-NARRATOR: Specific course details (such as prerequisites, course seminar, format,
+Specific course details (such as prerequisites, course seminar, format,
 
 learning outcomes, assessment methods, and resource needs) will be determined by the
 
 faculty member(s) who propose a specific seminar course in this area.
 
-NARRATOR: Consider this worked case: The proposing faculty member sets the prerequisite
+Consider this worked case: The proposing faculty member sets the prerequisite to
 
-to include discrete mathematics and defines the format as a three-hour weekly lecture.
+include discrete mathematics and defines the format as a three-hour weekly lecture.
 
-NARRATOR: On screen, list the specific course details (prerequisites, seminar, format,
+Follow every arrow in order and name the state before and after each transition.
 
-learning outcomes, assessment methods, resource needs) with checkboxes for faculty to
+The trace converts an abstract statement into an inspectable sequence.
 
-fill in.
+Next, compare the choices involved in Stable Process Overview and make the decision
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+criteria explicit.
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+This course examines current topics in Theory.
 
-NARRATOR: Next, compare the choices involved in Stable Process Overview and make the
+Consider this worked case: The department follows a standardized workflow: faculty
 
-decision criteria explicit.
+submit a proposal, assign cluster(s), define details, and pilot the course.
 
-NARRATOR: This course examines current topics in Theory.
+Compare alternatives against the same constraints so the evaluation does not move
 
-NARRATOR: Consider this worked case: The department follows a standardized workflow:
+the goalposts.
 
-faculty submit a proposal, assign cluster(s), define details, and pilot the course.
+Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: On screen, create a linear flowchart with four steps: Proposal Submission, Cluster
-
-Assignment, Detail Planning, and Course Pilot.
-
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
-
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Apply Standards for Course Design to a worked situation instead of treating it as
+Apply Standards for Course Design to a worked situation instead of treating it as an
 
-an isolated definition.
+isolated definition.
 
-NARRATOR: Hash tables map keys to locations and require a collision strategy.
+Hash tables map keys to locations and require a collision strategy.
 
-NARRATOR: Consider this worked case: The learning outcomes specify that students will
+Consider this worked case: The learning outcomes specify that students will analyze
 
-analyze algorithmic correctness and resource bounds, assessed through a final theoretical
+algorithmic correctness and resource bounds, assessed through a final theoretical proof
 
-proof assignment.
+assignment.
 
-NARRATOR: On screen, display a table with columns for 'Learning Outcome' and 'Assessment
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-Method', filled with example entries.
+step.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+The worked case shows both how to apply the method and how to check it.
 
-at each step.
+Examine the tradeoffs in Planning Methods for Resources, including what improves and what
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+becomes more difficult.
 
-NARRATOR: Examine the tradeoffs in Planning Methods for Resources, including what improves
+Asymptotic notation describes how resource use grows with input size.
 
-and what becomes more difficult.
+Consider this worked case: The faculty member lists required resources, including a
 
-NARRATOR: Asymptotic notation describes how resource use grows with input size.
+whiteboard, projection system, and specific textbooks on theoretical computer science.
 
-NARRATOR: Consider this worked case: The faculty member lists required resources,
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-including a whiteboard, projection system, and specific textbooks on theoretical computer
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-science.
+Stress-test the reasoning around Evaluation Criteria for Proposals with an edge case and
 
-NARRATOR: On screen, show a checklist graphic with items like 'Whiteboard', 'Projection
+identify which assumption controls the outcome.
 
-System', 'Textbooks', and 'Online Resources' for faculty to mark.
+Recurrences describe the cost of recursive algorithms.
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+Consider this worked case: The proposal is evaluated based on whether it meets Theory
 
-acceptable.
+cluster standards and whether the proposed resources are sufficient for a successful
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+pilot.
 
-NARRATOR: Stress-test the reasoning around Evaluation Criteria for Proposals with an edge
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-case and identify which assumption controls the outcome.
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-NARRATOR: Recurrences describe the cost of recursive algorithms.
+Use Representative Examples of Theory Courses to diagnose a failure by separating symptoms,
 
-NARRATOR: Consider this worked case: The proposal is evaluated based on whether it
+causes, and corrective action.
 
-meets Theory cluster standards and whether the proposed resources are sufficient for a
-
-successful pilot.
-
-NARRATOR: On screen, create a rubric with criteria: 'Cluster Alignment', 'Feasibility',
-
-'Learning Outcomes', and 'Resource Availability', with scoring scales.
-
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
-
-holds.
-
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
-
-core idea.
-
-NARRATOR: Use Representative Examples of Theory Courses to diagnose a failure by
-
-separating symptoms, causes, and corrective action.
-
-NARRATOR: OpenDSA presents data structures and algorithms through executable visualizations
+OpenDSA presents data structures and algorithms through executable visualizations
 
 and exercises.
 
-NARRATOR: Consider this worked case: A sample Theory cluster course covers loop invariants,
+Consider this worked case: A sample Theory cluster course covers loop invariants,
 
 divide-and-conquer algorithms, and graph reachability.
 
-NARRATOR: On screen, list three example course titles with brief descriptions: 'Introduction
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-to Algorithm Analysis', 'Data Structures and Algorithms', 'Formal Languages and Automata'.
+smallest plausible cause.
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-behavior, then test the smallest plausible cause.
+Connect Application to Course Planning to the earlier ideas and explain how the pieces work
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+as one system.
 
-and the test.
+Dynamic programming records solutions to overlapping subproblems.
 
-NARRATOR: Connect Application to Course Planning to the earlier ideas and explain how
+Consider this worked case: The faculty member reviews the proposal against the evaluation
 
-the pieces work as one system.
+criteria, makes necessary adjustments, and submits the final plan for departmental
 
-NARRATOR: Dynamic programming records solutions to overlapping subproblems.
+approval.
 
-NARRATOR: Consider this worked case: The faculty member reviews the proposal against
+Explain each connection explicitly and verify that information retains the same meaning
 
-the evaluation criteria, makes necessary adjustments, and submits the final plan for
+across representations.
 
-departmental approval.
+The synthesis matters only if every connection remains supported by the original evidence.
 
-NARRATOR: On screen, show a before-and-after comparison of a course proposal document,
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-highlighting changes made based on evaluation criteria.
+analysis.
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+Algorithm analysis connects a precise problem specification to a correctness argument and
 
-meaning across representations.
+resource bounds.
 
-NARRATOR: The synthesis matters only if every connection remains supported by the original
+Consider this worked case: The checklist includes items like 'Proposal submitted',
 
-evidence.
+'Cluster assigned', 'Details defined', 'Resources secured', 'Evaluation criteria
 
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+met', and 'Pilot approved'.
 
-guide a new analysis.
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-NARRATOR: Algorithm analysis connects a precise problem specification to a correctness
+verification step.
 
-argument and resource bounds.
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-NARRATOR: Consider this worked case: The checklist includes items like 'Proposal
-
-submitted', 'Cluster assigned', 'Details defined', 'Resources secured', 'Evaluation
-
-criteria met', and 'Pilot approved'.
-
-NARRATOR: On screen, display a printable checklist graphic with checkboxes for each
-
-item, ready for faculty to use during the planning phase.
-
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

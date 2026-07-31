@@ -1,7 +1,7 @@
 {
   "approvals": [
     {
-      "approvedAt": "2026-07-31T15:48:44.599Z",
+      "approvedAt": "2026-07-31T18:50:27.896Z",
       "notes": "Verifies declared claim-to-source bindings for draft rendering only; this is not instructor or release approval.",
       "reviewer": "Automated source-pack verification (draft)",
       "role": "automation",
@@ -14,27 +14,27 @@
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/render/documentary-master.core.mp4",
       "role": "master",
-      "sha256": "f2ce6696ed02efa79537a3201a1aeb3ca0a2178bac1bd5cd1ff3a9e00fdbfeeb"
+      "sha256": "135891ce2c01a2d73453edb40d2a11dec3d88953ef94776166698f4abb2d1d04"
     },
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/narration/captions.vtt",
       "role": "captions-vtt",
-      "sha256": "9e32c443100bbe3329f383a82c2e0fb79b7c9fb707b864a78e813995c7f063ad"
+      "sha256": "586695daaf674df1b8f689d51ad95a4c0650a7ca260dea5979b345e04403fffa"
     },
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/narration/captions.srt",
       "role": "captions-srt",
-      "sha256": "de5c026d6b9dd1d414da37fffb9c513716ca2ef4142efc55b503d470e0f1b280"
+      "sha256": "d1adf23ed66f314d3a4e763298d7c7be4fc5f530943eff394686f33ee5da5a2e"
     },
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/narration/transcript.txt",
       "role": "transcript-text",
-      "sha256": "15f00e1ec68fbdfeac5fa0bf39753ee92e4ef34823758b2abd2dab59b3d31b8e"
+      "sha256": "d52b158dec5baad1a6baaf464b4516f9a8bd5500285c22e7673f3746e9960f40"
     },
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/narration/transcript.html",
       "role": "transcript-html",
-      "sha256": "5cea1037df320d282f4c74a0d0e2a782a92f930d1dc10950f2179a02b39e11d5"
+      "sha256": "690d6968120be732511502890ffc684c258cba7a5eafdc1b4aec201a7701fdd9"
     },
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/visuals/thumbnail.png",
@@ -123,7 +123,7 @@
     }
   ],
   "configSha256": "8e3bcf818c5864b8ca996a4b9304d93d1c158bdf833d1426207bd1edc491640f",
-  "createdAt": "2026-07-31T15:49:07.656Z",
+  "createdAt": "2026-07-31T18:50:28.045Z",
   "final": {
     "releaseAudit": {
       "blockers": [],
@@ -180,10 +180,10 @@
           "name": "caption-audio-start-sync",
           "ok": true,
           "value": {
-            "audioStartSeconds": 0,
+            "audioStartSeconds": 0.024,
             "captionStartSeconds": 0.05,
             "maximumOffsetSeconds": 0.25,
-            "offsetSeconds": 0.05
+            "offsetSeconds": 0.026
           }
         },
         {
@@ -212,23 +212,22 @@
         "truePeakDbtp": -2.38
       },
       "audioSampleRate": 48000,
-      "audioStartSeconds": 0,
+      "audioStartSeconds": 0.024,
       "cache": {
-        "draft": false,
+        "draft": true,
         "draftSkipped": false,
-        "master": false,
+        "master": true,
         "sectionCount": 3,
-        "sections": 0
+        "sections": 3
       },
       "draftPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/render/documentary-master.DRAFT.mp4",
       "durationSeconds": 58.321333,
       "encoder": {
-        "codec": "h264_videotoolbox",
-        "mode": "videotoolbox",
-        "prioritizeSpeed": false,
-        "profile": "high",
-        "quality": "80",
-        "realtime": true
+        "codec": "libx264",
+        "crf": "20",
+        "mode": "software",
+        "preset": "veryfast",
+        "threads": "1"
       },
       "frameRate": "30000/1001",
       "height": 1080,
@@ -238,41 +237,41 @@
       "sections": [
         {
           "beatId": "beat-01",
-          "cacheHit": false,
+          "cacheHit": true,
           "durationSeconds": 19.584,
           "output": "beat-01.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/render/sections/beat-01.mp4",
-          "renderSignature": "10c97cd14d7360b187c3ae1513959a2cd6911599c93e5c30328ddcdb478c5a82",
+          "renderSignature": "8fbf4facfd861d6ddb9ba9e6a136d75997291042f2f5f30d5bde4879077bd274",
           "schemaVersion": 1,
-          "sha256": "b51abbcd1b33364105bab5bcaa58bdb278a827a9feaaee4084e33311ddf17446"
+          "sha256": "eddf9f113888d1fdbddb54897bae9dc1882a1ff0bac5d0e1b0961b559e328614"
         },
         {
           "beatId": "beat-02",
-          "cacheHit": false,
+          "cacheHit": true,
           "durationSeconds": 20.976,
           "output": "beat-02.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/render/sections/beat-02.mp4",
-          "renderSignature": "60d89cc2ab05cdb125967e55beff753a9e14f5776b43e6eba23b8b0d64f59b0f",
+          "renderSignature": "de33f0defecedb79bcd08996644e4e94148415d59a4af7ce2c7db620009f2765",
           "schemaVersion": 1,
-          "sha256": "9b8178ab3355738ea7567bb5857f94a92b3b01e141425e05b5f36f5d9123f4bb"
+          "sha256": "08b6a324e5b22a7b4c337c3dcd645e11bebe66734386b23379147f5d080bc9d6"
         },
         {
           "beatId": "beat-03",
-          "cacheHit": false,
+          "cacheHit": true,
           "durationSeconds": 17.736,
           "output": "beat-03.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/render/sections/beat-03.mp4",
-          "renderSignature": "d521edd4c83789f1fa2ae68a5fe0f5ce5b9a6d9ca9f479ff8d38b312bffd80bd",
+          "renderSignature": "1e272962faaf0446083eed9b7e787f1fb95ba5c8ec49b65bfd82f6e284a1e67a",
           "schemaVersion": 1,
-          "sha256": "1b5ff0d9689ff3dcb3f92076dc3e643a43b622d251e5f0f6e0617de99233771e"
+          "sha256": "eca30f32e4ce4e91e70ff028c397c212aea571156c62237e166867a8d42ee300"
         }
       ],
-      "sha256": "f2ce6696ed02efa79537a3201a1aeb3ca0a2178bac1bd5cd1ff3a9e00fdbfeeb",
+      "sha256": "135891ce2c01a2d73453edb40d2a11dec3d88953ef94776166698f4abb2d1d04",
       "title": "How Visual Hierarchy Guides Attention",
       "width": 1920
     }
   },
-  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
   "inputSha256": "d07f0fe904808ec91d802d24ff17c8937710ea03d0931ada3273248eb35c62af",
   "mode": "record",
   "providers": {
@@ -302,74 +301,7 @@
   },
   "requests": [
     {
-      "cacheHit": false,
-      "capability": "speech.synthesize",
-      "durationMs": 726,
-      "lookupSha256": "d39a68b3a7c7ddb9d8f525bc71c156ccf5d65566141d2cecaef86cc4ce715edf",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Professional, concise, and paced for an introductory course audience.",
-          "text": "To test a layout, look away and return for one second. What do you notice first, second, and third? If that order does not match the message, adjust the system rather than adding more emphasis everywhere. A successful hierarchy makes the important path feel natural while leaving the supporting material available."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "4be602319cc215154e69822d55d7d3b91b202e5f1478194cf66345ee3212316d",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/a9/a997fdb9c284025049bc5c5e7f8a0770d2bed0b45ed028c0c3946d675913feeb.mp3",
-            "sha256": "a997fdb9c284025049bc5c5e7f8a0770d2bed0b45ed028c0c3946d675913feeb",
-            "size": 106416
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/36/367ffd12602ee644181666c183cd4666c7650916a5038d110590d94ec17f5418.vtt",
-            "sha256": "367ffd12602ee644181666c183cd4666c7650916a5038d110590d94ec17f5418",
-            "size": 447
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-31T15:48:44.700Z"
-    },
-    {
-      "cacheHit": false,
+      "cacheHit": true,
       "capability": "speech.synthesize",
       "durationMs": 761,
       "lookupSha256": "5a6744625ac045cd95342db8fb2d6436728f84162b1e21db7845cd03b4bee9f0",
@@ -436,7 +368,7 @@
       "startedAt": "2026-07-31T15:48:44.699Z"
     },
     {
-      "cacheHit": false,
+      "cacheHit": true,
       "capability": "speech.synthesize",
       "durationMs": 1027,
       "lookupSha256": "90fcd4eaca7a1a612386b9a97b8323d3b0c9643a1abd1209d5842e89983b0f7d",
@@ -481,6 +413,73 @@
             "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/32/3253708e989e9623c7728780f0ab18ca85afb1879fde827034f01e5861b1aa03.vtt",
             "sha256": "3253708e989e9623c7728780f0ab18ca85afb1879fde827034f01e5861b1aa03",
             "size": 434
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:48:44.700Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 726,
+      "lookupSha256": "d39a68b3a7c7ddb9d8f525bc71c156ccf5d65566141d2cecaef86cc4ce715edf",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "To test a layout, look away and return for one second. What do you notice first, second, and third? If that order does not match the message, adjust the system rather than adding more emphasis everywhere. A successful hierarchy makes the important path feel natural while leaving the supporting material available."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "4be602319cc215154e69822d55d7d3b91b202e5f1478194cf66345ee3212316d",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/a9/a997fdb9c284025049bc5c5e7f8a0770d2bed0b45ed028c0c3946d675913feeb.mp3",
+            "sha256": "a997fdb9c284025049bc5c5e7f8a0770d2bed0b45ed028c0c3946d675913feeb",
+            "size": 106416
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/36/367ffd12602ee644181666c183cd4666c7650916a5038d110590d94ec17f5418.vtt",
+            "sha256": "367ffd12602ee644181666c183cd4666c7650916a5038d110590d94ec17f5418",
+            "size": 447
           }
         ],
         "costUsd": null,
@@ -552,11 +551,12 @@
     "gitChangedPaths": [
       "outreach/README.md",
       "outreach/general-email.md",
-      "outreach/leadership-confirmation.md"
+      "outreach/leadership-confirmation.md",
+      "outreach/subject-showcase/reference-manifest.json"
     ],
     "gitDirty": true,
-    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
-    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
+    "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
+    "gitStatusSha256": "add6a4c631c3d463fa2b7e37fa6a50bfab3e6fce98296cf041f8a8d165d4cda8",
     "node": "v22.23.1",
     "platform": "darwin-arm64",
     "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",

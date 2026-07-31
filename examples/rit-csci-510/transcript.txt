@@ -1,233 +1,185 @@
-NARRATOR: Begin by framing Pipeline Overview as a question about inputs, decisions, and
+Begin by framing Pipeline Overview as a question about inputs, decisions, and
 
 observable results.
 
-NARRATOR: The OpenGL graphics pipeline processes vertices through programmable shader
+The OpenGL graphics pipeline processes vertices through programmable shader stages.
 
-stages.
+Consider this worked case: A vertex shader modifies position and color attributes for
 
-NARRATOR: Consider this worked case: A vertex shader modifies position and color attributes
+each triangle vertex before they reach the rasterizer.
 
-for each triangle vertex before they reach the rasterizer.
+List the givens before choosing a method, because an unstated assumption can change the
 
-NARRATOR: On screen, display a horizontal flowchart with labeled stages: Vertex Shader
+conclusion.
 
--> Geometry Shader -> Rasterizer -> Fragment Shader -> Framebuffer.
+This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
-
-change the conclusion.
-
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Now define Primitive Assembly precisely enough that another learner could
+Now define Primitive Assembly precisely enough that another learner could test the
 
-test the definition.
+definition.
 
-NARRATOR: Primitive assembly groups vertices into points, lines, or triangles.
+Primitive assembly groups vertices into points, lines, or triangles.
 
-NARRATOR: Consider this worked case: Three connected vertices form a triangle primitive
+Consider this worked case: Three connected vertices form a triangle primitive that the
 
-that the rasterizer will convert into a set of pixel candidates.
+rasterizer will convert into a set of pixel candidates.
 
-NARRATOR: On screen, show a wireframe triangle with vertices labeled A, B, and C,
-
-highlighting the edges connecting them.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.
-
-NARRATOR: With the foundation in place, examine how Clipping Process operates in a
-
-concrete sequence.
-
-NARRATOR: Clipping removes portions outside the view volume.
-
-NARRATOR: Consider this worked case: A large triangle extending beyond the camera's field
-
-of view is clipped to fit within the viewport boundaries.
-
-NARRATOR: On screen, illustrate a triangle partially outside a rectangular viewport, with
-
-the clipped portion shaded in gray and the visible portion in white.
-
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
-
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Next, compare the choices involved in Rasterization Conversion and make the
+With the foundation in place, examine how Clipping Process operates in a concrete
 
-decision criteria explicit.
+sequence.
 
-NARRATOR: Rasterization converts primitives into fragment candidates.
+Clipping removes portions outside the view volume.
 
-NARRATOR: Consider this worked case: Each pixel within the clipped triangle receives a
+Consider this worked case: A large triangle extending beyond the camera's field of view is
 
-set of interpolated vertex attributes for processing.
+clipped to fit within the viewport boundaries.
 
-NARRATOR: On screen, render a grid of pixels covering a triangle, with each pixel showing a
+Follow every arrow in order and name the state before and after each transition.
 
-small coordinate index and a dot representing the fragment candidate.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
-
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Apply Interpolation Mechanism to a worked situation instead of treating it as an
+Next, compare the choices involved in Rasterization Conversion and make the decision
+
+criteria explicit.
+
+Rasterization converts primitives into fragment candidates.
+
+Consider this worked case: Each pixel within the clipped triangle receives a set of
+
+interpolated vertex attributes for processing.
+
+Compare alternatives against the same constraints so the evaluation does not move
+
+the goalposts.
+
+Using shared criteria turns a preference into a defensible technical choice.
+
+Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+Apply Interpolation Mechanism to a worked situation instead of treating it as an
 
 isolated definition.
 
-NARRATOR: Interpolation produces per-fragment values from vertex outputs.
+Interpolation produces per-fragment values from vertex outputs.
 
-NARRATOR: Consider this worked case: Color and texture coordinates are calculated for each
+Consider this worked case: Color and texture coordinates are calculated for each pixel
 
-pixel based on the weighted average of the triangle's vertex attributes.
+based on the weighted average of the triangle's vertex attributes.
 
-NARRATOR: On screen, draw a triangle with gradient shading across its surface, showing
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-how values transition smoothly from vertex to vertex.
+step.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+The worked case shows both how to apply the method and how to check it.
 
-at each step.
+Examine the tradeoffs in Fragment Processing, including what improves and what becomes more
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+difficult.
 
-NARRATOR: Examine the tradeoffs in Fragment Processing, including what improves and what
+Fragment processing computes values for framebuffer operations.
 
-becomes more difficult.
+Consider this worked case: A fragment shader applies a lighting model to each pixel,
 
-NARRATOR: Fragment processing computes values for framebuffer operations.
+calculating final color based on material properties and light direction.
 
-NARRATOR: Consider this worked case: A fragment shader applies a lighting model to
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-each pixel, calculating final color based on material properties and light direction.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: On screen, show a side-by-side comparison of a wireframe triangle and a fully
-
-shaded triangle with computed colors.
-
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
-
-acceptable.
-
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Stress-test the reasoning around Depth Testing & Visibility with an edge case
+Stress-test the reasoning around Depth Testing & Visibility with an edge case and identify
 
-and identify which assumption controls the outcome.
+which assumption controls the outcome.
 
-NARRATOR: Depth testing resolves visibility according to stored depth values.
+Depth testing resolves visibility according to stored depth values.
 
-NARRATOR: Consider this worked case: A closer triangle overwrites a farther triangle's
+Consider this worked case: A closer triangle overwrites a farther triangle's pixels because
 
-pixels because its depth values are smaller than the stored depth buffer.
+its depth values are smaller than the stored depth buffer.
 
-NARRATOR: On screen, illustrate two overlapping triangles with depth values
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-displayed as numerical annotations, showing the closer one winning the test.
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+Use Blending Operations to diagnose a failure by separating symptoms, causes, and corrective
 
-holds.
+action.
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+Blending combines a fragment result with an existing framebuffer value.
 
-core idea.
+Consider this worked case: A semi-transparent overlay triangle mixes its computed color with
 
-NARRATOR: Use Blending Operations to diagnose a failure by separating symptoms, causes, and
+the background color using a specified alpha factor.
 
-corrective action.
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-NARRATOR: Blending combines a fragment result with an existing framebuffer value.
+smallest plausible cause.
 
-NARRATOR: Consider this worked case: A semi-transparent overlay triangle mixes its
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-computed color with the background color using a specified alpha factor.
+Connect Coordinate Spaces & Projections to the earlier ideas and explain how the pieces work
 
-NARRATOR: On screen, display a background rectangle and a semi-transparent triangle on
+as one system.
 
-top, with a formula showing alpha blending calculation.
+Coordinate spaces, sampling, and numerical precision must remain explicit.
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
-
-behavior, then test the smallest plausible cause.
-
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
-
-and the test.
-
-NARRATOR: Connect Coordinate Spaces & Projections to the earlier ideas and explain
-
-how the pieces work as one system.
-
-NARRATOR: Coordinate spaces, sampling, and numerical precision must remain explicit.
-
-NARRATOR: Consider this worked case: Vertices are transformed from model space to clip space
+Consider this worked case: Vertices are transformed from model space to clip space
 
 using a projection matrix before being converted to normalized device coordinates.
 
-NARRATOR: On screen, show a diagram of three nested coordinate spaces (model, view, clip)
+Explain each connection explicitly and verify that information retains the same meaning
 
-with arrows indicating transformation flow.
+across representations.
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+The synthesis matters only if every connection remains supported by the original evidence.
 
-meaning across representations.
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-NARRATOR: The synthesis matters only if every connection remains supported by the original
+analysis.
 
-evidence.
-
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
-
-guide a new analysis.
-
-NARRATOR: Topics include an introduction to the basic concepts, 2-D and 3-D modeling and
+Topics include an introduction to the basic concepts, 2-D and 3-D modeling and
 
 transformations, viewing transformations, projections, rendering techniques, graphical
 
 software packages and graphics systems.
 
-NARRATOR: Consider this worked case: Instructors verify that vertex attributes are
+Consider this worked case: Instructors verify that vertex attributes are correctly
 
-correctly interpolated, depth buffers are updated, and blending modes match intended
+interpolated, depth buffers are updated, and blending modes match intended visual outcomes.
 
-visual outcomes.
+Shader stage execution order, 2.
 
-NARRATOR: On screen, list a checklist with checkboxes for: 1. Shader stage execution
+Coordinate transformation accuracy, 3.
 
-order, 2. Coordinate transformation accuracy, 3. Depth and blending parameter validation.
+Depth and blending parameter validation.
 
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-next verification step.
+verification step.
 
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-memory or intuition.
+intuition.

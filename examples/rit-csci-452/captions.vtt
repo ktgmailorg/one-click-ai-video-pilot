@@ -2,565 +2,426 @@ WEBVTT
 
 1
 00:00:00.050 --> 00:00:01.890
-NARRATOR: Begin by framing 1.
+Begin by framing 1.
 
 2
-00:00:01.890 --> 00:00:07.915
-NARRATOR: Multiprogramming Environment
-Overview as a question about inputs,
+00:00:01.890 --> 00:00:09.586
+Multiprogramming Environment Overview as a
+question about inputs, decisions, and
 
 3
-00:00:07.915 --> 00:00:10.593
-decisions, and observable results.
+00:00:09.586 --> 00:00:11.125
+observable results.
 
 4
-00:00:10.593 --> 00:00:17.574
-NARRATOR: A process combines an address space
-with execution state and operating-system
+00:00:11.125 --> 00:00:18.057
+A process combines an address space with
+execution state and operating-system
 
 5
-00:00:17.574 --> 00:00:18.156
+00:00:18.057 --> 00:00:18.687
 resources.
 
 6
-00:00:18.156 --> 00:00:24.857
-NARRATOR: Consider this worked case: A server
-running multiple web requests simultaneously
+00:00:18.687 --> 00:00:25.454
+Consider this worked case: A server running
+multiple web requests simultaneously uses
 
 7
-00:00:24.857 --> 00:00:31.000
-uses separate address spaces for each process
-to prevent memory corruption.
+00:00:25.454 --> 00:00:31.093
+separate address spaces for each process to
+prevent memory corruption.
 
 8
-00:00:31.000 --> 00:00:38.463
-NARRATOR: On screen, display a diagram showing
-three isolated process bubbles sharing a
+00:00:31.093 --> 00:00:38.312
+List the givens before choosing a method,
+because an unstated assumption can change the
 
 9
-00:00:38.463 --> 00:00:44.203
-central CPU and memory bus, with arrows
-indicating context switches.
+00:00:38.312 --> 00:00:38.828
+conclusion.
 
 10
-00:00:44.203 --> 00:00:50.220
-NARRATOR: List the givens before choosing a
-method, because an unstated assumption can
+00:00:38.828 --> 00:00:44.999
+This establishes the vocabulary and scope
+needed for the remaining sections.
 
 11
-00:00:50.220 --> 00:00:51.609
-change the conclusion.
+00:00:45.098 --> 00:00:46.798
+Now define 2.
 
 12
-00:00:51.609 --> 00:00:57.359
-NARRATOR: This establishes the vocabulary and
-scope needed for the remaining sections.
+00:00:46.798 --> 00:00:53.764
+Process Definition and State precisely enough
+that another learner could test the
 
 13
-00:00:57.482 --> 00:00:59.213
-NARRATOR: Now define 2.
+00:00:53.764 --> 00:00:54.344
+definition.
 
 14
-00:00:59.213 --> 00:01:04.971
-NARRATOR: Process Definition and State
-precisely enough that another learner could
+00:00:54.344 --> 00:01:00.563
+Locks protect invariants when concurrent
+execution can access shared state.
 
 15
-00:01:04.971 --> 00:01:06.541
-test the definition.
+00:01:00.563 --> 00:01:08.340
+Consider this worked case: Each running
+application maintains its own stack, heap, and
 
 16
-00:01:06.541 --> 00:01:12.697
-NARRATOR: Locks protect invariants when
-concurrent execution can access shared state.
+00:01:08.340 --> 00:01:13.126
+open file descriptors, preventing data leakage
+between applications.
 
 17
-00:01:12.697 --> 00:01:19.550
-NARRATOR: Consider this worked case: Each
-running application maintains its own stack,
+00:01:13.126 --> 00:01:19.714
+Separate the formal definition from an
+implementation detail, then identify what
 
 18
-00:01:19.550 --> 00:01:25.260
-heap, and open file descriptors, preventing
-data leakage between applications.
-
-19
-00:01:25.260 --> 00:01:31.712
-NARRATOR: On screen, show a split-screen
-comparison of a process structure containing
-
-20
-00:01:31.712 --> 00:01:37.088
-an address space block, execution state
-register, and resource list.
-
-21
-00:01:37.088 --> 00:01:43.826
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
-
-22
-00:01:43.826 --> 00:01:46.072
+00:01:19.714 --> 00:01:22.110
 evidence would distinguish them.
 
-23
-00:01:46.072 --> 00:01:52.838
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
+19
+00:01:22.110 --> 00:01:28.735
+A precise definition makes later examples
+easier to evaluate and revise.
 
-24
-00:01:52.838 --> 00:02:00.106
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+20
+00:01:28.735 --> 00:01:35.814
+Name each dependency explicitly, and keep
+labels and representations consistent
 
-25
-00:02:00.106 --> 00:02:02.088
+21
+00:01:35.814 --> 00:01:37.938
 throughout the analysis.
 
+22
+00:01:38.066 --> 00:01:42.297
+With the foundation in place, examine how 3.
+
+23
+00:01:42.297 --> 00:01:49.234
+User Mode vs. Privileged Kernel Mode operates
+in a concrete sequence.
+
+24
+00:01:49.234 --> 00:01:57.388
+Analysis distinguishes user mode, privileged
+kernel code, hardware translation, interrupt
+
+25
+00:01:57.388 --> 00:02:02.281
+state, resource ownership, and synchronization
+invariants.
+
 26
-00:02:02.210 --> 00:02:06.410
-NARRATOR: With the foundation in place,
-examine how 3.
+00:02:02.281 --> 00:02:10.325
+Consider this worked case: A user program
+cannot directly modify the page table or
 
 27
-00:02:06.410 --> 00:02:13.441
-NARRATOR: User Mode vs. Privileged Kernel Mode
-operates in a concrete sequence.
-
-28
-00:02:13.441 --> 00:02:21.235
-NARRATOR: Analysis distinguishes user mode,
-privileged kernel code, hardware translation,
-
-29
-00:02:21.235 --> 00:02:26.691
-interrupt state, resource ownership, and
-synchronization invariants.
-
-30
-00:02:26.691 --> 00:02:34.138
-NARRATOR: Consider this worked case: A user
-program cannot directly modify the page table
-
-31
-00:02:34.138 --> 00:02:38.925
-or interrupt controller registers without
+00:02:10.325 --> 00:02:14.922
+interrupt controller registers without
 triggering a protection fault.
 
+28
+00:02:14.922 --> 00:02:22.000
+Follow every arrow in order and name the state
+before and after each transition.
+
+29
+00:02:22.000 --> 00:02:27.781
+The trace converts an abstract statement into
+an inspectable sequence.
+
+30
+00:02:27.890 --> 00:02:31.027
+Next, compare the choices involved in 4.
+
+31
+00:02:31.027 --> 00:02:36.543
+System Call Mechanism and make the decision
+criteria explicit.
+
 32
-00:02:38.925 --> 00:02:45.290
-NARRATOR: On screen, illustrate a two-tiered
-architecture diagram with a 'User Mode' zone
+00:02:36.543 --> 00:02:42.886
+A system call transfers control from user code
+to a privileged kernel service.
 
 33
-00:02:45.290 --> 00:02:50.675
-and a 'Kernel Mode' zone separated by a
-security boundary line.
+00:02:42.886 --> 00:02:50.514
+Consider this worked case: Calling read() from
+a user program triggers a trap that switches
 
 34
-00:02:50.675 --> 00:02:58.441
-NARRATOR: Follow every arrow in order and name
-the state before and after each transition.
+00:02:50.514 --> 00:02:54.074
+execution to the kernel's file system driver.
 
 35
-00:02:58.441 --> 00:03:04.019
-NARRATOR: The trace converts an abstract
-statement into an inspectable sequence.
+00:02:54.074 --> 00:03:01.360
+Compare alternatives against the same
+constraints so the evaluation does not move
 
 36
-00:03:04.130 --> 00:03:07.236
-NARRATOR: Next, compare the choices involved
-in 4.
+00:03:01.360 --> 00:03:02.574
+the goalposts.
 
 37
-00:03:07.236 --> 00:03:13.173
-NARRATOR: System Call Mechanism and make the
-decision criteria explicit.
+00:03:02.574 --> 00:03:09.386
+Using shared criteria turns a preference into
+a defensible technical choice.
 
 38
-00:03:13.173 --> 00:03:19.470
-NARRATOR: A system call transfers control from
-user code to a privileged kernel service.
+00:03:09.506 --> 00:03:11.049
+Apply 5.
 
 39
-00:03:19.470 --> 00:03:26.309
-NARRATOR: Consider this worked case: Calling
-read() from a user program triggers a trap
+00:03:11.049 --> 00:03:18.480
+Trap Handling and Processor State to a worked
+situation instead of treating it as an
 
 40
-00:03:26.309 --> 00:03:30.705
-that switches execution to the kernel's file
-system driver.
+00:03:18.480 --> 00:03:19.471
+isolated definition.
 
 41
-00:03:30.705 --> 00:03:37.362
-NARRATOR: On screen, draw a flowchart showing
-user code invoking a system call,
+00:03:19.471 --> 00:03:26.575
+A trap records processor state so the kernel
+can handle a system call, exception, or
 
 42
-00:03:37.362 --> 00:03:41.970
-transitioning to kernel code, and returning
-control with results.
+00:03:26.575 --> 00:03:27.049
+interrupt.
 
 43
-00:03:41.970 --> 00:03:48.457
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
+00:03:27.049 --> 00:03:34.134
+Consider this worked case: When an interrupt
+occurs, the CPU automatically saves the
 
 44
-00:03:48.457 --> 00:03:50.079
-move the goalposts.
+00:03:34.134 --> 00:03:40.674
+instruction pointer, registers, and flags to a
+stack frame for later restoration.
 
 45
-00:03:50.079 --> 00:03:57.079
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
+00:03:40.674 --> 00:03:47.867
+Work from the concrete inputs to the result,
+checking units, types, or invariants at each
 
 46
-00:03:57.194 --> 00:03:58.675
-NARRATOR: Apply 5.
+00:03:47.867 --> 00:03:48.346
+step.
 
 47
-00:03:58.675 --> 00:04:05.576
-NARRATOR: Trap Handling and Processor State to
-a worked situation instead of treating it as
+00:03:48.346 --> 00:03:53.268
+The worked case shows both how to apply the
+method and how to check it.
 
 48
-00:04:05.576 --> 00:04:06.956
-an isolated definition.
+00:03:53.378 --> 00:03:56.640
+Examine the tradeoffs in 6.
 
 49
-00:04:06.956 --> 00:04:13.480
-NARRATOR: A trap records processor state so
-the kernel can handle a system call,
+00:03:56.640 --> 00:04:04.031
+Virtual to Physical Memory Mapping, including
+what improves and what becomes more difficult.
 
 50
-00:04:13.480 --> 00:04:14.878
-exception, or interrupt.
+00:04:04.031 --> 00:04:10.562
+Page tables map virtual addresses to physical
+memory with permission bits.
 
 51
-00:04:14.878 --> 00:04:21.902
-NARRATOR: Consider this worked case: When an
-interrupt occurs, the CPU automatically saves
+00:04:10.562 --> 00:04:17.797
+Consider this worked case: A virtual address
+is decomposed into a page number and offset,
 
 52
-00:04:21.902 --> 00:04:28.925
-the instruction pointer, registers, and flags
-to a stack frame for later restoration.
+00:04:17.797 --> 00:04:25.031
+then translated by the MMU using the page
+table to locate the actual physical frame.
 
 53
-00:04:28.925 --> 00:04:34.834
-NARRATOR: On screen, display a stack diagram
-showing saved registers and the instruction
+00:04:25.031 --> 00:04:31.827
+State the benefit, the cost, and the condition
+under which the tradeoff is acceptable.
 
 54
-00:04:34.834 --> 00:04:38.925
-pointer pushed onto the kernel stack during a
-trap.
+00:04:31.827 --> 00:04:39.265
+Making the tradeoff visible prevents a local
+improvement from hiding a larger cost.
 
 55
-00:04:38.925 --> 00:04:45.101
-NARRATOR: Work from the concrete inputs to the
-result, checking units, types, or invariants
+00:04:39.386 --> 00:04:43.070
+Stress-test the reasoning around 7.
 
 56
-00:04:45.101 --> 00:04:46.425
-at each step.
+00:04:43.070 --> 00:04:50.809
+RISC-V ISA and Memory Operations with an edge
+case and identify which assumption controls
 
 57
-00:04:46.425 --> 00:04:51.018
-NARRATOR: The worked case shows both how to
-apply the method and how to check it.
+00:04:50.809 --> 00:04:51.914
+the outcome.
 
 58
-00:04:51.122 --> 00:04:54.212
-NARRATOR: Examine the tradeoffs in 6.
+00:04:51.914 --> 00:04:59.958
+The RISC-V ISA defines programmer-visible
+instructions, registers, memory operations,
 
 59
-00:04:54.212 --> 00:05:01.075
-NARRATOR: Virtual to Physical Memory Mapping,
-including what improves and what becomes more
+00:04:59.958 --> 00:05:05.320
+control transfer, exceptions, and ordering
+behavior.
 
 60
-00:05:01.075 --> 00:05:01.603
-difficult.
+00:05:05.320 --> 00:05:12.922
+Consider this worked case: Load instructions
+transfer data from memory into registers,
 
 61
-00:05:01.603 --> 00:05:08.197
-NARRATOR: Page tables map virtual addresses to
-physical memory with permission bits.
+00:05:12.922 --> 00:05:20.523
+while store instructions transfer register
+data to memory according to defined rules.
 
 62
-00:05:08.197 --> 00:05:15.205
-NARRATOR: Consider this worked case: A virtual
-address is decomposed into a page number and
+00:05:20.523 --> 00:05:26.976
+Change one assumption at a time and observe
+which part of the reasoning no longer holds.
 
 63
-00:05:15.205 --> 00:05:22.214
-offset, then translated by the MMU using the
-page table to locate the actual physical
+00:05:26.976 --> 00:05:33.976
+The edge case reveals the boundary of the
+claim without discarding the useful core idea.
 
 64
-00:05:22.214 --> 00:05:22.681
-frame.
+00:05:34.082 --> 00:05:35.219
+Use 8.
 
 65
-00:05:22.681 --> 00:05:32.229
-NARRATOR: On screen, show a two-column table
-mapping virtual page numbers to physical page
+00:05:35.219 --> 00:05:43.507
+Memory Ordering and Dependencies to diagnose a
+failure by separating symptoms, causes, and
 
 66
-00:05:32.229 --> 00:05:36.321
-numbers, with checkmarks indicating
-read/write/execute permissions.
+00:05:43.507 --> 00:05:44.782
+corrective action.
 
 67
-00:05:36.321 --> 00:05:42.854
-NARRATOR: State the benefit, the cost, and the
-condition under which the tradeoff is
+00:05:44.782 --> 00:05:50.844
+Memory-ordering rules constrain how memory
+operations may be observed.
 
 68
-00:05:42.854 --> 00:05:43.321
-acceptable.
+00:05:50.844 --> 00:05:58.938
+Consider this worked case: A compiler or CPU
+may reorder independent memory accesses for
 
 69
-00:05:43.321 --> 00:05:50.665
-NARRATOR: Making the tradeoff visible prevents
-a local improvement from hiding a larger cost.
+00:05:58.938 --> 00:06:04.719
+performance, but must maintain the relative
+order of dependent operations.
 
 70
-00:05:50.786 --> 00:05:54.392
-NARRATOR: Stress-test the reasoning around 7.
+00:06:04.719 --> 00:06:12.465
+Locate the first point where observed behavior
+diverges from expected behavior, then test the
 
 71
-00:05:54.392 --> 00:06:01.262
-NARRATOR: RISC-V ISA and Memory Operations
-with an edge case and identify which
+00:06:12.465 --> 00:06:14.125
+smallest plausible cause.
 
 72
-00:06:01.262 --> 00:06:03.376
-assumption controls the outcome.
+00:06:14.125 --> 00:06:21.610
+The diagnosis is strongest when another person
+can reproduce the observation and the test.
 
 73
-00:06:03.376 --> 00:06:10.048
-NARRATOR: The RISC-V ISA defines
-programmer-visible instructions, registers,
+00:06:21.722 --> 00:06:23.015
+Connect 9.
 
 74
-00:06:10.048 --> 00:06:16.720
-memory operations, control transfer,
-exceptions, and ordering behavior.
+00:06:23.015 --> 00:06:29.616
+Locks and Concurrency Invariants to the
+earlier ideas and explain how the pieces work
 
 75
-00:06:16.720 --> 00:06:24.100
-NARRATOR: Consider this worked case: Load
-instructions transfer data from memory into
+00:06:29.616 --> 00:06:31.031
+as one system.
 
 76
-00:06:24.100 --> 00:06:31.480
-registers, while store instructions transfer
-register data to memory according to defined
+00:06:31.031 --> 00:06:36.359
+Exceptions report conditions that require a
+defined transfer of control.
 
 77
-00:06:31.480 --> 00:06:32.095
-rules.
+00:06:36.359 --> 00:06:43.762
+Consider this worked case: A mutex lock
+ensures that only one process can modify the
 
 78
-00:06:32.095 --> 00:06:38.908
-NARRATOR: On screen, present a side-by-side
-comparison of a load instruction and a store
+00:06:43.762 --> 00:06:48.203
+process control block at a time during context
+switching.
 
 79
-00:06:38.908 --> 00:06:42.314
-instruction with register and memory operand
-labels.
+00:06:48.203 --> 00:06:57.484
+Explain each connection explicitly and verify
+that information retains the same meaning
 
 80
-00:06:42.314 --> 00:06:48.475
-NARRATOR: Change one assumption at a time and
-observe which part of the reasoning no longer
+00:06:57.484 --> 00:06:59.031
+across representations.
 
 81
-00:06:48.475 --> 00:06:48.860
-holds.
+00:06:59.031 --> 00:07:06.703
+The synthesis matters only if every connection
+remains supported by the original evidence.
 
 82
-00:06:48.860 --> 00:06:55.081
-NARRATOR: The edge case reveals the boundary
-of the claim without discarding the useful
+00:07:06.818 --> 00:07:08.393
+Finish with 10.
 
 83
-00:06:55.081 --> 00:06:55.970
-core idea.
+00:07:08.393 --> 00:07:15.236
+Practical Analysis Checklist as a practical
+checklist that can guide a new analysis.
 
 84
-00:06:56.090 --> 00:06:57.258
-NARRATOR: Use 8.
+00:07:15.236 --> 00:07:23.334
+Application of operating system concepts to
+the design of hardware interfaces for a
 
 85
-00:06:57.258 --> 00:07:04.114
-NARRATOR: Memory Ordering and Dependencies to
-diagnose a failure by separating symptoms,
+00:07:23.334 --> 00:07:24.580
+multiprogramming environment.
 
 86
-00:07:04.114 --> 00:07:06.399
-causes, and corrective action.
+00:07:24.580 --> 00:07:32.345
+Consider this worked case: A driver must
+validate interrupt flags, update page table
 
 87
-00:07:06.399 --> 00:07:12.430
-NARRATOR: Memory-ordering rules constrain how
-memory operations may be observed.
+00:07:32.345 --> 00:07:37.721
+entries, and acquire locks before modifying
+shared device registers.
 
 88
-00:07:12.430 --> 00:07:19.588
-NARRATOR: Consider this worked case: A
-compiler or CPU may reorder independent memory
+00:07:37.721 --> 00:07:45.738
+For each checklist item, record the evidence,
+the remaining uncertainty, and the next
 
 89
-00:07:19.588 --> 00:07:26.196
-accesses for performance, but must maintain
-the relative order of dependent operations.
+00:07:45.738 --> 00:07:46.971
+verification step.
 
 90
-00:07:26.196 --> 00:07:33.070
-NARRATOR: On screen, show a sequence of memory
-operations with arrows indicating dependency
+00:07:46.971 --> 00:07:53.577
+The result is a repeatable procedure, not a
+conclusion that depends on memory or
 
 91
-00:07:33.070 --> 00:07:36.243
-chains and ordering constraints between them.
-
-92
-00:07:36.243 --> 00:07:42.020
-NARRATOR: Locate the first point where
-observed behavior diverges from expected
-
-93
-00:07:42.020 --> 00:07:45.696
-behavior, then test the smallest plausible
-cause.
-
-94
-00:07:45.696 --> 00:07:51.183
-NARRATOR: The diagnosis is strongest when
-another person can reproduce the observation
-
-95
-00:07:51.183 --> 00:07:52.555
-and the test.
-
-96
-00:07:52.682 --> 00:07:53.960
-NARRATOR: Connect 9.
-
-97
-00:07:53.960 --> 00:08:00.182
-NARRATOR: Locks and Concurrency Invariants to
-the earlier ideas and explain how the pieces
-
-98
-00:08:00.182 --> 00:08:01.960
-work as one system.
-
-99
-00:08:01.960 --> 00:08:07.132
-NARRATOR: Exceptions report conditions that
-require a defined transfer of control.
-
-100
-00:08:07.132 --> 00:08:14.051
-NARRATOR: Consider this worked case: A mutex
-lock ensures that only one process can modify
-
-101
-00:08:14.051 --> 00:08:18.663
-the process control block at a time during
-context switching.
-
-102
-00:08:18.663 --> 00:08:24.984
-NARRATOR: On screen, illustrate a lock
-acquisition and release cycle with two
-
-103
-00:08:24.984 --> 00:08:29.725
-concurrent threads waiting for and releasing a
-shared resource.
-
-104
-00:08:29.725 --> 00:08:38.613
-NARRATOR: Explain each connection explicitly
-and verify that information retains the same
-
-105
-00:08:38.613 --> 00:08:40.835
-meaning across representations.
-
-106
-00:08:40.835 --> 00:08:47.509
-NARRATOR: The synthesis matters only if every
-connection remains supported by the original
-
-107
-00:08:47.509 --> 00:08:48.022
-evidence.
-
-108
-00:08:48.146 --> 00:08:49.799
-NARRATOR: Finish with 10.
-
-109
-00:08:49.799 --> 00:08:55.864
-NARRATOR: Practical Analysis Checklist as a
-practical checklist that can guide a new
-
-110
-00:08:55.864 --> 00:08:56.330
-analysis.
-
-111
-00:08:56.330 --> 00:09:03.326
-NARRATOR: Application of operating system
-concepts to the design of hardware interfaces
-
-112
-00:09:03.326 --> 00:09:05.658
-for a multiprogramming environment.
-
-113
-00:09:05.658 --> 00:09:12.926
-NARRATOR: Consider this worked case: A driver
-must validate interrupt flags, update page
-
-114
-00:09:12.926 --> 00:09:18.517
-table entries, and acquire locks before
-modifying shared device registers.
-
-115
-00:09:18.517 --> 00:09:27.198
-NARRATOR: On screen, list a checklist with
-checkboxes for: interrupt handling, page table
-
-116
-00:09:27.198 --> 00:09:31.205
-validation, lock acquisition, and isolation
-verification.
-
-117
-00:09:31.205 --> 00:09:38.619
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
-
-118
-00:09:38.619 --> 00:09:40.330
-next verification step.
-
-119
-00:09:40.330 --> 00:09:46.334
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-120
-00:09:46.334 --> 00:09:47.720
-memory or intuition.
+00:07:53.577 --> 00:07:54.049
+intuition.

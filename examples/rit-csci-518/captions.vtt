@@ -1,558 +1,417 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:08.023
-NARRATOR: Begin by framing Pipeline Foundation
-as a question about inputs, decisions, and
+00:00:00.050 --> 00:00:08.029
+Begin by framing Pipeline Foundation as a
+question about inputs, decisions, and
 
 2
-00:00:08.023 --> 00:00:09.250
+00:00:08.029 --> 00:00:09.359
 observable results.
 
 3
-00:00:09.250 --> 00:00:16.167
-NARRATOR: The OpenGL graphics pipeline
-processes vertices through programmable shader
+00:00:09.359 --> 00:00:16.687
+The OpenGL graphics pipeline processes
+vertices through programmable shader stages.
 
 4
-00:00:16.167 --> 00:00:16.859
-stages.
+00:00:16.687 --> 00:00:25.209
+Consider this worked case: Vertex data enters
+the pipeline first, where vertex shaders
 
 5
-00:00:16.859 --> 00:00:25.063
-NARRATOR: Consider this worked case: Vertex
-data enters the pipeline first, where vertex
+00:00:25.209 --> 00:00:31.109
+modify position, color, or normal attributes
+before downstream stages.
 
 6
-00:00:25.063 --> 00:00:31.374
-shaders modify position, color, or normal
-attributes before downstream stages.
+00:00:31.109 --> 00:00:37.963
+List the givens before choosing a method,
+because an unstated assumption can change the
 
 7
-00:00:31.375 --> 00:00:38.062
-NARRATOR: On screen, display a left-to-right
-flowchart showing vertex input → vertex shader
+00:00:37.963 --> 00:00:38.453
+conclusion.
 
 8
-00:00:38.062 --> 00:00:44.234
-→ primitive assembly → clipping →
-rasterization → fragment shader → framebuffer.
+00:00:38.453 --> 00:00:44.046
+This establishes the vocabulary and scope
+needed for the remaining sections.
 
 9
-00:00:44.234 --> 00:00:50.645
-NARRATOR: List the givens before choosing a
-method, because an unstated assumption can
+00:00:44.162 --> 00:00:51.932
+Now define Primitive Assembly precisely enough
+that another learner could test the
 
 10
-00:00:50.645 --> 00:00:52.124
-change the conclusion.
+00:00:51.932 --> 00:00:52.580
+definition.
 
 11
-00:00:52.124 --> 00:00:57.843
-NARRATOR: This establishes the vocabulary and
-scope needed for the remaining sections.
+00:00:52.580 --> 00:00:59.518
+Primitive assembly groups vertices into
+points, lines, or triangles.
 
 12
-00:00:57.962 --> 00:01:04.257
-NARRATOR: Now define Primitive Assembly
-precisely enough that another learner could
+00:00:59.518 --> 00:01:06.627
+Consider this worked case: Three connected
+vertices form a triangle primitive, which the
 
 13
-00:01:04.257 --> 00:01:05.974
-test the definition.
+00:01:06.627 --> 00:01:12.096
+pipeline then processes as a single geometric
+unit for rendering.
 
 14
-00:01:05.974 --> 00:01:13.037
-NARRATOR: Primitive assembly groups vertices
-into points, lines, or triangles.
+00:01:12.096 --> 00:01:18.822
+Separate the formal definition from an
+implementation detail, then identify what
 
 15
-00:01:13.037 --> 00:01:19.279
-NARRATOR: Consider this worked case: Three
-connected vertices form a triangle primitive,
-
-16
-00:01:19.279 --> 00:01:25.521
-which the pipeline then processes as a single
-geometric unit for rendering.
-
-17
-00:01:25.521 --> 00:01:32.381
-NARRATOR: On screen, show a wireframe triangle
-with labeled vertices, highlighting how three
-
-18
-00:01:32.381 --> 00:01:37.130
-points are bound into a single primitive
-before clipping.
-
-19
-00:01:37.130 --> 00:01:43.869
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
-
-20
-00:01:43.869 --> 00:01:46.115
+00:01:18.822 --> 00:01:21.268
 evidence would distinguish them.
 
+16
+00:01:21.268 --> 00:01:27.971
+A precise definition makes later examples
+easier to evaluate and revise.
+
+17
+00:01:27.971 --> 00:01:35.014
+Name each dependency explicitly, and keep
+labels and representations consistent
+
+18
+00:01:35.014 --> 00:01:37.127
+throughout the analysis.
+
+19
+00:01:37.250 --> 00:01:44.298
+With the foundation in place, examine how
+Clipping Stage operates in a concrete
+
+20
+00:01:44.298 --> 00:01:44.840
+sequence.
+
 21
-00:01:46.115 --> 00:01:52.740
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
+00:01:44.840 --> 00:01:49.168
+Clipping removes portions outside the view
+volume.
 
 22
-00:01:52.740 --> 00:01:59.823
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+00:01:49.168 --> 00:01:55.850
+Consider this worked case: A triangle
+extending beyond the camera's frustum is
 
 23
-00:01:59.823 --> 00:02:01.755
-throughout the analysis.
-
-24
-00:02:01.874 --> 00:02:08.425
-NARRATOR: With the foundation in place,
-examine how Clipping Stage operates in a
-
-25
-00:02:08.425 --> 00:02:09.433
-concrete sequence.
-
-26
-00:02:09.433 --> 00:02:13.745
-NARRATOR: Clipping removes portions outside
-the view volume.
-
-27
-00:02:13.745 --> 00:02:20.259
-NARRATOR: Consider this worked case: A
-triangle extending beyond the camera's frustum
-
-28
-00:02:20.259 --> 00:02:26.230
-is sliced at the clipping plane boundaries,
+00:01:55.850 --> 00:02:01.418
+sliced at the clipping plane boundaries,
 discarding the exterior segments.
 
+24
+00:02:01.418 --> 00:02:08.653
+Follow every arrow in order and name the state
+before and after each transition.
+
+25
+00:02:08.653 --> 00:02:14.340
+The trace converts an abstract statement into
+an inspectable sequence.
+
+26
+00:02:14.340 --> 00:02:21.455
+Name each dependency explicitly, and keep
+labels and representations consistent
+
+27
+00:02:21.455 --> 00:02:23.590
+throughout the analysis.
+
+28
+00:02:23.690 --> 00:02:30.379
+Next, compare the choices involved in
+Rasterization and make the decision criteria
+
 29
-00:02:26.230 --> 00:02:33.018
-NARRATOR: On screen, illustrate a 3D cube
-partially outside a transparent viewing box,
+00:02:30.379 --> 00:02:30.936
+explicit.
 
 30
-00:02:33.018 --> 00:02:38.761
-with clipped edges highlighted in red and
-retained portions in blue.
+00:02:30.936 --> 00:02:36.030
+Rasterization converts primitives into
+fragment candidates.
 
 31
-00:02:38.761 --> 00:02:45.823
-NARRATOR: Follow every arrow in order and name
-the state before and after each transition.
+00:02:36.030 --> 00:02:43.511
+Consider this worked case: Each triangle is
+subdivided into pixel-aligned fragments, with
 
 32
-00:02:45.823 --> 00:02:51.589
-NARRATOR: The trace converts an abstract
-statement into an inspectable sequence.
+00:02:43.511 --> 00:02:48.499
+each fragment receiving interpolated
+attributes for downstream processing.
 
 33
-00:02:51.589 --> 00:02:58.783
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+00:02:48.499 --> 00:02:55.852
+Compare alternatives against the same
+constraints so the evaluation does not move
 
 34
-00:02:58.783 --> 00:03:00.745
-throughout the analysis.
+00:02:55.852 --> 00:02:57.077
+the goalposts.
 
 35
-00:03:00.866 --> 00:03:07.359
-NARRATOR: Next, compare the choices involved
-in Rasterization and make the decision
+00:02:57.077 --> 00:03:04.077
+Using shared criteria turns a preference into
+a defensible technical choice.
 
 36
-00:03:07.359 --> 00:03:08.441
-criteria explicit.
+00:03:04.077 --> 00:03:11.000
+Name each dependency explicitly, and keep
+labels and representations consistent
 
 37
-00:03:08.441 --> 00:03:13.597
-NARRATOR: Rasterization converts primitives
-into fragment candidates.
+00:03:11.000 --> 00:03:13.077
+throughout the analysis.
 
 38
-00:03:13.597 --> 00:03:20.218
-NARRATOR: Consider this worked case: Each
-triangle is subdivided into pixel-aligned
+00:03:13.202 --> 00:03:20.076
+Apply Interpolation to a worked situation
+instead of treating it as an isolated
 
 39
-00:03:20.218 --> 00:03:25.635
-fragments, with each fragment receiving
-interpolated attributes for downstream
+00:03:20.076 --> 00:03:20.605
+definition.
 
 40
-00:03:25.635 --> 00:03:26.237
-processing.
+00:03:20.605 --> 00:03:26.167
+Interpolation produces per-fragment values
+from vertex outputs.
 
 41
-00:03:26.237 --> 00:03:33.768
-NARRATOR: On screen, render a grid overlay on
-a triangle, showing how each pixel cell
+00:03:26.167 --> 00:03:34.264
+Consider this worked case: Color and normal
+values are linearly interpolated across a
 
 42
-00:03:33.768 --> 00:03:37.784
-becomes a fragment candidate with assigned
-vertex attributes.
-
-43
-00:03:37.784 --> 00:03:44.172
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
-
-44
-00:03:44.172 --> 00:03:45.769
-move the goalposts.
-
-45
-00:03:45.769 --> 00:03:52.956
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
-
-46
-00:03:52.956 --> 00:04:00.126
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-47
-00:04:00.126 --> 00:04:02.081
-throughout the analysis.
-
-48
-00:04:02.186 --> 00:04:08.453
-NARRATOR: Apply Interpolation to a worked
-situation instead of treating it as an
-
-49
-00:04:08.453 --> 00:04:09.417
-isolated definition.
-
-50
-00:04:09.417 --> 00:04:15.261
-NARRATOR: Interpolation produces per-fragment
-values from vertex outputs.
-
-51
-00:04:15.261 --> 00:04:22.926
-NARRATOR: Consider this worked case: Color and
-normal values are linearly interpolated across
-
-52
-00:04:22.926 --> 00:04:28.823
-a triangle's pixels using barycentric
+00:03:34.264 --> 00:03:39.870
+triangle's pixels using barycentric
 coordinates to ensure smooth shading.
 
+43
+00:03:39.870 --> 00:03:47.443
+Work from the concrete inputs to the result,
+checking units, types, or invariants at each
+
+44
+00:03:47.443 --> 00:03:47.948
+step.
+
+45
+00:03:47.948 --> 00:03:52.901
+The worked case shows both how to apply the
+method and how to check it.
+
+46
+00:03:53.018 --> 00:04:00.719
+Examine the tradeoffs in Fragment Processing,
+including what improves and what becomes more
+
+47
+00:04:00.719 --> 00:04:01.311
+difficult.
+
+48
+00:04:01.311 --> 00:04:06.921
+Fragment processing computes values for
+framebuffer operations.
+
+49
+00:04:06.921 --> 00:04:13.320
+Consider this worked case: Fragment shaders
+evaluate lighting equations and material
+
+50
+00:04:13.320 --> 00:04:19.718
+properties to generate final color and alpha
+values for each pixel.
+
+51
+00:04:19.718 --> 00:04:26.749
+State the benefit, the cost, and the condition
+under which the tradeoff is acceptable.
+
+52
+00:04:26.749 --> 00:04:34.202
+Making the tradeoff visible prevents a local
+improvement from hiding a larger cost.
+
 53
-00:04:28.823 --> 00:04:35.552
-NARRATOR: On screen, display a color gradient
-across a triangle, with interpolation weights
+00:04:34.202 --> 00:04:41.257
+Name each dependency explicitly, and keep
+labels and representations consistent
 
 54
-00:04:35.552 --> 00:04:40.729
-labeled at each vertex and midpoint to show
-value distribution.
-
-55
-00:04:40.729 --> 00:04:46.996
-NARRATOR: Work from the concrete inputs to the
-result, checking units, types, or invariants
-
-56
-00:04:46.996 --> 00:04:48.339
-at each step.
-
-57
-00:04:48.339 --> 00:04:53.557
-NARRATOR: The worked case shows both how to
-apply the method and how to check it.
-
-58
-00:04:53.666 --> 00:05:00.126
-NARRATOR: Examine the tradeoffs in Fragment
-Processing, including what improves and what
-
-59
-00:05:00.126 --> 00:05:01.741
-becomes more difficult.
-
-60
-00:05:01.741 --> 00:05:07.412
-NARRATOR: Fragment processing computes values
-for framebuffer operations.
-
-61
-00:05:07.412 --> 00:05:13.503
-NARRATOR: Consider this worked case: Fragment
-shaders evaluate lighting equations and
-
-62
-00:05:13.503 --> 00:05:20.147
-material properties to generate final color
-and alpha values for each pixel.
-
-63
-00:05:20.147 --> 00:05:26.351
-NARRATOR: On screen, show a side-by-side
-comparison of a raw triangle mesh and its
-
-64
-00:05:26.351 --> 00:05:31.225
-shaded output, with a callout box explaining
-the fragment shader's role.
-
-65
-00:05:31.225 --> 00:05:37.510
-NARRATOR: State the benefit, the cost, and the
-condition under which the tradeoff is
-
-66
-00:05:37.510 --> 00:05:37.959
-acceptable.
-
-67
-00:05:37.959 --> 00:05:45.350
-NARRATOR: Making the tradeoff visible prevents
-a local improvement from hiding a larger cost.
-
-68
-00:05:45.350 --> 00:05:52.323
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-69
-00:05:52.323 --> 00:05:54.225
+00:04:41.257 --> 00:04:43.374
 throughout the analysis.
 
-70
-00:05:54.338 --> 00:06:01.151
-NARRATOR: Stress-test the reasoning around
-Depth Testing with an edge case and identify
+55
+00:04:43.490 --> 00:04:50.573
+Stress-test the reasoning around Depth Testing
+with an edge case and identify which
 
-71
-00:06:01.151 --> 00:06:03.772
-which assumption controls the outcome.
+56
+00:04:50.573 --> 00:04:52.752
+assumption controls the outcome.
 
-72
-00:06:03.772 --> 00:06:09.428
-NARRATOR: Depth testing resolves visibility
-according to stored depth values.
+57
+00:04:52.752 --> 00:04:58.424
+Depth testing resolves visibility according to
+stored depth values.
 
-73
-00:06:09.428 --> 00:06:15.814
-NARRATOR: Consider this worked case: Each
-fragment's depth value is compared against the
+58
+00:04:58.424 --> 00:05:04.983
+Consider this worked case: Each fragment's
+depth value is compared against the depth
 
-74
-00:06:15.814 --> 00:06:21.709
-depth buffer; fragments with greater depth are
+59
+00:05:04.983 --> 00:05:10.533
+buffer; fragments with greater depth are
 discarded to maintain correct occlusion.
 
-75
-00:06:21.709 --> 00:06:26.915
-NARRATOR: On screen, illustrate two
-overlapping triangles with depth values,
+60
+00:05:10.533 --> 00:05:16.939
+Change one assumption at a time and observe
+which part of the reasoning no longer holds.
 
-76
-00:06:26.915 --> 00:06:34.204
-highlighting the front triangle as retained
-and the back triangle as rejected by depth
+61
+00:05:16.940 --> 00:05:23.643
+The edge case reveals the boundary of the
+claim without discarding the useful core idea.
 
-77
-00:06:34.204 --> 00:06:34.725
-testing.
+62
+00:05:23.762 --> 00:05:30.754
+Use Blending to diagnose a failure by
+separating symptoms, causes, and corrective
 
-78
-00:06:34.725 --> 00:06:40.872
-NARRATOR: Change one assumption at a time and
-observe which part of the reasoning no longer
-
-79
-00:06:40.872 --> 00:06:41.256
-holds.
-
-80
-00:06:41.256 --> 00:06:47.600
-NARRATOR: The edge case reveals the boundary
-of the claim without discarding the useful
-
-81
-00:06:47.600 --> 00:06:48.506
-core idea.
-
-82
-00:06:48.626 --> 00:06:55.776
-NARRATOR: Use Blending to diagnose a failure
-by separating symptoms, causes, and corrective
-
-83
-00:06:55.776 --> 00:06:56.326
+63
+00:05:30.754 --> 00:05:31.337
 action.
 
+64
+00:05:31.337 --> 00:05:37.087
+Blending combines a fragment result with an
+existing framebuffer value.
+
+65
+00:05:37.087 --> 00:05:44.536
+Consider this worked case: Translucent
+surfaces blend the new fragment's color with
+
+66
+00:05:44.536 --> 00:05:50.743
+the underlying color using alpha values to
+produce semi-transparent overlays.
+
+67
+00:05:50.743 --> 00:05:58.618
+Locate the first point where observed behavior
+diverges from expected behavior, then test the
+
+68
+00:05:58.618 --> 00:06:00.305
+smallest plausible cause.
+
+69
+00:06:00.305 --> 00:06:08.415
+The diagnosis is strongest when another person
+can reproduce the observation and the test.
+
+70
+00:06:08.522 --> 00:06:15.706
+Connect Coordinate Spaces to the earlier ideas
+and explain how the pieces work as one system.
+
+71
+00:06:15.706 --> 00:06:22.409
+Coordinate spaces, sampling, and numerical
+precision must remain explicit.
+
+72
+00:06:22.409 --> 00:06:30.547
+Consider this worked case: Explicitly defining
+vertex, fragment, and texture coordinate
+
+73
+00:06:30.547 --> 00:06:37.945
+spaces prevents misalignment during sampling
+and ensures consistent precision across
+
+74
+00:06:37.945 --> 00:06:39.425
+pipeline stages.
+
+75
+00:06:39.425 --> 00:06:48.786
+Explain each connection explicitly and verify
+that information retains the same meaning
+
+76
+00:06:48.786 --> 00:06:50.346
+across representations.
+
+77
+00:06:50.346 --> 00:06:57.393
+The synthesis matters only if every connection
+remains supported by the original evidence.
+
+78
+00:06:57.506 --> 00:07:04.094
+Finish with Practical Analysis Checklist as a
+practical checklist that can guide a new
+
+79
+00:07:04.094 --> 00:07:04.565
+analysis.
+
+80
+00:07:04.565 --> 00:07:11.573
+Visual correctness follows from explicit
+conventions, assumptions, sampling decisions,
+
+81
+00:07:11.573 --> 00:07:13.909
+and measurable error.
+
+82
+00:07:13.909 --> 00:07:21.120
+Consider this worked case: Instructor-led
+review checks that coordinate mappings are
+
+83
+00:07:21.120 --> 00:07:28.332
+explicit, sampling rates match resolution
+requirements, and error bounds remain within
+
 84
-00:06:56.326 --> 00:07:01.888
-NARRATOR: Blending combines a fragment result
-with an existing framebuffer value.
+00:07:28.332 --> 00:07:29.643
+acceptable thresholds.
 
 85
-00:07:01.888 --> 00:07:08.651
-NARRATOR: Consider this worked case:
-Translucent surfaces blend the new fragment's
+00:07:29.643 --> 00:07:37.565
+For each checklist item, record the evidence,
+the remaining uncertainty, and the next
 
 86
-00:07:08.651 --> 00:07:16.029
-color with the underlying color using alpha
-values to produce semi-transparent overlays.
+00:07:37.565 --> 00:07:38.784
+verification step.
 
 87
-00:07:16.029 --> 00:07:23.725
-NARRATOR: On screen, render a semi-transparent
-square over a solid background, with a legend
+00:07:38.784 --> 00:07:45.901
+The result is a repeatable procedure, not a
+conclusion that depends on memory or
 
 88
-00:07:23.725 --> 00:07:28.122
-showing the blending equation and resulting
-composite color.
-
-89
-00:07:28.122 --> 00:07:33.708
-NARRATOR: Locate the first point where
-observed behavior diverges from expected
-
-90
-00:07:33.708 --> 00:07:37.263
-behavior, then test the smallest plausible
-cause.
-
-91
-00:07:37.263 --> 00:07:43.238
-NARRATOR: The diagnosis is strongest when
-another person can reproduce the observation
-
-92
-00:07:43.238 --> 00:07:44.732
-and the test.
-
-93
-00:07:44.858 --> 00:07:51.109
-NARRATOR: Connect Coordinate Spaces to the
-earlier ideas and explain how the pieces work
-
-94
-00:07:51.109 --> 00:07:52.448
-as one system.
-
-95
-00:07:52.448 --> 00:07:59.120
-NARRATOR: Coordinate spaces, sampling, and
-numerical precision must remain explicit.
-
-96
-00:07:59.120 --> 00:08:06.021
-NARRATOR: Consider this worked case:
-Explicitly defining vertex, fragment, and
-
-97
-00:08:06.021 --> 00:08:12.232
-texture coordinate spaces prevents
-misalignment during sampling and ensures
-
-98
-00:08:12.232 --> 00:08:15.682
-consistent precision across pipeline stages.
-
-99
-00:08:15.683 --> 00:08:23.614
-NARRATOR: On screen, display a diagram of
-three nested coordinate spaces (world, view,
-
-100
-00:08:23.614 --> 00:08:29.104
-clip) with labeled axes, emphasizing explicit
-mapping between them.
-
-101
-00:08:29.104 --> 00:08:37.954
-NARRATOR: Explain each connection explicitly
-and verify that information retains the same
-
-102
-00:08:37.954 --> 00:08:40.167
-meaning across representations.
-
-103
-00:08:40.167 --> 00:08:47.276
-NARRATOR: The synthesis matters only if every
-connection remains supported by the original
-
-104
-00:08:47.276 --> 00:08:47.823
-evidence.
-
-105
-00:08:47.930 --> 00:08:53.552
-NARRATOR: Finish with Practical Analysis
-Checklist as a practical checklist that can
-
-106
-00:08:53.552 --> 00:08:55.426
-guide a new analysis.
-
-107
-00:08:55.426 --> 00:09:01.798
-NARRATOR: Visual correctness follows from
-explicit conventions, assumptions, sampling
-
-108
-00:09:01.798 --> 00:09:04.630
-decisions, and measurable error.
-
-109
-00:09:04.630 --> 00:09:10.674
-NARRATOR: Consider this worked case:
-Instructor-led review checks that coordinate
-
-110
-00:09:10.674 --> 00:09:17.322
-mappings are explicit, sampling rates match
-resolution requirements, and error bounds
-
-111
-00:09:17.322 --> 00:09:19.739
-remain within acceptable thresholds.
-
-112
-00:09:19.739 --> 00:09:26.454
-NARRATOR: On screen, show a checklist graphic
-with four boxes: explicit conventions,
-
-113
-00:09:26.454 --> 00:09:33.169
-sampling decisions, measurable error, and
-coordinate space alignment, each with a tick
-
-114
-00:09:33.169 --> 00:09:34.848
-mark for verification.
-
-115
-00:09:34.848 --> 00:09:42.542
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
-
-116
-00:09:42.542 --> 00:09:44.317
-next verification step.
-
-117
-00:09:44.317 --> 00:09:50.169
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-118
-00:09:50.169 --> 00:09:51.520
-memory or intuition.
+00:07:45.901 --> 00:07:46.409
+intuition.

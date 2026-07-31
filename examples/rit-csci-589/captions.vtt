@@ -1,569 +1,445 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:07.718
-NARRATOR: Begin by framing Introduction to
-Thesis Preparation as a question about inputs,
+00:00:00.050 --> 00:00:07.254
+Begin by framing Introduction to Thesis
+Preparation as a question about inputs,
 
 2
-00:00:07.718 --> 00:00:10.078
+00:00:07.254 --> 00:00:09.656
 decisions, and observable results.
 
 3
-00:00:10.078 --> 00:00:16.496
-NARRATOR: Students work with a supervising
-faculty member to complete their undergraduate
+00:00:09.656 --> 00:00:16.189
+Students work with a supervising faculty
+member to complete their undergraduate thesis
 
 4
-00:00:16.496 --> 00:00:22.379
-thesis proposal, and do additional background
+00:00:16.189 --> 00:00:21.633
+proposal, and do additional background
 preparation (for example, programming, study,
 
 5
-00:00:22.379 --> 00:00:30.402
+00:00:21.633 --> 00:00:29.799
 exercises, and analysis) for the subject area
 and specific problem(s) to be addressed in a
 
 6
-00:00:30.402 --> 00:00:30.937
+00:00:29.799 --> 00:00:30.343
 thesis.
 
 7
-00:00:30.937 --> 00:00:37.604
-NARRATOR: Consider this worked case: A student
+00:00:30.343 --> 00:00:37.004
+Consider this worked case: A student
 collaborates with their advisor to draft a
 
 8
-00:00:37.604 --> 00:00:42.843
+00:00:37.004 --> 00:00:42.640
 proposal that outlines a machine learning
 project on educational data analysis.
 
 9
-00:00:42.843 --> 00:00:50.078
-NARRATOR: On screen, display a simple
-flowchart showing the sequence: Advisor
+00:00:42.640 --> 00:00:50.063
+List the givens before choosing a method,
+because an unstated assumption can change the
 
 10
-00:00:50.078 --> 00:00:56.656
-Consultation -> Background Preparation ->
-Proposal Drafting -> Advisor Review.
+00:00:50.063 --> 00:00:50.593
+conclusion.
 
 11
-00:00:56.656 --> 00:01:02.660
-NARRATOR: List the givens before choosing a
-method, because an unstated assumption can
+00:00:50.593 --> 00:00:56.328
+This establishes the vocabulary and scope
+needed for the remaining sections.
 
 12
-00:01:02.660 --> 00:01:04.046
-change the conclusion.
+00:00:56.450 --> 00:01:03.322
+Now define Defining the Research Problem
+precisely enough that another learner could
 
 13
-00:01:04.046 --> 00:01:09.874
-NARRATOR: This establishes the vocabulary and
-scope needed for the remaining sections.
+00:01:03.322 --> 00:01:05.040
+test the definition.
 
 14
-00:01:09.986 --> 00:01:16.276
-NARRATOR: Now define Defining the Research
-Problem precisely enough that another learner
+00:01:05.040 --> 00:01:12.521
+A research project narrows a question, reviews
+literature, defines a reproducible method,
 
 15
-00:01:16.276 --> 00:01:18.373
-could test the definition.
+00:01:12.521 --> 00:01:17.509
+evaluates results, and communicates for the
+intended audience.
 
 16
-00:01:18.373 --> 00:01:25.216
-NARRATOR: A research project narrows a
-question, reviews literature, defines a
+00:01:17.509 --> 00:01:25.895
+Consider this worked case: Students transform
+a broad interest in 'AI ethics' into a focused
 
 17
-00:01:25.216 --> 00:01:31.436
-reproducible method, evaluates results, and
-communicates for the intended audience.
+00:01:25.895 --> 00:01:30.368
+question about 'bias detection in automated
+grading tools.
 
 18
-00:01:31.436 --> 00:01:38.955
-NARRATOR: Consider this worked case: Students
-transform a broad interest in 'AI ethics' into
+00:01:30.368 --> 00:01:36.899
+Separate the formal definition from an
+implementation detail, then identify what
 
 19
-00:01:38.955 --> 00:01:44.326
-a focused question about 'bias detection in
-automated grading tools.
-
-20
-00:01:44.326 --> 00:01:51.107
-NARRATOR: On screen, show a Venn diagram
-comparing broad interests, literature gaps,
-
-21
-00:01:51.107 --> 00:01:54.498
-and a clearly defined research question.
-
-22
-00:01:54.498 --> 00:02:01.307
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
-
-23
-00:02:01.307 --> 00:02:03.576
+00:01:36.899 --> 00:01:39.274
 evidence would distinguish them.
 
+20
+00:01:39.274 --> 00:01:45.556
+A precise definition makes later examples
+easier to evaluate and revise.
+
+21
+00:01:45.674 --> 00:01:53.579
+With the foundation in place, examine how
+Methodology and Reproducibility operates in a
+
+22
+00:01:53.579 --> 00:01:54.795
+concrete sequence.
+
+23
+00:01:54.795 --> 00:02:01.077
+Methods should be described well enough for
+readers to evaluate the work.
+
 24
-00:02:03.576 --> 00:02:10.092
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
+00:02:01.077 --> 00:02:09.056
+Consider this worked case: Students document
+exact software versions, dataset sources, and
 
 25
-00:02:10.202 --> 00:02:16.280
-NARRATOR: With the foundation in place,
-examine how Methodology and Reproducibility
+00:02:09.056 --> 00:02:13.045
+step-by-step procedures for their thesis
+experiment.
 
 26
-00:02:16.280 --> 00:02:19.042
-operates in a concrete sequence.
+00:02:13.045 --> 00:02:20.655
+Follow every arrow in order and name the state
+before and after each transition.
 
 27
-00:02:19.042 --> 00:02:24.839
-NARRATOR: Methods should be described well
-enough for readers to evaluate the work.
+00:02:20.655 --> 00:02:26.373
+The trace converts an abstract statement into
+an inspectable sequence.
 
 28
-00:02:24.839 --> 00:02:31.515
-NARRATOR: Consider this worked case: Students
-document exact software versions, dataset
+00:02:26.373 --> 00:02:33.777
+Name each dependency explicitly, and keep
+labels and representations consistent
 
 29
-00:02:31.515 --> 00:02:36.370
-sources, and step-by-step procedures for their
-thesis experiment.
-
-30
-00:02:36.370 --> 00:02:43.959
-NARRATOR: On screen, illustrate a checklist
-template with fields for 'Dataset Source',
-
-31
-00:02:43.959 --> 00:02:48.386
-'Code Repository', 'Parameter Settings', and
-'Reproduction Steps'.
-
-32
-00:02:48.386 --> 00:02:55.651
-NARRATOR: Follow every arrow in order and name
-the state before and after each transition.
-
-33
-00:02:55.651 --> 00:03:01.401
-NARRATOR: The trace converts an abstract
-statement into an inspectable sequence.
-
-34
-00:03:01.401 --> 00:03:08.669
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-35
-00:03:08.669 --> 00:03:10.651
+00:02:33.777 --> 00:02:35.998
 throughout the analysis.
 
-36
-00:03:10.778 --> 00:03:17.098
-NARRATOR: Next, compare the choices involved
-in Ethical Computing Standards and make the
+30
+00:02:36.122 --> 00:02:42.904
+Next, compare the choices involved in Ethical
+Computing Standards and make the decision
 
-37
-00:03:17.098 --> 00:03:18.556
-decision criteria explicit.
+31
+00:02:42.904 --> 00:02:43.947
+criteria explicit.
 
-38
-00:03:18.556 --> 00:03:21.774
-NARRATOR: Computing professionals should avoid
-harm.
+32
+00:02:43.947 --> 00:02:47.009
+Computing professionals should avoid harm.
 
-39
-00:03:21.774 --> 00:03:28.256
-NARRATOR: Consider this worked case: Students
-include a section in their proposal detailing
+33
+00:02:47.009 --> 00:02:54.337
+Consider this worked case: Students include a
+section in their proposal detailing how they
 
-40
-00:03:28.256 --> 00:03:33.243
-how they will anonymize student data and
-obtain necessary permissions.
+34
+00:02:54.337 --> 00:02:58.525
+will anonymize student data and obtain
+necessary permissions.
 
-41
-00:03:33.243 --> 00:03:40.273
-NARRATOR: On screen, present a side-by-side
-comparison of 'Ethical Compliance' vs.
-
-42
-00:03:40.273 --> 00:03:46.024
+35
+00:02:58.525 --> 00:03:05.025
 'Potential Harm' with checkmarks for privacy,
 fairness, and transparency.
 
-43
-00:03:46.024 --> 00:03:52.699
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
+36
+00:03:05.025 --> 00:03:12.083
+Compare alternatives against the same
+constraints so the evaluation does not move
 
-44
-00:03:52.699 --> 00:03:54.368
-move the goalposts.
+37
+00:03:12.083 --> 00:03:13.259
+the goalposts.
 
-45
-00:03:54.368 --> 00:04:00.993
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
+38
+00:03:13.259 --> 00:03:19.993
+Using shared criteria turns a preference into
+a defensible technical choice.
 
-46
-00:04:00.993 --> 00:04:08.310
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+39
+00:03:19.993 --> 00:03:26.941
+Name each dependency explicitly, and keep
+labels and representations consistent
 
-47
-00:04:08.310 --> 00:04:10.306
+40
+00:03:26.941 --> 00:03:29.025
 throughout the analysis.
 
-48
-00:04:10.418 --> 00:04:16.027
-NARRATOR: Apply Responsible Technical
-Communication to a worked situation instead of
+41
+00:03:29.138 --> 00:03:36.709
+Apply Responsible Technical Communication to a
+worked situation instead of treating it as an
 
-49
-00:04:16.027 --> 00:04:19.086
-treating it as an isolated definition.
+42
+00:03:36.709 --> 00:03:37.791
+isolated definition.
 
-50
-00:04:19.086 --> 00:04:24.946
-NARRATOR: Responsible technical communication
+43
+00:03:37.791 --> 00:03:43.509
+Responsible technical communication
 distinguishes claims from evidence.
 
-51
-00:04:24.946 --> 00:04:32.258
-NARRATOR: Consider this worked case: Students
-structure their proposal to clearly separate
+44
+00:03:43.509 --> 00:03:51.928
+Consider this worked case: Students structure
+their proposal to clearly separate their novel
 
-52
-00:04:32.258 --> 00:04:36.524
-their novel hypothesis from established
-literature findings.
+45
+00:03:51.928 --> 00:03:55.166
+hypothesis from established literature
+findings.
 
-53
-00:04:36.524 --> 00:04:43.507
-NARRATOR: On screen, show a two-column layout:
-'Claim' (student's contribution) vs.
-
-54
-00:04:43.507 --> 00:04:48.586
+46
+00:03:55.166 --> 00:04:00.681
 'Evidence' (prior research citations), with
 arrows linking them.
 
-55
-00:04:48.586 --> 00:04:55.110
-NARRATOR: Work from the concrete inputs to the
-result, checking units, types, or invariants
+47
+00:04:00.681 --> 00:04:07.918
+Work from the concrete inputs to the result,
+checking units, types, or invariants at each
 
-56
-00:04:55.110 --> 00:04:56.508
-at each step.
+48
+00:04:07.918 --> 00:04:08.400
+step.
 
-57
-00:04:56.508 --> 00:05:01.367
-NARRATOR: The worked case shows both how to
-apply the method and how to check it.
+49
+00:04:08.400 --> 00:04:13.431
+The worked case shows both how to apply the
+method and how to check it.
 
-58
-00:05:01.367 --> 00:05:08.512
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+50
+00:04:13.431 --> 00:04:20.330
+Name each dependency explicitly, and keep
+labels and representations consistent
 
-59
-00:05:08.512 --> 00:05:10.461
+51
+00:04:20.330 --> 00:04:22.400
 throughout the analysis.
 
-60
-00:05:10.586 --> 00:05:17.274
-NARRATOR: Examine the tradeoffs in Results and
+52
+00:04:22.514 --> 00:04:29.448
+Examine the tradeoffs in Results and
 Limitations, including what improves and what
 
-61
-00:05:17.274 --> 00:05:18.817
+53
+00:04:29.448 --> 00:04:31.182
 becomes more difficult.
 
+54
+00:04:31.182 --> 00:04:37.399
+Results should be reported accurately rather
+than selected to create a misleading
+
+55
+00:04:37.399 --> 00:04:37.917
+conclusion.
+
+56
+00:04:37.917 --> 00:04:44.428
+Consider this worked case: Students draft a
+subsection explicitly stating potential biases
+
+57
+00:04:44.428 --> 00:04:49.854
+in their dataset and how they will validate
+their findings.
+
+58
+00:04:49.854 --> 00:04:56.729
+State the benefit, the cost, and the condition
+under which the tradeoff is acceptable.
+
+59
+00:04:56.729 --> 00:05:04.292
+Making the tradeoff visible prevents a local
+improvement from hiding a larger cost.
+
+60
+00:05:04.394 --> 00:05:12.174
+Stress-test the reasoning around Research
+Integrity and Plagiarism with an edge case and
+
+61
+00:05:12.174 --> 00:05:15.765
+identify which assumption controls the
+outcome.
+
 62
-00:05:18.817 --> 00:05:24.736
-NARRATOR: Results should be reported
-accurately rather than selected to create a
+00:05:15.765 --> 00:05:23.678
+Authors should preserve research integrity and
+avoid plagiarism, fabrication, and
 
 63
-00:05:24.736 --> 00:05:25.723
-misleading conclusion.
+00:05:23.678 --> 00:05:24.469
+falsification.
 
 64
-00:05:25.723 --> 00:05:31.313
-NARRATOR: Consider this worked case: Students
-draft a subsection explicitly stating
+00:05:24.469 --> 00:05:30.771
+Consider this worked case: Students use
+citation management tools to track all
 
 65
-00:05:31.313 --> 00:05:37.411
-potential biases in their dataset and how they
-will validate their findings.
-
-66
-00:05:37.411 --> 00:05:45.006
-NARRATOR: On screen, create a template box
-labeled 'Limitations & Threats to Validity'
-
-67
-00:05:45.006 --> 00:05:50.264
-with prompts for data constraints,
-methodological gaps, and mitigation
-
-68
-00:05:50.264 --> 00:05:50.848
-strategies.
-
-69
-00:05:50.848 --> 00:05:57.236
-NARRATOR: State the benefit, the cost, and the
-condition under which the tradeoff is
-
-70
-00:05:57.236 --> 00:05:57.692
-acceptable.
-
-71
-00:05:57.692 --> 00:06:05.098
-NARRATOR: Making the tradeoff visible prevents
-a local improvement from hiding a larger cost.
-
-72
-00:06:05.210 --> 00:06:11.789
-NARRATOR: Stress-test the reasoning around
-Research Integrity and Plagiarism with an edge
-
-73
-00:06:11.789 --> 00:06:16.175
-case and identify which assumption controls
-the outcome.
-
-74
-00:06:16.175 --> 00:06:23.298
-NARRATOR: Authors should preserve research
-integrity and avoid plagiarism, fabrication,
-
-75
-00:06:23.298 --> 00:06:24.722
-and falsification.
-
-76
-00:06:24.722 --> 00:06:31.357
-NARRATOR: Consider this worked case: Students
-use citation management tools to track all
-
-77
-00:06:31.357 --> 00:06:36.972
+00:05:30.771 --> 00:05:36.547
 references and verify that all code and data
 are properly attributed.
 
+66
+00:05:36.547 --> 00:05:42.859
+Change one assumption at a time and observe
+which part of the reasoning no longer holds.
+
+67
+00:05:42.859 --> 00:05:50.109
+The edge case reveals the boundary of the
+claim without discarding the useful core idea.
+
+68
+00:05:50.210 --> 00:05:57.871
+Use Supervisor Deliverables and Planning to
+diagnose a failure by separating symptoms,
+
+69
+00:05:57.871 --> 00:06:00.425
+causes, and corrective action.
+
+70
+00:06:00.425 --> 00:06:09.601
+Additional deliverables set by the advisor are
+also required (for example, source code,
+
+71
+00:06:09.601 --> 00:06:12.425
+bibliographies, notes, presentations, etc.
+
+72
+00:06:12.425 --> 00:06:19.795
+Consider this worked case: Students create a
+project management tracker that logs weekly
+
+73
+00:06:19.795 --> 00:06:24.331
+milestones for coding, literature review, and
+draft presentations.
+
+74
+00:06:24.331 --> 00:06:32.078
+Locate the first point where observed behavior
+diverges from expected behavior, then test the
+
+75
+00:06:32.078 --> 00:06:33.738
+smallest plausible cause.
+
+76
+00:06:33.738 --> 00:06:41.472
+The diagnosis is strongest when another person
+can reproduce the observation and the test.
+
+77
+00:06:41.594 --> 00:06:48.134
+Connect Evaluation Criteria and Quality
+Standards to the earlier ideas and explain how
+
 78
-00:06:36.972 --> 00:06:44.095
-NARRATOR: On screen, display a flowchart:
-'Source Identification' -> 'Citation
+00:06:48.134 --> 00:06:51.153
+the pieces work as one system.
 
 79
-00:06:44.095 --> 00:06:49.081
-Formatting' -> 'Plagiarism Check' ->
-'Integrity Verification'.
+00:06:51.153 --> 00:06:58.122
+Professionals should strive to achieve high
+quality in both processes and products.
 
 80
-00:06:49.081 --> 00:06:55.199
-NARRATOR: Change one assumption at a time and
-observe which part of the reasoning no longer
+00:06:58.122 --> 00:07:06.263
+Consider this worked case: Students apply a
+rubric that scores their proposal on clarity,
 
 81
-00:06:55.199 --> 00:06:55.581
-holds.
+00:07:06.263 --> 00:07:11.497
+methodological rigor, ethical compliance, and
+alignment with advisor goals.
 
 82
-00:06:55.581 --> 00:07:01.925
-NARRATOR: The edge case reveals the boundary
-of the claim without discarding the useful
+00:07:11.497 --> 00:07:21.126
+Explain each connection explicitly and verify
+that information retains the same meaning
 
 83
-00:07:01.925 --> 00:07:02.831
-core idea.
+00:07:21.126 --> 00:07:22.731
+across representations.
 
 84
-00:07:02.954 --> 00:07:09.955
-NARRATOR: Use Supervisor Deliverables and
-Planning to diagnose a failure by separating
+00:07:22.731 --> 00:07:29.997
+The synthesis matters only if every connection
+remains supported by the original evidence.
 
 85
-00:07:09.955 --> 00:07:12.872
-symptoms, causes, and corrective action.
+00:07:30.122 --> 00:07:36.768
+Finish with Practical Analysis Checklist as a
+practical checklist that can guide a new
 
 86
-00:07:12.872 --> 00:07:21.324
-NARRATOR: Additional deliverables set by the
-advisor are also required (for example, source
+00:07:36.768 --> 00:07:37.243
+analysis.
 
 87
-00:07:21.324 --> 00:07:24.575
-code, bibliographies, notes, presentations,
-etc.
+00:07:37.243 --> 00:07:44.790
+At the end of the semester, a thesis proposal
+must be submitted for approval to the advisor.
 
 88
-00:07:24.575 --> 00:07:31.879
-NARRATOR: Consider this worked case: Students
-create a project management tracker that logs
+00:07:44.790 --> 00:07:54.117
+Consider this worked case: Students run a
+final review against a checklist: problem
 
 89
-00:07:31.879 --> 00:07:36.935
-weekly milestones for coding, literature
-review, and draft presentations.
+00:07:54.117 --> 00:07:59.857
+statement, literature review, reproducible
+methods, ethical considerations, citations,
 
 90
-00:07:36.935 --> 00:07:45.080
-NARRATOR: On screen, show a Gantt chart
-template with phases: 'Proposal Draft', 'Code
+00:07:59.857 --> 00:08:02.009
+and advisor deliverables.
 
 91
-00:07:45.080 --> 00:07:49.466
-Setup', 'Literature Review', 'Advisor
-Feedback', 'Final Submission'.
+00:08:02.009 --> 00:08:10.202
+For each checklist item, record the evidence,
+the remaining uncertainty, and the next
 
 92
-00:07:49.466 --> 00:07:55.214
-NARRATOR: Locate the first point where
-observed behavior diverges from expected
+00:08:10.202 --> 00:08:11.462
+verification step.
 
 93
-00:07:55.214 --> 00:07:58.872
-behavior, then test the smallest plausible
-cause.
+00:08:11.462 --> 00:08:18.214
+The result is a repeatable procedure, not a
+conclusion that depends on memory or
 
 94
-00:07:58.872 --> 00:08:04.885
-NARRATOR: The diagnosis is strongest when
-another person can reproduce the observation
-
-95
-00:08:04.885 --> 00:08:06.388
-and the test.
-
-96
-00:08:06.506 --> 00:08:12.185
-NARRATOR: Connect Evaluation Criteria and
-Quality Standards to the earlier ideas and
-
-97
-00:08:12.185 --> 00:08:15.971
-explain how the pieces work as one system.
-
-98
-00:08:15.971 --> 00:08:22.389
-NARRATOR: Professionals should strive to
-achieve high quality in both processes and
-
-99
-00:08:22.389 --> 00:08:22.924
-products.
-
-100
-00:08:22.924 --> 00:08:30.434
-NARRATOR: Consider this worked case: Students
-apply a rubric that scores their proposal on
-
-101
-00:08:30.434 --> 00:08:35.799
-clarity, methodological rigor, ethical
-compliance, and alignment with advisor goals.
-
-102
-00:08:35.799 --> 00:08:43.832
-NARRATOR: On screen, present a scoring matrix
-with categories: 'Problem Definition',
-
-103
-00:08:43.832 --> 00:08:49.674
-'Methodology', 'Ethics', 'Communication', and
-'Feasibility' with 1-5 scales.
-
-104
-00:08:49.674 --> 00:08:58.624
-NARRATOR: Explain each connection explicitly
-and verify that information retains the same
-
-105
-00:08:58.624 --> 00:09:00.862
-meaning across representations.
-
-106
-00:09:00.862 --> 00:09:07.492
-NARRATOR: The synthesis matters only if every
-connection remains supported by the original
-
-107
-00:09:07.492 --> 00:09:08.002
-evidence.
-
-108
-00:09:08.114 --> 00:09:13.912
-NARRATOR: Finish with Practical Analysis
-Checklist as a practical checklist that can
-
-109
-00:09:13.912 --> 00:09:15.845
-guide a new analysis.
-
-110
-00:09:15.845 --> 00:09:22.751
-NARRATOR: At the end of the semester, a thesis
-proposal must be submitted for approval to the
-
-111
-00:09:22.751 --> 00:09:23.157
-advisor.
-
-112
-00:09:23.157 --> 00:09:32.062
-NARRATOR: Consider this worked case: Students
-run a final review against a checklist:
-
-113
-00:09:32.062 --> 00:09:37.542
-problem statement, literature review,
-reproducible methods, ethical considerations,
-
-114
-00:09:37.542 --> 00:09:40.282
-citations, and advisor deliverables.
-
-115
-00:09:40.282 --> 00:09:46.392
-NARRATOR: On screen, show a printable
-checklist template with checkboxes for each
-
-116
-00:09:46.392 --> 00:09:52.501
-requirement, a signature line for advisor
-approval, and a submission deadline field.
-
-117
-00:09:52.501 --> 00:10:00.296
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
-
-118
-00:10:00.296 --> 00:10:02.095
-next verification step.
-
-119
-00:10:02.095 --> 00:10:07.871
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-120
-00:10:07.871 --> 00:10:09.204
-memory or intuition.
+00:08:18.214 --> 00:08:18.696
+intuition.

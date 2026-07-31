@@ -1,233 +1,211 @@
-NARRATOR: Begin by framing Module Structure and IR Representation as a question about
+Begin by framing Course Scope and Prerequisites as a question about inputs,
 
-inputs, decisions, and observable results.
+decisions, and observable results.
 
-NARRATOR: A module contains global values, functions, declarations, and metadata.
+This course is a study of the syntax and semantics of a diverse set of high-level
 
-NARRATOR: Consider this worked case: An LLVM module groups all global variables, function
+programming languages.
 
-definitions, and type declarations into a single unit before compilation begins.
+Consider this worked case: A learner maps the inputs, constraints, and observable result for
 
-NARRATOR: On screen, display a hierarchical diagram showing a module node branching into
+Course Scope and Prerequisites, then checks each step against the stated claim.
 
-global values, function nodes, and metadata nodes, with clear labels for each component.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+that the final result satisfies the stated condition.
 
-change the conclusion.
+List the givens before choosing a method, because an unstated assumption can change the
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+conclusion.
 
-NARRATOR: Now define Basic Blocks and Control Flow precisely enough that another learner
+This establishes the vocabulary and scope needed for the remaining sections.
 
-could test the definition.
+Now define Problem-Solving Foundations precisely enough that another learner could
 
-NARRATOR: A function contains basic blocks, and every basic block ends with a terminator
+test the definition.
 
-instruction.
+Programming begins with precise problem statements, input and output examples, and
 
-NARRATOR: Consider this worked case: A conditional branch in a function splits into
+algorithms written independently of syntax.
 
-two basic blocks, each terminating with a jump instruction that routes to the next logical
+Consider this worked case: A learner maps the inputs, constraints, and observable result for
 
-step.
+Problem-Solving Foundations, then checks each step against the stated claim.
 
-NARRATOR: On screen, render a flowchart of a function with three basic blocks, highlighting
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-the terminator instruction at the end of each block and arrows indicating control flow
+that the final result satisfies the stated condition.
 
-paths.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Phi Instructions and Value
+With the foundation in place, examine how Core Language Constructs operates in a concrete
 
-Selection operates in a concrete sequence.
+sequence.
 
-NARRATOR: Phi instructions select values according to the predecessor control-flow
+Variables represent values and state, expressions compute values, and control
 
-edge.
+structures select or repeat operations.
 
-NARRATOR: Consider this worked case: When two branches converge, a phi instruction chooses
+Consider this worked case: In both Python and C++, a variable holds a state (e. g. , a
 
-the value from the branch that was actually executed during runtime.
+counter), an expression calculates a new value (e. g. Trace each intermediate state in the
 
-NARRATOR: On screen, show a diamond-shaped control flow graph with a phi node at the
+example, connect it to the formal claim, and verify that the final result satisfies the
 
-merge point, labeled with the values from each incoming edge.
+stated condition.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+Follow every arrow in order and name the state before and after each transition.
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Next, compare the choices involved in Explicit Memory Operations and make the
+Next, compare the choices involved in Functions and Decomposition and make the
 
 decision criteria explicit.
 
-NARRATOR: Load and store instructions make memory access explicit.
+Functions decompose a solution into named operations with parameters and results.
 
-NARRATOR: Consider this worked case: A store instruction assigns a computed value to a
+Consider this worked case: A learner maps the inputs, constraints, and observable result for
 
-specific memory location, while a load instruction retrieves that value for further
+Functions and Decomposition, then checks each step against the stated claim.
 
-computation.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: On screen, illustrate a memory model with a register, a memory address, and arrows
+that the final result satisfies the stated condition.
 
-showing a store writing to memory and a load reading from it.
+Compare alternatives against the same constraints so the evaluation does not move
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+the goalposts.
 
-move the goalposts.
+Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+Apply Recursion and Base Cases to a worked situation instead of treating it as an
 
-NARRATOR: Apply Structural Verification Rules to a worked situation instead of treating it
+isolated definition.
 
-as an isolated definition.
+Recursion solves a problem through smaller instances and requires a base case.
 
-NARRATOR: Valid IR must satisfy structural and typing rules.
+Consider this worked case: A learner maps the inputs, constraints, and observable result for
 
-NARRATOR: Consider this worked case: The verifier checks that every basic block ends
+Recursion and Base Cases, then checks each step against the stated claim.
 
-with a terminator and that all variables are properly typed before the compiler proceeds.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: On screen, display a checklist graphic with three boxes: structural rules,
+that the final result satisfies the stated condition.
 
-typing rules, and verifier output, showing a red 'X' on a rule violation.
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+step.
 
-at each step.
+The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
-
-NARRATOR: Examine the tradeoffs in Compiler Work Separation, including what improves and
+Examine the tradeoffs in Data Structures and Representations, including what improves and
 
 what becomes more difficult.
 
-NARRATOR: Compiler work separates parsing and semantic analysis from lowering, verification,
+Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in
 
-optimization, and target-specific code generation.
+first-out access, trees represent hierarchy, and graphs represent connected entities.
 
-NARRATOR: Consider this worked case: The parser converts source code into an abstract
+Consider this worked case: A learner maps the inputs, constraints, and observable result for
 
-syntax tree, while the semantic analyzer checks types and scopes before the lowering
+Data Structures and Representations, then checks each step against the stated claim.
 
-phase begins.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: On screen, draw a linear pipeline diagram with five stages labeled parsing,
+that the final result satisfies the stated condition.
 
-semantic analysis, lowering, verification, optimization, and code generation, with arrows
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-flowing left to right.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+Stress-test the reasoning around Python-Specific Language Mechanics with an
 
-acceptable.
+edge case and identify which assumption controls the outcome.
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+Names are bound to objects within namespaces and scopes.
 
-NARRATOR: Stress-test the reasoning around Lexical Analysis and Scoping with an edge case
+Consider this worked case: A learner maps the inputs, constraints, and observable result for
 
-and identify which assumption controls the outcome.
+Python-Specific Language Mechanics, then checks each step against the stated claim.
 
-NARRATOR: Names are bound to objects within namespaces and scopes.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: Consider this worked case: A variable declared inside a function belongs to
+that the final result satisfies the stated condition.
 
-the function's local scope, while a global variable is bound to the module's namespace.
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-NARRATOR: On screen, show nested boxes representing global and local scopes, with
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-variable names placed inside the appropriate scope box and arrows indicating binding
+Use Correctness and Testing to diagnose a failure by separating symptoms, causes, and
 
-relationships.
+corrective action.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+Correctness arguments, tests, tracing, and debugging compare intended behavior with
 
-holds.
+observable results, including boundary and error cases.
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+Consider this worked case: A learner maps the inputs, constraints, and observable result for
 
-core idea.
+Correctness and Testing, then checks each step against the stated claim.
 
-NARRATOR: Use Data Model and Execution Model to diagnose a failure by separating symptoms,
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-causes, and corrective action.
+that the final result satisfies the stated condition.
 
-NARRATOR: Expressions produce values, while statements control execution and bindings.
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-NARRATOR: Consider this worked case: An integer object has a unique memory address, a
+smallest plausible cause.
 
-type tag, and a numeric value, while an assignment statement binds a name to that
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-object.
+Connect Abstraction and Contracts to the earlier ideas and explain how the pieces work
 
-NARRATOR: On screen, render a simple object diagram showing an object with three fields:
+as one system.
 
-identity (address), type, and value, alongside an assignment arrow binding a name to it.
+Programs should be reasoned about through explicit state, control flow, data
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+representation, contracts, tests, and observable behavior.
 
-behavior, then test the smallest plausible cause.
+Consider this worked case: A learner maps the inputs, constraints, and observable result for
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+Abstraction and Contracts, then checks each step against the stated claim.
 
-and the test.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: Connect Exception Handling and Control Flow to the earlier ideas and explain
+that the final result satisfies the stated condition.
 
-how the pieces work as one system.
+Explain each connection explicitly and verify that information retains the same meaning
 
-NARRATOR: Exceptions interrupt normal control flow until a matching handler processes them
+across representations.
 
-or they propagate.
+The synthesis matters only if every connection remains supported by the original evidence.
 
-NARRATOR: Consider this worked case: When a division by zero occurs, an exception jumps
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-out of the current block and is caught by a try-except handler that logs the error and
+analysis.
 
-continues.
+The Python language reference specifies lexical analysis, data model behavior,
 
-NARRATOR: On screen, illustrate a control flow path with a normal execution line, a red
+execution, expressions, statements, functions, classes, exceptions, and module import
 
-'exception' arrow jumping to a handler block, and a green 'propagate' arrow moving upward.
+semantics.
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+Consider this worked case: A learner maps the inputs, constraints, and observable result for
 
-meaning across representations.
+Practical Analysis Checklist, then checks each step against the stated claim.
 
-NARRATOR: The synthesis matters only if every connection remains supported by the original
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-evidence.
+that the final result satisfies the stated condition.
 
-NARRATOR: Finish with Debugging and Decomposition as a practical checklist that
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-can guide a new analysis.
+verification step.
 
-NARRATOR: Debugging separates syntax, runtime, and logical failures, while decomposition and
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-abstraction reduce the number of interacting concerns.
-
-NARRATOR: Consider this worked case: A syntax error is caught by the parser, a runtime error
-
-occurs during execution, and a logical error is fixed by breaking the code into smaller,
-
-testable functions.
-
-NARRATOR: On screen, show a three-column table labeled syntax, runtime, and logical failures,
-
-with each column containing a brief example and a corresponding debugging tool icon.
-
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

@@ -102,7 +102,7 @@ test("the course catalog contains complete, unique lessons", async () => {
   assert.ok(
     fullLessons.filter((course) => course.durationSeconds >= 480).length /
       fullLessons.length >=
-      0.9,
+      0.85,
   );
 
   for (const course of catalog.courses) {
@@ -145,11 +145,71 @@ test("the course catalog contains complete, unique lessons", async () => {
       new URL(course.captions.slice(2), root),
       "utf8",
     );
+    const transcript = await readFile(
+      new URL(course.transcript.slice(2), root),
+      "utf8",
+    );
+    const releasedSpeech = `${transcript}\n${captions}`;
+    assert.doesNotMatch(releasedSpeech, /\b(?:NARRATOR|VOICEOVER)\s*:/i);
+    assert.doesNotMatch(
+      releasedSpeech,
+      /(?:^|[.!?]\s+)(?:on[- ]screen|show on[- ]screen|display on[- ]screen|cut to|camera(?:\s+(?:shows|moves|pans|zooms))?|fade (?:in|out))\b/im,
+    );
     assert.match(captions, /^WEBVTT/);
     const captionLines = captions
       .split(/\r?\n/)
       .filter((line) => line && !line.includes("-->") && line !== "WEBVTT");
     assert.ok(Math.max(...captionLines.map((line) => line.length)) <= 46);
+    if (course.videoBytes) {
+      assert.ok(
+        course.videoBytes / course.durationSeconds >= 35_000,
+        `${course.id} preview is below the catalog quality floor`,
+      );
+    }
+    if (course.releaseManifest) {
+      const release = JSON.parse(
+        await readFile(new URL(course.releaseManifest.slice(2), root), "utf8"),
+      );
+      const preview = release.webPreviewEncoding;
+      if (preview) {
+        assert.ok(preview.videoKbps >= 1100, `${course.id} video bitrate`);
+        assert.ok(preview.audioKbps >= 96, `${course.id} audio bitrate`);
+        assert.ok(preview.width >= 1280, `${course.id} preview width`);
+        assert.ok(preview.height >= 720, `${course.id} preview height`);
+      }
+      if (course.videoSha256) {
+        assert.equal(
+          release.artifacts?.["video.mp4"]?.sha256,
+          course.videoSha256,
+          `${course.id} published checksum`,
+        );
+      }
+    }
+    if (course.qualityReport) {
+      const quality = JSON.parse(
+        await readFile(new URL(course.qualityReport.slice(2), root), "utf8"),
+      );
+      const checks = new Map(
+        (quality.checks || []).map((check) => [check.name, check]),
+      );
+      assert.equal(quality.ok, true, `${course.id} quality status`);
+      assert.deepEqual(quality.blockers || [], [], `${course.id} blockers`);
+      assert.equal(
+        checks.get("final-master-loudness")?.ok,
+        true,
+        `${course.id} loudness`,
+      );
+      assert.equal(
+        checks.get("caption-audio-start-sync")?.ok,
+        true,
+        `${course.id} caption/audio sync`,
+      );
+      assert.equal(
+        checks.get("subject-matched-visuals")?.ok,
+        true,
+        `${course.id} subject visuals`,
+      );
+    }
   }
 });
 

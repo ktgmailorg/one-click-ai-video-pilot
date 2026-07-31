@@ -10,7 +10,7 @@
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: A 'Students' table contains rows for each student, with columns for ID, name, and major, each assigned a specific data type like INTEGER or VARCHAR.",
+          "phrase": "Relational systems organize data with tables, rows, columns, and declared types.",
           "type": "deterministic-svg"
         },
         {
@@ -30,7 +30,7 @@
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: A 'Courses' table uses a primary key 'CourseID' to uniquely identify each course, and a foreign key 'DepartmentID' links it to the 'Departments' table.",
+          "phrase": "Primary keys identify rows, while foreign keys express references between tables.",
           "type": "deterministic-svg"
         },
         {
@@ -50,7 +50,7 @@
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: A NOT NULL constraint on a 'StudentID' column prevents empty entries, while a CHECK constraint ensures 'Age' values remain between 18 and 100.",
+          "phrase": "Constraints reject states that violate declared data rules.",
           "type": "deterministic-svg"
         },
         {
@@ -70,7 +70,7 @@
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: A JOIN operation merges 'Enrollments' and 'Courses' tables to show which students are taking which classes, demonstrating how schema design supports relational queries.",
+          "phrase": "Queries select, join, aggregate, insert, update, and delete data.",
           "type": "deterministic-svg"
         },
         {
@@ -90,7 +90,7 @@
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: An index on the 'DepartmentID' column allows the database to quickly locate all courses in a specific department without scanning every row.",
+          "phrase": "Indexes provide additional access paths for selected queries.",
           "type": "deterministic-svg"
         },
         {
@@ -110,7 +110,7 @@
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: A hash table stores 'StudentID' keys, where each ID hashes to a specific bucket, enabling rapid verification of student records during login checks.",
+          "phrase": "Constraints and indexes support data integrity and efficient lookup.",
           "type": "deterministic-svg"
         },
         {
@@ -130,7 +130,7 @@
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: A transaction transfers funds between two accounts, ensuring both the debit and credit succeed together or fail together to maintain balance consistency.",
+          "phrase": "Transactions group operations into an atomic unit of work.",
           "type": "deterministic-svg"
         },
         {
@@ -150,7 +150,7 @@
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: Read committed isolation allows multiple transactions to read data simultaneously but prevents one transaction from seeing uncommitted changes from another.",
+          "phrase": "Isolation controls how concurrent transactions observe one another.",
           "type": "deterministic-svg"
         },
         {
@@ -170,7 +170,7 @@
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: The optimizer chooses a hash join over a nested loop join for large tables, leveraging physical indexes to reduce execution time while preserving the same result set.",
+          "phrase": "Query planning and physical structures influence performance without changing logical query meaning.",
           "type": "deterministic-svg"
         },
         {
@@ -190,7 +190,7 @@
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: A developer reviews a schema for missing primary keys, adds a hash index on a frequently queried column, wraps critical updates in a transaction, and sets isolation to serializable for financial records.",
+          "phrase": "Topics include physical data organization, indexing and hashing, query processing and optimization, database recovery techniques, transaction management, concurrency control, and database performance evaluation.",
           "type": "deterministic-svg"
         },
         {

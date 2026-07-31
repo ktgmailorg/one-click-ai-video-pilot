@@ -1,7 +1,7 @@
 {
   "approvals": [
     {
-      "approvedAt": "2026-07-31T15:49:54.703Z",
+      "approvedAt": "2026-07-31T18:50:28.249Z",
       "notes": "Verifies declared claim-to-source bindings for draft rendering only; this is not instructor or release approval.",
       "reviewer": "Automated source-pack verification (draft)",
       "role": "automation",
@@ -14,27 +14,27 @@
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/individualized-study-question/work/render/documentary-master.core.mp4",
       "role": "master",
-      "sha256": "ef6ef94bd74c4e2da26d20b64e22a464ce64347076c0786654ba8f36b5327636"
+      "sha256": "fbb572eda8f87019f95cfd958aa67c8a5fed50a1fff657d789977e43585f71c0"
     },
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/individualized-study-question/work/narration/captions.vtt",
       "role": "captions-vtt",
-      "sha256": "23541c64dc7ff6e33d14ea59b810299be34d6787060fcd463610ad19c8baac2e"
+      "sha256": "152973a3c67cf240207983c3fbce3acda54d103fd48195b6bbbf4fa0c7a34b8d"
     },
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/individualized-study-question/work/narration/captions.srt",
       "role": "captions-srt",
-      "sha256": "7c26a9e25a3d3d74106014e07f8e42d263f0dc26bc8fcbd1b4d1fcb0faab037a"
+      "sha256": "a3254ee2f2d4c9cb6ee50a95274a31a118fbb313602f96bcbcbc946ce03f96ec"
     },
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/individualized-study-question/work/narration/transcript.txt",
       "role": "transcript-text",
-      "sha256": "851fbb202ac19a86dc6a4b5872ababb91982ce989e5e2bc9f9900e92d83838c1"
+      "sha256": "3d480b4c81561824e9a20f0ff87685fc1cb553dd632bc3f765ffa77ba609d7e0"
     },
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/individualized-study-question/work/narration/transcript.html",
       "role": "transcript-html",
-      "sha256": "e3e681bb7a948f3dc35d104f7928add1f5ba9c24331eca9fb8717c3633b800a0"
+      "sha256": "2e6fe038e037c2beed6d724cbf6dbb178fe2ec179037b55d405bc0aa555746c0"
     },
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/individualized-study-question/work/visuals/thumbnail.png",
@@ -131,7 +131,7 @@
     }
   ],
   "configSha256": "c80f10ae5400a2637f01edf9aac97307210ec802b69e940840535488a711b8b3",
-  "createdAt": "2026-07-31T15:50:19.250Z",
+  "createdAt": "2026-07-31T18:50:28.402Z",
   "final": {
     "releaseAudit": {
       "blockers": [],
@@ -188,10 +188,10 @@
           "name": "caption-audio-start-sync",
           "ok": true,
           "value": {
-            "audioStartSeconds": 0,
+            "audioStartSeconds": 0.024,
             "captionStartSeconds": 0.05,
             "maximumOffsetSeconds": 0.25,
-            "offsetSeconds": 0.05
+            "offsetSeconds": 0.026
           }
         },
         {
@@ -220,23 +220,22 @@
         "truePeakDbtp": -1.51
       },
       "audioSampleRate": 48000,
-      "audioStartSeconds": 0,
+      "audioStartSeconds": 0.024,
       "cache": {
-        "draft": false,
+        "draft": true,
         "draftSkipped": false,
-        "master": false,
+        "master": true,
         "sectionCount": 3,
-        "sections": 0
+        "sections": 3
       },
       "draftPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/individualized-study-question/work/render/documentary-master.DRAFT.mp4",
       "durationSeconds": 57.732967,
       "encoder": {
-        "codec": "h264_videotoolbox",
-        "mode": "videotoolbox",
-        "prioritizeSpeed": false,
-        "profile": "high",
-        "quality": "80",
-        "realtime": true
+        "codec": "libx264",
+        "crf": "20",
+        "mode": "software",
+        "preset": "veryfast",
+        "threads": "1"
       },
       "frameRate": "30000/1001",
       "height": 1080,
@@ -246,41 +245,41 @@
       "sections": [
         {
           "beatId": "beat-01",
-          "cacheHit": false,
+          "cacheHit": true,
           "durationSeconds": 15.792,
           "output": "beat-01.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/individualized-study-question/work/render/sections/beat-01.mp4",
-          "renderSignature": "85b04614e5b687b7d83a1b93509a459b45d6233f97b04295d28ebb88dd2e74ce",
+          "renderSignature": "e2e863a960c27a2e33d3956c7bde4cda1423506ccf1db95baafa0e2014d1e49e",
           "schemaVersion": 1,
-          "sha256": "e4732bfe17b40bb2a4de60a4b1f9d3d5b15b7f6091370203cd6b1af8597b5fc8"
+          "sha256": "4ee2fad536931a62ddf5fa9828f0b5d2770cc755254eb4899e27d2e41374fc3d"
         },
         {
           "beatId": "beat-02",
-          "cacheHit": false,
+          "cacheHit": true,
           "durationSeconds": 18.768,
           "output": "beat-02.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/individualized-study-question/work/render/sections/beat-02.mp4",
-          "renderSignature": "497653ddcab6dca69701776881d0d4110eecb299b12c68ab46e0832205047c13",
+          "renderSignature": "b1e23694e3dc06481f7209a3aaa83a171d77638118ed3eaf2eb423009a7d548b",
           "schemaVersion": 1,
-          "sha256": "72b370d21be399ef9817712f641ed3f3052ff7e10565806493481e0c8a224709"
+          "sha256": "8ddfcbac8bcd84915e9424838e838a08f30a63e91792dca5d70815ec505cd056"
         },
         {
           "beatId": "beat-03",
-          "cacheHit": false,
+          "cacheHit": true,
           "durationSeconds": 23.16,
           "output": "beat-03.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/individualized-study-question/work/render/sections/beat-03.mp4",
-          "renderSignature": "04f286b1acf2f69a9e605d079d7e1d72fcce278372c3b7ef6a0102dd83d1d89d",
+          "renderSignature": "2b9ad83f0ab1e9a5fe647b8680f575e9e9ca0705a1c841017d2bc2dc029fc081",
           "schemaVersion": 1,
-          "sha256": "0a9b4c04ae88c4510d5e83c32914bd9ad8532756b96e1cde36564ac838f19869"
+          "sha256": "046e9062adcd43366e9f94b0e2d07a5f6566b3d2b1b18620a9b0e703fa5c5812"
         }
       ],
-      "sha256": "ef6ef94bd74c4e2da26d20b64e22a464ce64347076c0786654ba8f36b5327636",
+      "sha256": "fbb572eda8f87019f95cfd958aa67c8a5fed50a1fff657d789977e43585f71c0",
       "title": "How to Shape an Interdisciplinary Study Question",
       "width": 1920
     }
   },
-  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
   "inputSha256": "e5d0a258509976822ae4d325e98bd3e0f0d1d2301f49b0fbbc2c11926d4aa733",
   "mode": "record",
   "providers": {
@@ -310,7 +309,7 @@
   },
   "requests": [
     {
-      "cacheHit": false,
+      "cacheHit": true,
       "capability": "speech.synthesize",
       "durationMs": 745,
       "lookupSha256": "6f238499dc6242709aef83f0a30f77f49f347cf25c7253b22cafa167fc7b1478",
@@ -377,74 +376,7 @@
       "startedAt": "2026-07-31T15:49:54.802Z"
     },
     {
-      "cacheHit": false,
-      "capability": "speech.synthesize",
-      "durationMs": 875,
-      "lookupSha256": "e26629319d6174f1fb32619617ef50d46181c31e62f69df86ffcc48a0cbafa95",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Professional, concise, and paced for an introductory course audience.",
-          "text": "Finally, sequence the learning. Identify foundations, methods, advanced work, and a project that forces the fields to interact. RIT individualized study pairs this planning with academic advising and connections to faculty and experiential learning. The goal is not maximum variety. It is an intentional path that produces evidence you can address the question."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "dfc887ca04603c9ac921da2c6a824f06156223a36e3bfbbe829c2e9035e2b47d",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/db/dbc923ee044d4fc2b8417bfdcc458530bb777715b059f5d3df205e167f906905.mp3",
-            "sha256": "dbc923ee044d4fc2b8417bfdcc458530bb777715b059f5d3df205e167f906905",
-            "size": 138960
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/cc/cc3bdc391c4edcd7aba071bb6c51f8a5419dd70b95a535be1abfb23a8bbb0b9f.vtt",
-            "sha256": "cc3bdc391c4edcd7aba071bb6c51f8a5419dd70b95a535be1abfb23a8bbb0b9f",
-            "size": 527
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-31T15:49:54.802Z"
-    },
-    {
-      "cacheHit": false,
+      "cacheHit": true,
       "capability": "speech.synthesize",
       "durationMs": 2080,
       "lookupSha256": "c4d30da9506c9e07c0f256008ae9a237c24f2ebda143eb48be595d02d763df00",
@@ -509,6 +441,73 @@
       "roleName": "narration",
       "schemaVersion": 1,
       "startedAt": "2026-07-31T15:49:54.801Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 875,
+      "lookupSha256": "e26629319d6174f1fb32619617ef50d46181c31e62f69df86ffcc48a0cbafa95",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "Finally, sequence the learning. Identify foundations, methods, advanced work, and a project that forces the fields to interact. RIT individualized study pairs this planning with academic advising and connections to faculty and experiential learning. The goal is not maximum variety. It is an intentional path that produces evidence you can address the question."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "dfc887ca04603c9ac921da2c6a824f06156223a36e3bfbbe829c2e9035e2b47d",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/db/dbc923ee044d4fc2b8417bfdcc458530bb777715b059f5d3df205e167f906905.mp3",
+            "sha256": "dbc923ee044d4fc2b8417bfdcc458530bb777715b059f5d3df205e167f906905",
+            "size": 138960
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/cc/cc3bdc391c4edcd7aba071bb6c51f8a5419dd70b95a535be1abfb23a8bbb0b9f.vtt",
+            "sha256": "cc3bdc391c4edcd7aba071bb6c51f8a5419dd70b95a535be1abfb23a8bbb0b9f",
+            "size": 527
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:49:54.802Z"
     }
   ],
   "runId": "how-to-shape-an-interdisciplinary-study-question-cba80e258a0f",
@@ -560,11 +559,12 @@
     "gitChangedPaths": [
       "outreach/README.md",
       "outreach/general-email.md",
-      "outreach/leadership-confirmation.md"
+      "outreach/leadership-confirmation.md",
+      "outreach/subject-showcase/reference-manifest.json"
     ],
     "gitDirty": true,
-    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
-    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
+    "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
+    "gitStatusSha256": "add6a4c631c3d463fa2b7e37fa6a50bfab3e6fce98296cf041f8a8d165d4cda8",
     "node": "v22.23.1",
     "platform": "darwin-arm64",
     "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",

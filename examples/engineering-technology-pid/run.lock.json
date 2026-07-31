@@ -1,7 +1,7 @@
 {
   "approvals": [
     {
-      "approvedAt": "2026-07-31T15:48:19.409Z",
+      "approvedAt": "2026-07-31T18:50:27.896Z",
       "notes": "Verifies declared claim-to-source bindings for draft rendering only; this is not instructor or release approval.",
       "reviewer": "Automated source-pack verification (draft)",
       "role": "automation",
@@ -14,27 +14,27 @@
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/render/documentary-master.core.mp4",
       "role": "master",
-      "sha256": "a7fd5c252fdaecee3b58e27c7fb8d4bcd5d51f348932e1558c5edf3fbf4677bf"
+      "sha256": "facedb819c748f076363f77de6bf7035e1bd1e0d0e9e59fce50e0bc1f8e7471e"
     },
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/narration/captions.vtt",
       "role": "captions-vtt",
-      "sha256": "8acd52fe07e9614dbc486bb7460354b81df450c111e3343a4e3310701b8356e0"
+      "sha256": "2796b646cd80ba1bbddd870908029b6dfed74d5f2b4b437b8b545c60f79fa442"
     },
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/narration/captions.srt",
       "role": "captions-srt",
-      "sha256": "fd25d8aeb872892a3593a383507a9bd2239828f14e08a980de7a05df48cd23dc"
+      "sha256": "09f76c96b38292296d03eb4822733c54910c221dcfaa9e04a51204e0d98c69cf"
     },
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/narration/transcript.txt",
       "role": "transcript-text",
-      "sha256": "c73a09f6b173b3356f2497be51942c66ff23394b7d6127c6359dd8a20a33cbf7"
+      "sha256": "863b2eb1755d0b2290536e12bd6820ad79716e7078f19badd7f771b4806953de"
     },
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/narration/transcript.html",
       "role": "transcript-html",
-      "sha256": "2bd4f1fb1eda7abb3c1b85f99764e48d6eebe356c55ef1b545309d65dbba898b"
+      "sha256": "a5f0546dec92c50ce42e4033842b3a3b39f12c478cebcef27078fae9c2cbb072"
     },
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/visuals/thumbnail.png",
@@ -131,7 +131,7 @@
     }
   ],
   "configSha256": "02030e35dcf1d52aca4fea5572f1e6dfeaf3306365c93ec7373992e21310ca82",
-  "createdAt": "2026-07-31T15:48:43.841Z",
+  "createdAt": "2026-07-31T18:50:28.044Z",
   "final": {
     "releaseAudit": {
       "blockers": [],
@@ -188,10 +188,10 @@
           "name": "caption-audio-start-sync",
           "ok": true,
           "value": {
-            "audioStartSeconds": 0,
+            "audioStartSeconds": 0.024,
             "captionStartSeconds": 0.05,
             "maximumOffsetSeconds": 0.25,
-            "offsetSeconds": 0.05
+            "offsetSeconds": 0.026
           }
         },
         {
@@ -220,23 +220,22 @@
         "truePeakDbtp": -1.52
       },
       "audioSampleRate": 48000,
-      "audioStartSeconds": 0,
+      "audioStartSeconds": 0.024,
       "cache": {
-        "draft": false,
+        "draft": true,
         "draftSkipped": false,
-        "master": false,
+        "master": true,
         "sectionCount": 3,
-        "sections": 0
+        "sections": 3
       },
       "draftPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/render/documentary-master.DRAFT.mp4",
       "durationSeconds": 59.021333,
       "encoder": {
-        "codec": "h264_videotoolbox",
-        "mode": "videotoolbox",
-        "prioritizeSpeed": false,
-        "profile": "high",
-        "quality": "80",
-        "realtime": true
+        "codec": "libx264",
+        "crf": "20",
+        "mode": "software",
+        "preset": "veryfast",
+        "threads": "1"
       },
       "frameRate": "30000/1001",
       "height": 1080,
@@ -246,41 +245,41 @@
       "sections": [
         {
           "beatId": "beat-01",
-          "cacheHit": false,
+          "cacheHit": true,
           "durationSeconds": 17.136,
           "output": "beat-01.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/render/sections/beat-01.mp4",
-          "renderSignature": "adc99a6f746cc4f042212de21d6c56ff0bdb551777d0c9290028b5e76b5ea872",
+          "renderSignature": "7fd90ebcbe325cc42f638b5e1fcbcae554e0f58fa06e6a7a69d282dd5fdc16c4",
           "schemaVersion": 1,
-          "sha256": "fe795621ab35c1972b7384aceadfbf479adba76b73f09f4951ae328ac9cabda3"
+          "sha256": "f5f11ce58f33c18c5fb2261896acef907f84bf2b8323ef8782b5fe50e576ab9f"
         },
         {
           "beatId": "beat-02",
-          "cacheHit": false,
+          "cacheHit": true,
           "durationSeconds": 18.384,
           "output": "beat-02.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/render/sections/beat-02.mp4",
-          "renderSignature": "9bbe00e92a02915ea0dd80187c5d032d6004197f536f5875ceb1ca7a3b29757e",
+          "renderSignature": "9e9202118b14084810ec7d5be07079043994d314d730c70acd79d5fb600f392f",
           "schemaVersion": 1,
-          "sha256": "b813c963ea408f79db1d2602a69a407337007f993553a3ab14f251be92f70028"
+          "sha256": "6ea847dba2f2097950e99a2d1cd311667ddbaf31edc7a089051677af767243db"
         },
         {
           "beatId": "beat-03",
-          "cacheHit": false,
+          "cacheHit": true,
           "durationSeconds": 23.352,
           "output": "beat-03.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/render/sections/beat-03.mp4",
-          "renderSignature": "d9b77e89443c49300f45150b3baa2b75fd201f466954bb97c44994dc7212ec24",
+          "renderSignature": "1269b9c8c09922b37340a073603aec6acf0f510cc62d6f1384e8127eb1cdfb83",
           "schemaVersion": 1,
-          "sha256": "349e66024c619add2dd0e7490474b84c36cfa6b0aaa106f224f09554307bee84"
+          "sha256": "d17a7f65d25ee43b6bf1ddaa304dcf91ed46ff90cb6ac0cdd689fc6bae742290"
         }
       ],
-      "sha256": "a7fd5c252fdaecee3b58e27c7fb8d4bcd5d51f348932e1558c5edf3fbf4677bf",
+      "sha256": "facedb819c748f076363f77de6bf7035e1bd1e0d0e9e59fce50e0bc1f8e7471e",
       "title": "How a PID Controller Corrects an Error",
       "width": 1920
     }
   },
-  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
   "inputSha256": "4027cb5ed6ba30ac328cc5eef9ae896046d27c836a3454efe13c3ec6c947e2fe",
   "mode": "record",
   "providers": {
@@ -310,7 +309,7 @@
   },
   "requests": [
     {
-      "cacheHit": false,
+      "cacheHit": true,
       "capability": "speech.synthesize",
       "durationMs": 2065,
       "lookupSha256": "aed2048c4ff1bfaaf427732e180aa45914a548bae2ece578520f8f15fd150506",
@@ -377,7 +376,7 @@
       "startedAt": "2026-07-31T15:48:19.513Z"
     },
     {
-      "cacheHit": false,
+      "cacheHit": true,
       "capability": "speech.synthesize",
       "durationMs": 2221,
       "lookupSha256": "859f5451c580ff51da427ab90778801b70bea77c9d84670f3034dcf22f7436b1",
@@ -444,7 +443,7 @@
       "startedAt": "2026-07-31T15:48:19.513Z"
     },
     {
-      "cacheHit": false,
+      "cacheHit": true,
       "capability": "speech.synthesize",
       "durationMs": 2224,
       "lookupSha256": "d7855fe7bda51d91dcfaa8f92799c39b494bf0eb13ef965be57c0911686f9810",
@@ -560,11 +559,12 @@
     "gitChangedPaths": [
       "outreach/README.md",
       "outreach/general-email.md",
-      "outreach/leadership-confirmation.md"
+      "outreach/leadership-confirmation.md",
+      "outreach/subject-showcase/reference-manifest.json"
     ],
     "gitDirty": true,
-    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
-    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
+    "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
+    "gitStatusSha256": "add6a4c631c3d463fa2b7e37fa6a50bfab3e6fce98296cf041f8a8d165d4cda8",
     "node": "v22.23.1",
     "platform": "darwin-arm64",
     "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",

@@ -1,247 +1,187 @@
-NARRATOR: Begin by framing Introduction to AI Foundations as a question about inputs,
+Begin by framing Introduction to AI Foundations as a question about inputs,
 
 decisions, and observable results.
 
-NARRATOR: Topics include search algorithms, logic, planning, machine learning, and
+Topics include search algorithms, logic, planning, machine learning, and applications
 
-applications from areas such as computer vision, robotics, and natural language
+from areas such as computer vision, robotics, and natural language processing.
 
-processing.
-
-NARRATOR: Consider this worked case: Students will explore how search algorithms navigate
+Consider this worked case: Students will explore how search algorithms navigate
 
 decision trees to find optimal solutions in robotics navigation tasks.
 
-NARRATOR: On screen, display a flowchart showing the course structure: search
+List the givens before choosing a method, because an unstated assumption can change the
 
-algorithms, logic, planning, machine learning, and application domains like computer vision
+conclusion.
 
-and NLP.
+This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+Now define NIST AI Risk Management Framework Overview precisely enough that another learner
 
-change the conclusion.
+could test the definition.
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+The NIST AI Risk Management Framework organizes work around Govern, Map, Measure,
 
-NARRATOR: Now define NIST AI Risk Management Framework Overview precisely enough that
+and Manage.
 
-another learner could test the definition.
+Consider this worked case: In a healthcare AI deployment, the Map phase documents the
 
-NARRATOR: The NIST AI Risk Management Framework organizes work around Govern, Map,
+intended use of a diagnostic tool and identifies affected patient populations.
 
-Measure, and Manage.
-
-NARRATOR: Consider this worked case: In a healthcare AI deployment, the Map phase
-
-documents the intended use of a diagnostic tool and identifies affected patient
-
-populations.
-
-NARRATOR: On screen, show a four-step circular diagram labeled Govern, Map, Measure, and
-
-Manage, with each node connected to a brief risk-management action.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Govern Phase: Policies and
+With the foundation in place, examine how Govern Phase: Policies and Accountability
 
-Accountability operates in a concrete sequence.
+operates in a concrete sequence.
 
-NARRATOR: Govern establishes policies, responsibilities, and accountability for AI
+Govern establishes policies, responsibilities, and accountability for AI risk.
 
-risk.
+Consider this worked case: A university AI ethics board assigns specific roles for
 
-NARRATOR: Consider this worked case: A university AI ethics board assigns specific
+reviewing algorithmic bias in automated grading systems.
 
-roles for reviewing algorithmic bias in automated grading systems.
+g. , AI ethics board, compliance officer, developers) to accountability
 
-NARRATOR: On screen, create a table mapping governance roles (e.g., AI ethics board,
+responsibilities.
 
-compliance officer, developers) to accountability responsibilities.
+Follow every arrow in order and name the state before and after each transition.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Next, compare the choices involved in Map Phase: Context and Impacts and make the
+Next, compare the choices involved in Map Phase: Context and Impacts and make the
 
 decision criteria explicit.
 
-NARRATOR: Map documents context, intended use, affected people, and potential impacts.
+Map documents context, intended use, affected people, and potential impacts.
 
-NARRATOR: Consider this worked case: A self-driving car manufacturer maps the
+Consider this worked case: A self-driving car manufacturer maps the operational design
 
-operational design domain, specifying weather conditions and traffic scenarios where the
+domain, specifying weather conditions and traffic scenarios where the system will
 
-system will operate.
+operate.
 
-NARRATOR: On screen, illustrate a contextual mapping matrix with columns for context,
+Compare alternatives against the same constraints so the evaluation does not move
 
-intended use, affected people, and potential impacts.
+the goalposts.
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+Using shared criteria turns a preference into a defensible technical choice.
 
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Apply Measure Phase: Risk Analysis Methods to a worked situation instead of
+Apply Measure Phase: Risk Analysis Methods to a worked situation instead of treating it as
 
-treating it as an isolated definition.
+an isolated definition.
 
-NARRATOR: Measure uses qualitative and quantitative methods to analyze identified
+Measure uses qualitative and quantitative methods to analyze identified risks.
 
-risks.
+Consider this worked case: Researchers conduct A/B testing and statistical analysis to
 
-NARRATOR: Consider this worked case: Researchers conduct A/B testing and
+measure the fairness and accuracy of a facial recognition model across different
 
-statistical analysis to measure the fairness and accuracy of a facial recognition model
+demographics.
 
-across different demographics.
+g. , stakeholder interviews), right side shows quantitative metrics (e. g. , accuracy, bias
 
-NARRATOR: On screen, display a split-screen graphic: left side shows qualitative risk
+scores).
 
-assessment (e.g., stakeholder interviews), right side shows quantitative metrics (e.g.,
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-accuracy, bias scores).
+step.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+The worked case shows both how to apply the method and how to check it.
 
-at each step.
+Examine the tradeoffs in Manage Phase: Prioritization and Monitoring, including what
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+improves and what becomes more difficult.
 
-NARRATOR: Examine the tradeoffs in Manage Phase: Prioritization and Monitoring,
+Manage prioritizes risks and allocates resources for response and monitoring.
 
-including what improves and what becomes more difficult.
+Consider this worked case: A financial institution prioritizes high-risk algorithmic
 
-NARRATOR: Manage prioritizes risks and allocates resources for response and
+trading models for continuous monitoring and allocates resources for real-time anomaly
 
-monitoring.
+detection.
 
-NARRATOR: Consider this worked case: A financial institution prioritizes high-risk
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-algorithmic trading models for continuous monitoring and allocates resources for
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-real-time anomaly detection.
-
-NARRATOR: On screen, show a risk prioritization matrix with axes for likelihood
-
-and impact, highlighting high-priority risks requiring immediate monitoring.
-
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
-
-acceptable.
-
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
-
-NARRATOR: Stress-test the reasoning around Machine Learning Workflows: Supervised vs.
+Stress-test the reasoning around Machine Learning Workflows: Supervised vs.
 
 Unsupervised with an edge case and identify which assumption controls the outcome.
 
-NARRATOR: Supervised methods learn a mapping from examples paired with target labels.
+Supervised methods learn a mapping from examples paired with target labels.
 
-NARRATOR: Consider this worked case: A spam filter uses supervised learning with labeled
+Consider this worked case: A spam filter uses supervised learning with labeled email data,
 
-email data, whereas customer segmentation uses unsupervised clustering to group users by
+whereas customer segmentation uses unsupervised clustering to group users by
 
 behavior.
 
-NARRATOR: On screen, present a side-by-side comparison chart: supervised learning shows
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-labeled examples mapping to outputs, unsupervised learning shows raw data
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-clustering into groups.
+Use Preprocessing and Leakage Prevention to diagnose a failure by separating symptoms,
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+causes, and corrective action.
 
-holds.
+Preprocessing must be fitted only on permitted training data to avoid leakage.
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+Consider this worked case: A medical imaging pipeline standardizes image dimensions and
 
-core idea.
+normalizes pixel values using only the training set statistics before validation.
 
-NARRATOR: Use Preprocessing and Leakage Prevention to diagnose a failure by separating
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-symptoms, causes, and corrective action.
+smallest plausible cause.
 
-NARRATOR: Preprocessing must be fitted only on permitted training data to avoid leakage.
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-NARRATOR: Consider this worked case: A medical imaging pipeline standardizes image dimensions
+Connect Cross-Validation and Evaluation Metrics to the earlier ideas and explain how
 
-and normalizes pixel values using only the training set statistics before validation.
+the pieces work as one system.
 
-NARRATOR: On screen, draw a pipeline diagram showing data flowing through preprocessing
+Evaluation metrics must match the task and the cost of different errors.
 
-steps fitted on training data, then applied to validation and test sets without re-fitting.
+Consider this worked case: A fraud detection system uses k-fold cross-validation to assess
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+model stability, with precision and recall metrics weighted to penalize false negatives
 
-behavior, then test the smallest plausible cause.
+heavily.
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+Explain each connection explicitly and verify that information retains the same meaning
 
-and the test.
+across representations.
 
-NARRATOR: Connect Cross-Validation and Evaluation Metrics to the earlier ideas and
+The synthesis matters only if every connection remains supported by the original evidence.
 
-explain how the pieces work as one system.
+Finish with Practical Analysis Checklist for AI Deployment as a practical checklist that
 
-NARRATOR: Evaluation metrics must match the task and the cost of different errors.
+can guide a new analysis.
 
-NARRATOR: Consider this worked case: A fraud detection system uses k-fold cross-validation
+It also considers robustness, privacy, security, transparency, and fairness.
 
-to assess model stability, with precision and recall metrics weighted to penalize false
+Consider this worked case: A deployment checklist verifies that the AI system
 
-negatives heavily.
+maintains fairness thresholds, logs privacy compliance, and updates monitoring alerts when
 
-NARRATOR: On screen, illustrate a k-fold cross-validation cycle with data splits
+distribution shift is detected.
 
-rotating through training and validation sets, alongside a metrics comparison table.
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+verification step.
 
-meaning across representations.
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-NARRATOR: The synthesis matters only if every connection remains supported by the original
-
-evidence.
-
-NARRATOR: Finish with Practical Analysis Checklist for AI Deployment as a practical
-
-checklist that can guide a new analysis.
-
-NARRATOR: It also considers robustness, privacy, security, transparency, and fairness.
-
-NARRATOR: Consider this worked case: A deployment checklist verifies that the AI
-
-system maintains fairness thresholds, logs privacy compliance, and updates monitoring
-
-alerts when distribution shift is detected.
-
-NARRATOR: On screen, provide a printable checklist template with checkboxes for
-
-robustness, privacy, security, transparency, fairness, and monitoring status, aligned with
-
-NIST and ML workflow standards.
-
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

@@ -5,12 +5,12 @@
       "shots": [
         {
           "id": "beat-01-shot-001",
-          "phrase": "Begin by framing Course Scope and Paradigm Introduction as a question about inputs, decisions, and observable results.",
+          "phrase": "Begin by framing Course Scope and Paradigm Selection as a question about inputs, decisions, and observable results.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: Students might explore object-oriented programming in Python or functional concepts in Rust, depending on the instructor's selection.",
+          "phrase": "Consider this worked case: Students might select a paradigm like object-oriented programming paired with Python for a semester-long project.",
           "type": "deterministic-svg"
         },
         {
@@ -25,12 +25,12 @@
       "shots": [
         {
           "id": "beat-02-shot-001",
-          "phrase": "Now define Language Reference Structure precisely enough that another learner could test the definition.",
+          "phrase": "Now define Prerequisites and Credit Policy precisely enough that another learner could test the definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: The Python reference documents how names are bound to objects within namespaces and scopes, and how expressions produce values while statements control execution.",
+          "phrase": "Consider this worked case: A student who completed CSCI-344 could enroll in CSCI-541 for Python, then later enroll again for a different language like Java.",
           "type": "deterministic-svg"
         },
         {
@@ -45,12 +45,12 @@
       "shots": [
         {
           "id": "beat-03-shot-001",
-          "phrase": "With the foundation in place, examine how Object Identity and Namespaces operates in a concrete sequence.",
+          "phrase": "With the foundation in place, examine how Foundations of Problem Statements operates in a concrete sequence.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: A variable assignment like `x = 10` binds the name `x` to an integer object with a specific identity and value in the current scope.",
+          "phrase": "Consider this worked case: Before coding, a student writes a clear statement: 'Given a list of integers, return the sum of positive values.",
           "type": "deterministic-svg"
         },
         {
@@ -65,12 +65,12 @@
       "shots": [
         {
           "id": "beat-04-shot-001",
-          "phrase": "Next, compare the choices involved in Control Flow and Exceptions and make the decision criteria explicit.",
+          "phrase": "Next, compare the choices involved in Core Computational Concepts and make the decision criteria explicit.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: A `try-except` block catches a `ValueError` during input parsing, preventing the program from crashing and allowing recovery.",
+          "phrase": "Consider this worked case: Using a variable `count` to track iterations in a loop that repeats a calculation ten times.",
           "type": "deterministic-svg"
         },
         {
@@ -85,12 +85,12 @@
       "shots": [
         {
           "id": "beat-05-shot-001",
-          "phrase": "Apply Import System Mechanics to a worked situation instead of treating it as an isolated definition.",
+          "phrase": "Apply Decomposition via Functions to a worked situation instead of treating it as an isolated definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: Running `import math` loads the math module and binds its functions into the current namespace for direct access.",
+          "phrase": "Consider this worked case: Defining a function `calculate_average(numbers)` that takes a list and returns a float.",
           "type": "deterministic-svg"
         },
         {
@@ -105,12 +105,12 @@
       "shots": [
         {
           "id": "beat-06-shot-001",
-          "phrase": "Examine the tradeoffs in Compiler Phases and Separation of Concerns, including what improves and what becomes more difficult.",
+          "phrase": "Examine the tradeoffs in Recursion and Base Cases, including what improves and what becomes more difficult.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: Source code is first parsed into an abstract syntax tree, then semantically analyzed, lowered to intermediate representation, verified, optimized, and finally compiled to machine code.",
+          "phrase": "Consider this worked case: A factorial function that calls itself with `n-1` until `n` equals 0.",
           "type": "deterministic-svg"
         },
         {
@@ -125,12 +125,12 @@
       "shots": [
         {
           "id": "beat-07-shot-001",
-          "phrase": "Stress-test the reasoning around Intermediate Representation Basics with an edge case and identify which assumption controls the outcome.",
+          "phrase": "Stress-test the reasoning around Data Structures Overview with an edge case and identify which assumption controls the outcome.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: An IR function contains basic blocks where each block ends with a terminator instruction, ensuring explicit control flow paths.",
+          "phrase": "Consider this worked case: Using a stack to manage undo operations in a text editor.",
           "type": "deterministic-svg"
         },
         {
@@ -145,12 +145,12 @@
       "shots": [
         {
           "id": "beat-08-shot-001",
-          "phrase": "Use Phi Instructions and Control Flow to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "phrase": "Use Python Language Mechanics to diagnose a failure by separating symptoms, causes, and corrective action.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: A phi instruction at the start of a block merges different variable values depending on whether the loop condition was true or false.",
+          "phrase": "Consider this worked case: Assigning `x = 5` binds the name `x` to an integer object with identity `id(x)`.",
           "type": "deterministic-svg"
         },
         {
@@ -165,12 +165,12 @@
       "shots": [
         {
           "id": "beat-09-shot-001",
-          "phrase": "Connect Memory Operations and Verification to the earlier ideas and explain how the pieces work as one system.",
+          "phrase": "Connect Control Flow and Exceptions to the earlier ideas and explain how the pieces work as one system.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: A store instruction writes a value to a specific memory address, and the verifier checks that the type matches the memory location before execution.",
+          "phrase": "Consider this worked case: A `try/except` block catching a `ZeroDivisionError` when dividing by zero.",
           "type": "deterministic-svg"
         },
         {
@@ -185,12 +185,12 @@
       "shots": [
         {
           "id": "beat-10-shot-001",
-          "phrase": "Finish with Debugging and Decomposition Strategies as a practical checklist that can guide a new analysis.",
+          "phrase": "Finish with Analysis and Debugging Checklist as a practical checklist that can guide a new analysis.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: A developer uses a debugger to isolate a runtime error in a function, then refactors the code into smaller modules to simplify testing.",
+          "phrase": "Consider this worked case: Writing unit tests that cover edge cases like empty lists or maximum integer values.",
           "type": "deterministic-svg"
         },
         {
@@ -201,6 +201,6 @@
       ]
     }
   ],
-  "episodeId": "csci-541-programming-skills-foundations-lesson-blueprint",
+  "episodeId": "csci-541-programming-foundations-blueprint",
   "schemaVersion": 1
 }

@@ -1,580 +1,466 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:07.582
-NARRATOR: Begin by framing Foundations of the
-Relational Model as a question about inputs,
+00:00:00.050 --> 00:00:08.025
+Begin by framing Foundations of the Relational
+Model as a question about inputs, decisions,
 
 2
-00:00:07.582 --> 00:00:09.734
-decisions, and observable results.
+00:00:08.025 --> 00:00:09.734
+and observable results.
 
 3
-00:00:09.734 --> 00:00:17.139
-NARRATOR: Relational systems organize data
-with tables, rows, columns, and declared
+00:00:09.734 --> 00:00:17.968
+Relational systems organize data with tables,
+rows, columns, and declared types.
 
 4
-00:00:17.139 --> 00:00:17.812
-types.
+00:00:17.968 --> 00:00:25.126
+Consider this worked case: A 'Students' table
+contains rows for each student, with columns
 
 5
-00:00:17.812 --> 00:00:23.837
-NARRATOR: Consider this worked case: A
-'Students' table contains rows for each
+00:00:25.126 --> 00:00:32.796
+for ID, name, and major, each with a specific
+data type like INTEGER or VARCHAR.
 
 6
-00:00:23.837 --> 00:00:32.372
-student, with columns for ID, name, and major,
-each with a specific data type like INTEGER or
+00:00:32.796 --> 00:00:39.723
+List the givens before choosing a method,
+because an unstated assumption can change the
 
 7
-00:00:32.372 --> 00:00:32.874
-VARCHAR.
+00:00:39.723 --> 00:00:40.218
+conclusion.
 
 8
-00:00:32.875 --> 00:00:39.612
-NARRATOR: On screen, display a simple table
-schema diagram with labeled columns and data
+00:00:40.218 --> 00:00:45.968
+This establishes the vocabulary and scope
+needed for the remaining sections.
 
 9
-00:00:39.612 --> 00:00:40.093
-types.
+00:00:46.082 --> 00:00:53.138
+Now define Entity-Relationship Modeling Basics
+precisely enough that another learner could
 
 10
-00:00:40.093 --> 00:00:46.263
-NARRATOR: List the givens before choosing a
-method, because an unstated assumption can
+00:00:53.138 --> 00:00:55.063
+test the definition.
 
 11
-00:00:46.263 --> 00:00:47.687
-change the conclusion.
+00:00:55.063 --> 00:01:00.047
+Property graph models represent domain
+entities as nodes.
 
 12
-00:00:47.687 --> 00:00:53.453
-NARRATOR: This establishes the vocabulary and
-scope needed for the remaining sections.
+00:01:00.047 --> 00:01:07.087
+Consider this worked case: Modeling a
+'Library' system involves entities like Books,
 
 13
-00:00:53.570 --> 00:00:59.537
-NARRATOR: Now define Entity-Relationship
-Modeling Basics precisely enough that another
-
-14
-00:00:59.537 --> 00:01:02.520
-learner could test the definition.
-
-15
-00:01:02.520 --> 00:01:07.895
-NARRATOR: Property graph models represent
-domain entities as nodes.
-
-16
-00:01:07.895 --> 00:01:14.849
-NARRATOR: Consider this worked case: Modeling
-a 'Library' system involves entities like
-
-17
-00:01:14.849 --> 00:01:20.644
-Books, Authors, and Members, connected by
+00:01:07.087 --> 00:01:12.366
+Authors, and Members, connected by
 relationships like 'writtenBy' and
 
-18
-00:01:20.644 --> 00:01:21.223
+14
+00:01:12.366 --> 00:01:12.953
 'checkedOutBy'.
 
-19
-00:01:21.223 --> 00:01:29.548
-NARRATOR: On screen, show a simple ER diagram
-with three rectangles (Book, Author, Member)
+15
+00:01:12.953 --> 00:01:19.359
+Separate the formal definition from an
+implementation detail, then identify what
 
-20
-00:01:29.548 --> 00:01:31.926
-and lines connecting them.
-
-21
-00:01:31.926 --> 00:01:38.664
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
-
-22
-00:01:38.664 --> 00:01:40.910
+16
+00:01:19.359 --> 00:01:21.688
 evidence would distinguish them.
 
+17
+00:01:21.688 --> 00:01:28.219
+A precise definition makes later examples
+easier to evaluate and revise.
+
+18
+00:01:28.219 --> 00:01:35.623
+Name each dependency explicitly, and keep
+labels and representations consistent
+
+19
+00:01:35.623 --> 00:01:37.844
+throughout the analysis.
+
+20
+00:01:37.970 --> 00:01:45.244
+With the foundation in place, examine how
+Primary Keys and Unique Identifiers operates
+
+21
+00:01:45.244 --> 00:01:47.482
+in a concrete sequence.
+
+22
+00:01:47.482 --> 00:01:55.138
+Primary keys identify rows, while foreign keys
+express references between tables.
+
 23
-00:01:40.910 --> 00:01:47.254
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
+00:01:55.138 --> 00:02:03.552
+Consider this worked case: A 'Products' table
+uses a 'ProductID' column as the primary key
 
 24
-00:01:47.254 --> 00:01:54.387
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+00:02:03.552 --> 00:02:06.357
+to uniquely identify each item.
 
 25
-00:01:54.387 --> 00:01:56.332
-throughout the analysis.
+00:02:06.357 --> 00:02:13.732
+Follow every arrow in order and name the state
+before and after each transition.
 
 26
-00:01:56.450 --> 00:02:02.958
-NARRATOR: With the foundation in place,
-examine how Primary Keys and Unique
+00:02:13.732 --> 00:02:19.326
+The trace converts an abstract statement into
+an inspectable sequence.
 
 27
-00:02:02.958 --> 00:02:06.212
-Identifiers operates in a concrete sequence.
+00:02:19.326 --> 00:02:26.261
+Name each dependency explicitly, and keep
+labels and representations consistent
 
 28
-00:02:06.212 --> 00:02:13.660
-NARRATOR: Primary keys identify rows, while
-foreign keys express references between
-
-29
-00:02:13.660 --> 00:02:14.337
-tables.
-
-30
-00:02:14.337 --> 00:02:20.750
-NARRATOR: Consider this worked case: A
-'Products' table uses a 'ProductID' column as
-
-31
-00:02:20.750 --> 00:02:24.696
-the primary key to uniquely identify each
-item.
-
-32
-00:02:24.696 --> 00:02:31.903
-NARRATOR: On screen, highlight a primary key
-column in a table diagram with a unique key
-
-33
-00:02:31.903 --> 00:02:32.353
-symbol.
-
-34
-00:02:32.353 --> 00:02:39.509
-NARRATOR: Follow every arrow in order and name
-the state before and after each transition.
-
-35
-00:02:39.509 --> 00:02:45.212
-NARRATOR: The trace converts an abstract
-statement into an inspectable sequence.
-
-36
-00:02:45.212 --> 00:02:52.775
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-37
-00:02:52.775 --> 00:02:54.837
+00:02:26.261 --> 00:02:28.341
 throughout the analysis.
 
+29
+00:02:28.466 --> 00:02:35.772
+Next, compare the choices involved in Foreign
+Keys and Referential Integrity and make the
+
+30
+00:02:35.772 --> 00:02:37.337
+decision criteria explicit.
+
+31
+00:02:37.337 --> 00:02:44.056
+Constraints and indexes support data integrity
+and efficient lookup.
+
+32
+00:02:44.056 --> 00:02:51.190
+Consider this worked case: A 'Orders' table
+includes a 'CustomerID' foreign key that links
+
+33
+00:02:51.190 --> 00:02:53.228
+to the 'Customers' table.
+
+34
+00:02:53.228 --> 00:03:00.340
+Compare alternatives against the same
+constraints so the evaluation does not move
+
+35
+00:03:00.340 --> 00:03:01.525
+the goalposts.
+
+36
+00:03:01.525 --> 00:03:08.400
+Using shared criteria turns a preference into
+a defensible technical choice.
+
+37
+00:03:08.400 --> 00:03:15.503
+Name each dependency explicitly, and keep
+labels and representations consistent
+
 38
-00:02:54.962 --> 00:03:01.471
-NARRATOR: Next, compare the choices involved
-in Foreign Keys and Referential Integrity and
+00:03:15.503 --> 00:03:17.634
+throughout the analysis.
 
 39
-00:03:01.471 --> 00:03:03.974
-make the decision criteria explicit.
+00:03:17.738 --> 00:03:25.124
+Apply Constraints for Data Validation to a
+worked situation instead of treating it as an
 
 40
-00:03:03.974 --> 00:03:10.380
-NARRATOR: Constraints and indexes support data
-integrity and efficient lookup.
+00:03:25.124 --> 00:03:26.109
+isolated definition.
 
 41
-00:03:10.380 --> 00:03:16.074
-NARRATOR: Consider this worked case: A
-'Orders' table includes a 'CustomerID' foreign
+00:03:26.109 --> 00:03:31.453
+Constraints reject states that violate
+declared data rules.
 
 42
-00:03:16.074 --> 00:03:19.396
-key that links to the 'Customers' table.
+00:03:31.453 --> 00:03:38.659
+Consider this worked case: A 'Salary' column
+constraint prevents negative values, and a
 
 43
-00:03:19.396 --> 00:03:25.726
-NARRATOR: On screen, draw a line from the
-'Orders' table to the 'Customers' table
+00:03:38.659 --> 00:03:43.094
+'Email' column constraint enforces a valid
+email format.
 
 44
-00:03:25.726 --> 00:03:26.630
-labeled 'CustomerID'.
+00:03:43.094 --> 00:03:47.953
+g. , NOT NULL, CHECK) next to relevant
+columns.
 
 45
-00:03:26.630 --> 00:03:33.318
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
+00:03:47.953 --> 00:03:55.555
+Work from the concrete inputs to the result,
+checking units, types, or invariants at each
 
 46
-00:03:33.318 --> 00:03:34.990
-move the goalposts.
+00:03:55.555 --> 00:03:56.062
+step.
 
 47
-00:03:34.990 --> 00:03:41.661
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
+00:03:56.062 --> 00:04:01.125
+The worked case shows both how to apply the
+method and how to check it.
 
 48
-00:03:41.661 --> 00:03:49.347
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+00:04:01.125 --> 00:04:08.313
+Name each dependency explicitly, and keep
+labels and representations consistent
 
 49
-00:03:49.347 --> 00:03:51.443
+00:04:08.313 --> 00:04:10.469
 throughout the analysis.
 
 50
-00:03:51.554 --> 00:03:57.208
-NARRATOR: Apply Constraints for Data
-Validation to a worked situation instead of
+00:04:10.586 --> 00:04:17.603
+Examine the tradeoffs in Normalization and
+Update Anomalies, including what improves and
 
 51
-00:03:57.208 --> 00:04:00.035
-treating it as an isolated definition.
+00:04:17.603 --> 00:04:19.942
+what becomes more difficult.
 
 52
-00:04:00.035 --> 00:04:05.144
-NARRATOR: Constraints reject states that
-violate declared data rules.
-
-53
-00:04:05.144 --> 00:04:11.168
-NARRATOR: Consider this worked case: A
-'Salary' column constraint prevents negative
-
-54
-00:04:11.168 --> 00:04:17.191
-values, and a 'Email' column constraint
-enforces a valid email format.
-
-55
-00:04:17.191 --> 00:04:24.468
-NARRATOR: On screen, show a table with
-constraint symbols (e.g., NOT NULL, CHECK)
-
-56
-00:04:24.468 --> 00:04:26.707
-next to relevant columns.
-
-57
-00:04:26.707 --> 00:04:33.243
-NARRATOR: Work from the concrete inputs to the
-result, checking units, types, or invariants
-
-58
-00:04:33.243 --> 00:04:34.644
-at each step.
-
-59
-00:04:34.644 --> 00:04:39.410
-NARRATOR: The worked case shows both how to
-apply the method and how to check it.
-
-60
-00:04:39.410 --> 00:04:46.837
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-61
-00:04:46.837 --> 00:04:48.863
-throughout the analysis.
-
-62
-00:04:48.986 --> 00:04:54.471
-NARRATOR: Examine the tradeoffs in
-Normalization and Update Anomalies, including
-
-63
-00:04:54.471 --> 00:04:58.311
-what improves and what becomes more difficult.
-
-64
-00:04:58.311 --> 00:05:05.902
-NARRATOR: Schema design separates entities and
+00:04:19.942 --> 00:04:27.126
+Schema design separates entities and
 relationships, while normalization addresses
 
-65
-00:05:05.902 --> 00:05:07.420
+53
+00:04:27.126 --> 00:04:28.723
 update anomalies.
 
-66
-00:05:07.420 --> 00:05:14.594
-NARRATOR: Consider this worked case: Splitting
-a 'Department' table into separate tables for
+54
+00:04:28.723 --> 00:04:35.607
+Consider this worked case: Splitting a
+'Department' table into separate tables for
 
-67
-00:05:14.594 --> 00:05:19.561
+55
+00:04:35.607 --> 00:04:40.770
 DepartmentName and DepartmentLocation prevents
 duplicate data and update errors.
 
-68
-00:05:19.561 --> 00:05:25.185
-NARRATOR: On screen, display a
-before-and-after table structure showing
+56
+00:04:40.770 --> 00:04:47.582
+State the benefit, the cost, and the condition
+under which the tradeoff is acceptable.
 
-69
-00:05:25.185 --> 00:05:26.435
-normalization steps.
+57
+00:04:47.582 --> 00:04:54.739
+Making the tradeoff visible prevents a local
+improvement from hiding a larger cost.
 
-70
-00:05:26.435 --> 00:05:33.042
-NARRATOR: State the benefit, the cost, and the
-condition under which the tradeoff is
+58
+00:04:54.739 --> 00:05:01.914
+Name each dependency explicitly, and keep
+labels and representations consistent
 
-71
-00:05:33.042 --> 00:05:33.514
-acceptable.
-
-72
-00:05:33.514 --> 00:05:40.920
-NARRATOR: Making the tradeoff visible prevents
-a local improvement from hiding a larger cost.
-
-73
-00:05:40.920 --> 00:05:48.090
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-74
-00:05:48.090 --> 00:05:50.045
+59
+00:05:01.914 --> 00:05:04.067
 throughout the analysis.
 
-75
-00:05:50.162 --> 00:05:56.169
-NARRATOR: Stress-test the reasoning around
-Relational Algebra and Query Logic with an
+60
+00:05:04.178 --> 00:05:11.482
+Stress-test the reasoning around Relational
+Algebra and Query Logic with an edge case and
 
-76
-00:05:56.169 --> 00:06:00.674
-edge case and identify which assumption
-controls the outcome.
+61
+00:05:11.482 --> 00:05:14.612
+identify which assumption controls the
+outcome.
 
-77
-00:06:00.674 --> 00:06:06.438
-NARRATOR: This course provides a broad
-introduction to the principles and practice of
+62
+00:05:14.612 --> 00:05:21.051
+This course provides a broad introduction to
+the principles and practice of modern data
 
-78
-00:06:06.438 --> 00:06:11.315
-modern data management, with an emphasis on
-the relational database model.
+63
+00:05:21.051 --> 00:05:25.190
+management, with an emphasis on the relational
+database model.
 
-79
-00:06:11.315 --> 00:06:17.394
-NARRATOR: Consider this worked case: A SELECT
-statement with a JOIN clause combines data
+64
+00:05:25.190 --> 00:05:31.800
+Consider this worked case: A SELECT statement
+with a JOIN clause combines data from
 
-80
-00:06:17.394 --> 00:06:21.736
-from 'Employees' and 'Departments' tables
-based on a common key.
+65
+00:05:31.800 --> 00:05:36.049
+'Employees' and 'Departments' tables based on
+a common key.
 
-81
-00:06:21.737 --> 00:06:29.768
-NARRATOR: On screen, show a simplified
-relational algebra expression (e.g., σ, ⨝)
+66
+00:05:36.049 --> 00:05:42.127
+g. , σ, ⨝) alongside a corresponding SQL query
+snippet.
 
-82
-00:06:29.768 --> 00:06:33.783
-alongside a corresponding SQL query snippet.
+67
+00:05:42.127 --> 00:05:48.799
+Change one assumption at a time and observe
+which part of the reasoning no longer holds.
 
-83
-00:06:33.783 --> 00:06:39.725
-NARRATOR: Change one assumption at a time and
-observe which part of the reasoning no longer
+68
+00:05:48.799 --> 00:05:55.893
+The edge case reveals the boundary of the
+claim without discarding the useful core idea.
 
-84
-00:06:39.725 --> 00:06:40.096
-holds.
+69
+00:05:55.994 --> 00:06:04.577
+Use Transactions and Atomicity to diagnose a
+failure by separating symptoms, causes, and
 
-85
-00:06:40.096 --> 00:06:46.946
-NARRATOR: The edge case reveals the boundary
-of the claim without discarding the useful
+70
+00:06:04.577 --> 00:06:05.897
+corrective action.
 
-86
-00:06:46.946 --> 00:06:47.924
-core idea.
+71
+00:06:05.897 --> 00:06:11.225
+Transactions group operations into an atomic
+unit of work.
 
-87
-00:06:48.026 --> 00:06:55.360
-NARRATOR: Use Transactions and Atomicity to
-diagnose a failure by separating symptoms,
-
-88
-00:06:55.360 --> 00:06:57.804
-causes, and corrective action.
-
-89
-00:06:57.804 --> 00:07:03.101
-NARRATOR: Transactions group operations into
-an atomic unit of work.
-
-90
-00:07:03.101 --> 00:07:09.413
-NARRATOR: Consider this worked case: A banking
+72
+00:06:11.225 --> 00:06:17.309
+Consider this worked case: A banking
 transaction transfers funds between two
 
-91
-00:07:09.413 --> 00:07:14.147
+73
+00:06:17.309 --> 00:06:22.287
 accounts; if one step fails, both are rolled
 back.
 
+74
+00:06:22.287 --> 00:06:29.918
+Locate the first point where observed behavior
+diverges from expected behavior, then test the
+
+75
+00:06:29.918 --> 00:06:31.553
+smallest plausible cause.
+
+76
+00:06:31.553 --> 00:06:39.006
+The diagnosis is strongest when another person
+can reproduce the observation and the test.
+
+77
+00:06:39.006 --> 00:06:46.025
+Name each dependency explicitly, and keep
+labels and representations consistent
+
+78
+00:06:46.025 --> 00:06:48.131
+throughout the analysis.
+
+79
+00:06:48.242 --> 00:06:55.856
+Connect Indexing and Query Performance to the
+earlier ideas and explain how the pieces work
+
+80
+00:06:55.856 --> 00:06:57.379
+as one system.
+
+81
+00:06:57.379 --> 00:07:02.817
+Indexes provide additional access paths for
+selected queries.
+
+82
+00:07:02.817 --> 00:07:09.302
+Consider this worked case: An index on the
+'LastName' column speeds up searches for
+
+83
+00:07:09.302 --> 00:07:10.692
+employees by surname.
+
+84
+00:07:10.692 --> 00:07:20.227
+Explain each connection explicitly and verify
+that information retains the same meaning
+
+85
+00:07:20.227 --> 00:07:21.816
+across representations.
+
+86
+00:07:21.816 --> 00:07:29.129
+The synthesis matters only if every connection
+remains supported by the original evidence.
+
+87
+00:07:29.129 --> 00:07:36.172
+Name each dependency explicitly, and keep
+labels and representations consistent
+
+88
+00:07:36.172 --> 00:07:38.285
+throughout the analysis.
+
+89
+00:07:38.402 --> 00:07:45.107
+Finish with Practical Analysis Checklist as a
+practical checklist that can guide a new
+
+90
+00:07:45.107 --> 00:07:45.586
+analysis.
+
+91
+00:07:45.586 --> 00:07:53.392
+Topics in relational database systems include
+data modeling; the relational model;
+
 92
-00:07:14.147 --> 00:07:21.140
-NARRATOR: On screen, illustrate a transaction
-flow with steps (Start, Process,
+00:07:53.392 --> 00:08:00.488
+relational algebra; Structured Query Language
+(SQL); and data quality, transactions,
 
 93
-00:07:21.140 --> 00:07:24.319
-Commit/Rollback) and a lock icon.
+00:08:00.488 --> 00:08:02.617
+integrity and security.
 
 94
-00:07:24.319 --> 00:07:30.058
-NARRATOR: Locate the first point where
-observed behavior diverges from expected
+00:08:02.617 --> 00:08:09.896
+Consider this worked case: Check that all
+foreign keys reference valid primary keys,
 
 95
-00:07:30.058 --> 00:07:33.710
-behavior, then test the smallest plausible
-cause.
+00:08:09.896 --> 00:08:16.055
+indexes cover frequent query columns, and
+constraints prevent invalid data entry.
 
 96
-00:07:33.710 --> 00:07:39.660
-NARRATOR: The diagnosis is strongest when
-another person can reproduce the observation
+00:08:16.055 --> 00:08:24.342
+For each checklist item, record the evidence,
+the remaining uncertainty, and the next
 
 97
-00:07:39.660 --> 00:07:41.147
-and the test.
+00:08:24.342 --> 00:08:25.617
+verification step.
 
 98
-00:07:41.147 --> 00:07:48.194
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+00:08:25.617 --> 00:08:32.355
+The result is a repeatable procedure, not a
+conclusion that depends on memory or
 
 99
-00:07:48.194 --> 00:07:50.116
-throughout the analysis.
-
-100
-00:07:50.234 --> 00:07:55.758
-NARRATOR: Connect Indexing and Query
-Performance to the earlier ideas and explain
-
-101
-00:07:55.758 --> 00:07:58.980
-how the pieces work as one system.
-
-102
-00:07:58.980 --> 00:08:04.465
-NARRATOR: Indexes provide additional access
-paths for selected queries.
-
-103
-00:08:04.465 --> 00:08:10.809
-NARRATOR: Consider this worked case: An index
-on the 'LastName' column speeds up searches
-
-104
-00:08:10.809 --> 00:08:12.621
-for employees by surname.
-
-105
-00:08:12.621 --> 00:08:19.663
-NARRATOR: On screen, show a table with a
-B-tree index structure diagram next to a query
-
-106
-00:08:19.663 --> 00:08:20.543
-execution path.
-
-107
-00:08:20.543 --> 00:08:29.455
-NARRATOR: Explain each connection explicitly
-and verify that information retains the same
-
-108
-00:08:29.455 --> 00:08:31.683
-meaning across representations.
-
-109
-00:08:31.683 --> 00:08:38.605
-NARRATOR: The synthesis matters only if every
-connection remains supported by the original
-
-110
-00:08:38.605 --> 00:08:39.137
-evidence.
-
-111
-00:08:39.137 --> 00:08:46.270
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-112
-00:08:46.270 --> 00:08:48.215
-throughout the analysis.
-
-113
-00:08:48.338 --> 00:08:53.902
-NARRATOR: Finish with Practical Analysis
-Checklist as a practical checklist that can
-
-114
-00:08:53.902 --> 00:08:55.756
-guide a new analysis.
-
-115
-00:08:55.756 --> 00:09:03.353
-NARRATOR: Topics in relational database
-systems include data modeling; the relational
-
-116
-00:09:03.353 --> 00:09:10.259
-model; relational algebra; Structured Query
-Language (SQL); and data quality,
-
-117
-00:09:10.259 --> 00:09:13.022
-transactions, integrity and security.
-
-118
-00:09:13.022 --> 00:09:19.871
-NARRATOR: Consider this worked case: Check
-that all foreign keys reference valid primary
-
-119
-00:09:19.871 --> 00:09:26.194
-keys, indexes cover frequent query columns,
-and constraints prevent invalid data entry.
-
-120
-00:09:26.194 --> 00:09:33.818
-NARRATOR: On screen, display a checklist
-graphic with three boxes: Integrity,
-
-121
-00:09:33.818 --> 00:09:35.897
-Performance, Query Requirements.
-
-122
-00:09:35.897 --> 00:09:43.591
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
-
-123
-00:09:43.591 --> 00:09:45.366
-next verification step.
-
-124
-00:09:45.366 --> 00:09:51.218
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-125
-00:09:51.218 --> 00:09:52.569
-memory or intuition.
+00:08:32.355 --> 00:08:32.836
+intuition.

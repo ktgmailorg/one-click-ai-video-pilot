@@ -1,574 +1,548 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:06.996
-NARRATOR: Begin by framing Foundations of
-Computational Thinking as a question about
+00:00:00.050 --> 00:00:08.426
+Begin by framing Defining the Computational
+Problem as a question about inputs, decisions,
 
 2
-00:00:06.996 --> 00:00:09.890
-inputs, decisions, and observable results.
+00:00:08.426 --> 00:00:10.359
+and observable results.
 
 3
-00:00:09.890 --> 00:00:16.413
-NARRATOR: This course focuses on the
-application of computational thinking using a
+00:00:10.359 --> 00:00:18.007
+Programming begins with precise problem
+statements, input and output examples, and
 
 4
-00:00:16.413 --> 00:00:17.500
-problem-centered approach.
+00:00:18.007 --> 00:00:21.484
+algorithms written independently of syntax.
 
 5
-00:00:17.500 --> 00:00:24.499
-NARRATOR: Consider this worked case: A student
-breaks down a sorting problem into identifying
+00:00:21.484 --> 00:00:28.338
+Consider this worked case: A student must
+write a function that takes a list of integers
 
 6
-00:00:24.499 --> 00:00:30.499
-the input list, comparing elements, and
-arranging them in order before writing
+00:00:28.338 --> 00:00:34.764
+and returns the sum of all even numbers,
+clearly defining the input format and expected
 
 7
-00:00:30.499 --> 00:00:30.999
-pseudo-code.
+00:00:34.764 --> 00:00:36.906
+output before writing any code.
 
 8
-00:00:31.000 --> 00:00:38.097
-NARRATOR: On screen, display a split screen:
-left side shows a messy real-world problem,
+00:00:36.906 --> 00:00:44.243
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
 
 9
-00:00:38.097 --> 00:00:44.180
-right side shows a clean pseudo-code block
-with labeled abstraction and decomposition
+00:00:44.243 --> 00:00:48.156
+that the final result satisfies the stated
+condition.
 
 10
-00:00:44.180 --> 00:00:44.687
-steps.
+00:00:48.156 --> 00:00:55.229
+List the givens before choosing a method,
+because an unstated assumption can change the
 
 11
-00:00:44.687 --> 00:00:50.806
-NARRATOR: List the givens before choosing a
-method, because an unstated assumption can
+00:00:55.229 --> 00:00:55.734
+conclusion.
 
 12
-00:00:50.806 --> 00:00:52.218
-change the conclusion.
+00:00:55.734 --> 00:01:01.437
+This establishes the vocabulary and scope
+needed for the remaining sections.
 
 13
-00:00:52.218 --> 00:00:58.312
-NARRATOR: This establishes the vocabulary and
-scope needed for the remaining sections.
+00:01:01.562 --> 00:01:08.250
+Now define Decomposing with Functions
+precisely enough that another learner could
 
 14
-00:00:58.418 --> 00:01:04.667
-NARRATOR: Now define Pseudo-Code and Language
-Expression precisely enough that another
+00:01:08.250 --> 00:01:10.074
+test the definition.
 
 15
-00:01:04.667 --> 00:01:07.508
-learner could test the definition.
+00:01:10.074 --> 00:01:17.465
+Functions decompose a solution into named
+operations with parameters and results.
 
 16
-00:01:07.508 --> 00:01:14.458
-NARRATOR: Specific topics include: expression
-of algorithms in pseudo-code and a programming
+00:01:17.465 --> 00:01:24.835
+Consider this worked case: To calculate the
+average of a dataset, one function reads the
 
 17
-00:01:14.458 --> 00:01:21.987
+00:01:24.835 --> 00:01:31.222
+input, a second function filters out
+non-numeric values, and a third computes the
+
+18
+00:01:31.222 --> 00:01:35.152
+mean, each with clear parameters and return
+values.
+
+19
+00:01:35.152 --> 00:01:42.387
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
+
+20
+00:01:42.387 --> 00:01:46.246
+that the final result satisfies the stated
+condition.
+
+21
+00:01:46.246 --> 00:01:52.857
+Separate the formal definition from an
+implementation detail, then identify what
+
+22
+00:01:52.857 --> 00:01:55.261
+evidence would distinguish them.
+
+23
+00:01:55.261 --> 00:02:01.840
+A precise definition makes later examples
+easier to evaluate and revise.
+
+24
+00:02:01.946 --> 00:02:09.444
+With the foundation in place, examine how
+Understanding Recursion operates in a concrete
+
+25
+00:02:09.444 --> 00:02:10.021
+sequence.
+
+26
+00:02:10.021 --> 00:02:16.427
+Recursion solves a problem through smaller
+instances and requires a base case.
+
+27
+00:02:16.427 --> 00:02:23.232
+Consider this worked case: Calculating the
+factorial of 5 involves calling the function
+
+28
+00:02:23.232 --> 00:02:32.130
+with 4, then 3, down to 1 (the base case),
+where the result is returned without further
+
+29
+00:02:32.130 --> 00:02:33.177
+recursive calls.
+
+30
+00:02:33.177 --> 00:02:40.442
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
+
+31
+00:02:40.442 --> 00:02:44.317
+that the final result satisfies the stated
+condition.
+
+32
+00:02:44.317 --> 00:02:51.974
+Follow every arrow in order and name the state
+before and after each transition.
+
+33
+00:02:51.974 --> 00:02:57.802
+The trace converts an abstract statement into
+an inspectable sequence.
+
+34
+00:02:57.914 --> 00:03:05.122
+Next, compare the choices involved in
+Elementary Data Structures: Lists and make the
+
+35
+00:03:05.122 --> 00:03:06.785
+decision criteria explicit.
+
+36
+00:03:06.785 --> 00:03:15.283
+Lists represent ordered sequences, stacks use
+last-in first-out access, queues use first-in
+
+37
+00:03:15.283 --> 00:03:22.364
+first-out access, trees represent hierarchy,
+and graphs represent connected entities.
+
+38
+00:03:22.364 --> 00:03:31.277
+Consider this worked case: A student's grade
+list [85, 90, 78, 92] allows sequential access
+
+39
+00:03:31.277 --> 00:03:40.191
+to each score and supports operations like
+appending a new grade or removing the lowest
+
+40
+00:03:40.191 --> 00:03:40.785
+one.
+
+41
+00:03:40.785 --> 00:03:48.112
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
+
+42
+00:03:48.112 --> 00:03:52.020
+that the final result satisfies the stated
+condition.
+
+43
+00:03:52.020 --> 00:03:59.037
+Compare alternatives against the same
+constraints so the evaluation does not move
+
+44
+00:03:59.037 --> 00:04:00.207
+the goalposts.
+
+45
+00:04:00.207 --> 00:04:07.176
+Using shared criteria turns a preference into
+a defensible technical choice.
+
+46
+00:04:07.298 --> 00:04:14.561
+Apply Elementary Data Structures: Trees to a
+worked situation instead of treating it as an
+
+47
+00:04:14.561 --> 00:04:15.529
+isolated definition.
+
+48
+00:04:15.529 --> 00:04:22.167
+Specific topics include: expression of
+algorithms in pseudo-code and a programming
+
+49
+00:04:22.167 --> 00:04:30.012
 language; elementary data structures such as
 lists, trees and graphs; problem solving using
 
-18
-00:01:21.987 --> 00:01:24.883
+50
+00:04:30.012 --> 00:04:33.029
 recursion; and debugging and testing.
 
-19
-00:01:24.883 --> 00:01:30.758
-NARRATOR: Consider this worked case: A
-pseudo-code function for finding the maximum
-
-20
-00:01:30.758 --> 00:01:37.613
-value in a list is converted to Python,
-preserving the logical flow while adding
-
-21
-00:01:37.613 --> 00:01:39.571
-syntax and type constraints.
-
-22
-00:01:39.571 --> 00:01:45.860
-NARRATOR: On screen, show a side-by-side
-comparison of the pseudo-code and Python
-
-23
-00:01:45.860 --> 00:01:51.625
-implementation, highlighting how each
-pseudo-code line maps to a specific Python
-
-24
-00:01:51.625 --> 00:01:52.149
-statement.
-
-25
-00:01:52.149 --> 00:01:59.133
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
-
-26
-00:01:59.133 --> 00:02:01.461
-evidence would distinguish them.
-
-27
-00:02:01.461 --> 00:02:08.008
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
-
-28
-00:02:08.114 --> 00:02:14.652
-NARRATOR: With the foundation in place,
-examine how Elementary Data Structures: Lists
-
-29
-00:02:14.652 --> 00:02:17.376
-operates in a concrete sequence.
-
-30
-00:02:17.376 --> 00:02:22.595
-NARRATOR: Load and store instructions make
-memory access explicit.
-
-31
-00:02:22.595 --> 00:02:29.632
-NARRATOR: Consider this worked case: A student
-uses a Python list to store test scores, then
-
-32
-00:02:29.632 --> 00:02:34.470
-iterates through it to calculate the average
-using a simple loop.
-
-33
-00:02:34.470 --> 00:02:41.720
-NARRATOR: On screen, animate a list growing
-with each new score added, then show a pointer
-
-34
-00:02:41.720 --> 00:02:46.251
-moving through the list to demonstrate
-sequential access during iteration.
-
-35
-00:02:46.251 --> 00:02:53.407
-NARRATOR: Follow every arrow in order and name
-the state before and after each transition.
-
-36
-00:02:53.407 --> 00:02:59.001
-NARRATOR: The trace converts an abstract
-statement into an inspectable sequence.
-
-37
-00:02:59.114 --> 00:03:06.089
-NARRATOR: Next, compare the choices involved
-in Elementary Data Structures: Trees and make
-
-38
-00:03:06.089 --> 00:03:08.235
-the decision criteria explicit.
-
-39
-00:03:08.235 --> 00:03:14.866
-NARRATOR: The import system searches for
-modules and binds loaded modules into a
-
-40
-00:03:14.866 --> 00:03:15.376
-namespace.
-
-41
-00:03:15.376 --> 00:03:21.852
-NARRATOR: Consider this worked case: A binary
-tree represents a file system where
-
-42
-00:03:21.852 --> 00:03:27.829
-directories are nodes and files are leaf
-nodes, allowing efficient path resolution.
-
-43
-00:03:27.829 --> 00:03:33.321
-NARRATOR: On screen, render a binary tree
-diagram with labeled parent-child links,
-
-44
-00:03:33.321 --> 00:03:38.813
-highlighting how a search path branches down
-to a target leaf node.
-
-45
-00:03:38.813 --> 00:03:45.301
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
-
-46
-00:03:45.301 --> 00:03:46.923
-move the goalposts.
-
-47
-00:03:46.923 --> 00:03:54.142
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
-
-48
-00:03:54.242 --> 00:04:00.031
-NARRATOR: Apply Elementary Data Structures:
-Graphs to a worked situation instead of
-
-49
-00:04:00.031 --> 00:04:02.926
-treating it as an isolated definition.
-
-50
-00:04:02.926 --> 00:04:10.863
-NARRATOR: Programs should be reasoned about
-through explicit state, control flow, data
-
 51
-00:04:10.863 --> 00:04:14.832
+00:04:33.029 --> 00:04:40.859
+Consider this worked case: A file system
+directory structure is a tree where the root
+
+52
+00:04:40.859 --> 00:04:47.644
+is the main drive, branches are folders, and
+leaves are individual files, enabling
+
+53
+00:04:47.644 --> 00:04:49.732
+efficient traversal and organization.
+
+54
+00:04:49.732 --> 00:04:57.008
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
+
+55
+00:04:57.008 --> 00:05:00.888
+that the final result satisfies the stated
+condition.
+
+56
+00:05:00.888 --> 00:05:08.359
+Work from the concrete inputs to the result,
+checking units, types, or invariants at each
+
+57
+00:05:08.359 --> 00:05:08.857
+step.
+
+58
+00:05:08.857 --> 00:05:13.419
+The worked case shows both how to apply the
+method and how to check it.
+
+59
+00:05:13.538 --> 00:05:19.959
+Examine the tradeoffs in Elementary Data
+Structures: Graphs, including what improves
+
+60
+00:05:19.959 --> 00:05:22.878
+and what becomes more difficult.
+
+61
+00:05:22.878 --> 00:05:27.581
+Python objects have identity, a type, and a
+value.
+
+62
+00:05:27.581 --> 00:05:35.155
+Consider this worked case: A social network
+graph connects users as nodes and friendships
+
+63
+00:05:35.155 --> 00:05:42.728
+as edges, allowing algorithms to find the
+shortest path between two people or identify
+
+64
+00:05:42.728 --> 00:05:43.269
+communities.
+
+65
+00:05:43.269 --> 00:05:50.361
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
+
+66
+00:05:50.361 --> 00:05:54.144
+that the final result satisfies the stated
+condition.
+
+67
+00:05:54.144 --> 00:06:00.987
+State the benefit, the cost, and the condition
+under which the tradeoff is acceptable.
+
+68
+00:06:00.987 --> 00:06:08.456
+Making the tradeoff visible prevents a local
+improvement from hiding a larger cost.
+
+69
+00:06:08.570 --> 00:06:15.545
+Stress-test the reasoning around Algorithmic
+Invariants and Correctness with an edge case
+
+70
+00:06:15.545 --> 00:06:19.613
+and identify which assumption controls the
+outcome.
+
+71
+00:06:19.613 --> 00:06:25.879
+Searching and sorting algorithms depend on
+representation and invariants.
+
+72
+00:06:25.879 --> 00:06:32.925
+Consider this worked case: In a sorting
+algorithm, the invariant 'the subarray to the
+
+73
+00:06:32.925 --> 00:06:39.971
+left of the current index is sorted' holds
+true after each iteration, guaranteeing the
+
+74
+00:06:39.971 --> 00:06:42.488
+final array is fully sorted.
+
+75
+00:06:42.488 --> 00:06:49.723
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
+
+76
+00:06:49.723 --> 00:06:53.582
+that the final result satisfies the stated
+condition.
+
+77
+00:06:53.582 --> 00:07:00.238
+Change one assumption at a time and observe
+which part of the reasoning no longer holds.
+
+78
+00:07:00.238 --> 00:07:07.207
+The edge case reveals the boundary of the
+claim without discarding the useful core idea.
+
+79
+00:07:07.322 --> 00:07:14.725
+Use Debugging and Testing Strategies to
+diagnose a failure by separating symptoms,
+
+80
+00:07:14.725 --> 00:07:17.193
+causes, and corrective action.
+
+81
+00:07:17.193 --> 00:07:24.565
+Correctness arguments, tests, tracing, and
+debugging compare intended behavior with
+
+82
+00:07:24.565 --> 00:07:29.725
+observable results, including boundary and
+error cases.
+
+83
+00:07:29.725 --> 00:07:37.424
+Consider this worked case: A tester runs a
+function with an empty list (boundary case)
+
+84
+00:07:37.424 --> 00:07:44.609
+and a list containing only negative numbers
+(error case) to verify the program handles
+
+85
+00:07:44.609 --> 00:07:46.662
+these scenarios without crashing.
+
+86
+00:07:46.662 --> 00:07:53.979
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
+
+87
+00:07:53.979 --> 00:07:57.881
+that the final result satisfies the stated
+condition.
+
+88
+00:07:57.881 --> 00:08:05.627
+Locate the first point where observed behavior
+diverges from expected behavior, then test the
+
+89
+00:08:05.627 --> 00:08:07.287
+smallest plausible cause.
+
+90
+00:08:07.287 --> 00:08:15.584
+The diagnosis is strongest when another person
+can reproduce the observation and the test.
+
+91
+00:08:15.698 --> 00:08:23.403
+Connect Pseudo-code to Implementation to the
+earlier ideas and explain how the pieces work
+
+92
+00:08:23.403 --> 00:08:25.054
+as one system.
+
+93
+00:08:25.054 --> 00:08:30.651
+Assignments (both in class and homework)
+requiring a pseudo-code solution and
+
+94
+00:08:30.651 --> 00:08:36.757
+implementation in a programming language are
+an integral part of the course.
+
+95
+00:08:36.757 --> 00:08:44.367
+Consider this worked case: A student writes a
+step-by-step pseudo-code description of a
+
+96
+00:08:44.367 --> 00:08:51.976
+binary search algorithm, then converts each
+step into Python syntax, ensuring the logic
+
+97
+00:08:51.976 --> 00:08:53.147
+remains unchanged.
+
+98
+00:08:53.147 --> 00:09:00.474
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
+
+99
+00:09:00.474 --> 00:09:04.382
+that the final result satisfies the stated
+condition.
+
+100
+00:09:04.382 --> 00:09:14.118
+Explain each connection explicitly and verify
+that information retains the same meaning
+
+101
+00:09:14.118 --> 00:09:15.741
+across representations.
+
+102
+00:09:15.741 --> 00:09:22.976
+The synthesis matters only if every connection
+remains supported by the original evidence.
+
+103
+00:09:23.090 --> 00:09:30.072
+Finish with Practical Analysis Checklist as a
+practical checklist that can guide a new
+
+104
+00:09:30.072 --> 00:09:30.571
+analysis.
+
+105
+00:09:30.571 --> 00:09:37.971
+Programs should be reasoned about through
+explicit state, control flow, data
+
+106
+00:09:37.971 --> 00:09:42.008
 representation, contracts, tests, and
 observable behavior.
 
-52
-00:04:14.832 --> 00:04:21.493
-NARRATOR: Consider this worked case: A student
-models a city's road network as a graph where
-
-53
-00:04:21.493 --> 00:04:26.488
-intersections are nodes and roads are edges to
-find the shortest path.
-
-54
-00:04:26.488 --> 00:04:33.281
-NARRATOR: On screen, draw a simple graph with
-labeled nodes and directed edges, then trace a
-
-55
-00:04:33.281 --> 00:04:38.801
-path from a start node to an end node using a
-step-by-step animation.
-
-56
-00:04:38.801 --> 00:04:45.222
-NARRATOR: Work from the concrete inputs to the
-result, checking units, types, or invariants
-
-57
-00:04:45.222 --> 00:04:46.598
-at each step.
-
-58
-00:04:46.598 --> 00:04:51.441
-NARRATOR: The worked case shows both how to
-apply the method and how to check it.
-
-59
-00:04:51.554 --> 00:04:57.634
-NARRATOR: Examine the tradeoffs in Recursive
-Problem Solving, including what improves and
-
-60
-00:04:57.634 --> 00:04:59.660
-what becomes more difficult.
-
-61
-00:04:59.660 --> 00:05:05.910
-NARRATOR: Exceptions interrupt normal control
-flow until a matching handler processes them
-
-62
-00:05:05.910 --> 00:05:07.472
-or they propagate.
-
-63
-00:05:07.472 --> 00:05:13.457
-NARRATOR: Consider this worked case: A
-factorial function calculates n!
-
-64
-00:05:13.457 --> 00:05:22.550
-NARRATOR: by multiplying n with the result of
-factorial(n-1), stopping when n equals 1.
-
-65
-00:05:22.550 --> 00:05:29.345
-NARRATOR: On screen, show a recursive call
-stack expanding downward with each function
-
-66
-00:05:29.345 --> 00:05:34.050
-call, then collapsing upward as base cases
-return values.
-
-67
-00:05:34.050 --> 00:05:40.409
-NARRATOR: State the benefit, the cost, and the
-condition under which the tradeoff is
-
-68
-00:05:40.409 --> 00:05:40.863
-acceptable.
-
-69
-00:05:40.863 --> 00:05:48.269
-NARRATOR: Making the tradeoff visible prevents
-a local improvement from hiding a larger cost.
-
-70
-00:05:48.386 --> 00:05:54.703
-NARRATOR: Stress-test the reasoning around
-Debugging and Testing Protocols with an edge
-
-71
-00:05:54.703 --> 00:05:58.914
-case and identify which assumption controls
-the outcome.
-
-72
-00:05:58.914 --> 00:06:06.601
-NARRATOR: Debugging separates syntax, runtime,
-and logical failures, while decomposition and
-
-73
-00:06:06.601 --> 00:06:11.492
-abstraction reduce the number of interacting
-concerns.
-
-74
-00:06:11.492 --> 00:06:18.648
-NARRATOR: Consider this worked case: A student
-uses print statements and a test harness to
-
-75
-00:06:18.648 --> 00:06:24.850
-verify that a sorting algorithm correctly
-handles edge cases like empty lists or
-
-76
-00:06:24.850 --> 00:06:25.804
-single-element lists.
-
-77
-00:06:25.804 --> 00:06:32.501
-NARRATOR: On screen, display a debugger
-interface highlighting a runtime error, then
-
-78
-00:06:32.501 --> 00:06:37.523
-show a test suite passing/failing based on
-input/output contracts.
-
-79
-00:06:37.523 --> 00:06:43.994
-NARRATOR: Change one assumption at a time and
-observe which part of the reasoning no longer
-
-80
-00:06:43.994 --> 00:06:44.398
-holds.
-
-81
-00:06:44.398 --> 00:06:50.550
-NARRATOR: The edge case reveals the boundary
-of the claim without discarding the useful
-
-82
-00:06:50.550 --> 00:06:51.429
-core idea.
-
-83
-00:06:51.530 --> 00:06:58.569
-NARRATOR: Use State and Control Flow
-Management to diagnose a failure by separating
-
-84
-00:06:58.569 --> 00:07:01.276
-symptoms, causes, and corrective action.
-
-85
-00:07:01.276 --> 00:07:09.062
-NARRATOR: LLVM IR is a typed, SSA-based
-intermediate representation with explicit
-
-86
-00:07:09.062 --> 00:07:15.433
-instructions, basic blocks, functions, memory
-operations, and control flow.
-
-87
-00:07:15.433 --> 00:07:22.752
-NARRATOR: Consider this worked case: A student
-defines a class with explicit attributes and
-
-88
-00:07:22.752 --> 00:07:29.026
-methods, ensuring that each method updates
-state according to a documented contract.
-
-89
-00:07:29.026 --> 00:07:35.223
-NARRATOR: On screen, show a state machine
-diagram transitioning between states, with
-
-90
-00:07:35.223 --> 00:07:39.354
-arrows labeled by method calls and state
-updates.
-
-91
-00:07:39.354 --> 00:07:45.007
-NARRATOR: Locate the first point where
-observed behavior diverges from expected
-
-92
-00:07:45.007 --> 00:07:48.604
-behavior, then test the smallest plausible
-cause.
-
-93
-00:07:48.604 --> 00:07:54.854
-NARRATOR: The diagnosis is strongest when
-another person can reproduce the observation
-
-94
-00:07:54.854 --> 00:07:56.417
-and the test.
-
-95
-00:07:56.522 --> 00:08:02.154
-NARRATOR: Connect Verification and Local
-Expander Preparation to the earlier ideas and
-
-96
-00:08:02.154 --> 00:08:05.909
-explain how the pieces work as one system.
-
-97
-00:08:05.909 --> 00:08:10.268
-NARRATOR: The verifier reports IR that
-violates those rules.
-
-98
-00:08:10.268 --> 00:08:16.077
-NARRATOR: Consider this worked case: A student
-cross-references the pseudo-code
-
-99
-00:08:16.077 --> 00:08:22.468
-implementation with the source excerpts,
-ensuring that terms like 'basic blocks',
-
-100
-00:08:22.468 --> 00:08:26.534
-'terminator instruction', and 'namespace' are
-correctly applied.
-
-101
-00:08:26.534 --> 00:08:33.360
-NARRATOR: On screen, display a checklist
-overlay with checkboxes for each source ID,
-
-102
-00:08:33.360 --> 00:08:40.712
-technical term reuse, and claim verification,
-ready for the local expander to generate full
-
-103
-00:08:40.712 --> 00:08:41.237
-narration.
-
-104
-00:08:41.237 --> 00:08:50.199
-NARRATOR: Explain each connection explicitly
-and verify that information retains the same
-
-105
-00:08:50.199 --> 00:08:52.440
-meaning across representations.
-
-106
-00:08:52.440 --> 00:08:59.390
-NARRATOR: The synthesis matters only if every
-connection remains supported by the original
-
 107
-00:08:59.390 --> 00:08:59.925
-evidence.
+00:09:42.008 --> 00:09:49.296
+Consider this worked case: A checklist item
+asks: 'Does the algorithm handle the edge case
 
 108
-00:09:00.026 --> 00:09:05.320
-NARRATOR: Finish with Practical Analysis
-Checklist as a practical checklist that can
+00:09:49.296 --> 00:09:52.211
+where the input list is empty?
 
 109
-00:09:05.320 --> 00:09:07.085
-guide a new analysis.
+00:09:52.211 --> 00:09:57.039
+' followed by 'Are all recursive calls
+reducing the problem size.
 
 110
-00:09:07.085 --> 00:09:14.503
-NARRATOR: The Python language reference
-specifies lexical analysis, data model
+00:09:57.039 --> 00:10:04.407
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
 
 111
-00:09:14.503 --> 00:09:21.179
-behavior, execution, expressions, statements,
-functions, classes, exceptions, and module
+00:10:04.407 --> 00:10:08.336
+that the final result satisfies the stated
+condition.
 
 112
-00:09:21.179 --> 00:09:22.663
-import semantics.
+00:10:08.336 --> 00:10:16.502
+For each checklist item, record the evidence,
+the remaining uncertainty, and the next
 
 113
-00:09:22.663 --> 00:09:28.975
-NARRATOR: Consider this worked case: A student
-reviews their assignment against the
+00:10:16.502 --> 00:10:17.758
+verification step.
 
 114
-00:09:28.975 --> 00:09:34.762
-checklist, confirming that pseudo-code and
-code match, data structures are correctly
+00:10:17.758 --> 00:10:24.540
+The result is a repeatable procedure, not a
+conclusion that depends on memory or
 
 115
-00:09:34.762 --> 00:09:38.444
-implemented, recursion is applied, and tests
-pass.
-
-116
-00:09:38.444 --> 00:09:45.323
-NARRATOR: On screen, show a clean, printable
-checklist with sections for each beat,
-
-117
-00:09:45.323 --> 00:09:50.085
-checkboxes for claim verification, and space
-for instructor notes.
-
-118
-00:09:50.085 --> 00:09:57.677
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
-
-119
-00:09:57.677 --> 00:09:59.429
-next verification step.
-
-120
-00:09:59.429 --> 00:10:05.243
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-121
-00:10:05.243 --> 00:10:06.585
-memory or intuition.
+00:10:24.540 --> 00:10:25.024
+intuition.

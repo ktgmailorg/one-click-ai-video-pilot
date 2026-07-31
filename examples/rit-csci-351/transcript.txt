@@ -1,241 +1,187 @@
-NARRATOR: Begin by framing Layered Architecture Overview as a question about
+Begin by framing Layered Architecture Overview as a question about inputs, decisions, and
 
-inputs, decisions, and observable results.
+observable results.
 
-NARRATOR: Internet hosts implement layered link, internet, transport, and application
+Internet hosts implement layered link, internet, transport, and application
 
 functions.
 
-NARRATOR: Consider this worked case: A packet traverses from the application layer down to
+Consider this worked case: A packet traverses from the application layer down to the
 
-the physical layer, where each layer adds headers and encapsulates the payload.
+physical layer, where each layer adds headers and encapsulates the payload.
 
-NARRATOR: On screen, display a vertical stack diagram with labeled layers (Application,
+List the givens before choosing a method, because an unstated assumption can change the
 
-Transport, Network, Data Link, Physical) and show a packet being encapsulated layer by
+conclusion.
 
-layer.
+This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+Now define Physical and Data Link Layers precisely enough that another learner could
 
-change the conclusion.
+test the definition.
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+The link layer moves frames across a directly connected network.
 
-NARRATOR: Now define Physical and Data Link Layers precisely enough that another learner
+Consider this worked case: Ethernet frames are transmitted over copper or fiber optic cables,
 
-could test the definition.
+with the physical layer managing signal integrity and the data link layer handling
 
-NARRATOR: The link layer moves frames across a directly connected network.
+addressing and error detection.
 
-NARRATOR: Consider this worked case: Ethernet frames are transmitted over copper or fiber
-
-optic cables, with the physical layer managing signal integrity and the data link layer
-
-handling addressing and error detection.
-
-NARRATOR: On screen, show a side-by-side comparison of a physical layer signal waveform
-
-and a data link layer frame structure with MAC addresses and CRC.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Network Layer and IP Addressing
+With the foundation in place, examine how Network Layer and IP Addressing operates in a
 
-operates in a concrete sequence.
+concrete sequence.
 
-NARRATOR: IP provides best-effort datagram delivery across interconnected networks.
+IP provides best-effort datagram delivery across interconnected networks.
 
-NARRATOR: Consider this worked case: IPv4 addresses like 192.168.1.10 assign a unique
+Consider this worked case: IPv4 addresses like 192.
 
-identifier to a network interface, enabling routers to forward packets toward a
+168. 1.
 
-destination.
+10 assign a unique identifier to a network interface, enabling routers to forward packets
 
-NARRATOR: On screen, illustrate a router table with source/destination IP addresses and
+toward a destination.
 
-next-hop destinations, highlighting how IP addresses map to interfaces.
+Follow every arrow in order and name the state before and after each transition.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Next, compare the choices involved in Routing and Path Selection and make the
+Next, compare the choices involved in Routing and Path Selection and make the decision
 
-decision criteria explicit.
+criteria explicit.
 
-NARRATOR: Routing selects a next hop toward a destination.
+Routing selects a next hop toward a destination.
 
-NARRATOR: Consider this worked case: OSPF or BGP algorithms evaluate link costs and
+Consider this worked case: OSPF or BGP algorithms evaluate link costs and topology to
 
-topology to compute shortest paths, updating routing tables dynamically.
+compute shortest paths, updating routing tables dynamically.
 
-NARRATOR: On screen, render a network graph with nodes and weighted edges, showing a
+Compare alternatives against the same constraints so the evaluation does not move
 
-routing algorithm tracing a path from source to destination.
+the goalposts.
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+Using shared criteria turns a preference into a defensible technical choice.
 
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Apply Transport Layer and TCP Basics to a worked situation instead of treating it
+Apply Transport Layer and TCP Basics to a worked situation instead of treating it as an
 
-as an isolated definition.
+isolated definition.
 
-NARRATOR: Transport protocols add endpoint communication functions above IP.
+Transport protocols add endpoint communication functions above IP.
 
-NARRATOR: Consider this worked case: Web browsing uses TCP to ensure that HTML chunks
+Consider this worked case: Web browsing uses TCP to ensure that HTML chunks arrive in the
 
-arrive in the correct sequence without gaps or duplicates.
+correct sequence without gaps or duplicates.
 
-NARRATOR: On screen, draw a TCP handshake sequence (SYN, SYN-ACK, ACK) with labeled
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-sequence numbers and state transitions.
+step.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+The worked case shows both how to apply the method and how to check it.
 
-at each step.
+Examine the tradeoffs in TCP State Machine and Reliability, including what improves and what
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+becomes more difficult.
 
-NARRATOR: Examine the tradeoffs in TCP State Machine and Reliability, including what
+Sequence numbers identify positions in that byte stream.
 
-improves and what becomes more difficult.
+Consider this worked case: When a packet is lost, TCP detects the gap via missing
 
-NARRATOR: Sequence numbers identify positions in that byte stream.
+acknowledgments and triggers retransmission to recover the missing data.
 
-NARRATOR: Consider this worked case: When a packet is lost, TCP detects the gap via
+) with transition triggers.
 
-missing acknowledgments and triggers retransmission to recover the missing data.
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-NARRATOR: On screen, display a state diagram showing TCP connection states (CLOSED, LISTEN,
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-ESTABLISHED, FIN_WAIT, etc.) with transition triggers.
-
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
-
-acceptable.
-
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Stress-test the reasoning around Flow Control and Congestion Management with an
+Stress-test the reasoning around Flow Control and Congestion Management with an edge case
 
-edge case and identify which assumption controls the outcome.
+and identify which assumption controls the outcome.
 
-NARRATOR: Flow control prevents a sender from exceeding the receiver's advertised capacity.
+Flow control prevents a sender from exceeding the receiver's advertised capacity.
 
-NARRATOR: Consider this worked case: The sliding window mechanism in TCP adjusts the
+Consider this worked case: The sliding window mechanism in TCP adjusts the send window size
 
-send window size based on receiver acknowledgments to avoid overwhelming the
+based on receiver acknowledgments to avoid overwhelming the network.
 
-network.
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-NARRATOR: On screen, animate a sender and receiver with a sliding window, showing how
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-the window shrinks or expands based on ACK feedback.
+Use Network Modeling with Graphs to diagnose a failure by separating symptoms, causes, and
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+corrective action.
 
-holds.
+The course covers design of, and algorithms and protocols used in, the physical, data
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+link, network, transport, and application layers in the Internet; methods for modeling
 
-core idea.
-
-NARRATOR: Use Network Modeling with Graphs to diagnose a failure by separating symptoms,
-
-causes, and corrective action.
-
-NARRATOR: The course covers design of, and algorithms and protocols used in, the
-
-physical, data link, network, transport, and application layers in the Internet; methods
-
-for modeling and analyzing networks, including graphs, graph algorithms, and discrete event
+and analyzing networks, including graphs, graph algorithms, and discrete event
 
 simulation; and an introduction to network science.
 
-NARRATOR: Consider this worked case: Representing routers as nodes and links as
+Consider this worked case: Representing routers as nodes and links as edges allows
 
-edges allows Dijkstra's algorithm to compute minimum-cost paths for packet routing.
+Dijkstra's algorithm to compute minimum-cost paths for packet routing.
 
-NARRATOR: On screen, show a network graph with labeled nodes, edges, and weights, alongside a
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-step-by-step visualization of Dijkstra's algorithm exploring paths.
+smallest plausible cause.
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-behavior, then test the smallest plausible cause.
+Connect Discrete Event Simulation and Analysis to the earlier ideas and explain how the
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+pieces work as one system.
 
-and the test.
+Packet loss, duplication, reordering, delay, and endpoint failure must be separated when
 
-NARRATOR: Connect Discrete Event Simulation and Analysis to the earlier ideas and explain
+reasoning about behavior and performance.
 
-how the pieces work as one system.
+Consider this worked case: Simulating packet arrivals, processing delays, and queueing
 
-NARRATOR: Packet loss, duplication, reordering, delay, and endpoint failure must
+times helps identify bottlenecks and optimize routing policies.
 
-be separated when reasoning about behavior and performance.
+Explain each connection explicitly and verify that information retains the same meaning
 
-NARRATOR: Consider this worked case: Simulating packet arrivals, processing delays,
+across representations.
 
-and queueing times helps identify bottlenecks and optimize routing policies.
+The synthesis matters only if every connection remains supported by the original evidence.
 
-NARRATOR: On screen, present a timeline with discrete events (packet arrival, transmission
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-start, completion, loss) and corresponding queue lengths at routers.
+analysis.
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+Correct analysis distinguishes addresses, routes, packets, frames, sockets, and
 
-meaning across representations.
+end-to-end state.
 
-NARRATOR: The synthesis matters only if every connection remains supported by the original
+Consider this worked case: When a connection fails, verify IP addresses, check routing
 
-evidence.
+tables, inspect TCP state transitions, and review frame integrity to isolate the issue.
 
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-guide a new analysis.
+verification step.
 
-NARRATOR: Correct analysis distinguishes addresses, routes, packets, frames, sockets,
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-and end-to-end state.
-
-NARRATOR: Consider this worked case: When a connection fails, verify IP addresses, check
-
-routing tables, inspect TCP state transitions, and review frame integrity to isolate the
-
-issue.
-
-NARRATOR: On screen, list a checklist with checkboxes for: IP address validation, route
-
-table inspection, TCP state verification, frame CRC check, and socket configuration
-
-review.
-
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

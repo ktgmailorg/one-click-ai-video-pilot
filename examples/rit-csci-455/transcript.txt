@@ -1,247 +1,183 @@
-NARRATOR: Begin by framing Lesson Title: Foundations of Cybersecurity Principles as a
+Begin by framing Lesson Title: Foundations of Cybersecurity Principles as a question about
 
-question about inputs, decisions, and observable results.
+inputs, decisions, and observable results.
 
-NARRATOR: It will cover cybersecurity principles, policies and mechanisms; core
+It will cover cybersecurity principles, policies and mechanisms; core knowledge areas
 
-knowledge areas of data, software, component, connection, system, human, organizational and
+of data, software, component, connection, system, human, organizational and societal
 
-societal security; and crosscutting concepts of confidentiality, integrity, availability,
+security; and crosscutting concepts of confidentiality, integrity, availability,
 
 risk, adversarial thinking, and systems thinking.
 
-NARRATOR: Consider this worked case: A hospital's electronic health records must
+Consider this worked case: A hospital's electronic health records must remain
 
-remain confidential from unauthorized users, maintain integrity against tampering, and
+confidential from unauthorized users, maintain integrity against tampering, and remain
 
-remain available during peak patient intake hours.
+available during peak patient intake hours.
 
-NARRATOR: On screen, display a simple Venn diagram showing the overlapping circles of
+List the givens before choosing a method, because an unstated assumption can change the
 
-confidentiality, integrity, and availability, with a central 'Secure System' label.
+conclusion.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+This establishes the vocabulary and scope needed for the remaining sections.
 
-change the conclusion.
+Now define Lesson Title: Cryptographic Standards and Confidentiality precisely enough
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+that another learner could test the definition.
 
-NARRATOR: Now define Lesson Title: Cryptographic Standards and Confidentiality
+Encryption supports confidentiality when keys and modes are used correctly.
 
-precisely enough that another learner could test the definition.
+Consider this worked case: AES-256 encryption with proper key management ensures patient
 
-NARRATOR: Encryption supports confidentiality when keys and modes are used correctly.
+data remains unreadable to unauthorized personnel, satisfying confidentiality
 
-NARRATOR: Consider this worked case: AES-256 encryption with proper key management ensures
+requirements.
 
-patient data remains unreadable to unauthorized personnel, satisfying
-
-confidentiality requirements.
-
-NARRATOR: On screen, show a flowchart: Plaintext -> Encryption Algorithm (AES-256) ->
-
-Ciphertext, with a lock icon labeled 'Confidentiality'.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: With the foundation in place, examine how Lesson Title: Integrity and
+With the foundation in place, examine how Lesson Title: Integrity and Authentication
 
-Authentication Mechanisms operates in a concrete sequence.
+Mechanisms operates in a concrete sequence.
 
-NARRATOR: Message authentication and digital signatures address integrity and authenticity
+Message authentication and digital signatures address integrity and authenticity in
 
-in different ways.
+different ways.
 
-NARRATOR: Consider this worked case: A digital signature on a software update verifies the
+Consider this worked case: A digital signature on a software update verifies the developer's
 
-developer's identity and confirms the code has not been modified during transmission.
+identity and confirms the code has not been modified during transmission.
 
-NARRATOR: On screen, display a side-by-side comparison: Hash-based message authentication
+Digital signature (integrity + authenticity).
 
-(integrity check) vs. Digital signature (integrity + authenticity).
+Follow every arrow in order and name the state before and after each transition.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+Next, compare the choices involved in Lesson Title: Secure Software Development Framework
 
-NARRATOR: Next, compare the choices involved in Lesson Title: Secure Software Development
+(SSDF) and make the decision criteria explicit.
 
-Framework (SSDF) and make the decision criteria explicit.
+The Secure Software Development Framework groups practices into four practice groups.
 
-NARRATOR: The Secure Software Development Framework groups practices into four practice
+Consider this worked case: A development team uses the 'Prepare the Organization' group to
 
-groups.
+establish secure coding standards and training before writing any code.
 
-NARRATOR: Consider this worked case: A development team uses the 'Prepare the
+Compare alternatives against the same constraints so the evaluation does not move
 
-Organization' group to establish secure coding standards and training before writing any
+the goalposts.
 
-code.
+Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: On screen, create a four-step circular diagram labeled with the four SSDF
+Apply Lesson Title: Security Requirements and Verification to a worked situation instead of
 
-practice groups, connected by arrows indicating iterative flow.
+treating it as an isolated definition.
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+Verification provides evidence that selected practices and controls were performed.
 
-move the goalposts.
+Consider this worked case: A compliance officer reviews a checklist to verify that all
 
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+encryption standards and access controls were implemented before software release.
 
-NARRATOR: Apply Lesson Title: Security Requirements and Verification to a worked
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-situation instead of treating it as an isolated definition.
+step.
 
-NARRATOR: Verification provides evidence that selected practices and controls were
+The worked case shows both how to apply the method and how to check it.
 
-performed.
-
-NARRATOR: Consider this worked case: A compliance officer reviews a checklist to
-
-verify that all encryption standards and access controls were implemented before
-
-software release.
-
-NARRATOR: On screen, show a checklist graphic with checkboxes next to security requirements,
-
-highlighting 'Verification' as the final step.
-
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
-
-at each step.
-
-NARRATOR: The worked case shows both how to apply the method and how to check it.
-
-NARRATOR: Examine the tradeoffs in Lesson Title: Vulnerability Management and Response,
+Examine the tradeoffs in Lesson Title: Vulnerability Management and Response,
 
 including what improves and what becomes more difficult.
 
-NARRATOR: Respond to Vulnerabilities identifies, analyzes, remediates, and learns
+Respond to Vulnerabilities identifies, analyzes, remediates, and learns from
 
-from discovered weaknesses.
+discovered weaknesses.
 
-NARRATOR: Consider this worked case: After a penetration test reveals an unpatched database
+Consider this worked case: After a penetration test reveals an unpatched database
 
 vulnerability, the team patches the code, updates documentation, and trains developers
 
 on secure input validation.
 
-NARRATOR: On screen, display a feedback loop diagram: Vulnerability Discovery -> Analysis
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
--> Remediation -> Learning/Improvement.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+Stress-test the reasoning around Lesson Title: Adversarial Thinking and Threat Modeling with
 
-acceptable.
+an edge case and identify which assumption controls the outcome.
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+Security reasoning identifies assets, trust boundaries, threats, controls, evidence,
 
-NARRATOR: Stress-test the reasoning around Lesson Title: Adversarial Thinking and Threat
+residual risk, and responsibilities.
 
-Modeling with an edge case and identify which assumption controls the outcome.
+Consider this worked case: An analyst maps a web application's trust boundary, identifies a
 
-NARRATOR: Security reasoning identifies assets, trust boundaries, threats, controls,
+potential SQL injection threat, and assigns a control to validate all user inputs.
 
-evidence, residual risk, and responsibilities.
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-NARRATOR: Consider this worked case: An analyst maps a web application's trust
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-boundary, identifies a potential SQL injection threat, and assigns a control to validate all
+Use Lesson Title: Systems Thinking and Crosscutting Concepts to diagnose a failure by
 
-user inputs.
+separating symptoms, causes, and corrective action.
 
-NARRATOR: On screen, show a trust boundary diagram with internal assets, external
+This course provides a broad introduction to cybersecurity principles and practices, and
 
-threats, and a labeled 'Control' zone between them.
+emphasizes policies and mechanisms for building secure and trusted computer systems.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+Consider this worked case: A policy requiring multi-factor authentication reduces risk by
 
-holds.
+addressing both human behavior and system access points simultaneously.
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-core idea.
+smallest plausible cause.
 
-NARRATOR: Use Lesson Title: Systems Thinking and Crosscutting Concepts to diagnose a
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-failure by separating symptoms, causes, and corrective action.
+Connect Lesson Title: Privacy, Ethics, and Legal Compliance to the earlier ideas and
 
-NARRATOR: This course provides a broad introduction to cybersecurity principles and
+explain how the pieces work as one system.
 
-practices, and emphasizes policies and mechanisms for building secure and trusted
+Topics in privacy, and legal and ethical aspects will also be emphasized.
 
-computer systems.
+Consider this worked case: A healthcare app implements data minimization and consent
 
-NARRATOR: Consider this worked case: A policy requiring multi-factor authentication reduces
+mechanisms to comply with privacy regulations while maintaining security.
 
-risk by addressing both human behavior and system access points simultaneously.
+Explain each connection explicitly and verify that information retains the same meaning
 
-NARRATOR: On screen, create a layered system model showing data, software, human, and
+across representations.
 
-policy layers, with arrows indicating cross-cutting security concepts.
+The synthesis matters only if every connection remains supported by the original evidence.
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+Finish with Lesson Title: Practical Analysis Checklist as a practical checklist that can
 
-behavior, then test the smallest plausible cause.
+guide a new analysis.
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+This course requires the knowledge of computer science theory and concepts of computer
 
-and the test.
+systems.
 
-NARRATOR: Connect Lesson Title: Privacy, Ethics, and Legal Compliance to the earlier
+Consider this worked case: An auditor reviews a cloud migration plan against the checklist
 
-ideas and explain how the pieces work as one system.
+to verify encryption, access controls, backup availability, and risk mitigation steps.
 
-NARRATOR: Topics in privacy, and legal and ethical aspects will also be emphasized.
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-NARRATOR: Consider this worked case: A healthcare app implements data minimization
+verification step.
 
-and consent mechanisms to comply with privacy regulations while maintaining security.
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-NARRATOR: On screen, display a balance scale graphic with 'Security' on one side and
-
-'Privacy/Ethics/Legal' on the other, labeled 'Balanced Design'.
-
-NARRATOR: Explain each connection explicitly and verify that information retains the same
-
-meaning across representations.
-
-NARRATOR: The synthesis matters only if every connection remains supported by the original
-
-evidence.
-
-NARRATOR: Finish with Lesson Title: Practical Analysis Checklist as a practical checklist
-
-that can guide a new analysis.
-
-NARRATOR: This course requires the knowledge of computer science theory and concepts of
-
-computer systems.
-
-NARRATOR: Consider this worked case: An auditor reviews a cloud migration plan against
-
-the checklist to verify encryption, access controls, backup availability, and risk
-
-mitigation steps.
-
-NARRATOR: On screen, show a printable checklist template with columns for
-
-'Component', 'Confidentiality', 'Integrity', 'Availability', 'Risk Level', and
-
-'Mitigation'.
-
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

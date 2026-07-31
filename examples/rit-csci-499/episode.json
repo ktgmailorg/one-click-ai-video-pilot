@@ -13,7 +13,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Program Overview and Status as a question about inputs, decisions, and observable results. When registered for co-op, students are considered by RIT to have full-time status. Consider this worked case: A student enrolled in CSCI-499 for the fall semester is counted as a full-time undergraduate for financial aid and housing purposes. On screen, display a simple badge graphic labeled 'Full-Time Status' next to a calendar showing a 14-week span. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "narration": "Begin by framing Program Overview and Status as a question about inputs, decisions, and observable results. When registered for co-op, students are considered by RIT to have full-time status. Consider this worked case: A student enrolled in CSCI-499 for the fall semester is counted as a full-time undergraduate for financial aid and housing purposes. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
       "plannedSeconds": 55,
       "title": "Program Overview and Status",
       "visualDirection": "template:academic-process | Display a simple badge graphic labeled 'Full-Time Status' next to a calendar showing a 14-week span."
@@ -31,7 +31,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Time Commitment Requirements precisely enough that another learner could test the definition. In order to register for co-op for either fall or spring semester, we expect that students will work a minimum of 14 weeks and work a minimum of 35 hours per week. Consider this worked case: A student planning a spring co-op must schedule at least 490 hours of work spread across the semester. On screen, show a bar chart comparing a 14-week minimum schedule against a 12-week schedule, highlighting the 35-hour weekly threshold. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "narration": "Now define Time Commitment Requirements precisely enough that another learner could test the definition. In order to register for co-op for either fall or spring semester, we expect that students will work a minimum of 14 weeks and work a minimum of 35 hours per week. Consider this worked case: A student planning a spring co-op must schedule at least 490 hours of work spread across the semester. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
       "plannedSeconds": 62,
       "title": "Time Commitment Requirements",
       "visualDirection": "template:academic-process | Show a bar chart comparing a 14-week minimum schedule against a 12-week schedule, highlighting the 35-hour weekly threshold."
@@ -49,7 +49,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Prerequisite Coursework operates in a concrete sequence. Students must complete a student co-op work report for each term for which they are registered; students are also evaluated each term by their supervisor. Consider this worked case: A student who has not taken CSCI-099 must enroll in it first to become eligible for the co-op program. On screen, create a linear prerequisite flowchart: 'CSCI-099' -> 'Eligible for CSCI-499 Co-op'. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "narration": "With the foundation in place, examine how Prerequisite Coursework operates in a concrete sequence. Students must complete a student co-op work report for each term for which they are registered; students are also evaluated each term by their supervisor. Consider this worked case: A student who has not taken CSCI-099 must enroll in it first to become eligible for the co-op program. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
       "plannedSeconds": 55,
       "title": "Prerequisite Coursework",
       "visualDirection": "template:academic-process | Create a linear prerequisite flowchart: 'CSCI-099' -> 'Eligible for CSCI-499 Co-op'."
@@ -67,7 +67,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Student Work Report Requirement and make the decision criteria explicit. A satisfactory grade is given for co-op when both a completed student co-op work report and a completed, corresponding supervisor evaluation are received and when both documents are generally consistent. Consider this worked case: A student working on a software development project must submit a written report detailing their tasks, challenges, and outcomes. On screen, show a document template with sections for 'Project Description', 'Technical Implementation', and 'Learning Outcomes'. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "narration": "Next, compare the choices involved in Student Work Report Requirement and make the decision criteria explicit. A satisfactory grade is given for co-op when both a completed student co-op work report and a completed, corresponding supervisor evaluation are received and when both documents are generally consistent. Consider this worked case: A student working on a software development project must submit a written report detailing their tasks, challenges, and outcomes. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
       "plannedSeconds": 60,
       "title": "Student Work Report Requirement",
       "visualDirection": "template:academic-process | Show a document template with sections for 'Project Description', 'Technical Implementation', and 'Learning Outcomes'."
@@ -85,7 +85,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Supervisor Evaluation Requirement to a worked situation instead of treating it as an isolated definition. Students perform professional work related to Computer Science. Consider this worked case: A supervisor reviews the student's code commits and deliverables to provide a formal performance evaluation. On screen, display a two-column comparison: 'Student Report' vs. 'Supervisor Evaluation' with a checkmark indicating consistency. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Apply Supervisor Evaluation Requirement to a worked situation instead of treating it as an isolated definition. Students perform professional work related to Computer Science. Consider this worked case: A supervisor reviews the student's code commits and deliverables to provide a formal performance evaluation. 'Supervisor Evaluation' with a checkmark indicating consistency. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 56,
       "title": "Supervisor Evaluation Requirement",
       "visualDirection": "template:academic-process | Display a two-column comparison: 'Student Report' vs. 'Supervisor Evaluation' with a checkmark indicating consistency."
@@ -103,7 +103,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Grading Consistency Standard, including what improves and what becomes more difficult. Robust security should be designed and implemented when appropriate. Consider this worked case: If the student report describes a database migration but the supervisor evaluation focuses solely on UI testing, the grade is not satisfactory. On screen, use a Venn diagram showing the overlap between 'Student Report Content' and 'Supervisor Evaluation Content' as the grading zone. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "narration": "Examine the tradeoffs in Grading Consistency Standard, including what improves and what becomes more difficult. Robust security should be designed and implemented when appropriate. Consider this worked case: If the student report describes a database migration but the supervisor evaluation focuses solely on UI testing, the grade is not satisfactory. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
       "plannedSeconds": 55,
       "title": "Grading Consistency Standard",
       "visualDirection": "template:academic-process | Use a Venn diagram showing the overlap between 'Student Report Content' and 'Supervisor Evaluation Content' as the grading zone."
@@ -121,7 +121,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Ethical Computing Principles with an edge case and identify which assumption controls the outcome. Professionals should strive to achieve high quality in both processes and products. Consider this worked case: A co-op student developing an AI model must audit training data for bias and document limitations to prevent harmful outcomes. On screen, present a checklist graphic with icons for 'Avoid Harm', 'Honesty', 'High Quality', and 'Respect Privacy'. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "narration": "Stress-test the reasoning around Ethical Computing Principles with an edge case and identify which assumption controls the outcome. Professionals should strive to achieve high quality in both processes and products. Consider this worked case: A co-op student developing an AI model must audit training data for bias and document limitations to prevent harmful outcomes. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
       "plannedSeconds": 56,
       "title": "Ethical Computing Principles",
       "visualDirection": "template:academic-process | Present a checklist graphic with icons for 'Avoid Harm', 'Honesty', 'High Quality', and 'Respect Privacy'."
@@ -139,7 +139,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Responsible Research Communication to diagnose a failure by separating symptoms, causes, and corrective action. Responsible technical communication distinguishes claims from evidence. Consider this worked case: A student's co-op report must include a literature review section that cites existing algorithms before presenting new results. On screen, show a side-by-side comparison of a 'Misleading Claim' (highlighted in red) versus a 'Responsible Claim' (highlighted in green) with citations. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "narration": "Use Responsible Research Communication to diagnose a failure by separating symptoms, causes, and corrective action. Responsible technical communication distinguishes claims from evidence. Consider this worked case: A student's co-op report must include a literature review section that cites existing algorithms before presenting new results. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
       "plannedSeconds": 55,
       "title": "Responsible Research Communication",
       "visualDirection": "template:academic-process | Show a side-by-side comparison of a 'Misleading Claim' (highlighted in red) versus a 'Responsible Claim' (highlighted in green) with citations."
@@ -157,7 +157,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Research Integrity and Transparency to the earlier ideas and explain how the pieces work as one system. Limitations and threats to validity should be made visible. Consider this worked case: A co-op project report must include a dedicated section listing data collection constraints and potential biases in the experimental setup. On screen, create a template slide with a 'Limitations & Threats' box and a 'Conflicts Disclosure' field to be filled by students. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "narration": "Connect Research Integrity and Transparency to the earlier ideas and explain how the pieces work as one system. Limitations and threats to validity should be made visible. Consider this worked case: A co-op project report must include a dedicated section listing data collection constraints and potential biases in the experimental setup. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
       "plannedSeconds": 55,
       "title": "Research Integrity and Transparency",
       "visualDirection": "template:academic-process | Create a template slide with a 'Limitations & Threats' box and a 'Conflicts Disclosure' field to be filled by students."
@@ -175,7 +175,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. They should maintain high standards of professional competence, conduct, and ethical practice. Consider this worked case: Before final submission, a student checks that their 14-week schedule is logged, their report matches the supervisor's evaluation, and all ethical guidelines are met. On screen, display a final checklist graphic with four checkboxes: '14-Week/35-Hr Commitment', 'Report-Evaluation Consistency', 'Ethical Compliance', 'Research Transparency'. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. They should maintain high standards of professional competence, conduct, and ethical practice. Consider this worked case: Before final submission, a student checks that their 14-week schedule is logged, their report matches the supervisor's evaluation, and all ethical guidelines are met. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
       "plannedSeconds": 56,
       "title": "Practical Analysis Checklist",
       "visualDirection": "template:academic-process | Display a final checklist graphic with four checkboxes: '14-Week/35-Hr Commitment', 'Report-Evaluation Consistency', 'Ethical Compliance', 'Research Transparency'."

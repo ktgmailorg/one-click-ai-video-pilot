@@ -1,7 +1,7 @@
 {
   "approvals": [
     {
-      "approvedAt": "2026-07-31T15:36:16.948Z",
+      "approvedAt": "2026-07-31T19:26:25.674Z",
       "notes": "Verifies declared source bindings for draft rendering; instructor and release approval remain required.",
       "reviewer": "Automated source-pack verification (draft)",
       "role": "automation",
@@ -595,7 +595,7 @@
     }
   ],
   "configSha256": "8703f9e31395e56b0288b15fba785cbbc369adff2c30b514737c5429aab76fde",
-  "createdAt": "2026-07-31T15:39:29.613Z",
+  "createdAt": "2026-07-31T19:29:53.399Z",
   "final": {
     "releaseAudit": {
       "blockers": [],
@@ -814,7 +814,7 @@
       "width": 1920
     }
   },
-  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
   "inputSha256": "2eca3f354aad8342a81da183b5c9cfffe09fe0056c1f7fd23a063a5268828d4d",
   "mode": "record",
   "providers": {
@@ -1272,73 +1272,6 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 27427,
-      "lookupSha256": "a2cb69c39449650b42a4d2668c87387b0239692eb98514c9c0a4e240d21ac0ea",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "We begin by distinguishing how signals exist in time. A continuous signal varies smoothly without interruption, like the voltage across a capacitor charging gradually. Mathematically, we describe it with a function that accepts any real number for time. A discrete signal, however, only exists at specific, separate moments. Think of a metronome ticking or a digital audio file recording sound only at fixed intervals. The key difference lies in the domain: continuous signals use real-valued time, while discrete signals use integer indices. This distinction shapes how we analyze, store, and process information in engineering systems. Understanding this boundary is essential before we model how systems respond to these different input types."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "adb9901d9724992f1ca5d06fbf571d5da57a1017a236ea20ac298482dc8d01cf",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/0d/0d86a1af9e97675f36236d8cc82a5d8dd38f36c29dbf9340d9d400cd7d0d7908.mp3",
-            "sha256": "0d86a1af9e97675f36236d8cc82a5d8dd38f36c29dbf9340d9d400cd7d0d7908",
-            "size": 436032
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/3b/3b62d2c9b1374d8d85f1bfb868d671fef6dc542b6774d10c8b0cca6018bcf3b4.vtt",
-            "sha256": "3b62d2c9b1374d8d85f1bfb868d671fef6dc542b6774d10c8b0cca6018bcf3b4",
-            "size": 1011
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:48:33.032Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
       "durationMs": 20917,
       "lookupSha256": "eec7b35f7c6b256e292901585b9fa72b14d396c47e29c757367caa8eccbc8c44",
       "model": "edge-tts-7.2.8",
@@ -1402,140 +1335,6 @@
       "roleName": "narration",
       "schemaVersion": 1,
       "startedAt": "2026-07-30T04:48:33.045Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 31989,
-      "lookupSha256": "3f48bdb3f1d10784b63ff7a6336dd31579f61c5477890cc46b6227e49e39553c",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "Reconstructing a continuous signal from discrete samples requires careful workflow planning. First, we identify the signal's maximum frequency to determine its bandwidth. Next, we apply an analog low-pass filter to remove frequencies above half the sampling rate, preventing spectral overlap. We then select a sample rate with sufficient margin to avoid aliasing entirely. Finally, we verify that the reconstruction process accurately recovers the original waveform. Increasing the sample rate after aliasing has occurred cannot repair the lost information, as the overlapping frequencies are permanently mixed. This systematic approach ensures digital systems faithfully represent analog signals for further processing or storage."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "9b987908f670d0384ad161eb026abc906849347b672e29e36f9f2cd63b5e101f",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/65/65d88f985f9ccf8def9cd6fe4869a3ae0c9649dd6ccc0350e596ea197ca34855.mp3",
-            "sha256": "65d88f985f9ccf8def9cd6fe4869a3ae0c9649dd6ccc0350e596ea197ca34855",
-            "size": 416592
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/f7/f7784cc8bc16926b1601c2994bc0cf6614cc4e61449595684a99eed487ee7b33.vtt",
-            "sha256": "f7784cc8bc16926b1601c2994bc0cf6614cc4e61449595684a99eed487ee7b33",
-            "size": 963
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:49:37.028Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 21361,
-      "lookupSha256": "826cb6753c16bfde18315b87530b406a2936857afcc862eb6248fe55c6516f98",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "The frequency response describes how an LTI system modifies different frequency components. It shows both magnitude attenuation and phase shift across the spectrum. When a signal passes through a system, each complex exponential component gets scaled and rotated according to the system's frequency response at that specific frequency. This means filters can selectively amplify or suppress certain frequencies while preserving others. By examining the magnitude plot, we see which frequencies pass through unchanged, and the phase plot reveals timing delays. Consistent predictions between time and frequency domains confirm our model accurately captures the system's behavior, allowing reliable design of audio equalizers or communication channels."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "d4bac20884aa83e285e3562894263af8f0325134a2e3e00a0cd4b3f03545531d",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/19/1933800d5220178d84ca8021fda8d08a3b3029d6715e6f5801694bef05d91c15.mp3",
-            "sha256": "1933800d5220178d84ca8021fda8d08a3b3029d6715e6f5801694bef05d91c15",
-            "size": 420048
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/09/0912f564fa4fc5026ad55955f36ed2306d144b85caea9205d02311242db23682.vtt",
-            "sha256": "0912f564fa4fc5026ad55955f36ed2306d144b85caea9205d02311242db23682",
-            "size": 949
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:49:15.646Z"
     },
     {
       "cacheHit": true,
@@ -1607,8 +1406,8 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 23922,
-      "lookupSha256": "7d5fe4bbc3f925286c8e1ae22530f1ac936d60ef45e22f48ef1472c8b1ec846e",
+      "durationMs": 21361,
+      "lookupSha256": "826cb6753c16bfde18315b87530b406a2936857afcc862eb6248fe55c6516f98",
       "model": "edge-tts-7.2.8",
       "profileName": "edge-narration",
       "request": {
@@ -1626,30 +1425,30 @@
         },
         "input": {
           "instructions": "Clear, direct, and conversational.",
-          "text": "To analyze signals across frequencies, we use complex exponentials. These functions oscillate with constant magnitude while rotating in the complex plane, making them ideal for representing sinusoidal waves. The Fourier representation decomposes any signal into a sum of these complex exponentials, revealing its frequency content. Instead of working with time-domain waveforms, we shift to the frequency domain where signals become vectors of complex coefficients. This transformation simplifies system analysis because multiplication in the frequency domain corresponds to convolution in the time domain. Engineers use this view to design filters and modulators by manipulating frequency components directly rather than solving differential equations."
+          "text": "The frequency response describes how an LTI system modifies different frequency components. It shows both magnitude attenuation and phase shift across the spectrum. When a signal passes through a system, each complex exponential component gets scaled and rotated according to the system's frequency response at that specific frequency. This means filters can selectively amplify or suppress certain frequencies while preserving others. By examining the magnitude plot, we see which frequencies pass through unchanged, and the phase plot reveals timing delays. Consistent predictions between time and frequency domains confirm our model accurately captures the system's behavior, allowing reliable design of audio equalizers or communication channels."
         },
         "model": "edge-tts-7.2.8",
         "parameters": {},
         "schemaVersion": 1
       },
-      "requestSha256": "b11601cd3b1730cbfb8110fe3b28f8185da2f38e3c582157b14ce6ed10d296ee",
+      "requestSha256": "d4bac20884aa83e285e3562894263af8f0325134a2e3e00a0cd4b3f03545531d",
       "result": {
         "artifacts": [
           {
             "extension": ".mp3",
             "filename": "speech.mp3",
             "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/90/903d63bb20f60865f5e01fcfec3fef56326cacb56d79dea2c9b34352b0ba0fbe.mp3",
-            "sha256": "903d63bb20f60865f5e01fcfec3fef56326cacb56d79dea2c9b34352b0ba0fbe",
-            "size": 433008
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/19/1933800d5220178d84ca8021fda8d08a3b3029d6715e6f5801694bef05d91c15.mp3",
+            "sha256": "1933800d5220178d84ca8021fda8d08a3b3029d6715e6f5801694bef05d91c15",
+            "size": 420048
           },
           {
             "extension": ".vtt",
             "filename": "speech.vtt",
             "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/e2/e2dd649e9336f6526f64144a589d19982e08e1ceee890ea6dba452a6669aff13.vtt",
-            "sha256": "e2dd649e9336f6526f64144a589d19982e08e1ceee890ea6dba452a6669aff13",
-            "size": 952
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/09/0912f564fa4fc5026ad55955f36ed2306d144b85caea9205d02311242db23682.vtt",
+            "sha256": "0912f564fa4fc5026ad55955f36ed2306d144b85caea9205d02311242db23682",
+            "size": 949
           }
         ],
         "costUsd": null,
@@ -1669,7 +1468,7 @@
       },
       "roleName": "narration",
       "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:49:00.492Z"
+      "startedAt": "2026-07-30T04:49:15.646Z"
     },
     {
       "cacheHit": true,
@@ -1741,6 +1540,140 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
+      "durationMs": 23922,
+      "lookupSha256": "7d5fe4bbc3f925286c8e1ae22530f1ac936d60ef45e22f48ef1472c8b1ec846e",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "To analyze signals across frequencies, we use complex exponentials. These functions oscillate with constant magnitude while rotating in the complex plane, making them ideal for representing sinusoidal waves. The Fourier representation decomposes any signal into a sum of these complex exponentials, revealing its frequency content. Instead of working with time-domain waveforms, we shift to the frequency domain where signals become vectors of complex coefficients. This transformation simplifies system analysis because multiplication in the frequency domain corresponds to convolution in the time domain. Engineers use this view to design filters and modulators by manipulating frequency components directly rather than solving differential equations."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "b11601cd3b1730cbfb8110fe3b28f8185da2f38e3c582157b14ce6ed10d296ee",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/90/903d63bb20f60865f5e01fcfec3fef56326cacb56d79dea2c9b34352b0ba0fbe.mp3",
+            "sha256": "903d63bb20f60865f5e01fcfec3fef56326cacb56d79dea2c9b34352b0ba0fbe",
+            "size": 433008
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/e2/e2dd649e9336f6526f64144a589d19982e08e1ceee890ea6dba452a6669aff13.vtt",
+            "sha256": "e2dd649e9336f6526f64144a589d19982e08e1ceee890ea6dba452a6669aff13",
+            "size": 952
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T04:49:00.492Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 31989,
+      "lookupSha256": "3f48bdb3f1d10784b63ff7a6336dd31579f61c5477890cc46b6227e49e39553c",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "Reconstructing a continuous signal from discrete samples requires careful workflow planning. First, we identify the signal's maximum frequency to determine its bandwidth. Next, we apply an analog low-pass filter to remove frequencies above half the sampling rate, preventing spectral overlap. We then select a sample rate with sufficient margin to avoid aliasing entirely. Finally, we verify that the reconstruction process accurately recovers the original waveform. Increasing the sample rate after aliasing has occurred cannot repair the lost information, as the overlapping frequencies are permanently mixed. This systematic approach ensures digital systems faithfully represent analog signals for further processing or storage."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "9b987908f670d0384ad161eb026abc906849347b672e29e36f9f2cd63b5e101f",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/65/65d88f985f9ccf8def9cd6fe4869a3ae0c9649dd6ccc0350e596ea197ca34855.mp3",
+            "sha256": "65d88f985f9ccf8def9cd6fe4869a3ae0c9649dd6ccc0350e596ea197ca34855",
+            "size": 416592
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/f7/f7784cc8bc16926b1601c2994bc0cf6614cc4e61449595684a99eed487ee7b33.vtt",
+            "sha256": "f7784cc8bc16926b1601c2994bc0cf6614cc4e61449595684a99eed487ee7b33",
+            "size": 963
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T04:49:37.028Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
       "durationMs": 21644,
       "lookupSha256": "50352e3188447d7d91ab382c27997e64fa08bcbf1e53e12fb08d7c0cf362a900",
       "model": "edge-tts-7.2.8",
@@ -1804,6 +1737,73 @@
       "roleName": "narration",
       "schemaVersion": 1,
       "startedAt": "2026-07-30T04:48:53.980Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 27427,
+      "lookupSha256": "a2cb69c39449650b42a4d2668c87387b0239692eb98514c9c0a4e240d21ac0ea",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "We begin by distinguishing how signals exist in time. A continuous signal varies smoothly without interruption, like the voltage across a capacitor charging gradually. Mathematically, we describe it with a function that accepts any real number for time. A discrete signal, however, only exists at specific, separate moments. Think of a metronome ticking or a digital audio file recording sound only at fixed intervals. The key difference lies in the domain: continuous signals use real-valued time, while discrete signals use integer indices. This distinction shapes how we analyze, store, and process information in engineering systems. Understanding this boundary is essential before we model how systems respond to these different input types."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "adb9901d9724992f1ca5d06fbf571d5da57a1017a236ea20ac298482dc8d01cf",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/0d/0d86a1af9e97675f36236d8cc82a5d8dd38f36c29dbf9340d9d400cd7d0d7908.mp3",
+            "sha256": "0d86a1af9e97675f36236d8cc82a5d8dd38f36c29dbf9340d9d400cd7d0d7908",
+            "size": 436032
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/3b/3b62d2c9b1374d8d85f1bfb868d671fef6dc542b6774d10c8b0cca6018bcf3b4.vtt",
+            "sha256": "3b62d2c9b1374d8d85f1bfb868d671fef6dc542b6774d10c8b0cca6018bcf3b4",
+            "size": 1011
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T04:48:33.032Z"
     },
     {
       "cacheHit": true,
@@ -1978,8 +1978,27 @@
   ],
   "status": "awaiting-approval",
   "toolchain": {
+    "ffmpeg": {
+      "available": true,
+      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "available": true,
+      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "gitChangedPaths": [
+      "outreach/README.md",
+      "outreach/general-email.md",
+      "outreach/leadership-confirmation.md",
+      "outreach/subject-showcase/reference-manifest.json"
+    ],
+    "gitDirty": true,
+    "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
+    "gitStatusSha256": "add6a4c631c3d463fa2b7e37fa6a50bfab3e6fce98296cf041f8a8d165d4cda8",
     "node": "v22.23.1",
     "platform": "darwin-arm64",
+    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtimeDirty": false,
     "sharp": {
       "aom": "3.14.1",
       "archive": "3.8.8",
@@ -2003,32 +2022,14 @@
       "png": "1.6.58",
       "proxy-libintl": "0.5",
       "rsvg": "2.62.90",
+      "sharp": "0.35.3",
       "tiff": "d01a94b",
       "uhdr": "1acdbed",
       "vips": "8.18.3",
       "webp": "1.6.0",
       "xml2": "2.15.3",
-      "zlib-ng": "2.3.3",
-      "sharp": "0.35.3"
-    },
-    "ffmpeg": {
-      "available": true,
-      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
-    },
-    "ffprobe": {
-      "available": true,
-      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
-    },
-    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
-    "gitDirty": true,
-    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
-    "gitChangedPaths": [
-      "outreach/README.md",
-      "outreach/general-email.md",
-      "outreach/leadership-confirmation.md"
-    ],
-    "runtimeDirty": false,
-    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "zlib-ng": "2.3.3"
+    }
   },
   "totalCostUsd": 0
 }

@@ -1,568 +1,438 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:08.053
-NARRATOR: Begin by framing Course Foundations
-and Prerequisites as a question about inputs,
+00:00:00.050 --> 00:00:07.746
+Begin by framing Course Foundations and
+Prerequisites as a question about inputs,
 
 2
-00:00:08.053 --> 00:00:10.515
+00:00:07.746 --> 00:00:10.312
 decisions, and observable results.
 
 3
-00:00:10.515 --> 00:00:16.693
-NARRATOR: The course will introduce students
-into the algorithmic foundations and modern
+00:00:10.312 --> 00:00:16.598
+The course will introduce students into the
+algorithmic foundations and modern methods
 
 4
-00:00:16.693 --> 00:00:20.812
-methods used for security evaluation and tools
-design.
+00:00:16.598 --> 00:00:20.265
+used for security evaluation and tools design.
 
 5
-00:00:20.812 --> 00:00:31.694
-NARRATOR: Consider this worked case: Students
-must verify they have completed CSCI-351 or
+00:00:20.265 --> 00:00:31.630
+Consider this worked case: Students must
+verify they have completed CSCI-351 or the
 
 6
-00:00:31.694 --> 00:00:38.390
-the combined 4003-420 and 4003-440 sequence
-before enrolling.
+00:00:31.630 --> 00:00:37.749
+combined 4003-420 and 4003-440 sequence before
+enrolling.
 
 7
-00:00:38.390 --> 00:00:50.674
-NARRATOR: On screen, display a prerequisite
-flowchart showing CSCI-351 or the
+00:00:37.749 --> 00:00:44.662
+List the givens before choosing a method,
+because an unstated assumption can change the
 
 8
-00:00:50.674 --> 00:00:57.374
-4003-420/4003-440 path leading to CSCI-531
-enrollment.
+00:00:44.662 --> 00:00:45.156
+conclusion.
 
 9
-00:00:57.374 --> 00:01:03.519
-NARRATOR: List the givens before choosing a
-method, because an unstated assumption can
+00:00:45.156 --> 00:00:50.906
+This establishes the vocabulary and scope
+needed for the remaining sections.
 
 10
-00:01:03.519 --> 00:01:04.937
-change the conclusion.
+00:00:51.026 --> 00:00:57.108
+Now define Secure Software Development
+Framework Overview precisely enough that
 
 11
-00:01:04.937 --> 00:01:10.687
-NARRATOR: This establishes the vocabulary and
-scope needed for the remaining sections.
+00:00:57.108 --> 00:01:00.757
+another learner could test the definition.
 
 12
-00:01:10.802 --> 00:01:15.813
-NARRATOR: Now define Secure Software
-Development Framework Overview precisely
+00:01:00.757 --> 00:01:07.351
+The Secure Software Development Framework
+groups practices into four practice groups.
 
 13
-00:01:15.813 --> 00:01:20.267
-enough that another learner could test the
-definition.
+00:01:07.351 --> 00:01:13.913
+Consider this worked case: Prepare the
+Organization establishes people, processes,
 
 14
-00:01:20.267 --> 00:01:26.426
-NARRATOR: The Secure Software Development
-Framework groups practices into four practice
+00:01:13.913 --> 00:01:21.131
+and technology for secure development, while
+Protect the Software prevents unauthorized
 
 15
-00:01:26.426 --> 00:01:26.986
-groups.
+00:01:21.131 --> 00:01:23.100
+access to code.
 
 16
-00:01:26.986 --> 00:01:33.042
-NARRATOR: Consider this worked case: Prepare
-the Organization establishes people,
+00:01:23.101 --> 00:01:29.907
+Separate the formal definition from an
+implementation detail, then identify what
 
 17
-00:01:33.042 --> 00:01:39.098
-processes, and technology for secure
-development, while Protect the Software
-
-18
-00:01:39.098 --> 00:01:42.126
-prevents unauthorized access to code.
-
-19
-00:01:42.127 --> 00:01:48.491
-NARRATOR: On screen, show a four-quadrant
-diagram labeling each practice group with its
-
-20
-00:01:48.491 --> 00:01:49.470
-core function.
-
-21
-00:01:49.470 --> 00:01:56.220
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
-
-22
-00:01:56.220 --> 00:01:58.470
+00:01:29.907 --> 00:01:32.382
 evidence would distinguish them.
 
+18
+00:01:32.382 --> 00:01:38.866
+A precise definition makes later examples
+easier to evaluate and revise.
+
+19
+00:01:38.866 --> 00:01:45.909
+Name each dependency explicitly, and keep
+labels and representations consistent
+
+20
+00:01:45.909 --> 00:01:48.022
+throughout the analysis.
+
+21
+00:01:48.146 --> 00:01:55.062
+With the foundation in place, examine how
+Prepare the Organization Practice operates in
+
+22
+00:01:55.062 --> 00:01:56.658
+a concrete sequence.
+
 23
-00:01:58.470 --> 00:02:05.001
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
+00:01:56.658 --> 00:02:05.024
+Prepare the Organization establishes people,
+processes, and technology for secure
 
 24
-00:02:05.001 --> 00:02:12.011
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-25
-00:02:12.011 --> 00:02:13.923
-throughout the analysis.
-
-26
-00:02:14.042 --> 00:02:19.995
-NARRATOR: With the foundation in place,
-examine how Prepare the Organization Practice
-
-27
-00:02:19.995 --> 00:02:22.476
-operates in a concrete sequence.
-
-28
-00:02:22.476 --> 00:02:31.227
-NARRATOR: Prepare the Organization establishes
-people, processes, and technology for secure
-
-29
-00:02:31.227 --> 00:02:32.023
+00:02:05.024 --> 00:02:05.861
 development.
 
+25
+00:02:05.861 --> 00:02:13.252
+Consider this worked case: A team creates a
+secure development policy and assigns security
+
+26
+00:02:13.252 --> 00:02:15.892
+roles before writing code begins.
+
+27
+00:02:15.892 --> 00:02:23.299
+Follow every arrow in order and name the state
+before and after each transition.
+
+28
+00:02:23.299 --> 00:02:29.064
+The trace converts an abstract statement into
+an inspectable sequence.
+
+29
+00:02:29.064 --> 00:02:36.083
+Name each dependency explicitly, and keep
+labels and representations consistent
+
 30
-00:02:32.023 --> 00:02:39.092
-NARRATOR: Consider this worked case: A team
-creates a secure development policy and
+00:02:36.083 --> 00:02:38.189
+throughout the analysis.
 
 31
-00:02:39.092 --> 00:02:42.898
-assigns security roles before writing code
-begins.
+00:02:38.306 --> 00:02:45.317
+Next, compare the choices involved in Protect
+the Software Practice and make the decision
 
 32
-00:02:42.898 --> 00:02:49.983
-NARRATOR: On screen, illustrate a checklist of
-people, processes, and technology setup with
+00:02:45.317 --> 00:02:46.318
+criteria explicit.
 
 33
-00:02:49.983 --> 00:02:52.163
-icons for each category.
+00:02:46.318 --> 00:02:53.381
+Protect the Software prevents unauthorized
+access to code and development artifacts.
 
 34
-00:02:52.163 --> 00:02:59.288
-NARRATOR: Follow every arrow in order and name
-the state before and after each transition.
+00:02:53.381 --> 00:03:00.553
+Consider this worked case: Source code
+repositories use role-based access control to
 
 35
-00:02:59.288 --> 00:03:05.054
-NARRATOR: The trace converts an abstract
-statement into an inspectable sequence.
+00:03:00.553 --> 00:03:05.334
+restrict who can view or modify specific
+modules.
 
 36
-00:03:05.054 --> 00:03:12.162
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+00:03:05.334 --> 00:03:12.539
+Compare alternatives against the same
+constraints so the evaluation does not move
 
 37
-00:03:12.162 --> 00:03:14.101
-throughout the analysis.
+00:03:12.539 --> 00:03:13.740
+the goalposts.
 
 38
-00:03:14.210 --> 00:03:21.142
-NARRATOR: Next, compare the choices involved
-in Protect the Software Practice and make the
+00:03:13.740 --> 00:03:20.630
+Using shared criteria turns a preference into
+a defensible technical choice.
 
 39
-00:03:21.142 --> 00:03:22.628
-decision criteria explicit.
+00:03:20.630 --> 00:03:27.638
+Name each dependency explicitly, and keep
+labels and representations consistent
 
 40
-00:03:22.628 --> 00:03:28.973
-NARRATOR: Protect the Software prevents
-unauthorized access to code and development
+00:03:27.638 --> 00:03:29.740
+throughout the analysis.
 
 41
-00:03:28.973 --> 00:03:29.550
-artifacts.
+00:03:29.858 --> 00:03:36.989
+Apply Produce Well-Secured Software Practice
+to a worked situation instead of treating it
 
 42
-00:03:29.550 --> 00:03:35.828
-NARRATOR: Consider this worked case: Source
-code repositories use role-based access
+00:03:36.989 --> 00:03:39.183
+as an isolated definition.
 
 43
-00:03:35.828 --> 00:03:41.535
-control to restrict who can view or modify
-specific modules.
+00:03:39.183 --> 00:03:46.108
+Produce Well-Secured Software addresses
+security requirements, design, verification,
 
 44
-00:03:41.535 --> 00:03:49.528
-NARRATOR: On screen, draw a locked vault icon
-over a code repository with access control
+00:03:46.108 --> 00:03:47.839
+and release.
 
 45
-00:03:49.528 --> 00:03:51.659
-badges indicating restricted permissions.
+00:03:47.839 --> 00:03:55.270
+Consider this worked case: Developers complete
+a security requirements document and run
 
 46
-00:03:51.659 --> 00:03:58.234
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
+00:03:55.270 --> 00:03:59.604
+automated verification tests before deploying
+the software.
 
 47
-00:03:58.234 --> 00:03:59.878
-move the goalposts.
+00:03:59.604 --> 00:04:07.148
+Work from the concrete inputs to the result,
+checking units, types, or invariants at each
 
 48
-00:03:59.878 --> 00:04:06.597
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
+00:04:07.148 --> 00:04:07.651
+step.
 
 49
-00:04:06.597 --> 00:04:13.865
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+00:04:07.651 --> 00:04:12.167
+The worked case shows both how to apply the
+method and how to check it.
 
 50
-00:04:13.865 --> 00:04:15.847
-throughout the analysis.
+00:04:12.167 --> 00:04:19.210
+Name each dependency explicitly, and keep
+labels and representations consistent
 
 51
-00:04:15.962 --> 00:04:22.459
-NARRATOR: Apply Produce Well-Secured Software
-Practice to a worked situation instead of
-
-52
-00:04:22.459 --> 00:04:25.708
-treating it as an isolated definition.
-
-53
-00:04:25.708 --> 00:04:31.799
-NARRATOR: Produce Well-Secured Software
-addresses security requirements, design,
-
-54
-00:04:31.799 --> 00:04:34.083
-verification, and release.
-
-55
-00:04:34.083 --> 00:04:40.044
-NARRATOR: Consider this worked case:
-Developers complete a security requirements
-
-56
-00:04:40.044 --> 00:04:46.005
-document and run automated verification tests
-before deploying the software.
-
-57
-00:04:46.005 --> 00:04:52.489
-NARRATOR: On screen, display a pipeline
-diagram showing requirements, design,
-
-58
-00:04:52.489 --> 00:04:56.380
-verification, and release stages with
-checkmarks.
-
-59
-00:04:56.380 --> 00:05:02.673
-NARRATOR: Work from the concrete inputs to the
-result, checking units, types, or invariants
-
-60
-00:05:02.673 --> 00:05:04.021
-at each step.
-
-61
-00:05:04.021 --> 00:05:08.708
-NARRATOR: The worked case shows both how to
-apply the method and how to check it.
-
-62
-00:05:08.708 --> 00:05:15.878
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-63
-00:05:15.878 --> 00:05:17.833
+00:04:19.210 --> 00:04:21.323
 throughout the analysis.
 
-64
-00:05:17.954 --> 00:05:24.129
-NARRATOR: Examine the tradeoffs in Respond to
+52
+00:04:21.434 --> 00:04:27.096
+Examine the tradeoffs in Respond to
 Vulnerabilities Practice, including what
 
-65
-00:05:24.129 --> 00:05:27.497
+53
+00:04:27.096 --> 00:04:30.493
 improves and what becomes more difficult.
 
-66
-00:05:27.497 --> 00:05:34.024
-NARRATOR: Respond to Vulnerabilities
-identifies, analyzes, remediates, and learns
+54
+00:04:30.493 --> 00:04:37.691
+Respond to Vulnerabilities identifies,
+analyzes, remediates, and learns from
 
-67
-00:05:34.024 --> 00:05:36.200
-from discovered weaknesses.
+55
+00:04:37.691 --> 00:04:39.290
+discovered weaknesses.
 
-68
-00:05:36.200 --> 00:05:42.016
-NARRATOR: Consider this worked case: A
-security audit finds a buffer overflow, which
+56
+00:04:39.290 --> 00:04:46.132
+Consider this worked case: A security audit
+finds a buffer overflow, which is patched, and
 
-69
-00:05:42.016 --> 00:05:48.279
-is patched, and the team updates their threat
-model based on the lesson learned.
+57
+00:04:46.132 --> 00:04:51.149
+the team updates their threat model based on
+the lesson learned.
 
-70
-00:05:48.279 --> 00:05:55.972
-NARRATOR: On screen, show a circular feedback
-loop with arrows labeled identify, analyze,
+58
+00:04:51.149 --> 00:04:58.055
+State the benefit, the cost, and the condition
+under which the tradeoff is acceptable.
 
-71
-00:05:55.972 --> 00:05:57.747
-remediate, and learn.
+59
+00:04:58.055 --> 00:05:05.696
+Making the tradeoff visible prevents a local
+improvement from hiding a larger cost.
 
-72
-00:05:57.747 --> 00:06:03.901
-NARRATOR: State the benefit, the cost, and the
-condition under which the tradeoff is
+60
+00:05:05.810 --> 00:05:12.505
+Stress-test the reasoning around Security
+Reasoning Process with an edge case and
 
-73
-00:06:03.901 --> 00:06:04.341
-acceptable.
-
-74
-00:06:04.341 --> 00:06:11.544
-NARRATOR: Making the tradeoff visible prevents
-a local improvement from hiding a larger cost.
-
-75
-00:06:11.666 --> 00:06:18.118
-NARRATOR: Stress-test the reasoning around
-Security Reasoning Process with an edge case
-
-76
-00:06:18.118 --> 00:06:21.881
-and identify which assumption controls the
+61
+00:05:12.505 --> 00:05:15.853
+identify which assumption controls the
 outcome.
 
-77
-00:06:21.881 --> 00:06:29.676
-NARRATOR: Security reasoning identifies
-assets, trust boundaries, threats, controls,
+62
+00:05:15.853 --> 00:05:24.485
+Security reasoning identifies assets, trust
+boundaries, threats, controls, evidence,
 
-78
-00:06:29.676 --> 00:06:34.006
-evidence, residual risk, and responsibilities.
+63
+00:05:24.485 --> 00:05:28.322
+residual risk, and responsibilities.
 
-79
-00:06:34.006 --> 00:06:40.016
-NARRATOR: Consider this worked case: An
-analyst maps a web application's database as
+64
+00:05:28.322 --> 00:05:35.096
+Consider this worked case: An analyst maps a
+web application's database as an asset,
 
-80
-00:06:40.016 --> 00:06:47.412
-an asset, defines the browser as a trust
-boundary, and lists SQL injection as a threat.
+65
+00:05:35.096 --> 00:05:41.869
+defines the browser as a trust boundary, and
+lists SQL injection as a threat.
 
-81
-00:06:47.412 --> 00:06:55.334
-NARRATOR: On screen, create a flowchart
-connecting assets to trust boundaries, then to
+66
+00:05:41.869 --> 00:05:48.322
+Change one assumption at a time and observe
+which part of the reasoning no longer holds.
 
-82
-00:06:55.334 --> 00:06:58.990
-threats, controls, and residual risk
-calculations.
+67
+00:05:48.322 --> 00:05:55.353
+The edge case reveals the boundary of the
+claim without discarding the useful core idea.
 
-83
-00:06:58.990 --> 00:07:05.182
-NARRATOR: Change one assumption at a time and
-observe which part of the reasoning no longer
+68
+00:05:55.466 --> 00:06:03.350
+Use Cryptographic Standards and Algorithms to
+diagnose a failure by separating symptoms,
 
-84
-00:07:05.182 --> 00:07:05.569
-holds.
+69
+00:06:03.350 --> 00:06:05.978
+causes, and corrective action.
 
-85
-00:07:05.569 --> 00:07:11.899
-NARRATOR: The edge case reveals the boundary
-of the claim without discarding the useful
+70
+00:06:05.978 --> 00:06:12.322
+Encryption supports confidentiality when keys
+and modes are used correctly.
 
-86
-00:07:11.899 --> 00:07:12.803
-core idea.
+71
+00:06:12.322 --> 00:06:19.041
+Consider this worked case: AES-256 is an
+approved algorithm that provides
 
-87
-00:07:12.914 --> 00:07:20.058
-NARRATOR: Use Cryptographic Standards and
-Algorithms to diagnose a failure by separating
-
-88
-00:07:20.058 --> 00:07:23.035
-symptoms, causes, and corrective action.
-
-89
-00:07:23.035 --> 00:07:29.160
-NARRATOR: Encryption supports confidentiality
-when keys and modes are used correctly.
-
-90
-00:07:29.160 --> 00:07:36.293
-NARRATOR: Consider this worked case: AES-256
-is an approved algorithm that provides
-
-91
-00:07:36.293 --> 00:07:42.832
+72
+00:06:19.041 --> 00:06:25.759
 confidentiality for data at rest when
 implemented with proper key management.
 
+73
+00:06:25.759 --> 00:06:33.338
+Locate the first point where observed behavior
+diverges from expected behavior, then test the
+
+74
+00:06:33.338 --> 00:06:34.962
+smallest plausible cause.
+
+75
+00:06:34.962 --> 00:06:42.494
+The diagnosis is strongest when another person
+can reproduce the observation and the test.
+
+76
+00:06:42.602 --> 00:06:49.502
+Connect Modes of Operation and Key Management
+to the earlier ideas and explain how the
+
+77
+00:06:49.502 --> 00:06:51.802
+pieces work as one system.
+
+78
+00:06:51.802 --> 00:06:58.723
+Modes of operation define how a primitive
+processes data larger than one block.
+
+79
+00:06:58.723 --> 00:07:05.887
+Consider this worked case: CBC mode processes
+multi-block data by chaining ciphertext
+
+80
+00:07:05.887 --> 00:07:13.051
+blocks, and key management ensures keys are
+rotated regularly to limit exposure.
+
+81
+00:07:13.052 --> 00:07:22.453
+Explain each connection explicitly and verify
+that information retains the same meaning
+
+82
+00:07:22.453 --> 00:07:24.020
+across representations.
+
+83
+00:07:24.020 --> 00:07:31.786
+The synthesis matters only if every connection
+remains supported by the original evidence.
+
+84
+00:07:31.898 --> 00:07:38.682
+Finish with Security Evaluation and Practical
+Application as a practical checklist that can
+
+85
+00:07:38.682 --> 00:07:40.769
+guide a new analysis.
+
+86
+00:07:40.769 --> 00:07:47.738
+Security depends on the complete protocol and
+implementation, not only an algorithm name.
+
+87
+00:07:47.738 --> 00:07:55.486
+Consider this worked case: A system using a
+standard encryption algorithm fails security
+
+88
+00:07:55.486 --> 00:08:00.254
+evaluation because the implementation has a
+side-channel vulnerability.
+
+89
+00:08:00.254 --> 00:08:07.160
+implementation security, highlighting
+side-channel risks and validation checkpoints.
+
+90
+00:08:07.160 --> 00:08:15.299
+For each checklist item, record the evidence,
+the remaining uncertainty, and the next
+
+91
+00:08:15.299 --> 00:08:16.551
+verification step.
+
 92
-00:07:42.832 --> 00:07:49.648
-NARRATOR: On screen, list approved algorithms
-like AES and RSA with their corresponding
+00:08:16.551 --> 00:08:23.201
+The result is a repeatable procedure, not a
+conclusion that depends on memory or
 
 93
-00:07:49.648 --> 00:07:52.270
-security parameters and use cases.
-
-94
-00:07:52.270 --> 00:07:58.056
-NARRATOR: Locate the first point where
-observed behavior diverges from expected
-
-95
-00:07:58.056 --> 00:08:01.738
-behavior, then test the smallest plausible
-cause.
-
-96
-00:08:01.738 --> 00:08:07.738
-NARRATOR: The diagnosis is strongest when
-another person can reproduce the observation
-
-97
-00:08:07.738 --> 00:08:09.238
-and the test.
-
-98
-00:08:09.362 --> 00:08:15.485
-NARRATOR: Connect Modes of Operation and Key
-Management to the earlier ideas and explain
-
-99
-00:08:15.485 --> 00:08:18.546
-how the pieces work as one system.
-
-100
-00:08:18.546 --> 00:08:24.915
-NARRATOR: Modes of operation define how a
-primitive processes data larger than one
-
-101
-00:08:24.915 --> 00:08:25.405
-block.
-
-102
-00:08:25.405 --> 00:08:32.402
-NARRATOR: Consider this worked case: CBC mode
-processes multi-block data by chaining
-
-103
-00:08:32.402 --> 00:08:39.983
-ciphertext blocks, and key management ensures
-keys are rotated regularly to limit exposure.
-
-104
-00:08:39.983 --> 00:08:47.432
-NARRATOR: On screen, illustrate a block cipher
-processing multiple data blocks sequentially,
-
-105
-00:08:47.432 --> 00:08:53.640
-alongside a key lifecycle diagram showing
-rotation and revocation steps.
-
-106
-00:08:53.640 --> 00:09:02.690
-NARRATOR: Explain each connection explicitly
-and verify that information retains the same
-
-107
-00:09:02.690 --> 00:09:04.952
-meaning across representations.
-
-108
-00:09:04.952 --> 00:09:11.945
-NARRATOR: The synthesis matters only if every
-connection remains supported by the original
-
-109
-00:09:11.945 --> 00:09:12.483
-evidence.
-
-110
-00:09:12.602 --> 00:09:18.360
-NARRATOR: Finish with Security Evaluation and
-Practical Application as a practical checklist
-
-111
-00:09:18.360 --> 00:09:21.239
-that can guide a new analysis.
-
-112
-00:09:21.239 --> 00:09:26.904
-NARRATOR: Security depends on the complete
-protocol and implementation, not only an
-
-113
-00:09:26.904 --> 00:09:27.848
-algorithm name.
-
-114
-00:09:27.848 --> 00:09:35.216
-NARRATOR: Consider this worked case: A system
-using a standard encryption algorithm fails
-
-115
-00:09:35.216 --> 00:09:40.317
-security evaluation because the implementation
-has a side-channel vulnerability.
-
-116
-00:09:40.317 --> 00:09:47.778
-NARRATOR: On screen, show a comparison chart
-between algorithm name vs. implementation
-
-117
-00:09:47.778 --> 00:09:52.130
-security, highlighting side-channel risks and
-validation checkpoints.
-
-118
-00:09:52.130 --> 00:09:59.709
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
-
-119
-00:09:59.709 --> 00:10:01.458
-next verification step.
-
-120
-00:10:01.458 --> 00:10:07.361
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-121
-00:10:07.361 --> 00:10:08.723
-memory or intuition.
+00:08:23.201 --> 00:08:23.676
+intuition.

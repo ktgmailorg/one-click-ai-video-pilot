@@ -1,243 +1,181 @@
-NARRATOR: Begin by framing Foundations of Object Identity and State as a question about
+Begin by framing Foundations of Object Identity and State as a question about inputs,
 
-inputs, decisions, and observable results.
+decisions, and observable results.
 
-NARRATOR: A class declares state and behavior, while an object is an instance with its own
+A class declares state and behavior, while an object is an instance with its own runtime
 
-runtime identity and field state.
+identity and field state.
 
-NARRATOR: Consider this worked case: A `User` instance maintains its own `username` and
+Consider this worked case: A `User` instance maintains its own `username` and
 
 `sessionToken` values independent of other `User` instances.
 
-NARRATOR: On screen, display a side-by-side comparison of two `User` objects with distinct
+List the givens before choosing a method, because an unstated assumption can change the
 
-memory addresses and separate field values, highlighting encapsulation boundaries.
+conclusion.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+This establishes the vocabulary and scope needed for the remaining sections.
 
-change the conclusion.
+Now define Inheritance versus Composition for Reuse precisely enough that another learner
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+could test the definition.
 
-NARRATOR: Now define Inheritance versus Composition for Reuse precisely enough that
+Inheritance allows a class to derive behavior from base classes, while composition connects
 
-another learner could test the definition.
+objects through explicit attributes.
 
-NARRATOR: Inheritance allows a class to derive behavior from base classes, while composition
+Consider this worked case: A `Vehicle` base class provides `move()` logic, but a
 
-connects objects through explicit attributes.
+`DeliveryTruck` composes a `CargoContainer` object instead of inheriting from `Truck` to
 
-NARRATOR: Consider this worked case: A `Vehicle` base class provides `move()` logic,
+avoid rigid hierarchies.
 
-but a `DeliveryTruck` composes a `CargoContainer` object instead of inheriting
-
-from `Truck` to avoid rigid hierarchies.
-
-NARRATOR: On screen, show a class diagram contrasting a deep inheritance tree with a
-
-flat composition graph, using arrows to indicate 'has-a' relationships.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Dynamic Method Dispatch and
+With the foundation in place, examine how Dynamic Method Dispatch and Polymorphism
 
-Polymorphism operates in a concrete sequence.
+operates in a concrete sequence.
 
-NARRATOR: Inheritance reuses and specializes behavior, but dynamic method dispatch selects
+Inheritance reuses and specializes behavior, but dynamic method dispatch selects an
 
-an implementation from the runtime class of the receiver.
+implementation from the runtime class of the receiver.
 
-NARRATOR: Consider this worked case: Calling `draw()` on a `Shape` reference invokes
+Consider this worked case: Calling `draw()` on a `Shape` reference invokes `Circle.
 
-`Circle.draw()` or `Square.draw()` depending on the actual object at runtime.
+draw()` or `Square.
 
-NARRATOR: On screen, illustrate a method call flow where a generic `Shape` reference routes
+draw()` depending on the actual object at runtime.
 
-to distinct `Circle` and `Square` implementations, emphasizing runtime
+Follow every arrow in order and name the state before and after each transition.
 
-resolution.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+Next, compare the choices involved in Encapsulation and Access Control and make the
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+decision criteria explicit.
 
-NARRATOR: Next, compare the choices involved in Encapsulation and Access Control and make
+Access modifiers control which declarations are visible.
 
-the decision criteria explicit.
+Consider this worked case: A `BankAccount` class exposes `deposit()` and `withdraw()`
 
-NARRATOR: Access modifiers control which declarations are visible.
+methods while keeping the `balance` field private to prevent unauthorized modification.
 
-NARRATOR: Consider this worked case: A `BankAccount` class exposes `deposit()` and
+Compare alternatives against the same constraints so the evaluation does not move
 
-`withdraw()` methods while keeping the `balance` field private to prevent
+the goalposts.
 
-unauthorized modification.
+Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: On screen, render a class interface with public methods highlighted and private
-
-fields shaded, showing how access control restricts direct state access.
-
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
-
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Apply Exceptions for Error Handling to a worked situation instead of treating it
+Apply Exceptions for Error Handling to a worked situation instead of treating it as an
 
-as an isolated definition.
+isolated definition.
 
-NARRATOR: Exceptions separate normal results from abrupt completion.
+Exceptions separate normal results from abrupt completion.
 
-NARRATOR: Consider this worked case: A `NetworkRequest` throws a
+Consider this worked case: A `NetworkRequest` throws a `ConnectionTimeoutException` when a
 
-`ConnectionTimeoutException` when a server fails to respond, allowing the caller to
+server fails to respond, allowing the caller to handle the failure gracefully.
 
-handle the failure gracefully.
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-NARRATOR: On screen, map a control flow diagram showing a normal execution path
+step.
 
-branching into an exception handler block when a timeout occurs.
+The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
-
-at each step.
-
-NARRATOR: The worked case shows both how to apply the method and how to check it.
-
-NARRATOR: Examine the tradeoffs in Generics for Type-Safe Abstractions, including what
+Examine the tradeoffs in Generics for Type-Safe Abstractions, including what
 
 improves and what becomes more difficult.
 
-NARRATOR: Generic types express reusable abstractions while preserving compile-time
+Generic types express reusable abstractions while preserving compile-time type
 
-type constraints.
+constraints.
 
-NARRATOR: Consider this worked case: A `Queue` class ensures that only elements of type `T`
+Consider this worked case: A `Queue` class ensures that only elements of type `T` are
 
-are added or removed, eliminating the need for runtime casting.
+added or removed, eliminating the need for runtime casting.
 
-NARRATOR: On screen, show a generic collection diagram with type parameters `T` and `U`,
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-highlighting how compile-time checks enforce type safety.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+Stress-test the reasoning around Event-Driven Programming Principles with an edge case and
 
-acceptable.
+identify which assumption controls the outcome.
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+This course covers advanced concepts such as event-driven programming, design patterns,
 
-NARRATOR: Stress-test the reasoning around Event-Driven Programming Principles with an
+distributed and concurrent programming, and the use, design and implementation of
 
-edge case and identify which assumption controls the outcome.
+applications.
 
-NARRATOR: This course covers advanced concepts such as event-driven programming, design
+Consider this worked case: A `UIController` registers a `Button` instance to emit `click`
 
-patterns, distributed and concurrent programming, and the use, design and
+events, triggering a `EventHandler` without direct method calls.
 
-implementation of applications.
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-NARRATOR: Consider this worked case: A `UIController` registers a `Button` instance
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-to emit `click` events, triggering a `EventHandler` without direct method calls.
+Use Design Patterns for Structural Integrity to diagnose a failure by separating symptoms,
 
-NARRATOR: On screen, draw a publisher-subscriber diagram showing an event
+causes, and corrective action.
 
-source broadcasting to multiple independent listeners via a message bus.
+Python objects have identity, a type, and a value.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+Consider this worked case: The `Strategy` pattern allows a `PaymentProcessor` to swap
 
-holds.
+`CreditCard` and `Crypto` algorithms at runtime without modifying the core class.
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-core idea.
+smallest plausible cause.
 
-NARRATOR: Use Design Patterns for Structural Integrity to diagnose a failure by separating
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-symptoms, causes, and corrective action.
+Connect Concurrent and Distributed Programming Foundations to the earlier ideas and explain
 
-NARRATOR: Python objects have identity, a type, and a value.
+how the pieces work as one system.
 
-NARRATOR: Consider this worked case: The `Strategy` pattern allows a `PaymentProcessor`
+Attribute lookup follows defined rules across an instance and its class hierarchy.
 
-to swap `CreditCard` and `Crypto` algorithms at runtime without modifying the core class.
+Consider this worked case: A `TaskScheduler` uses thread pools to process independent jobs
 
-NARRATOR: On screen, present a before-and-after class diagram showing how a
+concurrently, ensuring that shared resources are accessed via synchronized locks or
 
-rigid hierarchy is replaced by a flexible strategy interface and implementations.
+immutable data structures.
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+Explain each connection explicitly and verify that information retains the same meaning
 
-behavior, then test the smallest plausible cause.
+across representations.
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+The synthesis matters only if every connection remains supported by the original evidence.
 
-and the test.
+Finish with Practical Analysis Checklist for Implementation as a practical checklist that
 
-NARRATOR: Connect Concurrent and Distributed Programming Foundations to the earlier ideas
+can guide a new analysis.
 
-and explain how the pieces work as one system.
-
-NARRATOR: Attribute lookup follows defined rules across an instance and its class
-
-hierarchy.
-
-NARRATOR: Consider this worked case: A `TaskScheduler` uses thread pools to process
-
-independent jobs concurrently, ensuring that shared resources are accessed via synchronized
-
-locks or immutable data structures.
-
-NARRATOR: On screen, render a concurrent execution model with multiple threads
-
-accessing a shared resource, highlighting synchronization mechanisms like mutexes or
-
-atomic variables.
-
-NARRATOR: Explain each connection explicitly and verify that information retains the same
-
-meaning across representations.
-
-NARRATOR: The synthesis matters only if every connection remains supported by the original
-
-evidence.
-
-NARRATOR: Finish with Practical Analysis Checklist for Implementation as a practical
-
-checklist that can guide a new analysis.
-
-NARRATOR: Object-oriented design should make responsibilities, invariants, dependencies,
+Object-oriented design should make responsibilities, invariants, dependencies,
 
 composition, and substitution behavior explicit.
 
-NARRATOR: Consider this worked case: Before deploying a `DataProcessor`, developers check
+Consider this worked case: Before deploying a `DataProcessor`, developers check that each
 
-that each class has a single responsibility, validates that internal state cannot be
+class has a single responsibility, validates that internal state cannot be corrupted, and
 
-corrupted, and confirms that subclasses can replace base classes without breaking
+confirms that subclasses can replace base classes without breaking contracts.
 
-contracts.
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-NARRATOR: On screen, display a checklist graphic with checkboxes for 'Single
+verification step.
 
-Responsibility', 'Invariant Validation', 'Dependency Minimization', and 'Substitution
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-Compliance', ready for instructor review.
-
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

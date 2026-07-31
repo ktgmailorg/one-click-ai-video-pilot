@@ -1,575 +1,436 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:07.813
-NARRATOR: Begin by framing Foundations of Big
-Data Exploration as a question about inputs,
+00:00:00.050 --> 00:00:07.563
+Begin by framing Foundations of Big Data
+Exploration as a question about inputs,
 
 2
-00:00:07.813 --> 00:00:10.031
+00:00:07.563 --> 00:00:09.875
 decisions, and observable results.
 
 3
-00:00:10.031 --> 00:00:15.476
-NARRATOR: This course provides a broad
-introduction to the exploration and management
+00:00:09.875 --> 00:00:16.153
+This course provides a broad introduction to
+the exploration and management of large
 
 4
-00:00:15.476 --> 00:00:20.468
-of large datasets being generated and used in
-the modern world.
+00:00:16.153 --> 00:00:20.500
+datasets being generated and used in the
+modern world.
 
 5
-00:00:20.468 --> 00:00:27.188
-NARRATOR: Consider this worked case: Urban
-crime datasets require systematic exploration
+00:00:20.500 --> 00:00:27.900
+Consider this worked case: Urban crime
+datasets require systematic exploration to
 
 6
-00:00:27.188 --> 00:00:32.687
-to identify patterns in location, frequency,
-and temporal trends.
+00:00:27.900 --> 00:00:33.281
+identify patterns in location, frequency, and
+temporal trends.
 
 7
-00:00:32.687 --> 00:00:39.905
-NARRATOR: On screen, display a map overlay
-showing urban crime hotspots with a legend
+00:00:33.281 --> 00:00:40.442
+List the givens before choosing a method,
+because an unstated assumption can change the
 
 8
-00:00:39.905 --> 00:00:42.999
-explaining data density and temporal filters.
+00:00:40.442 --> 00:00:40.953
+conclusion.
 
 9
-00:00:42.999 --> 00:00:49.081
-NARRATOR: List the givens before choosing a
-method, because an unstated assumption can
+00:00:40.953 --> 00:00:46.828
+This establishes the vocabulary and scope
+needed for the remaining sections.
 
 10
-00:00:49.081 --> 00:00:50.484
-change the conclusion.
+00:00:46.946 --> 00:00:53.400
+Now define Data Preparation and Workflow
+Structure precisely enough that another
 
 11
-00:00:50.484 --> 00:00:56.124
-NARRATOR: This establishes the vocabulary and
-scope needed for the remaining sections.
+00:00:53.400 --> 00:00:56.333
+learner could test the definition.
 
 12
-00:00:56.234 --> 00:01:02.025
-NARRATOR: Now define Data Preparation and
-Workflow Structure precisely enough that
+00:00:56.333 --> 00:01:03.440
+Data-analysis workflows separate data
+preparation, exploratory analysis, training,
 
 13
-00:01:02.025 --> 00:01:05.184
-another learner could test the definition.
+00:01:03.440 --> 00:01:08.771
+validation, testing, model selection, and
+evaluation.
 
 14
-00:01:05.184 --> 00:01:11.817
-NARRATOR: Data-analysis workflows separate
-data preparation, exploratory analysis,
+00:01:08.771 --> 00:01:16.656
+Consider this worked case: Cleaning census
+data involves handling missing values and
 
 15
-00:01:11.817 --> 00:01:17.621
-training, validation, testing, model
-selection, and evaluation.
-
-16
-00:01:17.621 --> 00:01:25.162
-NARRATOR: Consider this worked case: Cleaning
-census data involves handling missing values
-
-17
-00:01:25.162 --> 00:01:28.933
-and standardizing categorical variables before
+00:01:16.656 --> 00:01:19.942
+standardizing categorical variables before
 analysis.
 
-18
-00:01:28.934 --> 00:01:36.943
-NARRATOR: On screen, show a linear workflow
-diagram with nodes for preparation,
+16
+00:01:19.942 --> 00:01:26.806
+Separate the formal definition from an
+implementation detail, then identify what
 
-19
-00:01:36.943 --> 00:01:42.949
-exploration, training, validation, and
-evaluation, connected by directional arrows.
-
-20
-00:01:42.949 --> 00:01:49.512
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
-
-21
-00:01:49.512 --> 00:01:51.699
+17
+00:01:26.806 --> 00:01:29.302
 evidence would distinguish them.
 
-22
-00:01:51.699 --> 00:01:57.996
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
+18
+00:01:29.302 --> 00:01:35.567
+A precise definition makes later examples
+easier to evaluate and revise.
 
-23
-00:01:57.996 --> 00:02:05.178
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+19
+00:01:35.567 --> 00:01:42.767
+Name each dependency explicitly, and keep
+labels and representations consistent
 
-24
-00:02:05.178 --> 00:02:07.137
+20
+00:01:42.767 --> 00:01:44.927
 throughout the analysis.
 
-25
-00:02:07.250 --> 00:02:13.073
-NARRATOR: With the foundation in place,
-examine how Supervised and Unsupervised
+21
+00:01:45.050 --> 00:01:51.764
+With the foundation in place, examine how
+Supervised and Unsupervised Learning Methods
 
-26
-00:02:13.073 --> 00:02:16.778
-Learning Methods operates in a concrete
-sequence.
+22
+00:01:51.764 --> 00:01:54.562
+operates in a concrete sequence.
 
-27
-00:02:16.778 --> 00:02:24.340
-NARRATOR: Supervised methods learn mappings
-from examples paired with target labels, while
+23
+00:01:54.562 --> 00:02:01.740
+Supervised methods learn mappings from
+examples paired with target labels, while
 
-28
-00:02:24.340 --> 00:02:28.121
+24
+00:02:01.740 --> 00:02:05.656
 unsupervised methods identify structure
 without targets.
 
+25
+00:02:05.656 --> 00:02:13.000
+Consider this worked case: Predicting drug
+response requires supervised learning with
+
+26
+00:02:13.000 --> 00:02:19.675
+patient outcomes as labels, whereas clustering
+patient demographics uses unsupervised
+
+27
+00:02:19.675 --> 00:02:20.343
+methods.
+
+28
+00:02:20.343 --> 00:02:27.515
+Follow every arrow in order and name the state
+before and after each transition.
+
 29
-00:02:28.121 --> 00:02:34.657
-NARRATOR: Consider this worked case:
-Predicting drug response requires supervised
+00:02:27.515 --> 00:02:33.062
+The trace converts an abstract statement into
+an inspectable sequence.
 
 30
-00:02:34.657 --> 00:02:41.846
-learning with patient outcomes as labels,
-whereas clustering patient demographics uses
+00:02:33.170 --> 00:02:39.608
+Next, compare the choices involved in
+Preprocessing and Data Leakage Prevention and
 
 31
-00:02:41.846 --> 00:02:43.153
-unsupervised methods.
+00:02:39.608 --> 00:02:42.291
+make the decision criteria explicit.
 
 32
-00:02:43.153 --> 00:02:50.859
-NARRATOR: On screen, split a diagram into two
-columns: left shows labeled examples mapping
+00:02:42.291 --> 00:02:49.120
+Preprocessing must be fitted only on permitted
+training data to avoid leakage.
 
 33
-00:02:50.859 --> 00:02:55.262
-to outcomes, right shows unlabeled data
-forming clusters.
+00:02:49.120 --> 00:02:56.776
+Consider this worked case: Scaling features
+using only the training set mean and standard
 
 34
-00:02:55.262 --> 00:03:02.403
-NARRATOR: Follow every arrow in order and name
-the state before and after each transition.
+00:02:56.776 --> 00:03:01.698
+deviation prevents test set information from
+influencing model parameters.
 
 35
-00:03:02.403 --> 00:03:07.996
-NARRATOR: The trace converts an abstract
-statement into an inspectable sequence.
+00:03:01.698 --> 00:03:08.796
+Compare alternatives against the same
+constraints so the evaluation does not move
 
 36
-00:03:08.114 --> 00:03:14.226
-NARRATOR: Next, compare the choices involved
-in Preprocessing and Data Leakage Prevention
+00:03:08.796 --> 00:03:09.979
+the goalposts.
 
 37
-00:03:14.226 --> 00:03:17.282
-and make the decision criteria explicit.
+00:03:09.979 --> 00:03:16.869
+Using shared criteria turns a preference into
+a defensible technical choice.
 
 38
-00:03:17.282 --> 00:03:23.782
-NARRATOR: Preprocessing must be fitted only on
-permitted training data to avoid leakage.
+00:03:16.994 --> 00:03:24.722
+Apply Pipelines and Consistent Transformations
+to a worked situation instead of treating it
 
 39
-00:03:23.782 --> 00:03:31.201
-NARRATOR: Consider this worked case: Scaling
-features using only the training set mean and
+00:03:24.722 --> 00:03:27.100
+as an isolated definition.
 
 40
-00:03:31.201 --> 00:03:36.501
-standard deviation prevents test set
-information from influencing model parameters.
+00:03:27.100 --> 00:03:34.762
+Pipelines combine transformations and
+estimators so the same operations are applied
 
 41
-00:03:36.501 --> 00:03:44.052
-NARRATOR: On screen, illustrate a pipeline
-where a scaler transforms training data, then
+00:03:34.762 --> 00:03:35.459
+consistently.
 
 42
-00:03:44.052 --> 00:03:49.860
-applies the same transformation to validation
-data without recalculating parameters.
+00:03:35.459 --> 00:03:42.823
+Consider this worked case: A machine learning
+pipeline applies standardization, imputation,
 
 43
-00:03:49.860 --> 00:03:56.635
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
+00:03:42.823 --> 00:03:48.178
+and feature selection sequentially to ensure
+reproducible results.
 
 44
-00:03:56.635 --> 00:03:58.329
-move the goalposts.
+00:03:48.178 --> 00:03:55.502
+Work from the concrete inputs to the result,
+checking units, types, or invariants at each
 
 45
-00:03:58.329 --> 00:04:05.345
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
+00:03:55.502 --> 00:03:55.990
+step.
 
 46
-00:04:05.450 --> 00:04:11.645
-NARRATOR: Apply Pipelines and Consistent
-Transformations to a worked situation instead
+00:03:55.990 --> 00:04:01.131
+The worked case shows both how to apply the
+method and how to check it.
 
 47
-00:04:11.645 --> 00:04:15.587
-of treating it as an isolated definition.
+00:04:01.250 --> 00:04:08.361
+Examine the tradeoffs in Cross-Validation and
+Model Evaluation, including what improves and
 
 48
-00:04:15.587 --> 00:04:22.779
-NARRATOR: Pipelines combine transformations
-and estimators so the same operations are
+00:04:08.361 --> 00:04:10.731
+what becomes more difficult.
 
 49
-00:04:22.779 --> 00:04:24.087
-applied consistently.
+00:04:10.731 --> 00:04:17.231
+Cross-validation repeats training and
+validation across defined splits.
 
 50
-00:04:24.087 --> 00:04:31.142
-NARRATOR: Consider this worked case: A machine
-learning pipeline applies standardization,
-
-51
-00:04:31.142 --> 00:04:36.915
-imputation, and feature selection sequentially
-to ensure reproducible results.
-
-52
-00:04:36.915 --> 00:04:43.576
-NARRATOR: On screen, render a horizontal
-pipeline graphic with icons for each step,
-
-53
-00:04:43.576 --> 00:04:49.212
-showing data flowing through and emerging as a
-final model output.
-
-54
-00:04:49.212 --> 00:04:55.993
-NARRATOR: Work from the concrete inputs to the
-result, checking units, types, or invariants
-
-55
-00:04:55.993 --> 00:04:57.446
-at each step.
-
-56
-00:04:57.446 --> 00:05:02.728
-NARRATOR: The worked case shows both how to
-apply the method and how to check it.
-
-57
-00:05:02.834 --> 00:05:07.861
-NARRATOR: Examine the tradeoffs in
-Cross-Validation and Model Evaluation,
-
-58
-00:05:07.861 --> 00:05:12.330
-including what improves and what becomes more
-difficult.
-
-59
-00:05:12.330 --> 00:05:19.190
-NARRATOR: Cross-validation repeats training
-and validation across defined splits.
-
-60
-00:05:19.190 --> 00:05:25.752
-NARRATOR: Consider this worked case: K-fold
+00:04:17.231 --> 00:04:23.354
+Consider this worked case: K-fold
 cross-validation evaluates a classification
 
-61
-00:05:25.752 --> 00:05:33.627
+51
+00:04:23.354 --> 00:04:31.519
 model for social networking fraud detection by
 rotating validation sets across training
 
-62
-00:05:33.627 --> 00:05:34.283
+52
+00:04:31.519 --> 00:04:32.199
 folds.
 
+53
+00:04:32.200 --> 00:04:39.215
+State the benefit, the cost, and the condition
+under which the tradeoff is acceptable.
+
+54
+00:04:39.215 --> 00:04:46.559
+Making the tradeoff visible prevents a local
+improvement from hiding a larger cost.
+
+55
+00:04:46.682 --> 00:04:53.421
+Stress-test the reasoning around Traditional
+Database Systems and Query Languages with an
+
+56
+00:04:53.421 --> 00:04:58.475
+edge case and identify which assumption
+controls the outcome.
+
+57
+00:04:58.475 --> 00:05:07.346
+Data systems organize records with declared
+types, tables, rows, columns, keys, and
+
+58
+00:05:07.346 --> 00:05:08.085
+constraints.
+
+59
+00:05:08.085 --> 00:05:15.833
+Consider this worked case: A hospital database
+stores patient records in tables with defined
+
+60
+00:05:15.833 --> 00:05:22.475
+data types, primary keys, and foreign key
+constraints to maintain referential integrity.
+
+61
+00:05:22.475 --> 00:05:29.163
+Change one assumption at a time and observe
+which part of the reasoning no longer holds.
+
+62
+00:05:29.163 --> 00:05:36.413
+The edge case reveals the boundary of the
+claim without discarding the useful core idea.
+
 63
-00:05:34.284 --> 00:05:41.052
-NARRATOR: On screen, draw a circular diagram
-with five segments labeled as folds,
+00:05:36.530 --> 00:05:45.154
+Use Query Operations and Indexing to diagnose
+a failure by separating symptoms, causes, and
 
 64
-00:05:41.052 --> 00:05:48.341
-highlighting one fold as validation while
-others are training, with a metric box showing
+00:05:45.154 --> 00:05:46.386
+corrective action.
 
 65
-00:05:48.341 --> 00:05:48.862
-accuracy.
+00:05:46.386 --> 00:05:52.792
+Queries select, join, aggregate, order, and
+transform data.
 
 66
-00:05:48.862 --> 00:05:55.453
-NARRATOR: State the benefit, the cost, and the
-condition under which the tradeoff is
+00:05:52.792 --> 00:05:58.730
+Consider this worked case: A query joins
+patient records with medication logs,
 
 67
-00:05:55.453 --> 00:05:55.924
-acceptable.
-
-68
-00:05:55.924 --> 00:06:03.221
-NARRATOR: Making the tradeoff visible prevents
-a local improvement from hiding a larger cost.
-
-69
-00:06:03.338 --> 00:06:08.805
-NARRATOR: Stress-test the reasoning around
-Traditional Database Systems and Query
-
-70
-00:06:08.805 --> 00:06:15.366
-Languages with an edge case and identify which
-assumption controls the outcome.
-
-71
-00:06:15.366 --> 00:06:23.736
-NARRATOR: Data systems organize records with
-declared types, tables, rows, columns, keys,
-
-72
-00:06:23.736 --> 00:06:25.131
-and constraints.
-
-73
-00:06:25.131 --> 00:06:31.596
-NARRATOR: Consider this worked case: A
-hospital database stores patient records in
-
-74
-00:06:31.596 --> 00:06:38.600
-tables with defined data types, primary keys,
-and foreign key constraints to maintain
-
-75
-00:06:38.600 --> 00:06:39.678
-referential integrity.
-
-76
-00:06:39.678 --> 00:06:46.710
-NARRATOR: On screen, show a relational schema
-diagram with tables, columns, data types,
-
-77
-00:06:46.710 --> 00:06:51.037
-primary keys, and foreign key relationships
-between them.
-
-78
-00:06:51.037 --> 00:06:57.155
-NARRATOR: Change one assumption at a time and
-observe which part of the reasoning no longer
-
-79
-00:06:57.155 --> 00:06:57.537
-holds.
-
-80
-00:06:57.537 --> 00:07:03.744
-NARRATOR: The edge case reveals the boundary
-of the claim without discarding the useful
-
-81
-00:07:03.744 --> 00:07:04.631
-core idea.
-
-82
-00:07:04.754 --> 00:07:12.302
-NARRATOR: Use Query Operations and Indexing to
-diagnose a failure by separating symptoms,
-
-83
-00:07:12.302 --> 00:07:14.625
-causes, and corrective action.
-
-84
-00:07:14.625 --> 00:07:21.110
-NARRATOR: Queries select, join, aggregate,
-order, and transform data.
-
-85
-00:07:21.110 --> 00:07:27.453
-NARRATOR: Consider this worked case: A query
-joins patient records with medication logs,
-
-86
-00:07:27.453 --> 00:07:34.771
+00:05:58.730 --> 00:06:06.152
 aggregates daily prescriptions, orders by
 date, and uses an index on the date column to
 
-87
-00:07:34.771 --> 00:07:36.235
+68
+00:06:06.152 --> 00:06:07.636
 speed up retrieval.
 
-88
-00:07:36.235 --> 00:07:43.907
-NARRATOR: On screen, display a SQL query
-structure with highlighted SELECT, JOIN, GROUP
+69
+00:06:07.636 --> 00:06:15.678
+Locate the first point where observed behavior
+diverges from expected behavior, then test the
 
-89
-00:07:43.907 --> 00:07:51.578
-BY, ORDER BY clauses, alongside an index tree
-diagram showing optimized data access.
+70
+00:06:15.678 --> 00:06:17.401
+smallest plausible cause.
 
-90
-00:07:51.578 --> 00:07:57.241
-NARRATOR: Locate the first point where
-observed behavior diverges from expected
+71
+00:06:17.401 --> 00:06:25.011
+The diagnosis is strongest when another person
+can reproduce the observation and the test.
 
-91
-00:07:57.241 --> 00:08:00.844
-behavior, then test the smallest plausible
-cause.
+72
+00:06:25.130 --> 00:06:32.035
+Connect Data Quality and Integrity Management
+to the earlier ideas and explain how the
 
-92
-00:08:00.844 --> 00:08:06.994
-NARRATOR: The diagnosis is strongest when
-another person can reproduce the observation
+73
+00:06:32.035 --> 00:06:34.501
+pieces work as one system.
 
-93
-00:08:06.994 --> 00:08:08.532
-and the test.
+74
+00:06:34.501 --> 00:06:41.410
+Data quality analysis makes missingness,
+duplicates, inconsistent representation,
 
-94
-00:08:08.642 --> 00:08:14.642
-NARRATOR: Connect Data Quality and Integrity
-Management to the earlier ideas and explain
+75
+00:06:41.410 --> 00:06:47.455
+integrity constraints, sampling, and update
+behavior explicit.
 
-95
-00:08:14.642 --> 00:08:17.873
-how the pieces work as one system.
+76
+00:06:47.455 --> 00:06:55.428
+Consider this worked case: A census dataset
+requires explicit handling of duplicate
 
-96
-00:08:17.873 --> 00:08:24.357
-NARRATOR: Data quality analysis makes
-missingness, duplicates, inconsistent
+77
+00:06:55.428 --> 00:07:02.072
+household records, inconsistent address
+formats, and missing population counts before
 
-97
-00:08:24.357 --> 00:08:30.842
-representation, integrity constraints,
-sampling, and update behavior explicit.
+78
+00:07:02.072 --> 00:07:02.736
+analysis.
 
-98
-00:08:30.842 --> 00:08:38.342
-NARRATOR: Consider this worked case: A census
-dataset requires explicit handling of
+79
+00:07:02.736 --> 00:07:12.419
+Explain each connection explicitly and verify
+that information retains the same meaning
 
-99
-00:08:38.342 --> 00:08:44.591
-duplicate household records, inconsistent
-address formats, and missing population counts
+80
+00:07:12.419 --> 00:07:14.033
+across representations.
 
-100
-00:08:44.591 --> 00:08:45.841
-before analysis.
+81
+00:07:14.033 --> 00:07:21.361
+The synthesis matters only if every connection
+remains supported by the original evidence.
 
-101
-00:08:45.841 --> 00:08:53.059
-NARRATOR: On screen, present a checklist
-graphic listing missingness, duplicates,
+82
+00:07:21.482 --> 00:07:28.595
+Finish with Practical Analysis Checklist as a
+practical checklist that can guide a new
 
-102
-00:08:53.059 --> 00:08:59.554
-inconsistent representation, integrity
-constraints, sampling, and update behavior as
+83
+00:07:28.595 --> 00:07:29.103
+analysis.
 
-103
-00:08:59.554 --> 00:09:00.998
-quality metrics.
+84
+00:07:29.103 --> 00:07:36.691
+Analytical work should preserve provenance
+from captured data through cleaning,
 
-104
-00:09:00.998 --> 00:09:09.748
-NARRATOR: Explain each connection explicitly
-and verify that information retains the same
-
-105
-00:09:09.748 --> 00:09:11.935
-meaning across representations.
-
-106
-00:09:11.935 --> 00:09:18.566
-NARRATOR: The synthesis matters only if every
-connection remains supported by the original
-
-107
-00:09:18.566 --> 00:09:19.076
-evidence.
-
-108
-00:09:19.202 --> 00:09:24.813
-NARRATOR: Finish with Practical Analysis
-Checklist as a practical checklist that can
-
-109
-00:09:24.813 --> 00:09:26.683
-guide a new analysis.
-
-110
-00:09:26.683 --> 00:09:33.824
-NARRATOR: Analytical work should preserve
-provenance from captured data through
-
-111
-00:09:33.824 --> 00:09:38.823
-cleaning, transformation, grouping, modeling,
+85
+00:07:36.691 --> 00:07:41.244
+transformation, grouping, modeling,
 visualization, and reporting.
 
-112
-00:09:38.823 --> 00:09:47.073
-NARRATOR: Consider this worked case: A space
-exploration project maintains a traceable log
+86
+00:07:41.244 --> 00:07:50.589
+Consider this worked case: A space exploration
+project maintains a traceable log from raw
 
-113
-00:09:47.073 --> 00:09:52.785
-from raw satellite telemetry through cleaning,
+87
+00:07:50.589 --> 00:07:55.261
+satellite telemetry through cleaning,
 transformation, grouping, modeling,
 
-114
-00:09:52.785 --> 00:09:55.323
+88
+00:07:55.261 --> 00:07:57.931
 visualization, and final reporting.
 
-115
-00:09:55.323 --> 00:10:03.227
-NARRATOR: On screen, show a circular
-provenance loop with arrows connecting each
+89
+00:07:57.931 --> 00:08:06.016
+For each checklist item, record the evidence,
+the remaining uncertainty, and the next
 
-116
-00:10:03.227 --> 00:10:07.837
-stage: captured data, cleaning,
-transformation, grouping, modeling,
+90
+00:08:06.016 --> 00:08:07.260
+verification step.
 
-117
-00:10:07.837 --> 00:10:12.448
-visualization, reporting, and back to captured
-data.
+91
+00:08:07.260 --> 00:08:14.041
+The result is a repeatable procedure, not a
+conclusion that depends on memory or
 
-118
-00:10:12.448 --> 00:10:20.091
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
-
-119
-00:10:20.091 --> 00:10:21.855
-next verification step.
-
-120
-00:10:21.855 --> 00:10:27.631
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-121
-00:10:27.631 --> 00:10:28.964
-memory or intuition.
+92
+00:08:14.041 --> 00:08:14.525
+intuition.

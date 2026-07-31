@@ -1,237 +1,213 @@
-NARRATOR: Begin by framing Course Scope and Paradigm Introduction as a question about
+Begin by framing Course Scope and Paradigm Selection as a question about inputs,
 
-inputs, decisions, and observable results.
+decisions, and observable results.
 
-NARRATOR: The goal of this course is to introduce the students to a programming
+The goal of this course is to introduce the students to a programming paradigm and an
 
-paradigm and an appropriate programming language chosen from those that are currently
+appropriate programming language chosen from those that are currently important or that
 
-important or that show high promise of becoming important.
+show high promise of becoming important.
 
-NARRATOR: Consider this worked case: Students might explore object-oriented programming in
+Consider this worked case: Students might select a paradigm like object-oriented
 
-Python or functional concepts in Rust, depending on the instructor's selection.
+programming paired with Python for a semester-long project.
 
-NARRATOR: On screen, display a slide with the course title, paradigm/language options, and a
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-note that specifics are posted prior to registration.
+that the final result satisfies the stated condition.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+List the givens before choosing a method, because an unstated assumption can change the
 
-change the conclusion.
+conclusion.
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: Now define Language Reference Structure precisely enough that another
+Now define Prerequisites and Credit Policy precisely enough that another learner could
 
-learner could test the definition.
+test the definition.
 
-NARRATOR: The Python language reference specifies lexical analysis, data model
+With the approval of the program coordinator, the course can be taken for credit more than
 
-behavior, execution, expressions, statements, functions, classes, exceptions, and module
+once, provided each instance deals with a different paradigm and language.
 
-import semantics.
+Consider this worked case: A student who completed CSCI-344 could enroll in CSCI-541
 
-NARRATOR: Consider this worked case: The Python reference documents how names are bound
+for Python, then later enroll again for a different language like Java.
 
-to objects within namespaces and scopes, and how expressions produce values while
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-statements control execution.
+that the final result satisfies the stated condition.
 
-NARRATOR: On screen, show a diagram of a language reference document with callouts for
-
-'lexical analysis', 'data model', 'execution', and 'module import semantics'.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Object Identity and Namespaces
+With the foundation in place, examine how Foundations of Problem Statements operates in
 
-operates in a concrete sequence.
+a concrete sequence.
 
-NARRATOR: Names are bound to objects within namespaces and scopes.
+Programming begins with precise problem statements, input and output examples, and
 
-NARRATOR: Consider this worked case: A variable assignment like `x = 10` binds the
+algorithms written independently of syntax.
 
-name `x` to an integer object with a specific identity and value in the current scope.
+Consider this worked case: Before coding, a student writes a clear statement: 'Given a
 
-NARRATOR: On screen, illustrate two boxes labeled 'Namespace' and 'Scope', with arrows
+list of integers, return the sum of positive values.
 
-pointing to object boxes showing 'identity', 'type', and 'value' attributes.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+that the final result satisfies the stated condition.
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+Follow every arrow in order and name the state before and after each transition.
 
-NARRATOR: Next, compare the choices involved in Control Flow and Exceptions and make the
+The trace converts an abstract statement into an inspectable sequence.
 
-decision criteria explicit.
+Next, compare the choices involved in Core Computational Concepts and make the decision
 
-NARRATOR: Exceptions interrupt normal control flow until a matching handler processes them
+criteria explicit.
 
-or they propagate.
+Variables represent values and state, expressions compute values, and control
 
-NARRATOR: Consider this worked case: A `try-except` block catches a `ValueError`
+structures select or repeat operations.
 
-during input parsing, preventing the program from crashing and allowing recovery.
+Consider this worked case: Using a variable `count` to track iterations in a loop that
 
-NARRATOR: On screen, draw a flowchart showing normal execution path, an exception trigger, a
+repeats a calculation ten times.
 
-handler block, and a propagation path if no match exists.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+that the final result satisfies the stated condition.
 
-move the goalposts.
+Compare alternatives against the same constraints so the evaluation does not move
 
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+the goalposts.
 
-NARRATOR: Apply Import System Mechanics to a worked situation instead of treating it as an
+Using shared criteria turns a preference into a defensible technical choice.
+
+Apply Decomposition via Functions to a worked situation instead of treating it as an
 
 isolated definition.
 
-NARRATOR: The import system searches for modules and binds loaded modules into a
+Functions decompose a solution into named operations with parameters and results.
 
-namespace.
+Consider this worked case: Defining a function `calculate_average(numbers)` that takes a list
 
-NARRATOR: Consider this worked case: Running `import math` loads the math module and binds
+and returns a float.
 
-its functions into the current namespace for direct access.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: On screen, show a file system tree with a 'modules' folder, an arrow pointing to
+that the final result satisfies the stated condition.
 
-a namespace box, and a label indicating 'search path' and 'binding'.
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+step.
 
-at each step.
+The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+Examine the tradeoffs in Recursion and Base Cases, including what improves and what
 
-NARRATOR: Examine the tradeoffs in Compiler Phases and Separation of Concerns, including
+becomes more difficult.
 
-what improves and what becomes more difficult.
+Recursion solves a problem through smaller instances and requires a base case.
 
-NARRATOR: Compiler work separates parsing and semantic analysis from lowering, verification,
+Consider this worked case: A factorial function that calls itself with `n-1` until
 
-optimization, and target-specific code generation.
+`n` equals 0.
 
-NARRATOR: Consider this worked case: Source code is first parsed into an abstract syntax
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-tree, then semantically analyzed, lowered to intermediate representation, verified,
+that the final result satisfies the stated condition.
 
-optimized, and finally compiled to machine code.
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-NARRATOR: On screen, create a horizontal pipeline diagram with five stages: 'Parsing',
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-'Semantic Analysis', 'Lowering', 'Verification/Optimization', 'Code
+Name each dependency explicitly, and keep labels and representations consistent
 
-Generation', with arrows connecting them.
+throughout the analysis.
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+Stress-test the reasoning around Data Structures Overview with an edge case and
 
-acceptable.
+identify which assumption controls the outcome.
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in
 
-NARRATOR: Stress-test the reasoning around Intermediate Representation Basics with an
+first-out access, trees represent hierarchy, and graphs represent connected entities.
 
-edge case and identify which assumption controls the outcome.
+Consider this worked case: Using a stack to manage undo operations in a text editor.
 
-NARRATOR: LLVM IR is a typed, SSA-based intermediate representation with explicit
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-instructions, basic blocks, functions, memory operations, and control flow.
+that the final result satisfies the stated condition.
 
-NARRATOR: Consider this worked case: An IR function contains basic blocks where each
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-block ends with a terminator instruction, ensuring explicit control flow paths.
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-NARRATOR: On screen, render a simplified IR snippet showing a function with two basic
+Use Python Language Mechanics to diagnose a failure by separating symptoms, causes, and
 
-blocks, a terminator instruction at the end of each, and a phi instruction at the start of a
+corrective action.
 
-merge block.
+Names are bound to objects within namespaces and scopes.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+Consider this worked case: Assigning `x = 5` binds the name `x` to an integer object with
 
-holds.
+identity `id(x)`.
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-core idea.
+that the final result satisfies the stated condition.
 
-NARRATOR: Use Phi Instructions and Control Flow to diagnose a failure by separating
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-symptoms, causes, and corrective action.
+smallest plausible cause.
 
-NARRATOR: Phi instructions select values according to the predecessor control-flow
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-edge.
+Connect Control Flow and Exceptions to the earlier ideas and explain how the pieces work
 
-NARRATOR: Consider this worked case: A phi instruction at the start of a block merges
+as one system.
 
-different variable values depending on whether the loop condition was true or false.
+Exceptions interrupt normal control flow until a matching handler processes them or they
 
-NARRATOR: On screen, draw a diamond-shaped control flow graph with two incoming edges
+propagate.
 
-labeled 'True' and 'False', and a phi instruction at the merge point selecting
+Consider this worked case: A `try/except` block catching a `ZeroDivisionError` when
 
-values based on the edge.
+dividing by zero.
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-behavior, then test the smallest plausible cause.
+that the final result satisfies the stated condition.
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+Explain each connection explicitly and verify that information retains the same meaning
 
-and the test.
+across representations.
 
-NARRATOR: Connect Memory Operations and Verification to the earlier ideas and explain
+The synthesis matters only if every connection remains supported by the original evidence.
 
-how the pieces work as one system.
+Finish with Analysis and Debugging Checklist as a practical checklist that can guide a new
 
-NARRATOR: Load and store instructions make memory access explicit.
+analysis.
 
-NARRATOR: Consider this worked case: A store instruction writes a value to a specific
+Correctness arguments, tests, tracing, and debugging compare intended behavior with
 
-memory address, and the verifier checks that the type matches the memory location before
+observable results, including boundary and error cases.
 
-execution.
+Consider this worked case: Writing unit tests that cover edge cases like empty lists or
 
-NARRATOR: On screen, show a memory map with labeled addresses, a 'store' instruction
+maximum integer values.
 
-pointing to an address, and a 'verifier' icon highlighting a type mismatch error.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+that the final result satisfies the stated condition.
 
-meaning across representations.
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-NARRATOR: The synthesis matters only if every connection remains supported by the original
+verification step.
 
-evidence.
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-NARRATOR: Finish with Debugging and Decomposition Strategies as a practical
-
-checklist that can guide a new analysis.
-
-NARRATOR: Debugging separates syntax, runtime, and logical failures, while decomposition and
-
-abstraction reduce the number of interacting concerns.
-
-NARRATOR: Consider this worked case: A developer uses a debugger to isolate a runtime
-
-error in a function, then refactors the code into smaller modules to simplify testing.
-
-NARRATOR: On screen, display a checklist graphic with three categories: 'Syntax',
-
-'Runtime', 'Logical', each with a checkbox and a brief description of what to look for.
-
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

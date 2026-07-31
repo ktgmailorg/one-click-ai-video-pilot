@@ -1,259 +1,185 @@
-NARRATOR: Begin by framing Robot Software Architecture Overview as a question about
+Begin by framing Robot Software Architecture Overview as a question about inputs,
 
-inputs, decisions, and observable results.
+decisions, and observable results.
 
-NARRATOR: Robot software separates sensing, state estimation, planning, control, and
+Robot software separates sensing, state estimation, planning, control, and actuation
 
-actuation while making message contracts and timing assumptions explicit.
+while making message contracts and timing assumptions explicit.
 
-NARRATOR: Consider this worked case: A navigation stack uses a perception node to
+Consider this worked case: A navigation stack uses a perception node to publish camera data,
 
-publish camera data, a localization node to estimate pose, a planner to generate
+a localization node to estimate pose, a planner to generate waypoints, a controller to
 
-waypoints, a controller to compute velocities, and an actuator driver to send commands to
+compute velocities, and an actuator driver to send commands to wheels.
 
-wheels.
+List the givens before choosing a method, because an unstated assumption can change the
 
-NARRATOR: On screen, display a layered block diagram showing five stacked modules (sensing,
+conclusion.
 
-state estimation, planning, control, actuation) with bidirectional arrows
+This establishes the vocabulary and scope needed for the remaining sections.
 
-indicating data flow and explicit timing labels on each interface.
+Now define ROS 2 Node Communication Model precisely enough that another learner could
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+test the definition.
 
-change the conclusion.
+ROS 2 organizes a robot application as nodes that communicate through typed interfaces.
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+Consider this worked case: A localization node subscribes to a topic publishing IMU data,
 
-NARRATOR: Now define ROS 2 Node Communication Model precisely enough that another learner
+while a planning service handles a request-response call to compute a path
 
-could test the definition.
+between two waypoints.
 
-NARRATOR: ROS 2 organizes a robot application as nodes that communicate through typed
-
-interfaces.
-
-NARRATOR: Consider this worked case: A localization node subscribes to a topic
-
-publishing IMU data, while a planning service handles a request-response call to compute a
-
-path between two waypoints.
-
-NARRATOR: On screen, show a network diagram with labeled nodes connected by color-coded
-
-lines representing topics (dashed), services (solid), and actions (dotted), with message
-
-type tags on each line.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Parameter Configuration and
+With the foundation in place, examine how Parameter Configuration and Behavior operates
 
-Behavior operates in a concrete sequence.
+in a concrete sequence.
 
-NARRATOR: Parameters configure node behavior.
+Parameters configure node behavior.
 
-NARRATOR: Consider this worked case: A controller node uses a parameter named
+Consider this worked case: A controller node uses a parameter named 'max_speed' to cap
 
-'max_speed' to cap wheel velocity, which can be updated via a ROS 2 parameter server during
+wheel velocity, which can be updated via a ROS 2 parameter server during simulation.
 
-simulation.
+Follow every arrow in order and name the state before and after each transition.
 
-NARRATOR: On screen, render a configuration panel with key-value pairs for robot
+The trace converts an abstract statement into an inspectable sequence.
 
-parameters, highlighting how changing a single value propagates to the corresponding node's
+Next, compare the choices involved in Coordinate Transforms and Reference Frames and
 
-behavior settings.
+make the decision criteria explicit.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+Coordinate transforms describe relationships among reference frames.
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+Consider this worked case: A camera's local image coordinates are transformed into the
 
-NARRATOR: Next, compare the choices involved in Coordinate Transforms and Reference Frames
+robot's base link frame using a rotation matrix and translation vector to align with
 
-and make the decision criteria explicit.
+the map.
 
-NARRATOR: Coordinate transforms describe relationships among reference frames.
+Compare alternatives against the same constraints so the evaluation does not move
 
-NARRATOR: Consider this worked case: A camera's local image coordinates are
+the goalposts.
 
-transformed into the robot's base link frame using a rotation matrix and translation vector
+Using shared criteria turns a preference into a defensible technical choice.
 
-to align with the map.
-
-NARRATOR: On screen, illustrate two overlapping coordinate grids (local and
-
-global) with labeled axes, showing a transformation arrow and matrix notation
-
-connecting them.
-
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
-
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Apply Sensor Timestamping and Frame Interpretation to a worked situation instead
+Apply Sensor Timestamping and Frame Interpretation to a worked situation instead
 
 of treating it as an isolated definition.
 
-NARRATOR: Sensors produce observations that must be timestamped and interpreted in the
+Sensors produce observations that must be timestamped and interpreted in the correct
 
-correct frame.
+frame.
 
-NARRATOR: Consider this worked case: LiDAR scans are tagged with a precise timestamp and
+Consider this worked case: LiDAR scans are tagged with a precise timestamp and attached
 
-attached to the robot's odometry frame, ensuring they align temporally with camera and
+to the robot's odometry frame, ensuring they align temporally with camera and IMU data.
 
-IMU data.
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-NARRATOR: On screen, display a timeline with synchronized sensor events, each marked with a
+step.
 
-timestamp and frame label, connected to a central synchronization node.
+The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+Examine the tradeoffs in Reactive Motion Control Principles, including what improves
 
-at each step.
+and what becomes more difficult.
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
-
-NARRATOR: Examine the tradeoffs in Reactive Motion Control Principles, including what
-
-improves and what becomes more difficult.
-
-NARRATOR: This course covers standard and novel techniques for mobile robot programming,
+This course covers standard and novel techniques for mobile robot programming,
 
 including software architectures, reactive motion control, map building, localization and
 
 path planning.
 
-NARRATOR: Consider this worked case: A velocity controller reduces forward speed when
+Consider this worked case: A velocity controller reduces forward speed when a
 
-a proximity sensor detects an obstacle within two meters, preventing collisions without full
+proximity sensor detects an obstacle within two meters, preventing collisions without full
 
 replanning.
 
-NARRATOR: On screen, show a side-view simulation of a robot approaching a wall, with
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-a reactive control loop highlighted, displaying input sensor data, computed
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-velocity, and output wheel commands.
+Stress-test the reasoning around Map Building and Localization with an edge case and
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+identify which assumption controls the outcome.
 
-acceptable.
+Other topics may include multiple robot systems, robot vision and non-traditional and
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+dynamic robots.
 
-NARRATOR: Stress-test the reasoning around Map Building and Localization with an edge case
+Consider this worked case: A SLAM algorithm fuses wheel odometry and camera images to
 
-and identify which assumption controls the outcome.
+update a grid map, then uses feature matching to locate the robot's current pose.
 
-NARRATOR: Other topics may include multiple robot systems, robot vision and
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-non-traditional and dynamic robots.
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-NARRATOR: Consider this worked case: A SLAM algorithm fuses wheel odometry and camera
+Use Path Planning in Dynamic Environments to diagnose a failure by separating symptoms,
 
-images to update a grid map, then uses feature matching to locate the robot's current pose.
+causes, and corrective action.
 
-NARRATOR: On screen, render a top-down map grid with a moving robot icon, showing how
+Students will implement various algorithms in simulation as well as on a real robot, and
 
-sensor observations incrementally fill in map cells and update the robot's position marker.
+investigate and report on current research in the area.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+Consider this worked case: A reactive planner recalculates a route when a moving pedestrian
 
-holds.
+enters the robot's path, inserting a detour that maintains safety margins and task
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+completion time.
 
-core idea.
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-NARRATOR: Use Path Planning in Dynamic Environments to diagnose a failure by
+smallest plausible cause.
 
-separating symptoms, causes, and corrective action.
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-NARRATOR: Students will implement various algorithms in simulation as well as on a real
+Connect Simulation and Physical Deployment to the earlier ideas and explain how the pieces
 
-robot, and investigate and report on current research in the area.
+work as one system.
 
-NARRATOR: Consider this worked case: A reactive planner recalculates a route when a
+Testing should consider latency, dropped messages, sensor noise, actuator limits,
 
-moving pedestrian enters the robot's path, inserting a detour that maintains safety
+safety boundaries, and the difference between simulation and physical operation.
 
-margins and task completion time.
+Consider this worked case: A navigation algorithm is first validated in a physics
 
-NARRATOR: On screen, display a navigation map with a planned path, a dynamic obstacle, and a
+engine simulation, then deployed on a wheeled robot to verify real-world performance and
 
-revised path, using color coding to distinguish static obstacles, dynamic hazards,
+adjust parameters accordingly.
 
-and planned trajectories.
+Explain each connection explicitly and verify that information retains the same meaning
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+across representations.
 
-behavior, then test the smallest plausible cause.
+The synthesis matters only if every connection remains supported by the original evidence.
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-and the test.
+analysis.
 
-NARRATOR: Connect Simulation and Physical Deployment to the earlier ideas and explain
+Results depend on sampling, illumination, noise, thresholds, coordinate frames, and
 
-how the pieces work as one system.
+evaluation metrics.
 
-NARRATOR: Testing should consider latency, dropped messages, sensor noise, actuator
+Consider this worked case: A developer checks that message latency stays below 50
 
-limits, safety boundaries, and the difference between simulation and physical operation.
+milliseconds, verifies sensor noise does not exceed calibration thresholds, and confirms
 
-NARRATOR: Consider this worked case: A navigation algorithm is first validated in a
+safety zones are enforced before field testing.
 
-physics engine simulation, then deployed on a wheeled robot to verify real-world performance
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-and adjust parameters accordingly.
+verification step.
 
-NARRATOR: On screen, show a split-screen comparison: left side shows a simulation
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-environment with debug overlays, right side shows a physical robot with sensor data feeds
-
-and control interfaces.
-
-NARRATOR: Explain each connection explicitly and verify that information retains the same
-
-meaning across representations.
-
-NARRATOR: The synthesis matters only if every connection remains supported by the original
-
-evidence.
-
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
-
-guide a new analysis.
-
-NARRATOR: Results depend on sampling, illumination, noise, thresholds, coordinate
-
-frames, and evaluation metrics.
-
-NARRATOR: Consider this worked case: A developer checks that message latency stays
-
-below 50 milliseconds, verifies sensor noise does not exceed calibration thresholds, and
-
-confirms safety zones are enforced before field testing.
-
-NARRATOR: On screen, present a checklist graphic with five categories (latency, message
-
-integrity, sensor noise, actuator limits, safety boundaries), each with a pass/fail
-
-indicator and a brief validation method.
-
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

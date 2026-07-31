@@ -1,32 +1,28 @@
-NARRATOR: Begin by framing Lesson Title: Foundations of Data Security and Privacy as a
+Begin by framing Lesson Title: Foundations of Data Security and Privacy as a question about
 
-question about inputs, decisions, and observable results.
+inputs, decisions, and observable results.
 
-NARRATOR: This course examines policies, methods and mechanisms for securing enterprise
+This course examines policies, methods and mechanisms for securing enterprise and
 
-and personal data and ensuring data privacy.
+personal data and ensuring data privacy.
 
-NARRATOR: Consider this worked case: A healthcare organization uses encryption and
+Consider this worked case: A healthcare organization uses encryption and access
 
-access controls to protect patient records, ensuring only authorized personnel can view
+controls to protect patient records, ensuring only authorized personnel can view sensitive
 
-sensitive information.
+information.
 
-NARRATOR: On screen, display a simple diagram showing a data flow from source to storage,
+List the givens before choosing a method, because an unstated assumption can change the
 
-with icons representing encryption, access control, and privacy policies at each stage.
+conclusion.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+This establishes the vocabulary and scope needed for the remaining sections.
 
-change the conclusion.
+Now define Lesson Title: Confidentiality and Data Protection precisely enough that another
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+learner could test the definition.
 
-NARRATOR: Now define Lesson Title: Confidentiality and Data Protection precisely
-
-enough that another learner could test the definition.
-
-NARRATOR: Topics include data integrity and confidentiality; access control models; secure
+Topics include data integrity and confidentiality; access control models; secure
 
 database architectures; secure transaction processing; information flow, aggregation, and
 
@@ -34,212 +30,150 @@ inference controls; auditing; securing data in contemporary (relational, XML and
 
 SQL) database systems; data privacy; and legal and ethical issues in data protection.
 
-NARRATOR: Consider this worked case: Using AES-256 encryption with properly managed keys
+Consider this worked case: Using AES-256 encryption with properly managed keys prevents
 
-prevents unauthorized decryption of sensitive financial transaction data.
+unauthorized decryption of sensitive financial transaction data.
 
-NARRATOR: On screen, show a before-and-after comparison of plaintext data versus encrypted
-
-data, highlighting the encryption algorithm and key storage location.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Lesson Title: Integrity and
+With the foundation in place, examine how Lesson Title: Integrity and Authenticity
 
-Authenticity operates in a concrete sequence.
+operates in a concrete sequence.
 
-NARRATOR: Message authentication and digital signatures address integrity and authenticity
+Message authentication and digital signatures address integrity and authenticity in
 
-in different ways.
+different ways.
 
-NARRATOR: Consider this worked case: A digital signature on a software update file confirms
+Consider this worked case: A digital signature on a software update file confirms it was
 
-it was created by the official vendor and has not been tampered with during transmission.
+created by the official vendor and has not been tampered with during transmission.
 
-NARRATOR: On screen, illustrate a document with a digital signature, showing how the
+Follow every arrow in order and name the state before and after each transition.
 
-signature verifies the document's origin and content integrity.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+Next, compare the choices involved in Lesson Title: Secure Software Development Framework
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+and make the decision criteria explicit.
 
-NARRATOR: Next, compare the choices involved in Lesson Title: Secure Software Development
+The Secure Software Development Framework groups practices into four practice groups.
 
-Framework and make the decision criteria explicit.
+Consider this worked case: A development team uses the 'Prepare the Organization' practice
 
-NARRATOR: The Secure Software Development Framework groups practices into four practice
+to establish security policies and training, ensuring all developers follow secure coding
 
-groups.
+standards.
 
-NARRATOR: Consider this worked case: A development team uses the 'Prepare the
+Compare alternatives against the same constraints so the evaluation does not move
 
-Organization' practice to establish security policies and training, ensuring all developers
+the goalposts.
 
-follow secure coding standards.
+Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: On screen, create a four-step flowchart labeled 'Prepare the Organization',
-
-'Protect the Software', 'Produce Well-Secured', and 'Respond to
-
-Vulnerabilities', with brief descriptions for each.
-
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
-
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Apply Lesson Title: Secure Database Architectures to a worked situation instead of
+Apply Lesson Title: Secure Database Architectures to a worked situation instead of
 
 treating it as an isolated definition.
 
-NARRATOR: Protect the Software prevents unauthorized access to code and development
+Protect the Software prevents unauthorized access to code and development artifacts.
 
-artifacts.
+Consider this worked case: A relational database uses role-based access control to
 
-NARRATOR: Consider this worked case: A relational database uses role-based access
+restrict employees to only view data relevant to their job functions, preventing
 
-control to restrict employees to only view data relevant to their job functions,
+unauthorized access.
 
-preventing unauthorized access.
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-NARRATOR: On screen, show a database schema diagram with user roles and access permissions
+step.
 
-mapped to different tables, illustrating how data is segmented and protected.
+The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+Examine the tradeoffs in Lesson Title: Secure Transaction Processing, including what
 
-at each step.
+improves and what becomes more difficult.
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+Analysis also considers side channels and migration requirements.
 
-NARRATOR: Examine the tradeoffs in Lesson Title: Secure Transaction Processing,
+Consider this worked case: A payment gateway uses TLS encryption to secure transaction data
 
-including what improves and what becomes more difficult.
+between a customer's browser and the merchant's server, preventing interception.
 
-NARRATOR: Analysis also considers side channels and migration requirements.
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-NARRATOR: Consider this worked case: A payment gateway uses TLS encryption to secure
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-transaction data between a customer's browser and the merchant's server, preventing
+Stress-test the reasoning around Lesson Title: Information Flow and Inference Controls with
 
-interception.
+an edge case and identify which assumption controls the outcome.
 
-NARRATOR: On screen, illustrate a secure transaction flow with a browser, server, and
+Modes of operation define how a primitive processes data larger than one block.
 
-encryption layer, showing how data is encrypted in transit.
-
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
-
-acceptable.
-
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
-
-NARRATOR: Stress-test the reasoning around Lesson Title: Information Flow and Inference
-
-Controls with an edge case and identify which assumption controls the outcome.
-
-NARRATOR: Modes of operation define how a primitive processes data larger than one
-
-block.
-
-NARRATOR: Consider this worked case: A company aggregates employee salary data into ranges
+Consider this worked case: A company aggregates employee salary data into ranges
 
 rather than individual values, preventing employees from inferring each other's exact
 
 compensation.
 
-NARRATOR: On screen, show a flowchart of data movement through an organization, with arrows
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-indicating where information flow controls and aggregation limits are applied.
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+Use Lesson Title: Auditing and Monitoring to diagnose a failure by separating symptoms,
 
-holds.
+causes, and corrective action.
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+Security reasoning identifies assets, trust boundaries, threats, controls, evidence,
 
-core idea.
+residual risk, and responsibilities.
 
-NARRATOR: Use Lesson Title: Auditing and Monitoring to diagnose a failure by separating
+Consider this worked case: A university tracks login attempts and data access requests,
 
-symptoms, causes, and corrective action.
+generating audit logs that help identify and prevent unauthorized access patterns.
 
-NARRATOR: Security reasoning identifies assets, trust boundaries, threats, controls,
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-evidence, residual risk, and responsibilities.
+smallest plausible cause.
 
-NARRATOR: Consider this worked case: A university tracks login attempts and data
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-access requests, generating audit logs that help identify and prevent unauthorized access
+Connect Lesson Title: Legal and Ethical Considerations to the earlier ideas and
 
-patterns.
+explain how the pieces work as one system.
 
-NARRATOR: On screen, display a sample audit log with timestamps, user IDs, accessed
+Security requirements should be tracked throughout development.
 
-resources, and action types, highlighting how it supports security monitoring.
+Consider this worked case: A healthcare provider complies with HIPAA regulations by
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+encrypting patient records and obtaining explicit consent before sharing data with
 
-behavior, then test the smallest plausible cause.
+third-party vendors.
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+Explain each connection explicitly and verify that information retains the same meaning
 
-and the test.
+across representations.
 
-NARRATOR: Connect Lesson Title: Legal and Ethical Considerations to the earlier ideas
+The synthesis matters only if every connection remains supported by the original evidence.
 
-and explain how the pieces work as one system.
+Finish with Lesson Title: Practical Analysis Checklist as a practical checklist that can
 
-NARRATOR: Security requirements should be tracked throughout development.
+guide a new analysis.
 
-NARRATOR: Consider this worked case: A healthcare provider complies with HIPAA
+Verification provides evidence that selected practices and controls were performed.
 
-regulations by encrypting patient records and obtaining explicit consent before sharing data
+Consider this worked case: An organization uses a checklist to audit its database
 
-with third-party vendors.
+architecture, confirming that encryption is applied, access controls are enforced, and
 
-NARRATOR: On screen, show a checklist of legal and ethical requirements for data protection,
+audit logs are maintained.
 
-including consent, encryption, and breach notification policies.
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+verification step.
 
-meaning across representations.
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-NARRATOR: The synthesis matters only if every connection remains supported by the original
-
-evidence.
-
-NARRATOR: Finish with Lesson Title: Practical Analysis Checklist as a practical checklist
-
-that can guide a new analysis.
-
-NARRATOR: Verification provides evidence that selected practices and controls were
-
-performed.
-
-NARRATOR: Consider this worked case: An organization uses a checklist to audit its
-
-database architecture, confirming that encryption is applied, access controls are
-
-enforced, and audit logs are maintained.
-
-NARRATOR: On screen, present a structured checklist with checkboxes for each security
-
-and privacy requirement, including encryption, access control, auditing, and legal
-
-compliance.
-
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.
