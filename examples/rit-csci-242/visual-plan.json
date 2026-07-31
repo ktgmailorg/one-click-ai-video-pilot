@@ -5,12 +5,12 @@
       "shots": [
         {
           "id": "beat-01-shot-001",
-          "phrase": "Begin by framing Course Context and Transfer Goals as a question about inputs, decisions, and observable results.",
+          "phrase": "Begin by framing Defining the Problem Space as a question about inputs, decisions, and observable results.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: A transfer student who completed introductory programming courses will use this course to align their problem-solving and algorithmic skills with the university's first-year CS curriculum.",
+          "phrase": "Consider this worked case: Given a list of integers, output the sum of all positive values.",
           "type": "deterministic-svg"
         },
         {
@@ -25,12 +25,12 @@
       "shots": [
         {
           "id": "beat-02-shot-001",
-          "phrase": "Now define Core Course Focus precisely enough that another learner could test the definition.",
+          "phrase": "Now define Core Data Structures precisely enough that another learner could test the definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: Students will practice selecting a hash table for fast key lookups versus a linked list for frequent insertions, based on the problem's access patterns.",
+          "phrase": "Consider this worked case: A queue is appropriate for processing tasks in the order they arrive, while a stack models undo operations.",
           "type": "deterministic-svg"
         },
         {
@@ -45,12 +45,12 @@
       "shots": [
         {
           "id": "beat-03-shot-001",
-          "phrase": "With the foundation in place, examine how Assignment Structure operates in a concrete sequence.",
+          "phrase": "With the foundation in place, examine how Decomposition and Abstraction operates in a concrete sequence.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: A homework assignment might ask students to draft a pseudocode design for a priority queue before writing the actual code in a supported language.",
+          "phrase": "Consider this worked case: Create a function `sum_positive` that takes a list and returns an integer, isolating the logic from the main program.",
           "type": "deterministic-svg"
         },
         {
@@ -65,17 +65,17 @@
       "shots": [
         {
           "id": "beat-04-shot-001",
-          "phrase": "Next, compare the choices involved in Algorithm Analysis Basics and make the decision criteria explicit.",
+          "phrase": "Next, compare the choices involved in Control Flow and Recursion and make the decision criteria explicit.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: Analyzing a sorting algorithm shows that its time complexity grows quadratically with input size, expressed as O(n^2) in asymptotic notation.",
+          "phrase": "Consider this worked case: A recursive factorial function computes n!",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-04-shot-003",
-          "phrase": "Compare alternatives against the same constraints so the evaluation does not move the goalposts.",
+          "phrase": "Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition.",
           "type": "deterministic-svg"
         }
       ]
@@ -85,12 +85,12 @@
       "shots": [
         {
           "id": "beat-05-shot-001",
-          "phrase": "Apply Asymptotic Notation to a worked situation instead of treating it as an isolated definition.",
+          "phrase": "Apply State, Identity, and Namespaces to a worked situation instead of treating it as an isolated definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: Using Big-O notation, a linear scan is O(n) while a binary search is O(log n), clearly showing the latter scales better for large datasets.",
+          "phrase": "Consider this worked case: Two variables `a` and `b` can both reference the same list object, so modifying `a` also changes `b`.",
           "type": "deterministic-svg"
         },
         {
@@ -105,12 +105,12 @@
       "shots": [
         {
           "id": "beat-06-shot-001",
-          "phrase": "Examine the tradeoffs in Loop Invariants, including what improves and what becomes more difficult.",
+          "phrase": "Examine the tradeoffs in Exceptions and Error Handling, including what improves and what becomes more difficult.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: In a loop that sums an array, the invariant 'sum equals the total of elements processed so far' holds true before each iteration and after the loop ends.",
+          "phrase": "Consider this worked case: Attempting to divide by zero raises a ZeroDivisionError that must be caught to prevent program termination.",
           "type": "deterministic-svg"
         },
         {
@@ -125,12 +125,12 @@
       "shots": [
         {
           "id": "beat-07-shot-001",
-          "phrase": "Stress-test the reasoning around Data Structure Representations with an edge case and identify which assumption controls the outcome.",
+          "phrase": "Stress-test the reasoning around Correctness and Testing with an edge case and identify which assumption controls the outcome.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: Choosing an adjacency matrix for a dense graph ensures fast edge lookups, while an adjacency list prevents memory waste on sparse graphs.",
+          "phrase": "Consider this worked case: Test the sorting function with an empty list, a single element, and a list with duplicate values to verify edge cases.",
           "type": "deterministic-svg"
         },
         {
@@ -145,12 +145,12 @@
       "shots": [
         {
           "id": "beat-08-shot-001",
-          "phrase": "Use Common Data Structures to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "phrase": "Use Algorithm Selection Criteria to diagnose a failure by separating symptoms, causes, and corrective action.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: A stack processes function calls by returning the most recently added task first, whereas a queue processes customer orders in the exact order they arrive.",
+          "phrase": "Consider this worked case: Binary search requires a sorted list; using it on an unsorted list violates the invariant and yields incorrect results.",
           "type": "deterministic-svg"
         },
         {
@@ -165,17 +165,17 @@
       "shots": [
         {
           "id": "beat-09-shot-001",
-          "phrase": "Connect Trees and Graphs to the earlier ideas and explain how the pieces work as one system.",
+          "phrase": "Connect Design and Implementation Workflow to the earlier ideas and explain how the pieces work as one system.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: A file system directory tree allows recursive folder browsing, and a road network graph uses adjacency lists to calculate the shortest driving route between two cities.",
+          "phrase": "g.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-003",
-          "phrase": "Explain each connection explicitly and verify that information retains the same meaning across representations.",
+          "phrase": ", returned sum equals total of positives).",
           "type": "deterministic-svg"
         }
       ]
@@ -190,7 +190,7 @@
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: Before coding a search routine, students check that the input is a sorted array, the output is the index of the target, and the time complexity is O(log n) using binary search.",
+          "phrase": "Consider this worked case: Checklist items: Verify syntax with a linter, run unit tests on edge cases, trace execution with print statements, and review logical invariants.",
           "type": "deterministic-svg"
         },
         {
@@ -201,6 +201,6 @@
       ]
     }
   ],
-  "episodeId": "csci-242-computer-science-for-transfer-students-foundations-less",
+  "episodeId": "csci-242-foundations-from-problem-statement-to-algorithmic-desig",
   "schemaVersion": 1
 }

@@ -7,9 +7,9 @@
   "level": "Undergraduate",
   "description": "An independent, catalog-aligned learning companion. It is not an official RIT course section or a replacement for the instructor's syllabus.",
   "outcomes": [
-    "Students will define and explain the core concepts of computing, including the relationship between hardware, software, and data.",
-    "Students will demonstrate the ability to break down a problem into sequential, executable steps using pseudocode or a programming language.",
-    "Students will articulate how computing impacts daily life and the world, and practice oral and written communication through structured assignments."
+    "Students will articulate the core components of a computational problem (statement, input/output, algorithm) using precise terminology from the course",
+    "Students will implement a basic solution in Python by applying lexical analysis, namespaces, and exception handling as described in the language",
+    "Students will evaluate the correctness of their code through tracing, boundary testing, and debugging, aligning with the course's emphasis on written/"
   ],
   "paths": [
     "Computing & Engineering",
@@ -22,11 +22,31 @@
     "credits": "3 Credits",
     "sourceUrl": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02="
   },
-  "aiContribution": {
-    "stage": "source-grounded planning and narration draft",
-    "provider": "local-openai-compatible",
-    "model": "prism-ml/Bonsai-27B-gguf",
-    "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
-    "humanReviewRequired": true
-  }
+  "generationProvenance": [
+    {
+      "stage": "Source-grounded planning and narration draft",
+      "provider": "local-openai-compatible",
+      "model": "empero-ai/Qwythos-9B-v2-GGUF",
+      "modelRevision": "sha256:fc5251e8e3e87d58946522833eb896c84375a715b6f89c54cdd10082ecc6ea8d",
+      "executionLocation": "local",
+      "mode": "recorded",
+      "humanReviewRequired": true
+    },
+    {
+      "stage": "Narration voice and timestamps",
+      "provider": "edge-tts",
+      "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+      "executionLocation": "hosted",
+      "mode": "recorded",
+      "humanReviewRequired": true
+    },
+    {
+      "stage": "Educational diagrams and composition",
+      "provider": "deterministic-svg-runtime",
+      "model": "No generative model",
+      "executionLocation": "local",
+      "mode": "deterministic",
+      "humanReviewRequired": true
+    }
+  ]
 }

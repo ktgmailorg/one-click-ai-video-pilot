@@ -1,233 +1,207 @@
-NARRATOR: Distributed systems operate across multiple networked computers where components
+Distributed systems operate across multiple networked computers where components
 
 inevitably experience partial failure.
 
-NARRATOR: When a node slows down, it becomes indistinguishable from a crashed server,
+When a node slows down, it becomes indistinguishable from a crashed server,
 
 forcing designers to make explicit assumptions about timing and communication.
 
-NARRATOR: This uncertainty means we cannot rely on simple timeouts to detect outages.
+This uncertainty means we cannot rely on simple timeouts to detect outages.
 
-NARRATOR: Instead, we must design protocols that tolerate delayed messages, duplicated
+Instead, we must design protocols that tolerate delayed messages, duplicated
 
 transmissions, and unpredictable network schedules.
 
-NARRATOR: Understanding these constraints is the first step toward building reliable
+Understanding these constraints is the first step toward building reliable consensus
 
-consensus mechanisms that survive real-world network chaos without assuming perfect
+mechanisms that survive real-world network chaos without assuming perfect synchronization
 
-synchronization or instantaneous failure detection.
+or instantaneous failure detection.
 
-NARRATOR: To guarantee consistency across multiple nodes, we replicate state machines
+To guarantee consistency across multiple nodes, we replicate state machines that
 
-that process identical operations in the exact same order.
+process identical operations in the exact same order.
 
-NARRATOR: Each server maintains a local copy of the system state, but the critical
+Each server maintains a local copy of the system state, but the critical challenge is
 
-challenge is ensuring they apply operations in identical sequences despite network delays.
+ensuring they apply operations in identical sequences despite network delays.
 
-NARRATOR: If servers apply commands differently, the system diverges into
+If servers apply commands differently, the system diverges into conflicting states.
 
-conflicting states.
+By forcing all nodes to execute the same sequence of operations, we eliminate state
 
-NARRATOR: By forcing all nodes to execute the same sequence of operations, we eliminate
+divergence.
 
-state divergence.
-
-NARRATOR: This approach transforms distributed coordination into a single-threaded execution
+This approach transforms distributed coordination into a single-threaded execution
 
 problem, where correctness depends entirely on the order of applied operations rather than
 
 complex distributed state synchronization.
 
-NARRATOR: To enforce identical execution order, we use a replicated log where every
+To enforce identical execution order, we use a replicated log where every command is appended
 
-command is appended as a sequential entry.
+as a sequential entry.
 
-NARRATOR: Each log entry contains a unique term number and a sequence index, creating a
+Each log entry contains a unique term number and a sequence index, creating a total order
 
-total order across all servers.
+across all servers.
 
-NARRATOR: When a client submits a request, the leader appends it to its log before
+When a client submits a request, the leader appends it to its log before acknowledging
 
-acknowledging success.
+success.
 
-NARRATOR: Followers replicate the entry by appending it to their own logs at the same
+Followers replicate the entry by appending it to their own logs at the same index.
 
-index.
+This log structure ensures that every server records the exact same operations in the exact
 
-NARRATOR: This log structure ensures that every server records the exact same operations
+same order.
 
-in the exact same order.
+The log becomes the single source of truth for system state, preventing conflicting histories
 
-NARRATOR: The log becomes the single source of truth for system state, preventing conflicting
+and enabling reliable recovery after crashes or network partitions.
 
-histories and enabling reliable recovery after crashes or network partitions.
+A leader is elected to coordinate log replication and client requests.
 
-NARRATOR: A leader is elected to coordinate log replication and client requests.
+Servers start as followers and transition to candidates when they miss heartbeats.
 
-NARRATOR: Servers start as followers and transition to candidates when they miss
+Randomized election timeouts prevent split votes by staggering candidate timeouts.
 
-heartbeats.
-
-NARRATOR: Randomized election timeouts prevent split votes by staggering candidate timeouts.
-
-NARRATOR: When a candidate requests votes, it increments a term number and includes its
-
-log's last entry.
-
-NARRATOR: Followers grant votes only if the candidate's log is at least as up-to-date.
-
-NARRATOR: Once a candidate receives votes from a majority, it becomes leader for that term.
-
-NARRATOR: Terms provide a logical clock that prevents stale leaders from interfering with
-
-newer elections, ensuring only the most recent leader can commit entries and maintain system
-
-progress.
-
-NARRATOR: Progress requires a majority quorum of nodes to agree on log entries and
-
-leadership.
-
-NARRATOR: A majority ensures that any two quorums share at least one node, preventing
-
-conflicting decisions.
-
-NARRATOR: If a network partition isolates a minority, the majority partition continues
-
-operating while the minority stalls.
-
-NARRATOR: This design prioritizes safety over availability during splits.
-
-NARRATOR: The quorum requirement guarantees that committed entries are durable across
-
-restarts and that only one leader can exist per term.
-
-NARRATOR: Without a majority, the system cannot safely commit operations or elect a new
-
-leader, ensuring that conflicting histories are never permitted during network failures.
-
-NARRATOR: The leader replicates log entries to followers by sending AppendEntries RPCs.
-
-NARRATOR: Each RPC includes the leader's term, the index of the entry to replicate, and the
-
-entry itself.
-
-NARRATOR: Followers respond with success or failure based on log matching.
-
-NARRATOR: If a follower's log conflicts, the leader backs off and retries with a lower
-
-index.
-
-NARRATOR: This process ensures all followers eventually match the leader's log.
-
-NARRATOR: The log-matching property guarantees that if two logs contain an entry with the
-
-same index and term, all preceding entries are identical.
-
-NARRATOR: This property enables reliable recovery and prevents divergent states during
-
-message loss or server restarts, maintaining a consistent replicated log across the cluster.
-
-NARRATOR: An entry becomes committed when it is replicated to a majority of servers and the
-
-leader's term matches the entry's term.
-
-NARRATOR: This rule ensures that only entries from the current leader are committed,
-
-preventing stale leaders from overwriting newer data.
-
-NARRATOR: Once committed, the entry is applied to the state machine in order.
-
-NARRATOR: The commit rule relies on the log-matching property to guarantee that all
-
-servers applying the entry share identical preceding history.
-
-NARRATOR: This prevents conflicting state updates and ensures that committed operations
-
-are durable across crashes.
-
-NARRATOR: The term-based commitment rule also handles leader changes gracefully, ensuring
-
-that only the most recent leader's entries are finalized.
-
-NARRATOR: Safety ensures that committed entries are never lost or overwritten, while
-
-liveness guarantees that the system continues making progress.
-
-NARRATOR: Raft prioritizes safety by refusing to commit entries from stale leaders and
-
-requiring majority agreement.
-
-NARRATOR: Liveness is maintained through randomized election timeouts and leader
-
-heartbeats.
-
-NARRATOR: When a leader fails, followers detect the absence of heartbeats and trigger
-
-elections.
-
-NARRATOR: If a majority is available, a new leader is elected and replication resumes.
-
-NARRATOR: If a minority is isolated, the system stalls but remains safe.
-
-NARRATOR: This trade-off ensures that the system never commits conflicting histories,
-
-even at the cost of temporary unavailability during network partitions or leader failures.
-
-NARRATOR: Clients must retry operations when they receive no response, but retries can
-
-cause duplicate commands if the original request succeeded.
-
-NARRATOR: To handle this, clients include a unique request ID with each operation.
-
-NARRATOR: The server checks if the ID has already been processed and returns the cached
-
-result if so.
-
-NARRATOR: This idempotency mechanism prevents duplicate state updates.
-
-NARRATOR: Retries are essential for availability during network delays or leader
-
-elections.
-
-NARRATOR: By combining unique request IDs with server-side deduplication, clients can safely
-
-retry without risking conflicting operations.
-
-NARRATOR: This approach ensures that clients can recover from transient failures while
-
-maintaining system consistency and avoiding duplicate state mutations.
-
-NARRATOR: Tracing a command through a three-node cluster reveals how Raft
-
-coordinates consensus.
-
-NARRATOR: A client sends a request to the leader, which appends it to its log and
-
-replicates it to followers.
-
-NARRATOR: Once a majority acknowledges the entry, the leader commits it and applies it to
-
-its state machine.
-
-NARRATOR: Followers apply the entry in order after replication.
-
-NARRATOR: If the leader fails, followers detect the missing heartbeats and trigger
-
-elections.
-
-NARRATOR: A new leader is elected, and replication resumes from the last committed
+When a candidate requests votes, it increments a term number and includes its log's last
 
 entry.
 
-NARRATOR: This trace demonstrates how partial failures, log replication, and majority
+Followers grant votes only if the candidate's log is at least as up-to-date.
 
-quorums work together to maintain consistency.
+Once a candidate receives votes from a majority, it becomes leader for that term.
 
-NARRATOR: The process ensures that every command is processed exactly once, even during
+Terms provide a logical clock that prevents stale leaders from interfering with newer
 
-network delays or node crashes, providing a reliable foundation for distributed
+elections, ensuring only the most recent leader can commit entries and maintain system
 
-applications.
+progress.
+
+Progress requires a majority quorum of nodes to agree on log entries and leadership.
+
+A majority ensures that any two quorums share at least one node, preventing conflicting
+
+decisions.
+
+If a network partition isolates a minority, the majority partition continues operating
+
+while the minority stalls.
+
+This design prioritizes safety over availability during splits.
+
+The quorum requirement guarantees that committed entries are durable across restarts
+
+and that only one leader can exist per term.
+
+Without a majority, the system cannot safely commit operations or elect a new leader,
+
+ensuring that conflicting histories are never permitted during network failures.
+
+The leader replicates log entries to followers by sending AppendEntries RPCs.
+
+Each RPC includes the leader's term, the index of the entry to replicate, and the entry
+
+itself.
+
+Followers respond with success or failure based on log matching.
+
+If a follower's log conflicts, the leader backs off and retries with a lower index.
+
+This process ensures all followers eventually match the leader's log.
+
+The log-matching property guarantees that if two logs contain an entry with the same index
+
+and term, all preceding entries are identical.
+
+This property enables reliable recovery and prevents divergent states during message loss
+
+or server restarts, maintaining a consistent replicated log across the cluster.
+
+An entry becomes committed when it is replicated to a majority of servers and the
+
+leader's term matches the entry's term.
+
+This rule ensures that only entries from the current leader are committed, preventing stale
+
+leaders from overwriting newer data.
+
+Once committed, the entry is applied to the state machine in order.
+
+The commit rule relies on the log-matching property to guarantee that all servers
+
+applying the entry share identical preceding history.
+
+This prevents conflicting state updates and ensures that committed operations are durable
+
+across crashes.
+
+The term-based commitment rule also handles leader changes gracefully, ensuring that only
+
+the most recent leader's entries are finalized.
+
+Safety ensures that committed entries are never lost or overwritten, while liveness
+
+guarantees that the system continues making progress.
+
+Raft prioritizes safety by refusing to commit entries from stale leaders and requiring
+
+majority agreement.
+
+Liveness is maintained through randomized election timeouts and leader heartbeats.
+
+When a leader fails, followers detect the absence of heartbeats and trigger elections.
+
+If a majority is available, a new leader is elected and replication resumes.
+
+If a minority is isolated, the system stalls but remains safe.
+
+This trade-off ensures that the system never commits conflicting histories, even at the
+
+cost of temporary unavailability during network partitions or leader failures.
+
+Clients must retry operations when they receive no response, but retries can cause
+
+duplicate commands if the original request succeeded.
+
+To handle this, clients include a unique request ID with each operation.
+
+The server checks if the ID has already been processed and returns the cached result if so.
+
+This idempotency mechanism prevents duplicate state updates.
+
+Retries are essential for availability during network delays or leader elections.
+
+By combining unique request IDs with server-side deduplication, clients can safely
+
+retry without risking conflicting operations.
+
+This approach ensures that clients can recover from transient failures while maintaining
+
+system consistency and avoiding duplicate state mutations.
+
+Tracing a command through a three-node cluster reveals how Raft coordinates consensus.
+
+A client sends a request to the leader, which appends it to its log and replicates it to
+
+followers.
+
+Once a majority acknowledges the entry, the leader commits it and applies it to its state
+
+machine.
+
+Followers apply the entry in order after replication.
+
+If the leader fails, followers detect the missing heartbeats and trigger elections.
+
+A new leader is elected, and replication resumes from the last committed entry.
+
+This trace demonstrates how partial failures, log replication, and majority quorums work
+
+together to maintain consistency.
+
+The process ensures that every command is processed exactly once, even during network
+
+delays or node crashes, providing a reliable foundation for distributed applications.

@@ -1,0 +1,307 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Data management begins with a model, not a query. A relation is commonly presented as a table. Columns represent attributes with defined domains, and rows represent tuples describing instances. A students table might contain a student identifier and name; an enrollments table can represent the relationship between students and course sections. Every column needs one meaning, one unit, and an appropriate type. Avoid storing several values in one cell or repeating groups of columns. A schema is a contract about the shape and interpretation of stored data. If the meaning is ambiguous, technically valid SQL can still produce meaningless results.",
+      "plannedSeconds": 62,
+      "title": "Model data as relations",
+      "visualDirection": "template:showcase-database | Turn an application spreadsheet into named tables with rows, columns, and declared meanings."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "A key is an attribute or minimal set of attributes that uniquely identifies a row. A table may have several candidate keys; one is selected as the primary key. Stable generated identifiers are often useful, but a generated key does not remove the need to enforce real-world uniqueness when required. A foreign key stores a value that must match a referenced key, representing a declared relationship. An enrollment can reference one student and one section. Foreign-key constraints prevent orphaned references, but designers must choose what should happen when referenced data changes or is deleted. Keys give relationships executable structure rather than leaving them as comments or naming conventions.",
+      "plannedSeconds": 62,
+      "title": "Use keys to identify and connect",
+      "visualDirection": "template:showcase-database | Highlight primary keys, candidate keys, and foreign keys across related tables."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "Types define which values a column can represent. Constraints narrow those values to the valid states of the application. Not null requires a value. Check constraints express conditions such as a nonnegative quantity. Unique constraints prevent duplicates. Primary and foreign keys enforce identity and references. Put durable invariants in the database when every application must obey them. Validation in a user interface improves feedback, but it can be bypassed by another client or import. Constraints also need careful scope: a rule involving current time or external state may not behave like a stable row invariant. Good constraints make invalid data difficult to store and failures explicit.",
+      "plannedSeconds": 62,
+      "title": "Declare types and constraints",
+      "visualDirection": "template:showcase-database | Reject invalid rows using data types, NOT NULL, CHECK, UNIQUE, primary-key, and foreign-key constraints."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "A basic select statement identifies source tables, filters rows with a where condition, and projects the columns or expressions to return. The result is itself a table-like relation. SQL describes the desired result more than a step-by-step loop, allowing the database to choose an execution plan. Be precise about null: it represents missing or unknown information and does not behave like an ordinary value in comparisons. Use IS NULL rather than equals null. Ordering is not guaranteed unless an ORDER BY clause requests it. Select only needed columns, use meaningful aliases, and verify the result on a tiny hand-checkable dataset before trusting a large output.",
+      "plannedSeconds": 62,
+      "title": "Query with select, filter, and projection",
+      "visualDirection": "template:showcase-database | Build a SELECT statement from source tables, WHERE conditions, selected columns, expressions, and ordering."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Joins reconstruct relationships stored across tables. An inner join keeps combinations that satisfy the join condition. A left outer join also keeps unmatched rows from the left side, filling missing right-side values with nulls. Always identify the intended cardinality: one to one, one to many, or many to many through an associative table. A missing predicate creates a Cartesian product, while an incomplete predicate can silently duplicate results. Qualify ambiguous column names and inspect row counts before and after the join. Ask what one result row represents. If that sentence is unclear, aggregation and reporting built on the join will also be unclear.",
+      "plannedSeconds": 62,
+      "title": "Join related tables correctly",
+      "visualDirection": "template:showcase-database | Match enrollment foreign keys to student and section primary keys, then contrast inner and outer joins."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "Count, sum, average, minimum, and maximum summarize rows. Group by determines which rows share one output group. If a query groups by course, each result row represents one course. Columns in the select list must either define that grain or be aggregated. Where filters individual rows before grouping; having filters groups after aggregation. Null handling matters because many aggregates ignore null values. Distinct may remove duplicates, but using it to hide a faulty join masks the real problem. State the result grain in words, create a small example, and verify that every join and group preserves the intended meaning.",
+      "plannedSeconds": 62,
+      "title": "Aggregate at the intended grain",
+      "visualDirection": "template:showcase-database | Group enrollment rows by course, compute counts and averages, and filter groups separately from rows."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "A poorly designed table may repeat the same course title, instructor office, or department name across hundreds of enrollment rows. Repetition creates anomalies: one update can leave conflicting versions, deleting the last enrollment can erase course information, and inserting a course may require a fake enrollment. Normalization analyzes which attributes depend on which keys and separates different kinds of facts into related tables. Decomposition should preserve the ability to reconstruct necessary information through joins and enforce dependencies where possible. Normalization is not a command to maximize table count. It is a reasoning tool for storing each durable fact in a controlled place while keeping the model usable.",
+      "plannedSeconds": 62,
+      "title": "Normalize repeated facts",
+      "visualDirection": "template:showcase-database | Decompose one update-prone table into relations where each fact is stored in one appropriate place."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "An index is an auxiliary structure that helps the database locate rows without scanning every row. A B-tree index often supports equality and range conditions on its leading keys. Unique indexes can also enforce uniqueness. Indexes are not free. Inserts, updates, and deletes must maintain them, they consume storage, and an index that does not match query predicates may not be used. The query planner estimates costs and chooses among scans and join strategies. Index columns based on important workload patterns, then inspect actual plans and measurements. Adding an index to every column can make writes slower without improving the queries that matter.",
+      "plannedSeconds": 62,
+      "title": "Use indexes as a tradeoff",
+      "visualDirection": "template:showcase-database | Compare a full table scan with a tree index lookup while showing storage and update costs."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Many business actions require several statements to succeed as one unit. A transfer may subtract from one account and add to another. If the process fails between those statements, the database must not preserve half a transfer. A transaction begins a unit of work and ends with commit to make changes durable or rollback to discard them. Concurrent transactions also need isolation rules so interleaving operations do not produce invalid results. Keep transactions as short as practical, handle failures explicitly, and do not assume that application code alone can restore consistency after every crash. Transaction boundaries should match the atomic action users and business rules recognize.",
+      "plannedSeconds": 62,
+      "title": "Group changes into transactions",
+      "visualDirection": "template:showcase-database | Run a transfer as debit and credit inside BEGIN, then compare COMMIT with ROLLBACK after failure."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "A professional database design answers nine questions. What does each table and row represent? Which keys identify rows and connect relations? Which constraints prevent invalid states? What is the grain of each query result? Do join predicates match the intended cardinality? Are repeated facts creating anomalies? Which workload justifies each index? Which changes must commit atomically? What do query plans and measurements show on realistic data? SQL syntax is only the surface. Trustworthy data systems come from preserving meaning and integrity while giving applications efficient, testable ways to derive results and apply changes. Finish by testing the schema with a tiny dataset that contains a valid relationship, a missing reference, a duplicate, a null, and a transaction that must roll back. Then inspect the actual query plan for the most important read. Those checks connect the conceptual model to enforceable behavior and measured performance.",
+      "plannedSeconds": 62,
+      "title": "Use a complete data-management checklist",
+      "visualDirection": "template:showcase-database | Summarize meaning, keys, constraints, query grain, joins, normalization, indexes, transactions, and measurement."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "postgres-tutorial"
+      ],
+      "text": "The relational model represents data in relations whose attributes and tuples have defined meaning.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "postgres-advanced",
+        "postgres-tutorial"
+      ],
+      "text": "Primary keys identify rows, while foreign keys represent references to rows in another relation.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "postgres-tutorial",
+        "postgres-advanced"
+      ],
+      "text": "Database constraints prevent states that violate declared structural and business rules.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "postgres-tutorial"
+      ],
+      "text": "A SQL query derives a result relation by selecting sources, filtering rows, and projecting expressions.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "postgres-tutorial"
+      ],
+      "text": "A join combines rows according to a predicate, and an incorrect or missing predicate can multiply unrelated rows.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "postgres-tutorial"
+      ],
+      "text": "Aggregate functions summarize groups of rows, and GROUP BY defines the result grain.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "postgres-tutorial"
+      ],
+      "text": "Normalization reduces update anomalies by separating facts according to their functional dependencies.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "postgres-index"
+      ],
+      "text": "Indexes can accelerate selected lookups and ordering operations but consume space and add maintenance work.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "postgres-advanced"
+      ],
+      "text": "A transaction groups statements into a unit that commits together or is rolled back together.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "postgres-tutorial",
+        "postgres-advanced",
+        "postgres-index"
+      ],
+      "text": "Reliable relational data management combines a meaningful schema, enforced integrity, correct queries, and workload-aware performance decisions.",
+      "verified": true
+    }
+  ],
+  "id": "relational-data-management-design-query-and-transactions",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "PostgreSQL Global Development Group",
+      "excerpt": "The PostgreSQL SQL tutorial covers relational concepts, creating and populating tables, queries, joins, aggregates, updates, and deletions. Tables contain rows and columns; SQL statements define, query, and modify relations. Foreign keys and transactions support integrity across related operations.",
+      "id": "postgres-tutorial",
+      "sha256": "f18059ea2c85672a7dab4571f756bf5f4bfc6528e8fa5a6ad0caa9349a76878c",
+      "title": "PostgreSQL Tutorial: The SQL Language",
+      "type": "url",
+      "uri": "https://www.postgresql.org/docs/current/tutorial-sql.html",
+      "verified": true
+    },
+    {
+      "author": "PostgreSQL Global Development Group",
+      "excerpt": "PostgreSQL advanced tutorial material introduces views, foreign keys, transactions, and window functions. Transactions group statements into all-or-nothing units using BEGIN, COMMIT, and ROLLBACK. Constraints and foreign keys preserve declared relationships.",
+      "id": "postgres-advanced",
+      "sha256": "aa2387e5ff53630d2d494cd16fcb6588152d0c9edcd0604e859a30c282ac12cf",
+      "title": "PostgreSQL Tutorial: Advanced Features",
+      "type": "url",
+      "uri": "https://www.postgresql.org/docs/current/tutorial-advanced.html",
+      "verified": true
+    },
+    {
+      "author": "PostgreSQL Global Development Group",
+      "excerpt": "Indexes are primarily used to enhance database performance, though inappropriate indexes can slow modification and consume resources. Index definitions select columns or expressions and may enforce uniqueness. Query planning determines whether an index is useful for a particular operation.",
+      "id": "postgres-index",
+      "sha256": "09760a84dde17012a04b2494fc2b4d71cecea6b69e0e345eaf01501a7b7f6ac8",
+      "title": "PostgreSQL CREATE INDEX",
+      "type": "url",
+      "uri": "https://www.postgresql.org/docs/current/sql-createindex.html",
+      "verified": true
+    }
+  ],
+  "title": "Relational Data Management: Design, Query, and Transactions"
+}

@@ -1,0 +1,103 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Every oscillating mechanical system has ways it naturally prefers to move. Push a swing slowly, or far too quickly, and the motion stays modest. Push near its natural rhythm and each input can reinforce the motion already underway. That frequency-sensitive amplification is the core idea behind resonance.",
+      "plannedSeconds": 22,
+      "title": "Start with a natural frequency",
+      "visualDirection": "template:showcase-resonance | Compare a small response away from the natural frequency with a large response near it."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [
+        "frequency ratio = driving frequency ÷ natural frequency"
+      ],
+      "id": "beat-02",
+      "narration": "A frequency-response plot puts driving frequency on the horizontal axis and response amplitude on the vertical axis. The peak marks the resonant region. Its location and width tell engineers which excitations are most dangerous or most useful. A design does not merely ask whether a force exists; it asks how often that force repeats.",
+      "plannedSeconds": 24,
+      "title": "Read the resonant peak",
+      "visualDirection": "template:showcase-resonance | Trace amplitude against driving frequency and highlight the resonant region."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "Real systems lose energy through damping, so their response does not grow without bound. Engineers can add damping, change stiffness or mass, or keep operating speeds away from a troublesome natural frequency. The practical lesson is simple: resonance is not automatically failure, but ignoring the frequency relationship can turn a small repeating force into a large motion.",
+      "plannedSeconds": 26,
+      "title": "Use damping and separation",
+      "visualDirection": "template:showcase-resonance | Show damping lowering the peak and a design operating away from the resonant region."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "mit-resonance"
+      ],
+      "text": "A driven mechanical system responds differently as the forcing frequency approaches its natural frequency.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "mit-resonance"
+      ],
+      "text": "Frequency response shows how response amplitude changes with forcing frequency.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "mit-resonance"
+      ],
+      "text": "Damping limits practical resonant response, and designers can reduce risk by changing damping or separating operating and natural frequencies.",
+      "verified": true
+    }
+  ],
+  "id": "why-resonance-matters-in-mechanical-systems",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "MIT OpenCourseWare",
+      "excerpt": "A driven oscillating system has a natural frequency. In the ideal undamped case, resonance occurs when the forcing frequency equals the natural frequency, producing a growing response. In practical systems damping limits the response and shifts how the resonant peak appears. Engineers use frequency response to understand how strongly a system reacts across forcing frequencies.",
+      "id": "mit-resonance",
+      "sha256": "0515d68fa6bac085b61bb693b9ab1b32a25eb59bc3ef3329298e4431a8a4e466",
+      "title": "MIT OpenCourseWare: Introduction to Resonance",
+      "type": "url",
+      "uri": "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/3655af30412e2aebd0de0067925e8eb1_MIT18_03SCF11_s18_0intro.pdf",
+      "verified": true
+    }
+  ],
+  "title": "Why Resonance Matters in Mechanical Systems"
+}

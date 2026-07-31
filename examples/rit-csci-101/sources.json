@@ -22,11 +22,11 @@
       "verified": true
     },
     {
-      "id": "llvm-language-reference",
-      "title": "LLVM Language Reference Manual",
-      "uri": "https://llvm.org/docs/LangRef.html",
-      "author": "LLVM Project",
-      "content": "LLVM IR is a typed, SSA-based intermediate representation with explicit instructions, basic blocks, functions, memory operations, and control flow. A module contains global values, functions, declarations, and metadata. A function contains basic blocks, and every basic block ends with a terminator instruction. Phi instructions select values according to the predecessor control-flow edge. Load and store instructions make memory access explicit. Valid IR must satisfy structural and typing rules. The verifier reports IR that violates those rules. Compiler work separates parsing and semantic analysis from lowering, verification, optimization, and target-specific code generation.",
+      "id": "opendsa-programming-foundations",
+      "title": "OpenDSA Programming, Data Structures, and Algorithms",
+      "uri": "https://opendsa-server.cs.vt.edu/",
+      "author": "OpenDSA Project",
+      "content": "Programming begins with precise problem statements, input and output examples, and algorithms written independently of syntax. Variables represent values and state, expressions compute values, and control structures select or repeat operations. Functions decompose a solution into named operations with parameters and results. Recursion solves a problem through smaller instances and requires a base case. Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in first-out access, trees represent hierarchy, and graphs represent connected entities. Searching and sorting algorithms depend on representation and invariants. Correctness arguments, tests, tracing, and debugging compare intended behavior with observable results, including boundary and error cases.",
       "type": "note",
       "verified": true
     }

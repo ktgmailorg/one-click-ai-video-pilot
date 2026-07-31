@@ -2,14 +2,14 @@
   "id": "rit-csci-142",
   "title": "CSCI 142 — Computer Science II",
   "area": "Computing",
-  "subject": "Computing Practice and Research",
+  "subject": "Programming and Languages",
   "format": "Full lesson",
   "level": "Undergraduate",
   "description": "An independent, catalog-aligned learning companion. It is not an official RIT course section or a replacement for the instructor's syllabus.",
   "outcomes": [
-    "Define and distinguish between static and dynamic data types in object-oriented programming.",
-    "Explain how inheritance and interfaces enable code reuse and modifiability in software design.",
-    "Apply cohesion and minimal coupling principles to structure object-oriented collections and handle exceptions."
+    "Identify and apply core object-oriented design principles (cohesion, coupling, inheritance) to structure code for modifiability and extensibility.",
+    "Select appropriate abstract data types (stacks, queues, trees, graphs) and implement them using object-oriented collection libraries.",
+    "Design and implement exception handling and input/output streams within a modern IDE to manage runtime errors and user interaction."
   ],
   "paths": [
     "Computing & Engineering",
@@ -22,11 +22,31 @@
     "credits": "4 Credits",
     "sourceUrl": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02="
   },
-  "aiContribution": {
-    "stage": "source-grounded planning and narration draft",
-    "provider": "local-openai-compatible",
-    "model": "prism-ml/Bonsai-27B-gguf",
-    "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
-    "humanReviewRequired": true
-  }
+  "generationProvenance": [
+    {
+      "stage": "Source-grounded planning and narration draft",
+      "provider": "local-openai-compatible",
+      "model": "empero-ai/Qwythos-9B-v2-GGUF",
+      "modelRevision": "sha256:fc5251e8e3e87d58946522833eb896c84375a715b6f89c54cdd10082ecc6ea8d",
+      "executionLocation": "local",
+      "mode": "recorded",
+      "humanReviewRequired": true
+    },
+    {
+      "stage": "Narration voice and timestamps",
+      "provider": "edge-tts",
+      "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+      "executionLocation": "hosted",
+      "mode": "recorded",
+      "humanReviewRequired": true
+    },
+    {
+      "stage": "Educational diagrams and composition",
+      "provider": "deterministic-svg-runtime",
+      "model": "No generative model",
+      "executionLocation": "local",
+      "mode": "deterministic",
+      "humanReviewRequired": true
+    }
+  ]
 }

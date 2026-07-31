@@ -13,10 +13,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Foundations of AI System Architecture as a question about inputs, decisions, and observable results. A rigorous pipeline states the task, representation, assumptions, supervision, and decision rule. Consider this worked case: A learner maps the inputs, constraints, and observable result for Foundations of AI System Architecture, then checks each step against the stated claim. On screen, show a five-step pipeline diagram labeled Task, Representation, Assumptions, Supervision, and Decision Rule. Annotate each node with a brief label and connect them with arrows to show sequential flow. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
-      "plannedSeconds": 61,
-      "title": "Foundations of AI System Architecture",
-      "visualDirection": "template:academic-process | Show a five-step pipeline diagram labeled Task, Representation, Assumptions, Supervision, and Decision Rule. Annotate each node with a brief label and connect them with arrows to show sequential flow."
+      "narration": "Begin by framing Course Foundations and Scope as a question about inputs, decisions, and observable results. Topics include search algorithms, logic, planning, machine learning, and applications from areas such as computer vision, robotics, and natural language processing. Consider this worked case: Students will explore how AI algorithms power real-world systems like recommendation engines and autonomous navigation. On screen, display a slide with the course title, core topics, and a simple diagram linking AI algorithms to application areas. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 56,
+      "title": "Course Foundations and Scope",
+      "visualDirection": "template:academic-process | Display a slide with the course title, core topics, and a simple diagram linking AI algorithms to application areas."
     },
     {
       "accessibility": {
@@ -31,10 +31,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Image Representation in Computer Vision precisely enough that another learner could test the definition. Computer vision pipelines represent images as numeric arrays. Consider this worked case: A 100x100 color image is stored as a 30000-element array where each triplet corresponds to red, green, and blue pixel values. On screen, display a small grid of pixels transforming into a matrix of numbers. Highlight one pixel and show its RGB values as a numeric triplet. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "narration": "Now define Prerequisites and Course Constraints precisely enough that another learner could test the definition. Students cannot take and receive credit for this course if they have taken CSCI-630. Consider this worked case: A student with a background in software engineering and statistics can proceed, while one who completed CSCI-630 must take an alternative path. On screen, show a prerequisite flowchart highlighting required courses and the exclusion of CSCI-630. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
       "plannedSeconds": 55,
-      "title": "Image Representation in Computer Vision",
-      "visualDirection": "template:academic-process | Display a small grid of pixels transforming into a matrix of numbers. Highlight one pixel and show its RGB values as a numeric triplet."
+      "title": "Prerequisites and Course Constraints",
+      "visualDirection": "template:academic-process | Show a prerequisite flowchart highlighting required courses and the exclusion of CSCI-630."
     },
     {
       "accessibility": {
@@ -49,10 +49,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Color Conversion and Filtering operates in a concrete sequence. Filtering combines neighboring samples to smooth, sharpen, or detect structure. Consider this worked case: Converting an RGB image to grayscale reduces three channels to one, simplifying edge detection. A Gaussian filter smooths noisy pixel values by averaging adjacent samples. On screen, show a side-by-side comparison: original noisy image, grayscale version, and filtered image. Use arrows to indicate the color conversion and filtering steps. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
-      "plannedSeconds": 56,
-      "title": "Color Conversion and Filtering",
-      "visualDirection": "template:academic-process | Show a side-by-side comparison: original noisy image, grayscale version, and filtered image. Use arrows to indicate the color conversion and filtering steps."
+      "narration": "With the foundation in place, examine how NIST AI Risk Management Framework operates in a concrete sequence. The NIST AI Risk Management Framework organizes work around Govern, Map, Measure, and Manage. Consider this worked case: Govern establishes policies, Map documents context and impacts, Measure analyzes risks, and Manage prioritizes responses. On screen, create a four-step cycle diagram labeled Govern, Map, Measure, Manage with brief labels for each phase. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 57,
+      "title": "NIST AI Risk Management Framework",
+      "visualDirection": "template:academic-process | Create a four-step cycle diagram labeled Govern, Map, Measure, Manage with brief labels for each phase."
     },
     {
       "accessibility": {
@@ -67,10 +67,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Feature Detection and Calibration and make the decision criteria explicit. Feature methods locate and describe repeatable image patterns. Consider this worked case: SIFT features identify keypoints like corners and edges. Camera calibration maps real-world distances to pixel coordinates using known reference points. On screen, draw a grid of detected feature points on an image. Overlay a calibration grid showing how real-world distances map to image coordinates. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
-      "plannedSeconds": 55,
-      "title": "Feature Detection and Calibration",
-      "visualDirection": "template:academic-process | Draw a grid of detected feature points on an image. Overlay a calibration grid showing how real-world distances map to image coordinates."
+      "narration": "Next, compare the choices involved in Risk Analysis Considerations and make the decision criteria explicit. Risk analysis considers data quality and uncertainty. Consider this worked case: In a healthcare AI system, data quality and fairness are critical to ensure accurate diagnoses and equitable outcomes. On screen, list the seven risk considerations in a circular diagram centered on 'Risk Analysis' to show their interconnected roles. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 56,
+      "title": "Risk Analysis Considerations",
+      "visualDirection": "template:academic-process | List the seven risk considerations in a circular diagram centered on 'Risk Analysis' to show their interconnected roles."
     },
     {
       "accessibility": {
@@ -85,10 +85,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Geometric Transforms and Segmentation to a worked situation instead of treating it as an isolated definition. Segmentation assigns pixels or regions to selected categories. Consider this worked case: Perspective transform corrects a tilted photo. Foreground segmentation isolates moving objects from a static background. On screen, show a distorted image transforming into a straight, aligned image. Highlight segmented regions with different colors. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 58,
-      "title": "Geometric Transforms and Segmentation",
-      "visualDirection": "template:academic-process | Show a distorted image transforming into a straight, aligned image. Highlight segmented regions with different colors."
+      "narration": "Apply Monitoring and Context Changes to a worked situation instead of treating it as an isolated definition. Monitoring continues after deployment because context and system behavior can change. Consider this worked case: A self-driving car's AI must continuously monitor road conditions and sensor data to adapt to new environments. On screen, show a timeline graphic with 'Deployment' followed by an ongoing 'Monitoring' loop with arrows indicating continuous feedback. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 55,
+      "title": "Monitoring and Context Changes",
+      "visualDirection": "template:academic-process | Show a timeline graphic with 'Deployment' followed by an ongoing 'Monitoring' loop with arrows indicating continuous feedback."
     },
     {
       "accessibility": {
@@ -103,10 +103,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Motion Estimation and Object Recognition, including what improves and what becomes more difficult. Motion estimation compares observations across frames. Consider this worked case: Optical flow tracks pixel movement between video frames. A face detector classifies detected regions as human faces based on learned patterns. On screen, display two consecutive video frames with arrows showing pixel movement. Annotate detected faces with bounding boxes and labels. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
-      "plannedSeconds": 55,
-      "title": "Motion Estimation and Object Recognition",
-      "visualDirection": "template:academic-process | Display two consecutive video frames with arrows showing pixel movement. Annotate detected faces with bounding boxes and labels."
+      "narration": "Examine the tradeoffs in Machine Learning Workflow Overview, including what improves and what becomes more difficult. Machine-learning workflows separate data preparation, training, validation, testing, model selection, and evaluation. Consider this worked case: Developing a spam filter involves cleaning email data, training a classifier, validating on unseen data, and testing performance. On screen, display a linear flowchart with six boxes representing each workflow stage, connected by arrows. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 58,
+      "title": "Machine Learning Workflow Overview",
+      "visualDirection": "template:academic-process | Display a linear flowchart with six boxes representing each workflow stage, connected by arrows."
     },
     {
       "accessibility": {
@@ -121,10 +121,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Scene Understanding and Context with an edge case and identify which assumption controls the outcome. Scene understanding combines objects, layout, and contextual relationships. Consider this worked case: A kitchen scene is understood by recognizing a stove, a pot, and a person standing near the stove, establishing spatial and functional relationships. On screen, show a kitchen image with labeled objects and lines connecting them to indicate relationships (e.g., person near stove). Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
-      "plannedSeconds": 57,
-      "title": "Scene Understanding and Context",
-      "visualDirection": "template:academic-process | Show a kitchen image with labeled objects and lines connecting them to indicate relationships (e.g., person near stove)."
+      "narration": "Stress-test the reasoning around Supervised and Unsupervised Methods with an edge case and identify which assumption controls the outcome. Supervised methods learn a mapping from examples paired with target labels. Consider this worked case: Supervised learning trains a model to classify images as cats or dogs, whereas unsupervised learning groups similar images by color patterns. On screen, show a side-by-side comparison: left side shows labeled examples for supervised learning, right side shows unlabeled data clustering for unsupervised learning. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 59,
+      "title": "Supervised and Unsupervised Methods",
+      "visualDirection": "template:academic-process | Show a side-by-side comparison: left side shows labeled examples for supervised learning, right side shows unlabeled data clustering for unsupervised learning."
     },
     {
       "accessibility": {
@@ -139,10 +139,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Evaluation and Robustness Testing to diagnose a failure by separating symptoms, causes, and corrective action. Evaluation tests sensitivity to viewpoint, lighting, occlusion, and data shift. Consider this worked case: An AI model is tested with images taken at different angles, under bright and dim light, with partial occlusions, and from different camera types. On screen, display a 2x2 grid of test images varying in viewpoint, lighting, occlusion, and data shift. Annotate each with the tested condition. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
-      "plannedSeconds": 59,
-      "title": "Evaluation and Robustness Testing",
-      "visualDirection": "template:academic-process | Display a 2x2 grid of test images varying in viewpoint, lighting, occlusion, and data shift. Annotate each with the tested condition."
+      "narration": "Use Preprocessing and Leakage Prevention to diagnose a failure by separating symptoms, causes, and corrective action. Preprocessing must be fitted only on permitted training data to avoid leakage. Consider this worked case: Scaling features using only training data statistics prevents test data information from influencing the model's performance. On screen, illustrate a pipeline where 'Preprocessing' is applied only to the 'Training Data' box, with a red 'X' over applying it to test data. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 57,
+      "title": "Preprocessing and Leakage Prevention",
+      "visualDirection": "template:academic-process | Illustrate a pipeline where 'Preprocessing' is applied only to the 'Training Data' box, with a red 'X' over applying it to test data."
     },
     {
       "accessibility": {
@@ -157,10 +157,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Practical Analysis Checklist to the earlier ideas and explain how the pieces work as one system. Appearance models describe how lighting, material, and viewpoint affect measured pixels. Consider this worked case: A learner maps the inputs, constraints, and observable result for Practical Analysis Checklist, then checks each step against the stated claim. On screen, create a checklist graphic with six boxes. Check off each item as it relates to the pipeline components and evaluation criteria. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
-      "plannedSeconds": 56,
-      "title": "Practical Analysis Checklist",
-      "visualDirection": "template:academic-process | Create a checklist graphic with six boxes. Check off each item as it relates to the pipeline components and evaluation criteria."
+      "narration": "Connect Pipelines and Cross-Validation to the earlier ideas and explain how the pieces work as one system. Cross-validation repeats training and validation across defined data splits. Consider this worked case: A single pipeline ensures that image resizing and normalization are applied identically during training and testing, while cross-validation evaluates model stability across multiple data folds. On screen, draw a pipeline block containing 'Preprocessing' and 'Estimator' components, with a cross-validation loop showing multiple data splits feeding into the pipeline. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 57,
+      "title": "Pipelines and Cross-Validation",
+      "visualDirection": "template:academic-process | Draw a pipeline block containing 'Preprocessing' and 'Estimator' components, with a cross-validation loop showing multiple data splits feeding into the pipeline."
     },
     {
       "accessibility": {
@@ -175,95 +175,95 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with CSCI-331: Introduction to Artificial Intelligence - Course Foundations Companion as a practical checklist that can guide a new analysis. Geometric transforms map coordinates between image representations. Consider this worked case: A learner maps the inputs, constraints, and observable result for CSCI-331: Introduction to Artificial Intelligence - Course Foundations Companion, then checks each step against the stated claim. On screen, show a five-step pipeline diagram labeled Task, Representation, Assumptions, Supervision, and Decision Rule. Annotate each node with a brief label and connect them with arrows to show sequential flow. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
-      "plannedSeconds": 65,
-      "title": "CSCI-331: Introduction to Artificial Intelligence - Course Foundations Companion",
-      "visualDirection": "template:academic-process | Show a five-step pipeline diagram labeled Task, Representation, Assumptions, Supervision, and Decision Rule. Annotate each node with a brief label and connect them with arrows to show sequential flow."
+      "narration": "Finish with Evaluation Metrics and Hyperparameter Selection as a practical checklist that can guide a new analysis. Evaluation metrics must match the task and the cost of different errors. Consider this worked case: For medical diagnosis, precision and recall are prioritized over accuracy, and hyperparameters are tuned only on validation data before final testing. On screen, show a decision matrix matching metrics to task costs, alongside a separate 'Hyperparameter Tuning' box that does not touch the final test set. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 59,
+      "title": "Evaluation Metrics and Hyperparameter Selection",
+      "visualDirection": "template:academic-process | Show a decision matrix matching metrics to task costs, alongside a separate 'Hyperparameter Tuning' box that does not touch the final test set."
     }
   ],
   "claims": [
     {
       "id": "beat-01-claim-01",
       "sourceIds": [
-        "mit-computer-vision"
+        "rit-csci-331"
       ],
-      "text": "A rigorous pipeline states the task, representation, assumptions, supervision, and decision rule.",
+      "text": "Topics include search algorithms, logic, planning, machine learning, and applications from areas such as computer vision, robotics, and natural language processing.",
       "verified": true
     },
     {
       "id": "beat-02-claim-01",
       "sourceIds": [
-        "opencv-documentation"
+        "rit-csci-331"
       ],
-      "text": "Computer vision pipelines represent images as numeric arrays.",
+      "text": "Students cannot take and receive credit for this course if they have taken CSCI-630.",
       "verified": true
     },
     {
       "id": "beat-03-claim-01",
       "sourceIds": [
-        "opencv-documentation"
+        "nist-ai-rmf"
       ],
-      "text": "Filtering combines neighboring samples to smooth, sharpen, or detect structure.",
+      "text": "The NIST AI Risk Management Framework organizes work around Govern, Map, Measure, and Manage.",
       "verified": true
     },
     {
       "id": "beat-04-claim-01",
       "sourceIds": [
-        "opencv-documentation"
+        "nist-ai-rmf"
       ],
-      "text": "Feature methods locate and describe repeatable image patterns.",
+      "text": "Risk analysis considers data quality and uncertainty.",
       "verified": true
     },
     {
       "id": "beat-05-claim-01",
       "sourceIds": [
-        "opencv-documentation"
+        "nist-ai-rmf"
       ],
-      "text": "Segmentation assigns pixels or regions to selected categories.",
+      "text": "Monitoring continues after deployment because context and system behavior can change.",
       "verified": true
     },
     {
       "id": "beat-06-claim-01",
       "sourceIds": [
-        "mit-computer-vision"
+        "scikit-learn-user-guide"
       ],
-      "text": "Motion estimation compares observations across frames.",
+      "text": "Machine-learning workflows separate data preparation, training, validation, testing, model selection, and evaluation.",
       "verified": true
     },
     {
       "id": "beat-07-claim-01",
       "sourceIds": [
-        "mit-computer-vision"
+        "scikit-learn-user-guide"
       ],
-      "text": "Scene understanding combines objects, layout, and contextual relationships.",
+      "text": "Supervised methods learn a mapping from examples paired with target labels.",
       "verified": true
     },
     {
       "id": "beat-08-claim-01",
       "sourceIds": [
-        "mit-computer-vision"
+        "scikit-learn-user-guide"
       ],
-      "text": "Evaluation tests sensitivity to viewpoint, lighting, occlusion, and data shift.",
+      "text": "Preprocessing must be fitted only on permitted training data to avoid leakage.",
       "verified": true
     },
     {
       "id": "beat-09-claim-01",
       "sourceIds": [
-        "mit-computer-vision"
+        "scikit-learn-user-guide"
       ],
-      "text": "Appearance models describe how lighting, material, and viewpoint affect measured pixels.",
+      "text": "Cross-validation repeats training and validation across defined data splits.",
       "verified": true
     },
     {
       "id": "beat-10-claim-01",
       "sourceIds": [
-        "opencv-documentation"
+        "scikit-learn-user-guide"
       ],
-      "text": "Geometric transforms map coordinates between image representations.",
+      "text": "Evaluation metrics must match the task and the cost of different errors.",
       "verified": true
     }
   ],
-  "id": "csci-331-introduction-to-artificial-intelligence-course-foundati",
+  "id": "csci-331-introduction-to-artificial-intelligence",
   "learningObjectives": [],
   "pronunciations": [],
   "schemaVersion": 2,
@@ -279,25 +279,25 @@
       "verified": true
     },
     {
-      "author": "OpenCV",
-      "excerpt": "Computer vision pipelines represent images as numeric arrays. Color conversion changes the coordinate representation of pixel values. Filtering combines neighboring samples to smooth, sharpen, or detect structure. Feature methods locate and describe repeatable image patterns. Calibration estimates camera parameters needed for geometric measurement. Geometric transforms map coordinates between image representations. Segmentation assigns pixels or regions to selected categories. Motion methods compare observations across time. Results depend on sampling, illumination, noise, training data, thresholds, and evaluation metrics.",
-      "id": "opencv-documentation",
-      "sha256": "8d020a516095eeef56172063568e3b8de5454e8b79b25b2103641f473ab71052",
-      "title": "OpenCV Documentation",
+      "author": "scikit-learn developers",
+      "excerpt": "Machine-learning workflows separate data preparation, training, validation, testing, model selection, and evaluation. Supervised methods learn a mapping from examples paired with target labels. Unsupervised methods identify structure without target labels. Preprocessing must be fitted only on permitted training data to avoid leakage. Pipelines combine preprocessing and estimators so the same transformations are applied consistently. Cross-validation repeats training and validation across defined data splits. Evaluation metrics must match the task and the cost of different errors. Hyperparameter selection must remain separate from final test evaluation. Leakage, distribution shift, overfitting, and unexamined assumptions can invalidate results.",
+      "id": "scikit-learn-user-guide",
+      "sha256": "517b82514a81768f6a343724d34e1b3f7628fc376722deb2e1fd6dab8694a33d",
+      "title": "scikit-learn User Guide",
       "type": "note",
-      "uri": "https://docs.opencv.org/4.x/",
+      "uri": "https://scikit-learn.org/stable/user_guide.html",
       "verified": true
     },
     {
-      "author": "MIT OpenCourseWare",
-      "excerpt": "Computer vision connects image evidence to models of geometry, appearance, motion, objects, and scenes. Projective geometry relates three-dimensional points to image coordinates. Appearance models describe how lighting, material, and viewpoint affect measured pixels. Motion estimation compares observations across frames. Object recognition maps visual evidence to object hypotheses. Scene understanding combines objects, layout, and contextual relationships. A rigorous pipeline states the task, representation, assumptions, supervision, and decision rule. Evaluation tests sensitivity to viewpoint, lighting, occlusion, and data shift.",
-      "id": "mit-computer-vision",
-      "sha256": "1c4ab1b1e1ae5dd297c2f72d541bf0577909ba069760dffb8b4bae92f66ebdb2",
-      "title": "MIT OpenCourseWare Advances in Computer Vision",
+      "author": "National Institute of Standards and Technology",
+      "excerpt": "The NIST AI Risk Management Framework organizes work around Govern, Map, Measure, and Manage. Govern establishes policies, responsibilities, and accountability for AI risk. Map documents context, intended use, affected people, and potential impacts. Measure uses qualitative and quantitative methods to analyze identified risks. Manage prioritizes risks and allocates resources for response and monitoring. Risk analysis considers data quality and uncertainty. It also considers robustness, privacy, security, transparency, and fairness. Monitoring continues after deployment because context and system behavior can change.",
+      "id": "nist-ai-rmf",
+      "sha256": "2d11a55a21dab673df4cec61b6a4d7d5a328f3ea2c5184ecdf74129d8fd088ae",
+      "title": "NIST AI Risk Management Framework",
       "type": "note",
-      "uri": "https://ocw.mit.edu/courses/6-819-advances-in-computer-vision-spring-2018/",
+      "uri": "https://www.nist.gov/itl/ai-risk-management-framework",
       "verified": true
     }
   ],
-  "title": "CSCI-331: Introduction to Artificial Intelligence - Course Foundations Companion"
+  "title": "CSCI-331: Introduction to Artificial Intelligence"
 }

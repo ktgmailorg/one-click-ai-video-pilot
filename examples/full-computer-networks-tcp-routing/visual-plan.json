@@ -1,0 +1,401 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "Begin by visualizing how data travels from your device to a remote server through distinct layers.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "Encapsulation wraps application data into transport segments, which then nest inside IP packets, and finally sit atop local link frames.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "This layered approach isolates failures: if a router drops an IP packet, the transport layer simply retries without corrupting the application data.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-004",
+          "phrase": "Think of it like mailing a letter: the message is the application payload, the envelope is the IP packet, and the postal box is the link frame.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-005",
+          "phrase": "Each layer handles only its specific job, making the system modular and easier to debug.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-006",
+          "phrase": "When you examine a packet capture, you will see these boundaries clearly marked, allowing you to trace exactly where a request enters or exits each layer.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "Next, examine how IP addressing directs packets across heterogeneous networks.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "Each router inspects the destination IP address and consults its routing table to determine the next hop.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "The hop limit field in the IPv6 header counts remaining hops, decrementing with every forward to prevent infinite loops.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-004",
+          "phrase": "Routers operate on a best-effort basis, meaning they forward packets without guaranteeing delivery, order, or integrity.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-005",
+          "phrase": "If a link fails, the router simply drops the packet, leaving reliability to higher layers.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-006",
+          "phrase": "This design keeps routers lightweight and fast, allowing them to handle massive traffic volumes while pushing complex recovery logic to the endpoints.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-007",
+          "phrase": "When you trace a request, you will see the hop limit decrease with each router, revealing the path length before the packet reaches its final destination.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "Now, shift focus to the transport layer, where TCP establishes reliable connections between endpoints.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "TCP uses a strict state machine that begins with a three-way handshake to negotiate parameters and confirm connectivity.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "Once established, the connection maintains a shared sequence space, ensuring every byte is tracked.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-004",
+          "phrase": "The protocol does not care about the underlying network conditions; it only cares about delivering the correct byte stream to the application.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-005",
+          "phrase": "If a segment is lost, the receiver will not acknowledge it, triggering the sender to retransmit.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-006",
+          "phrase": "This state-driven approach guarantees that applications receive complete, ordered data regardless of network chaos.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-007",
+          "phrase": "When you monitor a connection, you will see the state transition from SYN to ESTABLISHED, confirming that both endpoints are ready to exchange data.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "Sequence numbers are the backbone of TCP's reliability, assigning a unique number to every byte sent.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "The receiver tracks these numbers and sends acknowledgments that explicitly identify which sequence space has been received.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "If a segment with sequence number 100 is missing, the receiver will not acknowledge 100, even if it received 101 and 102.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-004",
+          "phrase": "This selective acknowledgment forces the sender to retransmit only the missing data.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-005",
+          "phrase": "The sender maintains a sliding window of unacknowledged bytes, adjusting its pace based on feedback.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-006",
+          "phrase": "This mechanism ensures that applications never see gaps or duplicates in their data stream.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-007",
+          "phrase": "When you analyze a packet trace, you will see the sequence numbers increment steadily, with acknowledgment gaps clearly marking where retransmissions are needed.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "When acknowledgments are delayed or lost, TCP triggers retransmission through carefully managed timers.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "The sender sets a retransmission timer for each unacknowledged segment, starting at a base value and increasing with each timeout.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "If the timer expires without receiving an acknowledgment, the sender resends the exact same segment.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-004",
+          "phrase": "This ensures that lost data eventually reaches the receiver.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-005",
+          "phrase": "The protocol also handles duplicate segments gracefully by ignoring them once acknowledged, preventing the receiver from processing the same data twice.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-006",
+          "phrase": "This timer-driven recovery balances responsiveness with stability, avoiding unnecessary retransmissions while guaranteeing eventual delivery.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-007",
+          "phrase": "When you observe a slow connection, you will see timer values increase, revealing how TCP adapts to network delays.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-06",
+      "shots": [
+        {
+          "id": "beat-06-shot-001",
+          "phrase": "Flow control prevents a fast sender from overwhelming a slow receiver by using receive windows.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-002",
+          "phrase": "The receiver advertises how much buffer space is available, and the sender must not exceed this limit.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-003",
+          "phrase": "If the receiver's buffer fills up, it stops sending acknowledgments, causing the sender's window to shrink.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-004",
+          "phrase": "This backpressure mechanism ensures that neither side runs out of memory or drops data.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-005",
+          "phrase": "The window size adjusts dynamically based on network conditions and application processing speed.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-006",
+          "phrase": "By coordinating pacing, flow control maintains efficiency while protecting receiver resources.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-007",
+          "phrase": "When you monitor a large file transfer, you will see the window size expand and contract, revealing how TCP adapts to receiver capacity.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-07",
+      "shots": [
+        {
+          "id": "beat-07-shot-001",
+          "phrase": "Congestion awareness allows TCP to detect network overload and adjust its sending rate accordingly.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-002",
+          "phrase": "When routers become saturated, they may drop packets or increase delay, which TCP interprets as congestion.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-003",
+          "phrase": "The protocol responds by reducing its sending window and increasing the retransmission timer, effectively slowing down to avoid further loss.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-004",
+          "phrase": "This self-regulating mechanism prevents network collapse and ensures fair bandwidth sharing among competing flows.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-005",
+          "phrase": "By reacting to congestion signals, TCP maintains stability under heavy load.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-006",
+          "phrase": "When you analyze a congested network, you will see the sending rate drop and window size shrink, revealing how TCP adapts to avoid overwhelming the infrastructure.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-08",
+      "shots": [
+        {
+          "id": "beat-08-shot-001",
+          "phrase": "Diagnosing an end-to-end request requires tracing the packet through each layer and identifying where it fails.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-002",
+          "phrase": "Start by checking the link layer for frame errors, then examine the IP layer for routing issues or hop limit exhaustion.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-003",
+          "phrase": "If the packet reaches the transport layer, verify TCP sequence numbers and acknowledgments for gaps or duplicates.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-004",
+          "phrase": "Use packet captures to observe how timers and windows adjust during delays or losses.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-005",
+          "phrase": "By correlating layer-specific symptoms with application-level failures, you can pinpoint whether the issue lies in routing, congestion, or receiver capacity.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-006",
+          "phrase": "This systematic approach transforms complex network problems into manageable, layer-by-layer investigations.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-007",
+          "phrase": "When you test a slow website, you will see exactly which layer is causing the bottleneck.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-09",
+      "shots": [
+        {
+          "id": "beat-09-shot-001",
+          "phrase": "Apply these concepts to a real-world scenario by following a structured diagnostic checklist.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-002",
+          "phrase": "First, verify IP reachability using ping and examine hop limits to confirm routing paths.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-003",
+          "phrase": "Next, capture TCP traffic and inspect sequence numbers for gaps or duplicates.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-004",
+          "phrase": "Check for retransmission timers and window sizes to identify congestion or flow control issues.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-005",
+          "phrase": "Correlate these findings with application performance to isolate the root cause.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-006",
+          "phrase": "This methodical process ensures you address the exact layer causing the failure.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-007",
+          "phrase": "By practicing this checklist, you will develop the ability to troubleshoot network issues efficiently and accurately.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-008",
+          "phrase": "When you test a failing connection, you will see exactly which step reveals the problem.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-10",
+      "shots": [
+        {
+          "id": "beat-10-shot-001",
+          "phrase": "Mastering these concepts requires integrating layering, encapsulation, and transport reliability into a cohesive mental model.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-002",
+          "phrase": "Remember that IP handles best-effort forwarding while TCP manages reliability, flow control, and congestion awareness.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-003",
+          "phrase": "When diagnosing issues, always trace the packet from the application down to the link layer, checking each boundary for anomalies.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-004",
+          "phrase": "Use sequence numbers and acknowledgments to verify data integrity, and monitor timers and windows to understand pacing.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-005",
+          "phrase": "This layered reasoning transforms complex network behavior into predictable, manageable patterns.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-006",
+          "phrase": "By practicing these skills, you will confidently diagnose and resolve end-to-end request failures.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-007",
+          "phrase": "When you test a network, you will see exactly how each layer contributes to the final outcome.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "computer-networking-foundations-layering-encapsulation-and-end-t",
+  "schemaVersion": 1
+}

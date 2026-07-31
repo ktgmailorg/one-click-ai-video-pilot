@@ -1,16 +1,16 @@
-NARRATOR: Begin by framing Course Scope and Faculty Pilot Model as a question about
+NARRATOR: Begin by framing Course Scope and Faculty Pilot Framework as a question about
 
 inputs, decisions, and observable results.
 
 NARRATOR: This course examines current topics in Languages and Tools.
 
-NARRATOR: Consider this worked case: Instructors design semester-specific content
+NARRATOR: Consider this worked case: A department head proposes a new undergraduate
 
-based on emerging industry tools and academic research.
+offering focused on compiler design.
 
-NARRATOR: On screen, display a flowchart showing 'Faculty Proposal' -> 'Seminar Design'
+NARRATOR: On screen, display a flowchart showing faculty proposal -> pilot course ->
 
--> 'Cluster Classification (Languages/Tools or Security)' -> 'Contact Hours: Lecture 3'.
+cluster classification (Languages and Tools or Security).
 
 NARRATOR: List the givens before choosing a method, because an unstated assumption can
 
@@ -30,17 +30,13 @@ NARRATOR: Specific course instances will be identified as belonging to the Langu
 
 Tools cluster, the Security cluster, or both clusters.
 
-NARRATOR: Consider this worked case: A course focusing on compiler design and debugging
+NARRATOR: Consider this worked case: A proposed seminar on memory safety analysis is
 
-tools falls under Languages and Tools, while one emphasizing vulnerability scanning targets
-
-Security.
+classified under both clusters.
 
 NARRATOR: On screen, show a Venn diagram with two overlapping circles labeled 'Languages and
 
-Tools' and 'Security', with a third region labeled 'Both Clusters' and a fourth labeled
-
-'Languages and Tools Only'.
+Tools' and 'Security', with a course title in the intersection.
 
 NARRATOR: Separate the formal definition from an implementation detail, then identify what
 
@@ -48,45 +44,45 @@ evidence would distinguish them.
 
 NARRATOR: A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Secure Software Development
+NARRATOR: With the foundation in place, examine how Language Reference Structure
 
-Framework Overview operates in a concrete sequence.
+operates in a concrete sequence.
 
-NARRATOR: The Secure Software Development Framework groups practices into four practice
+NARRATOR: The Python language reference specifies lexical analysis, data model
 
-groups.
+behavior, execution, expressions, statements, functions, classes, exceptions, and module
 
-NARRATOR: Consider this worked case: Prepare the Organization establishes people,
+import semantics.
 
-processes, and technology for secure development, while Respond to Vulnerabilities
+NARRATOR: Consider this worked case: A reference document outlines how Python handles
 
-identifies and remediates discovered weaknesses.
+variable binding and exception propagation.
 
-NARRATOR: On screen, create a four-step horizontal pipeline labeled 'Prepare',
+NARRATOR: On screen, list the specified reference components in a hierarchical outline
 
-'Protect', 'Produce', 'Respond', with each step containing a brief icon representing its
-
-core function.
+format.
 
 NARRATOR: Follow every arrow in order and name the state before and after each transition.
 
 NARRATOR: The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Next, compare the choices involved in Prepare the Organization Practice and make
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
 
-the decision criteria explicit.
+throughout the analysis.
 
-NARRATOR: Prepare the Organization establishes people, processes, and technology for secure
+NARRATOR: Next, compare the choices involved in Object Model and Namespaces and make the
 
-development.
+decision criteria explicit.
 
-NARRATOR: Consider this worked case: Teams define security policies, train developers on
+NARRATOR: Names are bound to objects within namespaces and scopes.
 
-secure coding standards, and select development environments before writing code.
+NARRATOR: Consider this worked case: A function call binds the parameter name to a
 
-NARRATOR: On screen, illustrate a checklist with three items: 'People Training', 'Process
+specific object instance in the local scope.
 
-Documentation', 'Technology Configuration', each with a checkmark.
+NARRATOR: On screen, illustrate a namespace tree with nested scopes and object references
+
+pointing to shared memory addresses.
 
 NARRATOR: Compare alternatives against the same constraints so the evaluation does not
 
@@ -98,21 +94,21 @@ NARRATOR: Name each dependency explicitly, and keep labels and representations c
 
 throughout the analysis.
 
-NARRATOR: Apply Protect the Software Practice to a worked situation instead of treating it
+NARRATOR: Apply Control Flow and Exceptions to a worked situation instead of treating it as
 
-as an isolated definition.
+an isolated definition.
 
-NARRATOR: Protect the Software prevents unauthorized access to code and development
+NARRATOR: Exceptions interrupt normal control flow until a matching handler processes them
 
-artifacts.
+or they propagate.
 
-NARRATOR: Consider this worked case: Repositories use role-based access control,
+NARRATOR: Consider this worked case: A division by zero triggers an exception that
 
-and source code repositories restrict commits to verified developers only.
+jumps to a try-except block.
 
-NARRATOR: On screen, draw a locked vault icon with a key labeled 'Access Control' and a
+NARRATOR: On screen, draw a control flow graph with a normal path and an exception path
 
-shield labeled 'Artifact Protection' surrounding a code repository symbol.
+branching to a handler node.
 
 NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
 
@@ -120,23 +116,21 @@ at each step.
 
 NARRATOR: The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Examine the tradeoffs in Produce Well-Secured Software Practice, including what
+NARRATOR: Examine the tradeoffs in LLVM Intermediate Representation, including what
 
 improves and what becomes more difficult.
 
-NARRATOR: Produce Well-Secured Software addresses security requirements, design,
+NARRATOR: LLVM IR is a typed, SSA-based intermediate representation with explicit
 
-verification, and release.
+instructions, basic blocks, functions, memory operations, and control flow.
 
-NARRATOR: Consider this worked case: Developers integrate security requirements
+NARRATOR: Consider this worked case: A compiler translates a high-level loop into a
 
-into design documents, run automated verification tests, and sign off on secure
+sequence of LLVM IR basic blocks with phi nodes.
 
-releases.
+NARRATOR: On screen, render a simplified LLVM IR module showing a function, basic blocks,
 
-NARRATOR: On screen, show a document with sections labeled 'Security Requirements',
-
-'Design Review', 'Verification Results', and 'Release Approval' in a sequential layout.
+and a phi instruction at a merge point.
 
 NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
 
@@ -144,21 +138,21 @@ acceptable.
 
 NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: Stress-test the reasoning around Respond to Vulnerabilities Practice with an
+NARRATOR: Stress-test the reasoning around Phi Instructions and Control Flow with an edge
 
-edge case and identify which assumption controls the outcome.
+case and identify which assumption controls the outcome.
 
-NARRATOR: Respond to Vulnerabilities identifies, analyzes, remediates, and learns
+NARRATOR: Phi instructions select values according to the predecessor control-flow
 
-from discovered weaknesses.
+edge.
 
-NARRATOR: Consider this worked case: When a vulnerability scanner flags a flaw, the team
+NARRATOR: Consider this worked case: A phi node chooses between two loop iteration values
 
-patches the code, updates documentation, and trains staff on the new security protocol.
+based on whether the loop condition was true or false.
 
-NARRATOR: On screen, create a cycle diagram with arrows connecting 'Identify', 'Analyze',
+NARRATOR: On screen, show a control flow graph with two incoming edges to a block containing
 
-'Remediate', and 'Learn', forming a continuous improvement loop.
+a phi instruction that selects between two values.
 
 NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
 
@@ -168,19 +162,19 @@ NARRATOR: The edge case reveals the boundary of the claim without discarding the
 
 core idea.
 
-NARRATOR: Use Cryptographic Standards and Confidentiality to diagnose a failure by
+NARRATOR: Use Memory Operations and Verification to diagnose a failure by
 
 separating symptoms, causes, and corrective action.
 
-NARRATOR: Encryption supports confidentiality when keys and modes are used correctly.
+NARRATOR: Load and store instructions make memory access explicit.
 
-NARRATOR: Consider this worked case: AES-256 encryption protects sensitive data in transit,
+NARRATOR: Consider this worked case: The verifier rejects an IR module where a store
 
-provided symmetric keys are managed securely and the correct mode of operation is applied.
+instruction targets an untyped memory location.
 
-NARRATOR: On screen, display a padlock icon with a key labeled 'Key Management' and a gear
+NARRATOR: On screen, display a before-and-after comparison of invalid IR
 
-labeled 'Mode of Operation' above a document labeled 'Confidential Data'.
+(with a type mismatch) and valid IR (with explicit memory types).
 
 NARRATOR: Locate the first point where observed behavior diverges from expected
 
@@ -190,25 +184,25 @@ NARRATOR: The diagnosis is strongest when another person can reproduce the obser
 
 and the test.
 
-NARRATOR: Connect Integrity, Authenticity, and Key Management to the earlier ideas and
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
 
-explain how the pieces work as one system.
+throughout the analysis.
 
-NARRATOR: Message authentication and digital signatures address integrity and authenticity
+NARRATOR: Connect Compiler Phase Separation to the earlier ideas and explain how the pieces
 
-in different ways.
+work as one system.
 
-NARRATOR: Consider this worked case: Digital signatures verify that a code commit
+NARRATOR: Compiler work separates parsing and semantic analysis from lowering, verification,
 
-originated from an authorized developer, and key rotation ensures old cryptographic keys
+optimization, and target-specific code generation.
 
-are securely destroyed after use.
+NARRATOR: Consider this worked case: A frontend parser generates ASTs, while a
 
-NARRATOR: On screen, show a document with a signature stamp labeled 'Digital Signature'
+backend optimizer restructures the IR for a specific CPU architecture.
 
-and a calendar icon labeled 'Key Rotation' next to a trash can labeled 'Secure
+NARRATOR: On screen, present a linear pipeline diagram with distinct stages: Parsing ->
 
-Destruction'.
+Semantic Analysis -> Lowering -> Verification -> Optimization -> Code Generation.
 
 NARRATOR: Explain each connection explicitly and verify that information retains the same
 
@@ -218,25 +212,23 @@ NARRATOR: The synthesis matters only if every connection remains supported by th
 
 evidence.
 
-NARRATOR: Finish with Modes of Operation and Side Channels as a practical checklist that
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
 
-can guide a new analysis.
+guide a new analysis.
 
-NARRATOR: Modes of operation define how a primitive processes data larger than one
+NARRATOR: Specific course details (such as prerequisites, course seminar, format,
 
-block.
+learning outcomes, assessment methods, and resource needs) will be determined by the
 
-NARRATOR: Consider this worked case: Using CBC mode with a fixed IV compromises security,
+faculty member(s) who propose a specific seminar course in this area.
 
-whereas GCM mode with a random nonce ensures proper data processing and protection against
+NARRATOR: Consider this worked case: A review checklist verifies that the proposed course
 
-side-channel attacks.
+includes defined learning outcomes, assessment methods, and resource needs.
 
-NARRATOR: On screen, illustrate two data blocks being processed: one with a flawed
+NARRATOR: On screen, show a checklist template with checkboxes for prerequisites, format,
 
-'Fixed IV' warning label, and another with a 'Random Nonce' shield icon, connected by a
-
-flow arrow labeled 'Mode of Operation'.
+learning outcomes, assessment methods, and resource needs.
 
 NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
 

@@ -1,0 +1,589 @@
+{
+  "approvals": [
+    {
+      "approvedAt": "2026-07-31T15:48:19.409Z",
+      "notes": "Verifies declared claim-to-source bindings for draft rendering only; this is not instructor or release approval.",
+      "reviewer": "Automated source-pack verification (draft)",
+      "role": "automation",
+      "schemaVersion": 1,
+      "stage": "script",
+      "subjectSha256": "a3a17c545f65e3b649e5d3571c8c7a753f04248da42a5e73008d9f22f9ca7620"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-resonance/work/render/documentary-master.core.mp4",
+      "role": "master",
+      "sha256": "f6820f8075547593daf99c756c3c0ac7b3d92da0c2a89e72da615f97f4e89c6d"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-resonance/work/narration/captions.vtt",
+      "role": "captions-vtt",
+      "sha256": "d20cb06f79f86338f498ac278ecbf728d534fca11b0827c0d435f58cfc7b322a"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-resonance/work/narration/captions.srt",
+      "role": "captions-srt",
+      "sha256": "89dec2f69a0074878b9dbeeeed6d1bf7b971763a8720fbdf82b32fb9438e8437"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-resonance/work/narration/transcript.txt",
+      "role": "transcript-text",
+      "sha256": "42527e51cde23e6416ba179df26895c7d53cd93620e1fed87d9c3a935dd6d532"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-resonance/work/narration/transcript.html",
+      "role": "transcript-html",
+      "sha256": "b8fab7a718f4fc31739324442d8bc14e9a4a3de278f90e435c56144fed4fb4bd"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-resonance/work/visuals/thumbnail.png",
+      "role": "thumbnail",
+      "sha256": "b47e30543079263f1825a97210b7d4c1b95ccf41010151c1745e048fce736730"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-resonance/work/visuals/beat-01/beat-01-shot-001.png",
+      "role": "shot",
+      "sha256": "31a7e8516080b670e6e6c92f56c970ffa637b51f323ebe43ca1512d7aa373329",
+      "shotId": "beat-01-shot-001"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-resonance/work/visuals/beat-01/beat-01-shot-002.png",
+      "role": "shot",
+      "sha256": "34901218a7947bb293f8391897106c5e0e35c15e010110c2256b076e364b84f4",
+      "shotId": "beat-01-shot-002"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-resonance/work/visuals/beat-01/beat-01-shot-003.png",
+      "role": "shot",
+      "sha256": "bc94b809d539c928bc79ed7c87acb42f157405c847ccd341303afb604ea8a88f",
+      "shotId": "beat-01-shot-003"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-resonance/work/visuals/beat-02/beat-02-shot-001.png",
+      "role": "shot",
+      "sha256": "25af6eaa7fe8b6c62bdd50a5c6ce4d5d3c53c530e5cb55dfc731aef3fd560742",
+      "shotId": "beat-02-shot-001"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-resonance/work/visuals/beat-02/beat-02-shot-002.png",
+      "role": "shot",
+      "sha256": "10687f5b26d9b3672ef0905fe8e4d2edd659f16b65bbf580eba72fcf0fdca80e",
+      "shotId": "beat-02-shot-002"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-resonance/work/visuals/beat-02/beat-02-shot-003.png",
+      "role": "shot",
+      "sha256": "f7e9d5e1b039fc5d4d93a90aeeb76f8626d8dae33ed242f4b172fff2eaf36e46",
+      "shotId": "beat-02-shot-003"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-resonance/work/visuals/beat-03/beat-03-shot-001.png",
+      "role": "shot",
+      "sha256": "a0660e6bfeb87ec0d488b9baaa1e2b1b2a81b254b3a500803728d3f05a52cac7",
+      "shotId": "beat-03-shot-001"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-resonance/work/visuals/beat-03/beat-03-shot-002.png",
+      "role": "shot",
+      "sha256": "83987637bce489681982c829c4686cb3d419b48e474720e7bca6308e33acfe2b",
+      "shotId": "beat-03-shot-002"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-resonance/work/visuals/beat-03/beat-03-shot-003.png",
+      "role": "shot",
+      "sha256": "0e65bed1a7866092349b059edc8f9860f85bf920a2f8bf2ffa4a2685ac3b889d",
+      "shotId": "beat-03-shot-003"
+    }
+  ],
+  "configSha256": "ff1f3fcf7a29c12228137f82b05551b3fbbcf3fa5f16e97bb1140f16a211fa8a",
+  "createdAt": "2026-07-31T15:48:44.358Z",
+  "final": {
+    "releaseAudit": {
+      "blockers": [],
+      "checks": [
+        {
+          "name": "frame",
+          "ok": true,
+          "value": "1920x1080"
+        },
+        {
+          "name": "frame-rate",
+          "ok": true,
+          "value": "30000/1001"
+        },
+        {
+          "name": "audio-sample-rate",
+          "ok": true,
+          "value": 48000
+        },
+        {
+          "name": "rit-orange-token",
+          "ok": true,
+          "value": "#F76902"
+        },
+        {
+          "name": "orange-on-black-contrast",
+          "ok": true,
+          "value": 6.98
+        },
+        {
+          "name": "title-safe-template",
+          "ok": true,
+          "value": "96px minimum inset"
+        },
+        {
+          "name": "font-fallbacks",
+          "ok": true,
+          "value": "Arial/Liberation Sans and Georgia/Liberation Serif"
+        },
+        {
+          "name": "final-master-loudness",
+          "ok": true,
+          "value": {
+            "integratedLufs": -16.17,
+            "loudnessRangeLu": 2.7,
+            "ok": true,
+            "schemaVersion": 1,
+            "targetIntegratedLufs": -16,
+            "targetTruePeakDbtp": -1.5,
+            "truePeakDbtp": -1.52
+          }
+        },
+        {
+          "name": "caption-audio-start-sync",
+          "ok": true,
+          "value": {
+            "audioStartSeconds": 0,
+            "captionStartSeconds": 0.05,
+            "maximumOffsetSeconds": 0.25,
+            "offsetSeconds": 0.05
+          }
+        },
+        {
+          "name": "subject-matched-visuals",
+          "ok": true,
+          "value": {
+            "genericShotIds": [],
+            "resolvedTemplates": [
+              "showcase-resonance"
+            ]
+          }
+        }
+      ],
+      "ok": true,
+      "releaseState": "course-draft",
+      "warnings": []
+    },
+    "render": {
+      "audioQuality": {
+        "integratedLufs": -16.17,
+        "loudnessRangeLu": 2.7,
+        "ok": true,
+        "schemaVersion": 1,
+        "targetIntegratedLufs": -16,
+        "targetTruePeakDbtp": -1.5,
+        "truePeakDbtp": -1.52
+      },
+      "audioSampleRate": 48000,
+      "audioStartSeconds": 0,
+      "cache": {
+        "draft": false,
+        "draftSkipped": false,
+        "master": false,
+        "sectionCount": 3,
+        "sections": 0
+      },
+      "draftPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-resonance/work/render/documentary-master.DRAFT.mp4",
+      "durationSeconds": 64.521333,
+      "encoder": {
+        "codec": "h264_videotoolbox",
+        "mode": "videotoolbox",
+        "prioritizeSpeed": false,
+        "profile": "high",
+        "quality": "80",
+        "realtime": true
+      },
+      "frameRate": "30000/1001",
+      "height": 1080,
+      "master": "documentary-master.core.mp4",
+      "masterPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-resonance/work/render/documentary-master.core.mp4",
+      "schemaVersion": 1,
+      "sections": [
+        {
+          "beatId": "beat-01",
+          "cacheHit": false,
+          "durationSeconds": 20.136,
+          "output": "beat-01.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-resonance/work/render/sections/beat-01.mp4",
+          "renderSignature": "ba7d7c9fd8f3d61de1c673402c8145a74f7f441b44f8ecf04ac8dfec1eceea1a",
+          "schemaVersion": 1,
+          "sha256": "3ae8d33d7ba03a8024018d7c33f3d48e176c1c1930fb46d65b460fbb15c29169"
+        },
+        {
+          "beatId": "beat-02",
+          "cacheHit": false,
+          "durationSeconds": 21.144,
+          "output": "beat-02.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-resonance/work/render/sections/beat-02.mp4",
+          "renderSignature": "73e4f92956ae6e7d52a0c67216002114f669c7ce7f89b787be2b363051728ab3",
+          "schemaVersion": 1,
+          "sha256": "b8df0701fce6bd2a8316027310245a0452351b7dab0f6c07c3dbaf386cdb50e1"
+        },
+        {
+          "beatId": "beat-03",
+          "cacheHit": false,
+          "durationSeconds": 23.208,
+          "output": "beat-03.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-resonance/work/render/sections/beat-03.mp4",
+          "renderSignature": "aa464c4eadb5c8a912c254bf8fd85748188df8d2774b6e45cc72fbc63e222e72",
+          "schemaVersion": 1,
+          "sha256": "1a5812b503158728977708000d69b9f01de0b1f7dcc2dda121a1023c50d6c15e"
+        }
+      ],
+      "sha256": "f6820f8075547593daf99c756c3c0ac7b3d92da0c2a89e72da615f97f4e89c6d",
+      "title": "Why Resonance Matters in Mechanical Systems",
+      "width": 1920
+    }
+  },
+  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "inputSha256": "0d69452453166bcb78cdc72ed050726ece4b26a1441ec696c693d10a0a444284",
+  "mode": "record",
+  "providers": {
+    "edge-narration": {
+      "capabilities": [
+        "speech.synthesize"
+      ],
+      "executionLocation": "hosted",
+      "id": "edge-tts",
+      "mimeTypes": {
+        "speech.synthesize": [
+          "audio/mpeg",
+          "text/vtt"
+        ]
+      },
+      "profileName": "edge-narration",
+      "supportsAsyncJobs": false,
+      "supportsModelDiscovery": false,
+      "supportsSeed": false,
+      "supportsStructuredOutput": false,
+      "version": "7.2.8",
+      "voicePresets": {
+        "female": "en-US-EmmaMultilingualNeural",
+        "male": "en-US-AndrewMultilingualNeural"
+      }
+    }
+  },
+  "requests": [
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 1924,
+      "lookupSha256": "c935d76cb618ef45056b52dbfdee262ec15d10d84bb6572fd7346bd7f5c5eaef",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "A frequency-response plot puts driving frequency on the horizontal axis and response amplitude on the vertical axis. The peak marks the resonant region. Its location and width tell engineers which excitations are most dangerous or most useful. A design does not merely ask whether a force exists; it asks how often that force repeats."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "f74e3bb1ede10758e6f697ebe1535417589205973bfb3ce844678cfc9dc553b1",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ad/adda41663d7a515346115e46d9e824249260132fdda48daf61f5fd1506aeabc2.mp3",
+            "sha256": "adda41663d7a515346115e46d9e824249260132fdda48daf61f5fd1506aeabc2",
+            "size": 126864
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ca/ca41db214ab5f946150b82dd62c0797711ff349cf463696ca98b3583c8640b77.vtt",
+            "sha256": "ca41db214ab5f946150b82dd62c0797711ff349cf463696ca98b3583c8640b77",
+            "size": 467
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:48:19.512Z"
+    },
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 1994,
+      "lookupSha256": "2638f015e53becb505b63293d75f27d2f7cac193eed237d5d43aa0546657b629",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "Every oscillating mechanical system has ways it naturally prefers to move. Push a swing slowly, or far too quickly, and the motion stays modest. Push near its natural rhythm and each input can reinforce the motion already underway. That frequency-sensitive amplification is the core idea behind resonance."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "de6a317d9a09091f7d32bac3f945797fc6c69d3db95171dd11c6ec3b2a6838f7",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ab/ab71d564aae5b35fcb96725a10984f2a0d0b50afcd6a0b18b48e08816f74ce37.mp3",
+            "sha256": "ab71d564aae5b35fcb96725a10984f2a0d0b50afcd6a0b18b48e08816f74ce37",
+            "size": 120816
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/bc/bc07382194579254aa28a4212eafde8feef49cb73f0c651ada60ab76799a065e.vtt",
+            "sha256": "bc07382194579254aa28a4212eafde8feef49cb73f0c651ada60ab76799a065e",
+            "size": 438
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:48:19.513Z"
+    },
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 2495,
+      "lookupSha256": "ac079c8a63ac6711925c110492eaedce2c8d92b8f39cfa6b50913e8259bc1d4b",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "Real systems lose energy through damping, so their response does not grow without bound. Engineers can add damping, change stiffness or mass, or keep operating speeds away from a troublesome natural frequency. The practical lesson is simple: resonance is not automatically failure, but ignoring the frequency relationship can turn a small repeating force into a large motion."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "23b33a2923daebf3108dcdea4cb20090ca73bfc4e2ebe7e060d09b30cda4b2db",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/72/7270bbe3272700de0c528e0df0ef426b35717847765568ddb4d4341112409d2b.mp3",
+            "sha256": "7270bbe3272700de0c528e0df0ef426b35717847765568ddb4d4341112409d2b",
+            "size": 139248
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/f0/f09df986e251c8e4782fb461a6e5cffdccdcc0fb22242f171c00b1c1723a7eb0.vtt",
+            "sha256": "f09df986e251c8e4782fb461a6e5cffdccdcc0fb22242f171c00b1c1723a7eb0",
+            "size": 475
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:48:19.513Z"
+    }
+  ],
+  "runId": "why-resonance-matters-in-mechanical-systems-a63dfb100bff",
+  "schemaVersion": 1,
+  "stages": [
+    {
+      "name": "plan",
+      "status": "complete"
+    },
+    {
+      "name": "script-approval",
+      "status": "complete"
+    },
+    {
+      "name": "visual-approval",
+      "status": "complete"
+    },
+    {
+      "name": "narration",
+      "status": "complete"
+    },
+    {
+      "name": "visual-generation",
+      "status": "complete"
+    },
+    {
+      "name": "render",
+      "status": "complete"
+    },
+    {
+      "name": "release-qa",
+      "status": "complete"
+    },
+    {
+      "name": "release-approval",
+      "status": "waiting"
+    }
+  ],
+  "status": "awaiting-approval",
+  "toolchain": {
+    "ffmpeg": {
+      "available": true,
+      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "available": true,
+      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "gitChangedPaths": [
+      "outreach/README.md",
+      "outreach/general-email.md",
+      "outreach/leadership-confirmation.md"
+    ],
+    "gitDirty": true,
+    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
+    "node": "v22.23.1",
+    "platform": "darwin-arm64",
+    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtimeDirty": false,
+    "sharp": {
+      "aom": "3.14.1",
+      "archive": "3.8.8",
+      "cairo": "1.18.4",
+      "cgif": "0.5.3",
+      "exif": "0.6.26",
+      "expat": "2.8.2",
+      "ffi": "3.6.0",
+      "fontconfig": "2.18.1",
+      "freetype": "2.14.3",
+      "fribidi": "1.0.16",
+      "glib": "2.89.1",
+      "harfbuzz": "14.2.1",
+      "heif": "1.23.1",
+      "highway": "1.4.0",
+      "imagequant": "2.4.1",
+      "lcms": "2.19.1",
+      "mozjpeg": "0826579",
+      "pango": "1.58.0",
+      "pixman": "0.46.4",
+      "png": "1.6.58",
+      "proxy-libintl": "0.5",
+      "rsvg": "2.62.90",
+      "sharp": "0.35.3",
+      "tiff": "d01a94b",
+      "uhdr": "1acdbed",
+      "vips": "8.18.3",
+      "webp": "1.6.0",
+      "xml2": "2.15.3",
+      "zlib-ng": "2.3.3"
+    }
+  },
+  "totalCostUsd": 0
+}

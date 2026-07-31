@@ -1,18 +1,20 @@
-NARRATOR: Begin by framing Introduction to Data Management as a question about inputs,
+NARRATOR: Begin by framing Foundations of the Relational Model as a question about inputs,
 
 decisions, and observable results.
 
-NARRATOR: This course provides a broad introduction to the principles and practice of
+NARRATOR: Relational systems organize data with tables, rows, columns, and declared
 
-modern data management, with an emphasis on the relational database model.
+types.
 
-NARRATOR: Consider this worked case: A hospital system uses a relational database to
+NARRATOR: Consider this worked case: A 'Students' table contains rows for each
 
-link patient records, medical history, and appointment schedules.
+student, with columns for ID, name, and major, each with a specific data type like INTEGER or
 
-NARRATOR: On screen, display a simple flowchart showing data flowing from collection
+VARCHAR.
 
-to structured storage and retrieval.
+NARRATOR: On screen, display a simple table schema diagram with labeled columns and data
+
+types.
 
 NARRATOR: List the givens before choosing a method, because an unstated assumption can
 
@@ -20,23 +22,21 @@ change the conclusion.
 
 NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: Now define Relational Model Foundations precisely enough that another
+NARRATOR: Now define Entity-Relationship Modeling Basics precisely enough that another
 
 learner could test the definition.
 
-NARRATOR: Topics in relational database systems include data modeling; the relational
+NARRATOR: Property graph models represent domain entities as nodes.
 
-model; relational algebra; Structured Query Language (SQL); and data quality,
+NARRATOR: Consider this worked case: Modeling a 'Library' system involves entities like
 
-transactions, integrity and security.
+Books, Authors, and Members, connected by relationships like 'writtenBy' and
 
-NARRATOR: Consider this worked case: An 'Employees' table contains columns for
+'checkedOutBy'.
 
-EmployeeID, Name, Department, and Salary.
+NARRATOR: On screen, show a simple ER diagram with three rectangles (Book, Author, Member)
 
-NARRATOR: On screen, show a basic table layout with labeled rows and columns, highlighting
-
-the entity-attribute relationship.
+and lines connecting them.
 
 NARRATOR: Separate the formal definition from an implementation detail, then identify what
 
@@ -44,19 +44,25 @@ evidence would distinguish them.
 
 NARRATOR: A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Data Modeling Concepts operates in
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
 
-a concrete sequence.
+throughout the analysis.
 
-NARRATOR: A database project is required.
+NARRATOR: With the foundation in place, examine how Primary Keys and Unique
 
-NARRATOR: Consider this worked case: A 'Student' entity relates to a 'Course' entity
+Identifiers operates in a concrete sequence.
 
-through an 'Enrollment' relationship, linking student IDs to course codes.
+NARRATOR: Primary keys identify rows, while foreign keys express references between
 
-NARRATOR: On screen, draw a simple ER diagram with Student, Course, and Enrollment boxes and
+tables.
 
-lines connecting them.
+NARRATOR: Consider this worked case: A 'Products' table uses a 'ProductID' column as
+
+the primary key to uniquely identify each item.
+
+NARRATOR: On screen, highlight a primary key column in a table diagram with a unique key
+
+symbol.
 
 NARRATOR: Follow every arrow in order and name the state before and after each transition.
 
@@ -66,21 +72,19 @@ NARRATOR: Name each dependency explicitly, and keep labels and representations c
 
 throughout the analysis.
 
-NARRATOR: Next, compare the choices involved in Relational Algebra Basics and make the
+NARRATOR: Next, compare the choices involved in Foreign Keys and Referential Integrity and
 
-decision criteria explicit.
+make the decision criteria explicit.
 
-NARRATOR: Modes of operation define how a primitive processes data larger than one
+NARRATOR: Constraints and indexes support data integrity and efficient lookup.
 
-block.
+NARRATOR: Consider this worked case: A 'Orders' table includes a 'CustomerID' foreign
 
-NARRATOR: Consider this worked case: A selection operation filters the 'Employees'
+key that links to the 'Customers' table.
 
-table to show only those in the 'Engineering' department.
+NARRATOR: On screen, draw a line from the 'Orders' table to the 'Customers' table
 
-NARRATOR: On screen, illustrate a before-and-after table showing rows filtered
-
-by a condition using selection notation.
+labeled 'CustomerID'.
 
 NARRATOR: Compare alternatives against the same constraints so the evaluation does not
 
@@ -92,21 +96,19 @@ NARRATOR: Name each dependency explicitly, and keep labels and representations c
 
 throughout the analysis.
 
-NARRATOR: Apply Structured Query Language (SQL) to a worked situation instead of
+NARRATOR: Apply Constraints for Data Validation to a worked situation instead of
 
 treating it as an isolated definition.
 
-NARRATOR: Students will also learn approaches to building relational database application
+NARRATOR: Constraints reject states that violate declared data rules.
 
-programs.
+NARRATOR: Consider this worked case: A 'Salary' column constraint prevents negative
 
-NARRATOR: Consider this worked case: The command SELECT * FROM Employees WHERE
+values, and a 'Email' column constraint enforces a valid email format.
 
-Department = 'Marketing' retrieves specific records.
+NARRATOR: On screen, show a table with constraint symbols (e.g., NOT NULL, CHECK)
 
-NARRATOR: On screen, display a code snippet of the SQL query alongside the resulting filtered
-
-table output.
+next to relevant columns.
 
 NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
 
@@ -118,19 +120,21 @@ NARRATOR: Name each dependency explicitly, and keep labels and representations c
 
 throughout the analysis.
 
-NARRATOR: Examine the tradeoffs in Data Quality Principles, including what improves
+NARRATOR: Examine the tradeoffs in Normalization and Update Anomalies, including
 
-and what becomes more difficult.
+what improves and what becomes more difficult.
 
-NARRATOR: Encryption supports confidentiality when keys and modes are used correctly.
+NARRATOR: Schema design separates entities and relationships, while normalization addresses
 
-NARRATOR: Consider this worked case: Validating that all 'PhoneNumber' fields
+update anomalies.
 
-follow a standard format prevents duplicate or corrupted contact records.
+NARRATOR: Consider this worked case: Splitting a 'Department' table into separate tables for
 
-NARRATOR: On screen, show a checklist graphic with icons for accuracy, completeness,
+DepartmentName and DepartmentLocation prevents duplicate data and update errors.
 
-consistency, and timeliness.
+NARRATOR: On screen, display a before-and-after table structure showing
+
+normalization steps.
 
 NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
 
@@ -142,21 +146,21 @@ NARRATOR: Name each dependency explicitly, and keep labels and representations c
 
 throughout the analysis.
 
-NARRATOR: Stress-test the reasoning around Transaction Integrity with an edge case and
+NARRATOR: Stress-test the reasoning around Relational Algebra and Query Logic with an
 
-identify which assumption controls the outcome.
+edge case and identify which assumption controls the outcome.
 
-NARRATOR: Message authentication and digital signatures address integrity and authenticity
+NARRATOR: This course provides a broad introduction to the principles and practice of
 
-in different ways.
+modern data management, with an emphasis on the relational database model.
 
-NARRATOR: Consider this worked case: A banking transaction updates both account balances
+NARRATOR: Consider this worked case: A SELECT statement with a JOIN clause combines data
 
-atomically, ensuring neither account is left in an inconsistent state.
+from 'Employees' and 'Departments' tables based on a common key.
 
-NARRATOR: On screen, create a step-by-step diagram showing a transaction process with
+NARRATOR: On screen, show a simplified relational algebra expression (e.g., σ, ⨝)
 
-ACID checkpoints at each stage.
+alongside a corresponding SQL query snippet.
 
 NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
 
@@ -166,21 +170,19 @@ NARRATOR: The edge case reveals the boundary of the claim without discarding the
 
 core idea.
 
-NARRATOR: Use Database Security Practices to diagnose a failure by separating symptoms,
+NARRATOR: Use Transactions and Atomicity to diagnose a failure by separating symptoms,
 
 causes, and corrective action.
 
-NARRATOR: Protect the Software prevents unauthorized access to code and development
+NARRATOR: Transactions group operations into an atomic unit of work.
 
-artifacts.
+NARRATOR: Consider this worked case: A banking transaction transfers funds between two
 
-NARRATOR: Consider this worked case: Role-based access control limits 'view'
+accounts; if one step fails, both are rolled back.
 
-permissions to analysts while restricting 'delete' permissions to administrators.
+NARRATOR: On screen, illustrate a transaction flow with steps (Start, Process,
 
-NARRATOR: On screen, display a permission matrix table showing user roles and their
-
-corresponding database actions.
+Commit/Rollback) and a lock icon.
 
 NARRATOR: Locate the first point where observed behavior diverges from expected
 
@@ -194,21 +196,19 @@ NARRATOR: Name each dependency explicitly, and keep labels and representations c
 
 throughout the analysis.
 
-NARRATOR: Connect Application Development Approaches to the earlier ideas and explain
+NARRATOR: Connect Indexing and Query Performance to the earlier ideas and explain
 
 how the pieces work as one system.
 
-NARRATOR: Additional topics include object-oriented and object-relational
+NARRATOR: Indexes provide additional access paths for selected queries.
 
-databases; semi-structured databases (such as XML); and information retrieval.
+NARRATOR: Consider this worked case: An index on the 'LastName' column speeds up searches
 
-NARRATOR: Consider this worked case: An e-commerce platform uses SQL to fetch product
+for employees by surname.
 
-inventory and application code to process checkout orders.
+NARRATOR: On screen, show a table with a B-tree index structure diagram next to a query
 
-NARRATOR: On screen, sketch a simple architecture diagram with a frontend app,
-
-backend logic, and relational database connected by SQL calls.
+execution path.
 
 NARRATOR: Explain each connection explicitly and verify that information retains the same
 
@@ -218,21 +218,27 @@ NARRATOR: The synthesis matters only if every connection remains supported by th
 
 evidence.
 
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
 NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
 
 guide a new analysis.
 
-NARRATOR: Security requirements should be tracked throughout development.
+NARRATOR: Topics in relational database systems include data modeling; the relational
 
-NARRATOR: Consider this worked case: A developer checks that foreign keys enforce
+model; relational algebra; Structured Query Language (SQL); and data quality,
 
-referential integrity, indexes optimize query performance, and encryption protects sensitive
+transactions, integrity and security.
 
-fields.
+NARRATOR: Consider this worked case: Check that all foreign keys reference valid primary
 
-NARRATOR: On screen, present a printable checklist graphic with checkboxes for
+keys, indexes cover frequent query columns, and constraints prevent invalid data entry.
 
-modeling, querying, integrity, and security verification.
+NARRATOR: On screen, display a checklist graphic with three boxes: Integrity,
+
+Performance, Query Requirements.
 
 NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
 
@@ -241,7 +247,3 @@ next verification step.
 NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
 
 memory or intuition.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.

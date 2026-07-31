@@ -5,17 +5,17 @@
       "shots": [
         {
           "id": "beat-01-shot-001",
-          "phrase": "Begin by framing Introduction to Computational Thinking as a question about inputs, decisions, and observable results.",
+          "phrase": "Begin by framing Computational Thinking Foundations as a question about inputs, decisions, and observable results.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: A student defines a problem to find the shortest path in a network, then specifies inputs (graph), outputs (path length), and expected time complexity.",
+          "phrase": "Consider this worked case: A problem statement defines what the program must do, while input and output examples specify the expected behavior for specific cases.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-003",
-          "phrase": "Annotate with 'specification', 'correctness', and 'bounds' labels.",
+          "phrase": "List the givens before choosing a method, because an unstated assumption can change the conclusion.",
           "type": "deterministic-svg"
         }
       ]
@@ -25,17 +25,17 @@
       "shots": [
         {
           "id": "beat-02-shot-001",
-          "phrase": "Now define Algorithm Expression in Pseudo Code precisely enough that another learner could test the definition.",
+          "phrase": "Now define Variables and State precisely enough that another learner could test the definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: A student writes a pseudo code function for calculating factorial, then translates it into Python code, noting where comments clarify the logic.",
+          "phrase": "Consider this worked case: A variable stores a value that can change over time, while expressions compute new values based on existing ones, and control structures determine which operations to execute.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-003",
-          "phrase": "Add a checkmark icon next to 'syntax matches logic' and a magnifying glass over the indentation area.",
+          "phrase": "Separate the formal definition from an implementation detail, then identify what evidence would distinguish them.",
           "type": "deterministic-svg"
         }
       ]
@@ -45,17 +45,17 @@
       "shots": [
         {
           "id": "beat-03-shot-001",
-          "phrase": "With the foundation in place, examine how Functional vs.",
+          "phrase": "With the foundation in place, examine how Functions and Decomposition operates in a concrete sequence.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Dynamic programming records solutions to overlapping subproblems.",
+          "phrase": "Consider this worked case: A function takes input parameters, performs a specific operation, and returns a result, breaking down complex problems into manageable parts.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-003",
-          "phrase": "Overlap shows 'both solve the same problem' with a small code snippet in each quadrant.",
+          "phrase": "Follow every arrow in order and name the state before and after each transition.",
           "type": "deterministic-svg"
         }
       ]
@@ -65,17 +65,17 @@
       "shots": [
         {
           "id": "beat-04-shot-001",
-          "phrase": "Next, compare the choices involved in Control Structures and make the decision criteria explicit.",
+          "phrase": "Next, compare the choices involved in Recursion and Base Cases and make the decision criteria explicit.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: A student uses a while loop to count down from 10 to 1, updating a counter variable each iteration until the condition fails.",
+          "phrase": "Consider this worked case: A recursive function calls itself with a smaller input until it reaches a base case, at which point it stops and returns a value.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-04-shot-003",
-          "phrase": "Highlight the condition check and the update step with distinct colors.",
+          "phrase": "Compare alternatives against the same constraints so the evaluation does not move the goalposts.",
           "type": "deterministic-svg"
         }
       ]
@@ -85,17 +85,17 @@
       "shots": [
         {
           "id": "beat-05-shot-001",
-          "phrase": "Apply Problem Solving Using Recursion to a worked situation instead of treating it as an isolated definition.",
+          "phrase": "Apply Lists and Data Structures to a worked situation instead of treating it as an isolated definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: A student implements a recursive function to traverse a directory tree, calling itself for each subdirectory until an empty folder is found.",
+          "phrase": "Consider this worked case: A list stores items in order, a stack adds and removes items from the top, a queue adds items to the back and removes from the front, a tree organizes items hierarchically, and a graph connects entities with edges.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-05-shot-003",
-          "phrase": "Add arrows showing the call stack unwinding.",
+          "phrase": "Work from the concrete inputs to the result, checking units, types, or invariants at each step.",
           "type": "deterministic-svg"
         }
       ]
@@ -105,12 +105,12 @@
       "shots": [
         {
           "id": "beat-06-shot-001",
-          "phrase": "Examine the tradeoffs in Basic Searching and Sorting, including what improves and what becomes more difficult.",
+          "phrase": "Examine the tradeoffs in Control Structures, including what improves and what becomes more difficult.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: A student sorts a list of student IDs alphabetically using bubble sort, then uses binary search to find a specific ID in the sorted list.",
+          "phrase": "Consider this worked case: An if statement executes a block of code if a condition is true, while a for loop repeats a block of code a specified number of times.",
           "type": "deterministic-svg"
         },
         {
@@ -125,17 +125,17 @@
       "shots": [
         {
           "id": "beat-07-shot-001",
-          "phrase": "Stress-test the reasoning around Elementary Data Structures: Lists, Trees, Graphs with an edge case and identify which assumption controls the outcome.",
+          "phrase": "Stress-test the reasoning around Search and Sort Algorithms with an edge case and identify which assumption controls the outcome.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: A student uses a list to track daily expenses, a tree to organize file folders, and a graph to map city bus routes with stops as vertices and routes as edges.",
+          "phrase": "Consider this worked case: A search algorithm finds a specific item in a list, while a sort algorithm arranges items in order, both relying on the data structure used and specific invariants to maintain correctness.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-003",
-          "phrase": "Label each with its primary use case.",
+          "phrase": "Change one assumption at a time and observe which part of the reasoning no longer holds.",
           "type": "deterministic-svg"
         }
       ]
@@ -145,17 +145,17 @@
       "shots": [
         {
           "id": "beat-08-shot-001",
-          "phrase": "Use Correctness, Testing, and Debugging to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "phrase": "Use Correctness and Testing to diagnose a failure by separating symptoms, causes, and corrective action.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: A student tests a sorting algorithm with empty lists, single elements, and duplicates, then uses a debugger to step through a loop to find an off-by-one error.",
+          "phrase": "Consider this worked case: Tests verify that the program behaves as expected for various inputs, including edge cases, while tracing follows the execution step by step to identify errors.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-003",
-          "phrase": "Each item has a toggle switch that flips from red to green as the student checks them off.",
+          "phrase": "Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause.",
           "type": "deterministic-svg"
         }
       ]
@@ -165,17 +165,17 @@
       "shots": [
         {
           "id": "beat-09-shot-001",
-          "phrase": "Connect Data Structure Representation and Invariants to the earlier ideas and explain how the pieces work as one system.",
+          "phrase": "Connect Debugging Techniques to the earlier ideas and explain how the pieces work as one system.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: A student chooses an adjacency list over an adjacency matrix for a sparse graph, noting that the invariant 'each edge appears exactly once' keeps memory usage low.",
+          "phrase": "Consider this worked case: Debugging involves identifying and fixing errors in the code, such as syntax errors, runtime errors, or logical errors, by breaking the problem into smaller parts and focusing on one concern at a time.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-003",
-          "phrase": "Add a warning icon over the matrix and a checkmark over the list, labeled 'sparse graph invariant'.",
+          "phrase": "Explain each connection explicitly and verify that information retains the same meaning across representations.",
           "type": "deterministic-svg"
         }
       ]
@@ -190,17 +190,17 @@
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: A student reviews a checklist: 'define I/O', 'state loop invariant', 'analyze recurrence', 'verify base case', then proceeds to code the divide-and-conquer algorithm.",
+          "phrase": "Consider this worked case: The project involves writing pseudo code to describe the algorithm, then implementing the algorithm in a programming language, and finally testing the implementation to ensure correctness.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-10-shot-003",
-          "phrase": "Each box has a progress bar that fills as the student completes the step, ending with a 'ready to code' badge.",
+          "phrase": "For each checklist item, record the evidence, the remaining uncertainty, and the next verification step.",
           "type": "deterministic-svg"
         }
       ]
     }
   ],
-  "episodeId": "csci-141-computer-science-i-foundations-lesson-blueprint",
+  "episodeId": "csci-141-computer-science-i-foundations",
   "schemaVersion": 1
 }

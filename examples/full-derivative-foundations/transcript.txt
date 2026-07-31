@@ -1,269 +1,251 @@
-NARRATOR: This lesson builds the derivative from first principles.
+This lesson builds the derivative from first principles.
 
-NARRATOR: We will begin with an average rate of change over an interval, shrink that
+We will begin with an average rate of change over an interval, shrink that interval using a
 
-interval using a limit, and obtain the derivative at one point.
+limit, and obtain the derivative at one point.
 
-NARRATOR: Then we will turn that pointwise idea into a derivative function, recognize
+Then we will turn that pointwise idea into a derivative function, recognize where
 
-where differentiability fails, interpret motion, and use a tangent line for local
+differentiability fails, interpret motion, and use a tangent line for local approximation.
 
-approximation.
+The goal is not merely to memorize f prime notation.
 
-NARRATOR: The goal is not merely to memorize f prime notation.
-
-NARRATOR: It is to understand what information a derivative contains, how the definition
+It is to understand what information a derivative contains, how the definition
 
 produces it, and when that information is valid.
 
-NARRATOR: Keep one question in view: how can we describe change at an exact input when an
+Keep one question in view: how can we describe change at an exact input when an ordinary
 
-ordinary slope calculation needs two different points?
+slope calculation needs two different points?
 
-NARRATOR: Choose an input a and a second input a plus h.
+Choose an input a and a second input a plus h.
 
-NARRATOR: The change in input is h.
+The change in input is h.
 
-NARRATOR: The corresponding change in output is f of a plus h minus f of a. Dividing output
+The corresponding change in output is f of a plus h minus f of a. Dividing output change by
 
-change by input change gives the difference quotient.
+input change gives the difference quotient.
 
-NARRATOR: Geometrically, it is the slope of the secant line through the two points.
+Geometrically, it is the slope of the secant line through the two points.
 
-NARRATOR: In an application, it is an average rate across the interval.
+In an application, it is an average rate across the interval.
 
-NARRATOR: If position changes by one hundred meters over five seconds, the average velocity
+If position changes by one hundred meters over five seconds, the average velocity is twenty
 
-is twenty meters per second, even if the object moved faster or slower within those
+meters per second, even if the object moved faster or slower within those five seconds.
 
-five seconds.
+Average change summarizes an interval.
 
-NARRATOR: Average change summarizes an interval.
+It does not yet isolate what happens at a single instant.
 
-NARRATOR: It does not yet isolate what happens at a single instant.
+To focus on the input a, let h approach zero.
 
-NARRATOR: To focus on the input a, let h approach zero.
+We do not substitute h equals zero into the quotient; that would divide by zero.
 
-NARRATOR: We do not substitute h equals zero into the quotient; that would divide by zero.
+Instead, we examine values of h that are nonzero but arbitrarily small.
 
-NARRATOR: Instead, we examine values of h that are nonzero but arbitrarily small.
+As the second point approaches the first, the secant lines may approach a limiting line.
 
-NARRATOR: As the second point approaches the first, the secant lines may approach a
+If their slopes approach one finite value from both sides, that value is f prime of a, the
 
-limiting line.
+derivative at a.
 
-NARRATOR: If their slopes approach one finite value from both sides, that value is f prime
+The limit is the crucial reasoning step.
 
-of a, the derivative at a.
+It converts a family of nearby average rates into one instantaneous rate.
 
-NARRATOR: The limit is the crucial reasoning step.
+If the slopes do not settle to a common finite value, the derivative at that point does not
 
-NARRATOR: It converts a family of nearby average rates into one instantaneous rate.
+exist.
 
-NARRATOR: If the slopes do not settle to a common finite value, the derivative at that
+Let f of x equal x squared.
 
-point does not exist.
+Start with f of a plus h minus f of a, all divided by h. Expanding gives a squared plus
 
-NARRATOR: Let f of x equal x squared.
+two a h plus h squared minus a squared, divided by h.
 
-NARRATOR: Start with f of a plus h minus f of a, all divided by h. Expanding gives a squared
+The a-squared terms cancel.
 
-plus two a h plus h squared minus a squared, divided by h.
+Because h is nonzero during the limiting process, factor h from the numerator and
 
-NARRATOR: The a-squared terms cancel.
+cancel it with the denominator.
 
-NARRATOR: Because h is nonzero during the limiting process, factor h from the numerator
+The quotient becomes two a plus h.
 
-and cancel it with the denominator.
+Now let h approach zero.
 
-NARRATOR: The quotient becomes two a plus h.
+The limit is two a. Notice the order of operations: form the quotient, simplify it for
 
-NARRATOR: Now let h approach zero.
+nonzero h, then evaluate the limit.
 
-NARRATOR: The limit is two a. Notice the order of operations: form the quotient, simplify it
+We never claim that h itself is zero while it remains in the denominator.
 
-for nonzero h, then evaluate the limit.
+The previous calculation kept a symbolic, so it did more than find one slope.
 
-NARRATOR: We never claim that h itself is zero while it remains in the denominator.
+It produced a rule: for f of x equals x squared, f prime of x equals two x.
 
-NARRATOR: The previous calculation kept a symbolic, so it did more than find one slope.
+This new function reports the original curve's tangent slope at every differentiable input.
 
-NARRATOR: It produced a rule: for f of x equals x squared, f prime of x equals two x.
+At x equals three, the derivative is six.
 
-NARRATOR: This new function reports the original curve's tangent slope at every
+At x equals negative two, it is negative four.
 
-differentiable input.
+At zero, it is zero.
 
-NARRATOR: At x equals three, the derivative is six.
+The derivative function has its own graph and domain.
 
-NARRATOR: At x equals negative two, it is negative four.
+Its input is still an x-value from the original problem, while its output is a rate
 
-NARRATOR: At zero, it is zero.
+or slope.
 
-NARRATOR: The derivative function has its own graph and domain.
+Thinking of f prime as a function is essential for later topics such as optimization and
 
-NARRATOR: Its input is still an x-value from the original problem, while its output is a
+differential equations.
 
-rate or slope.
+The sign of the derivative summarizes local direction.
 
-NARRATOR: Thinking of f prime as a function is essential for later topics such as
+Where f prime is positive, tangent lines rise from left to right, so the function is locally
 
-optimization and differential equations.
+increasing.
 
-NARRATOR: The sign of the derivative summarizes local direction.
+Where f prime is negative, tangent lines fall, so the function is locally decreasing.
 
-NARRATOR: Where f prime is positive, tangent lines rise from left to right, so the function
+Where f prime equals zero, the tangent is horizontal.
 
-is locally increasing.
+A zero derivative identifies a critical point candidate, not automatically a maximum or
 
-NARRATOR: Where f prime is negative, tangent lines fall, so the function is locally
+minimum.
 
-decreasing.
+For x squared, f prime changes from negative to positive at zero, matching the parabola's
 
-NARRATOR: Where f prime equals zero, the tangent is horizontal.
+minimum.
 
-NARRATOR: A zero derivative identifies a critical point candidate, not automatically a
+But another function can have a horizontal tangent and continue increasing.
 
-maximum or minimum.
-
-NARRATOR: For x squared, f prime changes from negative to positive at zero, matching the
-
-parabola's minimum.
-
-NARRATOR: But another function can have a horizontal tangent and continue increasing.
-
-NARRATOR: The derivative gives local evidence; interpreting a larger pattern requires
+The derivative gives local evidence; interpreting a larger pattern requires
 
 checking how that evidence changes around the point.
 
-NARRATOR: Not every graph has an ordinary finite tangent slope everywhere.
+Not every graph has an ordinary finite tangent slope everywhere.
 
-NARRATOR: At a jump or hole, the function is not continuous, so it cannot be differentiable
+At a jump or hole, the function is not continuous, so it cannot be differentiable
 
 there.
 
-NARRATOR: At a sharp corner, the left-hand and right-hand slopes approach different values.
+At a sharp corner, the left-hand and right-hand slopes approach different values.
 
-NARRATOR: At a cusp, the slopes can diverge with incompatible signs.
+At a cusp, the slopes can diverge with incompatible signs.
 
-NARRATOR: At a vertical tangent, the slope becomes unbounded rather than approaching a
+At a vertical tangent, the slope becomes unbounded rather than approaching a finite
 
-finite number.
+number.
 
-NARRATOR: Differentiability is therefore a stronger condition than continuity.
+Differentiability is therefore a stronger condition than continuity.
 
-NARRATOR: If a function is differentiable at a point, it is continuous there.
+If a function is differentiable at a point, it is continuous there.
 
-NARRATOR: The reverse is not guaranteed: the absolute-value function is continuous at zero
+The reverse is not guaranteed: the absolute-value function is continuous at zero
 
 but has a corner, so its derivative at zero does not exist.
 
-NARRATOR: Suppose s of t gives position along a line.
+Suppose s of t gives position along a line.
 
-NARRATOR: A secant slope over a time interval gives average velocity.
+A secant slope over a time interval gives average velocity.
 
-NARRATOR: The derivative s prime of t gives instantaneous velocity.
+The derivative s prime of t gives instantaneous velocity.
 
-NARRATOR: Its sign indicates direction relative to the chosen coordinate axis, while
+Its sign indicates direction relative to the chosen coordinate axis, while its magnitude is
 
-its magnitude is speed.
+speed.
 
-NARRATOR: Differentiate velocity to obtain acceleration.
+Differentiate velocity to obtain acceleration.
 
-NARRATOR: Positive acceleration does not necessarily mean the object is speeding up;
+Positive acceleration does not necessarily mean the object is speeding up; speed
 
-speed increases when velocity and acceleration have the same sign and decreases when their
+increases when velocity and acceleration have the same sign and decreases when their signs
 
-signs differ.
+differ.
 
-NARRATOR: Units also reveal meaning.
+Units also reveal meaning.
 
-NARRATOR: If position is measured in meters and time in seconds, velocity uses meters per
+If position is measured in meters and time in seconds, velocity uses meters per second and
 
-second and acceleration uses meters per second squared.
+acceleration uses meters per second squared.
 
-NARRATOR: The derivative is also the coefficient of a local linear model.
+The derivative is also the coefficient of a local linear model.
 
-NARRATOR: At x equals a, the tangent line has value f of a and slope f prime of a.
+At x equals a, the tangent line has value f of a and slope f prime of a.
 
-NARRATOR: Its equation is L of x equals f of a plus f prime of a times x minus a.
+Its equation is L of x equals f of a plus f prime of a times x minus a.
 
-NARRATOR: For x close to a, L of x can approximate f of x.
+For x close to a, L of x can approximate f of x.
 
-NARRATOR: For example, to estimate the square root of four point one, use f of x equals
+For example, to estimate the square root of four point one, use f of x equals square root
 
-square root x at a equals four.
+x at a equals four.
 
-NARRATOR: The value is two and the derivative is one fourth, so the estimate is two plus one
+The value is two and the derivative is one fourth, so the estimate is two plus one fourth
 
-fourth times zero point one, or two point zero two five.
+times zero point one, or two point zero two five.
 
-NARRATOR: The method works locally; accuracy generally decreases farther from the base
+The method works locally; accuracy generally decreases farther from the base point.
 
-point.
+Let f of x equal three x squared minus two x, and find the tangent at x equals one.
 
-NARRATOR: Let f of x equal three x squared minus two x, and find the tangent at x equals
+The derivative function is six x minus two, so f prime of one is four.
 
-one.
+The point on the original graph is one comma f of one, which is one comma one.
 
-NARRATOR: The derivative function is six x minus two, so f prime of one is four.
+Using point-slope form, y minus one equals four times x minus one.
 
-NARRATOR: The point on the original graph is one comma f of one, which is one comma one.
+This example separates three objects that students often mix together: f of one is the
 
-NARRATOR: Using point-slope form, y minus one equals four times x minus one.
+output one; f prime of one is the slope four; and the tangent line is a new linear equation
 
-NARRATOR: This example separates three objects that students often mix together: f of one is
+built from both.
 
-the output one; f prime of one is the slope four; and the tangent line is a new linear
+Always compute the point and the slope before writing the tangent line.
 
-equation built from both.
+When solving a derivative problem from first principles, use five checks.
 
-NARRATOR: Always compute the point and the slope before writing the tangent line.
+First, identify the two inputs and the interval change h.
 
-NARRATOR: When solving a derivative problem from first principles, use five checks.
+Second, form the difference quotient with parentheses around the entire numerator.
 
-NARRATOR: First, identify the two inputs and the interval change h.
+Third, simplify while h is nonzero.
 
-NARRATOR: Second, form the difference quotient with parentheses around the entire numerator.
+Fourth, take the limit only after the removable algebraic obstacle is handled.
 
-NARRATOR: Third, simplify while h is nonzero.
+Fifth, interpret the result with a slope, rate, units, or tangent line.
 
-NARRATOR: Fourth, take the limit only after the removable algebraic obstacle is handled.
+Common errors include substituting zero too early, dropping parentheses, confusing f of a
 
-NARRATOR: Fifth, interpret the result with a slope, rate, units, or tangent line.
+with f prime of a, and assuming every continuous point is differentiable.
 
-NARRATOR: Common errors include substituting zero too early, dropping parentheses,
+The algebra matters, but the interpretation is what tells you whether the answer belongs to
 
-confusing f of a with f prime of a, and assuming every continuous point is
+the original problem.
 
-differentiable.
+The derivative begins with two points and an average rate of change.
 
-NARRATOR: The algebra matters, but the interpretation is what tells you whether the
+A limit brings those points together without dividing by zero.
 
-answer belongs to the original problem.
+When the limit exists, it gives the tangent slope and instantaneous rate at one input.
 
-NARRATOR: The derivative begins with two points and an average rate of change.
+Repeating the process across inputs creates the derivative function.
 
-NARRATOR: A limit brings those points together without dividing by zero.
+Its sign and value describe local behavior, its failures mark important geometric
 
-NARRATOR: When the limit exists, it gives the tangent slope and instantaneous rate at one
+features, its physical units describe rates such as velocity, and its value supplies the
 
-input.
+slope of a local linear approximation.
 
-NARRATOR: Repeating the process across inputs creates the derivative function.
+These are not unrelated definitions.
 
-NARRATOR: Its sign and value describe local behavior, its failures mark important
+They are different views of the same mathematical object.
 
-geometric features, its physical units describe rates such as velocity, and its value
+If you can move fluently among the quotient, the graph, the units, and the application, you
 
-supplies the slope of a local linear approximation.
+understand the derivative at a foundation strong enough for the rules and applications
 
-NARRATOR: These are not unrelated definitions.
-
-NARRATOR: They are different views of the same mathematical object.
-
-NARRATOR: If you can move fluently among the quotient, the graph, the units, and the
-
-application, you understand the derivative at a foundation strong enough for the rules and
-
-applications that follow.
+that follow.

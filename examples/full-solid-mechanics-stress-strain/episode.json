@@ -1,0 +1,293 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Begin by isolating any structural component and replacing all external connections with their equivalent forces and moments. This process creates a free-body diagram that visually captures every external load acting on the body. Once drawn, enforce translational equilibrium by summing all horizontal and vertical forces to zero, and enforce rotational equilibrium by summing all moments about a chosen pivot to zero. These equilibrium conditions allow you to solve for unknown reactions or applied loads. The diagram must show every force vector with its direction, magnitude, and point of application, ensuring that the mathematical system accurately reflects the physical reality of the structure. This foundational step prevents sign errors and establishes a clear reference frame for all subsequent calculations.",
+      "plannedSeconds": 61,
+      "title": "Free-Body Diagrams and Equilibrium",
+      "visualDirection": "template:showcase-mechanics | A clean, editable vector diagram showing a rectangular beam with arrows representing external loads (weights, supports, applied forces) and reaction forces. Coordinate axes are set"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "To understand how a structure responds internally, make a conceptual cut through the member and expose the hidden forces that keep the two halves in equilibrium. These exposed forces are the internal resultants, which include axial forces, shear forces, and bending moments. The direction of each internal resultant is determined by Newton's third law: the cut face must exert forces that balance the external loads on the exposed segment. By analyzing either side of the cut, you can compute the exact magnitude and direction of these internal forces. This technique transforms a complex structural problem into manageable equilibrium equations, revealing how loads are distributed throughout the material rather than acting only at the boundaries.",
+      "plannedSeconds": 65,
+      "title": "Internal Resultants and Section Cuts",
+      "visualDirection": "template:showcase-mechanics | A split rectangular beam showing a vertical cut through its center. The left half displays external loads and reaction forces, while the right half shows the exposed internal force"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "Stress quantifies how internal forces are distributed across a material's cross-section rather than treating them as single point loads. Normal stress measures the intensity of axial forces perpendicular to a chosen section, calculated by dividing the axial force by the cross-sectional area. Shear stress measures the intensity of internal forces parallel to that section, which resist sliding between adjacent material layers. The orientation of the section matters significantly, as the same internal force produces different stress values depending on how you slice the member. By explicitly defining the section plane and applying the correct force component, you ensure that the calculated stress accurately represents the actual material intensity at that location.",
+      "plannedSeconds": 60,
+      "title": "Normal Stress and Shear Stress",
+      "visualDirection": "template:showcase-mechanics | A rectangular bar with a horizontal cut through its cross-section. The cut face shows normal stress arrows pointing outward and shear stress arrows pointing parallel to the cut,"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "When a member is loaded, it deforms, and this deformation is measured as strain, which represents the fractional change in length relative to the original length. Normal strain quantifies elongation or shortening along the loading axis. The relationship between normal stress and normal strain is governed by the material's elastic modulus, which acts as a stiffness coefficient that links force intensity to deformation intensity. Within a specific range, the material responds predictably, meaning that doubling the stress produces exactly double the strain. This linear relationship allows engineers to predict how much a component will stretch or compress under known loads, providing a direct bridge between mechanical forces and physical deformation.",
+      "plannedSeconds": 65,
+      "title": "Normal Strain and Elastic Modulus",
+      "visualDirection": "template:showcase-mechanics | A bar with a grid of vertical lines representing original length. The bar is stretched, and the spacing between lines increases. A formula showing stress equals elastic modulus"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Linear elasticity describes the region where stress and strain are directly proportional, forming a straight line on a stress-strain curve. This straight-line behavior persists only up to a specific stress threshold, beyond which the material's response becomes nonlinear. The slope of this straight line represents the elastic modulus, which remains constant throughout the elastic region. By plotting stress against strain, you can visually identify the elastic limit and understand how the material transitions from predictable deformation to more complex behavior. This graphical representation is essential for selecting appropriate materials and ensuring that design loads remain within the safe, linear range where predictable deformation occurs.",
+      "plannedSeconds": 60,
+      "title": "Linear Elasticity and Stress-Strain Curves",
+      "visualDirection": "template:showcase-mechanics | A graph with stress on the y-axis and strain on the x-axis. A straight line starts from the origin, labeled with the elastic modulus, and bends at a point labeled 'elastic limit'."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "Yielding marks the point where a material begins to deform permanently, meaning it will not return to its original shape when the load is removed. This transition occurs when the applied stress exceeds the material's yield strength, causing internal atomic bonds to slide past one another. Once yielding begins, the stress-strain curve bends, and the material enters a plastic region where deformation increases rapidly with relatively small additional stress. Understanding yielding is critical because permanent deformation can alter the geometry of a structure, potentially leading to instability or reduced load capacity. Engineers must ensure that design stresses remain below the yield point to preserve the intended shape and function of the component.",
+      "plannedSeconds": 65,
+      "title": "Yielding and Plasticity",
+      "visualDirection": "template:showcase-mechanics | A bar with a grid of vertical lines representing original length. The bar is stretched, and the spacing between lines increases. A formula showing stress equals elastic modulus"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "Fracture occurs when the material can no longer sustain the applied stress, resulting in sudden rupture or crack propagation. Unlike yielding, which involves permanent but reversible deformation, fracture represents complete structural failure. The stress-strain curve typically shows a sharp drop in stress after the ultimate strength is reached, indicating that the material can no longer carry additional load. Fatigue is another failure mechanism where repeated cyclic loading causes cracks to initiate and grow over time, even if the stress remains below the yield point. Recognizing these failure modes helps engineers design components that can withstand both static and dynamic loading conditions without catastrophic breakdown.",
+      "plannedSeconds": 60,
+      "title": "Fracture and Failure Mechanisms",
+      "visualDirection": "template:showcase-mechanics | A bar with a grid of vertical lines representing original length. The bar is stretched, and the spacing between lines increases. A formula showing stress equals elastic modulus"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "Safety factors provide a margin of protection between the predicted mechanical demands and the material's or structure's failure limits. By comparing the calculated stress or force to the material's yield strength or fracture limit, you determine whether the design is adequate. A higher safety factor reduces the risk of failure but may increase material usage and cost. Design checks require explicit comparison of these values, ensuring that the actual demands remain within the acceptable range. This systematic evaluation process transforms theoretical calculations into reliable engineering decisions, balancing performance requirements with structural integrity and material efficiency.",
+      "plannedSeconds": 65,
+      "title": "Safety Factors and Design Checks",
+      "visualDirection": "template:showcase-mechanics | A bar with a grid of vertical lines representing original length. The bar is stretched, and the spacing between lines increases. A formula showing stress equals elastic modulus"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "To apply these concepts, calculate the stress and strain in a complete axial member by first determining the axial force through equilibrium. Divide this force by the cross-sectional area to find the normal stress, then use the elastic modulus to compute the normal strain. Multiply the strain by the original length to determine the change in length. Throughout the process, maintain explicit units, verify sign conventions, and confirm that the calculated stress remains below the yield and fracture limits. This step-by-step calculation integrates equilibrium, stress, strain, and material properties into a single coherent analysis, demonstrating how theoretical principles translate into practical design values.",
+      "plannedSeconds": 60,
+      "title": "Complete Axial-Member Calculation",
+      "visualDirection": "template:showcase-mechanics | A bar with a grid of vertical lines representing original length. The bar is stretched, and the spacing between lines increases. A formula showing stress equals elastic modulus"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "Review your calculations using a structured checklist that ensures accuracy and completeness. First, verify that the free-body diagram includes all external forces and moments. Second, confirm that equilibrium equations are solved correctly for unknown reactions. Third, check that internal resultants are calculated using the correct section cut. Fourth, ensure stress and strain values use consistent units and explicit sign conventions. Fifth, compare the calculated stress to the material's yield and fracture limits. Sixth, apply the appropriate safety factor to validate the design. This systematic review process catches common errors and reinforces the logical flow from equilibrium to material response, guaranteeing that your structural analysis is both reliable and defensible.",
+      "plannedSeconds": 65,
+      "title": "Practical Analysis Checklist",
+      "visualDirection": "template:showcase-mechanics | A bar with a grid of vertical lines representing original length. The bar is stretched, and the spacing between lines increases. A formula showing stress equals elastic modulus"
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "mit-solid-mechanics"
+      ],
+      "text": "Analysis begins by isolating a body, replacing connections with forces and moments, and enforcing translational and rotational equilibrium. Internal resultants follow from cuts through a member. Stress describes internal",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "mit-solid-mechanics"
+      ],
+      "text": "Analysis begins by isolating a body, replacing connections with forces and moments, and enforcing translational and rotational equilibrium. Internal resultants follow from cuts through a member. Stress describes internal",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "mit-solid-mechanics"
+      ],
+      "text": "Analysis begins by isolating a body, replacing connections with forces and moments, and enforcing translational and rotational equilibrium. Internal resultants follow from cuts through a member. Stress describes internal",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "mit-materials-structures"
+      ],
+      "text": "In uniaxial loading, normal stress is axial force divided by cross-sectional area and normal strain is change in length divided by original length. Linear elastic behavior relates stress and strain through an elastic mod",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "mit-materials-structures"
+      ],
+      "text": "In uniaxial loading, normal stress is axial force divided by cross-sectional area and normal strain is change in length divided by original length. Linear elastic behavior relates stress and strain through an elastic mod",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "mit-materials-structures"
+      ],
+      "text": "In uniaxial loading, normal stress is axial force divided by cross-sectional area and normal strain is change in length divided by original length. Linear elastic behavior relates stress and strain through an elastic mod",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "mit-materials-structures"
+      ],
+      "text": "In uniaxial loading, normal stress is axial force divided by cross-sectional area and normal strain is change in length divided by original length. Linear elastic behavior relates stress and strain through an elastic mod",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "mit-materials-structures"
+      ],
+      "text": "In uniaxial loading, normal stress is axial force divided by cross-sectional area and normal strain is change in length divided by original length. Linear elastic behavior relates stress and strain through an elastic mod",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "mit-materials-structures"
+      ],
+      "text": "In uniaxial loading, normal stress is axial force divided by cross-sectional area and normal strain is change in length divided by original length. Linear elastic behavior relates stress and strain through an elastic mod",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "mit-materials-structures"
+      ],
+      "text": "In uniaxial loading, normal stress is axial force divided by cross-sectional area and normal strain is change in length divided by original length. Linear elastic behavior relates stress and strain through an elastic mod",
+      "verified": true
+    }
+  ],
+  "id": "solid-mechanics-foundations-from-equilibrium-to-axial-design",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "MIT OpenCourseWare",
+      "excerpt": "MIT 1.050 introduces static equilibrium, force resultants, support conditions, determinate beams, trusses and frames, stress and strain in structural elements, shear, bending, torsion, displacements, deformation, elastic stability, and design reasoning. Analysis begins by isolating a body, replacing connections with forces and moments, and enforcing translational and rotational equilibrium. Internal resultants follow from cuts through a member. Stress describes internal force intensity rather than total external load, while deformation depends on geometry, material behavior, and boundary conditions. Units, signs, and the chosen section must remain explicit.",
+      "id": "mit-solid-mechanics",
+      "sha256": "98ccef9c869df1daead04f0f1ddff102b45f5bfba1efee4a3991a57d0137aa35",
+      "title": "MIT 1.050 Solid Mechanics",
+      "type": "note",
+      "uri": "https://ocw.mit.edu/courses/1-050-solid-mechanics-fall-2004/",
+      "verified": true
+    },
+    {
+      "author": "MIT OpenCourseWare",
+      "excerpt": "MIT's materials and structures course covers statics, trusses, determinate and indeterminate systems, stress-strain behavior, beam bending, buckling, torsion, plasticity, fracture, fatigue, and structural failure. In uniaxial loading, normal stress is axial force divided by cross-sectional area and normal strain is change in length divided by original length. Linear elastic behavior relates stress and strain through an elastic modulus over a limited range. Yielding marks the onset of significant permanent deformation, while fracture and fatigue involve different failure mechanisms. Design checks compare predicted demands with material and structural limits using stated safety assumptions.",
+      "id": "mit-materials-structures",
+      "sha256": "700bb820b6497649ee229329584e49f8f85b6dd6f7bb0770d4301ce3af263f94",
+      "title": "MIT Unified Engineering: Materials and Structures",
+      "type": "note",
+      "uri": "https://ocw.mit.edu/courses/16-001-unified-engineering-materials-and-structures-fall-2021/",
+      "verified": true
+    }
+  ],
+  "title": "Solid Mechanics Foundations: From Equilibrium to Axial Design"
+}

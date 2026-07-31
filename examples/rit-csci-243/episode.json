@@ -13,10 +13,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Introduction to Program Structure as a question about inputs, decisions, and observable results. Modes of operation define how a primitive processes data larger than one block. Consider this worked case: A C program divides functionality into functions and global variables. On screen, display a block diagram showing a main function calling three sub-functions with a shared data structure. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 55,
-      "title": "Introduction to Program Structure",
-      "visualDirection": "template:academic-process | Display a block diagram showing a main function calling three sub-functions with a shared data structure."
+      "narration": "Begin by framing Defining the Scope of CSCI-243 as a question about inputs, decisions, and observable results. Students will be introduced to the details of program structure and the mechanics of execution as well as supportive operating system features. Consider this worked case: A student enrolling in CSCI-243 must have earned a C- or better in CSCI-140, CSCI-142, CSCI-242, or an equivalent course such as SWEN-124. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 62,
+      "title": "Defining the Scope of CSCI-243",
+      "visualDirection": "template:academic-process | Display the official catalog description text in a centered box with a subtle border; highlight the prerequisite list in a contrasting color."
     },
     {
       "accessibility": {
@@ -31,10 +31,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Execution Mechanics Overview precisely enough that another learner could test the definition. Students will be introduced to the details of program structure and the mechanics of execution as well as supportive operating system features. Consider this worked case: A for-loop iterates through an array, updating a running total each cycle. On screen, show a flowchart with a start node, a loop diamond, and exit arrows based on a boolean condition. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
-      "plannedSeconds": 55,
-      "title": "Execution Mechanics Overview",
-      "visualDirection": "template:academic-process | Show a flowchart with a start node, a loop diamond, and exit arrows based on a boolean condition."
+      "narration": "Now define The Foundation of Precise Problem Statements precisely enough that another learner could test the definition. Programming begins with precise problem statements, input and output examples, and algorithms written independently of syntax. Consider this worked case: Before coding, a student writes a problem statement: 'Given a list of integers, return the sum of all positive values,' and provides sample inputs/outputs. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "plannedSeconds": 60,
+      "title": "The Foundation of Precise Problem Statements",
+      "visualDirection": "template:academic-process | Show a split-screen: left side contains the written problem statement and examples; right side shows a blank editor window ready for algorithm pseudocode."
     },
     {
       "accessibility": {
@@ -49,10 +49,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Memory Management Basics operates in a concrete sequence. Protect the Software prevents unauthorized access to code and development artifacts. Consider this worked case: An integer variable stores a fixed-size binary representation in RAM. On screen, illustrate a memory map with labeled addresses, data types, and pointer offsets. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis. Then summarize what the example demonstrates, what it does not establish, and what evidence would be needed next.",
-      "plannedSeconds": 59,
-      "title": "Memory Management Basics",
-      "visualDirection": "template:academic-process | Illustrate a memory map with labeled addresses, data types, and pointer offsets."
+      "narration": "With the foundation in place, examine how Core Building Blocks: Variables, Expressions, and Control operates in a concrete sequence. Variables represent values and state, expressions compute values, and control structures select or repeat operations. Consider this worked case: In Python, `x = 5` binds a variable, `x + 3` is an expression evaluating to 8, and `if x > 0:` is a control structure that repeats or branches based on the condition. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "plannedSeconds": 64,
+      "title": "Core Building Blocks: Variables, Expressions, and Control",
+      "visualDirection": "template:academic-process | Render three distinct code snippets side-by-side, each labeled 'Variable', 'Expression', and 'Control Structure', with syntax highlighting."
     },
     {
       "accessibility": {
@@ -67,10 +67,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Program Translation Process and make the decision criteria explicit. Produce Well-Secured Software addresses security requirements, design, verification, and release. Consider this worked case: A compiler translates C syntax into machine instructions for the target CPU architecture. On screen, present a pipeline diagram showing source code, preprocessor, compiler, linker, and final executable. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Next, compare the choices involved in Functions as Decomposed Operations and make the decision criteria explicit. Functions decompose a solution into named operations with parameters and results. Consider this worked case: A function `def sum_positive(nums):` takes a list parameter and returns a single integer result, isolating the summation logic. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
       "plannedSeconds": 55,
-      "title": "Program Translation Process",
-      "visualDirection": "template:academic-process | Present a pipeline diagram showing source code, preprocessor, compiler, linker, and final executable."
+      "title": "Functions as Decomposed Operations",
+      "visualDirection": "template:academic-process | Illustrate a flowchart where a large problem box splits into smaller boxes, each labeled with a function name and its parameters."
     },
     {
       "accessibility": {
@@ -85,10 +85,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Operating System Integration to a worked situation instead of treating it as an isolated definition. Verification provides evidence that selected practices and controls were performed. Consider this worked case: A file I/O operation requests disk access through an OS kernel interface. On screen, draw a layered diagram with application code, OS API, and kernel resource managers. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 55,
-      "title": "Operating System Integration",
-      "visualDirection": "template:academic-process | Draw a layered diagram with application code, OS API, and kernel resource managers."
+      "narration": "Apply Recursion and Base Cases to a worked situation instead of treating it as an isolated definition. Recursion solves a problem through smaller instances and requires a base case. Consider this worked case: The factorial function `def fact(n): if n == 0: return 1; return n * fact(n-1)` uses the base case `n == 0` to stop infinite recursion. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 61,
+      "title": "Recursion and Base Cases",
+      "visualDirection": "template:academic-process | Show a tree diagram where each node represents a recursive call, with the root labeled `fact(5)` and leaves labeled `1` (the base case)."
     },
     {
       "accessibility": {
@@ -103,10 +103,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Security Design Principles, including what improves and what becomes more difficult. Security depends on the complete protocol and implementation, not only an algorithm name. Consider this worked case: Using AES-256 with proper key management ensures confidentiality against known attacks. On screen, show a key lifecycle diagram covering generation, distribution, storage, and revocation. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 55,
-      "title": "Security Design Principles",
-      "visualDirection": "template:academic-process | Show a key lifecycle diagram covering generation, distribution, storage, and revocation."
+      "narration": "Examine the tradeoffs in Data Structures: Lists, Stacks, Queues, Trees, Graphs, including what improves and what becomes more difficult. Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in first-out access, trees represent hierarchy, and graphs represent connected entities. Consider this worked case: A stack of plates is popped from the top (LIFO), while a line of customers at a ticket booth is served from the front (FIFO). Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "plannedSeconds": 65,
+      "title": "Data Structures: Lists, Stacks, Queues, Trees, Graphs",
+      "visualDirection": "template:academic-process | Present five small diagrams: a horizontal list, a vertical stack with arrows pointing down, a queue with arrows pointing right, a binary tree, and a simple graph with nodes and edges."
     },
     {
       "accessibility": {
@@ -121,10 +121,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Performance Optimization Strategies with an edge case and identify which assumption controls the outcome. Security and performance issues in program design will be discussed. Consider this worked case: Replacing nested loops with hash maps reduces average lookup time from O(n²) to O(1). On screen, display a comparison chart of algorithmic time complexity across different data structures. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 57,
-      "title": "Performance Optimization Strategies",
-      "visualDirection": "template:academic-process | Display a comparison chart of algorithmic time complexity across different data structures."
+      "narration": "Stress-test the reasoning around Searching, Sorting, and Invariants with an edge case and identify which assumption controls the outcome. Searching and sorting algorithms depend on representation and invariants. Consider this worked case: Binary search maintains the invariant that the target, if present, lies within the current search interval; quicksort maintains partition invariants to guarantee sorted output. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 60,
+      "title": "Searching, Sorting, and Invariants",
+      "visualDirection": "template:academic-process | Animate a step-by-step binary search on a sorted array, highlighting the shrinking interval and the invariant condition at each step."
     },
     {
       "accessibility": {
@@ -139,10 +139,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Secure Development Practices to diagnose a failure by separating symptoms, causes, and corrective action. Security requirements should be tracked throughout development. Consider this worked case: Maintaining a threat model document updates trust boundaries as the codebase evolves. On screen, present a checklist template with fields for asset, threat, control, and residual risk. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 55,
-      "title": "Secure Development Practices",
-      "visualDirection": "template:academic-process | Present a checklist template with fields for asset, threat, control, and residual risk."
+      "narration": "Use The Python Translation Pipeline to diagnose a failure by separating symptoms, causes, and corrective action. The Python language reference specifies lexical analysis, data model behavior, execution, expressions, statements, functions, classes, exceptions, and module import semantics. Consider this worked case: The string `'def hello(): pass'` is tokenized into identifiers, keywords, and delimiters during lexical analysis, then parsed into an abstract syntax tree before the interpreter executes it. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 65,
+      "title": "The Python Translation Pipeline",
+      "visualDirection": "template:academic-process | Show a linear pipeline graphic: Source Code → Lexical Analyzer → Parser → AST → Bytecode → Interpreter → Output, with brief labels under each stage."
     },
     {
       "accessibility": {
@@ -157,10 +157,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Verification and Testing Methods to the earlier ideas and explain how the pieces work as one system. Security reasoning identifies assets, trust boundaries, threats, controls, evidence, residual risk, and responsibilities. Consider this worked case: Static analysis tools scan source code for buffer overflows before compilation. On screen, show a testing workflow diagram linking unit tests, integration tests, and security scans. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 55,
-      "title": "Verification and Testing Methods",
-      "visualDirection": "template:academic-process | Show a testing workflow diagram linking unit tests, integration tests, and security scans."
+      "narration": "Connect Namespaces, Scopes, and Object Identity to the earlier ideas and explain how the pieces work as one system. Names are bound to objects within namespaces and scopes. Consider this worked case: When `import math` runs, the module object is created, and the name `math` is bound in the current namespace, allowing access to `math. sqrt(4)`. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 57,
+      "title": "Namespaces, Scopes, and Object Identity",
+      "visualDirection": "template:academic-process | Display a Venn diagram with overlapping circles labeled 'Global Scope', 'Local Scope', and 'Module Namespace', with a small icon representing an imported module inside the module circle."
     },
     {
       "accessibility": {
@@ -175,23 +175,15 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Analysis also considers side channels and migration requirements. Consider this worked case: A secure, performant module validates inputs, manages memory safely, and follows established standards. On screen, display a three-column matrix evaluating code against structure, performance, and security criteria. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 55,
-      "title": "Practical Analysis Checklist",
-      "visualDirection": "template:academic-process | Display a three-column matrix evaluating code against structure, performance, and security criteria."
+      "narration": "Finish with Debugging and Correctness: Tests, Tracing, and Boundaries as a practical checklist that can guide a new analysis. Correctness arguments, tests, tracing, and debugging compare intended behavior with observable results, including boundary and error cases. Consider this worked case: A test suite includes a case where the input list is empty (boundary) and another where the list contains negative numbers (error handling), and tracing reveals the function returns 0 for the empty case. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 68,
+      "title": "Debugging and Correctness: Tests, Tracing, and Boundaries",
+      "visualDirection": "template:academic-process | Show a split view: left side lists test cases (including boundary and error inputs), right side displays a trace log with line numbers and variable states for each case."
     }
   ],
   "claims": [
     {
       "id": "beat-01-claim-01",
-      "sourceIds": [
-        "nist-cryptographic-standards"
-      ],
-      "text": "Modes of operation define how a primitive processes data larger than one block.",
-      "verified": true
-    },
-    {
-      "id": "beat-02-claim-01",
       "sourceIds": [
         "rit-csci-243"
       ],
@@ -199,71 +191,79 @@
       "verified": true
     },
     {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "opendsa-programming-foundations"
+      ],
+      "text": "Programming begins with precise problem statements, input and output examples, and algorithms written independently of syntax.",
+      "verified": true
+    },
+    {
       "id": "beat-03-claim-01",
       "sourceIds": [
-        "nist-ssdf"
+        "opendsa-programming-foundations"
       ],
-      "text": "Protect the Software prevents unauthorized access to code and development artifacts.",
+      "text": "Variables represent values and state, expressions compute values, and control structures select or repeat operations.",
       "verified": true
     },
     {
       "id": "beat-04-claim-01",
       "sourceIds": [
-        "nist-ssdf"
+        "opendsa-programming-foundations"
       ],
-      "text": "Produce Well-Secured Software addresses security requirements, design, verification, and release.",
+      "text": "Functions decompose a solution into named operations with parameters and results.",
       "verified": true
     },
     {
       "id": "beat-05-claim-01",
       "sourceIds": [
-        "nist-ssdf"
+        "opendsa-programming-foundations"
       ],
-      "text": "Verification provides evidence that selected practices and controls were performed.",
+      "text": "Recursion solves a problem through smaller instances and requires a base case.",
       "verified": true
     },
     {
       "id": "beat-06-claim-01",
       "sourceIds": [
-        "nist-cryptographic-standards"
+        "opendsa-programming-foundations"
       ],
-      "text": "Security depends on the complete protocol and implementation, not only an algorithm name.",
+      "text": "Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in first-out access, trees represent hierarchy, and graphs represent connected entities.",
       "verified": true
     },
     {
       "id": "beat-07-claim-01",
       "sourceIds": [
-        "rit-csci-243"
+        "opendsa-programming-foundations"
       ],
-      "text": "Security and performance issues in program design will be discussed.",
+      "text": "Searching and sorting algorithms depend on representation and invariants.",
       "verified": true
     },
     {
       "id": "beat-08-claim-01",
       "sourceIds": [
-        "nist-ssdf"
+        "python-language-reference"
       ],
-      "text": "Security requirements should be tracked throughout development.",
+      "text": "The Python language reference specifies lexical analysis, data model behavior, execution, expressions, statements, functions, classes, exceptions, and module import semantics.",
       "verified": true
     },
     {
       "id": "beat-09-claim-01",
       "sourceIds": [
-        "nist-ssdf"
+        "python-language-reference"
       ],
-      "text": "Security reasoning identifies assets, trust boundaries, threats, controls, evidence, residual risk, and responsibilities.",
+      "text": "Names are bound to objects within namespaces and scopes.",
       "verified": true
     },
     {
       "id": "beat-10-claim-01",
       "sourceIds": [
-        "nist-cryptographic-standards"
+        "opendsa-programming-foundations"
       ],
-      "text": "Analysis also considers side channels and migration requirements.",
+      "text": "Correctness arguments, tests, tracing, and debugging compare intended behavior with observable results, including boundary and error cases.",
       "verified": true
     }
   ],
-  "id": "csci-243-the-mechanics-of-programming",
+  "id": "csci-243-the-mechanics-of-programming-foundations-companion",
   "learningObjectives": [],
   "pronunciations": [],
   "schemaVersion": 2,
@@ -279,25 +279,25 @@
       "verified": true
     },
     {
-      "author": "National Institute of Standards and Technology",
-      "excerpt": "The Secure Software Development Framework groups practices into four practice groups. Prepare the Organization establishes people, processes, and technology for secure development. Protect the Software prevents unauthorized access to code and development artifacts. Produce Well-Secured Software addresses security requirements, design, verification, and release. Respond to Vulnerabilities identifies, analyzes, remediates, and learns from discovered weaknesses. Security requirements should be tracked throughout development. Verification provides evidence that selected practices and controls were performed. Security reasoning identifies assets, trust boundaries, threats, controls, evidence, residual risk, and responsibilities.",
-      "id": "nist-ssdf",
-      "sha256": "17c15c6a3a522d311732bc0022c92ccb85de44ca6a09bde629c605eafbbaf442",
-      "title": "NIST Secure Software Development Framework",
+      "author": "Python Software Foundation",
+      "excerpt": "The Python language reference specifies lexical analysis, data model behavior, execution, expressions, statements, functions, classes, exceptions, and module import semantics. Python objects have identity, a type, and a value. Names are bound to objects within namespaces and scopes. Expressions produce values, while statements control execution and bindings. Exceptions interrupt normal control flow until a matching handler processes them or they propagate. The import system searches for modules and binds loaded modules into a namespace. Programs should be reasoned about through explicit state, control flow, data representation, contracts, tests, and observable behavior. Debugging separates syntax, runtime, and logical failures, while decomposition and abstraction reduce the number of inter",
+      "id": "python-language-reference",
+      "sha256": "d97135fb881b335209ef4e10ff196f931a1a1af8b246fb330acc26937dc31a47",
+      "title": "Python Language Reference",
       "type": "note",
-      "uri": "https://csrc.nist.gov/pubs/sp/800/218/final",
+      "uri": "https://docs.python.org/3/reference/",
       "verified": true
     },
     {
-      "author": "National Institute of Standards and Technology",
-      "excerpt": "Cryptographic standards define approved algorithms and parameters. Encryption supports confidentiality when keys and modes are used correctly. Message authentication and digital signatures address integrity and authenticity in different ways. Random number generation supports keys, nonces, and other security parameters. Key management covers generation, distribution, storage, use, rotation, revocation, and destruction. Modes of operation define how a primitive processes data larger than one block. Validation checks implementations against specified requirements. Security depends on the complete protocol and implementation, not only an algorithm name. Analysis also considers side channels and migration requirements.",
-      "id": "nist-cryptographic-standards",
-      "sha256": "a50096140c969dba44c56eabec718ea39e693d3bb01255ae0cb21fa71c53c7e4",
-      "title": "NIST Cryptographic Standards and Guidelines",
+      "author": "OpenDSA Project",
+      "excerpt": "Programming begins with precise problem statements, input and output examples, and algorithms written independently of syntax. Variables represent values and state, expressions compute values, and control structures select or repeat operations. Functions decompose a solution into named operations with parameters and results. Recursion solves a problem through smaller instances and requires a base case. Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in first-out access, trees represent hierarchy, and graphs represent connected entities. Searching and sorting algorithms depend on representation and invariants. Correctness arguments, tests, tracing, and debugging compare intended behavior with observable results, including boundary and error cases.",
+      "id": "opendsa-programming-foundations",
+      "sha256": "853127e4dd63e3809a5c69fd46259846f13da31b0d141c311e782a72d07f4bc9",
+      "title": "OpenDSA Programming, Data Structures, and Algorithms",
       "type": "note",
-      "uri": "https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines",
+      "uri": "https://opendsa-server.cs.vt.edu/",
       "verified": true
     }
   ],
-  "title": "CSCI-243: The Mechanics of Programming"
+  "title": "CSCI-243: The Mechanics of Programming – Foundations Companion"
 }

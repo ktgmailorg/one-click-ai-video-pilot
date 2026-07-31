@@ -5,17 +5,17 @@
       "shots": [
         {
           "id": "beat-01-shot-001",
-          "phrase": "Begin by framing Lesson Title: Foundations of Data Mining as a question about inputs, decisions, and observable results.",
+          "phrase": "Begin by framing Course Foundations and Scope as a question about inputs, decisions, and observable results.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: A retail company analyzes transaction logs to identify customer purchase frequency and product affinity clusters.",
+          "phrase": "Consider this worked case: Student teams will load a 100,000-row customer transaction dataset into a relational database for initial exploration.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-003",
-          "phrase": "Predictive Forecasting'.",
+          "phrase": "List the givens before choosing a method, because an unstated assumption can change the conclusion.",
           "type": "deterministic-svg"
         }
       ]
@@ -25,12 +25,12 @@
       "shots": [
         {
           "id": "beat-02-shot-001",
-          "phrase": "Now define Lesson Title: Data Storage Foundations precisely enough that another learner could test the definition.",
+          "phrase": "Now define Knowledge Discovery Process precisely enough that another learner could test the definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: A small customer list fits in RAM for rapid iteration, while a national sales database requires a relational system for structured storage and integrity.",
+          "phrase": "Consider this worked case: Instructors will demonstrate how clustering customer purchase patterns reveals market segments without forecasting future sales.",
           "type": "deterministic-svg"
         },
         {
@@ -45,12 +45,12 @@
       "shots": [
         {
           "id": "beat-03-shot-001",
-          "phrase": "With the foundation in place, examine how Lesson Title: Knowledge Discovery Process operates in a concrete sequence.",
+          "phrase": "With the foundation in place, examine how Data Exploration and Cleaning operates in a concrete sequence.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: Researchers first load a medical dataset, remove duplicate patient records, apply clustering algorithms, and then document disease correlation patterns.",
+          "phrase": "Consider this worked case: Students will run a missingness report on a survey dataset, flagging 15% null values in the 'income' column and removing 3% duplicate records.",
           "type": "deterministic-svg"
         },
         {
@@ -65,12 +65,12 @@
       "shots": [
         {
           "id": "beat-04-shot-001",
-          "phrase": "Next, compare the choices involved in Lesson Title: Data Exploration Basics and make the decision criteria explicit.",
+          "phrase": "Next, compare the choices involved in Data Preparation Workflows and make the decision criteria explicit.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: An analyst uses summary statistics and frequency tables to detect outliers in temperature sensor readings before proceeding to modeling.",
+          "phrase": "Consider this worked case: A pipeline will be built where raw data undergoes imputation and normalization before entering the exploratory analysis phase.",
           "type": "deterministic-svg"
         },
         {
@@ -85,12 +85,12 @@
       "shots": [
         {
           "id": "beat-05-shot-001",
-          "phrase": "Apply Lesson Title: Data Cleaning Techniques to a worked situation instead of treating it as an isolated definition.",
+          "phrase": "Apply Supervised and Unsupervised Methods to a worked situation instead of treating it as an isolated definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: A dataset with inconsistent date formats is converted to ISO 8601, and null values are imputed using median substitution.",
+          "phrase": "Consider this worked case: Students will compare a decision tree trained on labeled customer churn data against a k-means clustering run on the same unlabeled features.",
           "type": "deterministic-svg"
         },
         {
@@ -105,12 +105,12 @@
       "shots": [
         {
           "id": "beat-06-shot-001",
-          "phrase": "Examine the tradeoffs in Lesson Title: Graph Data Modeling, including what improves and what becomes more difficult.",
+          "phrase": "Examine the tradeoffs in Preprocessing and Leakage Prevention, including what improves and what becomes more difficult.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: A social network graph stores users as nodes, friendships as directed edges, and attributes like 'age' and 'location' as node properties.",
+          "phrase": "Consider this worked case: Instructors will demonstrate scaling a feature using only the training set statistics, then applying the same transformation to the validation set.",
           "type": "deterministic-svg"
         },
         {
@@ -125,12 +125,12 @@
       "shots": [
         {
           "id": "beat-07-shot-001",
-          "phrase": "Stress-test the reasoning around Lesson Title: Relational Data Modeling with an edge case and identify which assumption controls the outcome.",
+          "phrase": "Stress-test the reasoning around Pipelines and Consistency with an edge case and identify which assumption controls the outcome.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: A university database stores students in one table and courses in another, linked by a foreign key in an enrollment table.",
+          "phrase": "Consider this worked case: A single pipeline object will chain standardization, imputation, and clustering, ensuring identical operations run on every data split.",
           "type": "deterministic-svg"
         },
         {
@@ -145,12 +145,12 @@
       "shots": [
         {
           "id": "beat-08-shot-001",
-          "phrase": "Use Lesson Title: Data Mining Algorithms Overview to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "phrase": "Use Cross-Validation and Sampling to diagnose a failure by separating symptoms, causes, and corrective action.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: Clustering algorithms segment customers into high-value, medium-value, and low-value groups based on purchase history.",
+          "phrase": "Consider this worked case: Students will execute a 5-fold cross-validation routine, rotating the validation set through each dataset partition and recording accuracy scores.",
           "type": "deterministic-svg"
         },
         {
@@ -165,12 +165,12 @@
       "shots": [
         {
           "id": "beat-09-shot-001",
-          "phrase": "Connect Lesson Title: Constraints and Indexes to the earlier ideas and explain how the pieces work as one system.",
+          "phrase": "Connect Algorithm Selection and Evaluation to the earlier ideas and explain how the pieces work as one system.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: A 'age' column constraint prevents negative values, and an index on 'email' speeds up user lookup operations.",
+          "phrase": "Consider this worked case: Instructors will match a regression model to predicting continuous revenue and a clustering algorithm to segment user behavior, explaining the distinct evaluation metrics for each.",
           "type": "deterministic-svg"
         },
         {
@@ -185,12 +185,12 @@
       "shots": [
         {
           "id": "beat-10-shot-001",
-          "phrase": "Finish with Lesson Title: Practical Analysis Checklist as a practical checklist that can guide a new analysis.",
+          "phrase": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: A team checks for missing values, validates algorithm output against domain knowledge, and archives the cleaning script for future reference.",
+          "phrase": "Consider this worked case: Students will complete a checklist verifying data provenance, checking for distribution drift between train and test sets, and documenting sampling methodology.",
           "type": "deterministic-svg"
         },
         {
@@ -201,6 +201,6 @@
       ]
     }
   ],
-  "episodeId": "csci-420-principles-of-data-mining-foundations-lesson-blueprint",
+  "episodeId": "csci-420-principles-of-data-mining",
   "schemaVersion": 1
 }

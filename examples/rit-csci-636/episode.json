@@ -13,10 +13,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Introduction to Search Engine Architecture as a question about inputs, decisions, and observable results. Topics include search interfaces, traditional retrieval models (for example, TF-IDF, BM25), modern retrieval techniques (for example, neural reranking and retrieval), search engine evaluation, and search applications (for example, conversational IR, enterprise search). Consider this worked case: A user types 'machine learning basics' into a search bar, and the system returns a ranked list of documents matching the query terms. On screen, display a horizontal flowchart with three labeled boxes: Query Input, Index/Retrieval, and Ranked Results, connected by arrows indicating data flow. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
-      "plannedSeconds": 66,
-      "title": "Introduction to Search Engine Architecture",
-      "visualDirection": "template:academic-process | Display a horizontal flowchart with three labeled boxes: Query Input, Index/Retrieval, and Ranked Results, connected by arrows indicating data flow."
+      "narration": "Begin by framing Search Engine Architecture Overview as a question about inputs, decisions, and observable results. Data systems organize records with declared types, tables, rows, columns, keys, and constraints. Consider this worked case: A document database stores text in tables with columns for title, content, and metadata, using primary keys to uniquely identify each record. On screen, display a simplified block diagram showing a query input, an index lookup module, a retrieval stage, and a ranking output, with arrows indicating data flow. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 59,
+      "title": "Search Engine Architecture Overview",
+      "visualDirection": "template:academic-process | Display a simplified block diagram showing a query input, an index lookup module, a retrieval stage, and a ranking output, with arrows indicating data flow."
     },
     {
       "accessibility": {
@@ -31,10 +31,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Query Processing and Preprocessing precisely enough that another learner could test the definition. Map documents context, intended use, affected people, and potential impacts. Consider this worked case: The query 'running shoes' is tokenized into ['running', 'shoes'], with 'running' stemmed to 'run' to match variations like 'runs' or 'ran'. On screen, show a split-screen graphic: left side shows raw query text, right side shows processed tokens with arrows indicating preprocessing steps. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
-      "plannedSeconds": 55,
-      "title": "Query Processing and Preprocessing",
-      "visualDirection": "template:academic-process | Show a split-screen graphic: left side shows raw query text, right side shows processed tokens with arrows indicating preprocessing steps."
+      "narration": "Now define Query Processing and Indexing precisely enough that another learner could test the definition. Indexes provide additional access paths for selected workloads. Consider this worked case: A term frequency index stores each unique word alongside its document IDs, allowing the system to instantly locate all documents containing a specific query term. On screen, show a side-by-side comparison of a full corpus scan versus an index lookup, highlighting the reduced number of records examined in the latter. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "plannedSeconds": 56,
+      "title": "Query Processing and Indexing",
+      "visualDirection": "template:academic-process | Show a side-by-side comparison of a full corpus scan versus an index lookup, highlighting the reduced number of records examined in the latter."
     },
     {
       "accessibility": {
@@ -49,10 +49,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Traditional Retrieval: TF-IDF operates in a concrete sequence. Cross-validation repeats training and validation across defined data splits. Consider this worked case: A term appearing frequently in one document but rarely across the corpus receives a high TF-IDF score, boosting its ranking position. On screen, render a bar chart comparing TF-IDF scores for three terms across two documents, highlighting the inverse document frequency component. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 58,
-      "title": "Traditional Retrieval: TF-IDF",
-      "visualDirection": "template:academic-process | Render a bar chart comparing TF-IDF scores for three terms across two documents, highlighting the inverse document frequency component."
+      "narration": "With the foundation in place, examine how Traditional Statistical Retrieval Models operates in a concrete sequence. Topics include search interfaces, traditional retrieval models (for example, TF-IDF, BM25), modern retrieval techniques (for example, neural reranking and retrieval), search engine evaluation, and search applications (for example, conversational IR, enterprise search). Consider this worked case: In a TF-IDF calculation, the term 'machine' receives a high score in a short technical manual but a low score in a lengthy general encyclopedia article. On screen, render a bar chart comparing TF-IDF scores for a single query term across three documents of varying lengths and term frequencies. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "plannedSeconds": 67,
+      "title": "Traditional Statistical Retrieval Models",
+      "visualDirection": "template:academic-process | Render a bar chart comparing TF-IDF scores for a single query term across three documents of varying lengths and term frequencies."
     },
     {
       "accessibility": {
@@ -67,10 +67,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Traditional Retrieval: BM25 and make the decision criteria explicit. Risk analysis considers data quality and uncertainty. Consider this worked case: A term appearing at the beginning of a document receives a higher position weight, while the saturation function prevents rare terms from dominating the score. On screen, display a formula breakdown with labeled components: position weight, query length normalization, and saturation function, alongside a sample score calculation. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
-      "plannedSeconds": 55,
-      "title": "Traditional Retrieval: BM25",
-      "visualDirection": "template:academic-process | Display a formula breakdown with labeled components: position weight, query length normalization, and saturation function, alongside a sample score calculation."
+      "narration": "Next, compare the choices involved in BM25 Ranking Formula and make the decision criteria explicit. Queries select, join, aggregate, order, and transform data. Consider this worked case: BM25 assigns higher relevance scores to documents where the query term appears near the beginning, reflecting stronger user intent alignment. On screen, illustrate a document snippet with highlighted query terms, showing position-weighted score increments for earlier occurrences versus later ones. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 57,
+      "title": "BM25 Ranking Formula",
+      "visualDirection": "template:academic-process | Illustrate a document snippet with highlighted query terms, showing position-weighted score increments for earlier occurrences versus later ones."
     },
     {
       "accessibility": {
@@ -85,10 +85,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Modern Retrieval: Neural Reranking to a worked situation instead of treating it as an isolated definition. Machine-learning workflows separate data preparation, training, validation, testing, model selection, and evaluation. Consider this worked case: A transformer-based reranker reorders a top-100 list of documents by analyzing contextual embeddings, promoting documents with higher semantic alignment. On screen, illustrate a two-stage pipeline: first stage shows traditional retrieval output, second stage shows neural reranker adjusting document order with attention visualization. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
-      "plannedSeconds": 58,
-      "title": "Modern Retrieval: Neural Reranking",
-      "visualDirection": "template:academic-process | Illustrate a two-stage pipeline: first stage shows traditional retrieval output, second stage shows neural reranker adjusting document order with attention visualization."
+      "narration": "Apply Modern Neural Retrieval Techniques to a worked situation instead of treating it as an isolated definition. Supervised methods learn mappings from examples paired with target labels, while unsupervised methods identify structure without targets. Consider this worked case: A neural reranker takes a list of initially retrieved documents and reorders them by predicting the probability that each document satisfies the user's underlying intent. On screen, display a two-stage pipeline graphic: a fast retrieval stage followed by a neural reranking stage that outputs a refined ranked list. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 63,
+      "title": "Modern Neural Retrieval Techniques",
+      "visualDirection": "template:academic-process | Display a two-stage pipeline graphic: a fast retrieval stage followed by a neural reranking stage that outputs a refined ranked list."
     },
     {
       "accessibility": {
@@ -103,10 +103,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Modern Retrieval: Dense Retrieval, including what improves and what becomes more difficult. An introduction to the theories and techniques used to construct search engines. Consider this worked case: A query and a document are encoded into 768-dimensional vectors, and the system retrieves the top-k documents with the smallest cosine distance to the query vector. On screen, show a 2D projection of query and document vectors with distance metrics, emphasizing the shared embedding space and cosine similarity calculation. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
-      "plannedSeconds": 59,
-      "title": "Modern Retrieval: Dense Retrieval",
-      "visualDirection": "template:academic-process | Show a 2D projection of query and document vectors with distance metrics, emphasizing the shared embedding space and cosine similarity calculation."
+      "narration": "Examine the tradeoffs in Search Engine Evaluation Metrics, including what improves and what becomes more difficult. An introduction to the theories and techniques used to construct search engines. Consider this worked case: Precision at K measures the proportion of relevant documents among the top K results, providing a direct measure of immediate query satisfaction. On screen, show a table comparing Precision@10 and Recall@10 scores for three different retrieval models on a benchmark dataset. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "plannedSeconds": 55,
+      "title": "Search Engine Evaluation Metrics",
+      "visualDirection": "template:academic-process | Show a table comparing Precision@10 and Recall@10 scores for three different retrieval models on a benchmark dataset."
     },
     {
       "accessibility": {
@@ -121,10 +121,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Search Engine Evaluation Metrics with an edge case and identify which assumption controls the outcome. Students will also review current IR research, provide written summaries of current research papers, and complete a group project in which they will design and execute experiments for search engine components. Consider this worked case: MAP calculates the average precision at the top of the ranked list, providing a single score that reflects overall ranking effectiveness. On screen, present a table comparing precision, recall, MAP, and nDCG with brief definitions and a sample calculation for MAP. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
-      "plannedSeconds": 67,
-      "title": "Search Engine Evaluation Metrics",
-      "visualDirection": "template:academic-process | Present a table comparing precision, recall, MAP, and nDCG with brief definitions and a sample calculation for MAP."
+      "narration": "Stress-test the reasoning around Search Applications and Conversational IR with an edge case and identify which assumption controls the outcome. Students will also review current IR research, provide written summaries of current research papers, and complete a group project in which they will design and execute experiments for search engine components. Consider this worked case: A conversational IR system maintains session state to resolve pronouns and follow-up questions, improving relevance across multiple turns. On screen, present a dialogue flow diagram showing a user query, system context tracking, and an improved retrieval result for a follow-up question. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 68,
+      "title": "Search Applications and Conversational IR",
+      "visualDirection": "template:academic-process | Present a dialogue flow diagram showing a user query, system context tracking, and an improved retrieval result for a follow-up question."
     },
     {
       "accessibility": {
@@ -139,10 +139,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Search Applications: Conversational IR to diagnose a failure by separating symptoms, causes, and corrective action. Unsupervised methods identify structure without target labels. Consider this worked case: After a user asks 'What is NLP?', the system retrieves relevant documents and uses the context to answer 'How does NLP work?' in the next turn. On screen, display a dialogue flow with user queries and system responses, highlighting context tracking and retrieval steps at each turn. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
-      "plannedSeconds": 57,
-      "title": "Search Applications: Conversational IR",
-      "visualDirection": "template:academic-process | Display a dialogue flow with user queries and system responses, highlighting context tracking and retrieval steps at each turn."
+      "narration": "Use Data Quality and Retrieval Integrity to diagnose a failure by separating symptoms, causes, and corrective action. Data quality analysis makes missingness, duplicates, inconsistent representation, integrity constraints, sampling, and update behavior explicit. Consider this worked case: Before indexing, a preprocessing step removes duplicate document entries and standardizes formatting to prevent skewed ranking results. On screen, visualize a data cleaning workflow with icons representing deduplication, normalization, and missing-value handling before the indexing stage. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 56,
+      "title": "Data Quality and Retrieval Integrity",
+      "visualDirection": "template:academic-process | Visualize a data cleaning workflow with icons representing deduplication, normalization, and missing-value handling before the indexing stage."
     },
     {
       "accessibility": {
@@ -157,10 +157,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Search Applications: Enterprise Search to the earlier ideas and explain how the pieces work as one system. Preprocessing must be fitted only on permitted training data to avoid leakage. Consider this worked case: An employee searches for 'Q3 financial report' and filters results by department, date range, and document type to locate the correct internal document. On screen, show a dashboard with search bar, filter panel, and results list, emphasizing access controls and faceted navigation features. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
-      "plannedSeconds": 57,
-      "title": "Search Applications: Enterprise Search",
-      "visualDirection": "template:academic-process | Show a dashboard with search bar, filter panel, and results list, emphasizing access controls and faceted navigation features."
+      "narration": "Connect Evaluation and Error Analysis to the earlier ideas and explain how the pieces work as one system. Evaluation must match the task and the cost of errors, while distribution shift, missing data, overfitting, and unexamined sampling choices can invalidate conclusions. Consider this worked case: A retrieval model trained on technical documents may fail on general queries due to distribution shift, requiring separate validation sets for each domain. On screen, display a confusion matrix or error breakdown chart showing false positives and false negatives across different query types. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 62,
+      "title": "Evaluation and Error Analysis",
+      "visualDirection": "template:academic-process | Display a confusion matrix or error breakdown chart showing false positives and false negatives across different query types."
     },
     {
       "accessibility": {
@@ -175,15 +175,31 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Experimental Design for Retrieval Components as a practical checklist that can guide a new analysis. Evaluation metrics must match the task and the cost of different errors. Consider this worked case: Compare a TF-IDF baseline against a BM25 model on a news corpus, measuring MAP and nDCG to determine which ranking algorithm performs better. On screen, create a comparison table with columns for Baseline, Model, Corpus, Metrics, and Results, highlighting controlled experimental variables. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
-      "plannedSeconds": 57,
-      "title": "Experimental Design for Retrieval Components",
-      "visualDirection": "template:academic-process | Create a comparison table with columns for Baseline, Model, Corpus, Metrics, and Results, highlighting controlled experimental variables."
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Preprocessing must be fitted only on permitted training data to avoid leakage. Consider this worked case: A group project requires defining a baseline retrieval model, selecting a validation split, running cross-validation, and documenting how preprocessing choices affected final rankings. On screen, list a step-by-step checklist graphic covering experiment design, data splitting, model training, evaluation, and documentation requirements. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 56,
+      "title": "Practical Analysis Checklist",
+      "visualDirection": "template:academic-process | List a step-by-step checklist graphic covering experiment design, data splitting, model training, evaluation, and documentation requirements."
     }
   ],
   "claims": [
     {
       "id": "beat-01-claim-01",
+      "sourceIds": [
+        "postgresql-documentation"
+      ],
+      "text": "Data systems organize records with declared types, tables, rows, columns, keys, and constraints.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "postgresql-documentation"
+      ],
+      "text": "Indexes provide additional access paths for selected workloads.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
       "sourceIds": [
         "rit-csci-636"
       ],
@@ -191,27 +207,11 @@
       "verified": true
     },
     {
-      "id": "beat-02-claim-01",
-      "sourceIds": [
-        "nist-ai-rmf"
-      ],
-      "text": "Map documents context, intended use, affected people, and potential impacts.",
-      "verified": true
-    },
-    {
-      "id": "beat-03-claim-01",
-      "sourceIds": [
-        "scikit-learn-user-guide"
-      ],
-      "text": "Cross-validation repeats training and validation across defined data splits.",
-      "verified": true
-    },
-    {
       "id": "beat-04-claim-01",
       "sourceIds": [
-        "nist-ai-rmf"
+        "postgresql-documentation"
       ],
-      "text": "Risk analysis considers data quality and uncertainty.",
+      "text": "Queries select, join, aggregate, order, and transform data.",
       "verified": true
     },
     {
@@ -219,7 +219,7 @@
       "sourceIds": [
         "scikit-learn-user-guide"
       ],
-      "text": "Machine-learning workflows separate data preparation, training, validation, testing, model selection, and evaluation.",
+      "text": "Supervised methods learn mappings from examples paired with target labels, while unsupervised methods identify structure without targets.",
       "verified": true
     },
     {
@@ -241,9 +241,9 @@
     {
       "id": "beat-08-claim-01",
       "sourceIds": [
-        "scikit-learn-user-guide"
+        "postgresql-documentation"
       ],
-      "text": "Unsupervised methods identify structure without target labels.",
+      "text": "Data quality analysis makes missingness, duplicates, inconsistent representation, integrity constraints, sampling, and update behavior explicit.",
       "verified": true
     },
     {
@@ -251,7 +251,7 @@
       "sourceIds": [
         "scikit-learn-user-guide"
       ],
-      "text": "Preprocessing must be fitted only on permitted training data to avoid leakage.",
+      "text": "Evaluation must match the task and the cost of errors, while distribution shift, missing data, overfitting, and unexamined sampling choices can invalidate conclusions.",
       "verified": true
     },
     {
@@ -259,11 +259,11 @@
       "sourceIds": [
         "scikit-learn-user-guide"
       ],
-      "text": "Evaluation metrics must match the task and the cost of different errors.",
+      "text": "Preprocessing must be fitted only on permitted training data to avoid leakage.",
       "verified": true
     }
   ],
-  "id": "csci-636-information-retrieval-foundations",
+  "id": "foundations-of-information-retrieval",
   "learningObjectives": [],
   "pronunciations": [],
   "schemaVersion": 2,
@@ -280,24 +280,24 @@
     },
     {
       "author": "scikit-learn developers",
-      "excerpt": "Machine-learning workflows separate data preparation, training, validation, testing, model selection, and evaluation. Supervised methods learn a mapping from examples paired with target labels. Unsupervised methods identify structure without target labels. Preprocessing must be fitted only on permitted training data to avoid leakage. Pipelines combine preprocessing and estimators so the same transformations are applied consistently. Cross-validation repeats training and validation across defined data splits. Evaluation metrics must match the task and the cost of different errors. Hyperparameter selection must remain separate from final test evaluation. Leakage, distribution shift, overfitting, and unexamined assumptions can invalidate results.",
+      "excerpt": "Data-analysis workflows separate data preparation, exploratory analysis, training, validation, testing, model selection, and evaluation. Supervised methods learn mappings from examples paired with target labels, while unsupervised methods identify structure without targets. Preprocessing must be fitted only on permitted training data to avoid leakage. Pipelines combine transformations and estimators so the same operations are applied consistently. Cross-validation repeats training and validation across defined splits. Grouping, dimensionality reduction, classification, regression, and clustering answer different questions and require appropriate assumptions and metrics. Evaluation must match the task and the cost of errors, while distribution shift, missing data, overfitting, and unexamine",
       "id": "scikit-learn-user-guide",
-      "sha256": "517b82514a81768f6a343724d34e1b3f7628fc376722deb2e1fd6dab8694a33d",
+      "sha256": "310f848c56762898b0a32013ed38a6a7d6252da92333a73ccb33eea8fec183dc",
       "title": "scikit-learn User Guide",
       "type": "note",
       "uri": "https://scikit-learn.org/stable/user_guide.html",
       "verified": true
     },
     {
-      "author": "National Institute of Standards and Technology",
-      "excerpt": "The NIST AI Risk Management Framework organizes work around Govern, Map, Measure, and Manage. Govern establishes policies, responsibilities, and accountability for AI risk. Map documents context, intended use, affected people, and potential impacts. Measure uses qualitative and quantitative methods to analyze identified risks. Manage prioritizes risks and allocates resources for response and monitoring. Risk analysis considers data quality and uncertainty. It also considers robustness, privacy, security, transparency, and fairness. Monitoring continues after deployment because context and system behavior can change.",
-      "id": "nist-ai-rmf",
-      "sha256": "2d11a55a21dab673df4cec61b6a4d7d5a328f3ea2c5184ecdf74129d8fd088ae",
-      "title": "NIST AI Risk Management Framework",
+      "author": "PostgreSQL Global Development Group",
+      "excerpt": "Data systems organize records with declared types, tables, rows, columns, keys, and constraints. Queries select, join, aggregate, order, and transform data. Indexes provide additional access paths for selected workloads. Transactions group operations and isolation controls how concurrent operations observe one another. Query planning and physical storage affect performance without changing logical query meaning. Analytical work should preserve provenance from captured data through cleaning, transformation, grouping, modeling, visualization, and reporting. Data quality analysis makes missingness, duplicates, inconsistent representation, integrity constraints, sampling, and update behavior explicit.",
+      "id": "postgresql-documentation",
+      "sha256": "e1e27b4429e82dd032476ba9c23eaa61cc405caa6f37046af387f7b492f63235",
+      "title": "PostgreSQL Documentation",
       "type": "note",
-      "uri": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "uri": "https://www.postgresql.org/docs/current/",
       "verified": true
     }
   ],
-  "title": "CSCI-636: Information Retrieval Foundations"
+  "title": "Foundations of Information Retrieval"
 }

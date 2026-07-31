@@ -5,12 +5,12 @@
       "shots": [
         {
           "id": "beat-01-shot-001",
-          "phrase": "Begin by framing Course Foundations & Scope as a question about inputs, decisions, and observable results.",
+          "phrase": "Begin by framing Problem Statement and Algorithmic Foundations as a question about inputs, decisions, and observable results.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: Students will use this course to prepare for advanced topics like algorithms, data structures, and software engineering.",
+          "phrase": "Consider this worked case: A student defines a sorting problem by listing input arrays and expected sorted outputs before writing any code.",
           "type": "deterministic-svg"
         },
         {
@@ -25,17 +25,17 @@
       "shots": [
         {
           "id": "beat-02-shot-001",
-          "phrase": "Now define Static vs.",
+          "phrase": "Now define Data Representation: Lists, Stacks, and Queues precisely enough that another learner could test the definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: In statically typed languages, variable types are checked at compile time, whereas dynamically typed languages check types at runtime.",
+          "phrase": "Consider this worked case: A stack of plates is added and removed only from the top, while a line of people waiting for a bus is processed from the front.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-003",
-          "phrase": "runtime type resolution.",
+          "phrase": "Separate the formal definition from an implementation detail, then identify what evidence would distinguish them.",
           "type": "deterministic-svg"
         }
       ]
@@ -45,12 +45,12 @@
       "shots": [
         {
           "id": "beat-03-shot-001",
-          "phrase": "With the foundation in place, examine how Object-Oriented Design Foundations operates in a concrete sequence.",
+          "phrase": "With the foundation in place, examine how Hierarchical and Connected Structures operates in a concrete sequence.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: A parent class defines shared behavior, while child classes inherit and extend that behavior through polymorphism.",
+          "phrase": "Consider this worked case: A family tree illustrates hierarchical relationships, while a subway map illustrates a graph of connected stations.",
           "type": "deterministic-svg"
         },
         {
@@ -65,12 +65,12 @@
       "shots": [
         {
           "id": "beat-04-shot-001",
-          "phrase": "Next, compare the choices involved in Abstract Data Types & Collections and make the decision criteria explicit.",
+          "phrase": "Next, compare the choices involved in Objects, Classes, and Inheritance and make the decision criteria explicit.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: A stack implements last-in-first-out behavior, while a queue implements first-in-first-out behavior for ordered data processing.",
+          "phrase": "Consider this worked case: A 'Dog' class inherits from an 'Animal' class, gaining shared attributes like 'name' while adding specific ones like 'bark'.",
           "type": "deterministic-svg"
         },
         {
@@ -85,12 +85,12 @@
       "shots": [
         {
           "id": "beat-05-shot-001",
-          "phrase": "Apply Software Qualities: Cohesion & Minimal Coupling to a worked situation instead of treating it as an isolated definition.",
+          "phrase": "Apply Software Qualities: Cohesion and Coupling to a worked situation instead of treating it as an isolated definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: High cohesion means a class performs a single, well-defined purpose, while minimal coupling reduces dependencies between classes.",
+          "phrase": "Consider this worked case: A 'PaymentProcessor' class has high cohesion because it handles only payment logic, and low coupling because it does not directly access database tables.",
           "type": "deterministic-svg"
         },
         {
@@ -105,12 +105,12 @@
       "shots": [
         {
           "id": "beat-06-shot-001",
-          "phrase": "Examine the tradeoffs in Exception Handling & Control Flow, including what improves and what becomes more difficult.",
+          "phrase": "Examine the tradeoffs in Abstract Data Types and Collection Libraries, including what improves and what becomes more difficult.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: A try-catch block catches a runtime error, allowing the program to recover or exit gracefully without crashing.",
+          "phrase": "Consider this worked case: Using Python's collections module, a developer instantiates a deque as a stack or a defaultdict as a map without writing low-level logic.",
           "type": "deterministic-svg"
         },
         {
@@ -125,12 +125,12 @@
       "shots": [
         {
           "id": "beat-07-shot-001",
-          "phrase": "Stress-test the reasoning around Compiler & IR Concepts with an edge case and identify which assumption controls the outcome.",
+          "phrase": "Stress-test the reasoning around Exception Handling and Control Flow with an edge case and identify which assumption controls the outcome.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: LLVM IR serves as a typed, SSA-based intermediate representation that enables cross-platform optimization and code generation.",
+          "phrase": "Consider this worked case: A division-by-zero error is caught by a try/except block that logs the error and returns a default value instead of crashing.",
           "type": "deterministic-svg"
         },
         {
@@ -145,17 +145,17 @@
       "shots": [
         {
           "id": "beat-08-shot-001",
-          "phrase": "Use Python Language Model & Execution to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "phrase": "Use Input and Output Streams to diagnose a failure by separating symptoms, causes, and corrective action.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: Debugging separates syntax, runtime, and logical failures, while decomposition and abstraction reduce interacting concerns in Python code.",
+          "phrase": "Consider this worked case: A program reads a text file using sys.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-003",
-          "phrase": "Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause.",
+          "phrase": "Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition.",
           "type": "deterministic-svg"
         }
       ]
@@ -165,12 +165,12 @@
       "shots": [
         {
           "id": "beat-09-shot-001",
-          "phrase": "Connect Object-Oriented Design Patterns to the earlier ideas and explain how the pieces work as one system.",
+          "phrase": "Connect Graphical User Interfaces to the earlier ideas and explain how the pieces work as one system.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: The singleton pattern ensures a class has only one instance, while the factory pattern creates objects without specifying exact classes.",
+          "phrase": "Consider this worked case: A simple GUI window displays a button; clicking the button triggers a function that updates a label on the screen.",
           "type": "deterministic-svg"
         },
         {
@@ -190,7 +190,7 @@
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: A checklist evaluates whether each class has a single responsibility, limited dependencies, and clear extension points for future features.",
+          "phrase": "Consider this worked case: A developer writes unit tests for a sorting function, traces its execution on an empty list and a reversed list, and fixes a bug where the loop condition fails at the boundary.",
           "type": "deterministic-svg"
         },
         {
@@ -201,6 +201,6 @@
       ]
     }
   ],
-  "episodeId": "csci-140-computer-science-for-ap-students-lesson-blueprint",
+  "episodeId": "csci-140-foundations-companion",
   "schemaVersion": 1
 }

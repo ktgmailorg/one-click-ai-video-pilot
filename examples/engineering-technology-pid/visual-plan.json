@@ -1,0 +1,76 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "Suppose a motor should hold one thousand revolutions per minute, but the sensor reports nine hundred.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "The controller does not command a correction from the target alone.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "It first computes tracking error: the desired output minus the measured output.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "The proportional term reacts to the error right now.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "The integral term accumulates error over time, helping remove a persistent offset.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "The derivative term responds to how quickly error is changing, which can anticipate motion and reduce overshoot.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-004",
+          "phrase": "Their weighted sum becomes the control input sent to the system.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "After the motor responds, the sensor measures again and the loop repeats.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "Larger gains are not automatically better: poor tuning can create overshoot, noise sensitivity, or oscillation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "Engineers start with performance requirements, tune deliberately, and keep the controller as simple as the application allows.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-004",
+          "phrase": "A PI controller may be enough when derivative action adds little value.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "how-a-pid-controller-corrects-an-error",
+  "schemaVersion": 1
+}

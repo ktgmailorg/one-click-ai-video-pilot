@@ -1,0 +1,25 @@
+{
+  "id": "full-distributed-systems-consensus",
+  "title": "Distributed Systems: Replication, Failures, and Raft Consensus",
+  "area": "Computing",
+  "subject": "Distributed Systems",
+  "format": "Full lesson",
+  "level": "Introductory",
+  "description": "Reason about partial failure and trace a client command through leader election, replicated logs, majority commitment, and recovery.",
+  "outcomes": [
+    "By the end of this lesson, learners will be able to trace a client command through a three-node Raft cluster and identify the exact sequence of log replication and commit steps.",
+    "By the end of this lesson, learners will be able to explain how majority quorums and term-based voting prevent conflicting committed histories during network partitions.",
+    "By the end of this lesson, learners will be able to design a client retry strategy that avoids duplicate operations while maintaining system availability during partial failures."
+  ],
+  "paths": [
+    "Computing & Engineering",
+    "STEM Foundations"
+  ],
+  "aiContribution": {
+    "stage": "source-grounded planning and narration draft",
+    "provider": "local-openai-compatible",
+    "model": "prism-ml/Bonsai-27B-gguf",
+    "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
+    "humanReviewRequired": true
+  }
+}

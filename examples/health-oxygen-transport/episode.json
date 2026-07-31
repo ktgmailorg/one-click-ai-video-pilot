@@ -1,0 +1,101 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "In the lungs, inhaled air reaches tiny alveoli beside pulmonary capillaries. Oxygen crosses the thin respiratory membrane because its partial pressure is higher in alveolar air than in the arriving blood. Diffusion continues toward equilibrium; the membrane does not actively pump oxygen into the bloodstream.",
+      "plannedSeconds": 22,
+      "title": "Diffuse across the respiratory membrane",
+      "visualDirection": "template:showcase-oxygen | Move oxygen from alveolar air across the thin respiratory membrane into pulmonary blood."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Only a small amount of oxygen remains dissolved in plasma. Most enters red blood cells and binds reversibly to hemoglobin. This transport system greatly increases how much oxygen the blood can carry. Oxygenated blood then returns to the heart and is pumped through the systemic circulation.",
+      "plannedSeconds": 24,
+      "title": "Load oxygen onto hemoglobin",
+      "visualDirection": "template:showcase-oxygen | Show oxygen entering red blood cells and binding to hemoglobin."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "Active tissues consume oxygen during cellular respiration, lowering oxygen partial pressure around their cells. That gradient favors oxygen leaving the blood, separating from hemoglobin, and diffusing into tissue. The complete path is driven by linked gradients: ventilation refreshes alveolar air, circulation moves blood, and metabolism maintains demand.",
+      "plannedSeconds": 26,
+      "title": "Unload where tissues use oxygen",
+      "visualDirection": "template:showcase-oxygen | Follow oxygen from a systemic capillary into active tissue with a lower oxygen partial pressure."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "openstax-oxygen"
+      ],
+      "text": "Oxygen moves from alveolar air into pulmonary capillary blood along a partial-pressure gradient.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "openstax-oxygen"
+      ],
+      "text": "Most oxygen in blood is carried bound to hemoglobin within red blood cells.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "openstax-oxygen"
+      ],
+      "text": "Tissue oxygen use lowers local oxygen partial pressure and favors unloading from blood.",
+      "verified": true
+    }
+  ],
+  "id": "how-oxygen-moves-from-lungs-to-tissue",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "OpenStax",
+      "excerpt": "Oxygen moves between alveolar air, blood, and tissues according to partial-pressure gradients. Most oxygen in blood is transported bound to hemoglobin inside erythrocytes, while a smaller portion is dissolved in plasma. In pulmonary capillaries oxygen loads onto hemoglobin. In systemic tissues, cellular oxygen use lowers local oxygen partial pressure and promotes unloading. Respiration supplies oxygen for cellular respiration and removes carbon dioxide.",
+      "id": "openstax-oxygen",
+      "sha256": "470423e233fad71df01476935368c754011eb6250f4afc9170c229116934d11a",
+      "title": "Transport of Gases",
+      "type": "url",
+      "uri": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-5-transport-of-gases",
+      "verified": true
+    }
+  ],
+  "title": "How Oxygen Moves from Lungs to Tissue"
+}

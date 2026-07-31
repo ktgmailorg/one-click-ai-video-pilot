@@ -5,12 +5,12 @@
       "shots": [
         {
           "id": "beat-01-shot-001",
-          "phrase": "Begin by framing Introduction to Program Structure as a question about inputs, decisions, and observable results.",
+          "phrase": "Begin by framing Defining the Scope of CSCI-243 as a question about inputs, decisions, and observable results.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: A C program divides functionality into functions and global variables.",
+          "phrase": "Consider this worked case: A student enrolling in CSCI-243 must have earned a C- or better in CSCI-140, CSCI-142, CSCI-242, or an equivalent course such as SWEN-124.",
           "type": "deterministic-svg"
         },
         {
@@ -25,12 +25,12 @@
       "shots": [
         {
           "id": "beat-02-shot-001",
-          "phrase": "Now define Execution Mechanics Overview precisely enough that another learner could test the definition.",
+          "phrase": "Now define The Foundation of Precise Problem Statements precisely enough that another learner could test the definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: A for-loop iterates through an array, updating a running total each cycle.",
+          "phrase": "Consider this worked case: Before coding, a student writes a problem statement: 'Given a list of integers, return the sum of all positive values,' and provides sample inputs/outputs.",
           "type": "deterministic-svg"
         },
         {
@@ -45,17 +45,17 @@
       "shots": [
         {
           "id": "beat-03-shot-001",
-          "phrase": "With the foundation in place, examine how Memory Management Basics operates in a concrete sequence.",
+          "phrase": "With the foundation in place, examine how Core Building Blocks: Variables, Expressions, and Control operates in a concrete sequence.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: An integer variable stores a fixed-size binary representation in RAM.",
+          "phrase": "Consider this worked case: In Python, `x = 5` binds a variable, `x + 3` is an expression evaluating to 8, and `if x > 0:` is a control structure that repeats or branches based on the condition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-003",
-          "phrase": "The trace converts an abstract statement into an inspectable sequence.",
+          "phrase": "Follow every arrow in order and name the state before and after each transition.",
           "type": "deterministic-svg"
         }
       ]
@@ -65,12 +65,12 @@
       "shots": [
         {
           "id": "beat-04-shot-001",
-          "phrase": "Next, compare the choices involved in Program Translation Process and make the decision criteria explicit.",
+          "phrase": "Next, compare the choices involved in Functions as Decomposed Operations and make the decision criteria explicit.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: A compiler translates C syntax into machine instructions for the target CPU architecture.",
+          "phrase": "Consider this worked case: A function `def sum_positive(nums):` takes a list parameter and returns a single integer result, isolating the summation logic.",
           "type": "deterministic-svg"
         },
         {
@@ -85,12 +85,12 @@
       "shots": [
         {
           "id": "beat-05-shot-001",
-          "phrase": "Apply Operating System Integration to a worked situation instead of treating it as an isolated definition.",
+          "phrase": "Apply Recursion and Base Cases to a worked situation instead of treating it as an isolated definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: A file I/O operation requests disk access through an OS kernel interface.",
+          "phrase": "Consider this worked case: The factorial function `def fact(n): if n == 0: return 1; return n * fact(n-1)` uses the base case `n == 0` to stop infinite recursion.",
           "type": "deterministic-svg"
         },
         {
@@ -105,12 +105,12 @@
       "shots": [
         {
           "id": "beat-06-shot-001",
-          "phrase": "Examine the tradeoffs in Security Design Principles, including what improves and what becomes more difficult.",
+          "phrase": "Examine the tradeoffs in Data Structures: Lists, Stacks, Queues, Trees, Graphs, including what improves and what becomes more difficult.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: Using AES-256 with proper key management ensures confidentiality against known attacks.",
+          "phrase": "Consider this worked case: A stack of plates is popped from the top (LIFO), while a line of customers at a ticket booth is served from the front (FIFO).",
           "type": "deterministic-svg"
         },
         {
@@ -125,12 +125,12 @@
       "shots": [
         {
           "id": "beat-07-shot-001",
-          "phrase": "Stress-test the reasoning around Performance Optimization Strategies with an edge case and identify which assumption controls the outcome.",
+          "phrase": "Stress-test the reasoning around Searching, Sorting, and Invariants with an edge case and identify which assumption controls the outcome.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: Replacing nested loops with hash maps reduces average lookup time from O(n²) to O(1).",
+          "phrase": "Consider this worked case: Binary search maintains the invariant that the target, if present, lies within the current search interval; quicksort maintains partition invariants to guarantee sorted output.",
           "type": "deterministic-svg"
         },
         {
@@ -145,12 +145,12 @@
       "shots": [
         {
           "id": "beat-08-shot-001",
-          "phrase": "Use Secure Development Practices to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "phrase": "Use The Python Translation Pipeline to diagnose a failure by separating symptoms, causes, and corrective action.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: Maintaining a threat model document updates trust boundaries as the codebase evolves.",
+          "phrase": "Consider this worked case: The string `'def hello(): pass'` is tokenized into identifiers, keywords, and delimiters during lexical analysis, then parsed into an abstract syntax tree before the interpreter executes it.",
           "type": "deterministic-svg"
         },
         {
@@ -165,17 +165,17 @@
       "shots": [
         {
           "id": "beat-09-shot-001",
-          "phrase": "Connect Verification and Testing Methods to the earlier ideas and explain how the pieces work as one system.",
+          "phrase": "Connect Namespaces, Scopes, and Object Identity to the earlier ideas and explain how the pieces work as one system.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: Static analysis tools scan source code for buffer overflows before compilation.",
+          "phrase": "Consider this worked case: When `import math` runs, the module object is created, and the name `math` is bound in the current namespace, allowing access to `math.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-003",
-          "phrase": "Explain each connection explicitly and verify that information retains the same meaning across representations.",
+          "phrase": "Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition.",
           "type": "deterministic-svg"
         }
       ]
@@ -185,12 +185,12 @@
       "shots": [
         {
           "id": "beat-10-shot-001",
-          "phrase": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis.",
+          "phrase": "Finish with Debugging and Correctness: Tests, Tracing, and Boundaries as a practical checklist that can guide a new analysis.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: A secure, performant module validates inputs, manages memory safely, and follows established standards.",
+          "phrase": "Consider this worked case: A test suite includes a case where the input list is empty (boundary) and another where the list contains negative numbers (error handling), and tracing reveals the function returns 0 for the empty case.",
           "type": "deterministic-svg"
         },
         {
@@ -201,6 +201,6 @@
       ]
     }
   ],
-  "episodeId": "csci-243-the-mechanics-of-programming",
+  "episodeId": "csci-243-the-mechanics-of-programming-foundations-companion",
   "schemaVersion": 1
 }

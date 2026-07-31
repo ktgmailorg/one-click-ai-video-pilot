@@ -5,12 +5,12 @@
       "shots": [
         {
           "id": "beat-01-shot-001",
-          "phrase": "Begin by framing Introduction to Algorithm Analysis as a question about inputs, decisions, and observable results.",
+          "phrase": "Begin by framing The Disciplined Solution Framework as a question about inputs, decisions, and observable results.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: A sorting algorithm must guarantee that the output array contains all input elements in non-decreasing order.",
+          "phrase": "Consider this worked case: Sorting an array: Input is an unordered list of numbers; Output is the same list in non-decreasing order; Correctness is proved by loop invariants; Complexity is O(n log n) via divide-and-conquer.",
           "type": "deterministic-svg"
         },
         {
@@ -25,12 +25,12 @@
       "shots": [
         {
           "id": "beat-02-shot-001",
-          "phrase": "Now define Asymptotic Notation Basics precisely enough that another learner could test the definition.",
+          "phrase": "Now define Asymptotic Notation and Growth precisely enough that another learner could test the definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: Big-O notation for a nested loop sorting algorithm indicates quadratic time complexity, O(n^2), as input size doubles.",
+          "phrase": "Consider this worked case: If an algorithm performs 5n + 3 operations, its asymptotic growth is Θ(n), meaning it scales linearly with input size.",
           "type": "deterministic-svg"
         },
         {
@@ -50,7 +50,7 @@
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: In a linear search, the invariant states that the target element, if present, must be in the unexamined portion of the array.",
+          "phrase": "Consider this worked case: In bubble sort, the invariant 'the first i elements are sorted' holds before the loop (i=0), is maintained by swapping adjacent out-of-order elements, and guarantees the whole array is sorted when i=n.",
           "type": "deterministic-svg"
         },
         {
@@ -70,7 +70,7 @@
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: Merge sort divides an array into halves, recursively sorts each half, and merges the sorted subarrays into a single ordered array.",
+          "phrase": "Consider this worked case: Merge sort divides an array into two halves, recursively sorts each half, then merges the two sorted halves in linear time.",
           "type": "deterministic-svg"
         },
         {
@@ -85,12 +85,12 @@
       "shots": [
         {
           "id": "beat-05-shot-001",
-          "phrase": "Apply Recurrence Relations to a worked situation instead of treating it as an isolated definition.",
+          "phrase": "Apply Recurrences and Their Solutions to a worked situation instead of treating it as an isolated definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: The recurrence T(n) = 2T(n/2) + O(n) describes the time complexity of merge sort, solved via the Master Theorem.",
+          "phrase": "Consider this worked case: The recurrence T(n) = 2T(n/2) + n for merge sort solves to T(n) = Θ(n log n) via the Master Theorem.",
           "type": "deterministic-svg"
         },
         {
@@ -105,12 +105,12 @@
       "shots": [
         {
           "id": "beat-06-shot-001",
-          "phrase": "Examine the tradeoffs in Graph Representation, including what improves and what becomes more difficult.",
+          "phrase": "Examine the tradeoffs in Core Data Structures: Lists, Stacks, Queues, including what improves and what becomes more difficult.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: An adjacency list for a directed graph stores each vertex followed by a list of its outgoing edges, enabling efficient neighbor lookups.",
+          "phrase": "Consider this worked case: A stack of plates: the last plate placed is the first one removed; a queue of customers: the first person in line is served first.",
           "type": "deterministic-svg"
         },
         {
@@ -125,12 +125,12 @@
       "shots": [
         {
           "id": "beat-07-shot-001",
-          "phrase": "Stress-test the reasoning around Graph Traversal Methods with an edge case and identify which assumption controls the outcome.",
+          "phrase": "Stress-test the reasoning around Trees and Hierarchical Representation with an edge case and identify which assumption controls the outcome.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: Breadth-first search explores all vertices at a given depth before moving to the next level, ensuring the shortest path in unweighted graphs.",
+          "phrase": "Consider this worked case: A binary search tree stores keys so that left children are smaller and right children are larger, enabling O(log n) search on balanced trees.",
           "type": "deterministic-svg"
         },
         {
@@ -145,12 +145,12 @@
       "shots": [
         {
           "id": "beat-08-shot-001",
-          "phrase": "Use Data Structure Selection to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "phrase": "Use Hash Tables and Collision Strategies to diagnose a failure by separating symptoms, causes, and corrective action.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: Choosing a hash table over a linked list for key-value storage reduces lookup time from O(n) to O(1) average case, provided a good collision strategy is used.",
+          "phrase": "Consider this worked case: With hash function h(k) = k mod 7, keys 10 and 17 both map to index 3; chaining stores both in a linked list at that index.",
           "type": "deterministic-svg"
         },
         {
@@ -165,12 +165,12 @@
       "shots": [
         {
           "id": "beat-09-shot-001",
-          "phrase": "Connect Algorithm Design Process to the earlier ideas and explain how the pieces work as one system.",
+          "phrase": "Connect Graph Representations and Traversal to the earlier ideas and explain how the pieces work as one system.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: Before coding, a developer specifies the input array and expected sorted output, verifies correctness via trace, and calculates O(n log n) time and O(n) space requirements.",
+          "phrase": "Consider this worked case: In a directed graph, a depth-first search (DFS) explores all reachable vertices from a start node, useful for topological ordering.",
           "type": "deterministic-svg"
         },
         {
@@ -190,7 +190,7 @@
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: The checklist confirms that the loop invariant holds, asymptotic bounds are calculated, and graph traversal uses the appropriate adjacency structure for the problem constraints.",
+          "phrase": "Consider this worked case: For Dijkstra's shortest path: define input as weighted graph and output as distance array; prove correctness via loop invariant that visited nodes have optimal distances; analyze time as O((V+E) log V).",
           "type": "deterministic-svg"
         },
         {
@@ -201,6 +201,6 @@
       ]
     }
   ],
-  "episodeId": "csci-261-analysis-of-algorithms-foundations-lesson",
+  "episodeId": "csci-261-foundations-design-analysis-and-data-structures",
   "schemaVersion": 1
 }

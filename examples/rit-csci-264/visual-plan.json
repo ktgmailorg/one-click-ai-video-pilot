@@ -15,7 +15,7 @@
         },
         {
           "id": "beat-01-shot-003",
-          "phrase": "input size, with a connecting arrow labeled 'Analysis Bridge'.",
+          "phrase": "List the givens before choosing a method, because an unstated assumption can change the conclusion.",
           "type": "deterministic-svg"
         }
       ]
@@ -30,7 +30,7 @@
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: An algorithm that processes each element once and performs a constant number of operations per element grows linearly, expressed as O(n).",
+          "phrase": "Asymptotic notation describes how resource use grows with input size.",
           "type": "deterministic-svg"
         },
         {
@@ -50,7 +50,7 @@
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: In a sum-accumulation loop, the invariant 'sum equals the total of all processed elements' holds before the loop, remains true after each iteration, and guarantees the final result matches the total sum.",
+          "phrase": "A loop invariant supports a proof by initialization, maintenance, and termination.",
           "type": "deterministic-svg"
         },
         {
@@ -90,7 +90,7 @@
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: The merge sort recurrence T(n) = 2T(n/2) + O(n) captures the cost of splitting, solving two subproblems, and merging.",
+          "phrase": "Recurrences describe the cost of recursive algorithms.",
           "type": "deterministic-svg"
         },
         {
@@ -110,7 +110,7 @@
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: An adjacency matrix uses a 2D array where entry (i,j) indicates an edge between vertex i and vertex j, enabling direct edge lookup.",
+          "phrase": "Graphs can be represented with adjacency structures for traversal and path algorithms.",
           "type": "deterministic-svg"
         },
         {
@@ -130,7 +130,7 @@
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: A stack invariant requires that the top element is always the most recently added item, ensuring O(1) push and pop operations but preventing random access.",
+          "phrase": "Representation choices and invariants determine which operations are efficient and which errors are possible.",
           "type": "deterministic-svg"
         },
         {
@@ -150,7 +150,7 @@
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: Hash tables map keys to locations using a hash function, requiring a collision strategy like chaining or open addressing to maintain data integrity.",
+          "phrase": "Core methods include sorting, hashing, trees, graphs, shortest paths, and dynamic programming.",
           "type": "deterministic-svg"
         },
         {
@@ -170,7 +170,7 @@
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: The Fibonacci sequence calculation stores previously computed values in a table to avoid redundant recursive calls, reducing time complexity from exponential to linear.",
+          "phrase": "Dynamic programming records solutions to overlapping subproblems.",
           "type": "deterministic-svg"
         },
         {
@@ -190,7 +190,7 @@
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: Before coding, students must document the input format, output format, correctness proof using invariants or induction, and derive the time/space complexity using asymptotic notation.",
+          "phrase": "A disciplined solution states inputs and outputs, proves correctness, and then analyzes time and space.",
           "type": "deterministic-svg"
         },
         {

@@ -1,756 +1,714 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:05.818
-NARRATOR: By the end of this lesson, you will
-be able to trace one RISC-V ADD instruction
+00:00:00.050 --> 00:00:06.368
+By the end of this lesson, you will be able to
+trace one RISC-V ADD instruction from its
 
 2
-00:00:05.818 --> 00:00:10.229
-from its thirty-two encoded bits to the value
-written into a destination register.
+00:00:06.368 --> 00:00:10.229
+thirty-two encoded bits to the value written
+into a destination register.
 
 3
-00:00:10.229 --> 00:00:16.757
-NARRATOR: You will also be able to explain why
-a pipeline improves throughput, identify data
+00:00:10.229 --> 00:00:16.576
+You will also be able to explain why a
+pipeline improves throughput, identify data
 
 4
-00:00:16.757 --> 00:00:20.674
+00:00:16.576 --> 00:00:20.656
 and control hazards, and distinguish
 architectural correctness from implementation
 
 5
-00:00:20.674 --> 00:00:21.109
+00:00:20.656 --> 00:00:21.109
 speed.
 
 6
 00:00:21.109 --> 00:00:25.867
-NARRATOR: Our worked instruction is add x5,
-x6, x7.
+Our worked instruction is add x5, x6, x7.
 
 7
-00:00:25.867 --> 00:00:31.627
-NARRATOR: We will use a classic five-stage
-teaching pipeline: Instruction Fetch,
+00:00:25.867 --> 00:00:31.947
+We will use a classic five-stage teaching
+pipeline: Instruction Fetch, Instruction
 
 8
-00:00:31.627 --> 00:00:35.816
-Instruction Decode, Execute, Memory Access,
-and Write Back.
+00:00:31.947 --> 00:00:35.816
+Decode, Execute, Memory Access, and Write
+Back.
 
 9
 00:00:35.816 --> 00:00:39.579
-NARRATOR: That pipeline is not the only
-possible processor design.
+That pipeline is not the only possible
+processor design.
 
 10
-00:00:39.579 --> 00:00:44.841
-NARRATOR: It is a clear model for seeing how
-encoded instructions become coordinated data
+00:00:39.579 --> 00:00:45.170
+It is a clear model for seeing how encoded
+instructions become coordinated data movement
 
 11
-00:00:44.841 --> 00:00:45.969
-movement and control.
+00:00:45.170 --> 00:00:45.969
+and control.
 
 12
 00:00:46.106 --> 00:00:49.155
-NARRATOR: First, separate the contract from
-the machinery.
+First, separate the contract from the
+machinery.
 
 13
-00:00:49.155 --> 00:00:55.277
-NARRATOR: The RISC-V ISA says what ADD means:
-read two source registers, add their values,
+00:00:49.155 --> 00:00:55.958
+The RISC-V ISA says what ADD means: read two
+source registers, add their values, and write
 
 14
-00:00:55.277 --> 00:00:59.359
-and write the low XLEN bits into the
-destination register.
+00:00:55.958 --> 00:00:59.359
+the low XLEN bits into the destination
+register.
 
 15
 00:00:59.359 --> 00:01:04.117
-NARRATOR: It also specifies the instruction
-fields that identify that operation.
+It also specifies the instruction fields that
+identify that operation.
 
 16
 00:01:04.117 --> 00:01:06.158
-NARRATOR: Software depends on this promise.
+Software depends on this promise.
 
 17
-00:01:06.158 --> 00:01:10.957
-NARRATOR: Internally, one processor might
-execute an instruction in several simple
+00:01:06.158 --> 00:01:11.581
+Internally, one processor might execute an
+instruction in several simple stages, another
 
 18
-00:01:10.957 --> 00:01:16.193
-stages, another might issue multiple
-instructions at once, and a small controller
+00:01:11.581 --> 00:01:17.907
+might issue multiple instructions at once, and
+a small controller might reuse hardware across
 
 19
-00:01:16.193 --> 00:01:18.811
-might reuse hardware across many cycles.
+00:01:17.907 --> 00:01:18.811
+many cycles.
 
 20
-00:01:18.811 --> 00:01:24.159
-NARRATOR: Those designs may look very
-different, yet a correct implementation must
+00:01:18.811 --> 00:01:25.440
+Those designs may look very different, yet a
+correct implementation must produce the same
 
 21
-00:01:24.159 --> 00:01:26.387
-produce the same software-visible result.
+00:01:25.440 --> 00:01:26.387
+software-visible result.
 
 22
-00:01:26.387 --> 00:01:31.859
-NARRATOR: This distinction keeps our reasoning
+00:01:26.387 --> 00:01:31.704
+This distinction keeps our reasoning
 disciplined: begin with what must happen, then
 
 23
-00:01:31.859 --> 00:01:34.805
+00:01:31.704 --> 00:01:34.805
 study how one pipeline makes it happen.
 
 24
 00:01:34.946 --> 00:01:38.454
-NARRATOR: The processor receives bits, not
-assembly text.
+The processor receives bits, not assembly
+text.
 
 25
 00:01:38.454 --> 00:01:45.661
-NARRATOR: Our instruction word is hexadecimal
-zero zero seven three zero two B three.
+Our instruction word is hexadecimal zero zero
+seven three zero two B three.
 
 26
-00:01:45.661 --> 00:01:52.627
-NARRATOR: Reading the R-type fields from bit
-thirty-one down to bit zero gives funct seven,
+00:01:45.661 --> 00:01:53.445
+Reading the R-type fields from bit thirty-one
+down to bit zero gives funct seven, rs2, rs1,
 
 27
-00:01:52.627 --> 00:01:55.878
-rs2, rs1, funct three, rd, and opcode.
+00:01:53.445 --> 00:01:55.878
+funct three, rd, and opcode.
 
 28
 00:01:55.878 --> 00:02:00.597
-NARRATOR: The opcode says this is a
-register-register arithmetic instruction.
+The opcode says this is a register-register
+arithmetic instruction.
 
 29
 00:02:00.597 --> 00:02:04.819
-NARRATOR: Funct three and funct seven narrow
-that family to ADD.
+Funct three and funct seven narrow that family
+to ADD.
 
 30
 00:02:04.819 --> 00:02:10.444
-NARRATOR: The rs1 field is binary zero zero
-one one zero, which names x6.
+The rs1 field is binary zero zero one one
+zero, which names x6.
 
 31
 00:02:10.444 --> 00:02:13.582
-NARRATOR: The rs2 field names x7.
+The rs2 field names x7.
 
 32
 00:02:13.582 --> 00:02:16.209
-NARRATOR: The rd field names x5.
+The rd field names x5.
 
 33
-00:02:16.209 --> 00:02:21.526
-NARRATOR: Decode therefore extracts both the
-operation and the register addresses from one
+00:02:16.209 --> 00:02:21.468
+Decode therefore extracts both the operation
+and the register addresses from one
 
 34
-00:02:21.526 --> 00:02:22.344
+00:02:21.468 --> 00:02:22.344
 fixed-width word.
 
 35
-00:02:22.344 --> 00:02:26.951
-NARRATOR: The assembly form is a
-human-readable rendering of those exact
+00:02:22.344 --> 00:02:27.370
+The assembly form is a human-readable
+rendering of those exact fields.
 
 36
-00:02:26.951 --> 00:02:27.370
-fields.
+00:02:27.506 --> 00:02:31.767
+Assume the program counter contains zero x one
+thousand.
 
 37
-00:02:27.506 --> 00:02:31.767
-NARRATOR: Assume the program counter contains
-zero x one thousand.
+00:02:31.767 --> 00:02:37.336
+Fetch presents that address to instruction
+memory and receives the thirty-two-bit ADD
 
 38
-00:02:31.767 --> 00:02:36.507
-NARRATOR: Fetch presents that address to
-instruction memory and receives the
+00:02:37.336 --> 00:02:37.800
+word.
 
 39
-00:02:36.507 --> 00:02:37.800
-thirty-two-bit ADD word.
+00:02:37.800 --> 00:02:44.042
+At the same time, the processor forms the
+sequential next address, zero x one thousand
 
 40
-00:02:37.800 --> 00:02:43.675
-NARRATOR: At the same time, the processor
-forms the sequential next address, zero x one
+00:02:44.042 --> 00:02:44.458
+four.
 
 41
-00:02:43.675 --> 00:02:44.458
-thousand four.
+00:02:44.458 --> 00:02:51.301
+That plus-four step is valid for this RV32I
+teaching example because we are not using
 
 42
-00:02:44.458 --> 00:02:50.921
-NARRATOR: That plus-four step is valid for
-this RV32I teaching example because we are not
+00:02:51.301 --> 00:02:52.213
+compressed instructions.
 
 43
-00:02:50.921 --> 00:02:52.213
-using compressed instructions.
+00:02:52.213 --> 00:02:56.907
+Fetch does not yet know whether control flow
+will remain sequential.
 
 44
-00:02:52.213 --> 00:02:56.907
-NARRATOR: Fetch does not yet know whether
-control flow will remain sequential.
+00:02:56.907 --> 00:03:00.925
+A branch or jump may later redirect the
+program counter.
 
 45
-00:02:56.907 --> 00:03:00.925
-NARRATOR: A branch or jump may later redirect
-the program counter.
+00:03:00.925 --> 00:03:06.720
+For now, the current address, instruction
+bits, and predicted next address must remain
 
 46
-00:03:00.925 --> 00:03:06.006
-NARRATOR: For now, the current address,
-instruction bits, and predicted next address
+00:03:06.720 --> 00:03:09.394
+aligned as the instruction moves forward.
 
 47
-00:03:06.006 --> 00:03:09.394
-must remain aligned as the instruction moves
-forward.
+00:03:09.394 --> 00:03:14.561
+Pipeline state records the information the
+Decode stage will need on the next clock
 
 48
-00:03:09.394 --> 00:03:13.892
-NARRATOR: Pipeline state records the
-information the Decode stage will need on the
+00:03:14.561 --> 00:03:14.930
+cycle.
 
 49
-00:03:13.892 --> 00:03:14.930
-next clock cycle.
+00:03:15.050 --> 00:03:19.783
+In Decode, the instruction fields drive two
+related jobs.
 
 50
-00:03:15.050 --> 00:03:19.783
-NARRATOR: In Decode, the instruction fields
-drive two related jobs.
+00:03:19.783 --> 00:03:25.293
+First, the register file uses rs1 and rs2 as
+read addresses.
 
 51
-00:03:19.783 --> 00:03:25.293
-NARRATOR: First, the register file uses rs1
-and rs2 as read addresses.
+00:03:25.293 --> 00:03:32.313
+If x6 contains nineteen and x7 contains
+twenty-three, those values appear on the two
 
 52
-00:03:25.293 --> 00:03:31.428
-NARRATOR: If x6 contains nineteen and x7
-contains twenty-three, those values appear on
+00:03:32.313 --> 00:03:33.316
+read ports.
 
 53
-00:03:31.428 --> 00:03:33.316
-the two read ports.
+00:03:33.316 --> 00:03:38.329
+Second, control logic interprets the opcode
+and function fields.
 
 54
-00:03:33.316 --> 00:03:38.329
-NARRATOR: Second, control logic interprets the
-opcode and function fields.
+00:03:38.329 --> 00:03:44.177
+It selects an integer addition, chooses two
+register operands for the ALU, disables a
 
 55
-00:03:38.329 --> 00:03:43.542
-NARRATOR: It selects an integer addition,
-chooses two register operands for the ALU,
+00:03:44.177 --> 00:03:48.354
+data-memory write, and enables a later
+register write to x5.
 
 56
-00:03:43.542 --> 00:03:48.354
-disables a data-memory write, and enables a
-later register write to x5.
+00:03:48.354 --> 00:03:50.765
+Data alone is not enough.
 
 57
-00:03:48.354 --> 00:03:50.765
-NARRATOR: Data alone is not enough.
+00:03:50.765 --> 00:03:56.744
+The destination register number and every
+control decision needed by later stages must
 
 58
-00:03:50.765 --> 00:03:56.412
-NARRATOR: The destination register number and
-every control decision needed by later stages
+00:03:56.744 --> 00:03:58.584
+advance beside the operands.
 
 59
-00:03:56.412 --> 00:03:58.584
-must advance beside the operands.
+00:03:58.584 --> 00:04:03.234
+If a value and its control signal become
+misaligned, the processor could compute
 
 60
-00:03:58.584 --> 00:04:03.374
-NARRATOR: If a value and its control signal
-become misaligned, the processor could compute
-
-61
-00:04:03.374 --> 00:04:06.454
+00:04:03.234 --> 00:04:06.454
 correctly but write the result to the wrong
 place.
 
-62
+61
 00:04:06.602 --> 00:04:12.585
-NARRATOR: The Execute stage supplies nineteen
-and twenty-three to the arithmetic logic unit.
+The Execute stage supplies nineteen and
+twenty-three to the arithmetic logic unit.
+
+62
+00:04:12.585 --> 00:04:18.307
+Operand-select controls choose the two
+register values, and the ALU control selects
 
 63
-00:04:12.585 --> 00:04:17.898
-NARRATOR: Operand-select controls choose the
-two register values, and the ALU control
+00:04:18.307 --> 00:04:18.784
+addition.
 
 64
-00:04:17.898 --> 00:04:18.784
-selects addition.
+00:04:18.784 --> 00:04:20.608
+The result is forty-two.
 
 65
-00:04:18.784 --> 00:04:20.608
-NARRATOR: The result is forty-two.
+00:04:20.608 --> 00:04:28.763
+In RV32I, XLEN is thirty-two, so ADD retains
+the low thirty-two bits of the mathematical
 
 66
-00:04:20.608 --> 00:04:28.284
-NARRATOR: In RV32I, XLEN is thirty-two, so ADD
-retains the low thirty-two bits of the
+00:04:28.763 --> 00:04:29.307
+sum.
 
 67
-00:04:28.284 --> 00:04:29.307
-mathematical sum.
+00:04:29.307 --> 00:04:35.265
+If the signed mathematical result exceeds the
+signed range, ADD still produces the low-bit
 
 68
-00:04:29.307 --> 00:04:34.599
-NARRATOR: If the signed mathematical result
-exceeds the signed range, ADD still produces
-
-69
-00:04:34.599 --> 00:04:38.669
-the low-bit result; it does not raise an
+00:04:35.265 --> 00:04:38.669
+result; it does not raise an
 arithmetic-overflow exception.
 
-70
+69
 00:04:38.669 --> 00:04:44.728
-NARRATOR: The ISA defines that behavior, while
-the ALU and surrounding control implement it.
+The ISA defines that behavior, while the ALU
+and surrounding control implement it.
+
+70
+00:04:44.728 --> 00:04:51.268
+For this example there is no overflow, so the
+value forty-two and the destination number x5
 
 71
-00:04:44.728 --> 00:04:50.191
-NARRATOR: For this example there is no
-overflow, so the value forty-two and the
+00:04:51.268 --> 00:04:53.312
+advance toward the next stage.
 
 72
-00:04:50.191 --> 00:04:53.312
-destination number x5 advance toward the next
-stage.
+00:04:53.426 --> 00:04:56.819
+ADD does not need a data-memory read or write.
 
 73
-00:04:53.426 --> 00:04:56.819
-NARRATOR: ADD does not need a data-memory read
-or write.
-
-74
-00:04:56.819 --> 00:05:02.984
-NARRATOR: Even so, in this regular five-stage
+00:04:56.819 --> 00:05:02.682
+Even so, in this regular five-stage
 organization it occupies the Memory stage
 
-75
-00:05:02.984 --> 00:05:09.623
+74
+00:05:02.682 --> 00:05:09.522
 while its ALU result, destination register,
 and write-enable bit move through the EX slash
 
-76
-00:05:09.623 --> 00:05:12.942
+75
+00:05:09.522 --> 00:05:12.942
 MEM and MEM slash WB pipeline registers.
 
+76
+00:05:12.942 --> 00:05:17.865
+A load instruction would use this stage to
+read data, and a store would write data.
+
 77
-00:05:12.942 --> 00:05:17.575
-NARRATOR: A load instruction would use this
-stage to read data, and a store would write
+00:05:17.865 --> 00:05:20.659
+ADD simply preserves its result.
 
 78
-00:05:17.575 --> 00:05:17.865
-data.
+00:05:20.659 --> 00:05:27.496
+In Write Back, a result-select control chooses
+the ALU value rather than memory data, the
 
 79
-00:05:17.865 --> 00:05:20.659
-NARRATOR: ADD simply preserves its result.
+00:05:27.496 --> 00:05:31.143
+write-enable signal is asserted, and x5
+receives forty-two.
 
 80
-00:05:20.659 --> 00:05:26.338
-NARRATOR: In Write Back, a result-select
-control chooses the ALU value rather than
+00:05:31.143 --> 00:05:36.621
+At that moment the instruction's promised
+architectural effect becomes visible in the
 
 81
-00:05:26.338 --> 00:05:31.143
-memory data, the write-enable signal is
-asserted, and x5 receives forty-two.
+00:05:36.621 --> 00:05:37.534
+register file.
 
 82
-00:05:31.143 --> 00:05:35.830
-NARRATOR: At that moment the instruction's
-promised architectural effect becomes visible
+00:05:37.658 --> 00:05:39.738
+Why split the work into stages?
 
 83
-00:05:35.830 --> 00:05:37.534
-in the register file.
+00:05:39.738 --> 00:05:44.623
+Because different instructions can use
+different hardware during the same cycle.
 
 84
-00:05:37.658 --> 00:05:39.738
-NARRATOR: Why split the work into stages?
+00:05:44.623 --> 00:05:50.621
+While our ADD is in Execute, a following
+independent instruction can be in Decode and
 
 85
-00:05:39.738 --> 00:05:44.623
-NARRATOR: Because different instructions can
-use different hardware during the same cycle.
+00:05:50.621 --> 00:05:52.620
+another can be in Fetch.
 
 86
-00:05:44.623 --> 00:05:49.954
-NARRATOR: While our ADD is in Execute, a
-following independent instruction can be in
+00:05:52.620 --> 00:05:55.643
+During the next cycle, all three advance.
 
 87
-00:05:49.954 --> 00:05:52.620
-Decode and another can be in Fetch.
+00:05:55.643 --> 00:06:01.886
+After the pipeline fills, this ideal sequence
+can complete roughly one instruction per cycle
 
 88
-00:05:52.620 --> 00:05:55.643
-NARRATOR: During the next cycle, all three
-advance.
+00:06:01.886 --> 00:06:07.684
+even though each instruction spends several
+cycles traveling from Fetch to Write Back.
 
 89
-00:05:55.643 --> 00:06:01.233
-NARRATOR: After the pipeline fills, this ideal
-sequence can complete roughly one instruction
+00:06:07.684 --> 00:06:13.130
+That is a throughput improvement, not proof
+that one instruction has lower latency.
 
 90
-00:06:01.233 --> 00:06:07.254
-per cycle even though each instruction spends
-several cycles traveling from Fetch to Write
+00:06:13.130 --> 00:06:19.597
+The clock period must accommodate the slowest
+stage plus pipeline-register overhead, and the
 
 91
-00:06:07.254 --> 00:06:07.684
-Back.
+00:06:19.597 --> 00:06:24.074
+ideal completion rate assumes instructions can
+advance without interruption.
 
 92
-00:06:07.684 --> 00:06:12.741
-NARRATOR: That is a throughput improvement,
-not proof that one instruction has lower
+00:06:24.218 --> 00:06:29.703
+Now place sub x8, x5, x9 immediately after the
+ADD.
 
 93
-00:06:12.741 --> 00:06:13.130
-latency.
+00:06:29.703 --> 00:06:36.242
+The subtraction needs the new x5 as an input,
+but ordinary register-file timing may not
 
 94
-00:06:13.130 --> 00:06:18.364
-NARRATOR: The clock period must accommodate
-the slowest stage plus pipeline-register
+00:06:36.242 --> 00:06:39.729
+provide that value when the subtraction
+reaches Execute.
 
 95
-00:06:18.364 --> 00:06:23.598
-overhead, and the ideal completion rate
-assumes instructions can advance without
+00:06:39.729 --> 00:06:45.632
+This is a read-after-write hazard: the later
+instruction reads a register that the earlier
 
 96
-00:06:23.598 --> 00:06:24.074
-interruption.
+00:06:45.632 --> 00:06:46.897
+instruction will write.
 
 97
-00:06:24.218 --> 00:06:29.703
-NARRATOR: Now place sub x8, x5, x9 immediately
-after the ADD.
+00:06:46.897 --> 00:06:52.027
+Hazard logic compares the source registers of
+younger instructions with destination
 
 98
-00:06:29.703 --> 00:06:35.552
-NARRATOR: The subtraction needs the new x5 as
-an input, but ordinary register-file timing
+00:06:52.027 --> 00:06:54.359
+registers already in the pipeline.
 
 99
-00:06:35.552 --> 00:06:39.729
-may not provide that value when the
-subtraction reaches Execute.
+00:06:54.359 --> 00:06:57.522
+Detecting the name match is only the first
+step.
 
 100
-00:06:39.729 --> 00:06:44.906
-NARRATOR: This is a read-after-write hazard:
-the later instruction reads a register that
+00:06:57.522 --> 00:07:02.662
+The processor must also know whether the value
+is ready and where it currently resides.
 
 101
-00:06:44.906 --> 00:06:46.897
-the earlier instruction will write.
+00:07:02.662 --> 00:07:08.275
+Correctness requires the subtraction to use
+forty-two, not the stale value previously
 
 102
-00:06:46.897 --> 00:06:51.725
-NARRATOR: Hazard logic compares the source
-registers of younger instructions with
+00:07:08.275 --> 00:07:09.678
+stored in x5.
 
 103
-00:06:51.725 --> 00:06:54.359
-destination registers already in the pipeline.
+00:07:09.818 --> 00:07:15.826
+For an ALU-to-ALU dependency, forwarding can
+often avoid a full wait for Write Back.
 
 104
-00:06:54.359 --> 00:06:57.522
-NARRATOR: Detecting the name match is only the
-first step.
+00:07:15.826 --> 00:07:22.713
+A bypass path routes the ADD result from a
+later pipeline register directly to the
 
 105
-00:06:57.522 --> 00:07:02.341
-NARRATOR: The processor must also know whether
-the value is ready and where it currently
-
-106
-00:07:02.341 --> 00:07:02.662
-resides.
-
-107
-00:07:02.662 --> 00:07:07.924
-NARRATOR: Correctness requires the subtraction
-to use forty-two, not the stale value
-
-108
-00:07:07.924 --> 00:07:09.678
-previously stored in x5.
-
-109
-00:07:09.818 --> 00:07:15.025
-NARRATOR: For an ALU-to-ALU dependency,
-forwarding can often avoid a full wait for
-
-110
-00:07:15.025 --> 00:07:15.826
-Write Back.
-
-111
-00:07:15.826 --> 00:07:22.786
-NARRATOR: A bypass path routes the ADD result
-from a later pipeline register directly to the
-
-112
-00:07:22.786 --> 00:07:24.091
+00:07:22.713 --> 00:07:24.091
 subtraction's ALU input.
 
+106
+00:07:24.091 --> 00:07:30.671
+The register file may still contain the old
+x5, but the operand multiplexer selects the
+
+107
+00:07:30.671 --> 00:07:31.987
+newer forwarded value.
+
+108
+00:07:31.987 --> 00:07:35.074
+Forwarding does not solve every dependency.
+
+109
+00:07:35.074 --> 00:07:40.941
+If a load produces data only after Memory
+Access and the next instruction needs it
+
+110
+00:07:40.941 --> 00:07:45.635
+immediately, the value may arrive too late for
+the dependent Execute stage.
+
+111
+00:07:45.635 --> 00:07:50.405
+Hazard control then freezes selected pipeline
+state and inserts a bubble.
+
+112
+00:07:50.405 --> 00:07:55.048
+One cycle of lost throughput is preferable to
+an incorrect result.
+
 113
-00:07:24.091 --> 00:07:29.909
-NARRATOR: The register file may still contain
-the old x5, but the operand multiplexer
+00:07:55.154 --> 00:07:57.693
+Branches create a different uncertainty.
 
 114
-00:07:29.909 --> 00:07:31.987
-selects the newer forwarded value.
+00:07:57.693 --> 00:08:03.826
+Fetch wants a next address every cycle, but
+the branch decision and target may not be
 
 115
-00:07:31.987 --> 00:07:35.074
-NARRATOR: Forwarding does not solve every
-dependency.
+00:08:03.826 --> 00:08:04.593
+known immediately.
 
 116
-00:07:35.074 --> 00:07:40.732
-NARRATOR: If a load produces data only after
-Memory Access and the next instruction needs
+00:08:04.593 --> 00:08:06.507
+A simple processor can wait.
 
 117
-00:07:40.732 --> 00:07:45.635
-it immediately, the value may arrive too late
-for the dependent Execute stage.
+00:08:06.507 --> 00:08:10.614
+A faster design may predict a direction and
+continue fetching.
 
 118
-00:07:45.635 --> 00:07:50.405
-NARRATOR: Hazard control then freezes selected
-pipeline state and inserts a bubble.
+00:08:10.614 --> 00:08:16.552
+If the prediction is wrong, the processor
+redirects the program counter and flushes
 
 119
-00:07:50.405 --> 00:07:55.048
-NARRATOR: One cycle of lost throughput is
-preferable to an incorrect result.
+00:08:16.552 --> 00:08:20.206
+younger wrong-path instructions before they
+change architectural state.
 
 120
-00:07:55.154 --> 00:07:57.693
-NARRATOR: Branches create a different
-uncertainty.
+00:08:20.206 --> 00:08:23.853
+A flush is not merely erasing a diagram box.
 
 121
-00:07:57.693 --> 00:08:03.140
-NARRATOR: Fetch wants a next address every
-cycle, but the branch decision and target may
+00:08:23.853 --> 00:08:29.574
+It disables the invalid instructions' control
+effects so they cannot write registers or
 
 122
-00:08:03.140 --> 00:08:04.593
-not be known immediately.
+00:08:29.574 --> 00:08:30.014
+memory.
 
 123
-00:08:04.593 --> 00:08:06.507
-NARRATOR: A simple processor can wait.
+00:08:30.014 --> 00:08:35.626
+Prediction can improve average performance,
+but recovery logic preserves correctness when
 
 124
-00:08:06.507 --> 00:08:10.614
-NARRATOR: A faster design may predict a
-direction and continue fetching.
+00:08:35.626 --> 00:08:37.157
+speculation is wrong.
 
 125
-00:08:10.614 --> 00:08:16.282
-NARRATOR: If the prediction is wrong, the
-processor redirects the program counter and
+00:08:37.298 --> 00:08:40.054
+Performance language needs precision.
 
 126
-00:08:16.282 --> 00:08:20.206
-flushes younger wrong-path instructions before
-they change architectural state.
-
-127
-00:08:20.206 --> 00:08:23.853
-NARRATOR: A flush is not merely erasing a
-diagram box.
-
-128
-00:08:23.853 --> 00:08:28.371
-NARRATOR: It disables the invalid
-instructions' control effects so they cannot
-
-129
-00:08:28.371 --> 00:08:30.014
-write registers or memory.
-
-130
-00:08:30.014 --> 00:08:34.776
-NARRATOR: Prediction can improve average
-performance, but recovery logic preserves
-
-131
-00:08:34.776 --> 00:08:37.157
-correctness when speculation is wrong.
-
-132
-00:08:37.298 --> 00:08:40.054
-NARRATOR: Performance language needs
-precision.
-
-133
-00:08:40.054 --> 00:08:45.039
-NARRATOR: In an idealized scalar pipeline, the
+00:08:40.054 --> 00:08:44.975
+In an idealized scalar pipeline, the
 steady-state cycles per instruction can
 
-134
-00:08:45.039 --> 00:08:45.870
+127
+00:08:44.975 --> 00:08:45.870
 approach one.
 
-135
-00:08:45.870 --> 00:08:51.655
-NARRATOR: Real execution includes pipeline
-filling and draining, data stalls, control
+128
+00:08:45.870 --> 00:08:52.017
+Real execution includes pipeline filling and
+draining, data stalls, control redirects,
 
-136
-00:08:51.655 --> 00:08:54.811
-redirects, cache delays, and other
-constraints.
+129
+00:08:52.017 --> 00:08:54.811
+cache delays, and other constraints.
 
-137
-00:08:54.811 --> 00:09:00.723
-NARRATOR: A useful first model is actual CPI
-equals the ideal baseline plus the average
+130
+00:08:54.811 --> 00:09:01.883
+A useful first model is actual CPI equals the
+ideal baseline plus the average stall cost per
 
-138
-00:09:00.723 --> 00:09:02.299
-stall cost per instruction.
+131
+00:09:01.883 --> 00:09:02.299
+instruction.
 
-139
-00:09:02.299 --> 00:09:08.504
-NARRATOR: This is not a universal performance
-equation for every processor; it is a teaching
+132
+00:09:02.299 --> 00:09:08.477
+This is not a universal performance equation
+for every processor; it is a teaching
 
-140
-00:09:08.504 --> 00:09:08.918
+133
+00:09:08.477 --> 00:09:08.918
 decomposition.
 
-141
+134
 00:09:08.918 --> 00:09:10.844
-NARRATOR: Clock rate also matters.
+Clock rate also matters.
 
-142
-00:09:10.844 --> 00:09:17.146
-NARRATOR: Deeper pipelines can shorten some
-stage delays, but they add registers, control
+135
+00:09:10.844 --> 00:09:16.984
+Deeper pipelines can shorten some stage
+delays, but they add registers, control
 
-143
-00:09:17.146 --> 00:09:20.054
+136
+00:09:16.984 --> 00:09:20.054
 complexity, and potentially larger recovery
 penalties.
 
+137
+00:09:20.054 --> 00:09:26.013
+Architecture evaluation therefore considers
+both work completed per cycle and the duration
+
+138
+00:09:26.013 --> 00:09:27.503
+of each cycle.
+
+139
+00:09:27.626 --> 00:09:34.068
+We began with the word zero x zero zero seven
+three zero two B three.
+
+140
+00:09:34.068 --> 00:09:42.257
+Decode identified ADD, rs1 x6, rs2 x7, and
+destination x5.
+
+141
+00:09:42.257 --> 00:09:46.032
+Fetch read the instruction at zero x one
+thousand.
+
+142
+00:09:46.032 --> 00:09:49.093
+Decode read nineteen and twenty-three.
+
+143
+00:09:49.093 --> 00:09:51.262
+Execute produced forty-two.
+
 144
-00:09:20.054 --> 00:09:25.175
-NARRATOR: Architecture evaluation therefore
-considers both work completed per cycle and
+00:09:51.262 --> 00:09:55.075
+Memory Access performed no data-memory
+operation.
 
 145
-00:09:25.175 --> 00:09:27.503
-the duration of each cycle.
+00:09:55.075 --> 00:09:58.009
+Write Back committed forty-two to x5.
 
 146
-00:09:27.626 --> 00:09:34.068
-NARRATOR: We began with the word zero x zero
-zero seven three zero two B three.
+00:09:58.009 --> 00:10:04.140
+Independent instructions could overlap, while
+dependencies or branches required forwarding,
 
 147
-00:09:34.068 --> 00:09:42.257
-NARRATOR: Decode identified ADD, rs1 x6, rs2
-x7, and destination x5.
+00:10:04.140 --> 00:10:06.593
+stalls, redirects, or flushing.
 
 148
-00:09:42.257 --> 00:09:46.032
-NARRATOR: Fetch read the instruction at zero x
-one thousand.
+00:10:06.593 --> 00:10:12.285
+To test your understanding, ask four questions
+about any instruction: What operation do the
 
 149
-00:09:46.032 --> 00:09:49.093
-NARRATOR: Decode read nineteen and
-twenty-three.
+00:10:12.285 --> 00:10:13.098
+bits encode?
 
 150
-00:09:49.093 --> 00:09:51.262
-NARRATOR: Execute produced forty-two.
+00:10:13.098 --> 00:10:15.496
+Which values enter each stage?
 
 151
-00:09:51.262 --> 00:09:55.075
-NARRATOR: Memory Access performed no
-data-memory operation.
+00:10:15.496 --> 00:10:18.213
+Which control signals must travel with them?
 
 152
-00:09:55.075 --> 00:09:58.009
-NARRATOR: Write Back committed forty-two to
-x5.
+00:10:18.213 --> 00:10:23.162
+And can any younger instruction proceed
+without violating the ISA result?
 
 153
-00:09:58.009 --> 00:10:03.159
-NARRATOR: Independent instructions could
-overlap, while dependencies or branches
+00:10:23.162 --> 00:10:28.831
+If you can answer those, you can reason about
+the pipeline rather than merely memorize its
 
 154
-00:10:03.159 --> 00:10:06.593
-required forwarding, stalls, redirects, or
-flushing.
-
-155
-00:10:06.593 --> 00:10:11.185
-NARRATOR: To test your understanding, ask four
-questions about any instruction: What
-
-156
-00:10:11.185 --> 00:10:13.098
-operation do the bits encode?
-
-157
-00:10:13.098 --> 00:10:15.496
-NARRATOR: Which values enter each stage?
-
-158
-00:10:15.496 --> 00:10:18.213
-NARRATOR: Which control signals must travel
-with them?
-
-159
-00:10:18.213 --> 00:10:23.162
-NARRATOR: And can any younger instruction
-proceed without violating the ISA result?
-
-160
-00:10:23.162 --> 00:10:28.197
-NARRATOR: If you can answer those, you can
-reason about the pipeline rather than merely
-
-161
-00:10:28.197 --> 00:10:29.540
-memorize its five boxes.
+00:10:28.831 --> 00:10:29.540
+five boxes.

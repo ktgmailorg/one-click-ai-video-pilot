@@ -1,0 +1,105 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [
+        "e(t) = reference − measured output"
+      ],
+      "id": "beat-01",
+      "narration": "Suppose a motor should hold one thousand revolutions per minute, but the sensor reports nine hundred. The controller does not command a correction from the target alone. It first computes tracking error: the desired output minus the measured output. Here, the error is positive one hundred revolutions per minute.",
+      "plannedSeconds": 22,
+      "title": "Measure the tracking error",
+      "visualDirection": "template:showcase-pid | Subtract the measured output from the desired setpoint and feed the error to a controller."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [
+        "u(t) = Kp e(t) + Ki ∫e(t)dt + Kd de(t)/dt"
+      ],
+      "id": "beat-02",
+      "narration": "The proportional term reacts to the error right now. The integral term accumulates error over time, helping remove a persistent offset. The derivative term responds to how quickly error is changing, which can anticipate motion and reduce overshoot. Their weighted sum becomes the control input sent to the system.",
+      "plannedSeconds": 26,
+      "title": "Combine present, past, and trend",
+      "visualDirection": "template:showcase-pid | Separate proportional, integral, and derivative contributions before combining them."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "After the motor responds, the sensor measures again and the loop repeats. Larger gains are not automatically better: poor tuning can create overshoot, noise sensitivity, or oscillation. Engineers start with performance requirements, tune deliberately, and keep the controller as simple as the application allows. A PI controller may be enough when derivative action adds little value.",
+      "plannedSeconds": 26,
+      "title": "Close the loop and tune carefully",
+      "visualDirection": "template:showcase-pid | Return the measured output through feedback and compare under-tuned and over-tuned responses."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "umich-pid"
+      ],
+      "text": "A feedback controller begins with the difference between the desired and measured outputs.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "umich-pid"
+      ],
+      "text": "The proportional, integral, and derivative terms use present error, accumulated error, and error rate respectively.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "umich-pid"
+      ],
+      "text": "The controller repeatedly measures the new output and updates its input, and a design may use only the terms it needs.",
+      "verified": true
+    }
+  ],
+  "id": "how-a-pid-controller-corrects-an-error",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "University of Michigan Control Tutorials",
+      "excerpt": "A PID controller operates on the tracking error, the difference between a desired reference and the measured output. The proportional term responds to present error, the integral term accumulates error history, and the derivative term responds to the rate of change. The resulting control input drives the plant, the output is measured again, and the feedback loop repeats. Not every application needs all three terms.",
+      "id": "umich-pid",
+      "sha256": "05493f7ea750e552d04dfbac1b9008a243597aa63a05d448f8cd3be704a82721",
+      "title": "Introduction: PID Controller Design",
+      "type": "url",
+      "uri": "https://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=ControlPID",
+      "verified": true
+    }
+  ],
+  "title": "How a PID Controller Corrects an Error"
+}

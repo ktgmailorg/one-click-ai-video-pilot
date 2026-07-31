@@ -1,0 +1,76 @@
+{
+  "blockers": [],
+  "checks": [
+    {
+      "name": "frame",
+      "ok": true,
+      "value": "1920x1080"
+    },
+    {
+      "name": "frame-rate",
+      "ok": true,
+      "value": "30000/1001"
+    },
+    {
+      "name": "audio-sample-rate",
+      "ok": true,
+      "value": 48000
+    },
+    {
+      "name": "rit-orange-token",
+      "ok": true,
+      "value": "#F76902"
+    },
+    {
+      "name": "orange-on-black-contrast",
+      "ok": true,
+      "value": 6.98
+    },
+    {
+      "name": "title-safe-template",
+      "ok": true,
+      "value": "96px minimum inset"
+    },
+    {
+      "name": "font-fallbacks",
+      "ok": true,
+      "value": "Arial/Liberation Sans and Georgia/Liberation Serif"
+    },
+    {
+      "name": "final-master-loudness",
+      "ok": true,
+      "value": {
+        "integratedLufs": -15.93,
+        "loudnessRangeLu": 2.8,
+        "ok": true,
+        "schemaVersion": 1,
+        "targetIntegratedLufs": -16,
+        "targetTruePeakDbtp": -1.5,
+        "truePeakDbtp": -1.53
+      }
+    },
+    {
+      "name": "caption-audio-start-sync",
+      "ok": true,
+      "value": {
+        "audioStartSeconds": 0,
+        "captionStartSeconds": 0.05,
+        "maximumOffsetSeconds": 0.25,
+        "offsetSeconds": 0.05
+      }
+    },
+    {
+      "name": "subject-matched-visuals",
+      "ok": true,
+      "value": {
+        "genericShotIds": [],
+        "resolvedTemplates": [
+          "showcase-lca"
+        ]
+      }
+    }
+  ],
+  "ok": true,
+  "releaseState": "course-draft",
+  "warnings": []
+}

@@ -1,0 +1,597 @@
+{
+  "approvals": [
+    {
+      "approvedAt": "2026-07-31T15:48:44.313Z",
+      "notes": "Verifies declared claim-to-source bindings for draft rendering only; this is not instructor or release approval.",
+      "reviewer": "Automated source-pack verification (draft)",
+      "role": "automation",
+      "schemaVersion": 1,
+      "stage": "script",
+      "subjectSha256": "29ced939e6287f1ebf2ec65dbd39bd43345f6b55f19fec67c8c73f80f9e3d0d0"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/render/documentary-master.core.mp4",
+      "role": "master",
+      "sha256": "8aa92cae9d3cf2b34a40b51d5ae5effe6eb37042584aaaa46299e6561a4d630f"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/narration/captions.vtt",
+      "role": "captions-vtt",
+      "sha256": "df58372554993ff307cd513fdcda670882a21344f58042fa094f6920a1078713"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/narration/captions.srt",
+      "role": "captions-srt",
+      "sha256": "68e21c8321a324921c84e63495961e4a40dcc96a0661e6892e8a8ad35cd98f73"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/narration/transcript.txt",
+      "role": "transcript-text",
+      "sha256": "5e08695a9791c7800450b883a45ede029fbc0faa27e008189a079c7f2e538afd"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/narration/transcript.html",
+      "role": "transcript-html",
+      "sha256": "7216b2cef9f6ca41a17a5cdf09c875f0c448eef0ab4fd3f2009eaa461056eba6"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/visuals/thumbnail.png",
+      "role": "thumbnail",
+      "sha256": "3679f8af2c91dbe7ea65a262a95c1d74adc5c57ed9df2cec69f9934691cbb2dc"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/visuals/beat-01/beat-01-shot-001.png",
+      "role": "shot",
+      "sha256": "8f4bfa54191f4dc37c6eba6c9bca09f0c17d54a62d007aad2005dfebef5223b1",
+      "shotId": "beat-01-shot-001"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/visuals/beat-01/beat-01-shot-002.png",
+      "role": "shot",
+      "sha256": "09edea61e05b00217412446926bfa2ab71e9beb8b4c28d4a2a43c3ca9f2ba54b",
+      "shotId": "beat-01-shot-002"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/visuals/beat-01/beat-01-shot-003.png",
+      "role": "shot",
+      "sha256": "910353a98458ca40f465a111e6ace95bdfb7f0531fd0e54491ee6f314a80016b",
+      "shotId": "beat-01-shot-003"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/visuals/beat-02/beat-02-shot-001.png",
+      "role": "shot",
+      "sha256": "94decfbc9948be2a9181dc5a303f4660579542efb1719cf4d2604ed7d6b4cfda",
+      "shotId": "beat-02-shot-001"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/visuals/beat-02/beat-02-shot-002.png",
+      "role": "shot",
+      "sha256": "a92f684493dbfdcc47173733824d52bd4c7711038c324c03f4b479453fa7066f",
+      "shotId": "beat-02-shot-002"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/visuals/beat-02/beat-02-shot-003.png",
+      "role": "shot",
+      "sha256": "6fe3132befbfbe460424b8120bf6927c643a54ad097b381856df95987da5d683",
+      "shotId": "beat-02-shot-003"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/visuals/beat-02/beat-02-shot-004.png",
+      "role": "shot",
+      "sha256": "09056b9844948de7043c9ad72620f3e78e5fd79f850364e4e52b0440387ede6b",
+      "shotId": "beat-02-shot-004"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/visuals/beat-03/beat-03-shot-001.png",
+      "role": "shot",
+      "sha256": "a03b40ca3482fb4cb5d5ee89ca7b409fdcaa9bf045053b7956bc59acefb61639",
+      "shotId": "beat-03-shot-001"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/visuals/beat-03/beat-03-shot-002.png",
+      "role": "shot",
+      "sha256": "737d98a66ba41e909cd11463bf6bfad3912dfb0142c29ab5923042778e2b5ed3",
+      "shotId": "beat-03-shot-002"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/visuals/beat-03/beat-03-shot-003.png",
+      "role": "shot",
+      "sha256": "2dbb7e7fe53e24a5d49896d615697bc255b32b83ceaca3931ab5e20fef9953a1",
+      "shotId": "beat-03-shot-003"
+    }
+  ],
+  "configSha256": "28b98fdc00b3945c7d71dc44b6646092c936266db12ad87cbaeef11693fa5801",
+  "createdAt": "2026-07-31T15:49:07.844Z",
+  "final": {
+    "releaseAudit": {
+      "blockers": [],
+      "checks": [
+        {
+          "name": "frame",
+          "ok": true,
+          "value": "1920x1080"
+        },
+        {
+          "name": "frame-rate",
+          "ok": true,
+          "value": "30000/1001"
+        },
+        {
+          "name": "audio-sample-rate",
+          "ok": true,
+          "value": 48000
+        },
+        {
+          "name": "rit-orange-token",
+          "ok": true,
+          "value": "#F76902"
+        },
+        {
+          "name": "orange-on-black-contrast",
+          "ok": true,
+          "value": 6.98
+        },
+        {
+          "name": "title-safe-template",
+          "ok": true,
+          "value": "96px minimum inset"
+        },
+        {
+          "name": "font-fallbacks",
+          "ok": true,
+          "value": "Arial/Liberation Sans and Georgia/Liberation Serif"
+        },
+        {
+          "name": "final-master-loudness",
+          "ok": true,
+          "value": {
+            "integratedLufs": -16.34,
+            "loudnessRangeLu": 2.2,
+            "ok": true,
+            "schemaVersion": 1,
+            "targetIntegratedLufs": -16,
+            "targetTruePeakDbtp": -1.5,
+            "truePeakDbtp": -1.51
+          }
+        },
+        {
+          "name": "caption-audio-start-sync",
+          "ok": true,
+          "value": {
+            "audioStartSeconds": 0,
+            "captionStartSeconds": 0.05,
+            "maximumOffsetSeconds": 0.25,
+            "offsetSeconds": 0.05
+          }
+        },
+        {
+          "name": "subject-matched-visuals",
+          "ok": true,
+          "value": {
+            "genericShotIds": [],
+            "resolvedTemplates": [
+              "showcase-spectroscopy"
+            ]
+          }
+        }
+      ],
+      "ok": true,
+      "releaseState": "course-draft",
+      "warnings": []
+    },
+    "render": {
+      "audioQuality": {
+        "integratedLufs": -16.34,
+        "loudnessRangeLu": 2.2,
+        "ok": true,
+        "schemaVersion": 1,
+        "targetIntegratedLufs": -16,
+        "targetTruePeakDbtp": -1.5,
+        "truePeakDbtp": -1.51
+      },
+      "audioSampleRate": 48000,
+      "audioStartSeconds": 0,
+      "cache": {
+        "draft": false,
+        "draftSkipped": false,
+        "master": false,
+        "sectionCount": 3,
+        "sections": 0
+      },
+      "draftPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/render/documentary-master.DRAFT.mp4",
+      "durationSeconds": 59.462367,
+      "encoder": {
+        "codec": "h264_videotoolbox",
+        "mode": "videotoolbox",
+        "prioritizeSpeed": false,
+        "profile": "high",
+        "quality": "80",
+        "realtime": true
+      },
+      "frameRate": "30000/1001",
+      "height": 1080,
+      "master": "documentary-master.core.mp4",
+      "masterPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/render/documentary-master.core.mp4",
+      "schemaVersion": 1,
+      "sections": [
+        {
+          "beatId": "beat-01",
+          "cacheHit": false,
+          "durationSeconds": 16.344,
+          "output": "beat-01.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/render/sections/beat-01.mp4",
+          "renderSignature": "3d0a4a45a82d9d3a3bdbb07d77fd7f184ff4354599346f0ceb16520bbaee41e4",
+          "schemaVersion": 1,
+          "sha256": "f43dcb7cbef3fe06704c07ee959e775ca7e0231708d6aec32b3da64356e4e076"
+        },
+        {
+          "beatId": "beat-02",
+          "cacheHit": false,
+          "durationSeconds": 20.832,
+          "output": "beat-02.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/render/sections/beat-02.mp4",
+          "renderSignature": "89b03d070884b8f67e63bd572cb3f2a80062ed93516a5a77379c30834665c663",
+          "schemaVersion": 1,
+          "sha256": "6a90eef2ceb74c026dff57cd16f1849690c93e68d0b6c98543544a34e4c5e1a8"
+        },
+        {
+          "beatId": "beat-03",
+          "cacheHit": false,
+          "durationSeconds": 22.272,
+          "output": "beat-03.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/science-spectroscopy/work/render/sections/beat-03.mp4",
+          "renderSignature": "3a6d123af2155d44a223ae044c350ec5960f30af19e6d2219b9d484cafc537b5",
+          "schemaVersion": 1,
+          "sha256": "5e9e9eb5cffb9aa305038d0b3a3b74303d4faa7bd7385a7444e08a338ce8c617"
+        }
+      ],
+      "sha256": "8aa92cae9d3cf2b34a40b51d5ae5effe6eb37042584aaaa46299e6561a4d630f",
+      "title": "How Spectroscopy Identifies Matter",
+      "width": 1920
+    }
+  },
+  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "inputSha256": "4a020e37e7f14c05e0c3ebf6407ee46f903cbbdec56eead9823154146a836dfd",
+  "mode": "record",
+  "providers": {
+    "edge-narration": {
+      "capabilities": [
+        "speech.synthesize"
+      ],
+      "executionLocation": "hosted",
+      "id": "edge-tts",
+      "mimeTypes": {
+        "speech.synthesize": [
+          "audio/mpeg",
+          "text/vtt"
+        ]
+      },
+      "profileName": "edge-narration",
+      "supportsAsyncJobs": false,
+      "supportsModelDiscovery": false,
+      "supportsSeed": false,
+      "supportsStructuredOutput": false,
+      "version": "7.2.8",
+      "voicePresets": {
+        "female": "en-US-EmmaMultilingualNeural",
+        "male": "en-US-AndrewMultilingualNeural"
+      }
+    }
+  },
+  "requests": [
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 944,
+      "lookupSha256": "e0be23b3bbeeb1a2ada8facbe63a972ba538fbbd27d9a70e8777b1d0327d02b5",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "Atoms and molecules do not interact with every frequency equally. Their internal energy structure produces characteristic patterns of absorption or emission. Those patterns act like spectral fingerprints. Matching the positions of measured peaks or missing bands with trusted reference data can identify substances in an unknown sample."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "4a586c2c5f54fbf4424d84fdba616ea2e31e8d85a88f6992457daac11418893c",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/9b/9b52bb57b5d29cd4e5aa0616134f7fdc0f1ab684559b8fb61dc2ba761e904ede.mp3",
+            "sha256": "9b52bb57b5d29cd4e5aa0616134f7fdc0f1ab684559b8fb61dc2ba761e904ede",
+            "size": 124992
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/8d/8dd8bada82d689dbeba3dce96db3f21ce6562c691316de7e9f6c0bf85166a15a.vtt",
+            "sha256": "8dd8bada82d689dbeba3dce96db3f21ce6562c691316de7e9f6c0bf85166a15a",
+            "size": 469
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:48:44.430Z"
+    },
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 994,
+      "lookupSha256": "2f1b132c68e281edde1adf190250323072c9292582d100d775b6e17ac5726760",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "White-looking light can contain many frequencies. A spectrometer separates those frequencies after light interacts with a sample. Instead of asking only how bright the light is, spectroscopy asks which frequencies are present, which are missing, and how strong each signal is."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "aa8a401ae228c3ef5ae06a2c6b9deec0a64c0ea39ba11633db62596cef1332eb",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/b8/b87ea39cbd1bbbbcf6691d85b71a38b85d2eb579fd8894410d39687262dcaca6.mp3",
+            "sha256": "b87ea39cbd1bbbbcf6691d85b71a38b85d2eb579fd8894410d39687262dcaca6",
+            "size": 98064
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/5a/5ae1d92a53dfab7f7a4857615963987ba31556a92d37aa714a8688dc736614d1.vtt",
+            "sha256": "5ae1d92a53dfab7f7a4857615963987ba31556a92d37aa714a8688dc736614d1",
+            "size": 376
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:48:44.429Z"
+    },
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 1047,
+      "lookupSha256": "2cb88f31accca5e9efbc7a7dbf2fc40531b8aa25027765ab0dd3c6e3230866ed",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "Peak position can indicate identity, while calibrated signal strength can help estimate concentration. Conditions still matter: temperature, excitation, instrument response, and overlapping signals can change what is observed. Spectroscopy is powerful because it connects a precise measurement to reference physics, not because every colored line explains itself."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "5e61cef1ef2b731eaf3cc4aa9e72805f036faeb74cb65210f481d84e5c3ea8e6",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/d6/d6f34bd4c7fecd2ed501bfcbc4292ea3caaa6b313b7c30b9fbe1ba8d5f59f40d.mp3",
+            "sha256": "d6f34bd4c7fecd2ed501bfcbc4292ea3caaa6b313b7c30b9fbe1ba8d5f59f40d",
+            "size": 133632
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/38/38b93c06826fa5169d55adf66cea862bea4a7295d4dfb95fdb70f5f6a2fd345c.vtt",
+            "sha256": "38b93c06826fa5169d55adf66cea862bea4a7295d4dfb95fdb70f5f6a2fd345c",
+            "size": 463
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:48:44.430Z"
+    }
+  ],
+  "runId": "how-spectroscopy-identifies-matter-9c1f3cdf0205",
+  "schemaVersion": 1,
+  "stages": [
+    {
+      "name": "plan",
+      "status": "complete"
+    },
+    {
+      "name": "script-approval",
+      "status": "complete"
+    },
+    {
+      "name": "visual-approval",
+      "status": "complete"
+    },
+    {
+      "name": "narration",
+      "status": "complete"
+    },
+    {
+      "name": "visual-generation",
+      "status": "complete"
+    },
+    {
+      "name": "render",
+      "status": "complete"
+    },
+    {
+      "name": "release-qa",
+      "status": "complete"
+    },
+    {
+      "name": "release-approval",
+      "status": "waiting"
+    }
+  ],
+  "status": "awaiting-approval",
+  "toolchain": {
+    "ffmpeg": {
+      "available": true,
+      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "available": true,
+      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "gitChangedPaths": [
+      "outreach/README.md",
+      "outreach/general-email.md",
+      "outreach/leadership-confirmation.md"
+    ],
+    "gitDirty": true,
+    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
+    "node": "v22.23.1",
+    "platform": "darwin-arm64",
+    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtimeDirty": false,
+    "sharp": {
+      "aom": "3.14.1",
+      "archive": "3.8.8",
+      "cairo": "1.18.4",
+      "cgif": "0.5.3",
+      "exif": "0.6.26",
+      "expat": "2.8.2",
+      "ffi": "3.6.0",
+      "fontconfig": "2.18.1",
+      "freetype": "2.14.3",
+      "fribidi": "1.0.16",
+      "glib": "2.89.1",
+      "harfbuzz": "14.2.1",
+      "heif": "1.23.1",
+      "highway": "1.4.0",
+      "imagequant": "2.4.1",
+      "lcms": "2.19.1",
+      "mozjpeg": "0826579",
+      "pango": "1.58.0",
+      "pixman": "0.46.4",
+      "png": "1.6.58",
+      "proxy-libintl": "0.5",
+      "rsvg": "2.62.90",
+      "sharp": "0.35.3",
+      "tiff": "d01a94b",
+      "uhdr": "1acdbed",
+      "vips": "8.18.3",
+      "webp": "1.6.0",
+      "xml2": "2.15.3",
+      "zlib-ng": "2.3.3"
+    }
+  },
+  "totalCostUsd": 0
+}

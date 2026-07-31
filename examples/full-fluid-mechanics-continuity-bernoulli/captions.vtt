@@ -1,568 +1,519 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:07.679
-NARRATOR: We begin by isolating a specific
-region of flowing fluid, which we call a
+00:00:00.050 --> 00:00:08.696
+We begin by isolating a specific region of
+flowing fluid, which we call a control volume.
 
 2
-00:00:07.679 --> 00:00:08.696
-control volume.
+00:00:08.696 --> 00:00:15.107
+Imagine drawing a transparent box around a
+section of a water pipe.
 
 3
-00:00:08.696 --> 00:00:15.107
-NARRATOR: Imagine drawing a transparent box
-around a section of a water pipe.
+00:00:15.107 --> 00:00:23.642
+This boundary is purely imaginary, but it
+allows us to track exactly what enters and
 
 4
-00:00:15.107 --> 00:00:23.271
-NARRATOR: This boundary is purely imaginary,
-but it allows us to track exactly what enters
-
-5
-00:00:23.271 --> 00:00:27.625
-and leaves without worrying about the fluid
+00:00:23.642 --> 00:00:27.625
+leaves without worrying about the fluid
 outside.
 
+5
+00:00:27.625 --> 00:00:37.681
+The control volume concept transforms a
+complex, continuous system into a manageable
+
 6
-00:00:27.625 --> 00:00:37.011
-NARRATOR: The control volume concept
-transforms a complex, continuous system into a
+00:00:37.681 --> 00:00:39.357
+mathematical framework.
 
 7
-00:00:37.011 --> 00:00:39.357
-manageable mathematical framework.
+00:00:39.357 --> 00:00:47.896
+By focusing only on the mass crossing this
+imaginary surface, we can apply conservation
 
 8
-00:00:39.357 --> 00:00:47.469
-NARRATOR: By focusing only on the mass
-crossing this imaginary surface, we can apply
+00:00:47.896 --> 00:00:50.946
+laws directly to the flow.
 
 9
-00:00:47.469 --> 00:00:50.946
-conservation laws directly to the flow.
+00:00:50.946 --> 00:00:59.191
+This approach is essential because it
+separates the internal dynamics from external
 
 10
-00:00:50.946 --> 00:00:58.778
-NARRATOR: This approach is essential because
-it separates the internal dynamics from
-
-11
-00:00:58.778 --> 00:01:04.000
-external influences, letting us analyze steady
+00:00:59.191 --> 00:01:04.000
+influences, letting us analyze steady
 conditions systematically.
 
-12
+11
 00:01:04.000 --> 00:01:10.607
-NARRATOR: We will now examine how mass behaves
-within this defined space.
+We will now examine how mass behaves within
+this defined space.
+
+12
+00:01:10.754 --> 00:01:19.521
+Density measures how much mass occupies a
+given volume, acting as the bridge between
 
 13
-00:01:10.754 --> 00:01:19.034
-NARRATOR: Density measures how much mass
-occupies a given volume, acting as the bridge
+00:01:19.521 --> 00:01:21.400
+mass and space.
 
 14
-00:01:19.034 --> 00:01:21.400
-between mass and space.
+00:01:21.400 --> 00:01:29.168
+In our control volume, density determines how
+tightly packed the fluid molecules are.
 
 15
-00:01:21.400 --> 00:01:28.058
-NARRATOR: In our control volume, density
-determines how tightly packed the fluid
+00:01:29.168 --> 00:01:38.382
+If we compress the fluid, density increases,
+meaning more mass fits into the same volume.
 
 16
-00:01:28.058 --> 00:01:29.168
-molecules are.
+00:01:38.382 --> 00:01:44.632
+Conversely, heating the fluid expands it,
+lowering density.
 
 17
-00:01:29.168 --> 00:01:37.230
-NARRATOR: If we compress the fluid, density
-increases, meaning more mass fits into the
+00:01:44.632 --> 00:01:53.329
+This property is crucial because it dictates
+how the fluid responds to pressure changes and
 
 18
-00:01:37.230 --> 00:01:38.382
-same volume.
+00:01:53.329 --> 00:01:54.489
+area variations.
 
 19
-00:01:38.382 --> 00:01:44.632
-NARRATOR: Conversely, heating the fluid
-expands it, lowering density.
+00:01:54.489 --> 00:02:02.184
+We treat density as a fundamental material
+property that remains constant for liquids but
 
 20
-00:01:44.632 --> 00:01:52.299
-NARRATOR: This property is crucial because it
-dictates how the fluid responds to pressure
+00:02:02.184 --> 00:02:04.382
+can shift for gases.
 
 21
-00:01:52.299 --> 00:01:54.489
-changes and area variations.
+00:02:04.382 --> 00:02:13.887
+Recognizing density allows us to predict how
+mass distributes itself within our imaginary
 
 22
-00:01:54.489 --> 00:02:01.258
-NARRATOR: We treat density as a fundamental
-material property that remains constant for
+00:02:13.887 --> 00:02:16.811
+boundary before analyzing motion.
 
 23
-00:02:01.258 --> 00:02:04.382
-liquids but can shift for gases.
+00:02:16.970 --> 00:02:24.098
+Mass flow rate quantifies how much mass
+crosses a plane each second.
 
 24
-00:02:04.382 --> 00:02:13.359
-NARRATOR: Recognizing density allows us to
-predict how mass distributes itself within our
+00:02:24.098 --> 00:02:31.739
+Imagine a conveyor belt carrying boxes; the
+mass flow rate tells you exactly how many
 
 25
-00:02:13.359 --> 00:02:16.811
-imaginary boundary before analyzing motion.
+00:02:31.739 --> 00:02:34.795
+boxes pass a checkpoint per minute.
 
 26
-00:02:16.970 --> 00:02:24.098
-NARRATOR: Mass flow rate quantifies how much
-mass crosses a plane each second.
+00:02:34.795 --> 00:02:42.362
+Mathematically, we multiply density by the
+cross-sectional area and the average velocity
 
 27
-00:02:24.098 --> 00:02:30.905
-NARRATOR: Imagine a conveyor belt carrying
-boxes; the mass flow rate tells you exactly
+00:02:42.362 --> 00:02:44.884
+to get this value.
 
 28
-00:02:30.905 --> 00:02:34.795
-how many boxes pass a checkpoint per minute.
+00:02:44.884 --> 00:02:54.607
+This formula works because density gives mass
+per volume, area gives volume per length, and
 
 29
-00:02:34.795 --> 00:02:41.917
-NARRATOR: Mathematically, we multiply density
-by the cross-sectional area and the average
+00:02:54.607 --> 00:02:57.848
+velocity gives length per time.
 
 30
-00:02:41.917 --> 00:02:44.884
-velocity to get this value.
+00:02:57.848 --> 00:03:05.098
+When you combine them, volume and length
+cancel out, leaving mass per time.
 
 31
-00:02:44.884 --> 00:02:53.527
-NARRATOR: This formula works because density
-gives mass per volume, area gives volume per
+00:03:05.098 --> 00:03:12.431
+This calculation is foundational because it
+converts spatial dimensions into a temporal
 
 32
-00:02:53.527 --> 00:02:57.848
-length, and velocity gives length per time.
+00:03:12.431 --> 00:03:19.152
+rate, allowing us to track material movement
+through our control volume.
 
 33
-00:02:57.848 --> 00:03:05.098
-NARRATOR: When you combine them, volume and
-length cancel out, leaving mass per time.
+00:03:19.298 --> 00:03:25.748
+Continuity enforces mass conservation within
+our control volume.
 
 34
-00:03:05.098 --> 00:03:12.125
-NARRATOR: This calculation is foundational
-because it converts spatial dimensions into a
+00:03:25.748 --> 00:03:33.958
+If mass enters at a certain rate, it must exit
+at the exact same rate when the flow is
 
 35
-00:03:12.125 --> 00:03:19.152
-temporal rate, allowing us to track material
-movement through our control volume.
+00:03:33.958 --> 00:03:34.390
+steady.
 
 36
-00:03:19.298 --> 00:03:25.748
-NARRATOR: Continuity enforces mass
-conservation within our control volume.
+00:03:34.390 --> 00:03:42.926
+No mass accumulates inside the box, and no
+sources or sinks exist within it.
 
 37
-00:03:25.748 --> 00:03:33.567
-NARRATOR: If mass enters at a certain rate, it
-must exit at the exact same rate when the flow
+00:03:42.926 --> 00:03:51.860
+This principle means the product of density,
+area, and velocity remains constant along the
 
 38
-00:03:33.567 --> 00:03:34.390
-is steady.
+00:03:51.860 --> 00:03:52.498
+pipe.
 
 39
-00:03:34.390 --> 00:03:42.926
-NARRATOR: No mass accumulates inside the box,
-and no sources or sinks exist within it.
+00:03:52.498 --> 00:04:00.265
+If the pipe narrows, the fluid must speed up
+to maintain the same mass flow rate.
 
 40
-00:03:42.926 --> 00:03:50.703
-NARRATOR: This principle means the product of
-density, area, and velocity remains constant
+00:04:00.265 --> 00:04:05.962
+Conversely, if the pipe widens, the fluid
+slows down.
 
 41
-00:03:50.703 --> 00:03:52.498
-along the pipe.
+00:04:05.962 --> 00:04:13.896
+This relationship holds regardless of the
+fluid type, provided we account for density
 
 42
-00:03:52.498 --> 00:04:00.265
-NARRATOR: If the pipe narrows, the fluid must
-speed up to maintain the same mass flow rate.
+00:04:13.896 --> 00:04:16.337
+changes in compressible gases.
 
 43
-00:04:00.265 --> 00:04:05.962
-NARRATOR: Conversely, if the pipe widens, the
-fluid slows down.
+00:04:16.337 --> 00:04:25.984
+Continuity is the first law of fluid mechanics
+in action, dictating how geometry forces
 
 44
-00:04:05.962 --> 00:04:13.455
-NARRATOR: This relationship holds regardless
-of the fluid type, provided we account for
+00:04:25.984 --> 00:04:28.051
+velocity to adjust.
 
 45
-00:04:13.455 --> 00:04:16.337
-density changes in compressible gases.
+00:04:28.202 --> 00:04:34.794
+Pressure in a flowing fluid splits into two
+distinct components.
 
 46
-00:04:16.337 --> 00:04:25.448
-NARRATOR: Continuity is the first law of fluid
-mechanics in action, dictating how geometry
+00:04:34.794 --> 00:04:43.580
+Static pressure measures the fluid's inherent
+thermodynamic energy, independent of motion.
 
 47
-00:04:25.448 --> 00:04:28.051
-forces velocity to adjust.
+00:04:43.580 --> 00:04:52.062
+Dynamic pressure quantifies the kinetic energy
+associated with the fluid's velocity.
 
 48
-00:04:28.202 --> 00:04:34.794
-NARRATOR: Pressure in a flowing fluid splits
-into two distinct components.
+00:04:52.062 --> 00:05:00.705
+When fluid moves faster, dynamic pressure
+increases while static pressure typically
 
 49
-00:04:34.794 --> 00:04:42.848
-NARRATOR: Static pressure measures the fluid's
-inherent thermodynamic energy, independent of
+00:05:00.705 --> 00:05:01.491
+decreases.
 
 50
-00:04:42.848 --> 00:04:43.580
-motion.
+00:05:01.491 --> 00:05:09.294
+This trade-off occurs because total energy
+remains constant in ideal conditions.
 
 51
-00:04:43.580 --> 00:04:51.355
-NARRATOR: Dynamic pressure quantifies the
-kinetic energy associated with the fluid's
+00:05:09.294 --> 00:05:17.491
+We visualize this by imagining a stationary
+observer measuring static pressure with a
 
 52
-00:04:51.355 --> 00:04:52.062
-velocity.
+00:05:17.491 --> 00:05:25.687
+wall-mounted gauge, versus a moving observer
+experiencing dynamic pressure as a ram effect.
 
 53
-00:04:52.062 --> 00:05:00.040
-NARRATOR: When fluid moves faster, dynamic
-pressure increases while static pressure
+00:05:25.687 --> 00:05:33.648
+Understanding both components allows us to
+predict how forces distribute across pipe
 
 54
-00:05:00.040 --> 00:05:01.491
-typically decreases.
+00:05:33.648 --> 00:05:38.955
+walls and how velocity changes affect pressure
+readings.
 
 55
-00:05:01.491 --> 00:05:09.294
-NARRATOR: This trade-off occurs because total
-energy remains constant in ideal conditions.
+00:05:39.098 --> 00:05:47.228
+Bernoulli's equation links static pressure,
+dynamic pressure, and total pressure along a
 
 56
-00:05:09.294 --> 00:05:16.580
-NARRATOR: We visualize this by imagining a
-stationary observer measuring static pressure
+00:05:47.228 --> 00:05:47.905
+streamline.
 
 57
-00:05:16.580 --> 00:05:24.473
-with a wall-mounted gauge, versus a moving
-observer experiencing dynamic pressure as a
+00:05:47.905 --> 00:05:56.843
+It states that the sum of static pressure and
+one-half density times velocity squared equals
 
 58
-00:05:24.473 --> 00:05:25.687
-ram effect.
+00:05:56.843 --> 00:05:59.226
+a constant total pressure.
 
 59
-00:05:25.687 --> 00:05:33.269
-NARRATOR: Understanding both components allows
-us to predict how forces distribute across
+00:05:59.226 --> 00:06:06.980
+This relationship emerges from energy
+conservation, assuming steady, inviscid,
 
 60
-00:05:33.269 --> 00:05:38.955
-pipe walls and how velocity changes affect
-pressure readings.
+00:06:06.980 --> 00:06:16.458
+incompressible flow without heat addition,
+shaft work, or significant elevation changes.
 
 61
-00:05:39.098 --> 00:05:46.018
-NARRATOR: Bernoulli's equation links static
-pressure, dynamic pressure, and total pressure
+00:06:16.458 --> 00:06:23.958
+These assumptions simplify reality but are
+critical for accurate predictions.
 
 62
-00:05:46.018 --> 00:05:47.905
-along a streamline.
+00:06:23.958 --> 00:06:32.777
+If viscosity, compressibility, pumps,
+turbines, heat transfer, or unsteady behavior
 
 63
-00:05:47.905 --> 00:05:55.830
-NARRATOR: It states that the sum of static
-pressure and one-half density times velocity
+00:06:32.777 --> 00:06:39.833
+materially affect the flow, Bernoulli's
+simplified form fails.
 
 64
-00:05:55.830 --> 00:05:59.226
-squared equals a constant total pressure.
+00:06:39.833 --> 00:06:47.369
+We must verify these conditions before
+applying the equation to real-world systems.
 
 65
-00:05:59.226 --> 00:06:06.611
-NARRATOR: This relationship emerges from
-energy conservation, assuming steady,
+00:06:47.522 --> 00:06:56.394
+Combining continuity and Bernoulli's equation
+reveals how pipe geometry dictates pressure
 
 66
-00:06:06.611 --> 00:06:15.637
-inviscid, incompressible flow without heat
-addition, shaft work, or significant elevation
+00:06:56.394 --> 00:06:58.007
+and velocity.
 
 67
-00:06:15.637 --> 00:06:16.458
-changes.
+00:06:58.007 --> 00:07:05.257
+When a pipe narrows, continuity forces
+velocity to increase.
 
 68
-00:06:16.458 --> 00:06:23.958
-NARRATOR: These assumptions simplify reality
-but are critical for accurate predictions.
+00:07:05.257 --> 00:07:14.475
+Bernoulli's equation then predicts that this
+velocity increase must be offset by a drop in
 
 69
-00:06:23.958 --> 00:06:32.313
-NARRATOR: If viscosity, compressibility,
-pumps, turbines, heat transfer, or unsteady
-
-70
-00:06:32.313 --> 00:06:39.833
-behavior materially affect the flow,
-Bernoulli's simplified form fails.
-
-71
-00:06:39.833 --> 00:06:46.789
-NARRATOR: We must verify these conditions
-before applying the equation to real-world
-
-72
-00:06:46.789 --> 00:06:47.369
-systems.
-
-73
-00:06:47.522 --> 00:06:55.760
-NARRATOR: Combining continuity and Bernoulli's
-equation reveals how pipe geometry dictates
-
-74
-00:06:55.760 --> 00:06:58.007
-pressure and velocity.
-
-75
-00:06:58.007 --> 00:07:05.257
-NARRATOR: When a pipe narrows, continuity
-forces velocity to increase.
-
-76
-00:07:05.257 --> 00:07:12.802
-NARRATOR: Bernoulli's equation then predicts
-that this velocity increase must be offset by
-
-77
-00:07:12.802 --> 00:07:15.704
-a drop in static pressure.
-
-78
-00:07:15.704 --> 00:07:23.561
-NARRATOR: Conversely, a widening pipe reduces
-velocity and raises static pressure.
-
-79
-00:07:23.561 --> 00:07:31.313
-NARRATOR: This inverse relationship between
-area and pressure is fundamental to designing
-
-80
-00:07:31.313 --> 00:07:34.543
-ducts, nozzles, and Venturi meters.
-
-81
-00:07:34.543 --> 00:07:41.293
-NARRATOR: We can visualize this by tracking
-pressure gauges along a tapered pipe: readings
-
-82
-00:07:41.293 --> 00:07:47.079
-will fall in the narrow section and rise in
-the wide section.
-
-83
-00:07:47.079 --> 00:07:55.427
-NARRATOR: These relationships allow engineers
-to predict flow behavior without complex
-
-84
-00:07:55.427 --> 00:07:56.186
-simulations.
-
-85
-00:07:56.330 --> 00:08:02.449
-NARRATOR: Pitot measurement exploits the
-area-velocity-pressure relationship to
-
-86
-00:08:02.449 --> 00:08:04.744
-determine fluid speed.
-
-87
-00:08:04.744 --> 00:08:12.790
-NARRATOR: A Pitot tube points directly into
-the flow, capturing dynamic pressure at its
-
-88
-00:08:12.790 --> 00:08:13.940
-stagnation point.
-
-89
-00:08:13.940 --> 00:08:18.547
-NARRATOR: A static port measures the ambient
+00:07:14.475 --> 00:07:15.704
 static pressure.
 
+70
+00:07:15.704 --> 00:07:23.561
+Conversely, a widening pipe reduces velocity
+and raises static pressure.
+
+71
+00:07:23.561 --> 00:07:31.797
+This inverse relationship between area and
+pressure is fundamental to designing ducts,
+
+72
+00:07:31.797 --> 00:07:34.543
+nozzles, and Venturi meters.
+
+73
+00:07:34.543 --> 00:07:41.563
+We can visualize this by tracking pressure
+gauges along a tapered pipe: readings will
+
+74
+00:07:41.563 --> 00:07:47.079
+fall in the narrow section and rise in the
+wide section.
+
+75
+00:07:47.079 --> 00:07:56.186
+These relationships allow engineers to predict
+flow behavior without complex simulations.
+
+76
+00:07:56.330 --> 00:08:02.220
+Pitot measurement exploits the
+area-velocity-pressure relationship to
+
+77
+00:08:02.220 --> 00:08:04.744
+determine fluid speed.
+
+78
+00:08:04.744 --> 00:08:13.327
+A Pitot tube points directly into the flow,
+capturing dynamic pressure at its stagnation
+
+79
+00:08:13.327 --> 00:08:13.940
+point.
+
+80
+00:08:13.940 --> 00:08:18.547
+A static port measures the ambient static
+pressure.
+
+81
+00:08:18.547 --> 00:08:26.385
+The difference between these two readings
+equals dynamic pressure, which we convert to
+
+82
+00:08:26.385 --> 00:08:28.797
+velocity using Bernoulli's equation.
+
+83
+00:08:28.797 --> 00:08:37.530
+This technique is widely used in aviation and
+HVAC systems to map airflow patterns.
+
+84
+00:08:37.530 --> 00:08:47.426
+By placing multiple Pitot probes along a duct,
+we can reconstruct the velocity profile and
+
+85
+00:08:47.426 --> 00:08:49.405
+verify theoretical predictions.
+
+86
+00:08:49.405 --> 00:08:57.096
+The method relies on accurate pressure sensing
+and assumes the flow remains undisturbed by
+
+87
+00:08:57.096 --> 00:08:58.744
+the probe itself.
+
+88
+00:08:58.898 --> 00:09:08.147
+Real flows rarely meet ideal assumptions,
+introducing energy losses that invalidate
+
+89
+00:09:08.147 --> 00:09:10.669
+simple Bernoulli calculations.
+
 90
-00:08:18.547 --> 00:08:25.380
-NARRATOR: The difference between these two
-readings equals dynamic pressure, which we
+00:09:10.669 --> 00:09:19.115
+Friction against pipe walls, turbulence, and
+sudden expansions dissipate mechanical energy
 
 91
-00:08:25.380 --> 00:08:28.797
-convert to velocity using Bernoulli's
-equation.
+00:09:19.115 --> 00:09:20.651
+into heat.
 
 92
-00:08:28.797 --> 00:08:36.948
-NARRATOR: This technique is widely used in
-aviation and HVAC systems to map airflow
+00:09:20.651 --> 00:09:28.580
+These losses reduce the total pressure
+available for flow, meaning static and dynamic
 
 93
-00:08:36.948 --> 00:08:37.530
-patterns.
+00:09:28.580 --> 00:09:32.240
+pressure sums will not remain constant.
 
 94
-00:08:37.530 --> 00:08:46.280
-NARRATOR: By placing multiple Pitot probes
-along a duct, we can reconstruct the velocity
+00:09:32.240 --> 00:09:40.238
+We must recognize invalid applications when
+viscosity, compressibility, pumps, turbines,
 
 95
-00:08:46.280 --> 00:08:49.405
-profile and verify theoretical predictions.
+00:09:40.238 --> 00:09:47.437
+heat transfer, or unsteady behavior materially
+affect the flow.
 
 96
-00:08:49.405 --> 00:08:56.150
-NARRATOR: The method relies on accurate
-pressure sensing and assumes the flow remains
+00:09:47.437 --> 00:09:56.615
+In such cases, we switch to the general energy
+equation or use empirical loss coefficients.
 
 97
-00:08:56.150 --> 00:08:58.744
-undisturbed by the probe itself.
+00:09:56.615 --> 00:10:04.548
+Identifying these limitations prevents
+erroneous predictions and ensures engineering
 
 98
-00:08:58.898 --> 00:09:07.530
-NARRATOR: Real flows rarely meet ideal
-assumptions, introducing energy losses that
+00:10:04.548 --> 00:10:08.955
+designs account for real-world inefficiencies.
 
 99
-00:09:07.530 --> 00:09:10.669
-invalidate simple Bernoulli calculations.
-
-100
-00:09:10.669 --> 00:09:17.799
-NARRATOR: Friction against pipe walls,
-turbulence, and sudden expansions dissipate
-
-101
-00:09:17.799 --> 00:09:20.651
-mechanical energy into heat.
-
-102
-00:09:20.651 --> 00:09:27.604
-NARRATOR: These losses reduce the total
-pressure available for flow, meaning static
-
-103
-00:09:27.604 --> 00:09:32.240
-and dynamic pressure sums will not remain
-constant.
-
-104
-00:09:32.240 --> 00:09:39.079
-NARRATOR: We must recognize invalid
-applications when viscosity, compressibility,
-
-105
-00:09:39.079 --> 00:09:47.437
-pumps, turbines, heat transfer, or unsteady
-behavior materially affect the flow.
-
-106
-00:09:47.437 --> 00:09:56.041
-NARRATOR: In such cases, we switch to the
-general energy equation or use empirical loss
-
-107
-00:09:56.041 --> 00:09:56.615
-coefficients.
-
-108
-00:09:56.615 --> 00:10:04.019
-NARRATOR: Identifying these limitations
-prevents erroneous predictions and ensures
-
-109
-00:10:04.019 --> 00:10:08.955
-engineering designs account for real-world
-inefficiencies.
-
-110
-00:10:09.098 --> 00:10:14.637
-NARRATOR: Let us apply these concepts to a
+00:10:09.098 --> 00:10:14.315
+Let us apply these concepts to a
 narrowing-pipe example.
 
-111
-00:10:14.637 --> 00:10:23.790
-NARRATOR: Suppose water flows through a pipe
-with an inlet area of 0.05 square meters at 2
+100
+00:10:14.315 --> 00:10:20.583
+Suppose water flows through a pipe with an
+inlet area of 0.
 
-112
-00:10:23.790 --> 00:10:25.405
-meters per second.
+101
+00:10:20.583 --> 00:10:26.208
+05 square meters at 2 meters per second.
 
-113
-00:10:25.405 --> 00:10:32.726
-NARRATOR: The outlet area shrinks to 0.025
-square meters.
+102
+00:10:26.208 --> 00:10:29.762
+The outlet area shrinks to 0.
 
-114
-00:10:32.726 --> 00:10:40.655
-NARRATOR: Using continuity, we find the outlet
-velocity doubles to 4 meters per second.
+103
+00:10:29.762 --> 00:10:33.333
+025 square meters.
 
-115
-00:10:40.655 --> 00:10:49.161
-NARRATOR: Assuming incompressible flow,
-density remains 1000 kilograms per cubic
+104
+00:10:33.333 --> 00:10:41.387
+Using continuity, we find the outlet velocity
+doubles to 4 meters per second.
 
-116
-00:10:49.161 --> 00:10:50.012
-meter.
+105
+00:10:41.387 --> 00:10:50.548
+Assuming incompressible flow, density remains
+1000 kilograms per cubic meter.
 
-117
-00:10:50.012 --> 00:10:56.262
-NARRATOR: Applying Bernoulli's equation, we
-calculate the static pressure drop.
+106
+00:10:50.548 --> 00:10:56.708
+Applying Bernoulli's equation, we calculate
+the static pressure drop.
 
-118
-00:10:56.262 --> 00:11:03.786
-NARRATOR: The dynamic pressure increases by
-half density times the velocity change
+107
+00:10:56.708 --> 00:11:06.282
+The dynamic pressure increases by half density
+times the velocity change squared, yielding a
 
-119
-00:11:03.786 --> 00:11:07.548
-squared, yielding a measurable pressure
-difference.
+108
+00:11:06.282 --> 00:11:08.333
+measurable pressure difference.
 
-120
-00:11:07.548 --> 00:11:14.712
-NARRATOR: This step-by-step calculation
-demonstrates how area reduction forces
+109
+00:11:08.333 --> 00:11:17.358
+This step-by-step calculation demonstrates how
+area reduction forces velocity increase and
 
-121
-00:11:14.712 --> 00:11:22.673
-velocity increase and static pressure
-decrease, completing our practical analysis.
+110
+00:11:17.358 --> 00:11:23.101
+static pressure decrease, completing our
+practical analysis.

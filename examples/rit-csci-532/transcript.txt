@@ -1,20 +1,20 @@
-NARRATOR: Begin by framing Course Foundations and Framework Overview as a question about
+NARRATOR: Begin by framing Course Foundations and Scope as a question about inputs,
 
-inputs, decisions, and observable results.
+decisions, and observable results.
 
-NARRATOR: The NIST AI Risk Management Framework organizes work around Govern, Map,
+NARRATOR: The course will introduce students to the application of intelligent
 
-Measure, and Manage.
+methodologies in computer security and information assurance systems design.
 
-NARRATOR: Consider this worked case: Govern establishes policies for AI risk, Map
+NARRATOR: Consider this worked case: Students will explore how AI-driven tools replace
 
-documents context and intended use, Measure analyzes risks, and Manage prioritizes
+traditional rule-based security checks with adaptive threat recognition.
 
-responses.
+NARRATOR: On screen, display a slide titled 'Course Scope' with bullet points listing
 
-NARRATOR: On screen, display a four-quadrant diagram labeled Govern, Map, Measure, Manage
+intelligent methodologies, information assurance, and systems design.
 
-with brief icons representing policy, context, metrics, and response.
+NARRATOR: Use a clean, academic font and a subtle security-themed background graphic.
 
 NARRATOR: List the givens before choosing a method, because an unstated assumption can
 
@@ -22,21 +22,23 @@ change the conclusion.
 
 NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: Now define Govern Phase and Accountability precisely enough that another
+NARRATOR: Now define Prerequisites and Course Constraints precisely enough that another
 
 learner could test the definition.
 
-NARRATOR: Govern establishes policies, responsibilities, and accountability for AI
+NARRATOR: Students cannot take and receive credit for this course if they have credit for
 
-risk.
+CSCI-735.
 
-NARRATOR: Consider this worked case: Institutional AI governance policies define
+NARRATOR: Consider this worked case: An enrollment portal would block registration if
 
-who is accountable for security tool deployment and risk mitigation.
+a student's transcript shows CSCI-735 credit, ensuring prerequisite alignment.
 
-NARRATOR: On screen, show a flowchart starting with 'Govern' branching to 'Policy',
+NARRATOR: On screen, show a checklist graphic with three items: 'CSCI-331/CSCI-351
 
-'Responsibility', and 'Accountability' nodes.
+Completed', 'CSCI-735 Credit Absent', and 'Prerequisites Met'.
+
+NARRATOR: Use checkmarks and clear icons for each item.
 
 NARRATOR: Separate the formal definition from an implementation detail, then identify what
 
@@ -44,47 +46,49 @@ evidence would distinguish them.
 
 NARRATOR: A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+NARRATOR: With the foundation in place, examine how Intelligent Methodologies in
 
-throughout the analysis.
+Security operates in a concrete sequence.
 
-NARRATOR: With the foundation in place, examine how Map Phase and Context
+NARRATOR: The students will be required to implement a course project on design of a
 
-Documentation operates in a concrete sequence.
+particular security tool with an application of an artificial intelligence methodology and
 
-NARRATOR: Map documents context, intended use, affected people, and potential impacts.
+to undertake its performance analysis.
 
-NARRATOR: Consider this worked case: Mapping a biometric authentication system requires
+NARRATOR: Consider this worked case: Machine learning models analyze network traffic
 
-documenting user demographics, intended access levels, and privacy impacts.
+patterns to identify anomalies that static rules might miss.
 
-NARRATOR: On screen, illustrate a context-mapping template with fields for
+NARRATOR: On screen, illustrate a flowchart showing 'Raw Data' -> 'AI Analysis' -> 'Threat
 
-'Context', 'Intended Use', 'Affected People', and 'Potential Impacts'.
+Assessment' -> 'Automated Response'.
+
+NARRATOR: Use arrows and labeled nodes for clarity.
 
 NARRATOR: Follow every arrow in order and name the state before and after each transition.
 
 NARRATOR: The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.
-
-NARRATOR: Next, compare the choices involved in Measure Phase and Risk Analysis and make
+NARRATOR: Next, compare the choices involved in Intrusion Detection and Monitoring and make
 
 the decision criteria explicit.
 
-NARRATOR: Measure uses qualitative and quantitative methods to analyze identified
+NARRATOR: It will review different application areas such as intrusion detection and
 
-risks.
+monitoring systems, access control and biological authentication, firewall structure
 
-NARRATOR: Consider this worked case: Quantitative metrics like false positive rates
+and design.
 
-and qualitative reviews of model bias are used to measure AI security tool risks.
+NARRATOR: Consider this worked case: An AI-powered IDS tracks behavioral deviations in
 
-NARRATOR: On screen, display a split graphic showing 'Qualitative Methods' (checklists,
+user activity and flags suspicious actions for investigation.
 
-reviews) and 'Quantitative Methods' (graphs, metrics).
+NARRATOR: On screen, present a dashboard mockup with metrics like 'False Positive
+
+Rate', 'Detection Accuracy', and 'Response Time'.
+
+NARRATOR: Use color-coded indicators for status.
 
 NARRATOR: Compare alternatives against the same constraints so the evaluation does not
 
@@ -92,27 +96,23 @@ move the goalposts.
 
 NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+NARRATOR: Apply Access Control and Biological Authentication to a worked situation instead
 
-throughout the analysis.
+of treating it as an isolated definition.
 
-NARRATOR: Apply Manage Phase and Post-Deployment Monitoring to a worked
+NARRATOR: Security reasoning identifies assets, trust boundaries, threats, controls,
 
-situation instead of treating it as an isolated definition.
+evidence, residual risk, and responsibilities.
 
-NARRATOR: Manage prioritizes risks and allocates resources for response and
+NARRATOR: Consider this worked case: Fingerprint and facial recognition systems
 
-monitoring.
+integrate with traditional passwords to create multi-factor authentication protocols.
 
-NARRATOR: Consider this worked case: Post-deployment monitoring of an AI firewall
+NARRATOR: On screen, draw a diagram comparing traditional access control (keycard/password)
 
-detects distribution shift and triggers resource reallocation for updated threat
+with intelligent access control (biometric + AI verification).
 
-models.
-
-NARRATOR: On screen, render a circular lifecycle diagram with 'Manage' feeding back
-
-into 'Map' and 'Measure' to show continuous monitoring.
+NARRATOR: Use side-by-side layout.
 
 NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
 
@@ -120,21 +120,21 @@ at each step.
 
 NARRATOR: The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Examine the tradeoffs in Supervised vs Unsupervised Workflows, including what
+NARRATOR: Examine the tradeoffs in Firewall Structure and Design, including what improves
 
-improves and what becomes more difficult.
+and what becomes more difficult.
 
-NARRATOR: Supervised methods learn a mapping from examples paired with target labels.
+NARRATOR: Protect the Software prevents unauthorized access to code and development
 
-NARRATOR: Consider this worked case: Supervised learning trains an intrusion
+artifacts.
 
-detection system on labeled attack logs, whereas unsupervised learning clusters network
+NARRATOR: Consider this worked case: Next-generation firewalls use AI to
 
-traffic to find anomalies.
+dynamically adjust rules based on real-time threat intelligence feeds.
 
-NARRATOR: On screen, contrast two flow diagrams: one showing labeled data feeding a
+NARRATOR: On screen, show a layered network diagram with a firewall layer highlighted,
 
-model, the other showing unlabeled data feeding a clustering algorithm.
+showing inbound/outbound traffic paths and AI decision points.
 
 NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
 
@@ -142,19 +142,25 @@ acceptable.
 
 NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: Stress-test the reasoning around Data Preprocessing and Leakage Prevention with
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
 
-an edge case and identify which assumption controls the outcome.
+throughout the analysis.
 
-NARRATOR: Preprocessing must be fitted only on permitted training data to avoid leakage.
+NARRATOR: Stress-test the reasoning around Course Project Implementation with an edge
 
-NARRATOR: Consider this worked case: Scaling features using only training set statistics
+case and identify which assumption controls the outcome.
 
-prevents test data information from contaminating the model's evaluation.
+NARRATOR: Security requirements should be tracked throughout development.
 
-NARRATOR: On screen, show a pipeline graphic with a 'Fit on Training Data' step and a
+NARRATOR: Consider this worked case: A team builds an AI-driven vulnerability scanner that
 
-'Transform Training and Test' step, highlighting the boundary.
+prioritizes patches based on risk scoring algorithms.
+
+NARRATOR: On screen, display a project roadmap timeline with phases: 'Requirement Gathering',
+
+'AI Model Training', 'Tool Development', 'Testing'.
+
+NARRATOR: Use milestone markers.
 
 NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
 
@@ -164,23 +170,21 @@ NARRATOR: The edge case reveals the boundary of the claim without discarding the
 
 core idea.
 
-NARRATOR: Use Pipelines and Consistent Transformations to diagnose a failure by
+NARRATOR: Use Performance Analysis Framework to diagnose a failure by separating symptoms,
 
-separating symptoms, causes, and corrective action.
+causes, and corrective action.
 
-NARRATOR: Pipelines combine preprocessing and estimators so the same transformations are
+NARRATOR: Analysis also considers side channels and migration requirements.
 
-applied consistently.
+NARRATOR: Consider this worked case: Metrics like detection rate, latency, and resource
 
-NARRATOR: Consider this worked case: A scikit-learn pipeline ensures that the same
+utilization are measured to validate AI model accuracy.
 
-normalization and feature selection steps are applied to both training and test data for
+NARRATOR: On screen, create a bar chart comparing 'Baseline Performance' vs.
 
-fair evaluation.
+'AI-Enhanced Performance' across three key metrics.
 
-NARRATOR: On screen, illustrate a single pipeline block containing preprocessing steps
-
-followed by an estimator, with arrows showing consistent data flow.
+NARRATOR: Use contrasting colors for comparison.
 
 NARRATOR: Locate the first point where observed behavior diverges from expected
 
@@ -190,39 +194,51 @@ NARRATOR: The diagnosis is strongest when another person can reproduce the obser
 
 and the test.
 
-NARRATOR: Connect Cross-Validation and Evaluation Metrics to the earlier ideas and
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
 
-explain how the pieces work as one system.
+throughout the analysis.
 
-NARRATOR: Evaluation metrics must match the task and the cost of different errors.
+NARRATOR: Connect Practical Analysis Checklist to the earlier ideas and explain how the
 
-NARRATOR: Consider this worked case: K-fold cross-validation ensures robust performance
+pieces work as one system.
 
-estimates, while precision and recall are chosen based on the cost of false positives
+NARRATOR: Random number generation supports keys, nonces, and other security parameters.
 
-versus false negatives in intrusion detection.
+NARRATOR: Consider this worked case: Instructors verify that the project includes
 
-NARRATOR: On screen, display a k-fold cross-validation diagram with data splits and
+threat modeling, AI validation, and documentation of system limitations.
 
-a table comparing metric selection to error cost scenarios.
+NARRATOR: On screen, list a checklist with items: 'Threat Model Documented', 'AI Model
 
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+Validated', 'Performance Metrics Reported', 'Security Review Completed'.
 
-guide a new analysis.
+NARRATOR: Use checkboxes for tracking.
 
-NARRATOR: It also considers robustness, privacy, security, transparency, and fairness.
+NARRATOR: Explain each connection explicitly and verify that information retains the same
 
-NARRATOR: Consider this worked case: A deployment checklist verifies that the AI
+meaning across representations.
 
-model's robustness against distribution shift, privacy safeguards, security controls,
+NARRATOR: The synthesis matters only if every connection remains supported by the original
 
-transparency reports, and fairness audits are all documented.
+evidence.
 
-NARRATOR: On screen, present a checklist graphic with five checkboxes labeled
+NARRATOR: Finish with Instructor Guidance and Syllabus Alignment as a practical checklist
 
-'Robustness', 'Privacy', 'Security', 'Transparency', and 'Fairness' alongside brief
+that can guide a new analysis.
 
-validation criteria.
+NARRATOR: Verification provides evidence that selected practices and controls were
+
+performed.
+
+NARRATOR: Consider this worked case: Instructors use this structure to scaffold
+
+student understanding while maintaining flexibility for detailed syllabus coverage.
+
+NARRATOR: On screen, show a split screen: left side 'Lesson Blueprint', right side 'Official
+
+Catalog Description'.
+
+NARRATOR: Use connecting arrows to highlight alignment points.
 
 NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
 

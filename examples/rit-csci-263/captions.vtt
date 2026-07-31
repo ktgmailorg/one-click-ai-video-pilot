@@ -1,539 +1,400 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:07.587
-NARRATOR: Begin by framing Foundations of
-Algorithm Analysis as a question about inputs,
+00:00:00.050 --> 00:00:07.653
+Begin by framing Foundations of Algorithm
+Analysis as a question about inputs,
 
 2
-00:00:07.587 --> 00:00:09.906
+00:00:07.653 --> 00:00:10.187
 decisions, and observable results.
 
 3
-00:00:09.906 --> 00:00:16.345
-NARRATOR: Algorithm analysis connects a
-precise problem specification to a correctness
+00:00:10.187 --> 00:00:17.701
+Algorithm analysis connects a precise problem
+specification to a correctness argument and
 
 4
-00:00:16.345 --> 00:00:18.687
-argument and resource bounds.
+00:00:17.701 --> 00:00:18.953
+resource bounds.
 
 5
-00:00:18.687 --> 00:00:26.208
-NARRATOR: Consider this worked case: A sorting
-algorithm must guarantee that the output list
+00:00:18.953 --> 00:00:27.014
+Consider this worked case: A sorting algorithm
+must guarantee that the output list contains
 
 6
-00:00:26.208 --> 00:00:29.968
-contains all input elements in non-decreasing
-order.
+00:00:27.014 --> 00:00:30.468
+all input elements in non-decreasing order.
 
 7
-00:00:29.968 --> 00:00:37.484
-NARRATOR: On screen, display a side-by-side
-comparison of a problem statement and its
+00:00:30.468 --> 00:00:37.410
+List the givens before choosing a method,
+because an unstated assumption can change the
 
 8
-00:00:37.484 --> 00:00:42.687
-corresponding resource bounds, highlighting
-the connection between specification and
+00:00:37.410 --> 00:00:37.906
+conclusion.
 
 9
-00:00:42.687 --> 00:00:43.265
-analysis.
+00:00:37.906 --> 00:00:43.703
+This establishes the vocabulary and scope
+needed for the remaining sections.
 
 10
-00:00:43.265 --> 00:00:49.334
-NARRATOR: List the givens before choosing a
-method, because an unstated assumption can
+00:00:43.826 --> 00:00:50.883
+Now define Asymptotic Notation Basics
+precisely enough that another learner could
 
 11
-00:00:49.334 --> 00:00:50.734
-change the conclusion.
+00:00:50.883 --> 00:00:52.807
+test the definition.
 
 12
-00:00:50.734 --> 00:00:57.218
-NARRATOR: This establishes the vocabulary and
-scope needed for the remaining sections.
+00:00:52.807 --> 00:00:59.151
+Asymptotic notation describes how resource use
+grows with input size.
 
 13
-00:00:57.338 --> 00:01:03.741
-NARRATOR: Now define Asymptotic Notation
-Basics precisely enough that another learner
+00:00:59.151 --> 00:01:06.961
+Consider this worked case: Big-O notation
+captures the worst-case growth rate of an
 
 14
-00:01:03.741 --> 00:01:06.069
-could test the definition.
+00:01:06.961 --> 00:01:11.166
+algorithm's time complexity as input size
+increases.
 
 15
-00:01:06.069 --> 00:01:12.647
-NARRATOR: Asymptotic notation describes how
-resource use grows with input size.
+00:01:11.166 --> 00:01:17.766
+Separate the formal definition from an
+implementation detail, then identify what
 
 16
-00:01:12.647 --> 00:01:19.558
-NARRATOR: Consider this worked case: Big-O
-notation captures the worst-case growth rate
-
-17
-00:01:19.558 --> 00:01:24.741
-of an algorithm's time complexity as input
-size increases.
-
-18
-00:01:24.741 --> 00:01:31.901
-NARRATOR: On screen, show a graph plotting
-input size against resource usage, with
-
-19
-00:01:31.901 --> 00:01:35.756
-asymptotic curves labeled to illustrate growth
-rates.
-
-20
-00:01:35.756 --> 00:01:42.307
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
-
-21
-00:01:42.307 --> 00:01:44.491
+00:01:17.766 --> 00:01:20.166
 evidence would distinguish them.
 
-22
-00:01:44.491 --> 00:01:51.100
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
+17
+00:01:20.166 --> 00:01:26.838
+A precise definition makes later examples
+easier to evaluate and revise.
 
-23
-00:01:51.100 --> 00:01:58.429
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+18
+00:01:26.838 --> 00:01:33.917
+Name each dependency explicitly, and keep
+labels and representations consistent
 
-24
-00:01:58.429 --> 00:02:00.428
+19
+00:01:33.917 --> 00:01:36.041
 throughout the analysis.
 
-25
-00:02:00.554 --> 00:02:06.519
-NARRATOR: With the foundation in place,
-examine how Loop Invariants for Correctness
+20
+00:01:36.170 --> 00:01:43.454
+With the foundation in place, examine how Loop
+Invariants for Correctness operates in a
 
-26
-00:02:06.519 --> 00:02:09.004
-operates in a concrete sequence.
+21
+00:01:43.454 --> 00:01:44.495
+concrete sequence.
 
-27
-00:02:09.004 --> 00:02:15.722
-NARRATOR: A loop invariant supports a proof by
+22
+00:01:44.495 --> 00:01:51.401
+A loop invariant supports a proof by
 initialization, maintenance, and termination.
 
+23
+00:01:51.401 --> 00:01:58.441
+Consider this worked case: In a search loop,
+the invariant states that the target element,
+
+24
+00:01:58.441 --> 00:02:03.604
+if present, must reside in the unexamined
+portion of the array.
+
+25
+00:02:03.604 --> 00:02:10.588
+Follow every arrow in order and name the state
+before and after each transition.
+
+26
+00:02:10.588 --> 00:02:16.338
+The trace converts an abstract statement into
+an inspectable sequence.
+
+27
+00:02:16.442 --> 00:02:22.835
+Next, compare the choices involved in
+Divide-and-Conquer Strategy and make the
+
 28
-00:02:15.722 --> 00:02:21.807
-NARRATOR: Consider this worked case: In a
-search loop, the invariant states that the
-
-29
-00:02:21.807 --> 00:02:27.457
-target element, if present, must reside in the
-unexamined portion of the array.
-
-30
-00:02:27.457 --> 00:02:33.636
-NARRATOR: On screen, illustrate a loop
-structure with callouts marking the
-
-31
-00:02:33.636 --> 00:02:38.691
-initialization step, the maintenance
-condition, and the termination check.
-
-32
-00:02:38.691 --> 00:02:45.660
-NARRATOR: Follow every arrow in order and name
-the state before and after each transition.
-
-33
-00:02:45.660 --> 00:02:51.472
-NARRATOR: The trace converts an abstract
-statement into an inspectable sequence.
-
-34
-00:02:51.578 --> 00:02:58.200
-NARRATOR: Next, compare the choices involved
-in Divide-and-Conquer Strategy and make the
-
-35
-00:02:58.200 --> 00:02:59.856
+00:02:22.835 --> 00:02:24.579
 decision criteria explicit.
 
+29
+00:02:24.579 --> 00:02:32.017
+Divide-and-conquer algorithms split a problem,
+solve subproblems, and combine their results.
+
+30
+00:02:32.017 --> 00:02:39.402
+Consider this worked case: Merge sort divides
+an array into halves, recursively sorts each
+
+31
+00:02:39.402 --> 00:02:45.204
+half, and merges the sorted halves into a
+single sorted array.
+
+32
+00:02:45.204 --> 00:02:52.516
+Compare alternatives against the same
+constraints so the evaluation does not move
+
+33
+00:02:52.516 --> 00:02:53.735
+the goalposts.
+
+34
+00:02:53.735 --> 00:03:00.438
+Using shared criteria turns a preference into
+a defensible technical choice.
+
+35
+00:03:00.554 --> 00:03:07.146
+Apply Recurrence Relations to a worked
+situation instead of treating it as an
+
 36
-00:02:59.856 --> 00:03:06.079
-NARRATOR: Divide-and-conquer algorithms split
-a problem, solve subproblems, and combine
-
-37
-00:03:06.079 --> 00:03:07.324
-their results.
-
-38
-00:03:07.324 --> 00:03:13.754
-NARRATOR: Consider this worked case: Merge
-sort divides an array into halves, recursively
-
-39
-00:03:13.754 --> 00:03:20.184
-sorts each half, and merges the sorted halves
-into a single sorted array.
-
-40
-00:03:20.184 --> 00:03:26.901
-NARRATOR: On screen, animate a recursive tree
-structure where each node splits into two
-
-41
-00:03:26.901 --> 00:03:31.699
-subproblems, then merges back up to show the
-combined result.
-
-42
-00:03:31.699 --> 00:03:38.425
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
-
-43
-00:03:38.425 --> 00:03:40.106
-move the goalposts.
-
-44
-00:03:40.106 --> 00:03:46.996
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
-
-45
-00:03:47.114 --> 00:03:54.220
-NARRATOR: Apply Recurrence Relations to a
-worked situation instead of treating it as an
-
-46
-00:03:54.220 --> 00:03:55.235
+00:03:07.146 --> 00:03:08.160
 isolated definition.
 
-47
-00:03:55.235 --> 00:03:59.610
-NARRATOR: Recurrences describe the cost of
-recursive algorithms.
+37
+00:03:08.160 --> 00:03:12.597
+Recurrences describe the cost of recursive
+algorithms.
 
-48
-00:03:59.610 --> 00:04:09.370
-NARRATOR: Consider this worked case: The
-recurrence T(n) = 2T(n/2) + O(n) describes the
+38
+00:03:12.597 --> 00:03:23.416
+Consider this worked case: The recurrence T(n)
+= 2T(n/2) + O(n) describes the time complexity
 
-49
-00:04:09.370 --> 00:04:17.735
-time complexity of merge sort by accounting
-for splitting and merging costs.
+39
+00:03:23.416 --> 00:03:30.629
+of merge sort by accounting for splitting and
+merging costs.
 
-50
-00:04:17.735 --> 00:04:24.060
-NARRATOR: On screen, display a recurrence
-equation alongside a step-by-step expansion
+40
+00:03:30.629 --> 00:03:38.070
+Work from the concrete inputs to the result,
+checking units, types, or invariants at each
 
-51
-00:04:24.060 --> 00:04:29.235
-showing how subproblem costs accumulate to the
-total cost.
+41
+00:03:38.070 --> 00:03:38.566
+step.
 
-52
-00:04:29.235 --> 00:04:35.914
-NARRATOR: Work from the concrete inputs to the
-result, checking units, types, or invariants
+42
+00:03:38.566 --> 00:03:43.550
+The worked case shows both how to apply the
+method and how to check it.
 
-53
-00:04:35.914 --> 00:04:37.345
-at each step.
+43
+00:03:43.658 --> 00:03:50.643
+Examine the tradeoffs in Graph Algorithms
+Overview, including what improves and what
 
-54
-00:04:37.345 --> 00:04:41.892
-NARRATOR: The worked case shows both how to
-apply the method and how to check it.
+44
+00:03:50.643 --> 00:03:52.389
+becomes more difficult.
 
-55
-00:04:42.002 --> 00:04:48.123
-NARRATOR: Examine the tradeoffs in Graph
-Algorithms Overview, including what improves
+45
+00:03:52.389 --> 00:04:00.032
+Graph algorithms operate on vertices and edges
+to answer reachability, ordering,
 
-56
-00:04:48.123 --> 00:04:50.905
-and what becomes more difficult.
-
-57
-00:04:50.905 --> 00:04:58.651
-NARRATOR: Graph algorithms operate on vertices
-and edges to answer reachability, ordering,
-
-58
-00:04:58.651 --> 00:05:01.233
+46
+00:04:00.032 --> 00:04:02.811
 connectivity, and path questions.
 
+47
+00:04:02.811 --> 00:04:09.166
+Consider this worked case: Breadth-first
+search traverses a graph level by level to
+
+48
+00:04:09.166 --> 00:04:13.076
+find the shortest path in an unweighted graph.
+
+49
+00:04:13.076 --> 00:04:19.936
+State the benefit, the cost, and the condition
+under which the tradeoff is acceptable.
+
+50
+00:04:19.936 --> 00:04:27.561
+Making the tradeoff visible prevents a local
+improvement from hiding a larger cost.
+
+51
+00:04:27.674 --> 00:04:34.797
+Stress-test the reasoning around Dynamic
+Programming Fundamentals with an edge case and
+
+52
+00:04:34.797 --> 00:04:38.358
+identify which assumption controls the
+outcome.
+
+53
+00:04:38.358 --> 00:04:44.327
+Dynamic programming records solutions to
+overlapping subproblems.
+
+54
+00:04:44.327 --> 00:04:51.300
+Consider this worked case: The Fibonacci
+sequence can be computed efficiently by
+
+55
+00:04:51.300 --> 00:04:56.530
+storing previously calculated values to avoid
+redundant recursive calls.
+
+56
+00:04:56.530 --> 00:05:02.858
+Change one assumption at a time and observe
+which part of the reasoning no longer holds.
+
+57
+00:05:02.858 --> 00:05:10.139
+The edge case reveals the boundary of the
+claim without discarding the useful core idea.
+
+58
+00:05:10.250 --> 00:05:17.201
+Use Core Methods and Data Structures to
+diagnose a failure by separating symptoms,
+
 59
-00:05:01.233 --> 00:05:06.186
-NARRATOR: Consider this worked case:
-Breadth-first search traverses a graph level
-
-60
-00:05:06.186 --> 00:05:11.139
-by level to find the shortest path in an
-unweighted graph.
-
-61
-00:05:11.139 --> 00:05:18.434
-NARRATOR: On screen, render a graph with
-vertices and edges, highlighting the traversal
-
-62
-00:05:18.434 --> 00:05:24.045
-order and marking visited nodes to demonstrate
-reachability and pathfinding.
-
-63
-00:05:24.045 --> 00:05:30.477
-NARRATOR: State the benefit, the cost, and the
-condition under which the tradeoff is
-
-64
-00:05:30.477 --> 00:05:30.936
-acceptable.
-
-65
-00:05:30.936 --> 00:05:38.326
-NARRATOR: Making the tradeoff visible prevents
-a local improvement from hiding a larger cost.
-
-66
-00:05:38.450 --> 00:05:44.554
-NARRATOR: Stress-test the reasoning around
-Dynamic Programming Fundamentals with an edge
-
-67
-00:05:44.554 --> 00:05:48.993
-case and identify which assumption controls
-the outcome.
-
-68
-00:05:48.993 --> 00:05:54.806
-NARRATOR: Dynamic programming records
-solutions to overlapping subproblems.
-
-69
-00:05:54.806 --> 00:06:01.411
-NARRATOR: Consider this worked case: The
-Fibonacci sequence can be computed efficiently
-
-70
-00:06:01.411 --> 00:06:06.915
-by storing previously calculated values to
-avoid redundant recursive calls.
-
-71
-00:06:06.915 --> 00:06:14.450
-NARRATOR: On screen, show a table filling
-process where each cell references previously
-
-72
-00:06:14.450 --> 00:06:19.087
-computed values, emphasizing the reuse of
-subproblem solutions.
-
-73
-00:06:19.087 --> 00:06:25.734
-NARRATOR: Change one assumption at a time and
-observe which part of the reasoning no longer
-
-74
-00:06:25.734 --> 00:06:26.149
-holds.
-
-75
-00:06:26.149 --> 00:06:32.329
-NARRATOR: The edge case reveals the boundary
-of the claim without discarding the useful
-
-76
-00:06:32.329 --> 00:06:33.212
-core idea.
-
-77
-00:06:33.338 --> 00:06:40.432
-NARRATOR: Use Core Methods and Data Structures
-to diagnose a failure by separating symptoms,
-
-78
-00:06:40.432 --> 00:06:42.459
+00:05:17.201 --> 00:05:19.340
 causes, and corrective action.
 
+60
+00:05:19.340 --> 00:05:27.748
+Core methods include sorting, hashing, trees,
+graphs, shortest paths, and dynamic
+
+61
+00:05:27.748 --> 00:05:28.512
+programming.
+
+62
+00:05:28.512 --> 00:05:36.042
+Consider this worked case: Hash tables map
+keys to locations using a collision strategy
+
+63
+00:05:36.042 --> 00:05:38.731
+to enable fast key-value lookups.
+
+64
+00:05:38.731 --> 00:05:46.670
+Locate the first point where observed behavior
+diverges from expected behavior, then test the
+
+65
+00:05:46.670 --> 00:05:48.371
+smallest plausible cause.
+
+66
+00:05:48.371 --> 00:05:55.746
+The diagnosis is strongest when another person
+can reproduce the observation and the test.
+
+67
+00:05:55.850 --> 00:06:03.334
+Connect Automata and Formal Languages to the
+earlier ideas and explain how the pieces work
+
+68
+00:06:03.334 --> 00:06:04.831
+as one system.
+
+69
+00:06:04.831 --> 00:06:13.041
+Automata and formal languages describe
+machines, accepted strings, and computational
+
+70
+00:06:13.041 --> 00:06:13.862
+limits.
+
+71
+00:06:13.862 --> 00:06:21.019
+Consider this worked case: A finite automaton
+accepts a string if its state transitions
+
+72
+00:06:21.019 --> 00:06:26.643
+follow a defined sequence of symbols leading
+to an accepting state.
+
+73
+00:06:26.643 --> 00:06:36.233
+Explain each connection explicitly and verify
+that information retains the same meaning
+
+74
+00:06:36.233 --> 00:06:37.831
+across representations.
+
+75
+00:06:37.831 --> 00:06:45.081
+The synthesis matters only if every connection
+remains supported by the original evidence.
+
+76
+00:06:45.194 --> 00:06:52.176
+Finish with Practical Analysis Checklist as a
+practical checklist that can guide a new
+
+77
+00:06:52.176 --> 00:06:52.675
+analysis.
+
+78
+00:06:52.675 --> 00:07:00.413
+A disciplined solution states inputs and
+outputs, proves correctness, and then analyzes
+
 79
-00:06:42.459 --> 00:06:50.008
-NARRATOR: Core methods include sorting,
-hashing, trees, graphs, shortest paths, and
+00:07:00.413 --> 00:07:02.347
+time and space.
 
 80
-00:06:50.008 --> 00:06:51.381
-dynamic programming.
+00:07:02.347 --> 00:07:08.707
+Consider this worked case: Before implementing
+an algorithm, verify that the input/output
 
 81
-00:06:51.381 --> 00:06:58.666
-NARRATOR: Consider this worked case: Hash
-tables map keys to locations using a collision
+00:07:08.707 --> 00:07:15.597
+contract is clear, the correctness proof
+holds, and the resource bounds are documented.
 
 82
-00:06:58.666 --> 00:07:01.788
-strategy to enable fast key-value lookups.
+00:07:15.597 --> 00:07:23.708
+For each checklist item, record the evidence,
+the remaining uncertainty, and the next
 
 83
-00:07:01.788 --> 00:07:09.384
-NARRATOR: On screen, display a hash table with
-keys, hash functions, and collision resolution
+00:07:23.708 --> 00:07:24.956
+verification step.
 
 84
-00:07:09.384 --> 00:07:13.725
-paths, illustrating how mappings are stored
-and retrieved.
+00:07:24.956 --> 00:07:31.591
+The result is a repeatable procedure, not a
+conclusion that depends on memory or
 
 85
-00:07:13.725 --> 00:07:19.388
-NARRATOR: Locate the first point where
-observed behavior diverges from expected
-
-86
-00:07:19.388 --> 00:07:22.991
-behavior, then test the smallest plausible
-cause.
-
-87
-00:07:22.991 --> 00:07:29.228
-NARRATOR: The diagnosis is strongest when
-another person can reproduce the observation
-
-88
-00:07:29.228 --> 00:07:30.787
-and the test.
-
-89
-00:07:30.890 --> 00:07:37.430
-NARRATOR: Connect Automata and Formal
-Languages to the earlier ideas and explain how
-
-90
-00:07:37.430 --> 00:07:40.449
-the pieces work as one system.
-
-91
-00:07:40.449 --> 00:07:47.780
-NARRATOR: Automata and formal languages
-describe machines, accepted strings, and
-
-92
-00:07:47.780 --> 00:07:49.246
-computational limits.
-
-93
-00:07:49.246 --> 00:07:56.187
-NARRATOR: Consider this worked case: A finite
-automaton accepts a string if its state
-
-94
-00:07:56.187 --> 00:08:02.136
-transitions follow a defined sequence of
-symbols leading to an accepting state.
-
-95
-00:08:02.136 --> 00:08:07.611
-NARRATOR: On screen, illustrate a state
-diagram with transitions labeled by input
-
-96
-00:08:07.611 --> 00:08:13.543
-symbols, showing which paths lead to an
-accepting state and which do not.
-
-97
-00:08:13.543 --> 00:08:22.468
-NARRATOR: Explain each connection explicitly
-and verify that information retains the same
-
-98
-00:08:22.468 --> 00:08:24.699
-meaning across representations.
-
-99
-00:08:24.699 --> 00:08:31.591
-NARRATOR: The synthesis matters only if every
-connection remains supported by the original
-
-100
-00:08:31.591 --> 00:08:32.121
-evidence.
-
-101
-00:08:32.234 --> 00:08:37.587
-NARRATOR: Finish with Practical Analysis
-Checklist as a practical checklist that can
-
-102
-00:08:37.587 --> 00:08:39.371
-guide a new analysis.
-
-103
-00:08:39.371 --> 00:08:45.969
-NARRATOR: A disciplined solution states inputs
-and outputs, proves correctness, and then
-
-104
-00:08:45.969 --> 00:08:48.168
-analyzes time and space.
-
-105
-00:08:48.168 --> 00:08:54.355
-NARRATOR: Consider this worked case: Before
-implementing an algorithm, verify that the
-
-106
-00:08:54.355 --> 00:09:00.027
-input/output contract is clear, the
-correctness proof holds, and the resource
-
-107
-00:09:00.027 --> 00:09:01.574
-bounds are documented.
-
-108
-00:09:01.574 --> 00:09:08.566
-NARRATOR: On screen, present a checklist
-graphic with three boxes labeled 'Input/Output
-
-109
-00:09:08.566 --> 00:09:14.975
-Contract', 'Correctness Proof', and 'Resource
-Bounds', each with a checkbox for
-
-110
-00:09:14.975 --> 00:09:15.558
-verification.
-
-111
-00:09:15.558 --> 00:09:22.922
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
-
-112
-00:09:22.922 --> 00:09:24.621
-next verification step.
-
-113
-00:09:24.621 --> 00:09:30.220
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-114
-00:09:30.220 --> 00:09:31.512
-memory or intuition.
+00:07:31.591 --> 00:07:32.065
+intuition.

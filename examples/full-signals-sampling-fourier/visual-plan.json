@@ -1,0 +1,401 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "We begin by distinguishing how signals exist in time.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "A continuous signal varies smoothly without interruption, like the voltage across a capacitor charging gradually.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "Mathematically, we describe it with a function that accepts any real number for time.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-004",
+          "phrase": "A discrete signal, however, only exists at specific, separate moments.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-005",
+          "phrase": "Think of a metronome ticking or a digital audio file recording sound only at fixed intervals.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-006",
+          "phrase": "The key difference lies in the domain: continuous signals use real-valued time, while discrete signals use integer indices.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-007",
+          "phrase": "This distinction shapes how we analyze, store, and process information in engineering systems.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-008",
+          "phrase": "Understanding this boundary is essential before we model how systems respond to these different input types.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "Next, we model how systems process these signals.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "A linear time-invariant system behaves consistently regardless of when you apply an input.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "Linearity means doubling the input doubles the output, and time-invariance means the system's behavior doesn't shift over time.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-004",
+          "phrase": "We characterize such systems using differential equations for continuous domains or difference equations for discrete domains.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-005",
+          "phrase": "These equations capture how the system's internal state evolves.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-006",
+          "phrase": "By solving them, we predict output behavior without simulating every possible input.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-007",
+          "phrase": "This mathematical framework allows us to analyze complex circuits or communication channels using fundamental building blocks rather than trial-and-error experimentation.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "To fully understand an LTI system, we examine its response to a single, instantaneous spike called an impulse.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "This impulse response reveals exactly how the system reacts to any arbitrary input.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "When we feed a general signal into the system, the output emerges from combining the impulse response with the input through convolution.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-004",
+          "phrase": "Convolution mathematically slides the impulse response across the input, scales it, and sums the products at each time point.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-005",
+          "phrase": "This operation captures how past inputs influence the current output.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-006",
+          "phrase": "By mastering convolution, we can predict system behavior for complex waveforms without solving differential equations from scratch, making it a cornerstone of signal processing analysis.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "To analyze signals across frequencies, we use complex exponentials.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "These functions oscillate with constant magnitude while rotating in the complex plane, making them ideal for representing sinusoidal waves.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "The Fourier representation decomposes any signal into a sum of these complex exponentials, revealing its frequency content.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-004",
+          "phrase": "Instead of working with time-domain waveforms, we shift to the frequency domain where signals become vectors of complex coefficients.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-005",
+          "phrase": "This transformation simplifies system analysis because multiplication in the frequency domain corresponds to convolution in the time domain.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-006",
+          "phrase": "Engineers use this view to design filters and modulators by manipulating frequency components directly rather than solving differential equations.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "The frequency response describes how an LTI system modifies different frequency components.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "It shows both magnitude attenuation and phase shift across the spectrum.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "When a signal passes through a system, each complex exponential component gets scaled and rotated according to the system's frequency response at that specific frequency.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-004",
+          "phrase": "This means filters can selectively amplify or suppress certain frequencies while preserving others.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-005",
+          "phrase": "By examining the magnitude plot, we see which frequencies pass through unchanged, and the phase plot reveals timing delays.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-006",
+          "phrase": "Consistent predictions between time and frequency domains confirm our model accurately captures the system's behavior, allowing reliable design of audio equalizers or communication channels.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-06",
+      "shots": [
+        {
+          "id": "beat-06-shot-001",
+          "phrase": "When we convert a continuous signal to digital form, we sample it at regular intervals.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-002",
+          "phrase": "This process creates repeated copies of the original spectrum, spaced by the sampling frequency.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-003",
+          "phrase": "Each copy represents the same frequency content but shifted in the frequency domain.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-004",
+          "phrase": "If the original signal contains frequencies higher than half the sampling rate, these shifted copies will overlap with the base spectrum.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-005",
+          "phrase": "This overlap makes distinct frequencies indistinguishable after sampling, a phenomenon called aliasing.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-006",
+          "phrase": "To prevent this, we must ensure the signal is bandlimited and apply anti-aliasing filters before sampling.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-007",
+          "phrase": "Proper sampling preserves the original frequency information without distortion.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-07",
+      "shots": [
+        {
+          "id": "beat-07-shot-001",
+          "phrase": "Reconstructing a continuous signal from discrete samples requires careful workflow planning.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-002",
+          "phrase": "First, we identify the signal's maximum frequency to determine its bandwidth.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-003",
+          "phrase": "Next, we apply an analog low-pass filter to remove frequencies above half the sampling rate, preventing spectral overlap.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-004",
+          "phrase": "We then select a sample rate with sufficient margin to avoid aliasing entirely.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-005",
+          "phrase": "Finally, we verify that the reconstruction process accurately recovers the original waveform.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-006",
+          "phrase": "Increasing the sample rate after aliasing has occurred cannot repair the lost information, as the overlapping frequencies are permanently mixed.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-007",
+          "phrase": "This systematic approach ensures digital systems faithfully represent analog signals for further processing or storage.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-08",
+      "shots": [
+        {
+          "id": "beat-08-shot-001",
+          "phrase": "Let's trace a single sinusoidal signal through a practical filter and sampler.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-002",
+          "phrase": "The input is a pure tone at a specific frequency.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-003",
+          "phrase": "The filter first shapes the spectrum, attenuating unwanted frequencies while preserving the target tone.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-004",
+          "phrase": "The sampler then captures this filtered signal at discrete time points.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-005",
+          "phrase": "If the tone's frequency falls within the passband and below the Nyquist limit, the sampled values will accurately represent the original wave.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-006",
+          "phrase": "We can verify this by reconstructing the samples and comparing them to the input.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-007",
+          "phrase": "This end-to-end trace demonstrates how filtering and sampling work together to preserve frequency information while enabling digital processing.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-008",
+          "phrase": "Engineers use this principle to design communication systems that transmit audio or data without distortion.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-09",
+      "shots": [
+        {
+          "id": "beat-09-shot-001",
+          "phrase": "A fundamental principle in signals and systems is that equivalent time- and frequency-domain views must produce consistent predictions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-002",
+          "phrase": "When we analyze a system using differential equations in the time domain, we should get the same output as when we use convolution with the impulse response.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-003",
+          "phrase": "Similarly, frequency-domain multiplication should match time-domain results.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-004",
+          "phrase": "This consistency allows engineers to switch between domains based on which is mathematically simpler.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-005",
+          "phrase": "For example, we might solve a complex circuit using Laplace transforms in the frequency domain, then verify the results by simulating the time-domain response.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-006",
+          "phrase": "This cross-validation ensures our models accurately capture physical behavior and prevents design errors in real-world applications.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-10",
+      "shots": [
+        {
+          "id": "beat-10-shot-001",
+          "phrase": "To apply these concepts, we use a practical analysis checklist.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-002",
+          "phrase": "First, identify whether the signal is continuous or discrete and determine its bandwidth.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-003",
+          "phrase": "Next, model the system as LTI and obtain its impulse response.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-004",
+          "phrase": "Verify that the signal frequency falls within the passband and below the Nyquist rate.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-005",
+          "phrase": "Apply anti-aliasing filtering if necessary, then select a sample rate with margin.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-006",
+          "phrase": "Finally, trace the signal through the filter and sampler, checking that reconstructed values match the original.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-007",
+          "phrase": "This checklist ensures systematic design, prevents aliasing, and validates frequency preservation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-008",
+          "phrase": "By following these steps, engineers can confidently build reliable signal processing systems that meet performance requirements across diverse applications.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "signals-and-systems-foundations-from-continuous-waves-to-discret",
+  "schemaVersion": 1
+}

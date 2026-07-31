@@ -13,10 +13,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Introduction to Data Management as a question about inputs, decisions, and observable results. This course provides a broad introduction to the principles and practice of modern data management, with an emphasis on the relational database model. Consider this worked case: A hospital system uses a relational database to link patient records, medical history, and appointment schedules. On screen, display a simple flowchart showing data flowing from collection to structured storage and retrieval. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "narration": "Begin by framing Foundations of the Relational Model as a question about inputs, decisions, and observable results. Relational systems organize data with tables, rows, columns, and declared types. Consider this worked case: A 'Students' table contains rows for each student, with columns for ID, name, and major, each with a specific data type like INTEGER or VARCHAR. On screen, display a simple table schema diagram with labeled columns and data types. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
       "plannedSeconds": 55,
-      "title": "Introduction to Data Management",
-      "visualDirection": "template:academic-process | Display a simple flowchart showing data flowing from collection to structured storage and retrieval."
+      "title": "Foundations of the Relational Model",
+      "visualDirection": "template:academic-process | Display a simple table schema diagram with labeled columns and data types."
     },
     {
       "accessibility": {
@@ -31,10 +31,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Relational Model Foundations precisely enough that another learner could test the definition. Topics in relational database systems include data modeling; the relational model; relational algebra; Structured Query Language (SQL); and data quality, transactions, integrity and security. Consider this worked case: An 'Employees' table contains columns for EmployeeID, Name, Department, and Salary. On screen, show a basic table layout with labeled rows and columns, highlighting the entity-attribute relationship. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "narration": "Now define Entity-Relationship Modeling Basics precisely enough that another learner could test the definition. Property graph models represent domain entities as nodes. Consider this worked case: Modeling a 'Library' system involves entities like Books, Authors, and Members, connected by relationships like 'writtenBy' and 'checkedOutBy'. On screen, show a simple ER diagram with three rectangles (Book, Author, Member) and lines connecting them. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
-      "title": "Relational Model Foundations",
-      "visualDirection": "template:academic-process | Show a basic table layout with labeled rows and columns, highlighting the entity-attribute relationship."
+      "title": "Entity-Relationship Modeling Basics",
+      "visualDirection": "template:academic-process | Show a simple ER diagram with three rectangles (Book, Author, Member) and lines connecting them."
     },
     {
       "accessibility": {
@@ -49,10 +49,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Data Modeling Concepts operates in a concrete sequence. A database project is required. Consider this worked case: A 'Student' entity relates to a 'Course' entity through an 'Enrollment' relationship, linking student IDs to course codes. On screen, draw a simple ER diagram with Student, Course, and Enrollment boxes and lines connecting them. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "With the foundation in place, examine how Primary Keys and Unique Identifiers operates in a concrete sequence. Primary keys identify rows, while foreign keys express references between tables. Consider this worked case: A 'Products' table uses a 'ProductID' column as the primary key to uniquely identify each item. On screen, highlight a primary key column in a table diagram with a unique key symbol. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
-      "title": "Data Modeling Concepts",
-      "visualDirection": "template:academic-process | Draw a simple ER diagram with Student, Course, and Enrollment boxes and lines connecting them."
+      "title": "Primary Keys and Unique Identifiers",
+      "visualDirection": "template:academic-process | Highlight a primary key column in a table diagram with a unique key symbol."
     },
     {
       "accessibility": {
@@ -67,10 +67,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Relational Algebra Basics and make the decision criteria explicit. Modes of operation define how a primitive processes data larger than one block. Consider this worked case: A selection operation filters the 'Employees' table to show only those in the 'Engineering' department. On screen, illustrate a before-and-after table showing rows filtered by a condition using selection notation. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Next, compare the choices involved in Foreign Keys and Referential Integrity and make the decision criteria explicit. Constraints and indexes support data integrity and efficient lookup. Consider this worked case: A 'Orders' table includes a 'CustomerID' foreign key that links to the 'Customers' table. On screen, draw a line from the 'Orders' table to the 'Customers' table labeled 'CustomerID'. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
-      "title": "Relational Algebra Basics",
-      "visualDirection": "template:academic-process | Illustrate a before-and-after table showing rows filtered by a condition using selection notation."
+      "title": "Foreign Keys and Referential Integrity",
+      "visualDirection": "template:academic-process | Draw a line from the 'Orders' table to the 'Customers' table labeled 'CustomerID'."
     },
     {
       "accessibility": {
@@ -85,10 +85,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Structured Query Language (SQL) to a worked situation instead of treating it as an isolated definition. Students will also learn approaches to building relational database application programs. Consider this worked case: The command SELECT * FROM Employees WHERE Department = 'Marketing' retrieves specific records. On screen, display a code snippet of the SQL query alongside the resulting filtered table output. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 57,
-      "title": "Structured Query Language (SQL)",
-      "visualDirection": "template:academic-process | Display a code snippet of the SQL query alongside the resulting filtered table output."
+      "narration": "Apply Constraints for Data Validation to a worked situation instead of treating it as an isolated definition. Constraints reject states that violate declared data rules. Consider this worked case: A 'Salary' column constraint prevents negative values, and a 'Email' column constraint enforces a valid email format. On screen, show a table with constraint symbols (e.g., NOT NULL, CHECK) next to relevant columns. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 58,
+      "title": "Constraints for Data Validation",
+      "visualDirection": "template:academic-process | Show a table with constraint symbols (e.g., NOT NULL, CHECK) next to relevant columns."
     },
     {
       "accessibility": {
@@ -103,10 +103,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Data Quality Principles, including what improves and what becomes more difficult. Encryption supports confidentiality when keys and modes are used correctly. Consider this worked case: Validating that all 'PhoneNumber' fields follow a standard format prevents duplicate or corrupted contact records. On screen, show a checklist graphic with icons for accuracy, completeness, consistency, and timeliness. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Examine the tradeoffs in Normalization and Update Anomalies, including what improves and what becomes more difficult. Schema design separates entities and relationships, while normalization addresses update anomalies. Consider this worked case: Splitting a 'Department' table into separate tables for DepartmentName and DepartmentLocation prevents duplicate data and update errors. On screen, display a before-and-after table structure showing normalization steps. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
-      "title": "Data Quality Principles",
-      "visualDirection": "template:academic-process | Show a checklist graphic with icons for accuracy, completeness, consistency, and timeliness."
+      "title": "Normalization and Update Anomalies",
+      "visualDirection": "template:academic-process | Display a before-and-after table structure showing normalization steps."
     },
     {
       "accessibility": {
@@ -121,10 +121,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Transaction Integrity with an edge case and identify which assumption controls the outcome. Message authentication and digital signatures address integrity and authenticity in different ways. Consider this worked case: A banking transaction updates both account balances atomically, ensuring neither account is left in an inconsistent state. On screen, create a step-by-step diagram showing a transaction process with ACID checkpoints at each stage. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
-      "plannedSeconds": 55,
-      "title": "Transaction Integrity",
-      "visualDirection": "template:academic-process | Create a step-by-step diagram showing a transaction process with ACID checkpoints at each stage."
+      "narration": "Stress-test the reasoning around Relational Algebra and Query Logic with an edge case and identify which assumption controls the outcome. This course provides a broad introduction to the principles and practice of modern data management, with an emphasis on the relational database model. Consider this worked case: A SELECT statement with a JOIN clause combines data from 'Employees' and 'Departments' tables based on a common key. On screen, show a simplified relational algebra expression (e.g., σ, ⨝) alongside a corresponding SQL query snippet. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 62,
+      "title": "Relational Algebra and Query Logic",
+      "visualDirection": "template:academic-process | Show a simplified relational algebra expression (e.g., σ, ⨝) alongside a corresponding SQL query snippet."
     },
     {
       "accessibility": {
@@ -139,10 +139,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Database Security Practices to diagnose a failure by separating symptoms, causes, and corrective action. Protect the Software prevents unauthorized access to code and development artifacts. Consider this worked case: Role-based access control limits 'view' permissions to analysts while restricting 'delete' permissions to administrators. On screen, display a permission matrix table showing user roles and their corresponding database actions. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Use Transactions and Atomicity to diagnose a failure by separating symptoms, causes, and corrective action. Transactions group operations into an atomic unit of work. Consider this worked case: A banking transaction transfers funds between two accounts; if one step fails, both are rolled back. On screen, illustrate a transaction flow with steps (Start, Process, Commit/Rollback) and a lock icon. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 56,
-      "title": "Database Security Practices",
-      "visualDirection": "template:academic-process | Display a permission matrix table showing user roles and their corresponding database actions."
+      "title": "Transactions and Atomicity",
+      "visualDirection": "template:academic-process | Illustrate a transaction flow with steps (Start, Process, Commit/Rollback) and a lock icon."
     },
     {
       "accessibility": {
@@ -157,10 +157,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Application Development Approaches to the earlier ideas and explain how the pieces work as one system. Additional topics include object-oriented and object-relational databases; semi-structured databases (such as XML); and information retrieval. Consider this worked case: An e-commerce platform uses SQL to fetch product inventory and application code to process checkout orders. On screen, sketch a simple architecture diagram with a frontend app, backend logic, and relational database connected by SQL calls. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "narration": "Connect Indexing and Query Performance to the earlier ideas and explain how the pieces work as one system. Indexes provide additional access paths for selected queries. Consider this worked case: An index on the 'LastName' column speeds up searches for employees by surname. On screen, show a table with a B-tree index structure diagram next to a query execution path. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
-      "title": "Application Development Approaches",
-      "visualDirection": "template:academic-process | Sketch a simple architecture diagram with a frontend app, backend logic, and relational database connected by SQL calls."
+      "title": "Indexing and Query Performance",
+      "visualDirection": "template:academic-process | Show a table with a B-tree index structure diagram next to a query execution path."
     },
     {
       "accessibility": {
@@ -175,15 +175,63 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Security requirements should be tracked throughout development. Consider this worked case: A developer checks that foreign keys enforce referential integrity, indexes optimize query performance, and encryption protects sensitive fields. On screen, present a printable checklist graphic with checkboxes for modeling, querying, integrity, and security verification. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 56,
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Topics in relational database systems include data modeling; the relational model; relational algebra; Structured Query Language (SQL); and data quality, transactions, integrity and security. Consider this worked case: Check that all foreign keys reference valid primary keys, indexes cover frequent query columns, and constraints prevent invalid data entry. On screen, display a checklist graphic with three boxes: Integrity, Performance, Query Requirements. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 58,
       "title": "Practical Analysis Checklist",
-      "visualDirection": "template:academic-process | Present a printable checklist graphic with checkboxes for modeling, querying, integrity, and security verification."
+      "visualDirection": "template:academic-process | Display a checklist graphic with three boxes: Integrity, Performance, Query Requirements."
     }
   ],
   "claims": [
     {
       "id": "beat-01-claim-01",
+      "sourceIds": [
+        "postgresql-documentation"
+      ],
+      "text": "Relational systems organize data with tables, rows, columns, and declared types.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "neo4j-graph-data-modeling"
+      ],
+      "text": "Property graph models represent domain entities as nodes.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "postgresql-documentation"
+      ],
+      "text": "Primary keys identify rows, while foreign keys express references between tables.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "neo4j-graph-data-modeling"
+      ],
+      "text": "Constraints and indexes support data integrity and efficient lookup.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "postgresql-documentation"
+      ],
+      "text": "Constraints reject states that violate declared data rules.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "postgresql-documentation"
+      ],
+      "text": "Schema design separates entities and relationships, while normalization addresses update anomalies.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
       "sourceIds": [
         "rit-csci-320"
       ],
@@ -191,75 +239,27 @@
       "verified": true
     },
     {
-      "id": "beat-02-claim-01",
-      "sourceIds": [
-        "rit-csci-320"
-      ],
-      "text": "Topics in relational database systems include data modeling; the relational model; relational algebra; Structured Query Language (SQL); and data quality, transactions, integrity and security.",
-      "verified": true
-    },
-    {
-      "id": "beat-03-claim-01",
-      "sourceIds": [
-        "rit-csci-320"
-      ],
-      "text": "A database project is required.",
-      "verified": true
-    },
-    {
-      "id": "beat-04-claim-01",
-      "sourceIds": [
-        "nist-cryptographic-standards"
-      ],
-      "text": "Modes of operation define how a primitive processes data larger than one block.",
-      "verified": true
-    },
-    {
-      "id": "beat-05-claim-01",
-      "sourceIds": [
-        "rit-csci-320"
-      ],
-      "text": "Students will also learn approaches to building relational database application programs.",
-      "verified": true
-    },
-    {
-      "id": "beat-06-claim-01",
-      "sourceIds": [
-        "nist-cryptographic-standards"
-      ],
-      "text": "Encryption supports confidentiality when keys and modes are used correctly.",
-      "verified": true
-    },
-    {
-      "id": "beat-07-claim-01",
-      "sourceIds": [
-        "nist-cryptographic-standards"
-      ],
-      "text": "Message authentication and digital signatures address integrity and authenticity in different ways.",
-      "verified": true
-    },
-    {
       "id": "beat-08-claim-01",
       "sourceIds": [
-        "nist-ssdf"
+        "postgresql-documentation"
       ],
-      "text": "Protect the Software prevents unauthorized access to code and development artifacts.",
+      "text": "Transactions group operations into an atomic unit of work.",
       "verified": true
     },
     {
       "id": "beat-09-claim-01",
       "sourceIds": [
-        "rit-csci-320"
+        "postgresql-documentation"
       ],
-      "text": "Additional topics include object-oriented and object-relational databases; semi-structured databases (such as XML); and information retrieval.",
+      "text": "Indexes provide additional access paths for selected queries.",
       "verified": true
     },
     {
       "id": "beat-10-claim-01",
       "sourceIds": [
-        "nist-ssdf"
+        "rit-csci-320"
       ],
-      "text": "Security requirements should be tracked throughout development.",
+      "text": "Topics in relational database systems include data modeling; the relational model; relational algebra; Structured Query Language (SQL); and data quality, transactions, integrity and security.",
       "verified": true
     }
   ],
@@ -279,23 +279,23 @@
       "verified": true
     },
     {
-      "author": "National Institute of Standards and Technology",
-      "excerpt": "The Secure Software Development Framework groups practices into four practice groups. Prepare the Organization establishes people, processes, and technology for secure development. Protect the Software prevents unauthorized access to code and development artifacts. Produce Well-Secured Software addresses security requirements, design, verification, and release. Respond to Vulnerabilities identifies, analyzes, remediates, and learns from discovered weaknesses. Security requirements should be tracked throughout development. Verification provides evidence that selected practices and controls were performed. Security reasoning identifies assets, trust boundaries, threats, controls, evidence, residual risk, and responsibilities.",
-      "id": "nist-ssdf",
-      "sha256": "17c15c6a3a522d311732bc0022c92ccb85de44ca6a09bde629c605eafbbaf442",
-      "title": "NIST Secure Software Development Framework",
+      "author": "PostgreSQL Global Development Group",
+      "excerpt": "Relational systems organize data with tables, rows, columns, and declared types. Primary keys identify rows, while foreign keys express references between tables. Constraints reject states that violate declared data rules. Queries select, join, aggregate, insert, update, and delete data. Indexes provide additional access paths for selected queries. Transactions group operations into an atomic unit of work. Isolation controls how concurrent transactions observe one another. Schema design separates entities and relationships, while normalization addresses update anomalies. Query planning and physical structures influence performance without changing logical query meaning.",
+      "id": "postgresql-documentation",
+      "sha256": "78dace39fa20f9b6c60b50ea3ad7bdec2b4145158d18abb33d98d44161515dc0",
+      "title": "PostgreSQL Documentation",
       "type": "note",
-      "uri": "https://csrc.nist.gov/pubs/sp/800/218/final",
+      "uri": "https://www.postgresql.org/docs/current/",
       "verified": true
     },
     {
-      "author": "National Institute of Standards and Technology",
-      "excerpt": "Cryptographic standards define approved algorithms and parameters. Encryption supports confidentiality when keys and modes are used correctly. Message authentication and digital signatures address integrity and authenticity in different ways. Random number generation supports keys, nonces, and other security parameters. Key management covers generation, distribution, storage, use, rotation, revocation, and destruction. Modes of operation define how a primitive processes data larger than one block. Validation checks implementations against specified requirements. Security depends on the complete protocol and implementation, not only an algorithm name. Analysis also considers side channels and migration requirements.",
-      "id": "nist-cryptographic-standards",
-      "sha256": "a50096140c969dba44c56eabec718ea39e693d3bb01255ae0cb21fa71c53c7e4",
-      "title": "NIST Cryptographic Standards and Guidelines",
+      "author": "Neo4j",
+      "excerpt": "Property graph models represent domain entities as nodes. Relationships connect nodes and have a type and direction. Nodes and relationships can carry properties. Labels group nodes that play a similar domain role. A useful graph model begins from the questions the application must answer. Traversal patterns determine which relationships the application follows. Identity must be explicit when several records may describe the same entity. Constraints and indexes support data integrity and efficient lookup. Direction, cardinality, and update behavior are part of the model.",
+      "id": "neo4j-graph-data-modeling",
+      "sha256": "483b46916371d775d73aae988ad1c144b24364473092fad7e3fe85c189f016da",
+      "title": "Neo4j Graph Data Modeling",
       "type": "note",
-      "uri": "https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines",
+      "uri": "https://neo4j.com/docs/getting-started/data-modeling/",
       "verified": true
     }
   ],

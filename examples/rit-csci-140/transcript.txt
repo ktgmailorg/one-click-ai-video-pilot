@@ -1,235 +1,223 @@
-NARRATOR: Begin by framing Course Foundations & Scope as a question about inputs, decisions,
+Begin by framing Problem Statement and Algorithmic Foundations as a question about
 
-and observable results.
+inputs, decisions, and observable results.
 
-NARRATOR: This accelerated course covers material from the first-year sequence of
+Programming begins with precise problem statements, input and output examples, and
 
-courses and provides the foundation for all subsequent Computer Science courses.
+algorithms written independently of syntax.
 
-NARRATOR: Consider this worked case: Students will use this course to prepare for advanced
+Consider this worked case: A student defines a sorting problem by listing input arrays and
 
-topics like algorithms, data structures, and software engineering.
+expected sorted outputs before writing any code.
 
-NARRATOR: On screen, display a course roadmap graphic showing CSCI-140 as the central hub
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-connecting to advanced CS courses.
+that the final result satisfies the stated condition.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+List the givens before choosing a method, because an unstated assumption can change the
 
-change the conclusion.
+conclusion.
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: Now define Static vs. Dynamic Data Types precisely enough that another learner
+Now define Data Representation: Lists, Stacks, and Queues precisely enough that another
 
-could test the definition.
+learner could test the definition.
 
-NARRATOR: Topics include tree and graph structures, nested data structures, objects,
+Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in
 
-classes, inheritance, interfaces, object-oriented collection class libraries for
+first-out access, trees represent hierarchy, and graphs represent connected entities.
 
-abstract data types (for example stacks, queues, maps, and trees), and static versus
+Consider this worked case: A stack of plates is added and removed only from the top, while
 
-dynamic data types.
+a line of people waiting for a bus is processed from the front.
 
-NARRATOR: Consider this worked case: In statically typed languages, variable types are
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-checked at compile time, whereas dynamically typed languages check types at runtime.
+that the final result satisfies the stated condition.
 
-NARRATOR: On screen, show a side-by-side comparison table of static vs. dynamic typing
-
-with code snippets highlighting compile-time vs. runtime type resolution.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Object-Oriented Design Foundations
+With the foundation in place, examine how Hierarchical and Connected Structures operates
 
-operates in a concrete sequence.
+in a concrete sequence.
 
-NARRATOR: Software qualities related to object orientation, namely cohesion, minimal
+Topics include tree and graph structures, nested data structures, objects, classes,
+
+inheritance, interfaces, object-oriented collection class libraries for abstract data
+
+types (for example stacks, queues, maps, and trees), and static versus dynamic data types.
+
+Consider this worked case: A family tree illustrates hierarchical relationships, while
+
+a subway map illustrates a graph of connected stations.
+
+Trace each intermediate state in the example, connect it to the formal claim, and verify
+
+that the final result satisfies the stated condition.
+
+Follow every arrow in order and name the state before and after each transition.
+
+The trace converts an abstract statement into an inspectable sequence.
+
+Next, compare the choices involved in Objects, Classes, and Inheritance and make the decision
+
+criteria explicit.
+
+Python objects have identity, a type, and a value.
+
+Consider this worked case: A 'Dog' class inherits from an 'Animal' class, gaining
+
+shared attributes like 'name' while adding specific ones like 'bark'.
+
+Trace each intermediate state in the example, connect it to the formal claim, and verify
+
+that the final result satisfies the stated condition.
+
+Compare alternatives against the same constraints so the evaluation does not move
+
+the goalposts.
+
+Using shared criteria turns a preference into a defensible technical choice.
+
+Apply Software Qualities: Cohesion and Coupling to a worked situation instead of
+
+treating it as an isolated definition.
+
+Software qualities related to object orientation, namely cohesion, minimal
 
 coupling, modifiability, and extensibility, are all introduced in this course, as well as
 
 a few elementary object-oriented design patterns.
 
-NARRATOR: Consider this worked case: A parent class defines shared behavior, while child
+Consider this worked case: A 'PaymentProcessor' class has high cohesion
 
-classes inherit and extend that behavior through polymorphism.
+because it handles only payment logic, and low coupling because it does not directly access
 
-NARRATOR: On screen, render a class diagram illustrating inheritance relationships between
+database tables.
 
-a base class and derived classes.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+that the final result satisfies the stated condition.
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-NARRATOR: Next, compare the choices involved in Abstract Data Types & Collections and make
+step.
 
-the decision criteria explicit.
+The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: The Python language reference specifies lexical analysis, data model
-
-behavior, execution, expressions, statements, functions, classes, exceptions, and module
-
-import semantics.
-
-NARRATOR: Consider this worked case: A stack implements last-in-first-out behavior, while a
-
-queue implements first-in-first-out behavior for ordered data processing.
-
-NARRATOR: On screen, animate a stack and queue data structure showing push/pop and
-
-enqueue/dequeue operations with labeled elements.
-
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
-
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Apply Software Qualities: Cohesion & Minimal Coupling to a worked situation instead
-
-of treating it as an isolated definition.
-
-NARRATOR: Concepts of object- oriented design are a large part of the course.
-
-NARRATOR: Consider this worked case: High cohesion means a class performs a single,
-
-well-defined purpose, while minimal coupling reduces dependencies between classes.
-
-NARRATOR: On screen, display a before-and-after class diagram showing how
-
-refactoring improves cohesion and reduces coupling.
-
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
-
-at each step.
-
-NARRATOR: The worked case shows both how to apply the method and how to check it.
-
-NARRATOR: Examine the tradeoffs in Exception Handling & Control Flow, including what
+Examine the tradeoffs in Abstract Data Types and Collection Libraries, including what
 
 improves and what becomes more difficult.
 
-NARRATOR: Exceptions interrupt normal control flow until a matching handler processes them
+This accelerated course covers material from the first-year sequence of courses and
 
-or they propagate.
+provides the foundation for all subsequent Computer Science courses.
 
-NARRATOR: Consider this worked case: A try-catch block catches a runtime error,
+Consider this worked case: Using Python's collections module, a developer instantiates a
 
-allowing the program to recover or exit gracefully without crashing.
+deque as a stack or a defaultdict as a map without writing low-level logic.
 
-NARRATOR: On screen, show a control flow diagram with a normal path and an exception
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-path branching to a handler block.
+that the final result satisfies the stated condition.
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-acceptable.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+Stress-test the reasoning around Exception Handling and Control Flow with an edge case
 
-NARRATOR: Stress-test the reasoning around Compiler & IR Concepts with an edge case and
+and identify which assumption controls the outcome.
 
-identify which assumption controls the outcome.
+Exceptions interrupt normal control flow until a matching handler processes them or they
 
-NARRATOR: Compiler work separates parsing and semantic analysis from lowering, verification,
+propagate.
 
-optimization, and target-specific code generation.
+Consider this worked case: A division-by-zero error is caught by a try/except block that
 
-NARRATOR: Consider this worked case: LLVM IR serves as a typed, SSA-based intermediate
+logs the error and returns a default value instead of crashing.
 
-representation that enables cross-platform optimization and code generation.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: On screen, illustrate a compiler pipeline diagram with stages: parsing,
+that the final result satisfies the stated condition.
 
-semantic analysis, lowering, verification, optimization, code generation.
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-holds.
+Use Input and Output Streams to diagnose a failure by separating symptoms, causes, and
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+corrective action.
 
-core idea.
+Input and output streams, graphical user interfaces, and exception handling are
 
-NARRATOR: Use Python Language Model & Execution to diagnose a failure by separating
+covered.
 
-symptoms, causes, and corrective action.
+Consider this worked case: A program reads a text file using sys.
 
-NARRATOR: Programs should be reasoned about through explicit state, control flow, data
+stdin and writes formatted results to a log file using open('log.
 
-representation, contracts, tests, and observable behavior.
+txt', 'w').
 
-NARRATOR: Consider this worked case: Debugging separates syntax, runtime, and logical
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-failures, while decomposition and abstraction reduce interacting concerns in Python code.
+that the final result satisfies the stated condition.
 
-NARRATOR: On screen, show a Python object model diagram with identity, type, and value
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-attributes, alongside a debugging workflow flowchart.
+smallest plausible cause.
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-behavior, then test the smallest plausible cause.
+Connect Graphical User Interfaces to the earlier ideas and explain how the pieces work
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+as one system.
 
-and the test.
-
-NARRATOR: Connect Object-Oriented Design Patterns to the earlier ideas and explain how
-
-the pieces work as one system.
-
-NARRATOR: The course stresses problem solving while covering modern software development
+The course stresses problem solving while covering modern software development
 
 techniques and introducing essential software tools.
 
-NARRATOR: Consider this worked case: The singleton pattern ensures a class has only one
+Consider this worked case: A simple GUI window displays a button; clicking the button
 
-instance, while the factory pattern creates objects without specifying exact classes.
+triggers a function that updates a label on the screen.
 
-NARRATOR: On screen, display a simple UML diagram of a factory pattern with creator,
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-product, and concrete product classes.
+that the final result satisfies the stated condition.
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+Explain each connection explicitly and verify that information retains the same meaning
 
-meaning across representations.
+across representations.
 
-NARRATOR: The synthesis matters only if every connection remains supported by the original
+The synthesis matters only if every connection remains supported by the original evidence.
 
-evidence.
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+analysis.
 
-guide a new analysis.
+Correctness arguments, tests, tracing, and debugging compare intended behavior with
 
-NARRATOR: Valid IR must satisfy structural and typing rules.
+observable results, including boundary and error cases.
 
-NARRATOR: Consider this worked case: A checklist evaluates whether each class has a
+Consider this worked case: A developer writes unit tests for a sorting function, traces its
 
-single responsibility, limited dependencies, and clear extension points for future
+execution on an empty list and a reversed list, and fixes a bug where the loop condition
 
-features.
+fails at the boundary.
 
-NARRATOR: On screen, show a printable checklist template with checkboxes for
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-cohesion, coupling, modifiability, and extensibility evaluation.
+that the final result satisfies the stated condition.
 
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-next verification step.
+verification step.
 
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-memory or intuition.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.
+intuition.

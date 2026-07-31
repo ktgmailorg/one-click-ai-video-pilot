@@ -5,12 +5,12 @@
       "shots": [
         {
           "id": "beat-01-shot-001",
-          "phrase": "Begin by framing Course Scope and Faculty Flexibility as a question about inputs, decisions, and observable results.",
+          "phrase": "Begin by framing Process Definition and State as a question about inputs, decisions, and observable results.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: Instructors select specific course instances belonging to the Distributed Systems, Architecture and Operating Systems, or Security cluster.",
+          "phrase": "Consider this worked case: A web server process maintains its own memory space, open file descriptors, and CPU scheduling context.",
           "type": "deterministic-svg"
         },
         {
@@ -25,12 +25,12 @@
       "shots": [
         {
           "id": "beat-02-shot-001",
-          "phrase": "Now define Secure Software Development Framework Overview precisely enough that another learner could test the definition.",
+          "phrase": "Now define System Call Mechanism precisely enough that another learner could test the definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: Prepare the Organization establishes people, processes, and technology for secure development.",
+          "phrase": "Consider this worked case: A process invokes a read system call to request data from a file, transitioning to kernel mode.",
           "type": "deterministic-svg"
         },
         {
@@ -45,17 +45,17 @@
       "shots": [
         {
           "id": "beat-03-shot-001",
-          "phrase": "With the foundation in place, examine how Prepare the Organization Practice operates in a concrete sequence.",
+          "phrase": "With the foundation in place, examine how Trap Handling and Context Switching operates in a concrete sequence.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: Teams define security policies and allocate resources before writing code.",
+          "phrase": "Consider this worked case: When a process triggers a page fault, the CPU traps the fault, saves registers, and transfers to the kernel handler.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-003",
-          "phrase": "The trace converts an abstract statement into an inspectable sequence.",
+          "phrase": "Follow every arrow in order and name the state before and after each transition.",
           "type": "deterministic-svg"
         }
       ]
@@ -65,12 +65,12 @@
       "shots": [
         {
           "id": "beat-04-shot-001",
-          "phrase": "Next, compare the choices involved in Protect the Software Practice and make the decision criteria explicit.",
+          "phrase": "Next, compare the choices involved in Virtual Memory Mapping and make the decision criteria explicit.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: Repositories use role-based access control to restrict who can view or modify source files.",
+          "phrase": "Consider this worked case: A page table entry translates a virtual address to a physical frame while enforcing read/write/execute permissions.",
           "type": "deterministic-svg"
         },
         {
@@ -85,12 +85,12 @@
       "shots": [
         {
           "id": "beat-05-shot-001",
-          "phrase": "Apply Produce Well-Secured Software Practice to a worked situation instead of treating it as an isolated definition.",
+          "phrase": "Apply Process Scheduling to a worked situation instead of treating it as an isolated definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: Developers verify that security requirements are met before deploying the final software version.",
+          "phrase": "Consider this worked case: A round-robin scheduler picks the next process from the ready queue and saves the current context.",
           "type": "deterministic-svg"
         },
         {
@@ -105,12 +105,12 @@
       "shots": [
         {
           "id": "beat-06-shot-001",
-          "phrase": "Examine the tradeoffs in Respond to Vulnerabilities Practice, including what improves and what becomes more difficult.",
+          "phrase": "Examine the tradeoffs in Concurrency and Locking, including what improves and what becomes more difficult.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: When a bug is found, the team patches the code and updates the security documentation.",
+          "phrase": "Consider this worked case: A mutex lock prevents two processes from modifying a shared counter simultaneously.",
           "type": "deterministic-svg"
         },
         {
@@ -125,12 +125,12 @@
       "shots": [
         {
           "id": "beat-07-shot-001",
-          "phrase": "Stress-test the reasoning around Security Requirements and Reasoning with an edge case and identify which assumption controls the outcome.",
+          "phrase": "Stress-test the reasoning around File System Organization with an edge case and identify which assumption controls the outcome.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: A system tracks user authentication requirements from design through testing.",
+          "phrase": "Consider this worked case: An inode stores metadata for a file while directory entries link names to inode references.",
           "type": "deterministic-svg"
         },
         {
@@ -145,12 +145,12 @@
       "shots": [
         {
           "id": "beat-08-shot-001",
-          "phrase": "Use Cryptographic Standards and Confidentiality to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "phrase": "Use RISC-V Instruction Set Basics to diagnose a failure by separating symptoms, causes, and corrective action.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: AES-256 encryption protects data in transit when paired with a secure key exchange protocol.",
+          "phrase": "Consider this worked case: Integer register x0 always reads as zero, while other registers hold software-visible values.",
           "type": "deterministic-svg"
         },
         {
@@ -165,12 +165,12 @@
       "shots": [
         {
           "id": "beat-09-shot-001",
-          "phrase": "Connect Integrity, Authenticity, and Key Management to the earlier ideas and explain how the pieces work as one system.",
+          "phrase": "Connect Memory Ordering and Dependencies to the earlier ideas and explain how the pieces work as one system.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: Digital signatures verify that a message was sent by a specific sender without alteration.",
+          "phrase": "Consider this worked case: Store buffers ensure that writes are visible to other cores in a defined architectural order.",
           "type": "deterministic-svg"
         },
         {
@@ -185,12 +185,12 @@
       "shots": [
         {
           "id": "beat-10-shot-001",
-          "phrase": "Finish with Modes of Operation and Side Channels as a practical checklist that can guide a new analysis.",
+          "phrase": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: CBC mode processes data in blocks, but timing attacks can expose vulnerabilities if not implemented securely.",
+          "phrase": "Consider this worked case: A security audit checks for proper privilege separation and lock invariants in a kernel module.",
           "type": "deterministic-svg"
         },
         {
@@ -201,6 +201,6 @@
       ]
     }
   ],
-  "episodeId": "csci-559-seminar-in-systems-orientation-companion",
+  "episodeId": "foundations-of-system-abstraction",
   "schemaVersion": 1
 }

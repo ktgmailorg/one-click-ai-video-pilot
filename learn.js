@@ -174,8 +174,9 @@ function updateProgress() {
   );
 
   document.querySelector("#progress-percent").textContent = `${percent}%`;
-  document.querySelector("#progress-fill").style.width = `${percent}%`;
-  document.querySelector(".learn-progress-track").setAttribute("aria-valuenow", String(percent));
+  const progressBar = document.querySelector("#progress-bar");
+  progressBar.value = percent;
+  progressBar.textContent = `${percent}%`;
   document.querySelector("#completed-count").textContent = String(completedCourses.length);
   document.querySelector("#learning-time").textContent = `${minutes} min`;
   document.querySelector("#catalog-count").textContent = String(courses.length);
@@ -306,6 +307,11 @@ filters.addEventListener("reset", () => {
   activePath.hidden = true;
   for (const button of pathButtons) button.setAttribute("aria-pressed", "false");
   setTimeout(render, 0);
+});
+
+filters.addEventListener("submit", (event) => {
+  event.preventDefault();
+  render();
 });
 
 for (const button of pathButtons) {

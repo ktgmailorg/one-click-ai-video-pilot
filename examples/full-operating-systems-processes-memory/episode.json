@@ -1,0 +1,293 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Begin by visualizing two distinct execution environments operating simultaneously on the same hardware. User mode handles everyday application logic, while kernel mode manages hardware resources and enforces security boundaries. When a user program needs to access protected services, it deliberately triggers a system call that transfers control into the kernel. This deliberate handoff prevents unauthorized hardware manipulation. Imagine a web browser requesting a network socket; the browser code cannot directly talk to the network card. Instead, it issues a system call, causing the CPU to switch to kernel mode, where the OS validates the request and executes the appropriate hardware driver. This separation ensures that a buggy application cannot crash the entire system or access another program's data. The kernel acts as a strict gatekeeper, only allowing operations that follow defined,",
+      "plannedSeconds": 67,
+      "title": "User and Kernel Mode Enforcement",
+      "visualDirection": "template:showcase-operating-systems | A split-screen diagram showing a user-space application window on the left and a kernel-space control panel on the right. An arrow labeled 'System Call' points from the application to the kernel, with a small CPU icon in the middle showing"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Next, observe how the kernel manages multiple applications running on a single processor. When one program finishes its current task or waits for input, the scheduler must pause it and start another. This transition is called a context switch. During this moment, the kernel saves the complete register state of the paused process, including instruction pointers and stack addresses. It then restores the saved registers of the next process. Think of it like a theater stage manager who saves every actor's costume and notes before calling the next performer. If the kernel failed to save these registers, the next program would resume with corrupted data or crash immediately. The scheduler continuously evaluates which process is ready to run, ensuring fair CPU distribution without manual intervention. This automatic handoff keeps the system responsive even when dozens of applications compete.",
+      "plannedSeconds": 71,
+      "title": "Context Switches and Register State",
+      "visualDirection": "template:showcase-operating-systems | A circular diagram showing a central CPU with multiple process icons orbiting it. Arrows indicate 'Save Registers' pointing to a central 'Kernel Stack' and 'Restore Registers' pointing back to the CPU. A timer icon pulses in the center."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "Consider how the CPU actually recognizes when to pause user code and enter the kernel. This happens through a hardware mechanism called a trap. Traps are not just for system calls; they also handle device interrupts and memory faults. When a trap occurs, the CPU automatically switches to kernel mode and jumps to a specific handler routine. Imagine a doorbell ringing in a house: the resident (user mode) is interrupted, and the homeowner (kernel) comes to check the source. This unified trap mechanism simplifies OS design because the same hardware signal can trigger different software responses depending on the context. Whether it is a keyboard press, a disk error, or a network request, the trap ensures the kernel intercepts the event before it disrupts normal execution.",
+      "plannedSeconds": 65,
+      "title": "Traps as the Universal Mechanism",
+      "visualDirection": "template:showcase-operating-systems | A flowchart showing a CPU with three input paths: 'System Call', 'Device Interrupt', and 'Memory Fault'. All three converge into a single 'Trap Handler' box, which then branches to 'Kernel Handler' and 'Return to User'."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "Now, examine how the OS maps the vast virtual address space of a program to limited physical memory. Each process maintains its own page table, which acts like a detailed directory. When the program accesses a specific virtual address, the hardware consults this table to find the corresponding physical location. If the page is not currently loaded in RAM, the kernel triggers a page fault and loads the required data from disk. This translation happens transparently, allowing programs to use large, contiguous address spaces without worrying about physical memory constraints. Imagine a library catalog that translates shelf locations into actual room numbers. Without this system, programs would need to manually calculate every memory address, making development nearly impossible. The page table ensures that virtual addresses remain stable while physical memory is dynamically managed.",
+      "plannedSeconds": 68,
+      "title": "Page Tables and Virtual Address Translation",
+      "visualDirection": "template:showcase-operating-systems | A two-tiered table diagram. The top tier shows 'Virtual Address' columns. The bottom tier shows 'Physical Address' columns. A vertical arrow labeled 'Page Table Lookup' connects them, with a small disk icon below indicating 'Page Fault/Load"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Virtual memory extends this translation system to guarantee strict process isolation. Each process receives its own private address space, meaning one program cannot accidentally or maliciously read another's data. The kernel controls which physical pages are mapped to which virtual addresses, allowing it to enforce security boundaries. When a process terminates, the kernel simply removes its page table entries, instantly freeing the memory. This design enables multiple applications to run simultaneously without interfering with each other's data structures. Imagine separate rooms in a building where each resident has their own private space, but the building manager controls which rooms are open. This isolation prevents data corruption and ensures system stability, even when applications crash or behave unpredictably.",
+      "plannedSeconds": 61,
+      "title": "Virtual Memory and Isolation",
+      "visualDirection": "template:showcase-operating-systems | A building diagram with multiple floors representing processes. Each floor has locked doors labeled 'Page Table'. A central manager icon holds a key labeled 'Kernel Control'. Arrows show memory being allocated and freed."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "Let's trace how a new process begins execution. When a program calls fork, the kernel creates a new process image that is a logical copy of the parent. The child receives a unique process identifier and starts executing independently. This duplication happens at the process level, not the memory level. Imagine a photocopy machine that duplicates the entire document but allows the copy to be edited separately. The parent and child now follow different execution paths, each managing its own resources. This mechanism enables parallel execution and modular program design. The kernel ensures that the child process has all the necessary initialization data to start correctly, while maintaining strict separation from the parent's subsequent operations.",
+      "plannedSeconds": 65,
+      "title": "Process Creation and Fork Semantics",
+      "visualDirection": "template:showcase-operating-systems | A document icon splits into two identical copies. One copy is labeled 'Parent' and the other 'Child'. A unique ID badge appears on the child. Arrows show independent execution paths branching from each copy."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "After the fork operation completes, the parent and child processes receive different return values. This distinction allows each process to immediately determine its role and choose its execution path. The parent typically continues with its original task, while the child branches into a new routine. Imagine a traffic light system where the main controller sends a signal to a side car, allowing the side car to take a different route. This return value mechanism enables flexible program architecture, allowing developers to implement complex workflows without hardcoding every possible scenario. The kernel ensures that the return values are correctly passed through the system call interface, maintaining the expected behavior across different operating systems.",
+      "plannedSeconds": 60,
+      "title": "Return Values and Branching Behavior",
+      "visualDirection": "template:showcase-operating-systems | A traffic light icon splits into two paths. One path is labeled 'Parent Continues' and the other 'Child Branches'. A return value badge shows different numbers for each path. Arrows show the branching decision point."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "When a process is created, it inherits certain resources from its parent, such as file descriptors and memory mappings. These inherited resources follow strict sharing rules that determine whether they are duplicated, shared, or restricted. Imagine a family recipe book where each family member gets a copy, but some pages are marked as shared for collaboration. The kernel enforces these rules to prevent resource leaks and ensure proper cleanup. If a parent closes a file descriptor, the child may still access it depending on the sharing mode. This inheritance model allows applications to pass resources between processes efficiently while maintaining control over access permissions. The kernel tracks these references to ensure they are released when no longer needed.",
+      "plannedSeconds": 65,
+      "title": "Resource Inheritance and Sharing Rules",
+      "visualDirection": "template:showcase-operating-systems | A recipe book icon splits into two copies. One copy has a 'Shared' stamp, the other has a 'Private' stamp. Arrows show file descriptor icons connecting the parent to both children. A lock icon indicates permission control."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "To improve efficiency, many systems implement copy-on-write virtual memory. Instead of duplicating all memory pages when a process forks, the kernel shares the same physical pages between parent and child. Pages are only copied when one process attempts to write to them. Imagine two readers sharing a single textbook; they can read simultaneously without duplication. If one reader tries to edit a page, the system creates a private copy for that specific page. This optimization reduces memory usage and speeds up process creation. However, the kernel must carefully track write attempts to ensure the original data remains intact for the other process. This approach preserves the expected process behavior while maximizing resource efficiency.",
+      "plannedSeconds": 60,
+      "title": "Copy-on-Write Optimization",
+      "visualDirection": "template:showcase-operating-systems | Two reader icons share a single textbook. A 'Read' arrow shows simultaneous access. A 'Write' arrow triggers a split, creating two separate books. A tracking icon shows the kernel monitoring write attempts."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "Finally, consider the complete lifecycle of a process from creation to termination. The kernel manages execution replacement, waiting states, and termination events, ensuring that resources are properly reclaimed. If a process crashes or exits unexpectedly, the kernel must handle the failure gracefully, cleaning up memory and releasing file descriptors. Imagine a theater production where actors leave early; the stage manager must reset the set and notify other performers. The kernel tracks every resource ownership and failure case to maintain system stability. This disciplined lifecycle management prevents memory leaks and ensures that the operating system remains responsive even when applications encounter errors.",
+      "plannedSeconds": 65,
+      "title": "Lifecycle Management and Failure Handling",
+      "visualDirection": "template:showcase-operating-systems | A circular lifecycle diagram with stages: 'Creation', 'Execution', 'Waiting', 'Termination'. Each stage has a resource icon. A failure icon points to a 'Cleanup' box. Arrows show the continuous loop."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "mit-xv6-book"
+      ],
+      "text": "User programs request protected services through system calls, which deliberately transfer control into the kernel.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "mit-xv6-book"
+      ],
+      "text": "The kernel multiplexes processors among runnable processes, saves and restores register state during context switches.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "mit-xv6-book"
+      ],
+      "text": "Traps provide a common mechanism for system calls, device interrupts, and faults.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "mit-xv6-book"
+      ],
+      "text": "The kernel uses page tables to translate virtual addresses.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "mit-xv6-book"
+      ],
+      "text": "Virtual memory gives each process an isolated address space while allowing the kernel to control physical memory and selected sharing.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "posix-fork"
+      ],
+      "text": "POSIX fork creates a new process. The child begins with a logical copy of the parent's process image but has a distinct process identifier and separate subsequent execution.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "posix-fork"
+      ],
+      "text": "The call returns different values in parent and child, enabling each branch to choose its behavior.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "posix-fork"
+      ],
+      "text": "File descriptors and other inherited resources follow defined sharing rules.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "posix-fork"
+      ],
+      "text": "Implementations may use copy-on-write virtual memory so pages are copied only after a write, but that optimization must preserve the specified process behavior.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "posix-fork"
+      ],
+      "text": "Process creation, execution replacement, waiting, and termination form a lifecycle whose resource ownership and failure cases must be handled explicitly.",
+      "verified": true
+    }
+  ],
+  "id": "operating-systems-foundations-process-isolation-and-execution-fl",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "MIT PDOS",
+      "excerpt": "The xv6 book presents a small Unix-like operating system for teaching. A process combines a private user address space with kernel-maintained execution state. User programs request protected services through system calls, which deliberately transfer control into the kernel. The kernel multiplexes processors among runnable processes, saves and restores register state during context switches, and uses page tables to translate virtual addresses. Virtual memory gives each process an isolated address space while allowing the kernel to control physical memory and selected sharing. Traps provide a common mechanism for system calls, device interrupts, and faults. Correct analysis distinguishes user code, privileged kernel code, hardware translation, and scheduler state.",
+      "id": "mit-xv6-book",
+      "sha256": "ddfc3809bcb5a5c1fd4984b8459c3b9c9d2f2a8b462b3a045083cb077f2a512f",
+      "title": "xv6: a simple, Unix-like teaching operating system",
+      "type": "note",
+      "uri": "https://pdos.csail.mit.edu/6.828/2025/xv6/book-riscv-rev5.pdf",
+      "verified": true
+    },
+    {
+      "author": "The Open Group",
+      "excerpt": "POSIX fork creates a new process. The child begins with a logical copy of the parent's process image but has a distinct process identifier and separate subsequent execution. The call returns different values in parent and child, enabling each branch to choose its behavior. File descriptors and other inherited resources follow defined sharing rules. Implementations may use copy-on-write virtual memory so pages are copied only after a write, but that optimization must preserve the specified process behavior. Process creation, execution replacement, waiting, and termination form a lifecycle whose resource ownership and failure cases must be handled explicitly.",
+      "id": "posix-fork",
+      "sha256": "754f0afffec0bd8d1461aac10fdbfdfb4b298e655e7021a0a21910401f9c8f1c",
+      "title": "POSIX fork() specification",
+      "type": "note",
+      "uri": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/fork.html",
+      "verified": true
+    }
+  ],
+  "title": "Operating Systems Foundations: Process Isolation and Execution Flow"
+}

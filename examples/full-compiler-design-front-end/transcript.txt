@@ -1,319 +1,299 @@
-NARRATOR: We begin by examining how raw source code transforms into meaningful units through
+We begin by examining how raw source code transforms into meaningful units through
 
 lexical analysis.
 
-NARRATOR: A lexer groups input characters into tokens, stripping away whitespace and comments
+A lexer groups input characters into tokens, stripping away whitespace and comments to
 
-to isolate operators, identifiers, and literals.
+isolate operators, identifiers, and literals.
 
-NARRATOR: Consider the expression 'x + 5'.
+Consider the expression 'x + 5'.
 
-NARRATOR: The lexer recognizes 'x' as an identifier token, '+' as an operator token,
+The lexer recognizes 'x' as an identifier token, '+' as an operator token, and '5' as a
 
-and '5' as a numeric token.
+numeric token.
 
-NARRATOR: This separation is crucial because it isolates syntactic structure from semantic
+This separation is crucial because it isolates syntactic structure from semantic meaning.
 
-meaning.
+By treating each token as a discrete symbol, the compiler can process language constructs
 
-NARRATOR: By treating each token as a discrete symbol, the compiler can process language
+uniformly.
 
-constructs uniformly.
+The lexer operates as a state machine that scans characters sequentially, building tokens
 
-NARRATOR: The lexer operates as a state machine that scans characters sequentially,
+based on predefined patterns.
 
-building tokens based on predefined patterns.
+This foundational step ensures that subsequent stages receive clean, structured input rather
 
-NARRATOR: This foundational step ensures that subsequent stages receive clean, structured
+than unprocessed character streams.
 
-input rather than unprocessed character streams.
-
-NARRATOR: Understanding tokenization reveals how compilers manage language syntax before
+Understanding tokenization reveals how compilers manage language syntax before
 
 attempting,
 
-NARRATOR: Once tokens are isolated, the parser applies language grammar and operator
+Once tokens are isolated, the parser applies language grammar and operator precedence to
 
-precedence to construct an abstract syntax tree whose nodes represent expressions,
+construct an abstract syntax tree whose nodes represent expressions, function prototypes,
 
-function prototypes, and definitions.
+and definitions.
 
-NARRATOR: The parser consumes the token stream and validates syntactic structure against
+The parser consumes the token stream and validates syntactic structure against formal
 
-formal grammar rules.
+grammar rules.
 
-NARRATOR: For example, it checks that an identifier is followed by a valid operator or
+For example, it checks that an identifier is followed by a valid operator or assignment
 
-assignment symbol.
+symbol.
 
-NARRATOR: Operator precedence determines evaluation order, ensuring that multiplication
+Operator precedence determines evaluation order, ensuring that multiplication binds
 
-binds tighter than addition.
+tighter than addition.
 
-NARRATOR: The parser builds a hierarchical structure that mirrors the program's logical
+The parser builds a hierarchical structure that mirrors the program's logical
 
 organization.
 
-NARRATOR: This step transforms a flat sequence of tokens into a tree that preserves nesting
+This step transforms a flat sequence of tokens into a tree that preserves nesting and
 
-and relationships.
+relationships.
 
-NARRATOR: By enforcing grammar rules, the parser catches structural errors early,
+By enforcing grammar rules, the parser catches structural errors early, preventing malformed
 
-preventing malformed code from reaching semantic analysis.
+code from reaching semantic analysis.
 
-NARRATOR: The parser's output becomes the foundation for subsequent validation and low
+The parser's output becomes the foundation for subsequent validation and low
 
-NARRATOR: The abstract syntax tree captures the program's logical structure without
+The abstract syntax tree captures the program's logical structure without retaining
 
-retaining syntactic details like parentheses or whitespace.
+syntactic details like parentheses or whitespace.
 
-NARRATOR: Each node represents a specific language construct, such as an expression,
+Each node represents a specific language construct, such as an expression, function
 
-function prototype, or variable definition.
+prototype, or variable definition.
 
-NARRATOR: For our example, the tree contains a binary expression node with two child nodes
+For our example, the tree contains a binary expression node with two child nodes
 
 representing the left and right operands.
 
-NARRATOR: This hierarchical organization enables efficient traversal and analysis.
+This hierarchical organization enables efficient traversal and analysis.
 
-NARRATOR: The AST serves as a stable intermediate representation that separates
+The AST serves as a stable intermediate representation that separates language
 
-language semantics from implementation details.
+semantics from implementation details.
 
-NARRATOR: By standardizing program structure, the AST allows compilers to apply uniform
+By standardizing program structure, the AST allows compilers to apply uniform
 
 transformations across different language features.
 
-NARRATOR: Developers can inspect the tree to verify that the parser correctly interpreted
+Developers can inspect the tree to verify that the parser correctly interpreted the source
 
-the source code.
+code.
 
-NARRATOR: The tree's structure directly influences how subsequent stages validate
+The tree's structure directly influences how subsequent stages validate types and generate
 
-types and generate code.
+code.
 
-NARRATOR: Maint
+Maint
 
-NARRATOR: After parsing, the compiler performs semantic checks to verify that the program
+After parsing, the compiler performs semantic checks to verify that the program adheres to
 
-adheres to language rules beyond syntax.
+language rules beyond syntax.
 
-NARRATOR: These checks include type validation, scope resolution, and symbol table
+These checks include type validation, scope resolution, and symbol table lookups.
 
-lookups.
+For instance, the compiler verifies that the identifier 'x' is declared and assigned a
 
-NARRATOR: For instance, the compiler verifies that the identifier 'x' is declared and
+compatible type before allowing arithmetic operations.
 
-assigned a compatible type before allowing arithmetic operations.
+Symbol information tracks variable names, their types, and scopes, enabling precise
 
-NARRATOR: Symbol information tracks variable names, their types, and scopes, enabling
+error reporting.
 
-precise error reporting.
+If a type mismatch occurs, the compiler flags the issue immediately, preventing invalid
 
-NARRATOR: If a type mismatch occurs, the compiler flags the issue immediately,
+operations from propagating.
 
-preventing invalid operations from propagating.
+Semantic analysis ensures that the program's meaning is consistent and well-formed.
 
-NARRATOR: Semantic analysis ensures that the program's meaning is consistent and
+By validating types and scopes early, the compiler reduces downstream errors and
 
-well-formed.
+improves optimization opportunities.
 
-NARRATOR: By validating types and scopes early, the compiler reduces downstream errors
+This stage bridges the gap between syntactic structure and runtime behavior.
 
-and improves optimization opportunities.
+Once semantic validation passes, the compiler lowers the validated AST nodes into LLVM
 
-NARRATOR: This stage bridges the gap between syntactic structure and runtime behavior.
+intermediate representation.
 
-NARRATOR: Once semantic validation passes, the compiler lowers the validated AST nodes into
+This transformation converts high-level language constructs into a standardized,
 
-LLVM intermediate representation.
+target-independent format.
 
-NARRATOR: This transformation converts high-level language constructs into a
+The lowering process maps AST nodes to specific IR instructions, ensuring that each
 
-standardized, target-independent format.
+operation corresponds to a valid machine operation.
 
-NARRATOR: The lowering process maps AST nodes to specific IR instructions, ensuring that
+For example, the binary expression node becomes an addition instruction in the IR.
 
-each operation corresponds to a valid machine operation.
+This step abstracts away language-specific syntax, enabling uniform optimization and code
 
-NARRATOR: For example, the binary expression node becomes an addition instruction in the
+generation across different architectures.
 
-IR.
+The intermediate representation serves as a stable boundary between front-end analysis and
 
-NARRATOR: This step abstracts away language-specific syntax, enabling uniform
+back-end code generation.
 
-optimization and code generation across different architectures.
+By standardizing the program structure, the compiler can apply target-independent
 
-NARRATOR: The intermediate representation serves as a stable boundary between front-end
+optimizations safely.
 
-analysis and back-end code generation.
-
-NARRATOR: By standardizing the program structure, the compiler can apply
-
-target-independent optimizations safely.
-
-NARRATOR: Lowering also ensures that all language features are reflected consistently
-
-across the pipeline.
-
-NARRATOR: LLVM IR is a typed, low-level intermediate representation organized into
-
-modules, functions, basic blocks, and instructions.
-
-NARRATOR: This structure provides a clear hierarchy for program analysis and
-
-optimization.
-
-NARRATOR: Modules contain functions, which are divided into basic blocks that represent
-
-straight-line code sequences.
-
-NARRATOR: Each instruction operates on typed values, ensuring type safety throughout the
-
-program.
-
-NARRATOR: The IR's explicit control flow through terminators and basic-block edges
-
-allows the compiler to analyze execution paths systematically.
-
-NARRATOR: Values are defined exactly once using static single assignment form, which
-
-simplifies data flow analysis.
-
-NARRATOR: This design eliminates ambiguity in variable usage, enabling precise optimization
-
-passes.
-
-NARRATOR: The IR's structure makes it possible to apply target-independent transformations
-
-while preserving program semantics.
-
-NARRATOR: A frontend must produce valid IR that obeys dominance, type, control-flow, and
-
-calling-convention rules.
-
-NARRATOR: Verification catches structural violations before later optimization or code
-
-generation.
-
-NARRATOR: This step ensures that the intermediate representation is well-formed and
-
-ready for transformation.
-
-NARRATOR: The compiler checks that all values are defined before use, that types match
-
-across operations, and that control flow terminates correctly.
-
-NARRATOR: If violations are detected, the compiler reports precise errors, preventing
-
-invalid code from reaching optimization passes.
-
-NARRATOR: Verification acts as a safety net, ensuring that the IR maintains semantic
-
-integrity throughout the compilation pipeline.
-
-NARRATOR: By enforcing these rules early, the compiler reduces the risk of incorrect
-
-optimizations and improves overall code quality.
-
-NARRATOR: This boundary separates front-end validation from back-end transformation,
-
-allowing each stage,
-
-NARRATOR: Code generation translates the verified intermediate representation into
-
-target-specific machine code.
-
-NARRATOR: This process maps IR instructions to assembly or binary instructions, handling
-
-register allocation, instruction selection, and scheduling.
-
-NARRATOR: The compiler ensures that the generated code respects the target
-
-architecture's constraints while preserving the program's semantics.
-
-NARRATOR: Optimization boundaries define where target-independent transformations end and
-
-target-specific code generation begins.
-
-NARRATOR: This separation allows the compiler to apply universal optimizations before
-
-committing to a specific architecture.
-
-NARRATOR: The generated code is then linked and executed, completing the compilation
+Lowering also ensures that all language features are reflected consistently across the
 
 pipeline.
 
-NARRATOR: By maintaining a clear division between optimization and code generation, the
+LLVM IR is a typed, low-level intermediate representation organized into modules,
 
-compiler ensures that transformations are both safe and efficient.
+functions, basic blocks, and instructions.
 
-NARRATOR: This stage bridges the gap between abstract program logic,
+This structure provides a clear hierarchy for program analysis and optimization.
 
-NARRATOR: Diagnostics provide precise error messages that guide developers in fixing
+Modules contain functions, which are divided into basic blocks that represent straight-line
 
-compilation issues.
+code sequences.
 
-NARRATOR: The compiler analyzes the intermediate representation to identify type
+Each instruction operates on typed values, ensuring type safety throughout the program.
 
-mismatches, undefined variables, and control flow violations.
+The IR's explicit control flow through terminators and basic-block edges allows the
 
-NARRATOR: These checks occur at multiple stages, ensuring that errors are caught early
+compiler to analyze execution paths systematically.
 
-and accurately.
+Values are defined exactly once using static single assignment form, which simplifies data
 
-NARRATOR: For example, if a variable is used before declaration, the compiler reports a
+flow analysis.
 
-precise location and suggests a fix.
+This design eliminates ambiguity in variable usage, enabling precise optimization passes.
 
-NARRATOR: Diagnostics also include warnings for potential issues like unused variables or
+The IR's structure makes it possible to apply target-independent transformations while
+
+preserving program semantics.
+
+A frontend must produce valid IR that obeys dominance, type, control-flow, and
+
+calling-convention rules.
+
+Verification catches structural violations before later optimization or code generation.
+
+This step ensures that the intermediate representation is well-formed and ready for
+
+transformation.
+
+The compiler checks that all values are defined before use, that types match across
+
+operations, and that control flow terminates correctly.
+
+If violations are detected, the compiler reports precise errors, preventing invalid
+
+code from reaching optimization passes.
+
+Verification acts as a safety net, ensuring that the IR maintains semantic integrity
+
+throughout the compilation pipeline.
+
+By enforcing these rules early, the compiler reduces the risk of incorrect optimizations
+
+and improves overall code quality.
+
+This boundary separates front-end validation from back-end transformation, allowing each
+
+stage,
+
+Code generation translates the verified intermediate representation into
+
+target-specific machine code.
+
+This process maps IR instructions to assembly or binary instructions, handling register
+
+allocation, instruction selection, and scheduling.
+
+The compiler ensures that the generated code respects the target architecture's constraints
+
+while preserving the program's semantics.
+
+Optimization boundaries define where target-independent transformations end and
+
+target-specific code generation begins.
+
+This separation allows the compiler to apply universal optimizations before committing to a
+
+specific architecture.
+
+The generated code is then linked and executed, completing the compilation pipeline.
+
+By maintaining a clear division between optimization and code generation, the compiler
+
+ensures that transformations are both safe and efficient.
+
+This stage bridges the gap between abstract program logic,
+
+Diagnostics provide precise error messages that guide developers in fixing compilation
+
+issues.
+
+The compiler analyzes the intermediate representation to identify type mismatches,
+
+undefined variables, and control flow violations.
+
+These checks occur at multiple stages, ensuring that errors are caught early and
+
+accurately.
+
+For example, if a variable is used before declaration, the compiler reports a precise
+
+location and suggests a fix.
+
+Diagnostics also include warnings for potential issues like unused variables or
 
 deprecated features.
 
-NARRATOR: By providing actionable feedback, the compiler improves developer productivity
+By providing actionable feedback, the compiler improves developer productivity and reduces
 
-and reduces debugging time.
+debugging time.
 
-NARRATOR: Effective diagnostics are essential for maintaining code quality and ensuring that
+Effective diagnostics are essential for maintaining code quality and ensuring that
 
 programs compile correctly.
 
-NARRATOR: This stage completes the front-end pipeline by ensuring that all errors are
+This stage completes the front-end pipeline by ensuring that all errors are identified and
 
-identified and reported before code generation.
+reported before code generation.
 
-NARRATOR: To trace one expression through the front-end pipeline, we follow 'x + 5' from raw
+To trace one expression through the front-end pipeline, we follow 'x + 5' from raw text to
 
-text to intermediate representation.
+intermediate representation.
 
-NARRATOR: The lexer groups characters into tokens: identifier 'x', operator '+', and
+The lexer groups characters into tokens: identifier 'x', operator '+', and number '5'.
 
-number '5'.
+The parser applies grammar rules to construct an abstract syntax tree with a binary
 
-NARRATOR: The parser applies grammar rules to construct an abstract syntax tree with a
+expression node.
 
-binary expression node.
+Semantic checks verify that 'x' is declared and typed correctly.
 
-NARRATOR: Semantic checks verify that 'x' is declared and typed correctly.
+The compiler then lowers the AST node into LLVM intermediate representation, producing an
 
-NARRATOR: The compiler then lowers the AST node into LLVM intermediate representation,
+addition instruction.
 
-producing an addition instruction.
+Verification ensures the IR obeys dominance and type rules.
 
-NARRATOR: Verification ensures the IR obeys dominance and type rules.
+Finally, code generation maps the instruction to target-specific assembly.
 
-NARRATOR: Finally, code generation maps the instruction to target-specific assembly.
+This trace demonstrates how each stage transforms the expression while preserving
 
-NARRATOR: This trace demonstrates how each stage transforms the expression while
+semantics.
 
-preserving semantics.
+By understanding this pipeline, developers can debug compilation issues and optimize code
 
-NARRATOR: By understanding this pipeline, developers can debug compilation issues and
+effectively.
 
-optimize code effectively.
-
-NARRATOR: The tutorial emphasizes that each representation has a specific contract and
+The tutorial emphasizes that each representation has a specific contract and
 
 that,

@@ -1,4 +1,4 @@
-NARRATOR: Begin by framing Course Foundations and Scope as a question about inputs,
+NARRATOR: Begin by framing Course Foundations and Prerequisites as a question about inputs,
 
 decisions, and observable results.
 
@@ -6,15 +6,13 @@ NARRATOR: The course will introduce students into the algorithmic foundations an
 
 methods used for security evaluation and tools design.
 
-NARRATOR: Consider this worked case: Students will study how modern security tools are built
+NARRATOR: Consider this worked case: Students must verify they have completed CSCI-351 or
 
-using algorithmic models rather than relying solely on manual inspection.
+the combined 4003-420 and 4003-440 sequence before enrolling.
 
-NARRATOR: On screen, display a slide with the course title and a simple diagram showing
+NARRATOR: On screen, display a prerequisite flowchart showing CSCI-351 or the
 
-'Algorithmic Foundations' and 'Modern Methods' as two interconnected pillars supporting
-
-'Security Evaluation & Tools Design'.
+4003-420/4003-440 path leading to CSCI-531 enrollment.
 
 NARRATOR: List the givens before choosing a method, because an unstated assumption can
 
@@ -22,25 +20,23 @@ change the conclusion.
 
 NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: Now define Theoretical Revision of Methods precisely enough that another learner
+NARRATOR: Now define Secure Software Development Framework Overview precisely
 
-could test the definition.
+enough that another learner could test the definition.
 
-NARRATOR: It will combine a theoretical revision of the methods and models currently
+NARRATOR: The Secure Software Development Framework groups practices into four practice
 
-applied for computer security evaluation and an investigation of computer security through
+groups.
 
-the study of user's practice.
+NARRATOR: Consider this worked case: Prepare the Organization establishes people,
 
-NARRATOR: Consider this worked case: Instructors will review established security
+processes, and technology for secure development, while Protect the Software
 
-models like threat modeling and access control frameworks to show how they form the basis of
+prevents unauthorized access to code.
 
-evaluation.
+NARRATOR: On screen, show a four-quadrant diagram labeling each practice group with its
 
-NARRATOR: On screen, show a flowchart comparing legacy security models with updated
-
-theoretical models, highlighting key algorithmic improvements.
+core function.
 
 NARRATOR: Separate the formal definition from an implementation detail, then identify what
 
@@ -48,19 +44,25 @@ evidence would distinguish them.
 
 NARRATOR: A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Modern Methods in Security
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
 
-Evaluation operates in a concrete sequence.
+throughout the analysis.
 
-NARRATOR: Motion methods compare observations across time.
+NARRATOR: With the foundation in place, examine how Prepare the Organization Practice
 
-NARRATOR: Consider this worked case: Students will examine how automated scanners and static
+operates in a concrete sequence.
 
-analysis tools use algorithmic patterns to detect vulnerabilities efficiently.
+NARRATOR: Prepare the Organization establishes people, processes, and technology for secure
 
-NARRATOR: On screen, illustrate a comparison table between manual evaluation and automated
+development.
 
-tool-based evaluation, focusing on speed, accuracy, and scalability.
+NARRATOR: Consider this worked case: A team creates a secure development policy and
+
+assigns security roles before writing code begins.
+
+NARRATOR: On screen, illustrate a checklist of people, processes, and technology setup with
+
+icons for each category.
 
 NARRATOR: Follow every arrow in order and name the state before and after each transition.
 
@@ -70,23 +72,21 @@ NARRATOR: Name each dependency explicitly, and keep labels and representations c
 
 throughout the analysis.
 
-NARRATOR: Next, compare the choices involved in Tools Design Principles and make the
+NARRATOR: Next, compare the choices involved in Protect the Software Practice and make the
 
 decision criteria explicit.
 
-NARRATOR: Evaluation tests sensitivity to viewpoint, lighting, occlusion, and data
+NARRATOR: Protect the Software prevents unauthorized access to code and development
 
-shift.
+artifacts.
 
-NARRATOR: Consider this worked case: The lesson will cover how tool developers
+NARRATOR: Consider this worked case: Source code repositories use role-based access
 
-structure code to handle diverse security threats while maintaining performance and
+control to restrict who can view or modify specific modules.
 
-reliability.
+NARRATOR: On screen, draw a locked vault icon over a code repository with access control
 
-NARRATOR: On screen, present a block diagram of a security tool architecture, showing input
-
-processing, analysis engine, and output reporting modules.
+badges indicating restricted permissions.
 
 NARRATOR: Compare alternatives against the same constraints so the evaluation does not
 
@@ -98,21 +98,21 @@ NARRATOR: Name each dependency explicitly, and keep labels and representations c
 
 throughout the analysis.
 
-NARRATOR: Apply User Practice Investigation to a worked situation instead of treating it as
+NARRATOR: Apply Produce Well-Secured Software Practice to a worked situation instead of
 
-an isolated definition.
+treating it as an isolated definition.
 
-NARRATOR: Motion estimation compares observations across frames.
+NARRATOR: Produce Well-Secured Software addresses security requirements, design,
 
-NARRATOR: Consider this worked case: Case studies will show how security protocols are
+verification, and release.
 
-implemented and adapted by different user groups in enterprise and academic
+NARRATOR: Consider this worked case: Developers complete a security requirements
 
-environments.
+document and run automated verification tests before deploying the software.
 
-NARRATOR: On screen, display a timeline graphic showing the evolution of user security
+NARRATOR: On screen, display a pipeline diagram showing requirements, design,
 
-practices from basic password policies to multi-factor authentication systems.
+verification, and release stages with checkmarks.
 
 NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
 
@@ -120,19 +120,25 @@ at each step.
 
 NARRATOR: The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Examine the tradeoffs in Algorithmic Foundations Overview, including what improves
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
 
-and what becomes more difficult.
+throughout the analysis.
 
-NARRATOR: Calibration estimates camera parameters needed for geometric measurement.
+NARRATOR: Examine the tradeoffs in Respond to Vulnerabilities Practice, including what
 
-NARRATOR: Consider this worked case: Students will explore how cryptographic algorithms and
+improves and what becomes more difficult.
 
-probabilistic models underpin secure communication and data protection strategies.
+NARRATOR: Respond to Vulnerabilities identifies, analyzes, remediates, and learns
 
-NARRATOR: On screen, show a simplified equation or logic tree representing a
+from discovered weaknesses.
 
-cryptographic hash function, explaining its role in data integrity verification.
+NARRATOR: Consider this worked case: A security audit finds a buffer overflow, which
+
+is patched, and the team updates their threat model based on the lesson learned.
+
+NARRATOR: On screen, show a circular feedback loop with arrows labeled identify, analyze,
+
+remediate, and learn.
 
 NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
 
@@ -140,25 +146,21 @@ acceptable.
 
 NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.
-
-NARRATOR: Stress-test the reasoning around Security Evaluation Models with an edge case
+NARRATOR: Stress-test the reasoning around Security Reasoning Process with an edge case
 
 and identify which assumption controls the outcome.
 
-NARRATOR: Appearance models describe how lighting, material, and viewpoint affect
+NARRATOR: Security reasoning identifies assets, trust boundaries, threats, controls,
 
-measured pixels.
+evidence, residual risk, and responsibilities.
 
-NARRATOR: Consider this worked case: The lesson will demonstrate how risk assessment
+NARRATOR: Consider this worked case: An analyst maps a web application's database as
 
-matrices and control frameworks guide security prioritization and resource allocation.
+an asset, defines the browser as a trust boundary, and lists SQL injection as a threat.
 
-NARRATOR: On screen, present a 2x2 risk matrix grid, with axes labeled 'Likelihood' and
+NARRATOR: On screen, create a flowchart connecting assets to trust boundaries, then to
 
-'Impact', illustrating how to categorize security threats.
+threats, controls, and residual risk calculations.
 
 NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
 
@@ -168,21 +170,19 @@ NARRATOR: The edge case reveals the boundary of the claim without discarding the
 
 core idea.
 
-NARRATOR: Use Practical Application Methods to diagnose a failure by separating symptoms,
+NARRATOR: Use Cryptographic Standards and Algorithms to diagnose a failure by separating
 
-causes, and corrective action.
+symptoms, causes, and corrective action.
 
-NARRATOR: Feature methods locate and describe repeatable image patterns.
+NARRATOR: Encryption supports confidentiality when keys and modes are used correctly.
 
-NARRATOR: Consider this worked case: Hands-on exercises will guide students through
+NARRATOR: Consider this worked case: AES-256 is an approved algorithm that provides
 
-configuring a security scanner and interpreting its output for a sample software
+confidentiality for data at rest when implemented with proper key management.
 
-system.
+NARRATOR: On screen, list approved algorithms like AES and RSA with their corresponding
 
-NARRATOR: On screen, show a screenshot of a security scanner dashboard with highlighted
-
-vulnerability reports, annotated with evaluation steps.
+security parameters and use cases.
 
 NARRATOR: Locate the first point where observed behavior diverges from expected
 
@@ -192,23 +192,21 @@ NARRATOR: The diagnosis is strongest when another person can reproduce the obser
 
 and the test.
 
-NARRATOR: Connect Problem-Solving Framework to the earlier ideas and explain how the pieces
+NARRATOR: Connect Modes of Operation and Key Management to the earlier ideas and explain
 
-work as one system.
+how the pieces work as one system.
 
-NARRATOR: The students will be required to complete a few homework assignments, to
+NARRATOR: Modes of operation define how a primitive processes data larger than one
 
-deliver a class presentation and to implement a team project.
+block.
 
-NARRATOR: Consider this worked case: The lesson will walk through a step-by-step
+NARRATOR: Consider this worked case: CBC mode processes multi-block data by chaining
 
-approach to identifying, analyzing, and mitigating a simulated security breach
+ciphertext blocks, and key management ensures keys are rotated regularly to limit exposure.
 
-scenario.
+NARRATOR: On screen, illustrate a block cipher processing multiple data blocks sequentially,
 
-NARRATOR: On screen, display a circular diagram with stages: 'Identify Threat',
-
-'Assess Impact', 'Select Countermeasure', 'Implement', 'Verify', 'Review'.
+alongside a key lifecycle diagram showing rotation and revocation steps.
 
 NARRATOR: Explain each connection explicitly and verify that information retains the same
 
@@ -218,25 +216,21 @@ NARRATOR: The synthesis matters only if every connection remains supported by th
 
 evidence.
 
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+NARRATOR: Finish with Security Evaluation and Practical Application as a practical checklist
 
-guide a new analysis.
+that can guide a new analysis.
 
-NARRATOR: Results depend on sampling, illumination, noise, training data,
+NARRATOR: Security depends on the complete protocol and implementation, not only an
 
-thresholds, and evaluation metrics.
+algorithm name.
 
-NARRATOR: Consider this worked case: Instructors will provide a checklist template
+NARRATOR: Consider this worked case: A system using a standard encryption algorithm fails
 
-that covers threat modeling, control verification, performance testing, and
+security evaluation because the implementation has a side-channel vulnerability.
 
-documentation requirements.
+NARRATOR: On screen, show a comparison chart between algorithm name vs. implementation
 
-NARRATOR: On screen, show a clean checklist graphic with checkboxes for 'Threat
-
-Identified', 'Control Applied', 'Test Result', 'Documentation Complete', and 'Approval
-
-Granted'.
+security, highlighting side-channel risks and validation checkpoints.
 
 NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
 

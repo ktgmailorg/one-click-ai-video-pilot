@@ -5,12 +5,12 @@
       "shots": [
         {
           "id": "beat-01-shot-001",
-          "phrase": "Begin by framing Lesson Introduction and Course Scope as a question about inputs, decisions, and observable results.",
+          "phrase": "Begin by framing Robot Software Architecture Overview as a question about inputs, decisions, and observable results.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: Students will implement various algorithms in simulation as well as on a real robot, and investigate and report on current research in the area.",
+          "phrase": "Consider this worked case: A navigation stack uses a perception node to publish camera data, a localization node to estimate pose, a planner to generate waypoints, a controller to compute velocities, and an actuator driver to send commands to wheels.",
           "type": "deterministic-svg"
         },
         {
@@ -25,12 +25,12 @@
       "shots": [
         {
           "id": "beat-02-shot-001",
-          "phrase": "Now define Software Architecture Fundamentals precisely enough that another learner could test the definition.",
+          "phrase": "Now define ROS 2 Node Communication Model precisely enough that another learner could test the definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: A typical architecture uses a central controller that routes data between independent modules, allowing each component to be updated without disrupting the entire system.",
+          "phrase": "Consider this worked case: A localization node subscribes to a topic publishing IMU data, while a planning service handles a request-response call to compute a path between two waypoints.",
           "type": "deterministic-svg"
         },
         {
@@ -45,12 +45,12 @@
       "shots": [
         {
           "id": "beat-03-shot-001",
-          "phrase": "With the foundation in place, examine how Reactive Motion Control Basics operates in a concrete sequence.",
+          "phrase": "With the foundation in place, examine how Parameter Configuration and Behavior operates in a concrete sequence.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: When an obstacle is detected, the robot adjusts its heading and speed instantly using a rule-based response function rather than recalculating a full path.",
+          "phrase": "Consider this worked case: A controller node uses a parameter named 'max_speed' to cap wheel velocity, which can be updated via a ROS 2 parameter server during simulation.",
           "type": "deterministic-svg"
         },
         {
@@ -65,12 +65,12 @@
       "shots": [
         {
           "id": "beat-04-shot-001",
-          "phrase": "Next, compare the choices involved in Map Building Techniques and make the decision criteria explicit.",
+          "phrase": "Next, compare the choices involved in Coordinate Transforms and Reference Frames and make the decision criteria explicit.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: Laser scanners record distance measurements that are triangulated to populate a grid-based map, which is then updated as the robot moves.",
+          "phrase": "Consider this worked case: A camera's local image coordinates are transformed into the robot's base link frame using a rotation matrix and translation vector to align with the map.",
           "type": "deterministic-svg"
         },
         {
@@ -85,12 +85,12 @@
       "shots": [
         {
           "id": "beat-05-shot-001",
-          "phrase": "Apply Localization Methods to a worked situation instead of treating it as an isolated definition.",
+          "phrase": "Apply Sensor Timestamping and Frame Interpretation to a worked situation instead of treating it as an isolated definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: The robot compares its camera feed to a pre-mapped image bank and calculates the best match to pinpoint its coordinates.",
+          "phrase": "Consider this worked case: LiDAR scans are tagged with a precise timestamp and attached to the robot's odometry frame, ensuring they align temporally with camera and IMU data.",
           "type": "deterministic-svg"
         },
         {
@@ -105,12 +105,12 @@
       "shots": [
         {
           "id": "beat-06-shot-001",
-          "phrase": "Examine the tradeoffs in Path Planning Algorithms, including what improves and what becomes more difficult.",
+          "phrase": "Examine the tradeoffs in Reactive Motion Control Principles, including what improves and what becomes more difficult.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: A search algorithm explores possible routes, pruning dead ends and selecting the shortest path based on distance and energy constraints.",
+          "phrase": "Consider this worked case: A velocity controller reduces forward speed when a proximity sensor detects an obstacle within two meters, preventing collisions without full replanning.",
           "type": "deterministic-svg"
         },
         {
@@ -125,17 +125,17 @@
       "shots": [
         {
           "id": "beat-07-shot-001",
-          "phrase": "Stress-test the reasoning around Simulation vs.",
+          "phrase": "Stress-test the reasoning around Map Building and Localization with an edge case and identify which assumption controls the outcome.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Course offered every other year.",
+          "phrase": "Consider this worked case: A SLAM algorithm fuses wheel odometry and camera images to update a grid map, then uses feature matching to locate the robot's current pose.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-003",
-          "phrase": "On screen, split screen showing a simulation interface on the left and a photo of a real robot on the right, with a checkmark indicating successful deployment.",
+          "phrase": "Change one assumption at a time and observe which part of the reasoning no longer holds.",
           "type": "deterministic-svg"
         }
       ]
@@ -145,12 +145,12 @@
       "shots": [
         {
           "id": "beat-08-shot-001",
-          "phrase": "Use Research Investigation and Reporting to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "phrase": "Use Path Planning in Dynamic Environments to diagnose a failure by separating symptoms, causes, and corrective action.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: A student analyzes a recent paper on dynamic path planning, summarizes key findings, and proposes a modification for classroom implementation.",
+          "phrase": "Consider this worked case: A reactive planner recalculates a route when a moving pedestrian enters the robot's path, inserting a detour that maintains safety margins and task completion time.",
           "type": "deterministic-svg"
         },
         {
@@ -165,12 +165,12 @@
       "shots": [
         {
           "id": "beat-09-shot-001",
-          "phrase": "Connect Prerequisites and Course Logistics to the earlier ideas and explain how the pieces work as one system.",
+          "phrase": "Connect Simulation and Physical Deployment to the earlier ideas and explain how the pieces work as one system.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: Students must have completed foundational programming courses before enrolling, ensuring they possess the necessary technical background.",
+          "phrase": "Consider this worked case: A navigation algorithm is first validated in a physics engine simulation, then deployed on a wheeled robot to verify real-world performance and adjust parameters accordingly.",
           "type": "deterministic-svg"
         },
         {
@@ -190,7 +190,7 @@
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: The checklist includes items like 'Modular code structure verified', 'Reactive response time < 100ms', 'Map update frequency consistent', and 'Path deviation within tolerance'.",
+          "phrase": "Consider this worked case: A developer checks that message latency stays below 50 milliseconds, verifies sensor noise does not exceed calibration thresholds, and confirms safety zones are enforced before field testing.",
           "type": "deterministic-svg"
         },
         {
@@ -201,6 +201,6 @@
       ]
     }
   ],
-  "episodeId": "csci-632-mobile-robot-programming-foundations-lesson-blueprint",
+  "episodeId": "csci-632-mobile-robot-programming-foundations",
   "schemaVersion": 1
 }

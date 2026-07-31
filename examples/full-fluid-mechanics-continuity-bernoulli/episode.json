@@ -1,0 +1,293 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "We begin by isolating a specific region of flowing fluid, which we call a control volume. Imagine drawing a transparent box around a section of a water pipe. This boundary is purely imaginary, but it allows us to track exactly what enters and leaves without worrying about the fluid outside. The control volume concept transforms a complex, continuous system into a manageable mathematical framework. By focusing only on the mass crossing this imaginary surface, we can apply conservation laws directly to the flow. This approach is essential because it separates the internal dynamics from external influences, letting us analyze steady conditions systematically. We will now examine how mass behaves within this defined space.",
+      "plannedSeconds": 60,
+      "title": "Defining the Control Volume",
+      "visualDirection": "template:showcase-fluids | A clear, editable diagram showing a transparent rectangular box drawn around a horizontal pipe segment. Arrows indicate fluid entering the left face and exiting the right face. The"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Density measures how much mass occupies a given volume, acting as the bridge between mass and space. In our control volume, density determines how tightly packed the fluid molecules are. If we compress the fluid, density increases, meaning more mass fits into the same volume. Conversely, heating the fluid expands it, lowering density. This property is crucial because it dictates how the fluid responds to pressure changes and area variations. We treat density as a fundamental material property that remains constant for liquids but can shift for gases. Recognizing density allows us to predict how mass distributes itself within our imaginary boundary before analyzing motion.",
+      "plannedSeconds": 60,
+      "title": "Understanding Density",
+      "visualDirection": "template:showcase-fluids | A clear, editable diagram showing a transparent rectangular box drawn around a horizontal pipe section. Arrows indicate fluid entering the left face and exiting the right face. The"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "Mass flow rate quantifies how much mass crosses a plane each second. Imagine a conveyor belt carrying boxes; the mass flow rate tells you exactly how many boxes pass a checkpoint per minute. Mathematically, we multiply density by the cross-sectional area and the average velocity to get this value. This formula works because density gives mass per volume, area gives volume per length, and velocity gives length per time. When you combine them, volume and length cancel out, leaving mass per time. This calculation is foundational because it converts spatial dimensions into a temporal rate, allowing us to track material movement through our control volume.",
+      "plannedSeconds": 60,
+      "title": "Calculating Mass Flow Rate",
+      "visualDirection": "template:showcase-fluids | A clear, editable diagram showing a transparent rectangular box drawn around a horizontal pipe section. Arrows indicate fluid entering the left face and exiting the right face. The"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "Continuity enforces mass conservation within our control volume. If mass enters at a certain rate, it must exit at the exact same rate when the flow is steady. No mass accumulates inside the box, and no sources or sinks exist within it. This principle means the product of density, area, and velocity remains constant along the pipe. If the pipe narrows, the fluid must speed up to maintain the same mass flow rate. Conversely, if the pipe widens, the fluid slows down. This relationship holds regardless of the fluid type, provided we account for density changes in compressible gases. Continuity is the first law of fluid mechanics in action, dictating how geometry forces velocity to adjust.",
+      "plannedSeconds": 60,
+      "title": "Applying Continuity",
+      "visualDirection": "template:showcase-fluids | A clear, editable diagram showing a transparent rectangular box drawn around a horizontal pipe section. Arrows indicate fluid entering the left face and exiting the right face. The"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Pressure in a flowing fluid splits into two distinct components. Static pressure measures the fluid's inherent thermodynamic energy, independent of motion. Dynamic pressure quantifies the kinetic energy associated with the fluid's velocity. When fluid moves faster, dynamic pressure increases while static pressure typically decreases. This trade-off occurs because total energy remains constant in ideal conditions. We visualize this by imagining a stationary observer measuring static pressure with a wall-mounted gauge, versus a moving observer experiencing dynamic pressure as a ram effect. Understanding both components allows us to predict how forces distribute across pipe walls and how velocity changes affect pressure readings.",
+      "plannedSeconds": 60,
+      "title": "Static and Dynamic Pressure",
+      "visualDirection": "template:showcase-fluids | A clear, editable diagram showing a transparent rectangular box drawn around a horizontal pipe section. Arrows indicate fluid entering the left face and exiting the right face. The"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "Bernoulli's equation links static pressure, dynamic pressure, and total pressure along a streamline. It states that the sum of static pressure and one-half density times velocity squared equals a constant total pressure. This relationship emerges from energy conservation, assuming steady, inviscid, incompressible flow without heat addition, shaft work, or significant elevation changes. These assumptions simplify reality but are critical for accurate predictions. If viscosity, compressibility, pumps, turbines, heat transfer, or unsteady behavior materially affect the flow, Bernoulli's simplified form fails. We must verify these conditions before applying the equation to real-world systems.",
+      "plannedSeconds": 60,
+      "title": "Bernoulli's Equation and Assumptions",
+      "visualDirection": "template:showcase-fluids | A clear, editable diagram showing a transparent rectangular box drawn around a horizontal pipe section. Arrows indicate fluid entering the left face and exiting the right face. The"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "Combining continuity and Bernoulli's equation reveals how pipe geometry dictates pressure and velocity. When a pipe narrows, continuity forces velocity to increase. Bernoulli's equation then predicts that this velocity increase must be offset by a drop in static pressure. Conversely, a widening pipe reduces velocity and raises static pressure. This inverse relationship between area and pressure is fundamental to designing ducts, nozzles, and Venturi meters. We can visualize this by tracking pressure gauges along a tapered pipe: readings will fall in the narrow section and rise in the wide section. These relationships allow engineers to predict flow behavior without complex simulations.",
+      "plannedSeconds": 60,
+      "title": "Area-Velocity-Pressure Relationships",
+      "visualDirection": "template:showcase-fluids | A clear, editable diagram showing a transparent rectangular box drawn around a horizontal pipe section. Arrows indicate fluid entering the left face and exiting the right face. The"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "Pitot measurement exploits the area-velocity-pressure relationship to determine fluid speed. A Pitot tube points directly into the flow, capturing dynamic pressure at its stagnation point. A static port measures the ambient static pressure. The difference between these two readings equals dynamic pressure, which we convert to velocity using Bernoulli's equation. This technique is widely used in aviation and HVAC systems to map airflow patterns. By placing multiple Pitot probes along a duct, we can reconstruct the velocity profile and verify theoretical predictions. The method relies on accurate pressure sensing and assumes the flow remains undisturbed by the probe itself.",
+      "plannedSeconds": 60,
+      "title": "Pitot Measurement",
+      "visualDirection": "template:showcase-fluids | A clear, editable diagram showing a transparent rectangular box drawn around a horizontal pipe section. Arrows indicate fluid entering the left face and exiting the right face. The"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Real flows rarely meet ideal assumptions, introducing energy losses that invalidate simple Bernoulli calculations. Friction against pipe walls, turbulence, and sudden expansions dissipate mechanical energy into heat. These losses reduce the total pressure available for flow, meaning static and dynamic pressure sums will not remain constant. We must recognize invalid applications when viscosity, compressibility, pumps, turbines, heat transfer, or unsteady behavior materially affect the flow. In such cases, we switch to the general energy equation or use empirical loss coefficients. Identifying these limitations prevents erroneous predictions and ensures engineering designs account for real-world inefficiencies.",
+      "plannedSeconds": 60,
+      "title": "Losses and Invalid Applications",
+      "visualDirection": "template:showcase-fluids | A clear, editable diagram showing a transparent rectangular box drawn around a horizontal pipe section. Arrows indicate fluid entering the left face and exiting the right face. The"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "Let us apply these concepts to a narrowing-pipe example. Suppose water flows through a pipe with an inlet area of 0. 05 square meters at 2 meters per second. The outlet area shrinks to 0. 025 square meters. Using continuity, we find the outlet velocity doubles to 4 meters per second. Assuming incompressible flow, density remains 1000 kilograms per cubic meter. Applying Bernoulli's equation, we calculate the static pressure drop. The dynamic pressure increases by half density times the velocity change squared, yielding a measurable pressure difference. This step-by-step calculation demonstrates how area reduction forces velocity increase and static pressure decrease, completing our practical analysis.",
+      "plannedSeconds": 60,
+      "title": "Narrowing-Pipe Example with Units",
+      "visualDirection": "template:showcase-fluids | A clear, editable diagram showing a transparent rectangular box drawn around a horizontal pipe section. Arrows indicate fluid entering the left face and exiting the right face. The"
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "nasa-mass-flow"
+      ],
+      "text": "NASA Glenn explains mass conservation for flow through a tube. Mass flow rate is the mass crossing a plane per unit time and can be written as density times area times average velocity for a one-dimensional model. With",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "nasa-mass-flow"
+      ],
+      "text": "NASA Glenn explains mass conservation for flow through a tube. Mass flow rate is the mass crossing a plane per unit time and can be written as density times area times average velocity for a one-dimensional model. With",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "nasa-mass-flow"
+      ],
+      "text": "NASA Glenn explains mass conservation for flow through a tube. Mass flow rate is the mass crossing a plane per unit time and can be written as density times area times average velocity for a one-dimensional model. With",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "nasa-mass-flow"
+      ],
+      "text": "NASA Glenn explains mass conservation for flow through a tube. Mass flow rate is the mass crossing a plane per unit time and can be written as density times area times average velocity for a one-dimensional model. With",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "nasa-bernoulli"
+      ],
+      "text": "NASA Glenn presents Bernoulli's equation as a conservation-of-energy relation for restricted flow conditions. A common form relates static pressure and one-half density times velocity squared to total pressure. That form",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "nasa-bernoulli"
+      ],
+      "text": "NASA Glenn presents Bernoulli's equation as a conservation-of-energy relation for restricted flow conditions. A common form relates static pressure and one-half density times velocity squared to total pressure. That form",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "nasa-bernoulli"
+      ],
+      "text": "NASA Glenn presents Bernoulli's equation as a conservation-of-energy relation for restricted flow conditions. A common form relates static pressure and one-half density times velocity squared to total pressure. That form",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "nasa-bernoulli"
+      ],
+      "text": "NASA Glenn presents Bernoulli's equation as a conservation-of-energy relation for restricted flow conditions. A common form relates static pressure and one-half density times velocity squared to total pressure. That form",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "nasa-bernoulli"
+      ],
+      "text": "NASA Glenn presents Bernoulli's equation as a conservation-of-energy relation for restricted flow conditions. A common form relates static pressure and one-half density times velocity squared to total pressure. That form",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "nasa-mass-flow"
+      ],
+      "text": "NASA Glenn explains mass conservation for flow through a tube. Mass flow rate is the mass crossing a plane per unit time and can be written as density times area times average velocity for a one-dimensional model. With",
+      "verified": true
+    }
+  ],
+  "id": "introductory-fluid-mechanics-control-volumes-to-narrowing-pipes",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "NASA Glenn Research Center",
+      "excerpt": "NASA Glenn explains mass conservation for flow through a tube. Mass flow rate is the mass crossing a plane per unit time and can be written as density times area times average velocity for a one-dimensional model. With no accumulation or source inside a steady control volume, inlet and outlet mass flow rates match. For incompressible flow, constant density reduces continuity to an area-velocity relationship. A smaller area therefore requires a larger average velocity for the same volumetric flow rate. Compressible gas flow needs the density change to remain in the equation, and high-speed flow introduces additional limits.",
+      "id": "nasa-mass-flow",
+      "sha256": "63022c96f4e123398d8f14b67ad619827cf4d2c74e01e1afd9b302f464db8356",
+      "title": "Mass Flow Rate",
+      "type": "note",
+      "uri": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/mass-flow-rate/",
+      "verified": true
+    },
+    {
+      "author": "NASA Glenn Research Center",
+      "excerpt": "NASA Glenn presents Bernoulli's equation as a conservation-of-energy relation for restricted flow conditions. A common form relates static pressure and one-half density times velocity squared to total pressure. That simplified form assumes steady, inviscid, incompressible flow without heat addition, shaft work, or significant elevation change along the comparison. Different assumptions require a more general energy equation. Applications include changing-area ducts and pitot-static speed measurement. Bernoulli's equation must not be used as a universal explanation when viscosity, compressibility, pumps, turbines, heat transfer, or unsteady behavior materially affect the flow.",
+      "id": "nasa-bernoulli",
+      "sha256": "9b0cddad532a393425806560554d35204ee33163ffed28c5091f49b6a30fcfe3",
+      "title": "Bernoulli’s Equation",
+      "type": "note",
+      "uri": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/bernoullis-equation/",
+      "verified": true
+    }
+  ],
+  "title": "Introductory Fluid Mechanics: Control Volumes to Narrowing Pipes"
+}

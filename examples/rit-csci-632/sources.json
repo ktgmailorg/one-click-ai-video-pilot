@@ -13,20 +13,20 @@
       "verified": true
     },
     {
-      "id": "opencv-documentation",
-      "title": "OpenCV Documentation",
-      "uri": "https://docs.opencv.org/4.x/",
-      "author": "OpenCV",
-      "content": "Computer vision pipelines represent images as numeric arrays. Color conversion changes the coordinate representation of pixel values. Filtering combines neighboring samples to smooth, sharpen, or detect structure. Feature methods locate and describe repeatable image patterns. Calibration estimates camera parameters needed for geometric measurement. Geometric transforms map coordinates between image representations. Segmentation assigns pixels or regions to selected categories. Motion methods compare observations across time. Results depend on sampling, illumination, noise, training data, thresholds, and evaluation metrics.",
+      "id": "ros-2-concepts",
+      "title": "ROS 2 Concepts",
+      "uri": "https://docs.ros.org/en/rolling/Concepts/Basic.html",
+      "author": "Open Robotics",
+      "content": "ROS 2 organizes a robot application as nodes that communicate through typed interfaces. Topics support publish-subscribe streams, services support request-response interactions, and actions support longer-running goals with feedback and cancellation. Parameters configure node behavior. Coordinate transforms describe relationships among reference frames. Sensors produce observations that must be timestamped and interpreted in the correct frame. Robot software separates sensing, state estimation, planning, control, and actuation while making message contracts and timing assumptions explicit. Testing should consider latency, dropped messages, sensor noise, actuator limits, safety boundaries, and the difference between simulation and physical operation.",
       "type": "note",
       "verified": true
     },
     {
-      "id": "mit-computer-vision",
-      "title": "MIT OpenCourseWare Advances in Computer Vision",
-      "uri": "https://ocw.mit.edu/courses/6-819-advances-in-computer-vision-spring-2018/",
-      "author": "MIT OpenCourseWare",
-      "content": "Computer vision connects image evidence to models of geometry, appearance, motion, objects, and scenes. Projective geometry relates three-dimensional points to image coordinates. Appearance models describe how lighting, material, and viewpoint affect measured pixels. Motion estimation compares observations across frames. Object recognition maps visual evidence to object hypotheses. Scene understanding combines objects, layout, and contextual relationships. A rigorous pipeline states the task, representation, assumptions, supervision, and decision rule. Evaluation tests sensitivity to viewpoint, lighting, occlusion, and data shift.",
+      "id": "opencv-documentation",
+      "title": "OpenCV Documentation",
+      "uri": "https://docs.opencv.org/4.x/",
+      "author": "OpenCV",
+      "content": "Computer vision pipelines represent images as numeric arrays. Color conversion changes the coordinate representation of pixel values. Filtering combines neighboring samples to smooth, sharpen, or detect structure. Feature methods locate and describe repeatable image patterns. Calibration estimates camera parameters needed for geometric measurement. Geometric transforms map coordinates between image representations. Segmentation assigns pixels or regions to selected categories. Motion methods compare observations across time. Results depend on sampling, illumination, noise, thresholds, coordinate frames, and evaluation metrics.",
       "type": "note",
       "verified": true
     }

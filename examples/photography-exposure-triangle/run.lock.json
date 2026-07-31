@@ -1,0 +1,597 @@
+{
+  "approvals": [
+    {
+      "approvedAt": "2026-07-31T15:50:44.420Z",
+      "notes": "Verifies declared claim-to-source bindings for draft rendering only; this is not instructor or release approval.",
+      "reviewer": "Automated source-pack verification (draft)",
+      "role": "automation",
+      "schemaVersion": 1,
+      "stage": "script",
+      "subjectSha256": "8acd0e281d26116bb314b3b34bdf62d489a8f8bd16ee237a7381e2c69020141d"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/render/documentary-master.core.mp4",
+      "role": "master",
+      "sha256": "2ba5958ede38687321698b7bf0a1ef18ab766bc395c2bf6b2b768f83d86b03f9"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/narration/captions.vtt",
+      "role": "captions-vtt",
+      "sha256": "0d4c35bc38eb4671922dc89820f177e3818ec3c8889ee053779e56ff4728cdd4"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/narration/captions.srt",
+      "role": "captions-srt",
+      "sha256": "60157913e5dfd8a615edf860ffd97c0945a595555ed0c147e133ce23ad1f65eb"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/narration/transcript.txt",
+      "role": "transcript-text",
+      "sha256": "7b77fc12b90d05b866d35a3638dd40454e50495b0e4159c8bcb0861cb84a6805"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/narration/transcript.html",
+      "role": "transcript-html",
+      "sha256": "d69bd569bf5579f9a565c354975407321e7abf91c94e720cbc8aa8a3a6a76080"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/visuals/thumbnail.png",
+      "role": "thumbnail",
+      "sha256": "4d73460df825dd2f0f56ec69ca8c6c325df8c30944c341f52a1762321f276225"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/visuals/beat-01/beat-01-shot-001.png",
+      "role": "shot",
+      "sha256": "fd2ede173fe3f9307a50e8e61fff1ceb991b93e893fd4a438f3340ddf5248cbd",
+      "shotId": "beat-01-shot-001"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/visuals/beat-01/beat-01-shot-002.png",
+      "role": "shot",
+      "sha256": "2e5e0126aa9111462040e909638b6f0625b4265243eebfa92f0dc27e069e76f8",
+      "shotId": "beat-01-shot-002"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/visuals/beat-01/beat-01-shot-003.png",
+      "role": "shot",
+      "sha256": "de7cac62f3ff8202be18c4466e871290a24be0fa09294ca0182c7438c66c50c4",
+      "shotId": "beat-01-shot-003"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/visuals/beat-02/beat-02-shot-001.png",
+      "role": "shot",
+      "sha256": "54ef60c897ce54fa2c9e8258331f4c15dc2d1d53d32457e6ecdeec0c054aedad",
+      "shotId": "beat-02-shot-001"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/visuals/beat-02/beat-02-shot-002.png",
+      "role": "shot",
+      "sha256": "4d1c8787f4d3624e29be17039e952e16141fe2ceb84a639d62a6cef4c7f11266",
+      "shotId": "beat-02-shot-002"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/visuals/beat-02/beat-02-shot-003.png",
+      "role": "shot",
+      "sha256": "eca6eb5ebef63addd2e0e8ad66df67a18720caf708426785d43563ce250f7d2f",
+      "shotId": "beat-02-shot-003"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/visuals/beat-02/beat-02-shot-004.png",
+      "role": "shot",
+      "sha256": "c73ac255fb153b2161533802c81f9eca0129c508d1bd3b467a8a9b030733ecbe",
+      "shotId": "beat-02-shot-004"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/visuals/beat-03/beat-03-shot-001.png",
+      "role": "shot",
+      "sha256": "b291c0ae73d6ac9dab69bed46ca55b07e8f10a24cc1e00f9fe4cbf8b699f4c19",
+      "shotId": "beat-03-shot-001"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/visuals/beat-03/beat-03-shot-002.png",
+      "role": "shot",
+      "sha256": "e5762dbaf2c92d54ffc63969867e28c07a67c6087783d41a1afc26231e1c8fef",
+      "shotId": "beat-03-shot-002"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/visuals/beat-03/beat-03-shot-003.png",
+      "role": "shot",
+      "sha256": "a2f20678a2317f0fff30647591b840ae17cc59f6a476c5a8ba981a1327fd9b8e",
+      "shotId": "beat-03-shot-003"
+    }
+  ],
+  "configSha256": "56c99b9b8919c0f96b7b5e74fb105d66bdcb0489b5e4a323ba32984b628db251",
+  "createdAt": "2026-07-31T15:51:07.593Z",
+  "final": {
+    "releaseAudit": {
+      "blockers": [],
+      "checks": [
+        {
+          "name": "frame",
+          "ok": true,
+          "value": "1920x1080"
+        },
+        {
+          "name": "frame-rate",
+          "ok": true,
+          "value": "30000/1001"
+        },
+        {
+          "name": "audio-sample-rate",
+          "ok": true,
+          "value": 48000
+        },
+        {
+          "name": "rit-orange-token",
+          "ok": true,
+          "value": "#F76902"
+        },
+        {
+          "name": "orange-on-black-contrast",
+          "ok": true,
+          "value": 6.98
+        },
+        {
+          "name": "title-safe-template",
+          "ok": true,
+          "value": "96px minimum inset"
+        },
+        {
+          "name": "font-fallbacks",
+          "ok": true,
+          "value": "Arial/Liberation Sans and Georgia/Liberation Serif"
+        },
+        {
+          "name": "final-master-loudness",
+          "ok": true,
+          "value": {
+            "integratedLufs": -16.1,
+            "loudnessRangeLu": 2.1,
+            "ok": true,
+            "schemaVersion": 1,
+            "targetIntegratedLufs": -16,
+            "targetTruePeakDbtp": -1.5,
+            "truePeakDbtp": -2.12
+          }
+        },
+        {
+          "name": "caption-audio-start-sync",
+          "ok": true,
+          "value": {
+            "audioStartSeconds": 0,
+            "captionStartSeconds": 0.05,
+            "maximumOffsetSeconds": 0.25,
+            "offsetSeconds": 0.05
+          }
+        },
+        {
+          "name": "subject-matched-visuals",
+          "ok": true,
+          "value": {
+            "genericShotIds": [],
+            "resolvedTemplates": [
+              "showcase-exposure"
+            ]
+          }
+        }
+      ],
+      "ok": true,
+      "releaseState": "course-draft",
+      "warnings": []
+    },
+    "render": {
+      "audioQuality": {
+        "integratedLufs": -16.1,
+        "loudnessRangeLu": 2.1,
+        "ok": true,
+        "schemaVersion": 1,
+        "targetIntegratedLufs": -16,
+        "targetTruePeakDbtp": -1.5,
+        "truePeakDbtp": -2.12
+      },
+      "audioSampleRate": 48000,
+      "audioStartSeconds": 0,
+      "cache": {
+        "draft": false,
+        "draftSkipped": false,
+        "master": false,
+        "sectionCount": 3,
+        "sections": 0
+      },
+      "draftPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/render/documentary-master.DRAFT.mp4",
+      "durationSeconds": 62.321333,
+      "encoder": {
+        "codec": "h264_videotoolbox",
+        "mode": "videotoolbox",
+        "prioritizeSpeed": false,
+        "profile": "high",
+        "quality": "80",
+        "realtime": true
+      },
+      "frameRate": "30000/1001",
+      "height": 1080,
+      "master": "documentary-master.core.mp4",
+      "masterPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/render/documentary-master.core.mp4",
+      "schemaVersion": 1,
+      "sections": [
+        {
+          "beatId": "beat-01",
+          "cacheHit": false,
+          "durationSeconds": 21.264,
+          "output": "beat-01.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/render/sections/beat-01.mp4",
+          "renderSignature": "c6061fb33ed78ae2402c8dfb9b739a6e5bbf61346f82103ab6a581ad2afa1e05",
+          "schemaVersion": 1,
+          "sha256": "3ee2fc8d975bd46de5bde2b9dde0aec4c8d6ef7320effeb701d9fa39c3d40da9"
+        },
+        {
+          "beatId": "beat-02",
+          "cacheHit": false,
+          "durationSeconds": 20.256,
+          "output": "beat-02.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/render/sections/beat-02.mp4",
+          "renderSignature": "09a5208ddc94b8124bfbef5c3fe16c916cdf30d7c0220e9f6b780f9969c28860",
+          "schemaVersion": 1,
+          "sha256": "eae1a716699af4e1d3dc9c36530e83951764925e6016243272eae8b03b445801"
+        },
+        {
+          "beatId": "beat-03",
+          "cacheHit": false,
+          "durationSeconds": 20.688,
+          "output": "beat-03.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/photography-exposure-triangle/work/render/sections/beat-03.mp4",
+          "renderSignature": "844cddabcff0028aa9c17067f26d4447f59cd558799e4730521137af97d78036",
+          "schemaVersion": 1,
+          "sha256": "a65a87c5697b2c2984c1d40b5d12054932ed6c8c1326b1758065d47e3a9e1f23"
+        }
+      ],
+      "sha256": "2ba5958ede38687321698b7bf0a1ef18ab766bc395c2bf6b2b768f83d86b03f9",
+      "title": "How the Exposure Triangle Shapes an Image",
+      "width": 1920
+    }
+  },
+  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "inputSha256": "88aea00aa196b01ba8fc99be74e950b0dcbe4d9efca59278a2e974c4efe1ace5",
+  "mode": "record",
+  "providers": {
+    "edge-narration": {
+      "capabilities": [
+        "speech.synthesize"
+      ],
+      "executionLocation": "hosted",
+      "id": "edge-tts",
+      "mimeTypes": {
+        "speech.synthesize": [
+          "audio/mpeg",
+          "text/vtt"
+        ]
+      },
+      "profileName": "edge-narration",
+      "supportsAsyncJobs": false,
+      "supportsModelDiscovery": false,
+      "supportsSeed": false,
+      "supportsStructuredOutput": false,
+      "version": "7.2.8",
+      "voicePresets": {
+        "female": "en-US-EmmaMultilingualNeural",
+        "male": "en-US-AndrewMultilingualNeural"
+      }
+    }
+  },
+  "requests": [
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 14032,
+      "lookupSha256": "cdd986e806f2eeecde2fd98f91652e6aaa87a1c8f3f1f02b9db5b875c364b98d",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "Exposure is not one brightness dial. It is the combined result of aperture, shutter speed, and ISO. If one setting admits or records less light, another may need to compensate. The useful question is not only whether the image is bright enough, but what visual trade-off each setting creates."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "25bce1e24070f1a9c8c459363b504867f7b4a6785d8c76b7b4acec456776ce83",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/81/8113211989561ace6c49f7471f15c9df6b2a837dda4306368d6df127848bd038.mp3",
+            "sha256": "8113211989561ace6c49f7471f15c9df6b2a837dda4306368d6df127848bd038",
+            "size": 127584
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/7d/7d11636d1b53ae25934414682527f375927625e97aedef07afa7676918e9de16.vtt",
+            "sha256": "7d11636d1b53ae25934414682527f375927625e97aedef07afa7676918e9de16",
+            "size": 425
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/f6/f6d15fcbbeb856ed7b7fa244880aa3fe798cf8fb47723839cb17232593497351.json",
+          "sha256": "f6d15fcbbeb856ed7b7fa244880aa3fe798cf8fb47723839cb17232593497351",
+          "size": 98
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-29T23:20:17.040Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 23243,
+      "lookupSha256": "89d534b1c36423a02fb578bd5ee78adc419f3fbe860f13a7b47e598265098dc1",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "A wider aperture admits more light and can produce shallower depth of field. A narrower aperture admits less light and can keep more of the scene in focus. A fast shutter can freeze motion; a slow shutter records motion across time. These are creative decisions as well as exposure decisions."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "5ae19f5fcfd37a96bfe54b1cc800d9edb5a8d99aab9c3a6ea6d65bb824a7b5ad",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/4b/4bf7fe105b582199ec32d81d4bf852e3d35f28afd358e0c1acd2e6baf398991b.mp3",
+            "sha256": "4bf7fe105b582199ec32d81d4bf852e3d35f28afd358e0c1acd2e6baf398991b",
+            "size": 121536
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/e8/e8b99b4224b687133c277310507fe930c8e6ff54d686ead994348c69916081d1.vtt",
+            "sha256": "e8b99b4224b687133c277310507fe930c8e6ff54d686ead994348c69916081d1",
+            "size": 425
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/f6/f6d15fcbbeb856ed7b7fa244880aa3fe798cf8fb47723839cb17232593497351.json",
+          "sha256": "f6d15fcbbeb856ed7b7fa244880aa3fe798cf8fb47723839cb17232593497351",
+          "size": 98
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-29T23:21:29.476Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 15385,
+      "lookupSha256": "074731491479176c39ceb035dae4be7719943671dd7e84b63b483e1df6bf6efa",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "When depth of field and motion already determine aperture and shutter speed, ISO can help reach a usable brightness. Raising it can also make noise more visible and reduce image quality. Start from the look the photograph needs, then balance the three controls instead of treating any one setting as automatically correct."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "a2f88036ad23e3ec8711469b72f944e3ab0b6ab0519f2641068f6774ac24d88e",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ac/ac4c303aa643d759559db8353f06c7bfcca8382c188b06e8133aee2c7461d43a.mp3",
+            "sha256": "ac4c303aa643d759559db8353f06c7bfcca8382c188b06e8133aee2c7461d43a",
+            "size": 124128
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/d5/d535e9af4f8272985ce794c17b0906c42a2ef0efe22216357d7b75545151baaa.vtt",
+            "sha256": "d535e9af4f8272985ce794c17b0906c42a2ef0efe22216357d7b75545151baaa",
+            "size": 422
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/f6/f6d15fcbbeb856ed7b7fa244880aa3fe798cf8fb47723839cb17232593497351.json",
+          "sha256": "f6d15fcbbeb856ed7b7fa244880aa3fe798cf8fb47723839cb17232593497351",
+          "size": 98
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-29T23:21:52.830Z"
+    }
+  ],
+  "runId": "how-the-exposure-triangle-shapes-an-image-460e1b413323",
+  "schemaVersion": 1,
+  "stages": [
+    {
+      "name": "plan",
+      "status": "complete"
+    },
+    {
+      "name": "script-approval",
+      "status": "complete"
+    },
+    {
+      "name": "visual-approval",
+      "status": "complete"
+    },
+    {
+      "name": "narration",
+      "status": "complete"
+    },
+    {
+      "name": "visual-generation",
+      "status": "complete"
+    },
+    {
+      "name": "render",
+      "status": "complete"
+    },
+    {
+      "name": "release-qa",
+      "status": "complete"
+    },
+    {
+      "name": "release-approval",
+      "status": "waiting"
+    }
+  ],
+  "status": "awaiting-approval",
+  "toolchain": {
+    "ffmpeg": {
+      "available": true,
+      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "available": true,
+      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "gitChangedPaths": [
+      "outreach/README.md",
+      "outreach/general-email.md",
+      "outreach/leadership-confirmation.md"
+    ],
+    "gitDirty": true,
+    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
+    "node": "v22.23.1",
+    "platform": "darwin-arm64",
+    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtimeDirty": false,
+    "sharp": {
+      "aom": "3.14.1",
+      "archive": "3.8.8",
+      "cairo": "1.18.4",
+      "cgif": "0.5.3",
+      "exif": "0.6.26",
+      "expat": "2.8.2",
+      "ffi": "3.6.0",
+      "fontconfig": "2.18.1",
+      "freetype": "2.14.3",
+      "fribidi": "1.0.16",
+      "glib": "2.89.1",
+      "harfbuzz": "14.2.1",
+      "heif": "1.23.1",
+      "highway": "1.4.0",
+      "imagequant": "2.4.1",
+      "lcms": "2.19.1",
+      "mozjpeg": "0826579",
+      "pango": "1.58.0",
+      "pixman": "0.46.4",
+      "png": "1.6.58",
+      "proxy-libintl": "0.5",
+      "rsvg": "2.62.90",
+      "sharp": "0.35.3",
+      "tiff": "d01a94b",
+      "uhdr": "1acdbed",
+      "vips": "8.18.3",
+      "webp": "1.6.0",
+      "xml2": "2.15.3",
+      "zlib-ng": "2.3.3"
+    }
+  },
+  "totalCostUsd": 0
+}

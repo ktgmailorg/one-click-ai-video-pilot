@@ -1,0 +1,441 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "Programming begins before code.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "Start by stating what information enters the program, what result must leave it, and which constraints must always hold.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "For a grade calculator, inputs may be scores and weights; the output may be a numeric average and category.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-004",
+          "phrase": "Write ordinary examples, boundary examples, and invalid examples.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-005",
+          "phrase": "This creates a behavioral contract that can be checked independently of syntax.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-006",
+          "phrase": "Then identify the transformations between input and output.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-007",
+          "phrase": "A clear contract prevents a common failure: writing statements that run without knowing whether they solve the intended problem.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-008",
+          "phrase": "Code is an executable representation of a model, so the model must be understandable first.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "A program stores information as values.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "Numbers support arithmetic, strings represent text, Boolean values represent true-or-false conditions, and collections group related values.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "A variable is a name bound to a value, not a permanent box with one fixed meaning.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-004",
+          "phrase": "Assignment changes which value a name refers to.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-005",
+          "phrase": "Good names express the role of the data: total cost is clearer than t.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-006",
+          "phrase": "Representation choices affect the rest of the design.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-007",
+          "phrase": "A date stored as one ambiguous string is harder to validate than separate year, month, and day values.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-008",
+          "phrase": "Ask what operations the program needs, what invalid states are possible, and which representation makes correct behavior easiest to express.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "Expressions compute values.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "Arithmetic operators combine numbers; comparison operators produce Boolean results; Boolean operators combine conditions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "Evaluation order matters.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-004",
+          "phrase": "Multiplication normally occurs before addition, but parentheses make the intended grouping explicit and easier to review.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-005",
+          "phrase": "Avoid packing an entire algorithm into one clever expression.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-006",
+          "phrase": "Intermediate names can expose meaning and provide places to inspect behavior.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-007",
+          "phrase": "Types matter too: adding numbers differs from concatenating text, and converting user input should be deliberate.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-008",
+          "phrase": "When an expression behaves unexpectedly, evaluate it from the inside outward, inspect each intermediate value, and confirm that the data type and unit match the intended calculation.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "A conditional represents a decision.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "Each condition should correspond to a meaningful rule in the problem.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "Order matters when ranges overlap.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-004",
+          "phrase": "In a grading rule, check the highest threshold first or express non-overlapping intervals explicitly.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-005",
+          "phrase": "Include a final else only when a meaningful default or invalid case exists.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-006",
+          "phrase": "Deeply nested conditions are difficult to reason about, so simplify repeated tests and extract named helper functions when a decision has its own concept.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-007",
+          "phrase": "Test conditions at boundaries: exactly zero, exactly the threshold, just below, and just above.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-008",
+          "phrase": "A condition is correct only when both the true path and the false path match the specification.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "Loops express repetition.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "A for loop naturally processes each item in a collection, while a while loop repeats until a condition changes.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "Every loop needs a clear initialization, update, and termination argument.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-004",
+          "phrase": "An invariant describes what remains true after each iteration.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-005",
+          "phrase": "In a running total, the invariant may be that total equals the sum of all items processed so far.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-006",
+          "phrase": "This idea makes loops easier to prove and debug.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-007",
+          "phrase": "Watch for off-by-one errors, empty collections, and updates that never occur.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-008",
+          "phrase": "Print tracing can help during development, but a final design should make the loop's purpose visible through names and structure rather than relying on debugging output.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-06",
+      "shots": [
+        {
+          "id": "beat-06-shot-001",
+          "phrase": "A function gives one piece of behavior a name and a boundary.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-002",
+          "phrase": "Parameters describe what the function needs; the return value describes what it produces.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-003",
+          "phrase": "Prefer a function that completes one coherent responsibility over a long function that reads input, calculates, prints, modifies global state, and handles every error at once.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-004",
+          "phrase": "Pure calculation functions are especially easy to test because the same inputs produce the same outputs without hidden dependencies.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-005",
+          "phrase": "Avoid using global variables when a parameter or return value would make the dependency explicit.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-006",
+          "phrase": "Good decomposition follows concepts in the problem: validate score, compute weighted average, and format result are meaningful units that can be reviewed separately.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-07",
+      "shots": [
+        {
+          "id": "beat-07-shot-001",
+          "phrase": "Collections are not interchangeable containers.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-002",
+          "phrase": "A list preserves order and can contain repeated values.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-003",
+          "phrase": "A tuple represents an ordered grouping that is not changed in place.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-004",
+          "phrase": "A set emphasizes membership and uniqueness.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-005",
+          "phrase": "Choose according to the operations the problem requires.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-006",
+          "phrase": "If student records are repeatedly retrieved by identifier, a dictionary may express the relationship better than scanning a list.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-007",
+          "phrase": "If order matters, a set alone is insufficient.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-008",
+          "phrase": "Consider empty collections, duplicate keys or values, and whether mutation should be allowed.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-08",
+      "shots": [
+        {
+          "id": "beat-08-shot-001",
+          "phrase": "Programs interact with files, users, networks, and data that may be missing or malformed.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-002",
+          "phrase": "Validate predictable constraints close to the boundary: required fields, numeric ranges, and allowed choices.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-003",
+          "phrase": "Exceptions handle operations that fail despite the intended call, such as converting nonnumeric text or opening a missing file.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-004",
+          "phrase": "Catch only exceptions the program can respond to meaningfully.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-005",
+          "phrase": "A broad catch that silently continues can hide defects and corrupt results.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-006",
+          "phrase": "Error messages should explain what failed and what the user can do next without exposing secrets.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-007",
+          "phrase": "Separate the normal path from recovery so that correct behavior remains readable.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-008",
+          "phrase": "Robustness is not the absence of errors; it is controlled, observable behavior when errors occur.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-09",
+      "shots": [
+        {
+          "id": "beat-09-shot-001",
+          "phrase": "Testing converts the behavioral contract into repeatable evidence.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-002",
+          "phrase": "Begin with a small normal case whose answer can be calculated by hand.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-003",
+          "phrase": "Add boundary cases, such as an empty collection, one item, the maximum allowed value, and values immediately around a threshold.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-004",
+          "phrase": "Add invalid cases and confirm the intended error.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-005",
+          "phrase": "Each test should identify one behavior and produce a clear failure when that behavior changes.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-006",
+          "phrase": "Tests do not prove the absence of every defect, but they protect known requirements and make refactoring safer.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-007",
+          "phrase": "When a defect is found, first create a test that reproduces it, then repair the code and keep the test as a permanent regression check.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-10",
+      "shots": [
+        {
+          "id": "beat-10-shot-001",
+          "phrase": "A dependable workflow is iterative.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-002",
+          "phrase": "Define inputs, outputs, constraints, and examples.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-003",
+          "phrase": "Write the smallest correct step and observe it.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-004",
+          "phrase": "Extract functions around coherent responsibilities.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-005",
+          "phrase": "Turn examples and boundaries into automated tests.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-006",
+          "phrase": "Then revise names and structure without changing behavior.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-007",
+          "phrase": "Syntax makes instructions executable, but reliability comes from the chain of reasoning that connects the original problem to data, control flow, functions, tests, and a result another person can understand.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-008",
+          "phrase": "Their questions often reveal hidden assumptions about units, input format, or expected output.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "programming-foundations-from-problem-to-tested-program",
+  "schemaVersion": 1
+}

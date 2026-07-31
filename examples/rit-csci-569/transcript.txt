@@ -1,16 +1,16 @@
-NARRATOR: Begin by framing Course Purpose and Flexibility as a question about inputs,
+NARRATOR: Begin by framing Course Purpose and Faculty Role as a question about inputs,
 
 decisions, and observable results.
 
-NARRATOR: This course examines current topics in Theory.
+NARRATOR: This is intended to allow faculty to pilot potential new undergraduate offerings.
 
-NARRATOR: Consider this worked case: A faculty member might propose a seminar on modern
+NARRATOR: Consider this worked case: A professor proposes a new undergraduate course
 
-cryptographic protocols to test student interest before full adoption.
+in theoretical computer science to test its viability before full adoption.
 
-NARRATOR: On screen, display a slide with the course title and a flexible workflow diagram
+NARRATOR: On screen, display a slide with the course title and a brief description of the
 
-showing faculty proposal leading to course pilot.
+faculty proposal process.
 
 NARRATOR: List the givens before choosing a method, because an unstated assumption can
 
@@ -18,27 +18,25 @@ change the conclusion.
 
 NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.
-
-NARRATOR: Now define Faculty-Determined Details precisely enough that another learner
+NARRATOR: Now define Course Classification Clusters precisely enough that another learner
 
 could test the definition.
 
-NARRATOR: Specific course details (such as prerequisites, course seminar, format,
+NARRATOR: Specific course instances will be identified as belonging to the Theory cluster,
 
-learning outcomes, assessment methods, and resource needs) will be determined by the
+the Security cluster, or both clusters.
 
-faculty member(s) who propose a specific seminar course in this area.
+NARRATOR: Consider this worked case: A proposed course on cryptographic protocols is
 
-NARRATOR: Consider this worked case: An instructor might choose a seminar format with
+classified under the Security cluster, while a course on computational complexity falls under
 
-three lecture hours per term and assign a research paper as the primary assessment.
+the Theory cluster.
 
-NARRATOR: On screen, show a checklist graphic listing prerequisites, format, learning
+NARRATOR: On screen, show a Venn diagram with two overlapping circles labeled 'Theory
 
-outcomes, assessment methods, and resource needs as customizable fields.
+Cluster' and 'Security Cluster', with a third circle labeled 'Both Clusters' in the
+
+intersection.
 
 NARRATOR: Separate the formal definition from an implementation detail, then identify what
 
@@ -46,39 +44,43 @@ evidence would distinguish them.
 
 NARRATOR: A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Cluster Classification operates in
+NARRATOR: With the foundation in place, examine how Faculty-Determined Details
 
-a concrete sequence.
+operates in a concrete sequence.
 
-NARRATOR: Specific course instances will be identified as belonging to the Theory cluster,
+NARRATOR: Specific course details (such as prerequisites, course seminar, format,
 
-the Security cluster, or both clusters.
+learning outcomes, assessment methods, and resource needs) will be determined by the
 
-NARRATOR: Consider this worked case: A seminar on secure key management would be classified
+faculty member(s) who propose a specific seminar course in this area.
 
-under both the Theory and Security clusters.
+NARRATOR: Consider this worked case: The proposing faculty member sets the prerequisite
 
-NARRATOR: On screen, present a Venn diagram with two overlapping circles labeled 'Theory
+to include discrete mathematics and defines the format as a three-hour weekly lecture.
 
-Cluster' and 'Security Cluster', with a course example placed in the intersection.
+NARRATOR: On screen, list the specific course details (prerequisites, seminar, format,
+
+learning outcomes, assessment methods, resource needs) with checkboxes for faculty to
+
+fill in.
 
 NARRATOR: Follow every arrow in order and name the state before and after each transition.
 
 NARRATOR: The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Next, compare the choices involved in Contact Hours and make the decision
+NARRATOR: Next, compare the choices involved in Stable Process Overview and make the
 
-criteria explicit.
+decision criteria explicit.
 
-NARRATOR: Security requirements should be tracked throughout development.
+NARRATOR: This course examines current topics in Theory.
 
-NARRATOR: Consider this worked case: Students attend three weekly sessions, each focusing on
+NARRATOR: Consider this worked case: The department follows a standardized workflow:
 
-a different theoretical or security topic proposed by the faculty.
+faculty submit a proposal, assign cluster(s), define details, and pilot the course.
 
-NARRATOR: On screen, display a calendar icon with three highlighted blocks labeled 'Lecture
+NARRATOR: On screen, create a linear flowchart with four steps: Proposal Submission, Cluster
 
-1', 'Lecture 2', and 'Lecture 3' to indicate the required contact hours.
+Assignment, Detail Planning, and Course Pilot.
 
 NARRATOR: Compare alternatives against the same constraints so the evaluation does not
 
@@ -90,19 +92,21 @@ NARRATOR: Name each dependency explicitly, and keep labels and representations c
 
 throughout the analysis.
 
-NARRATOR: Apply Cryptographic Standards Overview to a worked situation instead of
+NARRATOR: Apply Standards for Course Design to a worked situation instead of treating it as
 
-treating it as an isolated definition.
+an isolated definition.
 
-NARRATOR: Cryptographic standards define approved algorithms and parameters.
+NARRATOR: Hash tables map keys to locations and require a collision strategy.
 
-NARRATOR: Consider this worked case: The NIST FIPS 197 standard specifies AES encryption
+NARRATOR: Consider this worked case: The learning outcomes specify that students will
 
-parameters, ensuring consistent algorithm usage across systems.
+analyze algorithmic correctness and resource bounds, assessed through a final theoretical
 
-NARRATOR: On screen, show a document icon with a checklist of approved algorithms and
+proof assignment.
 
-parameters, highlighting 'AES' and 'FIPS 197' as examples.
+NARRATOR: On screen, display a table with columns for 'Learning Outcome' and 'Assessment
+
+Method', filled with example entries.
 
 NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
 
@@ -110,23 +114,21 @@ at each step.
 
 NARRATOR: The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.
-
-NARRATOR: Examine the tradeoffs in Encryption and Confidentiality, including what improves
+NARRATOR: Examine the tradeoffs in Planning Methods for Resources, including what improves
 
 and what becomes more difficult.
 
-NARRATOR: Encryption supports confidentiality when keys and modes are used correctly.
+NARRATOR: Asymptotic notation describes how resource use grows with input size.
 
-NARRATOR: Consider this worked case: Using AES in CBC mode with a properly generated 256-bit
+NARRATOR: Consider this worked case: The faculty member lists required resources,
 
-key ensures that intercepted ciphertext remains unreadable without the key.
+including a whiteboard, projection system, and specific textbooks on theoretical computer
 
-NARRATOR: On screen, illustrate a lock icon with a key turning, showing plaintext
+science.
 
-transforming into ciphertext, with a note emphasizing correct key and mode usage.
+NARRATOR: On screen, show a checklist graphic with items like 'Whiteboard', 'Projection
+
+System', 'Textbooks', and 'Online Resources' for faculty to mark.
 
 NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
 
@@ -134,25 +136,21 @@ acceptable.
 
 NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: Stress-test the reasoning around Integrity and Authenticity Mechanisms with an
+NARRATOR: Stress-test the reasoning around Evaluation Criteria for Proposals with an edge
 
-edge case and identify which assumption controls the outcome.
+case and identify which assumption controls the outcome.
 
-NARRATOR: Message authentication and digital signatures address integrity and authenticity
+NARRATOR: Recurrences describe the cost of recursive algorithms.
 
-in different ways.
+NARRATOR: Consider this worked case: The proposal is evaluated based on whether it
 
-NARRATOR: Consider this worked case: A digital signature verifies the sender's identity and
+meets Theory cluster standards and whether the proposed resources are sufficient for a
 
-ensures the message hasn't been altered, while a message authentication code only checks
+successful pilot.
 
-integrity.
+NARRATOR: On screen, create a rubric with criteria: 'Cluster Alignment', 'Feasibility',
 
-NARRATOR: On screen, display two side-by-side icons: one showing a digital signature with a
-
-verified checkmark, and another showing a message authentication tag with an integrity
-
-shield.
+'Learning Outcomes', and 'Resource Availability', with scoring scales.
 
 NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
 
@@ -162,23 +160,21 @@ NARRATOR: The edge case reveals the boundary of the claim without discarding the
 
 core idea.
 
-NARRATOR: Use Random Number Generation and Key Management to diagnose a failure by separating
+NARRATOR: Use Representative Examples of Theory Courses to diagnose a failure by
 
-symptoms, causes, and corrective action.
+separating symptoms, causes, and corrective action.
 
-NARRATOR: Random number generation supports keys, nonces, and other security parameters.
+NARRATOR: OpenDSA presents data structures and algorithms through executable visualizations
 
-NARRATOR: Consider this worked case: A secure system uses a cryptographically secure random
+and exercises.
 
-number generator to create unique nonces for each encryption session, and rotates keys
+NARRATOR: Consider this worked case: A sample Theory cluster course covers loop invariants,
 
-quarterly to limit exposure.
+divide-and-conquer algorithms, and graph reachability.
 
-NARRATOR: On screen, show a flowchart with arrows connecting 'Random Number Generation'
+NARRATOR: On screen, list three example course titles with brief descriptions: 'Introduction
 
-to 'Key Management', listing each sub-step (generation, distribution, storage, use,
-
-rotation, revocation, destruction) as nodes.
+to Algorithm Analysis', 'Data Structures and Algorithms', 'Formal Languages and Automata'.
 
 NARRATOR: Locate the first point where observed behavior diverges from expected
 
@@ -188,25 +184,21 @@ NARRATOR: The diagnosis is strongest when another person can reproduce the obser
 
 and the test.
 
-NARRATOR: Connect Secure Software Development Framework to the earlier ideas and explain how
+NARRATOR: Connect Application to Course Planning to the earlier ideas and explain how
 
 the pieces work as one system.
 
-NARRATOR: The Secure Software Development Framework groups practices into four practice
+NARRATOR: Dynamic programming records solutions to overlapping subproblems.
 
-groups.
+NARRATOR: Consider this worked case: The faculty member reviews the proposal against
 
-NARRATOR: Consider this worked case: Prepare the Organization establishes secure
+the evaluation criteria, makes necessary adjustments, and submits the final plan for
 
-development processes, while Respond to Vulnerabilities identifies and remediates
+departmental approval.
 
-discovered weaknesses.
+NARRATOR: On screen, show a before-and-after comparison of a course proposal document,
 
-NARRATOR: On screen, display a four-quadrant grid, each quadrant labeled with one practice
-
-group name, with brief icons representing people/processes (Prepare), code protection
-
-(Protect), release/verification (Produce), and vulnerability response (Respond).
+highlighting changes made based on evaluation criteria.
 
 NARRATOR: Explain each connection explicitly and verify that information retains the same
 
@@ -216,25 +208,23 @@ NARRATOR: The synthesis matters only if every connection remains supported by th
 
 evidence.
 
-NARRATOR: Finish with Verification and Security Reasoning as a practical checklist
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
 
-that can guide a new analysis.
+guide a new analysis.
 
-NARRATOR: Security reasoning identifies assets, trust boundaries, threats, controls,
+NARRATOR: Algorithm analysis connects a precise problem specification to a correctness
 
-evidence, residual risk, and responsibilities.
+argument and resource bounds.
 
-NARRATOR: Consider this worked case: Verification audits the codebase to confirm
+NARRATOR: Consider this worked case: The checklist includes items like 'Proposal
 
-that encryption standards are applied correctly, while security reasoning maps out
+submitted', 'Cluster assigned', 'Details defined', 'Resources secured', 'Evaluation
 
-system assets and potential threats before development begins.
+criteria met', and 'Pilot approved'.
 
-NARRATOR: On screen, show a magnifying glass icon over a codebase, with a checklist of
+NARRATOR: On screen, display a printable checklist graphic with checkboxes for each
 
-verification steps, and a separate diagram showing a network diagram with labeled assets,
-
-trust boundaries, and threats.
+item, ready for faculty to use during the planning phase.
 
 NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
 

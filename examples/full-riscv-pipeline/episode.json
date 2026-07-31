@@ -1,0 +1,407 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Calm, rigorous opening; pause briefly after the five stage names.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "By the end of this lesson, you will be able to trace one RISC-V ADD instruction from its thirty-two encoded bits to the value written into a destination register. You will also be able to explain why a pipeline improves throughput, identify data and control hazards, and distinguish architectural correctness from implementation speed. Our worked instruction is add x5, x6, x7. We will use a classic five-stage teaching pipeline: Instruction Fetch, Instruction Decode, Execute, Memory Access, and Write Back. That pipeline is not the only possible processor design. It is a clear model for seeing how encoded instructions become coordinated data movement and control.",
+      "plannedSeconds": 48,
+      "title": "What this lesson will explain",
+      "visualDirection": "template:riscv-architecture | Introduce the software-visible instruction-set contract on the left and a five-stage teaching pipeline on the right."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Emphasize \"contract\" and \"same software-visible result.\"",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "First, separate the contract from the machinery. The RISC-V ISA says what ADD means: read two source registers, add their values, and write the low XLEN bits into the destination register. It also specifies the instruction fields that identify that operation. Software depends on this promise. Internally, one processor might execute an instruction in several simple stages, another might issue multiple instructions at once, and a small controller might reuse hardware across many cycles. Those designs may look very different, yet a correct implementation must produce the same software-visible result. This distinction keeps our reasoning disciplined: begin with what must happen, then study how one pipeline makes it happen.",
+      "plannedSeconds": 48,
+      "title": "Separate the ISA from the implementation",
+      "visualDirection": "template:riscv-architecture | Contrast the stable ADD contract with different possible internal implementations."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Pace the six fields distinctly and pronounce \"funct\" as \"function.\"",
+      "equations": [
+        "0000000 | 00111 | 00110 | 000 | 00101 | 0110011"
+      ],
+      "id": "beat-03",
+      "narration": "The processor receives bits, not assembly text. Our instruction word is hexadecimal zero zero seven three zero two B three. Reading the R-type fields from bit thirty-one down to bit zero gives funct seven, rs2, rs1, funct three, rd, and opcode. The opcode says this is a register-register arithmetic instruction. Funct three and funct seven narrow that family to ADD. The rs1 field is binary zero zero one one zero, which names x6. The rs2 field names x7. The rd field names x5. Decode therefore extracts both the operation and the register addresses from one fixed-width word. The assembly form is a human-readable rendering of those exact fields.",
+      "plannedSeconds": 54,
+      "title": "Decode the R-type instruction",
+      "visualDirection": "template:riscv-encoding | Partition 0x007302B3 into funct7, rs2, rs1, funct3, rd, and opcode."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Treat the program counter as an address register, not as an instruction count.",
+      "equations": [
+        "PC = 0x1000; sequential next PC = 0x1004"
+      ],
+      "id": "beat-04",
+      "narration": "Assume the program counter contains zero x one thousand. Fetch presents that address to instruction memory and receives the thirty-two-bit ADD word. At the same time, the processor forms the sequential next address, zero x one thousand four. That plus-four step is valid for this RV32I teaching example because we are not using compressed instructions. Fetch does not yet know whether control flow will remain sequential. A branch or jump may later redirect the program counter. For now, the current address, instruction bits, and predicted next address must remain aligned as the instruction moves forward. Pipeline state records the information the Decode stage will need on the next clock cycle.",
+      "plannedSeconds": 49,
+      "title": "Fetch the instruction and choose the next address",
+      "visualDirection": "template:riscv-fetch-decode | Show PC 0x1000 addressing instruction memory, returning the instruction word, and forming sequential PC 0x1004."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Stress that data and control travel together.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "In Decode, the instruction fields drive two related jobs. First, the register file uses rs1 and rs2 as read addresses. If x6 contains nineteen and x7 contains twenty-three, those values appear on the two read ports. Second, control logic interprets the opcode and function fields. It selects an integer addition, chooses two register operands for the ALU, disables a data-memory write, and enables a later register write to x5. Data alone is not enough. The destination register number and every control decision needed by later stages must advance beside the operands. If a value and its control signal become misaligned, the processor could compute correctly but write the result to the wrong place.",
+      "plannedSeconds": 51,
+      "title": "Decode control and read operands",
+      "visualDirection": "template:riscv-fetch-decode | Highlight field extraction, control generation, and two register-file read ports."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Let \"forty-two\" land before explaining XLEN and overflow.",
+      "equations": [
+        "x5 ← x6 + x7 = 19 + 23 = 42"
+      ],
+      "id": "beat-06",
+      "narration": "The Execute stage supplies nineteen and twenty-three to the arithmetic logic unit. Operand-select controls choose the two register values, and the ALU control selects addition. The result is forty-two. In RV32I, XLEN is thirty-two, so ADD retains the low thirty-two bits of the mathematical sum. If the signed mathematical result exceeds the signed range, ADD still produces the low-bit result; it does not raise an arithmetic-overflow exception. The ISA defines that behavior, while the ALU and surrounding control implement it. For this example there is no overflow, so the value forty-two and the destination number x5 advance toward the next stage.",
+      "plannedSeconds": 51,
+      "title": "Execute the arithmetic",
+      "visualDirection": "template:riscv-execute | Feed x6=19 and x7=23 into the ALU and highlight result 42."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Explain why an inactive Memory stage still appears in the pipeline.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "ADD does not need a data-memory read or write. Even so, in this regular five-stage organization it occupies the Memory stage while its ALU result, destination register, and write-enable bit move through the EX slash MEM and MEM slash WB pipeline registers. A load instruction would use this stage to read data, and a store would write data. ADD simply preserves its result. In Write Back, a result-select control chooses the ALU value rather than memory data, the write-enable signal is asserted, and x5 receives forty-two. At that moment the instruction's promised architectural effect becomes visible in the register file.",
+      "plannedSeconds": 50,
+      "title": "Pass Memory Access and commit in Write Back",
+      "visualDirection": "template:riscv-writeback | Show the ALU result crossing EX/MEM and MEM/WB, bypassing data-memory activity, and writing x5."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Clearly contrast latency with throughput.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "Why split the work into stages? Because different instructions can use different hardware during the same cycle. While our ADD is in Execute, a following independent instruction can be in Decode and another can be in Fetch. During the next cycle, all three advance. After the pipeline fills, this ideal sequence can complete roughly one instruction per cycle even though each instruction spends several cycles traveling from Fetch to Write Back. That is a throughput improvement, not proof that one instruction has lower latency. The clock period must accommodate the slowest stage plus pipeline-register overhead, and the ideal completion rate assumes instructions can advance without interruption.",
+      "plannedSeconds": 54,
+      "title": "Understand pipeline overlap",
+      "visualDirection": "template:riscv-timing | Animate three independent arithmetic instructions occupying different stages across seven cycles."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Use \"younger instruction\" once, then restate it as \"later instruction.\"",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Now place sub x8, x5, x9 immediately after the ADD. The subtraction needs the new x5 as an input, but ordinary register-file timing may not provide that value when the subtraction reaches Execute. This is a read-after-write hazard: the later instruction reads a register that the earlier instruction will write. Hazard logic compares the source registers of younger instructions with destination registers already in the pipeline. Detecting the name match is only the first step. The processor must also know whether the value is ready and where it currently resides. Correctness requires the subtraction to use forty-two, not the stale value previously stored in x5.",
+      "plannedSeconds": 54,
+      "title": "Detect a read-after-write data hazard",
+      "visualDirection": "template:riscv-hazards | Show add x5,x6,x7 followed by sub x8,x5,x9, with a dependency arrow on x5."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Frame a stall as a correctness mechanism, not as a failure.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "For an ALU-to-ALU dependency, forwarding can often avoid a full wait for Write Back. A bypass path routes the ADD result from a later pipeline register directly to the subtraction's ALU input. The register file may still contain the old x5, but the operand multiplexer selects the newer forwarded value. Forwarding does not solve every dependency. If a load produces data only after Memory Access and the next instruction needs it immediately, the value may arrive too late for the dependent Execute stage. Hazard control then freezes selected pipeline state and inserts a bubble. One cycle of lost throughput is preferable to an incorrect result.",
+      "plannedSeconds": 52,
+      "title": "Forward when possible; stall when necessary",
+      "visualDirection": "template:riscv-hazards | Route an available ALU result directly to a dependent ALU input, then contrast a load-use case requiring a bubble."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-11-claim-01"
+      ],
+      "delivery": "Emphasize that wrong-path instructions must not commit.",
+      "equations": [],
+      "id": "beat-11",
+      "narration": "Branches create a different uncertainty. Fetch wants a next address every cycle, but the branch decision and target may not be known immediately. A simple processor can wait. A faster design may predict a direction and continue fetching. If the prediction is wrong, the processor redirects the program counter and flushes younger wrong-path instructions before they change architectural state. A flush is not merely erasing a diagram box. It disables the invalid instructions' control effects so they cannot write registers or memory. Prediction can improve average performance, but recovery logic preserves correctness when speculation is wrong.",
+      "plannedSeconds": 52,
+      "title": "Recover from control hazards",
+      "visualDirection": "template:riscv-hazards | Show a branch resolving after younger sequential instructions have entered Fetch and Decode, then flush the wrong-path work."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-12-claim-01"
+      ],
+      "delivery": "Present the CPI equation as a model, not a hardware law.",
+      "equations": [
+        "ideal CPI ≈ 1; actual CPI = 1 + average stall cost"
+      ],
+      "id": "beat-12",
+      "narration": "Performance language needs precision. In an idealized scalar pipeline, the steady-state cycles per instruction can approach one. Real execution includes pipeline filling and draining, data stalls, control redirects, cache delays, and other constraints. A useful first model is actual CPI equals the ideal baseline plus the average stall cost per instruction. This is not a universal performance equation for every processor; it is a teaching decomposition. Clock rate also matters. Deeper pipelines can shorten some stage delays, but they add registers, control complexity, and potentially larger recovery penalties. Architecture evaluation therefore considers both work completed per cycle and the duration of each cycle.",
+      "plannedSeconds": 52,
+      "title": "Read performance claims carefully",
+      "visualDirection": "template:riscv-timing | Compare latency, throughput, stalls, and pipeline fill or drain overhead."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-13-claim-01"
+      ],
+      "delivery": "End as a compact retrieval-practice checklist.",
+      "equations": [],
+      "id": "beat-13",
+      "narration": "We began with the word zero x zero zero seven three zero two B three. Decode identified ADD, rs1 x6, rs2 x7, and destination x5. Fetch read the instruction at zero x one thousand. Decode read nineteen and twenty-three. Execute produced forty-two. Memory Access performed no data-memory operation. Write Back committed forty-two to x5. Independent instructions could overlap, while dependencies or branches required forwarding, stalls, redirects, or flushing. To test your understanding, ask four questions about any instruction: What operation do the bits encode? Which values enter each stage? Which control signals must travel with them? And can any younger instruction proceed without violating the ISA result? If you can answer those, you can reason about the pipeline rather than merely memorize its five boxes.",
+      "plannedSeconds": 50,
+      "title": "Complete the trace and test yourself",
+      "visualDirection": "template:riscv-writeback | Reassemble the complete path from encoded instruction to x5=42 and display a four-question review checklist."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "riscv-isa",
+        "cs61c-five-stage"
+      ],
+      "text": "An instruction-set architecture defines software-visible behavior, while a microarchitecture is a hardware organization that implements that behavior.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "riscv-isa",
+        "cs61c-five-stage"
+      ],
+      "text": "RISC-V specifies the meaning and encoding of ADD, but it does not require every processor to use a five-stage pipeline.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "riscv-isa"
+      ],
+      "text": "RV32I register-register arithmetic uses the R-type format, and ADD is identified by opcode 0110011, funct3 000, and funct7 0000000.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "cs61c-five-stage",
+        "riscv-isa"
+      ],
+      "text": "Instruction Fetch uses the program counter to read the current instruction, and a sequential RV32I instruction advances the address by four bytes in this non-compressed teaching example.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "cs61c-five-stage"
+      ],
+      "text": "Decode determines the operation, reads source registers, and produces control information that must travel with the instruction.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "riscv-isa",
+        "cs61c-five-stage"
+      ],
+      "text": "ADD sums rs1 and rs2 in the Execute stage and writes the low XLEN bits of the sum; integer overflow does not trap for ADD.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "cs61c-five-stage"
+      ],
+      "text": "Register-register ADD does not load or store data, but its result and control still pass through pipeline state until Write Back updates the register file.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "cs61c-five-stage",
+        "cs61c-performance"
+      ],
+      "text": "Pipelining overlaps stages from different instructions to improve throughput, although one instruction still traverses the required stages.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "cs61c-hazards"
+      ],
+      "text": "A read-after-write data hazard occurs when a later instruction needs a result before normal Write Back makes it available.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "cs61c-hazards"
+      ],
+      "text": "Forwarding can bypass a ready result to a later instruction, while a stall inserts a bubble when the required value is not ready soon enough.",
+      "verified": true
+    },
+    {
+      "id": "beat-11-claim-01",
+      "sourceIds": [
+        "cs61c-hazards"
+      ],
+      "text": "Control hazards arise when the correct next program counter is not yet known; implementations may stall, predict, redirect, and flush wrong-path instructions.",
+      "verified": true
+    },
+    {
+      "id": "beat-12-claim-01",
+      "sourceIds": [
+        "cs61c-performance",
+        "cs61c-hazards"
+      ],
+      "text": "An ideal pipeline may approach one completed instruction per cycle, while hazards and other delays increase average cycles per instruction.",
+      "verified": true
+    },
+    {
+      "id": "beat-13-claim-01",
+      "sourceIds": [
+        "riscv-isa",
+        "cs61c-five-stage",
+        "cs61c-hazards"
+      ],
+      "text": "A correct trace accounts for instruction fields, operand values, control signals, pipeline timing, and any required hazard response.",
+      "verified": true
+    }
+  ],
+  "id": "full-lesson-from-a-risc-v-instruction-to-pipeline-execution",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "RISC-V International",
+      "excerpt": "RISC-V is an open standard instruction set architecture. RV32I has XLEN equal to 32 and a base programmer's model with 32 integer registers plus a program counter. R-type register-register arithmetic includes opcode, rd, funct3, rs1, rs2, and funct7 fields. ADD reads rs1 and rs2, writes the low XLEN bits of their sum to rd, and ignores arithmetic overflow rather than trapping. ADD uses opcode 0110011, funct3 000, and funct7 0000000.",
+      "id": "riscv-isa",
+      "sha256": "8cacd01db62807d769bf32512764b3ef837b59c1045e3a9a0c02b1dc5bac2212",
+      "title": "RISC-V Unprivileged ISA Specification, Version 20260120",
+      "type": "url",
+      "uri": "https://docs.riscv.org/reference/isa/unpriv/unpriv-index.html",
+      "verified": true
+    },
+    {
+      "author": "UC Berkeley CS61C",
+      "excerpt": "The five-stage teaching pipeline separates work into Instruction Fetch, Instruction Decode, Execute, Memory Access, and Write Back. Fetch reads an instruction using the program counter. Decode determines the operation and reads the register file. Execute uses the arithmetic logic unit. Memory Access serves loads and stores. Write Back updates the register file. Pipeline registers retain the data and control signals required by later stages.",
+      "id": "cs61c-five-stage",
+      "sha256": "ce8dd551598aa4aca4dab1f03b7806e41da3130effb0f34d193d304e33f19259",
+      "title": "The RISC-V 5-Stage Pipeline",
+      "type": "url",
+      "uri": "https://notes.cs61c.org/content/pipeline/five-stage-pipeline/",
+      "verified": true
+    },
+    {
+      "author": "UC Berkeley CS61C",
+      "excerpt": "Pipelining overlaps stages from different instructions to increase throughput. Throughput is completed work per unit time, while latency is the time for one instruction or task. An ideal filled scalar pipeline can approach one completed instruction per cycle, but stage delay, pipeline-register overhead, filling, draining, and stalls affect actual performance.",
+      "id": "cs61c-performance",
+      "sha256": "b19dd6cbf6a58637ca41c9116eccedb23fe7ba7f92b96459c447c46246fdaecb",
+      "title": "Pipelining Performance Metrics",
+      "type": "url",
+      "uri": "https://notes.cs61c.org/content/pipeline/",
+      "verified": true
+    },
+    {
+      "author": "UC Berkeley CS61C",
+      "excerpt": "Structural, data, and control hazards can prevent an instruction from executing in its planned cycle. Read-after-write dependencies can require forwarding or stalling. Forwarding routes a ready value from a later pipeline register to an earlier consumer without waiting for normal writeback. When a needed value is not ready, hazard control can insert a bubble. Control hazards can be handled with stalling, prediction, redirection, and flushing so wrong-path instructions do not update architectural state.",
+      "id": "cs61c-hazards",
+      "sha256": "03e95fba6b7c33e38f374eda722900aad593c61d621f9d0a2ba44a2f98d78799",
+      "title": "Pipeline Hazards and Data Forwarding",
+      "type": "url",
+      "uri": "https://notes.cs61c.org/content/pipeline-hazards/",
+      "verified": true
+    }
+  ],
+  "title": "Full Lesson: From a RISC-V Instruction to Pipeline Execution"
+}

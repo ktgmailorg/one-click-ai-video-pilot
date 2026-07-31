@@ -1,239 +1,209 @@
-NARRATOR: Begin by framing Course Context and Transfer Goals as a question about inputs,
+Begin by framing Defining the Problem Space as a question about inputs, decisions, and
 
-decisions, and observable results.
+observable results.
 
-NARRATOR: This course serves as a means of bringing transfer students with some
+Programming begins with precise problem statements, input and output examples, and
 
-programming and data structures background to the same skill level that the computer science
+algorithms written independently of syntax.
 
-program's first year students have after completing CSCI 141 and 142.
+Consider this worked case: Given a list of integers, output the sum of all positive
 
-NARRATOR: Consider this worked case: A transfer student who completed introductory
+values.
 
-programming courses will use this course to align their problem-solving and algorithmic
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-skills with the university's first-year CS curriculum.
+that the final result satisfies the stated condition.
 
-NARRATOR: On screen, display a simple flowchart showing a transfer student's prior
+List the givens before choosing a method, because an unstated assumption can change the
 
-coursework feeding into CSCI 242, which then aligns with CSCI 141/142 outcomes.
+conclusion.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+This establishes the vocabulary and scope needed for the remaining sections.
 
-change the conclusion.
+Now define Core Data Structures precisely enough that another learner could test the
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+definition.
 
-NARRATOR: Now define Core Course Focus precisely enough that another learner could
+Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in
 
-test the definition.
+first-out access, trees represent hierarchy, and graphs represent connected entities.
 
-NARRATOR: Problem solving skills and the choice and application of appropriate
+Consider this worked case: A queue is appropriate for processing tasks in the order
 
-algorithms and data structures are at the core of the course.
+they arrive, while a stack models undo operations.
 
-NARRATOR: Consider this worked case: Students will practice selecting a hash table for fast
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-key lookups versus a linked list for frequent insertions, based on the problem's access
+that the final result satisfies the stated condition.
 
-patterns.
-
-NARRATOR: On screen, show a side-by-side comparison of a hash table and a linked list
-
-with callout boxes highlighting 'fast lookups' and 'frequent insertions' respectively.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Assignment Structure operates in a
+With the foundation in place, examine how Decomposition and Abstraction operates in a
 
 concrete sequence.
 
-NARRATOR: Assignments (both in class and for homework) requiring a design and an
+Functions decompose a solution into named operations with parameters and results.
 
-implementation are an integral part of the course.
+Consider this worked case: Create a function `sum_positive` that takes a list and returns
 
-NARRATOR: Consider this worked case: A homework assignment might ask students to
+an integer, isolating the logic from the main program.
 
-draft a pseudocode design for a priority queue before writing the actual code in a supported
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-language.
+that the final result satisfies the stated condition.
 
-NARRATOR: On screen, illustrate a two-step workflow diagram: 'Design Pseudocode' leading
+Follow every arrow in order and name the state before and after each transition.
 
-to 'Code Implementation', with a larger project icon at the end.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+Next, compare the choices involved in Control Flow and Recursion and make the decision
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+criteria explicit.
 
-NARRATOR: Next, compare the choices involved in Algorithm Analysis Basics and make the
+Recursion solves a problem through smaller instances and requires a base case.
 
-decision criteria explicit.
+Consider this worked case: A recursive factorial function computes n!
 
-NARRATOR: Algorithm analysis connects a precise problem specification to a correctness
+by calling itself with n-1 until the base case n=0 is reached.
 
-argument and resource bounds.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: Consider this worked case: Analyzing a sorting algorithm shows that its time
+that the final result satisfies the stated condition.
 
-complexity grows quadratically with input size, expressed as O(n^2) in asymptotic
+Compare alternatives against the same constraints so the evaluation does not move
 
-notation.
+the goalposts.
 
-NARRATOR: On screen, display a graph with input size on the x-axis and resource use on
+Using shared criteria turns a preference into a defensible technical choice.
 
-the y-axis, labeled with 'O(n^2)' to show quadratic growth.
-
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
-
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Apply Asymptotic Notation to a worked situation instead of treating it as an
+Apply State, Identity, and Namespaces to a worked situation instead of treating it as an
 
 isolated definition.
 
-NARRATOR: Asymptotic notation describes how resource use grows with input size.
+Names are bound to objects within namespaces and scopes.
 
-NARRATOR: Consider this worked case: Using Big-O notation, a linear scan is O(n) while a
+Consider this worked case: Two variables `a` and `b` can both reference the same list
 
-binary search is O(log n), clearly showing the latter scales better for large datasets.
+object, so modifying `a` also changes `b`.
 
-NARRATOR: On screen, show a table comparing 'Linear Search' and 'Binary Search' with their
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-respective O(n) and O(log n) labels and brief growth descriptions.
+that the final result satisfies the stated condition.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-at each step.
+step.
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Examine the tradeoffs in Loop Invariants, including what improves and what
+Examine the tradeoffs in Exceptions and Error Handling, including what improves and what
 
 becomes more difficult.
 
-NARRATOR: A loop invariant supports a proof by initialization, maintenance, and termination.
+Exceptions interrupt normal control flow until a matching handler processes them or they
 
-NARRATOR: Consider this worked case: In a loop that sums an array, the invariant 'sum equals
+propagate.
 
-the total of elements processed so far' holds true before each iteration and after the loop
+Consider this worked case: Attempting to divide by zero raises a ZeroDivisionError that
 
-ends.
+must be caught to prevent program termination.
 
-NARRATOR: On screen, display a loop structure with three labeled boxes: 'Initialization',
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-'Maintenance', and 'Termination', each containing a brief mathematical statement.
+that the final result satisfies the stated condition.
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-acceptable.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+Stress-test the reasoning around Correctness and Testing with an edge case and identify
 
-NARRATOR: Stress-test the reasoning around Data Structure Representations with an edge
+which assumption controls the outcome.
 
-case and identify which assumption controls the outcome.
+Correctness arguments, tests, tracing, and debugging compare intended behavior with
 
-NARRATOR: Representation choices and invariants determine which operations are
+observable results, including boundary and error cases.
 
-efficient and which errors are possible.
+Consider this worked case: Test the sorting function with an empty list, a single element,
 
-NARRATOR: Consider this worked case: Choosing an adjacency matrix for a dense graph ensures
+and a list with duplicate values to verify edge cases.
 
-fast edge lookups, while an adjacency list prevents memory waste on sparse graphs.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: On screen, show two grid layouts: a full matrix with 'fast lookups' and a linked
+that the final result satisfies the stated condition.
 
-list of nodes with 'sparse graph' and 'memory efficient' labels.
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-holds.
+Use Algorithm Selection Criteria to diagnose a failure by separating symptoms, causes, and
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+corrective action.
 
-core idea.
+Problem solving skills and the choice and application of appropriate algorithms and data
 
-NARRATOR: Use Common Data Structures to diagnose a failure by separating symptoms,
+structures are at the core of the course.
 
-causes, and corrective action.
+Consider this worked case: Binary search requires a sorted list; using it on an
 
-NARRATOR: Lists represent ordered sequences with position-based operations.
+unsorted list violates the invariant and yields incorrect results.
 
-NARRATOR: Consider this worked case: A stack processes function calls by returning the most
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-recently added task first, whereas a queue processes customer orders in the exact order
+that the final result satisfies the stated condition.
 
-they arrive.
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-NARRATOR: On screen, illustrate a stack with items popping from the top and a queue with
+smallest plausible cause.
 
-items entering at the back and leaving at the front, labeled with their access rules.
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+Connect Design and Implementation Workflow to the earlier ideas and explain how the pieces
 
-behavior, then test the smallest plausible cause.
+work as one system.
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+Programs should be reasoned about through explicit state, control flow, data
 
-and the test.
+representation, contracts, tests, and observable behavior.
 
-NARRATOR: Connect Trees and Graphs to the earlier ideas and explain how the pieces work
+Consider this worked case: Before coding, write a contract specifying preconditions (e.
 
-as one system.
+g. , non-empty list) and postconditions (e. g. , returned sum equals total of positives).
 
-NARRATOR: Trees represent hierarchical relationships and support recursive
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-traversals.
+that the final result satisfies the stated condition.
 
-NARRATOR: Consider this worked case: A file system directory tree allows recursive folder
+Explain each connection explicitly and verify that information retains the same meaning
 
-browsing, and a road network graph uses adjacency lists to calculate the shortest
+across representations.
 
-driving route between two cities.
+The synthesis matters only if every connection remains supported by the original evidence.
 
-NARRATOR: On screen, draw a simple tree diagram with parent-child nodes and a graph
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-diagram with nodes and edges, adding arrows to indicate recursive traversal and path finding.
+analysis.
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+Debugging separates syntax, runtime, and logical failures, while decomposition and
 
-meaning across representations.
+abstraction reduce the number of interacting concerns.
 
-NARRATOR: The synthesis matters only if every connection remains supported by the original
+Consider this worked case: Checklist items: Verify syntax with a linter, run unit tests on
 
-evidence.
+edge cases, trace execution with print statements, and review logical invariants.
 
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-guide a new analysis.
+that the final result satisfies the stated condition.
 
-NARRATOR: A disciplined solution states inputs and outputs, proves correctness, and then
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-analyzes time and space.
+verification step.
 
-NARRATOR: Consider this worked case: Before coding a search routine, students check that
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-the input is a sorted array, the output is the index of the target, and the time complexity
-
-is O(log n) using binary search.
-
-NARRATOR: On screen, display a checklist graphic with three boxes: 'State
-
-Inputs/Outputs', 'Prove Correctness', and 'Analyze Time/Space', each with a checkbox and
-
-brief instruction.
-
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

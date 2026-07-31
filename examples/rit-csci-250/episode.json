@@ -13,7 +13,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Introduction to Multilevel Architecture as a question about inputs, decisions, and observable results. Topics include the digital logic level; the micro architecture level; the machine instruction set level; the operating system level; and the assembly language level. Consider this worked case: This hierarchy allows developers to write assembly code that directly manipulates registers while the OS handles memory and scheduling. On screen, display a stacked diagram showing five layers: digital logic, microarchitecture, instruction set, OS, and assembly, with arrows indicating upward abstraction and downward control. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "narration": "Begin by framing Introduction to Multilevel Architecture as a question about inputs, decisions, and observable results. Topics include the digital logic level; the micro architecture level; the machine instruction set level; the operating system level; and the assembly language level. Consider this worked case: This hierarchy allows developers to write assembly code that directly manipulates registers while the OS handles memory and scheduling. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
       "plannedSeconds": 62,
       "title": "Introduction to Multilevel Architecture",
       "visualDirection": "template:academic-process | Display a stacked diagram showing five layers: digital logic, microarchitecture, instruction set, OS, and assembly, with arrows indicating upward abstraction and downward control."
@@ -31,7 +31,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Digital Logic and Microarchitecture Basics precisely enough that another learner could test the definition. An introduction to the hardware and software organization of computer systems. Consider this worked case: A simple AND gate combines two input signals to produce a single output, enabling complex logic in modern processors. On screen, show a schematic of basic logic gates (AND, OR, NOT) connected to form a simple adder, highlighting signal flow. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "narration": "Now define Digital Logic and Microarchitecture Basics precisely enough that another learner could test the definition. An introduction to the hardware and software organization of computer systems. Consider this worked case: A simple AND gate combines two input signals to produce a single output, enabling complex logic in modern processors. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
       "plannedSeconds": 55,
       "title": "Digital Logic and Microarchitecture Basics",
       "visualDirection": "template:academic-process | Show a schematic of basic logic gates (AND, OR, NOT) connected to form a simple adder, highlighting signal flow."
@@ -49,7 +49,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Microarchitecture and Instruction Set Interface operates in a concrete sequence. The RISC-V ISA defines programmer-visible instructions, registers, memory operations, control transfer, exceptions, and ordering behavior. Consider this worked case: A branch instruction alters the control flow by updating the program counter based on a condition evaluated by the CPU. On screen, illustrate a pipeline diagram showing how an instruction moves through fetch, decode, execute, and write-back stages. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "narration": "With the foundation in place, examine how Microarchitecture and Instruction Set Interface operates in a concrete sequence. The RISC-V ISA defines programmer-visible instructions, registers, memory operations, control transfer, exceptions, and ordering behavior. Consider this worked case: A branch instruction alters the control flow by updating the program counter based on a condition evaluated by the CPU. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
       "plannedSeconds": 55,
       "title": "Microarchitecture and Instruction Set Interface",
       "visualDirection": "template:academic-process | Illustrate a pipeline diagram showing how an instruction moves through fetch, decode, execute, and write-back stages."
@@ -67,7 +67,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Machine Instruction Set Level and make the decision criteria explicit. Branch and jump instructions change control flow. Consider this worked case: A load instruction transfers data from a memory address into a specific register for subsequent computation. On screen, display a table mapping common RISC-V instructions to their register and memory operands, emphasizing data flow. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Next, compare the choices involved in Machine Instruction Set Level and make the decision criteria explicit. Branch and jump instructions change control flow. Consider this worked case: A load instruction transfers data from a memory address into a specific register for subsequent computation. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
       "title": "Machine Instruction Set Level",
       "visualDirection": "template:academic-process | Display a table mapping common RISC-V instructions to their register and memory operands, emphasizing data flow."
@@ -85,7 +85,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Operating System Level Overview to a worked situation instead of treating it as an isolated definition. Analysis distinguishes user mode, privileged kernel code, hardware translation, interrupt state, resource ownership, and synchronization invariants. Consider this worked case: The OS allocates CPU time to different processes using a scheduler that prioritizes runnable tasks. On screen, draw a flowchart showing process creation, scheduling decision, context switch, and resource allocation steps. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "narration": "Apply Operating System Level Overview to a worked situation instead of treating it as an isolated definition. Analysis distinguishes user mode, privileged kernel code, hardware translation, interrupt state, resource ownership, and synchronization invariants. Consider this worked case: The OS allocates CPU time to different processes using a scheduler that prioritizes runnable tasks. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
       "plannedSeconds": 55,
       "title": "Operating System Level Overview",
       "visualDirection": "template:academic-process | Draw a flowchart showing process creation, scheduling decision, context switch, and resource allocation steps."
@@ -103,7 +103,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in User Mode and Kernel Mode Transitions, including what improves and what becomes more difficult. A system call transfers control from user code to a privileged kernel service. Consider this worked case: A system call transfers control from user code to a privileged kernel service to access hardware or manage memory. On screen, show a side-by-side comparison of user mode (restricted permissions) and kernel mode (full hardware access) with a transition arrow. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "narration": "Examine the tradeoffs in User Mode and Kernel Mode Transitions, including what improves and what becomes more difficult. A system call transfers control from user code to a privileged kernel service. Consider this worked case: A system call transfers control from user code to a privileged kernel service to access hardware or manage memory. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
       "plannedSeconds": 56,
       "title": "User Mode and Kernel Mode Transitions",
       "visualDirection": "template:academic-process | Show a side-by-side comparison of user mode (restricted permissions) and kernel mode (full hardware access) with a transition arrow."
@@ -121,7 +121,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around System Calls and Traps Mechanism with an edge case and identify which assumption controls the outcome. A trap records processor state so the kernel can handle a system call, exception, or interrupt. Consider this worked case: When a process requests file I/O, a trap records the CPU registers so the kernel can handle the request and restore state. On screen, create a sequence diagram showing the trap entry, kernel handling, and return path with state preservation markers. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "narration": "Stress-test the reasoning around System Calls and Traps Mechanism with an edge case and identify which assumption controls the outcome. A trap records processor state so the kernel can handle a system call, exception, or interrupt. Consider this worked case: When a process requests file I/O, a trap records the CPU registers so the kernel can handle the request and restore state. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
       "plannedSeconds": 61,
       "title": "System Calls and Traps Mechanism",
       "visualDirection": "template:academic-process | Create a sequence diagram showing the trap entry, kernel handling, and return path with state preservation markers."
@@ -139,7 +139,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Virtual Memory and Page Tables to diagnose a failure by separating symptoms, causes, and corrective action. Page tables map virtual addresses to physical memory with permission bits. Consider this worked case: A page table entry contains a physical address pointer and permission bits that determine access rights for each memory block. On screen, illustrate a two-level page table structure with arrows linking virtual addresses to physical frames, highlighting permission bits. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "narration": "Use Virtual Memory and Page Tables to diagnose a failure by separating symptoms, causes, and corrective action. Page tables map virtual addresses to physical memory with permission bits. Consider this worked case: A page table entry contains a physical address pointer and permission bits that determine access rights for each memory block. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
       "plannedSeconds": 56,
       "title": "Virtual Memory and Page Tables",
       "visualDirection": "template:academic-process | Illustrate a two-level page table structure with arrows linking virtual addresses to physical frames, highlighting permission bits."
@@ -157,7 +157,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Concurrency, Locks, and Scheduling to the earlier ideas and explain how the pieces work as one system. Locks protect invariants when concurrent execution can access shared state. Consider this worked case: A mutex lock prevents two processes from modifying a shared counter simultaneously, maintaining data integrity. On screen, display a diagram of a shared resource with a lock mechanism, showing how processes queue and acquire exclusive access. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "narration": "Connect Concurrency, Locks, and Scheduling to the earlier ideas and explain how the pieces work as one system. Locks protect invariants when concurrent execution can access shared state. Consider this worked case: A mutex lock prevents two processes from modifying a shared counter simultaneously, maintaining data integrity. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
       "plannedSeconds": 55,
       "title": "Concurrency, Locks, and Scheduling",
       "visualDirection": "template:academic-process | Display a diagram of a shared resource with a lock mechanism, showing how processes queue and acquire exclusive access."
@@ -175,7 +175,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Architecture analysis preserves data dependencies, control dependencies, and architectural state. Consider this worked case: An analyst reviews a process trace to confirm that traps preserved state, locks protected invariants, and page tables mapped correctly. On screen, provide a checklist template with boxes for verifying: state preservation, lock invariants, page table mappings, and scheduling fairness. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Architecture analysis preserves data dependencies, control dependencies, and architectural state. Consider this worked case: An analyst reviews a process trace to confirm that traps preserved state, locks protected invariants, and page tables mapped correctly. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
       "plannedSeconds": 55,
       "title": "Practical Analysis Checklist",
       "visualDirection": "template:academic-process | Provide a checklist template with boxes for verifying: state preservation, lock invariants, page table mappings, and scheduling fairness."

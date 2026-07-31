@@ -1,0 +1,326 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "Begin by isolating any structural component and replacing all external connections with their equivalent forces and moments.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "This process creates a free-body diagram that visually captures every external load acting on the body.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "Once drawn, enforce translational equilibrium by summing all horizontal and vertical forces to zero, and enforce rotational equilibrium by summing all moments about a chosen pivot to zero.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-004",
+          "phrase": "These equilibrium conditions allow you to solve for unknown reactions or applied loads.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-005",
+          "phrase": "The diagram must show every force vector with its direction, magnitude, and point of application, ensuring that the mathematical system accurately reflects the physical reality of the structure.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-006",
+          "phrase": "This foundational step prevents sign errors and establishes a clear reference frame for all subsequent calculations.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "To understand how a structure responds internally, make a conceptual cut through the member and expose the hidden forces that keep the two halves in equilibrium.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "These exposed forces are the internal resultants, which include axial forces, shear forces, and bending moments.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "The direction of each internal resultant is determined by Newton's third law: the cut face must exert forces that balance the external loads on the exposed segment.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-004",
+          "phrase": "By analyzing either side of the cut, you can compute the exact magnitude and direction of these internal forces.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-005",
+          "phrase": "This technique transforms a complex structural problem into manageable equilibrium equations, revealing how loads are distributed throughout the material rather than acting only at the boundaries.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "Stress quantifies how internal forces are distributed across a material's cross-section rather than treating them as single point loads.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "Normal stress measures the intensity of axial forces perpendicular to a chosen section, calculated by dividing the axial force by the cross-sectional area.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "Shear stress measures the intensity of internal forces parallel to that section, which resist sliding between adjacent material layers.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-004",
+          "phrase": "The orientation of the section matters significantly, as the same internal force produces different stress values depending on how you slice the member.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-005",
+          "phrase": "By explicitly defining the section plane and applying the correct force component, you ensure that the calculated stress accurately represents the actual material intensity at that location.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "When a member is loaded, it deforms, and this deformation is measured as strain, which represents the fractional change in length relative to the original length.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "Normal strain quantifies elongation or shortening along the loading axis.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "The relationship between normal stress and normal strain is governed by the material's elastic modulus, which acts as a stiffness coefficient that links force intensity to deformation intensity.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-004",
+          "phrase": "Within a specific range, the material responds predictably, meaning that doubling the stress produces exactly double the strain.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-005",
+          "phrase": "This linear relationship allows engineers to predict how much a component will stretch or compress under known loads, providing a direct bridge between mechanical forces and physical deformation.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "Linear elasticity describes the region where stress and strain are directly proportional, forming a straight line on a stress-strain curve.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "This straight-line behavior persists only up to a specific stress threshold, beyond which the material's response becomes nonlinear.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "The slope of this straight line represents the elastic modulus, which remains constant throughout the elastic region.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-004",
+          "phrase": "By plotting stress against strain, you can visually identify the elastic limit and understand how the material transitions from predictable deformation to more complex behavior.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-005",
+          "phrase": "This graphical representation is essential for selecting appropriate materials and ensuring that design loads remain within the safe, linear range where predictable deformation occurs.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-06",
+      "shots": [
+        {
+          "id": "beat-06-shot-001",
+          "phrase": "Yielding marks the point where a material begins to deform permanently, meaning it will not return to its original shape when the load is removed.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-002",
+          "phrase": "This transition occurs when the applied stress exceeds the material's yield strength, causing internal atomic bonds to slide past one another.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-003",
+          "phrase": "Once yielding begins, the stress-strain curve bends, and the material enters a plastic region where deformation increases rapidly with relatively small additional stress.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-004",
+          "phrase": "Understanding yielding is critical because permanent deformation can alter the geometry of a structure, potentially leading to instability or reduced load capacity.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-005",
+          "phrase": "Engineers must ensure that design stresses remain below the yield point to preserve the intended shape and function of the component.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-07",
+      "shots": [
+        {
+          "id": "beat-07-shot-001",
+          "phrase": "Fracture occurs when the material can no longer sustain the applied stress, resulting in sudden rupture or crack propagation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-002",
+          "phrase": "Unlike yielding, which involves permanent but reversible deformation, fracture represents complete structural failure.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-003",
+          "phrase": "The stress-strain curve typically shows a sharp drop in stress after the ultimate strength is reached, indicating that the material can no longer carry additional load.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-004",
+          "phrase": "Fatigue is another failure mechanism where repeated cyclic loading causes cracks to initiate and grow over time, even if the stress remains below the yield point.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-005",
+          "phrase": "Recognizing these failure modes helps engineers design components that can withstand both static and dynamic loading conditions without catastrophic breakdown.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-08",
+      "shots": [
+        {
+          "id": "beat-08-shot-001",
+          "phrase": "Safety factors provide a margin of protection between the predicted mechanical demands and the material's or structure's failure limits.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-002",
+          "phrase": "By comparing the calculated stress or force to the material's yield strength or fracture limit, you determine whether the design is adequate.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-003",
+          "phrase": "A higher safety factor reduces the risk of failure but may increase material usage and cost.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-004",
+          "phrase": "Design checks require explicit comparison of these values, ensuring that the actual demands remain within the acceptable range.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-005",
+          "phrase": "This systematic evaluation process transforms theoretical calculations into reliable engineering decisions, balancing performance requirements with structural integrity and material efficiency.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-09",
+      "shots": [
+        {
+          "id": "beat-09-shot-001",
+          "phrase": "To apply these concepts, calculate the stress and strain in a complete axial member by first determining the axial force through equilibrium.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-002",
+          "phrase": "Divide this force by the cross-sectional area to find the normal stress, then use the elastic modulus to compute the normal strain.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-003",
+          "phrase": "Multiply the strain by the original length to determine the change in length.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-004",
+          "phrase": "Throughout the process, maintain explicit units, verify sign conventions, and confirm that the calculated stress remains below the yield and fracture limits.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-005",
+          "phrase": "This step-by-step calculation integrates equilibrium, stress, strain, and material properties into a single coherent analysis, demonstrating how theoretical principles translate into practical design values.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-10",
+      "shots": [
+        {
+          "id": "beat-10-shot-001",
+          "phrase": "Review your calculations using a structured checklist that ensures accuracy and completeness.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-002",
+          "phrase": "First, verify that the free-body diagram includes all external forces and moments.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-003",
+          "phrase": "Second, confirm that equilibrium equations are solved correctly for unknown reactions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-004",
+          "phrase": "Third, check that internal resultants are calculated using the correct section cut.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-005",
+          "phrase": "Fourth, ensure stress and strain values use consistent units and explicit sign conventions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-006",
+          "phrase": "Fifth, compare the calculated stress to the material's yield and fracture limits.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-007",
+          "phrase": "Sixth, apply the appropriate safety factor to validate the design.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-008",
+          "phrase": "This systematic review process catches common errors and reinforces the logical flow from equilibrium to material response, guaranteeing that your structural analysis is both reliable and defensible.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "solid-mechanics-foundations-from-equilibrium-to-axial-design",
+  "schemaVersion": 1
+}

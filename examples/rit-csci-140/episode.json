@@ -13,10 +13,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Course Foundations & Scope as a question about inputs, decisions, and observable results. This accelerated course covers material from the first-year sequence of courses and provides the foundation for all subsequent Computer Science courses. Consider this worked case: Students will use this course to prepare for advanced topics like algorithms, data structures, and software engineering. On screen, display a course roadmap graphic showing CSCI-140 as the central hub connecting to advanced CS courses. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
-      "plannedSeconds": 56,
-      "title": "Course Foundations & Scope",
-      "visualDirection": "template:academic-process | Display a course roadmap graphic showing CSCI-140 as the central hub connecting to advanced CS courses."
+      "narration": "Begin by framing Problem Statement and Algorithmic Foundations as a question about inputs, decisions, and observable results. Programming begins with precise problem statements, input and output examples, and algorithms written independently of syntax. Consider this worked case: A student defines a sorting problem by listing input arrays and expected sorted outputs before writing any code. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 57,
+      "title": "Problem Statement and Algorithmic Foundations",
+      "visualDirection": "template:academic-process | Display a split-screen: left side shows a textual problem statement with input/output examples; right side shows a flowchart of the algorithmic steps."
     },
     {
       "accessibility": {
@@ -31,10 +31,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Static vs. Dynamic Data Types precisely enough that another learner could test the definition. Topics include tree and graph structures, nested data structures, objects, classes, inheritance, interfaces, object-oriented collection class libraries for abstract data types (for example stacks, queues, maps, and trees), and static versus dynamic data types. Consider this worked case: In statically typed languages, variable types are checked at compile time, whereas dynamically typed languages check types at runtime. On screen, show a side-by-side comparison table of static vs. dynamic typing with code snippets highlighting compile-time vs. runtime type resolution. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
-      "plannedSeconds": 65,
-      "title": "Static vs. Dynamic Data Types",
-      "visualDirection": "template:academic-process | Show a side-by-side comparison table of static vs. dynamic typing with code snippets highlighting compile-time vs. runtime type resolution."
+      "narration": "Now define Data Representation: Lists, Stacks, and Queues precisely enough that another learner could test the definition. Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in first-out access, trees represent hierarchy, and graphs represent connected entities. Consider this worked case: A stack of plates is added and removed only from the top, while a line of people waiting for a bus is processed from the front. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "plannedSeconds": 64,
+      "title": "Data Representation: Lists, Stacks, and Queues",
+      "visualDirection": "template:academic-process | Animate three separate diagrams: a linear list with indices, a stack with arrows pointing only to the top element, and a queue with arrows entering at the tail and leaving at the head."
     },
     {
       "accessibility": {
@@ -49,10 +49,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Object-Oriented Design Foundations operates in a concrete sequence. Software qualities related to object orientation, namely cohesion, minimal coupling, modifiability, and extensibility, are all introduced in this course, as well as a few elementary object-oriented design patterns. Consider this worked case: A parent class defines shared behavior, while child classes inherit and extend that behavior through polymorphism. On screen, render a class diagram illustrating inheritance relationships between a base class and derived classes. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
-      "plannedSeconds": 56,
-      "title": "Object-Oriented Design Foundations",
-      "visualDirection": "template:academic-process | Render a class diagram illustrating inheritance relationships between a base class and derived classes."
+      "narration": "With the foundation in place, examine how Hierarchical and Connected Structures operates in a concrete sequence. Topics include tree and graph structures, nested data structures, objects, classes, inheritance, interfaces, object-oriented collection class libraries for abstract data types (for example stacks, queues, maps, and trees), and static versus dynamic data types. Consider this worked case: A family tree illustrates hierarchical relationships, while a subway map illustrates a graph of connected stations. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "plannedSeconds": 63,
+      "title": "Hierarchical and Connected Structures",
+      "visualDirection": "template:academic-process | Render a binary tree diagram with labeled nodes and edges, followed by a directed graph with multiple cycles and labeled vertices."
     },
     {
       "accessibility": {
@@ -67,10 +67,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Abstract Data Types & Collections and make the decision criteria explicit. The Python language reference specifies lexical analysis, data model behavior, execution, expressions, statements, functions, classes, exceptions, and module import semantics. Consider this worked case: A stack implements last-in-first-out behavior, while a queue implements first-in-first-out behavior for ordered data processing. On screen, animate a stack and queue data structure showing push/pop and enqueue/dequeue operations with labeled elements. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "narration": "Next, compare the choices involved in Objects, Classes, and Inheritance and make the decision criteria explicit. Python objects have identity, a type, and a value. Consider this worked case: A 'Dog' class inherits from an 'Animal' class, gaining shared attributes like 'name' while adding specific ones like 'bark'. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
       "plannedSeconds": 55,
-      "title": "Abstract Data Types & Collections",
-      "visualDirection": "template:academic-process | Animate a stack and queue data structure showing push/pop and enqueue/dequeue operations with labeled elements."
+      "title": "Objects, Classes, and Inheritance",
+      "visualDirection": "template:academic-process | Show a UML class diagram with an 'Animal' superclass and a 'Dog' subclass, highlighting the inheritance arrow and instance attributes."
     },
     {
       "accessibility": {
@@ -85,10 +85,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Software Qualities: Cohesion & Minimal Coupling to a worked situation instead of treating it as an isolated definition. Concepts of object- oriented design are a large part of the course. Consider this worked case: High cohesion means a class performs a single, well-defined purpose, while minimal coupling reduces dependencies between classes. On screen, display a before-and-after class diagram showing how refactoring improves cohesion and reduces coupling. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
-      "plannedSeconds": 55,
-      "title": "Software Qualities: Cohesion & Minimal Coupling",
-      "visualDirection": "template:academic-process | Display a before-and-after class diagram showing how refactoring improves cohesion and reduces coupling."
+      "narration": "Apply Software Qualities: Cohesion and Coupling to a worked situation instead of treating it as an isolated definition. Software qualities related to object orientation, namely cohesion, minimal coupling, modifiability, and extensibility, are all introduced in this course, as well as a few elementary object-oriented design patterns. Consider this worked case: A 'PaymentProcessor' class has high cohesion because it handles only payment logic, and low coupling because it does not directly access database tables. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 68,
+      "title": "Software Qualities: Cohesion and Coupling",
+      "visualDirection": "template:academic-process | Present two side-by-side code snippets: one tightly coupled with multiple imports and direct variable access, and one loosely coupled using interfaces or abstract classes."
     },
     {
       "accessibility": {
@@ -103,10 +103,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Exception Handling & Control Flow, including what improves and what becomes more difficult. Exceptions interrupt normal control flow until a matching handler processes them or they propagate. Consider this worked case: A try-catch block catches a runtime error, allowing the program to recover or exit gracefully without crashing. On screen, show a control flow diagram with a normal path and an exception path branching to a handler block. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
-      "plannedSeconds": 55,
-      "title": "Exception Handling & Control Flow",
-      "visualDirection": "template:academic-process | Show a control flow diagram with a normal path and an exception path branching to a handler block."
+      "narration": "Examine the tradeoffs in Abstract Data Types and Collection Libraries, including what improves and what becomes more difficult. This accelerated course covers material from the first-year sequence of courses and provides the foundation for all subsequent Computer Science courses. Consider this worked case: Using Python's collections module, a developer instantiates a deque as a stack or a defaultdict as a map without writing low-level logic. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "plannedSeconds": 62,
+      "title": "Abstract Data Types and Collection Libraries",
+      "visualDirection": "template:academic-process | Display a table listing Python collection classes (e.g., list, deque, dict, defaultdict) with brief descriptions of their primary operations."
     },
     {
       "accessibility": {
@@ -121,10 +121,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Compiler & IR Concepts with an edge case and identify which assumption controls the outcome. Compiler work separates parsing and semantic analysis from lowering, verification, optimization, and target-specific code generation. Consider this worked case: LLVM IR serves as a typed, SSA-based intermediate representation that enables cross-platform optimization and code generation. On screen, illustrate a compiler pipeline diagram with stages: parsing, semantic analysis, lowering, verification, optimization, code generation. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
-      "plannedSeconds": 56,
-      "title": "Compiler & IR Concepts",
-      "visualDirection": "template:academic-process | Illustrate a compiler pipeline diagram with stages: parsing, semantic analysis, lowering, verification, optimization, code generation."
+      "narration": "Stress-test the reasoning around Exception Handling and Control Flow with an edge case and identify which assumption controls the outcome. Exceptions interrupt normal control flow until a matching handler processes them or they propagate. Consider this worked case: A division-by-zero error is caught by a try/except block that logs the error and returns a default value instead of crashing. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 61,
+      "title": "Exception Handling and Control Flow",
+      "visualDirection": "template:academic-process | Animate a program execution trace where a normal flow is interrupted by an exception, jumps to a handler block, and then resumes."
     },
     {
       "accessibility": {
@@ -139,10 +139,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Python Language Model & Execution to diagnose a failure by separating symptoms, causes, and corrective action. Programs should be reasoned about through explicit state, control flow, data representation, contracts, tests, and observable behavior. Consider this worked case: Debugging separates syntax, runtime, and logical failures, while decomposition and abstraction reduce interacting concerns in Python code. On screen, show a Python object model diagram with identity, type, and value attributes, alongside a debugging workflow flowchart. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "narration": "Use Input and Output Streams to diagnose a failure by separating symptoms, causes, and corrective action. Input and output streams, graphical user interfaces, and exception handling are covered. Consider this worked case: A program reads a text file using sys. stdin and writes formatted results to a log file using open('log. txt', 'w'). Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
       "plannedSeconds": 57,
-      "title": "Python Language Model & Execution",
-      "visualDirection": "template:academic-process | Show a Python object model diagram with identity, type, and value attributes, alongside a debugging workflow flowchart."
+      "title": "Input and Output Streams",
+      "visualDirection": "template:academic-process | Show a diagram with arrows labeled 'read' entering a buffer and 'write' exiting to a file icon, alongside code snippets for both operations."
     },
     {
       "accessibility": {
@@ -157,10 +157,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Object-Oriented Design Patterns to the earlier ideas and explain how the pieces work as one system. The course stresses problem solving while covering modern software development techniques and introducing essential software tools. Consider this worked case: The singleton pattern ensures a class has only one instance, while the factory pattern creates objects without specifying exact classes. On screen, display a simple UML diagram of a factory pattern with creator, product, and concrete product classes. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
-      "plannedSeconds": 56,
-      "title": "Object-Oriented Design Patterns",
-      "visualDirection": "template:academic-process | Display a simple UML diagram of a factory pattern with creator, product, and concrete product classes."
+      "narration": "Connect Graphical User Interfaces to the earlier ideas and explain how the pieces work as one system. The course stresses problem solving while covering modern software development techniques and introducing essential software tools. Consider this worked case: A simple GUI window displays a button; clicking the button triggers a function that updates a label on the screen. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 58,
+      "title": "Graphical User Interfaces",
+      "visualDirection": "template:academic-process | Render a mockup of a window with a button and a label, then highlight the button press event and the subsequent label update."
     },
     {
       "accessibility": {
@@ -175,27 +175,27 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Valid IR must satisfy structural and typing rules. Consider this worked case: A checklist evaluates whether each class has a single responsibility, limited dependencies, and clear extension points for future features. On screen, show a printable checklist template with checkboxes for cohesion, coupling, modifiability, and extensibility evaluation. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 57,
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Correctness arguments, tests, tracing, and debugging compare intended behavior with observable results, including boundary and error cases. Consider this worked case: A developer writes unit tests for a sorting function, traces its execution on an empty list and a reversed list, and fixes a bug where the loop condition fails at the boundary. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 65,
       "title": "Practical Analysis Checklist",
-      "visualDirection": "template:academic-process | Show a printable checklist template with checkboxes for cohesion, coupling, modifiability, and extensibility evaluation."
+      "visualDirection": "template:academic-process | Present a checklist graphic with four items: 'Write Tests', 'Trace Execution', 'Identify Boundary Cases', 'Debug and Verify', each accompanied by a small icon."
     }
   ],
   "claims": [
     {
       "id": "beat-01-claim-01",
       "sourceIds": [
-        "rit-csci-140"
+        "opendsa-programming-foundations"
       ],
-      "text": "This accelerated course covers material from the first-year sequence of courses and provides the foundation for all subsequent Computer Science courses.",
+      "text": "Programming begins with precise problem statements, input and output examples, and algorithms written independently of syntax.",
       "verified": true
     },
     {
       "id": "beat-02-claim-01",
       "sourceIds": [
-        "rit-csci-140"
+        "opendsa-programming-foundations"
       ],
-      "text": "Topics include tree and graph structures, nested data structures, objects, classes, inheritance, interfaces, object-oriented collection class libraries for abstract data types (for example stacks, queues, maps, and trees), and static versus dynamic data types.",
+      "text": "Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in first-out access, trees represent hierarchy, and graphs represent connected entities.",
       "verified": true
     },
     {
@@ -203,7 +203,7 @@
       "sourceIds": [
         "rit-csci-140"
       ],
-      "text": "Software qualities related to object orientation, namely cohesion, minimal coupling, modifiability, and extensibility, are all introduced in this course, as well as a few elementary object-oriented design patterns.",
+      "text": "Topics include tree and graph structures, nested data structures, objects, classes, inheritance, interfaces, object-oriented collection class libraries for abstract data types (for example stacks, queues, maps, and trees), and static versus dynamic data types.",
       "verified": true
     },
     {
@@ -211,7 +211,7 @@
       "sourceIds": [
         "python-language-reference"
       ],
-      "text": "The Python language reference specifies lexical analysis, data model behavior, execution, expressions, statements, functions, classes, exceptions, and module import semantics.",
+      "text": "Python objects have identity, a type, and a value.",
       "verified": true
     },
     {
@@ -219,11 +219,19 @@
       "sourceIds": [
         "rit-csci-140"
       ],
-      "text": "Concepts of object- oriented design are a large part of the course.",
+      "text": "Software qualities related to object orientation, namely cohesion, minimal coupling, modifiability, and extensibility, are all introduced in this course, as well as a few elementary object-oriented design patterns.",
       "verified": true
     },
     {
       "id": "beat-06-claim-01",
+      "sourceIds": [
+        "rit-csci-140"
+      ],
+      "text": "This accelerated course covers material from the first-year sequence of courses and provides the foundation for all subsequent Computer Science courses.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
       "sourceIds": [
         "python-language-reference"
       ],
@@ -231,19 +239,11 @@
       "verified": true
     },
     {
-      "id": "beat-07-claim-01",
-      "sourceIds": [
-        "llvm-language-reference"
-      ],
-      "text": "Compiler work separates parsing and semantic analysis from lowering, verification, optimization, and target-specific code generation.",
-      "verified": true
-    },
-    {
       "id": "beat-08-claim-01",
       "sourceIds": [
-        "python-language-reference"
+        "rit-csci-140"
       ],
-      "text": "Programs should be reasoned about through explicit state, control flow, data representation, contracts, tests, and observable behavior.",
+      "text": "Input and output streams, graphical user interfaces, and exception handling are covered.",
       "verified": true
     },
     {
@@ -257,13 +257,13 @@
     {
       "id": "beat-10-claim-01",
       "sourceIds": [
-        "llvm-language-reference"
+        "opendsa-programming-foundations"
       ],
-      "text": "Valid IR must satisfy structural and typing rules.",
+      "text": "Correctness arguments, tests, tracing, and debugging compare intended behavior with observable results, including boundary and error cases.",
       "verified": true
     }
   ],
-  "id": "csci-140-computer-science-for-ap-students-lesson-blueprint",
+  "id": "csci-140-foundations-companion",
   "learningObjectives": [],
   "pronunciations": [],
   "schemaVersion": 2,
@@ -289,15 +289,15 @@
       "verified": true
     },
     {
-      "author": "LLVM Project",
-      "excerpt": "LLVM IR is a typed, SSA-based intermediate representation with explicit instructions, basic blocks, functions, memory operations, and control flow. A module contains global values, functions, declarations, and metadata. A function contains basic blocks, and every basic block ends with a terminator instruction. Phi instructions select values according to the predecessor control-flow edge. Load and store instructions make memory access explicit. Valid IR must satisfy structural and typing rules. The verifier reports IR that violates those rules. Compiler work separates parsing and semantic analysis from lowering, verification, optimization, and target-specific code generation.",
-      "id": "llvm-language-reference",
-      "sha256": "a43379c8170e7b9a563e131114cda4ecf3edd42bb450fc24a5d7684fefa888c0",
-      "title": "LLVM Language Reference Manual",
+      "author": "OpenDSA Project",
+      "excerpt": "Programming begins with precise problem statements, input and output examples, and algorithms written independently of syntax. Variables represent values and state, expressions compute values, and control structures select or repeat operations. Functions decompose a solution into named operations with parameters and results. Recursion solves a problem through smaller instances and requires a base case. Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in first-out access, trees represent hierarchy, and graphs represent connected entities. Searching and sorting algorithms depend on representation and invariants. Correctness arguments, tests, tracing, and debugging compare intended behavior with observable results, including boundary and error cases.",
+      "id": "opendsa-programming-foundations",
+      "sha256": "853127e4dd63e3809a5c69fd46259846f13da31b0d141c311e782a72d07f4bc9",
+      "title": "OpenDSA Programming, Data Structures, and Algorithms",
       "type": "note",
-      "uri": "https://llvm.org/docs/LangRef.html",
+      "uri": "https://opendsa-server.cs.vt.edu/",
       "verified": true
     }
   ],
-  "title": "CSCI-140: Computer Science for AP Students - Lesson Blueprint"
+  "title": "CSCI-140 Foundations Companion"
 }

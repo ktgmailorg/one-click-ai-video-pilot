@@ -1,0 +1,589 @@
+{
+  "approvals": [
+    {
+      "approvedAt": "2026-07-31T15:49:31.714Z",
+      "notes": "Verifies declared claim-to-source bindings for draft rendering only; this is not instructor or release approval.",
+      "reviewer": "Automated source-pack verification (draft)",
+      "role": "automation",
+      "schemaVersion": 1,
+      "stage": "script",
+      "subjectSha256": "b79dc34ea694f27ed6e52ef0a6a4796f414761e99cd761ac5ae6663d70eeb3dd"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/ntid-accessible-captions/work/render/documentary-master.core.mp4",
+      "role": "master",
+      "sha256": "18c33262818a108806d037af540140cf6954f43e34e3eade007f2f4335ce80d8"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/ntid-accessible-captions/work/narration/captions.vtt",
+      "role": "captions-vtt",
+      "sha256": "dbcbf64b42e10a4a64d1c612c95f116db71cf6ac97e4b62148b5884f2ff7a740"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/ntid-accessible-captions/work/narration/captions.srt",
+      "role": "captions-srt",
+      "sha256": "25315845f8e163650b4db7894242f222aefe22aebf11f0492d55438df12bd822"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/ntid-accessible-captions/work/narration/transcript.txt",
+      "role": "transcript-text",
+      "sha256": "4ba5a45d95652ba9814191e019a508d5b72fa1dd1c4a90422455131b1b04a008"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/ntid-accessible-captions/work/narration/transcript.html",
+      "role": "transcript-html",
+      "sha256": "2820e86311e48082725390d25c33ce318632951dcd38bb917d2be499ae6f09e3"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/ntid-accessible-captions/work/visuals/thumbnail.png",
+      "role": "thumbnail",
+      "sha256": "a2f40cfecc7a436cd7ad1dd5b2da84df9894d440bcefecc2b00781f16f443176"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/ntid-accessible-captions/work/visuals/beat-01/beat-01-shot-001.png",
+      "role": "shot",
+      "sha256": "2a9b7cc4110467e6b422e79046360ead7b34bc911d63bcfcf0600ae3ad1196b1",
+      "shotId": "beat-01-shot-001"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/ntid-accessible-captions/work/visuals/beat-01/beat-01-shot-002.png",
+      "role": "shot",
+      "sha256": "ca34dc0530f012ce8db94481b8f9d5e7dc559787fe3d5f55cc17dc7a76ad061d",
+      "shotId": "beat-01-shot-002"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/ntid-accessible-captions/work/visuals/beat-01/beat-01-shot-003.png",
+      "role": "shot",
+      "sha256": "74d2bc812c215950feb756166a0dd7c9e87dbc0d9e05bbf84b123d1e17b545e9",
+      "shotId": "beat-01-shot-003"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/ntid-accessible-captions/work/visuals/beat-02/beat-02-shot-001.png",
+      "role": "shot",
+      "sha256": "313cb4aabeaf6e264b3e9936cbb2c309a17fc5e98f837f717dd639af387716d2",
+      "shotId": "beat-02-shot-001"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/ntid-accessible-captions/work/visuals/beat-02/beat-02-shot-002.png",
+      "role": "shot",
+      "sha256": "0aacc05f7061f13eaef133af085955b3116beab2695c183f1e7d61f8f9225ab0",
+      "shotId": "beat-02-shot-002"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/ntid-accessible-captions/work/visuals/beat-02/beat-02-shot-003.png",
+      "role": "shot",
+      "sha256": "4480248084187940a2a9a865fff05d42ab271961906d3c919fddc2caf24079ad",
+      "shotId": "beat-02-shot-003"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/ntid-accessible-captions/work/visuals/beat-03/beat-03-shot-001.png",
+      "role": "shot",
+      "sha256": "8c936e0a52015b11b68079e8886e6134faeb96b70643f314e63eec32d027bd87",
+      "shotId": "beat-03-shot-001"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/ntid-accessible-captions/work/visuals/beat-03/beat-03-shot-002.png",
+      "role": "shot",
+      "sha256": "d29aaad1e8926c5523a5de692fe5c6a556b7b5c75fd393582fc1d3dda42a8016",
+      "shotId": "beat-03-shot-002"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/ntid-accessible-captions/work/visuals/beat-03/beat-03-shot-003.png",
+      "role": "shot",
+      "sha256": "e0378c5d91b39fa471d179d01312a79e9fc506e1617593d0b3cb44c9aac05f8e",
+      "shotId": "beat-03-shot-003"
+    }
+  ],
+  "configSha256": "4398c3660155dfceb57a917e4a1683ae63fd30d3c371ddc323f90bbf446942b2",
+  "createdAt": "2026-07-31T15:49:52.819Z",
+  "final": {
+    "releaseAudit": {
+      "blockers": [],
+      "checks": [
+        {
+          "name": "frame",
+          "ok": true,
+          "value": "1920x1080"
+        },
+        {
+          "name": "frame-rate",
+          "ok": true,
+          "value": "30000/1001"
+        },
+        {
+          "name": "audio-sample-rate",
+          "ok": true,
+          "value": 48000
+        },
+        {
+          "name": "rit-orange-token",
+          "ok": true,
+          "value": "#F76902"
+        },
+        {
+          "name": "orange-on-black-contrast",
+          "ok": true,
+          "value": 6.98
+        },
+        {
+          "name": "title-safe-template",
+          "ok": true,
+          "value": "96px minimum inset"
+        },
+        {
+          "name": "font-fallbacks",
+          "ok": true,
+          "value": "Arial/Liberation Sans and Georgia/Liberation Serif"
+        },
+        {
+          "name": "final-master-loudness",
+          "ok": true,
+          "value": {
+            "integratedLufs": -16.2,
+            "loudnessRangeLu": 2.6,
+            "ok": true,
+            "schemaVersion": 1,
+            "targetIntegratedLufs": -16,
+            "targetTruePeakDbtp": -1.5,
+            "truePeakDbtp": -1.5
+          }
+        },
+        {
+          "name": "caption-audio-start-sync",
+          "ok": true,
+          "value": {
+            "audioStartSeconds": 0,
+            "captionStartSeconds": 0.05,
+            "maximumOffsetSeconds": 0.25,
+            "offsetSeconds": 0.05
+          }
+        },
+        {
+          "name": "subject-matched-visuals",
+          "ok": true,
+          "value": {
+            "genericShotIds": [],
+            "resolvedTemplates": [
+              "showcase-captions"
+            ]
+          }
+        }
+      ],
+      "ok": true,
+      "releaseState": "course-draft",
+      "warnings": []
+    },
+    "render": {
+      "audioQuality": {
+        "integratedLufs": -16.2,
+        "loudnessRangeLu": 2.6,
+        "ok": true,
+        "schemaVersion": 1,
+        "targetIntegratedLufs": -16,
+        "targetTruePeakDbtp": -1.5,
+        "truePeakDbtp": -1.5
+      },
+      "audioSampleRate": 48000,
+      "audioStartSeconds": 0,
+      "cache": {
+        "draft": false,
+        "draftSkipped": false,
+        "master": false,
+        "sectionCount": 3,
+        "sections": 0
+      },
+      "draftPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/ntid-accessible-captions/work/render/documentary-master.DRAFT.mp4",
+      "durationSeconds": 56.421333,
+      "encoder": {
+        "codec": "h264_videotoolbox",
+        "mode": "videotoolbox",
+        "prioritizeSpeed": false,
+        "profile": "high",
+        "quality": "80",
+        "realtime": true
+      },
+      "frameRate": "30000/1001",
+      "height": 1080,
+      "master": "documentary-master.core.mp4",
+      "masterPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/ntid-accessible-captions/work/render/documentary-master.core.mp4",
+      "schemaVersion": 1,
+      "sections": [
+        {
+          "beatId": "beat-01",
+          "cacheHit": false,
+          "durationSeconds": 15.528,
+          "output": "beat-01.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/ntid-accessible-captions/work/render/sections/beat-01.mp4",
+          "renderSignature": "50858975440d375e30aa094f22db188245707e8b9356cd02a3bd5e0e6430f3fe",
+          "schemaVersion": 1,
+          "sha256": "253e3797b1e1b60d314c97bbda7531c52daeb8b737afc9419c17d73806e25e84"
+        },
+        {
+          "beatId": "beat-02",
+          "cacheHit": false,
+          "durationSeconds": 19.44,
+          "output": "beat-02.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/ntid-accessible-captions/work/render/sections/beat-02.mp4",
+          "renderSignature": "92dd07ea977647e02005510b993f9d13061963716c475c59413980fcae8a4086",
+          "schemaVersion": 1,
+          "sha256": "b1f691cd0559c655f129e136362a0bdb18bf66df2efb6d61cde2671a43c22900"
+        },
+        {
+          "beatId": "beat-03",
+          "cacheHit": false,
+          "durationSeconds": 21.384,
+          "output": "beat-03.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/ntid-accessible-captions/work/render/sections/beat-03.mp4",
+          "renderSignature": "394dfb2cf3d6947456bf4e35ba63d1c0f601282dd49c74cb3e42ce606dfddd6f",
+          "schemaVersion": 1,
+          "sha256": "2c37fe7fd8482c0f4fd3619635f9d26ae5b2c4c09e4e8106d08c2f579c041114"
+        }
+      ],
+      "sha256": "18c33262818a108806d037af540140cf6954f43e34e3eade007f2f4335ce80d8",
+      "title": "How Captions Improve an Educational Video",
+      "width": 1920
+    }
+  },
+  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "inputSha256": "d4a41e9b4ab103113b2542c3091cdc9ce40fe97dab7c7c99b302850014d9ecf2",
+  "mode": "record",
+  "providers": {
+    "edge-narration": {
+      "capabilities": [
+        "speech.synthesize"
+      ],
+      "executionLocation": "hosted",
+      "id": "edge-tts",
+      "mimeTypes": {
+        "speech.synthesize": [
+          "audio/mpeg",
+          "text/vtt"
+        ]
+      },
+      "profileName": "edge-narration",
+      "supportsAsyncJobs": false,
+      "supportsModelDiscovery": false,
+      "supportsSeed": false,
+      "supportsStructuredOutput": false,
+      "version": "7.2.8",
+      "voicePresets": {
+        "female": "en-US-EmmaMultilingualNeural",
+        "male": "en-US-AndrewMultilingualNeural"
+      }
+    }
+  },
+  "requests": [
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 776,
+      "lookupSha256": "5230ca177b29f22de963e76606e8e0810cc9d2fb43a3c60bfb838be094eb107b",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "Automatic speech recognition can create a useful first draft, but technical terms, names, punctuation, and timing often need correction. Review captions against the final audio, keep cues synchronized, and break lines at readable phrase boundaries. The reviewed caption file—not the raw machine output—belongs with the release."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "30bcd9962831109ee708ee6aeb8e14df3b052ed8c202a65c1ea5db5d47efb18f",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/3c/3c985708305f7e7e58e4e05970627d81fe291ab90f4fd9d0c49efe20da27fb7c.mp3",
+            "sha256": "3c985708305f7e7e58e4e05970627d81fe291ab90f4fd9d0c49efe20da27fb7c",
+            "size": 116640
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/73/73070c088924973f190126c882e08ee7d4e952f004efb47db5d8adc189d3c714.vtt",
+            "sha256": "73070c088924973f190126c882e08ee7d4e952f004efb47db5d8adc189d3c714",
+            "size": 431
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:49:31.815Z"
+    },
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 996,
+      "lookupSha256": "b1c0ee360b48049574ebc012c33d6a033b6dd58ad9b951aba4e466ac96aaaa18",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "Accessibility works best as a production requirement, not an emergency repair. RIT recommends planning accessible media while a course is designed and provides captioning options for Panopto content. Build review time into the schedule, keep a corrected transcript, and verify that visuals also communicate their essential meaning through narration or description."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "5e462a504bee2e791ddd1c17421955f70c8094f86cbe016c8b31ac7bfcfa10df",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/11/11bb71624f95874a414dc86a50bfaf8d71564e23cd96fca7a0de69bb7f48199e.mp3",
+            "sha256": "11bb71624f95874a414dc86a50bfaf8d71564e23cd96fca7a0de69bb7f48199e",
+            "size": 128304
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/93/9387d7bdfdea0ad122224a405dc21aec0f3a13d61f5c2b4cc4c6248201e01577.vtt",
+            "sha256": "9387d7bdfdea0ad122224a405dc21aec0f3a13d61f5c2b4cc4c6248201e01577",
+            "size": 464
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:49:31.815Z"
+    },
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 1618,
+      "lookupSha256": "5cab5838cae6d83f2aeaf2fd12374c22c256a6d370a5dc75943dd79a2112dbd6",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "Captions are not decorative subtitles added at the end. They carry the information contained in the audio: spoken words, speaker identity when it matters, and meaningful sounds. A viewer should be able to follow the instructional message without relying on hearing the soundtrack."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "6c0d8e47c06596f1d61ebd62d8f861cb35789bfa9ec4c085ea05aede926125f3",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/7a/7a0a81acbc7bf7aec9bc2c83c7c23cae296a3c1e9f538d1889c255846601e65d.mp3",
+            "sha256": "7a0a81acbc7bf7aec9bc2c83c7c23cae296a3c1e9f538d1889c255846601e65d",
+            "size": 93168
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/97/9775e6459a49e229f4e864aa68c6ba928bdfc1dabf673988f1aff78943c1711c.vtt",
+            "sha256": "9775e6459a49e229f4e864aa68c6ba928bdfc1dabf673988f1aff78943c1711c",
+            "size": 380
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:49:31.814Z"
+    }
+  ],
+  "runId": "how-captions-improve-an-educational-video-aaaf2314279b",
+  "schemaVersion": 1,
+  "stages": [
+    {
+      "name": "plan",
+      "status": "complete"
+    },
+    {
+      "name": "script-approval",
+      "status": "complete"
+    },
+    {
+      "name": "visual-approval",
+      "status": "complete"
+    },
+    {
+      "name": "narration",
+      "status": "complete"
+    },
+    {
+      "name": "visual-generation",
+      "status": "complete"
+    },
+    {
+      "name": "render",
+      "status": "complete"
+    },
+    {
+      "name": "release-qa",
+      "status": "complete"
+    },
+    {
+      "name": "release-approval",
+      "status": "waiting"
+    }
+  ],
+  "status": "awaiting-approval",
+  "toolchain": {
+    "ffmpeg": {
+      "available": true,
+      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "available": true,
+      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "gitChangedPaths": [
+      "outreach/README.md",
+      "outreach/general-email.md",
+      "outreach/leadership-confirmation.md"
+    ],
+    "gitDirty": true,
+    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
+    "node": "v22.23.1",
+    "platform": "darwin-arm64",
+    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtimeDirty": false,
+    "sharp": {
+      "aom": "3.14.1",
+      "archive": "3.8.8",
+      "cairo": "1.18.4",
+      "cgif": "0.5.3",
+      "exif": "0.6.26",
+      "expat": "2.8.2",
+      "ffi": "3.6.0",
+      "fontconfig": "2.18.1",
+      "freetype": "2.14.3",
+      "fribidi": "1.0.16",
+      "glib": "2.89.1",
+      "harfbuzz": "14.2.1",
+      "heif": "1.23.1",
+      "highway": "1.4.0",
+      "imagequant": "2.4.1",
+      "lcms": "2.19.1",
+      "mozjpeg": "0826579",
+      "pango": "1.58.0",
+      "pixman": "0.46.4",
+      "png": "1.6.58",
+      "proxy-libintl": "0.5",
+      "rsvg": "2.62.90",
+      "sharp": "0.35.3",
+      "tiff": "d01a94b",
+      "uhdr": "1acdbed",
+      "vips": "8.18.3",
+      "webp": "1.6.0",
+      "xml2": "2.15.3",
+      "zlib-ng": "2.3.3"
+    }
+  },
+  "totalCostUsd": 0
+}

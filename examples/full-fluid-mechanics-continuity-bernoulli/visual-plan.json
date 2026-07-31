@@ -1,0 +1,401 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "We begin by isolating a specific region of flowing fluid, which we call a control volume.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "Imagine drawing a transparent box around a section of a water pipe.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "This boundary is purely imaginary, but it allows us to track exactly what enters and leaves without worrying about the fluid outside.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-004",
+          "phrase": "The control volume concept transforms a complex, continuous system into a manageable mathematical framework.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-005",
+          "phrase": "By focusing only on the mass crossing this imaginary surface, we can apply conservation laws directly to the flow.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-006",
+          "phrase": "This approach is essential because it separates the internal dynamics from external influences, letting us analyze steady conditions systematically.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-007",
+          "phrase": "We will now examine how mass behaves within this defined space.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "Density measures how much mass occupies a given volume, acting as the bridge between mass and space.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "In our control volume, density determines how tightly packed the fluid molecules are.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "If we compress the fluid, density increases, meaning more mass fits into the same volume.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-004",
+          "phrase": "Conversely, heating the fluid expands it, lowering density.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-005",
+          "phrase": "This property is crucial because it dictates how the fluid responds to pressure changes and area variations.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-006",
+          "phrase": "We treat density as a fundamental material property that remains constant for liquids but can shift for gases.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-007",
+          "phrase": "Recognizing density allows us to predict how mass distributes itself within our imaginary boundary before analyzing motion.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "Mass flow rate quantifies how much mass crosses a plane each second.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "Imagine a conveyor belt carrying boxes; the mass flow rate tells you exactly how many boxes pass a checkpoint per minute.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "Mathematically, we multiply density by the cross-sectional area and the average velocity to get this value.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-004",
+          "phrase": "This formula works because density gives mass per volume, area gives volume per length, and velocity gives length per time.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-005",
+          "phrase": "When you combine them, volume and length cancel out, leaving mass per time.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-006",
+          "phrase": "This calculation is foundational because it converts spatial dimensions into a temporal rate, allowing us to track material movement through our control volume.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "Continuity enforces mass conservation within our control volume.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "If mass enters at a certain rate, it must exit at the exact same rate when the flow is steady.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "No mass accumulates inside the box, and no sources or sinks exist within it.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-004",
+          "phrase": "This principle means the product of density, area, and velocity remains constant along the pipe.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-005",
+          "phrase": "If the pipe narrows, the fluid must speed up to maintain the same mass flow rate.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-006",
+          "phrase": "Conversely, if the pipe widens, the fluid slows down.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-007",
+          "phrase": "This relationship holds regardless of the fluid type, provided we account for density changes in compressible gases.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-008",
+          "phrase": "Continuity is the first law of fluid mechanics in action, dictating how geometry forces velocity to adjust.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "Pressure in a flowing fluid splits into two distinct components.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "Static pressure measures the fluid's inherent thermodynamic energy, independent of motion.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "Dynamic pressure quantifies the kinetic energy associated with the fluid's velocity.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-004",
+          "phrase": "When fluid moves faster, dynamic pressure increases while static pressure typically decreases.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-005",
+          "phrase": "This trade-off occurs because total energy remains constant in ideal conditions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-006",
+          "phrase": "We visualize this by imagining a stationary observer measuring static pressure with a wall-mounted gauge, versus a moving observer experiencing dynamic pressure as a ram effect.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-007",
+          "phrase": "Understanding both components allows us to predict how forces distribute across pipe walls and how velocity changes affect pressure readings.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-06",
+      "shots": [
+        {
+          "id": "beat-06-shot-001",
+          "phrase": "Bernoulli's equation links static pressure, dynamic pressure, and total pressure along a streamline.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-002",
+          "phrase": "It states that the sum of static pressure and one-half density times velocity squared equals a constant total pressure.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-003",
+          "phrase": "This relationship emerges from energy conservation, assuming steady, inviscid, incompressible flow without heat addition, shaft work, or significant elevation changes.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-004",
+          "phrase": "These assumptions simplify reality but are critical for accurate predictions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-005",
+          "phrase": "If viscosity, compressibility, pumps, turbines, heat transfer, or unsteady behavior materially affect the flow, Bernoulli's simplified form fails.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-006",
+          "phrase": "We must verify these conditions before applying the equation to real-world systems.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-07",
+      "shots": [
+        {
+          "id": "beat-07-shot-001",
+          "phrase": "Combining continuity and Bernoulli's equation reveals how pipe geometry dictates pressure and velocity.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-002",
+          "phrase": "When a pipe narrows, continuity forces velocity to increase.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-003",
+          "phrase": "Bernoulli's equation then predicts that this velocity increase must be offset by a drop in static pressure.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-004",
+          "phrase": "Conversely, a widening pipe reduces velocity and raises static pressure.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-005",
+          "phrase": "This inverse relationship between area and pressure is fundamental to designing ducts, nozzles, and Venturi meters.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-006",
+          "phrase": "We can visualize this by tracking pressure gauges along a tapered pipe: readings will fall in the narrow section and rise in the wide section.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-007",
+          "phrase": "These relationships allow engineers to predict flow behavior without complex simulations.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-08",
+      "shots": [
+        {
+          "id": "beat-08-shot-001",
+          "phrase": "Pitot measurement exploits the area-velocity-pressure relationship to determine fluid speed.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-002",
+          "phrase": "A Pitot tube points directly into the flow, capturing dynamic pressure at its stagnation point.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-003",
+          "phrase": "A static port measures the ambient static pressure.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-004",
+          "phrase": "The difference between these two readings equals dynamic pressure, which we convert to velocity using Bernoulli's equation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-005",
+          "phrase": "This technique is widely used in aviation and HVAC systems to map airflow patterns.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-006",
+          "phrase": "By placing multiple Pitot probes along a duct, we can reconstruct the velocity profile and verify theoretical predictions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-007",
+          "phrase": "The method relies on accurate pressure sensing and assumes the flow remains undisturbed by the probe itself.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-09",
+      "shots": [
+        {
+          "id": "beat-09-shot-001",
+          "phrase": "Real flows rarely meet ideal assumptions, introducing energy losses that invalidate simple Bernoulli calculations.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-002",
+          "phrase": "Friction against pipe walls, turbulence, and sudden expansions dissipate mechanical energy into heat.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-003",
+          "phrase": "These losses reduce the total pressure available for flow, meaning static and dynamic pressure sums will not remain constant.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-004",
+          "phrase": "We must recognize invalid applications when viscosity, compressibility, pumps, turbines, heat transfer, or unsteady behavior materially affect the flow.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-005",
+          "phrase": "In such cases, we switch to the general energy equation or use empirical loss coefficients.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-006",
+          "phrase": "Identifying these limitations prevents erroneous predictions and ensures engineering designs account for real-world inefficiencies.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-10",
+      "shots": [
+        {
+          "id": "beat-10-shot-001",
+          "phrase": "Let us apply these concepts to a narrowing-pipe example.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-002",
+          "phrase": "Suppose water flows through a pipe with an inlet area of 0.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-003",
+          "phrase": "05 square meters at 2 meters per second.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-004",
+          "phrase": "The outlet area shrinks to 0.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-005",
+          "phrase": "Using continuity, we find the outlet velocity doubles to 4 meters per second.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-006",
+          "phrase": "Assuming incompressible flow, density remains 1000 kilograms per cubic meter.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-007",
+          "phrase": "Applying Bernoulli's equation, we calculate the static pressure drop.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-008",
+          "phrase": "The dynamic pressure increases by half density times the velocity change squared, yielding a measurable pressure difference.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "introductory-fluid-mechanics-control-volumes-to-narrowing-pipes",
+  "schemaVersion": 1
+}

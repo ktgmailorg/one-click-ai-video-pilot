@@ -1,233 +1,227 @@
-NARRATOR: Algorithm analysis begins by separating three layers.
+Algorithm analysis begins by separating three layers.
 
-NARRATOR: The problem states the required relationship between inputs and outputs.
+The problem states the required relationship between inputs and outputs.
 
-NARRATOR: An algorithm is a language-independent procedure for producing
+An algorithm is a language-independent procedure for producing the output.
 
-the output.
+An implementation expresses that procedure in a programming language and on a machine.
 
-NARRATOR: An implementation expresses that procedure in a programming language and on a
+Two programs may implement the same algorithm, and two algorithms may solve the same problem
 
-machine.
+with very different costs.
 
-NARRATOR: Two programs may implement the same algorithm, and two algorithms may solve the
+State assumptions about input size, allowed operations, and required correctness before
 
-same problem with very different costs.
+comparing performance.
 
-NARRATOR: State assumptions about input size, allowed operations, and required correctness
+Otherwise a faster-looking program may be solving an easier problem or relying on an
 
-before comparing performance.
+operation whose cost has been ignored.
 
-NARRATOR: Otherwise a faster-looking program may be solving an easier problem or relying on
+Analysis makes comparisons meaningful by fixing the question first.
 
-an operation whose cost has been ignored.
+Performance cannot rescue an incorrect result.
 
-NARRATOR: Analysis makes comparisons meaningful by fixing the question first.
-
-NARRATOR: Performance cannot rescue an incorrect result.
-
-NARRATOR: A correctness argument begins with preconditions describing allowed inputs and a
+A correctness argument begins with preconditions describing allowed inputs and a
 
 postcondition describing the required output.
 
-NARRATOR: For iterative algorithms, a loop invariant connects the work already completed
+For iterative algorithms, a loop invariant connects the work already completed to the
 
-to the work that remains.
+work that remains.
 
-NARRATOR: Show that the invariant is true initially, preserved by each iteration, and
+Show that the invariant is true initially, preserved by each iteration, and strong enough
 
-strong enough to imply the postcondition at termination.
+to imply the postcondition at termination.
 
-NARRATOR: For recursive algorithms, prove the base case and show that correct solutions to
+For recursive algorithms, prove the base case and show that correct solutions to smaller
 
-smaller subproblems produce a correct larger solution.
+subproblems produce a correct larger solution.
 
-NARRATOR: Test examples help find counterexamples, but a proof explains why
+Test examples help find counterexamples, but a proof explains why every allowed case works.
 
-every allowed case works.
+Correctness and performance are separate claims, and both need evidence.
 
-NARRATOR: Correctness and performance are separate claims, and both need evidence.
+To analyze cost, define n.
 
-NARRATOR: To analyze cost, define n.
+It may be the number of array elements, graph vertices and edges, digits in an integer, or
 
-NARRATOR: It may be the number of array elements, graph vertices and edges, digits in
+dimensions of a matrix.
 
-an integer, or dimensions of a matrix.
+Then define which operations count as constant time in the chosen model.
 
-NARRATOR: Then define which operations count as constant time in the chosen model.
+Array access and machine-word arithmetic may be constant under a random-access model, but
 
-NARRATOR: Array access and machine-word arithmetic may be constant under a
+arithmetic on integers with thousands of digits is not.
 
-random-access model, but arithmetic on integers with thousands of digits is not.
-
-NARRATOR: Hash-table lookup is commonly expected constant time under assumptions, not
+Hash-table lookup is commonly expected constant time under assumptions, not
 
 guaranteed constant time for every input.
 
-NARRATOR: State these choices.
+State these choices.
 
-NARRATOR: An asymptotic result without an input measure or model is incomplete.
+An asymptotic result without an input measure or model is incomplete.
 
-NARRATOR: The model is an abstraction, but a useful abstraction exposes dominant structure
+The model is an abstraction, but a useful abstraction exposes dominant structure while
 
-while remaining connected to implementation reality.
+remaining connected to implementation reality.
 
-NARRATOR: Asymptotic notation describes growth beyond a sufficiently large input.
+Asymptotic notation describes growth beyond a sufficiently large input.
 
-NARRATOR: Big O is an upper bound: after some threshold, the cost is no more than a constant
+Big O is an upper bound: after some threshold, the cost is no more than a constant multiple
 
-multiple of the comparison function.
+of the comparison function.
 
-NARRATOR: Omega is a lower bound.
+Omega is a lower bound.
 
-NARRATOR: Theta states both and therefore gives a tight growth class.
+Theta states both and therefore gives a tight growth class.
 
-NARRATOR: Big O is not automatically worst case; worst, average, and best case describe
+Big O is not automatically worst case; worst, average, and best case describe which inputs
 
-which inputs are considered, while O describes a bound.
+are considered, while O describes a bound.
 
-NARRATOR: A function in Theta of n is also in O of n squared, but the looser statement hides
+A function in Theta of n is also in O of n squared, but the looser statement hides
 
 information.
 
-NARRATOR: Use the tightest justified class and state which case is being analyzed.
+Use the tightest justified class and state which case is being analyzed.
 
-NARRATOR: Constants and lower-order terms disappear asymptotically, not because they
+Constants and lower-order terms disappear asymptotically, not because they never matter,
 
-never matter, but because growth eventually dominates.
+but because growth eventually dominates.
 
-NARRATOR: Constant, logarithmic, linear, n log n, quadratic, polynomial, and exponential
+Constant, logarithmic, linear, n log n, quadratic, polynomial, and exponential growth
 
-growth describe very different scaling.
+describe very different scaling.
 
-NARRATOR: Doubling n barely changes a logarithmic cost, doubles a linear cost,
+Doubling n barely changes a logarithmic cost, doubles a linear cost, roughly doubles plus an
 
-roughly doubles plus an additional factor for n log n, quadruples a quadratic cost, and can
+additional factor for n log n, quadruples a quadratic cost, and can multiply an
 
-multiply an exponential cost enormously.
+exponential cost enormously.
 
-NARRATOR: This ordering guides design choices before low-level optimization.
+This ordering guides design choices before low-level optimization.
 
-NARRATOR: A carefully optimized quadratic algorithm can beat a linear one on tiny
+A carefully optimized quadratic algorithm can beat a linear one on tiny inputs, but as n
 
-inputs, but as n grows the growth-rate advantage eventually dominates.
+grows the growth-rate advantage eventually dominates.
 
-NARRATOR: Use realistic input ranges and memory constraints too.
+Use realistic input ranges and memory constraints too.
 
-NARRATOR: Asymptotics predict scaling; they do not replace measurement or permit ignoring
+Asymptotics predict scaling; they do not replace measurement or permit ignoring large
 
-large constants when the deployment range is known.
+constants when the deployment range is known.
 
-NARRATOR: For a loop, count how many times the body runs and the cost of each run.
+For a loop, count how many times the body runs and the cost of each run.
 
-NARRATOR: A loop from zero to n minus one with constant body work is linear.
+A loop from zero to n minus one with constant body work is linear.
 
-NARRATOR: Two independent loops in sequence add, so linear plus linear remains linear.
+Two independent loops in sequence add, so linear plus linear remains linear.
 
-NARRATOR: Perfectly nested loops of n iterations multiply to n squared.
+Perfectly nested loops of n iterations multiply to n squared.
 
-NARRATOR: But bounds may depend on the outer index, producing a sum such as one plus two
+But bounds may depend on the outer index, producing a sum such as one plus two through
 
-through n, still Theta n squared.
+n, still Theta n squared.
 
-NARRATOR: A loop that repeatedly halves the remaining size is logarithmic.
+A loop that repeatedly halves the remaining size is logarithmic.
 
-NARRATOR: Read the update and bounds rather than counting indentation.
+Read the update and bounds rather than counting indentation.
 
-NARRATOR: If the body calls another algorithm, include that cost.
+If the body calls another algorithm, include that cost.
 
-NARRATOR: Writing the sum explicitly often turns intuition into a defensible result.
+Writing the sum explicitly often turns intuition into a defensible result.
 
-NARRATOR: A recursive algorithm's cost can be modeled with a recurrence.
+A recursive algorithm's cost can be modeled with a recurrence.
 
-NARRATOR: Merge sort divides an input into two halves, recursively sorts each half, and
+Merge sort divides an input into two halves, recursively sorts each half, and performs
 
-performs linear merging, giving T of n equals two T of n over two plus Theta n.
+linear merging, giving T of n equals two T of n over two plus Theta n.
 
-NARRATOR: A recursion tree shows logarithmically many levels with linear total
+A recursion tree shows logarithmically many levels with linear total work per level,
 
-work per level, producing Theta n log n.
+producing Theta n log n.
 
-NARRATOR: Other recurrences behave differently depending on the number and size of
+Other recurrences behave differently depending on the number and size of subproblems and the
 
-subproblems and the combination cost.
+combination cost.
 
-NARRATOR: State a base case and avoid applying a memorized theorem without checking its
+State a base case and avoid applying a memorized theorem without checking its
 
 conditions.
 
-NARRATOR: Recurrences are not only algebra; they mirror the structure of the algorithm and
+Recurrences are not only algebra; they mirror the structure of the algorithm and reveal
 
-reveal where the work accumulates.
+where the work accumulates.
 
-NARRATOR: An algorithm is often a sequence of data-structure operations.
+An algorithm is often a sequence of data-structure operations.
 
-NARRATOR: Searching an unsorted array is linear, while a balanced search tree can
+Searching an unsorted array is linear, while a balanced search tree can support logarithmic
 
-support logarithmic lookup and ordered traversal.
+lookup and ordered traversal.
 
-NARRATOR: A hash table can provide expected constant-time lookup under assumptions but
+A hash table can provide expected constant-time lookup under assumptions but
 
 does not preserve sorted order.
 
-NARRATOR: A heap makes repeated minimum extraction efficient without supporting every
+A heap makes repeated minimum extraction efficient without supporting every search
 
-search efficiently.
+efficiently.
 
-NARRATOR: The right structure follows the operations the problem performs most often,
+The right structure follows the operations the problem performs most often, the guarantees it
 
-the guarantees it requires, and the memory it can afford.
+requires, and the memory it can afford.
 
-NARRATOR: Include construction cost, not just query cost.
+Include construction cost, not just query cost.
 
-NARRATOR: A structure that accelerates one operation may slow updates or use more space.
+A structure that accelerates one operation may slow updates or use more space.
 
-NARRATOR: Time-space tradeoffs are algorithmic choices, not afterthoughts.
+Time-space tradeoffs are algorithmic choices, not afterthoughts.
 
-NARRATOR: Benchmarks reveal constants, cache behavior, interpreter overhead, input
+Benchmarks reveal constants, cache behavior, interpreter overhead, input distributions, and
 
-distributions, and implementation defects that an abstract model omits.
+implementation defects that an abstract model omits.
 
-NARRATOR: Measure representative inputs, vary n systematically, repeat trials, and record
+Measure representative inputs, vary n systematically, repeat trials, and record the
 
-the environment.
+environment.
 
-NARRATOR: Avoid timing unrelated setup unless it is part of the operation being evaluated.
+Avoid timing unrelated setup unless it is part of the operation being evaluated.
 
-NARRATOR: Plot time against candidate growth functions and investigate discrepancies.
+Plot time against candidate growth functions and investigate discrepancies.
 
-NARRATOR: A benchmark on five sizes cannot prove asymptotic complexity, and an asymptotic
+A benchmark on five sizes cannot prove asymptotic complexity, and an asymptotic proof
 
-proof cannot predict an exact runtime on one laptop.
+cannot predict an exact runtime on one laptop.
 
-NARRATOR: Use both forms of evidence.
+Use both forms of evidence.
 
-NARRATOR: Analysis explains expected scaling under a model; measurement checks how a
+Analysis explains expected scaling under a model; measurement checks how a particular
 
-particular implementation and workload behave in reality.
+implementation and workload behave in reality.
 
-NARRATOR: A complete analysis answers eight questions.
+A complete analysis answers eight questions.
 
-NARRATOR: What problem and input domain are being solved?
+What problem and input domain are being solved?
 
-NARRATOR: Why is the algorithm correct?
+Why is the algorithm correct?
 
-NARRATOR: What quantity defines input size?
+What quantity defines input size?
 
-NARRATOR: Which model assigns costs to operations?
+Which model assigns costs to operations?
 
-NARRATOR: Are we discussing worst, average, expected, amortized, or best case?
+Are we discussing worst, average, expected, amortized, or best case?
 
-NARRATOR: What tight time and space bounds follow?
+What tight time and space bounds follow?
 
-NARRATOR: Which data-structure assumptions support those bounds?
+Which data-structure assumptions support those bounds?
 
-NARRATOR: What do measurements show over the intended range?
+What do measurements show over the intended range?
 
-NARRATOR: This checklist prevents Big O from becoming a decorative label.
+This checklist prevents Big O from becoming a decorative label.
 
-NARRATOR: The goal is an argument another person can inspect: the algorithm returns the
+The goal is an argument another person can inspect: the algorithm returns the right
 
-right answer, the derivation follows its structure, the assumptions are visible, and
+answer, the derivation follows its structure, the assumptions are visible, and the measured
 
-the measured implementation behaves consistently with the claim.
+implementation behaves consistently with the claim.

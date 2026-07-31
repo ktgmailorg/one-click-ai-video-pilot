@@ -1,20 +1,18 @@
-NARRATOR: Begin by framing Lesson Title: CSCI-620: Introduction to Big Data as a
+NARRATOR: Begin by framing Foundations of Big Data Exploration as a question about inputs,
 
-question about inputs, decisions, and observable results.
+decisions, and observable results.
 
 NARRATOR: This course provides a broad introduction to the exploration and management
 
 of large datasets being generated and used in the modern world.
 
-NARRATOR: Consider this worked case: Case studies examine urban crime, drug research,
+NARRATOR: Consider this worked case: Urban crime datasets require systematic exploration
 
-census data, social networking, and space exploration.
+to identify patterns in location, frequency, and temporal trends.
 
-NARRATOR: On screen, display a slide with the course title and a grid of icons representing
+NARRATOR: On screen, display a map overlay showing urban crime hotspots with a legend
 
-the five case study domains (crime, drug research, census, social networking, space
-
-exploration).
+explaining data density and temporal filters.
 
 NARRATOR: List the givens before choosing a method, because an unstated assumption can
 
@@ -22,21 +20,21 @@ change the conclusion.
 
 NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: Now define Lesson Title: Lesson 1: Foundations of Big Data precisely enough that
+NARRATOR: Now define Data Preparation and Workflow Structure precisely enough that
 
 another learner could test the definition.
 
-NARRATOR: Prereq: (CSCI-603 or CSCI-605 with a grade of B or better) or (CSCI-320 or
+NARRATOR: Data-analysis workflows separate data preparation, exploratory analysis,
 
-SWEN-344).
+training, validation, testing, model selection, and evaluation.
 
-NARRATOR: Consider this worked case: Students must verify their prerequisite status before
+NARRATOR: Consider this worked case: Cleaning census data involves handling missing values
 
-enrolling in the course.
+and standardizing categorical variables before analysis.
 
-NARRATOR: On screen, show a checklist graphic with the prerequisite courses listed and a
+NARRATOR: On screen, show a linear workflow diagram with nodes for preparation,
 
-checkbox for each.
+exploration, training, validation, and evaluation, connected by directional arrows.
 
 NARRATOR: Separate the formal definition from an implementation detail, then identify what
 
@@ -48,41 +46,41 @@ NARRATOR: Name each dependency explicitly, and keep labels and representations c
 
 throughout the analysis.
 
-NARRATOR: With the foundation in place, examine how Lesson Title: Lesson 2: Internet
+NARRATOR: With the foundation in place, examine how Supervised and Unsupervised
 
-Protocol Suite Overview operates in a concrete sequence.
+Learning Methods operates in a concrete sequence.
 
-NARRATOR: Internet hosts implement layered link, internet, transport, and application
+NARRATOR: Supervised methods learn mappings from examples paired with target labels, while
 
-functions.
+unsupervised methods identify structure without targets.
 
-NARRATOR: Consider this worked case: The link layer moves frames across a directly connected
+NARRATOR: Consider this worked case: Predicting drug response requires supervised
 
-network, while IP provides best-effort datagram delivery across interconnected
+learning with patient outcomes as labels, whereas clustering patient demographics uses
 
-networks.
+unsupervised methods.
 
-NARRATOR: On screen, draw a four-layer stack diagram with labels for link, internet,
+NARRATOR: On screen, split a diagram into two columns: left shows labeled examples mapping
 
-transport, and application layers, pointing to each layer's function.
+to outcomes, right shows unlabeled data forming clusters.
 
 NARRATOR: Follow every arrow in order and name the state before and after each transition.
 
 NARRATOR: The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Next, compare the choices involved in Lesson Title: Lesson 3: IP Addressing and
+NARRATOR: Next, compare the choices involved in Preprocessing and Data Leakage Prevention
 
-Routing and make the decision criteria explicit.
+and make the decision criteria explicit.
 
-NARRATOR: Routing selects a next hop toward a destination.
+NARRATOR: Preprocessing must be fitted only on permitted training data to avoid leakage.
 
-NARRATOR: Consider this worked case: When a packet is sent, the router examines the IP
+NARRATOR: Consider this worked case: Scaling features using only the training set mean and
 
-address to determine the optimal path to the destination interface.
+standard deviation prevents test set information from influencing model parameters.
 
-NARRATOR: On screen, illustrate a network diagram with two routers, highlighting the IP
+NARRATOR: On screen, illustrate a pipeline where a scaler transforms training data, then
 
-address on an interface and an arrow showing the next hop selection process.
+applies the same transformation to validation data without recalculating parameters.
 
 NARRATOR: Compare alternatives against the same constraints so the evaluation does not
 
@@ -90,21 +88,21 @@ move the goalposts.
 
 NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: Apply Lesson Title: Lesson 4: Transport Protocol Functions to a worked
+NARRATOR: Apply Pipelines and Consistent Transformations to a worked situation instead
 
-situation instead of treating it as an isolated definition.
+of treating it as an isolated definition.
 
-NARRATOR: Transport protocols add endpoint communication functions above IP.
+NARRATOR: Pipelines combine transformations and estimators so the same operations are
 
-NARRATOR: Consider this worked case: Application protocols define the meaning of
+applied consistently.
 
-exchanged data, while transport protocols handle the reliable delivery mechanism.
+NARRATOR: Consider this worked case: A machine learning pipeline applies standardization,
 
-NARRATOR: On screen, show a simplified TCP/IP model with the transport layer positioned
+imputation, and feature selection sequentially to ensure reproducible results.
 
-above IP, labeled with 'endpoint communication functions' and 'application protocols' above
+NARRATOR: On screen, render a horizontal pipeline graphic with icons for each step,
 
-it.
+showing data flowing through and emerging as a final model output.
 
 NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
 
@@ -112,19 +110,23 @@ at each step.
 
 NARRATOR: The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Examine the tradeoffs in Lesson Title: Lesson 5: TCP Reliability and Byte
+NARRATOR: Examine the tradeoffs in Cross-Validation and Model Evaluation,
 
-Streams, including what improves and what becomes more difficult.
+including what improves and what becomes more difficult.
 
-NARRATOR: TCP provides a reliable, ordered byte stream between endpoints.
+NARRATOR: Cross-validation repeats training and validation across defined splits.
 
-NARRATOR: Consider this worked case: Sequence numbers identify positions in that byte
+NARRATOR: Consider this worked case: K-fold cross-validation evaluates a classification
 
-stream, allowing the receiver to reconstruct the original data order.
+model for social networking fraud detection by rotating validation sets across training
 
-NARRATOR: On screen, display a sequence of numbered packets (1, 2, 3) arriving at a
+folds.
 
-receiver, with a visual indicator showing how sequence numbers restore order.
+NARRATOR: On screen, draw a circular diagram with five segments labeled as folds,
+
+highlighting one fold as validation while others are training, with a metric box showing
+
+accuracy.
 
 NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
 
@@ -132,21 +134,23 @@ acceptable.
 
 NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: Stress-test the reasoning around Lesson Title: Lesson 6: TCP Acknowledgments
+NARRATOR: Stress-test the reasoning around Traditional Database Systems and Query
 
-and Retransmission with an edge case and identify which assumption controls the
+Languages with an edge case and identify which assumption controls the outcome.
 
-outcome.
+NARRATOR: Data systems organize records with declared types, tables, rows, columns, keys,
 
-NARRATOR: Acknowledgments report which data has been received.
+and constraints.
 
-NARRATOR: Consider this worked case: If a packet is lost, the receiver sends an
+NARRATOR: Consider this worked case: A hospital database stores patient records in
 
-acknowledgment indicating the gap, prompting the sender to retransmit the missing data.
+tables with defined data types, primary keys, and foreign key constraints to maintain
 
-NARRATOR: On screen, create a timeline graphic showing packet transmission, a missing packet,
+referential integrity.
 
-an acknowledgment signal, and a retransmission arrow.
+NARRATOR: On screen, show a relational schema diagram with tables, columns, data types,
+
+primary keys, and foreign key relationships between them.
 
 NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
 
@@ -156,19 +160,21 @@ NARRATOR: The edge case reveals the boundary of the claim without discarding the
 
 core idea.
 
-NARRATOR: Use Lesson Title: Lesson 7: TCP Flow Control and State Management to diagnose a
+NARRATOR: Use Query Operations and Indexing to diagnose a failure by separating symptoms,
 
-failure by separating symptoms, causes, and corrective action.
+causes, and corrective action.
 
-NARRATOR: Flow control prevents a sender from exceeding the receiver's advertised capacity.
+NARRATOR: Queries select, join, aggregate, order, and transform data.
 
-NARRATOR: Consider this worked case: Before application data transfer, connection
+NARRATOR: Consider this worked case: A query joins patient records with medication logs,
 
-establishment synchronizes endpoint state to ensure both sides are ready.
+aggregates daily prescriptions, orders by date, and uses an index on the date column to
 
-NARRATOR: On screen, show a state machine diagram with states like 'Establishment',
+speed up retrieval.
 
-'Data Transfer', and 'Termination', with arrows indicating transitions.
+NARRATOR: On screen, display a SQL query structure with highlighted SELECT, JOIN, GROUP
+
+BY, ORDER BY clauses, alongside an index tree diagram showing optimized data access.
 
 NARRATOR: Locate the first point where observed behavior diverges from expected
 
@@ -178,23 +184,25 @@ NARRATOR: The diagnosis is strongest when another person can reproduce the obser
 
 and the test.
 
-NARRATOR: Connect Lesson Title: Lesson 8: Data Preparation and Visualization to the earlier
+NARRATOR: Connect Data Quality and Integrity Management to the earlier ideas and explain
 
-ideas and explain how the pieces work as one system.
+how the pieces work as one system.
 
-NARRATOR: First, practical techniques used in exploratory data analysis and mining are
+NARRATOR: Data quality analysis makes missingness, duplicates, inconsistent
 
-introduced; topics include data preparation, visualization, statistics for understanding
+representation, integrity constraints, sampling, and update behavior explicit.
 
-data, and grouping and prediction techniques.
+NARRATOR: Consider this worked case: A census dataset requires explicit handling of
 
-NARRATOR: Consider this worked case: Cleaning and organizing raw datasets allows analysts to
+duplicate household records, inconsistent address formats, and missing population counts
 
-identify patterns and trends through visual representations.
+before analysis.
 
-NARRATOR: On screen, present a before-and-after comparison of a messy dataset
+NARRATOR: On screen, present a checklist graphic listing missingness, duplicates,
 
-and a cleaned, visualized chart (e.g., bar graph or scatter plot).
+inconsistent representation, integrity constraints, sampling, and update behavior as
+
+quality metrics.
 
 NARRATOR: Explain each connection explicitly and verify that information retains the same
 
@@ -204,19 +212,25 @@ NARRATOR: The synthesis matters only if every connection remains supported by th
 
 evidence.
 
-NARRATOR: Finish with Lesson Title: Lesson 9: Statistics and Grouping/Prediction Techniques
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
 
-as a practical checklist that can guide a new analysis.
+guide a new analysis.
 
-NARRATOR: Retransmission recovers data that is presumed lost.
+NARRATOR: Analytical work should preserve provenance from captured data through
 
-NARRATOR: Consider this worked case: Statistical methods help quantify uncertainty,
+cleaning, transformation, grouping, modeling, visualization, and reporting.
 
-while grouping and prediction techniques identify clusters and forecast future values.
+NARRATOR: Consider this worked case: A space exploration project maintains a traceable log
 
-NARRATOR: On screen, display a split screen showing a statistical summary table on the
+from raw satellite telemetry through cleaning, transformation, grouping, modeling,
 
-left and a clustering/prediction model output on the right.
+visualization, and final reporting.
+
+NARRATOR: On screen, show a circular provenance loop with arrows connecting each
+
+stage: captured data, cleaning, transformation, grouping, modeling,
+
+visualization, reporting, and back to captured data.
 
 NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
 

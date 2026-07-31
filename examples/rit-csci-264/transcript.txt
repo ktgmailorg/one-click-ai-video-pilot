@@ -1,233 +1,179 @@
-NARRATOR: Begin by framing Introduction to Algorithmic Analysis as a question about
+Begin by framing Introduction to Algorithmic Analysis as a question about inputs,
 
-inputs, decisions, and observable results.
+decisions, and observable results.
 
-NARRATOR: Algorithm analysis connects a precise problem specification to a correctness
+Algorithm analysis connects a precise problem specification to a correctness argument and
 
-argument and resource bounds.
+resource bounds.
 
-NARRATOR: Consider this worked case: When designing a search routine, the specification
+Consider this worked case: When designing a search routine, the specification must
 
-must explicitly state the input data, the expected output, and the maximum allowed time
+explicitly state the input data, the expected output, and the maximum allowed time or memory
 
-or memory usage.
+usage.
 
-NARRATOR: On screen, display a split-screen graphic: left side shows a problem statement
+input size, with a connecting arrow labeled 'Analysis Bridge'.
 
-box, right side shows a graph plotting time vs. input size, with a connecting arrow
+List the givens before choosing a method, because an unstated assumption can change the
 
-labeled 'Analysis Bridge'.
+conclusion.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+This establishes the vocabulary and scope needed for the remaining sections.
 
-change the conclusion.
+Now define Asymptotic Notation Basics precisely enough that another learner could
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+test the definition.
 
-NARRATOR: Now define Asymptotic Notation Basics precisely enough that another learner
+Asymptotic notation describes how resource use grows with input size.
 
-could test the definition.
+Consider this worked case: An algorithm that processes each element once and performs a
 
-NARRATOR: Asymptotic notation describes how resource use grows with input size.
+constant number of operations per element grows linearly, expressed as O(n).
 
-NARRATOR: Consider this worked case: An algorithm that processes each element once and
-
-performs a constant number of operations per element grows linearly, expressed as O(n).
-
-NARRATOR: On screen, show a line graph with three curves labeled O(1), O(n), and O(n^2),
-
-highlighting the steepness difference as n increases.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Loop Invariants for Correctness
+With the foundation in place, examine how Loop Invariants for Correctness operates in a
 
-operates in a concrete sequence.
+concrete sequence.
 
-NARRATOR: A loop invariant supports a proof by initialization, maintenance, and termination.
+A loop invariant supports a proof by initialization, maintenance, and termination.
 
-NARRATOR: Consider this worked case: In a sum-accumulation loop, the invariant 'sum
+Consider this worked case: In a sum-accumulation loop, the invariant 'sum
 
 equals the total of all processed elements' holds before the loop, remains true after each
 
 iteration, and guarantees the final result matches the total sum.
 
-NARRATOR: On screen, animate a loop counter and a running total variable, with checkmarks
+Follow every arrow in order and name the state before and after each transition.
 
-appearing at 'Initialization', 'Maintenance', and 'Termination' stages.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
-
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
-
-NARRATOR: Next, compare the choices involved in Divide-and-Conquer Strategy and make the
+Next, compare the choices involved in Divide-and-Conquer Strategy and make the
 
 decision criteria explicit.
 
-NARRATOR: Divide-and-conquer algorithms split a problem, solve subproblems, and combine
+Divide-and-conquer algorithms split a problem, solve subproblems, and combine their results.
 
-their results.
+Consider this worked case: Merge sort divides an array into halves, recursively sorts each
 
-NARRATOR: Consider this worked case: Merge sort divides an array into halves, recursively
+half, and merges the sorted halves back together.
 
-sorts each half, and merges the sorted halves back together.
+At each level, the subproblems shrink while the combine step reconstructs one complete
 
-NARRATOR: On screen, illustrate a binary tree where the root is the full array, children are
+ordered result.
 
-halves, and leaves are single elements, with arrows showing the divide and combine phases.
+Compare alternatives against the same constraints so the evaluation does not move
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+the goalposts.
 
-move the goalposts.
+Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Apply Recurrence Relations to a worked situation instead of treating it as an
+Apply Recurrence Relations to a worked situation instead of treating it as an
 
 isolated definition.
 
-NARRATOR: Recurrences describe the cost of recursive algorithms.
+Recurrences describe the cost of recursive algorithms.
 
-NARRATOR: Consider this worked case: The merge sort recurrence T(n) = 2T(n/2) + O(n) captures
+Consider this worked case: The merge sort recurrence T(n) = 2T(n/2) + O(n) captures the
 
-the cost of splitting, solving two subproblems, and merging.
+cost of splitting, solving two subproblems, and merging.
 
-NARRATOR: On screen, display a mathematical equation box with T(n) = 2T(n/2) + cn,
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-alongside a small tree diagram showing two recursive calls branching from one node.
+step.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+The worked case shows both how to apply the method and how to check it.
 
-at each step.
+Examine the tradeoffs in Graph Representation, including what improves and what becomes more
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+difficult.
 
-NARRATOR: Examine the tradeoffs in Graph Representation, including what improves and
+Graphs can be represented with adjacency structures for traversal and path algorithms.
 
-what becomes more difficult.
+Consider this worked case: An adjacency matrix uses a 2D array where entry (i,j) indicates an
 
-NARRATOR: Graphs can be represented with adjacency structures for traversal and path
+edge between vertex i and vertex j, enabling direct edge lookup.
 
-algorithms.
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-NARRATOR: Consider this worked case: An adjacency matrix uses a 2D array where entry
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-(i,j) indicates an edge between vertex i and vertex j, enabling direct edge lookup.
+Stress-test the reasoning around Data Structure Invariants with an edge case and
 
-NARRATOR: On screen, show a 4x4 grid with 1s marking edges between nodes, labeled
+identify which assumption controls the outcome.
 
-'Adjacency Matrix', next to a list of node pairs labeled 'Edge List'.
+Representation choices and invariants determine which operations are efficient and
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+which errors are possible.
 
-acceptable.
+Consider this worked case: A stack invariant requires that the top element is always the
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+most recently added item, ensuring O(1) push and pop operations but preventing random
 
-NARRATOR: Stress-test the reasoning around Data Structure Invariants with an edge case
+access.
 
-and identify which assumption controls the outcome.
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-NARRATOR: Representation choices and invariants determine which operations are
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-efficient and which errors are possible.
-
-NARRATOR: Consider this worked case: A stack invariant requires that the top element is
-
-always the most recently added item, ensuring O(1) push and pop operations but preventing
-
-random access.
-
-NARRATOR: On screen, draw a vertical stack with a 'top' pointer, showing push adding to
-
-the top and pop removing from the top, with a lock icon indicating no middle access.
-
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
-
-holds.
-
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
-
-core idea.
-
-NARRATOR: Use Sorting and Hashing Foundations to diagnose a failure by separating symptoms,
+Use Sorting and Hashing Foundations to diagnose a failure by separating symptoms,
 
 causes, and corrective action.
 
-NARRATOR: Core methods include sorting, hashing, trees, graphs, shortest paths, and
+Core methods include sorting, hashing, trees, graphs, shortest paths, and dynamic
 
-dynamic programming.
+programming.
 
-NARRATOR: Consider this worked case: Hash tables map keys to locations using a hash
+Consider this worked case: Hash tables map keys to locations using a hash function,
 
-function, requiring a collision strategy like chaining or open addressing to maintain data
+requiring a collision strategy like chaining or open addressing to maintain data integrity.
 
-integrity.
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-NARRATOR: On screen, show a hash table with buckets, a key being hashed to a bucket index,
+smallest plausible cause.
 
-and a collision chain resolving via linked lists.
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+Connect Dynamic Programming Overview to the earlier ideas and explain how the pieces work
 
-behavior, then test the smallest plausible cause.
+as one system.
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+Dynamic programming records solutions to overlapping subproblems.
 
-and the test.
+Consider this worked case: The Fibonacci sequence calculation stores previously
 
-NARRATOR: Connect Dynamic Programming Overview to the earlier ideas and explain how the
+computed values in a table to avoid redundant recursive calls, reducing time complexity from
 
-pieces work as one system.
+exponential to linear.
 
-NARRATOR: Dynamic programming records solutions to overlapping subproblems.
+Explain each connection explicitly and verify that information retains the same meaning
 
-NARRATOR: Consider this worked case: The Fibonacci sequence calculation stores
+across representations.
 
-previously computed values in a table to avoid redundant recursive calls, reducing time
+The synthesis matters only if every connection remains supported by the original evidence.
 
-complexity from exponential to linear.
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-NARRATOR: On screen, display a table filling row by row with Fibonacci numbers,
+analysis.
 
-highlighting how each cell references two prior cells.
+A disciplined solution states inputs and outputs, proves correctness, and then analyzes
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+time and space.
 
-meaning across representations.
+Consider this worked case: Before coding, students must document the input format,
 
-NARRATOR: The synthesis matters only if every connection remains supported by the original
-
-evidence.
-
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
-
-guide a new analysis.
-
-NARRATOR: A disciplined solution states inputs and outputs, proves correctness, and then
-
-analyzes time and space.
-
-NARRATOR: Consider this worked case: Before coding, students must document the input
-
-format, output format, correctness proof using invariants or induction, and derive the
+output format, correctness proof using invariants or induction, and derive the
 
 time/space complexity using asymptotic notation.
 
-NARRATOR: On screen, show a checklist graphic with four boxes: 'Specify I/O', 'Prove
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-Correctness', 'Derive Complexity', 'Verify Invariants', with a green checkmark appearing
+verification step.
 
-sequentially.
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

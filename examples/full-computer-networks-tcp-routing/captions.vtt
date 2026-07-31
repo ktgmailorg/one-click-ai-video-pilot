@@ -1,631 +1,576 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:05.334
-NARRATOR: Begin by visualizing how data
-travels from your device to a remote server
+00:00:00.050 --> 00:00:05.664
+Begin by visualizing how data travels from
+your device to a remote server through
 
 2
-00:00:05.334 --> 00:00:06.466
-through distinct layers.
+00:00:05.664 --> 00:00:06.466
+distinct layers.
 
 3
-00:00:06.466 --> 00:00:11.671
-NARRATOR: Encapsulation wraps application data
-into transport segments, which then nest
+00:00:06.466 --> 00:00:12.428
+Encapsulation wraps application data into
+transport segments, which then nest inside IP
 
 4
-00:00:11.671 --> 00:00:16.403
-inside IP packets, and finally sit atop local
-link frames.
+00:00:12.428 --> 00:00:16.403
+packets, and finally sit atop local link
+frames.
 
 5
-00:00:16.403 --> 00:00:22.521
-NARRATOR: This layered approach isolates
-failures: if a router drops an IP packet, the
+00:00:16.403 --> 00:00:23.256
+This layered approach isolates failures: if a
+router drops an IP packet, the transport layer
 
 6
-00:00:22.521 --> 00:00:26.454
-transport layer simply retries without
-corrupting the application data.
+00:00:23.256 --> 00:00:26.454
+simply retries without corrupting the
+application data.
 
 7
-00:00:26.454 --> 00:00:31.428
-NARRATOR: Think of it like mailing a letter:
-the message is the application payload, the
+00:00:26.454 --> 00:00:31.956
+Think of it like mailing a letter: the message
+is the application payload, the envelope is
 
 8
-00:00:31.428 --> 00:00:35.739
-envelope is the IP packet, and the postal box
-is the link frame.
+00:00:31.956 --> 00:00:35.739
+the IP packet, and the postal box is the link
+frame.
 
 9
-00:00:35.739 --> 00:00:41.706
-NARRATOR: Each layer handles only its specific
-job, making the system modular and easier to
+00:00:35.739 --> 00:00:42.104
+Each layer handles only its specific job,
+making the system modular and easier to debug.
 
 10
-00:00:41.706 --> 00:00:42.104
-debug.
+00:00:42.104 --> 00:00:47.708
+When you examine a packet capture, you will
+see these boundaries clearly marked, allowing
 
 11
-00:00:42.104 --> 00:00:47.501
-NARRATOR: When you examine a packet capture,
-you will see these boundaries clearly marked,
+00:00:47.708 --> 00:00:52.512
+you to trace exactly where a request enters or
+exits each layer.
 
 12
-00:00:47.501 --> 00:00:52.512
-allowing you to trace exactly where a request
-enters or exits each layer.
+00:00:52.658 --> 00:00:58.692
+Next, examine how IP addressing directs
+packets across heterogeneous networks.
 
 13
-00:00:52.658 --> 00:00:58.692
-NARRATOR: Next, examine how IP addressing
-directs packets across heterogeneous networks.
+00:00:58.692 --> 00:01:04.378
+Each router inspects the destination IP
+address and consults its routing table to
 
 14
-00:00:58.692 --> 00:01:04.476
-NARRATOR: Each router inspects the destination
-IP address and consults its routing table to
-
-15
-00:01:04.476 --> 00:01:06.128
+00:01:04.378 --> 00:01:06.128
 determine the next hop.
 
+15
+00:01:06.128 --> 00:01:12.171
+The hop limit field in the IPv6 header counts
+remaining hops, decrementing with every
+
 16
-00:01:06.128 --> 00:01:11.459
-NARRATOR: The hop limit field in the IPv6
-header counts remaining hops, decrementing
+00:01:12.171 --> 00:01:14.329
+forward to prevent infinite loops.
 
 17
-00:01:11.459 --> 00:01:14.329
-with every forward to prevent infinite loops.
+00:01:14.329 --> 00:01:19.977
+Routers operate on a best-effort basis,
+meaning they forward packets without
 
 18
-00:01:14.329 --> 00:01:20.128
-NARRATOR: Routers operate on a best-effort
-basis, meaning they forward packets without
-
-19
-00:01:20.128 --> 00:01:22.544
+00:01:19.977 --> 00:01:22.544
 guaranteeing delivery, order, or integrity.
 
+19
+00:01:22.544 --> 00:01:29.189
+If a link fails, the router simply drops the
+packet, leaving reliability to higher layers.
+
 20
-00:01:22.544 --> 00:01:28.358
-NARRATOR: If a link fails, the router simply
-drops the packet, leaving reliability to
+00:01:29.189 --> 00:01:35.332
+This design keeps routers lightweight and
+fast, allowing them to handle massive traffic
 
 21
-00:01:28.358 --> 00:01:29.189
-higher layers.
+00:01:35.332 --> 00:01:39.585
+volumes while pushing complex recovery logic
+to the endpoints.
 
 22
-00:01:29.189 --> 00:01:34.613
-NARRATOR: This design keeps routers
-lightweight and fast, allowing them to handle
+00:01:39.585 --> 00:01:45.681
+When you trace a request, you will see the hop
+limit decrease with each router, revealing the
 
 23
-00:01:34.613 --> 00:01:39.585
-massive traffic volumes while pushing complex
-recovery logic to the endpoints.
+00:01:45.681 --> 00:01:48.909
+path length before the packet reaches its
+final destination.
 
 24
-00:01:39.585 --> 00:01:45.110
-NARRATOR: When you trace a request, you will
-see the hop limit decrease with each router,
+00:01:49.034 --> 00:01:55.845
+Now, shift focus to the transport layer, where
+TCP establishes reliable connections between
 
 25
-00:01:45.110 --> 00:01:48.909
-revealing the path length before the packet
-reaches its final destination.
+00:01:55.845 --> 00:01:56.369
+endpoints.
 
 26
-00:01:49.034 --> 00:01:54.902
-NARRATOR: Now, shift focus to the transport
-layer, where TCP establishes reliable
+00:01:56.369 --> 00:02:02.450
+TCP uses a strict state machine that begins
+with a three-way handshake to negotiate
 
 27
-00:01:54.902 --> 00:01:56.369
-connections between endpoints.
-
-28
-00:01:56.369 --> 00:02:02.542
-NARRATOR: TCP uses a strict state machine that
-begins with a three-way handshake to negotiate
-
-29
-00:02:02.542 --> 00:02:04.188
+00:02:02.450 --> 00:02:04.188
 parameters and confirm connectivity.
 
+28
+00:02:04.188 --> 00:02:11.105
+Once established, the connection maintains a
+shared sequence space, ensuring every byte is
+
+29
+00:02:11.105 --> 00:02:11.637
+tracked.
+
 30
-00:02:04.188 --> 00:02:09.651
-NARRATOR: Once established, the connection
-maintains a shared sequence space, ensuring
-
-31
-00:02:09.651 --> 00:02:11.637
-every byte is tracked.
-
-32
-00:02:11.637 --> 00:02:16.908
-NARRATOR: The protocol does not care about the
+00:02:11.637 --> 00:02:16.754
+The protocol does not care about the
 underlying network conditions; it only cares
 
-33
-00:02:16.908 --> 00:02:20.297
+31
+00:02:16.754 --> 00:02:20.297
 about delivering the correct byte stream to
 the application.
 
+32
+00:02:20.297 --> 00:02:26.324
+If a segment is lost, the receiver will not
+acknowledge it, triggering the sender to
+
+33
+00:02:26.324 --> 00:02:26.726
+retransmit.
+
 34
-00:02:20.297 --> 00:02:25.970
-NARRATOR: If a segment is lost, the receiver
-will not acknowledge it, triggering the sender
+00:02:26.726 --> 00:02:32.311
+This state-driven approach guarantees that
+applications receive complete, ordered data
 
 35
-00:02:25.970 --> 00:02:26.726
-to retransmit.
+00:02:32.311 --> 00:02:34.545
+regardless of network chaos.
 
 36
-00:02:26.726 --> 00:02:31.417
-NARRATOR: This state-driven approach
-guarantees that applications receive complete,
+00:02:34.545 --> 00:02:40.181
+When you monitor a connection, you will see
+the state transition from SYN to ESTABLISHED,
 
 37
-00:02:31.417 --> 00:02:34.545
-ordered data regardless of network chaos.
+00:02:40.181 --> 00:02:43.563
+confirming that both endpoints are ready to
+exchange data.
 
 38
-00:02:34.545 --> 00:02:39.956
-NARRATOR: When you monitor a connection, you
-will see the state transition from SYN to
+00:02:43.706 --> 00:02:49.697
+Sequence numbers are the backbone of TCP's
+reliability, assigning a unique number to
 
 39
-00:02:39.956 --> 00:02:43.563
-ESTABLISHED, confirming that both endpoints
-are ready to exchange data.
+00:02:49.697 --> 00:02:51.079
+every byte sent.
 
 40
-00:02:43.706 --> 00:02:49.344
-NARRATOR: Sequence numbers are the backbone of
-TCP's reliability, assigning a unique number
+00:02:51.079 --> 00:02:56.787
+The receiver tracks these numbers and sends
+acknowledgments that explicitly identify which
 
 41
-00:02:49.344 --> 00:02:51.079
-to every byte sent.
+00:02:56.787 --> 00:02:59.166
+sequence space has been received.
 
 42
-00:02:51.079 --> 00:02:56.021
-NARRATOR: The receiver tracks these numbers
-and sends acknowledgments that explicitly
+00:02:59.166 --> 00:03:05.075
+If a segment with sequence number 100 is
+missing, the receiver will not acknowledge
 
 43
-00:02:56.021 --> 00:02:59.166
-identify which sequence space has been
-received.
+00:03:05.075 --> 00:03:08.451
+100, even if it received 101 and 102.
 
 44
-00:02:59.166 --> 00:03:04.818
-NARRATOR: If a segment with sequence number
-100 is missing, the receiver will not
+00:03:08.451 --> 00:03:14.204
+This selective acknowledgment forces the
+sender to retransmit only the missing data.
 
 45
-00:03:04.818 --> 00:03:08.451
-acknowledge 100, even if it received 101 and
-102.
+00:03:14.204 --> 00:03:19.797
+The sender maintains a sliding window of
+unacknowledged bytes, adjusting its pace based
 
 46
-00:03:08.451 --> 00:03:13.761
-NARRATOR: This selective acknowledgment forces
-the sender to retransmit only the missing
+00:03:19.797 --> 00:03:20.658
+on feedback.
 
 47
-00:03:13.761 --> 00:03:14.204
-data.
+00:03:20.658 --> 00:03:26.615
+This mechanism ensures that applications never
+see gaps or duplicates in their data stream.
 
 48
-00:03:14.204 --> 00:03:19.045
-NARRATOR: The sender maintains a sliding
-window of unacknowledged bytes, adjusting its
+00:03:26.615 --> 00:03:33.228
+When you analyze a packet trace, you will see
+the sequence numbers increment steadily, with
 
 49
-00:03:19.045 --> 00:03:20.658
-pace based on feedback.
+00:03:33.228 --> 00:03:36.755
+acknowledgment gaps clearly marking where
+retransmissions are needed.
 
 50
-00:03:20.658 --> 00:03:25.424
-NARRATOR: This mechanism ensures that
-applications never see gaps or duplicates in
+00:03:36.890 --> 00:03:43.150
+When acknowledgments are delayed or lost, TCP
+triggers retransmission through carefully
 
 51
-00:03:25.424 --> 00:03:26.615
-their data stream.
+00:03:43.150 --> 00:03:44.288
+managed timers.
 
 52
-00:03:26.615 --> 00:03:32.530
-NARRATOR: When you analyze a packet trace, you
-will see the sequence numbers increment
+00:03:44.288 --> 00:03:49.619
+The sender sets a retransmission timer for
+each unacknowledged segment, starting at a
 
 53
-00:03:32.530 --> 00:03:36.755
-steadily, with acknowledgment gaps clearly
-marking where retransmissions are needed.
+00:03:49.619 --> 00:03:52.490
+base value and increasing with each timeout.
 
 54
-00:03:36.890 --> 00:03:42.703
-NARRATOR: When acknowledgments are delayed or
-lost, TCP triggers retransmission through
+00:03:52.490 --> 00:03:58.183
+If the timer expires without receiving an
+acknowledgment, the sender resends the exact
 
 55
-00:03:42.703 --> 00:03:44.288
-carefully managed timers.
+00:03:58.183 --> 00:03:59.059
+same segment.
 
 56
-00:03:44.288 --> 00:03:48.584
-NARRATOR: The sender sets a retransmission
-timer for each unacknowledged segment,
+00:03:59.059 --> 00:04:03.128
+This ensures that lost data eventually reaches
+the receiver.
 
 57
-00:03:48.584 --> 00:03:52.490
-starting at a base value and increasing with
-each timeout.
+00:04:03.128 --> 00:04:08.755
+The protocol also handles duplicate segments
+gracefully by ignoring them once acknowledged,
 
 58
-00:03:52.490 --> 00:03:57.006
-NARRATOR: If the timer expires without
-receiving an acknowledgment, the sender
+00:04:08.755 --> 00:04:12.975
+preventing the receiver from processing the
+same data twice.
 
 59
-00:03:57.006 --> 00:03:59.059
-resends the exact same segment.
-
-60
-00:03:59.059 --> 00:04:03.128
-NARRATOR: This ensures that lost data
-eventually reaches the receiver.
-
-61
-00:04:03.128 --> 00:04:08.499
-NARRATOR: The protocol also handles duplicate
-segments gracefully by ignoring them once
-
-62
-00:04:08.499 --> 00:04:12.975
-acknowledged, preventing the receiver from
-processing the same data twice.
-
-63
-00:04:12.975 --> 00:04:18.478
-NARRATOR: This timer-driven recovery balances
+00:04:12.975 --> 00:04:18.216
+This timer-driven recovery balances
 responsiveness with stability, avoiding
 
-64
-00:04:18.478 --> 00:04:22.146
+60
+00:04:18.216 --> 00:04:22.146
 unnecessary retransmissions while guaranteeing
 eventual delivery.
 
+61
+00:04:22.146 --> 00:04:28.298
+When you observe a slow connection, you will
+see timer values increase, revealing how TCP
+
+62
+00:04:28.298 --> 00:04:29.939
+adapts to network delays.
+
+63
+00:04:30.074 --> 00:04:35.884
+Flow control prevents a fast sender from
+overwhelming a slow receiver by using receive
+
+64
+00:04:35.884 --> 00:04:36.299
+windows.
+
 65
-00:04:22.146 --> 00:04:27.601
-NARRATOR: When you observe a slow connection,
-you will see timer values increase, revealing
+00:04:36.299 --> 00:04:42.332
+The receiver advertises how much buffer space
+is available, and the sender must not exceed
 
 66
-00:04:27.601 --> 00:04:29.939
-how TCP adapts to network delays.
+00:04:42.332 --> 00:04:43.136
+this limit.
 
 67
-00:04:30.074 --> 00:04:35.521
-NARRATOR: Flow control prevents a fast sender
-from overwhelming a slow receiver by using
+00:04:43.136 --> 00:04:48.867
+If the receiver's buffer fills up, it stops
+sending acknowledgments, causing the sender's
 
 68
-00:04:35.521 --> 00:04:36.299
-receive windows.
+00:04:48.867 --> 00:04:50.189
+window to shrink.
 
 69
-00:04:36.299 --> 00:04:41.617
-NARRATOR: The receiver advertises how much
-buffer space is available, and the sender must
+00:04:50.189 --> 00:04:56.044
+This backpressure mechanism ensures that
+neither side runs out of memory or drops data.
 
 70
-00:04:41.617 --> 00:04:43.136
-not exceed this limit.
+00:04:56.044 --> 00:05:01.554
+The window size adjusts dynamically based on
+network conditions and application processing
 
 71
-00:04:43.136 --> 00:04:48.529
-NARRATOR: If the receiver's buffer fills up,
-it stops sending acknowledgments, causing the
+00:05:01.554 --> 00:05:02.013
+speed.
 
 72
-00:04:48.529 --> 00:04:50.189
-sender's window to shrink.
+00:05:02.013 --> 00:05:07.985
+By coordinating pacing, flow control maintains
+efficiency while protecting receiver
 
 73
-00:04:50.189 --> 00:04:55.654
-NARRATOR: This backpressure mechanism ensures
-that neither side runs out of memory or drops
-
-74
-00:04:55.654 --> 00:04:56.044
-data.
-
-75
-00:04:56.044 --> 00:05:01.160
-NARRATOR: The window size adjusts dynamically
-based on network conditions and application
-
-76
-00:05:01.160 --> 00:05:02.013
-processing speed.
-
-77
-00:05:02.013 --> 00:05:08.035
-NARRATOR: By coordinating pacing, flow control
-maintains efficiency while protecting receiver
-
-78
-00:05:08.035 --> 00:05:08.582
+00:05:07.985 --> 00:05:08.582
 resources.
 
+74
+00:05:08.582 --> 00:05:14.980
+When you monitor a large file transfer, you
+will see the window size expand and contract,
+
+75
+00:05:14.980 --> 00:05:17.779
+revealing how TCP adapts to receiver capacity.
+
+76
+00:05:17.906 --> 00:05:24.586
+Congestion awareness allows TCP to detect
+network overload and adjust its sending rate
+
+77
+00:05:24.586 --> 00:05:25.100
+accordingly.
+
+78
+00:05:25.100 --> 00:05:31.443
+When routers become saturated, they may drop
+packets or increase delay, which TCP
+
 79
-00:05:08.582 --> 00:05:14.330
-NARRATOR: When you monitor a large file
-transfer, you will see the window size expand
-
-80
-00:05:14.330 --> 00:05:17.779
-and contract, revealing how TCP adapts to
-receiver capacity.
-
-81
-00:05:17.906 --> 00:05:24.141
-NARRATOR: Congestion awareness allows TCP to
-detect network overload and adjust its sending
-
-82
-00:05:24.141 --> 00:05:25.100
-rate accordingly.
-
-83
-00:05:25.100 --> 00:05:31.529
-NARRATOR: When routers become saturated, they
-may drop packets or increase delay, which TCP
-
-84
-00:05:31.529 --> 00:05:32.907
+00:05:31.443 --> 00:05:32.907
 interprets as congestion.
 
+80
+00:05:32.907 --> 00:05:38.348
+The protocol responds by reducing its sending
+window and increasing the retransmission
+
+81
+00:05:38.348 --> 00:05:41.975
+timer, effectively slowing down to avoid
+further loss.
+
+82
+00:05:41.975 --> 00:05:47.615
+This self-regulating mechanism prevents
+network collapse and ensures fair bandwidth
+
+83
+00:05:47.615 --> 00:05:49.871
+sharing among competing flows.
+
+84
+00:05:49.871 --> 00:05:55.521
+By reacting to congestion signals, TCP
+maintains stability under heavy load.
+
 85
-00:05:32.907 --> 00:05:38.089
-NARRATOR: The protocol responds by reducing
-its sending window and increasing the
+00:05:55.521 --> 00:06:02.044
+When you analyze a congested network, you will
+see the sending rate drop and window size
 
 86
-00:05:38.089 --> 00:05:41.975
-retransmission timer, effectively slowing down
-to avoid further loss.
+00:06:02.044 --> 00:06:06.121
+shrink, revealing how TCP adapts to avoid
+overwhelming the infrastructure.
 
 87
-00:05:41.975 --> 00:05:47.239
-NARRATOR: This self-regulating mechanism
-prevents network collapse and ensures fair
+00:06:06.266 --> 00:06:11.796
+Diagnosing an end-to-end request requires
+tracing the packet through each layer and
 
 88
-00:05:47.239 --> 00:05:49.871
-bandwidth sharing among competing flows.
+00:06:11.796 --> 00:06:13.639
+identifying where it fails.
 
 89
-00:05:49.871 --> 00:05:55.521
-NARRATOR: By reacting to congestion signals,
-TCP maintains stability under heavy load.
+00:06:13.639 --> 00:06:19.295
+Start by checking the link layer for frame
+errors, then examine the IP layer for routing
 
 90
-00:05:55.521 --> 00:06:01.017
-NARRATOR: When you analyze a congested
-network, you will see the sending rate drop
+00:06:19.295 --> 00:06:21.062
+issues or hop limit exhaustion.
 
 91
-00:06:01.017 --> 00:06:05.728
-and window size shrink, revealing how TCP
-adapts to avoid overwhelming the
+00:06:21.062 --> 00:06:26.681
+If the packet reaches the transport layer,
+verify TCP sequence numbers and
 
 92
-00:06:05.728 --> 00:06:06.121
-infrastructure.
-
-93
-00:06:06.266 --> 00:06:11.470
-NARRATOR: Diagnosing an end-to-end request
-requires tracing the packet through each layer
-
-94
-00:06:11.470 --> 00:06:13.639
-and identifying where it fails.
-
-95
-00:06:13.639 --> 00:06:19.038
-NARRATOR: Start by checking the link layer for
-frame errors, then examine the IP layer for
-
-96
-00:06:19.038 --> 00:06:21.062
-routing issues or hop limit exhaustion.
-
-97
-00:06:21.062 --> 00:06:26.811
-NARRATOR: If the packet reaches the transport
-layer, verify TCP sequence numbers and
-
-98
-00:06:26.811 --> 00:06:29.022
+00:06:26.681 --> 00:06:29.022
 acknowledgments for gaps or duplicates.
 
-99
-00:06:29.022 --> 00:06:35.081
-NARRATOR: Use packet captures to observe how
-timers and windows adjust during delays or
+93
+00:06:29.022 --> 00:06:35.514
+Use packet captures to observe how timers and
+windows adjust during delays or losses.
 
-100
-00:06:35.081 --> 00:06:35.514
-losses.
+94
+00:06:35.514 --> 00:06:40.725
+By correlating layer-specific symptoms with
+application-level failures, you can pinpoint
 
-101
-00:06:35.514 --> 00:06:39.980
-NARRATOR: By correlating layer-specific
-symptoms with application-level failures, you
+95
+00:06:40.725 --> 00:06:45.935
+whether the issue lies in routing, congestion,
+or receiver capacity.
 
-102
-00:06:39.980 --> 00:06:45.935
-can pinpoint whether the issue lies in
-routing, congestion, or receiver capacity.
+96
+00:06:45.935 --> 00:06:52.666
+This systematic approach transforms complex
+network problems into manageable,
 
-103
-00:06:45.935 --> 00:06:52.791
-NARRATOR: This systematic approach transforms
-complex network problems into manageable,
-
-104
-00:06:52.791 --> 00:06:54.162
+97
+00:06:52.666 --> 00:06:54.162
 layer-by-layer investigations.
 
-105
-00:06:54.162 --> 00:06:59.264
-NARRATOR: When you test a slow website, you
-will see exactly which layer is causing the
+98
+00:06:54.162 --> 00:06:59.583
+When you test a slow website, you will see
+exactly which layer is causing the bottleneck.
 
-106
-00:06:59.264 --> 00:06:59.583
-bottleneck.
+99
+00:06:59.714 --> 00:07:05.354
+Apply these concepts to a real-world scenario
+by following a structured diagnostic
 
-107
-00:06:59.714 --> 00:07:05.388
-NARRATOR: Apply these concepts to a real-world
-scenario by following a structured diagnostic
-
-108
-00:07:05.388 --> 00:07:05.824
+100
+00:07:05.354 --> 00:07:05.824
 checklist.
 
+101
+00:07:05.824 --> 00:07:13.235
+First, verify IP reachability using ping and
+examine hop limits to confirm routing paths.
+
+102
+00:07:13.235 --> 00:07:19.115
+Next, capture TCP traffic and inspect sequence
+numbers for gaps or duplicates.
+
+103
+00:07:19.115 --> 00:07:25.688
+Check for retransmission timers and window
+sizes to identify congestion or flow control
+
+104
+00:07:25.688 --> 00:07:26.194
+issues.
+
+105
+00:07:26.194 --> 00:07:31.564
+Correlate these findings with application
+performance to isolate the root cause.
+
+106
+00:07:31.564 --> 00:07:37.215
+This methodical process ensures you address
+the exact layer causing the failure.
+
+107
+00:07:37.215 --> 00:07:43.371
+By practicing this checklist, you will develop
+the ability to troubleshoot network issues
+
+108
+00:07:43.371 --> 00:07:44.791
+efficiently and accurately.
+
 109
-00:07:05.824 --> 00:07:12.741
-NARRATOR: First, verify IP reachability using
-ping and examine hop limits to confirm routing
+00:07:44.791 --> 00:07:49.995
+When you test a failing connection, you will
+see exactly which step reveals the problem.
 
 110
-00:07:12.741 --> 00:07:13.235
-paths.
+00:07:50.138 --> 00:07:55.450
+Mastering these concepts requires integrating
+layering, encapsulation, and transport
 
 111
-00:07:13.235 --> 00:07:18.663
-NARRATOR: Next, capture TCP traffic and
-inspect sequence numbers for gaps or
+00:07:55.450 --> 00:07:58.991
+reliability into a cohesive mental model.
 
 112
-00:07:18.663 --> 00:07:19.115
-duplicates.
-
-113
-00:07:19.115 --> 00:07:25.250
-NARRATOR: Check for retransmission timers and
-window sizes to identify congestion or flow
-
-114
-00:07:25.250 --> 00:07:26.194
-control issues.
-
-115
-00:07:26.194 --> 00:07:31.117
-NARRATOR: Correlate these findings with
-application performance to isolate the root
-
-116
-00:07:31.117 --> 00:07:31.564
-cause.
-
-117
-00:07:31.564 --> 00:07:37.215
-NARRATOR: This methodical process ensures you
-address the exact layer causing the failure.
-
-118
-00:07:37.215 --> 00:07:42.563
-NARRATOR: By practicing this checklist, you
-will develop the ability to troubleshoot
-
-119
-00:07:42.563 --> 00:07:44.791
-network issues efficiently and accurately.
-
-120
-00:07:44.791 --> 00:07:49.670
-NARRATOR: When you test a failing connection,
-you will see exactly which step reveals the
-
-121
-00:07:49.670 --> 00:07:49.995
-problem.
-
-122
-00:07:50.138 --> 00:07:55.118
-NARRATOR: Mastering these concepts requires
-integrating layering, encapsulation, and
-
-123
-00:07:55.118 --> 00:07:58.991
-transport reliability into a cohesive mental
-model.
-
-124
-00:07:58.991 --> 00:08:05.506
-NARRATOR: Remember that IP handles best-effort
+00:07:58.991 --> 00:08:05.361
+Remember that IP handles best-effort
 forwarding while TCP manages reliability, flow
 
-125
-00:08:05.506 --> 00:08:07.677
+113
+00:08:05.361 --> 00:08:07.677
 control, and congestion awareness.
 
-126
-00:08:07.677 --> 00:08:13.170
-NARRATOR: When diagnosing issues, always trace
-the packet from the application down to the
+114
+00:08:07.677 --> 00:08:13.445
+When diagnosing issues, always trace the
+packet from the application down to the link
 
-127
-00:08:13.170 --> 00:08:15.917
-link layer, checking each boundary for
-anomalies.
+115
+00:08:13.445 --> 00:08:15.917
+layer, checking each boundary for anomalies.
 
-128
-00:08:15.917 --> 00:08:20.438
-NARRATOR: Use sequence numbers and
-acknowledgments to verify data integrity, and
+116
+00:08:15.917 --> 00:08:21.574
+Use sequence numbers and acknowledgments to
+verify data integrity, and monitor timers and
 
-129
-00:08:20.438 --> 00:08:23.315
-monitor timers and windows to understand
-pacing.
+117
+00:08:21.574 --> 00:08:23.315
+windows to understand pacing.
 
-130
-00:08:23.315 --> 00:08:29.575
-NARRATOR: This layered reasoning transforms
-complex network behavior into predictable,
+118
+00:08:23.315 --> 00:08:30.144
+This layered reasoning transforms complex
+network behavior into predictable, manageable
 
-131
-00:08:29.575 --> 00:08:30.827
-manageable patterns.
+119
+00:08:30.144 --> 00:08:30.827
+patterns.
 
-132
-00:08:30.827 --> 00:08:36.403
-NARRATOR: By practicing these skills, you will
+120
+00:08:30.827 --> 00:08:36.331
+By practicing these skills, you will
 confidently diagnose and resolve end-to-end
 
-133
-00:08:36.403 --> 00:08:37.332
+121
+00:08:36.331 --> 00:08:37.332
 request failures.
 
-134
-00:08:37.332 --> 00:08:42.355
-NARRATOR: When you test a network, you will
-see exactly how each layer contributes to the
+122
+00:08:37.332 --> 00:08:42.651
+When you test a network, you will see exactly
+how each layer contributes to the final
 
-135
-00:08:42.355 --> 00:08:42.983
-final outcome.
+123
+00:08:42.651 --> 00:08:42.983
+outcome.

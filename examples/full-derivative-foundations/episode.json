@@ -1,0 +1,387 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Inviting and concept-first; pause after the final question.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "This lesson builds the derivative from first principles. We will begin with an average rate of change over an interval, shrink that interval using a limit, and obtain the derivative at one point. Then we will turn that pointwise idea into a derivative function, recognize where differentiability fails, interpret motion, and use a tangent line for local approximation. The goal is not merely to memorize f prime notation. It is to understand what information a derivative contains, how the definition produces it, and when that information is valid. Keep one question in view: how can we describe change at an exact input when an ordinary slope calculation needs two different points?",
+      "plannedSeconds": 48,
+      "title": "The question behind the derivative",
+      "visualDirection": "template:showcase-derivative | Introduce a changing curve, a moving point, and the question of slope at one instant."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Connect the algebraic quotient to both the secant line and average velocity.",
+      "equations": [
+        "average rate of change = [f(a+h) − f(a)] ÷ h"
+      ],
+      "id": "beat-02",
+      "narration": "Choose an input a and a second input a plus h. The change in input is h. The corresponding change in output is f of a plus h minus f of a. Dividing output change by input change gives the difference quotient. Geometrically, it is the slope of the secant line through the two points. In an application, it is an average rate across the interval. If position changes by one hundred meters over five seconds, the average velocity is twenty meters per second, even if the object moved faster or slower within those five seconds. Average change summarizes an interval. It does not yet isolate what happens at a single instant.",
+      "plannedSeconds": 51,
+      "title": "Start with average change",
+      "visualDirection": "template:showcase-derivative | Draw two points on a curve and the secant line joining them."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Explicitly distinguish \"approaches zero\" from \"equals zero.\"",
+      "equations": [
+        "f′(a) = lim h→0 [f(a+h) − f(a)] ÷ h"
+      ],
+      "id": "beat-03",
+      "narration": "To focus on the input a, let h approach zero. We do not substitute h equals zero into the quotient; that would divide by zero. Instead, we examine values of h that are nonzero but arbitrarily small. As the second point approaches the first, the secant lines may approach a limiting line. If their slopes approach one finite value from both sides, that value is f prime of a, the derivative at a. The limit is the crucial reasoning step. It converts a family of nearby average rates into one instantaneous rate. If the slopes do not settle to a common finite value, the derivative at that point does not exist.",
+      "plannedSeconds": 55,
+      "title": "Use a limit instead of dividing by zero",
+      "visualDirection": "template:showcase-derivative | Move the second point toward the first as secant slopes approach a tangent slope."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Slow down during the cancellation and state why it is legal.",
+      "equations": [
+        "[(a+h)² − a²] ÷ h = [2ah + h²] ÷ h = 2a + h"
+      ],
+      "id": "beat-04",
+      "narration": "Let f of x equal x squared. Start with f of a plus h minus f of a, all divided by h. Expanding gives a squared plus two a h plus h squared minus a squared, divided by h. The a-squared terms cancel. Because h is nonzero during the limiting process, factor h from the numerator and cancel it with the denominator. The quotient becomes two a plus h. Now let h approach zero. The limit is two a. Notice the order of operations: form the quotient, simplify it for nonzero h, then evaluate the limit. We never claim that h itself is zero while it remains in the denominator.",
+      "plannedSeconds": 61,
+      "title": "Derive the slope of f(x)=x² at one point",
+      "visualDirection": "template:showcase-derivative | Work through the difference quotient for the parabola and highlight cancellation before the limit."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Make clear that f and f prime are different functions linked by slope.",
+      "equations": [
+        "f′(x) = lim h→0 [f(x+h) − f(x)] ÷ h"
+      ],
+      "id": "beat-05",
+      "narration": "The previous calculation kept a symbolic, so it did more than find one slope. It produced a rule: for f of x equals x squared, f prime of x equals two x. This new function reports the original curve's tangent slope at every differentiable input. At x equals three, the derivative is six. At x equals negative two, it is negative four. At zero, it is zero. The derivative function has its own graph and domain. Its input is still an x-value from the original problem, while its output is a rate or slope. Thinking of f prime as a function is essential for later topics such as optimization and differential equations.",
+      "plannedSeconds": 49,
+      "title": "Build a derivative function",
+      "visualDirection": "template:showcase-derivative | Move the base point along the curve while plotting the corresponding slope as a second function."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Warn gently against the \"zero derivative means maximum\" misconception.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "The sign of the derivative summarizes local direction. Where f prime is positive, tangent lines rise from left to right, so the function is locally increasing. Where f prime is negative, tangent lines fall, so the function is locally decreasing. Where f prime equals zero, the tangent is horizontal. A zero derivative identifies a critical point candidate, not automatically a maximum or minimum. For x squared, f prime changes from negative to positive at zero, matching the parabola's minimum. But another function can have a horizontal tangent and continue increasing. The derivative gives local evidence; interpreting a larger pattern requires checking how that evidence changes around the point.",
+      "plannedSeconds": 51,
+      "title": "Read behavior from the derivative",
+      "visualDirection": "template:showcase-derivative | Compare positive, zero, and negative tangent slopes and mark corresponding derivative values."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Distinguish continuity from differentiability with the absolute-value example.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "Not every graph has an ordinary finite tangent slope everywhere. At a jump or hole, the function is not continuous, so it cannot be differentiable there. At a sharp corner, the left-hand and right-hand slopes approach different values. At a cusp, the slopes can diverge with incompatible signs. At a vertical tangent, the slope becomes unbounded rather than approaching a finite number. Differentiability is therefore a stronger condition than continuity. If a function is differentiable at a point, it is continuous there. The reverse is not guaranteed: the absolute-value function is continuous at zero but has a corner, so its derivative at zero does not exist.",
+      "plannedSeconds": 53,
+      "title": "Know when differentiability fails",
+      "visualDirection": "template:showcase-derivative | Contrast a smooth point with a corner, cusp, discontinuity, and vertical tangent."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Give special emphasis to signs and units.",
+      "equations": [
+        "v(t)=s′(t); a(t)=v′(t)=s″(t)"
+      ],
+      "id": "beat-08",
+      "narration": "Suppose s of t gives position along a line. A secant slope over a time interval gives average velocity. The derivative s prime of t gives instantaneous velocity. Its sign indicates direction relative to the chosen coordinate axis, while its magnitude is speed. Differentiate velocity to obtain acceleration. Positive acceleration does not necessarily mean the object is speeding up; speed increases when velocity and acceleration have the same sign and decreases when their signs differ. Units also reveal meaning. If position is measured in meters and time in seconds, velocity uses meters per second and acceleration uses meters per second squared.",
+      "plannedSeconds": 53,
+      "title": "Interpret velocity and acceleration",
+      "visualDirection": "template:showcase-derivative | Show a position-versus-time curve, its tangent slope as velocity, and the derivative of velocity as acceleration."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Present the square-root estimate as an application, not a proof.",
+      "equations": [
+        "L(x)=f(a)+f′(a)(x−a)"
+      ],
+      "id": "beat-09",
+      "narration": "The derivative is also the coefficient of a local linear model. At x equals a, the tangent line has value f of a and slope f prime of a. Its equation is L of x equals f of a plus f prime of a times x minus a. For x close to a, L of x can approximate f of x. For example, to estimate the square root of four point one, use f of x equals square root x at a equals four. The value is two and the derivative is one fourth, so the estimate is two plus one fourth times zero point one, or two point zero two five. The method works locally; accuracy generally decreases farther from the base point.",
+      "plannedSeconds": 54,
+      "title": "Use the tangent line as a local model",
+      "visualDirection": "template:showcase-derivative | Zoom near x=a so the curve and tangent line nearly coincide."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Pause between the function value, derivative value, and tangent equation.",
+      "equations": [
+        "f′(x)=6x−2; f′(1)=4; tangent: y=1+4(x−1)"
+      ],
+      "id": "beat-10",
+      "narration": "Let f of x equal three x squared minus two x, and find the tangent at x equals one. The derivative function is six x minus two, so f prime of one is four. The point on the original graph is one comma f of one, which is one comma one. Using point-slope form, y minus one equals four times x minus one. This example separates three objects that students often mix together: f of one is the output one; f prime of one is the slope four; and the tangent line is a new linear equation built from both. Always compute the point and the slope before writing the tangent line.",
+      "plannedSeconds": 53,
+      "title": "Solve a complete point-derivative example",
+      "visualDirection": "template:showcase-derivative | Apply the definition to f(x)=3x²−2x at a=1 and connect the answer to a tangent line."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-11-claim-01"
+      ],
+      "delivery": "Make the checklist sound reusable across homework and applications.",
+      "equations": [],
+      "id": "beat-11",
+      "narration": "When solving a derivative problem from first principles, use five checks. First, identify the two inputs and the interval change h. Second, form the difference quotient with parentheses around the entire numerator. Third, simplify while h is nonzero. Fourth, take the limit only after the removable algebraic obstacle is handled. Fifth, interpret the result with a slope, rate, units, or tangent line. Common errors include substituting zero too early, dropping parentheses, confusing f of a with f prime of a, and assuming every continuous point is differentiable. The algebra matters, but the interpretation is what tells you whether the answer belongs to the original problem.",
+      "plannedSeconds": 54,
+      "title": "Use a reliable reasoning checklist",
+      "visualDirection": "template:showcase-derivative | Display a five-step checklist beside the curve: interval, quotient, simplify, limit, interpret."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-12-claim-01"
+      ],
+      "delivery": "Finish by unifying the representations rather than adding a new fact.",
+      "equations": [],
+      "id": "beat-12",
+      "narration": "The derivative begins with two points and an average rate of change. A limit brings those points together without dividing by zero. When the limit exists, it gives the tangent slope and instantaneous rate at one input. Repeating the process across inputs creates the derivative function. Its sign and value describe local behavior, its failures mark important geometric features, its physical units describe rates such as velocity, and its value supplies the slope of a local linear approximation. These are not unrelated definitions. They are different views of the same mathematical object. If you can move fluently among the quotient, the graph, the units, and the application, you understand the derivative at a foundation strong enough for the rules and applications that follow.",
+      "plannedSeconds": 46,
+      "title": "Summarize the complete idea",
+      "visualDirection": "template:showcase-derivative | Reconnect secant slope, limiting tangent, derivative function, rate of change, and linear approximation."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "openstax-defining",
+        "openstax-rates"
+      ],
+      "text": "The derivative connects tangent-line slope with instantaneous rate of change.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "openstax-defining",
+        "openstax-rates"
+      ],
+      "text": "A secant-line slope measures average change in output per unit change in input across an interval.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "openstax-defining"
+      ],
+      "text": "If the difference quotient approaches a finite limit as h approaches zero, that limit defines the derivative at a.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "openstax-defining"
+      ],
+      "text": "Evaluating the limit of the simplified difference quotient for f(x)=x² gives f′(a)=2a.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "openstax-function"
+      ],
+      "text": "The derivative function assigns to each input x the derivative of f at that input whenever the defining limit exists.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "openstax-function"
+      ],
+      "text": "Positive derivative values correspond to locally increasing behavior, negative values to locally decreasing behavior, and zero to a horizontal tangent.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "openstax-function"
+      ],
+      "text": "A function can fail to be differentiable at discontinuities, corners or cusps, and vertical tangents; differentiability at a point implies continuity there.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "openstax-rates"
+      ],
+      "text": "For one-dimensional motion, the derivative of position is instantaneous velocity and the derivative of velocity is acceleration.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "openstax-linear"
+      ],
+      "text": "Near a differentiable point a, the tangent-line linearization can approximate nearby function values.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "openstax-defining",
+        "openstax-function"
+      ],
+      "text": "The derivative definition produces a slope, and the point plus that slope determines the tangent-line equation.",
+      "verified": true
+    },
+    {
+      "id": "beat-11-claim-01",
+      "sourceIds": [
+        "openstax-defining",
+        "openstax-rates",
+        "openstax-linear"
+      ],
+      "text": "Correct derivative reasoning connects the difference quotient, its limit, the derivative's units, and the local interpretation.",
+      "verified": true
+    },
+    {
+      "id": "beat-12-claim-01",
+      "sourceIds": [
+        "openstax-defining",
+        "openstax-function",
+        "openstax-rates",
+        "openstax-linear"
+      ],
+      "text": "The derivative is simultaneously a limit of average rates, a tangent slope, a function of local slopes, an instantaneous rate, and the basis of linear approximation.",
+      "verified": true
+    }
+  ],
+  "id": "full-lesson-derivative-foundations-from-secant-slope-to-applicat",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "OpenStax",
+      "excerpt": "A secant line through two points gives an average rate of change. As the second point approaches the first, the limiting secant slope defines the tangent-line slope when the limit exists. The derivative at a point is the limit of the difference quotient. For f(x)=x squared, simplifying the difference quotient before taking the limit produces f prime of a equal to 2a.",
+      "id": "openstax-defining",
+      "sha256": "36c3276f64737b71ec422bf5d6599efc5d73af8b27ff16540f754151ea0ae700",
+      "title": "OpenStax Calculus Volume 1: Defining the Derivative",
+      "type": "url",
+      "uri": "https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative",
+      "verified": true
+    },
+    {
+      "author": "OpenStax",
+      "excerpt": "The derivative function assigns a derivative value to each input where the defining limit exists. Positive derivative values correspond to positive tangent slopes, negative values to negative slopes, and zero to horizontal tangents. Differentiability at a point implies continuity. Discontinuities, corners or cusps, and vertical tangents are standard ways differentiability can fail.",
+      "id": "openstax-function",
+      "sha256": "4a54c8634e12f4e2b30481b1697a7fc46f5a5474030061365e7ba94330d97e93",
+      "title": "OpenStax Calculus Volume 1: The Derivative as a Function",
+      "type": "url",
+      "uri": "https://openstax.org/books/calculus-volume-1/pages/3-2-the-derivative-as-a-function",
+      "verified": true
+    },
+    {
+      "author": "OpenStax",
+      "excerpt": "The derivative represents an instantaneous rate of change. For motion along a line, the derivative of position is velocity and the derivative of velocity is acceleration. Rates have units formed from output units divided by input units. Applications also include population growth and marginal quantities.",
+      "id": "openstax-rates",
+      "sha256": "4caee2378ad8b925b69d56899b6f50fc1d7095177dc12726697e7325400111ff",
+      "title": "OpenStax Calculus Volume 1: Derivatives as Rates of Change",
+      "type": "url",
+      "uri": "https://openstax.org/books/calculus-volume-1/pages/3-4-derivatives-as-rates-of-change",
+      "verified": true
+    },
+    {
+      "author": "OpenStax",
+      "excerpt": "At a differentiable point a, the linearization L(x)=f(a)+f prime(a)(x-a) uses the tangent line to approximate f(x) for x near a. Equivalently, a small change in output can be approximated by f prime(a) times a small change in input. The approximation is local and its error depends on the function and distance from the base point.",
+      "id": "openstax-linear",
+      "sha256": "59f5b5347c827874181bad9f418ad676e0f9ac6dd74be4db440db88fd0bf9845",
+      "title": "OpenStax Calculus Volume 1: Linear Approximations and Differentials",
+      "type": "url",
+      "uri": "https://openstax.org/books/calculus-volume-1/pages/4-2-linear-approximations-and-differentials",
+      "verified": true
+    }
+  ],
+  "title": "Full Lesson: Derivative Foundations from Secant Slope to Applications"
+}

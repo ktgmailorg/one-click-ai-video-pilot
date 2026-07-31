@@ -5,17 +5,17 @@
       "shots": [
         {
           "id": "beat-01-shot-001",
-          "phrase": "Begin by framing 1.",
+          "phrase": "Begin by framing Foundations of Computational Thinking as a question about inputs, decisions, and observable results.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Specific topics include: expression of algorithms in pseudo-code and a programming language; elementary data structures such as lists, trees and graphs; problem solving using recursion; and debugging and testing.",
+          "phrase": "Consider this worked case: A student breaks down a sorting problem into identifying the input list, comparing elements, and arranging them in order before writing pseudo-code.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-003",
-          "phrase": "On screen, display a course roadmap graphic showing the ten teaching beats arranged linearly, with a badge indicating 'Graduate Bridge Course (COMPSCI-MS only)' and a note about permission requirements for undergraduates.",
+          "phrase": "List the givens before choosing a method, because an unstated assumption can change the conclusion.",
           "type": "deterministic-svg"
         }
       ]
@@ -25,17 +25,17 @@
       "shots": [
         {
           "id": "beat-02-shot-001",
-          "phrase": "Now define 2.",
+          "phrase": "Now define Pseudo-Code and Language Expression precisely enough that another learner could test the definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "A disciplined solution states inputs and outputs, proves correctness, and then analyzes time and space.",
+          "phrase": "Consider this worked case: A pseudo-code function for finding the maximum value in a list is converted to Python, preserving the logical flow while adding syntax and type constraints.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-003",
-          "phrase": "On screen, show a three-step flowchart labeled 'Inputs/Outputs', 'Correctness Proof', and 'Resource Analysis', with arrows indicating the mandatory sequence.",
+          "phrase": "Separate the formal definition from an implementation detail, then identify what evidence would distinguish them.",
           "type": "deterministic-svg"
         }
       ]
@@ -45,17 +45,17 @@
       "shots": [
         {
           "id": "beat-03-shot-001",
-          "phrase": "With the foundation in place, examine how 3.",
+          "phrase": "With the foundation in place, examine how Elementary Data Structures: Lists operates in a concrete sequence.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Algorithm analysis connects a precise problem specification to a correctness argument and resource bounds.",
+          "phrase": "Consider this worked case: A student uses a Python list to store test scores, then iterates through it to calculate the average using a simple loop.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-003",
-          "phrase": "On screen, render a graph comparing two curves: one linear (O(n)) and one logarithmic (O(log n)), with a legend explaining how asymptotic notation captures growth rates.",
+          "phrase": "Follow every arrow in order and name the state before and after each transition.",
           "type": "deterministic-svg"
         }
       ]
@@ -65,17 +65,17 @@
       "shots": [
         {
           "id": "beat-04-shot-001",
-          "phrase": "Next, compare the choices involved in 4.",
+          "phrase": "Next, compare the choices involved in Elementary Data Structures: Trees and make the decision criteria explicit.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "A loop invariant supports a proof by initialization, maintenance, and termination.",
+          "phrase": "Consider this worked case: A binary tree represents a file system where directories are nodes and files are leaf nodes, allowing efficient path resolution.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-04-shot-003",
-          "phrase": "On screen, display a loop structure with three callouts: 'Initialization (before loop)', 'Maintenance (inside loop)', and 'Termination (after loop)', each linked to the invariant statement.",
+          "phrase": "Compare alternatives against the same constraints so the evaluation does not move the goalposts.",
           "type": "deterministic-svg"
         }
       ]
@@ -85,17 +85,17 @@
       "shots": [
         {
           "id": "beat-05-shot-001",
-          "phrase": "Apply 5.",
+          "phrase": "Apply Elementary Data Structures: Graphs to a worked situation instead of treating it as an isolated definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Divide-and-conquer algorithms split a problem, solve subproblems, and combine their results.",
+          "phrase": "Consider this worked case: A student models a city's road network as a graph where intersections are nodes and roads are edges to find the shortest path.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-05-shot-003",
-          "phrase": "On screen, illustrate a binary tree where the root is the full problem, children are subproblems, and leaves are base cases, with arrows showing the 'divide', 'solve', and 'combine' phases.",
+          "phrase": "Work from the concrete inputs to the result, checking units, types, or invariants at each step.",
           "type": "deterministic-svg"
         }
       ]
@@ -105,17 +105,17 @@
       "shots": [
         {
           "id": "beat-06-shot-001",
-          "phrase": "Examine the tradeoffs in 6.",
+          "phrase": "Examine the tradeoffs in Recursive Problem Solving, including what improves and what becomes more difficult.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Recurrences describe the cost of recursive algorithms.",
+          "phrase": "Consider this worked case: A factorial function calculates n!",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-06-shot-003",
-          "phrase": "On screen, show a recursive call tree with labeled nodes, each node's cost calculated using the recurrence formula, and a summary box showing the total cost formula.",
+          "phrase": "On screen, show a recursive call stack expanding downward with each function call, then collapsing upward as base cases return values.",
           "type": "deterministic-svg"
         }
       ]
@@ -125,17 +125,17 @@
       "shots": [
         {
           "id": "beat-07-shot-001",
-          "phrase": "Stress-test the reasoning around 7.",
+          "phrase": "Stress-test the reasoning around Debugging and Testing Protocols with an edge case and identify which assumption controls the outcome.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Lists represent ordered sequences with position-based operations.",
+          "phrase": "Consider this worked case: A student uses print statements and a test harness to verify that a sorting algorithm correctly handles edge cases like empty lists or single-element lists.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-003",
-          "phrase": "On screen, draw two side-by-side diagrams: a horizontal list with index pointers and a vertical stack with a 'top' marker and push/pop arrows.",
+          "phrase": "Change one assumption at a time and observe which part of the reasoning no longer holds.",
           "type": "deterministic-svg"
         }
       ]
@@ -145,17 +145,17 @@
       "shots": [
         {
           "id": "beat-08-shot-001",
-          "phrase": "Use 8.",
+          "phrase": "Use State and Control Flow Management to diagnose a failure by separating symptoms, causes, and corrective action.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Hash tables map keys to locations and require a collision strategy.",
+          "phrase": "Consider this worked case: A student defines a class with explicit attributes and methods, ensuring that each method updates state according to a documented contract.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-003",
-          "phrase": "On screen, create a composite graphic showing a queue with 'front' and 'rear' markers, a tree with root/branch/leaf labels, and a hash table with key buckets and collision chains.",
+          "phrase": "Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause.",
           "type": "deterministic-svg"
         }
       ]
@@ -165,17 +165,17 @@
       "shots": [
         {
           "id": "beat-09-shot-001",
-          "phrase": "Connect 9.",
+          "phrase": "Connect Verification and Local Expander Preparation to the earlier ideas and explain how the pieces work as one system.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Graphs can be represented with adjacency structures for traversal and path algorithms.",
+          "phrase": "Consider this worked case: A student cross-references the pseudo-code implementation with the source excerpts, ensuring that terms like 'basic blocks', 'terminator instruction', and 'namespace' are correctly applied.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-003",
-          "phrase": "On screen, render a network graph with labeled vertices and directed edges, highlighting a path from start to end node, and annotate the adjacency list representation below.",
+          "phrase": "Explain each connection explicitly and verify that information retains the same meaning across representations.",
           "type": "deterministic-svg"
         }
       ]
@@ -185,22 +185,22 @@
       "shots": [
         {
           "id": "beat-10-shot-001",
-          "phrase": "Finish with 10.",
+          "phrase": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Asymptotic notation describes how resource use grows with input size.",
+          "phrase": "Consider this worked case: A student reviews their assignment against the checklist, confirming that pseudo-code and code match, data structures are correctly implemented, recursion is applied, and tests pass.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-10-shot-003",
-          "phrase": "On screen, display a checklist graphic with four boxes: 'Verify Inputs', 'Validate Outputs', 'Check Invariants', 'Debug & Test', each with a checkbox and a brief action prompt.",
+          "phrase": "For each checklist item, record the evidence, the remaining uncertainty, and the next verification step.",
           "type": "deterministic-svg"
         }
       ]
     }
   ],
-  "episodeId": "csci-603-computational-problem-solving-foundations-lesson-bluepr",
+  "episodeId": "csci-603-computational-problem-solving",
   "schemaVersion": 1
 }

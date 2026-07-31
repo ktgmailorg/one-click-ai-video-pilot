@@ -13,20 +13,20 @@
       "verified": true
     },
     {
-      "id": "raft-paper",
-      "title": "In Search of an Understandable Consensus Algorithm",
-      "uri": "https://raft.github.io/raft.pdf",
-      "author": "Diego Ongaro and John Ousterhout",
-      "content": "Raft decomposes consensus into leader election, log replication, and safety. Servers move among follower, candidate, and leader states. Terms act as logical clocks and allow servers to identify stale information. A follower starts an election after its election timeout elapses without valid leader communication. A candidate requests votes and becomes leader after receiving votes from a majority. A leader appends client commands to its log and sends entries to followers. An entry becomes committed after the required majority condition is satisfied. Log matching and election restrictions preserve the safety properties described by the algorithm.",
+      "id": "java-language-specification",
+      "title": "Java Language Specification",
+      "uri": "https://docs.oracle.com/javase/specs/jls/se21/html/index.html",
+      "author": "Oracle",
+      "content": "The Java language specification defines classes, objects, interfaces, inheritance, method invocation, fields, access control, exceptions, generics, and concurrency semantics. A class declares state and behavior, while an object is an instance with its own runtime identity and field state. Interfaces declare contracts that classes may implement. Inheritance reuses and specializes behavior, but dynamic method dispatch selects an implementation from the runtime class of the receiver. Access modifiers control which declarations are visible. Exceptions separate normal results from abrupt completion. Generic types express reusable abstractions while preserving compile-time type constraints. Object-oriented design should make responsibilities, invariants, dependencies, composition, and substitution behavior explicit.",
       "type": "note",
       "verified": true
     },
     {
-      "id": "nist-cloud",
-      "title": "The NIST Definition of Cloud Computing",
-      "uri": "https://csrc.nist.gov/publications/detail/sp/800-145/final",
-      "author": "National Institute of Standards and Technology",
-      "content": "NIST defines cloud computing with five essential characteristics. On-demand self-service allows consumers to provision capabilities without requiring human interaction with each provider. Broad network access makes capabilities available over networks through standard mechanisms. Resource pooling serves multiple consumers with dynamically assigned physical and virtual resources. Rapid elasticity allows capabilities to scale outward and inward according to demand. Measured service monitors and reports resource use. NIST identifies software, platform, and infrastructure service models. NIST also identifies private, community, public, and hybrid deployment models. Sound cloud analysis makes trust boundaries, tenancy, failure domains, scaling assumptions, observability, and responsibility allocation explicit.",
+      "id": "python-data-model",
+      "title": "Python Data Model",
+      "uri": "https://docs.python.org/3/reference/datamodel.html",
+      "author": "Python Software Foundation",
+      "content": "Python objects have identity, a type, and a value. Classes create user-defined types whose instances can contain attributes and participate in operations through special methods. Attribute lookup follows defined rules across an instance and its class hierarchy. Methods bind functions to instances. Inheritance allows a class to derive behavior from base classes, while composition connects objects through explicit attributes. Mutable and immutable objects have different state behavior. Exceptions communicate failures through defined control flow. A sound object model states ownership, invariants, public operations, extension points, and observable behavior rather than relying on hidden shared state.",
       "type": "note",
       "verified": true
     }

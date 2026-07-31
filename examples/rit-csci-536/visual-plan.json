@@ -5,12 +5,12 @@
       "shots": [
         {
           "id": "beat-01-shot-001",
-          "phrase": "Begin by framing Search Engine Pipeline Overview as a question about inputs, decisions, and observable results.",
+          "phrase": "Begin by framing Search Engine Architecture Overview as a question about inputs, decisions, and observable results.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: When a user searches for 'climate change policies', the system first retrieves relevant documents from an index, then ranks them based on relevance before displaying the top results.",
+          "phrase": "Consider this worked case: A web crawler indexes HTML pages by extracting text, building an inverted index, and storing term frequencies.",
           "type": "deterministic-svg"
         },
         {
@@ -25,12 +25,12 @@
       "shots": [
         {
           "id": "beat-02-shot-001",
-          "phrase": "Now define Traditional Retrieval Models precisely enough that another learner could test the definition.",
+          "phrase": "Now define Query Processing and Parsing precisely enough that another learner could test the definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: TF-IDF assigns higher scores to terms that appear frequently in a specific document but rarely across the entire corpus, while BM25 adjusts for document length and term saturation.",
+          "phrase": "Consider this worked case: A natural language query like 'climate change effects' is tokenized and normalized to match indexed terms.",
           "type": "deterministic-svg"
         },
         {
@@ -45,12 +45,12 @@
       "shots": [
         {
           "id": "beat-03-shot-001",
-          "phrase": "With the foundation in place, examine how Modern Neural Retrieval operates in a concrete sequence.",
+          "phrase": "With the foundation in place, examine how Inverted Index Construction operates in a concrete sequence.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: A neural reranker re-scores initially retrieved documents by analyzing query-document interactions through transformer-based architectures, improving relevance for complex or ambiguous queries.",
+          "phrase": "Consider this worked case: The term 'machine' points to document IDs [101, 105, 112], allowing direct access to containing pages.",
           "type": "deterministic-svg"
         },
         {
@@ -65,12 +65,12 @@
       "shots": [
         {
           "id": "beat-04-shot-001",
-          "phrase": "Next, compare the choices involved in Search Interfaces and make the decision criteria explicit.",
+          "phrase": "Next, compare the choices involved in TF-IDF Relevance Scoring and make the decision criteria explicit.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: A conversational IR interface allows users to ask natural language questions, while an enterprise search interface provides faceted navigation and role-based access controls.",
+          "phrase": "Consider this worked case: A term appearing in many documents receives a lower IDF weight, reducing its relevance score.",
           "type": "deterministic-svg"
         },
         {
@@ -85,12 +85,12 @@
       "shots": [
         {
           "id": "beat-05-shot-001",
-          "phrase": "Apply Search Engine Evaluation to a worked situation instead of treating it as an isolated definition.",
+          "phrase": "Apply BM25 Ranking Algorithm to a worked situation instead of treating it as an isolated definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: Precision, recall, and mean average precision (MAP) quantify how many relevant documents appear in the top results, while user satisfaction surveys assess perceived usefulness.",
+          "phrase": "Consider this worked case: Short documents receive higher scores for rare terms, while BM25 adjusts scores based on term position in text.",
           "type": "deterministic-svg"
         },
         {
@@ -105,12 +105,12 @@
       "shots": [
         {
           "id": "beat-06-shot-001",
-          "phrase": "Examine the tradeoffs in Search Applications, including what improves and what becomes more difficult.",
+          "phrase": "Examine the tradeoffs in Neural Reranking Techniques, including what improves and what becomes more difficult.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: Conversational IR systems maintain dialogue state and context to answer follow-up questions, while enterprise search integrates with CRM and document management platforms.",
+          "phrase": "Consider this worked case: A transformer-based model scores query-document pairs by analyzing semantic similarity in high-dimensional space.",
           "type": "deterministic-svg"
         },
         {
@@ -125,12 +125,12 @@
       "shots": [
         {
           "id": "beat-07-shot-001",
-          "phrase": "Stress-test the reasoning around Machine Learning Workflows in IR with an edge case and identify which assumption controls the outcome.",
+          "phrase": "Stress-test the reasoning around Search Evaluation Metrics with an edge case and identify which assumption controls the outcome.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: Preprocessing steps like tokenization and vectorization are fitted only on training data, while cross-validation ensures consistent evaluation across multiple data splits.",
+          "phrase": "Consider this worked case: Precision measures the fraction of retrieved documents that are relevant, while NDCG accounts for ranking order.",
           "type": "deterministic-svg"
         },
         {
@@ -145,12 +145,12 @@
       "shots": [
         {
           "id": "beat-08-shot-001",
-          "phrase": "Use Evaluation Metrics and Error Analysis to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "phrase": "Use Conversational and Enterprise Search to diagnose a failure by separating symptoms, causes, and corrective action.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: Using accuracy for ranking tasks often masks poor performance on long-tail queries, while distribution shift between training and test data reduces model reliability in production.",
+          "phrase": "Consider this worked case: Enterprise search indexes internal documents with role-based access and contextual filters for business users.",
           "type": "deterministic-svg"
         },
         {
@@ -165,12 +165,12 @@
       "shots": [
         {
           "id": "beat-09-shot-001",
-          "phrase": "Connect Research Topics and Experiment Design to the earlier ideas and explain how the pieces work as one system.",
+          "phrase": "Connect Experimental Design in IR to the earlier ideas and explain how the pieces work as one system.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: Researchers design experiments to compare neural reranking strategies under varying query complexity, measuring improvements in MAP and latency while monitoring for bias in ranked results.",
+          "phrase": "Consider this worked case: A group project tests BM25 versus neural reranking on a benchmark corpus to measure score improvements.",
           "type": "deterministic-svg"
         },
         {
@@ -190,7 +190,7 @@
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: Instructors and developers use the checklist to verify that indexing covers all required fields, retrieval models are tuned for the target domain, and evaluation metrics reflect real-world performance.",
+          "phrase": "Consider this worked case: The checklist verifies index coverage, ranking consistency, metric alignment, and error cost assessment.",
           "type": "deterministic-svg"
         },
         {
@@ -201,6 +201,6 @@
       ]
     }
   ],
-  "episodeId": "csci-536-information-retrieval-foundations",
+  "episodeId": "foundations-of-information-retrieval",
   "schemaVersion": 1
 }

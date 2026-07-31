@@ -6,7 +6,9 @@
     "node": "22.x"
   },
   "scripts": {
+    "catalog:provenance": "node scripts/backfill-course-provenance.mjs",
     "media:publish": "node --env-file=.env.local scripts/publish-course-videos.mjs",
+    "media:publish:github": "node scripts/publish-course-videos-github.mjs",
     "media:verify": "node scripts/verify-published-catalog.mjs",
     "test": "node --test tests/*.test.mjs"
   },

@@ -1,0 +1,597 @@
+{
+  "approvals": [
+    {
+      "approvedAt": "2026-07-31T15:48:44.599Z",
+      "notes": "Verifies declared claim-to-source bindings for draft rendering only; this is not instructor or release approval.",
+      "reviewer": "Automated source-pack verification (draft)",
+      "role": "automation",
+      "schemaVersion": 1,
+      "stage": "script",
+      "subjectSha256": "25c7f68de72f07f194d54cdaa4e041649c8e9b7a691a0faac9cc083e47ddfb9f"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/render/documentary-master.core.mp4",
+      "role": "master",
+      "sha256": "f2ce6696ed02efa79537a3201a1aeb3ca0a2178bac1bd5cd1ff3a9e00fdbfeeb"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/narration/captions.vtt",
+      "role": "captions-vtt",
+      "sha256": "9e32c443100bbe3329f383a82c2e0fb79b7c9fb707b864a78e813995c7f063ad"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/narration/captions.srt",
+      "role": "captions-srt",
+      "sha256": "de5c026d6b9dd1d414da37fffb9c513716ca2ef4142efc55b503d470e0f1b280"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/narration/transcript.txt",
+      "role": "transcript-text",
+      "sha256": "15f00e1ec68fbdfeac5fa0bf39753ee92e4ef34823758b2abd2dab59b3d31b8e"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/narration/transcript.html",
+      "role": "transcript-html",
+      "sha256": "5cea1037df320d282f4c74a0d0e2a782a92f930d1dc10950f2179a02b39e11d5"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/visuals/thumbnail.png",
+      "role": "thumbnail",
+      "sha256": "19005e4d56d74d099c046df03e5cf43bf555294324fcfe4c93fdea5da1337efe"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/visuals/beat-01/beat-01-shot-001.png",
+      "role": "shot",
+      "sha256": "53cffda64a6c2ec4bd7e2a908229319bad9156a100a09497604780011113092b",
+      "shotId": "beat-01-shot-001"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/visuals/beat-01/beat-01-shot-002.png",
+      "role": "shot",
+      "sha256": "8af0ae03a6a584812ad33ed3a0ffe381ce3259ac7d1231176462a53c9d65d4fe",
+      "shotId": "beat-01-shot-002"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/visuals/beat-01/beat-01-shot-003.png",
+      "role": "shot",
+      "sha256": "7bfd13a6bd571afac494c07f36c0baa479934d5d4cffe75e77ffe962943e0b0d",
+      "shotId": "beat-01-shot-003"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/visuals/beat-02/beat-02-shot-001.png",
+      "role": "shot",
+      "sha256": "cc3ec103e58d7e60a88e2037d99b515a6e5116edefabdbff4d8769d844b15ae7",
+      "shotId": "beat-02-shot-001"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/visuals/beat-02/beat-02-shot-002.png",
+      "role": "shot",
+      "sha256": "a5ab3516d1fb13ae05c2596e044e788b805f0445c6128693c24abc61cddbe6e6",
+      "shotId": "beat-02-shot-002"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/visuals/beat-02/beat-02-shot-003.png",
+      "role": "shot",
+      "sha256": "c0d3091f949f46bb3f067586f64efc78c31d076c87bd98fc1aebd1decde22121",
+      "shotId": "beat-02-shot-003"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/visuals/beat-02/beat-02-shot-004.png",
+      "role": "shot",
+      "sha256": "bc1f9ba6b44bb7dd7ff35790379ad85a18047d093700369795c073d8a0bba69a",
+      "shotId": "beat-02-shot-004"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/visuals/beat-03/beat-03-shot-001.png",
+      "role": "shot",
+      "sha256": "b3de466fdd1f3fe6c9f8f9d1fc99f22dbd6996cfbe79bc0b6c4d49bb2671ea67",
+      "shotId": "beat-03-shot-001"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/visuals/beat-03/beat-03-shot-002.png",
+      "role": "shot",
+      "sha256": "3693c1af0f6b815faa71349519f46bd29f8d1ef7ad44d811ccc405e4e23dabcf",
+      "shotId": "beat-03-shot-002"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/visuals/beat-03/beat-03-shot-003.png",
+      "role": "shot",
+      "sha256": "fc23fee04dcdf4aa138d045afc65b5cea81111635b2690e3b56e677132ecf286",
+      "shotId": "beat-03-shot-003"
+    }
+  ],
+  "configSha256": "8e3bcf818c5864b8ca996a4b9304d93d1c158bdf833d1426207bd1edc491640f",
+  "createdAt": "2026-07-31T15:49:07.656Z",
+  "final": {
+    "releaseAudit": {
+      "blockers": [],
+      "checks": [
+        {
+          "name": "frame",
+          "ok": true,
+          "value": "1920x1080"
+        },
+        {
+          "name": "frame-rate",
+          "ok": true,
+          "value": "30000/1001"
+        },
+        {
+          "name": "audio-sample-rate",
+          "ok": true,
+          "value": 48000
+        },
+        {
+          "name": "rit-orange-token",
+          "ok": true,
+          "value": "#F76902"
+        },
+        {
+          "name": "orange-on-black-contrast",
+          "ok": true,
+          "value": 6.98
+        },
+        {
+          "name": "title-safe-template",
+          "ok": true,
+          "value": "96px minimum inset"
+        },
+        {
+          "name": "font-fallbacks",
+          "ok": true,
+          "value": "Arial/Liberation Sans and Georgia/Liberation Serif"
+        },
+        {
+          "name": "final-master-loudness",
+          "ok": true,
+          "value": {
+            "integratedLufs": -16.12,
+            "loudnessRangeLu": 2.2,
+            "ok": true,
+            "schemaVersion": 1,
+            "targetIntegratedLufs": -16,
+            "targetTruePeakDbtp": -1.5,
+            "truePeakDbtp": -2.38
+          }
+        },
+        {
+          "name": "caption-audio-start-sync",
+          "ok": true,
+          "value": {
+            "audioStartSeconds": 0,
+            "captionStartSeconds": 0.05,
+            "maximumOffsetSeconds": 0.25,
+            "offsetSeconds": 0.05
+          }
+        },
+        {
+          "name": "subject-matched-visuals",
+          "ok": true,
+          "value": {
+            "genericShotIds": [],
+            "resolvedTemplates": [
+              "showcase-hierarchy"
+            ]
+          }
+        }
+      ],
+      "ok": true,
+      "releaseState": "course-draft",
+      "warnings": []
+    },
+    "render": {
+      "audioQuality": {
+        "integratedLufs": -16.12,
+        "loudnessRangeLu": 2.2,
+        "ok": true,
+        "schemaVersion": 1,
+        "targetIntegratedLufs": -16,
+        "targetTruePeakDbtp": -1.5,
+        "truePeakDbtp": -2.38
+      },
+      "audioSampleRate": 48000,
+      "audioStartSeconds": 0,
+      "cache": {
+        "draft": false,
+        "draftSkipped": false,
+        "master": false,
+        "sectionCount": 3,
+        "sections": 0
+      },
+      "draftPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/render/documentary-master.DRAFT.mp4",
+      "durationSeconds": 58.321333,
+      "encoder": {
+        "codec": "h264_videotoolbox",
+        "mode": "videotoolbox",
+        "prioritizeSpeed": false,
+        "profile": "high",
+        "quality": "80",
+        "realtime": true
+      },
+      "frameRate": "30000/1001",
+      "height": 1080,
+      "master": "documentary-master.core.mp4",
+      "masterPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/render/documentary-master.core.mp4",
+      "schemaVersion": 1,
+      "sections": [
+        {
+          "beatId": "beat-01",
+          "cacheHit": false,
+          "durationSeconds": 19.584,
+          "output": "beat-01.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/render/sections/beat-01.mp4",
+          "renderSignature": "10c97cd14d7360b187c3ae1513959a2cd6911599c93e5c30328ddcdb478c5a82",
+          "schemaVersion": 1,
+          "sha256": "b51abbcd1b33364105bab5bcaa58bdb278a827a9feaaee4084e33311ddf17446"
+        },
+        {
+          "beatId": "beat-02",
+          "cacheHit": false,
+          "durationSeconds": 20.976,
+          "output": "beat-02.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/render/sections/beat-02.mp4",
+          "renderSignature": "60d89cc2ab05cdb125967e55beff753a9e14f5776b43e6eba23b8b0d64f59b0f",
+          "schemaVersion": 1,
+          "sha256": "9b8178ab3355738ea7567bb5857f94a92b3b01e141425e05b5f36f5d9123f4bb"
+        },
+        {
+          "beatId": "beat-03",
+          "cacheHit": false,
+          "durationSeconds": 17.736,
+          "output": "beat-03.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/art-design-hierarchy/work/render/sections/beat-03.mp4",
+          "renderSignature": "d521edd4c83789f1fa2ae68a5fe0f5ce5b9a6d9ca9f479ff8d38b312bffd80bd",
+          "schemaVersion": 1,
+          "sha256": "1b5ff0d9689ff3dcb3f92076dc3e643a43b622d251e5f0f6e0617de99233771e"
+        }
+      ],
+      "sha256": "f2ce6696ed02efa79537a3201a1aeb3ca0a2178bac1bd5cd1ff3a9e00fdbfeeb",
+      "title": "How Visual Hierarchy Guides Attention",
+      "width": 1920
+    }
+  },
+  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "inputSha256": "d07f0fe904808ec91d802d24ff17c8937710ea03d0931ada3273248eb35c62af",
+  "mode": "record",
+  "providers": {
+    "edge-narration": {
+      "capabilities": [
+        "speech.synthesize"
+      ],
+      "executionLocation": "hosted",
+      "id": "edge-tts",
+      "mimeTypes": {
+        "speech.synthesize": [
+          "audio/mpeg",
+          "text/vtt"
+        ]
+      },
+      "profileName": "edge-narration",
+      "supportsAsyncJobs": false,
+      "supportsModelDiscovery": false,
+      "supportsSeed": false,
+      "supportsStructuredOutput": false,
+      "version": "7.2.8",
+      "voicePresets": {
+        "female": "en-US-EmmaMultilingualNeural",
+        "male": "en-US-AndrewMultilingualNeural"
+      }
+    }
+  },
+  "requests": [
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 726,
+      "lookupSha256": "d39a68b3a7c7ddb9d8f525bc71c156ccf5d65566141d2cecaef86cc4ce715edf",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "To test a layout, look away and return for one second. What do you notice first, second, and third? If that order does not match the message, adjust the system rather than adding more emphasis everywhere. A successful hierarchy makes the important path feel natural while leaving the supporting material available."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "4be602319cc215154e69822d55d7d3b91b202e5f1478194cf66345ee3212316d",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/a9/a997fdb9c284025049bc5c5e7f8a0770d2bed0b45ed028c0c3946d675913feeb.mp3",
+            "sha256": "a997fdb9c284025049bc5c5e7f8a0770d2bed0b45ed028c0c3946d675913feeb",
+            "size": 106416
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/36/367ffd12602ee644181666c183cd4666c7650916a5038d110590d94ec17f5418.vtt",
+            "sha256": "367ffd12602ee644181666c183cd4666c7650916a5038d110590d94ec17f5418",
+            "size": 447
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:48:44.700Z"
+    },
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 761,
+      "lookupSha256": "5a6744625ac045cd95342db8fb2d6436728f84162b1e21db7845cd03b4bee9f0",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "A larger headline is one hierarchy cue, but not the only one. Weight, color, position, spacing, and alignment also shape what appears primary or secondary. Strong hierarchy uses a few coordinated differences. Random changes create noise; consistent differences create relationships that readers can learn quickly."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "31d5d93df4aa8930e3371102ac36328f4737c73d492518c4e84ce75c2b0e30c3",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/91/919dba49a8c8c59ac78b1a41063c7f86921924d623f6d9a9b45230366d0425b3.mp3",
+            "sha256": "919dba49a8c8c59ac78b1a41063c7f86921924d623f6d9a9b45230366d0425b3",
+            "size": 125856
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/f3/f3a73be2da729379b885cf92f015a627b5ef50f4c7959d900d3887a29c9b257b.vtt",
+            "sha256": "f3a73be2da729379b885cf92f015a627b5ef50f4c7959d900d3887a29c9b257b",
+            "size": 446
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:48:44.699Z"
+    },
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 1027,
+      "lookupSha256": "90fcd4eaca7a1a612386b9a97b8323d3b0c9643a1abd1209d5842e89983b0f7d",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "When every element is equally loud, the viewer must decide where to begin. Visual hierarchy makes that decision intentional. One element becomes the entry point, supporting information follows, and details settle into a readable order. The design is not merely decorated; attention is being organized."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "36b6d3fc82cdbfcc0a38e01f6e17f9e89beb759c1fbc498a02a6a113224f9b94",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/11/11a323d13a7689a75c5405a50f4ff3f7dcb65e203999333cf6bab41508fc7708.mp3",
+            "sha256": "11a323d13a7689a75c5405a50f4ff3f7dcb65e203999333cf6bab41508fc7708",
+            "size": 117504
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/32/3253708e989e9623c7728780f0ab18ca85afb1879fde827034f01e5861b1aa03.vtt",
+            "sha256": "3253708e989e9623c7728780f0ab18ca85afb1879fde827034f01e5861b1aa03",
+            "size": 434
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:48:44.700Z"
+    }
+  ],
+  "runId": "how-visual-hierarchy-guides-attention-bcbe5c5b3be0",
+  "schemaVersion": 1,
+  "stages": [
+    {
+      "name": "plan",
+      "status": "complete"
+    },
+    {
+      "name": "script-approval",
+      "status": "complete"
+    },
+    {
+      "name": "visual-approval",
+      "status": "complete"
+    },
+    {
+      "name": "narration",
+      "status": "complete"
+    },
+    {
+      "name": "visual-generation",
+      "status": "complete"
+    },
+    {
+      "name": "render",
+      "status": "complete"
+    },
+    {
+      "name": "release-qa",
+      "status": "complete"
+    },
+    {
+      "name": "release-approval",
+      "status": "waiting"
+    }
+  ],
+  "status": "awaiting-approval",
+  "toolchain": {
+    "ffmpeg": {
+      "available": true,
+      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "available": true,
+      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "gitChangedPaths": [
+      "outreach/README.md",
+      "outreach/general-email.md",
+      "outreach/leadership-confirmation.md"
+    ],
+    "gitDirty": true,
+    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
+    "node": "v22.23.1",
+    "platform": "darwin-arm64",
+    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtimeDirty": false,
+    "sharp": {
+      "aom": "3.14.1",
+      "archive": "3.8.8",
+      "cairo": "1.18.4",
+      "cgif": "0.5.3",
+      "exif": "0.6.26",
+      "expat": "2.8.2",
+      "ffi": "3.6.0",
+      "fontconfig": "2.18.1",
+      "freetype": "2.14.3",
+      "fribidi": "1.0.16",
+      "glib": "2.89.1",
+      "harfbuzz": "14.2.1",
+      "heif": "1.23.1",
+      "highway": "1.4.0",
+      "imagequant": "2.4.1",
+      "lcms": "2.19.1",
+      "mozjpeg": "0826579",
+      "pango": "1.58.0",
+      "pixman": "0.46.4",
+      "png": "1.6.58",
+      "proxy-libintl": "0.5",
+      "rsvg": "2.62.90",
+      "sharp": "0.35.3",
+      "tiff": "d01a94b",
+      "uhdr": "1acdbed",
+      "vips": "8.18.3",
+      "webp": "1.6.0",
+      "xml2": "2.15.3",
+      "zlib-ng": "2.3.3"
+    }
+  },
+  "totalCostUsd": 0
+}

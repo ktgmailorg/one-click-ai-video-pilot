@@ -1,0 +1,320 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Begin by visualizing how data travels from your device to a remote server through distinct layers. Encapsulation wraps application data into transport segments, which then nest inside IP packets, and finally sit atop local link frames. This layered approach isolates failures: if a router drops an IP packet, the transport layer simply retries without corrupting the application data. Think of it like mailing a letter: the message is the application payload, the envelope is the IP packet, and the postal box is the link frame. Each layer handles only its specific job, making the system modular and easier to debug. When you examine a packet capture, you will see these boundaries clearly marked, allowing you to trace exactly where a request enters or exits each layer.",
+      "plannedSeconds": 65,
+      "title": "Layered Architecture and Encapsulation",
+      "visualDirection": "template:showcase-networks | Editable diagram: Three concentric circles labeled 'Link Frame', 'IP Packet', and 'TCP Segment'. The innermost circle contains 'Application Data'. Arrows show data being pushed inward (encapsulation) and pulled outward (decapsulation). Each"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Next, examine how IP addressing directs packets across heterogeneous networks. Each router inspects the destination IP address and consults its routing table to determine the next hop. The hop limit field in the IPv6 header counts remaining hops, decrementing with every forward to prevent infinite loops. Routers operate on a best-effort basis, meaning they forward packets without guaranteeing delivery, order, or integrity. If a link fails, the router simply drops the packet, leaving reliability to higher layers. This design keeps routers lightweight and fast, allowing them to handle massive traffic volumes while pushing complex recovery logic to the endpoints. When you trace a request, you will see the hop limit decrease with each router, revealing the path length before the packet reaches its final destination.",
+      "plannedSeconds": 65,
+      "title": "IP Addressing and Routing",
+      "visualDirection": "template:showcase-networks | Editable diagram: A linear sequence of four router nodes connected by dashed lines. Each router has a 'Hop Limit' counter that decreases from 6 to 5 to 4 to 3. A red 'Drop' icon appears at the third router. Labels explain 'Best-Effort', 'No"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "Now, shift focus to the transport layer, where TCP establishes reliable connections between endpoints. TCP uses a strict state machine that begins with a three-way handshake to negotiate parameters and confirm connectivity. Once established, the connection maintains a shared sequence space, ensuring every byte is tracked. The protocol does not care about the underlying network conditions; it only cares about delivering the correct byte stream to the application. If a segment is lost, the receiver will not acknowledge it, triggering the sender to retransmit. This state-driven approach guarantees that applications receive complete, ordered data regardless of network chaos. When you monitor a connection, you will see the state transition from SYN to ESTABLISHED, confirming that both endpoints are ready to exchange data.",
+      "plannedSeconds": 63,
+      "title": "TCP Connections and State Machines",
+      "visualDirection": "template:showcase-networks | Editable diagram: A horizontal state machine with four boxes: 'SYN', 'SYN-ACK', 'ESTABLISHED', 'CLOSED'. Arrows show the three-way handshake flow. A toggle switch labeled 'Connection State' sits above the boxes. Labels explain 'State-Driven"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "Sequence numbers are the backbone of TCP's reliability, assigning a unique number to every byte sent. The receiver tracks these numbers and sends acknowledgments that explicitly identify which sequence space has been received. If a segment with sequence number 100 is missing, the receiver will not acknowledge 100, even if it received 101 and 102. This selective acknowledgment forces the sender to retransmit only the missing data. The sender maintains a sliding window of unacknowledged bytes, adjusting its pace based on feedback. This mechanism ensures that applications never see gaps or duplicates in their data stream. When you analyze a packet trace, you will see the sequence numbers increment steadily, with acknowledgment gaps clearly marking where retransmissions are needed.",
+      "plannedSeconds": 65,
+      "title": "Sequence Numbers and Acknowledgments",
+      "visualDirection": "template:showcase-networks | Editable diagram: A sender box with a 'Sequence Number' counter at 100. A receiver box shows a 'Received' list with 90-99 and 101-102, but a gap at 100. An arrow points from receiver to sender labeled 'ACK 99'. Labels explain 'Selective Ack"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "When acknowledgments are delayed or lost, TCP triggers retransmission through carefully managed timers. The sender sets a retransmission timer for each unacknowledged segment, starting at a base value and increasing with each timeout. If the timer expires without receiving an acknowledgment, the sender resends the exact same segment. This ensures that lost data eventually reaches the receiver. The protocol also handles duplicate segments gracefully by ignoring them once acknowledged, preventing the receiver from processing the same data twice. This timer-driven recovery balances responsiveness with stability, avoiding unnecessary retransmissions while guaranteeing eventual delivery. When you observe a slow connection, you will see timer values increase, revealing how TCP adapts to network delays.",
+      "plannedSeconds": 60,
+      "title": "Retransmission and Timers",
+      "visualDirection": "template:showcase-networks | Editable diagram: A sender box with a 'Retransmission Timer' bar that fills up. A clock icon shows 'Base Timer' and 'Exponential Backoff'. A retry arrow loops back to the sender. Labels explain 'Timer-Driven"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "Flow control prevents a fast sender from overwhelming a slow receiver by using receive windows. The receiver advertises how much buffer space is available, and the sender must not exceed this limit. If the receiver's buffer fills up, it stops sending acknowledgments, causing the sender's window to shrink. This backpressure mechanism ensures that neither side runs out of memory or drops data. The window size adjusts dynamically based on network conditions and application processing speed. By coordinating pacing, flow control maintains efficiency while protecting receiver resources. When you monitor a large file transfer, you will see the window size expand and contract, revealing how TCP adapts to receiver capacity.",
+      "plannedSeconds": 65,
+      "title": "Flow Control and Receive Windows",
+      "visualDirection": "template:showcase-networks | Editable diagram: A sender box with a 'Send Window' slider. A receiver box shows a 'Receive Buffer' that fills up. A gauge labeled 'Advertised Window' shrinks as the buffer fills. Labels explain 'Backpressure"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "Congestion awareness allows TCP to detect network overload and adjust its sending rate accordingly. When routers become saturated, they may drop packets or increase delay, which TCP interprets as congestion. The protocol responds by reducing its sending window and increasing the retransmission timer, effectively slowing down to avoid further loss. This self-regulating mechanism prevents network collapse and ensures fair bandwidth sharing among competing flows. By reacting to congestion signals, TCP maintains stability under heavy load. When you analyze a congested network, you will see the sending rate drop and window size shrink, revealing how TCP adapts to avoid overwhelming the infrastructure.",
+      "plannedSeconds": 60,
+      "title": "Congestion Awareness and Rate Adjustment",
+      "visualDirection": "template:showcase-networks | Editable diagram: A network path with three routers. The middle router shows a 'Congestion' warning icon. The sender box shows a 'Sending Rate' gauge dropping. Labels explain 'Self-Regulating"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01",
+        "beat-08-claim-02"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "Diagnosing an end-to-end request requires tracing the packet through each layer and identifying where it fails. Start by checking the link layer for frame errors, then examine the IP layer for routing issues or hop limit exhaustion. If the packet reaches the transport layer, verify TCP sequence numbers and acknowledgments for gaps or duplicates. Use packet captures to observe how timers and windows adjust during delays or losses. By correlating layer-specific symptoms with application-level failures, you can pinpoint whether the issue lies in routing, congestion, or receiver capacity. This systematic approach transforms complex network problems into manageable, layer-by-layer investigations. When you test a slow website, you will see exactly which layer is causing the bottleneck.",
+      "plannedSeconds": 65,
+      "title": "End-to-End Request Diagnosis",
+      "visualDirection": "template:showcase-networks | Editable diagram: A vertical flowchart with four layers: 'Link', 'IP', 'TCP', 'Application'. Each layer has a 'Check' checkbox and a 'Symptom' label. Arrows point downward. Labels explain 'Systematic"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01",
+        "beat-09-claim-02"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Apply these concepts to a real-world scenario by following a structured diagnostic checklist. First, verify IP reachability using ping and examine hop limits to confirm routing paths. Next, capture TCP traffic and inspect sequence numbers for gaps or duplicates. Check for retransmission timers and window sizes to identify congestion or flow control issues. Correlate these findings with application performance to isolate the root cause. This methodical process ensures you address the exact layer causing the failure. By practicing this checklist, you will develop the ability to troubleshoot network issues efficiently and accurately. When you test a failing connection, you will see exactly which step reveals the problem.",
+      "plannedSeconds": 60,
+      "title": "Practical Analysis Checklist",
+      "visualDirection": "template:showcase-networks | Editable diagram: A checklist with five checkboxes: 'IP Reachability', 'Sequence Number Gaps', 'Retransmission Timers', 'Window Sizes', 'Application Correlation'. Each checkbox has a 'Status' indicator. Labels explain 'Methodical"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01",
+        "beat-10-claim-02"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "Mastering these concepts requires integrating layering, encapsulation, and transport reliability into a cohesive mental model. Remember that IP handles best-effort forwarding while TCP manages reliability, flow control, and congestion awareness. When diagnosing issues, always trace the packet from the application down to the link layer, checking each boundary for anomalies. Use sequence numbers and acknowledgments to verify data integrity, and monitor timers and windows to understand pacing. This layered reasoning transforms complex network behavior into predictable, manageable patterns. By practicing these skills, you will confidently diagnose and resolve end-to-end request failures. When you test a network, you will see exactly how each layer contributes to the final outcome.",
+      "plannedSeconds": 65,
+      "title": "Synthesis and Mastery",
+      "visualDirection": "template:showcase-networks | Editable diagram: A circular diagram with five interconnected nodes: 'Layering', 'Encapsulation', 'Reliability', 'Diagnosis', 'Mastery'. Arrows show feedback loops between nodes. Labels explain 'Cohesive"
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "rfc-8200"
+      ],
+      "text": "RFC 8200 specifies IPv6. An IPv6 packet has a fixed base header containing source and destination addresses, payload length, next-header information, hop limit, and traffic-related fields. Routers forward packets toward a destination while decrementing the hop limit; they do not provide TCP-style reliability. Extension",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "rfc-8200"
+      ],
+      "text": "RFC 8200 specifies IPv6. An IPv6 packet has a fixed base header containing source and destination addresses, payload length, next-header information, hop limit, and traffic-related fields. Routers forward packets toward a destination while decrementing the hop limit; they do not provide TCP-style reliability. Extension",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "rfc-9293"
+      ],
+      "text": "RFC 9293 specifies TCP as a reliable, in-order byte-stream protocol between endpoints. Connections use sequence numbers, acknowledgments, checksums, retransmission, receive windows, and a defined state machine. TCP segments travel inside an internet protocol and may be lost, duplicated, delayed, or reordered. Reli",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "rfc-9293"
+      ],
+      "text": "RFC 9293 specifies TCP as a reliable, in-order byte-stream protocol between endpoints. Connections use sequence numbers, acknowledgments, checksums, retransmission, receive windows, and a defined state machine. TCP segments travel inside an internet protocol and may be lost, duplicated, delayed, or reordered. Reli",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "rfc-9293"
+      ],
+      "text": "RFC 9293 specifies TCP as a reliable, in-order byte-stream protocol between endpoints. Connections use sequence numbers, acknowledgments, checksums, retransmission, receive windows, and a defined state machine. TCP segments travel inside an internet protocol and may be lost, duplicated, delayed, or reordered. Reli",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "rfc-9293"
+      ],
+      "text": "RFC 9293 specifies TCP as a reliable, in-order byte-stream protocol between endpoints. Connections use sequence numbers, acknowledgments, checksums, retransmission, receive windows, and a defined state machine. TCP segments travel inside an internet protocol and may be lost, duplicated, delayed, or reordered. Reli",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "rfc-9293"
+      ],
+      "text": "RFC 9293 specifies TCP as a reliable, in-order byte-stream protocol between endpoints. Connections use sequence numbers, acknowledgments, checksums, retransmission, receive windows, and a defined state machine. TCP segments travel inside an internet protocol and may be lost, duplicated, delayed, or reordered. Reli",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "rfc-8200"
+      ],
+      "text": "RFC 8200 specifies IPv6. An IPv6 packet has a fixed base header containing source and destination addresses, payload length, next-header information, hop limit, and traffic-related fields. Routers forward packets toward a destination while decrementing the hop limit; they do not provide TCP-style reliability. Extension",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-02",
+      "sourceIds": [
+        "rfc-9293"
+      ],
+      "text": "RFC 9293 specifies TCP as a reliable, in-order byte-stream protocol between endpoints. Connections use sequence numbers, acknowledgments, checksums, retransmission, receive windows, and a defined state machine. TCP segments travel inside an internet protocol and may be lost, duplicated, delayed, or reordered. Reli",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "rfc-8200"
+      ],
+      "text": "RFC 8200 specifies IPv6. An IPv6 packet has a fixed base header containing source and destination addresses, payload length, next-header information, hop limit, and traffic-related fields. Routers forward packets toward a destination while decrementing the hop limit; they do not provide TCP-style reliability. Extension",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-02",
+      "sourceIds": [
+        "rfc-9293"
+      ],
+      "text": "RFC 9293 specifies TCP as a reliable, in-order byte-stream protocol between endpoints. Connections use sequence numbers, acknowledgments, checksums, retransmission, receive windows, and a defined state machine. TCP segments travel inside an internet protocol and may be lost, duplicated, delayed, or reordered. Reli",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "rfc-8200"
+      ],
+      "text": "RFC 8200 specifies IPv6. An IPv6 packet has a fixed base header containing source and destination addresses, payload length, next-header information, hop limit, and traffic-related fields. Routers forward packets toward a destination while decrementing the hop limit; they do not provide TCP-style reliability. Extension",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-02",
+      "sourceIds": [
+        "rfc-9293"
+      ],
+      "text": "RFC 9293 specifies TCP as a reliable, in-order byte-stream protocol between endpoints. Connections use sequence numbers, acknowledgments, checksums, retransmission, receive windows, and a defined state machine. TCP segments travel inside an internet protocol and may be lost, duplicated, delayed, or reordered. Reli",
+      "verified": true
+    }
+  ],
+  "id": "computer-networking-foundations-layering-encapsulation-and-end-t",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "IETF",
+      "excerpt": "RFC 9293 specifies TCP as a reliable, in-order byte-stream protocol between endpoints. Connections use sequence numbers, acknowledgments, checksums, retransmission, receive windows, and a defined state machine. TCP segments travel inside an internet protocol and may be lost, duplicated, delayed, or reordered. Reliability is therefore an endpoint behavior rather than a property guaranteed by each link. Acknowledgments identify received sequence space, timers trigger retransmission, and flow control prevents a sender from overrunning receiver capacity. Connection establishment and termination use explicit state transitions, and robust implementations must handle duplicate or unexpected segments according to the specification.",
+      "id": "rfc-9293",
+      "sha256": "ef43c431da460285b12f9c70cb07b46718ee9157c2ecee3f9170426416a6ecef",
+      "title": "RFC 9293: Transmission Control Protocol",
+      "type": "note",
+      "uri": "https://www.rfc-editor.org/rfc/rfc9293.html",
+      "verified": true
+    },
+    {
+      "author": "IETF",
+      "excerpt": "RFC 8200 specifies IPv6. An IPv6 packet has a fixed base header containing source and destination addresses, payload length, next-header information, hop limit, and traffic-related fields. Routers forward packets toward a destination while decrementing the hop limit; they do not provide TCP-style reliability. Extension headers carry optional internet-layer information in a defined order. The network layer offers best-effort datagram delivery, while transport protocols and applications decide how to detect and recover from loss. Layered reasoning separates a local link frame, an IP packet forwarded across networks, and the transport data interpreted only at endpoints.",
+      "id": "rfc-8200",
+      "sha256": "dad090030f0c2228e3d3e8f2f13174f2cc0dee1469d4fbbbeca7cf4bec8f1f33",
+      "title": "RFC 8200: Internet Protocol, Version 6",
+      "type": "note",
+      "uri": "https://www.rfc-editor.org/rfc/rfc8200.html",
+      "verified": true
+    }
+  ],
+  "title": "Computer Networking Foundations: Layering, Encapsulation, and End-to-End Reliability"
+}

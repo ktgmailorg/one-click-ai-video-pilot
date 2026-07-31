@@ -1,277 +1,263 @@
-NARRATOR: A controller is useful when a system must reach and maintain a target despite
+A controller is useful when a system must reach and maintain a target despite
 
 disturbances and uncertainty.
 
-NARRATOR: Imagine a motor commanded to run at one thousand revolutions per minute.
+Imagine a motor commanded to run at one thousand revolutions per minute.
 
-NARRATOR: An open-loop command may work under one load and miss the target under another.
+An open-loop command may work under one load and miss the target under another.
 
-NARRATOR: Feedback changes the structure of the problem.
+Feedback changes the structure of the problem.
 
-NARRATOR: A sensor measures actual speed, the controller compares it with the desired speed,
+A sensor measures actual speed, the controller compares it with the desired speed, and the
 
-and the difference becomes an error signal.
+difference becomes an error signal.
 
-NARRATOR: The controller uses that error to change the motor input.
+The controller uses that error to change the motor input.
 
-NARRATOR: The new speed is measured again, so correction is continuous rather than a
+The new speed is measured again, so correction is continuous rather than a one-time guess.
 
-one-time guess.
+This lesson develops the proportional, integral, and derivative terms, then connects
 
-NARRATOR: This lesson develops the proportional, integral, and derivative terms,
+their behavior to tuning, noise, saturation, and a practical design workflow.
 
-then connects their behavior to tuning, noise, saturation, and a practical design workflow.
+Start by naming every signal.
 
-NARRATOR: Start by naming every signal.
+The reference r of t is the desired behavior.
 
-NARRATOR: The reference r of t is the desired behavior.
+The measured output y of t is what the sensor reports.
 
-NARRATOR: The measured output y of t is what the sensor reports.
+Their difference, e of t, equals reference minus measured output.
 
-NARRATOR: Their difference, e of t, equals reference minus measured output.
+The controller converts error into a command u of t.
 
-NARRATOR: The controller converts error into a command u of t.
+An actuator applies that command to the plant, which is the physical or simulated system
 
-NARRATOR: An actuator applies that command to the plant, which is the physical or simulated
+being controlled.
 
-system being controlled.
+Disturbances can enter the plant, while sensor noise can enter the measurement path.
 
-NARRATOR: Disturbances can enter the plant, while sensor noise can enter the measurement
+This vocabulary prevents a common mistake: the controller does not directly control the
 
-path.
+error.
 
-NARRATOR: This vocabulary prevents a common mistake: the controller does not directly
-
-control the error.
-
-NARRATOR: It changes the plant input, observes the resulting output, and thereby influences
+It changes the plant input, observes the resulting output, and thereby influences
 
 future error.
 
-NARRATOR: Sign conventions also matter.
+Sign conventions also matter.
 
-NARRATOR: With negative feedback, a positive error should normally produce a correction
+With negative feedback, a positive error should normally produce a correction that
 
-that increases the output toward the reference.
+increases the output toward the reference.
 
-NARRATOR: The proportional term responds to the error that exists right now.
+The proportional term responds to the error that exists right now.
 
-NARRATOR: Its contribution is K p times e of t.
+Its contribution is K p times e of t.
 
-NARRATOR: If the error doubles, the proportional correction doubles.
+If the error doubles, the proportional correction doubles.
 
-NARRATOR: Increasing K p usually makes the response more forceful and can reduce rise
+Increasing K p usually makes the response more forceful and can reduce rise time, but
 
-time, but excessive gain can produce overshoot, oscillation, or instability.
+excessive gain can produce overshoot, oscillation, or instability.
 
-NARRATOR: Proportional action alone may also leave a steady offset.
+Proportional action alone may also leave a steady offset.
 
-NARRATOR: To hold a load against friction, for example, the actuator may require a nonzero
+To hold a load against friction, for example, the actuator may require a nonzero command.
+
+If command is proportional to error, a persistent error may be needed to produce that
 
 command.
 
-NARRATOR: If command is proportional to error, a persistent error may be needed to produce
+This is not a defect in the formula; it is a consequence of the loop and plant.
 
-that command.
+The important skill is to connect gain to observed response rather than memorizing that
 
-NARRATOR: This is not a defect in the formula; it is a consequence of the loop and plant.
+larger is always better.
 
-NARRATOR: The important skill is to connect gain to observed response rather than
+The integral term responds to the history of error.
 
-memorizing that larger is always better.
+Its state grows while error has one sign and shrinks when the sign reverses.
 
-NARRATOR: The integral term responds to the history of error.
+A small error that persists can therefore produce a large enough correction to eliminate
 
-NARRATOR: Its state grows while error has one sign and shrinks when the sign reverses.
+the offset left by proportional control.
 
-NARRATOR: A small error that persists can therefore produce a large enough correction to
+This makes integral action powerful, but it also introduces memory.
 
-eliminate the offset left by proportional control.
+If the actuator saturates at its maximum while the error remains large, the integral state
 
-NARRATOR: This makes integral action powerful, but it also introduces memory.
+can continue accumulating even though the plant cannot respond further.
 
-NARRATOR: If the actuator saturates at its maximum while the error remains large, the
+When the system finally approaches the target, that stored integral action may drive it far
 
-integral state can continue accumulating even though the plant cannot respond further.
+past the reference.
 
-NARRATOR: When the system finally approaches the target, that stored integral action may
+This is called integral windup.
 
-drive it far past the reference.
-
-NARRATOR: This is called integral windup.
-
-NARRATOR: Practical controllers limit, pause, or back-calculate the integral state during
+Practical controllers limit, pause, or back-calculate the integral state during
 
 saturation.
 
-NARRATOR: Integral action solves one problem while creating a responsibility to manage its
+Integral action solves one problem while creating a responsibility to manage its stored
 
-stored state.
+state.
 
-NARRATOR: The derivative term reacts to how quickly the error is changing.
+The derivative term reacts to how quickly the error is changing.
 
-NARRATOR: If the output is racing toward the target, the error may still be positive but
+If the output is racing toward the target, the error may still be positive but decreasing
 
-decreasing rapidly.
+rapidly.
 
-NARRATOR: A derivative contribution can oppose that motion before the target is crossed,
+A derivative contribution can oppose that motion before the target is crossed, adding
 
-adding damping and reducing overshoot.
+damping and reducing overshoot.
 
-NARRATOR: The difficulty is that differentiation amplifies rapid measurement
+The difficulty is that differentiation amplifies rapid measurement changes, including
 
-changes, including sensor noise.
+sensor noise.
 
-NARRATOR: Real implementations therefore use a filtered derivative rather than an ideal
+Real implementations therefore use a filtered derivative rather than an ideal mathematical
 
-mathematical derivative.
+derivative.
 
-NARRATOR: Many controllers also differentiate the measurement instead of the error, which
+Many controllers also differentiate the measurement instead of the error, which avoids
 
-avoids a large derivative kick when the reference changes suddenly.
+a large derivative kick when the reference changes suddenly.
 
-NARRATOR: Derivative action is not mandatory.
+Derivative action is not mandatory.
 
-NARRATOR: A well-tuned PI controller is often sufficient, especially when sensors are noisy
+A well-tuned PI controller is often sufficient, especially when sensors are noisy
 
 or the plant already has adequate damping.
 
-NARRATOR: A PID controller adds the three contributions into one command.
+A PID controller adds the three contributions into one command.
 
-NARRATOR: Proportional action handles present error, integral action handles accumulated
+Proportional action handles present error, integral action handles accumulated error, and
 
-error, and derivative action responds to trend.
+derivative action responds to trend.
 
-NARRATOR: These descriptions are useful, but the terms interact through the same plant.
+These descriptions are useful, but the terms interact through the same plant.
 
-NARRATOR: Increasing K p changes the response that the integral and derivative terms
+Increasing K p changes the response that the integral and derivative terms observe.
 
-observe.
+Increasing K i may remove offset while reducing stability margin.
 
-NARRATOR: Increasing K i may remove offset while reducing stability margin.
+Increasing K d may add damping while increasing noise sensitivity.
 
-NARRATOR: Increasing K d may add damping while increasing noise sensitivity.
+The final command is also bounded by actuator voltage, force, valve opening, or another
 
-NARRATOR: The final command is also bounded by actuator voltage, force, valve opening, or
+physical limit.
 
-another physical limit.
+A controller equation without limits, sample time, sensor characteristics, and plant
 
-NARRATOR: A controller equation without limits, sample time, sensor characteristics,
+dynamics is incomplete.
 
-and plant dynamics is incomplete.
+Good tuning treats the loop as one system rather than adjusting three independent knobs
 
-NARRATOR: Good tuning treats the loop as one system rather than adjusting three independent
+in isolation.
 
-knobs in isolation.
+A step response turns vague words like fast or stable into measurable criteria.
 
-NARRATOR: A step response turns vague words like fast or stable into measurable criteria.
+Rise time describes how quickly output moves toward the new target.
 
-NARRATOR: Rise time describes how quickly output moves toward the new target.
+Peak overshoot measures how far it exceeds the target.
 
-NARRATOR: Peak overshoot measures how far it exceeds the target.
+Settling time measures how long it takes to remain inside an acceptable band.
 
-NARRATOR: Settling time measures how long it takes to remain inside an acceptable band.
+Steady-state error is the remaining difference after transients decay.
 
-NARRATOR: Steady-state error is the remaining difference after transients decay.
+These measures can conflict.
 
-NARRATOR: These measures can conflict.
+A gain change that shortens rise time may increase overshoot.
 
-NARRATOR: A gain change that shortens rise time may increase overshoot.
+Integral action that removes final error may lengthen settling.
 
-NARRATOR: Integral action that removes final error may lengthen settling.
+Stability is the first requirement: a fast response that grows without bound is not
 
-NARRATOR: Stability is the first requirement: a fast response that grows without bound is
+useful.
 
-not useful.
+Before tuning, define which measures matter for the application and what constraints
 
-NARRATOR: Before tuning, define which measures matter for the application and what
+cannot be violated.
 
-constraints cannot be violated.
+A camera gimbal, temperature chamber, and chemical flow controller should not share one
 
-NARRATOR: A camera gimbal, temperature chamber, and chemical flow controller should
+generic tuning objective.
 
-not share one generic tuning objective.
+A disciplined tuning process begins with safety and requirements.
 
-NARRATOR: A disciplined tuning process begins with safety and requirements.
+Confirm sensor polarity, actuator limits, and a safe test range.
 
-NARRATOR: Confirm sensor polarity, actuator limits, and a safe test range.
+Start with integral and derivative action disabled.
 
-NARRATOR: Start with integral and derivative action disabled.
-
-NARRATOR: Increase proportional gain until the system responds clearly without unacceptable
+Increase proportional gain until the system responds clearly without unacceptable
 
 oscillation.
 
-NARRATOR: Add integral action gradually to remove persistent error, while watching
+Add integral action gradually to remove persistent error, while watching overshoot and
 
-overshoot and windup.
+windup.
 
-NARRATOR: Add derivative action only when extra damping is needed and the measurement is
+Add derivative action only when extra damping is needed and the measurement is clean enough
 
-clean enough to support it.
+to support it.
 
-NARRATOR: Then test reference changes, disturbances, load variation, saturation, and
+Then test reference changes, disturbances, load variation, saturation, and noise.
 
-noise.
+This sequence is not a universal proof of optimality, but it makes cause and effect
 
-NARRATOR: This sequence is not a universal proof of optimality, but it makes cause and
+observable.
 
-effect observable.
+More formal model-based methods can calculate gains, yet every real implementation still
 
-NARRATOR: More formal model-based methods can calculate gains, yet every real implementation
+requires validation against unmodeled behavior and physical limits.
 
-still requires validation against unmodeled behavior and physical limits.
+Most PID controllers run in software, so the continuous equation becomes a sampled
 
-NARRATOR: Most PID controllers run in software, so the continuous equation becomes a
+algorithm.
 
-sampled algorithm.
+The sample period must be short enough to observe relevant plant dynamics but not so
 
-NARRATOR: The sample period must be short enough to observe relevant plant dynamics but
+short that noise dominates.
 
-not so short that noise dominates.
+The integral becomes a running numerical sum.
 
-NARRATOR: The integral becomes a running numerical sum.
+The derivative becomes a filtered difference between samples.
 
-NARRATOR: The derivative becomes a filtered difference between samples.
+Output clamping enforces actuator limits, and anti-windup keeps the integral state
 
-NARRATOR: Output clamping enforces actuator limits, and anti-windup keeps the integral
+consistent with those limits.
 
-state consistent with those limits.
+Systems that switch between manual and automatic control also need bumpless transfer
 
-NARRATOR: Systems that switch between manual and automatic control also need bumpless
+so the stored controller state does not create a sudden command jump.
 
-transfer so the stored controller state does not create a sudden command jump.
+Record the sample time and exact algorithm with the gains; K p, K i, and K d have meaning
 
-NARRATOR: Record the sample time and exact algorithm with the gains; K p, K i, and K d
+only within a defined implementation and unit convention.
 
-have meaning only within a defined implementation and unit convention.
+A reliable PID analysis answers six questions.
 
-NARRATOR: A reliable PID analysis answers six questions.
+What are the reference, measured output, error, command, plant, and disturbances?
 
-NARRATOR: What are the reference, measured output, error, command, plant, and
+What behavior does proportional, integral, and derivative action contribute in this loop?
 
-disturbances?
+Which performance measures define success?
 
-NARRATOR: What behavior does proportional, integral, and derivative action contribute in
+Where can the actuator or sensor saturate?
 
-this loop?
+How are sample time, filtering, and anti-windup implemented?
 
-NARRATOR: Which performance measures define success?
+And has the design been tested across the real operating range?
 
-NARRATOR: Where can the actuator or sensor saturate?
+The goal is not to use all three letters.
 
-NARRATOR: How are sample time, filtering, and anti-windup implemented?
-
-NARRATOR: And has the design been tested across the real operating range?
-
-NARRATOR: The goal is not to use all three letters.
-
-NARRATOR: The goal is a stable, understandable controller that meets requirements with
+The goal is a stable, understandable controller that meets requirements with
 
 appropriate complexity.
 
-NARRATOR: Sometimes that is P, often PI, and sometimes full PID.
+Sometimes that is P, often PI, and sometimes full PID.
 
-NARRATOR: If you can explain the loop and predict the consequence of each change before
+If you can explain the loop and predict the consequence of each change before turning a
 
-turning a gain, you are tuning as an engineer rather than searching blindly.
+gain, you are tuning as an engineer rather than searching blindly.

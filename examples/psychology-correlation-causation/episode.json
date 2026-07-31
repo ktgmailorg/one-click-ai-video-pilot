@@ -1,0 +1,101 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "When two measured variables change together, their data can show a correlation. A positive relationship means they tend to rise together; a negative relationship means one tends to fall as the other rises. Correlation describes a pattern. It does not yet explain why the pattern exists.",
+      "plannedSeconds": 23,
+      "title": "Describe the relationship",
+      "visualDirection": "template:showcase-correlation | Show a scatterplot in which two variables rise together without drawing a causal arrow."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Ice-cream sales and reported crime can both rise during hot weather. That does not mean buying ice cream causes crime. Temperature changes behavior in ways that can affect both measurements. This third-variable problem is one reason an observed relationship cannot establish a causal direction on its own.",
+      "plannedSeconds": 26,
+      "title": "Look for a third variable",
+      "visualDirection": "template:showcase-correlation | Add temperature as a confounder pointing toward both ice-cream sales and reported crime."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "To support a causal claim, researchers need a design that manipulates an independent variable and controls competing explanations, often with comparison groups and random assignment. Observational correlations remain valuable for prediction and discovery. The professional habit is to make a claim no stronger than the study design allows.",
+      "plannedSeconds": 26,
+      "title": "Match the claim to the design",
+      "visualDirection": "template:showcase-correlation | Separate an observational study from a controlled experiment with manipulation and comparison."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "openstax-correlation"
+      ],
+      "text": "Correlation describes the direction and strength of a relationship between variables.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "openstax-correlation"
+      ],
+      "text": "A confounding variable can influence both measured variables and create an association without direct causation.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "openstax-correlation"
+      ],
+      "text": "Causal claims require a research design that can rule out plausible alternatives, typically through experimental manipulation and control.",
+      "verified": true
+    }
+  ],
+  "id": "why-correlation-is-not-causation",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "OpenStax",
+      "excerpt": "Correlation describes a relationship between variables and can indicate its direction and strength, but it does not by itself establish cause and effect. A third variable may influence both measured variables, creating a confounded association. Experiments use manipulation and control, including comparison groups and random assignment when appropriate, to support causal conclusions.",
+      "id": "openstax-correlation",
+      "sha256": "8781433e0f5abf6802597c32a1295a79067a88b2383823832579b2e25de5154d",
+      "title": "OpenStax Psychology 2e: Analyzing Findings",
+      "type": "url",
+      "uri": "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings",
+      "verified": true
+    }
+  ],
+  "title": "Why Correlation Is Not Causation"
+}

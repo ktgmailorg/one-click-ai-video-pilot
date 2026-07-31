@@ -13,20 +13,20 @@
       "verified": true
     },
     {
-      "id": "scikit-learn-user-guide",
-      "title": "scikit-learn User Guide",
-      "uri": "https://scikit-learn.org/stable/user_guide.html",
-      "author": "scikit-learn developers",
-      "content": "Machine-learning workflows separate data preparation, training, validation, testing, model selection, and evaluation. Supervised methods learn a mapping from examples paired with target labels. Unsupervised methods identify structure without target labels. Preprocessing must be fitted only on permitted training data to avoid leakage. Pipelines combine preprocessing and estimators so the same transformations are applied consistently. Cross-validation repeats training and validation across defined data splits. Evaluation metrics must match the task and the cost of different errors. Hyperparameter selection must remain separate from final test evaluation. Leakage, distribution shift, overfitting, and unexamined assumptions can invalidate results.",
+      "id": "nist-ssdf",
+      "title": "NIST Secure Software Development Framework",
+      "uri": "https://csrc.nist.gov/pubs/sp/800/218/final",
+      "author": "National Institute of Standards and Technology",
+      "content": "The Secure Software Development Framework groups practices into four practice groups. Prepare the Organization establishes people, processes, and technology for secure development. Protect the Software prevents unauthorized access to code and development artifacts. Produce Well-Secured Software addresses security requirements, design, verification, and release. Respond to Vulnerabilities identifies, analyzes, remediates, and learns from discovered weaknesses. Security requirements should be tracked throughout development. Verification provides evidence that selected practices and controls were performed. Security reasoning identifies assets, trust boundaries, threats, controls, evidence, residual risk, and responsibilities.",
       "type": "note",
       "verified": true
     },
     {
-      "id": "nist-ai-rmf",
-      "title": "NIST AI Risk Management Framework",
-      "uri": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "id": "nist-cryptographic-standards",
+      "title": "NIST Cryptographic Standards and Guidelines",
+      "uri": "https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines",
       "author": "National Institute of Standards and Technology",
-      "content": "The NIST AI Risk Management Framework organizes work around Govern, Map, Measure, and Manage. Govern establishes policies, responsibilities, and accountability for AI risk. Map documents context, intended use, affected people, and potential impacts. Measure uses qualitative and quantitative methods to analyze identified risks. Manage prioritizes risks and allocates resources for response and monitoring. Risk analysis considers data quality and uncertainty. It also considers robustness, privacy, security, transparency, and fairness. Monitoring continues after deployment because context and system behavior can change.",
+      "content": "Cryptographic standards define approved algorithms and parameters. Encryption supports confidentiality when keys and modes are used correctly. Message authentication and digital signatures address integrity and authenticity in different ways. Random number generation supports keys, nonces, and other security parameters. Key management covers generation, distribution, storage, use, rotation, revocation, and destruction. Modes of operation define how a primitive processes data larger than one block. Validation checks implementations against specified requirements. Security depends on the complete protocol and implementation, not only an algorithm name. Analysis also considers side channels and migration requirements.",
       "type": "note",
       "verified": true
     }

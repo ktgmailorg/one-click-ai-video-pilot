@@ -1,18 +1,18 @@
-NARRATOR: Begin by framing Beat 1: Foundations of Data Science Seminar Structure as a
+NARRATOR: Begin by framing Workflow Architecture as a question about inputs,
 
-question about inputs, decisions, and observable results.
+decisions, and observable results.
 
-NARRATOR: This is intended to allow faculty to pilot potential new undergraduate offerings.
+NARRATOR: Data-analysis workflows separate data preparation, exploratory analysis,
 
-NARRATOR: Consider this worked case: A department head might propose a seminar
+training, validation, testing, model selection, and evaluation.
 
-focused on machine learning algorithms to test student interest before full curriculum
+NARRATOR: Consider this worked case: A pipeline begins by cleaning raw CSV files,
 
-integration.
+then splits them into training and validation sets before fitting a classifier.
 
-NARRATOR: On screen, display a course catalog entry template with fields for prerequisites,
+NARRATOR: On screen, display a horizontal flowchart with seven labeled nodes connected
 
-format, and learning outcomes.
+by arrows, showing the progression from data preparation to evaluation.
 
 NARRATOR: List the givens before choosing a method, because an unstated assumption can
 
@@ -20,23 +20,23 @@ change the conclusion.
 
 NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: Now define Beat 2: Cluster Classification Framework precisely enough that
+NARRATOR: Now define Supervised Learning Foundations precisely enough that another
 
-another learner could test the definition.
+learner could test the definition.
 
-NARRATOR: Specific course instances will be identified as belonging to the Data Science
+NARRATOR: Supervised methods learn mappings from examples paired with target labels, while
 
-cluster, the Distributed Systems cluster, the Security cluster, or some combination of these
+unsupervised methods identify structure without targets.
 
-three clusters.
+NARRATOR: Consider this worked case: Training a logistic regression model on labeled spam
 
-NARRATOR: Consider this worked case: A proposed seminar on secure federated learning
+emails where the label indicates whether each message is spam or not.
 
-would be classified under the Security cluster.
+NARRATOR: On screen, show a split-screen diagram: left side shows unlabeled data
 
-NARRATOR: On screen, show a Venn diagram illustrating the three clusters and their
+points, right side shows the same points with colored target labels, connected by a learning
 
-potential intersections.
+arrow.
 
 NARRATOR: Separate the formal definition from an implementation detail, then identify what
 
@@ -44,39 +44,45 @@ evidence would distinguish them.
 
 NARRATOR: A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Beat 3: Faculty-Determined
+NARRATOR: With the foundation in place, examine how Unsupervised Learning Foundations
 
-Parameters operates in a concrete sequence.
+operates in a concrete sequence.
 
-NARRATOR: Specific course details (such as prerequisites, course seminar, format,
+NARRATOR: Query planning and physical storage affect performance without changing logical
 
-learning outcomes, assessment methods, and resource needs) will be determined by the
+query meaning.
 
-faculty member(s) who propose a specific seminar course in this area.
+NARRATOR: Consider this worked case: Applying k-means clustering to customer purchase data
 
-NARRATOR: Consider this worked case: An instructor might select a weekly discussion
+to group users by spending patterns without predefined categories.
 
-format with peer-reviewed code submissions as the assessment method.
+NARRATOR: On screen, render a scatter plot of data points with colored clusters forming
 
-NARRATOR: On screen, list the five parameters (prerequisites, format, outcomes, assessment,
-
-resources) with checkboxes for faculty selection.
+around natural groupings, labeled as 'no target labels'.
 
 NARRATOR: Follow every arrow in order and name the state before and after each transition.
 
 NARRATOR: The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Next, compare the choices involved in Beat 4: Contact Hours Specification and
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
 
-make the decision criteria explicit.
+throughout the analysis.
 
-NARRATOR: This course examines current topics in Data Science.
+NARRATOR: Next, compare the choices involved in Preprocessing Constraints and make the
 
-NARRATOR: Consider this worked case: Students attend a single three-hour block per week for
+decision criteria explicit.
 
-the duration of the pilot offering.
+NARRATOR: Preprocessing must be fitted only on permitted training data to avoid leakage.
 
-NARRATOR: On screen, display a calendar icon with a '3 hours' label and a 'Seminar' tag.
+NARRATOR: Consider this worked case: Scaling features using the mean and standard deviation
+
+calculated exclusively from the training set before applying to validation data.
+
+NARRATOR: On screen, illustrate a pipeline where a 'fit' step occurs on the training set,
+
+and a 'transform' step applies the same parameters to the validation set, with a
+
+warning icon blocking cross-contamination.
 
 NARRATOR: Compare alternatives against the same constraints so the evaluation does not
 
@@ -84,25 +90,25 @@ move the goalposts.
 
 NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+NARRATOR: Apply Pipeline Consistency to a worked situation instead of treating it as an
 
-throughout the analysis.
+isolated definition.
 
-NARRATOR: Apply Beat 5: Stable Process Definition to a worked situation instead of
+NARRATOR: Pipelines combine transformations and estimators so the same operations are
 
-treating it as an isolated definition.
+applied consistently.
 
-NARRATOR: Modes of operation define how a primitive processes data larger than one
+NARRATOR: Consider this worked case: A single pipeline object that chains standardization,
 
-block.
+imputation, and model fitting, ensuring identical operations run during training and
 
-NARRATOR: Consider this worked case: The stable process ensures that each pilot
+prediction.
 
-semester uses the same catalog framework and cluster classification rules.
+NARRATOR: On screen, draw a rectangular block labeled 'Pipeline' containing three stacked
 
-NARRATOR: On screen, illustrate a linear flowchart: Catalog Proposal -> Faculty
+sub-blocks (transform, impute, estimator) with input and output arrows, emphasizing unified
 
-Approval -> Cluster Assignment -> Semester Execution.
+execution.
 
 NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
 
@@ -110,19 +116,21 @@ at each step.
 
 NARRATOR: The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Examine the tradeoffs in Beat 6: Standards Alignment, including what improves
+NARRATOR: Examine the tradeoffs in Cross-Validation Mechanics, including what
 
-and what becomes more difficult.
+improves and what becomes more difficult.
 
-NARRATOR: Cryptographic standards define approved algorithms and parameters.
+NARRATOR: Cross-validation repeats training and validation across defined splits.
 
-NARRATOR: Consider this worked case: The course description must explicitly state how
+NARRATOR: Consider this worked case: Using five-fold cross-validation where the dataset
 
-it meets the department's data science learning outcomes.
+is partitioned into five subsets, each serving as a validation set once while the others
 
-NARRATOR: On screen, show a checklist with institutional standards items like 'curriculum
+train the model.
 
-alignment' and 'learning outcome mapping'.
+NARRATOR: On screen, show a circular diagram with five segments, each labeled with a fold
+
+number, and arrows indicating rotation through training and validation phases.
 
 NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
 
@@ -130,25 +138,23 @@ acceptable.
 
 NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+NARRATOR: Stress-test the reasoning around Evaluation Alignment with an edge case and
 
-throughout the analysis.
+identify which assumption controls the outcome.
 
-NARRATOR: Stress-test the reasoning around Beat 7: Planning Methods Overview with an edge
+NARRATOR: Evaluation must match the task and the cost of errors, while distribution shift,
 
-case and identify which assumption controls the outcome.
+missing data, overfitting, and unexamined sampling choices can invalidate conclusions.
 
-NARRATOR: Produce Well-Secured Software addresses security requirements, design,
+NARRATOR: Consider this worked case: Using precision and recall for fraud detection
 
-verification, and release.
+because false negatives carry higher cost than false positives, and adjusting thresholds
 
-NARRATOR: Consider this worked case: An instructor might draft a syllabus using a
+based on class imbalance.
 
-template that includes module breakdowns and weekly discussion prompts.
+NARRATOR: On screen, present a decision matrix comparing true/false positives and negatives,
 
-NARRATOR: On screen, display a syllabus template with sections for course description,
-
-weekly schedule, and evaluation criteria.
+with cost weights applied to each quadrant to show evaluation trade-offs.
 
 NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
 
@@ -158,19 +164,21 @@ NARRATOR: The edge case reveals the boundary of the claim without discarding the
 
 core idea.
 
-NARRATOR: Use Beat 8: Evaluation Criteria Framework to diagnose a failure by separating
+NARRATOR: Use Data Quality Analysis to diagnose a failure by separating symptoms,
 
-symptoms, causes, and corrective action.
+causes, and corrective action.
 
-NARRATOR: Security requirements should be tracked throughout development.
+NARRATOR: Data quality analysis makes missingness, duplicates, inconsistent
 
-NARRATOR: Consider this worked case: Evaluation criteria might include code
+representation, integrity constraints, sampling, and update behavior explicit.
 
-quality, research proposal depth, and peer feedback scores.
+NARRATOR: Consider this worked case: Running a data profiling script that reports null
 
-NARRATOR: On screen, present a rubric table with columns for criteria, weight, and
+counts, duplicate row percentages, and value distribution shifts across time periods.
 
-performance levels.
+NARRATOR: On screen, display a dashboard mockup with four metric cards: 'Missingness
+
+%', 'Duplicate Rate', 'Value Range', and 'Update Frequency', each with a trend line.
 
 NARRATOR: Locate the first point where observed behavior diverges from expected
 
@@ -180,23 +188,21 @@ NARRATOR: The diagnosis is strongest when another person can reproduce the obser
 
 and the test.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+NARRATOR: Connect Query and Storage Impact to the earlier ideas and explain how the pieces
 
-throughout the analysis.
+work as one system.
 
-NARRATOR: Connect Beat 9: Representative Examples to the earlier ideas and explain how
+NARRATOR: Queries select, join, aggregate, order, and transform data.
 
-the pieces work as one system.
+NARRATOR: Consider this worked case: Adding a B-tree index on a frequently filtered column
 
-NARRATOR: Analysis also considers side channels and migration requirements.
+speeds up SELECT operations while preserving the exact same SQL result set.
 
-NARRATOR: Consider this worked case: A representative example might be a seminar on
+NARRATOR: On screen, show a before-and-after comparison: left side shows a full table scan
 
-anomaly detection in network traffic for the Security cluster.
+with slow execution time, right side shows an index lookup with faster execution time and
 
-NARRATOR: On screen, show three example cards labeled 'Data Science', 'Distributed Systems',
-
-and 'Security' with brief topic descriptions.
+identical output rows.
 
 NARRATOR: Explain each connection explicitly and verify that information retains the same
 
@@ -206,27 +212,25 @@ NARRATOR: The synthesis matters only if every connection remains supported by th
 
 evidence.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
 
-throughout the analysis.
+guide a new analysis.
 
-NARRATOR: Finish with Beat 10: Practical Analysis Checklist as a practical checklist
+NARRATOR: Analytical work should preserve provenance from captured data through
 
-that can guide a new analysis.
+cleaning, transformation, grouping, modeling, visualization, and reporting.
 
-NARRATOR: Security depends on the complete protocol and implementation, not only an
+NARRATOR: Consider this worked case: Maintaining a versioned data lineage log that
 
-algorithm name.
+tracks each transformation step, model parameters, and visualization settings for
 
-NARRATOR: Consider this worked case: The checklist verifies that the course description
+reproducible research.
 
-matches the selected cluster, lists the three-contact-hour format, and confirms
+NARRATOR: On screen, list a checklist with six checkboxes: 'Provenance Tracked',
 
-faculty-determined assessment methods.
+'Transformations Documented', 'Model Parameters Logged', 'Visualization Settings
 
-NARRATOR: On screen, display a printable checklist with checkboxes for cluster
-
-alignment, format verification, and assessment confirmation.
+Saved', 'Reporting Format Standardized', 'Reproducibility Verified'.
 
 NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
 

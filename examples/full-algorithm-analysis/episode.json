@@ -1,0 +1,297 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Algorithm analysis begins by separating three layers. The problem states the required relationship between inputs and outputs. An algorithm is a language-independent procedure for producing the output. An implementation expresses that procedure in a programming language and on a machine. Two programs may implement the same algorithm, and two algorithms may solve the same problem with very different costs. State assumptions about input size, allowed operations, and required correctness before comparing performance. Otherwise a faster-looking program may be solving an easier problem or relying on an operation whose cost has been ignored. Analysis makes comparisons meaningful by fixing the question first.",
+      "plannedSeconds": 62,
+      "title": "Separate the problem from the algorithm",
+      "visualDirection": "template:showcase-algorithms | Place one problem specification above multiple candidate algorithms and implementations."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Performance cannot rescue an incorrect result. A correctness argument begins with preconditions describing allowed inputs and a postcondition describing the required output. For iterative algorithms, a loop invariant connects the work already completed to the work that remains. Show that the invariant is true initially, preserved by each iteration, and strong enough to imply the postcondition at termination. For recursive algorithms, prove the base case and show that correct solutions to smaller subproblems produce a correct larger solution. Test examples help find counterexamples, but a proof explains why every allowed case works. Correctness and performance are separate claims, and both need evidence.",
+      "plannedSeconds": 62,
+      "title": "Establish correctness before speed",
+      "visualDirection": "template:showcase-algorithms | Trace a candidate algorithm through preconditions, invariant, postcondition, and a counterexample search."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "To analyze cost, define n. It may be the number of array elements, graph vertices and edges, digits in an integer, or dimensions of a matrix. Then define which operations count as constant time in the chosen model. Array access and machine-word arithmetic may be constant under a random-access model, but arithmetic on integers with thousands of digits is not. Hash-table lookup is commonly expected constant time under assumptions, not guaranteed constant time for every input. State these choices. An asymptotic result without an input measure or model is incomplete. The model is an abstraction, but a useful abstraction exposes dominant structure while remaining connected to implementation reality.",
+      "plannedSeconds": 62,
+      "title": "Choose a model and input size",
+      "visualDirection": "template:showcase-algorithms | Count primitive operations while contrasting array access, comparison, hashing, and large-number arithmetic assumptions."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "Asymptotic notation describes growth beyond a sufficiently large input. Big O is an upper bound: after some threshold, the cost is no more than a constant multiple of the comparison function. Omega is a lower bound. Theta states both and therefore gives a tight growth class. Big O is not automatically worst case; worst, average, and best case describe which inputs are considered, while O describes a bound. A function in Theta of n is also in O of n squared, but the looser statement hides information. Use the tightest justified class and state which case is being analyzed. Constants and lower-order terms disappear asymptotically, not because they never matter, but because growth eventually dominates.",
+      "plannedSeconds": 62,
+      "title": "Interpret O, Omega, and Theta",
+      "visualDirection": "template:showcase-algorithms | Bound one growth curve from above and below after a threshold and distinguish the three symbols."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Constant, logarithmic, linear, n log n, quadratic, polynomial, and exponential growth describe very different scaling. Doubling n barely changes a logarithmic cost, doubles a linear cost, roughly doubles plus an additional factor for n log n, quadruples a quadratic cost, and can multiply an exponential cost enormously. This ordering guides design choices before low-level optimization. A carefully optimized quadratic algorithm can beat a linear one on tiny inputs, but as n grows the growth-rate advantage eventually dominates. Use realistic input ranges and memory constraints too. Asymptotics predict scaling; they do not replace measurement or permit ignoring large constants when the deployment range is known.",
+      "plannedSeconds": 62,
+      "title": "Order common growth rates",
+      "visualDirection": "template:showcase-algorithms | Plot constant, logarithmic, linear, n log n, quadratic, and exponential curves on the same scale."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "For a loop, count how many times the body runs and the cost of each run. A loop from zero to n minus one with constant body work is linear. Two independent loops in sequence add, so linear plus linear remains linear. Perfectly nested loops of n iterations multiply to n squared. But bounds may depend on the outer index, producing a sum such as one plus two through n, still Theta n squared. A loop that repeatedly halves the remaining size is logarithmic. Read the update and bounds rather than counting indentation. If the body calls another algorithm, include that cost. Writing the sum explicitly often turns intuition into a defensible result.",
+      "plannedSeconds": 62,
+      "title": "Analyze loops by counting work",
+      "visualDirection": "template:showcase-algorithms | Expand single, nested, dependent, and halving loops into summations and growth classes."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "A recursive algorithm's cost can be modeled with a recurrence. Merge sort divides an input into two halves, recursively sorts each half, and performs linear merging, giving T of n equals two T of n over two plus Theta n. A recursion tree shows logarithmically many levels with linear total work per level, producing Theta n log n. Other recurrences behave differently depending on the number and size of subproblems and the combination cost. State a base case and avoid applying a memorized theorem without checking its conditions. Recurrences are not only algebra; they mirror the structure of the algorithm and reveal where the work accumulates.",
+      "plannedSeconds": 62,
+      "title": "Analyze recursion with recurrences",
+      "visualDirection": "template:showcase-algorithms | Split a problem into subproblems, add combination work, and unfold the recurrence as a tree."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "An algorithm is often a sequence of data-structure operations. Searching an unsorted array is linear, while a balanced search tree can support logarithmic lookup and ordered traversal. A hash table can provide expected constant-time lookup under assumptions but does not preserve sorted order. A heap makes repeated minimum extraction efficient without supporting every search efficiently. The right structure follows the operations the problem performs most often, the guarantees it requires, and the memory it can afford. Include construction cost, not just query cost. A structure that accelerates one operation may slow updates or use more space. Time-space tradeoffs are algorithmic choices, not afterthoughts.",
+      "plannedSeconds": 62,
+      "title": "Include data-structure operations",
+      "visualDirection": "template:showcase-algorithms | Run the same task through arrays, balanced trees, hash tables, heaps, and graphs with labeled operation costs."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Benchmarks reveal constants, cache behavior, interpreter overhead, input distributions, and implementation defects that an abstract model omits. Measure representative inputs, vary n systematically, repeat trials, and record the environment. Avoid timing unrelated setup unless it is part of the operation being evaluated. Plot time against candidate growth functions and investigate discrepancies. A benchmark on five sizes cannot prove asymptotic complexity, and an asymptotic proof cannot predict an exact runtime on one laptop. Use both forms of evidence. Analysis explains expected scaling under a model; measurement checks how a particular implementation and workload behave in reality.",
+      "plannedSeconds": 62,
+      "title": "Measure without confusing measurement and proof",
+      "visualDirection": "template:showcase-algorithms | Compare predicted growth with benchmark curves while controlling input, warm-up, environment, and repeated trials."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "A complete analysis answers eight questions. What problem and input domain are being solved? Why is the algorithm correct? What quantity defines input size? Which model assigns costs to operations? Are we discussing worst, average, expected, amortized, or best case? What tight time and space bounds follow? Which data-structure assumptions support those bounds? What do measurements show over the intended range? This checklist prevents Big O from becoming a decorative label. The goal is an argument another person can inspect: the algorithm returns the right answer, the derivation follows its structure, the assumptions are visible, and the measured implementation behaves consistently with the claim.",
+      "plannedSeconds": 62,
+      "title": "Use a complete analysis checklist",
+      "visualDirection": "template:showcase-algorithms | Summarize specification, correctness, size, model, case, bound, space, and measurement."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "mit-6006"
+      ],
+      "text": "A computational problem defines required input-output behavior, while an algorithm is a procedure intended to produce that behavior.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "mit-review"
+      ],
+      "text": "An efficient algorithm is useful only if it satisfies the required behavior for every allowed input.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "mit-6006",
+        "mit-review"
+      ],
+      "text": "Running-time analysis depends on a defined input-size measure and a model assigning costs to operations.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "mit-6006",
+        "mit-review"
+      ],
+      "text": "Big O gives an asymptotic upper bound, Omega a lower bound, and Theta a matching upper and lower bound.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "mit-6006"
+      ],
+      "text": "Common algorithmic growth classes differ dramatically as input size increases.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "mit-review"
+      ],
+      "text": "Loop cost is the sum of work across iterations, and nested loops are not automatically quadratic.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "mit-review"
+      ],
+      "text": "A recurrence expresses recursive running time as subproblem costs plus nonrecursive work.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "mit-6006"
+      ],
+      "text": "Algorithm performance depends on the data structure supplying required operations and their cost guarantees.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "mit-6006",
+        "mit-review"
+      ],
+      "text": "Empirical timing validates implementation behavior over measured inputs but does not replace asymptotic reasoning or correctness.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "mit-6006",
+        "mit-review"
+      ],
+      "text": "A professional algorithm analysis states the problem, proves correctness, defines assumptions, derives cost, and validates relevant implementation behavior.",
+      "verified": true
+    }
+  ],
+  "id": "algorithm-analysis-correctness-growth-and-tradeoffs",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "MIT OpenCourseWare",
+      "excerpt": "MIT 6.006 introduces mathematical modeling of computational problems, data structures, algorithmic paradigms, performance measures, and analysis techniques. It emphasizes the relationship between algorithms and programming and the use of a model of computation for rigorous performance claims.",
+      "id": "mit-6006",
+      "sha256": "153b026a737b7b548ec0777c8478dcf23f319281718166ebcdf1e9c1db4b3a6e",
+      "title": "MIT OpenCourseWare 6.006: Introduction to Algorithms",
+      "type": "url",
+      "uri": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
+      "verified": true
+    },
+    {
+      "author": "MIT OpenCourseWare",
+      "excerpt": "Algorithm analysis argues correctness and evaluates efficiency using asymptotics and an explicit model of computation. Common techniques include direct counting, recurrences, divide and conquer, dynamic programming, greedy reasoning, graph algorithms, and data-structure augmentation.",
+      "id": "mit-review",
+      "sha256": "fb7b16db580728fe1cd3aade14f18a3be40d870a9a766d95e9dba0b2dcf29b42",
+      "title": "MIT 6.006 Lecture 20: Course Review",
+      "type": "url",
+      "uri": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/aa4f264093faf990054cc4820553bb46_MIT6_006S20_lec20.pdf",
+      "verified": true
+    }
+  ],
+  "title": "Algorithm Analysis: Correctness, Growth, and Tradeoffs"
+}
