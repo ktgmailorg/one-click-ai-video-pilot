@@ -60,11 +60,17 @@ Use:
   `https://one-click-ai-video-pilot.vercel.app/api/auth/github-callback`
 - Repository access: only `ktgmailorg/video-generator-rit`
 - Repository permission: **Administration — Read and write**
+- Repository permission: **Contents — Read-only**
 - All other write permissions: none
 
 Administration write is required only to create repository collaborator
 invitations. The application always requests `permission: pull`; it never adds
 the account to the write-enabled `RIT Contributors` team.
+
+Contents read is required for the authenticated `/api/repository-download`
+route to request GitHub's temporary ZIP archive. Without it, GitHub returns
+`Resource not accessible by integration` even though collaborator invitations
+continue to work.
 
 Generate:
 
@@ -122,6 +128,8 @@ repository access:
 6. Accept it and clone through GitHub Desktop.
 7. Confirm the account cannot push to `main`.
 8. Sign out and confirm the RIT session cookie is removed.
+9. Sign in with only RIT Google, select **Download complete source (.zip)**,
+   and confirm the ZIP opens without requiring GitHub OAuth.
 
 Also verify:
 
