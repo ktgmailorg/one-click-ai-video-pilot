@@ -1,0 +1,176 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "A modern many-core processor is not one giant calculator.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "It is a neighborhood of compute cores, cache banks, accelerators, and memory controllers that must exchange data.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "A request from one core may need a cache line stored several millimeters away.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-004",
+          "phrase": "Shared buses become a bottleneck as core count rises, so designers place a small router beside each tile and connect those routers as a network-on-chip.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-005",
+          "phrase": "The central question changes from, 'How fast is this core?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-006",
+          "phrase": "' to, 'How predictably can information move through the whole chip?",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "An application message is divided into packets, and each packet is often divided again into flow-control digits called flits.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "The header flit identifies the destination.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "At each router, routing logic chooses an output direction, virtual-channel allocation reserves buffering, switch allocation grants passage, and the crossbar moves the flit onto the next link.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-004",
+          "phrase": "These stages can overlap like an assembly line.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-005",
+          "phrase": "The animation matters because latency is not one number: it is the sum of serialization, waiting, routing, switching, link travel, and possible contention at every hop.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "Now imagine two cores sending traffic through the same output port.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "Only one can win that cycle.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "Arbitration selects a packet; the other waits in a buffer.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-004",
+          "phrase": "If downstream buffers fill, backpressure propagates toward the senders.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-005",
+          "phrase": "This prevents data loss, but it can create long queues and head-of-line blocking.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-006",
+          "phrase": "A useful analysis therefore asks four questions: where traffic is injected, which routes it follows, where paths overlap, and how flow control responds.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "Wireless links offer a different geometry.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "Instead of crossing many short router-to-router hops, a packet can use an on-chip antenna to take an express path across the die.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "That can reduce hop count and long-distance latency, especially for multicast or irregular communication.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-004",
+          "phrase": "But the wireless medium is shared.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-005",
+          "phrase": "Designers must coordinate access, control interference, budget transmitter energy, and decide which traffic deserves the shortcut.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-006",
+          "phrase": "The right comparison is not 'wireless is faster.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "A professional design review closes the loop with measurable evidence.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "For performance, inspect zero-load latency, saturation throughput, and tail latency.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "For energy, separate router, buffer, link, and radio costs.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-004",
+          "phrase": "For resilience, ask what happens when a link, router, or wireless channel fails, and whether packets can reroute without deadlock.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-005",
+          "phrase": "A hybrid design is valuable only when its benefits survive realistic traffic and faults.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-006",
+          "phrase": "The transferable lesson is systems thinking: architecture, communication, workload, and reliability are coupled, so every optimization must be evaluated end to end.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "wireless-networks-on-chip-moving-data-across-many-core-processor",
+  "schemaVersion": 1
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "rfc6749",
+      "title": "RFC 6749 — OAuth 2.0 Authorization Framework",
+      "uri": "https://www.rfc-editor.org/rfc/rfc6749",
+      "author": "IETF",
+      "content": "OAuth 2.0 enables a third-party application to obtain limited access to an HTTP service through roles including resource owner, client, authorization server, and resource server. The authorization-code flow separates user authorization from token issuance.",
+      "type": "note",
+      "verified": true
+    },
+    {
+      "id": "rfc7636",
+      "title": "RFC 7636 — Proof Key for Code Exchange",
+      "uri": "https://www.rfc-editor.org/rfc/rfc7636",
+      "author": "IETF",
+      "content": "PKCE mitigates authorization-code interception by binding the authorization request to a high-entropy code verifier. The client sends a derived code challenge first and proves possession of the verifier during token exchange.",
+      "type": "note",
+      "verified": true
+    },
+    {
+      "id": "wright-rit",
+      "title": "Matthew Wright — RIT Cybersecurity",
+      "uri": "https://www.rit.edu/cybersecurity/directory/mkwics-matthew-wright",
+      "author": "Rochester Institute of Technology",
+      "content": "Matthew Wright is chair and professor of cybersecurity with expertise in security, privacy, cyber analytics, adversarial machine learning, and usable security, and teaches Authentication and Security Models.",
+      "type": "note",
+      "verified": true
+    }
+  ]
+}

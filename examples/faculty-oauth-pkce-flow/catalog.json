@@ -1,0 +1,51 @@
+{
+  "id": "faculty-oauth-pkce-flow",
+  "title": "OAuth 2.0 Authorization Code Flow with PKCE",
+  "area": "Cybersecurity",
+  "subject": "Authentication and Authorization",
+  "format": "Faculty pilot showcase",
+  "level": "Intermediate",
+  "description": "Trace a scheduling application through OAuth authorization-code flow with PKCE, emphasizing trust boundaries, token handling, and attack resistance.",
+  "outcomes": [
+    "Distinguish resource owner, client, authorization server, and resource server",
+    "Trace front-channel and back-channel steps",
+    "Explain how state and PKCE mitigate distinct attacks"
+  ],
+  "paths": [
+    "Cybersecurity",
+    "Faculty Pilot Showcases"
+  ],
+  "aiContribution": {
+    "stage": "source-grounded lesson drafting and narration",
+    "provider": "OpenAI Codex",
+    "model": "GPT-5 family authoring assistant; exact revision unavailable",
+    "modelRevision": "unreported",
+    "humanReviewRequired": true
+  },
+  "generationProvenance": [
+    {
+      "stage": "Script and evidence",
+      "provider": "OpenAI Codex",
+      "model": "GPT-5 family authoring assistant; exact revision unavailable",
+      "executionLocation": "hosted",
+      "mode": "source-grounded draft",
+      "humanReviewRequired": true
+    },
+    {
+      "stage": "Narration voice and timestamps",
+      "provider": "edge-tts",
+      "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+      "executionLocation": "hosted",
+      "mode": "recorded",
+      "humanReviewRequired": true
+    },
+    {
+      "stage": "Educational diagrams and composition",
+      "provider": "deterministic-svg-runtime",
+      "model": "No generative model",
+      "executionLocation": "local",
+      "mode": "deterministic",
+      "humanReviewRequired": true
+    }
+  ]
+}

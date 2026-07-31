@@ -1,0 +1,95 @@
+A student wants a scheduling app to read free-and-busy information from a university
+
+calendar.
+
+The app should not receive the student's password, and it should not gain unlimited
+
+access.
+
+OAuth solves this delegation problem.
+
+The student is the resource owner.
+
+The scheduling app is the client.
+
+The university identity service acts as authorization server, and the calendar API is
+
+the resource server.
+
+Keeping these roles separate is the foundation for reasoning about who authenticates, who
+
+grants access, who receives tokens, and who stores protected data.
+
+Before redirecting the browser, the client creates two independent values.
+
+State binds the returning authorization response to the browser session and helps
+
+detect request forgery.
+
+The PKCE code verifier is a high-entropy secret held temporarily by the client.
+
+The client hashes it to form a code challenge that can safely travel in the authorization
+
+request.
+
+These mechanisms solve different problems.
+
+State protects the transaction's browser context; PKCE later proves that the same
+
+client instance redeeming the code initiated the request.
+
+The browser carries an authorization request to the authorization server with client
+
+identifier, redirect URI, requested scope, state, and PKCE challenge.
+
+The student authenticates directly with the university service and reviews the requested
+
+permission, such as reading calendar availability.
+
+The password never passes through the scheduling app.
+
+If approved, the authorization server redirects the browser back with a short-lived
+
+authorization code and the original state.
+
+Because this front channel is visible to the browser and redirects, the code is not yet an
+
+access token.
+
+The client first verifies that returned state matches the stored value.
+
+Its backend then sends the authorization code, redirect URI, and original code verifier
+
+directly to the token endpoint over a protected channel.
+
+The authorization server hashes the verifier and compares it with the earlier challenge.
+
+An attacker who intercepted only the code cannot complete this proof.
+
+If checks pass, the server returns a scoped access token and, when policy permits, a
+
+refresh token.
+
+Tokens remain server-side and should be encrypted at rest, narrowly scoped, and
+
+handled as credentials.
+
+The scheduling backend presents the access token to the calendar API, which validates the
+
+token and scope before returning only the authorized data.
+
+A security review now walks every boundary: exact redirect-URI matching, state validation,
+
+PKCE verification, TLS, minimal scopes, token lifetime, secure storage, revocation, and log
+
+redaction.
+
+OAuth does not make an application secure automatically.
+
+It supplies a protocol for delegated access; the implementation must preserve the
+
+protocol's assumptions.
+
+The most useful test is to ask what an attacker gains from a stolen code, browser
+
+history, log entry, access token, or refresh token.

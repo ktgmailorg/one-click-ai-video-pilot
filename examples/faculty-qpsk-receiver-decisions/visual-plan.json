@@ -1,0 +1,151 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "Quadrature phase-shift keying, or QPSK, carries two bits in each symbol.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "We group the incoming stream into pairs and map each pair to one of four points in the in-phase and quadrature plane.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "Neighboring points are often assigned bit patterns that differ by one bit, a Gray mapping that reduces the number of bit errors when noise pushes a symbol across one nearby boundary.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-004",
+          "phrase": "The constellation is more than a diagram: it is the transmitter's vocabulary and the receiver's decision map.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "Each constellation point supplies two coordinates: I for the cosine carrier and Q for the sine carrier.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "The carriers are ninety degrees apart, so they are orthogonal over the symbol interval.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "We weight them by the chosen coordinates and add them to create one real passband waveform.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-004",
+          "phrase": "Changing the bit pair changes the carrier phase while maintaining a similar envelope.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-005",
+          "phrase": "Orthogonality lets the receiver later separate the two components, provided timing and carrier reference are sufficiently aligned.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "A real channel changes what arrives.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "Thermal noise spreads each ideal point into a cloud.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "Frequency or phase offset rotates the constellation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-004",
+          "phrase": "Fading changes amplitude, and multipath can smear one symbol into the next.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-005",
+          "phrase": "These effects are different and require different corrections.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-006",
+          "phrase": "A receiver chain may estimate timing, carrier phase, channel gain, and equalization before making bit decisions.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "After synchronization and matched filtering, the receiver samples once per symbol and selects the closest valid point.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "In basic QPSK, the I and Q signs define four decision regions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "A sample near a boundary is fragile because a small noise change can flip the decision.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-004",
+          "phrase": "Increasing signal energy separates the clusters relative to noise, reducing error probability, but power and bandwidth are limited resources.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-005",
+          "phrase": "Receiver design therefore balances reliable decisions against spectral efficiency, energy, and implementation complexity.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "The full reasoning chain is compact: group bits, map a symbol, modulate orthogonal carriers, pass through the channel, synchronize, filter, sample, decide, and decode.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "To debug a link, compare evidence at each boundary.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "Verify the bit mapping, inspect carrier frequency and timing, plot the received constellation, measure error-vector magnitude, and compare transmitted with recovered bits.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-004",
+          "phrase": "This stepwise view turns an abstract modulation formula into a practical engineering workflow.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "qpsk-from-bits-to-radio-waves-and-back",
+  "schemaVersion": 1
+}

@@ -1,0 +1,51 @@
+{
+  "id": "faculty-dhcp-dora-network-configuration",
+  "title": "DHCP DORA: How a Device Gets Its Network Configuration",
+  "area": "Computing & Networking",
+  "subject": "Network Services",
+  "format": "Faculty pilot showcase",
+  "level": "Introductory",
+  "description": "Follow a new device through DHCP Discover, Offer, Request, and Acknowledgment, then diagnose relay, lease, and rogue-server failures.",
+  "outcomes": [
+    "Trace the DORA exchange and identify message direction",
+    "Explain leases and DHCP relay behavior",
+    "Diagnose common DHCP failure evidence"
+  ],
+  "paths": [
+    "Computing & Networking",
+    "Faculty Pilot Showcases"
+  ],
+  "aiContribution": {
+    "stage": "source-grounded lesson drafting and narration",
+    "provider": "OpenAI Codex",
+    "model": "GPT-5 family authoring assistant; exact revision unavailable",
+    "modelRevision": "unreported",
+    "humanReviewRequired": true
+  },
+  "generationProvenance": [
+    {
+      "stage": "Script and evidence",
+      "provider": "OpenAI Codex",
+      "model": "GPT-5 family authoring assistant; exact revision unavailable",
+      "executionLocation": "hosted",
+      "mode": "source-grounded draft",
+      "humanReviewRequired": true
+    },
+    {
+      "stage": "Narration voice and timestamps",
+      "provider": "edge-tts",
+      "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+      "executionLocation": "hosted",
+      "mode": "recorded",
+      "humanReviewRequired": true
+    },
+    {
+      "stage": "Educational diagrams and composition",
+      "provider": "deterministic-svg-runtime",
+      "model": "No generative model",
+      "executionLocation": "local",
+      "mode": "deterministic",
+      "humanReviewRequired": true
+    }
+  ]
+}

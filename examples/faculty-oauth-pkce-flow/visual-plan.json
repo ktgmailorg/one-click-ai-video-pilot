@@ -1,0 +1,171 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "A student wants a scheduling app to read free-and-busy information from a university calendar.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "The app should not receive the student's password, and it should not gain unlimited access.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "OAuth solves this delegation problem.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-004",
+          "phrase": "The student is the resource owner.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-005",
+          "phrase": "The scheduling app is the client.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-006",
+          "phrase": "The university identity service acts as authorization server, and the calendar API is the resource server.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "Before redirecting the browser, the client creates two independent values.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "State binds the returning authorization response to the browser session and helps detect request forgery.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "The PKCE code verifier is a high-entropy secret held temporarily by the client.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-004",
+          "phrase": "The client hashes it to form a code challenge that can safely travel in the authorization request.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-005",
+          "phrase": "These mechanisms solve different problems.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-006",
+          "phrase": "State protects the transaction's browser context; PKCE later proves that the same client instance redeeming the code initiated the request.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "The browser carries an authorization request to the authorization server with client identifier, redirect URI, requested scope, state, and PKCE challenge.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "The student authenticates directly with the university service and reviews the requested permission, such as reading calendar availability.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "The password never passes through the scheduling app.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-004",
+          "phrase": "If approved, the authorization server redirects the browser back with a short-lived authorization code and the original state.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-005",
+          "phrase": "Because this front channel is visible to the browser and redirects, the code is not yet an access token.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "The client first verifies that returned state matches the stored value.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "Its backend then sends the authorization code, redirect URI, and original code verifier directly to the token endpoint over a protected channel.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "The authorization server hashes the verifier and compares it with the earlier challenge.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-004",
+          "phrase": "An attacker who intercepted only the code cannot complete this proof.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-005",
+          "phrase": "If checks pass, the server returns a scoped access token and, when policy permits, a refresh token.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-006",
+          "phrase": "Tokens remain server-side and should be encrypted at rest, narrowly scoped, and handled as credentials.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "The scheduling backend presents the access token to the calendar API, which validates the token and scope before returning only the authorized data.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "A security review now walks every boundary: exact redirect-URI matching, state validation, PKCE verification, TLS, minimal scopes, token lifetime, secure storage, revocation, and log redaction.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "OAuth does not make an application secure automatically.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-004",
+          "phrase": "It supplies a protocol for delegated access; the implementation must preserve the protocol's assumptions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-005",
+          "phrase": "The most useful test is to ask what an attacker gains from a stolen code, browser history, log entry, access token, or refresh token.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "oauth-2-0-authorization-code-flow-with-pkce",
+  "schemaVersion": 1
+}

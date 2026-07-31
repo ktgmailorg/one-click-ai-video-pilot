@@ -1,0 +1,163 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, measured, and instructor-ready.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Quadrature phase-shift keying, or QPSK, carries two bits in each symbol. We group the incoming stream into pairs and map each pair to one of four points in the in-phase and quadrature plane. Neighboring points are often assigned bit patterns that differ by one bit, a Gray mapping that reduces the number of bit errors when noise pushes a symbol across one nearby boundary. The constellation is more than a diagram: it is the transmitter's vocabulary and the receiver's decision map.",
+      "plannedSeconds": 48,
+      "title": "Two Bits Become One Symbol",
+      "visualDirection": "template:showcase-qpsk | A QPSK constellation places 00, 01, 11, and 10 in four quadrants with I and Q decision axes."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, measured, and instructor-ready.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Each constellation point supplies two coordinates: I for the cosine carrier and Q for the sine carrier. The carriers are ninety degrees apart, so they are orthogonal over the symbol interval. We weight them by the chosen coordinates and add them to create one real passband waveform. Changing the bit pair changes the carrier phase while maintaining a similar envelope. Orthogonality lets the receiver later separate the two components, provided timing and carrier reference are sufficiently aligned.",
+      "plannedSeconds": 48,
+      "title": "I and Q Build the Waveform",
+      "visualDirection": "template:showcase-qpsk | Show orthogonal cosine and sine carriers, weighted by I and Q values, summing into one transmitted waveform."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, measured, and instructor-ready.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "A real channel changes what arrives. Thermal noise spreads each ideal point into a cloud. Frequency or phase offset rotates the constellation. Fading changes amplitude, and multipath can smear one symbol into the next. These effects are different and require different corrections. A receiver chain may estimate timing, carrier phase, channel gain, and equalization before making bit decisions. Looking only at a waveform can hide the pattern; the constellation exposes whether uncertainty is random spread, systematic rotation, scaling, or intersymbol interference.",
+      "plannedSeconds": 48,
+      "title": "The Channel Adds Uncertainty",
+      "visualDirection": "template:showcase-qpsk | Clean constellation points on the left; noisy point clouds, phase rotation, and fading on the right."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, measured, and instructor-ready.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "After synchronization and matched filtering, the receiver samples once per symbol and selects the closest valid point. In basic QPSK, the I and Q signs define four decision regions. A sample near a boundary is fragile because a small noise change can flip the decision. Increasing signal energy separates the clusters relative to noise, reducing error probability, but power and bandwidth are limited resources. Receiver design therefore balances reliable decisions against spectral efficiency, energy, and implementation complexity.",
+      "plannedSeconds": 48,
+      "title": "Decision Boundaries Turn Samples into Bits",
+      "visualDirection": "template:showcase-qpsk | A sample lands in one of four quadrants; highlight nearest-symbol decision and recover its bit pair."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, measured, and instructor-ready.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "The full reasoning chain is compact: group bits, map a symbol, modulate orthogonal carriers, pass through the channel, synchronize, filter, sample, decide, and decode. To debug a link, compare evidence at each boundary. Verify the bit mapping, inspect carrier frequency and timing, plot the received constellation, measure error-vector magnitude, and compare transmitted with recovered bits. This stepwise view turns an abstract modulation formula into a practical engineering workflow.",
+      "plannedSeconds": 48,
+      "title": "Read the System as an Evidence Chain",
+      "visualDirection": "template:showcase-qpsk | From BITS to MAP to MODULATE to CHANNEL to SYNCHRONIZE to DECIDE to BITS; mark where each impairment appears."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "rit-telecom"
+      ],
+      "text": "RIT telecommunications engineering technology covers digital communications, modulation, quality of service, protocols, and fiber-optic and wireless systems.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "rit-comms"
+      ],
+      "text": "RIT communications research addresses wired and wireless systems, signal processing, networking, and secure information exchange.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "rit-comms"
+      ],
+      "text": "RIT communications research addresses wired and wireless systems, signal processing, networking, and secure information exchange.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "rit-telecom"
+      ],
+      "text": "RIT telecommunications engineering technology covers digital communications, modulation, quality of service, protocols, and fiber-optic and wireless systems.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "rit-telecom"
+      ],
+      "text": "RIT telecommunications engineering technology covers digital communications, modulation, quality of service, protocols, and fiber-optic and wireless systems.",
+      "verified": true
+    }
+  ],
+  "id": "qpsk-from-bits-to-radio-waves-and-back",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "Rochester Institute of Technology",
+      "excerpt": "RIT telecommunications engineering technology covers digital communications, modulation, quality of service, protocols, and fiber-optic and wireless systems.",
+      "id": "rit-telecom",
+      "sha256": "93e4f4ce4faa4eeeec1d2250148f5062a3c9f4a4afc200e5f2400eba6c10f122",
+      "title": "Telecommunications Engineering Technology MS",
+      "type": "note",
+      "uri": "https://www.rit.edu/engineeringtechnology/study/telecommunications-engineering-technology-ms",
+      "verified": true
+    },
+    {
+      "author": "Rochester Institute of Technology",
+      "excerpt": "RIT communications research addresses wired and wireless systems, signal processing, networking, and secure information exchange.",
+      "id": "rit-comms",
+      "sha256": "fa6685c10b5bbb533a27fedf0eacaf6abcaa7b97ecf618758bbda2cac983e01e",
+      "title": "Communications, Networking, and Security Research",
+      "type": "note",
+      "uri": "https://www.rit.edu/engineering/research/communications-networking-and-security",
+      "verified": true
+    }
+  ],
+  "title": "QPSK: From Bits to Radio Waves and Back"
+}

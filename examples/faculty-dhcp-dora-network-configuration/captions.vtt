@@ -1,0 +1,189 @@
+WEBVTT
+
+1
+00:00:00.050 --> 00:00:07.386
+When a laptop joins a network, it may know its
+hardware address but not its local IP address,
+
+2
+00:00:07.386 --> 00:00:11.054
+subnet mask, default gateway, DNS servers, or
+lease policy.
+
+3
+00:00:11.054 --> 00:00:17.591
+It cannot simply send a normal unicast request
+to a DHCP server because it does not yet know
+
+4
+00:00:17.591 --> 00:00:21.223
+where that server is—or even which subnet it
+belongs to.
+
+5
+00:00:21.223 --> 00:00:29.548
+DHCP bootstraps this uncertainty with a short
+exchange often remembered as DORA: Discover,
+
+6
+00:00:29.548 --> 00:00:32.109
+Offer, Request, and Acknowledgment.
+
+7
+00:00:32.210 --> 00:00:39.232
+The client sends DHCPDISCOVER as a broadcast
+so any available server or relay on the local
+
+8
+00:00:39.232 --> 00:00:40.988
+network can receive it.
+
+9
+00:00:40.988 --> 00:00:46.652
+The message includes a transaction identifier
+that helps the client match later responses.
+
+10
+00:00:46.652 --> 00:00:53.422
+If the server is on another subnet, a DHCP
+relay listens locally and forwards the request
+
+11
+00:00:53.422 --> 00:00:57.654
+toward the configured server, adding
+information about the client's network.
+
+12
+00:00:57.654 --> 00:01:02.498
+This matters because routers normally do not
+forward broadcasts.
+
+13
+00:01:02.498 --> 00:01:09.161
+The relay provides controlled cross-subnet
+reach without placing a DHCP server on every
+
+14
+00:01:09.161 --> 00:01:09.673
+VLAN.
+
+15
+00:01:09.794 --> 00:01:16.206
+One or more servers may respond with DHCPOFFER
+messages containing a proposed address, lease
+
+16
+00:01:16.206 --> 00:01:18.038
+time, and configuration options.
+
+17
+00:01:18.038 --> 00:01:24.444
+The client chooses an offer and broadcasts
+DHCPREQUEST identifying the selected server
+
+18
+00:01:24.444 --> 00:01:25.512
+and address.
+
+19
+00:01:25.512 --> 00:01:31.649
+Broadcasting the choice informs the winning
+server to proceed and allows other servers to
+
+20
+00:01:31.649 --> 00:01:33.402
+withdraw their pending offers.
+
+21
+00:01:33.402 --> 00:01:38.103
+This is a coordination step, not merely a
+repeat of the request.
+
+22
+00:01:38.103 --> 00:01:43.853
+Packet captures reveal the selected-server and
+requested-address options that make the
+
+23
+00:01:43.853 --> 00:01:45.421
+client's intent explicit.
+
+24
+00:01:45.530 --> 00:01:50.506
+The selected server returns DHCPACK,
+confirming the lease and options.
+
+25
+00:01:50.506 --> 00:01:54.568
+The client configures the interface and enters
+the bound state.
+
+26
+00:01:54.568 --> 00:01:56.196
+A lease is temporary.
+
+27
+00:01:56.196 --> 00:02:02.146
+At the first renewal timer, the client usually
+unicasts a request to the original server.
+
+28
+00:02:02.146 --> 00:02:08.266
+If that fails, a later rebinding timer allows
+broadcast requests to any server.
+
+29
+00:02:08.266 --> 00:02:13.513
+If the lease expires without renewal, the
+address must no longer be used.
+
+30
+00:02:13.513 --> 00:02:19.607
+These timers let address pools be reused while
+keeping stable configuration during normal
+
+31
+00:02:19.607 --> 00:02:20.076
+operation.
+
+32
+00:02:20.210 --> 00:02:22.790
+Troubleshooting follows the exchange.
+
+33
+00:02:22.790 --> 00:02:25.446
+Confirm link and VLAN first.
+
+34
+00:02:25.446 --> 00:02:31.177
+Capture whether Discover leaves the client,
+whether the relay forwards it, whether an
+
+35
+00:02:31.177 --> 00:02:34.704
+Offer returns, and whether Request and
+Acknowledgment complete.
+
+36
+00:02:34.704 --> 00:02:40.889
+Then inspect the scope for exhaustion, option
+errors, reservations, and lease conflicts.
+
+37
+00:02:40.889 --> 00:02:48.063
+Also ask who is answering: a rogue DHCP server
+can supply a malicious gateway or DNS setting.
+
+38
+00:02:48.063 --> 00:02:53.532
+DORA is therefore both an availability
+workflow and a trust boundary.
+
+39
+00:02:53.532 --> 00:03:00.258
+Seeing each packet in context turns 'the
+network is down' into a testable sequence of
+
+40
+00:03:00.258 --> 00:03:00.706
+hypotheses.

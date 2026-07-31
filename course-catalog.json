@@ -3,6 +3,72 @@
   "updated": "2026-07-31",
   "courses": [
     {
+      "id": "faculty-architectural-design-review",
+      "title": "Architectural Design Review: From Site Constraints to a Revision Plan",
+      "area": "Architecture & Design",
+      "subject": "Architectural Studio",
+      "format": "Faculty pilot showcase",
+      "level": "Intermediate",
+      "description": "Model a design critique using synthetic drawings, layered evidence, and an actionable revision matrix.",
+      "outcomes": [
+        "Anchor critique comments to visible drawing evidence",
+        "Connect site, program, systems, envelope, and experience",
+        "Translate review comments into prioritized revisions"
+      ],
+      "paths": [
+        "Architecture & Design",
+        "Faculty Pilot Showcases"
+      ],
+      "aiContribution": {
+        "stage": "source-grounded lesson drafting and narration",
+        "provider": "OpenAI Codex",
+        "model": "GPT-5 family authoring assistant; exact revision unavailable",
+        "modelRevision": "unreported",
+        "humanReviewRequired": true
+      },
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "OpenAI Codex",
+          "model": "GPT-5 family authoring assistant; exact revision unavailable",
+          "executionLocation": "hosted",
+          "mode": "source-grounded draft",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ],
+      "duration": "3:16",
+      "durationSeconds": 196,
+      "poster": "./examples/faculty-architectural-design-review/poster.png",
+      "video": "./media/faculty-architectural-design-review-ded58593723ca1dc.mp4",
+      "captions": "./examples/faculty-architectural-design-review/captions.vtt",
+      "transcript": "./examples/faculty-architectural-design-review/transcript.txt",
+      "sources": "./examples/faculty-architectural-design-review/sources.json",
+      "releaseManifest": "./examples/faculty-architectural-design-review/release-artifacts.json",
+      "qualityReport": "./examples/faculty-architectural-design-review/quality-report.json",
+      "groundingReport": "./examples/faculty-architectural-design-review/grounding-report.json",
+      "videoSha256": "ded58593723ca1dc562bd80d7a312bc160c7573b3629e61638fb6f6bb457a801",
+      "videoBytes": 14412643,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1"
+    },
+    {
       "id": "full-circular-entrepreneurship",
       "title": "Circular Entrepreneurship: From Material Loops to a Viable Venture",
       "area": "Business",
@@ -6187,6 +6253,139 @@
       ]
     },
     {
+      "id": "faculty-hospitality-service-recovery",
+      "title": "Service Recovery: Turning a Hotel Failure into Rebuilt Trust",
+      "area": "Business & Hospitality",
+      "subject": "Services Marketing",
+      "format": "Faculty pilot showcase",
+      "level": "Introductory",
+      "description": "Follow a realistic hotel service failure through listening, diagnosis, recovery, follow-up, and operational learning.",
+      "outcomes": [
+        "Separate the guest's outcome from the service process",
+        "Construct a proportionate recovery response",
+        "Convert feedback into operational improvement"
+      ],
+      "paths": [
+        "Business & Hospitality",
+        "Faculty Pilot Showcases"
+      ],
+      "aiContribution": {
+        "stage": "source-grounded lesson drafting and narration",
+        "provider": "OpenAI Codex",
+        "model": "GPT-5 family authoring assistant; exact revision unavailable",
+        "modelRevision": "unreported",
+        "humanReviewRequired": true
+      },
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "OpenAI Codex",
+          "model": "GPT-5 family authoring assistant; exact revision unavailable",
+          "executionLocation": "hosted",
+          "mode": "source-grounded draft",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ],
+      "duration": "3:30",
+      "durationSeconds": 210,
+      "poster": "./examples/faculty-hospitality-service-recovery/poster.png",
+      "video": "./media/faculty-hospitality-service-recovery-fcd9460956e2c640.mp4",
+      "captions": "./examples/faculty-hospitality-service-recovery/captions.vtt",
+      "transcript": "./examples/faculty-hospitality-service-recovery/transcript.txt",
+      "sources": "./examples/faculty-hospitality-service-recovery/sources.json",
+      "releaseManifest": "./examples/faculty-hospitality-service-recovery/release-artifacts.json",
+      "qualityReport": "./examples/faculty-hospitality-service-recovery/quality-report.json",
+      "groundingReport": "./examples/faculty-hospitality-service-recovery/grounding-report.json",
+      "videoSha256": "fcd9460956e2c6407db48cc60ed17483f1ae3292f86a03976fed05dcd44454dc",
+      "videoBytes": 15175324,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1"
+    },
+    {
+      "id": "faculty-wireless-network-on-chip",
+      "title": "Wireless Networks-on-Chip: Moving Data Across Many-Core Processors",
+      "area": "Computer Engineering",
+      "subject": "Computer Architecture",
+      "format": "Faculty pilot showcase",
+      "level": "Intermediate",
+      "description": "Trace a packet across a many-core chip, compare wired and wireless interconnects, and reason about latency, energy, contention, and fault tolerance.",
+      "outcomes": [
+        "Explain why many-core processors need an on-chip network",
+        "Trace a flit through routing and arbitration",
+        "Compare wired mesh and wireless shortcut trade-offs"
+      ],
+      "paths": [
+        "Computer Engineering",
+        "Computing & Engineering",
+        "Faculty Pilot Showcases"
+      ],
+      "aiContribution": {
+        "stage": "source-grounded lesson drafting and narration",
+        "provider": "OpenAI Codex",
+        "model": "GPT-5 family authoring assistant; exact revision unavailable",
+        "modelRevision": "unreported",
+        "humanReviewRequired": true
+      },
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "OpenAI Codex",
+          "model": "GPT-5 family authoring assistant; exact revision unavailable",
+          "executionLocation": "hosted",
+          "mode": "source-grounded draft",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ],
+      "duration": "3:26",
+      "durationSeconds": 206,
+      "poster": "./examples/faculty-wireless-network-on-chip/poster.png",
+      "video": "./media/faculty-wireless-network-on-chip-1d6eb9ecc14d7fdd.mp4",
+      "captions": "./examples/faculty-wireless-network-on-chip/captions.vtt",
+      "transcript": "./examples/faculty-wireless-network-on-chip/transcript.txt",
+      "sources": "./examples/faculty-wireless-network-on-chip/sources.json",
+      "releaseManifest": "./examples/faculty-wireless-network-on-chip/release-artifacts.json",
+      "qualityReport": "./examples/faculty-wireless-network-on-chip/quality-report.json",
+      "groundingReport": "./examples/faculty-wireless-network-on-chip/grounding-report.json",
+      "videoSha256": "1d6eb9ecc14d7fdd71045ce3c79b1b7b0a4199431c5e81c387261ea879f0b399",
+      "videoBytes": 17293318,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1"
+    },
+    {
       "id": "cybersecurity-phishing-check",
       "title": "How to Check a Suspicious Message",
       "area": "Computing",
@@ -6243,6 +6442,138 @@
           "humanReviewRequired": true
         }
       ]
+    },
+    {
+      "id": "faculty-dhcp-dora-network-configuration",
+      "title": "DHCP DORA: How a Device Gets Its Network Configuration",
+      "area": "Computing & Networking",
+      "subject": "Network Services",
+      "format": "Faculty pilot showcase",
+      "level": "Introductory",
+      "description": "Follow a new device through DHCP Discover, Offer, Request, and Acknowledgment, then diagnose relay, lease, and rogue-server failures.",
+      "outcomes": [
+        "Trace the DORA exchange and identify message direction",
+        "Explain leases and DHCP relay behavior",
+        "Diagnose common DHCP failure evidence"
+      ],
+      "paths": [
+        "Computing & Networking",
+        "Faculty Pilot Showcases"
+      ],
+      "aiContribution": {
+        "stage": "source-grounded lesson drafting and narration",
+        "provider": "OpenAI Codex",
+        "model": "GPT-5 family authoring assistant; exact revision unavailable",
+        "modelRevision": "unreported",
+        "humanReviewRequired": true
+      },
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "OpenAI Codex",
+          "model": "GPT-5 family authoring assistant; exact revision unavailable",
+          "executionLocation": "hosted",
+          "mode": "source-grounded draft",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ],
+      "duration": "3:01",
+      "durationSeconds": 181,
+      "poster": "./examples/faculty-dhcp-dora-network-configuration/poster.png",
+      "video": "./media/faculty-dhcp-dora-network-configuration-e2073bcc240d60ac.mp4",
+      "captions": "./examples/faculty-dhcp-dora-network-configuration/captions.vtt",
+      "transcript": "./examples/faculty-dhcp-dora-network-configuration/transcript.txt",
+      "sources": "./examples/faculty-dhcp-dora-network-configuration/sources.json",
+      "releaseManifest": "./examples/faculty-dhcp-dora-network-configuration/release-artifacts.json",
+      "qualityReport": "./examples/faculty-dhcp-dora-network-configuration/quality-report.json",
+      "groundingReport": "./examples/faculty-dhcp-dora-network-configuration/grounding-report.json",
+      "videoSha256": "e2073bcc240d60ac7d5213cc1ff6fe24e0e892421741284dad0237da54320b76",
+      "videoBytes": 14644188,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1"
+    },
+    {
+      "id": "faculty-oauth-pkce-flow",
+      "title": "OAuth 2.0 Authorization Code Flow with PKCE",
+      "area": "Cybersecurity",
+      "subject": "Authentication and Authorization",
+      "format": "Faculty pilot showcase",
+      "level": "Intermediate",
+      "description": "Trace a scheduling application through OAuth authorization-code flow with PKCE, emphasizing trust boundaries, token handling, and attack resistance.",
+      "outcomes": [
+        "Distinguish resource owner, client, authorization server, and resource server",
+        "Trace front-channel and back-channel steps",
+        "Explain how state and PKCE mitigate distinct attacks"
+      ],
+      "paths": [
+        "Cybersecurity",
+        "Faculty Pilot Showcases"
+      ],
+      "aiContribution": {
+        "stage": "source-grounded lesson drafting and narration",
+        "provider": "OpenAI Codex",
+        "model": "GPT-5 family authoring assistant; exact revision unavailable",
+        "modelRevision": "unreported",
+        "humanReviewRequired": true
+      },
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "OpenAI Codex",
+          "model": "GPT-5 family authoring assistant; exact revision unavailable",
+          "executionLocation": "hosted",
+          "mode": "source-grounded draft",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ],
+      "duration": "3:19",
+      "durationSeconds": 199,
+      "poster": "./examples/faculty-oauth-pkce-flow/poster.png",
+      "video": "./media/faculty-oauth-pkce-flow-7d341ccd2eca4ce2.mp4",
+      "captions": "./examples/faculty-oauth-pkce-flow/captions.vtt",
+      "transcript": "./examples/faculty-oauth-pkce-flow/transcript.txt",
+      "sources": "./examples/faculty-oauth-pkce-flow/sources.json",
+      "releaseManifest": "./examples/faculty-oauth-pkce-flow/release-artifacts.json",
+      "qualityReport": "./examples/faculty-oauth-pkce-flow/quality-report.json",
+      "groundingReport": "./examples/faculty-oauth-pkce-flow/grounding-report.json",
+      "videoSha256": "7d341ccd2eca4ce2f8e08e436d3a4a6823b9c264b82f9e562a6ffcd996e4dbc4",
+      "videoBytes": 16236264,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1"
     },
     {
       "id": "engineering-technology-pid",
@@ -6361,6 +6692,72 @@
       ]
     },
     {
+      "id": "faculty-qpsk-receiver-decisions",
+      "title": "QPSK: From Bits to Radio Waves and Back",
+      "area": "Engineering Technology",
+      "subject": "Digital Communications",
+      "format": "Faculty pilot showcase",
+      "level": "Intermediate",
+      "description": "Build an intuitive QPSK transmitter and receiver, then see how noise changes constellation decisions and bit errors.",
+      "outcomes": [
+        "Map bit pairs to QPSK symbols",
+        "Explain carrier modulation and receiver sampling",
+        "Relate noise and decision boundaries to bit errors"
+      ],
+      "paths": [
+        "Engineering Technology",
+        "Faculty Pilot Showcases"
+      ],
+      "aiContribution": {
+        "stage": "source-grounded lesson drafting and narration",
+        "provider": "OpenAI Codex",
+        "model": "GPT-5 family authoring assistant; exact revision unavailable",
+        "modelRevision": "unreported",
+        "humanReviewRequired": true
+      },
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "OpenAI Codex",
+          "model": "GPT-5 family authoring assistant; exact revision unavailable",
+          "executionLocation": "hosted",
+          "mode": "source-grounded draft",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ],
+      "duration": "3:04",
+      "durationSeconds": 184,
+      "poster": "./examples/faculty-qpsk-receiver-decisions/poster.png",
+      "video": "./media/faculty-qpsk-receiver-decisions-3059c3178a097d61.mp4",
+      "captions": "./examples/faculty-qpsk-receiver-decisions/captions.vtt",
+      "transcript": "./examples/faculty-qpsk-receiver-decisions/transcript.txt",
+      "sources": "./examples/faculty-qpsk-receiver-decisions/sources.json",
+      "releaseManifest": "./examples/faculty-qpsk-receiver-decisions/release-artifacts.json",
+      "qualityReport": "./examples/faculty-qpsk-receiver-decisions/quality-report.json",
+      "groundingReport": "./examples/faculty-qpsk-receiver-decisions/grounding-report.json",
+      "videoSha256": "3059c3178a097d618d9220f3469c4e9d7cfdc2f7fec32db478666dc03deeb90f",
+      "videoBytes": 12238576,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1"
+    },
+    {
       "id": "health-oxygen-transport",
       "title": "How Oxygen Moves from Lungs to Tissue",
       "area": "Health Sciences",
@@ -6416,6 +6813,72 @@
           "humanReviewRequired": true
         }
       ]
+    },
+    {
+      "id": "faculty-innate-immune-response",
+      "title": "Innate Immunity: From Barrier Breach to Resolution",
+      "area": "Health Sciences",
+      "subject": "Human Biology & Immunology",
+      "format": "Faculty pilot showcase",
+      "level": "Introductory",
+      "description": "Visualize how tissue damage and microbial signals trigger recognition, inflammation, leukocyte recruitment, clearance, and resolution.",
+      "outcomes": [
+        "Identify the main stages of innate immune defense",
+        "Explain why inflammation helps and can also harm",
+        "Trace feedback from recognition to resolution"
+      ],
+      "paths": [
+        "Health Sciences",
+        "Faculty Pilot Showcases"
+      ],
+      "aiContribution": {
+        "stage": "source-grounded lesson drafting and narration",
+        "provider": "OpenAI Codex",
+        "model": "GPT-5 family authoring assistant; exact revision unavailable",
+        "modelRevision": "unreported",
+        "humanReviewRequired": true
+      },
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "OpenAI Codex",
+          "model": "GPT-5 family authoring assistant; exact revision unavailable",
+          "executionLocation": "hosted",
+          "mode": "source-grounded draft",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ],
+      "duration": "3:09",
+      "durationSeconds": 189,
+      "poster": "./examples/faculty-innate-immune-response/poster.png",
+      "video": "./media/faculty-innate-immune-response-1db0c1822fb501ed.mp4",
+      "captions": "./examples/faculty-innate-immune-response/captions.vtt",
+      "transcript": "./examples/faculty-innate-immune-response/transcript.txt",
+      "sources": "./examples/faculty-innate-immune-response/sources.json",
+      "releaseManifest": "./examples/faculty-innate-immune-response/release-artifacts.json",
+      "qualityReport": "./examples/faculty-innate-immune-response/quality-report.json",
+      "groundingReport": "./examples/faculty-innate-immune-response/grounding-report.json",
+      "videoSha256": "1db0c1822fb501ed1bd243b7509376330473487f39094e3340abefa0d0361a58",
+      "videoBytes": 17066298,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1"
     },
     {
       "id": "individualized-study-question",
@@ -6587,6 +7050,72 @@
           "humanReviewRequired": true
         }
       ]
+    },
+    {
+      "id": "faculty-deaf-oral-history-analysis",
+      "title": "Reading a Deaf Oral History: Source, Context, Voice, and Access",
+      "area": "Liberal Arts & Deaf Studies",
+      "subject": "History and Oral History",
+      "format": "Faculty pilot showcase",
+      "level": "Introductory",
+      "description": "Use a respectful evidence framework to analyze a Deaf oral-history interview while preserving context, agency, language, and accessibility.",
+      "outcomes": [
+        "Distinguish testimony from contextual interpretation",
+        "Evaluate interviewer, archive, and transcription choices",
+        "Design accessible and ethically contextualized use of oral history"
+      ],
+      "paths": [
+        "Liberal Arts & Deaf Studies",
+        "Faculty Pilot Showcases"
+      ],
+      "aiContribution": {
+        "stage": "source-grounded lesson drafting and narration",
+        "provider": "OpenAI Codex",
+        "model": "GPT-5 family authoring assistant; exact revision unavailable",
+        "modelRevision": "unreported",
+        "humanReviewRequired": true
+      },
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "OpenAI Codex",
+          "model": "GPT-5 family authoring assistant; exact revision unavailable",
+          "executionLocation": "hosted",
+          "mode": "source-grounded draft",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ],
+      "duration": "3:09",
+      "durationSeconds": 189,
+      "poster": "./examples/faculty-deaf-oral-history-analysis/poster.png",
+      "video": "./media/faculty-deaf-oral-history-analysis-876e64d6431fc32c.mp4",
+      "captions": "./examples/faculty-deaf-oral-history-analysis/captions.vtt",
+      "transcript": "./examples/faculty-deaf-oral-history-analysis/transcript.txt",
+      "sources": "./examples/faculty-deaf-oral-history-analysis/sources.json",
+      "releaseManifest": "./examples/faculty-deaf-oral-history-analysis/release-artifacts.json",
+      "qualityReport": "./examples/faculty-deaf-oral-history-analysis/quality-report.json",
+      "groundingReport": "./examples/faculty-deaf-oral-history-analysis/grounding-report.json",
+      "videoSha256": "876e64d6431fc32ca587b07f1a3776e32c9cbee9a384c1cdf7343bbd7b69f912",
+      "videoBytes": 14361312,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1"
     },
     {
       "id": "mathematics-local-derivative",
