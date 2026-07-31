@@ -1,0 +1,431 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "Data management begins with a model, not a query.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "A relation is commonly presented as a table.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "Columns represent attributes with defined domains, and rows represent tuples describing instances.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-004",
+          "phrase": "A students table might contain a student identifier and name; an enrollments table can represent the relationship between students and course sections.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-005",
+          "phrase": "Every column needs one meaning, one unit, and an appropriate type.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-006",
+          "phrase": "Avoid storing several values in one cell or repeating groups of columns.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-007",
+          "phrase": "A schema is a contract about the shape and interpretation of stored data.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-008",
+          "phrase": "If the meaning is ambiguous, technically valid SQL can still produce meaningless results.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "A key is an attribute or minimal set of attributes that uniquely identifies a row.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "A table may have several candidate keys; one is selected as the primary key.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "Stable generated identifiers are often useful, but a generated key does not remove the need to enforce real-world uniqueness when required.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-004",
+          "phrase": "A foreign key stores a value that must match a referenced key, representing a declared relationship.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-005",
+          "phrase": "An enrollment can reference one student and one section.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-006",
+          "phrase": "Foreign-key constraints prevent orphaned references, but designers must choose what should happen when referenced data changes or is deleted.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-007",
+          "phrase": "Keys give relationships executable structure rather than leaving them as comments or naming conventions.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "Types define which values a column can represent.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "Constraints narrow those values to the valid states of the application.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "Not null requires a value.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-004",
+          "phrase": "Check constraints express conditions such as a nonnegative quantity.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-005",
+          "phrase": "Primary and foreign keys enforce identity and references.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-006",
+          "phrase": "Put durable invariants in the database when every application must obey them.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-007",
+          "phrase": "Validation in a user interface improves feedback, but it can be bypassed by another client or import.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-008",
+          "phrase": "Constraints also need careful scope: a rule involving current time or external state may not behave like a stable row invariant.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "A basic select statement identifies source tables, filters rows with a where condition, and projects the columns or expressions to return.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "The result is itself a table-like relation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "SQL describes the desired result more than a step-by-step loop, allowing the database to choose an execution plan.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-004",
+          "phrase": "Be precise about null: it represents missing or unknown information and does not behave like an ordinary value in comparisons.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-005",
+          "phrase": "Use IS NULL rather than equals null.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-006",
+          "phrase": "Ordering is not guaranteed unless an ORDER BY clause requests it.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-007",
+          "phrase": "Select only needed columns, use meaningful aliases, and verify the result on a tiny hand-checkable dataset before trusting a large output.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "Joins reconstruct relationships stored across tables.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "An inner join keeps combinations that satisfy the join condition.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "A left outer join also keeps unmatched rows from the left side, filling missing right-side values with nulls.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-004",
+          "phrase": "Always identify the intended cardinality: one to one, one to many, or many to many through an associative table.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-005",
+          "phrase": "A missing predicate creates a Cartesian product, while an incomplete predicate can silently duplicate results.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-006",
+          "phrase": "Qualify ambiguous column names and inspect row counts before and after the join.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-007",
+          "phrase": "Ask what one result row represents.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-008",
+          "phrase": "If that sentence is unclear, aggregation and reporting built on the join will also be unclear.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-06",
+      "shots": [
+        {
+          "id": "beat-06-shot-001",
+          "phrase": "Count, sum, average, minimum, and maximum summarize rows.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-002",
+          "phrase": "Group by determines which rows share one output group.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-003",
+          "phrase": "If a query groups by course, each result row represents one course.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-004",
+          "phrase": "Columns in the select list must either define that grain or be aggregated.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-005",
+          "phrase": "Where filters individual rows before grouping; having filters groups after aggregation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-006",
+          "phrase": "Null handling matters because many aggregates ignore null values.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-007",
+          "phrase": "Distinct may remove duplicates, but using it to hide a faulty join masks the real problem.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-008",
+          "phrase": "State the result grain in words, create a small example, and verify that every join and group preserves the intended meaning.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-07",
+      "shots": [
+        {
+          "id": "beat-07-shot-001",
+          "phrase": "A poorly designed table may repeat the same course title, instructor office, or department name across hundreds of enrollment rows.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-002",
+          "phrase": "Repetition creates anomalies: one update can leave conflicting versions, deleting the last enrollment can erase course information, and inserting a course may require a fake enrollment.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-003",
+          "phrase": "Normalization analyzes which attributes depend on which keys and separates different kinds of facts into related tables.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-004",
+          "phrase": "Decomposition should preserve the ability to reconstruct necessary information through joins and enforce dependencies where possible.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-005",
+          "phrase": "Normalization is not a command to maximize table count.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-006",
+          "phrase": "It is a reasoning tool for storing each durable fact in a controlled place while keeping the model usable.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-08",
+      "shots": [
+        {
+          "id": "beat-08-shot-001",
+          "phrase": "An index is an auxiliary structure that helps the database locate rows without scanning every row.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-002",
+          "phrase": "A B-tree index often supports equality and range conditions on its leading keys.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-003",
+          "phrase": "Unique indexes can also enforce uniqueness.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-004",
+          "phrase": "Indexes are not free.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-005",
+          "phrase": "Inserts, updates, and deletes must maintain them, they consume storage, and an index that does not match query predicates may not be used.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-006",
+          "phrase": "The query planner estimates costs and chooses among scans and join strategies.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-007",
+          "phrase": "Index columns based on important workload patterns, then inspect actual plans and measurements.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-008",
+          "phrase": "Adding an index to every column can make writes slower without improving the queries that matter.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-09",
+      "shots": [
+        {
+          "id": "beat-09-shot-001",
+          "phrase": "Many business actions require several statements to succeed as one unit.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-002",
+          "phrase": "A transfer may subtract from one account and add to another.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-003",
+          "phrase": "If the process fails between those statements, the database must not preserve half a transfer.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-004",
+          "phrase": "A transaction begins a unit of work and ends with commit to make changes durable or rollback to discard them.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-005",
+          "phrase": "Concurrent transactions also need isolation rules so interleaving operations do not produce invalid results.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-006",
+          "phrase": "Keep transactions as short as practical, handle failures explicitly, and do not assume that application code alone can restore consistency after every crash.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-007",
+          "phrase": "Transaction boundaries should match the atomic action users and business rules recognize.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-10",
+      "shots": [
+        {
+          "id": "beat-10-shot-001",
+          "phrase": "A professional database design answers nine questions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-002",
+          "phrase": "What does each table and row represent?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-003",
+          "phrase": "Which constraints prevent invalid states?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-004",
+          "phrase": "Do join predicates match the intended cardinality?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-005",
+          "phrase": "Which workload justifies each index?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-006",
+          "phrase": "What do query plans and measurements show on realistic data?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-007",
+          "phrase": "Trustworthy data systems come from preserving meaning and integrity while giving applications efficient, testable ways to derive results and apply changes.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-008",
+          "phrase": "Then inspect the actual query plan for the most important read.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "relational-data-management-design-query-and-transactions",
+  "schemaVersion": 1
+}

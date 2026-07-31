@@ -1,585 +1,565 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:07.497
+00:00:00.050 --> 00:00:07.634
 NARRATOR: Begin by framing Course Scope and
-Faculty Pilot Model as a question about
+Faculty Pilot Framework as a question about
 
 2
-00:00:07.497 --> 00:00:10.156
+00:00:07.634 --> 00:00:10.343
 inputs, decisions, and observable results.
 
 3
-00:00:10.156 --> 00:00:15.156
+00:00:10.343 --> 00:00:15.296
 NARRATOR: This course examines current topics
 in Languages and Tools.
 
 4
-00:00:15.156 --> 00:00:21.178
-NARRATOR: Consider this worked case:
-Instructors design semester-specific content
+00:00:15.296 --> 00:00:21.296
+NARRATOR: Consider this worked case: A
+department head proposes a new undergraduate
 
 5
-00:00:21.178 --> 00:00:26.531
-based on emerging industry tools and academic
-research.
+00:00:21.296 --> 00:00:23.796
+offering focused on compiler design.
 
 6
-00:00:26.531 --> 00:00:35.188
+00:00:23.796 --> 00:00:32.368
 NARRATOR: On screen, display a flowchart
-showing 'Faculty Proposal' -> 'Seminar Design'
+showing faculty proposal -> pilot course ->
 
 7
-00:00:35.188 --> 00:00:43.124
--> 'Cluster Classification (Languages/Tools or
-Security)' -> 'Contact Hours: Lecture 3'.
+00:00:32.368 --> 00:00:36.984
+cluster classification (Languages and Tools or
+Security).
 
 8
-00:00:43.124 --> 00:00:49.409
+00:00:36.984 --> 00:00:43.128
 NARRATOR: List the givens before choosing a
 method, because an unstated assumption can
 
 9
-00:00:49.409 --> 00:00:50.859
+00:00:43.128 --> 00:00:44.546
 change the conclusion.
 
 10
-00:00:50.859 --> 00:00:56.593
+00:00:44.546 --> 00:00:50.312
 NARRATOR: This establishes the vocabulary and
 scope needed for the remaining sections.
 
 11
-00:00:56.593 --> 00:01:03.787
+00:00:50.312 --> 00:00:57.494
 NARRATOR: Name each dependency explicitly, and
 keep labels and representations consistent
 
 12
-00:01:03.787 --> 00:01:05.749
+00:00:57.494 --> 00:00:59.453
 throughout the analysis.
 
 13
-00:01:05.858 --> 00:01:12.146
+00:00:59.570 --> 00:01:05.514
 NARRATOR: Now define Cluster Classification
 System precisely enough that another learner
 
 14
-00:01:12.146 --> 00:01:14.433
+00:01:05.514 --> 00:01:07.676
 could test the definition.
 
 15
-00:01:14.433 --> 00:01:21.126
+00:01:07.676 --> 00:01:14.427
 NARRATOR: Specific course instances will be
 identified as belonging to the Languages and
 
 16
-00:01:21.126 --> 00:01:25.245
+00:01:14.427 --> 00:01:18.582
 Tools cluster, the Security cluster, or both
 clusters.
 
 17
-00:01:25.245 --> 00:01:32.542
-NARRATOR: Consider this worked case: A course
-focusing on compiler design and debugging
+00:01:18.582 --> 00:01:25.428
+NARRATOR: Consider this worked case: A
+proposed seminar on memory safety analysis is
 
 18
-00:01:32.542 --> 00:01:39.278
-tools falls under Languages and Tools, while
-one emphasizing vulnerability scanning targets
+00:01:25.428 --> 00:01:27.535
+classified under both clusters.
 
 19
-00:01:39.278 --> 00:01:39.839
-Security.
-
-20
-00:01:39.839 --> 00:01:47.550
+00:01:27.535 --> 00:01:35.073
 NARRATOR: On screen, show a Venn diagram with
 two overlapping circles labeled 'Languages and
 
+20
+00:01:35.073 --> 00:01:40.457
+Tools' and 'Security', with a course title in
+the intersection.
+
 21
-00:01:47.550 --> 00:01:55.261
-Tools' and 'Security', with a third region
-labeled 'Both Clusters' and a fourth labeled
-
-22
-00:01:55.261 --> 00:01:57.464
-'Languages and Tools Only'.
-
-23
-00:01:57.464 --> 00:02:04.003
+00:01:40.457 --> 00:01:47.055
 NARRATOR: Separate the formal definition from
 an implementation detail, then identify what
 
-24
-00:02:04.003 --> 00:02:06.182
+22
+00:01:47.055 --> 00:01:49.254
 evidence would distinguish them.
 
-25
-00:02:06.182 --> 00:02:12.807
+23
+00:01:49.254 --> 00:01:56.035
 NARRATOR: A precise definition makes later
 examples easier to evaluate and revise.
 
-26
-00:02:12.914 --> 00:02:18.584
+24
+00:01:56.162 --> 00:02:01.767
 NARRATOR: With the foundation in place,
-examine how Secure Software Development
+examine how Language Reference Structure
+
+25
+00:02:01.767 --> 00:02:04.315
+operates in a concrete sequence.
+
+26
+00:02:04.315 --> 00:02:11.882
+NARRATOR: The Python language reference
+specifies lexical analysis, data model
 
 27
-00:02:18.584 --> 00:02:22.192
-Framework Overview operates in a concrete
-sequence.
+00:02:11.882 --> 00:02:18.692
+behavior, execution, expressions, statements,
+functions, classes, exceptions, and module
 
 28
-00:02:22.192 --> 00:02:28.150
-NARRATOR: The Secure Software Development
-Framework groups practices into four practice
+00:02:18.692 --> 00:02:20.205
+import semantics.
 
 29
-00:02:28.150 --> 00:02:28.692
-groups.
+00:02:20.205 --> 00:02:26.989
+NARRATOR: Consider this worked case: A
+reference document outlines how Python handles
 
 30
-00:02:28.692 --> 00:02:35.392
-NARRATOR: Consider this worked case: Prepare
-the Organization establishes people,
+00:02:26.989 --> 00:02:29.815
+variable binding and exception propagation.
 
 31
-00:02:35.392 --> 00:02:42.092
-processes, and technology for secure
-development, while Respond to Vulnerabilities
+00:02:29.815 --> 00:02:36.421
+NARRATOR: On screen, list the specified
+reference components in a hierarchical outline
 
 32
-00:02:42.092 --> 00:02:45.442
-identifies and remediates discovered
-weaknesses.
+00:02:36.421 --> 00:02:36.971
+format.
 
 33
-00:02:45.442 --> 00:02:51.601
-NARRATOR: On screen, create a four-step
-horizontal pipeline labeled 'Prepare',
-
-34
-00:02:51.601 --> 00:02:58.991
-'Protect', 'Produce', 'Respond', with each
-step containing a brief icon representing its
-
-35
-00:02:58.991 --> 00:03:00.223
-core function.
-
-36
-00:03:00.223 --> 00:03:07.285
+00:02:36.971 --> 00:02:44.565
 NARRATOR: Follow every arrow in order and name
 the state before and after each transition.
 
-37
-00:03:07.285 --> 00:03:13.004
+34
+00:02:44.565 --> 00:02:50.111
 NARRATOR: The trace converts an abstract
 statement into an inspectable sequence.
 
-38
-00:03:13.106 --> 00:03:19.448
-NARRATOR: Next, compare the choices involved
-in Prepare the Organization Practice and make
-
-39
-00:03:19.448 --> 00:03:21.399
-the decision criteria explicit.
-
-40
-00:03:21.399 --> 00:03:28.962
-NARRATOR: Prepare the Organization establishes
-people, processes, and technology for secure
-
-41
-00:03:28.962 --> 00:03:29.649
-development.
-
-42
-00:03:29.649 --> 00:03:36.664
-NARRATOR: Consider this worked case: Teams
-define security policies, train developers on
-
-43
-00:03:36.664 --> 00:03:42.509
-secure coding standards, and select
-development environments before writing code.
-
-44
-00:03:42.509 --> 00:03:50.295
-NARRATOR: On screen, illustrate a checklist
-with three items: 'People Training', 'Process
-
-45
-00:03:50.295 --> 00:03:54.837
-Documentation', 'Technology Configuration',
-each with a checkmark.
-
-46
-00:03:54.837 --> 00:04:01.699
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
-
-47
-00:04:01.699 --> 00:04:03.415
-move the goalposts.
-
-48
-00:04:03.415 --> 00:04:10.227
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
-
-49
-00:04:10.227 --> 00:04:17.324
+35
+00:02:50.111 --> 00:02:57.121
 NARRATOR: Name each dependency explicitly, and
 keep labels and representations consistent
 
-50
-00:04:17.324 --> 00:04:19.259
+36
+00:02:57.121 --> 00:02:59.033
 throughout the analysis.
 
+37
+00:02:59.138 --> 00:03:05.697
+NARRATOR: Next, compare the choices involved
+in Object Model and Namespaces and make the
+
+38
+00:03:05.697 --> 00:03:07.103
+decision criteria explicit.
+
+39
+00:03:07.103 --> 00:03:11.650
+NARRATOR: Names are bound to objects within
+namespaces and scopes.
+
+40
+00:03:11.650 --> 00:03:17.963
+NARRATOR: Consider this worked case: A
+function call binds the parameter name to a
+
+41
+00:03:17.963 --> 00:03:21.119
+specific object instance in the local scope.
+
+42
+00:03:21.119 --> 00:03:28.849
+NARRATOR: On screen, illustrate a namespace
+tree with nested scopes and object references
+
+43
+00:03:28.849 --> 00:03:31.822
+pointing to shared memory addresses.
+
+44
+00:03:31.822 --> 00:03:38.634
+NARRATOR: Compare alternatives against the
+same constraints so the evaluation does not
+
+45
+00:03:38.634 --> 00:03:40.337
+move the goalposts.
+
+46
+00:03:40.337 --> 00:03:47.009
+NARRATOR: Using shared criteria turns a
+preference into a defensible technical choice.
+
+47
+00:03:47.009 --> 00:03:54.302
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+48
+00:03:54.302 --> 00:03:56.291
+throughout the analysis.
+
+49
+00:03:56.402 --> 00:04:03.625
+NARRATOR: Apply Control Flow and Exceptions to
+a worked situation instead of treating it as
+
+50
+00:04:03.625 --> 00:04:05.070
+an isolated definition.
+
 51
-00:04:19.370 --> 00:04:26.088
-NARRATOR: Apply Protect the Software Practice
-to a worked situation instead of treating it
+00:04:05.070 --> 00:04:11.132
+NARRATOR: Exceptions interrupt normal control
+flow until a matching handler processes them
 
 52
-00:04:26.088 --> 00:04:28.007
-as an isolated definition.
+00:04:11.132 --> 00:04:12.648
+or they propagate.
 
 53
-00:04:28.007 --> 00:04:34.825
-NARRATOR: Protect the Software prevents
-unauthorized access to code and development
+00:04:12.648 --> 00:04:18.359
+NARRATOR: Consider this worked case: A
+division by zero triggers an exception that
 
 54
-00:04:34.825 --> 00:04:35.445
-artifacts.
+00:04:18.359 --> 00:04:20.555
+jumps to a try-except block.
 
 55
-00:04:35.445 --> 00:04:41.453
-NARRATOR: Consider this worked case:
-Repositories use role-based access control,
+00:04:20.555 --> 00:04:26.697
+NARRATOR: On screen, draw a control flow graph
+with a normal path and an exception path
 
 56
-00:04:41.453 --> 00:04:47.460
-and source code repositories restrict commits
-to verified developers only.
+00:04:26.697 --> 00:04:28.617
+branching to a handler node.
 
 57
-00:04:47.460 --> 00:04:55.360
-NARRATOR: On screen, draw a locked vault icon
-with a key labeled 'Access Control' and a
-
-58
-00:04:55.360 --> 00:04:59.804
-shield labeled 'Artifact Protection'
-surrounding a code repository symbol.
-
-59
-00:04:59.804 --> 00:05:06.173
+00:04:28.617 --> 00:04:35.347
 NARRATOR: Work from the concrete inputs to the
 result, checking units, types, or invariants
 
-60
-00:05:06.173 --> 00:05:07.538
+58
+00:04:35.347 --> 00:04:36.789
 at each step.
 
-61
-00:05:07.538 --> 00:05:12.398
+59
+00:04:36.789 --> 00:04:41.633
 NARRATOR: The worked case shows both how to
 apply the method and how to check it.
 
-62
-00:05:12.506 --> 00:05:18.762
-NARRATOR: Examine the tradeoffs in Produce
-Well-Secured Software Practice, including what
+60
+00:04:41.738 --> 00:04:47.917
+NARRATOR: Examine the tradeoffs in LLVM
+Intermediate Representation, including what
 
-63
-00:05:18.762 --> 00:05:22.174
+61
+00:04:47.917 --> 00:04:51.625
 improves and what becomes more difficult.
 
+62
+00:04:51.625 --> 00:04:59.583
+NARRATOR: LLVM IR is a typed, SSA-based
+intermediate representation with explicit
+
+63
+00:04:59.583 --> 00:05:06.094
+instructions, basic blocks, functions, memory
+operations, and control flow.
+
 64
-00:05:22.174 --> 00:05:28.640
-NARRATOR: Produce Well-Secured Software
-addresses security requirements, design,
+00:05:06.094 --> 00:05:12.529
+NARRATOR: Consider this worked case: A
+compiler translates a high-level loop into a
 
 65
-00:05:28.640 --> 00:05:31.065
-verification, and release.
+00:05:12.529 --> 00:05:16.984
+sequence of LLVM IR basic blocks with phi
+nodes.
 
 66
-00:05:31.065 --> 00:05:36.594
-NARRATOR: Consider this worked case:
-Developers integrate security requirements
+00:05:16.984 --> 00:05:23.815
+NARRATOR: On screen, render a simplified LLVM
+IR module showing a function, basic blocks,
 
 67
-00:05:36.594 --> 00:05:43.966
-into design documents, run automated
-verification tests, and sign off on secure
+00:05:23.815 --> 00:05:27.719
+and a phi instruction at a merge point.
 
 68
-00:05:43.966 --> 00:05:44.580
-releases.
-
-69
-00:05:44.581 --> 00:05:50.972
-NARRATOR: On screen, show a document with
-sections labeled 'Security Requirements',
-
-70
-00:05:50.972 --> 00:05:57.362
-'Design Review', 'Verification Results', and
-'Release Approval' in a sequential layout.
-
-71
-00:05:57.362 --> 00:06:03.837
+00:05:27.719 --> 00:05:34.180
 NARRATOR: State the benefit, the cost, and the
 condition under which the tradeoff is
 
-72
-00:06:03.837 --> 00:06:04.299
+69
+00:05:34.180 --> 00:05:34.641
 acceptable.
 
-73
-00:06:04.299 --> 00:06:11.643
+70
+00:05:34.641 --> 00:05:42.187
 NARRATOR: Making the tradeoff visible prevents
 a local improvement from hiding a larger cost.
 
+71
+00:05:42.290 --> 00:05:49.272
+NARRATOR: Stress-test the reasoning around Phi
+Instructions and Control Flow with an edge
+
+72
+00:05:49.272 --> 00:05:53.568
+case and identify which assumption controls
+the outcome.
+
+73
+00:05:53.568 --> 00:05:59.818
+NARRATOR: Phi instructions select values
+according to the predecessor control-flow
+
 74
-00:06:11.762 --> 00:06:17.827
-NARRATOR: Stress-test the reasoning around
-Respond to Vulnerabilities Practice with an
+00:05:59.818 --> 00:06:00.443
+edge.
 
 75
-00:06:17.827 --> 00:06:22.790
-edge case and identify which assumption
-controls the outcome.
+00:06:00.443 --> 00:06:06.549
+NARRATOR: Consider this worked case: A phi
+node chooses between two loop iteration values
 
 76
-00:06:22.790 --> 00:06:29.270
-NARRATOR: Respond to Vulnerabilities
-identifies, analyzes, remediates, and learns
+00:06:06.549 --> 00:06:10.911
+based on whether the loop condition was true
+or false.
 
 77
-00:06:29.270 --> 00:06:31.430
-from discovered weaknesses.
+00:06:10.911 --> 00:06:18.390
+NARRATOR: On screen, show a control flow graph
+with two incoming edges to a block containing
 
 78
-00:06:31.430 --> 00:06:38.211
-NARRATOR: Consider this worked case: When a
-vulnerability scanner flags a flaw, the team
+00:06:18.390 --> 00:06:22.130
+a phi instruction that selects between two
+values.
 
 79
-00:06:38.211 --> 00:06:44.508
-patches the code, updates documentation, and
-trains staff on the new security protocol.
-
-80
-00:06:44.508 --> 00:06:52.055
-NARRATOR: On screen, create a cycle diagram
-with arrows connecting 'Identify', 'Analyze',
-
-81
-00:06:52.055 --> 00:06:57.086
-'Remediate', and 'Learn', forming a continuous
-improvement loop.
-
-82
-00:06:57.086 --> 00:07:03.057
+00:06:22.130 --> 00:06:28.527
 NARRATOR: Change one assumption at a time and
 observe which part of the reasoning no longer
 
-83
-00:07:03.057 --> 00:07:03.430
+80
+00:06:28.527 --> 00:06:28.927
 holds.
 
-84
-00:07:03.430 --> 00:07:09.460
+81
+00:06:28.927 --> 00:06:35.203
 NARRATOR: The edge case reveals the boundary
 of the claim without discarding the useful
 
-85
-00:07:09.460 --> 00:07:10.321
+82
+00:06:35.203 --> 00:06:36.099
 core idea.
 
-86
-00:07:10.442 --> 00:07:17.608
-NARRATOR: Use Cryptographic Standards and
-Confidentiality to diagnose a failure by
+83
+00:06:36.218 --> 00:06:42.524
+NARRATOR: Use Memory Operations and
+Verification to diagnose a failure by
 
-87
-00:07:17.608 --> 00:07:21.517
+84
+00:06:42.524 --> 00:06:45.964
 separating symptoms, causes, and corrective
 action.
 
+85
+00:06:45.964 --> 00:06:51.261
+NARRATOR: Load and store instructions make
+memory access explicit.
+
+86
+00:06:51.261 --> 00:06:58.731
+NARRATOR: Consider this worked case: The
+verifier rejects an IR module where a store
+
+87
+00:06:58.731 --> 00:07:01.933
+instruction targets an untyped memory
+location.
+
 88
-00:07:21.517 --> 00:07:27.610
-NARRATOR: Encryption supports confidentiality
-when keys and modes are used correctly.
+00:07:01.933 --> 00:07:07.261
+NARRATOR: On screen, display a
+before-and-after comparison of invalid IR
 
 89
-00:07:27.610 --> 00:07:34.851
-NARRATOR: Consider this worked case: AES-256
-encryption protects sensitive data in transit,
+00:07:07.261 --> 00:07:13.121
+(with a type mismatch) and valid IR (with
+explicit memory types).
 
 90
-00:07:34.851 --> 00:07:43.298
-provided symmetric keys are managed securely
-and the correct mode of operation is applied.
-
-91
-00:07:43.298 --> 00:07:50.567
-NARRATOR: On screen, display a padlock icon
-with a key labeled 'Key Management' and a gear
-
-92
-00:07:50.567 --> 00:07:55.110
-labeled 'Mode of Operation' above a document
-labeled 'Confidential Data'.
-
-93
-00:07:55.110 --> 00:08:00.810
+00:07:13.121 --> 00:07:18.917
 NARRATOR: Locate the first point where
 observed behavior diverges from expected
 
-94
-00:08:00.810 --> 00:08:04.438
+91
+00:07:18.917 --> 00:07:22.605
 behavior, then test the smallest plausible
 cause.
 
-95
-00:08:04.438 --> 00:08:10.964
+92
+00:07:22.605 --> 00:07:28.455
 NARRATOR: The diagnosis is strongest when
 another person can reproduce the observation
 
-96
-00:08:10.964 --> 00:08:12.595
+93
+00:07:28.455 --> 00:07:29.917
 and the test.
 
+94
+00:07:29.917 --> 00:07:37.234
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+95
+00:07:37.234 --> 00:07:39.230
+throughout the analysis.
+
+96
+00:07:39.338 --> 00:07:45.946
+NARRATOR: Connect Compiler Phase Separation to
+the earlier ideas and explain how the pieces
+
 97
-00:08:12.698 --> 00:08:19.080
-NARRATOR: Connect Integrity, Authenticity, and
-Key Management to the earlier ideas and
+00:07:45.946 --> 00:07:47.834
+work as one system.
 
 98
-00:08:19.080 --> 00:08:23.335
-explain how the pieces work as one system.
+00:07:47.834 --> 00:07:55.568
+NARRATOR: Compiler work separates parsing and
+semantic analysis from lowering, verification,
 
 99
-00:08:23.335 --> 00:08:30.246
-NARRATOR: Message authentication and digital
-signatures address integrity and authenticity
+00:07:55.568 --> 00:07:59.084
+optimization, and target-specific code
+generation.
 
 100
-00:08:30.246 --> 00:08:32.319
-in different ways.
+00:07:59.084 --> 00:08:06.107
+NARRATOR: Consider this worked case: A
+frontend parser generates ASTs, while a
 
 101
-00:08:32.319 --> 00:08:38.798
-NARRATOR: Consider this worked case: Digital
-signatures verify that a code commit
+00:08:06.107 --> 00:08:11.959
+backend optimizer restructures the IR for a
+specific CPU architecture.
 
 102
-00:08:38.798 --> 00:08:45.277
-originated from an authorized developer, and
-key rotation ensures old cryptographic keys
+00:08:11.959 --> 00:08:20.321
+NARRATOR: On screen, present a linear pipeline
+diagram with distinct stages: Parsing ->
 
 103
-00:08:45.277 --> 00:08:47.976
-are securely destroyed after use.
+00:08:20.321 --> 00:08:27.397
+Semantic Analysis -> Lowering -> Verification
+-> Optimization -> Code Generation.
 
 104
-00:08:47.976 --> 00:08:54.302
-NARRATOR: On screen, show a document with a
-signature stamp labeled 'Digital Signature'
-
-105
-00:08:54.302 --> 00:09:01.114
-and a calendar icon labeled 'Key Rotation'
-next to a trash can labeled 'Secure
-
-106
-00:09:01.114 --> 00:09:01.601
-Destruction'.
-
-107
-00:09:01.601 --> 00:09:10.488
+00:08:27.397 --> 00:08:36.184
 NARRATOR: Explain each connection explicitly
 and verify that information retains the same
 
-108
-00:09:10.488 --> 00:09:12.710
+105
+00:08:36.184 --> 00:08:38.381
 meaning across representations.
 
-109
-00:09:12.710 --> 00:09:19.457
+106
+00:08:38.381 --> 00:08:45.128
 NARRATOR: The synthesis matters only if every
 connection remains supported by the original
 
-110
-00:09:19.457 --> 00:09:19.976
+107
+00:08:45.128 --> 00:08:45.647
 evidence.
 
+108
+00:08:45.746 --> 00:08:51.274
+NARRATOR: Finish with Practical Analysis
+Checklist as a practical checklist that can
+
+109
+00:08:51.274 --> 00:08:53.117
+guide a new analysis.
+
+110
+00:08:53.117 --> 00:08:58.543
+NARRATOR: Specific course details (such as
+prerequisites, course seminar, format,
+
 111
-00:09:20.090 --> 00:09:26.074
-NARRATOR: Finish with Modes of Operation and
-Side Channels as a practical checklist that
+00:08:58.543 --> 00:09:05.055
+learning outcomes, assessment methods, and
+resource needs) will be determined by the
 
 112
-00:09:26.074 --> 00:09:28.211
-can guide a new analysis.
+00:09:05.055 --> 00:09:11.024
+faculty member(s) who propose a specific
+seminar course in this area.
 
 113
-00:09:28.211 --> 00:09:34.595
-NARRATOR: Modes of operation define how a
-primitive processes data larger than one
+00:09:11.024 --> 00:09:18.318
+NARRATOR: Consider this worked case: A review
+checklist verifies that the proposed course
 
 114
-00:09:34.595 --> 00:09:35.086
-block.
+00:09:18.318 --> 00:09:23.367
+includes defined learning outcomes, assessment
+methods, and resource needs.
 
 115
-00:09:35.086 --> 00:09:43.107
-NARRATOR: Consider this worked case: Using CBC
-mode with a fixed IV compromises security,
+00:09:23.367 --> 00:09:30.384
+NARRATOR: On screen, show a checklist template
+with checkboxes for prerequisites, format,
 
 116
-00:09:43.107 --> 00:09:51.128
-whereas GCM mode with a random nonce ensures
-proper data processing and protection against
+00:09:30.384 --> 00:09:34.477
+learning outcomes, assessment methods, and
+resource needs.
 
 117
-00:09:51.128 --> 00:09:52.274
-side-channel attacks.
-
-118
-00:09:52.274 --> 00:09:58.278
-NARRATOR: On screen, illustrate two data
-blocks being processed: one with a flawed
-
-119
-00:09:58.278 --> 00:10:05.206
-'Fixed IV' warning label, and another with a
-'Random Nonce' shield icon, connected by a
-
-120
-00:10:05.206 --> 00:10:07.977
-flow arrow labeled 'Mode of Operation'.
-
-121
-00:10:07.977 --> 00:10:15.429
+00:09:34.477 --> 00:09:41.941
 NARRATOR: For each checklist item, record the
 evidence, the remaining uncertainty, and the
 
-122
-00:10:15.429 --> 00:10:17.149
+118
+00:09:41.941 --> 00:09:43.664
 next verification step.
 
-123
-00:10:17.149 --> 00:10:23.001
+119
+00:09:43.664 --> 00:09:49.377
 NARRATOR: The result is a repeatable
 procedure, not a conclusion that depends on
 
-124
-00:10:23.001 --> 00:10:24.352
+120
+00:09:49.377 --> 00:09:50.695
 memory or intuition.

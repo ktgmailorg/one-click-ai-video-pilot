@@ -1,655 +1,616 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:05.960
-NARRATOR: A controller is useful when a system
-must reach and maintain a target despite
+00:00:00.050 --> 00:00:05.890
+A controller is useful when a system must
+reach and maintain a target despite
 
 2
-00:00:05.960 --> 00:00:07.142
+00:00:05.890 --> 00:00:07.142
 disturbances and uncertainty.
 
 3
 00:00:07.142 --> 00:00:11.977
-NARRATOR: Imagine a motor commanded to run at
-one thousand revolutions per minute.
+Imagine a motor commanded to run at one
+thousand revolutions per minute.
 
 4
 00:00:11.977 --> 00:00:17.244
-NARRATOR: An open-loop command may work under
-one load and miss the target under another.
+An open-loop command may work under one load
+and miss the target under another.
 
 5
 00:00:17.244 --> 00:00:19.897
-NARRATOR: Feedback changes the structure of
-the problem.
+Feedback changes the structure of the problem.
 
 6
-00:00:19.897 --> 00:00:24.846
-NARRATOR: A sensor measures actual speed, the
-controller compares it with the desired speed,
+00:00:19.897 --> 00:00:25.465
+A sensor measures actual speed, the controller
+compares it with the desired speed, and the
 
 7
-00:00:24.846 --> 00:00:27.321
-and the difference becomes an error signal.
+00:00:25.465 --> 00:00:27.321
+difference becomes an error signal.
 
 8
 00:00:27.321 --> 00:00:30.803
-NARRATOR: The controller uses that error to
-change the motor input.
+The controller uses that error to change the
+motor input.
 
 9
-00:00:30.803 --> 00:00:36.260
-NARRATOR: The new speed is measured again, so
-correction is continuous rather than a
+00:00:30.803 --> 00:00:37.040
+The new speed is measured again, so correction
+is continuous rather than a one-time guess.
 
 10
-00:00:36.260 --> 00:00:37.040
-one-time guess.
+00:00:37.040 --> 00:00:42.608
+This lesson develops the proportional,
+integral, and derivative terms, then connects
 
 11
-00:00:37.040 --> 00:00:41.882
-NARRATOR: This lesson develops the
-proportional, integral, and derivative terms,
+00:00:42.608 --> 00:00:48.176
+their behavior to tuning, noise, saturation,
+and a practical design workflow.
 
 12
-00:00:41.882 --> 00:00:48.176
-then connects their behavior to tuning, noise,
-saturation, and a practical design workflow.
+00:00:48.314 --> 00:00:50.725
+Start by naming every signal.
 
 13
-00:00:48.314 --> 00:00:50.725
-NARRATOR: Start by naming every signal.
+00:00:50.725 --> 00:00:53.621
+The reference r of t is the desired behavior.
 
 14
-00:00:50.725 --> 00:00:53.621
-NARRATOR: The reference r of t is the desired
-behavior.
+00:00:53.621 --> 00:00:57.230
+The measured output y of t is what the sensor
+reports.
 
 15
-00:00:53.621 --> 00:00:57.230
-NARRATOR: The measured output y of t is what
-the sensor reports.
+00:00:57.230 --> 00:01:02.332
+Their difference, e of t, equals reference
+minus measured output.
 
 16
-00:00:57.230 --> 00:01:02.332
-NARRATOR: Their difference, e of t, equals
-reference minus measured output.
+00:01:02.332 --> 00:01:05.623
+The controller converts error into a command u
+of t.
 
 17
-00:01:02.332 --> 00:01:05.623
-NARRATOR: The controller converts error into a
-command u of t.
+00:01:05.623 --> 00:01:11.408
+An actuator applies that command to the plant,
+which is the physical or simulated system
 
 18
-00:01:05.623 --> 00:01:11.086
-NARRATOR: An actuator applies that command to
-the plant, which is the physical or simulated
+00:01:11.408 --> 00:01:12.179
+being controlled.
 
 19
-00:01:11.086 --> 00:01:12.179
-system being controlled.
+00:01:12.179 --> 00:01:17.830
+Disturbances can enter the plant, while sensor
+noise can enter the measurement path.
 
 20
-00:01:12.179 --> 00:01:17.426
-NARRATOR: Disturbances can enter the plant,
-while sensor noise can enter the measurement
+00:01:17.830 --> 00:01:23.397
+This vocabulary prevents a common mistake: the
+controller does not directly control the
 
 21
-00:01:17.426 --> 00:01:17.830
-path.
+00:01:23.397 --> 00:01:23.825
+error.
 
 22
-00:01:17.830 --> 00:01:22.626
-NARRATOR: This vocabulary prevents a common
-mistake: the controller does not directly
+00:01:23.825 --> 00:01:29.226
+It changes the plant input, observes the
+resulting output, and thereby influences
 
 23
-00:01:22.626 --> 00:01:23.825
-control the error.
-
-24
-00:01:23.825 --> 00:01:29.286
-NARRATOR: It changes the plant input, observes
-the resulting output, and thereby influences
-
-25
-00:01:29.286 --> 00:01:30.126
+00:01:29.226 --> 00:01:30.126
 future error.
 
-26
+24
 00:01:30.126 --> 00:01:32.613
-NARRATOR: Sign conventions also matter.
+Sign conventions also matter.
+
+25
+00:01:32.613 --> 00:01:37.656
+With negative feedback, a positive error
+should normally produce a correction that
+
+26
+00:01:37.656 --> 00:01:40.177
+increases the output toward the reference.
 
 27
-00:01:32.613 --> 00:01:37.390
-NARRATOR: With negative feedback, a positive
-error should normally produce a correction
+00:01:40.322 --> 00:01:44.034
+The proportional term responds to the error
+that exists right now.
 
 28
-00:01:37.390 --> 00:01:40.177
-that increases the output toward the
-reference.
+00:01:44.034 --> 00:01:47.886
+Its contribution is K p times e of t.
 
 29
-00:01:40.322 --> 00:01:44.034
-NARRATOR: The proportional term responds to
-the error that exists right now.
+00:01:47.886 --> 00:01:51.522
+If the error doubles, the proportional
+correction doubles.
 
 30
-00:01:44.034 --> 00:01:47.886
-NARRATOR: Its contribution is K p times e of
-t.
+00:01:51.522 --> 00:01:58.434
+Increasing K p usually makes the response more
+forceful and can reduce rise time, but
 
 31
-00:01:47.886 --> 00:01:51.522
-NARRATOR: If the error doubles, the
-proportional correction doubles.
+00:01:58.434 --> 00:02:02.121
+excessive gain can produce overshoot,
+oscillation, or instability.
 
 32
-00:01:51.522 --> 00:01:57.705
-NARRATOR: Increasing K p usually makes the
-response more forceful and can reduce rise
+00:02:02.121 --> 00:02:06.445
+Proportional action alone may also leave a
+steady offset.
 
 33
-00:01:57.705 --> 00:02:02.121
-time, but excessive gain can produce
-overshoot, oscillation, or instability.
+00:02:06.445 --> 00:02:13.358
+To hold a load against friction, for example,
+the actuator may require a nonzero command.
 
 34
-00:02:02.121 --> 00:02:06.445
-NARRATOR: Proportional action alone may also
-leave a steady offset.
+00:02:13.358 --> 00:02:19.481
+If command is proportional to error, a
+persistent error may be needed to produce that
 
 35
-00:02:06.445 --> 00:02:12.926
-NARRATOR: To hold a load against friction, for
-example, the actuator may require a nonzero
-
-36
-00:02:12.926 --> 00:02:13.358
+00:02:19.481 --> 00:02:19.889
 command.
 
+36
+00:02:19.889 --> 00:02:25.195
+This is not a defect in the formula; it is a
+consequence of the loop and plant.
+
 37
-00:02:13.358 --> 00:02:19.121
-NARRATOR: If command is proportional to error,
-a persistent error may be needed to produce
+00:02:25.195 --> 00:02:30.661
+The important skill is to connect gain to
+observed response rather than memorizing that
 
 38
-00:02:19.121 --> 00:02:19.889
-that command.
+00:02:30.661 --> 00:02:32.223
+larger is always better.
 
 39
-00:02:19.889 --> 00:02:25.195
-NARRATOR: This is not a defect in the formula;
-it is a consequence of the loop and plant.
+00:02:32.354 --> 00:02:35.505
+The integral term responds to the history of
+error.
 
 40
-00:02:25.195 --> 00:02:30.004
-NARRATOR: The important skill is to connect
-gain to observed response rather than
+00:02:35.505 --> 00:02:40.569
+Its state grows while error has one sign and
+shrinks when the sign reverses.
 
 41
-00:02:30.004 --> 00:02:32.223
-memorizing that larger is always better.
+00:02:40.569 --> 00:02:46.230
+A small error that persists can therefore
+produce a large enough correction to eliminate
 
 42
-00:02:32.354 --> 00:02:35.505
-NARRATOR: The integral term responds to the
-history of error.
+00:02:46.230 --> 00:02:48.656
+the offset left by proportional control.
 
 43
-00:02:35.505 --> 00:02:40.569
-NARRATOR: Its state grows while error has one
-sign and shrinks when the sign reverses.
+00:02:48.656 --> 00:02:53.120
+This makes integral action powerful, but it
+also introduces memory.
 
 44
-00:02:40.569 --> 00:02:45.960
-NARRATOR: A small error that persists can
-therefore produce a large enough correction to
+00:02:53.120 --> 00:02:59.334
+If the actuator saturates at its maximum while
+the error remains large, the integral state
 
 45
-00:02:45.960 --> 00:02:48.656
-eliminate the offset left by proportional
-control.
+00:02:59.334 --> 00:03:03.477
+can continue accumulating even though the
+plant cannot respond further.
 
 46
-00:02:48.656 --> 00:02:53.120
-NARRATOR: This makes integral action powerful,
-but it also introduces memory.
+00:03:03.477 --> 00:03:09.185
+When the system finally approaches the target,
+that stored integral action may drive it far
 
 47
-00:02:53.120 --> 00:02:58.697
-NARRATOR: If the actuator saturates at its
-maximum while the error remains large, the
+00:03:09.185 --> 00:03:10.326
+past the reference.
 
 48
-00:02:58.697 --> 00:03:03.477
-integral state can continue accumulating even
-though the plant cannot respond further.
+00:03:10.326 --> 00:03:12.393
+This is called integral windup.
 
 49
-00:03:03.477 --> 00:03:08.163
-NARRATOR: When the system finally approaches
-the target, that stored integral action may
+00:03:12.393 --> 00:03:17.970
+Practical controllers limit, pause, or
+back-calculate the integral state during
 
 50
-00:03:08.163 --> 00:03:10.326
-drive it far past the reference.
-
-51
-00:03:10.326 --> 00:03:12.393
-NARRATOR: This is called integral windup.
-
-52
-00:03:12.393 --> 00:03:18.017
-NARRATOR: Practical controllers limit, pause,
-or back-calculate the integral state during
-
-53
-00:03:18.017 --> 00:03:18.528
+00:03:17.970 --> 00:03:18.528
 saturation.
 
+51
+00:03:18.528 --> 00:03:24.687
+Integral action solves one problem while
+creating a responsibility to manage its stored
+
+52
+00:03:24.687 --> 00:03:25.161
+state.
+
+53
+00:03:25.298 --> 00:03:28.959
+The derivative term reacts to how quickly the
+error is changing.
+
 54
-00:03:18.528 --> 00:03:24.277
-NARRATOR: Integral action solves one problem
-while creating a responsibility to manage its
+00:03:28.959 --> 00:03:34.974
+If the output is racing toward the target, the
+error may still be positive but decreasing
 
 55
-00:03:24.277 --> 00:03:25.161
-stored state.
+00:03:34.974 --> 00:03:35.350
+rapidly.
 
 56
-00:03:25.298 --> 00:03:28.959
-NARRATOR: The derivative term reacts to how
-quickly the error is changing.
+00:03:35.350 --> 00:03:41.153
+A derivative contribution can oppose that
+motion before the target is crossed, adding
 
 57
-00:03:28.959 --> 00:03:34.640
-NARRATOR: If the output is racing toward the
-target, the error may still be positive but
+00:03:41.153 --> 00:03:42.939
+damping and reducing overshoot.
 
 58
-00:03:34.640 --> 00:03:35.350
-decreasing rapidly.
+00:03:42.939 --> 00:03:48.912
+The difficulty is that differentiation
+amplifies rapid measurement changes, including
 
 59
-00:03:35.350 --> 00:03:40.831
-NARRATOR: A derivative contribution can oppose
-that motion before the target is crossed,
+00:03:48.912 --> 00:03:50.107
+sensor noise.
 
 60
-00:03:40.831 --> 00:03:42.939
-adding damping and reducing overshoot.
+00:03:50.107 --> 00:03:56.535
+Real implementations therefore use a filtered
+derivative rather than an ideal mathematical
 
 61
-00:03:42.939 --> 00:03:47.901
-NARRATOR: The difficulty is that
-differentiation amplifies rapid measurement
+00:03:56.535 --> 00:03:57.071
+derivative.
 
 62
-00:03:47.901 --> 00:03:50.107
-changes, including sensor noise.
+00:03:57.071 --> 00:04:01.904
+Many controllers also differentiate the
+measurement instead of the error, which avoids
 
 63
-00:03:50.107 --> 00:03:56.076
-NARRATOR: Real implementations therefore use a
-filtered derivative rather than an ideal
+00:04:01.904 --> 00:04:05.528
+a large derivative kick when the reference
+changes suddenly.
 
 64
-00:03:56.076 --> 00:03:57.071
-mathematical derivative.
+00:04:05.528 --> 00:04:08.232
+Derivative action is not mandatory.
 
 65
-00:03:57.071 --> 00:04:01.684
-NARRATOR: Many controllers also differentiate
-the measurement instead of the error, which
-
-66
-00:04:01.684 --> 00:04:05.528
-avoids a large derivative kick when the
-reference changes suddenly.
-
-67
-00:04:05.528 --> 00:04:08.232
-NARRATOR: Derivative action is not mandatory.
-
-68
-00:04:08.232 --> 00:04:13.845
-NARRATOR: A well-tuned PI controller is often
+00:04:08.232 --> 00:04:13.686
+A well-tuned PI controller is often
 sufficient, especially when sensors are noisy
 
-69
-00:04:13.845 --> 00:04:16.867
+66
+00:04:13.686 --> 00:04:16.867
 or the plant already has adequate damping.
 
-70
+67
 00:04:16.994 --> 00:04:21.944
-NARRATOR: A PID controller adds the three
-contributions into one command.
+A PID controller adds the three contributions
+into one command.
+
+68
+00:04:21.944 --> 00:04:27.477
+Proportional action handles present error,
+integral action handles accumulated error, and
+
+69
+00:04:27.477 --> 00:04:29.992
+derivative action responds to trend.
+
+70
+00:04:29.992 --> 00:04:34.724
+These descriptions are useful, but the terms
+interact through the same plant.
 
 71
-00:04:21.944 --> 00:04:26.678
-NARRATOR: Proportional action handles present
-error, integral action handles accumulated
+00:04:34.724 --> 00:04:40.324
+Increasing K p changes the response that the
+integral and derivative terms observe.
 
 72
-00:04:26.678 --> 00:04:29.992
-error, and derivative action responds to
-trend.
+00:04:40.324 --> 00:04:45.260
+Increasing K i may remove offset while
+reducing stability margin.
 
 73
-00:04:29.992 --> 00:04:34.724
-NARRATOR: These descriptions are useful, but
-the terms interact through the same plant.
-
-74
-00:04:34.724 --> 00:04:39.924
-NARRATOR: Increasing K p changes the response
-that the integral and derivative terms
-
-75
-00:04:39.924 --> 00:04:40.324
-observe.
-
-76
-00:04:40.324 --> 00:04:45.260
-NARRATOR: Increasing K i may remove offset
-while reducing stability margin.
-
-77
 00:04:45.260 --> 00:04:50.655
-NARRATOR: Increasing K d may add damping while
+Increasing K d may add damping while
 increasing noise sensitivity.
 
+74
+00:04:50.655 --> 00:04:57.184
+The final command is also bounded by actuator
+voltage, force, valve opening, or another
+
+75
+00:04:57.184 --> 00:04:58.117
+physical limit.
+
+76
+00:04:58.117 --> 00:05:04.231
+A controller equation without limits, sample
+time, sensor characteristics, and plant
+
+77
+00:05:04.231 --> 00:05:05.898
+dynamics is incomplete.
+
 78
-00:04:50.655 --> 00:04:56.800
-NARRATOR: The final command is also bounded by
-actuator voltage, force, valve opening, or
+00:05:05.898 --> 00:05:12.694
+Good tuning treats the loop as one system
+rather than adjusting three independent knobs
 
 79
-00:04:56.800 --> 00:04:58.117
-another physical limit.
+00:05:12.694 --> 00:05:13.665
+in isolation.
 
 80
-00:04:58.117 --> 00:05:03.304
-NARRATOR: A controller equation without
-limits, sample time, sensor characteristics,
+00:05:13.826 --> 00:05:19.770
+A step response turns vague words like fast or
+stable into measurable criteria.
 
 81
-00:05:03.304 --> 00:05:05.898
-and plant dynamics is incomplete.
+00:05:19.770 --> 00:05:24.018
+Rise time describes how quickly output moves
+toward the new target.
 
 82
-00:05:05.898 --> 00:05:12.294
-NARRATOR: Good tuning treats the loop as one
-system rather than adjusting three independent
+00:05:24.018 --> 00:05:27.717
+Peak overshoot measures how far it exceeds the
+target.
 
 83
-00:05:12.294 --> 00:05:13.665
-knobs in isolation.
+00:05:27.717 --> 00:05:32.819
+Settling time measures how long it takes to
+remain inside an acceptable band.
 
 84
-00:05:13.826 --> 00:05:19.770
-NARRATOR: A step response turns vague words
-like fast or stable into measurable criteria.
+00:05:32.819 --> 00:05:37.487
+Steady-state error is the remaining difference
+after transients decay.
 
 85
-00:05:19.770 --> 00:05:24.018
-NARRATOR: Rise time describes how quickly
-output moves toward the new target.
+00:05:37.487 --> 00:05:39.426
+These measures can conflict.
 
 86
-00:05:24.018 --> 00:05:27.717
-NARRATOR: Peak overshoot measures how far it
-exceeds the target.
+00:05:39.426 --> 00:05:44.209
+A gain change that shortens rise time may
+increase overshoot.
 
 87
-00:05:27.717 --> 00:05:32.819
-NARRATOR: Settling time measures how long it
-takes to remain inside an acceptable band.
+00:05:44.209 --> 00:05:48.839
+Integral action that removes final error may
+lengthen settling.
 
 88
-00:05:32.819 --> 00:05:37.487
-NARRATOR: Steady-state error is the remaining
-difference after transients decay.
+00:05:48.839 --> 00:05:55.268
+Stability is the first requirement: a fast
+response that grows without bound is not
 
 89
-00:05:37.487 --> 00:05:39.426
-NARRATOR: These measures can conflict.
+00:05:55.268 --> 00:05:55.727
+useful.
 
 90
-00:05:39.426 --> 00:05:44.209
-NARRATOR: A gain change that shortens rise
-time may increase overshoot.
+00:05:55.727 --> 00:06:00.676
+Before tuning, define which measures matter
+for the application and what constraints
 
 91
-00:05:44.209 --> 00:05:48.839
-NARRATOR: Integral action that removes final
-error may lengthen settling.
+00:06:00.676 --> 00:06:01.913
+cannot be violated.
 
 92
-00:05:48.839 --> 00:05:54.866
-NARRATOR: Stability is the first requirement:
-a fast response that grows without bound is
+00:06:01.913 --> 00:06:08.307
+A camera gimbal, temperature chamber, and
+chemical flow controller should not share one
 
 93
-00:05:54.866 --> 00:05:55.727
-not useful.
+00:06:08.307 --> 00:06:09.783
+generic tuning objective.
 
 94
-00:05:55.727 --> 00:06:00.367
-NARRATOR: Before tuning, define which measures
-matter for the application and what
+00:06:09.938 --> 00:06:14.594
+A disciplined tuning process begins with
+safety and requirements.
 
 95
-00:06:00.367 --> 00:06:01.913
-constraints cannot be violated.
+00:06:14.594 --> 00:06:19.849
+Confirm sensor polarity, actuator limits, and
+a safe test range.
 
 96
-00:06:01.913 --> 00:06:07.005
-NARRATOR: A camera gimbal, temperature
-chamber, and chemical flow controller should
+00:06:19.849 --> 00:06:23.127
+Start with integral and derivative action
+disabled.
 
 97
-00:06:07.005 --> 00:06:09.783
-not share one generic tuning objective.
+00:06:23.127 --> 00:06:29.041
+Increase proportional gain until the system
+responds clearly without unacceptable
 
 98
-00:06:09.938 --> 00:06:14.594
-NARRATOR: A disciplined tuning process begins
-with safety and requirements.
-
-99
-00:06:14.594 --> 00:06:19.849
-NARRATOR: Confirm sensor polarity, actuator
-limits, and a safe test range.
-
-100
-00:06:19.849 --> 00:06:23.127
-NARRATOR: Start with integral and derivative
-action disabled.
-
-101
-00:06:23.127 --> 00:06:29.090
-NARRATOR: Increase proportional gain until the
-system responds clearly without unacceptable
-
-102
-00:06:29.090 --> 00:06:29.632
+00:06:29.041 --> 00:06:29.632
 oscillation.
 
+99
+00:06:29.632 --> 00:06:35.519
+Add integral action gradually to remove
+persistent error, while watching overshoot and
+
+100
+00:06:35.519 --> 00:06:36.010
+windup.
+
+101
+00:06:36.010 --> 00:06:41.675
+Add derivative action only when extra damping
+is needed and the measurement is clean enough
+
+102
+00:06:41.675 --> 00:06:42.808
+to support it.
+
 103
-00:06:29.632 --> 00:06:34.643
-NARRATOR: Add integral action gradually to
-remove persistent error, while watching
+00:06:42.808 --> 00:06:49.518
+Then test reference changes, disturbances,
+load variation, saturation, and noise.
 
 104
-00:06:34.643 --> 00:06:36.010
-overshoot and windup.
+00:06:49.518 --> 00:06:55.760
+This sequence is not a universal proof of
+optimality, but it makes cause and effect
 
 105
-00:06:36.010 --> 00:06:41.019
-NARRATOR: Add derivative action only when
-extra damping is needed and the measurement is
+00:06:55.760 --> 00:06:56.176
+observable.
 
 106
-00:06:41.019 --> 00:06:42.808
-clean enough to support it.
+00:06:56.176 --> 00:07:02.635
+More formal model-based methods can calculate
+gains, yet every real implementation still
 
 107
-00:06:42.808 --> 00:06:48.908
-NARRATOR: Then test reference changes,
-disturbances, load variation, saturation, and
+00:07:02.635 --> 00:07:06.941
+requires validation against unmodeled behavior
+and physical limits.
 
 108
-00:06:48.908 --> 00:06:49.518
-noise.
+00:07:07.082 --> 00:07:13.241
+Most PID controllers run in software, so the
+continuous equation becomes a sampled
 
 109
-00:06:49.518 --> 00:06:55.393
-NARRATOR: This sequence is not a universal
-proof of optimality, but it makes cause and
+00:07:13.241 --> 00:07:13.715
+algorithm.
 
 110
-00:06:55.393 --> 00:06:56.176
-effect observable.
+00:07:13.715 --> 00:07:19.998
+The sample period must be short enough to
+observe relevant plant dynamics but not so
 
 111
-00:06:56.176 --> 00:07:02.327
-NARRATOR: More formal model-based methods can
-calculate gains, yet every real implementation
+00:07:19.998 --> 00:07:21.674
+short that noise dominates.
 
 112
-00:07:02.327 --> 00:07:06.941
-still requires validation against unmodeled
-behavior and physical limits.
+00:07:21.674 --> 00:07:24.417
+The integral becomes a running numerical sum.
 
 113
-00:07:07.082 --> 00:07:12.831
-NARRATOR: Most PID controllers run in
-software, so the continuous equation becomes a
+00:07:24.417 --> 00:07:28.996
+The derivative becomes a filtered difference
+between samples.
 
 114
-00:07:12.831 --> 00:07:13.715
-sampled algorithm.
+00:07:28.996 --> 00:07:34.907
+Output clamping enforces actuator limits, and
+anti-windup keeps the integral state
 
 115
-00:07:13.715 --> 00:07:19.286
-NARRATOR: The sample period must be short
-enough to observe relevant plant dynamics but
+00:07:34.907 --> 00:07:37.057
+consistent with those limits.
 
 116
-00:07:19.286 --> 00:07:21.674
-not so short that noise dominates.
+00:07:37.057 --> 00:07:41.713
+Systems that switch between manual and
+automatic control also need bumpless transfer
 
 117
-00:07:21.674 --> 00:07:24.417
-NARRATOR: The integral becomes a running
-numerical sum.
+00:07:41.713 --> 00:07:46.368
+so the stored controller state does not create
+a sudden command jump.
 
 118
-00:07:24.417 --> 00:07:28.996
-NARRATOR: The derivative becomes a filtered
-difference between samples.
+00:07:46.368 --> 00:07:54.303
+Record the sample time and exact algorithm
+with the gains; K p, K i, and K d have meaning
 
 119
-00:07:28.996 --> 00:07:34.538
-NARRATOR: Output clamping enforces actuator
-limits, and anti-windup keeps the integral
+00:07:54.303 --> 00:07:57.644
+only within a defined implementation and unit
+convention.
 
 120
-00:07:34.538 --> 00:07:37.057
-state consistent with those limits.
+00:07:57.770 --> 00:08:01.686
+A reliable PID analysis answers six questions.
 
 121
-00:07:37.057 --> 00:07:41.526
-NARRATOR: Systems that switch between manual
-and automatic control also need bumpless
+00:08:01.686 --> 00:08:07.477
+What are the reference, measured output,
+error, command, plant, and disturbances?
 
 122
-00:07:41.526 --> 00:07:46.368
-transfer so the stored controller state does
-not create a sudden command jump.
+00:08:07.477 --> 00:08:13.702
+What behavior does proportional, integral, and
+derivative action contribute in this loop?
 
 123
-00:07:46.368 --> 00:07:53.617
-NARRATOR: Record the sample time and exact
-algorithm with the gains; K p, K i, and K d
+00:08:13.702 --> 00:08:16.686
+Which performance measures define success?
 
 124
-00:07:53.617 --> 00:07:57.644
-have meaning only within a defined
-implementation and unit convention.
+00:08:16.686 --> 00:08:19.378
+Where can the actuator or sensor saturate?
 
 125
-00:07:57.770 --> 00:08:01.686
-NARRATOR: A reliable PID analysis answers six
-questions.
-
-126
-00:08:01.686 --> 00:08:06.994
-NARRATOR: What are the reference, measured
-output, error, command, plant, and
-
-127
-00:08:06.994 --> 00:08:07.477
-disturbances?
-
-128
-00:08:07.477 --> 00:08:12.744
-NARRATOR: What behavior does proportional,
-integral, and derivative action contribute in
-
-129
-00:08:12.744 --> 00:08:13.702
-this loop?
-
-130
-00:08:13.702 --> 00:08:16.686
-NARRATOR: Which performance measures define
-success?
-
-131
-00:08:16.686 --> 00:08:19.378
-NARRATOR: Where can the actuator or sensor
-saturate?
-
-132
 00:08:19.378 --> 00:08:24.250
-NARRATOR: How are sample time, filtering, and
+How are sample time, filtering, and
 anti-windup implemented?
 
-133
+126
 00:08:24.250 --> 00:08:28.663
-NARRATOR: And has the design been tested
-across the real operating range?
+And has the design been tested across the real
+operating range?
 
-134
+127
 00:08:28.663 --> 00:08:31.776
-NARRATOR: The goal is not to use all three
-letters.
+The goal is not to use all three letters.
 
-135
-00:08:31.776 --> 00:08:37.155
-NARRATOR: The goal is a stable, understandable
+128
+00:08:31.776 --> 00:08:37.086
+The goal is a stable, understandable
 controller that meets requirements with
 
-136
-00:08:37.155 --> 00:08:38.051
+129
+00:08:37.086 --> 00:08:38.051
 appropriate complexity.
 
-137
+130
 00:08:38.051 --> 00:08:43.166
-NARRATOR: Sometimes that is P, often PI, and
-sometimes full PID.
+Sometimes that is P, often PI, and sometimes
+full PID.
 
-138
-00:08:43.166 --> 00:08:47.922
-NARRATOR: If you can explain the loop and
-predict the consequence of each change before
+131
+00:08:43.166 --> 00:08:48.426
+If you can explain the loop and predict the
+consequence of each change before turning a
 
-139
-00:08:47.922 --> 00:08:52.043
-turning a gain, you are tuning as an engineer
-rather than searching blindly.
+132
+00:08:48.426 --> 00:08:52.043
+gain, you are tuning as an engineer rather
+than searching blindly.

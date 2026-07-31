@@ -1,581 +1,556 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:07.587
+00:00:00.050 --> 00:00:07.545
 NARRATOR: Begin by framing Course Purpose and
-Flexibility as a question about inputs,
+Faculty Role as a question about inputs,
 
 2
-00:00:07.587 --> 00:00:09.906
+00:00:07.545 --> 00:00:09.687
 decisions, and observable results.
 
 3
-00:00:09.906 --> 00:00:13.906
-NARRATOR: This course examines current topics
-in Theory.
+00:00:09.687 --> 00:00:16.843
+NARRATOR: This is intended to allow faculty to
+pilot potential new undergraduate offerings.
 
 4
-00:00:13.906 --> 00:00:20.877
-NARRATOR: Consider this worked case: A faculty
-member might propose a seminar on modern
+00:00:16.843 --> 00:00:23.536
+NARRATOR: Consider this worked case: A
+professor proposes a new undergraduate course
 
 5
-00:00:20.877 --> 00:00:25.359
-cryptographic protocols to test student
-interest before full adoption.
+00:00:23.536 --> 00:00:29.671
+in theoretical computer science to test its
+viability before full adoption.
 
 6
-00:00:25.359 --> 00:00:32.827
+00:00:29.671 --> 00:00:36.618
 NARRATOR: On screen, display a slide with the
-course title and a flexible workflow diagram
+course title and a brief description of the
 
 7
-00:00:32.827 --> 00:00:36.312
-showing faculty proposal leading to course
-pilot.
+00:00:36.618 --> 00:00:37.921
+faculty proposal process.
 
 8
-00:00:36.312 --> 00:00:42.381
+00:00:37.921 --> 00:00:44.116
 NARRATOR: List the givens before choosing a
 method, because an unstated assumption can
 
 9
-00:00:42.381 --> 00:00:43.781
+00:00:44.116 --> 00:00:45.546
 change the conclusion.
 
 10
-00:00:43.781 --> 00:00:49.578
+00:00:45.546 --> 00:00:51.453
 NARRATOR: This establishes the vocabulary and
 scope needed for the remaining sections.
 
 11
-00:00:49.578 --> 00:00:56.649
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+00:00:51.554 --> 00:00:58.037
+NARRATOR: Now define Course Classification
+Clusters precisely enough that another learner
 
 12
-00:00:56.649 --> 00:00:58.578
-throughout the analysis.
-
-13
-00:00:58.682 --> 00:01:04.450
-NARRATOR: Now define Faculty-Determined
-Details precisely enough that another learner
-
-14
-00:01:04.450 --> 00:01:06.757
+00:00:58.037 --> 00:01:00.394
 could test the definition.
 
-15
-00:01:06.757 --> 00:01:12.107
-NARRATOR: Specific course details (such as
-prerequisites, course seminar, format,
-
-16
-00:01:12.107 --> 00:01:18.528
-learning outcomes, assessment methods, and
-resource needs) will be determined by the
-
-17
-00:01:18.528 --> 00:01:24.413
-faculty member(s) who propose a specific
-seminar course in this area.
-
-18
-00:01:24.413 --> 00:01:30.484
-NARRATOR: Consider this worked case: An
-instructor might choose a seminar format with
-
-19
-00:01:30.484 --> 00:01:37.022
-three lecture hours per term and assign a
-research paper as the primary assessment.
-
-20
-00:01:37.022 --> 00:01:44.026
-NARRATOR: On screen, show a checklist graphic
-listing prerequisites, format, learning
-
-21
-00:01:44.026 --> 00:01:49.756
-outcomes, assessment methods, and resource
-needs as customizable fields.
-
-22
-00:01:49.756 --> 00:01:56.553
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
-
-23
-00:01:56.553 --> 00:01:58.819
-evidence would distinguish them.
-
-24
-00:01:58.819 --> 00:02:05.553
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
-
-25
-00:02:05.666 --> 00:02:12.551
-NARRATOR: With the foundation in place,
-examine how Cluster Classification operates in
-
-26
-00:02:12.551 --> 00:02:14.272
-a concrete sequence.
-
-27
-00:02:14.272 --> 00:02:20.975
+13
+00:01:00.394 --> 00:01:07.129
 NARRATOR: Specific course instances will be
 identified as belonging to the Theory cluster,
 
-28
-00:02:20.975 --> 00:02:24.069
+14
+00:01:07.129 --> 00:01:10.238
 the Security cluster, or both clusters.
 
+15
+00:01:10.238 --> 00:01:16.600
+NARRATOR: Consider this worked case: A
+proposed course on cryptographic protocols is
+
+16
+00:01:16.600 --> 00:01:23.492
+classified under the Security cluster, while a
+course on computational complexity falls under
+
+17
+00:01:23.492 --> 00:01:25.082
+the Theory cluster.
+
+18
+00:01:25.082 --> 00:01:31.928
+NARRATOR: On screen, show a Venn diagram with
+two overlapping circles labeled 'Theory
+
+19
+00:01:31.928 --> 00:01:38.773
+Cluster' and 'Security Cluster', with a third
+circle labeled 'Both Clusters' in the
+
+20
+00:01:38.773 --> 00:01:39.300
+intersection.
+
+21
+00:01:39.300 --> 00:01:46.214
+NARRATOR: Separate the formal definition from
+an implementation detail, then identify what
+
+22
+00:01:46.214 --> 00:01:48.519
+evidence would distinguish them.
+
+23
+00:01:48.519 --> 00:01:55.160
+NARRATOR: A precise definition makes later
+examples easier to evaluate and revise.
+
+24
+00:01:55.274 --> 00:02:01.136
+NARRATOR: With the foundation in place,
+examine how Faculty-Determined Details
+
+25
+00:02:01.136 --> 00:02:04.067
+operates in a concrete sequence.
+
+26
+00:02:04.067 --> 00:02:09.256
+NARRATOR: Specific course details (such as
+prerequisites, course seminar, format,
+
+27
+00:02:09.256 --> 00:02:15.484
+learning outcomes, assessment methods, and
+resource needs) will be determined by the
+
+28
+00:02:15.484 --> 00:02:21.192
+faculty member(s) who propose a specific
+seminar course in this area.
+
 29
-00:02:24.069 --> 00:02:31.225
-NARRATOR: Consider this worked case: A seminar
-on secure key management would be classified
+00:02:21.192 --> 00:02:27.492
+NARRATOR: Consider this worked case: The
+proposing faculty member sets the prerequisite
 
 30
-00:02:31.225 --> 00:02:34.803
-under both the Theory and Security clusters.
+00:02:27.492 --> 00:02:34.317
+to include discrete mathematics and defines
+the format as a three-hour weekly lecture.
 
 31
-00:02:34.803 --> 00:02:41.742
-NARRATOR: On screen, present a Venn diagram
-with two overlapping circles labeled 'Theory
+00:02:34.317 --> 00:02:41.443
+NARRATOR: On screen, list the specific course
+details (prerequisites, seminar, format,
 
 32
-00:02:41.742 --> 00:02:48.147
-Cluster' and 'Security Cluster', with a course
-example placed in the intersection.
+00:02:41.443 --> 00:02:48.568
+learning outcomes, assessment methods,
+resource needs) with checkboxes for faculty to
 
 33
-00:02:48.147 --> 00:02:55.553
+00:02:48.568 --> 00:02:49.864
+fill in.
+
+34
+00:02:49.864 --> 00:02:57.020
 NARRATOR: Follow every arrow in order and name
 the state before and after each transition.
 
-34
-00:02:55.553 --> 00:03:01.147
+35
+00:02:57.020 --> 00:03:02.692
 NARRATOR: The trace converts an abstract
 statement into an inspectable sequence.
 
-35
-00:03:01.250 --> 00:03:07.462
-NARRATOR: Next, compare the choices involved
-in Contact Hours and make the decision
-
 36
-00:03:07.462 --> 00:03:08.418
-criteria explicit.
+00:03:02.810 --> 00:03:09.383
+NARRATOR: Next, compare the choices involved
+in Stable Process Overview and make the
 
 37
-00:03:08.418 --> 00:03:12.840
-NARRATOR: Security requirements should be
-tracked throughout development.
+00:03:09.383 --> 00:03:10.900
+decision criteria explicit.
 
 38
-00:03:12.840 --> 00:03:19.640
-NARRATOR: Consider this worked case: Students
-attend three weekly sessions, each focusing on
+00:03:10.900 --> 00:03:14.744
+NARRATOR: This course examines current topics
+in Theory.
 
 39
-00:03:19.640 --> 00:03:24.871
-a different theoretical or security topic
-proposed by the faculty.
+00:03:14.744 --> 00:03:21.335
+NARRATOR: Consider this worked case: The
+department follows a standardized workflow:
 
 40
-00:03:24.871 --> 00:03:31.867
-NARRATOR: On screen, display a calendar icon
-with three highlighted blocks labeled 'Lecture
+00:03:21.335 --> 00:03:28.525
+faculty submit a proposal, assign cluster(s),
+define details, and pilot the course.
 
 41
-00:03:31.867 --> 00:03:38.324
-1', 'Lecture 2', and 'Lecture 3' to indicate
-the required contact hours.
+00:03:28.525 --> 00:03:36.030
+NARRATOR: On screen, create a linear flowchart
+with four steps: Proposal Submission, Cluster
 
 42
-00:03:38.324 --> 00:03:44.899
+00:03:36.030 --> 00:03:39.494
+Assignment, Detail Planning, and Course Pilot.
+
+43
+00:03:39.494 --> 00:03:46.019
 NARRATOR: Compare alternatives against the
 same constraints so the evaluation does not
 
-43
-00:03:44.899 --> 00:03:46.543
+44
+00:03:46.019 --> 00:03:47.650
 move the goalposts.
 
-44
-00:03:46.543 --> 00:03:53.465
+45
+00:03:47.650 --> 00:03:54.541
 NARRATOR: Using shared criteria turns a
 preference into a defensible technical choice.
 
-45
-00:03:53.465 --> 00:04:00.622
+46
+00:03:54.541 --> 00:04:01.600
 NARRATOR: Name each dependency explicitly, and
 keep labels and representations consistent
 
-46
-00:04:00.622 --> 00:04:02.574
+47
+00:04:01.600 --> 00:04:03.525
 throughout the analysis.
 
-47
-00:04:02.690 --> 00:04:08.208
-NARRATOR: Apply Cryptographic Standards
-Overview to a worked situation instead of
-
 48
-00:04:08.208 --> 00:04:11.218
-treating it as an isolated definition.
+00:04:03.650 --> 00:04:10.600
+NARRATOR: Apply Standards for Course Design to
+a worked situation instead of treating it as
 
 49
-00:04:11.218 --> 00:04:17.155
-NARRATOR: Cryptographic standards define
-approved algorithms and parameters.
+00:04:10.600 --> 00:04:11.990
+an isolated definition.
 
 50
-00:04:17.155 --> 00:04:25.940
-NARRATOR: Consider this worked case: The NIST
-FIPS 197 standard specifies AES encryption
+00:04:11.990 --> 00:04:18.334
+NARRATOR: Hash tables map keys to locations
+and require a collision strategy.
 
 51
-00:04:25.940 --> 00:04:30.671
-parameters, ensuring consistent algorithm
-usage across systems.
+00:04:18.334 --> 00:04:24.769
+NARRATOR: Consider this worked case: The
+learning outcomes specify that students will
 
 52
-00:04:30.671 --> 00:04:39.172
-NARRATOR: On screen, show a document icon with
-a checklist of approved algorithms and
+00:04:24.769 --> 00:04:30.668
+analyze algorithmic correctness and resource
+bounds, assessed through a final theoretical
 
 53
-00:04:39.172 --> 00:04:44.030
-parameters, highlighting 'AES' and 'FIPS 197'
-as examples.
+00:04:30.668 --> 00:04:31.740
+proof assignment.
 
 54
-00:04:44.030 --> 00:04:50.438
+00:04:31.740 --> 00:04:38.940
+NARRATOR: On screen, display a table with
+columns for 'Learning Outcome' and 'Assessment
+
+55
+00:04:38.940 --> 00:04:41.709
+Method', filled with example entries.
+
+56
+00:04:41.709 --> 00:04:48.413
 NARRATOR: Work from the concrete inputs to the
 result, checking units, types, or invariants
 
-55
-00:04:50.438 --> 00:04:51.811
+57
+00:04:48.413 --> 00:04:49.849
 at each step.
 
-56
-00:04:51.811 --> 00:04:56.749
+58
+00:04:49.849 --> 00:04:54.928
 NARRATOR: The worked case shows both how to
 apply the method and how to check it.
 
-57
-00:04:56.749 --> 00:05:03.894
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-58
-00:05:03.894 --> 00:05:05.843
-throughout the analysis.
-
 59
-00:05:05.954 --> 00:05:12.375
-NARRATOR: Examine the tradeoffs in Encryption
-and Confidentiality, including what improves
+00:04:55.058 --> 00:05:01.188
+NARRATOR: Examine the tradeoffs in Planning
+Methods for Resources, including what improves
 
 60
-00:05:12.375 --> 00:05:15.294
+00:05:01.188 --> 00:05:03.742
 and what becomes more difficult.
 
 61
-00:05:15.294 --> 00:05:21.497
-NARRATOR: Encryption supports confidentiality
-when keys and modes are used correctly.
+00:05:03.742 --> 00:05:10.492
+NARRATOR: Asymptotic notation describes how
+resource use grows with input size.
 
 62
-00:05:21.497 --> 00:05:30.769
-NARRATOR: Consider this worked case: Using AES
-in CBC mode with a properly generated 256-bit
+00:05:10.492 --> 00:05:16.934
+NARRATOR: Consider this worked case: The
+faculty member lists required resources,
 
 63
-00:05:30.769 --> 00:05:36.950
-key ensures that intercepted ciphertext
-remains unreadable without the key.
+00:05:16.934 --> 00:05:23.375
+including a whiteboard, projection system, and
+specific textbooks on theoretical computer
 
 64
-00:05:36.950 --> 00:05:43.922
-NARRATOR: On screen, illustrate a lock icon
-with a key turning, showing plaintext
+00:05:23.375 --> 00:05:23.961
+science.
 
 65
-00:05:43.922 --> 00:05:50.357
-transforming into ciphertext, with a note
-emphasizing correct key and mode usage.
+00:05:23.961 --> 00:05:30.595
+NARRATOR: On screen, show a checklist graphic
+with items like 'Whiteboard', 'Projection
 
 66
-00:05:50.357 --> 00:05:56.627
+00:05:30.595 --> 00:05:35.570
+System', 'Textbooks', and 'Online Resources'
+for faculty to mark.
+
+67
+00:05:35.570 --> 00:05:42.059
 NARRATOR: State the benefit, the cost, and the
 condition under which the tradeoff is
 
-67
-00:05:56.627 --> 00:05:57.075
+68
+00:05:42.059 --> 00:05:42.523
 acceptable.
 
-68
-00:05:57.075 --> 00:06:04.497
+69
+00:05:42.523 --> 00:05:49.664
 NARRATOR: Making the tradeoff visible prevents
 a local improvement from hiding a larger cost.
 
-69
-00:06:04.610 --> 00:06:10.641
-NARRATOR: Stress-test the reasoning around
-Integrity and Authenticity Mechanisms with an
-
 70
-00:06:10.641 --> 00:06:15.575
-edge case and identify which assumption
-controls the outcome.
+00:05:49.778 --> 00:05:56.638
+NARRATOR: Stress-test the reasoning around
+Evaluation Criteria for Proposals with an edge
 
 71
-00:06:15.575 --> 00:06:22.137
-NARRATOR: Message authentication and digital
-signatures address integrity and authenticity
+00:05:56.638 --> 00:06:01.212
+case and identify which assumption controls
+the outcome.
 
 72
-00:06:22.137 --> 00:06:24.106
-in different ways.
+00:06:01.212 --> 00:06:05.618
+NARRATOR: Recurrences describe the cost of
+recursive algorithms.
 
 73
-00:06:24.106 --> 00:06:30.877
-NARRATOR: Consider this worked case: A digital
-signature verifies the sender's identity and
+00:06:05.618 --> 00:06:11.857
+NARRATOR: Consider this worked case: The
+proposal is evaluated based on whether it
 
 74
-00:06:30.877 --> 00:06:37.648
-ensures the message hasn't been altered, while
-a message authentication code only checks
+00:06:11.857 --> 00:06:18.096
+meets Theory cluster standards and whether the
+proposed resources are sufficient for a
 
 75
-00:06:37.648 --> 00:06:38.169
-integrity.
+00:06:18.096 --> 00:06:19.056
+successful pilot.
 
 76
-00:06:38.169 --> 00:06:45.671
-NARRATOR: On screen, display two side-by-side
-icons: one showing a digital signature with a
+00:06:19.056 --> 00:06:25.985
+NARRATOR: On screen, create a rubric with
+criteria: 'Cluster Alignment', 'Feasibility',
 
 77
-00:06:45.671 --> 00:06:52.102
-verified checkmark, and another showing a
-message authentication tag with an integrity
+00:06:25.985 --> 00:06:31.024
+'Learning Outcomes', and 'Resource
+Availability', with scoring scales.
 
 78
-00:06:52.102 --> 00:06:52.638
-shield.
-
-79
-00:06:52.638 --> 00:06:58.873
+00:06:31.024 --> 00:06:37.201
 NARRATOR: Change one assumption at a time and
 observe which part of the reasoning no longer
 
-80
-00:06:58.873 --> 00:06:59.263
+79
+00:06:37.201 --> 00:06:37.587
 holds.
 
-81
-00:06:59.263 --> 00:07:05.784
+80
+00:06:37.587 --> 00:06:43.917
 NARRATOR: The edge case reveals the boundary
 of the claim without discarding the useful
 
-82
-00:07:05.784 --> 00:07:06.716
+81
+00:06:43.917 --> 00:06:44.821
 core idea.
 
+82
+00:06:44.930 --> 00:06:51.803
+NARRATOR: Use Representative Examples of
+Theory Courses to diagnose a failure by
+
 83
-00:07:06.842 --> 00:07:14.426
-NARRATOR: Use Random Number Generation and Key
-Management to diagnose a failure by separating
+00:06:51.803 --> 00:06:55.239
+separating symptoms, causes, and corrective
+action.
 
 84
-00:07:14.426 --> 00:07:17.135
-symptoms, causes, and corrective action.
+00:06:55.239 --> 00:07:03.091
+NARRATOR: OpenDSA presents data structures and
+algorithms through executable visualizations
 
 85
-00:07:17.135 --> 00:07:23.963
-NARRATOR: Random number generation supports
-keys, nonces, and other security parameters.
+00:07:03.091 --> 00:07:04.661
+and exercises.
 
 86
-00:07:23.963 --> 00:07:31.391
-NARRATOR: Consider this worked case: A secure
-system uses a cryptographically secure random
+00:07:04.661 --> 00:07:12.188
+NARRATOR: Consider this worked case: A sample
+Theory cluster course covers loop invariants,
 
 87
-00:07:31.391 --> 00:07:38.819
-number generator to create unique nonces for
-each encryption session, and rotates keys
+00:07:12.188 --> 00:07:15.083
+divide-and-conquer algorithms, and graph
+reachability.
 
 88
-00:07:38.819 --> 00:07:41.104
-quarterly to limit exposure.
+00:07:15.083 --> 00:07:22.909
+NARRATOR: On screen, list three example course
+titles with brief descriptions: 'Introduction
 
 89
-00:07:41.104 --> 00:07:49.611
-NARRATOR: On screen, show a flowchart with
-arrows connecting 'Random Number Generation'
+00:07:22.909 --> 00:07:30.083
+to Algorithm Analysis', 'Data Structures and
+Algorithms', 'Formal Languages and Automata'.
 
 90
-00:07:49.611 --> 00:07:56.700
-to 'Key Management', listing each sub-step
-(generation, distribution, storage, use,
-
-91
-00:07:56.700 --> 00:08:00.245
-rotation, revocation, destruction) as nodes.
-
-92
-00:08:00.245 --> 00:08:05.840
+00:07:30.083 --> 00:07:35.659
 NARRATOR: Locate the first point where
 observed behavior diverges from expected
 
-93
-00:08:05.840 --> 00:08:09.401
+91
+00:07:35.659 --> 00:07:39.208
 behavior, then test the smallest plausible
 cause.
 
-94
-00:08:09.401 --> 00:08:15.301
+92
+00:07:39.208 --> 00:07:45.182
 NARRATOR: The diagnosis is strongest when
 another person can reproduce the observation
 
-95
-00:08:15.301 --> 00:08:16.776
+93
+00:07:45.182 --> 00:07:46.676
 and the test.
 
-96
-00:08:16.898 --> 00:08:22.882
-NARRATOR: Connect Secure Software Development
-Framework to the earlier ideas and explain how
+94
+00:07:46.778 --> 00:07:52.196
+NARRATOR: Connect Application to Course
+Planning to the earlier ideas and explain how
 
-97
-00:08:22.882 --> 00:08:25.644
+95
+00:07:52.196 --> 00:07:54.696
 the pieces work as one system.
 
+96
+00:07:54.696 --> 00:08:00.806
+NARRATOR: Dynamic programming records
+solutions to overlapping subproblems.
+
+97
+00:08:00.806 --> 00:08:07.419
+NARRATOR: Consider this worked case: The
+faculty member reviews the proposal against
+
 98
-00:08:25.644 --> 00:08:31.660
-NARRATOR: The Secure Software Development
-Framework groups practices into four practice
+00:08:07.419 --> 00:08:14.032
+the evaluation criteria, makes necessary
+adjustments, and submits the final plan for
 
 99
-00:08:31.660 --> 00:08:32.207
-groups.
+00:08:14.032 --> 00:08:15.134
+departmental approval.
 
 100
-00:08:32.207 --> 00:08:39.268
-NARRATOR: Consider this worked case: Prepare
-the Organization establishes secure
+00:08:15.134 --> 00:08:21.805
+NARRATOR: On screen, show a before-and-after
+comparison of a course proposal document,
 
 101
-00:08:39.268 --> 00:08:45.623
-development processes, while Respond to
-Vulnerabilities identifies and remediates
+00:08:21.805 --> 00:08:25.696
+highlighting changes made based on evaluation
+criteria.
 
 102
-00:08:45.623 --> 00:08:47.035
-discovered weaknesses.
-
-103
-00:08:47.035 --> 00:08:56.324
-NARRATOR: On screen, display a four-quadrant
-grid, each quadrant labeled with one practice
-
-104
-00:08:56.324 --> 00:09:03.470
-group name, with brief icons representing
-people/processes (Prepare), code protection
-
-105
-00:09:03.470 --> 00:09:08.472
-(Protect), release/verification (Produce), and
-vulnerability response (Respond).
-
-106
-00:09:08.472 --> 00:09:17.372
+00:08:25.696 --> 00:08:34.684
 NARRATOR: Explain each connection explicitly
 and verify that information retains the same
 
-107
-00:09:17.372 --> 00:09:19.597
+103
+00:08:34.684 --> 00:08:36.931
 meaning across representations.
 
-108
-00:09:19.597 --> 00:09:26.547
+104
+00:08:36.931 --> 00:08:43.663
 NARRATOR: The synthesis matters only if every
 connection remains supported by the original
 
-109
-00:09:26.547 --> 00:09:27.082
+105
+00:08:43.663 --> 00:08:44.181
 evidence.
 
+106
+00:08:44.282 --> 00:08:50.045
+NARRATOR: Finish with Practical Analysis
+Checklist as a practical checklist that can
+
+107
+00:08:50.045 --> 00:08:51.966
+guide a new analysis.
+
+108
+00:08:51.966 --> 00:08:58.394
+NARRATOR: Algorithm analysis connects a
+precise problem specification to a correctness
+
+109
+00:08:58.394 --> 00:09:00.732
+argument and resource bounds.
+
 110
-00:09:27.194 --> 00:09:32.530
-NARRATOR: Finish with Verification and
-Security Reasoning as a practical checklist
+00:09:00.732 --> 00:09:07.879
+NARRATOR: Consider this worked case: The
+checklist includes items like 'Proposal
 
 111
-00:09:32.530 --> 00:09:35.440
-that can guide a new analysis.
+00:09:07.879 --> 00:09:13.076
+submitted', 'Cluster assigned', 'Details
+defined', 'Resources secured', 'Evaluation
 
 112
-00:09:35.440 --> 00:09:43.366
-NARRATOR: Security reasoning identifies
-assets, trust boundaries, threats, controls,
+00:09:13.076 --> 00:09:16.325
+criteria met', and 'Pilot approved'.
 
 113
-00:09:43.366 --> 00:09:47.769
-evidence, residual risk, and responsibilities.
+00:09:16.325 --> 00:09:22.274
+NARRATOR: On screen, display a printable
+checklist graphic with checkboxes for each
 
 114
-00:09:47.769 --> 00:09:54.139
-NARRATOR: Consider this worked case:
-Verification audits the codebase to confirm
+00:09:22.274 --> 00:09:27.231
+item, ready for faculty to use during the
+planning phase.
 
 115
-00:09:54.139 --> 00:10:00.510
-that encryption standards are applied
-correctly, while security reasoning maps out
-
-116
-00:10:00.510 --> 00:10:05.143
-system assets and potential threats before
-development begins.
-
-117
-00:10:05.143 --> 00:10:13.017
-NARRATOR: On screen, show a magnifying glass
-icon over a codebase, with a checklist of
-
-118
-00:10:13.017 --> 00:10:19.840
-verification steps, and a separate diagram
-showing a network diagram with labeled assets,
-
-119
-00:10:19.840 --> 00:10:21.940
-trust boundaries, and threats.
-
-120
-00:10:21.940 --> 00:10:29.266
+00:09:27.231 --> 00:09:34.848
 NARRATOR: For each checklist item, record the
 evidence, the remaining uncertainty, and the
 
-121
-00:10:29.266 --> 00:10:30.956
+116
+00:09:34.848 --> 00:09:36.606
 next verification step.
 
-122
-00:10:30.956 --> 00:10:36.860
+117
+00:09:36.606 --> 00:09:42.573
 NARRATOR: The result is a repeatable
 procedure, not a conclusion that depends on
 
-123
-00:10:36.860 --> 00:10:38.222
+118
+00:09:42.573 --> 00:09:43.950
 memory or intuition.

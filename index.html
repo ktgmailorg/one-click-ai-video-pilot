@@ -61,59 +61,96 @@
           <p class="hero-note">Built for supervised RIT pilots—not campus-wide production deployment.</p>
         </div>
 
-        <div class="hero-system" role="group" aria-label="Workflow overview">
+        <div class="hero-system" role="group" aria-label="Professor workflow overview">
           <div class="system-topline">
-            <span>Recorded workflow</span><span class="system-status">Pilot ready</span>
+            <span>Professor view</span><span class="system-status">Pilot ready</span>
           </div>
           <div class="system-route">
-            <div class="route-item"><span>Input</span><strong>Reviewed source pack</strong></div>
+            <div class="route-item"><span>1 · Add</span><strong>Your script, slides, paper, or reviewed notes</strong></div>
             <span class="route-arrow" aria-hidden="true">→</span>
-            <div class="route-item"><span>Plan</span><strong>EpisodeSpec v2</strong></div>
+            <div class="route-item"><span>2 · Create</span><strong>Narrated video with subject-matched visuals</strong></div>
             <span class="route-arrow" aria-hidden="true">→</span>
-            <div class="route-item"><span>Release</span><strong>Accessible package</strong></div>
+            <div class="route-item"><span>3 · Review</span><strong>Correct the draft and approve the package</strong></div>
           </div>
           <div class="approval-stack">
-            <div><span>01</span><strong>Script + evidence</strong><b>Required</b></div>
-            <div><span>02</span><strong>Visual treatment</strong><b>Required</b></div>
-            <div><span>03</span><strong>Final release</strong><b>Required</b></div>
+            <div><span>✓</span><strong>Animations and editable teaching diagrams</strong><b>Included</b></div>
+            <div><span>✓</span><strong>Narration, captions, and transcript</strong><b>Included</b></div>
+            <div><span>✓</span><strong>Sources, bibliography, and quality report</strong><b>Included</b></div>
           </div>
-          <div class="system-hash"><span>Replay signature</span><code>sha256: 9d6a…4c21</code></div>
+          <div class="system-hash"><span>Finished package</span><code>MP4 + captions + transcript + sources</code></div>
         </div>
       </section>
 
       <section class="signal-strip" aria-label="Key project facts">
-        <div><strong>8</strong><span>model capabilities</span></div>
-        <div><strong>3</strong><span>human approval gates</span></div>
-        <div><strong>0</strong><span>network calls in frozen replay</span></div>
-        <div><strong>1</strong><span>reviewable release package</span></div>
+        <div><strong>1</strong><span>script or reviewed source pack</span></div>
+        <div><strong>1</strong><span>finished, downloadable MP4</span></div>
+        <div><strong>CC</strong><span>captions and transcript included</span></div>
+        <div><strong>3</strong><span>plain-language review decisions</span></div>
+      </section>
+
+      <section class="section outcome-section" id="outcome">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="section-kicker">The final product</p>
+            <h2>A complete teaching video—not a technical task list.</h2>
+          </div>
+          <p>
+            A professor supplies the subject knowledge. The local companion
+            turns it into a first draft with animated, subject-matched visuals,
+            then presents the academic decisions for review in the browser.
+            No command line or production scheduling is required for normal use.
+          </p>
+        </div>
+        <div class="outcome-grid">
+          <article>
+            <span>You provide</span>
+            <h3>The lesson you want students to understand</h3>
+            <p>A corrected script, or one objective plus instructor-reviewed notes, slides, a paper, or a document.</p>
+          </article>
+          <article class="outcome-created">
+            <span>The system creates</span>
+            <h3>A narrated, visual, captioned draft</h3>
+            <p>Animated diagrams, relevant subject imagery, narration, synchronized captions, transcript, thumbnail, citations, and QA.</p>
+          </article>
+          <article>
+            <span>You decide</span>
+            <h3>What is accurate enough to use</h3>
+            <p>Review the exact script and sources, visual treatment and accessibility, then the finished video package.</p>
+          </article>
+        </div>
+        <div class="outcome-note">
+          <strong>Designed beyond STEM:</strong>
+          <span>marketing, human resources, hospitality operations, MIS, policy, arts, health, and technical courses use the same three-step experience.</span>
+          <a href="#examples">See examples across disciplines <span aria-hidden="true">↓</span></a>
+        </div>
       </section>
 
       <section class="section example-section" id="example">
         <div class="example-copy">
-          <p class="section-kicker">Competency example</p>
-          <h2>Follow one RISC‑V instruction through a CPU.</h2>
+          <p class="section-kicker">Visual outcome example</p>
+          <h2>See oxygen move through lungs—not a slide that merely says “lungs.”</h2>
           <p>
-            This 2 minute 49 second source-grounded lesson traces
-            <code>add x5, x6, x7</code> through a five-stage teaching processor.
-            It separates the RISC‑V ISA contract from one possible
-            implementation, then explains throughput and data hazards.
+            This short, source-grounded lesson uses an animated anatomical model
+            of the trachea, left and right lungs, bronchi, alveoli, capillaries,
+            red blood cells, and oxygen diffusion. The visual changes with the
+            narration so the diagram teaches the idea instead of decorating it.
           </p>
           <dl class="example-facts">
-            <div><dt>Sources</dt><dd>RISC‑V specification + UC Berkeley CS61C</dd></div>
+            <div><dt>Source</dt><dd>Instructor-reviewable OpenStax physiology excerpt</dd></div>
             <div><dt>Review package</dt><dd>Captions, transcript, bibliography, claims, QA</dd></div>
-            <div><dt>Reproducibility</dt><dd>Frozen replay · SHA‑256 verified</dd></div>
+            <div><dt>Visual QA</dt><dd>Subject match + audio sync + accessibility checks</dd></div>
           </dl>
         </div>
         <div class="video-shell competency-video">
-          <div class="video-label"><span>Course example · 2:49</span><span>Captions included</span></div>
-          <video controls preload="metadata" poster="./riscv-add-demo-poster.png">
-            <source src="./riscv-add-demo.mp4" type="video/mp4">
-            <track default kind="captions" src="./riscv-add-demo.vtt" srclang="en" label="English">
+          <div class="video-label"><span>Health sciences course draft</span><span>Captions included</span></div>
+          <video controls preload="metadata" poster="./examples/health-oxygen-transport/poster.png">
+            <source src="./media/health-oxygen-transport-0519a0c540de2e55.mp4" type="video/mp4">
+            <track default kind="captions" src="./examples/health-oxygen-transport/captions.vtt" srclang="en" label="English">
             Your browser does not support embedded video.
           </video>
           <div class="video-footer">
-            <a href="./riscv-add-demo-transcript.txt">Read the transcript</a>
-            <a href="./riscv-add-demo-bibliography.md">View the bibliography</a>
+            <a href="./examples/health-oxygen-transport/transcript.txt">Read the transcript</a>
+            <a href="./examples/health-oxygen-transport/sources.json">Review the source pack</a>
           </div>
         </div>
       </section>
@@ -169,7 +206,7 @@
             </div>
             <h3>From a RISC‑V Instruction to Pipeline Execution</h3>
             <video controls playsinline preload="metadata" poster="./examples/full-riscv-pipeline/poster.png">
-              <source src="./examples/full-riscv-pipeline/video.mp4" type="video/mp4">
+              <source src="./media/full-riscv-pipeline-f71741906890d951.mp4" type="video/mp4">
               <track default kind="captions" src="./examples/full-riscv-pipeline/captions.vtt" srclang="en" label="English">
               Your browser does not support embedded video.
             </video>
@@ -186,7 +223,7 @@
             </div>
             <h3>Derivative Foundations: Secant Slope to Applications</h3>
             <video controls playsinline preload="metadata" poster="./examples/full-derivative-foundations/poster.png">
-              <source src="./examples/full-derivative-foundations/video.mp4" type="video/mp4">
+              <source src="./media/full-derivative-foundations-99877dedd3b6b5fd.mp4" type="video/mp4">
               <track default kind="captions" src="./examples/full-derivative-foundations/captions.vtt" srclang="en" label="English">
               Your browser does not support embedded video.
             </video>
@@ -207,7 +244,7 @@
           </div>
           <div>
             <p>
-              These fourteen source-grounded demonstrations show the same workflow
+              These fifteen source-grounded demonstrations show the same workflow
               applied across major academic areas. Each includes synchronized
               captions, a transcript, source metadata, and automated quality
               checks. They are intentionally brief for browsing; the production
@@ -228,7 +265,7 @@
             </div>
             <h3>Why Resonance Matters in Mechanical Systems</h3>
             <video controls playsinline preload="metadata" poster="./examples/engineering-resonance/poster.png">
-              <source src="./examples/engineering-resonance/video.mp4" type="video/mp4">
+              <source src="./media/engineering-resonance-f6820f8075547593.mp4" type="video/mp4">
               <track default kind="captions" src="./examples/engineering-resonance/captions.vtt" srclang="en" label="English">
               Your browser does not support embedded video.
             </video>
@@ -245,7 +282,7 @@
             </div>
             <h3>How a PID Controller Corrects an Error</h3>
             <video controls playsinline preload="metadata" poster="./examples/engineering-technology-pid/poster.png">
-              <source src="./examples/engineering-technology-pid/video.mp4" type="video/mp4">
+              <source src="./media/engineering-technology-pid-a7fd5c252fdaecee.mp4" type="video/mp4">
               <track default kind="captions" src="./examples/engineering-technology-pid/captions.vtt" srclang="en" label="English">
               Your browser does not support embedded video.
             </video>
@@ -262,7 +299,7 @@
             </div>
             <h3>How Spectroscopy Identifies Matter</h3>
             <video controls playsinline preload="metadata" poster="./examples/science-spectroscopy/poster.png">
-              <source src="./examples/science-spectroscopy/video.mp4" type="video/mp4">
+              <source src="./media/science-spectroscopy-8aa92cae9d3cf2b3.mp4" type="video/mp4">
               <track default kind="captions" src="./examples/science-spectroscopy/captions.vtt" srclang="en" label="English">
               Your browser does not support embedded video.
             </video>
@@ -279,7 +316,7 @@
             </div>
             <h3>How Visual Hierarchy Guides Attention</h3>
             <video controls playsinline preload="metadata" poster="./examples/art-design-hierarchy/poster.png">
-              <source src="./examples/art-design-hierarchy/video.mp4" type="video/mp4">
+              <source src="./media/art-design-hierarchy-f2ce6696ed02efa7.mp4" type="video/mp4">
               <track default kind="captions" src="./examples/art-design-hierarchy/captions.vtt" srclang="en" label="English">
               Your browser does not support embedded video.
             </video>
@@ -296,7 +333,7 @@
             </div>
             <h3>How Contribution Margin Supports Decisions</h3>
             <video controls playsinline preload="metadata" poster="./examples/business-contribution-margin/poster.png">
-              <source src="./examples/business-contribution-margin/video.mp4" type="video/mp4">
+              <source src="./media/business-contribution-margin-60918ecf8a0e9109.mp4" type="video/mp4">
               <track default kind="captions" src="./examples/business-contribution-margin/captions.vtt" srclang="en" label="English">
               Your browser does not support embedded video.
             </video>
@@ -309,11 +346,28 @@
 
           <article class="showcase-card">
             <div class="showcase-card-heading">
+              <span>Management Information Systems</span><b>Course draft</b>
+            </div>
+            <h3>How an Information System Turns an Order into a Decision</h3>
+            <video controls playsinline preload="metadata" poster="./examples/mis-business-process-decisions/poster.png">
+              <source src="./media/mis-business-process-decisions-7e062d15ea7d0d08.mp4" type="video/mp4">
+              <track default kind="captions" src="./examples/mis-business-process-decisions/captions.vtt" srclang="en" label="English">
+              Your browser does not support embedded video.
+            </video>
+            <div class="showcase-card-meta"><span>1:20 · Captions included</span><span>Automated QA passed</span></div>
+            <div class="showcase-card-links">
+              <a href="./examples/mis-business-process-decisions/transcript.txt">Transcript</a>
+              <a href="./examples/mis-business-process-decisions/sources.json">Sources</a>
+            </div>
+          </article>
+
+          <article class="showcase-card">
+            <div class="showcase-card-heading">
               <span>Liberal Arts</span><b>Course draft</b>
             </div>
             <h3>How to Evaluate a Historical Primary Source</h3>
             <video controls playsinline preload="metadata" poster="./examples/liberal-arts-primary-sources/poster.png">
-              <source src="./examples/liberal-arts-primary-sources/video.mp4" type="video/mp4">
+              <source src="./media/liberal-arts-primary-sources-f79bc9ad5c8fc89c.mp4" type="video/mp4">
               <track default kind="captions" src="./examples/liberal-arts-primary-sources/captions.vtt" srclang="en" label="English">
               Your browser does not support embedded video.
             </video>
@@ -330,7 +384,7 @@
             </div>
             <h3>How Oxygen Moves from Lungs to Tissue</h3>
             <video controls playsinline preload="metadata" poster="./examples/health-oxygen-transport/poster.png">
-              <source src="./examples/health-oxygen-transport/video.mp4" type="video/mp4">
+              <source src="./media/health-oxygen-transport-0519a0c540de2e55.mp4" type="video/mp4">
               <track default kind="captions" src="./examples/health-oxygen-transport/captions.vtt" srclang="en" label="English">
               Your browser does not support embedded video.
             </video>
@@ -347,7 +401,7 @@
             </div>
             <h3>How Captions Improve an Educational Video</h3>
             <video controls playsinline preload="metadata" poster="./examples/ntid-accessible-captions/poster.png">
-              <source src="./examples/ntid-accessible-captions/video.mp4" type="video/mp4">
+              <source src="./media/ntid-accessible-captions-18c33262818a1088.mp4" type="video/mp4">
               <track default kind="captions" src="./examples/ntid-accessible-captions/captions.vtt" srclang="en" label="English">
               Your browser does not support embedded video.
             </video>
@@ -364,7 +418,7 @@
             </div>
             <h3>How Life-Cycle Assessment Compares Products</h3>
             <video controls playsinline preload="metadata" poster="./examples/sustainability-lca/poster.png">
-              <source src="./examples/sustainability-lca/video.mp4" type="video/mp4">
+              <source src="./media/sustainability-lca-1b8f9114d545be95.mp4" type="video/mp4">
               <track default kind="captions" src="./examples/sustainability-lca/captions.vtt" srclang="en" label="English">
               Your browser does not support embedded video.
             </video>
@@ -381,7 +435,7 @@
             </div>
             <h3>How to Shape an Interdisciplinary Study Question</h3>
             <video controls playsinline preload="metadata" poster="./examples/individualized-study-question/poster.png">
-              <source src="./examples/individualized-study-question/video.mp4" type="video/mp4">
+              <source src="./media/individualized-study-question-ef6ef94bd74c4e2d.mp4" type="video/mp4">
               <track default kind="captions" src="./examples/individualized-study-question/captions.vtt" srclang="en" label="English">
               Your browser does not support embedded video.
             </video>
@@ -398,7 +452,7 @@
             </div>
             <h3>How a Derivative Captures Local Change</h3>
             <video controls playsinline preload="metadata" poster="./examples/mathematics-local-derivative/poster.png">
-              <source src="./examples/mathematics-local-derivative/video.mp4" type="video/mp4">
+              <source src="./media/mathematics-local-derivative-d252553fbf73d4fb.mp4" type="video/mp4">
               <track default kind="captions" src="./examples/mathematics-local-derivative/captions.vtt" srclang="en" label="English">
               Your browser does not support embedded video.
             </video>
@@ -415,7 +469,7 @@
             </div>
             <h3>How to Check a Suspicious Message</h3>
             <video controls playsinline preload="metadata" poster="./examples/cybersecurity-phishing-check/poster.png">
-              <source src="./examples/cybersecurity-phishing-check/video.mp4" type="video/mp4">
+              <source src="./media/cybersecurity-phishing-check-1e89f2676b4cf678.mp4" type="video/mp4">
               <track default kind="captions" src="./examples/cybersecurity-phishing-check/captions.vtt" srclang="en" label="English">
               Your browser does not support embedded video.
             </video>
@@ -432,7 +486,7 @@
             </div>
             <h3>How the Exposure Triangle Shapes an Image</h3>
             <video controls playsinline preload="metadata" poster="./examples/photography-exposure-triangle/poster.png">
-              <source src="./examples/photography-exposure-triangle/video.mp4" type="video/mp4">
+              <source src="./media/photography-exposure-triangle-2ba5958ede386873.mp4" type="video/mp4">
               <track default kind="captions" src="./examples/photography-exposure-triangle/captions.vtt" srclang="en" label="English">
               Your browser does not support embedded video.
             </video>
@@ -449,7 +503,7 @@
             </div>
             <h3>Why Correlation Is Not Causation</h3>
             <video controls playsinline preload="metadata" poster="./examples/psychology-correlation-causation/poster.png">
-              <source src="./examples/psychology-correlation-causation/video.mp4" type="video/mp4">
+              <source src="./media/psychology-correlation-causation-099acda37aa056b7.mp4" type="video/mp4">
               <track default kind="captions" src="./examples/psychology-correlation-causation/captions.vtt" srclang="en" label="English">
               Your browser does not support embedded video.
             </video>
@@ -552,13 +606,22 @@ npm run rit-video -- produce --narration-voice configured</code></pre>
           </p>
         </div>
         <div class="local-model-card">
-          <div><span>Main pilot planner</span><strong>PrismML Bonsai 27B · binary 1-bit</strong></div>
+          <div><span>Local pilot planners</span><strong>Qwythos 9B v2 Q5 · Bonsai 27B binary 1-bit</strong></div>
           <p>
-            Topic planning defaults to a local Q1_0 model served through
+            Topic planning uses an explicitly selected local model served through
             llama.cpp. Course prompts stay on the pilot machine, the exact
-            model-file digest is recorded, and accepted responses are frozen.
+            model-file digest and generation settings are recorded, and accepted responses are frozen.
             The RISC‑V reference master uses an authored storyboard and does
             not claim model authorship.
+          </p>
+          <p>
+            The optional
+            <a href="https://huggingface.co/Danny-Dasilva/Bonsai-27B-antidoom-1bit-DSpark">Bonsai 27B antidoom + DSpark build</a>
+            is supported for evaluation on compatible CUDA workstations. It is
+            not the Apple Silicon default: its published DSpark acceleration is
+            CUDA-specific, its native antidoom target benchmarks below base
+            Bonsai on the reported GPU, and speculative decoding may slow
+            lower-acceptance prose.
           </p>
           <b>Local execution</b>
         </div>
@@ -586,7 +649,7 @@ npm run rit-video -- produce --narration-voice configured</code></pre>
           </p>
         </div>
 
-        <div class="benchmark-grid" aria-label="Reference production benchmarks">
+        <div class="benchmark-grid" role="group" aria-label="Reference production benchmarks">
           <article>
             <span>Fresh three-lesson batch</span>
             <strong>28:49 <small>of finished media</small></strong>
@@ -594,8 +657,8 @@ npm run rit-video -- produce --narration-voice configured</code></pre>
           </article>
           <article>
             <span>Optimized catalog lesson</span>
-            <strong>4:14 <small>for a 10:06 lesson</small></strong>
-            <p>Three bounded visuals per chapter and four parallel chapter encodes delivered 2.39× real-time throughput—3.85× faster than the same lesson’s earlier 16:16 render.</p>
+            <strong>2:10 <small>for a 10:02 lesson</small></strong>
+            <p>Fresh subject-matched visuals, master, loudness QA, and web preview delivered 4.63× real-time throughput—7.51× faster than the same pipeline’s earlier 16:16 render. Narration was an exact verified cache hit.</p>
           </article>
           <article>
             <span>Parallel catalog pair</span>
@@ -611,6 +674,11 @@ npm run rit-video -- produce --narration-voice configured</code></pre>
             <span>Local Bonsai 27B plan</span>
             <strong>70.7s <small>representative pass</small></strong>
             <p>One ten-beat CSCI-250 fast plan at roughly 19–24 tokens per second, before narration and rendering.</p>
+          </article>
+          <article>
+            <span>Local Qwythos 9B Q5 plan</span>
+            <strong>65.2s <small>source-grounded CSCI-261 plan</small></strong>
+            <p>Thinking disabled for bounded structured output: 1,633 completion tokens at 26.3 tokens per second, down from 221.2s with unbounded hidden reasoning.</p>
           </article>
         </div>
 

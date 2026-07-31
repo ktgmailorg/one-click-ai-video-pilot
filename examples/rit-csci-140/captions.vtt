@@ -1,561 +1,538 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:08.192
-NARRATOR: Begin by framing Course Foundations
-& Scope as a question about inputs, decisions,
+00:00:00.050 --> 00:00:07.834
+Begin by framing Problem Statement and
+Algorithmic Foundations as a question about
 
 2
-00:00:08.192 --> 00:00:09.937
-and observable results.
+00:00:07.834 --> 00:00:11.078
+inputs, decisions, and observable results.
 
 3
-00:00:09.937 --> 00:00:15.625
-NARRATOR: This accelerated course covers
-material from the first-year sequence of
+00:00:11.078 --> 00:00:18.801
+Programming begins with precise problem
+statements, input and output examples, and
 
 4
-00:00:15.625 --> 00:00:21.312
-courses and provides the foundation for all
-subsequent Computer Science courses.
+00:00:18.801 --> 00:00:22.312
+algorithms written independently of syntax.
 
 5
-00:00:21.312 --> 00:00:27.984
-NARRATOR: Consider this worked case: Students
-will use this course to prepare for advanced
+00:00:22.312 --> 00:00:30.132
+Consider this worked case: A student defines a
+sorting problem by listing input arrays and
 
 6
-00:00:27.984 --> 00:00:31.796
-topics like algorithms, data structures, and
-software engineering.
+00:00:30.132 --> 00:00:33.781
+expected sorted outputs before writing any
+code.
 
 7
-00:00:31.796 --> 00:00:39.971
-NARRATOR: On screen, display a course roadmap
-graphic showing CSCI-140 as the central hub
+00:00:33.781 --> 00:00:41.026
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
 
 8
-00:00:39.971 --> 00:00:42.890
-connecting to advanced CS courses.
+00:00:41.026 --> 00:00:44.890
+that the final result satisfies the stated
+condition.
 
 9
-00:00:42.890 --> 00:00:48.832
-NARRATOR: List the givens before choosing a
-method, because an unstated assumption can
+00:00:44.890 --> 00:00:51.875
+List the givens before choosing a method,
+because an unstated assumption can change the
 
 10
-00:00:48.832 --> 00:00:50.203
-change the conclusion.
+00:00:51.875 --> 00:00:52.374
+conclusion.
 
 11
-00:00:50.203 --> 00:00:56.062
-NARRATOR: This establishes the vocabulary and
-scope needed for the remaining sections.
+00:00:52.374 --> 00:00:58.093
+This establishes the vocabulary and scope
+needed for the remaining sections.
 
 12
-00:00:56.186 --> 00:01:02.874
-NARRATOR: Now define Static vs. Dynamic Data
-Types precisely enough that another learner
+00:00:58.202 --> 00:01:05.291
+Now define Data Representation: Lists, Stacks,
+and Queues precisely enough that another
 
 13
-00:01:02.874 --> 00:01:04.932
-could test the definition.
+00:01:05.291 --> 00:01:08.245
+learner could test the definition.
 
 14
-00:01:04.932 --> 00:01:12.215
-NARRATOR: Topics include tree and graph
-structures, nested data structures, objects,
+00:01:08.245 --> 00:01:16.742
+Lists represent ordered sequences, stacks use
+last-in first-out access, queues use first-in
 
 15
-00:01:12.215 --> 00:01:17.511
-classes, inheritance, interfaces,
-object-oriented collection class libraries for
+00:01:16.742 --> 00:01:23.823
+first-out access, trees represent hierarchy,
+and graphs represent connected entities.
 
 16
-00:01:17.511 --> 00:01:26.118
-abstract data types (for example stacks,
-queues, maps, and trees), and static versus
+00:01:23.823 --> 00:01:29.941
+Consider this worked case: A stack of plates
+is added and removed only from the top, while
 
 17
-00:01:26.118 --> 00:01:28.104
-dynamic data types.
+00:01:29.941 --> 00:01:34.620
+a line of people waiting for a bus is
+processed from the front.
 
 18
-00:01:28.104 --> 00:01:34.307
-NARRATOR: Consider this worked case: In
-statically typed languages, variable types are
+00:01:34.620 --> 00:01:41.906
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
 
 19
-00:01:34.307 --> 00:01:40.510
-checked at compile time, whereas dynamically
-typed languages check types at runtime.
+00:01:41.906 --> 00:01:45.792
+that the final result satisfies the stated
+condition.
 
 20
-00:01:40.510 --> 00:01:48.026
-NARRATOR: On screen, show a side-by-side
-comparison table of static vs. dynamic typing
+00:01:45.792 --> 00:01:52.506
+Separate the formal definition from an
+implementation detail, then identify what
 
 21
-00:01:48.026 --> 00:01:53.229
-with code snippets highlighting compile-time
-vs. runtime type resolution.
-
-22
-00:01:53.229 --> 00:01:59.909
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
-
-23
-00:01:59.909 --> 00:02:02.135
+00:01:52.506 --> 00:01:54.948
 evidence would distinguish them.
 
+22
+00:01:54.948 --> 00:02:01.542
+A precise definition makes later examples
+easier to evaluate and revise.
+
+23
+00:02:01.658 --> 00:02:08.804
+With the foundation in place, examine how
+Hierarchical and Connected Structures operates
+
 24
-00:02:02.135 --> 00:02:08.807
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
+00:02:08.804 --> 00:02:11.186
+in a concrete sequence.
 
 25
-00:02:08.930 --> 00:02:15.083
-NARRATOR: With the foundation in place,
-examine how Object-Oriented Design Foundations
+00:02:11.186 --> 00:02:18.855
+Topics include tree and graph structures,
+nested data structures, objects, classes,
 
 26
-00:02:15.083 --> 00:02:17.880
-operates in a concrete sequence.
+00:02:18.855 --> 00:02:25.129
+inheritance, interfaces, object-oriented
+collection class libraries for abstract data
 
 27
-00:02:17.880 --> 00:02:24.044
-NARRATOR: Software qualities related to object
-orientation, namely cohesion, minimal
+00:02:25.129 --> 00:02:34.889
+types (for example stacks, queues, maps, and
+trees), and static versus dynamic data types.
 
 28
-00:02:24.044 --> 00:02:32.057
+00:02:34.889 --> 00:02:41.437
+Consider this worked case: A family tree
+illustrates hierarchical relationships, while
+
+29
+00:02:41.437 --> 00:02:46.795
+a subway map illustrates a graph of connected
+stations.
+
+30
+00:02:46.795 --> 00:02:53.958
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
+
+31
+00:02:53.958 --> 00:02:57.779
+that the final result satisfies the stated
+condition.
+
+32
+00:02:57.779 --> 00:03:04.701
+Follow every arrow in order and name the state
+before and after each transition.
+
+33
+00:03:04.701 --> 00:03:10.373
+The trace converts an abstract statement into
+an inspectable sequence.
+
+34
+00:03:10.490 --> 00:03:18.594
+Next, compare the choices involved in Objects,
+Classes, and Inheritance and make the decision
+
+35
+00:03:18.594 --> 00:03:19.752
+criteria explicit.
+
+36
+00:03:19.752 --> 00:03:24.424
+Python objects have identity, a type, and a
+value.
+
+37
+00:03:24.424 --> 00:03:30.844
+Consider this worked case: A 'Dog' class
+inherits from an 'Animal' class, gaining
+
+38
+00:03:30.844 --> 00:03:35.783
+shared attributes like 'name' while adding
+specific ones like 'bark'.
+
+39
+00:03:35.783 --> 00:03:42.886
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
+
+40
+00:03:42.886 --> 00:03:46.674
+that the final result satisfies the stated
+condition.
+
+41
+00:03:46.674 --> 00:03:54.080
+Compare alternatives against the same
+constraints so the evaluation does not move
+
+42
+00:03:54.080 --> 00:03:55.314
+the goalposts.
+
+43
+00:03:55.314 --> 00:04:02.111
+Using shared criteria turns a preference into
+a defensible technical choice.
+
+44
+00:04:02.210 --> 00:04:08.687
+Apply Software Qualities: Cohesion and
+Coupling to a worked situation instead of
+
+45
+00:04:08.687 --> 00:04:11.925
+treating it as an isolated definition.
+
+46
+00:04:11.925 --> 00:04:17.595
+Software qualities related to object
+orientation, namely cohesion, minimal
+
+47
+00:04:17.595 --> 00:04:25.786
 coupling, modifiability, and extensibility,
 are all introduced in this course, as well as
 
-29
-00:02:32.057 --> 00:02:35.755
+48
+00:04:25.786 --> 00:04:29.566
 a few elementary object-oriented design
 patterns.
 
-30
-00:02:35.755 --> 00:02:42.787
-NARRATOR: Consider this worked case: A parent
-class defines shared behavior, while child
-
-31
-00:02:42.787 --> 00:02:47.114
-classes inherit and extend that behavior
-through polymorphism.
-
-32
-00:02:47.114 --> 00:02:53.150
-NARRATOR: On screen, render a class diagram
-illustrating inheritance relationships between
-
-33
-00:02:53.150 --> 00:02:56.442
-a base class and derived classes.
-
-34
-00:02:56.442 --> 00:03:03.270
-NARRATOR: Follow every arrow in order and name
-the state before and after each transition.
-
-35
-00:03:03.270 --> 00:03:08.942
-NARRATOR: The trace converts an abstract
-statement into an inspectable sequence.
-
-36
-00:03:09.050 --> 00:03:15.366
-NARRATOR: Next, compare the choices involved
-in Abstract Data Types & Collections and make
-
-37
-00:03:15.366 --> 00:03:17.171
-the decision criteria explicit.
-
-38
-00:03:17.171 --> 00:03:24.746
-NARRATOR: The Python language reference
-specifies lexical analysis, data model
-
-39
-00:03:24.746 --> 00:03:31.563
-behavior, execution, expressions, statements,
-functions, classes, exceptions, and module
-
-40
-00:03:31.563 --> 00:03:33.078
-import semantics.
-
-41
-00:03:33.078 --> 00:03:40.222
-NARRATOR: Consider this worked case: A stack
-implements last-in-first-out behavior, while a
-
-42
-00:03:40.222 --> 00:03:44.984
-queue implements first-in-first-out behavior
-for ordered data processing.
-
-43
-00:03:44.984 --> 00:03:53.199
-NARRATOR: On screen, animate a stack and queue
-data structure showing push/pop and
-
-44
-00:03:53.199 --> 00:03:56.359
-enqueue/dequeue operations with labeled
-elements.
-
-45
-00:03:56.359 --> 00:04:03.459
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
-
-46
-00:04:03.459 --> 00:04:05.234
-move the goalposts.
-
-47
-00:04:05.234 --> 00:04:12.156
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
-
-48
-00:04:12.266 --> 00:04:19.200
-NARRATOR: Apply Software Qualities: Cohesion &
-Minimal Coupling to a worked situation instead
-
 49
-00:04:19.200 --> 00:04:22.934
-of treating it as an isolated definition.
+00:04:29.566 --> 00:04:35.069
+Consider this worked case: A
+'PaymentProcessor' class has high cohesion
 
 50
-00:04:22.934 --> 00:04:28.137
-NARRATOR: Concepts of object- oriented design
-are a large part of the course.
+00:04:35.069 --> 00:04:43.324
+because it handles only payment logic, and low
+coupling because it does not directly access
 
 51
-00:04:28.137 --> 00:04:35.644
-NARRATOR: Consider this worked case: High
-cohesion means a class performs a single,
+00:04:43.324 --> 00:04:44.425
+database tables.
 
 52
-00:04:35.644 --> 00:04:40.841
-well-defined purpose, while minimal coupling
-reduces dependencies between classes.
+00:04:44.425 --> 00:04:51.670
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
 
 53
-00:04:40.841 --> 00:04:46.690
-NARRATOR: On screen, display a
-before-and-after class diagram showing how
+00:04:51.670 --> 00:04:55.534
+that the final result satisfies the stated
+condition.
 
 54
-00:04:46.690 --> 00:04:50.200
-refactoring improves cohesion and reduces
-coupling.
+00:04:55.534 --> 00:05:02.815
+Work from the concrete inputs to the result,
+checking units, types, or invariants at each
 
 55
-00:04:50.200 --> 00:04:56.569
-NARRATOR: Work from the concrete inputs to the
-result, checking units, types, or invariants
+00:05:02.815 --> 00:05:03.300
+step.
 
 56
-00:04:56.569 --> 00:04:57.934
-at each step.
+00:05:03.300 --> 00:05:08.175
+The worked case shows both how to apply the
+method and how to check it.
 
 57
-00:04:57.934 --> 00:05:02.762
-NARRATOR: The worked case shows both how to
-apply the method and how to check it.
+00:05:08.282 --> 00:05:15.051
+Examine the tradeoffs in Abstract Data Types
+and Collection Libraries, including what
 
 58
-00:05:02.882 --> 00:05:08.984
-NARRATOR: Examine the tradeoffs in Exception
-Handling & Control Flow, including what
-
-59
-00:05:08.984 --> 00:05:12.035
+00:05:15.051 --> 00:05:18.435
 improves and what becomes more difficult.
 
+59
+00:05:18.435 --> 00:05:24.881
+This accelerated course covers material from
+the first-year sequence of courses and
+
 60
-00:05:12.035 --> 00:05:18.373
-NARRATOR: Exceptions interrupt normal control
-flow until a matching handler processes them
+00:05:24.881 --> 00:05:29.716
+provides the foundation for all subsequent
+Computer Science courses.
 
 61
-00:05:18.373 --> 00:05:19.957
-or they propagate.
+00:05:29.716 --> 00:05:35.838
+Consider this worked case: Using Python's
+collections module, a developer instantiates a
 
 62
-00:05:19.957 --> 00:05:26.102
-NARRATOR: Consider this worked case: A
-try-catch block catches a runtime error,
+00:05:35.838 --> 00:05:42.981
+deque as a stack or a defaultdict as a map
+without writing low-level logic.
 
 63
-00:05:26.102 --> 00:05:31.222
-allowing the program to recover or exit
-gracefully without crashing.
+00:05:42.981 --> 00:05:50.084
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
 
 64
-00:05:31.222 --> 00:05:37.349
-NARRATOR: On screen, show a control flow
-diagram with a normal path and an exception
+00:05:50.084 --> 00:05:53.872
+that the final result satisfies the stated
+condition.
 
 65
-00:05:37.349 --> 00:05:39.800
-path branching to a handler block.
+00:05:53.872 --> 00:06:00.638
+State the benefit, the cost, and the condition
+under which the tradeoff is acceptable.
 
 66
-00:05:39.800 --> 00:05:46.159
-NARRATOR: State the benefit, the cost, and the
-condition under which the tradeoff is
+00:06:00.638 --> 00:06:07.810
+Making the tradeoff visible prevents a local
+improvement from hiding a larger cost.
 
 67
-00:05:46.159 --> 00:05:46.613
-acceptable.
+00:06:07.922 --> 00:06:15.161
+Stress-test the reasoning around Exception
+Handling and Control Flow with an edge case
 
 68
-00:05:46.613 --> 00:05:54.050
-NARRATOR: Making the tradeoff visible prevents
-a local improvement from hiding a larger cost.
-
-69
-00:05:54.170 --> 00:06:01.485
-NARRATOR: Stress-test the reasoning around
-Compiler & IR Concepts with an edge case and
-
-70
-00:06:01.485 --> 00:06:04.620
-identify which assumption controls the
+00:06:15.161 --> 00:06:19.059
+and identify which assumption controls the
 outcome.
 
+69
+00:06:19.059 --> 00:06:26.227
+Exceptions interrupt normal control flow until
+a matching handler processes them or they
+
+70
+00:06:26.227 --> 00:06:26.778
+propagate.
+
 71
-00:06:04.620 --> 00:06:12.290
-NARRATOR: Compiler work separates parsing and
-semantic analysis from lowering, verification,
+00:06:26.778 --> 00:06:33.533
+Consider this worked case: A division-by-zero
+error is caught by a try/except block that
 
 72
-00:06:12.290 --> 00:06:15.776
-optimization, and target-specific code
-generation.
+00:06:33.533 --> 00:06:38.840
+logs the error and returns a default value
+instead of crashing.
 
 73
-00:06:15.776 --> 00:06:24.220
-NARRATOR: Consider this worked case: LLVM IR
-serves as a typed, SSA-based intermediate
+00:06:38.840 --> 00:06:46.055
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
 
 74
-00:06:24.220 --> 00:06:29.416
-representation that enables cross-platform
-optimization and code generation.
+00:06:46.055 --> 00:06:49.903
+that the final result satisfies the stated
+condition.
 
 75
-00:06:29.416 --> 00:06:37.857
-NARRATOR: On screen, illustrate a compiler
-pipeline diagram with stages: parsing,
+00:06:49.903 --> 00:06:56.278
+Change one assumption at a time and observe
+which part of the reasoning no longer holds.
 
 76
-00:06:37.857 --> 00:06:43.229
-semantic analysis, lowering, verification,
-optimization, code generation.
+00:06:56.278 --> 00:07:03.450
+The edge case reveals the boundary of the
+claim without discarding the useful core idea.
 
 77
-00:06:43.229 --> 00:06:49.243
-NARRATOR: Change one assumption at a time and
-observe which part of the reasoning no longer
+00:07:03.554 --> 00:07:11.522
+Use Input and Output Streams to diagnose a
+failure by separating symptoms, causes, and
 
 78
-00:06:49.243 --> 00:06:49.619
-holds.
+00:07:11.522 --> 00:07:12.660
+corrective action.
 
 79
-00:06:49.619 --> 00:06:55.758
-NARRATOR: The edge case reveals the boundary
-of the claim without discarding the useful
+00:07:12.660 --> 00:07:19.492
+Input and output streams, graphical user
+interfaces, and exception handling are
 
 80
-00:06:55.758 --> 00:06:56.635
-core idea.
+00:07:19.492 --> 00:07:20.113
+covered.
 
 81
-00:06:56.738 --> 00:07:04.082
-NARRATOR: Use Python Language Model &
-Execution to diagnose a failure by separating
+00:07:20.113 --> 00:07:26.300
+Consider this worked case: A program reads a
+text file using sys.
 
 82
-00:07:04.082 --> 00:07:06.906
-symptoms, causes, and corrective action.
+00:07:26.300 --> 00:07:32.441
+stdin and writes formatted results to a log
+file using open('log.
 
 83
-00:07:06.906 --> 00:07:14.729
-NARRATOR: Programs should be reasoned about
-through explicit state, control flow, data
+00:07:32.441 --> 00:07:35.722
+txt', 'w').
 
 84
-00:07:14.729 --> 00:07:18.641
-representation, contracts, tests, and
-observable behavior.
+00:07:35.722 --> 00:07:42.845
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
 
 85
-00:07:18.641 --> 00:07:25.766
-NARRATOR: Consider this worked case: Debugging
-separates syntax, runtime, and logical
+00:07:42.845 --> 00:07:46.644
+that the final result satisfies the stated
+condition.
 
 86
-00:07:25.766 --> 00:07:32.891
-failures, while decomposition and abstraction
-reduce interacting concerns in Python code.
+00:07:46.644 --> 00:07:54.223
+Locate the first point where observed behavior
+diverges from expected behavior, then test the
 
 87
-00:07:32.891 --> 00:07:41.236
-NARRATOR: On screen, show a Python object
-model diagram with identity, type, and value
+00:07:54.223 --> 00:07:55.847
+smallest plausible cause.
 
 88
-00:07:41.236 --> 00:07:44.812
-attributes, alongside a debugging workflow
-flowchart.
+00:07:55.847 --> 00:08:03.613
+The diagnosis is strongest when another person
+can reproduce the observation and the test.
 
 89
-00:07:44.812 --> 00:07:50.446
-NARRATOR: Locate the first point where
-observed behavior diverges from expected
+00:08:03.722 --> 00:08:10.681
+Connect Graphical User Interfaces to the
+earlier ideas and explain how the pieces work
 
 90
-00:07:50.446 --> 00:07:54.031
-behavior, then test the smallest plausible
-cause.
+00:08:10.681 --> 00:08:12.172
+as one system.
 
 91
-00:07:54.031 --> 00:08:00.206
-NARRATOR: The diagnosis is strongest when
-another person can reproduce the observation
+00:08:12.172 --> 00:08:18.461
+The course stresses problem solving while
+covering modern software development
 
 92
-00:08:00.206 --> 00:08:01.750
-and the test.
-
-93
-00:08:01.874 --> 00:08:07.132
-NARRATOR: Connect Object-Oriented Design
-Patterns to the earlier ideas and explain how
-
-94
-00:08:07.132 --> 00:08:09.761
-the pieces work as one system.
-
-95
-00:08:09.761 --> 00:08:16.161
-NARRATOR: The course stresses problem solving
-while covering modern software development
-
-96
-00:08:16.161 --> 00:08:19.652
+00:08:18.461 --> 00:08:22.234
 techniques and introducing essential software
 tools.
 
+93
+00:08:22.234 --> 00:08:28.760
+Consider this worked case: A simple GUI window
+displays a button; clicking the button
+
+94
+00:08:28.760 --> 00:08:33.422
+triggers a function that updates a label on
+the screen.
+
+95
+00:08:33.422 --> 00:08:40.647
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
+
+96
+00:08:40.647 --> 00:08:44.500
+that the final result satisfies the stated
+condition.
+
 97
-00:08:19.652 --> 00:08:27.037
-NARRATOR: Consider this worked case: The
-singleton pattern ensures a class has only one
+00:08:44.500 --> 00:08:54.357
+Explain each connection explicitly and verify
+that information retains the same meaning
 
 98
-00:08:27.037 --> 00:08:32.839
-instance, while the factory pattern creates
-objects without specifying exact classes.
+00:08:54.357 --> 00:08:56.000
+across representations.
 
 99
-00:08:32.839 --> 00:08:40.196
-NARRATOR: On screen, display a simple UML
-diagram of a factory pattern with creator,
+00:08:56.000 --> 00:09:03.437
+The synthesis matters only if every connection
+remains supported by the original evidence.
 
 100
-00:08:40.196 --> 00:08:42.823
-product, and concrete product classes.
+00:09:03.554 --> 00:09:10.550
+Finish with Practical Analysis Checklist as a
+practical checklist that can guide a new
 
 101
-00:08:42.823 --> 00:08:51.523
-NARRATOR: Explain each connection explicitly
-and verify that information retains the same
+00:09:10.550 --> 00:09:11.050
+analysis.
 
 102
-00:08:51.523 --> 00:08:53.698
-meaning across representations.
+00:09:11.050 --> 00:09:18.504
+Correctness arguments, tests, tracing, and
+debugging compare intended behavior with
 
 103
-00:08:53.698 --> 00:09:00.648
-NARRATOR: The synthesis matters only if every
-connection remains supported by the original
+00:09:18.504 --> 00:09:23.722
+observable results, including boundary and
+error cases.
 
 104
-00:09:00.648 --> 00:09:01.183
-evidence.
+00:09:23.722 --> 00:09:30.220
+Consider this worked case: A developer writes
+unit tests for a sorting function, traces its
 
 105
-00:09:01.298 --> 00:09:07.178
-NARRATOR: Finish with Practical Analysis
-Checklist as a practical checklist that can
+00:09:30.220 --> 00:09:37.583
+execution on an empty list and a reversed
+list, and fixes a bug where the loop condition
 
 106
-00:09:07.178 --> 00:09:09.138
-guide a new analysis.
+00:09:37.583 --> 00:09:39.316
+fails at the boundary.
 
 107
-00:09:09.138 --> 00:09:14.560
-NARRATOR: Valid IR must satisfy structural and
-typing rules.
+00:09:39.316 --> 00:09:46.337
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
 
 108
-00:09:14.560 --> 00:09:21.881
-NARRATOR: Consider this worked case: A
-checklist evaluates whether each class has a
+00:09:46.337 --> 00:09:50.082
+that the final result satisfies the stated
+condition.
 
 109
-00:09:21.881 --> 00:09:27.513
-single responsibility, limited dependencies,
-and clear extension points for future
+00:09:50.082 --> 00:09:58.275
+For each checklist item, record the evidence,
+the remaining uncertainty, and the next
 
 110
-00:09:27.513 --> 00:09:28.076
-features.
+00:09:58.275 --> 00:09:59.535
+verification step.
 
 111
-00:09:28.076 --> 00:09:35.122
-NARRATOR: On screen, show a printable
-checklist template with checkboxes for
+00:09:59.535 --> 00:10:06.447
+The result is a repeatable procedure, not a
+conclusion that depends on memory or
 
 112
-00:09:35.122 --> 00:09:38.966
-cohesion, coupling, modifiability, and
-extensibility evaluation.
-
-113
-00:09:38.966 --> 00:09:46.431
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
-
-114
-00:09:46.431 --> 00:09:48.154
-next verification step.
-
-115
-00:09:48.154 --> 00:09:54.184
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-116
-00:09:54.184 --> 00:09:55.576
-memory or intuition.
-
-117
-00:09:55.576 --> 00:10:02.794
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-118
-00:10:02.794 --> 00:10:04.763
-throughout the analysis.
+00:10:06.447 --> 00:10:06.941
+intuition.

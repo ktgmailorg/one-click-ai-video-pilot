@@ -1,0 +1,25 @@
+{
+  "id": "full-computer-networks-tcp-routing",
+  "title": "Computer Networks: Packets, IP Routing, and Reliable TCP",
+  "area": "Computing",
+  "subject": "Computer Networks",
+  "format": "Full lesson",
+  "level": "Introductory",
+  "description": "Follow data through network layers and explain how IP forwarding and TCP reliability cooperate without hiding delay, loss, or congestion.",
+  "outcomes": [
+    "Students will explain how network layering and encapsulation separate local link frames, IP packets, and transport data to isolate failure domains.",
+    "Students will demonstrate how IP addressing and routing use hop limits and best-effort forwarding to direct packets across heterogeneous networks without guaranteeing delivery.",
+    "Students will analyze TCP sequence numbers, acknowledgments, retransmission, and flow control to diagnose and resolve end-to-end request failures."
+  ],
+  "paths": [
+    "Computing & Engineering",
+    "STEM Foundations"
+  ],
+  "aiContribution": {
+    "stage": "source-grounded planning and narration draft",
+    "provider": "local-openai-compatible",
+    "model": "prism-ml/Bonsai-27B-gguf",
+    "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
+    "humanReviewRequired": true
+  }
+}

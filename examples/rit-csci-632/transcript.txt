@@ -1,24 +1,24 @@
-NARRATOR: Begin by framing Lesson Introduction and Course Scope as a question about inputs,
+NARRATOR: Begin by framing Robot Software Architecture Overview as a question about
 
-decisions, and observable results.
+inputs, decisions, and observable results.
 
-NARRATOR: This course covers standard and novel techniques for mobile robot programming,
+NARRATOR: Robot software separates sensing, state estimation, planning, control, and
 
-including software architectures, reactive motion control, map building, localization and
+actuation while making message contracts and timing assumptions explicit.
 
-path planning.
+NARRATOR: Consider this worked case: A navigation stack uses a perception node to
 
-NARRATOR: Consider this worked case: Students will implement various algorithms in
+publish camera data, a localization node to estimate pose, a planner to generate
 
-simulation as well as on a real robot, and investigate and report on current research in
+waypoints, a controller to compute velocities, and an actuator driver to send commands to
 
-the area.
+wheels.
 
-NARRATOR: On screen, display a slide with the course title, duration (8-12 minutes), and a
+NARRATOR: On screen, display a layered block diagram showing five stacked modules (sensing,
 
-simple diagram showing the four main modules: Software Architecture, Reactive Motion
+state estimation, planning, control, actuation) with bidirectional arrows
 
-Control, Map Building/Localization, and Path Planning.
+indicating data flow and explicit timing labels on each interface.
 
 NARRATOR: List the givens before choosing a method, because an unstated assumption can
 
@@ -26,23 +26,25 @@ change the conclusion.
 
 NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: Now define Software Architecture Fundamentals precisely enough that another
+NARRATOR: Now define ROS 2 Node Communication Model precisely enough that another learner
 
-learner could test the definition.
+could test the definition.
 
-NARRATOR: Other topics may include multiple robot systems, robot vision and
+NARRATOR: ROS 2 organizes a robot application as nodes that communicate through typed
 
-non-traditional and dynamic robots.
+interfaces.
 
-NARRATOR: Consider this worked case: A typical architecture uses a central controller that
+NARRATOR: Consider this worked case: A localization node subscribes to a topic
 
-routes data between independent modules, allowing each component to be updated without
+publishing IMU data, while a planning service handles a request-response call to compute a
 
-disrupting the entire system.
+path between two waypoints.
 
-NARRATOR: On screen, show a block diagram with four labeled blocks: Sensor Input, Perception,
+NARRATOR: On screen, show a network diagram with labeled nodes connected by color-coded
 
-Planning, and Actuation, connected by data flow arrows.
+lines representing topics (dashed), services (solid), and actions (dotted), with message
+
+type tags on each line.
 
 NARRATOR: Separate the formal definition from an implementation detail, then identify what
 
@@ -50,39 +52,45 @@ evidence would distinguish them.
 
 NARRATOR: A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Reactive Motion Control Basics
+NARRATOR: With the foundation in place, examine how Parameter Configuration and
 
-operates in a concrete sequence.
+Behavior operates in a concrete sequence.
 
-NARRATOR: Motion methods compare observations across time.
+NARRATOR: Parameters configure node behavior.
 
-NARRATOR: Consider this worked case: When an obstacle is detected, the robot adjusts its
+NARRATOR: Consider this worked case: A controller node uses a parameter named
 
-heading and speed instantly using a rule-based response function rather than recalculating a
+'max_speed' to cap wheel velocity, which can be updated via a ROS 2 parameter server during
 
-full path.
+simulation.
 
-NARRATOR: On screen, illustrate a simple feedback loop showing sensor input -> decision
+NARRATOR: On screen, render a configuration panel with key-value pairs for robot
 
-logic -> motor command, with a note highlighting 'reactive' vs 'planning' control.
+parameters, highlighting how changing a single value propagates to the corresponding node's
+
+behavior settings.
 
 NARRATOR: Follow every arrow in order and name the state before and after each transition.
 
 NARRATOR: The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Next, compare the choices involved in Map Building Techniques and make the
+NARRATOR: Next, compare the choices involved in Coordinate Transforms and Reference Frames
 
-decision criteria explicit.
+and make the decision criteria explicit.
 
-NARRATOR: Motion estimation compares observations across frames.
+NARRATOR: Coordinate transforms describe relationships among reference frames.
 
-NARRATOR: Consider this worked case: Laser scanners record distance measurements that are
+NARRATOR: Consider this worked case: A camera's local image coordinates are
 
-triangulated to populate a grid-based map, which is then updated as the robot moves.
+transformed into the robot's base link frame using a rotation matrix and translation vector
 
-NARRATOR: On screen, display a side-by-side comparison of a blank grid and a populated
+to align with the map.
 
-grid with distance markers, showing how sensor data fills in spatial information.
+NARRATOR: On screen, illustrate two overlapping coordinate grids (local and
+
+global) with labeled axes, showing a transformation arrow and matrix notation
+
+connecting them.
 
 NARRATOR: Compare alternatives against the same constraints so the evaluation does not
 
@@ -90,21 +98,23 @@ move the goalposts.
 
 NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: Apply Localization Methods to a worked situation instead of treating it as an
+NARRATOR: Apply Sensor Timestamping and Frame Interpretation to a worked situation instead
 
-isolated definition.
+of treating it as an isolated definition.
 
-NARRATOR: Students will implement various algorithms in simulation as well as on a real
+NARRATOR: Sensors produce observations that must be timestamped and interpreted in the
 
-robot, and investigate and report on current research in the area.
+correct frame.
 
-NARRATOR: Consider this worked case: The robot compares its camera feed to a pre-mapped image
+NARRATOR: Consider this worked case: LiDAR scans are tagged with a precise timestamp and
 
-bank and calculates the best match to pinpoint its coordinates.
+attached to the robot's odometry frame, ensuring they align temporally with camera and
 
-NARRATOR: On screen, show a small inset of a map with a moving robot icon, highlighting the
+IMU data.
 
-'current position' and 'matched features' with connecting lines.
+NARRATOR: On screen, display a timeline with synchronized sensor events, each marked with a
+
+timestamp and frame label, connected to a central synchronization node.
 
 NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
 
@@ -112,19 +122,27 @@ at each step.
 
 NARRATOR: The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Examine the tradeoffs in Path Planning Algorithms, including what improves
+NARRATOR: Examine the tradeoffs in Reactive Motion Control Principles, including what
 
-and what becomes more difficult.
+improves and what becomes more difficult.
 
-NARRATOR: Projective geometry relates three-dimensional points to image coordinates.
+NARRATOR: This course covers standard and novel techniques for mobile robot programming,
 
-NARRATOR: Consider this worked case: A search algorithm explores possible routes, pruning
+including software architectures, reactive motion control, map building, localization and
 
-dead ends and selecting the shortest path based on distance and energy constraints.
+path planning.
 
-NARRATOR: On screen, render a top-down map with a start point, goal, and multiple route
+NARRATOR: Consider this worked case: A velocity controller reduces forward speed when
 
-options, highlighting the selected path in a distinct color.
+a proximity sensor detects an obstacle within two meters, preventing collisions without full
+
+replanning.
+
+NARRATOR: On screen, show a side-view simulation of a robot approaching a wall, with
+
+a reactive control loop highlighted, displaying input sensor data, computed
+
+velocity, and output wheel commands.
 
 NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
 
@@ -132,21 +150,21 @@ acceptable.
 
 NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: Stress-test the reasoning around Simulation vs. Real Robot Testing with an edge
+NARRATOR: Stress-test the reasoning around Map Building and Localization with an edge case
 
-case and identify which assumption controls the outcome.
+and identify which assumption controls the outcome.
 
-NARRATOR: Course offered every other year.
+NARRATOR: Other topics may include multiple robot systems, robot vision and
 
-NARRATOR: Consider this worked case: A navigation routine is first tested in a
+non-traditional and dynamic robots.
 
-virtual environment to debug code, then deployed on a wheeled robot to measure
+NARRATOR: Consider this worked case: A SLAM algorithm fuses wheel odometry and camera
 
-real-time response times.
+images to update a grid map, then uses feature matching to locate the robot's current pose.
 
-NARRATOR: On screen, split screen showing a simulation interface on the left and a photo
+NARRATOR: On screen, render a top-down map grid with a moving robot icon, showing how
 
-of a real robot on the right, with a checkmark indicating successful deployment.
+sensor observations incrementally fill in map cells and update the robot's position marker.
 
 NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
 
@@ -156,21 +174,25 @@ NARRATOR: The edge case reveals the boundary of the claim without discarding the
 
 core idea.
 
-NARRATOR: Use Research Investigation and Reporting to diagnose a failure by separating
+NARRATOR: Use Path Planning in Dynamic Environments to diagnose a failure by
 
-symptoms, causes, and corrective action.
+separating symptoms, causes, and corrective action.
 
-NARRATOR: Computer vision pipelines represent images as numeric arrays.
+NARRATOR: Students will implement various algorithms in simulation as well as on a real
 
-NARRATOR: Consider this worked case: A student analyzes a recent paper on dynamic path
+robot, and investigate and report on current research in the area.
 
-planning, summarizes key findings, and proposes a modification for classroom
+NARRATOR: Consider this worked case: A reactive planner recalculates a route when a
 
-implementation.
+moving pedestrian enters the robot's path, inserting a detour that maintains safety
 
-NARRATOR: On screen, display a template for a research report with sections for 'Summary',
+margins and task completion time.
 
-'Key Findings', and 'Proposed Modifications', using placeholder text.
+NARRATOR: On screen, display a navigation map with a planned path, a dynamic obstacle, and a
+
+revised path, using color coding to distinguish static obstacles, dynamic hazards,
+
+and planned trajectories.
 
 NARRATOR: Locate the first point where observed behavior diverges from expected
 
@@ -180,19 +202,25 @@ NARRATOR: The diagnosis is strongest when another person can reproduce the obser
 
 and the test.
 
-NARRATOR: Connect Prerequisites and Course Logistics to the earlier ideas and explain how
+NARRATOR: Connect Simulation and Physical Deployment to the earlier ideas and explain
 
-the pieces work as one system.
+how the pieces work as one system.
 
-NARRATOR: Object recognition maps visual evidence to object hypotheses.
+NARRATOR: Testing should consider latency, dropped messages, sensor noise, actuator
 
-NARRATOR: Consider this worked case: Students must have completed foundational programming
+limits, safety boundaries, and the difference between simulation and physical operation.
 
-courses before enrolling, ensuring they possess the necessary technical background.
+NARRATOR: Consider this worked case: A navigation algorithm is first validated in a
 
-NARRATOR: On screen, list the prerequisites and schedule details in a clean, bulleted
+physics engine simulation, then deployed on a wheeled robot to verify real-world performance
 
-format on a slide, with icons for a book and a calendar.
+and adjust parameters accordingly.
+
+NARRATOR: On screen, show a split-screen comparison: left side shows a simulation
+
+environment with debug overlays, right side shows a physical robot with sensor data feeds
+
+and control interfaces.
 
 NARRATOR: Explain each connection explicitly and verify that information retains the same
 
@@ -206,19 +234,21 @@ NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that
 
 guide a new analysis.
 
-NARRATOR: Computer vision connects image evidence to models of geometry, appearance,
+NARRATOR: Results depend on sampling, illumination, noise, thresholds, coordinate
 
-motion, objects, and scenes.
+frames, and evaluation metrics.
 
-NARRATOR: Consider this worked case: The checklist includes items like 'Modular code
+NARRATOR: Consider this worked case: A developer checks that message latency stays
 
-structure verified', 'Reactive response time < 100ms', 'Map update frequency consistent', and
+below 50 milliseconds, verifies sensor noise does not exceed calibration thresholds, and
 
-'Path deviation within tolerance'.
+confirms safety zones are enforced before field testing.
 
-NARRATOR: On screen, show a simple checklist graphic with four boxes, each containing a key
+NARRATOR: On screen, present a checklist graphic with five categories (latency, message
 
-metric and a pass/fail indicator, ready for student annotation.
+integrity, sensor noise, actuator limits, safety boundaries), each with a pass/fail
+
+indicator and a brief validation method.
 
 NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
 

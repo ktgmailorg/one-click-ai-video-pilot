@@ -5,12 +5,12 @@
       "shots": [
         {
           "id": "beat-01-shot-001",
-          "phrase": "Begin by framing Introduction to Data Management as a question about inputs, decisions, and observable results.",
+          "phrase": "Begin by framing Foundations of the Relational Model as a question about inputs, decisions, and observable results.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: A hospital system uses a relational database to link patient records, medical history, and appointment schedules.",
+          "phrase": "Consider this worked case: A 'Students' table contains rows for each student, with columns for ID, name, and major, each with a specific data type like INTEGER or VARCHAR.",
           "type": "deterministic-svg"
         },
         {
@@ -25,12 +25,12 @@
       "shots": [
         {
           "id": "beat-02-shot-001",
-          "phrase": "Now define Relational Model Foundations precisely enough that another learner could test the definition.",
+          "phrase": "Now define Entity-Relationship Modeling Basics precisely enough that another learner could test the definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: An 'Employees' table contains columns for EmployeeID, Name, Department, and Salary.",
+          "phrase": "Consider this worked case: Modeling a 'Library' system involves entities like Books, Authors, and Members, connected by relationships like 'writtenBy' and 'checkedOutBy'.",
           "type": "deterministic-svg"
         },
         {
@@ -45,12 +45,12 @@
       "shots": [
         {
           "id": "beat-03-shot-001",
-          "phrase": "With the foundation in place, examine how Data Modeling Concepts operates in a concrete sequence.",
+          "phrase": "With the foundation in place, examine how Primary Keys and Unique Identifiers operates in a concrete sequence.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: A 'Student' entity relates to a 'Course' entity through an 'Enrollment' relationship, linking student IDs to course codes.",
+          "phrase": "Consider this worked case: A 'Products' table uses a 'ProductID' column as the primary key to uniquely identify each item.",
           "type": "deterministic-svg"
         },
         {
@@ -65,12 +65,12 @@
       "shots": [
         {
           "id": "beat-04-shot-001",
-          "phrase": "Next, compare the choices involved in Relational Algebra Basics and make the decision criteria explicit.",
+          "phrase": "Next, compare the choices involved in Foreign Keys and Referential Integrity and make the decision criteria explicit.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: A selection operation filters the 'Employees' table to show only those in the 'Engineering' department.",
+          "phrase": "Consider this worked case: A 'Orders' table includes a 'CustomerID' foreign key that links to the 'Customers' table.",
           "type": "deterministic-svg"
         },
         {
@@ -85,12 +85,12 @@
       "shots": [
         {
           "id": "beat-05-shot-001",
-          "phrase": "Apply Structured Query Language (SQL) to a worked situation instead of treating it as an isolated definition.",
+          "phrase": "Apply Constraints for Data Validation to a worked situation instead of treating it as an isolated definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: The command SELECT * FROM Employees WHERE Department = 'Marketing' retrieves specific records.",
+          "phrase": "Consider this worked case: A 'Salary' column constraint prevents negative values, and a 'Email' column constraint enforces a valid email format.",
           "type": "deterministic-svg"
         },
         {
@@ -105,12 +105,12 @@
       "shots": [
         {
           "id": "beat-06-shot-001",
-          "phrase": "Examine the tradeoffs in Data Quality Principles, including what improves and what becomes more difficult.",
+          "phrase": "Examine the tradeoffs in Normalization and Update Anomalies, including what improves and what becomes more difficult.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: Validating that all 'PhoneNumber' fields follow a standard format prevents duplicate or corrupted contact records.",
+          "phrase": "Consider this worked case: Splitting a 'Department' table into separate tables for DepartmentName and DepartmentLocation prevents duplicate data and update errors.",
           "type": "deterministic-svg"
         },
         {
@@ -125,12 +125,12 @@
       "shots": [
         {
           "id": "beat-07-shot-001",
-          "phrase": "Stress-test the reasoning around Transaction Integrity with an edge case and identify which assumption controls the outcome.",
+          "phrase": "Stress-test the reasoning around Relational Algebra and Query Logic with an edge case and identify which assumption controls the outcome.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: A banking transaction updates both account balances atomically, ensuring neither account is left in an inconsistent state.",
+          "phrase": "Consider this worked case: A SELECT statement with a JOIN clause combines data from 'Employees' and 'Departments' tables based on a common key.",
           "type": "deterministic-svg"
         },
         {
@@ -145,12 +145,12 @@
       "shots": [
         {
           "id": "beat-08-shot-001",
-          "phrase": "Use Database Security Practices to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "phrase": "Use Transactions and Atomicity to diagnose a failure by separating symptoms, causes, and corrective action.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: Role-based access control limits 'view' permissions to analysts while restricting 'delete' permissions to administrators.",
+          "phrase": "Consider this worked case: A banking transaction transfers funds between two accounts; if one step fails, both are rolled back.",
           "type": "deterministic-svg"
         },
         {
@@ -165,12 +165,12 @@
       "shots": [
         {
           "id": "beat-09-shot-001",
-          "phrase": "Connect Application Development Approaches to the earlier ideas and explain how the pieces work as one system.",
+          "phrase": "Connect Indexing and Query Performance to the earlier ideas and explain how the pieces work as one system.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: An e-commerce platform uses SQL to fetch product inventory and application code to process checkout orders.",
+          "phrase": "Consider this worked case: An index on the 'LastName' column speeds up searches for employees by surname.",
           "type": "deterministic-svg"
         },
         {
@@ -190,7 +190,7 @@
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: A developer checks that foreign keys enforce referential integrity, indexes optimize query performance, and encryption protects sensitive fields.",
+          "phrase": "Consider this worked case: Check that all foreign keys reference valid primary keys, indexes cover frequent query columns, and constraints prevent invalid data entry.",
           "type": "deterministic-svg"
         },
         {

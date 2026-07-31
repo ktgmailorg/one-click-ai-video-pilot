@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-07-30",
+  "updated": "2026-07-31",
   "courses": [
     {
       "id": "full-circular-entrepreneurship",
@@ -27,10 +27,44 @@
       "duration": "9:32",
       "durationSeconds": 572,
       "poster": "./examples/full-circular-entrepreneurship/poster.png",
-      "video": "./examples/full-circular-entrepreneurship/video.mp4",
+      "video": "./media/full-circular-entrepreneurship-2d4c7d45403bd2fa.mp4",
       "captions": "./examples/full-circular-entrepreneurship/captions.vtt",
       "transcript": "./examples/full-circular-entrepreneurship/transcript.txt",
-      "sources": "./examples/full-circular-entrepreneurship/sources.json"
+      "sources": "./examples/full-circular-entrepreneurship/sources.json",
+      "releaseManifest": "./examples/full-circular-entrepreneurship/release-artifacts.json",
+      "qualityReport": "./examples/full-circular-entrepreneurship/quality-report.json",
+      "groundingReport": "./examples/full-circular-entrepreneurship/grounding-report.json",
+      "videoSha256": "2d4c7d45403bd2fa9eb27f083c99bc2a226904ac322555c2121acbe1ad23bfcc",
+      "videoBytes": 38498654,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "full-algorithm-analysis",
@@ -46,15 +80,50 @@
         "Connect correctness and performance claims to assumptions"
       ],
       "paths": [
-        "Computing & Engineering"
+        "Computing & Engineering",
+        "STEM Foundations"
       ],
       "duration": "8:02",
       "durationSeconds": 482,
       "poster": "./examples/full-algorithm-analysis/poster.png",
-      "video": "./examples/full-algorithm-analysis/video.mp4",
+      "video": "./media/full-algorithm-analysis-3b4f864e1cdea4ee.mp4",
       "captions": "./examples/full-algorithm-analysis/captions.vtt",
       "transcript": "./examples/full-algorithm-analysis/transcript.txt",
-      "sources": "./examples/full-algorithm-analysis/sources.json"
+      "sources": "./examples/full-algorithm-analysis/sources.json",
+      "releaseManifest": "./examples/full-algorithm-analysis/release-artifacts.json",
+      "qualityReport": "./examples/full-algorithm-analysis/quality-report.json",
+      "groundingReport": "./examples/full-algorithm-analysis/grounding-report.json",
+      "videoSha256": "3b4f864e1cdea4eee7d8e78becd01c96e4326987b8c2ec08a3c53d777fd74c78",
+      "videoBytes": 36284357,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "full-ai-search-foundations",
@@ -70,15 +139,50 @@
         "Explain admissibility, consistency, completeness, and optimality"
       ],
       "paths": [
-        "Computing & Engineering"
+        "Computing & Engineering",
+        "STEM Foundations"
       ],
       "duration": "8:12",
       "durationSeconds": 492,
       "poster": "./examples/full-ai-search-foundations/poster.png",
-      "video": "./examples/full-ai-search-foundations/video.mp4",
+      "video": "./media/full-ai-search-foundations-1e20a8be10973477.mp4",
       "captions": "./examples/full-ai-search-foundations/captions.vtt",
       "transcript": "./examples/full-ai-search-foundations/transcript.txt",
-      "sources": "./examples/full-ai-search-foundations/sources.json"
+      "sources": "./examples/full-ai-search-foundations/sources.json",
+      "releaseManifest": "./examples/full-ai-search-foundations/release-artifacts.json",
+      "qualityReport": "./examples/full-ai-search-foundations/quality-report.json",
+      "groundingReport": "./examples/full-ai-search-foundations/grounding-report.json",
+      "videoSha256": "1e20a8be1097347756fcf08059175a9e9596c5e330a3e46977068bab8916df2f",
+      "videoBytes": 36615913,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "full-programming-foundations",
@@ -94,15 +198,50 @@
         "Test behavior systematically and diagnose failures"
       ],
       "paths": [
-        "Computing & Engineering"
+        "Computing & Engineering",
+        "STEM Foundations"
       ],
       "duration": "8:19",
       "durationSeconds": 499,
       "poster": "./examples/full-programming-foundations/poster.png",
-      "video": "./examples/full-programming-foundations/video.mp4",
+      "video": "./media/full-programming-foundations-342de8a360994c37.mp4",
       "captions": "./examples/full-programming-foundations/captions.vtt",
       "transcript": "./examples/full-programming-foundations/transcript.txt",
-      "sources": "./examples/full-programming-foundations/sources.json"
+      "sources": "./examples/full-programming-foundations/sources.json",
+      "releaseManifest": "./examples/full-programming-foundations/release-artifacts.json",
+      "qualityReport": "./examples/full-programming-foundations/quality-report.json",
+      "groundingReport": "./examples/full-programming-foundations/grounding-report.json",
+      "videoSha256": "342de8a360994c379e137d11ceea9e8bb90b9255939518d1f995c3001536df9e",
+      "videoBytes": 35724411,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "full-relational-data-management",
@@ -118,15 +257,50 @@
         "Explain indexes and transaction boundaries"
       ],
       "paths": [
-        "Computing & Engineering"
+        "Computing & Engineering",
+        "STEM Foundations"
       ],
       "duration": "8:08",
       "durationSeconds": 488,
       "poster": "./examples/full-relational-data-management/poster.png",
-      "video": "./examples/full-relational-data-management/video.mp4",
+      "video": "./media/full-relational-data-management-15a01eb46732a0db.mp4",
       "captions": "./examples/full-relational-data-management/captions.vtt",
       "transcript": "./examples/full-relational-data-management/transcript.txt",
-      "sources": "./examples/full-relational-data-management/sources.json"
+      "sources": "./examples/full-relational-data-management/sources.json",
+      "releaseManifest": "./examples/full-relational-data-management/release-artifacts.json",
+      "qualityReport": "./examples/full-relational-data-management/quality-report.json",
+      "groundingReport": "./examples/full-relational-data-management/grounding-report.json",
+      "videoSha256": "15a01eb46732a0dbaa8e7ac9a5ca54dbc83cd572e85b958d7a9ba3d2669735d8",
+      "videoBytes": 33305375,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "full-behavioral-malware-ml",
@@ -150,13 +324,47 @@
         "courseTitle": "Cyber Analytics and Machine Learning",
         "relationship": "Independent reusable companion; not an official RIT course section"
       },
-      "duration": "9:36",
-      "durationSeconds": 576,
+      "duration": "9:35",
+      "durationSeconds": 575,
       "poster": "./examples/full-behavioral-malware-ml/poster.png",
-      "video": "./examples/full-behavioral-malware-ml/video.mp4",
+      "video": "./media/full-behavioral-malware-ml-7bb12d34d5552619.mp4",
       "captions": "./examples/full-behavioral-malware-ml/captions.vtt",
       "transcript": "./examples/full-behavioral-malware-ml/transcript.txt",
-      "sources": "./examples/full-behavioral-malware-ml/sources.json"
+      "sources": "./examples/full-behavioral-malware-ml/sources.json",
+      "releaseManifest": "./examples/full-behavioral-malware-ml/release-artifacts.json",
+      "qualityReport": "./examples/full-behavioral-malware-ml/quality-report.json",
+      "groundingReport": "./examples/full-behavioral-malware-ml/grounding-report.json",
+      "videoSha256": "7bb12d34d5552619e3fee6bdafa7c24ee4532a20ac57cb36d2332da3c880349f",
+      "videoBytes": 40319606,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "full-compiler-design-front-end",
@@ -185,10 +393,44 @@
       "duration": "10:02",
       "durationSeconds": 602,
       "poster": "./examples/full-compiler-design-front-end/poster.png",
-      "video": "./examples/full-compiler-design-front-end/video.mp4",
+      "video": "./media/full-compiler-design-front-end-ba4af1a6947f8cdf.mp4",
       "captions": "./examples/full-compiler-design-front-end/captions.vtt",
       "transcript": "./examples/full-compiler-design-front-end/transcript.txt",
-      "sources": "./examples/full-compiler-design-front-end/sources.json"
+      "sources": "./examples/full-compiler-design-front-end/sources.json",
+      "releaseManifest": "./examples/full-compiler-design-front-end/release-artifacts.json",
+      "qualityReport": "./examples/full-compiler-design-front-end/quality-report.json",
+      "groundingReport": "./examples/full-compiler-design-front-end/grounding-report.json",
+      "videoSha256": "ba4af1a6947f8cdfc5bfecced8e9ab4e990dd2e78152545128f831a0e2cbfcd6",
+      "videoBytes": 38779772,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "full-computer-networks-tcp-routing",
@@ -217,10 +459,44 @@
       "duration": "8:43",
       "durationSeconds": 523,
       "poster": "./examples/full-computer-networks-tcp-routing/poster.png",
-      "video": "./examples/full-computer-networks-tcp-routing/video.mp4",
+      "video": "./media/full-computer-networks-tcp-routing-a042a92a86205f49.mp4",
       "captions": "./examples/full-computer-networks-tcp-routing/captions.vtt",
       "transcript": "./examples/full-computer-networks-tcp-routing/transcript.txt",
-      "sources": "./examples/full-computer-networks-tcp-routing/sources.json"
+      "sources": "./examples/full-computer-networks-tcp-routing/sources.json",
+      "releaseManifest": "./examples/full-computer-networks-tcp-routing/release-artifacts.json",
+      "qualityReport": "./examples/full-computer-networks-tcp-routing/quality-report.json",
+      "groundingReport": "./examples/full-computer-networks-tcp-routing/grounding-report.json",
+      "videoSha256": "a042a92a86205f497a62e3f43948ac1fc541aa0beb3340cd6d0a69b568f20df4",
+      "videoBytes": 37150543,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-101",
@@ -231,9 +507,9 @@
       "level": "Undergraduate",
       "description": "An independent, catalog-aligned learning companion. It is not an official RIT course section or a replacement for the instructor's syllabus.",
       "outcomes": [
-        "Students will define and explain the core concepts of computing, including the relationship between hardware, software, and data.",
-        "Students will demonstrate the ability to break down a problem into sequential, executable steps using pseudocode or a programming language.",
-        "Students will articulate how computing impacts daily life and the world, and practice oral and written communication through structured assignments."
+        "Students will articulate the core components of a computational problem (statement, input/output, algorithm) using precise terminology from the course",
+        "Students will implement a basic solution in Python by applying lexical analysis, namespaces, and exception handling as described in the language",
+        "Students will evaluate the correctness of their code through tracing, boundary testing, and debugging, aligning with the course's emphasis on written/"
       ],
       "paths": [
         "Computing & Engineering",
@@ -246,26 +522,48 @@
         "credits": "3 Credits",
         "sourceUrl": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02="
       },
-      "aiContribution": {
-        "stage": "source-grounded planning and narration draft",
-        "provider": "local-openai-compatible",
-        "model": "prism-ml/Bonsai-27B-gguf",
-        "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
-        "humanReviewRequired": true
-      },
-      "duration": "9:44",
-      "durationSeconds": 584,
+      "generationProvenance": [
+        {
+          "stage": "Source-grounded planning and narration draft",
+          "provider": "local-openai-compatible",
+          "model": "empero-ai/Qwythos-9B-v2-GGUF",
+          "modelRevision": "sha256:fc5251e8e3e87d58946522833eb896c84375a715b6f89c54cdd10082ecc6ea8d",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ],
+      "duration": "9:41",
+      "durationSeconds": 581,
       "poster": "./examples/rit-csci-101/poster.png",
-      "video": "https://kdody4sc99hycejm.public.blob.vercel-storage.com/rit-csci/2025-2026/rit-csci-101/d8b41a405ecdfea426c5b7277ad0189832046ad6aac5b7b8c473e0315faae12b.mp4",
+      "video": "./media/rit-csci-101-900147704a88ab19.mp4",
       "captions": "./examples/rit-csci-101/captions.vtt",
       "transcript": "./examples/rit-csci-101/transcript.txt",
       "sources": "./examples/rit-csci-101/sources.json",
       "releaseManifest": "./examples/rit-csci-101/release-artifacts.json",
       "qualityReport": "./examples/rit-csci-101/quality-report.json",
       "groundingReport": "./examples/rit-csci-101/grounding-report.json",
-      "videoSha256": "d8b41a405ecdfea426c5b7277ad0189832046ad6aac5b7b8c473e0315faae12b",
-      "videoBytes": 6786690,
-      "videoVariant": "web-preview"
+      "videoSha256": "900147704a88ab190d6f3a1b7384fc4425103f33d33cd4eb2cd59ca68f8477a7",
+      "videoBytes": 33960302,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1"
     },
     {
       "id": "rit-csci-140",
@@ -276,9 +574,9 @@
       "level": "Undergraduate",
       "description": "An independent, catalog-aligned learning companion. It is not an official RIT course section or a replacement for the instructor's syllabus.",
       "outcomes": [
-        "Define and distinguish between static and dynamic data types using language reference specifications.",
-        "Explain how objects, classes, and inheritance form the foundation of object-oriented design.",
-        "Apply cohesion and minimal coupling principles to evaluate software quality in object-oriented structures."
+        "Identify core data structures (lists, stacks, queues, trees, graphs) and their access patterns as defined in the course catalog.",
+        "Explain the role of objects, classes, and inheritance in achieving cohesion and minimal coupling within software systems.",
+        "Apply exception handling and input/output streams to manage runtime errors and user interaction in Python programs."
       ],
       "paths": [
         "Computing & Engineering",
@@ -291,39 +589,61 @@
         "credits": "4 Credits",
         "sourceUrl": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02="
       },
-      "aiContribution": {
-        "stage": "source-grounded planning and narration draft",
-        "provider": "local-openai-compatible",
-        "model": "prism-ml/Bonsai-27B-gguf",
-        "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
-        "humanReviewRequired": true
-      },
-      "duration": "10:05",
-      "durationSeconds": 605,
+      "generationProvenance": [
+        {
+          "stage": "Source-grounded planning and narration draft",
+          "provider": "local-openai-compatible",
+          "model": "empero-ai/Qwythos-9B-v2-GGUF",
+          "modelRevision": "sha256:fc5251e8e3e87d58946522833eb896c84375a715b6f89c54cdd10082ecc6ea8d",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ],
+      "duration": "10:07",
+      "durationSeconds": 607,
       "poster": "./examples/rit-csci-140/poster.png",
-      "video": "https://kdody4sc99hycejm.public.blob.vercel-storage.com/rit-csci/2025-2026/rit-csci-140/6693139883f95be0bf7ec8dc2e561d56859f182de9c14f10748a93594b436190.mp4",
+      "video": "./media/rit-csci-140-05c1675a69e007c1.mp4",
       "captions": "./examples/rit-csci-140/captions.vtt",
       "transcript": "./examples/rit-csci-140/transcript.txt",
       "sources": "./examples/rit-csci-140/sources.json",
       "releaseManifest": "./examples/rit-csci-140/release-artifacts.json",
       "qualityReport": "./examples/rit-csci-140/quality-report.json",
       "groundingReport": "./examples/rit-csci-140/grounding-report.json",
-      "videoSha256": "6693139883f95be0bf7ec8dc2e561d56859f182de9c14f10748a93594b436190",
-      "videoBytes": 6860349,
-      "videoVariant": "web-preview"
+      "videoSha256": "05c1675a69e007c13a0ab41e33c80ad016837f3cddcc3c5dcf506765c682e4ed",
+      "videoBytes": 36064346,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1"
     },
     {
       "id": "rit-csci-141",
       "title": "CSCI 141 — Computer Science I",
       "area": "Computing",
-      "subject": "Algorithms and Theory",
+      "subject": "Programming and Languages",
       "format": "Full lesson",
       "level": "Undergraduate",
       "description": "An independent, catalog-aligned learning companion. It is not an official RIT course section or a replacement for the instructor's syllabus.",
       "outcomes": [
-        "Define and apply the three core components of a disciplined solution: precise problem specification, correctness argument, and resource bounds.",
-        "Explain how loop invariants support proof by initialization, maintenance, and termination to verify algorithm correctness.",
-        "Demonstrate how divide-and-conquer algorithms split problems, solve subproblems, and combine results to achieve efficient solutions."
+        "Define and apply the core components of computational thinking, including precise problem statements, input/output examples, and algorithmic logic.",
+        "Represent algorithms using pseudo code and a programming language, demonstrating functional and imperative techniques, control structures, and data ab",
+        "Evaluate correctness, testing, and debugging by comparing intended behavior with observable results, including boundary and error cases."
       ],
       "paths": [
         "Computing & Engineering",
@@ -336,39 +656,61 @@
         "credits": "4 Credits",
         "sourceUrl": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02="
       },
-      "aiContribution": {
-        "stage": "source-grounded planning and narration draft",
-        "provider": "local-openai-compatible",
-        "model": "prism-ml/Bonsai-27B-gguf",
-        "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
-        "humanReviewRequired": true
-      },
-      "duration": "11:09",
-      "durationSeconds": 669,
+      "generationProvenance": [
+        {
+          "stage": "Source-grounded planning and narration draft",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ],
+      "duration": "10:02",
+      "durationSeconds": 602,
       "poster": "./examples/rit-csci-141/poster.png",
-      "video": "https://kdody4sc99hycejm.public.blob.vercel-storage.com/rit-csci/2025-2026/rit-csci-141/144d8d0b0574c323b879c582d983284f616b7f3a2c1bb8d83849ec55790d105e.mp4",
+      "video": "./media/rit-csci-141-dd9b110346f4e9d8.mp4",
       "captions": "./examples/rit-csci-141/captions.vtt",
       "transcript": "./examples/rit-csci-141/transcript.txt",
       "sources": "./examples/rit-csci-141/sources.json",
       "releaseManifest": "./examples/rit-csci-141/release-artifacts.json",
       "qualityReport": "./examples/rit-csci-141/quality-report.json",
       "groundingReport": "./examples/rit-csci-141/grounding-report.json",
-      "videoSha256": "144d8d0b0574c323b879c582d983284f616b7f3a2c1bb8d83849ec55790d105e",
-      "videoBytes": 7102117,
-      "videoVariant": "web-preview"
+      "videoSha256": "dd9b110346f4e9d856493a3383bae91a4182accc43303dd7ab6087818b5b4c02",
+      "videoBytes": 34996678,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1"
     },
     {
       "id": "rit-csci-142",
       "title": "CSCI 142 — Computer Science II",
       "area": "Computing",
-      "subject": "Computing Practice and Research",
+      "subject": "Programming and Languages",
       "format": "Full lesson",
       "level": "Undergraduate",
       "description": "An independent, catalog-aligned learning companion. It is not an official RIT course section or a replacement for the instructor's syllabus.",
       "outcomes": [
-        "Define and distinguish between static and dynamic data types in object-oriented programming.",
-        "Explain how inheritance and interfaces enable code reuse and modifiability in software design.",
-        "Apply cohesion and minimal coupling principles to structure object-oriented collections and handle exceptions."
+        "Identify and apply core object-oriented design principles (cohesion, coupling, inheritance) to structure code for modifiability and extensibility.",
+        "Select appropriate abstract data types (stacks, queues, trees, graphs) and implement them using object-oriented collection libraries.",
+        "Design and implement exception handling and input/output streams within a modern IDE to manage runtime errors and user interaction."
       ],
       "paths": [
         "Computing & Engineering",
@@ -381,39 +723,61 @@
         "credits": "4 Credits",
         "sourceUrl": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02="
       },
-      "aiContribution": {
-        "stage": "source-grounded planning and narration draft",
-        "provider": "local-openai-compatible",
-        "model": "prism-ml/Bonsai-27B-gguf",
-        "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
-        "humanReviewRequired": true
-      },
-      "duration": "10:23",
-      "durationSeconds": 623,
+      "generationProvenance": [
+        {
+          "stage": "Source-grounded planning and narration draft",
+          "provider": "local-openai-compatible",
+          "model": "empero-ai/Qwythos-9B-v2-GGUF",
+          "modelRevision": "sha256:fc5251e8e3e87d58946522833eb896c84375a715b6f89c54cdd10082ecc6ea8d",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ],
+      "duration": "10:45",
+      "durationSeconds": 645,
       "poster": "./examples/rit-csci-142/poster.png",
-      "video": "https://kdody4sc99hycejm.public.blob.vercel-storage.com/rit-csci/2025-2026/rit-csci-142/1405be5485c7ca473b00759ef3064eb3244d7d8efd0e518591c0e842e542fc6b.mp4",
+      "video": "./media/rit-csci-142-dc374187e68a2d77.mp4",
       "captions": "./examples/rit-csci-142/captions.vtt",
       "transcript": "./examples/rit-csci-142/transcript.txt",
       "sources": "./examples/rit-csci-142/sources.json",
       "releaseManifest": "./examples/rit-csci-142/release-artifacts.json",
       "qualityReport": "./examples/rit-csci-142/quality-report.json",
       "groundingReport": "./examples/rit-csci-142/grounding-report.json",
-      "videoSha256": "1405be5485c7ca473b00759ef3064eb3244d7d8efd0e518591c0e842e542fc6b",
-      "videoBytes": 6897739,
-      "videoVariant": "web-preview"
+      "videoSha256": "dc374187e68a2d779d9e0473e38e0dcdf9ba5e35e86cf37dea78285ff11b266c",
+      "videoBytes": 37543744,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1"
     },
     {
       "id": "rit-csci-242",
       "title": "CSCI 242 — Computer Science for Transfer Students",
       "area": "Computing",
-      "subject": "Algorithms and Theory",
+      "subject": "Programming and Languages",
       "format": "Full lesson",
       "level": "Undergraduate",
       "description": "An independent, catalog-aligned learning companion. It is not an official RIT course section or a replacement for the instructor's syllabus.",
       "outcomes": [
-        "Define and apply asymptotic notation to describe how algorithm resource use grows with input size.",
-        "Explain how loop invariants support correctness proofs through initialization, maintenance, and termination.",
-        "Evaluate representation choices for data structures to determine operational efficiency and identify possible errors."
+        "Students will articulate precise problem statements including input/output examples and invariants.",
+        "Students will select and justify appropriate data structures (lists, stacks, queues, trees, graphs) for a given computational task.",
+        "Students will design and implement a solution using decomposition, abstraction, and testing to meet correctness criteria."
       ],
       "paths": [
         "Computing & Engineering",
@@ -426,39 +790,61 @@
         "credits": "4 Credits",
         "sourceUrl": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02="
       },
-      "aiContribution": {
-        "stage": "source-grounded planning and narration draft",
-        "provider": "local-openai-compatible",
-        "model": "prism-ml/Bonsai-27B-gguf",
-        "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
-        "humanReviewRequired": true
-      },
-      "duration": "10:13",
-      "durationSeconds": 613,
+      "generationProvenance": [
+        {
+          "stage": "Source-grounded planning and narration draft",
+          "provider": "local-openai-compatible",
+          "model": "empero-ai/Qwythos-9B-v2-GGUF",
+          "modelRevision": "sha256:fc5251e8e3e87d58946522833eb896c84375a715b6f89c54cdd10082ecc6ea8d",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ],
+      "duration": "9:28",
+      "durationSeconds": 568,
       "poster": "./examples/rit-csci-242/poster.png",
-      "video": "https://kdody4sc99hycejm.public.blob.vercel-storage.com/rit-csci/2025-2026/rit-csci-242/a2398fe08decb5d64de71f8367e4cf16d6b3b6184a4637f356597c91626527b9.mp4",
+      "video": "./media/rit-csci-242-83dab3df01d58487.mp4",
       "captions": "./examples/rit-csci-242/captions.vtt",
       "transcript": "./examples/rit-csci-242/transcript.txt",
       "sources": "./examples/rit-csci-242/sources.json",
       "releaseManifest": "./examples/rit-csci-242/release-artifacts.json",
       "qualityReport": "./examples/rit-csci-242/quality-report.json",
       "groundingReport": "./examples/rit-csci-242/grounding-report.json",
-      "videoSha256": "a2398fe08decb5d64de71f8367e4cf16d6b3b6184a4637f356597c91626527b9",
-      "videoBytes": 6835009,
-      "videoVariant": "web-preview"
+      "videoSha256": "83dab3df01d58487afc518e3fb085ee0852a033437da0dfda6ac4b9ab6d4e26f",
+      "videoBytes": 33324032,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1"
     },
     {
       "id": "rit-csci-243",
       "title": "CSCI 243 — The Mechanics of Programming",
       "area": "Computing",
-      "subject": "Cybersecurity",
+      "subject": "Programming and Languages",
       "format": "Full lesson",
       "level": "Undergraduate",
       "description": "An independent, catalog-aligned learning companion. It is not an official RIT course section or a replacement for the instructor's syllabus.",
       "outcomes": [
-        "Define the core components of program structure and execution mechanics.",
-        "Explain the program translation process from source code to executable binary.",
-        "Identify key security and performance considerations in program design."
+        "Identify the core components of program structure (variables, expressions, control structures, functions) and explain their roles in algorithm design.",
+        "Trace the program translation process from source code through lexical analysis, parsing, and execution, citing Python-specific mechanisms.",
+        "Apply debugging and correctness techniques (tests, tracing, boundary analysis) to evaluate program behavior against intended specifications."
       ],
       "paths": [
         "Computing & Engineering",
@@ -471,26 +857,48 @@
         "credits": "3 Credits",
         "sourceUrl": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02="
       },
-      "aiContribution": {
-        "stage": "source-grounded planning and narration draft",
-        "provider": "local-openai-compatible",
-        "model": "prism-ml/Bonsai-27B-gguf",
-        "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
-        "humanReviewRequired": true
-      },
-      "duration": "9:52",
-      "durationSeconds": 592,
+      "generationProvenance": [
+        {
+          "stage": "Source-grounded planning and narration draft",
+          "provider": "local-openai-compatible",
+          "model": "empero-ai/Qwythos-9B-v2-GGUF",
+          "modelRevision": "sha256:fc5251e8e3e87d58946522833eb896c84375a715b6f89c54cdd10082ecc6ea8d",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ],
+      "duration": "10:37",
+      "durationSeconds": 637,
       "poster": "./examples/rit-csci-243/poster.png",
-      "video": "https://kdody4sc99hycejm.public.blob.vercel-storage.com/rit-csci/2025-2026/rit-csci-243/cc82388d7ca359ae6387f4841d5a19d19554a466fa61004efea42398f69d6e52.mp4",
+      "video": "./media/rit-csci-243-b1b45866eec871c2.mp4",
       "captions": "./examples/rit-csci-243/captions.vtt",
       "transcript": "./examples/rit-csci-243/transcript.txt",
       "sources": "./examples/rit-csci-243/sources.json",
       "releaseManifest": "./examples/rit-csci-243/release-artifacts.json",
       "qualityReport": "./examples/rit-csci-243/quality-report.json",
       "groundingReport": "./examples/rit-csci-243/grounding-report.json",
-      "videoSha256": "cc82388d7ca359ae6387f4841d5a19d19554a466fa61004efea42398f69d6e52",
-      "videoBytes": 6634582,
-      "videoVariant": "web-preview"
+      "videoSha256": "b1b45866eec871c27a3bb8e4276f36d3680d012b90025ec793368d33f0eb960b",
+      "videoBytes": 36966325,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1"
     },
     {
       "id": "rit-csci-250",
@@ -523,32 +931,60 @@
         "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
         "humanReviewRequired": true
       },
-      "duration": "9:41",
-      "durationSeconds": 581,
+      "duration": "7:40",
+      "durationSeconds": 460,
       "poster": "./examples/rit-csci-250/poster.png",
-      "video": "https://kdody4sc99hycejm.public.blob.vercel-storage.com/rit-csci/2025-2026/rit-csci-250/5ace454480aeec1d6145364abfa96e8448d6a3b307360874feb955c6794f4d60.mp4",
+      "video": "./media/rit-csci-250-4c12b49fd5bc15d4.mp4",
       "captions": "./examples/rit-csci-250/captions.vtt",
       "transcript": "./examples/rit-csci-250/transcript.txt",
       "sources": "./examples/rit-csci-250/sources.json",
       "releaseManifest": "./examples/rit-csci-250/release-artifacts.json",
       "qualityReport": "./examples/rit-csci-250/quality-report.json",
       "groundingReport": "./examples/rit-csci-250/grounding-report.json",
-      "videoSha256": "5ace454480aeec1d6145364abfa96e8448d6a3b307360874feb955c6794f4d60",
-      "videoBytes": 6672838,
-      "videoVariant": "web-preview"
+      "videoSha256": "4c12b49fd5bc15d49f3e4ac64b9183b0fb1fbf5341946b199154aa14d9127302",
+      "videoBytes": 29248897,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-251",
       "title": "CSCI 251 — Concepts of Parallel and Distributed Systems",
       "area": "Computing",
-      "subject": "Cybersecurity",
+      "subject": "Parallel Computing",
       "format": "Full lesson",
       "level": "Undergraduate",
       "description": "An independent, catalog-aligned learning companion. It is not an official RIT course section or a replacement for the instructor's syllabus.",
       "outcomes": [
         "Define the core architectural models of parallel and distributed systems, including multi-core, clusters, grids, client-server, and peer-to-peer topol",
-        "Explain how network protocols and security mechanisms protect data integrity and confidentiality in distributed environments",
-        "Apply multi-threaded and network programming concepts to design and analyze concurrent system components"
+        "Explain the fundamental communication and synchronization mechanisms required for correct concurrent execution in shared and distributed memory",
+        "Apply practical analysis methods to evaluate performance bottlenecks, such as communication overhead, load imbalance, and synchronization costs, in a "
       ],
       "paths": [
         "Computing & Engineering",
@@ -568,19 +1004,47 @@
         "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
         "humanReviewRequired": true
       },
-      "duration": "10:24",
-      "durationSeconds": 624,
+      "duration": "8:17",
+      "durationSeconds": 497,
       "poster": "./examples/rit-csci-251/poster.png",
-      "video": "https://kdody4sc99hycejm.public.blob.vercel-storage.com/rit-csci/2025-2026/rit-csci-251/d61ad1d45e11a825844386be1c37364aa41965a761c710554b614ce49334c3cf.mp4",
+      "video": "./media/rit-csci-251-7b02157c084b538d.mp4",
       "captions": "./examples/rit-csci-251/captions.vtt",
       "transcript": "./examples/rit-csci-251/transcript.txt",
       "sources": "./examples/rit-csci-251/sources.json",
       "releaseManifest": "./examples/rit-csci-251/release-artifacts.json",
       "qualityReport": "./examples/rit-csci-251/quality-report.json",
       "groundingReport": "./examples/rit-csci-251/grounding-report.json",
-      "videoSha256": "d61ad1d45e11a825844386be1c37364aa41965a761c710554b614ce49334c3cf",
-      "videoBytes": 6926311,
-      "videoVariant": "web-preview"
+      "videoSha256": "7b02157c084b538da1ae1cb53a24090e7761fb3e5953524433bb41eff1a1dc88",
+      "videoBytes": 31004143,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-261",
@@ -591,9 +1055,9 @@
       "level": "Undergraduate",
       "description": "An independent, catalog-aligned learning companion. It is not an official RIT course section or a replacement for the instructor's syllabus.",
       "outcomes": [
-        "Define and apply asymptotic notation to describe the growth rate of algorithmic resource usage relative to input size.",
-        "Construct and verify a loop invariant to prove the correctness of iterative algorithms through initialization, maintenance, and termination.",
-        "Represent and traverse graph structures using adjacency lists to solve reachability and path-finding problems."
+        "Students will articulate the disciplined solution framework: define inputs/outputs, prove correctness via loop invariants or divide-and-conquer logic,",
+        "and analyze asymptotic time/space bounds.",
+        "Students will distinguish between linear, stack, queue, tree, hash table, and graph representations, explaining how each supports specific operations."
       ],
       "paths": [
         "Computing & Engineering",
@@ -606,26 +1070,48 @@
         "credits": "3 Credits",
         "sourceUrl": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02="
       },
-      "aiContribution": {
-        "stage": "source-grounded planning and narration draft",
-        "provider": "local-openai-compatible",
-        "model": "prism-ml/Bonsai-27B-gguf",
-        "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
-        "humanReviewRequired": true
-      },
+      "generationProvenance": [
+        {
+          "stage": "Source-grounded planning and narration draft",
+          "provider": "local-openai-compatible",
+          "model": "empero-ai/Qwythos-9B-v2-GGUF",
+          "modelRevision": "sha256:fc5251e8e3e87d58946522833eb896c84375a715b6f89c54cdd10082ecc6ea8d",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ],
       "duration": "9:52",
       "durationSeconds": 592,
       "poster": "./examples/rit-csci-261/poster.png",
-      "video": "https://kdody4sc99hycejm.public.blob.vercel-storage.com/rit-csci/2025-2026/rit-csci-261/fee350f35346c1ee088bcdf9881055e48e7b5a8d406297c99d046c5caa320f5e.mp4",
+      "video": "./media/rit-csci-261-21e82afcdf42d0e9.mp4",
       "captions": "./examples/rit-csci-261/captions.vtt",
       "transcript": "./examples/rit-csci-261/transcript.txt",
       "sources": "./examples/rit-csci-261/sources.json",
       "releaseManifest": "./examples/rit-csci-261/release-artifacts.json",
       "qualityReport": "./examples/rit-csci-261/quality-report.json",
       "groundingReport": "./examples/rit-csci-261/grounding-report.json",
-      "videoSha256": "fee350f35346c1ee088bcdf9881055e48e7b5a8d406297c99d046c5caa320f5e",
-      "videoBytes": 6738333,
-      "videoVariant": "web-preview"
+      "videoSha256": "21e82afcdf42d0e913936e6c1d8ac9c8d04a72760b7e8e6827b1e0dbe7dccff2",
+      "videoBytes": 36843485,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1"
     },
     {
       "id": "rit-csci-262",
@@ -658,19 +1144,47 @@
         "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
         "humanReviewRequired": true
       },
-      "duration": "9:51",
-      "durationSeconds": 591,
+      "duration": "7:52",
+      "durationSeconds": 472,
       "poster": "./examples/rit-csci-262/poster.png",
-      "video": "https://kdody4sc99hycejm.public.blob.vercel-storage.com/rit-csci/2025-2026/rit-csci-262/ba4342f5a8f82efb9d6d80b6432b070386bea64d80260e9b45442b3284bc973b.mp4",
+      "video": "./media/rit-csci-262-fd263f51602e7e20.mp4",
       "captions": "./examples/rit-csci-262/captions.vtt",
       "transcript": "./examples/rit-csci-262/transcript.txt",
       "sources": "./examples/rit-csci-262/sources.json",
       "releaseManifest": "./examples/rit-csci-262/release-artifacts.json",
       "qualityReport": "./examples/rit-csci-262/quality-report.json",
       "groundingReport": "./examples/rit-csci-262/grounding-report.json",
-      "videoSha256": "ba4342f5a8f82efb9d6d80b6432b070386bea64d80260e9b45442b3284bc973b",
-      "videoBytes": 6688292,
-      "videoVariant": "web-preview"
+      "videoSha256": "fd263f51602e7e201702e8528dc74834f7022482b54403a6393cdc6ab363f70a",
+      "videoBytes": 30074015,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-263",
@@ -703,19 +1217,47 @@
         "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
         "humanReviewRequired": true
       },
-      "duration": "9:32",
-      "durationSeconds": 572,
+      "duration": "7:32",
+      "durationSeconds": 452,
       "poster": "./examples/rit-csci-263/poster.png",
-      "video": "https://kdody4sc99hycejm.public.blob.vercel-storage.com/rit-csci/2025-2026/rit-csci-263/ad2fa56c6cfc71538b8036af7bb5b865ffac3358985adf5a7e57eff3481f9702.mp4",
+      "video": "./media/rit-csci-263-2686e2fee3e1d18d.mp4",
       "captions": "./examples/rit-csci-263/captions.vtt",
       "transcript": "./examples/rit-csci-263/transcript.txt",
       "sources": "./examples/rit-csci-263/sources.json",
       "releaseManifest": "./examples/rit-csci-263/release-artifacts.json",
       "qualityReport": "./examples/rit-csci-263/quality-report.json",
       "groundingReport": "./examples/rit-csci-263/grounding-report.json",
-      "videoSha256": "ad2fa56c6cfc71538b8036af7bb5b865ffac3358985adf5a7e57eff3481f9702",
-      "videoBytes": 6621436,
-      "videoVariant": "web-preview"
+      "videoSha256": "2686e2fee3e1d18d08ee9bf5229f6777ca76666ce1243d5d292eadee7ffc06c3",
+      "videoBytes": 30353329,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-264",
@@ -748,19 +1290,47 @@
         "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
         "humanReviewRequired": true
       },
-      "duration": "10:08",
-      "durationSeconds": 608,
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ],
+      "duration": "8:06",
+      "durationSeconds": 486,
       "poster": "./examples/rit-csci-264/poster.png",
-      "video": "https://kdody4sc99hycejm.public.blob.vercel-storage.com/rit-csci/2025-2026/rit-csci-264/a3dc5f90fb5765da43dad0bfb1630b952da8ddcd7e50e3db488bb461c8f65380.mp4",
+      "video": "./media/rit-csci-264-fdf80b1d66fb61ed.mp4",
       "captions": "./examples/rit-csci-264/captions.vtt",
       "transcript": "./examples/rit-csci-264/transcript.txt",
       "sources": "./examples/rit-csci-264/sources.json",
       "releaseManifest": "./examples/rit-csci-264/release-artifacts.json",
       "qualityReport": "./examples/rit-csci-264/quality-report.json",
       "groundingReport": "./examples/rit-csci-264/grounding-report.json",
-      "videoSha256": "a3dc5f90fb5765da43dad0bfb1630b952da8ddcd7e50e3db488bb461c8f65380",
-      "videoBytes": 6792230,
-      "videoVariant": "web-preview"
+      "videoSha256": "fdf80b1d66fb61ed4f1ecb0de1dfd34e928e9cf33ab5892062c64159648df296",
+      "videoBytes": 31134790,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1"
     },
     {
       "id": "rit-csci-320",
@@ -805,7 +1375,33 @@
       "groundingReport": "./examples/rit-csci-320/grounding-report.json",
       "videoSha256": "daf2f166282dce31516390c51a97770698fc1b9e9d6da56361350c6d17a39c46",
       "videoBytes": 6588087,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-331",
@@ -850,7 +1446,33 @@
       "groundingReport": "./examples/rit-csci-331/grounding-report.json",
       "videoSha256": "435bce97d380ad004988e49350ba639ef173e5a6bb5571626107779885a63dae",
       "videoBytes": 6847939,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-335",
@@ -895,7 +1517,33 @@
       "groundingReport": "./examples/rit-csci-335/grounding-report.json",
       "videoSha256": "bb424446efc3d910cf67e6cd2a499765f0dc908d09a93a46d74d47480cf67063",
       "videoBytes": 6768860,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-344",
@@ -940,7 +1588,33 @@
       "groundingReport": "./examples/rit-csci-344/grounding-report.json",
       "videoSha256": "75c94191ee686fe503cd7cc9292b3f11dd563e7371f5b8c0cac7026cef743099",
       "videoBytes": 6874222,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-351",
@@ -985,7 +1659,33 @@
       "groundingReport": "./examples/rit-csci-351/grounding-report.json",
       "videoSha256": "1e6dbe82aecb0213987f49bafb3a566cd822c4fc8ac4b4b6cba65ff8b46ae907",
       "videoBytes": 6891051,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-352",
@@ -1030,7 +1730,33 @@
       "groundingReport": "./examples/rit-csci-352/grounding-report.json",
       "videoSha256": "ece7c9ed2aa87a42a3a32ab86842d4c09d6345c238335c7da74ee665c4f26563",
       "videoBytes": 6718790,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-399",
@@ -1075,7 +1801,33 @@
       "groundingReport": "./examples/rit-csci-399/grounding-report.json",
       "videoSha256": "d12001e11ffa8b899e1c6bccd22c1b823805af8caa990d38812e95fdece4dd75",
       "videoBytes": 6729376,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-420",
@@ -1120,7 +1872,33 @@
       "groundingReport": "./examples/rit-csci-420/grounding-report.json",
       "videoSha256": "29b1b90338d150580367496334da1309443dce8755b771eae68cf882abde7dad",
       "videoBytes": 6861477,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-421",
@@ -1165,7 +1943,33 @@
       "groundingReport": "./examples/rit-csci-421/grounding-report.json",
       "videoSha256": "836715eac2678730e5eafc4ec7d6c36d9d39aee072a76d720a9e9d2248f74d76",
       "videoBytes": 6755158,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-431",
@@ -1210,7 +2014,33 @@
       "groundingReport": "./examples/rit-csci-431/grounding-report.json",
       "videoSha256": "0cffa5a841e22e768d1ea75225f8d4f97b43bb0732c337cd815fde967d7b6f59",
       "videoBytes": 6730892,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-452",
@@ -1255,7 +2085,33 @@
       "groundingReport": "./examples/rit-csci-452/grounding-report.json",
       "videoSha256": "e08ba0e6dfb5d4918e03fc555370ec847ae5a6095bdb53781b7d3632ad42f999",
       "videoBytes": 6616587,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-453",
@@ -1300,7 +2156,33 @@
       "groundingReport": "./examples/rit-csci-453/grounding-report.json",
       "videoSha256": "57a7e100a150d82913580d78ea065017cbe5d744851331cac4233a761e7937b0",
       "videoBytes": 6863628,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-455",
@@ -1345,7 +2227,33 @@
       "groundingReport": "./examples/rit-csci-455/grounding-report.json",
       "videoSha256": "51f082e922cc19c447e1ed86a77580cced1641e4bd00dbfe61e92ca2b304ce8a",
       "videoBytes": 7003013,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-462",
@@ -1390,7 +2298,33 @@
       "groundingReport": "./examples/rit-csci-462/grounding-report.json",
       "videoSha256": "b151b300557313f01b2020ebbaa2a9707daee115f2100f6ce961f97fcd13b0d7",
       "videoBytes": 6721745,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-464",
@@ -1435,7 +2369,33 @@
       "groundingReport": "./examples/rit-csci-464/grounding-report.json",
       "videoSha256": "fd45df63c5d48faed682c3f9727f2a82242c4392f861bd33022226f210cb9005",
       "videoBytes": 6852186,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-471",
@@ -1480,7 +2440,33 @@
       "groundingReport": "./examples/rit-csci-471/grounding-report.json",
       "videoSha256": "b6439a180a7881654e0910aa81fdb10ad34c108f6db5da430506da50c5c43bc4",
       "videoBytes": 7000925,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-472",
@@ -1525,7 +2511,33 @@
       "groundingReport": "./examples/rit-csci-472/grounding-report.json",
       "videoSha256": "e69d7d1a8b74445e9fe500f442181945d4baf89a056179ed67a91b4d30a5fe24",
       "videoBytes": 6736476,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-488",
@@ -1570,7 +2582,33 @@
       "groundingReport": "./examples/rit-csci-488/grounding-report.json",
       "videoSha256": "9583c1fe9943f5714533b1dd31fbcc88055e84286e9aff97e977f73fc9d95294",
       "videoBytes": 6809866,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-499",
@@ -1615,7 +2653,33 @@
       "groundingReport": "./examples/rit-csci-499/grounding-report.json",
       "videoSha256": "3739b98bc8b2466ae03dc49ce7a9f177527617ec942f1b5aa2c894edad841485",
       "videoBytes": 6658984,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-509",
@@ -1660,7 +2724,33 @@
       "groundingReport": "./examples/rit-csci-509/grounding-report.json",
       "videoSha256": "19484e93e0bb16b1083e9f36649fe9f300aceec365f9ecd9c6c85e6357979333",
       "videoBytes": 6707246,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-510",
@@ -1705,7 +2795,33 @@
       "groundingReport": "./examples/rit-csci-510/grounding-report.json",
       "videoSha256": "384bda7df2d63e515608e19104d0720d6fdf8d25d060ed7079511f98f8227337",
       "videoBytes": 7097594,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-518",
@@ -1750,7 +2866,33 @@
       "groundingReport": "./examples/rit-csci-518/grounding-report.json",
       "videoSha256": "ce31a4f047e254aa6d562fb8dcae4ca112ed1d12cfb87cee02c92943f453b2ad",
       "videoBytes": 7120444,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-519",
@@ -1795,7 +2937,33 @@
       "groundingReport": "./examples/rit-csci-519/grounding-report.json",
       "videoSha256": "c2a84736cd0fcad1d0c35e8f49378472a7a13afcdc017475abb8ee509020e675",
       "videoBytes": 7101967,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-521",
@@ -1840,7 +3008,33 @@
       "groundingReport": "./examples/rit-csci-521/grounding-report.json",
       "videoSha256": "bf0c75111669f98b38b11dbb97c4a5d294e769f8cb4d4c6415a13065bfee9a6c",
       "videoBytes": 7154318,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-529",
@@ -1885,7 +3079,33 @@
       "groundingReport": "./examples/rit-csci-529/grounding-report.json",
       "videoSha256": "f62bc0b94f6313501de9f4acae662a49dde23679955e50ba64e57017026cad3d",
       "videoBytes": 7069846,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-531",
@@ -1930,7 +3150,33 @@
       "groundingReport": "./examples/rit-csci-531/grounding-report.json",
       "videoSha256": "c7dde4f021932af5f7593b9cec05cb4c644cd4ff53c1379d55cef0e6f2ad2c33",
       "videoBytes": 7094439,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-532",
@@ -1975,7 +3221,33 @@
       "groundingReport": "./examples/rit-csci-532/grounding-report.json",
       "videoSha256": "99fd2d5f26e43d898f649535d98e09b956a105628ad1d8b6e3d84d3219b4306a",
       "videoBytes": 7013451,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-536",
@@ -2020,7 +3292,33 @@
       "groundingReport": "./examples/rit-csci-536/grounding-report.json",
       "videoSha256": "b15e329c8b1144c441769c49b54a35e3a964adf95eb421de2d2cb5f3d4fc6c56",
       "videoBytes": 7249968,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-538",
@@ -2065,7 +3363,33 @@
       "groundingReport": "./examples/rit-csci-538/grounding-report.json",
       "videoSha256": "f6ef65c36e6671d725663ac92a2c07752b17b98bb6f8148b0188ad0fa52b551a",
       "videoBytes": 7116666,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-539",
@@ -2110,7 +3434,33 @@
       "groundingReport": "./examples/rit-csci-539/grounding-report.json",
       "videoSha256": "1e253c9e8ce4b5f0a2cbd9d25425caffdf4bcf28300d1ac4826d6f6068fdfcc9",
       "videoBytes": 7164653,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-541",
@@ -2155,7 +3505,33 @@
       "groundingReport": "./examples/rit-csci-541/grounding-report.json",
       "videoSha256": "a7a0c9b58eddad8c451a1cc21a49d08c526ba7742d99645eb003097b75ef87a7",
       "videoBytes": 7118061,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-549",
@@ -2200,7 +3576,33 @@
       "groundingReport": "./examples/rit-csci-549/grounding-report.json",
       "videoSha256": "66167a2216940987e366b7e501e09615e5f70b3a1cff9600c6f69bdec15f630a",
       "videoBytes": 7191081,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-559",
@@ -2245,7 +3647,33 @@
       "groundingReport": "./examples/rit-csci-559/grounding-report.json",
       "videoSha256": "18beb1d362e5f73db488867574c121f3ffbfc5b41fcac49f1002fb5e4fd4548a",
       "videoBytes": 7070081,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-569",
@@ -2290,7 +3718,33 @@
       "groundingReport": "./examples/rit-csci-569/grounding-report.json",
       "videoSha256": "a1f4fd70bc2b557a788d15ff280427760219e79270a9a19aa6142423d118c297",
       "videoBytes": 7185223,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-571",
@@ -2335,7 +3789,33 @@
       "groundingReport": "./examples/rit-csci-571/grounding-report.json",
       "videoSha256": "21e2e225095f6a46dc8af4a0d64098cd528df4947bb087b519e771115d35cea7",
       "videoBytes": 7185279,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-589",
@@ -2380,7 +3860,33 @@
       "groundingReport": "./examples/rit-csci-589/grounding-report.json",
       "videoSha256": "a412a1bdc0115cc9a91122a202eaaa55e264601bad65fcad15fafc3f0c0690cb",
       "videoBytes": 7090556,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-590",
@@ -2425,7 +3931,33 @@
       "groundingReport": "./examples/rit-csci-590/grounding-report.json",
       "videoSha256": "95e1daf66cb30d224e20dc4baf98c7e7cec0e3b27b307bc447c7f2be320bf73d",
       "videoBytes": 7198633,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-599",
@@ -2458,19 +3990,47 @@
         "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
         "humanReviewRequired": true
       },
-      "duration": "10:06",
-      "durationSeconds": 606,
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ],
+      "duration": "8:14",
+      "durationSeconds": 494,
       "poster": "./examples/rit-csci-599/poster.png",
-      "video": "https://kdody4sc99hycejm.public.blob.vercel-storage.com/rit-csci/2025-2026/rit-csci-599/dabae6d9751f666f5841f5e2ff96ca8d5e8dc876224a708c00e359e181d420c3.mp4",
+      "video": "./media/rit-csci-599-a4d990dc2b792b9e.mp4",
       "captions": "./examples/rit-csci-599/captions.vtt",
       "transcript": "./examples/rit-csci-599/transcript.txt",
       "sources": "./examples/rit-csci-599/sources.json",
       "releaseManifest": "./examples/rit-csci-599/release-artifacts.json",
       "qualityReport": "./examples/rit-csci-599/quality-report.json",
       "groundingReport": "./examples/rit-csci-599/grounding-report.json",
-      "videoSha256": "dabae6d9751f666f5841f5e2ff96ca8d5e8dc876224a708c00e359e181d420c3",
-      "videoBytes": 7134635,
-      "videoVariant": "web-preview"
+      "videoSha256": "a4d990dc2b792b9e820070c697439f49075378e53e064b71179e4f2546d3c075",
+      "videoBytes": 30971872,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1"
     },
     {
       "id": "rit-csci-603",
@@ -2515,7 +4075,33 @@
       "groundingReport": "./examples/rit-csci-603/grounding-report.json",
       "videoSha256": "e84cff2a74cf23e19477b707260def7f825d70a76a49332daee265c06f88f8cf",
       "videoBytes": 7212140,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-605",
@@ -2560,7 +4146,33 @@
       "groundingReport": "./examples/rit-csci-605/grounding-report.json",
       "videoSha256": "5f2fc01857883e968a8e19de958d5762d8ffadf5c93d0e109770b80841f7b86f",
       "videoBytes": 7054602,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-610",
@@ -2605,7 +4217,33 @@
       "groundingReport": "./examples/rit-csci-610/grounding-report.json",
       "videoSha256": "9de5d7c0a4063d08284417b97c9b33b3ea5e9d7f084ce8af6566d8cc375134d6",
       "videoBytes": 7020675,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-620",
@@ -2650,7 +4288,33 @@
       "groundingReport": "./examples/rit-csci-620/grounding-report.json",
       "videoSha256": "f4dc565544f368dcfd6d77b8bb23d568c5cddea8a7f84924a71ad1ddac83e92c",
       "videoBytes": 7107326,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-621",
@@ -2695,7 +4359,33 @@
       "groundingReport": "./examples/rit-csci-621/grounding-report.json",
       "videoSha256": "a36a2f2a04e3ee2942da59bde26a767dec77decaba797158e7ab2895ebd86675",
       "videoBytes": 7075922,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-622",
@@ -2740,7 +4430,33 @@
       "groundingReport": "./examples/rit-csci-622/grounding-report.json",
       "videoSha256": "854cf089292ae944f34c508a21150de782795372d1053072665893132cf42ceb",
       "videoBytes": 7104890,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-630",
@@ -2785,7 +4501,33 @@
       "groundingReport": "./examples/rit-csci-630/grounding-report.json",
       "videoSha256": "be3b9e9d24e6e42ecbb8a11e8268765715fe30c3011f33bbd08263e09533a38e",
       "videoBytes": 7088539,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-631",
@@ -2830,7 +4572,33 @@
       "groundingReport": "./examples/rit-csci-631/grounding-report.json",
       "videoSha256": "729aacc7175693e13339eb223972414099815105cb44f66c485e5acd6b93111f",
       "videoBytes": 7098928,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-632",
@@ -2875,7 +4643,33 @@
       "groundingReport": "./examples/rit-csci-632/grounding-report.json",
       "videoSha256": "56051248abee0aa0e9959ca9458b28c98dbbea6e35164d8e22c9016a712eb0c8",
       "videoBytes": 7110612,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-633",
@@ -2920,7 +4714,33 @@
       "groundingReport": "./examples/rit-csci-633/grounding-report.json",
       "videoSha256": "dc3c4fd3f31c329be59c1a1bdb0db8395d2824583491c4249e0e54b6a852129c",
       "videoBytes": 7033901,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-635",
@@ -2965,7 +4785,33 @@
       "groundingReport": "./examples/rit-csci-635/grounding-report.json",
       "videoSha256": "a9994a7c1083e1e85732b3979eaee4cfd767680ba18e750313840a043f07896c",
       "videoBytes": 7167752,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-636",
@@ -3010,7 +4856,33 @@
       "groundingReport": "./examples/rit-csci-636/grounding-report.json",
       "videoSha256": "24ecb95b9b732d190a818f5f31c76e5f5a902b5706dddf35421848eb0f0ac5e9",
       "videoBytes": 7165338,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "rit-csci-99",
@@ -3055,7 +4927,33 @@
       "groundingReport": "./examples/rit-csci-99/grounding-report.json",
       "videoSha256": "e1867a95eb063066ebbf19c0abaf3c773532cb839e15e3be31fd956e62193d95",
       "videoBytes": 6896497,
-      "videoVariant": "web-preview"
+      "videoVariant": "web-preview",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "full-distributed-systems-consensus",
@@ -3081,13 +4979,47 @@
         "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
         "humanReviewRequired": true
       },
-      "duration": "11:00",
-      "durationSeconds": 660,
+      "duration": "11:01",
+      "durationSeconds": 661,
       "poster": "./examples/full-distributed-systems-consensus/poster.png",
-      "video": "./examples/full-distributed-systems-consensus/video.mp4",
+      "video": "./media/full-distributed-systems-consensus-98696f36feb6bcab.mp4",
       "captions": "./examples/full-distributed-systems-consensus/captions.vtt",
       "transcript": "./examples/full-distributed-systems-consensus/transcript.txt",
-      "sources": "./examples/full-distributed-systems-consensus/sources.json"
+      "sources": "./examples/full-distributed-systems-consensus/sources.json",
+      "releaseManifest": "./examples/full-distributed-systems-consensus/release-artifacts.json",
+      "qualityReport": "./examples/full-distributed-systems-consensus/quality-report.json",
+      "groundingReport": "./examples/full-distributed-systems-consensus/grounding-report.json",
+      "videoSha256": "98696f36feb6bcabdd94a9322832a7820e5430106e4d3d95871ba9b89fc80ba4",
+      "videoBytes": 39070243,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "full-riscv-pipeline",
@@ -3096,8 +5028,6 @@
       "subject": "Computer Architecture",
       "format": "Full lesson",
       "level": "Introductory",
-      "duration": "10:30",
-      "durationSeconds": 630,
       "description": "Trace an RV32I ADD instruction through encoding, the five-stage datapath, forwarding, stalls, control hazards, and performance.",
       "outcomes": [
         "Decode the fields of an RV32I R-type instruction",
@@ -3108,11 +5038,47 @@
         "Computing & Engineering",
         "STEM Foundations"
       ],
+      "duration": "10:30",
+      "durationSeconds": 630,
       "poster": "./examples/full-riscv-pipeline/poster.png",
-      "video": "./examples/full-riscv-pipeline/video.mp4",
+      "video": "./media/full-riscv-pipeline-f71741906890d951.mp4",
       "captions": "./examples/full-riscv-pipeline/captions.vtt",
       "transcript": "./examples/full-riscv-pipeline/transcript.txt",
-      "sources": "./examples/full-riscv-pipeline/sources.json"
+      "sources": "./examples/full-riscv-pipeline/sources.json",
+      "releaseManifest": "./examples/full-riscv-pipeline/release-artifacts.json",
+      "qualityReport": "./examples/full-riscv-pipeline/quality-report.json",
+      "groundingReport": "./examples/full-riscv-pipeline/grounding-report.json",
+      "videoSha256": "f71741906890d951c9e7353ad48bbfa103bb626a539b2a92216708b4ee0e9c28",
+      "videoBytes": 40015763,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "full-operating-systems-processes-memory",
@@ -3141,10 +5107,44 @@
       "duration": "8:53",
       "durationSeconds": 533,
       "poster": "./examples/full-operating-systems-processes-memory/poster.png",
-      "video": "./examples/full-operating-systems-processes-memory/video.mp4",
+      "video": "./media/full-operating-systems-processes-memory-3e9e88be6c0d5d8b.mp4",
       "captions": "./examples/full-operating-systems-processes-memory/captions.vtt",
       "transcript": "./examples/full-operating-systems-processes-memory/transcript.txt",
-      "sources": "./examples/full-operating-systems-processes-memory/sources.json"
+      "sources": "./examples/full-operating-systems-processes-memory/sources.json",
+      "releaseManifest": "./examples/full-operating-systems-processes-memory/release-artifacts.json",
+      "qualityReport": "./examples/full-operating-systems-processes-memory/quality-report.json",
+      "groundingReport": "./examples/full-operating-systems-processes-memory/grounding-report.json",
+      "videoSha256": "3e9e88be6c0d5d8b6070bc4e8e06ab22239f07e285507e4eafe88f800207a98c",
+      "videoBytes": 37689914,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "full-phishing-defense",
@@ -3166,10 +5166,44 @@
       "duration": "8:20",
       "durationSeconds": 500,
       "poster": "./examples/full-phishing-defense/poster.png",
-      "video": "./examples/full-phishing-defense/video.mp4",
+      "video": "./media/full-phishing-defense-d018fb8ed99704cd.mp4",
       "captions": "./examples/full-phishing-defense/captions.vtt",
       "transcript": "./examples/full-phishing-defense/transcript.txt",
-      "sources": "./examples/full-phishing-defense/sources.json"
+      "sources": "./examples/full-phishing-defense/sources.json",
+      "releaseManifest": "./examples/full-phishing-defense/release-artifacts.json",
+      "qualityReport": "./examples/full-phishing-defense/quality-report.json",
+      "groundingReport": "./examples/full-phishing-defense/grounding-report.json",
+      "videoSha256": "d018fb8ed99704cd64b0e191ae5859a689edd06c110f796c8fd9104fa3305048",
+      "videoBytes": 35914652,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "full-analog-circuits-rc-filters",
@@ -3195,13 +5229,47 @@
         "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
         "humanReviewRequired": true
       },
-      "duration": "11:02",
-      "durationSeconds": 662,
+      "duration": "11:03",
+      "durationSeconds": 663,
       "poster": "./examples/full-analog-circuits-rc-filters/poster.png",
-      "video": "./examples/full-analog-circuits-rc-filters/video.mp4",
+      "video": "./media/full-analog-circuits-rc-filters-c87a6b13af78d4eb.mp4",
       "captions": "./examples/full-analog-circuits-rc-filters/captions.vtt",
       "transcript": "./examples/full-analog-circuits-rc-filters/transcript.txt",
-      "sources": "./examples/full-analog-circuits-rc-filters/sources.json"
+      "sources": "./examples/full-analog-circuits-rc-filters/sources.json",
+      "releaseManifest": "./examples/full-analog-circuits-rc-filters/release-artifacts.json",
+      "qualityReport": "./examples/full-analog-circuits-rc-filters/quality-report.json",
+      "groundingReport": "./examples/full-analog-circuits-rc-filters/grounding-report.json",
+      "videoSha256": "c87a6b13af78d4ebd8e5c20039914d3602deec8633d93cae9526a3c0007d5702",
+      "videoBytes": 40281535,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "full-fluid-mechanics-continuity-bernoulli",
@@ -3230,10 +5298,44 @@
       "duration": "11:23",
       "durationSeconds": 683,
       "poster": "./examples/full-fluid-mechanics-continuity-bernoulli/poster.png",
-      "video": "./examples/full-fluid-mechanics-continuity-bernoulli/video.mp4",
+      "video": "./media/full-fluid-mechanics-continuity-bernoulli-8d3c8cd087e2a3d4.mp4",
       "captions": "./examples/full-fluid-mechanics-continuity-bernoulli/captions.vtt",
       "transcript": "./examples/full-fluid-mechanics-continuity-bernoulli/transcript.txt",
-      "sources": "./examples/full-fluid-mechanics-continuity-bernoulli/sources.json"
+      "sources": "./examples/full-fluid-mechanics-continuity-bernoulli/sources.json",
+      "releaseManifest": "./examples/full-fluid-mechanics-continuity-bernoulli/release-artifacts.json",
+      "qualityReport": "./examples/full-fluid-mechanics-continuity-bernoulli/quality-report.json",
+      "groundingReport": "./examples/full-fluid-mechanics-continuity-bernoulli/grounding-report.json",
+      "videoSha256": "8d3c8cd087e2a3d4e3a6bb8e1de0c13ea4057bdf1baa866e855c52d20271de06",
+      "videoBytes": 43691518,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "full-pid-control-systems",
@@ -3255,10 +5357,44 @@
       "duration": "8:52",
       "durationSeconds": 532,
       "poster": "./examples/full-pid-control-systems/poster.png",
-      "video": "./examples/full-pid-control-systems/video.mp4",
+      "video": "./media/full-pid-control-systems-766e87dc86792e78.mp4",
       "captions": "./examples/full-pid-control-systems/captions.vtt",
       "transcript": "./examples/full-pid-control-systems/transcript.txt",
-      "sources": "./examples/full-pid-control-systems/sources.json"
+      "sources": "./examples/full-pid-control-systems/sources.json",
+      "releaseManifest": "./examples/full-pid-control-systems/release-artifacts.json",
+      "qualityReport": "./examples/full-pid-control-systems/quality-report.json",
+      "groundingReport": "./examples/full-pid-control-systems/grounding-report.json",
+      "videoSha256": "766e87dc86792e783c8bce6186be171a79142ed7eab236ae57bfa2410399487c",
+      "videoBytes": 34809036,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "full-signals-sampling-fourier",
@@ -3287,10 +5423,44 @@
       "duration": "11:37",
       "durationSeconds": 697,
       "poster": "./examples/full-signals-sampling-fourier/poster.png",
-      "video": "./examples/full-signals-sampling-fourier/video.mp4",
+      "video": "./media/full-signals-sampling-fourier-95074bc688a30665.mp4",
       "captions": "./examples/full-signals-sampling-fourier/captions.vtt",
       "transcript": "./examples/full-signals-sampling-fourier/transcript.txt",
-      "sources": "./examples/full-signals-sampling-fourier/sources.json"
+      "sources": "./examples/full-signals-sampling-fourier/sources.json",
+      "releaseManifest": "./examples/full-signals-sampling-fourier/release-artifacts.json",
+      "qualityReport": "./examples/full-signals-sampling-fourier/quality-report.json",
+      "groundingReport": "./examples/full-signals-sampling-fourier/grounding-report.json",
+      "videoSha256": "95074bc688a30665ef89da76275cb4cba5df9db19f00457fb3f1e116f95b1b1a",
+      "videoBytes": 44444312,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "full-solid-mechanics-stress-strain",
@@ -3316,13 +5486,47 @@
         "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
         "humanReviewRequired": true
       },
-      "duration": "11:25",
-      "durationSeconds": 685,
+      "duration": "11:26",
+      "durationSeconds": 686,
       "poster": "./examples/full-solid-mechanics-stress-strain/poster.png",
-      "video": "./examples/full-solid-mechanics-stress-strain/video.mp4",
+      "video": "./media/full-solid-mechanics-stress-strain-1bbc740bc62d2784.mp4",
       "captions": "./examples/full-solid-mechanics-stress-strain/captions.vtt",
       "transcript": "./examples/full-solid-mechanics-stress-strain/transcript.txt",
-      "sources": "./examples/full-solid-mechanics-stress-strain/sources.json"
+      "sources": "./examples/full-solid-mechanics-stress-strain/sources.json",
+      "releaseManifest": "./examples/full-solid-mechanics-stress-strain/release-artifacts.json",
+      "qualityReport": "./examples/full-solid-mechanics-stress-strain/quality-report.json",
+      "groundingReport": "./examples/full-solid-mechanics-stress-strain/grounding-report.json",
+      "videoSha256": "1bbc740bc62d2784f86fb93506112ba244586caed193519748e71237a9a28fa9",
+      "videoBytes": 40238308,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "local-openai-compatible",
+          "model": "prism-ml/Bonsai-27B-gguf",
+          "executionLocation": "local",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "full-community-nutrition-program",
@@ -3349,10 +5553,44 @@
       "duration": "9:42",
       "durationSeconds": 582,
       "poster": "./examples/full-community-nutrition-program/poster.png",
-      "video": "./examples/full-community-nutrition-program/video.mp4",
+      "video": "./media/full-community-nutrition-program-88640fe9291c0a1f.mp4",
       "captions": "./examples/full-community-nutrition-program/captions.vtt",
       "transcript": "./examples/full-community-nutrition-program/transcript.txt",
-      "sources": "./examples/full-community-nutrition-program/sources.json"
+      "sources": "./examples/full-community-nutrition-program/sources.json",
+      "releaseManifest": "./examples/full-community-nutrition-program/release-artifacts.json",
+      "qualityReport": "./examples/full-community-nutrition-program/quality-report.json",
+      "groundingReport": "./examples/full-community-nutrition-program/grounding-report.json",
+      "videoSha256": "88640fe9291c0a1ffd3c4fb9faab38f6062a0f49af06b1f59a455e4e9eae8941",
+      "videoBytes": 40124202,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "full-oxygen-transport",
@@ -3373,10 +5611,44 @@
       "duration": "8:23",
       "durationSeconds": 503,
       "poster": "./examples/full-oxygen-transport/poster.png",
-      "video": "./examples/full-oxygen-transport/video.mp4",
+      "video": "./media/full-oxygen-transport-6be52f32980ed356.mp4",
       "captions": "./examples/full-oxygen-transport/captions.vtt",
       "transcript": "./examples/full-oxygen-transport/transcript.txt",
-      "sources": "./examples/full-oxygen-transport/sources.json"
+      "sources": "./examples/full-oxygen-transport/sources.json",
+      "releaseManifest": "./examples/full-oxygen-transport/release-artifacts.json",
+      "qualityReport": "./examples/full-oxygen-transport/quality-report.json",
+      "groundingReport": "./examples/full-oxygen-transport/grounding-report.json",
+      "videoSha256": "6be52f32980ed356d10b51ac68ccfd1cb7d8123ab2c9e7ee8e53ff057879ba3d",
+      "videoBytes": 50003304,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "full-derivative-foundations",
@@ -3385,8 +5657,6 @@
       "subject": "Calculus",
       "format": "Full lesson",
       "level": "Introductory",
-      "duration": "9:05",
-      "durationSeconds": 545,
       "description": "Build the derivative from average change and limits, then apply it to graphs, motion, tangent lines, and local linearization.",
       "outcomes": [
         "Explain the derivative as a limit of difference quotients",
@@ -3396,11 +5666,47 @@
       "paths": [
         "STEM Foundations"
       ],
+      "duration": "9:05",
+      "durationSeconds": 545,
       "poster": "./examples/full-derivative-foundations/poster.png",
-      "video": "./examples/full-derivative-foundations/video.mp4",
+      "video": "./media/full-derivative-foundations-99877dedd3b6b5fd.mp4",
       "captions": "./examples/full-derivative-foundations/captions.vtt",
       "transcript": "./examples/full-derivative-foundations/transcript.txt",
-      "sources": "./examples/full-derivative-foundations/sources.json"
+      "sources": "./examples/full-derivative-foundations/sources.json",
+      "releaseManifest": "./examples/full-derivative-foundations/release-artifacts.json",
+      "qualityReport": "./examples/full-derivative-foundations/quality-report.json",
+      "groundingReport": "./examples/full-derivative-foundations/grounding-report.json",
+      "videoSha256": "99877dedd3b6b5fd5381a85277dad66a542daad00f640b635e2ccba4bc55bca9",
+      "videoBytes": 47842573,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "full-spectroscopy-measurement",
@@ -3422,10 +5728,44 @@
       "duration": "9:01",
       "durationSeconds": 541,
       "poster": "./examples/full-spectroscopy-measurement/poster.png",
-      "video": "./examples/full-spectroscopy-measurement/video.mp4",
+      "video": "./media/full-spectroscopy-measurement-7b5579e07259d19e.mp4",
       "captions": "./examples/full-spectroscopy-measurement/captions.vtt",
       "transcript": "./examples/full-spectroscopy-measurement/transcript.txt",
-      "sources": "./examples/full-spectroscopy-measurement/sources.json"
+      "sources": "./examples/full-spectroscopy-measurement/sources.json",
+      "releaseManifest": "./examples/full-spectroscopy-measurement/release-artifacts.json",
+      "qualityReport": "./examples/full-spectroscopy-measurement/quality-report.json",
+      "groundingReport": "./examples/full-spectroscopy-measurement/grounding-report.json",
+      "videoSha256": "7b5579e07259d19e5ffb666184ac37bd409e59eeb42250e4d325b05058cedfb0",
+      "videoBytes": 29778833,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "riscv-add-competency",
@@ -3449,7 +5789,33 @@
       "video": "./riscv-add-demo.mp4",
       "captions": "./riscv-add-demo.vtt",
       "transcript": "./riscv-add-demo-transcript.txt",
-      "sources": "./riscv-add-demo-bibliography.md"
+      "sources": "./riscv-add-demo-bibliography.md",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "ntid-accessible-captions",
@@ -3470,10 +5836,44 @@
         "Digital Literacy"
       ],
       "poster": "./examples/ntid-accessible-captions/poster.png",
-      "video": "./examples/ntid-accessible-captions/video.mp4",
+      "video": "./media/ntid-accessible-captions-18c33262818a1088.mp4",
       "captions": "./examples/ntid-accessible-captions/captions.vtt",
       "transcript": "./examples/ntid-accessible-captions/transcript.txt",
-      "sources": "./examples/ntid-accessible-captions/sources.json"
+      "sources": "./examples/ntid-accessible-captions/sources.json",
+      "releaseManifest": "./examples/ntid-accessible-captions/release-artifacts.json",
+      "qualityReport": "./examples/ntid-accessible-captions/quality-report.json",
+      "groundingReport": "./examples/ntid-accessible-captions/grounding-report.json",
+      "videoSha256": "18c33262818a108806d037af540140cf6954f43e34e3eade007f2f4335ce80d8",
+      "videoBytes": 13812153,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "photography-exposure-triangle",
@@ -3493,10 +5893,44 @@
         "Visual Communication"
       ],
       "poster": "./examples/photography-exposure-triangle/poster.png",
-      "video": "./examples/photography-exposure-triangle/video.mp4",
+      "video": "./media/photography-exposure-triangle-2ba5958ede386873.mp4",
       "captions": "./examples/photography-exposure-triangle/captions.vtt",
       "transcript": "./examples/photography-exposure-triangle/transcript.txt",
-      "sources": "./examples/photography-exposure-triangle/sources.json"
+      "sources": "./examples/photography-exposure-triangle/sources.json",
+      "releaseManifest": "./examples/photography-exposure-triangle/release-artifacts.json",
+      "qualityReport": "./examples/photography-exposure-triangle/quality-report.json",
+      "groundingReport": "./examples/photography-exposure-triangle/grounding-report.json",
+      "videoSha256": "2ba5958ede38687321698b7bf0a1ef18ab766bc395c2bf6b2b768f83d86b03f9",
+      "videoBytes": 18169212,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "art-design-hierarchy",
@@ -3516,10 +5950,102 @@
         "Visual Communication"
       ],
       "poster": "./examples/art-design-hierarchy/poster.png",
-      "video": "./examples/art-design-hierarchy/video.mp4",
+      "video": "./media/art-design-hierarchy-f2ce6696ed02efa7.mp4",
       "captions": "./examples/art-design-hierarchy/captions.vtt",
       "transcript": "./examples/art-design-hierarchy/transcript.txt",
-      "sources": "./examples/art-design-hierarchy/sources.json"
+      "sources": "./examples/art-design-hierarchy/sources.json",
+      "releaseManifest": "./examples/art-design-hierarchy/release-artifacts.json",
+      "qualityReport": "./examples/art-design-hierarchy/quality-report.json",
+      "groundingReport": "./examples/art-design-hierarchy/grounding-report.json",
+      "videoSha256": "f2ce6696ed02efa79537a3201a1aeb3ca0a2178bac1bd5cd1ff3a9e00fdbfeeb",
+      "videoBytes": 12800472,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
+    },
+    {
+      "id": "mis-business-process-decisions",
+      "title": "How an Information System Turns an Order into a Decision",
+      "area": "Business",
+      "subject": "Management Information Systems",
+      "format": "Micro-lesson",
+      "level": "Introductory",
+      "duration": "1:06",
+      "durationSeconds": 66,
+      "description": "Connect people, process, trustworthy operational data, and managerial decisions in one information-system feedback loop.",
+      "outcomes": [
+        "Explain why an information system includes people and processes as well as technology",
+        "Trace operational data from a business event to a managerial decision"
+      ],
+      "paths": [
+        "Research & Evidence",
+        "Digital Literacy"
+      ],
+      "poster": "./examples/mis-business-process-decisions/poster.png",
+      "video": "./media/mis-business-process-decisions-7e062d15ea7d0d08.mp4",
+      "captions": "./examples/mis-business-process-decisions/captions.vtt",
+      "transcript": "./examples/mis-business-process-decisions/transcript.txt",
+      "sources": "./examples/mis-business-process-decisions/sources.json",
+      "releaseManifest": "./examples/mis-business-process-decisions/release-artifacts.json",
+      "qualityReport": "./examples/mis-business-process-decisions/quality-report.json",
+      "groundingReport": "./examples/mis-business-process-decisions/grounding-report.json",
+      "videoSha256": "7e062d15ea7d0d08f1516f51c84aac2b599324eabc97164efb1102376fdc598a",
+      "videoBytes": 19078409,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "business-contribution-margin",
@@ -3539,10 +6065,44 @@
         "Research & Evidence"
       ],
       "poster": "./examples/business-contribution-margin/poster.png",
-      "video": "./examples/business-contribution-margin/video.mp4",
+      "video": "./media/business-contribution-margin-60918ecf8a0e9109.mp4",
       "captions": "./examples/business-contribution-margin/captions.vtt",
       "transcript": "./examples/business-contribution-margin/transcript.txt",
-      "sources": "./examples/business-contribution-margin/sources.json"
+      "sources": "./examples/business-contribution-margin/sources.json",
+      "releaseManifest": "./examples/business-contribution-margin/release-artifacts.json",
+      "qualityReport": "./examples/business-contribution-margin/quality-report.json",
+      "groundingReport": "./examples/business-contribution-margin/grounding-report.json",
+      "videoSha256": "60918ecf8a0e9109e7f4e1973c23a62d6a51a503fe4285fe9ce89b79f0dcebc8",
+      "videoBytes": 12796385,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "cybersecurity-phishing-check",
@@ -3563,10 +6123,44 @@
         "Digital Literacy"
       ],
       "poster": "./examples/cybersecurity-phishing-check/poster.png",
-      "video": "./examples/cybersecurity-phishing-check/video.mp4",
+      "video": "./media/cybersecurity-phishing-check-1e89f2676b4cf678.mp4",
       "captions": "./examples/cybersecurity-phishing-check/captions.vtt",
       "transcript": "./examples/cybersecurity-phishing-check/transcript.txt",
-      "sources": "./examples/cybersecurity-phishing-check/sources.json"
+      "sources": "./examples/cybersecurity-phishing-check/sources.json",
+      "releaseManifest": "./examples/cybersecurity-phishing-check/release-artifacts.json",
+      "qualityReport": "./examples/cybersecurity-phishing-check/quality-report.json",
+      "groundingReport": "./examples/cybersecurity-phishing-check/grounding-report.json",
+      "videoSha256": "1e89f2676b4cf678299c96c1ce3898e1b5cefedd7fda7b103ae105777724d654",
+      "videoBytes": 17012580,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "engineering-technology-pid",
@@ -3587,10 +6181,44 @@
         "STEM Foundations"
       ],
       "poster": "./examples/engineering-technology-pid/poster.png",
-      "video": "./examples/engineering-technology-pid/video.mp4",
+      "video": "./media/engineering-technology-pid-a7fd5c252fdaecee.mp4",
       "captions": "./examples/engineering-technology-pid/captions.vtt",
       "transcript": "./examples/engineering-technology-pid/transcript.txt",
-      "sources": "./examples/engineering-technology-pid/sources.json"
+      "sources": "./examples/engineering-technology-pid/sources.json",
+      "releaseManifest": "./examples/engineering-technology-pid/release-artifacts.json",
+      "qualityReport": "./examples/engineering-technology-pid/quality-report.json",
+      "groundingReport": "./examples/engineering-technology-pid/grounding-report.json",
+      "videoSha256": "a7fd5c252fdaecee3b58e27c7fb8d4bcd5d51f348932e1558c5edf3fbf4677bf",
+      "videoBytes": 13357360,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "engineering-resonance",
@@ -3599,8 +6227,8 @@
       "subject": "Mechanical Engineering",
       "format": "Micro-lesson",
       "level": "Introductory",
-      "duration": "1:04",
-      "durationSeconds": 64,
+      "duration": "1:05",
+      "durationSeconds": 65,
       "description": "Connect forcing frequency, natural frequency, damping, and response amplitude in a mechanical system.",
       "outcomes": [
         "Recognize resonance as a frequency-dependent response",
@@ -3611,10 +6239,44 @@
         "STEM Foundations"
       ],
       "poster": "./examples/engineering-resonance/poster.png",
-      "video": "./examples/engineering-resonance/video.mp4",
+      "video": "./media/engineering-resonance-f6820f8075547593.mp4",
       "captions": "./examples/engineering-resonance/captions.vtt",
       "transcript": "./examples/engineering-resonance/transcript.txt",
-      "sources": "./examples/engineering-resonance/sources.json"
+      "sources": "./examples/engineering-resonance/sources.json",
+      "releaseManifest": "./examples/engineering-resonance/release-artifacts.json",
+      "qualityReport": "./examples/engineering-resonance/quality-report.json",
+      "groundingReport": "./examples/engineering-resonance/grounding-report.json",
+      "videoSha256": "f6820f8075547593daf99c756c3c0ac7b3d92da0c2a89e72da615f97f4e89c6d",
+      "videoBytes": 14461998,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "health-oxygen-transport",
@@ -3634,10 +6296,44 @@
         "STEM Foundations"
       ],
       "poster": "./examples/health-oxygen-transport/poster.png",
-      "video": "./examples/health-oxygen-transport/video.mp4",
+      "video": "./media/health-oxygen-transport-0519a0c540de2e55.mp4",
       "captions": "./examples/health-oxygen-transport/captions.vtt",
       "transcript": "./examples/health-oxygen-transport/transcript.txt",
-      "sources": "./examples/health-oxygen-transport/sources.json"
+      "sources": "./examples/health-oxygen-transport/sources.json",
+      "releaseManifest": "./examples/health-oxygen-transport/release-artifacts.json",
+      "qualityReport": "./examples/health-oxygen-transport/quality-report.json",
+      "groundingReport": "./examples/health-oxygen-transport/grounding-report.json",
+      "videoSha256": "0519a0c540de2e55edca897c9ca641dc5dbcb4bce6b6399f4da6691cfe87f152",
+      "videoBytes": 25227332,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "individualized-study-question",
@@ -3657,10 +6353,44 @@
         "Research & Evidence"
       ],
       "poster": "./examples/individualized-study-question/poster.png",
-      "video": "./examples/individualized-study-question/video.mp4",
+      "video": "./media/individualized-study-question-ef6ef94bd74c4e2d.mp4",
       "captions": "./examples/individualized-study-question/captions.vtt",
       "transcript": "./examples/individualized-study-question/transcript.txt",
-      "sources": "./examples/individualized-study-question/sources.json"
+      "sources": "./examples/individualized-study-question/sources.json",
+      "releaseManifest": "./examples/individualized-study-question/release-artifacts.json",
+      "qualityReport": "./examples/individualized-study-question/quality-report.json",
+      "groundingReport": "./examples/individualized-study-question/grounding-report.json",
+      "videoSha256": "ef6ef94bd74c4e2da26d20b64e22a464ce64347076c0786654ba8f36b5327636",
+      "videoBytes": 14927832,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "liberal-arts-primary-sources",
@@ -3680,10 +6410,44 @@
         "Research & Evidence"
       ],
       "poster": "./examples/liberal-arts-primary-sources/poster.png",
-      "video": "./examples/liberal-arts-primary-sources/video.mp4",
+      "video": "./media/liberal-arts-primary-sources-f79bc9ad5c8fc89c.mp4",
       "captions": "./examples/liberal-arts-primary-sources/captions.vtt",
       "transcript": "./examples/liberal-arts-primary-sources/transcript.txt",
-      "sources": "./examples/liberal-arts-primary-sources/sources.json"
+      "sources": "./examples/liberal-arts-primary-sources/sources.json",
+      "releaseManifest": "./examples/liberal-arts-primary-sources/release-artifacts.json",
+      "qualityReport": "./examples/liberal-arts-primary-sources/quality-report.json",
+      "groundingReport": "./examples/liberal-arts-primary-sources/grounding-report.json",
+      "videoSha256": "f79bc9ad5c8fc89c1d8dc2d96a94c5aee553eca35051928fef02e187184cc84d",
+      "videoBytes": 11882892,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "psychology-correlation-causation",
@@ -3703,10 +6467,44 @@
         "Research & Evidence"
       ],
       "poster": "./examples/psychology-correlation-causation/poster.png",
-      "video": "./examples/psychology-correlation-causation/video.mp4",
+      "video": "./media/psychology-correlation-causation-099acda37aa056b7.mp4",
       "captions": "./examples/psychology-correlation-causation/captions.vtt",
       "transcript": "./examples/psychology-correlation-causation/transcript.txt",
-      "sources": "./examples/psychology-correlation-causation/sources.json"
+      "sources": "./examples/psychology-correlation-causation/sources.json",
+      "releaseManifest": "./examples/psychology-correlation-causation/release-artifacts.json",
+      "qualityReport": "./examples/psychology-correlation-causation/quality-report.json",
+      "groundingReport": "./examples/psychology-correlation-causation/grounding-report.json",
+      "videoSha256": "099acda37aa056b7881cf4a8f5d83c18b8c983be56345afb9da34c5c0f95c3b6",
+      "videoBytes": 15973726,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "mathematics-local-derivative",
@@ -3726,10 +6524,44 @@
         "STEM Foundations"
       ],
       "poster": "./examples/mathematics-local-derivative/poster.png",
-      "video": "./examples/mathematics-local-derivative/video.mp4",
+      "video": "./media/mathematics-local-derivative-d252553fbf73d4fb.mp4",
       "captions": "./examples/mathematics-local-derivative/captions.vtt",
       "transcript": "./examples/mathematics-local-derivative/transcript.txt",
-      "sources": "./examples/mathematics-local-derivative/sources.json"
+      "sources": "./examples/mathematics-local-derivative/sources.json",
+      "releaseManifest": "./examples/mathematics-local-derivative/release-artifacts.json",
+      "qualityReport": "./examples/mathematics-local-derivative/quality-report.json",
+      "groundingReport": "./examples/mathematics-local-derivative/grounding-report.json",
+      "videoSha256": "d252553fbf73d4fbeb02cd036e07c16b03517776007cfd48a0fa95970352cc9c",
+      "videoBytes": 16382432,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "science-spectroscopy",
@@ -3749,10 +6581,44 @@
         "STEM Foundations"
       ],
       "poster": "./examples/science-spectroscopy/poster.png",
-      "video": "./examples/science-spectroscopy/video.mp4",
+      "video": "./media/science-spectroscopy-8aa92cae9d3cf2b3.mp4",
       "captions": "./examples/science-spectroscopy/captions.vtt",
       "transcript": "./examples/science-spectroscopy/transcript.txt",
-      "sources": "./examples/science-spectroscopy/sources.json"
+      "sources": "./examples/science-spectroscopy/sources.json",
+      "releaseManifest": "./examples/science-spectroscopy/release-artifacts.json",
+      "qualityReport": "./examples/science-spectroscopy/quality-report.json",
+      "groundingReport": "./examples/science-spectroscopy/grounding-report.json",
+      "videoSha256": "8aa92cae9d3cf2b34a40b51d5ae5effe6eb37042584aaaa46299e6561a4d630f",
+      "videoBytes": 10803846,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     },
     {
       "id": "sustainability-lca",
@@ -3773,10 +6639,44 @@
         "STEM Foundations"
       ],
       "poster": "./examples/sustainability-lca/poster.png",
-      "video": "./examples/sustainability-lca/video.mp4",
+      "video": "./media/sustainability-lca-1b8f9114d545be95.mp4",
       "captions": "./examples/sustainability-lca/captions.vtt",
       "transcript": "./examples/sustainability-lca/transcript.txt",
-      "sources": "./examples/sustainability-lca/sources.json"
+      "sources": "./examples/sustainability-lca/sources.json",
+      "releaseManifest": "./examples/sustainability-lca/release-artifacts.json",
+      "qualityReport": "./examples/sustainability-lca/quality-report.json",
+      "groundingReport": "./examples/sustainability-lca/grounding-report.json",
+      "videoSha256": "1b8f9114d545be9542a53e87cc84de39f308a201954fbcc84c5d3346344d3fc8",
+      "videoBytes": 17469991,
+      "videoVariant": "web-preview",
+      "mediaBackend": "github-release-via-vercel-rewrite",
+      "mediaRelease": "course-media-2025-2026-v1",
+      "generationProvenance": [
+        {
+          "stage": "Script and evidence",
+          "provider": "instructor-or-pilot-team-authored",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "source-grounded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Narration voice and timestamps",
+          "provider": "edge-tts",
+          "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+          "executionLocation": "hosted",
+          "mode": "recorded",
+          "humanReviewRequired": true
+        },
+        {
+          "stage": "Educational diagrams and composition",
+          "provider": "deterministic-svg-runtime",
+          "model": "No generative model",
+          "executionLocation": "local",
+          "mode": "deterministic",
+          "humanReviewRequired": true
+        }
+      ]
     }
   ]
 }

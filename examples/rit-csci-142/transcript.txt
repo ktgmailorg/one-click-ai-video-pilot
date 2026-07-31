@@ -1,251 +1,245 @@
-NARRATOR: Begin by framing Course Scope and Ethical Practice as a question about inputs,
+Begin by framing 1.
+
+Problem Decomposition and Algorithmic Foundations as a question about inputs,
 
 decisions, and observable results.
 
-NARRATOR: They should maintain high standards of professional competence, conduct, and
+Programming begins with precise problem statements, input and output examples, and
 
-ethical practice.
+algorithms written independently of syntax.
 
-NARRATOR: Consider this worked case: A learner maps the inputs, constraints, and observable
+Consider this worked case: To sort a list of student grades, first define the input
 
-result for Course Scope and Ethical Practice, then checks each step against the stated
+(unsorted list) and output (sorted list), then design a recursive merge algorithm before
 
-claim.
+writing any Python code.
 
-NARRATOR: On screen, create an editable process diagram for Course Scope and Ethical
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-Practice with labeled inputs, decisions, state changes, and a checked output.
+that the final result satisfies the stated condition.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+List the givens before choosing a method, because an unstated assumption can change the
 
-change the conclusion.
+conclusion.
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: Now define Responsible Technical Communication precisely enough that another
+Now define 2.
 
-learner could test the definition.
+Data Structures: Trees and Graphs precisely enough that another learner could test the
 
-NARRATOR: Responsible technical communication distinguishes claims from evidence.
+definition.
 
-NARRATOR: Consider this worked case: A learner maps the inputs, constraints, and observable
+Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in
 
-result for Responsible Technical Communication, then checks each step against
+first-out access, trees represent hierarchy, and graphs represent connected entities.
 
-the stated claim.
+Consider this worked case: A family tree is modeled as a tree where each node is a Person
 
-NARRATOR: On screen, create an editable process diagram for Responsible Technical
+object, while a social network is modeled as a graph where nodes are User objects and edges
 
-Communication with labeled inputs, decisions, state changes, and a checked output.
+represent friendships.
 
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Trace each intermediate state in the example, connect it to the formal claim, and verify
+
+that the final result satisfies the stated condition.
+
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+With the foundation in place, examine how 3.
 
-throughout the analysis.
+Objects, Classes, and Inheritance operates in a concrete sequence.
 
-NARRATOR: With the foundation in place, examine how Static vs. Dynamic Data Types
+Python objects have identity, a type, and a value.
 
-operates in a concrete sequence.
+Consider this worked case: Define a base class 'Vehicle' with attributes 'speed' and 'color';
 
-NARRATOR: Key topics include more information on tree and graph structures, nested data
+create a subclass 'ElectricCar' that inherits these and adds a 'battery_level' attribute.
 
-structures, objects, classes, inheritance, interfaces, object-oriented collection class
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-libraries for abstract data types (for example stacks, queues, maps, and trees), and static
+that the final result satisfies the stated condition.
 
-versus dynamic data types.
+Follow every arrow in order and name the state before and after each transition.
 
-NARRATOR: Consider this worked case: A learner maps the inputs, constraints, and observable
+The trace converts an abstract statement into an inspectable sequence.
 
-result for Static vs. Dynamic Data Types, then checks each step against the stated claim.
+Next, compare the choices involved in 4.
 
-NARRATOR: On screen, create an editable process diagram for Static vs. Dynamic Data
+Interfaces and Abstract Data Types and make the decision criteria explicit.
 
-Types with labeled inputs, decisions, state changes, and a checked output.
+Key topics include more information on tree and graph structures, nested data structures,
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+objects, classes, inheritance, interfaces, object-oriented collection class libraries for
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+abstract data types (for example stacks, queues, maps, and trees), and static versus
 
-NARRATOR: Next, compare the choices involved in Objects and Classes as Blueprints and make
+dynamic data types.
 
-the decision criteria explicit.
+Consider this worked case: Define an interface 'QueueInterface' with methods 'enqueue' and
 
-NARRATOR: This course delves further into problem solving by continuing the discussion
+'dequeue'; use the built-in collections.
 
-of data structure use and design, but now from an object- oriented perspective.
+deque as the concrete implementation for a queue in a banking system.
 
-NARRATOR: Consider this worked case: A learner maps the inputs, constraints, and observable
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-result for Objects and Classes as Blueprints, then checks each step against the stated
+that the final result satisfies the stated condition.
 
-claim.
+Compare alternatives against the same constraints so the evaluation does not move
 
-NARRATOR: On screen, create an editable process diagram for Objects and Classes as
+the goalposts.
 
-Blueprints with labeled inputs, decisions, state changes, and a checked output.
+Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+Apply 5.
 
-move the goalposts.
+Static vs. Dynamic Data Types to a worked situation instead of treating it as an
 
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+isolated definition.
 
-NARRATOR: Apply Inheritance for Code Reuse to a worked situation instead of treating it as
+This course delves further into problem solving by continuing the discussion of data
 
-an isolated definition.
+structure use and design, but now from an object- oriented perspective.
 
-NARRATOR: Methods should be described well enough for readers to evaluate the work.
+Consider this worked case: In a statically typed language, a variable declared as 'int'
 
-NARRATOR: Consider this worked case: A learner maps the inputs, constraints, and observable
+cannot hold a string; in Python, the same variable can be reassigned to any object type
 
-result for Inheritance for Code Reuse, then checks each step against the stated claim.
+without recompilation.
 
-NARRATOR: On screen, create an editable process diagram for Inheritance for Code Reuse
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-with labeled inputs, decisions, state changes, and a checked output.
+that the final result satisfies the stated condition.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-at each step.
+step.
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Examine the tradeoffs in Interfaces for Contractual Design, including what
+Examine the tradeoffs in 6.
 
-improves and what becomes more difficult.
+Software Qualities: Cohesion and Coupling, including what improves and what becomes more
 
-NARRATOR: Software qualities related to object orientation, namely cohesion, minimal
+difficult.
+
+Software qualities related to object orientation, namely cohesion, minimal
 
 coupling, modifiability, and extensibility, are all introduced in this course, as well as
 
 a few elementary object-oriented design patterns.
 
-NARRATOR: Consider this worked case: A learner maps the inputs, constraints, and observable
+Consider this worked case: A 'PaymentProcessor' class should only handle
 
-result for Interfaces for Contractual Design, then checks each step against the stated
+payment logic (high cohesion) and should not directly instantiate 'EmailSender' (low
 
-claim.
+coupling); instead, it receives an interface for sending notifications.
 
-NARRATOR: On screen, create an editable process diagram for Interfaces for Contractual
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-Design with labeled inputs, decisions, state changes, and a checked output.
+that the final result satisfies the stated condition.
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-acceptable.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+Stress-test the reasoning around 7.
 
-NARRATOR: Stress-test the reasoning around Object-Oriented Collections and ADTs with an
+Exception Handling and Control Flow with an edge case and identify which assumption
 
-edge case and identify which assumption controls the outcome.
+controls the outcome.
 
-NARRATOR: Concepts of object-oriented design are a large part of the course.
+Exceptions interrupt normal control flow until a matching handler processes them or they
 
-NARRATOR: Consider this worked case: A learner maps the inputs, constraints, and observable
+propagate.
 
-result for Object-Oriented Collections and ADTs, then checks each step against the stated
+Consider this worked case: When dividing by zero in a financial calculation, raise a
 
-claim.
+ZeroDivisionError; catch it in a try-except block to log the error and return a default
 
-NARRATOR: On screen, create an editable process diagram for Object-Oriented
+value.
 
-Collections and ADTs with labeled inputs, decisions, state changes, and a checked
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-output.
+that the final result satisfies the stated condition.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-holds.
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+Use 8.
 
-core idea.
+Input/Output Streams and GUI Basics to diagnose a failure by separating symptoms,
 
-NARRATOR: Use Software Qualities: Cohesion and Minimal Coupling to diagnose a failure by
+causes, and corrective action.
 
-separating symptoms, causes, and corrective action.
-
-NARRATOR: Professionals should strive to achieve high quality in both processes and
-
-products.
-
-NARRATOR: Consider this worked case: A learner maps the inputs, constraints, and observable
-
-result for Software Qualities: Cohesion and Minimal Coupling, then checks each step
-
-against the stated claim.
-
-NARRATOR: On screen, create an editable process diagram for Software Qualities:
-
-Cohesion and Minimal Coupling with labeled inputs, decisions, state changes, and a
-
-checked output.
-
-NARRATOR: Locate the first point where observed behavior diverges from expected
-
-behavior, then test the smallest plausible cause.
-
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
-
-and the test.
-
-NARRATOR: Connect Exception Handling and I/O Streams to the earlier ideas and explain how
-
-the pieces work as one system.
-
-NARRATOR: Input and output streams, graphical user interfaces, and exception handling are
+Input and output streams, graphical user interfaces, and exception handling are
 
 covered.
 
-NARRATOR: Consider this worked case: A learner maps the inputs, constraints, and observable
+Consider this worked case: Read user input via sys.
 
-result for Exception Handling and I/O Streams, then checks each step against the stated
+stdin stream, process it, and display results using a simple Tkinter window with a label and
 
-claim.
+button.
 
-NARRATOR: On screen, create an editable process diagram for Exception Handling and I/O
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-Streams with labeled inputs, decisions, state changes, and a checked output.
+that the final result satisfies the stated condition.
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-meaning across representations.
+smallest plausible cause.
 
-NARRATOR: The synthesis matters only if every connection remains supported by the original
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-evidence.
+Connect 9.
 
-NARRATOR: Finish with IDE Integration and Project Workflow as a practical checklist that
+Modern IDE Integration to the earlier ideas and explain how the pieces work as one system.
 
-can guide a new analysis.
+Students will also be introduced to a modern integrated software development environment
 
-NARRATOR: Students will also be introduced to a modern integrated software development
+(IDE).
 
-environment (IDE).
+Consider this worked case: Using PyCharm, a student can set breakpoints, inspect object
 
-NARRATOR: Consider this worked case: A learner maps the inputs, constraints, and observable
+attributes in the debugger, and refactor code with a single click.
 
-result for IDE Integration and Project Workflow, then checks each step against the
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-stated claim.
+that the final result satisfies the stated condition.
 
-NARRATOR: On screen, create an editable process diagram for IDE Integration and
+Explain each connection explicitly and verify that information retains the same meaning
 
-Project Workflow with labeled inputs, decisions, state changes, and a checked
+across representations.
 
-output.
+The synthesis matters only if every connection remains supported by the original evidence.
 
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+Finish with 10.
 
-next verification step.
+Practical Analysis Checklist as a practical checklist that can guide a new analysis.
 
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
+Correctness arguments, tests, tracing, and debugging compare intended behavior with
 
-memory or intuition.
+observable results, including boundary and error cases.
+
+Consider this worked case: Before submitting a project, run unit tests for edge cases (e. g.
+
+, empty lists, null objects) and trace execution to verify exception handling paths.
+
+Trace each intermediate state in the example, connect it to the formal claim, and verify
+
+that the final result satisfies the stated condition.
+
+For each checklist item, record the evidence, the remaining uncertainty, and the next
+
+verification step.
+
+The result is a repeatable procedure, not a conclusion that depends on memory or
+
+intuition.

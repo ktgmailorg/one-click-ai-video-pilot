@@ -1,267 +1,247 @@
-NARRATOR: Programming begins before code.
+Programming begins before code.
 
-NARRATOR: Start by stating what information enters the program, what result must leave it,
+Start by stating what information enters the program, what result must leave it, and which
 
-and which constraints must always hold.
+constraints must always hold.
 
-NARRATOR: For a grade calculator, inputs may be scores and weights; the output may be a
+For a grade calculator, inputs may be scores and weights; the output may be a numeric
 
-numeric average and category.
+average and category.
 
-NARRATOR: Write ordinary examples, boundary examples, and invalid examples.
+Write ordinary examples, boundary examples, and invalid examples.
 
-NARRATOR: This creates a behavioral contract that can be checked independently of syntax.
+This creates a behavioral contract that can be checked independently of syntax.
 
-NARRATOR: Then identify the transformations between input and output.
+Then identify the transformations between input and output.
 
-NARRATOR: A clear contract prevents a common failure: writing statements that run without
+A clear contract prevents a common failure: writing statements that run without knowing
 
-knowing whether they solve the intended problem.
+whether they solve the intended problem.
 
-NARRATOR: Code is an executable representation of a model, so the model must be
+Code is an executable representation of a model, so the model must be understandable
 
-understandable first.
+first.
 
-NARRATOR: A program stores information as values.
+A program stores information as values.
 
-NARRATOR: Numbers support arithmetic, strings represent text, Boolean values represent
+Numbers support arithmetic, strings represent text, Boolean values represent true-or-false
 
-true-or-false conditions, and collections group related values.
+conditions, and collections group related values.
 
-NARRATOR: A variable is a name bound to a value, not a permanent box with one fixed
+A variable is a name bound to a value, not a permanent box with one fixed meaning.
 
-meaning.
+Assignment changes which value a name refers to.
 
-NARRATOR: Assignment changes which value a name refers to.
+Good names express the role of the data: total cost is clearer than t. Representation choices
 
-NARRATOR: Good names express the role of the data: total cost is clearer than t.
+affect the rest of the design.
 
-Representation choices affect the rest of the design.
+A date stored as one ambiguous string is harder to validate than separate year, month,
 
-NARRATOR: A date stored as one ambiguous string is harder to validate than separate
+and day values.
 
-year, month, and day values.
+Ask what operations the program needs, what invalid states are possible, and which
 
-NARRATOR: Ask what operations the program needs, what invalid states are possible, and
+representation makes correct behavior easiest to express.
 
-which representation makes correct behavior easiest to express.
+Expressions compute values.
 
-NARRATOR: Expressions compute values.
+Arithmetic operators combine numbers; comparison operators produce Boolean results;
 
-NARRATOR: Arithmetic operators combine numbers; comparison operators produce Boolean
+Boolean operators combine conditions.
 
-results; Boolean operators combine conditions.
+Evaluation order matters.
 
-NARRATOR: Evaluation order matters.
+Multiplication normally occurs before addition, but parentheses make the intended
 
-NARRATOR: Multiplication normally occurs before addition, but parentheses make the
+grouping explicit and easier to review.
 
-intended grouping explicit and easier to review.
+Avoid packing an entire algorithm into one clever expression.
 
-NARRATOR: Avoid packing an entire algorithm into one clever expression.
+Intermediate names can expose meaning and provide places to inspect behavior.
 
-NARRATOR: Intermediate names can expose meaning and provide places to inspect
+Types matter too: adding numbers differs from concatenating text, and converting user input
 
-behavior.
+should be deliberate.
 
-NARRATOR: Types matter too: adding numbers differs from concatenating text, and
+When an expression behaves unexpectedly, evaluate it from the inside outward, inspect
 
-converting user input should be deliberate.
+each intermediate value, and confirm that the data type and unit match the intended
 
-NARRATOR: When an expression behaves unexpectedly, evaluate it from the inside
+calculation.
 
-outward, inspect each intermediate value, and confirm that the data type and unit match the
+A conditional represents a decision.
 
-intended calculation.
+Each condition should correspond to a meaningful rule in the problem.
 
-NARRATOR: A conditional represents a decision.
+Order matters when ranges overlap.
 
-NARRATOR: Each condition should correspond to a meaningful rule in the problem.
+In a grading rule, check the highest threshold first or express non-overlapping intervals
 
-NARRATOR: Order matters when ranges overlap.
+explicitly.
 
-NARRATOR: In a grading rule, check the highest threshold first or express non-overlapping
+Include a final else only when a meaningful default or invalid case exists.
 
-intervals explicitly.
+Deeply nested conditions are difficult to reason about, so simplify repeated tests and
 
-NARRATOR: Include a final else only when a meaningful default or invalid case exists.
+extract named helper functions when a decision has its own concept.
 
-NARRATOR: Deeply nested conditions are difficult to reason about, so simplify
+Test conditions at boundaries: exactly zero, exactly the threshold, just below, and just
 
-repeated tests and extract named helper functions when a decision has its own concept.
+above.
 
-NARRATOR: Test conditions at boundaries: exactly zero, exactly the threshold, just
+A condition is correct only when both the true path and the false path match the
 
-below, and just above.
+specification.
 
-NARRATOR: A condition is correct only when both the true path and the false path match
+Loops express repetition.
 
-the specification.
+A for loop naturally processes each item in a collection, while a while loop repeats until a
 
-NARRATOR: Loops express repetition.
+condition changes.
 
-NARRATOR: A for loop naturally processes each item in a collection, while a while loop
+Every loop needs a clear initialization, update, and termination argument.
 
-repeats until a condition changes.
+An invariant describes what remains true after each iteration.
 
-NARRATOR: Every loop needs a clear initialization, update, and termination
+In a running total, the invariant may be that total equals the sum of all items processed so
 
-argument.
+far.
 
-NARRATOR: An invariant describes what remains true after each iteration.
+This idea makes loops easier to prove and debug.
 
-NARRATOR: In a running total, the invariant may be that total equals the sum of all items
+Watch for off-by-one errors, empty collections, and updates that never occur.
 
-processed so far.
+Print tracing can help during development, but a final design should make the loop's purpose
 
-NARRATOR: This idea makes loops easier to prove and debug.
+visible through names and structure rather than relying on debugging output.
 
-NARRATOR: Watch for off-by-one errors, empty collections, and updates that never occur.
+A function gives one piece of behavior a name and a boundary.
 
-NARRATOR: Print tracing can help during development, but a final design should make
+Parameters describe what the function needs; the return value describes what it produces.
 
-the loop's purpose visible through names and structure rather than relying on debugging
+Prefer a function that completes one coherent responsibility over a long function that reads
 
-output.
+input, calculates, prints, modifies global state, and handles every error at once.
 
-NARRATOR: A function gives one piece of behavior a name and a boundary.
+Pure calculation functions are especially easy to test because the same inputs produce the
 
-NARRATOR: Parameters describe what the function needs; the return value describes
+same outputs without hidden dependencies.
 
-what it produces.
+Avoid using global variables when a parameter or return value would make the dependency
 
-NARRATOR: Prefer a function that completes one coherent responsibility over a long function
+explicit.
 
-that reads input, calculates, prints, modifies global state, and handles every error at once.
+Good decomposition follows concepts in the problem: validate score, compute weighted
 
-NARRATOR: Pure calculation functions are especially easy to test because the same
+average, and format result are meaningful units that can be reviewed separately.
 
-inputs produce the same outputs without hidden dependencies.
+Collections are not interchangeable containers.
 
-NARRATOR: Avoid using global variables when a parameter or return value would make the
+A list preserves order and can contain repeated values.
 
-dependency explicit.
+A tuple represents an ordered grouping that is not changed in place.
 
-NARRATOR: Good decomposition follows concepts in the problem: validate score, compute
+A set emphasizes membership and uniqueness.
 
-weighted average, and format result are meaningful units that can be reviewed
+A dictionary maps keys to values for direct lookup.
 
-separately.
+Choose according to the operations the problem requires.
 
-NARRATOR: Collections are not interchangeable containers.
+If student records are repeatedly retrieved by identifier, a dictionary may express the
 
-NARRATOR: A list preserves order and can contain repeated values.
+relationship better than scanning a list.
 
-NARRATOR: A tuple represents an ordered grouping that is not changed in place.
+If order matters, a set alone is insufficient.
 
-NARRATOR: A set emphasizes membership and uniqueness.
+Consider empty collections, duplicate keys or values, and whether mutation should be
 
-NARRATOR: A dictionary maps keys to values for direct lookup.
+allowed.
 
-NARRATOR: Choose according to the operations the problem requires.
-
-NARRATOR: If student records are repeatedly retrieved by identifier, a dictionary may
-
-express the relationship better than scanning a list.
-
-NARRATOR: If order matters, a set alone is insufficient.
-
-NARRATOR: Consider empty collections, duplicate keys or values, and whether mutation
-
-should be allowed.
-
-NARRATOR: Representation is part of algorithm design because it determines both clarity and
+Representation is part of algorithm design because it determines both clarity and
 
 performance.
 
-NARRATOR: Programs interact with files, users, networks, and data that may be missing or
+Programs interact with files, users, networks, and data that may be missing or malformed.
 
-malformed.
+Validate predictable constraints close to the boundary: required fields, numeric ranges, and
 
-NARRATOR: Validate predictable constraints close to the boundary: required fields,
+allowed choices.
 
-numeric ranges, and allowed choices.
+Exceptions handle operations that fail despite the intended call, such as converting
 
-NARRATOR: Exceptions handle operations that fail despite the intended call, such as
+nonnumeric text or opening a missing file.
 
-converting nonnumeric text or opening a missing file.
+Catch only exceptions the program can respond to meaningfully.
 
-NARRATOR: Catch only exceptions the program can respond to meaningfully.
+A broad catch that silently continues can hide defects and corrupt results.
 
-NARRATOR: A broad catch that silently continues can hide defects and corrupt
+Error messages should explain what failed and what the user can do next without exposing
 
-results.
+secrets.
 
-NARRATOR: Error messages should explain what failed and what the user can do next without
+Separate the normal path from recovery so that correct behavior remains readable.
 
-exposing secrets.
+Robustness is not the absence of errors; it is controlled, observable behavior when errors
 
-NARRATOR: Separate the normal path from recovery so that correct behavior remains
+occur.
 
-readable.
+Testing converts the behavioral contract into repeatable evidence.
 
-NARRATOR: Robustness is not the absence of errors; it is controlled, observable behavior
+Begin with a small normal case whose answer can be calculated by hand.
 
-when errors occur.
-
-NARRATOR: Testing converts the behavioral contract into repeatable evidence.
-
-NARRATOR: Begin with a small normal case whose answer can be calculated by hand.
-
-NARRATOR: Add boundary cases, such as an empty collection, one item, the maximum allowed
+Add boundary cases, such as an empty collection, one item, the maximum allowed
 
 value, and values immediately around a threshold.
 
-NARRATOR: Add invalid cases and confirm the intended error.
+Add invalid cases and confirm the intended error.
 
-NARRATOR: Each test should identify one behavior and produce a clear failure when that
+Each test should identify one behavior and produce a clear failure when that behavior
 
-behavior changes.
+changes.
 
-NARRATOR: Tests do not prove the absence of every defect, but they protect known
+Tests do not prove the absence of every defect, but they protect known requirements
 
-requirements and make refactoring safer.
+and make refactoring safer.
 
-NARRATOR: When a defect is found, first create a test that reproduces it, then repair the
+When a defect is found, first create a test that reproduces it, then repair the code and
 
-code and keep the test as a permanent regression check.
+keep the test as a permanent regression check.
 
-NARRATOR: A dependable workflow is iterative.
+A dependable workflow is iterative.
 
-NARRATOR: Define inputs, outputs, constraints, and examples.
+Define inputs, outputs, constraints, and examples.
 
-NARRATOR: Choose representations that support the required operations.
+Choose representations that support the required operations.
 
-NARRATOR: Write the smallest correct step and observe it.
+Write the smallest correct step and observe it.
 
-NARRATOR: Add conditions and loops with explicit reasoning.
+Add conditions and loops with explicit reasoning.
 
-NARRATOR: Extract functions around coherent responsibilities.
+Extract functions around coherent responsibilities.
 
-NARRATOR: Validate external input and handle recoverable failures.
+Validate external input and handle recoverable failures.
 
-NARRATOR: Turn examples and boundaries into automated tests.
+Turn examples and boundaries into automated tests.
 
-NARRATOR: Then revise names and structure without changing behavior.
+Then revise names and structure without changing behavior.
 
-NARRATOR: This process scales better than writing the whole program and debugging at the
+This process scales better than writing the whole program and debugging at the end.
 
-end.
+Syntax makes instructions executable, but reliability comes from the chain of reasoning
 
-NARRATOR: Syntax makes instructions executable, but reliability comes from the
+that connects the original problem to data, control flow, functions, tests, and a result
 
-chain of reasoning that connects the original problem to data, control flow, functions,
+another person can understand.
 
-tests, and a result another person can understand.
+Before calling the program complete, ask another person to run one normal example and
 
-NARRATOR: Before calling the program complete, ask another person to run one normal example
+one failure case from the written contract.
 
-and one failure case from the written contract.
-
-NARRATOR: Their questions often reveal hidden assumptions about units, input format, or
+Their questions often reveal hidden assumptions about units, input format, or
 
 expected output.
 
-NARRATOR: Record those assumptions as validation rules, documentation, or tests so
+Record those assumptions as validation rules, documentation, or tests so the next revision
 
-the next revision begins with stronger evidence.
+begins with stronger evidence.

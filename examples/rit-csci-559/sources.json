@@ -13,20 +13,20 @@
       "verified": true
     },
     {
-      "id": "nist-ssdf",
-      "title": "NIST Secure Software Development Framework",
-      "uri": "https://csrc.nist.gov/pubs/sp/800/218/final",
-      "author": "National Institute of Standards and Technology",
-      "content": "The Secure Software Development Framework groups practices into four practice groups. Prepare the Organization establishes people, processes, and technology for secure development. Protect the Software prevents unauthorized access to code and development artifacts. Produce Well-Secured Software addresses security requirements, design, verification, and release. Respond to Vulnerabilities identifies, analyzes, remediates, and learns from discovered weaknesses. Security requirements should be tracked throughout development. Verification provides evidence that selected practices and controls were performed. Security reasoning identifies assets, trust boundaries, threats, controls, evidence, residual risk, and responsibilities.",
+      "id": "mit-xv6-book",
+      "title": "xv6: a simple, Unix-like teaching operating system",
+      "uri": "https://pdos.csail.mit.edu/6.828/2023/xv6/book-riscv-rev3.pdf",
+      "author": "MIT PDOS",
+      "content": "The xv6 book explains processes, system calls, traps, page tables, scheduling, locking, file systems, devices, concurrency, and isolation in a small Unix-like kernel. A process combines an address space with execution state and operating-system resources. A system call transfers control from user code to a privileged kernel service. A trap records processor state so the kernel can handle a system call, exception, or interrupt. Page tables map virtual addresses to physical memory with permission bits. The scheduler selects runnable processes and switches processor context. Locks protect invariants when concurrent execution can access shared state. The file system organizes persistent data through inodes, directories, and logged updates. Analysis distinguishes user mode, privileged kernel code, hardware translation, interrupt state, resource ownership, and synchronization invariants.",
       "type": "note",
       "verified": true
     },
     {
-      "id": "nist-cryptographic-standards",
-      "title": "NIST Cryptographic Standards and Guidelines",
-      "uri": "https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines",
-      "author": "National Institute of Standards and Technology",
-      "content": "Cryptographic standards define approved algorithms and parameters. Encryption supports confidentiality when keys and modes are used correctly. Message authentication and digital signatures address integrity and authenticity in different ways. Random number generation supports keys, nonces, and other security parameters. Key management covers generation, distribution, storage, use, rotation, revocation, and destruction. Modes of operation define how a primitive processes data larger than one block. Validation checks implementations against specified requirements. Security depends on the complete protocol and implementation, not only an algorithm name. Analysis also considers side channels and migration requirements.",
+      "id": "riscv-unprivileged",
+      "title": "The RISC-V Instruction Set Manual, Unprivileged ISA",
+      "uri": "https://riscv.org/technical/specifications/",
+      "author": "RISC-V International",
+      "content": "The RISC-V ISA defines programmer-visible instructions, registers, memory operations, control transfer, exceptions, and ordering behavior. Integer register x0 always reads as zero, while the remaining integer registers hold software-visible values. Load instructions transfer data from memory into registers. Store instructions transfer register data to memory. Branch and jump instructions change control flow. Exceptions report conditions that require a defined transfer of control. Memory-ordering rules constrain how memory operations may be observed. Architecture analysis preserves data dependencies, control dependencies, and architectural state.",
       "type": "note",
       "verified": true
     }

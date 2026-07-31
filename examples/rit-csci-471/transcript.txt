@@ -1,20 +1,20 @@
-NARRATOR: Begin by framing Course Scope & Audience as a question about inputs,
+NARRATOR: Begin by framing Introduction to ACM Ethical Principles as a question about inputs,
 
 decisions, and observable results.
 
-NARRATOR: This class is restricted to students with at least 4th year standing COMPSCI-BS or
+NARRATOR: The ACM Code directs computing professionals to contribute to society and
 
-COMPSCI-2M Contact Hours: Lecture 3 It may be used to fulfill one of the following: Writing
+human well-being.
 
-Intensive: Program Typically Offered: Fall, Spring, Summer.
+NARRATOR: Consider this worked case: Developing open-source software that improves
 
-NARRATOR: Consider this worked case: A senior software engineer preparing a technical report
+accessibility for users with disabilities.
 
-for a research grant must follow this course's formatting and ethical guidelines.
+NARRATOR: On screen, create an editable process diagram for Introduction to ACM
 
-NARRATOR: On screen, display a course catalog excerpt highlighting the Writing Intensive
+Ethical Principles with labeled inputs, decisions, state changes, and a checked
 
-designation, fourth-year restriction, and lecture contact hours.
+output.
 
 NARRATOR: List the givens before choosing a method, because an unstated assumption can
 
@@ -22,21 +22,23 @@ change the conclusion.
 
 NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: Now define Document Types in Computer Science precisely enough that another
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Now define Distinguishing Claims from Evidence precisely enough that another
 
 learner could test the definition.
 
-NARRATOR: Topics include the different forms of writing in computer science (books, theses,
+NARRATOR: Responsible technical communication distinguishes claims from evidence.
 
-journal articles, technical reports, manuscripts, etc.
+NARRATOR: Consider this worked case: A paper stating 'Our algorithm reduces latency by 15%'
 
-NARRATOR: Consider this worked case: A thesis requires a comprehensive literature review and
+must include a table comparing baseline and experimental results.
 
-methodology section, whereas a journal article emphasizes novel findings and concise results.
+NARRATOR: On screen, create an editable process diagram for Distinguishing Claims from
 
-NARRATOR: On screen, show a comparison chart listing document types alongside their primary
-
-purposes and typical audience expectations.
+Evidence with labeled inputs, decisions, state changes, and a checked output.
 
 NARRATOR: Separate the formal definition from an implementation detail, then identify what
 
@@ -44,129 +46,13 @@ evidence would distinguish them.
 
 NARRATOR: A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Algorithm Documentation Standards
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: With the foundation in place, examine how Document Readability and Usability
 
 operates in a concrete sequence.
-
-NARRATOR: Algorithm analysis connects a precise problem specification to a correctness
-
-argument and resource bounds.
-
-NARRATOR: Consider this worked case: A developer documenting a sorting algorithm must
-
-explicitly state preconditions, postconditions, and time complexity before
-
-presenting pseudocode.
-
-NARRATOR: On screen, display a template for algorithm documentation with labeled sections
-
-for inputs, outputs, correctness arguments, and asymptotic analysis.
-
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
-
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.
-
-NARRATOR: Next, compare the choices involved in Asymptotic Notation & Resource Bounds and
-
-make the decision criteria explicit.
-
-NARRATOR: Asymptotic notation describes how resource use grows with input size.
-
-NARRATOR: Consider this worked case: Using Big-O notation, a developer can demonstrate
-
-that a divide-and-conquer sorting algorithm outperforms a linear scan for large datasets.
-
-NARRATOR: On screen, graph input size against resource consumption using logarithmic scales
-
-to illustrate linear, logarithmic, and polynomial growth patterns.
-
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
-
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.
-
-NARRATOR: Apply Data Structure Representation Choices to a worked situation instead of
-
-treating it as an isolated definition.
-
-NARRATOR: Representation choices and invariants determine which operations are
-
-efficient and which errors are possible.
-
-NARRATOR: Consider this worked case: Selecting a hash table over a linked list for key-value
-
-storage reduces lookup time from O(n) to O(1) on average, which must be explicitly noted in
-
-technical documentation.
-
-NARRATOR: On screen, show side-by-side diagrams of a hash table and a linked list
-
-with annotated operation costs and collision handling strategies.
-
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
-
-at each step.
-
-NARRATOR: The worked case shows both how to apply the method and how to check it.
-
-NARRATOR: Examine the tradeoffs in Graph Algorithms & Traversal, including what
-
-improves and what becomes more difficult.
-
-NARRATOR: Graph algorithms operate on vertices and edges to answer reachability, ordering,
-
-connectivity, and path questions.
-
-NARRATOR: Consider this worked case: A network engineer documenting a shortest path algorithm
-
-must explain how adjacency matrices or adjacency lists represent the graph structure.
-
-NARRATOR: On screen, render a directed graph with labeled vertices and edges, highlighting
-
-traversal paths and connectivity metrics.
-
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
-
-acceptable.
-
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
-
-NARRATOR: Stress-test the reasoning around Dynamic Programming & Overlapping Subproblems
-
-with an edge case and identify which assumption controls the outcome.
-
-NARRATOR: Dynamic programming records solutions to overlapping subproblems.
-
-NARRATOR: Consider this worked case: A developer documenting a Fibonacci sequence
-
-calculator must show how memoization tables store intermediate results to reduce time
-
-complexity.
-
-NARRATOR: On screen, display a memoization table filling process with arrows indicating
-
-subproblem reuse and final solution assembly.
-
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
-
-holds.
-
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
-
-core idea.
-
-NARRATOR: Use Visual Data Formatting to diagnose a failure by separating symptoms,
-
-causes, and corrective action.
 
 NARRATOR: ), writing styles of computer scientists, document readability and
 
@@ -178,15 +64,129 @@ formatting of graphs, figures, and tables, and ethical, social, and professional
 
 facing Computer Scientists.
 
-NARRATOR: Consider this worked case: A bar chart comparing algorithm runtimes must
+NARRATOR: Consider this worked case: A technical report uses clear headings, concise
 
-include axis labels, a legend, and consistent units to accurately convey performance
+paragraphs, and a glossary for non-specialist stakeholders.
 
-differences.
+NARRATOR: On screen, create an editable process diagram for Document Readability and
 
-NARRATOR: On screen, show a before-and-after comparison of a poorly formatted chart versus
+Usability with labeled inputs, decisions, state changes, and a checked output.
 
-a professionally formatted technical figure with clear axes and legends.
+NARRATOR: Follow every arrow in order and name the state before and after each transition.
+
+NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+
+NARRATOR: Next, compare the choices involved in Research Methods and Reproducibility and
+
+make the decision criteria explicit.
+
+NARRATOR: Methods should be described well enough for readers to evaluate the work.
+
+NARRATOR: Consider this worked case: A lab manual includes exact software versions,
+
+hardware specs, and step-by-step instructions for running experiments.
+
+NARRATOR: On screen, create an editable process diagram for Research Methods and
+
+Reproducibility with labeled inputs, decisions, state changes, and a checked
+
+output.
+
+NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+
+move the goalposts.
+
+NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Apply Accurate Results Reporting to a worked situation instead of treating it as
+
+an isolated definition.
+
+NARRATOR: Results should be reported accurately rather than selected to create a
+
+misleading conclusion.
+
+NARRATOR: Consider this worked case: A graph includes error bars and a confidence interval
+
+to show the variability of experimental outcomes.
+
+NARRATOR: On screen, create an editable process diagram for Accurate Results Reporting
+
+with labeled inputs, decisions, state changes, and a checked output.
+
+NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+
+at each step.
+
+NARRATOR: The worked case shows both how to apply the method and how to check it.
+
+NARRATOR: Examine the tradeoffs in Limitations and Threats to Validity, including what
+
+improves and what becomes more difficult.
+
+NARRATOR: Limitations and threats to validity should be made visible.
+
+NARRATOR: Consider this worked case: A thesis section explicitly states sample size
+
+constraints and potential biases in user testing.
+
+NARRATOR: On screen, create an editable process diagram for Limitations and Threats to
+
+Validity with labeled inputs, decisions, state changes, and a checked output.
+
+NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+
+acceptable.
+
+NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+NARRATOR: Stress-test the reasoning around Formatting Graphs, Figures, and Tables with an
+
+edge case and identify which assumption controls the outcome.
+
+NARRATOR: Computing professionals should avoid harm.
+
+NARRATOR: Consider this worked case: A table uses consistent column alignment, clear
+
+headers, and units for every numerical value.
+
+NARRATOR: On screen, create an editable process diagram for Formatting Graphs,
+
+Figures, and Tables with labeled inputs, decisions, state changes, and a checked
+
+output.
+
+NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+
+holds.
+
+NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+
+core idea.
+
+NARRATOR: Use Teamwork and Peer Review to diagnose a failure by separating symptoms,
+
+causes, and corrective action.
+
+NARRATOR: Professionals should strive to achieve high quality in both processes and
+
+products.
+
+NARRATOR: Consider this worked case: A group uses a structured peer review form to check
+
+for logical gaps, citation accuracy, and clarity.
+
+NARRATOR: On screen, create an editable process diagram for Teamwork and Peer Review
+
+with labeled inputs, decisions, state changes, and a checked output.
 
 NARRATOR: Locate the first point where observed behavior diverges from expected
 
@@ -196,23 +196,21 @@ NARRATOR: The diagnosis is strongest when another person can reproduce the obser
 
 and the test.
 
-NARRATOR: Connect Teamwork & Peer Review Practices to the earlier ideas and explain how
+NARRATOR: Connect Ethical Decision-Making Framework to the earlier ideas and explain how
 
 the pieces work as one system.
 
-NARRATOR: This course focuses on developing and improving verbal and written communication
+NARRATOR: Ethical computing decisions identify stakeholders, foreseeable benefits and harms,
 
-skills specific to the discipline of computer science.
+uncertainty, alternatives, and obligations.
 
-NARRATOR: Consider this worked case: A research group uses a standardized peer review
+NARRATOR: Consider this worked case: A team evaluates a new AI tool by mapping affected
 
-checklist to evaluate algorithm correctness, clarity of notation, and adherence to
+users, potential biases, data privacy risks, and alternative approaches.
 
-formatting standards before submission.
+NARRATOR: On screen, create an editable process diagram for Ethical Decision-Making
 
-NARRATOR: On screen, display a peer review checklist template with categories for
-
-correctness, readability, formatting, and ethical compliance.
+Framework with labeled inputs, decisions, state changes, and a checked output.
 
 NARRATOR: Explain each connection explicitly and verify that information retains the same
 
@@ -222,21 +220,23 @@ NARRATOR: The synthesis matters only if every connection remains supported by th
 
 evidence.
 
-NARRATOR: Finish with Ethical & Professional Considerations as a practical checklist that
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
 
-can guide a new analysis.
+guide a new analysis.
 
-NARRATOR: Hash tables map keys to locations and require a collision strategy.
+NARRATOR: They should maintain high standards of professional competence, conduct, and
 
-NARRATOR: Consider this worked case: A developer documenting a machine learning model
+ethical practice.
 
-must disclose training data sources, potential biases, and limitations to maintain
+NARRATOR: Consider this worked case: A final assignment requires students to audit a sample
 
-professional integrity.
+research paper using the checklist to verify claims, methods, formatting, and ethical
 
-NARRATOR: On screen, show a professional communication checklist highlighting ethical
+compliance.
 
-disclosure, authorship attribution, and data privacy compliance.
+NARRATOR: On screen, create an editable process diagram for Practical Analysis
+
+Checklist with labeled inputs, decisions, state changes, and a checked output.
 
 NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
 

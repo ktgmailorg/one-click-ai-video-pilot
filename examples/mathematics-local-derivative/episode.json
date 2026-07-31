@@ -1,0 +1,105 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [
+        "average slope = [f(a+h) − f(a)] ÷ h"
+      ],
+      "id": "beat-01",
+      "narration": "Choose a point at x equals a and a second point h units away. The line through them is a secant line. Its slope divides the change in function value by the change in input. That number describes average change across the interval, not yet what happens at one exact point.",
+      "plannedSeconds": 23,
+      "title": "Begin with an average slope",
+      "visualDirection": "template:showcase-derivative | Draw a curve with two nearby points and the secant line through them."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [
+        "f′(a) = lim h→0 [f(a+h) − f(a)] ÷ h"
+      ],
+      "id": "beat-02",
+      "narration": "Now shrink h without setting it equal to zero. As the second point approaches the first, the secant lines approach a limiting position: the tangent line. If their slopes approach one finite value, that value is the derivative f prime of a. The limit turns nearby average change into instantaneous change.",
+      "plannedSeconds": 26,
+      "title": "Let the interval shrink",
+      "visualDirection": "template:showcase-derivative | Move the second point toward the first so the secant approaches a tangent."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "A positive derivative means the function is increasing locally; a negative derivative means it is decreasing; and a zero derivative gives a horizontal tangent. Close to the point, the tangent line can approximate the curve. The derivative is therefore both a geometric slope and a practical rate of change.",
+      "plannedSeconds": 26,
+      "title": "Interpret the local model",
+      "visualDirection": "template:showcase-derivative | Compare positive, zero, and negative tangent slopes and show the tangent approximating the curve nearby."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "openstax-derivative"
+      ],
+      "text": "The slope of a secant line measures average change between two points on a curve.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "openstax-derivative"
+      ],
+      "text": "When the difference quotient approaches a limit as h approaches zero, that limit is the derivative at the point.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "openstax-derivative"
+      ],
+      "text": "The derivative gives the tangent slope and a local linear model of a differentiable function.",
+      "verified": true
+    }
+  ],
+  "id": "how-a-derivative-captures-local-change",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "OpenStax",
+      "excerpt": "A secant line through two points on a curve gives an average rate of change. As the second point approaches the first, the limiting secant slope defines the tangent-line slope when the limit exists. The derivative at a point is this limit of a difference quotient and represents an instantaneous rate of change. Near a differentiable point, the tangent line gives a useful local linear approximation.",
+      "id": "openstax-derivative",
+      "sha256": "bc65dbb52cfb9a2d974c8739a23372a00866500b64601049a4de6c02c57189cd",
+      "title": "OpenStax Calculus Volume 1: Defining the Derivative",
+      "type": "url",
+      "uri": "https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative",
+      "verified": true
+    }
+  ],
+  "title": "How a Derivative Captures Local Change"
+}

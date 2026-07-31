@@ -1,0 +1,306 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Artificial intelligence can be organized around agents. An agent receives percepts through sensors and affects an environment through actuators. A thermostat senses temperature and controls heating; a game agent observes a board and selects moves. Calling an action intelligent requires a performance objective and information assumptions. A rational agent selects the action expected to perform best given its percept history and knowledge, not one guaranteed to succeed in every uncertain world. The environment may be fully or partially observable, deterministic or stochastic, static or changing. These properties determine which representations and algorithms are appropriate. Begin by specifying the task environment rather than choosing an AI technique because it is fashionable.",
+      "plannedSeconds": 62,
+      "title": "Define an agent and environment",
+      "visualDirection": "template:showcase-search | Place sensors, internal decision process, actuators, and environment in a perception-action loop."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "A reflex agent maps the current situation to an action, such as braking when an obstacle is close. Reflexes can be fast and effective when local rules cover the environment. A planning agent represents possible future states and evaluates action sequences before acting. Planning becomes valuable when an action's benefit depends on later consequences or when several routes compete. It also has a cost: the state space can grow rapidly, the model may be wrong, and the world may change during computation. Many real systems combine layers—fast safety reflexes around a slower planner. The design question is not whether planning is always smarter, but which consequences must be represented to meet the performance objective.",
+      "plannedSeconds": 62,
+      "title": "Contrast reflex and planning behavior",
+      "visualDirection": "template:showcase-search | Compare a direct condition-action rule with a model-based agent simulating future action sequences."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "Search requires a precise formulation. A state contains the information needed to choose future actions. Actions specify available choices. The transition model predicts the next state. Action cost measures the value spent. The start state identifies the initial condition, and a goal test recognizes success. In route finding, a state may be a location, actions may follow roads, and cost may represent distance or time. Include too little state and the model cannot predict consequences; include irrelevant detail and the search space becomes needlessly large. The formulation determines what solutions mean before any algorithm explores them. A correct algorithm on the wrong state representation solves the wrong problem efficiently.",
+      "plannedSeconds": 62,
+      "title": "Formulate a search problem",
+      "visualDirection": "template:showcase-search | Turn a maze into state space, actions, transition model, costs, start state, and goal test."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "The state space is a graph of possible configurations and transitions. A search algorithm builds a tree of paths from the start. The same state may appear multiple times because different paths reach it. Tree search can therefore revisit cycles forever or repeat expensive work. Graph search maintains an explored set or best-known cost information to control repeated expansion. But duplicate handling must match the algorithm. In cost-based search, reaching a known state through a cheaper path may require updating the frontier. A search node often stores a state, parent, action, path cost, and depth so the final action sequence can be reconstructed. State equality and hashing are part of the algorithm's correctness.",
+      "plannedSeconds": 62,
+      "title": "Distinguish graph and search tree",
+      "visualDirection": "template:showcase-search | Unfold one state-space graph into multiple paths and show repeated states entering a search tree."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Breadth-first search uses a first-in, first-out frontier and explores by depth. With equal action costs, the first goal found has the fewest actions. Its frontier can require large memory. Depth-first search uses a stack and pursues one branch before backtracking. It can use less frontier memory but may spend a long time down an unhelpful branch and does not generally find the shortest solution. Graph search and finite-state assumptions affect completeness. Neither strategy understands action cost beyond depth. Choose according to the guarantee the problem needs, not a slogan that one is faster. A small example with unequal edge costs exposes why fewest actions and least total cost are different objectives.",
+      "plannedSeconds": 62,
+      "title": "Compare breadth-first and depth-first search",
+      "visualDirection": "template:showcase-search | Expand one frontier by shallowest depth and another by newest path, then compare memory and solution behavior."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "Uniform-cost search orders the frontier by path cost g of n. It may explore a deeper path before a shallow one when the deeper path is cheaper. With nonnegative costs and appropriate graph-search handling, the first removed goal is optimal. The algorithm needs a priority queue and must track the best cost found for states. A cheaper path to an existing frontier state should replace or supersede the expensive one. Uniform-cost search uses no estimate of remaining distance, so it can expand many states in directions that are cheap so far but far from a goal. It provides a baseline for understanding how informed search adds guidance without giving up cost reasoning.",
+      "plannedSeconds": 62,
+      "title": "Use uniform-cost search for path cost",
+      "visualDirection": "template:showcase-search | Prioritize frontier nodes by accumulated path cost and replace an expensive path when a cheaper one appears."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "A heuristic h of n uses problem knowledge to estimate remaining cost. Straight-line distance can guide geographic routing because it is inexpensive and related to travel distance. Greedy best-first search chooses the state with smallest h, focusing on apparent closeness while ignoring the cost already paid. It can be fast but is not generally optimal or complete in all settings. A heuristic should be cheaper to compute than the search work it saves. Zero is always an uninformative baseline for nonnegative costs. Better heuristics distinguish promising states while respecting the guarantees required by the algorithm. Heuristic design is representation design: it encodes a simplified view of the problem.",
+      "plannedSeconds": 62,
+      "title": "Use heuristics as informed estimates",
+      "visualDirection": "template:showcase-search | Attach an estimated remaining cost to each frontier state and compare a helpful heuristic with a misleading one."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "A star balances the cost accumulated so far, g, with the heuristic estimate to the goal, h. If h is zero, A star behaves like uniform-cost search. If g is ignored, behavior resembles greedy search. The sum estimates total solution cost through a frontier node. An admissible heuristic never overestimates the true remaining optimal cost. Consistency requires that the heuristic at one state be no greater than one-step cost plus the heuristic at the successor. Under standard conditions, these properties support optimality and efficient graph-search handling. A star's memory use can still be substantial, and a highly accurate heuristic may itself be expensive. Guarantees depend on the exact assumptions and implementation.",
+      "plannedSeconds": 62,
+      "title": "Combine cost and estimate with A star",
+      "visualDirection": "template:showcase-search | Rank frontier nodes by g plus h and show how the balance changes between uniform-cost and greedy search."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "A returned path is only one dimension of quality. Completeness asks whether an algorithm will find a solution when one exists under stated conditions. Optimality asks whether the solution minimizes the defined cost. Time and space can be estimated by states expanded and stored, often in terms of branching factor and solution depth. Practical evaluation also measures frontier size, duplicate handling, and heuristic computation. Most importantly, a mathematically optimal path in an inaccurate model may be poor in the real environment. Costs, transitions, and goals must represent what users actually value. Search evaluation joins algorithmic guarantees with model validation rather than treating them as separate worlds.",
+      "plannedSeconds": 62,
+      "title": "Evaluate search beyond one returned path",
+      "visualDirection": "template:showcase-search | Compare completeness, optimality, time, space, expanded nodes, and model error across strategies."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "A complete search design answers nine questions. What performance objective defines rational behavior? What information does each state contain? Which actions and transitions are possible? What does path cost represent? What are the start and goal conditions? Which frontier rule matches the required guarantee? How are repeated states and cheaper paths handled? If a heuristic is used, what does it estimate and what properties can be justified? Finally, how do time, memory, solution quality, and model error behave on representative cases? Artificial intelligence is not produced by naming an algorithm. It comes from connecting a clear environment model to a decision process whose behavior can be explained and tested.",
+      "plannedSeconds": 62,
+      "title": "Use a complete search-design checklist",
+      "visualDirection": "template:showcase-search | Summarize agent objective, state, actions, transitions, costs, strategy, duplicate handling, heuristic, and evaluation."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "berkeley-agents"
+      ],
+      "text": "An intelligent agent perceives an environment and selects actions intended to advance defined goals or utility.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "berkeley-agents"
+      ],
+      "text": "Planning agents use a model of consequences, while reflex agents select actions primarily from current conditions.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "berkeley-state"
+      ],
+      "text": "A search problem specifies states, actions, transitions, action costs, a start state, and a goal test.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "berkeley-state"
+      ],
+      "text": "A search tree represents paths through a state-space graph, so the same state can appear through multiple action sequences.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "berkeley-state"
+      ],
+      "text": "Breadth-first search expands shallowest nodes, while depth-first search follows a path deeply before backtracking.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "berkeley-state"
+      ],
+      "text": "Uniform-cost search expands the frontier path with lowest accumulated cost and is optimal under appropriate nonnegative cost conditions.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "berkeley-informed"
+      ],
+      "text": "A heuristic estimates cost from a state to a goal and can guide search toward promising regions.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "berkeley-informed"
+      ],
+      "text": "A* search prioritizes f(n)=g(n)+h(n), combining known path cost with estimated remaining cost.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "berkeley-state",
+        "berkeley-informed"
+      ],
+      "text": "Search strategies should be evaluated by solution guarantees, time, memory, and the validity of their problem formulation.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "berkeley-agents",
+        "berkeley-state",
+        "berkeley-informed"
+      ],
+      "text": "A defensible search system connects an explicit task model to an algorithm whose guarantees and resource costs are understood.",
+      "verified": true
+    }
+  ],
+  "id": "artificial-intelligence-foundations-agents-and-search",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "UC Berkeley CS188",
+      "excerpt": "A rational agent perceives an environment through sensors and acts through actuators to pursue expected outcomes. Reflex agents choose from current state, while planning agents use a model to evaluate possible action sequences. Environments differ in observability, determinism, dynamics, and other properties.",
+      "id": "berkeley-agents",
+      "sha256": "e872912a9f53870718c4b10f21c043b865aa9d12c01ddfe53595d21f46b4450d",
+      "title": "UC Berkeley CS188: Agents",
+      "type": "url",
+      "uri": "https://inst.eecs.berkeley.edu/~cs188/textbook/search/agents.html",
+      "verified": true
+    },
+    {
+      "author": "UC Berkeley CS188",
+      "excerpt": "A search problem defines a state space, actions, transition model, action cost, start state, and goal test. Search trees represent paths through a state-space graph. Graph search tracks explored states to avoid redundant expansion.",
+      "id": "berkeley-state",
+      "sha256": "bb58f896ff0bc3b51d24fb1b0fbe31d768d190fbbbb11ef6018345aeef689e99",
+      "title": "UC Berkeley CS188: State Spaces and Search Problems",
+      "type": "url",
+      "uri": "https://inst.eecs.berkeley.edu/~cs188/textbook/search/state.html",
+      "verified": true
+    },
+    {
+      "author": "UC Berkeley CS188",
+      "excerpt": "Greedy search prioritizes heuristic estimates of remaining distance, while A* combines path cost and heuristic estimate. Admissible heuristics do not overestimate optimal remaining cost. Consistency constrains heuristic change across an edge and supports optimal graph-search behavior.",
+      "id": "berkeley-informed",
+      "sha256": "91edfdda9f9cc24b1b57a0379dc349a62ff2db9ea43dc56a89fc37e36b6e22d6",
+      "title": "UC Berkeley CS188: Informed Search",
+      "type": "url",
+      "uri": "https://inst.eecs.berkeley.edu/~cs188/textbook/search/informed.html",
+      "verified": true
+    }
+  ],
+  "title": "Artificial Intelligence Foundations: Agents and Search"
+}

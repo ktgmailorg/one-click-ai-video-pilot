@@ -1,0 +1,466 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "We begin by examining how raw source code transforms into meaningful units through lexical analysis.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "A lexer groups input characters into tokens, stripping away whitespace and comments to isolate operators, identifiers, and literals.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "Consider the expression 'x + 5'.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-004",
+          "phrase": "The lexer recognizes 'x' as an identifier token, '+' as an operator token, and '5' as a numeric token.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-005",
+          "phrase": "This separation is crucial because it isolates syntactic structure from semantic meaning.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-006",
+          "phrase": "By treating each token as a discrete symbol, the compiler can process language constructs uniformly.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-007",
+          "phrase": "The lexer operates as a state machine that scans characters sequentially, building tokens based on predefined patterns.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-008",
+          "phrase": "This foundational step ensures that subsequent stages receive clean, structured input rather than unprocessed character streams.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-009",
+          "phrase": "Understanding tokenization reveals how compilers manage language syntax before attempting,",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "Once tokens are isolated, the parser applies language grammar and operator precedence to construct an abstract syntax tree whose nodes represent expressions, function prototypes, and definitions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "The parser consumes the token stream and validates syntactic structure against formal grammar rules.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "For example, it checks that an identifier is followed by a valid operator or assignment symbol.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-004",
+          "phrase": "Operator precedence determines evaluation order, ensuring that multiplication binds tighter than addition.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-005",
+          "phrase": "The parser builds a hierarchical structure that mirrors the program's logical organization.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-006",
+          "phrase": "This step transforms a flat sequence of tokens into a tree that preserves nesting and relationships.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-007",
+          "phrase": "By enforcing grammar rules, the parser catches structural errors early, preventing malformed code from reaching semantic analysis.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-008",
+          "phrase": "The parser's output becomes the foundation for subsequent validation and low",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "The abstract syntax tree captures the program's logical structure without retaining syntactic details like parentheses or whitespace.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "Each node represents a specific language construct, such as an expression, function prototype, or variable definition.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "For our example, the tree contains a binary expression node with two child nodes representing the left and right operands.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-004",
+          "phrase": "This hierarchical organization enables efficient traversal and analysis.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-005",
+          "phrase": "The AST serves as a stable intermediate representation that separates language semantics from implementation details.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-006",
+          "phrase": "By standardizing program structure, the AST allows compilers to apply uniform transformations across different language features.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-007",
+          "phrase": "Developers can inspect the tree to verify that the parser correctly interpreted the source code.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-008",
+          "phrase": "The tree's structure directly influences how subsequent stages validate types and generate code.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "After parsing, the compiler performs semantic checks to verify that the program adheres to language rules beyond syntax.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "These checks include type validation, scope resolution, and symbol table lookups.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "For instance, the compiler verifies that the identifier 'x' is declared and assigned a compatible type before allowing arithmetic operations.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-004",
+          "phrase": "Symbol information tracks variable names, their types, and scopes, enabling precise error reporting.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-005",
+          "phrase": "If a type mismatch occurs, the compiler flags the issue immediately, preventing invalid operations from propagating.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-006",
+          "phrase": "Semantic analysis ensures that the program's meaning is consistent and well-formed.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-007",
+          "phrase": "By validating types and scopes early, the compiler reduces downstream errors and improves optimization opportunities.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-008",
+          "phrase": "This stage bridges the gap between syntactic structure and runtime behavior.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "Once semantic validation passes, the compiler lowers the validated AST nodes into LLVM intermediate representation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "This transformation converts high-level language constructs into a standardized, target-independent format.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "The lowering process maps AST nodes to specific IR instructions, ensuring that each operation corresponds to a valid machine operation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-004",
+          "phrase": "For example, the binary expression node becomes an addition instruction in the IR.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-005",
+          "phrase": "This step abstracts away language-specific syntax, enabling uniform optimization and code generation across different architectures.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-006",
+          "phrase": "The intermediate representation serves as a stable boundary between front-end analysis and back-end code generation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-007",
+          "phrase": "By standardizing the program structure, the compiler can apply target-independent optimizations safely.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-008",
+          "phrase": "Lowering also ensures that all language features are reflected consistently across the pipeline.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-06",
+      "shots": [
+        {
+          "id": "beat-06-shot-001",
+          "phrase": "LLVM IR is a typed, low-level intermediate representation organized into modules, functions, basic blocks, and instructions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-002",
+          "phrase": "This structure provides a clear hierarchy for program analysis and optimization.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-003",
+          "phrase": "Modules contain functions, which are divided into basic blocks that represent straight-line code sequences.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-004",
+          "phrase": "Each instruction operates on typed values, ensuring type safety throughout the program.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-005",
+          "phrase": "The IR's explicit control flow through terminators and basic-block edges allows the compiler to analyze execution paths systematically.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-006",
+          "phrase": "Values are defined exactly once using static single assignment form, which simplifies data flow analysis.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-007",
+          "phrase": "This design eliminates ambiguity in variable usage, enabling precise optimization passes.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-008",
+          "phrase": "The IR's structure makes it possible to apply target-independent transformations while preserving program semantics.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-07",
+      "shots": [
+        {
+          "id": "beat-07-shot-001",
+          "phrase": "A frontend must produce valid IR that obeys dominance, type, control-flow, and calling-convention rules.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-002",
+          "phrase": "Verification catches structural violations before later optimization or code generation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-003",
+          "phrase": "This step ensures that the intermediate representation is well-formed and ready for transformation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-004",
+          "phrase": "The compiler checks that all values are defined before use, that types match across operations, and that control flow terminates correctly.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-005",
+          "phrase": "If violations are detected, the compiler reports precise errors, preventing invalid code from reaching optimization passes.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-006",
+          "phrase": "Verification acts as a safety net, ensuring that the IR maintains semantic integrity throughout the compilation pipeline.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-007",
+          "phrase": "By enforcing these rules early, the compiler reduces the risk of incorrect optimizations and improves overall code quality.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-008",
+          "phrase": "This boundary separates front-end validation from back-end transformation, allowing each stage,",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-08",
+      "shots": [
+        {
+          "id": "beat-08-shot-001",
+          "phrase": "Code generation translates the verified intermediate representation into target-specific machine code.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-002",
+          "phrase": "This process maps IR instructions to assembly or binary instructions, handling register allocation, instruction selection, and scheduling.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-003",
+          "phrase": "The compiler ensures that the generated code respects the target architecture's constraints while preserving the program's semantics.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-004",
+          "phrase": "Optimization boundaries define where target-independent transformations end and target-specific code generation begins.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-005",
+          "phrase": "This separation allows the compiler to apply universal optimizations before committing to a specific architecture.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-006",
+          "phrase": "The generated code is then linked and executed, completing the compilation pipeline.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-007",
+          "phrase": "By maintaining a clear division between optimization and code generation, the compiler ensures that transformations are both safe and efficient.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-008",
+          "phrase": "This stage bridges the gap between abstract program logic,",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-09",
+      "shots": [
+        {
+          "id": "beat-09-shot-001",
+          "phrase": "Diagnostics provide precise error messages that guide developers in fixing compilation issues.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-002",
+          "phrase": "The compiler analyzes the intermediate representation to identify type mismatches, undefined variables, and control flow violations.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-003",
+          "phrase": "These checks occur at multiple stages, ensuring that errors are caught early and accurately.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-004",
+          "phrase": "For example, if a variable is used before declaration, the compiler reports a precise location and suggests a fix.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-005",
+          "phrase": "Diagnostics also include warnings for potential issues like unused variables or deprecated features.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-006",
+          "phrase": "By providing actionable feedback, the compiler improves developer productivity and reduces debugging time.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-007",
+          "phrase": "Effective diagnostics are essential for maintaining code quality and ensuring that programs compile correctly.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-008",
+          "phrase": "This stage completes the front-end pipeline by ensuring that all errors are identified and reported before code generation.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-10",
+      "shots": [
+        {
+          "id": "beat-10-shot-001",
+          "phrase": "To trace one expression through the front-end pipeline, we follow 'x + 5' from raw text to intermediate representation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-002",
+          "phrase": "The lexer groups characters into tokens: identifier 'x', operator '+', and number '5'.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-003",
+          "phrase": "The parser applies grammar rules to construct an abstract syntax tree with a binary expression node.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-004",
+          "phrase": "Semantic checks verify that 'x' is declared and typed correctly.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-005",
+          "phrase": "The compiler then lowers the AST node into LLVM intermediate representation, producing an addition instruction.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-006",
+          "phrase": "Verification ensures the IR obeys dominance and type rules.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-007",
+          "phrase": "Finally, code generation maps the instruction to target-specific assembly.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-008",
+          "phrase": "This trace demonstrates how each stage transforms the expression while preserving semantics.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-009",
+          "phrase": "By understanding this pipeline, developers can debug compilation issues and optimize code effectively.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "compiler-front-end-foundations-from-source-to-intermediate-repre",
+  "schemaVersion": 1
+}

@@ -1,578 +1,580 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:06.954
-NARRATOR: Begin by framing Introduction to
-Data Management as a question about inputs,
+00:00:00.050 --> 00:00:07.582
+NARRATOR: Begin by framing Foundations of the
+Relational Model as a question about inputs,
 
 2
-00:00:06.954 --> 00:00:09.078
+00:00:07.582 --> 00:00:09.734
 decisions, and observable results.
 
 3
-00:00:09.078 --> 00:00:14.774
-NARRATOR: This course provides a broad
-introduction to the principles and practice of
+00:00:09.734 --> 00:00:17.139
+NARRATOR: Relational systems organize data
+with tables, rows, columns, and declared
 
 4
-00:00:14.774 --> 00:00:19.593
-modern data management, with an emphasis on
-the relational database model.
+00:00:17.139 --> 00:00:17.812
+types.
 
 5
-00:00:19.593 --> 00:00:26.819
+00:00:17.812 --> 00:00:23.837
 NARRATOR: Consider this worked case: A
-hospital system uses a relational database to
+'Students' table contains rows for each
 
 6
-00:00:26.819 --> 00:00:31.265
-link patient records, medical history, and
-appointment schedules.
+00:00:23.837 --> 00:00:32.372
+student, with columns for ID, name, and major,
+each with a specific data type like INTEGER or
 
 7
-00:00:31.265 --> 00:00:37.806
-NARRATOR: On screen, display a simple
-flowchart showing data flowing from collection
+00:00:32.372 --> 00:00:32.874
+VARCHAR.
 
 8
-00:00:37.806 --> 00:00:40.531
-to structured storage and retrieval.
+00:00:32.875 --> 00:00:39.612
+NARRATOR: On screen, display a simple table
+schema diagram with labeled columns and data
 
 9
-00:00:40.531 --> 00:00:46.612
+00:00:39.612 --> 00:00:40.093
+types.
+
+10
+00:00:40.093 --> 00:00:46.263
 NARRATOR: List the givens before choosing a
 method, because an unstated assumption can
 
-10
-00:00:46.612 --> 00:00:48.015
+11
+00:00:46.263 --> 00:00:47.687
 change the conclusion.
 
-11
-00:00:48.015 --> 00:00:53.640
+12
+00:00:47.687 --> 00:00:53.453
 NARRATOR: This establishes the vocabulary and
 scope needed for the remaining sections.
 
-12
-00:00:53.762 --> 00:00:59.447
-NARRATOR: Now define Relational Model
-Foundations precisely enough that another
-
 13
-00:00:59.447 --> 00:01:02.290
-learner could test the definition.
+00:00:53.570 --> 00:00:59.537
+NARRATOR: Now define Entity-Relationship
+Modeling Basics precisely enough that another
 
 14
-00:01:02.290 --> 00:01:09.791
-NARRATOR: Topics in relational database
-systems include data modeling; the relational
+00:00:59.537 --> 00:01:02.520
+learner could test the definition.
 
 15
-00:01:09.791 --> 00:01:16.609
-model; relational algebra; Structured Query
-Language (SQL); and data quality,
+00:01:02.520 --> 00:01:07.895
+NARRATOR: Property graph models represent
+domain entities as nodes.
 
 16
-00:01:16.609 --> 00:01:19.337
-transactions, integrity and security.
+00:01:07.895 --> 00:01:14.849
+NARRATOR: Consider this worked case: Modeling
+a 'Library' system involves entities like
 
 17
-00:01:19.337 --> 00:01:25.900
-NARRATOR: Consider this worked case: An
-'Employees' table contains columns for
+00:01:14.849 --> 00:01:20.644
+Books, Authors, and Members, connected by
+relationships like 'writtenBy' and
 
 18
-00:01:25.900 --> 00:01:28.883
-EmployeeID, Name, Department, and Salary.
+00:01:20.644 --> 00:01:21.223
+'checkedOutBy'.
 
 19
-00:01:28.883 --> 00:01:36.424
-NARRATOR: On screen, show a basic table layout
-with labeled rows and columns, highlighting
+00:01:21.223 --> 00:01:29.548
+NARRATOR: On screen, show a simple ER diagram
+with three rectangles (Book, Author, Member)
 
 20
-00:01:36.424 --> 00:01:38.040
-the entity-attribute relationship.
+00:01:29.548 --> 00:01:31.926
+and lines connecting them.
 
 21
-00:01:38.040 --> 00:01:44.708
+00:01:31.926 --> 00:01:38.664
 NARRATOR: Separate the formal definition from
 an implementation detail, then identify what
 
 22
-00:01:44.708 --> 00:01:46.930
+00:01:38.664 --> 00:01:40.910
 evidence would distinguish them.
 
 23
-00:01:46.930 --> 00:01:53.649
+00:01:40.910 --> 00:01:47.254
 NARRATOR: A precise definition makes later
 examples easier to evaluate and revise.
 
 24
-00:01:53.762 --> 00:02:00.183
-NARRATOR: With the foundation in place,
-examine how Data Modeling Concepts operates in
+00:01:47.254 --> 00:01:54.387
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
 
 25
-00:02:00.183 --> 00:02:01.665
-a concrete sequence.
+00:01:54.387 --> 00:01:56.332
+throughout the analysis.
 
 26
-00:02:01.665 --> 00:02:04.712
-NARRATOR: A database project is required.
+00:01:56.450 --> 00:02:02.958
+NARRATOR: With the foundation in place,
+examine how Primary Keys and Unique
 
 27
-00:02:04.712 --> 00:02:11.618
-NARRATOR: Consider this worked case: A
-'Student' entity relates to a 'Course' entity
+00:02:02.958 --> 00:02:06.212
+Identifiers operates in a concrete sequence.
 
 28
-00:02:11.618 --> 00:02:16.930
-through an 'Enrollment' relationship, linking
-student IDs to course codes.
+00:02:06.212 --> 00:02:13.660
+NARRATOR: Primary keys identify rows, while
+foreign keys express references between
 
 29
-00:02:16.930 --> 00:02:24.664
-NARRATOR: On screen, draw a simple ER diagram
-with Student, Course, and Enrollment boxes and
+00:02:13.660 --> 00:02:14.337
+tables.
 
 30
-00:02:24.664 --> 00:02:26.211
-lines connecting them.
+00:02:14.337 --> 00:02:20.750
+NARRATOR: Consider this worked case: A
+'Products' table uses a 'ProductID' column as
 
 31
-00:02:26.212 --> 00:02:33.430
+00:02:20.750 --> 00:02:24.696
+the primary key to uniquely identify each
+item.
+
+32
+00:02:24.696 --> 00:02:31.903
+NARRATOR: On screen, highlight a primary key
+column in a table diagram with a unique key
+
+33
+00:02:31.903 --> 00:02:32.353
+symbol.
+
+34
+00:02:32.353 --> 00:02:39.509
 NARRATOR: Follow every arrow in order and name
 the state before and after each transition.
 
-32
-00:02:33.430 --> 00:02:39.149
+35
+00:02:39.509 --> 00:02:45.212
 NARRATOR: The trace converts an abstract
 statement into an inspectable sequence.
 
-33
-00:02:39.149 --> 00:02:46.048
+36
+00:02:45.212 --> 00:02:52.775
 NARRATOR: Name each dependency explicitly, and
 keep labels and representations consistent
 
-34
-00:02:46.048 --> 00:02:47.930
+37
+00:02:52.775 --> 00:02:54.837
 throughout the analysis.
 
-35
-00:02:48.050 --> 00:02:54.509
-NARRATOR: Next, compare the choices involved
-in Relational Algebra Basics and make the
-
-36
-00:02:54.509 --> 00:02:56.000
-decision criteria explicit.
-
-37
-00:02:56.000 --> 00:03:02.369
-NARRATOR: Modes of operation define how a
-primitive processes data larger than one
-
 38
-00:03:02.369 --> 00:03:02.859
-block.
+00:02:54.962 --> 00:03:01.471
+NARRATOR: Next, compare the choices involved
+in Foreign Keys and Referential Integrity and
 
 39
-00:03:02.859 --> 00:03:08.385
-NARRATOR: Consider this worked case: A
-selection operation filters the 'Employees'
+00:03:01.471 --> 00:03:03.974
+make the decision criteria explicit.
 
 40
-00:03:08.385 --> 00:03:12.906
-table to show only those in the 'Engineering'
-department.
+00:03:03.974 --> 00:03:10.380
+NARRATOR: Constraints and indexes support data
+integrity and efficient lookup.
 
 41
-00:03:12.906 --> 00:03:18.658
-NARRATOR: On screen, illustrate a
-before-and-after table showing rows filtered
+00:03:10.380 --> 00:03:16.074
+NARRATOR: Consider this worked case: A
+'Orders' table includes a 'CustomerID' foreign
 
 42
-00:03:18.658 --> 00:03:22.109
-by a condition using selection notation.
+00:03:16.074 --> 00:03:19.396
+key that links to the 'Customers' table.
 
 43
-00:03:22.109 --> 00:03:28.847
+00:03:19.396 --> 00:03:25.726
+NARRATOR: On screen, draw a line from the
+'Orders' table to the 'Customers' table
+
+44
+00:03:25.726 --> 00:03:26.630
+labeled 'CustomerID'.
+
+45
+00:03:26.630 --> 00:03:33.318
 NARRATOR: Compare alternatives against the
 same constraints so the evaluation does not
 
-44
-00:03:28.847 --> 00:03:30.531
+46
+00:03:33.318 --> 00:03:34.990
 move the goalposts.
 
-45
-00:03:30.531 --> 00:03:37.187
+47
+00:03:34.990 --> 00:03:41.661
 NARRATOR: Using shared criteria turns a
 preference into a defensible technical choice.
 
-46
-00:03:37.187 --> 00:03:44.381
+48
+00:03:41.661 --> 00:03:49.347
 NARRATOR: Name each dependency explicitly, and
 keep labels and representations consistent
 
-47
-00:03:44.381 --> 00:03:46.343
+49
+00:03:49.347 --> 00:03:51.443
 throughout the analysis.
 
-48
-00:03:46.466 --> 00:03:52.620
-NARRATOR: Apply Structured Query Language
-(SQL) to a worked situation instead of
-
-49
-00:03:52.620 --> 00:03:55.697
-treating it as an isolated definition.
-
 50
-00:03:55.697 --> 00:04:01.984
-NARRATOR: Students will also learn approaches
-to building relational database application
+00:03:51.554 --> 00:03:57.208
+NARRATOR: Apply Constraints for Data
+Validation to a worked situation instead of
 
 51
-00:04:01.984 --> 00:04:02.556
-programs.
+00:03:57.208 --> 00:04:00.035
+treating it as an isolated definition.
 
 52
-00:04:02.556 --> 00:04:09.743
-NARRATOR: Consider this worked case: The
-command SELECT * FROM Employees WHERE
+00:04:00.035 --> 00:04:05.144
+NARRATOR: Constraints reject states that
+violate declared data rules.
 
 53
-00:04:09.743 --> 00:04:13.337
-Department = 'Marketing' retrieves specific
-records.
+00:04:05.144 --> 00:04:11.168
+NARRATOR: Consider this worked case: A
+'Salary' column constraint prevents negative
 
 54
-00:04:13.337 --> 00:04:20.437
-NARRATOR: On screen, display a code snippet of
-the SQL query alongside the resulting filtered
+00:04:11.168 --> 00:04:17.191
+values, and a 'Email' column constraint
+enforces a valid email format.
 
 55
-00:04:20.437 --> 00:04:21.384
-table output.
+00:04:17.191 --> 00:04:24.468
+NARRATOR: On screen, show a table with
+constraint symbols (e.g., NOT NULL, CHECK)
 
 56
-00:04:21.384 --> 00:04:27.754
+00:04:24.468 --> 00:04:26.707
+next to relevant columns.
+
+57
+00:04:26.707 --> 00:04:33.243
 NARRATOR: Work from the concrete inputs to the
 result, checking units, types, or invariants
 
-57
-00:04:27.754 --> 00:04:29.119
+58
+00:04:33.243 --> 00:04:34.644
 at each step.
 
-58
-00:04:29.119 --> 00:04:34.353
+59
+00:04:34.644 --> 00:04:39.410
 NARRATOR: The worked case shows both how to
 apply the method and how to check it.
 
-59
-00:04:34.353 --> 00:04:41.743
+60
+00:04:39.410 --> 00:04:46.837
 NARRATOR: Name each dependency explicitly, and
 keep labels and representations consistent
 
-60
-00:04:41.743 --> 00:04:43.759
+61
+00:04:46.837 --> 00:04:48.863
 throughout the analysis.
 
-61
-00:04:43.874 --> 00:04:49.426
-NARRATOR: Examine the tradeoffs in Data
-Quality Principles, including what improves
-
 62
-00:04:49.426 --> 00:04:51.949
-and what becomes more difficult.
+00:04:48.986 --> 00:04:54.471
+NARRATOR: Examine the tradeoffs in
+Normalization and Update Anomalies, including
 
 63
-00:04:51.949 --> 00:04:58.183
-NARRATOR: Encryption supports confidentiality
-when keys and modes are used correctly.
+00:04:54.471 --> 00:04:58.311
+what improves and what becomes more difficult.
 
 64
-00:04:58.183 --> 00:05:03.550
-NARRATOR: Consider this worked case:
-Validating that all 'PhoneNumber' fields
+00:04:58.311 --> 00:05:05.902
+NARRATOR: Schema design separates entities and
+relationships, while normalization addresses
 
 65
-00:05:03.550 --> 00:05:08.917
-follow a standard format prevents duplicate or
-corrupted contact records.
+00:05:05.902 --> 00:05:07.420
+update anomalies.
 
 66
-00:05:08.917 --> 00:05:16.605
-NARRATOR: On screen, show a checklist graphic
-with icons for accuracy, completeness,
+00:05:07.420 --> 00:05:14.594
+NARRATOR: Consider this worked case: Splitting
+a 'Department' table into separate tables for
 
 67
-00:05:16.605 --> 00:05:18.527
-consistency, and timeliness.
+00:05:14.594 --> 00:05:19.561
+DepartmentName and DepartmentLocation prevents
+duplicate data and update errors.
 
 68
-00:05:18.527 --> 00:05:24.900
+00:05:19.561 --> 00:05:25.185
+NARRATOR: On screen, display a
+before-and-after table structure showing
+
+69
+00:05:25.185 --> 00:05:26.435
+normalization steps.
+
+70
+00:05:26.435 --> 00:05:33.042
 NARRATOR: State the benefit, the cost, and the
 condition under which the tradeoff is
 
-69
-00:05:24.900 --> 00:05:25.355
+71
+00:05:33.042 --> 00:05:33.514
 acceptable.
 
-70
-00:05:25.355 --> 00:05:32.714
+72
+00:05:33.514 --> 00:05:40.920
 NARRATOR: Making the tradeoff visible prevents
 a local improvement from hiding a larger cost.
 
-71
-00:05:32.714 --> 00:05:39.908
+73
+00:05:40.920 --> 00:05:48.090
 NARRATOR: Name each dependency explicitly, and
 keep labels and representations consistent
 
-72
-00:05:39.908 --> 00:05:41.870
+74
+00:05:48.090 --> 00:05:50.045
 throughout the analysis.
 
-73
-00:05:41.978 --> 00:05:48.799
-NARRATOR: Stress-test the reasoning around
-Transaction Integrity with an edge case and
-
-74
-00:05:48.799 --> 00:05:52.209
-identify which assumption controls the
-outcome.
-
 75
-00:05:52.209 --> 00:05:58.916
-NARRATOR: Message authentication and digital
-signatures address integrity and authenticity
+00:05:50.162 --> 00:05:56.169
+NARRATOR: Stress-test the reasoning around
+Relational Algebra and Query Logic with an
 
 76
-00:05:58.916 --> 00:06:00.928
-in different ways.
+00:05:56.169 --> 00:06:00.674
+edge case and identify which assumption
+controls the outcome.
 
 77
-00:06:00.928 --> 00:06:08.112
-NARRATOR: Consider this worked case: A banking
-transaction updates both account balances
+00:06:00.674 --> 00:06:06.438
+NARRATOR: This course provides a broad
+introduction to the principles and practice of
 
 78
-00:06:08.112 --> 00:06:14.099
-atomically, ensuring neither account is left
-in an inconsistent state.
+00:06:06.438 --> 00:06:11.315
+modern data management, with an emphasis on
+the relational database model.
 
 79
-00:06:14.099 --> 00:06:20.441
-NARRATOR: On screen, create a step-by-step
-diagram showing a transaction process with
+00:06:11.315 --> 00:06:17.394
+NARRATOR: Consider this worked case: A SELECT
+statement with a JOIN clause combines data
 
 80
-00:06:20.441 --> 00:06:23.084
-ACID checkpoints at each stage.
+00:06:17.394 --> 00:06:21.736
+from 'Employees' and 'Departments' tables
+based on a common key.
 
 81
-00:06:23.084 --> 00:06:29.054
+00:06:21.737 --> 00:06:29.768
+NARRATOR: On screen, show a simplified
+relational algebra expression (e.g., σ, ⨝)
+
+82
+00:06:29.768 --> 00:06:33.783
+alongside a corresponding SQL query snippet.
+
+83
+00:06:33.783 --> 00:06:39.725
 NARRATOR: Change one assumption at a time and
 observe which part of the reasoning no longer
 
-82
-00:06:29.054 --> 00:06:29.427
+84
+00:06:39.725 --> 00:06:40.096
 holds.
 
-83
-00:06:29.427 --> 00:06:35.607
+85
+00:06:40.096 --> 00:06:46.946
 NARRATOR: The edge case reveals the boundary
 of the claim without discarding the useful
 
-84
-00:06:35.607 --> 00:06:36.490
+86
+00:06:46.946 --> 00:06:47.924
 core idea.
 
-85
-00:06:36.602 --> 00:06:43.795
-NARRATOR: Use Database Security Practices to
+87
+00:06:48.026 --> 00:06:55.360
+NARRATOR: Use Transactions and Atomicity to
 diagnose a failure by separating symptoms,
 
-86
-00:06:43.795 --> 00:06:46.192
+88
+00:06:55.360 --> 00:06:57.804
 causes, and corrective action.
 
-87
-00:06:46.192 --> 00:06:52.666
-NARRATOR: Protect the Software prevents
-unauthorized access to code and development
-
-88
-00:06:52.666 --> 00:06:53.255
-artifacts.
-
 89
-00:06:53.255 --> 00:06:59.151
-NARRATOR: Consider this worked case:
-Role-based access control limits 'view'
+00:06:57.804 --> 00:07:03.101
+NARRATOR: Transactions group operations into
+an atomic unit of work.
 
 90
-00:06:59.151 --> 00:07:04.458
-permissions to analysts while restricting
-'delete' permissions to administrators.
+00:07:03.101 --> 00:07:09.413
+NARRATOR: Consider this worked case: A banking
+transaction transfers funds between two
 
 91
-00:07:04.458 --> 00:07:11.110
-NARRATOR: On screen, display a permission
-matrix table showing user roles and their
+00:07:09.413 --> 00:07:14.147
+accounts; if one step fails, both are rolled
+back.
 
 92
-00:07:11.110 --> 00:07:12.645
-corresponding database actions.
+00:07:14.147 --> 00:07:21.140
+NARRATOR: On screen, illustrate a transaction
+flow with steps (Start, Process,
 
 93
-00:07:12.645 --> 00:07:18.289
+00:07:21.140 --> 00:07:24.319
+Commit/Rollback) and a lock icon.
+
+94
+00:07:24.319 --> 00:07:30.058
 NARRATOR: Locate the first point where
 observed behavior diverges from expected
 
-94
-00:07:18.289 --> 00:07:21.880
+95
+00:07:30.058 --> 00:07:33.710
 behavior, then test the smallest plausible
 cause.
 
-95
-00:07:21.880 --> 00:07:27.880
+96
+00:07:33.710 --> 00:07:39.660
 NARRATOR: The diagnosis is strongest when
 another person can reproduce the observation
 
-96
-00:07:27.880 --> 00:07:29.380
+97
+00:07:39.660 --> 00:07:41.147
 and the test.
 
-97
-00:07:29.380 --> 00:07:36.598
+98
+00:07:41.147 --> 00:07:48.194
 NARRATOR: Name each dependency explicitly, and
 keep labels and representations consistent
 
-98
-00:07:36.598 --> 00:07:38.567
+99
+00:07:48.194 --> 00:07:50.116
 throughout the analysis.
 
-99
-00:07:38.690 --> 00:07:44.102
-NARRATOR: Connect Application Development
-Approaches to the earlier ideas and explain
-
 100
-00:07:44.102 --> 00:07:47.546
-how the pieces work as one system.
+00:07:50.234 --> 00:07:55.758
+NARRATOR: Connect Indexing and Query
+Performance to the earlier ideas and explain
 
 101
-00:07:47.546 --> 00:07:52.837
-NARRATOR: Additional topics include
-object-oriented and object-relational
+00:07:55.758 --> 00:07:58.980
+how the pieces work as one system.
 
 102
-00:07:52.837 --> 00:07:59.640
-databases; semi-structured databases (such as
-XML); and information retrieval.
+00:07:58.980 --> 00:08:04.465
+NARRATOR: Indexes provide additional access
+paths for selected queries.
 
 103
-00:07:59.640 --> 00:08:06.691
-NARRATOR: Consider this worked case: An
-e-commerce platform uses SQL to fetch product
+00:08:04.465 --> 00:08:10.809
+NARRATOR: Consider this worked case: An index
+on the 'LastName' column speeds up searches
 
 104
-00:08:06.691 --> 00:08:11.030
-inventory and application code to process
-checkout orders.
+00:08:10.809 --> 00:08:12.621
+for employees by surname.
 
 105
-00:08:11.030 --> 00:08:17.209
-NARRATOR: On screen, sketch a simple
-architecture diagram with a frontend app,
+00:08:12.621 --> 00:08:19.663
+NARRATOR: On screen, show a table with a
+B-tree index structure diagram next to a query
 
 106
-00:08:17.209 --> 00:08:21.843
-backend logic, and relational database
-connected by SQL calls.
+00:08:19.663 --> 00:08:20.543
+execution path.
 
 107
-00:08:21.843 --> 00:08:30.643
+00:08:20.543 --> 00:08:29.455
 NARRATOR: Explain each connection explicitly
 and verify that information retains the same
 
 108
-00:08:30.643 --> 00:08:32.843
+00:08:29.455 --> 00:08:31.683
 meaning across representations.
 
 109
-00:08:32.843 --> 00:08:39.648
+00:08:31.683 --> 00:08:38.605
 NARRATOR: The synthesis matters only if every
 connection remains supported by the original
 
 110
-00:08:39.648 --> 00:08:40.171
+00:08:38.605 --> 00:08:39.137
 evidence.
 
 111
-00:08:40.274 --> 00:08:45.862
-NARRATOR: Finish with Practical Analysis
-Checklist as a practical checklist that can
-
-112
-00:08:45.862 --> 00:08:47.724
-guide a new analysis.
-
-113
-00:08:47.724 --> 00:08:52.520
-NARRATOR: Security requirements should be
-tracked throughout development.
-
-114
-00:08:52.520 --> 00:08:59.702
-NARRATOR: Consider this worked case: A
-developer checks that foreign keys enforce
-
-115
-00:08:59.702 --> 00:09:05.687
-referential integrity, indexes optimize query
-performance, and encryption protects sensitive
-
-116
-00:09:05.687 --> 00:09:06.286
-fields.
-
-117
-00:09:06.286 --> 00:09:13.039
-NARRATOR: On screen, present a printable
-checklist graphic with checkboxes for
-
-118
-00:09:13.039 --> 00:09:16.723
-modeling, querying, integrity, and security
-verification.
-
-119
-00:09:16.723 --> 00:09:24.303
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
-
-120
-00:09:24.303 --> 00:09:26.052
-next verification step.
-
-121
-00:09:26.052 --> 00:09:31.878
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-122
-00:09:31.878 --> 00:09:33.223
-memory or intuition.
-
-123
-00:09:33.223 --> 00:09:40.491
+00:08:39.137 --> 00:08:46.270
 NARRATOR: Name each dependency explicitly, and
 keep labels and representations consistent
 
-124
-00:09:40.491 --> 00:09:42.473
+112
+00:08:46.270 --> 00:08:48.215
 throughout the analysis.
+
+113
+00:08:48.338 --> 00:08:53.902
+NARRATOR: Finish with Practical Analysis
+Checklist as a practical checklist that can
+
+114
+00:08:53.902 --> 00:08:55.756
+guide a new analysis.
+
+115
+00:08:55.756 --> 00:09:03.353
+NARRATOR: Topics in relational database
+systems include data modeling; the relational
+
+116
+00:09:03.353 --> 00:09:10.259
+model; relational algebra; Structured Query
+Language (SQL); and data quality,
+
+117
+00:09:10.259 --> 00:09:13.022
+transactions, integrity and security.
+
+118
+00:09:13.022 --> 00:09:19.871
+NARRATOR: Consider this worked case: Check
+that all foreign keys reference valid primary
+
+119
+00:09:19.871 --> 00:09:26.194
+keys, indexes cover frequent query columns,
+and constraints prevent invalid data entry.
+
+120
+00:09:26.194 --> 00:09:33.818
+NARRATOR: On screen, display a checklist
+graphic with three boxes: Integrity,
+
+121
+00:09:33.818 --> 00:09:35.897
+Performance, Query Requirements.
+
+122
+00:09:35.897 --> 00:09:43.591
+NARRATOR: For each checklist item, record the
+evidence, the remaining uncertainty, and the
+
+123
+00:09:43.591 --> 00:09:45.366
+next verification step.
+
+124
+00:09:45.366 --> 00:09:51.218
+NARRATOR: The result is a repeatable
+procedure, not a conclusion that depends on
+
+125
+00:09:51.218 --> 00:09:52.569
+memory or intuition.

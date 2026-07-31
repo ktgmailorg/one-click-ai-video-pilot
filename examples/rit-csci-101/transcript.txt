@@ -1,231 +1,207 @@
-NARRATOR: Begin by framing Lesson Introduction and Course Scope as a question about inputs,
+Begin by framing Defining the Computational Problem as a question about inputs, decisions,
 
-decisions, and observable results.
+and observable results.
 
-NARRATOR: Students will engage in activities that show how computing changes the world and
+Programming begins with precise problem statements, input and output examples, and
 
-impacts daily lives.
+algorithms written independently of syntax.
 
-NARRATOR: Consider this worked case: Students will examine a short case study of how
+Consider this worked case: Given a list of integers, the problem statement asks to return
 
-algorithmic sorting algorithms optimize data processing in modern search engines.
+the sum of all positive values; inputs are [1, -2, 3] and outputs are 4.
 
-NARRATOR: On screen, display a slide with the course title, a brief overview of the
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-syllabus, and a graphic showing computing's impact on daily life (e.g., healthcare,
+that the final result satisfies the stated condition.
 
-transportation, entertainment).
+List the givens before choosing a method, because an unstated assumption can change the
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+conclusion.
 
-change the conclusion.
+This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+Now define Variables, Expressions, and Control precisely enough that another learner could
 
-NARRATOR: Now define Hardware-Software-Data Relationship precisely enough that another
+test the definition.
 
-learner could test the definition.
+Variables represent values and state, expressions compute values, and control
 
-NARRATOR: Expressions produce values, while statements control execution and bindings.
+structures select or repeat operations.
 
-NARRATOR: Consider this worked case: Students will trace how a simple calculator app uses
+Consider this worked case: In Python, x = 5 is a variable assignment; x + 3 is an expression;
 
-hardware (CPU, memory), software (code), and data (numbers) to perform an addition
+if x > 0: print('positive') is a control structure.
 
-operation.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: On screen, show a diagram with three interconnected circles labeled Hardware,
+that the final result satisfies the stated condition.
 
-Software, and Data, with arrows indicating the flow of information between them.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Problem Decomposition and
+With the foundation in place, examine how Functions and Decomposition operates in a
 
-Sequential Steps operates in a concrete sequence.
+concrete sequence.
 
-NARRATOR: Students will develop step-by- step written solutions to basic problems and
+Functions decompose a solution into named operations with parameters and results.
 
-implement their solutions using a programming language.
+Consider this worked case: A learner maps the inputs, constraints, and observable result for
 
-NARRATOR: Consider this worked case: Students will write a pseudocode sequence for a 'find
+Functions and Decomposition, then checks each step against the stated claim.
 
-the maximum number in a list' problem, listing each comparison and update step explicitly.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: On screen, provide a template slide with numbered steps for pseudocode,
+that the final result satisfies the stated condition.
 
-highlighting the 'input', 'process', and 'output' sections.
+Follow every arrow in order and name the state before and after each transition.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+Next, compare the choices involved in Recursion and Base Cases and make the decision
 
-NARRATOR: Next, compare the choices involved in Introduction to Programming Language Basics
+criteria explicit.
 
-and make the decision criteria explicit.
+Recursion solves a problem through smaller instances and requires a base case.
 
-NARRATOR: Exceptions interrupt normal control flow until a matching handler processes them
+Consider this worked case: A learner maps the inputs, constraints, and observable result for
 
-or they propagate.
+Recursion and Base Cases, then checks each step against the stated claim.
 
-NARRATOR: Consider this worked case: Students will write a Python script that declares
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-variables, uses a loop to iterate through a list, and prints the maximum value.
+that the final result satisfies the stated condition.
 
-NARRATOR: On screen, display a code editor window with syntax highlighting, showing
+Compare alternatives against the same constraints so the evaluation does not move
 
-variable declarations, a for-loop, and a print statement.
+the goalposts.
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+Using shared criteria turns a preference into a defensible technical choice.
 
-move the goalposts.
+Apply Data Structures: Lists, Stacks, Queues to a worked situation instead of treating it
 
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+as an isolated definition.
 
-NARRATOR: Apply Data Types and Variables to a worked situation instead of treating it as an
+Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in
 
-isolated definition.
+first-out access, trees represent hierarchy, and graphs represent connected entities.
 
-NARRATOR: Names are bound to objects within namespaces and scopes.
+Consider this worked case: A list [1,2,3] can be pushed onto a stack; popping yields 3, then
 
-NARRATOR: Consider this worked case: Students will compare integer, float, and string
+2, then 1; a queue would yield 1, 2, 3.
 
-variables, explaining how each type affects data storage and operations.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: On screen, show a table comparing variable types (int, float, str), their memory
+that the final result satisfies the stated condition.
 
-representation, and example assignments.
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+step.
 
-at each step.
+The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+Examine the tradeoffs in Trees and Graphs, including what improves and what becomes more
 
-NARRATOR: Examine the tradeoffs in Control Flow and Conditionals, including what improves
+difficult.
 
-and what becomes more difficult.
+Python objects have identity, a type, and a value.
 
-NARRATOR: The Python language reference specifies lexical analysis, data model
+Consider this worked case: A family tree is a tree; a social network where people are nodes
 
-behavior, execution, expressions, statements, functions, classes, exceptions, and module
+and friendships are edges is a graph.
 
-import semantics.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: Consider this worked case: Students will implement an if-else statement to check
+that the final result satisfies the stated condition.
 
-if a user input is positive, negative, or zero, and handle invalid input with a
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-try-except block.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: On screen, display a flowchart showing the decision path for an if-else
+Stress-test the reasoning around Searching and Sorting with an edge case and identify which
 
-condition, with arrows branching to true/false outcomes.
+assumption controls the outcome.
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+Searching and sorting algorithms depend on representation and invariants.
 
-acceptable.
+Consider this worked case: Binary search requires a sorted list; insertion sort
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+maintains the invariant that the left portion is always sorted.
 
-NARRATOR: Stress-test the reasoning around Functions and Abstraction with an edge case
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-and identify which assumption controls the outcome.
+that the final result satisfies the stated condition.
 
-NARRATOR: Debugging separates syntax, runtime, and logical failures, while decomposition and
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-abstraction reduce the number of interacting concerns.
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-NARRATOR: Consider this worked case: Students will define a function that calculates the
-
-average of a list of numbers, then call it multiple times in the main program.
-
-NARRATOR: On screen, show a code snippet with a function definition and two separate calls,
-
-highlighting the reusable block.
-
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
-
-holds.
-
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
-
-core idea.
-
-NARRATOR: Use Debugging and Testing to diagnose a failure by separating symptoms,
+Use Correctness, Tests, and Debugging to diagnose a failure by separating symptoms,
 
 causes, and corrective action.
 
-NARRATOR: Compiler work separates parsing and semantic analysis from lowering, verification,
+Correctness arguments, tests, tracing, and debugging compare intended behavior with
 
-optimization, and target-specific code generation.
+observable results, including boundary and error cases.
 
-NARRATOR: Consider this worked case: Students will run a test case with incorrect input,
+Consider this worked case: Test sum_positive with empty list, all negatives, and large
 
-identify the error type, and fix the code to handle the edge case correctly.
+numbers; trace variable values to find a logical error.
 
-NARRATOR: On screen, display a split screen: left side shows the error message, right side
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-shows the corrected code with comments explaining the fix.
+that the final result satisfies the stated condition.
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-behavior, then test the smallest plausible cause.
+smallest plausible cause.
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-and the test.
+Connect Python Language Mechanics to the earlier ideas and explain how the pieces work
 
-NARRATOR: Connect Communication and Collaboration to the earlier ideas and explain
+as one system.
 
-how the pieces work as one system.
+Names are bound to objects within namespaces and scopes.
 
-NARRATOR: Students will be required to demonstrate oral and written communication
+Consider this worked case: a = [1]; b = a; a. append(2); print(b) outputs [1,2] because a
 
-skills through such assignments as short papers, homeworks, group discussions and
+and b share identity; try/except handles division errors.
 
-debates, and development of a term paper.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: Consider this worked case: Students will present their debugging process in a
+that the final result satisfies the stated condition.
 
-2-minute group discussion, explaining the error, the fix, and the lesson learned.
+Explain each connection explicitly and verify that information retains the same meaning
 
-NARRATOR: On screen, provide a slide with bullet points for a group discussion rubric,
+across representations.
 
-including sections for 'Problem', 'Solution', and 'Reflection'.
+The synthesis matters only if every connection remains supported by the original evidence.
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+Finish with Course Workflow and Communication as a practical checklist that can guide a new
 
-meaning across representations.
+analysis.
 
-NARRATOR: The synthesis matters only if every connection remains supported by the original
+Students will be required to demonstrate oral and written communication skills through such
 
-evidence.
+assignments as short papers, homeworks, group discussions and debates, and development of a
 
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+term paper.
 
-guide a new analysis.
+Consider this worked case: A student writes a pseudocode solution, translates it to Python,
 
-NARRATOR: Assignments will be completed both individually and in small teams.
+submits a short paper explaining the approach, and presents it in a group debate.
 
-NARRATOR: Consider this worked case: Students will use a checklist to review a peer's Python
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-script, verifying variable types, control flow logic, and error handling.
+that the final result satisfies the stated condition.
 
-NARRATOR: On screen, display a printable checklist with boxes to check off: 'Variables
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-declared correctly', 'Control flow matches problem', 'Error handling included', 'Code is
+verification step.
 
-readable and commented'.
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

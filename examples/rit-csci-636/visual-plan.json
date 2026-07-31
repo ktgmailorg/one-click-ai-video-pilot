@@ -5,12 +5,12 @@
       "shots": [
         {
           "id": "beat-01-shot-001",
-          "phrase": "Begin by framing Introduction to Search Engine Architecture as a question about inputs, decisions, and observable results.",
+          "phrase": "Begin by framing Search Engine Architecture Overview as a question about inputs, decisions, and observable results.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: A user types 'machine learning basics' into a search bar, and the system returns a ranked list of documents matching the query terms.",
+          "phrase": "Consider this worked case: A document database stores text in tables with columns for title, content, and metadata, using primary keys to uniquely identify each record.",
           "type": "deterministic-svg"
         },
         {
@@ -25,12 +25,12 @@
       "shots": [
         {
           "id": "beat-02-shot-001",
-          "phrase": "Now define Query Processing and Preprocessing precisely enough that another learner could test the definition.",
+          "phrase": "Now define Query Processing and Indexing precisely enough that another learner could test the definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: The query 'running shoes' is tokenized into ['running', 'shoes'], with 'running' stemmed to 'run' to match variations like 'runs' or 'ran'.",
+          "phrase": "Consider this worked case: A term frequency index stores each unique word alongside its document IDs, allowing the system to instantly locate all documents containing a specific query term.",
           "type": "deterministic-svg"
         },
         {
@@ -45,12 +45,12 @@
       "shots": [
         {
           "id": "beat-03-shot-001",
-          "phrase": "With the foundation in place, examine how Traditional Retrieval: TF-IDF operates in a concrete sequence.",
+          "phrase": "With the foundation in place, examine how Traditional Statistical Retrieval Models operates in a concrete sequence.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: A term appearing frequently in one document but rarely across the corpus receives a high TF-IDF score, boosting its ranking position.",
+          "phrase": "Consider this worked case: In a TF-IDF calculation, the term 'machine' receives a high score in a short technical manual but a low score in a lengthy general encyclopedia article.",
           "type": "deterministic-svg"
         },
         {
@@ -65,12 +65,12 @@
       "shots": [
         {
           "id": "beat-04-shot-001",
-          "phrase": "Next, compare the choices involved in Traditional Retrieval: BM25 and make the decision criteria explicit.",
+          "phrase": "Next, compare the choices involved in BM25 Ranking Formula and make the decision criteria explicit.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: A term appearing at the beginning of a document receives a higher position weight, while the saturation function prevents rare terms from dominating the score.",
+          "phrase": "Consider this worked case: BM25 assigns higher relevance scores to documents where the query term appears near the beginning, reflecting stronger user intent alignment.",
           "type": "deterministic-svg"
         },
         {
@@ -85,12 +85,12 @@
       "shots": [
         {
           "id": "beat-05-shot-001",
-          "phrase": "Apply Modern Retrieval: Neural Reranking to a worked situation instead of treating it as an isolated definition.",
+          "phrase": "Apply Modern Neural Retrieval Techniques to a worked situation instead of treating it as an isolated definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: A transformer-based reranker reorders a top-100 list of documents by analyzing contextual embeddings, promoting documents with higher semantic alignment.",
+          "phrase": "Consider this worked case: A neural reranker takes a list of initially retrieved documents and reorders them by predicting the probability that each document satisfies the user's underlying intent.",
           "type": "deterministic-svg"
         },
         {
@@ -105,12 +105,12 @@
       "shots": [
         {
           "id": "beat-06-shot-001",
-          "phrase": "Examine the tradeoffs in Modern Retrieval: Dense Retrieval, including what improves and what becomes more difficult.",
+          "phrase": "Examine the tradeoffs in Search Engine Evaluation Metrics, including what improves and what becomes more difficult.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: A query and a document are encoded into 768-dimensional vectors, and the system retrieves the top-k documents with the smallest cosine distance to the query vector.",
+          "phrase": "Consider this worked case: Precision at K measures the proportion of relevant documents among the top K results, providing a direct measure of immediate query satisfaction.",
           "type": "deterministic-svg"
         },
         {
@@ -125,12 +125,12 @@
       "shots": [
         {
           "id": "beat-07-shot-001",
-          "phrase": "Stress-test the reasoning around Search Engine Evaluation Metrics with an edge case and identify which assumption controls the outcome.",
+          "phrase": "Stress-test the reasoning around Search Applications and Conversational IR with an edge case and identify which assumption controls the outcome.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: MAP calculates the average precision at the top of the ranked list, providing a single score that reflects overall ranking effectiveness.",
+          "phrase": "Consider this worked case: A conversational IR system maintains session state to resolve pronouns and follow-up questions, improving relevance across multiple turns.",
           "type": "deterministic-svg"
         },
         {
@@ -145,12 +145,12 @@
       "shots": [
         {
           "id": "beat-08-shot-001",
-          "phrase": "Use Search Applications: Conversational IR to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "phrase": "Use Data Quality and Retrieval Integrity to diagnose a failure by separating symptoms, causes, and corrective action.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: After a user asks 'What is NLP?', the system retrieves relevant documents and uses the context to answer 'How does NLP work?' in the next turn.",
+          "phrase": "Consider this worked case: Before indexing, a preprocessing step removes duplicate document entries and standardizes formatting to prevent skewed ranking results.",
           "type": "deterministic-svg"
         },
         {
@@ -165,12 +165,12 @@
       "shots": [
         {
           "id": "beat-09-shot-001",
-          "phrase": "Connect Search Applications: Enterprise Search to the earlier ideas and explain how the pieces work as one system.",
+          "phrase": "Connect Evaluation and Error Analysis to the earlier ideas and explain how the pieces work as one system.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: An employee searches for 'Q3 financial report' and filters results by department, date range, and document type to locate the correct internal document.",
+          "phrase": "Consider this worked case: A retrieval model trained on technical documents may fail on general queries due to distribution shift, requiring separate validation sets for each domain.",
           "type": "deterministic-svg"
         },
         {
@@ -185,12 +185,12 @@
       "shots": [
         {
           "id": "beat-10-shot-001",
-          "phrase": "Finish with Experimental Design for Retrieval Components as a practical checklist that can guide a new analysis.",
+          "phrase": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: Compare a TF-IDF baseline against a BM25 model on a news corpus, measuring MAP and nDCG to determine which ranking algorithm performs better.",
+          "phrase": "Consider this worked case: A group project requires defining a baseline retrieval model, selecting a validation split, running cross-validation, and documenting how preprocessing choices affected final rankings.",
           "type": "deterministic-svg"
         },
         {
@@ -201,6 +201,6 @@
       ]
     }
   ],
-  "episodeId": "csci-636-information-retrieval-foundations",
+  "episodeId": "foundations-of-information-retrieval",
   "schemaVersion": 1
 }

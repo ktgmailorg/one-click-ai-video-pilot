@@ -1,20 +1,18 @@
-NARRATOR: Begin by framing Course Scope and Faculty Flexibility as a question about
+NARRATOR: Begin by framing Process Definition and State as a question about inputs,
 
-inputs, decisions, and observable results.
+decisions, and observable results.
 
-NARRATOR: This course examines current topics in Systems.
+NARRATOR: A process combines an address space with execution state and operating-system
 
-NARRATOR: Consider this worked case: Instructors select specific course instances
+resources.
 
-belonging to the Distributed Systems, Architecture and Operating Systems, or
+NARRATOR: Consider this worked case: A web server process maintains its own memory space,
 
-Security cluster.
+open file descriptors, and CPU scheduling context.
 
-NARRATOR: On screen, display a flowchart showing three selectable cluster paths
+NARRATOR: On screen, display a diagram showing a process boundary with labeled address space,
 
-(Distributed Systems, Architecture and Operating Systems, Security) converging into a
-
-central 'Seminar in Systems' node.
+execution state, and OS resource handles.
 
 NARRATOR: List the givens before choosing a method, because an unstated assumption can
 
@@ -22,21 +20,23 @@ change the conclusion.
 
 NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: Now define Secure Software Development Framework Overview precisely
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
 
-enough that another learner could test the definition.
+throughout the analysis.
 
-NARRATOR: The Secure Software Development Framework groups practices into four practice
+NARRATOR: Now define System Call Mechanism precisely enough that another learner could
 
-groups.
+test the definition.
 
-NARRATOR: Consider this worked case: Prepare the Organization establishes people,
+NARRATOR: A system call transfers control from user code to a privileged kernel service.
 
-processes, and technology for secure development.
+NARRATOR: Consider this worked case: A process invokes a read system call to request data
 
-NARRATOR: On screen, show a four-quadrant diagram labeling each practice group with its
+from a file, transitioning to kernel mode.
 
-core function.
+NARRATOR: On screen, show a flowchart of control transfer between user space and kernel
+
+space with a labeled system call instruction.
 
 NARRATOR: Separate the formal definition from an implementation detail, then identify what
 
@@ -48,49 +48,39 @@ NARRATOR: Name each dependency explicitly, and keep labels and representations c
 
 throughout the analysis.
 
-NARRATOR: With the foundation in place, examine how Prepare the Organization Practice
+NARRATOR: With the foundation in place, examine how Trap Handling and Context
 
-operates in a concrete sequence.
+Switching operates in a concrete sequence.
 
-NARRATOR: Prepare the Organization establishes people, processes, and technology for secure
+NARRATOR: A trap records processor state so the kernel can handle a system call,
 
-development.
+exception, or interrupt.
 
-NARRATOR: Consider this worked case: Teams define security policies and allocate
+NARRATOR: Consider this worked case: When a process triggers a page fault, the CPU traps
 
-resources before writing code.
+the fault, saves registers, and transfers to the kernel handler.
 
-NARRATOR: On screen, illustrate a checklist with three items: 'Define security policies',
+NARRATOR: On screen, illustrate a trap sequence with a processor state snapshot,
 
-'Allocate resources', 'Establish development processes'.
+kernel handler entry, and restored state return.
 
 NARRATOR: Follow every arrow in order and name the state before and after each transition.
 
 NARRATOR: The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.
-
-NARRATOR: Then summarize what the example demonstrates, what it does not establish, and
-
-what evidence would be needed next.
-
-NARRATOR: Next, compare the choices involved in Protect the Software Practice and make the
+NARRATOR: Next, compare the choices involved in Virtual Memory Mapping and make the
 
 decision criteria explicit.
 
-NARRATOR: Protect the Software prevents unauthorized access to code and development
+NARRATOR: Page tables map virtual addresses to physical memory with permission bits.
 
-artifacts.
+NARRATOR: Consider this worked case: A page table entry translates a virtual address to a
 
-NARRATOR: Consider this worked case: Repositories use role-based access control to
+physical frame while enforcing read/write/execute permissions.
 
-restrict who can view or modify source files.
+NARRATOR: On screen, render a page table structure with virtual address bits, physical
 
-NARRATOR: On screen, draw a locked vault icon with three access levels: 'Read', 'Write',
-
-'Admin' labeled around it.
+address bits, and permission flags.
 
 NARRATOR: Compare alternatives against the same constraints so the evaluation does not
 
@@ -102,21 +92,19 @@ NARRATOR: Name each dependency explicitly, and keep labels and representations c
 
 throughout the analysis.
 
-NARRATOR: Apply Produce Well-Secured Software Practice to a worked situation instead of
+NARRATOR: Apply Process Scheduling to a worked situation instead of treating it as an
 
-treating it as an isolated definition.
+isolated definition.
 
-NARRATOR: Produce Well-Secured Software addresses security requirements, design,
+NARRATOR: The scheduler selects runnable processes and switches processor context.
 
-verification, and release.
+NARRATOR: Consider this worked case: A round-robin scheduler picks the next process
 
-NARRATOR: Consider this worked case: Developers verify that security requirements
+from the ready queue and saves the current context.
 
-are met before deploying the final software version.
+NARRATOR: On screen, draw a scheduler loop showing ready queue, context save/restore, and
 
-NARRATOR: On screen, create a pipeline graphic showing 'Requirements' -> 'Design' ->
-
-'Verification' -> 'Release' with checkmarks at each stage.
+CPU allocation.
 
 NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
 
@@ -128,21 +116,19 @@ NARRATOR: Name each dependency explicitly, and keep labels and representations c
 
 throughout the analysis.
 
-NARRATOR: Examine the tradeoffs in Respond to Vulnerabilities Practice, including what
+NARRATOR: Examine the tradeoffs in Concurrency and Locking, including what improves and what
 
-improves and what becomes more difficult.
+becomes more difficult.
 
-NARRATOR: Respond to Vulnerabilities identifies, analyzes, remediates, and learns
+NARRATOR: Locks protect invariants when concurrent execution can access shared state.
 
-from discovered weaknesses.
+NARRATOR: Consider this worked case: A mutex lock prevents two processes from modifying a
 
-NARRATOR: Consider this worked case: When a bug is found, the team patches the code and
+shared counter simultaneously.
 
-updates the security documentation.
+NARRATOR: On screen, show a lock acquisition/release sequence with a shared
 
-NARRATOR: On screen, show a circular diagram with arrows labeled 'Identify', 'Analyze',
-
-'Remediate', 'Learn' connecting back to 'Identify'.
+variable and protected critical section.
 
 NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
 
@@ -154,21 +140,21 @@ NARRATOR: Name each dependency explicitly, and keep labels and representations c
 
 throughout the analysis.
 
-NARRATOR: Stress-test the reasoning around Security Requirements and Reasoning with an
+NARRATOR: Stress-test the reasoning around File System Organization with an edge case and
 
-edge case and identify which assumption controls the outcome.
+identify which assumption controls the outcome.
 
-NARRATOR: Security reasoning identifies assets, trust boundaries, threats, controls,
+NARRATOR: The file system organizes persistent data through inodes, directories, and logged
 
-evidence, residual risk, and responsibilities.
+updates.
 
-NARRATOR: Consider this worked case: A system tracks user authentication requirements from
+NARRATOR: Consider this worked case: An inode stores metadata for a file while directory
 
-design through testing.
+entries link names to inode references.
 
-NARRATOR: On screen, display a table with columns: 'Asset', 'Trust Boundary', 'Threat',
+NARRATOR: On screen, display a file system tree with inode blocks, directory entries, and
 
-'Control', 'Evidence', 'Residual Risk', 'Responsibility'.
+journal log entries.
 
 NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
 
@@ -178,23 +164,21 @@ NARRATOR: The edge case reveals the boundary of the claim without discarding the
 
 core idea.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+NARRATOR: Use RISC-V Instruction Set Basics to diagnose a failure by separating symptoms,
 
-throughout the analysis.
+causes, and corrective action.
 
-NARRATOR: Use Cryptographic Standards and Confidentiality to diagnose a failure by
+NARRATOR: The RISC-V ISA defines programmer-visible instructions, registers,
 
-separating symptoms, causes, and corrective action.
+memory operations, control transfer, exceptions, and ordering behavior.
 
-NARRATOR: Encryption supports confidentiality when keys and modes are used correctly.
+NARRATOR: Consider this worked case: Integer register x0 always reads as zero, while other
 
-NARRATOR: Consider this worked case: AES-256 encryption protects data in transit when
+registers hold software-visible values.
 
-paired with a secure key exchange protocol.
+NARRATOR: On screen, list RISC-V register file with x0 marked as zero and other registers
 
-NARRATOR: On screen, show a padlock icon with a key inside, labeled 'AES-256', and a shield
-
-icon labeled 'Confidentiality'.
+showing software values.
 
 NARRATOR: Locate the first point where observed behavior diverges from expected
 
@@ -204,25 +188,19 @@ NARRATOR: The diagnosis is strongest when another person can reproduce the obser
 
 and the test.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+NARRATOR: Connect Memory Ordering and Dependencies to the earlier ideas and explain
 
-throughout the analysis.
+how the pieces work as one system.
 
-NARRATOR: Connect Integrity, Authenticity, and Key Management to the earlier ideas and
+NARRATOR: Memory-ordering rules constrain how memory operations may be observed.
 
-explain how the pieces work as one system.
+NARRATOR: Consider this worked case: Store buffers ensure that writes are visible to
 
-NARRATOR: Message authentication and digital signatures address integrity and authenticity
+other cores in a defined architectural order.
 
-in different ways.
+NARRATOR: On screen, show a memory operation sequence with ordering constraints and
 
-NARRATOR: Consider this worked case: Digital signatures verify that a message was sent by a
-
-specific sender without alteration.
-
-NARRATOR: On screen, draw two side-by-side icons: a stamp icon labeled 'Digital
-
-Signature' and a key ring icon labeled 'Key Management'.
+dependency arrows.
 
 NARRATOR: Explain each connection explicitly and verify that information retains the same
 
@@ -232,21 +210,25 @@ NARRATOR: The synthesis matters only if every connection remains supported by th
 
 evidence.
 
-NARRATOR: Finish with Modes of Operation and Side Channels as a practical checklist that
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
 
-can guide a new analysis.
+throughout the analysis.
 
-NARRATOR: Modes of operation define how a primitive processes data larger than one
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
 
-block.
+guide a new analysis.
 
-NARRATOR: Consider this worked case: CBC mode processes data in blocks, but timing attacks
+NARRATOR: Analysis distinguishes user mode, privileged kernel code, hardware translation,
 
-can expose vulnerabilities if not implemented securely.
+interrupt state, resource ownership, and synchronization invariants.
 
-NARRATOR: On screen, show a block diagram with arrows showing data flowing through multiple
+NARRATOR: Consider this worked case: A security audit checks for proper privilege
 
-blocks, labeled 'Mode of Operation'.
+separation and lock invariants in a kernel module.
+
+NARRATOR: On screen, provide a checklist template with checkboxes for each analysis
+
+category.
 
 NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
 
@@ -255,3 +237,7 @@ next verification step.
 NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
 
 memory or intuition.
+
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.

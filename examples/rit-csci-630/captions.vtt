@@ -1,560 +1,584 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:06.636
-NARRATOR: Begin by framing Pipeline
+00:00:00.050 --> 00:00:07.802
+NARRATOR: Begin by framing Introduction to AI
 Foundations as a question about inputs,
 
 2
-00:00:06.636 --> 00:00:09.031
+00:00:07.802 --> 00:00:10.187
 decisions, and observable results.
 
 3
-00:00:09.031 --> 00:00:16.659
-NARRATOR: A rigorous pipeline states the task,
-representation, assumptions, supervision, and
+00:00:10.187 --> 00:00:16.182
+NARRATOR: Topics include search algorithms,
+logic, planning, machine learning, and
 
 4
-00:00:16.659 --> 00:00:18.046
-decision rule.
+00:00:16.182 --> 00:00:22.776
+applications from areas such as computer
+vision, robotics, and natural language
 
 5
-00:00:18.046 --> 00:00:24.920
-NARRATOR: Consider this worked case: A learner
-maps the inputs, constraints, and observable
+00:00:22.776 --> 00:00:23.375
+processing.
 
 6
-00:00:24.920 --> 00:00:31.265
-result for Pipeline Foundations, then checks
-each step against the stated claim.
+00:00:23.375 --> 00:00:30.236
+NARRATOR: Consider this worked case: Students
+will explore how search algorithms navigate
 
 7
-00:00:31.265 --> 00:00:39.574
-NARRATOR: On screen, show a flowchart with
-five labeled boxes: Task, Representation,
+00:00:30.236 --> 00:00:35.953
+decision trees to find optimal solutions in
+robotics navigation tasks.
 
 8
-00:00:39.574 --> 00:00:42.343
-Assumptions, Supervision, Decision Rule.
+00:00:35.953 --> 00:00:42.556
+NARRATOR: On screen, display a flowchart
+showing the course structure: search
 
 9
-00:00:42.343 --> 00:00:45.749
-NARRATOR: Arrow connects each box
-sequentially.
+00:00:42.556 --> 00:00:49.159
+algorithms, logic, planning, machine learning,
+and application domains like computer vision
 
 10
-00:00:45.749 --> 00:00:51.843
+00:00:49.159 --> 00:00:50.359
+and NLP.
+
+11
+00:00:50.359 --> 00:00:56.478
 NARRATOR: List the givens before choosing a
 method, because an unstated assumption can
 
-11
-00:00:51.843 --> 00:00:53.249
+12
+00:00:56.478 --> 00:00:57.890
 change the conclusion.
 
-12
-00:00:53.249 --> 00:00:59.406
+13
+00:00:57.890 --> 00:01:03.953
 NARRATOR: This establishes the vocabulary and
 scope needed for the remaining sections.
 
-13
-00:00:59.522 --> 00:01:05.608
-NARRATOR: Now define Image Representation
-precisely enough that another learner could
-
 14
-00:01:05.608 --> 00:01:07.268
-test the definition.
+00:01:04.082 --> 00:01:10.725
+NARRATOR: Now define NIST AI Risk Management
+Framework Overview precisely enough that
 
 15
-00:01:07.268 --> 00:01:12.534
-NARRATOR: Computer vision pipelines represent
-images as numeric arrays.
+00:01:10.725 --> 00:01:14.047
+another learner could test the definition.
 
 16
-00:01:12.534 --> 00:01:20.475
-NARRATOR: Consider this worked case: A 100x100
-pixel grayscale image becomes a 10000-element
+00:01:14.047 --> 00:01:20.960
+NARRATOR: The NIST AI Risk Management
+Framework organizes work around Govern, Map,
 
 17
-00:01:20.475 --> 00:01:25.972
-array where each value ranges from 0 to 255.
+00:01:20.960 --> 00:01:22.688
+Measure, and Manage.
 
 18
-00:01:25.972 --> 00:01:33.306
-NARRATOR: On screen, display a small grid of
-pixel values next to a corresponding numeric
+00:01:22.688 --> 00:01:29.633
+NARRATOR: Consider this worked case: In a
+healthcare AI deployment, the Map phase
 
 19
-00:01:33.306 --> 00:01:34.284
-array representation.
+00:01:29.633 --> 00:01:36.044
+documents the intended use of a diagnostic
+tool and identifies affected patient
 
 20
-00:01:34.284 --> 00:01:39.706
-NARRATOR: Highlight the mapping between
-spatial coordinates and array indices.
+00:01:36.044 --> 00:01:36.578
+populations.
 
 21
-00:01:39.706 --> 00:01:46.046
+00:01:36.578 --> 00:01:43.546
+NARRATOR: On screen, show a four-step circular
+diagram labeled Govern, Map, Measure, and
+
+22
+00:01:43.546 --> 00:01:48.906
+Manage, with each node connected to a brief
+risk-management action.
+
+23
+00:01:48.906 --> 00:01:55.387
 NARRATOR: Separate the formal definition from
 an implementation detail, then identify what
 
-22
-00:01:46.046 --> 00:01:48.159
+24
+00:01:55.387 --> 00:01:57.547
 evidence would distinguish them.
 
-23
-00:01:48.159 --> 00:01:54.800
+25
+00:01:57.547 --> 00:02:03.703
 NARRATOR: A precise definition makes later
 examples easier to evaluate and revise.
 
-24
-00:01:54.800 --> 00:02:02.141
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-25
-00:02:02.141 --> 00:02:04.143
-throughout the analysis.
-
 26
-00:02:04.250 --> 00:02:10.598
+00:02:03.818 --> 00:02:10.472
 NARRATOR: With the foundation in place,
-examine how Color Conversion operates in a
+examine how Govern Phase: Policies and
 
 27
-00:02:10.598 --> 00:02:11.575
-concrete sequence.
+00:02:10.472 --> 00:02:13.799
+Accountability operates in a concrete
+sequence.
 
 28
-00:02:11.575 --> 00:02:17.496
-NARRATOR: Color conversion changes the
-coordinate representation of pixel values.
+00:02:13.799 --> 00:02:20.717
+NARRATOR: Govern establishes policies,
+responsibilities, and accountability for AI
 
 29
-00:02:17.496 --> 00:02:25.450
-NARRATOR: Consider this worked case:
-Converting an RGB image to HSV separates color
+00:02:20.717 --> 00:02:21.486
+risk.
 
 30
-00:02:25.450 --> 00:02:31.568
-information from brightness, allowing
-algorithms to isolate specific hues regardless
+00:02:21.486 --> 00:02:28.504
+NARRATOR: Consider this worked case: A
+university AI ethics board assigns specific
 
 31
-00:02:31.568 --> 00:02:33.403
-of lighting intensity.
+00:02:28.504 --> 00:02:33.768
+roles for reviewing algorithmic bias in
+automated grading systems.
 
 32
-00:02:33.403 --> 00:02:40.490
-NARRATOR: On screen, show a side-by-side
-comparison of an RGB image and its HSV
+00:02:33.768 --> 00:02:42.919
+NARRATOR: On screen, create a table mapping
+governance roles (e.g., AI ethics board,
 
 33
-00:02:40.490 --> 00:02:46.059
-equivalent, with a legend explaining how hue
-channels isolate color data.
+00:02:42.919 --> 00:02:47.142
+compliance officer, developers) to
+accountability responsibilities.
 
 34
-00:02:46.059 --> 00:02:53.262
+00:02:47.142 --> 00:02:54.486
 NARRATOR: Follow every arrow in order and name
 the state before and after each transition.
 
 35
-00:02:53.262 --> 00:02:59.012
+00:02:54.486 --> 00:03:00.205
 NARRATOR: The trace converts an abstract
 statement into an inspectable sequence.
 
 36
-00:02:59.114 --> 00:03:05.219
-NARRATOR: Next, compare the choices involved
-in Filtering and make the decision criteria
+00:03:00.205 --> 00:03:07.141
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
 
 37
-00:03:05.219 --> 00:03:05.689
-explicit.
+00:03:07.141 --> 00:03:09.033
+throughout the analysis.
 
 38
-00:03:05.689 --> 00:03:12.322
-NARRATOR: Filtering combines neighboring
-samples to smooth, sharpen, or detect
+00:03:09.146 --> 00:03:16.774
+NARRATOR: Next, compare the choices involved
+in Map Phase: Context and Impacts and make the
 
 39
-00:03:12.322 --> 00:03:12.985
-structure.
+00:03:16.774 --> 00:03:18.299
+decision criteria explicit.
 
 40
-00:03:12.985 --> 00:03:19.812
-NARRATOR: Consider this worked case: A
-Gaussian blur filter averages adjacent pixel
+00:03:18.299 --> 00:03:25.533
+NARRATOR: Map documents context, intended use,
+affected people, and potential impacts.
 
 41
-00:03:19.812 --> 00:03:25.501
-values to reduce sensor noise and highlight
-large-scale object boundaries.
+00:03:25.533 --> 00:03:31.507
+NARRATOR: Consider this worked case: A
+self-driving car manufacturer maps the
 
 42
-00:03:25.501 --> 00:03:33.001
-NARRATOR: On screen, display a noisy image, a
-filtered image, and a sliding window overlay
+00:03:31.507 --> 00:03:37.482
+operational design domain, specifying weather
+conditions and traffic scenarios where the
 
 43
-00:03:33.001 --> 00:03:36.001
-showing how neighboring pixels are averaged.
+00:03:37.482 --> 00:03:39.111
+system will operate.
 
 44
-00:03:36.001 --> 00:03:42.488
+00:03:39.111 --> 00:03:46.108
+NARRATOR: On screen, illustrate a contextual
+mapping matrix with columns for context,
+
+45
+00:03:46.108 --> 00:03:50.189
+intended use, affected people, and potential
+impacts.
+
+46
+00:03:50.189 --> 00:03:56.864
 NARRATOR: Compare alternatives against the
 same constraints so the evaluation does not
 
-45
-00:03:42.488 --> 00:03:44.110
+47
+00:03:56.864 --> 00:03:58.533
 move the goalposts.
 
-46
-00:03:44.110 --> 00:03:50.970
+48
+00:03:58.533 --> 00:04:05.252
 NARRATOR: Using shared criteria turns a
 preference into a defensible technical choice.
 
-47
-00:03:50.970 --> 00:03:58.201
+49
+00:04:05.252 --> 00:04:12.446
 NARRATOR: Name each dependency explicitly, and
 keep labels and representations consistent
 
-48
-00:03:58.201 --> 00:04:00.173
+50
+00:04:12.446 --> 00:04:14.408
 throughout the analysis.
 
-49
-00:04:00.290 --> 00:04:07.096
-NARRATOR: Apply Feature Methods to a worked
-situation instead of treating it as an
-
-50
-00:04:07.096 --> 00:04:08.068
-isolated definition.
-
 51
-00:04:08.068 --> 00:04:13.099
-NARRATOR: Feature methods locate and describe
-repeatable image patterns.
+00:04:14.522 --> 00:04:21.137
+NARRATOR: Apply Measure Phase: Risk Analysis
+Methods to a worked situation instead of
 
 52
-00:04:13.099 --> 00:04:19.839
-NARRATOR: Consider this worked case: SIFT
-(Scale-Invariant Feature Transform) identifies
+00:04:21.137 --> 00:04:24.190
+treating it as an isolated definition.
 
 53
-00:04:19.839 --> 00:04:27.253
-keypoints and generates descriptors that
-remain consistent across scale and rotation
+00:04:24.190 --> 00:04:30.497
+NARRATOR: Measure uses qualitative and
+quantitative methods to analyze identified
 
 54
-00:04:27.253 --> 00:04:27.927
-changes.
+00:04:30.497 --> 00:04:31.128
+risks.
 
 55
-00:04:27.927 --> 00:04:33.901
-NARRATOR: On screen, show an image with
-detected keypoints marked as circles,
+00:04:31.128 --> 00:04:36.933
+NARRATOR: Consider this worked case:
+Researchers conduct A/B testing and
 
 56
-00:04:33.901 --> 00:04:38.880
-connected by lines to corresponding keypoints
-in a transformed image.
+00:04:36.933 --> 00:04:44.480
+statistical analysis to measure the fairness
+and accuracy of a facial recognition model
 
 57
-00:04:38.880 --> 00:04:45.546
+00:04:44.480 --> 00:04:46.221
+across different demographics.
+
+58
+00:04:46.222 --> 00:04:54.172
+NARRATOR: On screen, display a split-screen
+graphic: left side shows qualitative risk
+
+59
+00:04:54.172 --> 00:05:00.797
+assessment (e.g., stakeholder interviews),
+right side shows quantitative metrics (e.g.,
+
+60
+00:05:00.797 --> 00:05:02.784
+accuracy, bias scores).
+
+61
+00:05:02.784 --> 00:05:09.514
 NARRATOR: Work from the concrete inputs to the
 result, checking units, types, or invariants
 
-58
-00:04:45.546 --> 00:04:46.974
+62
+00:05:09.514 --> 00:05:10.956
 at each step.
 
-59
-00:04:46.974 --> 00:04:51.927
+63
+00:05:10.956 --> 00:05:16.346
 NARRATOR: The worked case shows both how to
 apply the method and how to check it.
 
-60
-00:04:52.034 --> 00:04:57.826
-NARRATOR: Examine the tradeoffs in
-Calibration, including what improves and what
-
-61
-00:04:57.826 --> 00:04:59.405
-becomes more difficult.
-
-62
-00:04:59.405 --> 00:05:05.530
-NARRATOR: Calibration estimates camera
-parameters needed for geometric measurement.
-
-63
-00:05:05.530 --> 00:05:11.689
-NARRATOR: Consider this worked case: Using a
-chessboard pattern, the system calculates
-
 64
-00:05:11.689 --> 00:05:18.874
-focal length and principal point to map 2D
-image coordinates to 3D space accurately.
+00:05:16.466 --> 00:05:22.384
+NARRATOR: Examine the tradeoffs in Manage
+Phase: Prioritization and Monitoring,
 
 65
-00:05:18.874 --> 00:05:27.175
-NARRATOR: On screen, display a chessboard grid
-overlaid on a real-world scene, with a diagram
+00:05:22.384 --> 00:05:27.119
+including what improves and what becomes more
+difficult.
 
 66
-00:05:27.175 --> 00:05:32.155
-showing the projection matrix transforming 2D
-to 3D coordinates.
+00:05:27.119 --> 00:05:33.596
+NARRATOR: Manage prioritizes risks and
+allocates resources for response and
 
 67
-00:05:32.155 --> 00:05:38.397
+00:05:33.596 --> 00:05:34.244
+monitoring.
+
+68
+00:05:34.244 --> 00:05:40.963
+NARRATOR: Consider this worked case: A
+financial institution prioritizes high-risk
+
+69
+00:05:40.963 --> 00:05:47.681
+algorithmic trading models for continuous
+monitoring and allocates resources for
+
+70
+00:05:47.681 --> 00:05:49.697
+real-time anomaly detection.
+
+71
+00:05:49.697 --> 00:05:56.719
+NARRATOR: On screen, show a risk
+prioritization matrix with axes for likelihood
+
+72
+00:05:56.719 --> 00:06:01.400
+and impact, highlighting high-priority risks
+requiring immediate monitoring.
+
+73
+00:06:01.400 --> 00:06:07.977
 NARRATOR: State the benefit, the cost, and the
 condition under which the tradeoff is
 
-68
-00:05:38.397 --> 00:05:38.843
+74
+00:06:07.977 --> 00:06:08.447
 acceptable.
 
-69
-00:05:38.843 --> 00:05:46.140
+75
+00:06:08.447 --> 00:06:15.603
 NARRATOR: Making the tradeoff visible prevents
 a local improvement from hiding a larger cost.
 
-70
-00:05:46.250 --> 00:05:52.873
-NARRATOR: Stress-test the reasoning around
-Geometric Transforms with an edge case and
-
-71
-00:05:52.873 --> 00:05:56.184
-identify which assumption controls the
-outcome.
-
-72
-00:05:56.184 --> 00:06:03.278
-NARRATOR: Geometric transforms map coordinates
-between image representations.
-
-73
-00:06:03.278 --> 00:06:09.733
-NARRATOR: Consider this worked case: Affine
-transformation adjusts image coordinates to
-
-74
-00:06:09.733 --> 00:06:13.840
-correct perspective distortion in a tilted
-photograph.
-
-75
-00:06:13.840 --> 00:06:21.090
-NARRATOR: On screen, show a distorted image
-and a corrected image, with a transformation
-
 76
-00:06:21.090 --> 00:06:24.715
-matrix displayed alongside the coordinate
-mapping lines.
+00:06:15.722 --> 00:06:21.672
+NARRATOR: Stress-test the reasoning around
+Machine Learning Workflows: Supervised vs.
 
 77
-00:06:24.715 --> 00:06:30.774
+00:06:21.672 --> 00:06:28.812
+Unsupervised with an edge case and identify
+which assumption controls the outcome.
+
+78
+00:06:28.812 --> 00:06:34.843
+NARRATOR: Supervised methods learn a mapping
+from examples paired with target labels.
+
+79
+00:06:34.843 --> 00:06:42.632
+NARRATOR: Consider this worked case: A spam
+filter uses supervised learning with labeled
+
+80
+00:06:42.632 --> 00:06:49.822
+email data, whereas customer segmentation uses
+unsupervised clustering to group users by
+
+81
+00:06:49.822 --> 00:06:50.421
+behavior.
+
+82
+00:06:50.421 --> 00:06:57.339
+NARRATOR: On screen, present a side-by-side
+comparison chart: supervised learning shows
+
+83
+00:06:57.339 --> 00:07:03.628
+labeled examples mapping to outputs,
+unsupervised learning shows raw data
+
+84
+00:07:03.628 --> 00:07:05.515
+clustering into groups.
+
+85
+00:07:05.515 --> 00:07:11.648
 NARRATOR: Change one assumption at a time and
 observe which part of the reasoning no longer
 
-78
-00:06:30.774 --> 00:06:31.153
+86
+00:07:11.648 --> 00:07:12.031
 holds.
 
-79
-00:06:31.153 --> 00:06:37.346
+87
+00:07:12.031 --> 00:07:18.293
 NARRATOR: The edge case reveals the boundary
 of the claim without discarding the useful
 
-80
-00:06:37.346 --> 00:06:38.231
+88
+00:07:18.293 --> 00:07:19.187
 core idea.
 
-81
-00:06:38.231 --> 00:06:45.621
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-82
-00:06:45.621 --> 00:06:47.637
-throughout the analysis.
-
-83
-00:06:47.762 --> 00:06:54.281
-NARRATOR: Use Segmentation to diagnose a
-failure by separating symptoms, causes, and
-
-84
-00:06:54.281 --> 00:06:55.368
-corrective action.
-
-85
-00:06:55.368 --> 00:07:01.633
-NARRATOR: Segmentation assigns pixels or
-regions to selected categories.
-
-86
-00:07:01.633 --> 00:07:06.933
-NARRATOR: Consider this worked case:
-Thresholding separates foreground objects from
-
-87
-00:07:06.933 --> 00:07:14.883
-the background by classifying pixels based on
-intensity values above or below a set level.
-
-88
-00:07:14.883 --> 00:07:21.277
-NARRATOR: On screen, display a binary mask
-where foreground objects are white and
-
 89
-00:07:21.277 --> 00:07:25.211
-background is black, overlaid on the original
-image.
+00:07:19.298 --> 00:07:26.520
+NARRATOR: Use Preprocessing and Leakage
+Prevention to diagnose a failure by separating
 
 90
-00:07:25.211 --> 00:07:30.845
+00:07:26.520 --> 00:07:29.529
+symptoms, causes, and corrective action.
+
+91
+00:07:29.529 --> 00:07:36.201
+NARRATOR: Preprocessing must be fitted only on
+permitted training data to avoid leakage.
+
+92
+00:07:36.201 --> 00:07:43.553
+NARRATOR: Consider this worked case: A medical
+imaging pipeline standardizes image dimensions
+
+93
+00:07:43.553 --> 00:07:50.904
+and normalizes pixel values using only the
+training set statistics before validation.
+
+94
+00:07:50.904 --> 00:07:57.380
+NARRATOR: On screen, draw a pipeline diagram
+showing data flowing through preprocessing
+
+95
+00:07:57.380 --> 00:08:04.935
+steps fitted on training data, then applied to
+validation and test sets without re-fitting.
+
+96
+00:08:04.935 --> 00:08:10.569
 NARRATOR: Locate the first point where
 observed behavior diverges from expected
 
-91
-00:07:30.845 --> 00:07:34.430
+97
+00:08:10.569 --> 00:08:14.154
 behavior, then test the smallest plausible
 cause.
 
-92
-00:07:34.430 --> 00:07:40.692
+98
+00:08:14.154 --> 00:08:20.066
 NARRATOR: The diagnosis is strongest when
 another person can reproduce the observation
 
-93
-00:07:40.692 --> 00:07:42.258
+99
+00:08:20.066 --> 00:08:21.544
 and the test.
 
-94
-00:07:42.386 --> 00:07:48.174
-NARRATOR: Connect Motion Methods to the
-earlier ideas and explain how the pieces work
-
-95
-00:07:48.174 --> 00:07:49.414
-as one system.
-
-96
-00:07:49.414 --> 00:07:53.101
-NARRATOR: Motion methods compare observations
-across time.
-
-97
-00:07:53.101 --> 00:07:59.907
-NARRATOR: Consider this worked case: Optical
-flow calculates pixel displacement between
-
-98
-00:07:59.907 --> 00:08:05.476
-consecutive frames to track object movement
-and estimate velocity.
-
-99
-00:08:05.476 --> 00:08:12.396
-NARRATOR: On screen, show a sequence of three
-frames with vector arrows indicating pixel
-
 100
-00:08:12.396 --> 00:08:14.867
-movement from frame to frame.
+00:08:21.650 --> 00:08:27.067
+NARRATOR: Connect Cross-Validation and
+Evaluation Metrics to the earlier ideas and
 
 101
-00:08:14.867 --> 00:08:23.829
+00:08:27.067 --> 00:08:31.006
+explain how the pieces work as one system.
+
+102
+00:08:31.006 --> 00:08:37.537
+NARRATOR: Evaluation metrics must match the
+task and the cost of different errors.
+
+103
+00:08:37.537 --> 00:08:44.259
+NARRATOR: Consider this worked case: A fraud
+detection system uses k-fold cross-validation
+
+104
+00:08:44.259 --> 00:08:51.542
+to assess model stability, with precision and
+recall metrics weighted to penalize false
+
+105
+00:08:51.542 --> 00:08:52.662
+negatives heavily.
+
+106
+00:08:52.662 --> 00:08:59.545
+NARRATOR: On screen, illustrate a k-fold
+cross-validation cycle with data splits
+
+107
+00:08:59.545 --> 00:09:06.428
+rotating through training and validation sets,
+alongside a metrics comparison table.
+
+108
+00:09:06.428 --> 00:09:15.190
 NARRATOR: Explain each connection explicitly
 and verify that information retains the same
 
-102
-00:08:23.829 --> 00:08:26.070
+109
+00:09:15.190 --> 00:09:17.381
 meaning across representations.
 
-103
-00:08:26.070 --> 00:08:33.019
+110
+00:09:17.381 --> 00:09:24.505
 NARRATOR: The synthesis matters only if every
 connection remains supported by the original
 
-104
-00:08:33.019 --> 00:08:33.554
+111
+00:09:24.505 --> 00:09:25.053
 evidence.
 
-105
-00:08:33.554 --> 00:08:40.933
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-106
-00:08:40.933 --> 00:08:42.945
-throughout the analysis.
-
-107
-00:08:43.058 --> 00:08:50.408
-NARRATOR: Finish with Evaluation & Robustness
-as a practical checklist that can guide a new
-
-108
-00:08:50.408 --> 00:08:50.898
-analysis.
-
-109
-00:08:50.898 --> 00:08:57.648
-NARRATOR: Results depend on sampling,
-illumination, noise, training data,
-
-110
-00:08:57.648 --> 00:09:00.648
-thresholds, and evaluation metrics.
-
-111
-00:09:00.648 --> 00:09:08.229
-NARRATOR: Consider this worked case: Varying
-the threshold value changes the number of
-
 112
-00:09:08.229 --> 00:09:14.643
-detected edges, demonstrating how sensitivity
-to illumination and noise affects detection
+00:09:25.178 --> 00:09:30.702
+NARRATOR: Finish with Practical Analysis
+Checklist for AI Deployment as a practical
 
 113
-00:09:14.643 --> 00:09:15.226
-accuracy.
+00:09:30.702 --> 00:09:33.924
+checklist that can guide a new analysis.
 
 114
-00:09:15.226 --> 00:09:21.369
-NARRATOR: On screen, display a slider
-adjusting a threshold value, with
+00:09:33.924 --> 00:09:41.878
+NARRATOR: It also considers robustness,
+privacy, security, transparency, and fairness.
 
 115
-00:09:21.369 --> 00:09:28.070
-corresponding binary masks showing how edge
-detection changes as the threshold shifts.
+00:09:41.878 --> 00:09:49.150
+NARRATOR: Consider this worked case: A
+deployment checklist verifies that the AI
 
 116
-00:09:28.070 --> 00:09:35.700
+00:09:49.150 --> 00:09:55.210
+system maintains fairness thresholds, logs
+privacy compliance, and updates monitoring
+
+117
+00:09:55.210 --> 00:09:58.846
+alerts when distribution shift is detected.
+
+118
+00:09:58.846 --> 00:10:06.071
+NARRATOR: On screen, provide a printable
+checklist template with checkboxes for
+
+119
+00:10:06.071 --> 00:10:12.640
+robustness, privacy, security, transparency,
+fairness, and monitoring status, aligned with
+
+120
+00:10:12.640 --> 00:10:15.924
+NIST and ML workflow standards.
+
+121
+00:10:15.924 --> 00:10:23.618
 NARRATOR: For each checklist item, record the
 evidence, the remaining uncertainty, and the
 
-117
-00:09:35.700 --> 00:09:37.461
+122
+00:10:23.618 --> 00:10:25.393
 next verification step.
 
-118
-00:09:37.461 --> 00:09:43.415
+123
+00:10:25.393 --> 00:10:31.157
 NARRATOR: The result is a repeatable
 procedure, not a conclusion that depends on
 
-119
-00:09:43.415 --> 00:09:44.789
+124
+00:10:31.157 --> 00:10:32.487
 memory or intuition.

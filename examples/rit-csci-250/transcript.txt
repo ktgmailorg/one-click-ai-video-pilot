@@ -1,221 +1,169 @@
-NARRATOR: Begin by framing Introduction to Multilevel Architecture as a question about
+Begin by framing Introduction to Multilevel Architecture as a question about inputs,
 
-inputs, decisions, and observable results.
+decisions, and observable results.
 
-NARRATOR: Topics include the digital logic level; the micro architecture level; the
+Topics include the digital logic level; the micro architecture level; the machine
 
-machine instruction set level; the operating system level; and the assembly language level.
+instruction set level; the operating system level; and the assembly language level.
 
-NARRATOR: Consider this worked case: This hierarchy allows developers to write assembly
+Consider this worked case: This hierarchy allows developers to write assembly code that
 
-code that directly manipulates registers while the OS handles memory and scheduling.
+directly manipulates registers while the OS handles memory and scheduling.
 
-NARRATOR: On screen, display a stacked diagram showing five layers: digital logic,
+List the givens before choosing a method, because an unstated assumption can change the
 
-microarchitecture, instruction set, OS, and assembly, with arrows indicating upward
+conclusion.
 
-abstraction and downward control.
+This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+Now define Digital Logic and Microarchitecture Basics precisely enough that another learner
 
-change the conclusion.
+could test the definition.
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+An introduction to the hardware and software organization of computer systems.
 
-NARRATOR: Now define Digital Logic and Microarchitecture Basics precisely enough that
+Consider this worked case: A simple AND gate combines two input signals to produce a single
 
-another learner could test the definition.
+output, enabling complex logic in modern processors.
 
-NARRATOR: An introduction to the hardware and software organization of computer systems.
-
-NARRATOR: Consider this worked case: A simple AND gate combines two input signals to produce
-
-a single output, enabling complex logic in modern processors.
-
-NARRATOR: On screen, show a schematic of basic logic gates (AND, OR, NOT) connected to form a
-
-simple adder, highlighting signal flow.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Microarchitecture and Instruction
+With the foundation in place, examine how Microarchitecture and Instruction Set
 
-Set Interface operates in a concrete sequence.
+Interface operates in a concrete sequence.
 
-NARRATOR: The RISC-V ISA defines programmer-visible instructions, registers,
+The RISC-V ISA defines programmer-visible instructions, registers, memory operations,
 
-memory operations, control transfer, exceptions, and ordering behavior.
+control transfer, exceptions, and ordering behavior.
 
-NARRATOR: Consider this worked case: A branch instruction alters the control flow by
+Consider this worked case: A branch instruction alters the control flow by
 
 updating the program counter based on a condition evaluated by the CPU.
 
-NARRATOR: On screen, illustrate a pipeline diagram showing how an instruction moves
+Follow every arrow in order and name the state before and after each transition.
 
-through fetch, decode, execute, and write-back stages.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+Next, compare the choices involved in Machine Instruction Set Level and make the decision
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+criteria explicit.
 
-NARRATOR: Next, compare the choices involved in Machine Instruction Set Level and make the
+Branch and jump instructions change control flow.
 
-decision criteria explicit.
+Consider this worked case: A load instruction transfers data from a memory address into a
 
-NARRATOR: Branch and jump instructions change control flow.
+specific register for subsequent computation.
 
-NARRATOR: Consider this worked case: A load instruction transfers data from a memory
+Compare alternatives against the same constraints so the evaluation does not move
 
-address into a specific register for subsequent computation.
+the goalposts.
 
-NARRATOR: On screen, display a table mapping common RISC-V instructions to their register
+Using shared criteria turns a preference into a defensible technical choice.
 
-and memory operands, emphasizing data flow.
-
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
-
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Apply Operating System Level Overview to a worked situation instead of
+Apply Operating System Level Overview to a worked situation instead of treating it as an
 
-treating it as an isolated definition.
+isolated definition.
 
-NARRATOR: Analysis distinguishes user mode, privileged kernel code, hardware translation,
+Analysis distinguishes user mode, privileged kernel code, hardware translation, interrupt
 
-interrupt state, resource ownership, and synchronization invariants.
+state, resource ownership, and synchronization invariants.
 
-NARRATOR: Consider this worked case: The OS allocates CPU time to different processes
+Consider this worked case: The OS allocates CPU time to different processes using a
 
-using a scheduler that prioritizes runnable tasks.
+scheduler that prioritizes runnable tasks.
 
-NARRATOR: On screen, draw a flowchart showing process creation, scheduling decision, context
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-switch, and resource allocation steps.
+step.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+The worked case shows both how to apply the method and how to check it.
 
-at each step.
+Examine the tradeoffs in User Mode and Kernel Mode Transitions, including what improves and
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+what becomes more difficult.
 
-NARRATOR: Examine the tradeoffs in User Mode and Kernel Mode Transitions, including what
+A system call transfers control from user code to a privileged kernel service.
 
-improves and what becomes more difficult.
-
-NARRATOR: A system call transfers control from user code to a privileged kernel service.
-
-NARRATOR: Consider this worked case: A system call transfers control from user code to a
+Consider this worked case: A system call transfers control from user code to a
 
 privileged kernel service to access hardware or manage memory.
 
-NARRATOR: On screen, show a side-by-side comparison of user mode (restricted
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-permissions) and kernel mode (full hardware access) with a transition arrow.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+Stress-test the reasoning around System Calls and Traps Mechanism with an edge case and
 
-acceptable.
+identify which assumption controls the outcome.
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+A trap records processor state so the kernel can handle a system call, exception, or
 
-NARRATOR: Stress-test the reasoning around System Calls and Traps Mechanism with an edge
+interrupt.
 
-case and identify which assumption controls the outcome.
+Consider this worked case: When a process requests file I/O, a trap records the CPU
 
-NARRATOR: A trap records processor state so the kernel can handle a system call,
+registers so the kernel can handle the request and restore state.
 
-exception, or interrupt.
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-NARRATOR: Consider this worked case: When a process requests file I/O, a trap records the
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-CPU registers so the kernel can handle the request and restore state.
+Use Virtual Memory and Page Tables to diagnose a failure by separating symptoms, causes, and
 
-NARRATOR: On screen, create a sequence diagram showing the trap entry, kernel handling, and
+corrective action.
 
-return path with state preservation markers.
+Page tables map virtual addresses to physical memory with permission bits.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+Consider this worked case: A page table entry contains a physical address pointer and
 
-holds.
+permission bits that determine access rights for each memory block.
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-core idea.
+smallest plausible cause.
 
-NARRATOR: Use Virtual Memory and Page Tables to diagnose a failure by separating symptoms,
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-causes, and corrective action.
+Connect Concurrency, Locks, and Scheduling to the earlier ideas and explain how the pieces
 
-NARRATOR: Page tables map virtual addresses to physical memory with permission bits.
+work as one system.
 
-NARRATOR: Consider this worked case: A page table entry contains a physical address
+Locks protect invariants when concurrent execution can access shared state.
 
-pointer and permission bits that determine access rights for each memory block.
+Consider this worked case: A mutex lock prevents two processes from modifying a shared
 
-NARRATOR: On screen, illustrate a two-level page table structure with arrows linking
+counter simultaneously, maintaining data integrity.
 
-virtual addresses to physical frames, highlighting permission bits.
+Explain each connection explicitly and verify that information retains the same meaning
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+across representations.
 
-behavior, then test the smallest plausible cause.
+The synthesis matters only if every connection remains supported by the original evidence.
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-and the test.
+analysis.
 
-NARRATOR: Connect Concurrency, Locks, and Scheduling to the earlier ideas and explain
-
-how the pieces work as one system.
-
-NARRATOR: Locks protect invariants when concurrent execution can access shared state.
-
-NARRATOR: Consider this worked case: A mutex lock prevents two processes from modifying a
-
-shared counter simultaneously, maintaining data integrity.
-
-NARRATOR: On screen, display a diagram of a shared resource with a lock mechanism, showing
-
-how processes queue and acquire exclusive access.
-
-NARRATOR: Explain each connection explicitly and verify that information retains the same
-
-meaning across representations.
-
-NARRATOR: The synthesis matters only if every connection remains supported by the original
-
-evidence.
-
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
-
-guide a new analysis.
-
-NARRATOR: Architecture analysis preserves data dependencies, control dependencies, and
+Architecture analysis preserves data dependencies, control dependencies, and
 
 architectural state.
 
-NARRATOR: Consider this worked case: An analyst reviews a process trace to confirm
+Consider this worked case: An analyst reviews a process trace to confirm that traps
 
-that traps preserved state, locks protected invariants, and page tables mapped correctly.
+preserved state, locks protected invariants, and page tables mapped correctly.
 
-NARRATOR: On screen, provide a checklist template with boxes for verifying: state
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-preservation, lock invariants, page table mappings, and scheduling fairness.
+verification step.
 
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

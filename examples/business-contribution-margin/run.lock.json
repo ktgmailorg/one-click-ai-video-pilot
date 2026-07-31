@@ -1,0 +1,597 @@
+{
+  "approvals": [
+    {
+      "approvedAt": "2026-07-31T15:49:07.963Z",
+      "notes": "Verifies declared claim-to-source bindings for draft rendering only; this is not instructor or release approval.",
+      "reviewer": "Automated source-pack verification (draft)",
+      "role": "automation",
+      "schemaVersion": 1,
+      "stage": "script",
+      "subjectSha256": "b3d162adb0e184a4828ce9a7f96e1e5ab9dff7b2853ffb79db01237fa3049912"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/render/documentary-master.core.mp4",
+      "role": "master",
+      "sha256": "60918ecf8a0e9109e7f4e1973c23a62d6a51a503fe4285fe9ce89b79f0dcebc8"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/narration/captions.vtt",
+      "role": "captions-vtt",
+      "sha256": "6d4e85680d9adfd89556b22abbc02edfddbe3f734d46339057093bfe1b8ef129"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/narration/captions.srt",
+      "role": "captions-srt",
+      "sha256": "310319737afe7b9aa64c8835b3fc82118ceeecd73a91432a30ec38ada476b174"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/narration/transcript.txt",
+      "role": "transcript-text",
+      "sha256": "7bc57588aa3b274daadc581609af40fe3fc43f4efaf5cc11f7e293eb4550e999"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/narration/transcript.html",
+      "role": "transcript-html",
+      "sha256": "38e1be79b91fad850a466d7696ce7fa052c58a874dd362b3ec37e189c08f5984"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/visuals/thumbnail.png",
+      "role": "thumbnail",
+      "sha256": "a1b676d917dca1a13945d43d7e0a0a79f52bb3ea0ba963e1086cd7c76b114e33"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/visuals/beat-01/beat-01-shot-001.png",
+      "role": "shot",
+      "sha256": "cf5ee4924dbc71f24f30afc45ebfcc98a31ac62b205de5afaf8fc8cafd2f06ac",
+      "shotId": "beat-01-shot-001"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/visuals/beat-01/beat-01-shot-002.png",
+      "role": "shot",
+      "sha256": "1b925409b0a323f5e69e3a71f4c7f192583f29cac8fc246fbd201a6997994862",
+      "shotId": "beat-01-shot-002"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/visuals/beat-01/beat-01-shot-003.png",
+      "role": "shot",
+      "sha256": "f8284c13f1d4ae3d0c4dcd627f558572c27a06ff0b0f99df1afee40ef3963ec1",
+      "shotId": "beat-01-shot-003"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/visuals/beat-02/beat-02-shot-001.png",
+      "role": "shot",
+      "sha256": "1038ba0017dd61183beb736df9845fbd88872101200e7efd264e94af80c3f14e",
+      "shotId": "beat-02-shot-001"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/visuals/beat-02/beat-02-shot-002.png",
+      "role": "shot",
+      "sha256": "7a9c61063629e57956c503da6d63076b983ea97c329670ba62a0ba31f3ec7273",
+      "shotId": "beat-02-shot-002"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/visuals/beat-02/beat-02-shot-003.png",
+      "role": "shot",
+      "sha256": "cf060d5251c99533a4bee57d7c26a793d7bbc6ebc716f80539c3deaf762f63e3",
+      "shotId": "beat-02-shot-003"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/visuals/beat-03/beat-03-shot-001.png",
+      "role": "shot",
+      "sha256": "dc6dd9423ad4f8a73cb078c6fdf328c5c536b91bf1fb4bf99479ac24b073ca4d",
+      "shotId": "beat-03-shot-001"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/visuals/beat-03/beat-03-shot-002.png",
+      "role": "shot",
+      "sha256": "fab42b5a93af4b5e1c5716a9bf34da3374e70ec134cb46627225513a8e1320e0",
+      "shotId": "beat-03-shot-002"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/visuals/beat-03/beat-03-shot-003.png",
+      "role": "shot",
+      "sha256": "f3436d62badc2d1c104472cc7e7356af84728db0ce004ae51194bdff6e187705",
+      "shotId": "beat-03-shot-003"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/visuals/beat-03/beat-03-shot-004.png",
+      "role": "shot",
+      "sha256": "7b895df7539eda98fe8ce6d5ac46ee12c97161cd12d4ec74786f6b5776e27671",
+      "shotId": "beat-03-shot-004"
+    }
+  ],
+  "configSha256": "21a730c5b2f085409e909484623d280857174555248e3bb39ba1fd74bf032f42",
+  "createdAt": "2026-07-31T15:49:31.459Z",
+  "final": {
+    "releaseAudit": {
+      "blockers": [],
+      "checks": [
+        {
+          "name": "frame",
+          "ok": true,
+          "value": "1920x1080"
+        },
+        {
+          "name": "frame-rate",
+          "ok": true,
+          "value": "30000/1001"
+        },
+        {
+          "name": "audio-sample-rate",
+          "ok": true,
+          "value": 48000
+        },
+        {
+          "name": "rit-orange-token",
+          "ok": true,
+          "value": "#F76902"
+        },
+        {
+          "name": "orange-on-black-contrast",
+          "ok": true,
+          "value": 6.98
+        },
+        {
+          "name": "title-safe-template",
+          "ok": true,
+          "value": "96px minimum inset"
+        },
+        {
+          "name": "font-fallbacks",
+          "ok": true,
+          "value": "Arial/Liberation Sans and Georgia/Liberation Serif"
+        },
+        {
+          "name": "final-master-loudness",
+          "ok": true,
+          "value": {
+            "integratedLufs": -16.1,
+            "loudnessRangeLu": 3.3,
+            "ok": true,
+            "schemaVersion": 1,
+            "targetIntegratedLufs": -16,
+            "targetTruePeakDbtp": -1.5,
+            "truePeakDbtp": -1.51
+          }
+        },
+        {
+          "name": "caption-audio-start-sync",
+          "ok": true,
+          "value": {
+            "audioStartSeconds": 0,
+            "captionStartSeconds": 0.05,
+            "maximumOffsetSeconds": 0.25,
+            "offsetSeconds": 0.05
+          }
+        },
+        {
+          "name": "subject-matched-visuals",
+          "ok": true,
+          "value": {
+            "genericShotIds": [],
+            "resolvedTemplates": [
+              "showcase-contribution-margin"
+            ]
+          }
+        }
+      ],
+      "ok": true,
+      "releaseState": "course-draft",
+      "warnings": []
+    },
+    "render": {
+      "audioQuality": {
+        "integratedLufs": -16.1,
+        "loudnessRangeLu": 3.3,
+        "ok": true,
+        "schemaVersion": 1,
+        "targetIntegratedLufs": -16,
+        "targetTruePeakDbtp": -1.5,
+        "truePeakDbtp": -1.51
+      },
+      "audioSampleRate": 48000,
+      "audioStartSeconds": 0,
+      "cache": {
+        "draft": false,
+        "draftSkipped": false,
+        "master": false,
+        "sectionCount": 3,
+        "sections": 0
+      },
+      "draftPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/render/documentary-master.DRAFT.mp4",
+      "durationSeconds": 56.621333,
+      "encoder": {
+        "codec": "h264_videotoolbox",
+        "mode": "videotoolbox",
+        "prioritizeSpeed": false,
+        "profile": "high",
+        "quality": "80",
+        "realtime": true
+      },
+      "frameRate": "30000/1001",
+      "height": 1080,
+      "master": "documentary-master.core.mp4",
+      "masterPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/render/documentary-master.core.mp4",
+      "schemaVersion": 1,
+      "sections": [
+        {
+          "beatId": "beat-01",
+          "cacheHit": false,
+          "durationSeconds": 18.288,
+          "output": "beat-01.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/render/sections/beat-01.mp4",
+          "renderSignature": "60961ed4d90253396a22f5ffb712dc23ac404fa4051e0ffd247e7db5ccae25f2",
+          "schemaVersion": 1,
+          "sha256": "5f050e7ce781de4ef795a3278abae47bbc9f6b39c2c14418f8e61e608fcb3b51"
+        },
+        {
+          "beatId": "beat-02",
+          "cacheHit": false,
+          "durationSeconds": 16.416,
+          "output": "beat-02.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/render/sections/beat-02.mp4",
+          "renderSignature": "eb161e8ef747f0ee6f97e58bfbdf36af24493f2a9ee748ba98b09464a94e187d",
+          "schemaVersion": 1,
+          "sha256": "533c43f8e4f84a4647cd987edf039b7351f5160c90520200d5cf951f16dda564"
+        },
+        {
+          "beatId": "beat-03",
+          "cacheHit": false,
+          "durationSeconds": 21.84,
+          "output": "beat-03.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/business-contribution-margin/work/render/sections/beat-03.mp4",
+          "renderSignature": "5fb07c0e0e248e5b5b188f26e8b7ab461498e71b82d4d1aa5f085889d39b7d4d",
+          "schemaVersion": 1,
+          "sha256": "8ffa2b3483f870178b419bf8532e9aa5fc550cbac31830bcea3a1dfee107d929"
+        }
+      ],
+      "sha256": "60918ecf8a0e9109e7f4e1973c23a62d6a51a503fe4285fe9ce89b79f0dcebc8",
+      "title": "How Contribution Margin Supports Decisions",
+      "width": 1920
+    }
+  },
+  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "inputSha256": "52ba115a5814209a66ac549e3c565f8fb32c0d3a15f649d17134cf1270c817a0",
+  "mode": "record",
+  "providers": {
+    "edge-narration": {
+      "capabilities": [
+        "speech.synthesize"
+      ],
+      "executionLocation": "hosted",
+      "id": "edge-tts",
+      "mimeTypes": {
+        "speech.synthesize": [
+          "audio/mpeg",
+          "text/vtt"
+        ]
+      },
+      "profileName": "edge-narration",
+      "supportsAsyncJobs": false,
+      "supportsModelDiscovery": false,
+      "supportsSeed": false,
+      "supportsStructuredOutput": false,
+      "version": "7.2.8",
+      "voicePresets": {
+        "female": "en-US-EmmaMultilingualNeural",
+        "male": "en-US-AndrewMultilingualNeural"
+      }
+    }
+  },
+  "requests": [
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 1247,
+      "lookupSha256": "c974d811796d5a0bceffe8e018e1061597b57f5332b9fe25e3ea5261cf2b4605",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "Managers use contribution margin to explore break-even volume, product mix, and the effect of changing price or variable cost. The result is only as good as the assumptions. Costs may change outside a relevant range, capacity may be limited, and demand may respond to price. Contribution margin is a decision model, not a substitute for context."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "b8a863f9e2219bbc9f1f3b9d5fbf993d707e2258b4775b1ac5c8d8c57c440d13",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/7f/7fef480cdda450b52256239fd81660e3441c66f7d8a64c01bcfc2fa35e5d9667.mp3",
+            "sha256": "7fef480cdda450b52256239fd81660e3441c66f7d8a64c01bcfc2fa35e5d9667",
+            "size": 131040
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/72/72ddcdc9b25f3cea0f6128990fcb578f0bf3e3afdd373afe390ca5e2c3f76e98.vtt",
+            "sha256": "72ddcdc9b25f3cea0f6128990fcb578f0bf3e3afdd373afe390ca5e2c3f76e98",
+            "size": 478
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:49:08.100Z"
+    },
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 1926,
+      "lookupSha256": "532c8aef8200842f4947754092ff86b8672adfd4a83ff26a3d4f5248b73b496a",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "Imagine a product sells for one hundred dollars and requires sixty dollars of variable cost for each unit. The forty-dollar difference is its unit contribution margin. It is not automatically profit. It is the amount that one additional sale contributes toward fixed costs and, after those are covered, operating profit."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "a8f45dce2ebb63cde57732c1dc81e044373e8c3507705ff04a1817f9ff26a665",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/3f/3fc4fbcb74dda9ad10677a197289236aac1aa9b0a18e15aaddbe6103be1e8180.mp3",
+            "sha256": "3fc4fbcb74dda9ad10677a197289236aac1aa9b0a18e15aaddbe6103be1e8180",
+            "size": 109728
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/a2/a215ad9b87e9694d0d6bd168b49eb4065f220e898fff75d59e92babe044a114f.vtt",
+            "sha256": "a215ad9b87e9694d0d6bd168b49eb4065f220e898fff75d59e92babe044a114f",
+            "size": 453
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:49:08.102Z"
+    },
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 4162,
+      "lookupSha256": "28b9393633e973b3a6def10493776f98ba4ea948912e0d14411c9f0e081c7f2d",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "Divide forty dollars by the one-hundred-dollar selling price and the contribution margin ratio is forty percent. That means forty cents of each sales dollar is available for fixed costs and then profit, under the model's assumptions. Ratios make it easier to compare products with different prices."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "f0e656a7a6b46dab8d3ebcabd2c4b0e9fc6e7fc9e208372d47a4f8fd58b26863",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/87/87ad105946894fcfee7b59e9ddaaf766812b44b3d60590dd04543c7e686f65db.mp3",
+            "sha256": "87ad105946894fcfee7b59e9ddaaf766812b44b3d60590dd04543c7e686f65db",
+            "size": 98496
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/83/83d475637daef8e57039bded7a21b1dfc9e8610766791582fe1f3e7f65d51468.vtt",
+            "sha256": "83d475637daef8e57039bded7a21b1dfc9e8610766791582fe1f3e7f65d51468",
+            "size": 398
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:49:08.102Z"
+    }
+  ],
+  "runId": "how-contribution-margin-supports-decisions-3672b3879051",
+  "schemaVersion": 1,
+  "stages": [
+    {
+      "name": "plan",
+      "status": "complete"
+    },
+    {
+      "name": "script-approval",
+      "status": "complete"
+    },
+    {
+      "name": "visual-approval",
+      "status": "complete"
+    },
+    {
+      "name": "narration",
+      "status": "complete"
+    },
+    {
+      "name": "visual-generation",
+      "status": "complete"
+    },
+    {
+      "name": "render",
+      "status": "complete"
+    },
+    {
+      "name": "release-qa",
+      "status": "complete"
+    },
+    {
+      "name": "release-approval",
+      "status": "waiting"
+    }
+  ],
+  "status": "awaiting-approval",
+  "toolchain": {
+    "ffmpeg": {
+      "available": true,
+      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "available": true,
+      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "gitChangedPaths": [
+      "outreach/README.md",
+      "outreach/general-email.md",
+      "outreach/leadership-confirmation.md"
+    ],
+    "gitDirty": true,
+    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
+    "node": "v22.23.1",
+    "platform": "darwin-arm64",
+    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtimeDirty": false,
+    "sharp": {
+      "aom": "3.14.1",
+      "archive": "3.8.8",
+      "cairo": "1.18.4",
+      "cgif": "0.5.3",
+      "exif": "0.6.26",
+      "expat": "2.8.2",
+      "ffi": "3.6.0",
+      "fontconfig": "2.18.1",
+      "freetype": "2.14.3",
+      "fribidi": "1.0.16",
+      "glib": "2.89.1",
+      "harfbuzz": "14.2.1",
+      "heif": "1.23.1",
+      "highway": "1.4.0",
+      "imagequant": "2.4.1",
+      "lcms": "2.19.1",
+      "mozjpeg": "0826579",
+      "pango": "1.58.0",
+      "pixman": "0.46.4",
+      "png": "1.6.58",
+      "proxy-libintl": "0.5",
+      "rsvg": "2.62.90",
+      "sharp": "0.35.3",
+      "tiff": "d01a94b",
+      "uhdr": "1acdbed",
+      "vips": "8.18.3",
+      "webp": "1.6.0",
+      "xml2": "2.15.3",
+      "zlib-ng": "2.3.3"
+    }
+  },
+  "totalCostUsd": 0
+}

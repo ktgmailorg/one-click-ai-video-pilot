@@ -2,616 +2,570 @@ WEBVTT
 
 1
 00:00:00.050 --> 00:00:03.979
-NARRATOR: Artificial intelligence can be
-organized around agents.
+Artificial intelligence can be organized
+around agents.
 
 2
-00:00:03.979 --> 00:00:09.666
-NARRATOR: An agent receives percepts through
-sensors and affects an environment through
+00:00:03.979 --> 00:00:10.140
+An agent receives percepts through sensors and
+affects an environment through actuators.
 
 3
-00:00:09.666 --> 00:00:10.140
-actuators.
+00:00:10.140 --> 00:00:16.278
+A thermostat senses temperature and controls
+heating; a game agent observes a board and
 
 4
-00:00:10.140 --> 00:00:15.504
-NARRATOR: A thermostat senses temperature and
-controls heating; a game agent observes a
+00:00:16.278 --> 00:00:17.155
+selects moves.
 
 5
-00:00:15.504 --> 00:00:17.155
-board and selects moves.
+00:00:17.155 --> 00:00:22.629
+Calling an action intelligent requires a
+performance objective and information
 
 6
-00:00:17.155 --> 00:00:22.173
-NARRATOR: Calling an action intelligent
-requires a performance objective and
+00:00:22.629 --> 00:00:23.176
+assumptions.
 
 7
-00:00:22.173 --> 00:00:23.176
-information assumptions.
+00:00:23.176 --> 00:00:29.711
+A rational agent selects the action expected
+to perform best given its percept history and
 
 8
-00:00:23.176 --> 00:00:29.041
-NARRATOR: A rational agent selects the action
-expected to perform best given its percept
+00:00:29.711 --> 00:00:34.068
+knowledge, not one guaranteed to succeed in
+every uncertain world.
 
 9
-00:00:29.041 --> 00:00:34.068
-history and knowledge, not one guaranteed to
-succeed in every uncertain world.
+00:00:34.068 --> 00:00:40.201
+The environment may be fully or partially
+observable, deterministic or stochastic,
 
 10
-00:00:34.068 --> 00:00:39.792
-NARRATOR: The environment may be fully or
-partially observable, deterministic or
+00:00:40.201 --> 00:00:41.874
+static or changing.
 
 11
-00:00:39.792 --> 00:00:41.874
-stochastic, static or changing.
-
-12
-00:00:41.874 --> 00:00:46.891
-NARRATOR: These properties determine which
+00:00:41.874 --> 00:00:46.829
+These properties determine which
 representations and algorithms are
 
-13
-00:00:46.891 --> 00:00:47.448
+12
+00:00:46.829 --> 00:00:47.448
 appropriate.
 
+13
+00:00:47.448 --> 00:00:52.526
+Begin by specifying the task environment
+rather than choosing an AI technique because
+
 14
-00:00:47.448 --> 00:00:51.860
-NARRATOR: Begin by specifying the task
-environment rather than choosing an AI
+00:00:52.526 --> 00:00:53.698
+it is fashionable.
 
 15
-00:00:51.860 --> 00:00:53.698
-technique because it is fashionable.
+00:00:53.834 --> 00:01:00.183
+A reflex agent maps the current situation to
+an action, such as braking when an obstacle is
 
 16
-00:00:53.834 --> 00:00:59.141
-NARRATOR: A reflex agent maps the current
-situation to an action, such as braking when
+00:01:00.183 --> 00:01:00.556
+close.
 
 17
-00:00:59.141 --> 00:01:00.556
-an obstacle is close.
+00:01:00.556 --> 00:01:05.710
+Reflexes can be fast and effective when local
+rules cover the environment.
 
 18
-00:01:00.556 --> 00:01:05.710
-NARRATOR: Reflexes can be fast and effective
-when local rules cover the environment.
+00:01:05.710 --> 00:01:11.715
+A planning agent represents possible future
+states and evaluates action sequences before
 
 19
-00:01:05.710 --> 00:01:11.286
-NARRATOR: A planning agent represents possible
-future states and evaluates action sequences
+00:01:11.715 --> 00:01:12.215
+acting.
 
 20
-00:01:11.286 --> 00:01:12.215
-before acting.
+00:01:12.215 --> 00:01:17.459
+Planning becomes valuable when an action's
+benefit depends on later consequences or when
 
 21
-00:01:12.215 --> 00:01:16.771
-NARRATOR: Planning becomes valuable when an
-action's benefit depends on later consequences
+00:01:17.459 --> 00:01:18.669
+several routes compete.
 
 22
-00:01:16.771 --> 00:01:18.669
-or when several routes compete.
+00:01:18.669 --> 00:01:25.792
+It also has a cost: the state space can grow
+rapidly, the model may be wrong, and the world
 
 23
-00:01:18.669 --> 00:01:25.136
-NARRATOR: It also has a cost: the state space
-can grow rapidly, the model may be wrong, and
+00:01:25.792 --> 00:01:27.291
+may change during computation.
 
 24
-00:01:25.136 --> 00:01:27.291
-the world may change during computation.
+00:01:27.291 --> 00:01:33.261
+Many real systems combine layers—fast safety
+reflexes around a slower planner.
 
 25
-00:01:27.291 --> 00:01:32.764
-NARRATOR: Many real systems combine
-layers—fast safety reflexes around a slower
+00:01:33.261 --> 00:01:39.893
+The design question is not whether planning is
+always smarter, but which consequences must be
 
 26
-00:01:32.764 --> 00:01:33.261
-planner.
+00:01:39.893 --> 00:01:42.546
+represented to meet the performance objective.
 
 27
-00:01:33.261 --> 00:01:38.748
-NARRATOR: The design question is not whether
-planning is always smarter, but which
+00:01:42.674 --> 00:01:45.583
+Search requires a precise formulation.
 
 28
-00:01:38.748 --> 00:01:42.546
-consequences must be represented to meet the
-performance objective.
+00:01:45.583 --> 00:01:49.894
+A state contains the information needed to
+choose future actions.
 
 29
-00:01:42.674 --> 00:01:45.583
-NARRATOR: Search requires a precise
-formulation.
+00:01:49.894 --> 00:01:52.624
+Actions specify available choices.
 
 30
-00:01:45.583 --> 00:01:49.894
-NARRATOR: A state contains the information
-needed to choose future actions.
+00:01:52.624 --> 00:01:55.442
+The transition model predicts the next state.
 
 31
-00:01:49.894 --> 00:01:52.624
-NARRATOR: Actions specify available choices.
+00:01:55.442 --> 00:01:58.440
+Action cost measures the value spent.
 
 32
-00:01:52.624 --> 00:01:55.442
-NARRATOR: The transition model predicts the
-next state.
+00:01:58.440 --> 00:02:04.728
+The start state identifies the initial
+condition, and a goal test recognizes success.
 
 33
-00:01:55.442 --> 00:01:58.440
-NARRATOR: Action cost measures the value
-spent.
+00:02:04.728 --> 00:02:11.146
+In route finding, a state may be a location,
+actions may follow roads, and cost may
 
 34
-00:01:58.440 --> 00:02:04.279
-NARRATOR: The start state identifies the
-initial condition, and a goal test recognizes
+00:02:11.146 --> 00:02:12.751
+represent distance or time.
 
 35
-00:02:04.279 --> 00:02:04.728
-success.
+00:02:12.751 --> 00:02:18.789
+Include too little state and the model cannot
+predict consequences; include irrelevant
 
 36
-00:02:04.728 --> 00:02:10.841
-NARRATOR: In route finding, a state may be a
-location, actions may follow roads, and cost
+00:02:18.789 --> 00:02:22.815
+detail and the search space becomes needlessly
+large.
 
 37
-00:02:10.841 --> 00:02:12.751
-may represent distance or time.
+00:02:22.815 --> 00:02:27.904
+The formulation determines what solutions mean
+before any algorithm explores them.
 
 38
-00:02:12.751 --> 00:02:18.502
-NARRATOR: Include too little state and the
-model cannot predict consequences; include
+00:02:27.904 --> 00:02:33.791
+A correct algorithm on the wrong state
+representation solves the wrong problem
 
 39
-00:02:18.502 --> 00:02:22.815
-irrelevant detail and the search space becomes
-needlessly large.
-
-40
-00:02:22.815 --> 00:02:27.480
-NARRATOR: The formulation determines what
-solutions mean before any algorithm explores
-
-41
-00:02:27.480 --> 00:02:27.904
-them.
-
-42
-00:02:27.904 --> 00:02:33.826
-NARRATOR: A correct algorithm on the wrong
-state representation solves the wrong problem
-
-43
-00:02:33.826 --> 00:02:34.282
+00:02:33.791 --> 00:02:34.282
 efficiently.
 
-44
+40
 00:02:34.418 --> 00:02:39.368
-NARRATOR: The state space is a graph of
-possible configurations and transitions.
+The state space is a graph of possible
+configurations and transitions.
+
+41
+00:02:39.368 --> 00:02:43.041
+A search algorithm builds a tree of paths from
+the start.
+
+42
+00:02:43.041 --> 00:02:47.607
+The same state may appear multiple times
+because different paths reach it.
+
+43
+00:02:47.607 --> 00:02:53.066
+Tree search can therefore revisit cycles
+forever or repeat expensive work.
+
+44
+00:02:53.066 --> 00:02:58.828
+Graph search maintains an explored set or
+best-known cost information to control
 
 45
-00:02:39.368 --> 00:02:43.041
-NARRATOR: A search algorithm builds a tree of
-paths from the start.
-
-46
-00:02:43.041 --> 00:02:47.607
-NARRATOR: The same state may appear multiple
-times because different paths reach it.
-
-47
-00:02:47.607 --> 00:02:53.066
-NARRATOR: Tree search can therefore revisit
-cycles forever or repeat expensive work.
-
-48
-00:02:53.066 --> 00:02:58.892
-NARRATOR: Graph search maintains an explored
-set or best-known cost information to control
-
-49
-00:02:58.892 --> 00:02:59.788
+00:02:58.828 --> 00:02:59.788
 repeated expansion.
 
-50
+46
 00:02:59.788 --> 00:03:03.181
-NARRATOR: But duplicate handling must match
-the algorithm.
+But duplicate handling must match the
+algorithm.
+
+47
+00:03:03.181 --> 00:03:08.494
+In cost-based search, reaching a known state
+through a cheaper path may require updating
+
+48
+00:03:08.494 --> 00:03:09.253
+the frontier.
+
+49
+00:03:09.253 --> 00:03:16.133
+A search node often stores a state, parent,
+action, path cost, and depth so the final
+
+50
+00:03:16.133 --> 00:03:18.283
+action sequence can be reconstructed.
 
 51
-00:03:03.181 --> 00:03:08.181
-NARRATOR: In cost-based search, reaching a
-known state through a cheaper path may require
+00:03:18.283 --> 00:03:22.773
+State equality and hashing are part of the
+algorithm's correctness.
 
 52
-00:03:08.181 --> 00:03:09.253
-updating the frontier.
+00:03:22.898 --> 00:03:28.473
+Breadth-first search uses a first-in,
+first-out frontier and explores by depth.
 
 53
-00:03:09.253 --> 00:03:15.820
-NARRATOR: A search node often stores a state,
-parent, action, path cost, and depth so the
+00:03:28.473 --> 00:03:33.192
+With equal action costs, the first goal found
+has the fewest actions.
 
 54
-00:03:15.820 --> 00:03:18.283
-final action sequence can be reconstructed.
+00:03:33.192 --> 00:03:36.113
+Its frontier can require large memory.
 
 55
-00:03:18.283 --> 00:03:22.773
-NARRATOR: State equality and hashing are part
-of the algorithm's correctness.
+00:03:36.113 --> 00:03:41.151
+Depth-first search uses a stack and pursues
+one branch before backtracking.
 
 56
-00:03:22.898 --> 00:03:28.008
-NARRATOR: Breadth-first search uses a
-first-in, first-out frontier and explores by
+00:03:41.151 --> 00:03:47.484
+It can use less frontier memory but may spend
+a long time down an unhelpful branch and does
 
 57
-00:03:28.008 --> 00:03:28.473
-depth.
+00:03:47.484 --> 00:03:49.595
+not generally find the shortest solution.
 
 58
-00:03:28.473 --> 00:03:33.192
-NARRATOR: With equal action costs, the first
-goal found has the fewest actions.
+00:03:49.595 --> 00:03:54.200
+Graph search and finite-state assumptions
+affect completeness.
 
 59
-00:03:33.192 --> 00:03:36.113
-NARRATOR: Its frontier can require large
-memory.
+00:03:54.200 --> 00:03:58.472
+Neither strategy understands action cost
+beyond depth.
 
 60
-00:03:36.113 --> 00:03:41.151
-NARRATOR: Depth-first search uses a stack and
-pursues one branch before backtracking.
+00:03:58.472 --> 00:04:03.779
+Choose according to the guarantee the problem
+needs, not a slogan that one is faster.
 
 61
-00:03:41.151 --> 00:03:46.893
-NARRATOR: It can use less frontier memory but
-may spend a long time down an unhelpful branch
+00:04:03.779 --> 00:04:09.930
+A small example with unequal edge costs
+exposes why fewest actions and least total
 
 62
-00:03:46.893 --> 00:03:49.595
-and does not generally find the shortest
-solution.
+00:04:09.930 --> 00:04:11.687
+cost are different objectives.
 
 63
-00:03:49.595 --> 00:03:54.200
-NARRATOR: Graph search and finite-state
-assumptions affect completeness.
+00:04:11.834 --> 00:04:16.426
+Uniform-cost search orders the frontier by
+path cost g of n.
 
 64
-00:03:54.200 --> 00:03:58.472
-NARRATOR: Neither strategy understands action
-cost beyond depth.
+00:04:16.426 --> 00:04:21.796
+It may explore a deeper path before a shallow
+one when the deeper path is cheaper.
 
 65
-00:03:58.472 --> 00:04:03.447
-NARRATOR: Choose according to the guarantee
-the problem needs, not a slogan that one is
+00:04:21.796 --> 00:04:27.268
+With nonnegative costs and appropriate
+graph-search handling, the first removed goal
 
 66
-00:04:03.447 --> 00:04:03.779
-faster.
+00:04:27.268 --> 00:04:28.263
+is optimal.
 
 67
-00:04:03.779 --> 00:04:09.606
-NARRATOR: A small example with unequal edge
-costs exposes why fewest actions and least
+00:04:28.263 --> 00:04:33.582
+The algorithm needs a priority queue and must
+track the best cost found for states.
 
 68
-00:04:09.606 --> 00:04:11.687
-total cost are different objectives.
+00:04:33.582 --> 00:04:39.602
+A cheaper path to an existing frontier state
+should replace or supersede the expensive one.
 
 69
-00:04:11.834 --> 00:04:16.426
-NARRATOR: Uniform-cost search orders the
-frontier by path cost g of n.
+00:04:39.602 --> 00:04:44.130
+Uniform-cost search uses no estimate of
+remaining distance, so it can expand many
 
 70
-00:04:16.426 --> 00:04:21.796
-NARRATOR: It may explore a deeper path before
-a shallow one when the deeper path is cheaper.
-
-71
-00:04:21.796 --> 00:04:26.415
-NARRATOR: With nonnegative costs and
-appropriate graph-search handling, the first
-
-72
-00:04:26.415 --> 00:04:28.263
-removed goal is optimal.
-
-73
-00:04:28.263 --> 00:04:33.582
-NARRATOR: The algorithm needs a priority queue
-and must track the best cost found for states.
-
-74
-00:04:33.582 --> 00:04:38.850
-NARRATOR: A cheaper path to an existing
-frontier state should replace or supersede the
-
-75
-00:04:38.850 --> 00:04:39.602
-expensive one.
-
-76
-00:04:39.602 --> 00:04:44.298
-NARRATOR: Uniform-cost search uses no estimate
-of remaining distance, so it can expand many
-
-77
-00:04:44.298 --> 00:04:48.658
+00:04:44.130 --> 00:04:48.658
 states in directions that are cheap so far but
 far from a goal.
 
-78
-00:04:48.658 --> 00:04:53.024
-NARRATOR: It provides a baseline for
-understanding how informed search adds
+71
+00:04:48.658 --> 00:04:54.141
+It provides a baseline for understanding how
+informed search adds guidance without giving
 
-79
-00:04:53.024 --> 00:04:55.406
-guidance without giving up cost reasoning.
+72
+00:04:54.141 --> 00:04:55.406
+up cost reasoning.
 
-80
+73
 00:04:55.538 --> 00:05:01.342
-NARRATOR: A heuristic h of n uses problem
-knowledge to estimate remaining cost.
+A heuristic h of n uses problem knowledge to
+estimate remaining cost.
 
-81
-00:05:01.342 --> 00:05:06.279
-NARRATOR: Straight-line distance can guide
-geographic routing because it is inexpensive
+74
+00:05:01.342 --> 00:05:07.087
+Straight-line distance can guide geographic
+routing because it is inexpensive and related
 
-82
-00:05:06.279 --> 00:05:08.523
-and related to travel distance.
+75
+00:05:07.087 --> 00:05:08.523
+to travel distance.
 
-83
-00:05:08.523 --> 00:05:13.887
-NARRATOR: Greedy best-first search chooses the
-state with smallest h, focusing on apparent
+76
+00:05:08.523 --> 00:05:13.735
+Greedy best-first search chooses the state
+with smallest h, focusing on apparent
 
-84
-00:05:13.887 --> 00:05:16.776
+77
+00:05:13.735 --> 00:05:16.776
 closeness while ignoring the cost already
 paid.
 
-85
+78
 00:05:16.776 --> 00:05:21.865
-NARRATOR: It can be fast but is not generally
-optimal or complete in all settings.
+It can be fast but is not generally optimal or
+complete in all settings.
+
+79
+00:05:21.865 --> 00:05:26.112
+A heuristic should be cheaper to compute than
+the search work it saves.
+
+80
+00:05:26.112 --> 00:05:30.870
+Zero is always an uninformative baseline for
+nonnegative costs.
+
+81
+00:05:30.870 --> 00:05:36.224
+Better heuristics distinguish promising states
+while respecting the guarantees required by
+
+82
+00:05:36.224 --> 00:05:37.197
+the algorithm.
+
+83
+00:05:37.197 --> 00:05:43.204
+Heuristic design is representation design: it
+encodes a simplified view of the problem.
+
+84
+00:05:43.346 --> 00:05:50.872
+A star balances the cost accumulated so far,
+g, with the heuristic estimate to the goal, h.
+
+85
+00:05:50.872 --> 00:05:55.324
+If h is zero, A star behaves like uniform-cost
+search.
 
 86
-00:05:21.865 --> 00:05:26.112
-NARRATOR: A heuristic should be cheaper to
-compute than the search work it saves.
+00:05:55.324 --> 00:05:59.558
+If g is ignored, behavior resembles greedy
+search.
 
 87
-00:05:26.112 --> 00:05:30.870
-NARRATOR: Zero is always an uninformative
-baseline for nonnegative costs.
+00:05:59.558 --> 00:06:03.449
+The sum estimates total solution cost through
+a frontier node.
 
 88
-00:05:30.870 --> 00:05:34.937
-NARRATOR: Better heuristics distinguish
-promising states while respecting the
+00:06:03.449 --> 00:06:09.201
+An admissible heuristic never overestimates
+the true remaining optimal cost.
 
 89
-00:05:34.937 --> 00:05:37.197
-guarantees required by the algorithm.
+00:06:09.201 --> 00:06:15.323
+Consistency requires that the heuristic at one
+state be no greater than one-step cost plus
 
 90
-00:05:37.197 --> 00:05:42.775
-NARRATOR: Heuristic design is representation
-design: it encodes a simplified view of the
+00:06:15.323 --> 00:06:17.364
+the heuristic at the successor.
 
 91
-00:05:42.775 --> 00:05:43.204
-problem.
+00:06:17.364 --> 00:06:23.104
+Under standard conditions, these properties
+support optimality and efficient graph-search
 
 92
-00:05:43.346 --> 00:05:50.036
-NARRATOR: A star balances the cost accumulated
-so far, g, with the heuristic estimate to the
+00:06:23.104 --> 00:06:23.678
+handling.
 
 93
-00:05:50.036 --> 00:05:50.872
-goal, h.
+00:06:23.678 --> 00:06:30.077
+A star's memory use can still be substantial,
+and a highly accurate heuristic may itself be
 
 94
-00:05:50.872 --> 00:05:55.324
-NARRATOR: If h is zero, A star behaves like
-uniform-cost search.
+00:06:30.077 --> 00:06:30.477
+expensive.
 
 95
-00:05:55.324 --> 00:05:59.558
-NARRATOR: If g is ignored, behavior resembles
-greedy search.
+00:06:30.477 --> 00:06:34.941
+Guarantees depend on the exact assumptions and
+implementation.
 
 96
-00:05:59.558 --> 00:06:03.449
-NARRATOR: The sum estimates total solution
-cost through a frontier node.
+00:06:35.090 --> 00:06:38.649
+A returned path is only one dimension of
+quality.
 
 97
-00:06:03.449 --> 00:06:09.201
-NARRATOR: An admissible heuristic never
-overestimates the true remaining optimal cost.
+00:06:38.649 --> 00:06:44.602
+Completeness asks whether an algorithm will
+find a solution when one exists under stated
 
 98
-00:06:09.201 --> 00:06:14.254
-NARRATOR: Consistency requires that the
-heuristic at one state be no greater than
+00:06:44.602 --> 00:06:45.027
+conditions.
 
 99
-00:06:14.254 --> 00:06:17.364
-one-step cost plus the heuristic at the
-successor.
+00:06:45.027 --> 00:06:49.823
+Optimality asks whether the solution minimizes
+the defined cost.
 
 100
-00:06:17.364 --> 00:06:22.626
-NARRATOR: Under standard conditions, these
-properties support optimality and efficient
+00:06:49.823 --> 00:06:55.563
+Time and space can be estimated by states
+expanded and stored, often in terms of
 
 101
-00:06:22.626 --> 00:06:23.678
-graph-search handling.
-
-102
-00:06:23.678 --> 00:06:28.966
-NARRATOR: A star's memory use can still be
-substantial, and a highly accurate heuristic
-
-103
-00:06:28.966 --> 00:06:30.477
-may itself be expensive.
-
-104
-00:06:30.477 --> 00:06:34.941
-NARRATOR: Guarantees depend on the exact
-assumptions and implementation.
-
-105
-00:06:35.090 --> 00:06:38.649
-NARRATOR: A returned path is only one
-dimension of quality.
-
-106
-00:06:38.649 --> 00:06:43.831
-NARRATOR: Completeness asks whether an
-algorithm will find a solution when one exists
-
-107
-00:06:43.831 --> 00:06:45.027
-under stated conditions.
-
-108
-00:06:45.027 --> 00:06:49.823
-NARRATOR: Optimality asks whether the solution
-minimizes the defined cost.
-
-109
-00:06:49.823 --> 00:06:55.654
-NARRATOR: Time and space can be estimated by
-states expanded and stored, often in terms of
-
-110
-00:06:55.654 --> 00:06:57.476
+00:06:55.563 --> 00:06:57.476
 branching factor and solution depth.
 
+102
+00:06:57.476 --> 00:07:03.772
+Practical evaluation also measures frontier
+size, duplicate handling, and heuristic
+
+103
+00:07:03.772 --> 00:07:04.402
+computation.
+
+104
+00:07:04.402 --> 00:07:10.760
+Most importantly, a mathematically optimal
+path in an inaccurate model may be poor in the
+
+105
+00:07:10.760 --> 00:07:11.608
+real environment.
+
+106
+00:07:11.608 --> 00:07:16.608
+Costs, transitions, and goals must represent
+what users actually value.
+
+107
+00:07:16.608 --> 00:07:22.192
+Search evaluation joins algorithmic guarantees
+with model validation rather than treating
+
+108
+00:07:22.192 --> 00:07:24.223
+them as separate worlds.
+
+109
+00:07:24.362 --> 00:07:27.934
+A complete search design answers nine
+questions.
+
+110
+00:07:27.934 --> 00:07:31.952
+What performance objective defines rational
+behavior?
+
 111
-00:06:57.476 --> 00:07:03.248
-NARRATOR: Practical evaluation also measures
-frontier size, duplicate handling, and
+00:07:31.952 --> 00:07:34.490
+What information does each state contain?
 
 112
-00:07:03.248 --> 00:07:04.402
-heuristic computation.
+00:07:34.490 --> 00:07:37.283
+Which actions and transitions are possible?
 
 113
-00:07:04.402 --> 00:07:09.606
-NARRATOR: Most importantly, a mathematically
-optimal path in an inaccurate model may be
+00:07:37.283 --> 00:07:39.222
+What does path cost represent?
 
 114
-00:07:09.606 --> 00:07:11.608
-poor in the real environment.
+00:07:39.222 --> 00:07:41.531
+What are the start and goal conditions?
 
 115
-00:07:11.608 --> 00:07:16.608
-NARRATOR: Costs, transitions, and goals must
-represent what users actually value.
+00:07:41.531 --> 00:07:44.898
+Which frontier rule matches the required
+guarantee?
 
 116
-00:07:16.608 --> 00:07:21.843
-NARRATOR: Search evaluation joins algorithmic
-guarantees with model validation rather than
+00:07:44.898 --> 00:07:48.342
+How are repeated states and cheaper paths
+handled?
 
 117
-00:07:21.843 --> 00:07:24.223
-treating them as separate worlds.
+00:07:48.342 --> 00:07:53.317
+If a heuristic is used, what does it estimate
+and what properties can be justified?
 
 118
-00:07:24.362 --> 00:07:27.934
-NARRATOR: A complete search design answers
-nine questions.
+00:07:53.317 --> 00:07:59.505
+Finally, how do time, memory, solution
+quality, and model error behave on
 
 119
-00:07:27.934 --> 00:07:31.952
-NARRATOR: What performance objective defines
-rational behavior?
-
-120
-00:07:31.952 --> 00:07:34.490
-NARRATOR: What information does each state
-contain?
-
-121
-00:07:34.490 --> 00:07:37.283
-NARRATOR: Which actions and transitions are
-possible?
-
-122
-00:07:37.283 --> 00:07:39.222
-NARRATOR: What does path cost represent?
-
-123
-00:07:39.222 --> 00:07:41.531
-NARRATOR: What are the start and goal
-conditions?
-
-124
-00:07:41.531 --> 00:07:44.898
-NARRATOR: Which frontier rule matches the
-required guarantee?
-
-125
-00:07:44.898 --> 00:07:48.342
-NARRATOR: How are repeated states and cheaper
-paths handled?
-
-126
-00:07:48.342 --> 00:07:53.317
-NARRATOR: If a heuristic is used, what does it
-estimate and what properties can be justified?
-
-127
-00:07:53.317 --> 00:07:59.573
-NARRATOR: Finally, how do time, memory,
-solution quality, and model error behave on
-
-128
-00:07:59.573 --> 00:08:00.536
+00:07:59.505 --> 00:08:00.536
 representative cases?
 
-129
+120
 00:08:00.536 --> 00:08:05.026
-NARRATOR: Artificial intelligence is not
-produced by naming an algorithm.
+Artificial intelligence is not produced by
+naming an algorithm.
 
-130
-00:08:05.026 --> 00:08:09.856
-NARRATOR: It comes from connecting a clear
-environment model to a decision process whose
+121
+00:08:05.026 --> 00:08:10.473
+It comes from connecting a clear environment
+model to a decision process whose behavior can
 
-131
-00:08:09.856 --> 00:08:11.926
-behavior can be explained and tested.
+122
+00:08:10.473 --> 00:08:11.926
+be explained and tested.

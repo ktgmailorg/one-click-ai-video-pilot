@@ -13,20 +13,20 @@
       "verified": true
     },
     {
-      "id": "rfc-1122",
-      "title": "RFC 1122 Requirements for Internet Hosts",
-      "uri": "https://www.rfc-editor.org/rfc/rfc1122",
-      "author": "Internet Engineering Task Force",
-      "content": "Internet hosts implement layered link, internet, transport, and application functions. The link layer moves frames across a directly connected network. IP provides best-effort datagram delivery across interconnected networks. An IP address identifies an interface for internet-layer delivery. Routing selects a next hop toward a destination. Transport protocols add endpoint communication functions above IP. Application protocols define the meaning of exchanged data. Correct analysis distinguishes addresses, routes, packets, frames, sockets, and end-to-end state.",
+      "id": "scikit-learn-user-guide",
+      "title": "scikit-learn User Guide",
+      "uri": "https://scikit-learn.org/stable/user_guide.html",
+      "author": "scikit-learn developers",
+      "content": "Data-analysis workflows separate data preparation, exploratory analysis, training, validation, testing, model selection, and evaluation. Supervised methods learn mappings from examples paired with target labels, while unsupervised methods identify structure without targets. Preprocessing must be fitted only on permitted training data to avoid leakage. Pipelines combine transformations and estimators so the same operations are applied consistently. Cross-validation repeats training and validation across defined splits. Grouping, dimensionality reduction, classification, regression, and clustering answer different questions and require appropriate assumptions and metrics. Evaluation must match the task and the cost of errors, while distribution shift, missing data, overfitting, and unexamined sampling choices can invalidate conclusions.",
       "type": "note",
       "verified": true
     },
     {
-      "id": "rfc-9293",
-      "title": "RFC 9293 Transmission Control Protocol",
-      "uri": "https://www.rfc-editor.org/rfc/rfc9293",
-      "author": "Internet Engineering Task Force",
-      "content": "TCP provides a reliable, ordered byte stream between endpoints. Sequence numbers identify positions in that byte stream. Acknowledgments report which data has been received. Retransmission recovers data that is presumed lost. Flow control prevents a sender from exceeding the receiver's advertised capacity. A TCP connection moves through defined protocol states. Connection establishment synchronizes endpoint state before application data transfer. Packet loss, duplication, reordering, delay, and endpoint failure must be separated when reasoning about behavior and performance.",
+      "id": "postgresql-documentation",
+      "title": "PostgreSQL Documentation",
+      "uri": "https://www.postgresql.org/docs/current/",
+      "author": "PostgreSQL Global Development Group",
+      "content": "Data systems organize records with declared types, tables, rows, columns, keys, and constraints. Queries select, join, aggregate, order, and transform data. Indexes provide additional access paths for selected workloads. Transactions group operations and isolation controls how concurrent operations observe one another. Query planning and physical storage affect performance without changing logical query meaning. Analytical work should preserve provenance from captured data through cleaning, transformation, grouping, modeling, visualization, and reporting. Data quality analysis makes missingness, duplicates, inconsistent representation, integrity constraints, sampling, and update behavior explicit.",
       "type": "note",
       "verified": true
     }

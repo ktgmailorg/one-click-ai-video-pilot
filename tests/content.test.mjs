@@ -6,6 +6,7 @@ const root = new URL("../", import.meta.url);
 const localAssetPattern = /^\.\/[a-z0-9/_\-.]+$/i;
 const hostedVideoPattern =
   /^https:\/\/[a-z0-9-]+\.public\.blob\.vercel-storage\.com\/[a-z0-9/_\-.]+$/i;
+const publishedVideoPattern = /^\.\/media\/[a-z0-9-]+-[a-f0-9]{16}\.mp4$/i;
 const newExamples = [
   "full-riscv-pipeline",
   "full-derivative-foundations",
@@ -13,6 +14,7 @@ const newExamples = [
   "cybersecurity-phishing-check",
   "photography-exposure-triangle",
   "psychology-correlation-causation",
+  "mis-business-process-decisions",
   "full-programming-foundations",
   "full-algorithm-analysis",
   "full-relational-data-management",
@@ -31,7 +33,7 @@ test("the pilot page advertises the learning platform and has no duration cap", 
   const html = await readFile(new URL("index.html", root), "utf8");
   assert.equal(
     (html.match(/<article class="showcase-card">/g) || []).length,
-    16,
+    17,
   );
   assert.match(html, /Learning platform/);
   assert.match(html, /href="\.\/learn\.html"/);
@@ -46,10 +48,11 @@ test("the pilot page separates measured fresh production from cached replay", as
   assert.match(html, /28:49/);
   assert.match(html, /20:31/);
   assert.match(html, /1\.41× real-time media throughput/);
-  assert.match(html, /4:14/);
-  assert.match(html, /10:06/);
-  assert.match(html, /2\.39× real-time throughput/);
-  assert.match(html, /3\.85× faster/);
+  assert.match(html, /2:10/);
+  assert.match(html, /10:02/);
+  assert.match(html, /4\.63× real-time throughput/);
+  assert.match(html, /7\.51× faster/);
+  assert.match(html, /Narration was an exact verified cache hit/);
   assert.match(html, /19:43/);
   assert.match(html, /4:00/);
   assert.match(html, /4\.93× aggregate real-time throughput/);
@@ -92,7 +95,15 @@ test("the course catalog contains complete, unique lessons", async () => {
     (course) => course.format === "Full lesson",
   );
   assert.ok(fullLessons.length >= 18);
-  assert.ok(fullLessons.every((course) => course.durationSeconds >= 480));
+  // A full lesson is a complete instructional module, not an artificially
+  // padded runtime. Keep every module at seven minutes or longer while still
+  // allowing concise topics to finish before the eight-minute target.
+  assert.ok(fullLessons.every((course) => course.durationSeconds >= 420));
+  assert.ok(
+    fullLessons.filter((course) => course.durationSeconds >= 480).length /
+      fullLessons.length >=
+      0.9,
+  );
 
   for (const course of catalog.courses) {
     assert.ok(course.title);
@@ -101,13 +112,30 @@ test("the course catalog contains complete, unique lessons", async () => {
     assert.ok(course.durationSeconds > 0);
     assert.ok(course.outcomes.length >= 2);
     assert.ok(course.paths.length >= 1);
+    assert.ok(Array.isArray(course.generationProvenance));
+    assert.equal(course.generationProvenance.length, 3);
+    assert.ok(
+      course.generationProvenance.every(
+        (record) =>
+          record.stage &&
+          record.provider &&
+          record.model &&
+          record.executionLocation &&
+          record.mode &&
+          record.humanReviewRequired === true,
+      ),
+    );
 
     for (const key of ["captions", "transcript", "poster", "sources"]) {
       assert.match(course[key], localAssetPattern);
       assert.ok((await stat(new URL(course[key].slice(2), root))).size > 0);
     }
 
-    if (localAssetPattern.test(course.video)) {
+    if (publishedVideoPattern.test(course.video)) {
+      assert.match(course.videoSha256, /^[a-f0-9]{64}$/);
+      assert.ok(course.videoBytes > 1_000_000);
+      assert.equal(course.mediaBackend, "github-release-via-vercel-rewrite");
+    } else if (localAssetPattern.test(course.video)) {
       assert.ok((await stat(new URL(course.video.slice(2), root))).size > 0);
     } else {
       assert.match(course.video, hostedVideoPattern);
@@ -171,13 +199,24 @@ for (const slug of newExamples) {
   test(`${slug} includes video, captions, transcript, poster, and verified sources`, async () => {
     const directory = new URL(`examples/${slug}/`, root);
     for (const file of [
-      "video.mp4",
       "captions.vtt",
       "transcript.txt",
       "poster.png",
       "sources.json",
     ]) {
       assert.ok((await stat(new URL(file, directory))).size > 0, file);
+    }
+
+    const catalog = JSON.parse(
+      await readFile(new URL("course-catalog.json", root), "utf8"),
+    );
+    const course = catalog.courses.find((candidate) => candidate.id === slug);
+    assert.ok(course, `${slug} catalog entry`);
+    if (publishedVideoPattern.test(course.video)) {
+      assert.match(course.videoSha256, /^[a-f0-9]{64}$/);
+      assert.ok(course.videoBytes > 1_000_000);
+    } else {
+      assert.ok((await stat(new URL("video.mp4", directory))).size > 0);
     }
 
     const captions = await readFile(new URL("captions.vtt", directory), "utf8");

@@ -1,0 +1,293 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "We begin by adopting the lumped circuit abstraction, which treats components as localized entities where internal electromagnetic wave propagation is negligible compared to signal travel times. This assumption allows us to model circuits as interconnected nodes and branches rather than distributed fields. Imagine a simple battery connected to a resistor through short wires; the voltage appears instantaneously across the resistor because the physical dimensions are tiny relative to the signal wavelength. This abstraction holds when the circuit size is much smaller than the signal's wavelength, ensuring that voltage and current are well-defined at each node. We will consistently use this model throughout our analysis.",
+      "plannedSeconds": 60,
+      "title": "Lumped Abstraction",
+      "visualDirection": "template:showcase-circuits | A clear, editable educational diagram showing a simplified circuit with a battery, resistor, and capacitor connected by thin lines. The diagram includes a callout box highlighting:"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Next, we establish consistent reference polarities and current directions for every element. This systematic approach prevents sign errors and ensures our equations reflect physical reality. For example, if we assign the positive terminal of a battery to the top node and define current flowing clockwise through the resistor, we must maintain these conventions throughout the analysis. The direction we choose is arbitrary, but consistency is critical. When we later write equations, a positive voltage drop across a resistor means current flows from the higher to lower potential, while a negative value indicates the actual direction opposes our assumption. This disciplined labeling simplifies solving the resulting algebraic system.",
+      "plannedSeconds": 65,
+      "title": "Reference Directions",
+      "visualDirection": "template:showcase-circuits | A clear, editable educational diagram showing a simple series circuit with a battery, resistor, and capacitor. Each element has labeled voltage polarities (positive/negative) and a"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "With reference directions set, we apply Kirchhoff's current and voltage laws to constrain the circuit. Kirchhoff's current law states that the sum of currents entering any node equals zero, reflecting charge conservation. Kirchhoff's voltage law requires that the sum of voltage drops around any closed loop equals zero, reflecting energy conservation. For our series circuit, we write one KCL equation at the top node and one KVL equation around the loop. These constraints reduce the number of unknowns and provide the structural framework for solving the circuit. We then combine these with element laws to form a complete set of equations that uniquely determine all voltages and currents.",
+      "plannedSeconds": 65,
+      "title": "Kirchhoff Laws",
+      "visualDirection": "template:showcase-circuits | A clear, editable educational diagram showing a simple series circuit with a battery, resistor, and capacitor. Each element has labeled voltage polarities and current arrows. The K"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "We now introduce the constitutive relations that describe how resistors and capacitors behave. A resistor obeys Ohm's law, where voltage drop equals resistance times current. A capacitor relates current to the rate of voltage change, storing electric-field energy as charge accumulates on its plates. These relations are fundamental because they connect electrical quantities to physical mechanisms. For example, when current flows into a capacitor, voltage rises proportionally to the accumulated charge. We use these laws alongside Kirchhoff constraints to build the complete mathematical model of the circuit, ensuring every element's behavior is accurately represented.",
+      "plannedSeconds": 65,
+      "title": "Resistor and Capacitor Constitutive Relations",
+      "visualDirection": "template:showcase-circuits | A clear, editable educational diagram showing a resistor and capacitor with labeled voltage and current. The resistor has a voltage drop arrow, and the capacitor has a voltage rise"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "When we combine a resistor and capacitor in series, the circuit exhibits a characteristic time constant, tau, defined as resistance times capacitance. This value determines how quickly the circuit responds to changes. For example, if tau equals one second, the capacitor voltage will reach approximately 63 percent of its final value after one second. The time constant emerges naturally from solving the differential equation that governs the circuit. It represents the intrinsic speed of the system, balancing the resistor's opposition to current flow with the capacitor's ability to store charge. Understanding tau allows us to predict response times without solving the full equation every time.",
+      "plannedSeconds": 65,
+      "title": "RC Time Constant",
+      "visualDirection": "template:showcase-circuits | A clear, editable educational diagram showing a resistor and capacitor in series with a voltage source. The time constant tau is labeled, and a graph shows the capacitor voltage"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "We now analyze how the capacitor charges and discharges when connected to a voltage source. During charging, current flows from the source through the resistor into the capacitor, causing voltage to rise exponentially. The differential equation governing this process yields a solution where voltage approaches the source value asymptotically. Discharging occurs when the source is removed and the capacitor releases its stored energy through the resistor. The voltage decays exponentially, following the same time constant but in reverse. These behaviors demonstrate how energy transfers between the electric field and the resistor, with the resistor dissipating energy as heat while the capacitor temporarily stores it.",
+      "plannedSeconds": 65,
+      "title": "Charging and Discharging",
+      "visualDirection": "template:showcase-circuits | A clear, editable educational diagram showing a resistor and capacitor in series with a voltage source. The time constant tau is labeled, and a graph shows the capacitor voltage"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "We distinguish between transient and steady-state behavior to understand long-term circuit operation. The transient phase occurs immediately after a change, characterized by exponential charging or discharging governed by the time constant. The steady state emerges after several time constants, when the capacitor voltage stabilizes at the source value. Initial capacitor voltage is continuous unless an impulse supplies unbounded current, ensuring no sudden jumps in stored energy. Final steady-state behavior can be checked independently by replacing the capacitor with a short circuit, which simplifies the analysis. This separation allows us to verify solutions and predict long-term performance without solving the full differential equation.",
+      "plannedSeconds": 65,
+      "title": "Transient versus Steady State",
+      "visualDirection": "template:showcase-circuits | A clear, editable educational diagram showing a resistor and capacitor in series with a voltage source. The time constant tau is labeled, and a graph shows the capacitor voltage"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "We now examine how the RC circuit functions as a low-pass filter, attenuating high-frequency signals while passing low-frequency ones. When the input voltage changes slowly, the capacitor has time to charge fully, allowing the output to follow the input closely. When the input changes rapidly, the capacitor cannot charge quickly enough, so the output voltage lags and attenuates. This frequency-dependent behavior arises because the capacitor's impedance decreases with increasing frequency. The circuit thus acts as a smooth filter, removing rapid fluctuations while preserving slow variations. This property is essential in audio and signal processing applications where clean, stable signals are required.",
+      "plannedSeconds": 65,
+      "title": "Low-Pass Filtering",
+      "visualDirection": "template:showcase-circuits | A clear, editable educational diagram showing a resistor and capacitor in series with a voltage source. The time constant tau is labeled, and a graph shows the capacitor voltage"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "We define the cutoff frequency, omega_c, as the point where the output voltage drops to 35 percent of its input value. This frequency is inversely proportional to the time constant, calculated as one divided by tau. Signals with frequencies below omega_c pass through with minimal attenuation, while signals above omega_c are significantly reduced. The cutoff frequency provides a clear boundary for the circuit's frequency response, indicating the highest frequency it can effectively transmit. By adjusting the resistor or capacitor values, we can shift this boundary to filter different signal ranges. This parameter is crucial for designing filters that meet specific frequency requirements.",
+      "plannedSeconds": 65,
+      "title": "Cutoff Frequency",
+      "visualDirection": "template:showcase-circuits | A clear, editable educational diagram showing a resistor and capacitor in series with a voltage source. The time constant tau is labeled, and a graph shows the capacitor voltage"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "Finally, we calculate the complete step response and verify energy conservation. When a voltage step is applied, the capacitor charges exponentially, and the resistor dissipates energy as heat. The total energy stored in the capacitor equals the energy supplied by the source minus the energy dissipated in the resistor. Limiting cases at zero time, long time, zero frequency, and high frequency provide useful error checks. Time-domain step response and frequency-domain filtering are complementary descriptions of the same linear circuit behavior. By solving the differential equation and verifying these checks, we ensure our solution is accurate and physically meaningful.",
+      "plannedSeconds": 65,
+      "title": "Energy and Step-Response Calculation",
+      "visualDirection": "template:showcase-circuits | A clear, editable educational diagram showing a resistor and capacitor in series with a voltage source. The time constant tau is labeled, and a graph shows the capacitor voltage"
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "mit-circuits"
+      ],
+      "text": "MIT 6.002 introduces the lumped circuit abstraction, resistive networks, independent and dependent sources, switches, transistors, amplifiers, energy-storage elements, and first- and second-order dynamics.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "mit-circuit-notes"
+      ],
+      "text": "The 6.002 lecture sequence develops a systematic circuit analysis method: choose reference polarities and current directions, write element laws, apply Kirchhoff constraints, and solve the resulting equations. It covers:",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "mit-circuits"
+      ],
+      "text": "MIT 6.002 introduces the lumped circuit abstraction, resistive networks, independent and dependent sources, switches, transistors, amplifiers, energy-storage elements, and first- and second-order dynamics.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "mit-circuits"
+      ],
+      "text": "MIT 6.002 introduces the lumped circuit abstraction, resistive networks, independent and dependent sources, switches, transistors, amplifiers, energy-storage elements, and first- and second-order dynamics.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "mit-circuits"
+      ],
+      "text": "MIT 6.002 introduces the lumped circuit abstraction, resistive networks, independent and dependent sources, switches, transistors, amplifiers, energy-storage elements, and first- and second-order dynamics.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "mit-circuit-notes"
+      ],
+      "text": "The 6.002 lecture sequence develops a systematic circuit analysis method: choose reference polarities and current directions, write element laws, apply Kirchhoff constraints, and solve the resulting equations. It covers:",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "mit-circuit-notes"
+      ],
+      "text": "The 6.002 lecture sequence develops a systematic circuit analysis method: choose reference polarities and current directions, write element laws, apply Kirchhoff constraints, and solve the resulting equations. It covers:",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "mit-circuits"
+      ],
+      "text": "MIT 6.002 introduces the lumped circuit abstraction, resistive networks, independent and dependent sources, switches, transistors, amplifiers, energy-storage elements, and first- and second-order dynamics.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "mit-circuit-notes"
+      ],
+      "text": "The 6.002 lecture sequence develops a systematic circuit analysis method: choose reference polarities and current directions, write element laws, apply Kirchhoff constraints, and solve the resulting equations. It covers:",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "mit-circuit-notes"
+      ],
+      "text": "The 6.002 lecture sequence develops a systematic circuit analysis method: choose reference polarities and current directions, write element laws, apply Kirchhoff constraints, and solve the resulting equations. It covers:",
+      "verified": true
+    }
+  ],
+  "id": "analog-circuit-foundations-lumped-abstraction-to-step-response-a",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "MIT OpenCourseWare",
+      "excerpt": "MIT 6.002 introduces the lumped circuit abstraction, resistive networks, independent and dependent sources, switches, transistors, amplifiers, energy-storage elements, and first- and second-order dynamics. Circuit analysis combines element constitutive relations with Kirchhoff current and voltage constraints. A capacitor relates current to the rate of voltage change and stores electric-field energy. With one independent storage element, an RC network has a first-order natural response characterized by a time constant. Time-domain step response and frequency-domain filtering are complementary descriptions of the same linear circuit behavior.",
+      "id": "mit-circuits",
+      "sha256": "00661bda456a81cb1bbd33e4df39f98dad9f10b0e167e5c6dbbdbde274638e98",
+      "title": "MIT 6.002 Circuits and Electronics",
+      "type": "note",
+      "uri": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/",
+      "verified": true
+    },
+    {
+      "author": "MIT OpenCourseWare",
+      "excerpt": "The 6.002 lecture sequence develops a systematic circuit analysis method: choose reference polarities and current directions, write element laws, apply Kirchhoff constraints, and solve the resulting equations. It covers superposition, Thévenin and Norton equivalents, energy storage, transient analysis, and frequency response. A valid solution must satisfy both the interconnection constraints and each element's constitutive law. Initial capacitor voltage is continuous unless an impulse supplies unbounded current, and final steady-state behavior can be checked independently. Limiting cases at zero time, long time, zero frequency, and high frequency provide useful error checks.",
+      "id": "mit-circuit-notes",
+      "sha256": "169364a4e3284cf3a243ce8ab1efce921dc3599b384f5526437890acdaebbcd6",
+      "title": "MIT 6.002 Lecture Notes",
+      "type": "note",
+      "uri": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/pages/lecture-notes/",
+      "verified": true
+    }
+  ],
+  "title": "Analog Circuit Foundations: Lumped Abstraction to Step-Response Analysis"
+}

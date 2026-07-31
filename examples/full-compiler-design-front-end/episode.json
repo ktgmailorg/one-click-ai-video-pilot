@@ -1,0 +1,293 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "We begin by examining how raw source code transforms into meaningful units through lexical analysis. A lexer groups input characters into tokens, stripping away whitespace and comments to isolate operators, identifiers, and literals. Consider the expression 'x + 5'. The lexer recognizes 'x' as an identifier token, '+' as an operator token, and '5' as a numeric token. This separation is crucial because it isolates syntactic structure from semantic meaning. By treating each token as a discrete symbol, the compiler can process language constructs uniformly. The lexer operates as a state machine that scans characters sequentially, building tokens based on predefined patterns. This foundational step ensures that subsequent stages receive clean, structured input rather than unprocessed character streams. Understanding tokenization reveals how compilers manage language syntax before attempting,",
+      "plannedSeconds": 66,
+      "title": "Lexical Analysis and Tokenization",
+      "visualDirection": "template:showcase-compilers | Editable diagram: A horizontal pipeline showing raw text 'x + 5' feeding into a lexer box. Arrows output labeled tokens: [ID: x], [OP: +], [NUM: 5]. Annotate with a state machine diagram showing character-by-character scanning and token-emt"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Once tokens are isolated, the parser applies language grammar and operator precedence to construct an abstract syntax tree whose nodes represent expressions, function prototypes, and definitions. The parser consumes the token stream and validates syntactic structure against formal grammar rules. For example, it checks that an identifier is followed by a valid operator or assignment symbol. Operator precedence determines evaluation order, ensuring that multiplication binds tighter than addition. The parser builds a hierarchical structure that mirrors the program's logical organization. This step transforms a flat sequence of tokens into a tree that preserves nesting and relationships. By enforcing grammar rules, the parser catches structural errors early, preventing malformed code from reaching semantic analysis. The parser's output becomes the foundation for subsequent validation and low",
+      "plannedSeconds": 65,
+      "title": "Parsing and Grammar Rules",
+      "visualDirection": "template:showcase-compilers | Editable diagram: A token stream '[ID: x], [OP: +], [NUM: 5]' feeding into a parser box. Arrows output a tree structure: root node 'BinaryExpr' with left child 'ID: x' and right child 'NUM: 5'. Annotate with grammar rule 'Expr -> Expr OP |'"
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "The abstract syntax tree captures the program's logical structure without retaining syntactic details like parentheses or whitespace. Each node represents a specific language construct, such as an expression, function prototype, or variable definition. For our example, the tree contains a binary expression node with two child nodes representing the left and right operands. This hierarchical organization enables efficient traversal and analysis. The AST serves as a stable intermediate representation that separates language semantics from implementation details. By standardizing program structure, the AST allows compilers to apply uniform transformations across different language features. Developers can inspect the tree to verify that the parser correctly interpreted the source code. The tree's structure directly influences how subsequent stages validate types and generate code. Maint",
+      "plannedSeconds": 63,
+      "title": "Abstract Syntax Trees and Structure",
+      "visualDirection": "template:showcase-compilers | Editable diagram: A clean tree diagram with root 'BinaryExpr', left child 'ID: x', right child 'NUM: 5'. Annotate with arrows showing traversal paths. Include a legend explaining node types."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "After parsing, the compiler performs semantic checks to verify that the program adheres to language rules beyond syntax. These checks include type validation, scope resolution, and symbol table lookups. For instance, the compiler verifies that the identifier 'x' is declared and assigned a compatible type before allowing arithmetic operations. Symbol information tracks variable names, their types, and scopes, enabling precise error reporting. If a type mismatch occurs, the compiler flags the issue immediately, preventing invalid operations from propagating. Semantic analysis ensures that the program's meaning is consistent and well-formed. By validating types and scopes early, the compiler reduces downstream errors and improves optimization opportunities. This stage bridges the gap between syntactic structure and runtime behavior.",
+      "plannedSeconds": 65,
+      "title": "Semantic Checks and Symbol Information",
+      "visualDirection": "template:showcase-compilers | Editable diagram: A symbol table box showing 'x: int' with arrows pointing to the AST node. Annotate with type check symbols (✓/✗). Include a scope boundary box."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Once semantic validation passes, the compiler lowers the validated AST nodes into LLVM intermediate representation. This transformation converts high-level language constructs into a standardized, target-independent format. The lowering process maps AST nodes to specific IR instructions, ensuring that each operation corresponds to a valid machine operation. For example, the binary expression node becomes an addition instruction in the IR. This step abstracts away language-specific syntax, enabling uniform optimization and code generation across different architectures. The intermediate representation serves as a stable boundary between front-end analysis and back-end code generation. By standardizing the program structure, the compiler can apply target-independent optimizations safely. Lowering also ensures that all language features are reflected consistently across the pipeline.",
+      "plannedSeconds": 65,
+      "title": "Lowering to Intermediate Representation",
+      "visualDirection": "template:showcase-compilers | Editable diagram: A lowering pipeline showing AST node 'BinaryExpr' transforming into IR instruction 'add i32 %x, %5'. Annotate with type preservation arrows."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "LLVM IR is a typed, low-level intermediate representation organized into modules, functions, basic blocks, and instructions. This structure provides a clear hierarchy for program analysis and optimization. Modules contain functions, which are divided into basic blocks that represent straight-line code sequences. Each instruction operates on typed values, ensuring type safety throughout the program. The IR's explicit control flow through terminators and basic-block edges allows the compiler to analyze execution paths systematically. Values are defined exactly once using static single assignment form, which simplifies data flow analysis. This design eliminates ambiguity in variable usage, enabling precise optimization passes. The IR's structure makes it possible to apply target-independent transformations while preserving program semantics.",
+      "plannedSeconds": 65,
+      "title": "Intermediate Representation Structure",
+      "visualDirection": "template:showcase-compilers | Editable diagram: A module box containing a function box, which contains basic block boxes with instruction nodes. Annotate with SSA form labels and terminator arrows."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "A frontend must produce valid IR that obeys dominance, type, control-flow, and calling-convention rules. Verification catches structural violations before later optimization or code generation. This step ensures that the intermediate representation is well-formed and ready for transformation. The compiler checks that all values are defined before use, that types match across operations, and that control flow terminates correctly. If violations are detected, the compiler reports precise errors, preventing invalid code from reaching optimization passes. Verification acts as a safety net, ensuring that the IR maintains semantic integrity throughout the compilation pipeline. By enforcing these rules early, the compiler reduces the risk of incorrect optimizations and improves overall code quality. This boundary separates front-end validation from back-end transformation, allowing each stage,",
+      "plannedSeconds": 65,
+      "title": "Optimization Boundaries and Verification",
+      "visualDirection": "template:showcase-compilers | Editable diagram: A verification gate box with input IR and output 'Valid IR'. Annotate with checkmarks for dominance, type, control-flow, and calling-convention rules."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "Code generation translates the verified intermediate representation into target-specific machine code. This process maps IR instructions to assembly or binary instructions, handling register allocation, instruction selection, and scheduling. The compiler ensures that the generated code respects the target architecture's constraints while preserving the program's semantics. Optimization boundaries define where target-independent transformations end and target-specific code generation begins. This separation allows the compiler to apply universal optimizations before committing to a specific architecture. The generated code is then linked and executed, completing the compilation pipeline. By maintaining a clear division between optimization and code generation, the compiler ensures that transformations are both safe and efficient. This stage bridges the gap between abstract program logic,",
+      "plannedSeconds": 65,
+      "title": "Code Generation and Target Independence",
+      "visualDirection": "template:showcase-compilers | Editable diagram: A code generation pipeline showing IR instructions transforming into assembly instructions. Annotate with register allocation and instruction scheduling steps."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Diagnostics provide precise error messages that guide developers in fixing compilation issues. The compiler analyzes the intermediate representation to identify type mismatches, undefined variables, and control flow violations. These checks occur at multiple stages, ensuring that errors are caught early and accurately. For example, if a variable is used before declaration, the compiler reports a precise location and suggests a fix. Diagnostics also include warnings for potential issues like unused variables or deprecated features. By providing actionable feedback, the compiler improves developer productivity and reduces debugging time. Effective diagnostics are essential for maintaining code quality and ensuring that programs compile correctly. This stage completes the front-end pipeline by ensuring that all errors are identified and reported before code generation.",
+      "plannedSeconds": 65,
+      "title": "Diagnostics and Error Reporting",
+      "visualDirection": "template:showcase-compilers | Editable diagram: A diagnostics panel showing error messages with line numbers, variable names, and suggested fixes. Annotate with warning/error severity levels."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Clear, direct, and conversational.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "To trace one expression through the front-end pipeline, we follow 'x + 5' from raw text to intermediate representation. The lexer groups characters into tokens: identifier 'x', operator '+', and number '5'. The parser applies grammar rules to construct an abstract syntax tree with a binary expression node. Semantic checks verify that 'x' is declared and typed correctly. The compiler then lowers the AST node into LLVM intermediate representation, producing an addition instruction. Verification ensures the IR obeys dominance and type rules. Finally, code generation maps the instruction to target-specific assembly. This trace demonstrates how each stage transforms the expression while preserving semantics. By understanding this pipeline, developers can debug compilation issues and optimize code effectively. The tutorial emphasizes that each representation has a specific contract and that,",
+      "plannedSeconds": 66,
+      "title": "Tracing One Expression and Pipeline Integration",
+      "visualDirection": "template:showcase-compilers | Editable diagram: A full pipeline trace showing 'x + 5' flowing through lexer, parser, semantic checks, lowering, verification, and code generation. Annotate with each stage's output."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "llvm-frontend"
+      ],
+      "text": "A lexer groups input characters into tokens.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "llvm-frontend"
+      ],
+      "text": "A parser applies language grammar and operator precedence to construct an abstract syntax tree whose nodes represent expressions, function prototypes, and definitions.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "llvm-frontend"
+      ],
+      "text": "A parser applies language grammar and operator precedence to construct an abstract syntax tree whose nodes represent expressions, function prototypes, and definitions.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "llvm-frontend"
+      ],
+      "text": "A parser applies language grammar and operator precedence to construct an abstract syntax tree whose nodes represent expressions, function prototypes, and definitions.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "llvm-frontend"
+      ],
+      "text": "Code generation lowers validated AST nodes into LLVM intermediate representation.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "llvm-langref"
+      ],
+      "text": "LLVM IR is a typed, low-level intermediate representation organized into modules, functions, basic blocks, and instructions.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "llvm-langref"
+      ],
+      "text": "A frontend must produce valid IR that obeys dominance, type, control-flow, and calling-convention rules.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "llvm-langref"
+      ],
+      "text": "Verification catches structural violations before later optimization or code generation.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "llvm-langref"
+      ],
+      "text": "Verification catches structural violations before later optimization or code generation.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "llvm-frontend"
+      ],
+      "text": "The tutorial emphasizes that each representation has a specific contract and that language features must be reflected consistently across lexing, parsing, AST design, and code generation.",
+      "verified": true
+    }
+  ],
+  "id": "compiler-front-end-foundations-from-source-to-intermediate-repre",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "LLVM Project",
+      "excerpt": "LLVM's Kaleidoscope tutorial builds a language frontend incrementally. A lexer groups input characters into tokens. A parser applies language grammar and operator precedence to construct an abstract syntax tree whose nodes represent expressions, function prototypes, and definitions. Code generation lowers validated AST nodes into LLVM intermediate representation. Later stages add optimization, just-in-time execution, control flow, mutable variables, object-file generation, and debug information. The tutorial emphasizes that each representation has a specific contract and that language features must be reflected consistently across lexing, parsing, AST design, and code generation.",
+      "id": "llvm-frontend",
+      "sha256": "191d84717d08fd1c5a33e4c14ff9cc46eb50ebb1837b0c071aea5ab0ee163ef7",
+      "title": "My First Language Frontend with LLVM",
+      "type": "note",
+      "uri": "https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/",
+      "verified": true
+    },
+    {
+      "author": "LLVM Project",
+      "excerpt": "LLVM IR is a typed, low-level intermediate representation organized into modules, functions, basic blocks, and instructions. Control flow is explicit through terminators and basic-block edges. Values have types, instructions define and use values, and static single assignment form gives each register-like value one definition. A frontend must produce valid IR that obeys dominance, type, control-flow, and calling-convention rules. Verification catches structural violations before later optimization or code generation. IR is neither source syntax nor final machine code; it is a stable transformation boundary that makes analyses and target-independent optimizations possible.",
+      "id": "llvm-langref",
+      "sha256": "6dd8be3c45e9f67d454dde13bcbd4cb24802e8f25f2c5f5d0f070082bde46521",
+      "title": "LLVM Language Reference Manual",
+      "type": "note",
+      "uri": "https://llvm.org/docs/LangRef.html",
+      "verified": true
+    }
+  ],
+  "title": "Compiler Front-End Foundations: From Source to Intermediate Representation"
+}

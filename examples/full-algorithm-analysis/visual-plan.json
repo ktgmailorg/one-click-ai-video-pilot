@@ -1,0 +1,426 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "Algorithm analysis begins by separating three layers.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "The problem states the required relationship between inputs and outputs.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "An algorithm is a language-independent procedure for producing the output.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-004",
+          "phrase": "An implementation expresses that procedure in a programming language and on a machine.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-005",
+          "phrase": "Two programs may implement the same algorithm, and two algorithms may solve the same problem with very different costs.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-006",
+          "phrase": "State assumptions about input size, allowed operations, and required correctness before comparing performance.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-007",
+          "phrase": "Otherwise a faster-looking program may be solving an easier problem or relying on an operation whose cost has been ignored.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-008",
+          "phrase": "Analysis makes comparisons meaningful by fixing the question first.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "Performance cannot rescue an incorrect result.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "A correctness argument begins with preconditions describing allowed inputs and a postcondition describing the required output.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "For iterative algorithms, a loop invariant connects the work already completed to the work that remains.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-004",
+          "phrase": "Show that the invariant is true initially, preserved by each iteration, and strong enough to imply the postcondition at termination.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-005",
+          "phrase": "For recursive algorithms, prove the base case and show that correct solutions to smaller subproblems produce a correct larger solution.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-006",
+          "phrase": "Test examples help find counterexamples, but a proof explains why every allowed case works.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-007",
+          "phrase": "Correctness and performance are separate claims, and both need evidence.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "To analyze cost, define n.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "It may be the number of array elements, graph vertices and edges, digits in an integer, or dimensions of a matrix.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "Then define which operations count as constant time in the chosen model.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-004",
+          "phrase": "Array access and machine-word arithmetic may be constant under a random-access model, but arithmetic on integers with thousands of digits is not.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-005",
+          "phrase": "Hash-table lookup is commonly expected constant time under assumptions, not guaranteed constant time for every input.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-006",
+          "phrase": "State these choices.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-007",
+          "phrase": "An asymptotic result without an input measure or model is incomplete.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-008",
+          "phrase": "The model is an abstraction, but a useful abstraction exposes dominant structure while remaining connected to implementation reality.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "Asymptotic notation describes growth beyond a sufficiently large input.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "Big O is an upper bound: after some threshold, the cost is no more than a constant multiple of the comparison function.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "Omega is a lower bound.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-004",
+          "phrase": "Theta states both and therefore gives a tight growth class.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-005",
+          "phrase": "Big O is not automatically worst case; worst, average, and best case describe which inputs are considered, while O describes a bound.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-006",
+          "phrase": "A function in Theta of n is also in O of n squared, but the looser statement hides information.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-007",
+          "phrase": "Use the tightest justified class and state which case is being analyzed.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-008",
+          "phrase": "Constants and lower-order terms disappear asymptotically, not because they never matter, but because growth eventually dominates.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "Constant, logarithmic, linear, n log n, quadratic, polynomial, and exponential growth describe very different scaling.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "Doubling n barely changes a logarithmic cost, doubles a linear cost, roughly doubles plus an additional factor for n log n, quadruples a quadratic cost, and can multiply an exponential cost enormously.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "This ordering guides design choices before low-level optimization.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-004",
+          "phrase": "A carefully optimized quadratic algorithm can beat a linear one on tiny inputs, but as n grows the growth-rate advantage eventually dominates.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-005",
+          "phrase": "Use realistic input ranges and memory constraints too.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-006",
+          "phrase": "Asymptotics predict scaling; they do not replace measurement or permit ignoring large constants when the deployment range is known.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-06",
+      "shots": [
+        {
+          "id": "beat-06-shot-001",
+          "phrase": "For a loop, count how many times the body runs and the cost of each run.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-002",
+          "phrase": "A loop from zero to n minus one with constant body work is linear.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-003",
+          "phrase": "Two independent loops in sequence add, so linear plus linear remains linear.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-004",
+          "phrase": "Perfectly nested loops of n iterations multiply to n squared.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-005",
+          "phrase": "But bounds may depend on the outer index, producing a sum such as one plus two through n, still Theta n squared.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-006",
+          "phrase": "A loop that repeatedly halves the remaining size is logarithmic.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-007",
+          "phrase": "Read the update and bounds rather than counting indentation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-008",
+          "phrase": "If the body calls another algorithm, include that cost.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-07",
+      "shots": [
+        {
+          "id": "beat-07-shot-001",
+          "phrase": "A recursive algorithm's cost can be modeled with a recurrence.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-002",
+          "phrase": "Merge sort divides an input into two halves, recursively sorts each half, and performs linear merging, giving T of n equals two T of n over two plus Theta n.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-003",
+          "phrase": "A recursion tree shows logarithmically many levels with linear total work per level, producing Theta n log n.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-004",
+          "phrase": "Other recurrences behave differently depending on the number and size of subproblems and the combination cost.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-005",
+          "phrase": "State a base case and avoid applying a memorized theorem without checking its conditions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-006",
+          "phrase": "Recurrences are not only algebra; they mirror the structure of the algorithm and reveal where the work accumulates.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-08",
+      "shots": [
+        {
+          "id": "beat-08-shot-001",
+          "phrase": "An algorithm is often a sequence of data-structure operations.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-002",
+          "phrase": "Searching an unsorted array is linear, while a balanced search tree can support logarithmic lookup and ordered traversal.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-003",
+          "phrase": "A hash table can provide expected constant-time lookup under assumptions but does not preserve sorted order.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-004",
+          "phrase": "A heap makes repeated minimum extraction efficient without supporting every search efficiently.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-005",
+          "phrase": "The right structure follows the operations the problem performs most often, the guarantees it requires, and the memory it can afford.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-006",
+          "phrase": "Include construction cost, not just query cost.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-007",
+          "phrase": "A structure that accelerates one operation may slow updates or use more space.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-008",
+          "phrase": "Time-space tradeoffs are algorithmic choices, not afterthoughts.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-09",
+      "shots": [
+        {
+          "id": "beat-09-shot-001",
+          "phrase": "Benchmarks reveal constants, cache behavior, interpreter overhead, input distributions, and implementation defects that an abstract model omits.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-002",
+          "phrase": "Measure representative inputs, vary n systematically, repeat trials, and record the environment.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-003",
+          "phrase": "Avoid timing unrelated setup unless it is part of the operation being evaluated.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-004",
+          "phrase": "Plot time against candidate growth functions and investigate discrepancies.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-005",
+          "phrase": "A benchmark on five sizes cannot prove asymptotic complexity, and an asymptotic proof cannot predict an exact runtime on one laptop.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-006",
+          "phrase": "Use both forms of evidence.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-007",
+          "phrase": "Analysis explains expected scaling under a model; measurement checks how a particular implementation and workload behave in reality.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-10",
+      "shots": [
+        {
+          "id": "beat-10-shot-001",
+          "phrase": "A complete analysis answers eight questions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-002",
+          "phrase": "What problem and input domain are being solved?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-003",
+          "phrase": "Why is the algorithm correct?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-004",
+          "phrase": "Which model assigns costs to operations?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-005",
+          "phrase": "Are we discussing worst, average, expected, amortized, or best case?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-006",
+          "phrase": "What tight time and space bounds follow?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-007",
+          "phrase": "What do measurements show over the intended range?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-008",
+          "phrase": "This checklist prevents Big O from becoming a decorative label.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "algorithm-analysis-correctness-growth-and-tradeoffs",
+  "schemaVersion": 1
+}

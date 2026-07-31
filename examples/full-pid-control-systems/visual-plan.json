@@ -1,0 +1,451 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "A controller is useful when a system must reach and maintain a target despite disturbances and uncertainty.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "Imagine a motor commanded to run at one thousand revolutions per minute.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "An open-loop command may work under one load and miss the target under another.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-004",
+          "phrase": "Feedback changes the structure of the problem.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-005",
+          "phrase": "A sensor measures actual speed, the controller compares it with the desired speed, and the difference becomes an error signal.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-006",
+          "phrase": "The controller uses that error to change the motor input.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-007",
+          "phrase": "The new speed is measured again, so correction is continuous rather than a one-time guess.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-008",
+          "phrase": "This lesson develops the proportional, integral, and derivative terms, then connects their behavior to tuning, noise, saturation, and a practical design workflow.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "Start by naming every signal.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "The reference r of t is the desired behavior.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "The measured output y of t is what the sensor reports.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-004",
+          "phrase": "The controller converts error into a command u of t.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-005",
+          "phrase": "An actuator applies that command to the plant, which is the physical or simulated system being controlled.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-006",
+          "phrase": "Disturbances can enter the plant, while sensor noise can enter the measurement path.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-007",
+          "phrase": "It changes the plant input, observes the resulting output, and thereby influences future error.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-008",
+          "phrase": "Sign conventions also matter.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "The proportional term responds to the error that exists right now.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "Its contribution is K p times e of t.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "If the error doubles, the proportional correction doubles.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-004",
+          "phrase": "Increasing K p usually makes the response more forceful and can reduce rise time, but excessive gain can produce overshoot, oscillation, or instability.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-005",
+          "phrase": "Proportional action alone may also leave a steady offset.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-006",
+          "phrase": "To hold a load against friction, for example, the actuator may require a nonzero command.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-007",
+          "phrase": "If command is proportional to error, a persistent error may be needed to produce that command.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-008",
+          "phrase": "This is not a defect in the formula; it is a consequence of the loop and plant.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "The integral term responds to the history of error.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "Its state grows while error has one sign and shrinks when the sign reverses.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "A small error that persists can therefore produce a large enough correction to eliminate the offset left by proportional control.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-004",
+          "phrase": "This makes integral action powerful, but it also introduces memory.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-005",
+          "phrase": "If the actuator saturates at its maximum while the error remains large, the integral state can continue accumulating even though the plant cannot respond further.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-006",
+          "phrase": "When the system finally approaches the target, that stored integral action may drive it far past the reference.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-007",
+          "phrase": "This is called integral windup.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-008",
+          "phrase": "Practical controllers limit, pause, or back-calculate the integral state during saturation.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "The derivative term reacts to how quickly the error is changing.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "If the output is racing toward the target, the error may still be positive but decreasing rapidly.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "A derivative contribution can oppose that motion before the target is crossed, adding damping and reducing overshoot.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-004",
+          "phrase": "The difficulty is that differentiation amplifies rapid measurement changes, including sensor noise.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-005",
+          "phrase": "Real implementations therefore use a filtered derivative rather than an ideal mathematical derivative.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-006",
+          "phrase": "Many controllers also differentiate the measurement instead of the error, which avoids a large derivative kick when the reference changes suddenly.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-007",
+          "phrase": "Derivative action is not mandatory.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-008",
+          "phrase": "A well-tuned PI controller is often sufficient, especially when sensors are noisy or the plant already has adequate damping.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-06",
+      "shots": [
+        {
+          "id": "beat-06-shot-001",
+          "phrase": "A PID controller adds the three contributions into one command.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-002",
+          "phrase": "Proportional action handles present error, integral action handles accumulated error, and derivative action responds to trend.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-003",
+          "phrase": "These descriptions are useful, but the terms interact through the same plant.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-004",
+          "phrase": "Increasing K p changes the response that the integral and derivative terms observe.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-005",
+          "phrase": "Increasing K i may remove offset while reducing stability margin.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-006",
+          "phrase": "Increasing K d may add damping while increasing noise sensitivity.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-007",
+          "phrase": "The final command is also bounded by actuator voltage, force, valve opening, or another physical limit.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-008",
+          "phrase": "A controller equation without limits, sample time, sensor characteristics, and plant dynamics is incomplete.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-07",
+      "shots": [
+        {
+          "id": "beat-07-shot-001",
+          "phrase": "A step response turns vague words like fast or stable into measurable criteria.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-002",
+          "phrase": "Rise time describes how quickly output moves toward the new target.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-003",
+          "phrase": "Peak overshoot measures how far it exceeds the target.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-004",
+          "phrase": "Steady-state error is the remaining difference after transients decay.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-005",
+          "phrase": "These measures can conflict.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-006",
+          "phrase": "A gain change that shortens rise time may increase overshoot.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-007",
+          "phrase": "Stability is the first requirement: a fast response that grows without bound is not useful.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-008",
+          "phrase": "Before tuning, define which measures matter for the application and what constraints cannot be violated.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-08",
+      "shots": [
+        {
+          "id": "beat-08-shot-001",
+          "phrase": "A disciplined tuning process begins with safety and requirements.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-002",
+          "phrase": "Confirm sensor polarity, actuator limits, and a safe test range.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-003",
+          "phrase": "Start with integral and derivative action disabled.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-004",
+          "phrase": "Increase proportional gain until the system responds clearly without unacceptable oscillation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-005",
+          "phrase": "Add integral action gradually to remove persistent error, while watching overshoot and windup.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-006",
+          "phrase": "Add derivative action only when extra damping is needed and the measurement is clean enough to support it.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-007",
+          "phrase": "Then test reference changes, disturbances, load variation, saturation, and noise.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-008",
+          "phrase": "This sequence is not a universal proof of optimality, but it makes cause and effect observable.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-09",
+      "shots": [
+        {
+          "id": "beat-09-shot-001",
+          "phrase": "Most PID controllers run in software, so the continuous equation becomes a sampled algorithm.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-002",
+          "phrase": "The sample period must be short enough to observe relevant plant dynamics but not so short that noise dominates.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-003",
+          "phrase": "The integral becomes a running numerical sum.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-004",
+          "phrase": "The derivative becomes a filtered difference between samples.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-005",
+          "phrase": "Output clamping enforces actuator limits, and anti-windup keeps the integral state consistent with those limits.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-006",
+          "phrase": "Systems that switch between manual and automatic control also need bumpless transfer so the stored controller state does not create a sudden command jump.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-007",
+          "phrase": "Record the sample time and exact algorithm with the gains; K p, K i, and K d have meaning only within a defined implementation and unit convention.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-10",
+      "shots": [
+        {
+          "id": "beat-10-shot-001",
+          "phrase": "A reliable PID analysis answers six questions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-002",
+          "phrase": "What are the reference, measured output, error, command, plant, and disturbances?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-003",
+          "phrase": "What behavior does proportional, integral, and derivative action contribute in this loop?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-004",
+          "phrase": "Where can the actuator or sensor saturate?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-005",
+          "phrase": "How are sample time, filtering, and anti-windup implemented?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-006",
+          "phrase": "And has the design been tested across the real operating range?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-007",
+          "phrase": "The goal is a stable, understandable controller that meets requirements with appropriate complexity.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-008",
+          "phrase": "Sometimes that is P, often PI, and sometimes full PID.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "pid-control-systems-from-feedback-error-to-practical-tuning",
+  "schemaVersion": 1
+}

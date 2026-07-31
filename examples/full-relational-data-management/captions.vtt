@@ -2,591 +2,547 @@ WEBVTT
 
 1
 00:00:00.050 --> 00:00:03.380
-NARRATOR: Data management begins with a model,
-not a query.
+Data management begins with a model, not a
+query.
 
 2
 00:00:03.380 --> 00:00:06.568
-NARRATOR: A relation is commonly presented as
-a table.
+A relation is commonly presented as a table.
 
 3
-00:00:06.568 --> 00:00:12.731
-NARRATOR: Columns represent attributes with
-defined domains, and rows represent tuples
+00:00:06.568 --> 00:00:13.245
+Columns represent attributes with defined
+domains, and rows represent tuples describing
 
 4
-00:00:12.731 --> 00:00:13.852
-describing instances.
+00:00:13.245 --> 00:00:13.852
+instances.
 
 5
-00:00:13.852 --> 00:00:19.417
-NARRATOR: A students table might contain a
-student identifier and name; an enrollments
+00:00:13.852 --> 00:00:20.118
+A students table might contain a student
+identifier and name; an enrollments table can
 
 6
-00:00:19.417 --> 00:00:23.698
-table can represent the relationship between
-students and course sections.
+00:00:20.118 --> 00:00:23.698
+represent the relationship between students
+and course sections.
 
 7
 00:00:23.698 --> 00:00:29.132
-NARRATOR: Every column needs one meaning, one
-unit, and an appropriate type.
+Every column needs one meaning, one unit, and
+an appropriate type.
 
 8
 00:00:29.132 --> 00:00:34.515
-NARRATOR: Avoid storing several values in one
-cell or repeating groups of columns.
+Avoid storing several values in one cell or
+repeating groups of columns.
 
 9
 00:00:34.515 --> 00:00:39.056
-NARRATOR: A schema is a contract about the
-shape and interpretation of stored data.
+A schema is a contract about the shape and
+interpretation of stored data.
 
 10
-00:00:39.056 --> 00:00:44.172
-NARRATOR: If the meaning is ambiguous,
-technically valid SQL can still produce
+00:00:39.056 --> 00:00:45.025
+If the meaning is ambiguous, technically valid
+SQL can still produce meaningless results.
 
 11
-00:00:44.172 --> 00:00:45.025
-meaningless results.
+00:00:45.170 --> 00:00:50.872
+A key is an attribute or minimal set of
+attributes that uniquely identifies a row.
 
 12
-00:00:45.170 --> 00:00:50.872
-NARRATOR: A key is an attribute or minimal set
-of attributes that uniquely identifies a row.
+00:00:50.872 --> 00:00:56.561
+A table may have several candidate keys; one
+is selected as the primary key.
 
 13
-00:00:50.872 --> 00:00:56.561
-NARRATOR: A table may have several candidate
-keys; one is selected as the primary key.
+00:00:56.561 --> 00:01:03.476
+Stable generated identifiers are often useful,
+but a generated key does not remove the need
 
 14
-00:00:56.561 --> 00:01:02.282
-NARRATOR: Stable generated identifiers are
-often useful, but a generated key does not
+00:01:03.476 --> 00:01:06.242
+to enforce real-world uniqueness when
+required.
 
 15
-00:01:02.282 --> 00:01:06.242
-remove the need to enforce real-world
-uniqueness when required.
+00:01:06.242 --> 00:01:12.891
+A foreign key stores a value that must match a
+referenced key, representing a declared
 
 16
-00:01:06.242 --> 00:01:12.500
-NARRATOR: A foreign key stores a value that
-must match a referenced key, representing a
+00:01:12.891 --> 00:01:13.334
+relationship.
 
 17
-00:01:12.500 --> 00:01:13.334
-declared relationship.
+00:01:13.334 --> 00:01:17.173
+An enrollment can reference one student and
+one section.
 
 18
-00:01:13.334 --> 00:01:17.173
-NARRATOR: An enrollment can reference one
-student and one section.
+00:01:17.173 --> 00:01:21.731
+Foreign-key constraints prevent orphaned
+references, but designers must choose what
 
 19
-00:01:17.173 --> 00:01:21.504
-NARRATOR: Foreign-key constraints prevent
-orphaned references, but designers must choose
+00:01:21.731 --> 00:01:25.834
+should happen when referenced data changes or
+is deleted.
 
 20
-00:01:21.504 --> 00:01:25.834
-what should happen when referenced data
-changes or is deleted.
+00:01:25.834 --> 00:01:32.467
+Keys give relationships executable structure
+rather than leaving them as comments or naming
 
 21
-00:01:25.834 --> 00:01:31.548
-NARRATOR: Keys give relationships executable
-structure rather than leaving them as comments
+00:01:32.467 --> 00:01:32.977
+conventions.
 
 22
-00:01:31.548 --> 00:01:32.977
-or naming conventions.
+00:01:33.098 --> 00:01:36.759
+Types define which values a column can
+represent.
 
 23
-00:01:33.098 --> 00:01:36.759
-NARRATOR: Types define which values a column
-can represent.
+00:01:36.759 --> 00:01:41.479
+Constraints narrow those values to the valid
+states of the application.
 
 24
-00:01:36.759 --> 00:01:41.479
-NARRATOR: Constraints narrow those values to
-the valid states of the application.
+00:01:41.479 --> 00:01:43.634
+Not null requires a value.
 
 25
-00:01:41.479 --> 00:01:43.634
-NARRATOR: Not null requires a value.
+00:01:43.634 --> 00:01:47.716
+Check constraints express conditions such as a
+nonnegative quantity.
 
 26
-00:01:43.634 --> 00:01:47.716
-NARRATOR: Check constraints express conditions
-such as a nonnegative quantity.
+00:01:47.716 --> 00:01:50.484
+Unique constraints prevent duplicates.
 
 27
-00:01:47.716 --> 00:01:50.484
-NARRATOR: Unique constraints prevent
-duplicates.
+00:01:50.484 --> 00:01:54.808
+Primary and foreign keys enforce identity and
+references.
 
 28
-00:01:50.484 --> 00:01:54.808
-NARRATOR: Primary and foreign keys enforce
-identity and references.
+00:01:54.808 --> 00:02:00.178
+Put durable invariants in the database when
+every application must obey them.
 
 29
-00:01:54.808 --> 00:01:59.765
-NARRATOR: Put durable invariants in the
-database when every application must obey
+00:02:00.178 --> 00:02:06.092
+Validation in a user interface improves
+feedback, but it can be bypassed by another
 
 30
-00:01:59.765 --> 00:02:00.178
-them.
+00:02:06.092 --> 00:02:07.359
+client or import.
 
 31
-00:02:00.178 --> 00:02:05.763
-NARRATOR: Validation in a user interface
-improves feedback, but it can be bypassed by
+00:02:07.359 --> 00:02:13.626
+Constraints also need careful scope: a rule
+involving current time or external state may
 
 32
-00:02:05.763 --> 00:02:07.359
-another client or import.
+00:02:13.626 --> 00:02:16.759
+not behave like a stable row invariant.
 
 33
-00:02:07.359 --> 00:02:12.914
-NARRATOR: Constraints also need careful scope:
-a rule involving current time or external
+00:02:16.759 --> 00:02:22.027
+Good constraints make invalid data difficult
+to store and failures explicit.
 
 34
-00:02:12.914 --> 00:02:16.759
-state may not behave like a stable row
-invariant.
+00:02:22.154 --> 00:02:28.116
+A basic select statement identifies source
+tables, filters rows with a where condition,
 
 35
-00:02:16.759 --> 00:02:22.027
-NARRATOR: Good constraints make invalid data
-difficult to store and failures explicit.
+00:02:28.116 --> 00:02:31.785
+and projects the columns or expressions to
+return.
 
 36
-00:02:22.154 --> 00:02:27.845
-NARRATOR: A basic select statement identifies
-source tables, filters rows with a where
+00:02:31.785 --> 00:02:35.126
+The result is itself a table-like relation.
 
 37
-00:02:27.845 --> 00:02:31.785
-condition, and projects the columns or
-expressions to return.
+00:02:35.126 --> 00:02:41.009
+SQL describes the desired result more than a
+step-by-step loop, allowing the database to
 
 38
-00:02:31.785 --> 00:02:35.126
-NARRATOR: The result is itself a table-like
-relation.
+00:02:41.009 --> 00:02:42.690
+choose an execution plan.
 
 39
-00:02:35.126 --> 00:02:40.301
-NARRATOR: SQL describes the desired result
-more than a step-by-step loop, allowing the
+00:02:42.690 --> 00:02:48.360
+Be precise about null: it represents missing
+or unknown information and does not behave
 
 40
-00:02:40.301 --> 00:02:42.690
-database to choose an execution plan.
+00:02:48.360 --> 00:02:50.790
+like an ordinary value in comparisons.
 
 41
-00:02:42.690 --> 00:02:48.090
-NARRATOR: Be precise about null: it represents
-missing or unknown information and does not
+00:02:50.790 --> 00:02:53.838
+Use IS NULL rather than equals null.
 
 42
-00:02:48.090 --> 00:02:50.790
-behave like an ordinary value in comparisons.
+00:02:53.838 --> 00:02:58.073
+Ordering is not guaranteed unless an ORDER BY
+clause requests it.
 
 43
-00:02:50.790 --> 00:02:53.838
-NARRATOR: Use IS NULL rather than equals null.
+00:02:58.073 --> 00:03:05.097
+Select only needed columns, use meaningful
+aliases, and verify the result on a tiny
 
 44
-00:02:53.838 --> 00:02:58.073
-NARRATOR: Ordering is not guaranteed unless an
-ORDER BY clause requests it.
+00:03:05.097 --> 00:03:08.609
+hand-checkable dataset before trusting a large
+output.
 
 45
-00:02:58.073 --> 00:03:04.778
-NARRATOR: Select only needed columns, use
-meaningful aliases, and verify the result on a
+00:03:08.738 --> 00:03:12.680
+Joins reconstruct relationships stored across
+tables.
 
 46
-00:03:04.778 --> 00:03:08.609
-tiny hand-checkable dataset before trusting a
-large output.
+00:03:12.680 --> 00:03:17.246
+An inner join keeps combinations that satisfy
+the join condition.
 
 47
-00:03:08.738 --> 00:03:12.680
-NARRATOR: Joins reconstruct relationships
-stored across tables.
+00:03:17.246 --> 00:03:23.273
+A left outer join also keeps unmatched rows
+from the left side, filling missing right-side
 
 48
-00:03:12.680 --> 00:03:17.246
-NARRATOR: An inner join keeps combinations
-that satisfy the join condition.
+00:03:23.273 --> 00:03:24.478
+values with nulls.
 
 49
-00:03:17.246 --> 00:03:22.575
-NARRATOR: A left outer join also keeps
-unmatched rows from the left side, filling
+00:03:24.478 --> 00:03:31.814
+Always identify the intended cardinality: one
+to one, one to many, or many to many through
 
 50
-00:03:22.575 --> 00:03:24.478
-missing right-side values with nulls.
+00:03:31.814 --> 00:03:33.190
+an associative table.
 
 51
-00:03:24.478 --> 00:03:30.576
-NARRATOR: Always identify the intended
-cardinality: one to one, one to many, or many
+00:03:33.190 --> 00:03:39.057
+A missing predicate creates a Cartesian
+product, while an incomplete predicate can
 
 52
-00:03:30.576 --> 00:03:33.190
-to many through an associative table.
+00:03:39.057 --> 00:03:40.524
+silently duplicate results.
 
 53
-00:03:33.190 --> 00:03:38.232
-NARRATOR: A missing predicate creates a
-Cartesian product, while an incomplete
+00:03:40.524 --> 00:03:45.830
+Qualify ambiguous column names and inspect row
+counts before and after the join.
 
 54
-00:03:38.232 --> 00:03:40.524
-predicate can silently duplicate results.
+00:03:45.830 --> 00:03:48.254
+Ask what one result row represents.
 
 55
-00:03:40.524 --> 00:03:45.830
-NARRATOR: Qualify ambiguous column names and
-inspect row counts before and after the join.
+00:03:48.254 --> 00:03:54.376
+If that sentence is unclear, aggregation and
+reporting built on the join will also be
 
 56
-00:03:45.830 --> 00:03:48.254
-NARRATOR: Ask what one result row represents.
+00:03:54.376 --> 00:03:54.784
+unclear.
 
 57
-00:03:48.254 --> 00:03:53.248
-NARRATOR: If that sentence is unclear,
-aggregation and reporting built on the join
+00:03:54.914 --> 00:04:00.004
+Count, sum, average, minimum, and maximum
+summarize rows.
 
 58
-00:03:53.248 --> 00:03:54.784
-will also be unclear.
+00:04:00.004 --> 00:04:03.358
+Group by determines which rows share one
+output group.
 
 59
-00:03:54.914 --> 00:04:00.004
-NARRATOR: Count, sum, average, minimum, and
-maximum summarize rows.
+00:04:03.358 --> 00:04:08.269
+If a query groups by course, each result row
+represents one course.
 
 60
-00:04:00.004 --> 00:04:03.358
-NARRATOR: Group by determines which rows share
-one output group.
+00:04:08.269 --> 00:04:13.409
+Columns in the select list must either define
+that grain or be aggregated.
 
 61
-00:04:03.358 --> 00:04:08.269
-NARRATOR: If a query groups by course, each
-result row represents one course.
+00:04:13.409 --> 00:04:19.927
+Where filters individual rows before grouping;
+having filters groups after aggregation.
 
 62
-00:04:08.269 --> 00:04:13.409
-NARRATOR: Columns in the select list must
-either define that grain or be aggregated.
+00:04:19.927 --> 00:04:24.341
+Null handling matters because many aggregates
+ignore null values.
 
 63
-00:04:13.409 --> 00:04:19.384
-NARRATOR: Where filters individual rows before
-grouping; having filters groups after
+00:04:24.341 --> 00:04:30.284
+Distinct may remove duplicates, but using it
+to hide a faulty join masks the real problem.
 
 64
-00:04:19.384 --> 00:04:19.927
-aggregation.
+00:04:30.284 --> 00:04:36.990
+State the result grain in words, create a
+small example, and verify that every join and
 
 65
-00:04:19.927 --> 00:04:24.341
-NARRATOR: Null handling matters because many
-aggregates ignore null values.
+00:04:36.990 --> 00:04:39.085
+group preserves the intended meaning.
 
 66
-00:04:24.341 --> 00:04:29.934
-NARRATOR: Distinct may remove duplicates, but
-using it to hide a faulty join masks the real
+00:04:39.218 --> 00:04:45.138
+A poorly designed table may repeat the same
+course title, instructor office, or department
 
 67
-00:04:29.934 --> 00:04:30.284
-problem.
+00:04:45.138 --> 00:04:47.675
+name across hundreds of enrollment rows.
 
 68
-00:04:30.284 --> 00:04:36.285
-NARRATOR: State the result grain in words,
-create a small example, and verify that every
+00:04:47.675 --> 00:04:53.220
+Repetition creates anomalies: one update can
+leave conflicting versions, deleting the last
 
 69
-00:04:36.285 --> 00:04:39.085
-join and group preserves the intended meaning.
+00:04:53.220 --> 00:04:59.228
+enrollment can erase course information, and
+inserting a course may require a fake
 
 70
-00:04:39.218 --> 00:04:44.856
-NARRATOR: A poorly designed table may repeat
-the same course title, instructor office, or
+00:04:59.228 --> 00:04:59.690
+enrollment.
 
 71
-00:04:44.856 --> 00:04:47.675
-department name across hundreds of enrollment
-rows.
+00:04:59.690 --> 00:05:05.913
+Normalization analyzes which attributes depend
+on which keys and separates different kinds of
 
 72
-00:04:47.675 --> 00:04:52.125
-NARRATOR: Repetition creates anomalies: one
-update can leave conflicting versions,
+00:05:05.913 --> 00:05:07.828
+facts into related tables.
 
 73
-00:04:52.125 --> 00:04:57.910
-deleting the last enrollment can erase course
-information, and inserting a course may
+00:05:07.828 --> 00:05:13.449
+Decomposition should preserve the ability to
+reconstruct necessary information through
 
 74
-00:04:57.910 --> 00:04:59.690
-require a fake enrollment.
+00:05:13.449 --> 00:05:16.821
+joins and enforce dependencies where possible.
 
 75
-00:04:59.690 --> 00:05:04.663
-NARRATOR: Normalization analyzes which
-attributes depend on which keys and separates
+00:05:16.821 --> 00:05:21.157
+Normalization is not a command to maximize
+table count.
 
 76
-00:05:04.663 --> 00:05:07.828
-different kinds of facts into related tables.
+00:05:21.157 --> 00:05:26.656
+It is a reasoning tool for storing each
+durable fact in a controlled place while
 
 77
-00:05:07.828 --> 00:05:13.118
-NARRATOR: Decomposition should preserve the
-ability to reconstruct necessary information
-
-78
-00:05:13.118 --> 00:05:16.821
-through joins and enforce dependencies where
-possible.
-
-79
-00:05:16.821 --> 00:05:21.157
-NARRATOR: Normalization is not a command to
-maximize table count.
-
-80
-00:05:21.157 --> 00:05:26.729
-NARRATOR: It is a reasoning tool for storing
-each durable fact in a controlled place while
-
-81
-00:05:26.729 --> 00:05:28.122
+00:05:26.656 --> 00:05:28.122
 keeping the model usable.
 
+78
+00:05:28.250 --> 00:05:34.255
+An index is an auxiliary structure that helps
+the database locate rows without scanning
+
+79
+00:05:34.255 --> 00:05:35.113
+every row.
+
+80
+00:05:35.113 --> 00:05:41.031
+A B-tree index often supports equality and
+range conditions on its leading keys.
+
+81
+00:05:41.031 --> 00:05:44.373
+Unique indexes can also enforce uniqueness.
+
 82
-00:05:28.250 --> 00:05:33.902
-NARRATOR: An index is an auxiliary structure
-that helps the database locate rows without
+00:05:44.373 --> 00:05:46.057
+Indexes are not free.
 
 83
-00:05:33.902 --> 00:05:35.113
-scanning every row.
+00:05:46.057 --> 00:05:51.569
+Inserts, updates, and deletes must maintain
+them, they consume storage, and an index that
 
 84
-00:05:35.113 --> 00:05:40.608
-NARRATOR: A B-tree index often supports
-equality and range conditions on its leading
+00:05:51.569 --> 00:05:55.113
+does not match query predicates may not be
+used.
 
 85
-00:05:40.608 --> 00:05:41.031
-keys.
+00:05:55.113 --> 00:06:00.687
+The query planner estimates costs and chooses
+among scans and join strategies.
 
 86
-00:05:41.031 --> 00:05:44.373
-NARRATOR: Unique indexes can also enforce
-uniqueness.
+00:06:00.687 --> 00:06:06.432
+Index columns based on important workload
+patterns, then inspect actual plans and
 
 87
-00:05:44.373 --> 00:05:46.057
-NARRATOR: Indexes are not free.
+00:06:06.432 --> 00:06:06.911
+measurements.
 
 88
-00:05:46.057 --> 00:05:50.962
-NARRATOR: Inserts, updates, and deletes must
-maintain them, they consume storage, and an
+00:06:06.911 --> 00:06:12.347
+Adding an index to every column can make
+writes slower without improving the queries
 
 89
-00:05:50.962 --> 00:05:55.113
-index that does not match query predicates may
-not be used.
+00:06:12.347 --> 00:06:13.123
+that matter.
 
 90
-00:05:55.113 --> 00:06:00.687
-NARRATOR: The query planner estimates costs
-and chooses among scans and join strategies.
+00:06:13.274 --> 00:06:18.887
+Many business actions require several
+statements to succeed as one unit.
 
 91
-00:06:00.687 --> 00:06:06.022
-NARRATOR: Index columns based on important
-workload patterns, then inspect actual plans
+00:06:18.887 --> 00:06:23.058
+A transfer may subtract from one account and
+add to another.
 
 92
-00:06:06.022 --> 00:06:06.911
-and measurements.
+00:06:23.058 --> 00:06:28.998
+If the process fails between those statements,
+the database must not preserve half a
 
 93
-00:06:06.911 --> 00:06:12.027
-NARRATOR: Adding an index to every column can
-make writes slower without improving the
+00:06:28.998 --> 00:06:29.422
+transfer.
 
 94
-00:06:12.027 --> 00:06:13.123
-queries that matter.
+00:06:29.422 --> 00:06:35.290
+A transaction begins a unit of work and ends
+with commit to make changes durable or
 
 95
-00:06:13.274 --> 00:06:18.887
-NARRATOR: Many business actions require
-several statements to succeed as one unit.
+00:06:35.290 --> 00:06:36.757
+rollback to discard them.
 
 96
-00:06:18.887 --> 00:06:23.058
-NARRATOR: A transfer may subtract from one
-account and add to another.
+00:06:36.757 --> 00:06:43.121
+Concurrent transactions also need isolation
+rules so interleaving operations do not
 
 97
-00:06:23.058 --> 00:06:28.229
-NARRATOR: If the process fails between those
-statements, the database must not preserve
+00:06:43.121 --> 00:06:44.856
+produce invalid results.
 
 98
-00:06:28.229 --> 00:06:29.422
-half a transfer.
+00:06:44.856 --> 00:06:51.309
+Keep transactions as short as practical,
+handle failures explicitly, and do not assume
 
 99
-00:06:29.422 --> 00:06:35.011
-NARRATOR: A transaction begins a unit of work
-and ends with commit to make changes durable
+00:06:51.309 --> 00:06:56.272
+that application code alone can restore
+consistency after every crash.
 
 100
-00:06:35.011 --> 00:06:36.757
-or rollback to discard them.
+00:06:56.272 --> 00:07:02.394
+Transaction boundaries should match the atomic
+action users and business rules recognize.
 
 101
-00:06:36.757 --> 00:06:42.696
-NARRATOR: Concurrent transactions also need
-isolation rules so interleaving operations do
+00:07:02.522 --> 00:07:06.515
+A professional database design answers nine
+questions.
 
 102
-00:06:42.696 --> 00:06:44.856
-not produce invalid results.
+00:07:06.515 --> 00:07:08.938
+What does each table and row represent?
 
 103
-00:06:44.856 --> 00:06:50.564
-NARRATOR: Keep transactions as short as
-practical, handle failures explicitly, and do
-
-104
-00:06:50.564 --> 00:06:56.272
-not assume that application code alone can
-restore consistency after every crash.
-
-105
-00:06:56.272 --> 00:07:01.923
-NARRATOR: Transaction boundaries should match
-the atomic action users and business rules
-
-106
-00:07:01.923 --> 00:07:02.394
-recognize.
-
-107
-00:07:02.522 --> 00:07:06.515
-NARRATOR: A professional database design
-answers nine questions.
-
-108
-00:07:06.515 --> 00:07:08.938
-NARRATOR: What does each table and row
-represent?
-
-109
 00:07:08.938 --> 00:07:12.637
-NARRATOR: Which keys identify rows and connect
+Which keys identify rows and connect
 relations?
 
-110
+104
 00:07:12.637 --> 00:07:15.239
-NARRATOR: Which constraints prevent invalid
-states?
+Which constraints prevent invalid states?
+
+105
+00:07:15.239 --> 00:07:18.097
+What is the grain of each query result?
+
+106
+00:07:18.097 --> 00:07:21.744
+Do join predicates match the intended
+cardinality?
+
+107
+00:07:21.744 --> 00:07:24.589
+Are repeated facts creating anomalies?
+
+108
+00:07:24.589 --> 00:07:27.484
+Which workload justifies each index?
+
+109
+00:07:27.484 --> 00:07:29.780
+Which changes must commit atomically?
+
+110
+00:07:29.780 --> 00:07:33.364
+What do query plans and measurements show on
+realistic data?
 
 111
-00:07:15.239 --> 00:07:18.097
-NARRATOR: What is the grain of each query
-result?
+00:07:33.364 --> 00:07:36.489
+SQL syntax is only the surface.
 
 112
-00:07:18.097 --> 00:07:21.744
-NARRATOR: Do join predicates match the
-intended cardinality?
+00:07:36.489 --> 00:07:41.948
+Trustworthy data systems come from preserving
+meaning and integrity while giving
 
 113
-00:07:21.744 --> 00:07:24.589
-NARRATOR: Are repeated facts creating
-anomalies?
-
-114
-00:07:24.589 --> 00:07:27.484
-NARRATOR: Which workload justifies each index?
-
-115
-00:07:27.484 --> 00:07:29.780
-NARRATOR: Which changes must commit
-atomically?
-
-116
-00:07:29.780 --> 00:07:33.364
-NARRATOR: What do query plans and measurements
-show on realistic data?
-
-117
-00:07:33.364 --> 00:07:36.489
-NARRATOR: SQL syntax is only the surface.
-
-118
-00:07:36.489 --> 00:07:42.173
-NARRATOR: Trustworthy data systems come from
-preserving meaning and integrity while giving
-
-119
-00:07:42.173 --> 00:07:46.910
+00:07:41.948 --> 00:07:46.910
 applications efficient, testable ways to
 derive results and apply changes.
 
-120
-00:07:46.910 --> 00:07:52.366
-NARRATOR: Finish by testing the schema with a
-tiny dataset that contains a valid
+114
+00:07:46.910 --> 00:07:52.964
+Finish by testing the schema with a tiny
+dataset that contains a valid relationship, a
 
-121
-00:07:52.366 --> 00:07:57.432
-relationship, a missing reference, a
-duplicate, a null, and a transaction that must
+115
+00:07:52.964 --> 00:07:58.211
+missing reference, a duplicate, a null, and a
+transaction that must roll back.
 
-122
-00:07:57.432 --> 00:07:58.211
-roll back.
-
-123
+116
 00:07:58.211 --> 00:08:02.000
-NARRATOR: Then inspect the actual query plan
-for the most important read.
+Then inspect the actual query plan for the
+most important read.
 
-124
-00:08:02.000 --> 00:08:07.733
-NARRATOR: Those checks connect the conceptual
-model to enforceable behavior and measured
-
-125
-00:08:07.733 --> 00:08:08.211
-performance.
+117
+00:08:02.000 --> 00:08:08.211
+Those checks connect the conceptual model to
+enforceable behavior and measured performance.

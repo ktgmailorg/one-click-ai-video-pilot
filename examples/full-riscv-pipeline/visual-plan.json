@@ -1,0 +1,511 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "By the end of this lesson, you will be able to trace one RISC-V ADD instruction from its thirty-two encoded bits to the value written into a destination register.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "You will also be able to explain why a pipeline improves throughput, identify data and control hazards, and distinguish architectural correctness from implementation speed.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "Our worked instruction is add x5, x6, x7.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-004",
+          "phrase": "We will use a classic five-stage teaching pipeline: Instruction Fetch, Instruction Decode, Execute, Memory Access, and Write Back.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-005",
+          "phrase": "That pipeline is not the only possible processor design.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-006",
+          "phrase": "It is a clear model for seeing how encoded instructions become coordinated data movement and control.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "First, separate the contract from the machinery.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "The RISC-V ISA says what ADD means: read two source registers, add their values, and write the low XLEN bits into the destination register.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "It also specifies the instruction fields that identify that operation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-004",
+          "phrase": "Software depends on this promise.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-005",
+          "phrase": "Internally, one processor might execute an instruction in several simple stages, another might issue multiple instructions at once, and a small controller might reuse hardware across many cycles.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-006",
+          "phrase": "Those designs may look very different, yet a correct implementation must produce the same software-visible result.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "The processor receives bits, not assembly text.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "Our instruction word is hexadecimal zero zero seven three zero two B three.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "Reading the R-type fields from bit thirty-one down to bit zero gives funct seven, rs2, rs1, funct three, rd, and opcode.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-004",
+          "phrase": "Funct three and funct seven narrow that family to ADD.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-005",
+          "phrase": "The rs1 field is binary zero zero one one zero, which names x6.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-006",
+          "phrase": "The rd field names x5.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-007",
+          "phrase": "Decode therefore extracts both the operation and the register addresses from one fixed-width word.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "Assume the program counter contains zero x one thousand.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "Fetch presents that address to instruction memory and receives the thirty-two-bit ADD word.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "At the same time, the processor forms the sequential next address, zero x one thousand four.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-004",
+          "phrase": "That plus-four step is valid for this RV32I teaching example because we are not using compressed instructions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-005",
+          "phrase": "Fetch does not yet know whether control flow will remain sequential.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-006",
+          "phrase": "A branch or jump may later redirect the program counter.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-007",
+          "phrase": "For now, the current address, instruction bits, and predicted next address must remain aligned as the instruction moves forward.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "In Decode, the instruction fields drive two related jobs.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "First, the register file uses rs1 and rs2 as read addresses.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "If x6 contains nineteen and x7 contains twenty-three, those values appear on the two read ports.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-004",
+          "phrase": "Second, control logic interprets the opcode and function fields.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-005",
+          "phrase": "It selects an integer addition, chooses two register operands for the ALU, disables a data-memory write, and enables a later register write to x5.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-006",
+          "phrase": "Data alone is not enough.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-007",
+          "phrase": "The destination register number and every control decision needed by later stages must advance beside the operands.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-06",
+      "shots": [
+        {
+          "id": "beat-06-shot-001",
+          "phrase": "The Execute stage supplies nineteen and twenty-three to the arithmetic logic unit.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-002",
+          "phrase": "Operand-select controls choose the two register values, and the ALU control selects addition.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-003",
+          "phrase": "The result is forty-two.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-004",
+          "phrase": "In RV32I, XLEN is thirty-two, so ADD retains the low thirty-two bits of the mathematical sum.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-005",
+          "phrase": "If the signed mathematical result exceeds the signed range, ADD still produces the low-bit result; it does not raise an arithmetic-overflow exception.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-006",
+          "phrase": "The ISA defines that behavior, while the ALU and surrounding control implement it.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-007",
+          "phrase": "For this example there is no overflow, so the value forty-two and the destination number x5 advance toward the next stage.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-07",
+      "shots": [
+        {
+          "id": "beat-07-shot-001",
+          "phrase": "ADD does not need a data-memory read or write.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-002",
+          "phrase": "Even so, in this regular five-stage organization it occupies the Memory stage while its ALU result, destination register, and write-enable bit move through the EX slash MEM and MEM slash WB pipeline registers.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-003",
+          "phrase": "A load instruction would use this stage to read data, and a store would write data.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-004",
+          "phrase": "ADD simply preserves its result.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-005",
+          "phrase": "In Write Back, a result-select control chooses the ALU value rather than memory data, the write-enable signal is asserted, and x5 receives forty-two.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-006",
+          "phrase": "At that moment the instruction's promised architectural effect becomes visible in the register file.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-08",
+      "shots": [
+        {
+          "id": "beat-08-shot-001",
+          "phrase": "Why split the work into stages?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-002",
+          "phrase": "Because different instructions can use different hardware during the same cycle.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-003",
+          "phrase": "While our ADD is in Execute, a following independent instruction can be in Decode and another can be in Fetch.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-004",
+          "phrase": "During the next cycle, all three advance.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-005",
+          "phrase": "After the pipeline fills, this ideal sequence can complete roughly one instruction per cycle even though each instruction spends several cycles traveling from Fetch to Write Back.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-006",
+          "phrase": "That is a throughput improvement, not proof that one instruction has lower latency.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-007",
+          "phrase": "The clock period must accommodate the slowest stage plus pipeline-register overhead, and the ideal completion rate assumes instructions can advance without interruption.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-09",
+      "shots": [
+        {
+          "id": "beat-09-shot-001",
+          "phrase": "Now place sub x8, x5, x9 immediately after the ADD.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-002",
+          "phrase": "The subtraction needs the new x5 as an input, but ordinary register-file timing may not provide that value when the subtraction reaches Execute.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-003",
+          "phrase": "This is a read-after-write hazard: the later instruction reads a register that the earlier instruction will write.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-004",
+          "phrase": "Hazard logic compares the source registers of younger instructions with destination registers already in the pipeline.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-005",
+          "phrase": "Detecting the name match is only the first step.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-006",
+          "phrase": "The processor must also know whether the value is ready and where it currently resides.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-007",
+          "phrase": "Correctness requires the subtraction to use forty-two, not the stale value previously stored in x5.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-10",
+      "shots": [
+        {
+          "id": "beat-10-shot-001",
+          "phrase": "For an ALU-to-ALU dependency, forwarding can often avoid a full wait for Write Back.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-002",
+          "phrase": "A bypass path routes the ADD result from a later pipeline register directly to the subtraction's ALU input.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-003",
+          "phrase": "The register file may still contain the old x5, but the operand multiplexer selects the newer forwarded value.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-004",
+          "phrase": "Forwarding does not solve every dependency.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-005",
+          "phrase": "If a load produces data only after Memory Access and the next instruction needs it immediately, the value may arrive too late for the dependent Execute stage.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-006",
+          "phrase": "Hazard control then freezes selected pipeline state and inserts a bubble.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-007",
+          "phrase": "One cycle of lost throughput is preferable to an incorrect result.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-11",
+      "shots": [
+        {
+          "id": "beat-11-shot-001",
+          "phrase": "Branches create a different uncertainty.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-11-shot-002",
+          "phrase": "Fetch wants a next address every cycle, but the branch decision and target may not be known immediately.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-11-shot-003",
+          "phrase": "A simple processor can wait.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-11-shot-004",
+          "phrase": "A faster design may predict a direction and continue fetching.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-11-shot-005",
+          "phrase": "If the prediction is wrong, the processor redirects the program counter and flushes younger wrong-path instructions before they change architectural state.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-11-shot-006",
+          "phrase": "A flush is not merely erasing a diagram box.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-11-shot-007",
+          "phrase": "It disables the invalid instructions' control effects so they cannot write registers or memory.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-12",
+      "shots": [
+        {
+          "id": "beat-12-shot-001",
+          "phrase": "Performance language needs precision.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-12-shot-002",
+          "phrase": "In an idealized scalar pipeline, the steady-state cycles per instruction can approach one.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-12-shot-003",
+          "phrase": "Real execution includes pipeline filling and draining, data stalls, control redirects, cache delays, and other constraints.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-12-shot-004",
+          "phrase": "A useful first model is actual CPI equals the ideal baseline plus the average stall cost per instruction.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-12-shot-005",
+          "phrase": "This is not a universal performance equation for every processor; it is a teaching decomposition.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-12-shot-006",
+          "phrase": "Clock rate also matters.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-12-shot-007",
+          "phrase": "Deeper pipelines can shorten some stage delays, but they add registers, control complexity, and potentially larger recovery penalties.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-13",
+      "shots": [
+        {
+          "id": "beat-13-shot-001",
+          "phrase": "We began with the word zero x zero zero seven three zero two B three.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-13-shot-002",
+          "phrase": "Decode identified ADD, rs1 x6, rs2 x7, and destination x5.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-13-shot-003",
+          "phrase": "Decode read nineteen and twenty-three.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-13-shot-004",
+          "phrase": "Memory Access performed no data-memory operation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-13-shot-005",
+          "phrase": "Independent instructions could overlap, while dependencies or branches required forwarding, stalls, redirects, or flushing.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-13-shot-006",
+          "phrase": "Which values enter each stage?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-13-shot-007",
+          "phrase": "And can any younger instruction proceed without violating the ISA result?",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "full-lesson-from-a-risc-v-instruction-to-pipeline-execution",
+  "schemaVersion": 1
+}

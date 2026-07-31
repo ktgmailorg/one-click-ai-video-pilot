@@ -1,594 +1,581 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:07.424
-NARRATOR: Begin by framing Course Scope and
-Ethical Practice as a question about inputs,
+00:00:00.050 --> 00:00:01.921
+Begin by framing 1.
 
 2
-00:00:07.424 --> 00:00:09.531
-decisions, and observable results.
+00:00:01.921 --> 00:00:08.964
+Problem Decomposition and Algorithmic
+Foundations as a question about inputs,
 
 3
-00:00:09.531 --> 00:00:15.798
-NARRATOR: They should maintain high standards
-of professional competence, conduct, and
+00:00:08.964 --> 00:00:11.781
+decisions, and observable results.
 
 4
-00:00:15.798 --> 00:00:16.937
-ethical practice.
+00:00:11.781 --> 00:00:19.494
+Programming begins with precise problem
+statements, input and output examples, and
 
 5
-00:00:16.937 --> 00:00:23.132
-NARRATOR: Consider this worked case: A learner
-maps the inputs, constraints, and observable
+00:00:19.494 --> 00:00:23.000
+algorithms written independently of syntax.
 
 6
-00:00:23.132 --> 00:00:29.804
-result for Course Scope and Ethical Practice,
-then checks each step against the stated
+00:00:23.000 --> 00:00:30.705
+Consider this worked case: To sort a list of
+student grades, first define the input
 
 7
-00:00:29.804 --> 00:00:30.281
-claim.
+00:00:30.705 --> 00:00:37.382
+(unsorted list) and output (sorted list), then
+design a recursive merge algorithm before
 
 8
-00:00:30.281 --> 00:00:36.899
-NARRATOR: On screen, create an editable
-process diagram for Course Scope and Ethical
+00:00:37.382 --> 00:00:39.437
+writing any Python code.
 
 9
-00:00:36.899 --> 00:00:42.499
-Practice with labeled inputs, decisions, state
-changes, and a checked output.
+00:00:39.437 --> 00:00:46.754
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
 
 10
-00:00:42.499 --> 00:00:48.694
-NARRATOR: List the givens before choosing a
-method, because an unstated assumption can
+00:00:46.754 --> 00:00:50.656
+that the final result satisfies the stated
+condition.
 
 11
-00:00:48.694 --> 00:00:50.124
-change the conclusion.
+00:00:50.656 --> 00:00:57.408
+List the givens before choosing a method,
+because an unstated assumption can change the
 
 12
-00:00:50.124 --> 00:00:56.031
-NARRATOR: This establishes the vocabulary and
-scope needed for the remaining sections.
+00:00:57.408 --> 00:00:57.890
+conclusion.
 
 13
-00:00:56.138 --> 00:01:02.052
-NARRATOR: Now define Responsible Technical
-Communication precisely enough that another
+00:00:57.890 --> 00:01:03.843
+This establishes the vocabulary and scope
+needed for the remaining sections.
 
 14
-00:01:02.052 --> 00:01:05.009
-learner could test the definition.
+00:01:03.962 --> 00:01:05.693
+Now define 2.
 
 15
-00:01:05.009 --> 00:01:10.947
-NARRATOR: Responsible technical communication
-distinguishes claims from evidence.
+00:01:05.693 --> 00:01:12.614
+Data Structures: Trees and Graphs precisely
+enough that another learner could test the
 
 16
-00:01:10.947 --> 00:01:17.869
-NARRATOR: Consider this worked case: A learner
-maps the inputs, constraints, and observable
+00:01:12.614 --> 00:01:13.146
+definition.
 
 17
-00:01:17.869 --> 00:01:23.194
-result for Responsible Technical
-Communication, then checks each step against
+00:01:13.146 --> 00:01:21.822
+Lists represent ordered sequences, stacks use
+last-in first-out access, queues use first-in
 
 18
-00:01:23.194 --> 00:01:24.791
-the stated claim.
+00:01:21.822 --> 00:01:29.052
+first-out access, trees represent hierarchy,
+and graphs represent connected entities.
 
 19
-00:01:24.791 --> 00:01:31.104
-NARRATOR: On screen, create an editable
-process diagram for Responsible Technical
+00:01:29.052 --> 00:01:36.844
+Consider this worked case: A family tree is
+modeled as a tree where each node is a Person
 
 20
-00:01:31.104 --> 00:01:37.416
-Communication with labeled inputs, decisions,
-state changes, and a checked output.
+00:01:36.844 --> 00:01:44.202
+object, while a social network is modeled as a
+graph where nodes are User objects and edges
 
 21
-00:01:37.416 --> 00:01:43.990
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
+00:01:44.202 --> 00:01:45.068
+represent friendships.
 
 22
-00:01:43.990 --> 00:01:46.181
-evidence would distinguish them.
+00:01:45.068 --> 00:01:52.252
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
 
 23
-00:01:46.181 --> 00:01:52.712
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
+00:01:52.252 --> 00:01:56.083
+that the final result satisfies the stated
+condition.
 
 24
-00:01:52.712 --> 00:01:59.956
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+00:01:56.083 --> 00:02:02.706
+Separate the formal definition from an
+implementation detail, then identify what
 
 25
-00:01:59.956 --> 00:02:01.931
-throughout the analysis.
+00:02:02.706 --> 00:02:05.115
+evidence would distinguish them.
 
 26
-00:02:02.042 --> 00:02:08.336
-NARRATOR: With the foundation in place,
-examine how Static vs. Dynamic Data Types
+00:02:05.115 --> 00:02:11.724
+A precise definition makes later examples
+easier to evaluate and revise.
 
 27
-00:02:08.336 --> 00:02:10.757
-operates in a concrete sequence.
+00:02:11.834 --> 00:02:15.815
+With the foundation in place, examine how 3.
 
 28
-00:02:10.757 --> 00:02:18.851
-NARRATOR: Key topics include more information
-on tree and graph structures, nested data
+00:02:15.815 --> 00:02:22.424
+Objects, Classes, and Inheritance operates in
+a concrete sequence.
 
 29
-00:02:18.851 --> 00:02:23.831
-structures, objects, classes, inheritance,
-interfaces, object-oriented collection class
+00:02:22.424 --> 00:02:27.065
+Python objects have identity, a type, and a
+value.
 
 30
-00:02:23.831 --> 00:02:32.548
-libraries for abstract data types (for example
-stacks, queues, maps, and trees), and static
+00:02:27.065 --> 00:02:35.730
+Consider this worked case: Define a base class
+'Vehicle' with attributes 'speed' and 'color';
 
 31
-00:02:32.548 --> 00:02:35.038
-versus dynamic data types.
+00:02:35.730 --> 00:02:43.158
+create a subclass 'ElectricCar' that inherits
+these and adds a 'battery_level' attribute.
 
 32
-00:02:35.038 --> 00:02:41.480
-NARRATOR: Consider this worked case: A learner
-maps the inputs, constraints, and observable
+00:02:43.159 --> 00:02:50.414
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
 
 33
-00:02:41.480 --> 00:02:48.913
-result for Static vs. Dynamic Data Types, then
-checks each step against the stated claim.
+00:02:50.414 --> 00:02:54.283
+that the final result satisfies the stated
+condition.
 
 34
-00:02:48.913 --> 00:02:55.489
-NARRATOR: On screen, create an editable
-process diagram for Static vs. Dynamic Data
+00:02:54.283 --> 00:03:01.424
+Follow every arrow in order and name the state
+before and after each transition.
 
 35
-00:02:55.489 --> 00:03:01.054
-Types with labeled inputs, decisions, state
-changes, and a checked output.
+00:03:01.424 --> 00:03:07.018
+The trace converts an abstract statement into
+an inspectable sequence.
 
 36
-00:03:01.054 --> 00:03:08.335
-NARRATOR: Follow every arrow in order and name
-the state before and after each transition.
+00:03:07.130 --> 00:03:10.189
+Next, compare the choices involved in 4.
 
 37
-00:03:08.335 --> 00:03:13.835
-NARRATOR: The trace converts an abstract
-statement into an inspectable sequence.
-
-38
-00:03:13.946 --> 00:03:20.810
-NARRATOR: Next, compare the choices involved
-in Objects and Classes as Blueprints and make
-
-39
-00:03:20.810 --> 00:03:22.771
+00:03:10.189 --> 00:03:17.033
+Interfaces and Abstract Data Types and make
 the decision criteria explicit.
 
+38
+00:03:17.033 --> 00:03:25.404
+Key topics include more information on tree
+and graph structures, nested data structures,
+
+39
+00:03:25.404 --> 00:03:31.199
+objects, classes, inheritance, interfaces,
+object-oriented collection class libraries for
+
 40
-00:03:22.771 --> 00:03:28.223
-NARRATOR: This course delves further into
-problem solving by continuing the discussion
+00:03:31.199 --> 00:03:39.569
+abstract data types (for example stacks,
+queues, maps, and trees), and static versus
 
 41
-00:03:28.223 --> 00:03:34.130
-of data structure use and design, but now from
-an object- oriented perspective.
+00:03:39.569 --> 00:03:41.501
+dynamic data types.
 
 42
-00:03:34.130 --> 00:03:40.507
-NARRATOR: Consider this worked case: A learner
-maps the inputs, constraints, and observable
+00:03:41.501 --> 00:03:48.791
+Consider this worked case: Define an interface
+'QueueInterface' with methods 'enqueue' and
 
 43
-00:03:40.507 --> 00:03:47.373
-result for Objects and Classes as Blueprints,
-then checks each step against the stated
+00:03:48.791 --> 00:03:51.829
+'dequeue'; use the built-in collections.
 
 44
-00:03:47.373 --> 00:03:47.864
-claim.
+00:03:51.829 --> 00:03:57.626
+deque as the concrete implementation for a
+queue in a banking system.
 
 45
-00:03:47.864 --> 00:03:54.753
-NARRATOR: On screen, create an editable
-process diagram for Objects and Classes as
+00:03:57.626 --> 00:04:04.800
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
 
 46
-00:03:54.753 --> 00:04:00.583
-Blueprints with labeled inputs, decisions,
-state changes, and a checked output.
+00:04:04.800 --> 00:04:08.626
+that the final result satisfies the stated
+condition.
 
 47
-00:04:00.583 --> 00:04:07.133
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
+00:04:08.626 --> 00:04:15.631
+Compare alternatives against the same
+constraints so the evaluation does not move
 
 48
-00:04:07.133 --> 00:04:08.770
-move the goalposts.
+00:04:15.631 --> 00:04:16.798
+the goalposts.
 
 49
-00:04:08.770 --> 00:04:15.770
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
+00:04:16.798 --> 00:04:23.689
+Using shared criteria turns a preference into
+a defensible technical choice.
 
 50
-00:04:15.890 --> 00:04:23.803
-NARRATOR: Apply Inheritance for Code Reuse to
-a worked situation instead of treating it as
+00:04:23.810 --> 00:04:25.400
+Apply 5.
 
 51
-00:04:23.803 --> 00:04:25.386
-an isolated definition.
+00:04:25.400 --> 00:04:32.845
+Static vs. Dynamic Data Types to a worked
+situation instead of treating it as an
 
 52
-00:04:25.386 --> 00:04:31.824
-NARRATOR: Methods should be described well
-enough for readers to evaluate the work.
+00:04:32.845 --> 00:04:33.838
+isolated definition.
 
 53
-00:04:31.824 --> 00:04:38.113
-NARRATOR: Consider this worked case: A learner
-maps the inputs, constraints, and observable
+00:04:33.838 --> 00:04:39.872
+This course delves further into problem
+solving by continuing the discussion of data
 
 54
-00:04:38.113 --> 00:04:44.886
-result for Inheritance for Code Reuse, then
-checks each step against the stated claim.
+00:04:39.872 --> 00:04:44.978
+structure use and design, but now from an
+object- oriented perspective.
 
 55
-00:04:44.886 --> 00:04:51.527
-NARRATOR: On screen, create an editable
-process diagram for Inheritance for Code Reuse
+00:04:44.978 --> 00:04:52.142
+Consider this worked case: In a statically
+typed language, a variable declared as 'int'
 
 56
-00:04:51.527 --> 00:04:56.636
-with labeled inputs, decisions, state changes,
-and a checked output.
+00:04:52.142 --> 00:05:00.330
+cannot hold a string; in Python, the same
+variable can be reassigned to any object type
 
 57
-00:04:56.636 --> 00:05:03.508
-NARRATOR: Work from the concrete inputs to the
-result, checking units, types, or invariants
+00:05:00.330 --> 00:05:01.353
+without recompilation.
 
 58
-00:05:03.508 --> 00:05:04.980
-at each step.
+00:05:01.353 --> 00:05:08.558
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
 
 59
-00:05:04.980 --> 00:05:10.511
-NARRATOR: The worked case shows both how to
-apply the method and how to check it.
+00:05:08.558 --> 00:05:12.400
+that the final result satisfies the stated
+condition.
 
 60
-00:05:10.634 --> 00:05:16.566
-NARRATOR: Examine the tradeoffs in Interfaces
-for Contractual Design, including what
+00:05:12.400 --> 00:05:20.032
+Work from the concrete inputs to the result,
+checking units, types, or invariants at each
 
 61
-00:05:16.566 --> 00:05:19.802
-improves and what becomes more difficult.
+00:05:20.032 --> 00:05:20.541
+step.
 
 62
-00:05:19.802 --> 00:05:25.863
-NARRATOR: Software qualities related to object
-orientation, namely cohesion, minimal
+00:05:20.541 --> 00:05:25.431
+The worked case shows both how to apply the
+method and how to check it.
 
 63
-00:05:25.863 --> 00:05:33.743
+00:05:25.538 --> 00:05:28.691
+Examine the tradeoffs in 6.
+
+64
+00:05:28.691 --> 00:05:36.811
+Software Qualities: Cohesion and Coupling,
+including what improves and what becomes more
+
+65
+00:05:36.811 --> 00:05:37.488
+difficult.
+
+66
+00:05:37.488 --> 00:05:43.128
+Software qualities related to object
+orientation, namely cohesion, minimal
+
+67
+00:05:43.128 --> 00:05:51.274
 coupling, modifiability, and extensibility,
 are all introduced in this course, as well as
 
-64
-00:05:33.743 --> 00:05:37.380
+68
+00:05:51.274 --> 00:05:55.034
 a few elementary object-oriented design
 patterns.
 
-65
-00:05:37.380 --> 00:05:43.903
-NARRATOR: Consider this worked case: A learner
-maps the inputs, constraints, and observable
-
-66
-00:05:43.903 --> 00:05:50.425
-result for Interfaces for Contractual Design,
-then checks each step against the stated
-
-67
-00:05:50.425 --> 00:05:50.927
-claim.
-
-68
-00:05:50.927 --> 00:05:57.433
-NARRATOR: On screen, create an editable
-process diagram for Interfaces for Contractual
-
 69
-00:05:57.433 --> 00:06:03.396
-Design with labeled inputs, decisions, state
-changes, and a checked output.
+00:05:55.034 --> 00:06:01.539
+Consider this worked case: A
+'PaymentProcessor' class should only handle
 
 70
-00:06:03.396 --> 00:06:10.148
-NARRATOR: State the benefit, the cost, and the
-condition under which the tradeoff is
+00:06:01.539 --> 00:06:08.695
+payment logic (high cohesion) and should not
+directly instantiate 'EmailSender' (low
 
 71
-00:06:10.148 --> 00:06:10.630
-acceptable.
+00:06:08.695 --> 00:06:14.550
+coupling); instead, it receives an interface
+for sending notifications.
 
 72
-00:06:10.630 --> 00:06:17.693
-NARRATOR: Making the tradeoff visible prevents
-a local improvement from hiding a larger cost.
+00:06:14.550 --> 00:06:21.979
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
 
 73
-00:06:17.810 --> 00:06:24.270
-NARRATOR: Stress-test the reasoning around
-Object-Oriented Collections and ADTs with an
+00:06:21.979 --> 00:06:25.941
+that the final result satisfies the stated
+condition.
 
 74
-00:06:24.270 --> 00:06:29.556
-edge case and identify which assumption
-controls the outcome.
+00:06:25.941 --> 00:06:32.831
+State the benefit, the cost, and the condition
+under which the tradeoff is acceptable.
 
 75
-00:06:29.556 --> 00:06:34.588
-NARRATOR: Concepts of object-oriented design
-are a large part of the course.
+00:06:32.831 --> 00:06:40.222
+Making the tradeoff visible prevents a local
+improvement from hiding a larger cost.
 
 76
-00:06:34.588 --> 00:06:41.599
-NARRATOR: Consider this worked case: A learner
-maps the inputs, constraints, and observable
+00:06:40.346 --> 00:06:43.952
+Stress-test the reasoning around 7.
 
 77
-00:06:41.599 --> 00:06:48.611
-result for Object-Oriented Collections and
-ADTs, then checks each step against the stated
+00:06:43.952 --> 00:06:51.048
+Exception Handling and Control Flow with an
+edge case and identify which assumption
 
 78
-00:06:48.611 --> 00:06:49.150
-claim.
+00:06:51.048 --> 00:06:52.686
+controls the outcome.
 
 79
-00:06:49.150 --> 00:06:54.999
-NARRATOR: On screen, create an editable
-process diagram for Object-Oriented
+00:06:52.686 --> 00:06:59.869
+Exceptions interrupt normal control flow until
+a matching handler processes them or they
 
 80
-00:06:54.999 --> 00:07:02.018
-Collections and ADTs with labeled inputs,
-decisions, state changes, and a checked
+00:06:59.869 --> 00:07:00.421
+propagate.
 
 81
-00:07:02.018 --> 00:07:02.603
-output.
+00:07:00.421 --> 00:07:07.333
+Consider this worked case: When dividing by
+zero in a financial calculation, raise a
 
 82
-00:07:02.603 --> 00:07:08.618
-NARRATOR: Change one assumption at a time and
-observe which part of the reasoning no longer
+00:07:07.333 --> 00:07:14.739
+ZeroDivisionError; catch it in a try-except
+block to log the error and return a default
 
 83
-00:07:08.618 --> 00:07:08.994
-holds.
+00:07:14.739 --> 00:07:15.233
+value.
 
 84
-00:07:08.994 --> 00:07:15.187
-NARRATOR: The edge case reveals the boundary
-of the claim without discarding the useful
+00:07:15.233 --> 00:07:22.396
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
 
 85
-00:07:15.187 --> 00:07:16.072
-core idea.
+00:07:22.396 --> 00:07:26.217
+that the final result satisfies the stated
+condition.
 
 86
-00:07:16.178 --> 00:07:23.541
-NARRATOR: Use Software Qualities: Cohesion and
-Minimal Coupling to diagnose a failure by
+00:07:26.217 --> 00:07:32.983
+Change one assumption at a time and observe
+which part of the reasoning no longer holds.
 
 87
-00:07:23.541 --> 00:07:26.940
-separating symptoms, causes, and corrective
-action.
+00:07:32.983 --> 00:07:39.655
+The edge case reveals the boundary of the
+claim without discarding the useful core idea.
 
 88
-00:07:26.940 --> 00:07:33.229
-NARRATOR: Professionals should strive to
-achieve high quality in both processes and
+00:07:39.770 --> 00:07:40.891
+Use 8.
 
 89
-00:07:33.229 --> 00:07:33.753
-products.
+00:07:40.891 --> 00:07:48.884
+Input/Output Streams and GUI Basics to
+diagnose a failure by separating symptoms,
 
 90
-00:07:33.753 --> 00:07:40.547
-NARRATOR: Consider this worked case: A learner
-maps the inputs, constraints, and observable
+00:07:48.884 --> 00:07:51.548
+causes, and corrective action.
 
 91
-00:07:40.547 --> 00:07:46.819
-result for Software Qualities: Cohesion and
-Minimal Coupling, then checks each step
+00:07:51.548 --> 00:07:58.380
+Input and output streams, graphical user
+interfaces, and exception handling are
 
 92
-00:07:46.819 --> 00:07:48.909
-against the stated claim.
-
-93
-00:07:48.909 --> 00:07:55.062
-NARRATOR: On screen, create an editable
-process diagram for Software Qualities:
-
-94
-00:07:55.062 --> 00:08:01.774
-Cohesion and Minimal Coupling with labeled
-inputs, decisions, state changes, and a
-
-95
-00:08:01.774 --> 00:08:02.893
-checked output.
-
-96
-00:08:02.893 --> 00:08:08.527
-NARRATOR: Locate the first point where
-observed behavior diverges from expected
-
-97
-00:08:08.527 --> 00:08:12.112
-behavior, then test the smallest plausible
-cause.
-
-98
-00:08:12.112 --> 00:08:18.074
-NARRATOR: The diagnosis is strongest when
-another person can reproduce the observation
-
-99
-00:08:18.074 --> 00:08:19.565
-and the test.
-
-100
-00:08:19.682 --> 00:08:26.527
-NARRATOR: Connect Exception Handling and I/O
-Streams to the earlier ideas and explain how
-
-101
-00:08:26.527 --> 00:08:29.460
-the pieces work as one system.
-
-102
-00:08:29.460 --> 00:08:36.700
-NARRATOR: Input and output streams, graphical
-user interfaces, and exception handling are
-
-103
-00:08:36.700 --> 00:08:37.303
+00:07:58.380 --> 00:07:59.001
 covered.
 
+93
+00:07:59.001 --> 00:08:04.345
+Consider this worked case: Read user input via
+sys.
+
+94
+00:08:04.345 --> 00:08:12.006
+stdin stream, process it, and display results
+using a simple Tkinter window with a label and
+
+95
+00:08:12.006 --> 00:08:12.485
+button.
+
+96
+00:08:12.485 --> 00:08:19.802
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
+
+97
+00:08:19.802 --> 00:08:23.704
+that the final result satisfies the stated
+condition.
+
+98
+00:08:23.704 --> 00:08:31.463
+Locate the first point where observed behavior
+diverges from expected behavior, then test the
+
+99
+00:08:31.463 --> 00:08:33.126
+smallest plausible cause.
+
+100
+00:08:33.126 --> 00:08:41.001
+The diagnosis is strongest when another person
+can reproduce the observation and the test.
+
+101
+00:08:41.114 --> 00:08:42.439
+Connect 9.
+
+102
+00:08:42.439 --> 00:08:50.110
+Modern IDE Integration to the earlier ideas
+and explain how the pieces work as one system.
+
+103
+00:08:50.110 --> 00:08:57.048
+Students will also be introduced to a modern
+integrated software development environment
+
 104
-00:08:37.303 --> 00:08:43.774
-NARRATOR: Consider this worked case: A learner
-maps the inputs, constraints, and observable
+00:08:57.048 --> 00:08:57.626
+(IDE).
 
 105
-00:08:43.774 --> 00:08:50.743
-result for Exception Handling and I/O Streams,
-then checks each step against the stated
+00:08:57.626 --> 00:09:04.541
+Consider this worked case: Using PyCharm, a
+student can set breakpoints, inspect object
 
 106
-00:08:50.743 --> 00:08:51.241
-claim.
+00:09:04.541 --> 00:09:10.392
+attributes in the debugger, and refactor code
+with a single click.
 
 107
-00:08:51.241 --> 00:08:58.071
-NARRATOR: On screen, create an editable
-process diagram for Exception Handling and I/O
+00:09:10.392 --> 00:09:17.617
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
 
 108
-00:08:58.071 --> 00:09:03.850
-Streams with labeled inputs, decisions, state
-changes, and a checked output.
+00:09:17.617 --> 00:09:21.470
+that the final result satisfies the stated
+condition.
 
 109
-00:09:03.850 --> 00:09:12.800
-NARRATOR: Explain each connection explicitly
-and verify that information retains the same
+00:09:21.470 --> 00:09:30.911
+Explain each connection explicitly and verify
+that information retains the same meaning
 
 110
-00:09:12.800 --> 00:09:15.038
-meaning across representations.
+00:09:30.911 --> 00:09:32.485
+across representations.
 
 111
-00:09:15.038 --> 00:09:22.075
-NARRATOR: The synthesis matters only if every
-connection remains supported by the original
+00:09:32.485 --> 00:09:39.876
+The synthesis matters only if every connection
+remains supported by the original evidence.
 
 112
-00:09:22.075 --> 00:09:22.616
-evidence.
+00:09:39.986 --> 00:09:41.514
+Finish with 10.
 
 113
-00:09:22.730 --> 00:09:29.047
-NARRATOR: Finish with IDE Integration and
-Project Workflow as a practical checklist that
+00:09:41.514 --> 00:09:48.264
+Practical Analysis Checklist as a practical
+checklist that can guide a new analysis.
 
 114
-00:09:29.047 --> 00:09:31.476
-can guide a new analysis.
+00:09:48.264 --> 00:09:55.727
+Correctness arguments, tests, tracing, and
+debugging compare intended behavior with
 
 115
-00:09:31.476 --> 00:09:37.785
-NARRATOR: Students will also be introduced to
-a modern integrated software development
+00:09:55.727 --> 00:10:00.951
+observable results, including boundary and
+error cases.
 
 116
-00:09:37.785 --> 00:09:38.836
-environment (IDE).
+00:10:00.951 --> 00:10:09.813
+Consider this worked case: Before submitting a
+project, run unit tests for edge cases (e. g.
 
 117
-00:09:38.836 --> 00:09:45.408
-NARRATOR: Consider this worked case: A learner
-maps the inputs, constraints, and observable
+00:10:09.813 --> 00:10:17.014
+, empty lists, null objects) and trace
+execution to verify exception handling paths.
 
 118
-00:09:45.408 --> 00:09:51.981
-result for IDE Integration and Project
-Workflow, then checks each step against the
+00:10:17.014 --> 00:10:24.127
+Trace each intermediate state in the example,
+connect it to the formal claim, and verify
 
 119
-00:09:51.981 --> 00:09:52.992
-stated claim.
+00:10:24.127 --> 00:10:27.920
+that the final result satisfies the stated
+condition.
 
 120
-00:09:52.992 --> 00:09:59.781
-NARRATOR: On screen, create an editable
-process diagram for IDE Integration and
+00:10:27.920 --> 00:10:36.018
+For each checklist item, record the evidence,
+the remaining uncertainty, and the next
 
 121
-00:09:59.781 --> 00:10:06.004
-Project Workflow with labeled inputs,
-decisions, state changes, and a checked
+00:10:36.018 --> 00:10:37.264
+verification step.
 
 122
-00:10:06.004 --> 00:10:06.570
-output.
+00:10:37.264 --> 00:10:44.045
+The result is a repeatable procedure, not a
+conclusion that depends on memory or
 
 123
-00:10:06.570 --> 00:10:14.111
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
-
-124
-00:10:14.111 --> 00:10:15.851
-next verification step.
-
-125
-00:10:15.851 --> 00:10:21.615
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-126
-00:10:21.615 --> 00:10:22.945
-memory or intuition.
+00:10:44.045 --> 00:10:44.529
+intuition.

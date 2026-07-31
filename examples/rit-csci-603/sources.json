@@ -13,20 +13,20 @@
       "verified": true
     },
     {
-      "id": "mit-algorithms",
-      "title": "MIT OpenCourseWare Introduction to Algorithms",
-      "uri": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/",
-      "author": "MIT OpenCourseWare",
-      "content": "Algorithm analysis connects a precise problem specification to a correctness argument and resource bounds. Asymptotic notation describes how resource use grows with input size. A loop invariant supports a proof by initialization, maintenance, and termination. Divide-and-conquer algorithms split a problem, solve subproblems, and combine their results. Recurrences describe the cost of recursive algorithms. Graph algorithms operate on vertices and edges to answer reachability, ordering, connectivity, and path questions. Dynamic programming records solutions to overlapping subproblems. Core methods include sorting, hashing, trees, graphs, shortest paths, and dynamic programming. A disciplined solution states inputs and outputs, proves correctness, and then analyzes time and space.",
+      "id": "python-language-reference",
+      "title": "Python Language Reference",
+      "uri": "https://docs.python.org/3/reference/",
+      "author": "Python Software Foundation",
+      "content": "The Python language reference specifies lexical analysis, data model behavior, execution, expressions, statements, functions, classes, exceptions, and module import semantics. Python objects have identity, a type, and a value. Names are bound to objects within namespaces and scopes. Expressions produce values, while statements control execution and bindings. Exceptions interrupt normal control flow until a matching handler processes them or they propagate. The import system searches for modules and binds loaded modules into a namespace. Programs should be reasoned about through explicit state, control flow, data representation, contracts, tests, and observable behavior. Debugging separates syntax, runtime, and logical failures, while decomposition and abstraction reduce the number of interacting concerns.",
       "type": "note",
       "verified": true
     },
     {
-      "id": "opendsa",
-      "title": "OpenDSA",
-      "uri": "https://opendsa-server.cs.vt.edu/",
-      "author": "OpenDSA Project",
-      "content": "OpenDSA presents data structures and algorithms through executable visualizations and exercises. Lists represent ordered sequences with position-based operations. Stacks use last-in, first-out access, while queues use first-in, first-out access. Trees represent hierarchical relationships and support recursive traversals. Hash tables map keys to locations and require a collision strategy. Graphs can be represented with adjacency structures for traversal and path algorithms. Automata and formal languages describe machines, accepted strings, and computational limits. Representation choices and invariants determine which operations are efficient and which errors are possible.",
+      "id": "llvm-language-reference",
+      "title": "LLVM Language Reference Manual",
+      "uri": "https://llvm.org/docs/LangRef.html",
+      "author": "LLVM Project",
+      "content": "LLVM IR is a typed, SSA-based intermediate representation with explicit instructions, basic blocks, functions, memory operations, and control flow. A module contains global values, functions, declarations, and metadata. A function contains basic blocks, and every basic block ends with a terminator instruction. Phi instructions select values according to the predecessor control-flow edge. Load and store instructions make memory access explicit. Valid IR must satisfy structural and typing rules. The verifier reports IR that violates those rules. Compiler work separates parsing and semantic analysis from lowering, verification, optimization, and target-specific code generation.",
       "type": "note",
       "verified": true
     }

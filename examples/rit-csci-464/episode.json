@@ -13,10 +13,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Introduction to Cryptographic Standards as a question about inputs, decisions, and observable results. Cryptographic standards define approved algorithms and parameters. Consider this worked case: The NIST FIPS 180-4 standard specifies AES-256 as an approved algorithm for encryption. On screen, display a table comparing AES-128, AES-256, and ChaCha20 with their approved parameter sets. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis. Then summarize what the example demonstrates, what it does not establish, and what evidence would be needed next.",
-      "plannedSeconds": 61,
-      "title": "Introduction to Cryptographic Standards",
-      "visualDirection": "template:academic-process | Display a table comparing AES-128, AES-256, and ChaCha20 with their approved parameter sets."
+      "narration": "Begin by framing Algorithm Analysis Basics as a question about inputs, decisions, and observable results. Algorithm analysis connects a precise problem specification to a correctness argument and resource bounds. Consider this worked case: A sorting algorithm must guarantee that the output array contains all input elements in non-decreasing order. On screen, display a split screen showing a problem specification on the left and a resource bound graph on the right. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 55,
+      "title": "Algorithm Analysis Basics",
+      "visualDirection": "template:academic-process | Display a split screen showing a problem specification on the left and a resource bound graph on the right."
     },
     {
       "accessibility": {
@@ -31,10 +31,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Encryption and Confidentiality precisely enough that another learner could test the definition. Encryption supports confidentiality when keys and modes are used correctly. Consider this worked case: Using AES in CBC mode with a 256-bit key ensures that plaintext data remains unreadable without the decryption key. On screen, show a flowchart illustrating key generation, encryption process, and decryption process with labeled security checks. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 56,
-      "title": "Encryption and Confidentiality",
-      "visualDirection": "template:academic-process | Show a flowchart illustrating key generation, encryption process, and decryption process with labeled security checks."
+      "narration": "Now define Asymptotic Notation precisely enough that another learner could test the definition. Asymptotic notation describes how resource use grows with input size. Consider this worked case: Big-O notation indicates that a search algorithm's time complexity increases proportionally to the number of items searched. On screen, show a line graph where the x-axis represents input size and the y-axis represents resource usage, highlighting a linear trend. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 57,
+      "title": "Asymptotic Notation",
+      "visualDirection": "template:academic-process | Show a line graph where the x-axis represents input size and the y-axis represents resource usage, highlighting a linear trend."
     },
     {
       "accessibility": {
@@ -49,10 +49,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Message Authentication and Digital Signatures operates in a concrete sequence. Message authentication and digital signatures address integrity and authenticity in different ways. Consider this worked case: A digital signature uses a private key to sign a message, while a message authentication code uses a shared secret to verify integrity. On screen, create a side-by-side diagram showing how a digital signature verifies sender authenticity versus how HMAC verifies message integrity. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
-      "plannedSeconds": 55,
-      "title": "Message Authentication and Digital Signatures",
-      "visualDirection": "template:academic-process | Create a side-by-side diagram showing how a digital signature verifies sender authenticity versus how HMAC verifies message integrity."
+      "narration": "With the foundation in place, examine how Loop Invariants operates in a concrete sequence. A loop invariant supports a proof by initialization, maintenance, and termination. Consider this worked case: In a for-loop that sums an array, the invariant states that the running total equals the sum of the first i elements. On screen, animate a loop counter and a running total, updating them step-by-step to demonstrate the invariant holding true. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 58,
+      "title": "Loop Invariants",
+      "visualDirection": "template:academic-process | Animate a loop counter and a running total, updating them step-by-step to demonstrate the invariant holding true."
     },
     {
       "accessibility": {
@@ -67,10 +67,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Random Number Generation and make the decision criteria explicit. Random number generation supports keys, nonces, and other security parameters. Consider this worked case: Cryptographically secure random number generators produce unpredictable values for session keys and nonces to prevent replay attacks. On screen, illustrate a sequence of random numbers generated by a CSPRNG versus a pseudo-random number generator, highlighting unpredictability. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 56,
-      "title": "Random Number Generation",
-      "visualDirection": "template:academic-process | Illustrate a sequence of random numbers generated by a CSPRNG versus a pseudo-random number generator, highlighting unpredictability."
+      "narration": "Next, compare the choices involved in Divide-and-Conquer and make the decision criteria explicit. Divide-and-conquer algorithms split a problem, solve subproblems, and combine their results. Consider this worked case: Merge sort divides an array into halves, recursively sorts each half, and merges the sorted halves. On screen, illustrate a recursive tree where each node splits into two children until reaching base cases. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 55,
+      "title": "Divide-and-Conquer",
+      "visualDirection": "template:academic-process | Illustrate a recursive tree where each node splits into two children until reaching base cases."
     },
     {
       "accessibility": {
@@ -85,10 +85,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Key Management Practices to a worked situation instead of treating it as an isolated definition. Key management covers generation, distribution, storage, use, rotation, revocation, and destruction. Consider this worked case: A key management system automatically rotates encryption keys every 90 days and securely destroys old keys from memory and storage. On screen, draw a lifecycle diagram showing each stage of key management with icons for generation, distribution, storage, rotation, revocation, and destruction. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
-      "plannedSeconds": 57,
-      "title": "Key Management Practices",
-      "visualDirection": "template:academic-process | Draw a lifecycle diagram showing each stage of key management with icons for generation, distribution, storage, rotation, revocation, and destruction."
+      "narration": "Apply Recurrence Relations to a worked situation instead of treating it as an isolated definition. Recurrences describe the cost of recursive algorithms. Consider this worked case: The recurrence T(n) = 2T(n/2) + O(n) describes the time complexity of merge sort. On screen, display a mathematical recurrence equation alongside a corresponding recursion tree diagram. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 55,
+      "title": "Recurrence Relations",
+      "visualDirection": "template:academic-process | Display a mathematical recurrence equation alongside a corresponding recursion tree diagram."
     },
     {
       "accessibility": {
@@ -103,10 +103,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Modes of Operation, including what improves and what becomes more difficult. Modes of operation define how a primitive processes data larger than one block. Consider this worked case: In GCM mode, the encryption primitive processes data in blocks while simultaneously computing an authentication tag for integrity. On screen, show a block diagram of a cipher operating in GCM mode, highlighting block processing and authentication tag generation. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "narration": "Examine the tradeoffs in Graph Algorithms, including what improves and what becomes more difficult. Graph algorithms operate on vertices and edges to answer reachability, ordering, connectivity, and path questions. Consider this worked case: Dijkstra's algorithm finds the shortest path between two nodes in a weighted graph by exploring adjacent vertices iteratively. On screen, render a graph with labeled vertices and edges, highlighting the path explored by the algorithm. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
       "plannedSeconds": 55,
-      "title": "Modes of Operation",
-      "visualDirection": "template:academic-process | Show a block diagram of a cipher operating in GCM mode, highlighting block processing and authentication tag generation."
+      "title": "Graph Algorithms",
+      "visualDirection": "template:academic-process | Render a graph with labeled vertices and edges, highlighting the path explored by the algorithm."
     },
     {
       "accessibility": {
@@ -121,10 +121,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Implementation Validation with an edge case and identify which assumption controls the outcome. Validation checks implementations against specified requirements. Consider this worked case: FIPS validation ensures that a software implementation of AES matches the mathematical specifications and passes test vectors. On screen, display a checklist of validation criteria including test vectors, side-channel resistance, and compliance with FIPS requirements. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 58,
-      "title": "Implementation Validation",
-      "visualDirection": "template:academic-process | Display a checklist of validation criteria including test vectors, side-channel resistance, and compliance with FIPS requirements."
+      "narration": "Stress-test the reasoning around Dynamic Programming with an edge case and identify which assumption controls the outcome. Dynamic programming records solutions to overlapping subproblems. Consider this worked case: The Fibonacci sequence uses memoization to store previously computed values, avoiding redundant calculations. On screen, show a table filling in values for Fibonacci numbers, with arrows pointing to reused entries. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 56,
+      "title": "Dynamic Programming",
+      "visualDirection": "template:academic-process | Show a table filling in values for Fibonacci numbers, with arrows pointing to reused entries."
     },
     {
       "accessibility": {
@@ -139,10 +139,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Secure Software Development Framework to diagnose a failure by separating symptoms, causes, and corrective action. The Secure Software Development Framework groups practices into four practice groups. Consider this worked case: The SSDF framework organizes security practices into Prepare, Protect, Produce, and Respond groups to guide secure development. On screen, create a four-quadrant matrix labeled Prepare, Protect, Produce, and Respond, with each quadrant containing key practices. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "narration": "Use Data Structure Foundations to diagnose a failure by separating symptoms, causes, and corrective action. Lists represent ordered sequences with position-based operations. Consider this worked case: A stack processes function calls by executing the most recently pushed task first. On screen, compare a list with indexed positions and a stack with push/pop operations on a single end. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
-      "title": "Secure Software Development Framework",
-      "visualDirection": "template:academic-process | Create a four-quadrant matrix labeled Prepare, Protect, Produce, and Respond, with each quadrant containing key practices."
+      "title": "Data Structure Foundations",
+      "visualDirection": "template:academic-process | Compare a list with indexed positions and a stack with push/pop operations on a single end."
     },
     {
       "accessibility": {
@@ -157,10 +157,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Prepare the Organization to the earlier ideas and explain how the pieces work as one system. Prepare the Organization establishes people, processes, and technology for secure development. Consider this worked case: Training developers in secure coding standards and providing access to secure development tools establishes the foundation for secure practices. On screen, show a flowchart connecting people training, process documentation, and technology provisioning to secure development readiness. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
-      "plannedSeconds": 55,
-      "title": "Prepare the Organization",
-      "visualDirection": "template:academic-process | Show a flowchart connecting people training, process documentation, and technology provisioning to secure development readiness."
+      "narration": "Connect Hash Tables and Trees to the earlier ideas and explain how the pieces work as one system. Hash tables map keys to locations and require a collision strategy. Consider this worked case: A hash table stores key-value pairs using a hash function, resolving collisions via chaining or open addressing. On screen, display a hash table with buckets and a binary tree with parent-child node relationships. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 58,
+      "title": "Hash Tables and Trees",
+      "visualDirection": "template:academic-process | Display a hash table with buckets and a binary tree with parent-child node relationships."
     },
     {
       "accessibility": {
@@ -175,95 +175,95 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Protect the Software as a practical checklist that can guide a new analysis. Protect the Software prevents unauthorized access to code and development artifacts. Consider this worked case: Access control policies and code repository permissions ensure that only authorized developers can view or modify source code. On screen, illustrate a network diagram showing code repositories, access controls, and authentication mechanisms protecting development artifacts. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. A disciplined solution states inputs and outputs, proves correctness, and then analyzes time and space. Consider this worked case: Before coding a graph traversal, students document the start node, visited set, and expected O(V+E) time complexity. On screen, present a checklist graphic with three checkboxes: 'Inputs/Outputs Defined', 'Correctness Proven', 'Complexity Analyzed'. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
       "plannedSeconds": 55,
-      "title": "Protect the Software",
-      "visualDirection": "template:academic-process | Illustrate a network diagram showing code repositories, access controls, and authentication mechanisms protecting development artifacts."
+      "title": "Practical Analysis Checklist",
+      "visualDirection": "template:academic-process | Present a checklist graphic with three checkboxes: 'Inputs/Outputs Defined', 'Correctness Proven', 'Complexity Analyzed'."
     }
   ],
   "claims": [
     {
       "id": "beat-01-claim-01",
       "sourceIds": [
-        "nist-cryptographic-standards"
+        "mit-algorithms"
       ],
-      "text": "Cryptographic standards define approved algorithms and parameters.",
+      "text": "Algorithm analysis connects a precise problem specification to a correctness argument and resource bounds.",
       "verified": true
     },
     {
       "id": "beat-02-claim-01",
       "sourceIds": [
-        "nist-cryptographic-standards"
+        "mit-algorithms"
       ],
-      "text": "Encryption supports confidentiality when keys and modes are used correctly.",
+      "text": "Asymptotic notation describes how resource use grows with input size.",
       "verified": true
     },
     {
       "id": "beat-03-claim-01",
       "sourceIds": [
-        "nist-cryptographic-standards"
+        "mit-algorithms"
       ],
-      "text": "Message authentication and digital signatures address integrity and authenticity in different ways.",
+      "text": "A loop invariant supports a proof by initialization, maintenance, and termination.",
       "verified": true
     },
     {
       "id": "beat-04-claim-01",
       "sourceIds": [
-        "nist-cryptographic-standards"
+        "mit-algorithms"
       ],
-      "text": "Random number generation supports keys, nonces, and other security parameters.",
+      "text": "Divide-and-conquer algorithms split a problem, solve subproblems, and combine their results.",
       "verified": true
     },
     {
       "id": "beat-05-claim-01",
       "sourceIds": [
-        "nist-cryptographic-standards"
+        "mit-algorithms"
       ],
-      "text": "Key management covers generation, distribution, storage, use, rotation, revocation, and destruction.",
+      "text": "Recurrences describe the cost of recursive algorithms.",
       "verified": true
     },
     {
       "id": "beat-06-claim-01",
       "sourceIds": [
-        "nist-cryptographic-standards"
+        "mit-algorithms"
       ],
-      "text": "Modes of operation define how a primitive processes data larger than one block.",
+      "text": "Graph algorithms operate on vertices and edges to answer reachability, ordering, connectivity, and path questions.",
       "verified": true
     },
     {
       "id": "beat-07-claim-01",
       "sourceIds": [
-        "nist-cryptographic-standards"
+        "mit-algorithms"
       ],
-      "text": "Validation checks implementations against specified requirements.",
+      "text": "Dynamic programming records solutions to overlapping subproblems.",
       "verified": true
     },
     {
       "id": "beat-08-claim-01",
       "sourceIds": [
-        "nist-ssdf"
+        "opendsa"
       ],
-      "text": "The Secure Software Development Framework groups practices into four practice groups.",
+      "text": "Lists represent ordered sequences with position-based operations.",
       "verified": true
     },
     {
       "id": "beat-09-claim-01",
       "sourceIds": [
-        "nist-ssdf"
+        "opendsa"
       ],
-      "text": "Prepare the Organization establishes people, processes, and technology for secure development.",
+      "text": "Hash tables map keys to locations and require a collision strategy.",
       "verified": true
     },
     {
       "id": "beat-10-claim-01",
       "sourceIds": [
-        "nist-ssdf"
+        "mit-algorithms"
       ],
-      "text": "Protect the Software prevents unauthorized access to code and development artifacts.",
+      "text": "A disciplined solution states inputs and outputs, proves correctness, and then analyzes time and space.",
       "verified": true
     }
   ],
-  "id": "csci-464-theory-of-computing-foundations",
+  "id": "foundations-of-algorithmic-correctness",
   "learningObjectives": [],
   "pronunciations": [],
   "schemaVersion": 2,
@@ -279,25 +279,25 @@
       "verified": true
     },
     {
-      "author": "National Institute of Standards and Technology",
-      "excerpt": "The Secure Software Development Framework groups practices into four practice groups. Prepare the Organization establishes people, processes, and technology for secure development. Protect the Software prevents unauthorized access to code and development artifacts. Produce Well-Secured Software addresses security requirements, design, verification, and release. Respond to Vulnerabilities identifies, analyzes, remediates, and learns from discovered weaknesses. Security requirements should be tracked throughout development. Verification provides evidence that selected practices and controls were performed. Security reasoning identifies assets, trust boundaries, threats, controls, evidence, residual risk, and responsibilities.",
-      "id": "nist-ssdf",
-      "sha256": "17c15c6a3a522d311732bc0022c92ccb85de44ca6a09bde629c605eafbbaf442",
-      "title": "NIST Secure Software Development Framework",
+      "author": "MIT OpenCourseWare",
+      "excerpt": "Algorithm analysis connects a precise problem specification to a correctness argument and resource bounds. Asymptotic notation describes how resource use grows with input size. A loop invariant supports a proof by initialization, maintenance, and termination. Divide-and-conquer algorithms split a problem, solve subproblems, and combine their results. Recurrences describe the cost of recursive algorithms. Graph algorithms operate on vertices and edges to answer reachability, ordering, connectivity, and path questions. Dynamic programming records solutions to overlapping subproblems. Core methods include sorting, hashing, trees, graphs, shortest paths, and dynamic programming. A disciplined solution states inputs and outputs, proves correctness, and then analyzes time and space.",
+      "id": "mit-algorithms",
+      "sha256": "e6fdf3e727a4c6044da012714bd877c5bbed1a105b98d51a12449f81cc563b5d",
+      "title": "MIT OpenCourseWare Introduction to Algorithms",
       "type": "note",
-      "uri": "https://csrc.nist.gov/pubs/sp/800/218/final",
+      "uri": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/",
       "verified": true
     },
     {
-      "author": "National Institute of Standards and Technology",
-      "excerpt": "Cryptographic standards define approved algorithms and parameters. Encryption supports confidentiality when keys and modes are used correctly. Message authentication and digital signatures address integrity and authenticity in different ways. Random number generation supports keys, nonces, and other security parameters. Key management covers generation, distribution, storage, use, rotation, revocation, and destruction. Modes of operation define how a primitive processes data larger than one block. Validation checks implementations against specified requirements. Security depends on the complete protocol and implementation, not only an algorithm name. Analysis also considers side channels and migration requirements.",
-      "id": "nist-cryptographic-standards",
-      "sha256": "a50096140c969dba44c56eabec718ea39e693d3bb01255ae0cb21fa71c53c7e4",
-      "title": "NIST Cryptographic Standards and Guidelines",
+      "author": "OpenDSA Project",
+      "excerpt": "OpenDSA presents data structures and algorithms through executable visualizations and exercises. Lists represent ordered sequences with position-based operations. Stacks use last-in, first-out access, while queues use first-in, first-out access. Trees represent hierarchical relationships and support recursive traversals. Hash tables map keys to locations and require a collision strategy. Graphs can be represented with adjacency structures for traversal and path algorithms. Automata and formal languages describe machines, accepted strings, and computational limits. Representation choices and invariants determine which operations are efficient and which errors are possible.",
+      "id": "opendsa",
+      "sha256": "633e1e27d522c368b0a975e12dbed181afef7f16e4e80dc67f8a0d633e7fc6cc",
+      "title": "OpenDSA",
       "type": "note",
-      "uri": "https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines",
+      "uri": "https://opendsa-server.cs.vt.edu/",
       "verified": true
     }
   ],
-  "title": "CSCI-464: Theory of Computing Foundations"
+  "title": "Foundations of Algorithmic Correctness"
 }

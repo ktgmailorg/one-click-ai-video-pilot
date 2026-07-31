@@ -1,0 +1,101 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "To compare two products fairly, begin with the service they provide. One bottle versus one can may not be equivalent if their sizes or reuse patterns differ. A functional unit—such as delivering one thousand liters of beverage—creates a common basis for counting materials, energy, emissions, and waste.",
+      "plannedSeconds": 23,
+      "title": "Define an equivalent function",
+      "visualDirection": "template:showcase-lca | Compare two drink containers using the same functional unit rather than one arbitrary item."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Next, draw the system boundary. Does the study include raw-material extraction, manufacturing, transport, use, reuse, recycling, and disposal? Which environmental effects will be assessed? A result is only meaningful when the boundary and exclusions are visible, because moving a stage outside the analysis can move its impacts out of sight.",
+      "plannedSeconds": 25,
+      "title": "Draw the system boundary",
+      "visualDirection": "template:showcase-lca | Enclose materials, manufacturing, transport, use, and end of life inside a stated boundary."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "The inventory records energy and material inputs plus environmental releases. Impact assessment connects those flows to potential consequences, and interpretation asks what drives the result and how uncertainty affects the decision. Life-cycle assessment rarely produces a universal winner. Its value is revealing trade-offs across the full system instead of optimizing one stage in isolation.",
+      "plannedSeconds": 27,
+      "title": "Inventory, assess, and interpret",
+      "visualDirection": "template:showcase-lca | Compile inputs and releases, connect them to impact categories, and compare trade-offs."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "epa-lca"
+      ],
+      "text": "A life-cycle comparison needs a functional unit that represents equivalent service.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "epa-lca"
+      ],
+      "text": "Goal and scope definition identifies the life-cycle stages and environmental effects included in the study.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "epa-lca"
+      ],
+      "text": "LCA compiles inventory flows, evaluates potential impacts, and interprets trade-offs within the stated scope.",
+      "verified": true
+    }
+  ],
+  "id": "how-life-cycle-assessment-compares-products",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "U.S. Environmental Protection Agency",
+      "excerpt": "Life-cycle assessment evaluates potential environmental impacts associated with a product, process, or service. The phased method includes goal and scope definition, inventory analysis, impact assessment, and interpretation. Scope identifies the system boundary and the effects to be considered. Inventory compiles energy and material inputs and environmental releases. A common functional unit is needed so alternatives provide an equivalent service for comparison.",
+      "id": "epa-lca",
+      "sha256": "f9d09da5717b0733b764983e7d6773da8ad935e22cb6444aee1bfa0643f89c32",
+      "title": "Life Cycle Assessment: Principles and Practice",
+      "type": "url",
+      "uri": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1000L86.TXT",
+      "verified": true
+    }
+  ],
+  "title": "How Life-Cycle Assessment Compares Products"
+}

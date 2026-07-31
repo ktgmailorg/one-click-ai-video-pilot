@@ -174,8 +174,9 @@ function updateProgress() {
   );
 
   document.querySelector("#progress-percent").textContent = `${percent}%`;
-  document.querySelector("#progress-fill").style.width = `${percent}%`;
-  document.querySelector(".learn-progress-track").setAttribute("aria-valuenow", String(percent));
+  const progressBar = document.querySelector("#progress-bar");
+  progressBar.value = percent;
+  progressBar.textContent = `${percent}%`;
   document.querySelector("#completed-count").textContent = String(completedCourses.length);
   document.querySelector("#learning-time").textContent = `${minutes} min`;
   document.querySelector("#catalog-count").textContent = String(courses.length);
@@ -224,6 +225,31 @@ function openLesson(course) {
     alignment.hidden = true;
     alignment.textContent = "";
   }
+  const provenance = document.querySelector("#lesson-provenance");
+  const provenanceList = document.querySelector("#lesson-provenance-list");
+  const contributions = Array.isArray(course.generationProvenance)
+    ? course.generationProvenance
+    : course.aiContribution
+      ? [course.aiContribution]
+      : [];
+  provenance.hidden = contributions.length === 0;
+  provenanceList.replaceChildren(
+    ...contributions.map((contribution) => {
+      const item = document.createElement("div");
+      const stage = document.createElement("strong");
+      const details = document.createElement("span");
+      stage.textContent = contribution.stage || "Generation";
+      details.textContent = [
+        contribution.provider,
+        contribution.model,
+        contribution.modelRevision,
+        contribution.executionLocation,
+        contribution.mode,
+      ].filter(Boolean).join(" · ");
+      item.append(stage, details);
+      return item;
+    })
+  );
 
   video.pause();
   video.replaceChildren();
@@ -281,6 +307,11 @@ filters.addEventListener("reset", () => {
   activePath.hidden = true;
   for (const button of pathButtons) button.setAttribute("aria-pressed", "false");
   setTimeout(render, 0);
+});
+
+filters.addEventListener("submit", (event) => {
+  event.preventDefault();
+  render();
 });
 
 for (const button of pathButtons) {

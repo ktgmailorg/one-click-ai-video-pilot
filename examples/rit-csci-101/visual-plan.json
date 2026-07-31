@@ -5,12 +5,12 @@
       "shots": [
         {
           "id": "beat-01-shot-001",
-          "phrase": "Begin by framing Lesson Introduction and Course Scope as a question about inputs, decisions, and observable results.",
+          "phrase": "Begin by framing Defining the Computational Problem as a question about inputs, decisions, and observable results.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: Students will examine a short case study of how algorithmic sorting algorithms optimize data processing in modern search engines.",
+          "phrase": "Consider this worked case: Given a list of integers, the problem statement asks to return the sum of all positive values; inputs are [1, -2, 3] and outputs are 4.",
           "type": "deterministic-svg"
         },
         {
@@ -25,12 +25,12 @@
       "shots": [
         {
           "id": "beat-02-shot-001",
-          "phrase": "Now define Hardware-Software-Data Relationship precisely enough that another learner could test the definition.",
+          "phrase": "Now define Variables, Expressions, and Control precisely enough that another learner could test the definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: Students will trace how a simple calculator app uses hardware (CPU, memory), software (code), and data (numbers) to perform an addition operation.",
+          "phrase": "Consider this worked case: In Python, x = 5 is a variable assignment; x + 3 is an expression; if x > 0: print('positive') is a control structure.",
           "type": "deterministic-svg"
         },
         {
@@ -45,12 +45,12 @@
       "shots": [
         {
           "id": "beat-03-shot-001",
-          "phrase": "With the foundation in place, examine how Problem Decomposition and Sequential Steps operates in a concrete sequence.",
+          "phrase": "With the foundation in place, examine how Functions and Decomposition operates in a concrete sequence.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: Students will write a pseudocode sequence for a 'find the maximum number in a list' problem, listing each comparison and update step explicitly.",
+          "phrase": "Consider this worked case: A learner maps the inputs, constraints, and observable result for Functions and Decomposition, then checks each step against the stated claim.",
           "type": "deterministic-svg"
         },
         {
@@ -65,12 +65,12 @@
       "shots": [
         {
           "id": "beat-04-shot-001",
-          "phrase": "Next, compare the choices involved in Introduction to Programming Language Basics and make the decision criteria explicit.",
+          "phrase": "Next, compare the choices involved in Recursion and Base Cases and make the decision criteria explicit.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: Students will write a Python script that declares variables, uses a loop to iterate through a list, and prints the maximum value.",
+          "phrase": "Consider this worked case: A learner maps the inputs, constraints, and observable result for Recursion and Base Cases, then checks each step against the stated claim.",
           "type": "deterministic-svg"
         },
         {
@@ -85,12 +85,12 @@
       "shots": [
         {
           "id": "beat-05-shot-001",
-          "phrase": "Apply Data Types and Variables to a worked situation instead of treating it as an isolated definition.",
+          "phrase": "Apply Data Structures: Lists, Stacks, Queues to a worked situation instead of treating it as an isolated definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: Students will compare integer, float, and string variables, explaining how each type affects data storage and operations.",
+          "phrase": "Consider this worked case: A list [1,2,3] can be pushed onto a stack; popping yields 3, then 2, then 1; a queue would yield 1, 2, 3.",
           "type": "deterministic-svg"
         },
         {
@@ -105,12 +105,12 @@
       "shots": [
         {
           "id": "beat-06-shot-001",
-          "phrase": "Examine the tradeoffs in Control Flow and Conditionals, including what improves and what becomes more difficult.",
+          "phrase": "Examine the tradeoffs in Trees and Graphs, including what improves and what becomes more difficult.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: Students will implement an if-else statement to check if a user input is positive, negative, or zero, and handle invalid input with a try-except block.",
+          "phrase": "Consider this worked case: A family tree is a tree; a social network where people are nodes and friendships are edges is a graph.",
           "type": "deterministic-svg"
         },
         {
@@ -125,12 +125,12 @@
       "shots": [
         {
           "id": "beat-07-shot-001",
-          "phrase": "Stress-test the reasoning around Functions and Abstraction with an edge case and identify which assumption controls the outcome.",
+          "phrase": "Stress-test the reasoning around Searching and Sorting with an edge case and identify which assumption controls the outcome.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: Students will define a function that calculates the average of a list of numbers, then call it multiple times in the main program.",
+          "phrase": "Consider this worked case: Binary search requires a sorted list; insertion sort maintains the invariant that the left portion is always sorted.",
           "type": "deterministic-svg"
         },
         {
@@ -145,12 +145,12 @@
       "shots": [
         {
           "id": "beat-08-shot-001",
-          "phrase": "Use Debugging and Testing to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "phrase": "Use Correctness, Tests, and Debugging to diagnose a failure by separating symptoms, causes, and corrective action.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: Students will run a test case with incorrect input, identify the error type, and fix the code to handle the edge case correctly.",
+          "phrase": "Consider this worked case: Test sum_positive with empty list, all negatives, and large numbers; trace variable values to find a logical error.",
           "type": "deterministic-svg"
         },
         {
@@ -165,17 +165,17 @@
       "shots": [
         {
           "id": "beat-09-shot-001",
-          "phrase": "Connect Communication and Collaboration to the earlier ideas and explain how the pieces work as one system.",
+          "phrase": "Connect Python Language Mechanics to the earlier ideas and explain how the pieces work as one system.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: Students will present their debugging process in a 2-minute group discussion, explaining the error, the fix, and the lesson learned.",
+          "phrase": "Consider this worked case: a = [1]; b = a; a.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-003",
-          "phrase": "Explain each connection explicitly and verify that information retains the same meaning across representations.",
+          "phrase": "Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition.",
           "type": "deterministic-svg"
         }
       ]
@@ -185,12 +185,12 @@
       "shots": [
         {
           "id": "beat-10-shot-001",
-          "phrase": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis.",
+          "phrase": "Finish with Course Workflow and Communication as a practical checklist that can guide a new analysis.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: Students will use a checklist to review a peer's Python script, verifying variable types, control flow logic, and error handling.",
+          "phrase": "Consider this worked case: A student writes a pseudocode solution, translates it to Python, submits a short paper explaining the approach, and presents it in a group debate.",
           "type": "deterministic-svg"
         },
         {
@@ -201,6 +201,6 @@
       ]
     }
   ],
-  "episodeId": "csci-101-principles-of-computing-lesson-blueprint",
+  "episodeId": "csci-101-principles-of-computing-foundations-companion",
   "schemaVersion": 1
 }

@@ -13,10 +13,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Course Scope and Prerequisites as a question about inputs, decisions, and observable results. This course is restricted to students in COMPSCI-MS. Consider this worked case: A graduate student in the COMPSCI-MS program registers for the course without needing additional approval. On screen, display a course eligibility matrix highlighting the COMPSCI-MS restriction and permission requirement. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 55,
-      "title": "Course Scope and Prerequisites",
-      "visualDirection": "template:academic-process | Display a course eligibility matrix highlighting the COMPSCI-MS restriction and permission requirement."
+      "narration": "Begin by framing Foundations of Object Identity and State as a question about inputs, decisions, and observable results. A class declares state and behavior, while an object is an instance with its own runtime identity and field state. Consider this worked case: A `User` instance maintains its own `username` and `sessionToken` values independent of other `User` instances. On screen, display a side-by-side comparison of two `User` objects with distinct memory addresses and separate field values, highlighting encapsulation boundaries. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 57,
+      "title": "Foundations of Object Identity and State",
+      "visualDirection": "template:academic-process | Display a side-by-side comparison of two `User` objects with distinct memory addresses and separate field values, highlighting encapsulation boundaries."
     },
     {
       "accessibility": {
@@ -31,10 +31,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Advanced OOP Focus Areas precisely enough that another learner could test the definition. This course focuses on identifying advanced object-oriented programming concepts and implementing them in the context of specific problems. Consider this worked case: Students analyze a real-world application requiring modular design to isolate complex business logic. On screen, show a flowchart mapping core topics: event-driven programming, design patterns, distributed/concurrent programming, and application implementation. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 58,
-      "title": "Advanced OOP Focus Areas",
-      "visualDirection": "template:academic-process | Show a flowchart mapping core topics: event-driven programming, design patterns, distributed/concurrent programming, and application implementation."
+      "narration": "Now define Inheritance versus Composition for Reuse precisely enough that another learner could test the definition. Inheritance allows a class to derive behavior from base classes, while composition connects objects through explicit attributes. Consider this worked case: A `Vehicle` base class provides `move()` logic, but a `DeliveryTruck` composes a `CargoContainer` object instead of inheriting from `Truck` to avoid rigid hierarchies. On screen, show a class diagram contrasting a deep inheritance tree with a flat composition graph, using arrows to indicate 'has-a' relationships. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "plannedSeconds": 59,
+      "title": "Inheritance versus Composition for Reuse",
+      "visualDirection": "template:academic-process | Show a class diagram contrasting a deep inheritance tree with a flat composition graph, using arrows to indicate 'has-a' relationships."
     },
     {
       "accessibility": {
@@ -49,10 +49,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Event-Driven Programming Fundamentals operates in a concrete sequence. This course covers advanced concepts such as event-driven programming, design patterns, distributed and concurrent programming, and the use, design and implementation of applications. Consider this worked case: A UI component automatically updates when a network request completes without polling. On screen, illustrate a publisher-subscriber diagram showing decoupled event emission and subscription. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "With the foundation in place, examine how Dynamic Method Dispatch and Polymorphism operates in a concrete sequence. Inheritance reuses and specializes behavior, but dynamic method dispatch selects an implementation from the runtime class of the receiver. Consider this worked case: Calling `draw()` on a `Shape` reference invokes `Circle.draw()` or `Square.draw()` depending on the actual object at runtime. On screen, illustrate a method call flow where a generic `Shape` reference routes to distinct `Circle` and `Square` implementations, emphasizing runtime resolution. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
       "plannedSeconds": 56,
-      "title": "Event-Driven Programming Fundamentals",
-      "visualDirection": "template:academic-process | Illustrate a publisher-subscriber diagram showing decoupled event emission and subscription."
+      "title": "Dynamic Method Dispatch and Polymorphism",
+      "visualDirection": "template:academic-process | Illustrate a method call flow where a generic `Shape` reference routes to distinct `Circle` and `Square` implementations, emphasizing runtime resolution."
     },
     {
       "accessibility": {
@@ -67,10 +67,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Design Patterns Overview and make the decision criteria explicit. Assignments (both in class and as homework) requiring a solution to a problem and an implementation in code are an integral part of the course. Consider this worked case: Implementing a singleton pattern to manage a single database connection pool across modules. On screen, display a before-and-after code snippet comparing rigid inheritance to a flexible pattern implementation. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
-      "plannedSeconds": 55,
-      "title": "Design Patterns Overview",
-      "visualDirection": "template:academic-process | Display a before-and-after code snippet comparing rigid inheritance to a flexible pattern implementation."
+      "narration": "Next, compare the choices involved in Encapsulation and Access Control and make the decision criteria explicit. Access modifiers control which declarations are visible. Consider this worked case: A `BankAccount` class exposes `deposit()` and `withdraw()` methods while keeping the `balance` field private to prevent unauthorized modification. On screen, render a class interface with public methods highlighted and private fields shaded, showing how access control restricts direct state access. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 57,
+      "title": "Encapsulation and Access Control",
+      "visualDirection": "template:academic-process | Render a class interface with public methods highlighted and private fields shaded, showing how access control restricts direct state access."
     },
     {
       "accessibility": {
@@ -85,10 +85,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Distributed and Concurrent Programming to a worked situation instead of treating it as an isolated definition. Resource pooling serves multiple consumers with dynamically assigned physical and virtual resources. Consider this worked case: Splitting a data processing workload across multiple CPU cores to reduce execution time. On screen, render a parallel processing diagram showing thread/task distribution across cores. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 56,
-      "title": "Distributed and Concurrent Programming",
-      "visualDirection": "template:academic-process | Render a parallel processing diagram showing thread/task distribution across cores."
+      "narration": "Apply Exceptions for Error Handling to a worked situation instead of treating it as an isolated definition. Exceptions separate normal results from abrupt completion. Consider this worked case: A `NetworkRequest` throws a `ConnectionTimeoutException` when a server fails to respond, allowing the caller to handle the failure gracefully. On screen, map a control flow diagram showing a normal execution path branching into an exception handler block when a timeout occurs. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 55,
+      "title": "Exceptions for Error Handling",
+      "visualDirection": "template:academic-process | Map a control flow diagram showing a normal execution path branching into an exception handler block when a timeout occurs."
     },
     {
       "accessibility": {
@@ -103,10 +103,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Cloud Computing Characteristics, including what improves and what becomes more difficult. NIST defines cloud computing with five essential characteristics. Consider this worked case: A startup dynamically scales compute resources during a traffic spike without manual intervention. On screen, list the five NIST characteristics with brief definitions and a scaling graph overlay. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Examine the tradeoffs in Generics for Type-Safe Abstractions, including what improves and what becomes more difficult. Generic types express reusable abstractions while preserving compile-time type constraints. Consider this worked case: A `Queue<T>` class ensures that only elements of type `T` are added or removed, eliminating the need for runtime casting. On screen, show a generic collection diagram with type parameters `T` and `U`, highlighting how compile-time checks enforce type safety. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
       "plannedSeconds": 55,
-      "title": "Cloud Computing Characteristics",
-      "visualDirection": "template:academic-process | List the five NIST characteristics with brief definitions and a scaling graph overlay."
+      "title": "Generics for Type-Safe Abstractions",
+      "visualDirection": "template:academic-process | Show a generic collection diagram with type parameters `T` and `U`, highlighting how compile-time checks enforce type safety."
     },
     {
       "accessibility": {
@@ -121,10 +121,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Cloud Deployment Models with an edge case and identify which assumption controls the outcome. NIST also identifies private, community, public, and hybrid deployment models. Consider this worked case: A financial institution uses a hybrid model to keep sensitive data on-premise while using public cloud for analytics. On screen, show a Venn diagram comparing private, community, public, and hybrid deployment boundaries. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
-      "plannedSeconds": 55,
-      "title": "Cloud Deployment Models",
-      "visualDirection": "template:academic-process | Show a Venn diagram comparing private, community, public, and hybrid deployment boundaries."
+      "narration": "Stress-test the reasoning around Event-Driven Programming Principles with an edge case and identify which assumption controls the outcome. This course covers advanced concepts such as event-driven programming, design patterns, distributed and concurrent programming, and the use, design and implementation of applications. Consider this worked case: A `UIController` registers a `Button` instance to emit `click` events, triggering a `EventHandler` without direct method calls. On screen, draw a publisher-subscriber diagram showing an event source broadcasting to multiple independent listeners via a message bus. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 61,
+      "title": "Event-Driven Programming Principles",
+      "visualDirection": "template:academic-process | Draw a publisher-subscriber diagram showing an event source broadcasting to multiple independent listeners via a message bus."
     },
     {
       "accessibility": {
@@ -139,10 +139,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Raft Consensus Leader Election to diagnose a failure by separating symptoms, causes, and corrective action. Raft decomposes consensus into leader election, log replication, and safety. Consider this worked case: A server becomes leader after receiving votes from a majority during an election timeout period. On screen, animate state transitions (follower -> candidate -> leader) with term counters and vote requests. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 57,
-      "title": "Raft Consensus Leader Election",
-      "visualDirection": "template:academic-process | Animate state transitions (follower -> candidate -> leader) with term counters and vote requests."
+      "narration": "Use Design Patterns for Structural Integrity to diagnose a failure by separating symptoms, causes, and corrective action. Python objects have identity, a type, and a value. Consider this worked case: The `Strategy` pattern allows a `PaymentProcessor` to swap `CreditCard` and `Crypto` algorithms at runtime without modifying the core class. On screen, present a before-and-after class diagram showing how a rigid hierarchy is replaced by a flexible strategy interface and implementations. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 55,
+      "title": "Design Patterns for Structural Integrity",
+      "visualDirection": "template:academic-process | Present a before-and-after class diagram showing how a rigid hierarchy is replaced by a flexible strategy interface and implementations."
     },
     {
       "accessibility": {
@@ -157,10 +157,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Raft Log Replication and Safety to the earlier ideas and explain how the pieces work as one system. A leader appends client commands to its log and sends entries to followers. Consider this worked case: A replicated log ensures all nodes store identical command sequences before acknowledging client requests. On screen, display a log replication sequence showing entry propagation and majority acknowledgment. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 56,
-      "title": "Raft Log Replication and Safety",
-      "visualDirection": "template:academic-process | Display a log replication sequence showing entry propagation and majority acknowledgment."
+      "narration": "Connect Concurrent and Distributed Programming Foundations to the earlier ideas and explain how the pieces work as one system. Attribute lookup follows defined rules across an instance and its class hierarchy. Consider this worked case: A `TaskScheduler` uses thread pools to process independent jobs concurrently, ensuring that shared resources are accessed via synchronized locks or immutable data structures. On screen, render a concurrent execution model with multiple threads accessing a shared resource, highlighting synchronization mechanisms like mutexes or atomic variables. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 58,
+      "title": "Concurrent and Distributed Programming Foundations",
+      "visualDirection": "template:academic-process | Render a concurrent execution model with multiple threads accessing a shared resource, highlighting synchronization mechanisms like mutexes or atomic variables."
     },
     {
       "accessibility": {
@@ -175,31 +175,63 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Sound cloud analysis makes trust boundaries, tenancy, failure domains, scaling assumptions, observability, and responsibility allocation explicit. Consider this worked case: A student reviews a distributed system architecture, identifies event-driven components, and implements a consensus module in code. On screen, provide a checklist template covering: paradigm identification, pattern selection, concurrency/cloud alignment, and code validation. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
-      "plannedSeconds": 55,
-      "title": "Practical Analysis Checklist",
-      "visualDirection": "template:academic-process | Provide a checklist template covering: paradigm identification, pattern selection, concurrency/cloud alignment, and code validation."
+      "narration": "Finish with Practical Analysis Checklist for Implementation as a practical checklist that can guide a new analysis. Object-oriented design should make responsibilities, invariants, dependencies, composition, and substitution behavior explicit. Consider this worked case: Before deploying a `DataProcessor`, developers check that each class has a single responsibility, validates that internal state cannot be corrupted, and confirms that subclasses can replace base classes without breaking contracts. On screen, display a checklist graphic with checkboxes for 'Single Responsibility', 'Invariant Validation', 'Dependency Minimization', and 'Substitution Compliance', ready for instructor review. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 63,
+      "title": "Practical Analysis Checklist for Implementation",
+      "visualDirection": "template:academic-process | Display a checklist graphic with checkboxes for 'Single Responsibility', 'Invariant Validation', 'Dependency Minimization', and 'Substitution Compliance', ready for instructor review."
     }
   ],
   "claims": [
     {
       "id": "beat-01-claim-01",
       "sourceIds": [
-        "rit-csci-605"
+        "java-language-specification"
       ],
-      "text": "This course is restricted to students in COMPSCI-MS.",
+      "text": "A class declares state and behavior, while an object is an instance with its own runtime identity and field state.",
       "verified": true
     },
     {
       "id": "beat-02-claim-01",
       "sourceIds": [
-        "rit-csci-605"
+        "python-data-model"
       ],
-      "text": "This course focuses on identifying advanced object-oriented programming concepts and implementing them in the context of specific problems.",
+      "text": "Inheritance allows a class to derive behavior from base classes, while composition connects objects through explicit attributes.",
       "verified": true
     },
     {
       "id": "beat-03-claim-01",
+      "sourceIds": [
+        "java-language-specification"
+      ],
+      "text": "Inheritance reuses and specializes behavior, but dynamic method dispatch selects an implementation from the runtime class of the receiver.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "java-language-specification"
+      ],
+      "text": "Access modifiers control which declarations are visible.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "java-language-specification"
+      ],
+      "text": "Exceptions separate normal results from abrupt completion.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "java-language-specification"
+      ],
+      "text": "Generic types express reusable abstractions while preserving compile-time type constraints.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
       "sourceIds": [
         "rit-csci-605"
       ],
@@ -207,59 +239,27 @@
       "verified": true
     },
     {
-      "id": "beat-04-claim-01",
-      "sourceIds": [
-        "rit-csci-605"
-      ],
-      "text": "Assignments (both in class and as homework) requiring a solution to a problem and an implementation in code are an integral part of the course.",
-      "verified": true
-    },
-    {
-      "id": "beat-05-claim-01",
-      "sourceIds": [
-        "nist-cloud"
-      ],
-      "text": "Resource pooling serves multiple consumers with dynamically assigned physical and virtual resources.",
-      "verified": true
-    },
-    {
-      "id": "beat-06-claim-01",
-      "sourceIds": [
-        "nist-cloud"
-      ],
-      "text": "NIST defines cloud computing with five essential characteristics.",
-      "verified": true
-    },
-    {
-      "id": "beat-07-claim-01",
-      "sourceIds": [
-        "nist-cloud"
-      ],
-      "text": "NIST also identifies private, community, public, and hybrid deployment models.",
-      "verified": true
-    },
-    {
       "id": "beat-08-claim-01",
       "sourceIds": [
-        "raft-paper"
+        "python-data-model"
       ],
-      "text": "Raft decomposes consensus into leader election, log replication, and safety.",
+      "text": "Python objects have identity, a type, and a value.",
       "verified": true
     },
     {
       "id": "beat-09-claim-01",
       "sourceIds": [
-        "raft-paper"
+        "python-data-model"
       ],
-      "text": "A leader appends client commands to its log and sends entries to followers.",
+      "text": "Attribute lookup follows defined rules across an instance and its class hierarchy.",
       "verified": true
     },
     {
       "id": "beat-10-claim-01",
       "sourceIds": [
-        "nist-cloud"
+        "java-language-specification"
       ],
-      "text": "Sound cloud analysis makes trust boundaries, tenancy, failure domains, scaling assumptions, observability, and responsibility allocation explicit.",
+      "text": "Object-oriented design should make responsibilities, invariants, dependencies, composition, and substitution behavior explicit.",
       "verified": true
     }
   ],
@@ -279,23 +279,23 @@
       "verified": true
     },
     {
-      "author": "Diego Ongaro and John Ousterhout",
-      "excerpt": "Raft decomposes consensus into leader election, log replication, and safety. Servers move among follower, candidate, and leader states. Terms act as logical clocks and allow servers to identify stale information. A follower starts an election after its election timeout elapses without valid leader communication. A candidate requests votes and becomes leader after receiving votes from a majority. A leader appends client commands to its log and sends entries to followers. An entry becomes committed after the required majority condition is satisfied. Log matching and election restrictions preserve the safety properties described by the algorithm.",
-      "id": "raft-paper",
-      "sha256": "40b859558716da74b0fb4fa837395444ed7c4c14bfa12d43e1750ac4eaae10c7",
-      "title": "In Search of an Understandable Consensus Algorithm",
+      "author": "Oracle",
+      "excerpt": "The Java language specification defines classes, objects, interfaces, inheritance, method invocation, fields, access control, exceptions, generics, and concurrency semantics. A class declares state and behavior, while an object is an instance with its own runtime identity and field state. Interfaces declare contracts that classes may implement. Inheritance reuses and specializes behavior, but dynamic method dispatch selects an implementation from the runtime class of the receiver. Access modifiers control which declarations are visible. Exceptions separate normal results from abrupt completion. Generic types express reusable abstractions while preserving compile-time type constraints. Object-oriented design should make responsibilities, invariants, dependencies, composition, and substituti",
+      "id": "java-language-specification",
+      "sha256": "1d1a971b7dee5fe1761edafec39cad65f9efdd94aac32a92c2bdf73f94b7bfa7",
+      "title": "Java Language Specification",
       "type": "note",
-      "uri": "https://raft.github.io/raft.pdf",
+      "uri": "https://docs.oracle.com/javase/specs/jls/se21/html/index.html",
       "verified": true
     },
     {
-      "author": "National Institute of Standards and Technology",
-      "excerpt": "NIST defines cloud computing with five essential characteristics. On-demand self-service allows consumers to provision capabilities without requiring human interaction with each provider. Broad network access makes capabilities available over networks through standard mechanisms. Resource pooling serves multiple consumers with dynamically assigned physical and virtual resources. Rapid elasticity allows capabilities to scale outward and inward according to demand. Measured service monitors and reports resource use. NIST identifies software, platform, and infrastructure service models. NIST also identifies private, community, public, and hybrid deployment models. Sound cloud analysis makes trust boundaries, tenancy, failure domains, scaling assumptions, observability, and responsibility allo",
-      "id": "nist-cloud",
-      "sha256": "07b40b69f41957ead0d80274fe5b5811eeab6911e80a6fb5424372a65b57ab17",
-      "title": "The NIST Definition of Cloud Computing",
+      "author": "Python Software Foundation",
+      "excerpt": "Python objects have identity, a type, and a value. Classes create user-defined types whose instances can contain attributes and participate in operations through special methods. Attribute lookup follows defined rules across an instance and its class hierarchy. Methods bind functions to instances. Inheritance allows a class to derive behavior from base classes, while composition connects objects through explicit attributes. Mutable and immutable objects have different state behavior. Exceptions communicate failures through defined control flow. A sound object model states ownership, invariants, public operations, extension points, and observable behavior rather than relying on hidden shared state.",
+      "id": "python-data-model",
+      "sha256": "b914a81cf14054d47d2ed10d8e185826e1730a20327ce49f614a316dc115df97",
+      "title": "Python Data Model",
       "type": "note",
-      "uri": "https://csrc.nist.gov/publications/detail/sp/800-145/final",
+      "uri": "https://docs.python.org/3/reference/datamodel.html",
       "verified": true
     }
   ],

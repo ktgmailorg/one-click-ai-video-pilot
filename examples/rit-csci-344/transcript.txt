@@ -1,20 +1,16 @@
-NARRATOR: Begin by framing Introduction to Course Scope and Objectives as a question
+NARRATOR: Begin by framing Module Structure and IR Representation as a question about
 
-about inputs, decisions, and observable results.
+inputs, decisions, and observable results.
 
-NARRATOR: This course is a study of the syntax and semantics of a diverse set of high-level
+NARRATOR: A module contains global values, functions, declarations, and metadata.
 
-programming languages.
+NARRATOR: Consider this worked case: An LLVM module groups all global variables, function
 
-NARRATOR: Consider this worked case: Students will examine how Python and Java handle
+definitions, and type declarations into a single unit before compilation begins.
 
-variable declaration and type checking to see how syntax rules differ while serving the same
+NARRATOR: On screen, display a hierarchical diagram showing a module node branching into
 
-semantic purpose.
-
-NARRATOR: On screen, display a side-by-side comparison chart of Python and Java variable
-
-declarations with callouts highlighting syntax differences and shared semantic goals.
+global values, function nodes, and metadata nodes, with clear labels for each component.
 
 NARRATOR: List the givens before choosing a method, because an unstated assumption can
 
@@ -22,21 +18,25 @@ change the conclusion.
 
 NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: Now define Defining Syntax in Programming Languages precisely enough that
+NARRATOR: Now define Basic Blocks and Control Flow precisely enough that another learner
 
-another learner could test the definition.
+could test the definition.
 
-NARRATOR: The languages chosen are compared and contrasted in order to demonstrate general
+NARRATOR: A function contains basic blocks, and every basic block ends with a terminator
 
-principles of programming language design and implementation.
+instruction.
 
-NARRATOR: Consider this worked case: In C++, a missing semicolon at the end of a statement
+NARRATOR: Consider this worked case: A conditional branch in a function splits into
 
-causes a compilation error, demonstrating how syntax rules enforce code structure.
+two basic blocks, each terminating with a jump instruction that routes to the next logical
 
-NARRATOR: On screen, show a code snippet with a syntax error highlighted in red, alongside
+step.
 
-the corrected version with a green checkmark and a brief annotation explaining the rule.
+NARRATOR: On screen, render a flowchart of a function with three basic blocks, highlighting
+
+the terminator instruction at the end of each block and arrows indicating control flow
+
+paths.
 
 NARRATOR: Separate the formal definition from an implementation detail, then identify what
 
@@ -44,43 +44,41 @@ evidence would distinguish them.
 
 NARRATOR: A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Defining Semantics in Programming
+NARRATOR: With the foundation in place, examine how Phi Instructions and Value
 
-Languages operates in a concrete sequence.
+Selection operates in a concrete sequence.
 
-NARRATOR: A research project narrows a question, reviews literature, defines a
+NARRATOR: Phi instructions select values according to the predecessor control-flow
 
-reproducible method, evaluates results, and communicates for the intended audience.
+edge.
 
-NARRATOR: Consider this worked case: The expression `x = 5 + 3` has the same syntactic
+NARRATOR: Consider this worked case: When two branches converge, a phi instruction chooses
 
-structure in multiple languages, but its semantic evaluation depends on the language's
+the value from the branch that was actually executed during runtime.
 
-operator precedence and variable scoping rules.
+NARRATOR: On screen, show a diamond-shaped control flow graph with a phi node at the
 
-NARRATOR: On screen, display a flowchart showing the evaluation steps of a simple
-
-arithmetic expression, with nodes labeled by language-specific semantic rules.
+merge point, labeled with the values from each incoming edge.
 
 NARRATOR: Follow every arrow in order and name the state before and after each transition.
 
 NARRATOR: The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Next, compare the choices involved in Comparing Syntax Across Languages and make
+NARRATOR: Next, compare the choices involved in Explicit Memory Operations and make the
 
-the decision criteria explicit.
+decision criteria explicit.
 
-NARRATOR: Programming projects will be required.
+NARRATOR: Load and store instructions make memory access explicit.
 
-NARRATOR: Consider this worked case: Python uses indentation to define code blocks, while
+NARRATOR: Consider this worked case: A store instruction assigns a computed value to a
 
-C# uses curly braces, demonstrating how syntax choices impact readability and structure.
+specific memory location, while a load instruction retrieves that value for further
 
-NARRATOR: On screen, show two code blocks side-by-side, one in Python and one in C#,
+computation.
 
-with arrows pointing to the structural delimiters and a caption explaining the
+NARRATOR: On screen, illustrate a memory model with a register, a memory address, and arrows
 
-syntactic difference.
+showing a store writing to memory and a load reading from it.
 
 NARRATOR: Compare alternatives against the same constraints so the evaluation does not
 
@@ -88,25 +86,19 @@ move the goalposts.
 
 NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: Apply Comparing Semantics Across Languages to a worked situation instead of
+NARRATOR: Apply Structural Verification Rules to a worked situation instead of treating it
 
-treating it as an isolated definition.
+as an isolated definition.
 
-NARRATOR: The ACM Code directs computing professionals to contribute to society and
+NARRATOR: Valid IR must satisfy structural and typing rules.
 
-human well-being.
+NARRATOR: Consider this worked case: The verifier checks that every basic block ends
 
-NARRATOR: Consider this worked case: JavaScript uses dynamic typing where variable
+with a terminator and that all variables are properly typed before the compiler proceeds.
 
-types are determined at runtime, whereas Java uses static typing where types are checked at
+NARRATOR: On screen, display a checklist graphic with three boxes: structural rules,
 
-compile time, illustrating different semantic approaches to data handling.
-
-NARRATOR: On screen, create a table comparing dynamic vs. static typing with columns for
-
-type checking time, error detection, and flexibility, using JavaScript and Java as
-
-examples.
+typing rules, and verifier output, showing a red 'X' on a rule violation.
 
 NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
 
@@ -114,25 +106,25 @@ at each step.
 
 NARRATOR: The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Examine the tradeoffs in Identifying General Principles of Language Design,
+NARRATOR: Examine the tradeoffs in Compiler Work Separation, including what improves and
 
-including what improves and what becomes more difficult.
+what becomes more difficult.
 
-NARRATOR: The course emphasizes the concepts underpinning modern languages rather than the
+NARRATOR: Compiler work separates parsing and semantic analysis from lowering, verification,
 
-mastery of particular language details.
+optimization, and target-specific code generation.
 
-NARRATOR: Consider this worked case: Both Python and C# support object-oriented
+NARRATOR: Consider this worked case: The parser converts source code into an abstract
 
-programming through classes and inheritance, demonstrating how abstraction principles are
+syntax tree, while the semantic analyzer checks types and scopes before the lowering
 
-implemented across different syntaxes.
+phase begins.
 
-NARRATOR: On screen, display a diagram of a class hierarchy with inheritance arrows,
+NARRATOR: On screen, draw a linear pipeline diagram with five stages labeled parsing,
 
-labeled with common OOP concepts, and a note explaining how these principles appear in
+semantic analysis, lowering, verification, optimization, and code generation, with arrows
 
-multiple languages.
+flowing left to right.
 
 NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
 
@@ -140,23 +132,21 @@ acceptable.
 
 NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: Stress-test the reasoning around Applying Problem-Solving Methods to Language
+NARRATOR: Stress-test the reasoning around Lexical Analysis and Scoping with an edge case
 
-Analysis with an edge case and identify which assumption controls the outcome.
+and identify which assumption controls the outcome.
 
-NARRATOR: They should respect privacy.
+NARRATOR: Names are bound to objects within namespaces and scopes.
 
-NARRATOR: Consider this worked case: When debugging a loop in a new language, students
+NARRATOR: Consider this worked case: A variable declared inside a function belongs to
 
-first verify syntax correctness, then trace semantic execution flow, and finally check for
+the function's local scope, while a global variable is bound to the module's namespace.
 
-design principle violations like infinite recursion.
+NARRATOR: On screen, show nested boxes representing global and local scopes, with
 
-NARRATOR: On screen, show a three-step checklist graphic: 1) Check syntax, 2) Trace
+variable names placed inside the appropriate scope box and arrows indicating binding
 
-semantics, 3) Verify design principles, with each step containing a brief actionable
-
-prompt.
+relationships.
 
 NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
 
@@ -166,25 +156,21 @@ NARRATOR: The edge case reveals the boundary of the claim without discarding the
 
 core idea.
 
-NARRATOR: Use Connecting to Course Requirements and Projects to diagnose a
+NARRATOR: Use Data Model and Execution Model to diagnose a failure by separating symptoms,
 
-failure by separating symptoms, causes, and corrective action.
+causes, and corrective action.
 
-NARRATOR: They should respect the work required to produce new ideas and creative
+NARRATOR: Expressions produce values, while statements control execution and bindings.
 
-works.
+NARRATOR: Consider this worked case: An integer object has a unique memory address, a
 
-NARRATOR: Consider this worked case: Students will write a small utility in two different
+type tag, and a numeric value, while an assignment statement binds a name to that
 
-languages, then document how syntax and semantic differences affected the
+object.
 
-implementation and final output.
+NARRATOR: On screen, render a simple object diagram showing an object with three fields:
 
-NARRATOR: On screen, display a project workflow diagram showing language selection,
-
-coding, testing, and documentation phases, with callouts linking each phase to core
-
-course concepts.
+identity (address), type, and value, alongside an assignment arrow binding a name to it.
 
 NARRATOR: Locate the first point where observed behavior diverges from expected
 
@@ -194,21 +180,23 @@ NARRATOR: The diagnosis is strongest when another person can reproduce the obser
 
 and the test.
 
-NARRATOR: Connect Reviewing Key Takeaways and Next Steps to the earlier ideas and explain
+NARRATOR: Connect Exception Handling and Control Flow to the earlier ideas and explain
 
 how the pieces work as one system.
 
-NARRATOR: They should honor confidentiality.
+NARRATOR: Exceptions interrupt normal control flow until a matching handler processes them
 
-NARRATOR: Consider this worked case: When encountering an unfamiliar language,
+or they propagate.
 
-programmers can quickly identify syntax patterns, predict semantic behavior, and
+NARRATOR: Consider this worked case: When a division by zero occurs, an exception jumps
 
-leverage shared design principles to accelerate learning.
+out of the current block and is caught by a try-except handler that logs the error and
 
-NARRATOR: On screen, show a summary slide with three icons representing syntax, semantics,
+continues.
 
-and design principles, each with a concise bullet point reinforcing the core lesson.
+NARRATOR: On screen, illustrate a control flow path with a normal execution line, a red
+
+'exception' arrow jumping to a handler block, and a green 'propagate' arrow moving upward.
 
 NARRATOR: Explain each connection explicitly and verify that information retains the same
 
@@ -218,23 +206,23 @@ NARRATOR: The synthesis matters only if every connection remains supported by th
 
 evidence.
 
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+NARRATOR: Finish with Debugging and Decomposition as a practical checklist that
 
-guide a new analysis.
+can guide a new analysis.
 
-NARRATOR: Limitations and threats to validity should be made visible.
+NARRATOR: Debugging separates syntax, runtime, and logical failures, while decomposition and
 
-NARRATOR: Consider this worked case: Before submitting a code snippet, students check for
+abstraction reduce the number of interacting concerns.
 
-correct syntax, trace semantic execution paths, and confirm that the implementation
+NARRATOR: Consider this worked case: A syntax error is caught by the parser, a runtime error
 
-follows modular and consistent design practices.
+occurs during execution, and a logical error is fixed by breaking the code into smaller,
 
-NARRATOR: On screen, display a printable checklist template with three columns: Syntax
+testable functions.
 
-Verification, Semantic Trace, and Design Principle Alignment, each with checkboxes and
+NARRATOR: On screen, show a three-column table labeled syntax, runtime, and logical failures,
 
-brief instructions.
+with each column containing a brief example and a corresponding debugging tool icon.
 
 NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
 

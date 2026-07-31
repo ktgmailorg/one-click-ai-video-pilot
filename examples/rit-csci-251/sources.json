@@ -13,20 +13,20 @@
       "verified": true
     },
     {
-      "id": "nist-ssdf",
-      "title": "NIST Secure Software Development Framework",
-      "uri": "https://csrc.nist.gov/pubs/sp/800/218/final",
-      "author": "National Institute of Standards and Technology",
-      "content": "The Secure Software Development Framework groups practices into four practice groups. Prepare the Organization establishes people, processes, and technology for secure development. Protect the Software prevents unauthorized access to code and development artifacts. Produce Well-Secured Software addresses security requirements, design, verification, and release. Respond to Vulnerabilities identifies, analyzes, remediates, and learns from discovered weaknesses. Security requirements should be tracked throughout development. Verification provides evidence that selected practices and controls were performed. Security reasoning identifies assets, trust boundaries, threats, controls, evidence, residual risk, and responsibilities.",
+      "id": "openmp-specification",
+      "title": "OpenMP API Specification",
+      "uri": "https://www.openmp.org/specifications/",
+      "author": "OpenMP Architecture Review Board",
+      "content": "OpenMP defines a shared-memory parallel programming model based on directives, library routines, and environment variables. A parallel region creates a team of threads. Worksharing constructs divide loop iterations or sections among the team. Data-sharing attributes determine whether variables are shared, private, firstprivate, or reduced across threads. Barriers and other synchronization constructs establish ordering where independent execution is not sufficient. Incorrectly synchronized accesses can create data races. Scheduling choices influence load balance, locality, and overhead. Parallel analysis distinguishes available concurrency, task granularity, dependencies, synchronization cost, memory behavior, and measured scalability.",
       "type": "note",
       "verified": true
     },
     {
-      "id": "nist-cryptographic-standards",
-      "title": "NIST Cryptographic Standards and Guidelines",
-      "uri": "https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines",
-      "author": "National Institute of Standards and Technology",
-      "content": "Cryptographic standards define approved algorithms and parameters. Encryption supports confidentiality when keys and modes are used correctly. Message authentication and digital signatures address integrity and authenticity in different ways. Random number generation supports keys, nonces, and other security parameters. Key management covers generation, distribution, storage, use, rotation, revocation, and destruction. Modes of operation define how a primitive processes data larger than one block. Validation checks implementations against specified requirements. Security depends on the complete protocol and implementation, not only an algorithm name. Analysis also considers side channels and migration requirements.",
+      "id": "mpi-standard",
+      "title": "MPI 4.1 Standard",
+      "uri": "https://www.mpi-forum.org/docs/mpi-4.1/mpi41-report.pdf",
+      "author": "Message Passing Interface Forum",
+      "content": "MPI defines communication among processes identified by ranks in communicators. Point-to-point operations send and receive typed messages between selected ranks. Collective operations coordinate communication patterns such as broadcast, reduction, gather, scatter, and barrier across a group. Blocking and nonblocking operations expose different completion and overlap behavior. Message matching depends on communicator, source, and tag. Distributed-memory programs must partition data and work, communicate required dependencies, and avoid deadlock. Performance analysis considers communication volume, latency, load balance, synchronization, process placement, and the ratio of useful work to coordination overhead.",
       "type": "note",
       "verified": true
     }

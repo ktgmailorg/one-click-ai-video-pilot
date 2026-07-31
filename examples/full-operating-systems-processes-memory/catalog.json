@@ -1,0 +1,25 @@
+{
+  "id": "full-operating-systems-processes-memory",
+  "title": "Operating Systems: Processes, System Calls, and Virtual Memory",
+  "area": "Computing",
+  "subject": "Operating Systems",
+  "format": "Full lesson",
+  "level": "Introductory",
+  "description": "Trace how an operating system isolates processes, crosses the kernel boundary, schedules work, and maps virtual memory to physical resources.",
+  "outcomes": [
+    "Students will accurately describe how user and kernel modes enforce process isolation through hardware privilege levels and system call traps.",
+    "Students will trace a single program operation through the OS lifecycle, identifying context switches, page table translations, and scheduler decisions at each stage.",
+    "Students will evaluate process creation and resource inheritance by applying POSIX fork semantics and copy-on-write virtual memory principles to real-world scenarios."
+  ],
+  "paths": [
+    "Computing & Engineering",
+    "STEM Foundations"
+  ],
+  "aiContribution": {
+    "stage": "source-grounded planning and narration draft",
+    "provider": "local-openai-compatible",
+    "model": "prism-ml/Bonsai-27B-gguf",
+    "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
+    "humanReviewRequired": true
+  }
+}

@@ -5,12 +5,12 @@
       "shots": [
         {
           "id": "beat-01-shot-001",
-          "phrase": "Begin by framing Course Scope and Prerequisites as a question about inputs, decisions, and observable results.",
+          "phrase": "Begin by framing Foundations of Object Identity and State as a question about inputs, decisions, and observable results.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: A graduate student in the COMPSCI-MS program registers for the course without needing additional approval.",
+          "phrase": "Consider this worked case: A `User` instance maintains its own `username` and `sessionToken` values independent of other `User` instances.",
           "type": "deterministic-svg"
         },
         {
@@ -25,12 +25,12 @@
       "shots": [
         {
           "id": "beat-02-shot-001",
-          "phrase": "Now define Advanced OOP Focus Areas precisely enough that another learner could test the definition.",
+          "phrase": "Now define Inheritance versus Composition for Reuse precisely enough that another learner could test the definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: Students analyze a real-world application requiring modular design to isolate complex business logic.",
+          "phrase": "Consider this worked case: A `Vehicle` base class provides `move()` logic, but a `DeliveryTruck` composes a `CargoContainer` object instead of inheriting from `Truck` to avoid rigid hierarchies.",
           "type": "deterministic-svg"
         },
         {
@@ -45,12 +45,12 @@
       "shots": [
         {
           "id": "beat-03-shot-001",
-          "phrase": "With the foundation in place, examine how Event-Driven Programming Fundamentals operates in a concrete sequence.",
+          "phrase": "With the foundation in place, examine how Dynamic Method Dispatch and Polymorphism operates in a concrete sequence.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: A UI component automatically updates when a network request completes without polling.",
+          "phrase": "Consider this worked case: Calling `draw()` on a `Shape` reference invokes `Circle.draw()` or `Square.draw()` depending on the actual object at runtime.",
           "type": "deterministic-svg"
         },
         {
@@ -65,12 +65,12 @@
       "shots": [
         {
           "id": "beat-04-shot-001",
-          "phrase": "Next, compare the choices involved in Design Patterns Overview and make the decision criteria explicit.",
+          "phrase": "Next, compare the choices involved in Encapsulation and Access Control and make the decision criteria explicit.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: Implementing a singleton pattern to manage a single database connection pool across modules.",
+          "phrase": "Consider this worked case: A `BankAccount` class exposes `deposit()` and `withdraw()` methods while keeping the `balance` field private to prevent unauthorized modification.",
           "type": "deterministic-svg"
         },
         {
@@ -85,12 +85,12 @@
       "shots": [
         {
           "id": "beat-05-shot-001",
-          "phrase": "Apply Distributed and Concurrent Programming to a worked situation instead of treating it as an isolated definition.",
+          "phrase": "Apply Exceptions for Error Handling to a worked situation instead of treating it as an isolated definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: Splitting a data processing workload across multiple CPU cores to reduce execution time.",
+          "phrase": "Consider this worked case: A `NetworkRequest` throws a `ConnectionTimeoutException` when a server fails to respond, allowing the caller to handle the failure gracefully.",
           "type": "deterministic-svg"
         },
         {
@@ -105,12 +105,12 @@
       "shots": [
         {
           "id": "beat-06-shot-001",
-          "phrase": "Examine the tradeoffs in Cloud Computing Characteristics, including what improves and what becomes more difficult.",
+          "phrase": "Examine the tradeoffs in Generics for Type-Safe Abstractions, including what improves and what becomes more difficult.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: A startup dynamically scales compute resources during a traffic spike without manual intervention.",
+          "phrase": "Consider this worked case: A `Queue<T>` class ensures that only elements of type `T` are added or removed, eliminating the need for runtime casting.",
           "type": "deterministic-svg"
         },
         {
@@ -125,12 +125,12 @@
       "shots": [
         {
           "id": "beat-07-shot-001",
-          "phrase": "Stress-test the reasoning around Cloud Deployment Models with an edge case and identify which assumption controls the outcome.",
+          "phrase": "Stress-test the reasoning around Event-Driven Programming Principles with an edge case and identify which assumption controls the outcome.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: A financial institution uses a hybrid model to keep sensitive data on-premise while using public cloud for analytics.",
+          "phrase": "Consider this worked case: A `UIController` registers a `Button` instance to emit `click` events, triggering a `EventHandler` without direct method calls.",
           "type": "deterministic-svg"
         },
         {
@@ -145,12 +145,12 @@
       "shots": [
         {
           "id": "beat-08-shot-001",
-          "phrase": "Use Raft Consensus Leader Election to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "phrase": "Use Design Patterns for Structural Integrity to diagnose a failure by separating symptoms, causes, and corrective action.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: A server becomes leader after receiving votes from a majority during an election timeout period.",
+          "phrase": "Consider this worked case: The `Strategy` pattern allows a `PaymentProcessor` to swap `CreditCard` and `Crypto` algorithms at runtime without modifying the core class.",
           "type": "deterministic-svg"
         },
         {
@@ -165,12 +165,12 @@
       "shots": [
         {
           "id": "beat-09-shot-001",
-          "phrase": "Connect Raft Log Replication and Safety to the earlier ideas and explain how the pieces work as one system.",
+          "phrase": "Connect Concurrent and Distributed Programming Foundations to the earlier ideas and explain how the pieces work as one system.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: A replicated log ensures all nodes store identical command sequences before acknowledging client requests.",
+          "phrase": "Consider this worked case: A `TaskScheduler` uses thread pools to process independent jobs concurrently, ensuring that shared resources are accessed via synchronized locks or immutable data structures.",
           "type": "deterministic-svg"
         },
         {
@@ -185,12 +185,12 @@
       "shots": [
         {
           "id": "beat-10-shot-001",
-          "phrase": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis.",
+          "phrase": "Finish with Practical Analysis Checklist for Implementation as a practical checklist that can guide a new analysis.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: A student reviews a distributed system architecture, identifies event-driven components, and implements a consensus module in code.",
+          "phrase": "Consider this worked case: Before deploying a `DataProcessor`, developers check that each class has a single responsibility, validates that internal state cannot be corrupted, and confirms that subclasses can replace base classes without breaking contracts.",
           "type": "deterministic-svg"
         },
         {

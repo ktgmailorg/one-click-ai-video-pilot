@@ -1,0 +1,605 @@
+{
+  "approvals": [
+    {
+      "approvedAt": "2026-07-31T15:48:19.409Z",
+      "notes": "Verifies declared claim-to-source bindings for draft rendering only; this is not instructor or release approval.",
+      "reviewer": "Automated source-pack verification (draft)",
+      "role": "automation",
+      "schemaVersion": 1,
+      "stage": "script",
+      "subjectSha256": "70822f42d80aefffd6956e19b7694ed3056244d33585aae5fdd1f7618ec5e2ea"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/render/documentary-master.core.mp4",
+      "role": "master",
+      "sha256": "a7fd5c252fdaecee3b58e27c7fb8d4bcd5d51f348932e1558c5edf3fbf4677bf"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/narration/captions.vtt",
+      "role": "captions-vtt",
+      "sha256": "8acd52fe07e9614dbc486bb7460354b81df450c111e3343a4e3310701b8356e0"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/narration/captions.srt",
+      "role": "captions-srt",
+      "sha256": "fd25d8aeb872892a3593a383507a9bd2239828f14e08a980de7a05df48cd23dc"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/narration/transcript.txt",
+      "role": "transcript-text",
+      "sha256": "c73a09f6b173b3356f2497be51942c66ff23394b7d6127c6359dd8a20a33cbf7"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/narration/transcript.html",
+      "role": "transcript-html",
+      "sha256": "2bd4f1fb1eda7abb3c1b85f99764e48d6eebe356c55ef1b545309d65dbba898b"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/visuals/thumbnail.png",
+      "role": "thumbnail",
+      "sha256": "7ef8ceb6651b2bcfbee3a545095d5b32fa49331e4673d7fcef61c55af9d84ba6"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/visuals/beat-01/beat-01-shot-001.png",
+      "role": "shot",
+      "sha256": "c0fe7fede07021eb8e230d190166111b692356642e4d3ddac7b13ef600216181",
+      "shotId": "beat-01-shot-001"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/visuals/beat-01/beat-01-shot-002.png",
+      "role": "shot",
+      "sha256": "cbbe697b995b33188407043c8f2b4bf513721ce376de6bfc017131e3a244b16e",
+      "shotId": "beat-01-shot-002"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/visuals/beat-01/beat-01-shot-003.png",
+      "role": "shot",
+      "sha256": "a571d3981dce3a9c86380799cff138e6f61b6edea5602b0041f6d552567c2c19",
+      "shotId": "beat-01-shot-003"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/visuals/beat-02/beat-02-shot-001.png",
+      "role": "shot",
+      "sha256": "7464310a551d785c72378f0b969fbee3f0097f0a16b8f97683a90672e6f7a77b",
+      "shotId": "beat-02-shot-001"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/visuals/beat-02/beat-02-shot-002.png",
+      "role": "shot",
+      "sha256": "4f5effb6faaafa1354f84c5641297c8dc7204f3769038d05e647495a46f346ea",
+      "shotId": "beat-02-shot-002"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/visuals/beat-02/beat-02-shot-003.png",
+      "role": "shot",
+      "sha256": "34429eea9498c8e15755762e03e99d3510d293ddbfe63bde6e51ff0f1605062f",
+      "shotId": "beat-02-shot-003"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/visuals/beat-02/beat-02-shot-004.png",
+      "role": "shot",
+      "sha256": "66d9c3d5657fa3c5ae23e99bf4830f9fa3ea02d87fecd6f7c7d3a82d7895eb77",
+      "shotId": "beat-02-shot-004"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/visuals/beat-03/beat-03-shot-001.png",
+      "role": "shot",
+      "sha256": "4bda7bc6141ebfb0f42eb1766bc78a2188fb3f64f45a36975f4743637e0c58c1",
+      "shotId": "beat-03-shot-001"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/visuals/beat-03/beat-03-shot-002.png",
+      "role": "shot",
+      "sha256": "ffe7c5469a81b10636376c3285b167e55ab8b219531c70dbf4504a3542c2fcc6",
+      "shotId": "beat-03-shot-002"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/visuals/beat-03/beat-03-shot-003.png",
+      "role": "shot",
+      "sha256": "eda54e44d1b6b3f233bf41ed9d63ca4235547b83d4f6e88a6181dea6ab1ebe93",
+      "shotId": "beat-03-shot-003"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/visuals/beat-03/beat-03-shot-004.png",
+      "role": "shot",
+      "sha256": "83dfa32c7c05cf44601947004c4ca988eeffd6ede677b72b2a87dbec6ce5a027",
+      "shotId": "beat-03-shot-004"
+    }
+  ],
+  "configSha256": "02030e35dcf1d52aca4fea5572f1e6dfeaf3306365c93ec7373992e21310ca82",
+  "createdAt": "2026-07-31T15:48:43.841Z",
+  "final": {
+    "releaseAudit": {
+      "blockers": [],
+      "checks": [
+        {
+          "name": "frame",
+          "ok": true,
+          "value": "1920x1080"
+        },
+        {
+          "name": "frame-rate",
+          "ok": true,
+          "value": "30000/1001"
+        },
+        {
+          "name": "audio-sample-rate",
+          "ok": true,
+          "value": 48000
+        },
+        {
+          "name": "rit-orange-token",
+          "ok": true,
+          "value": "#F76902"
+        },
+        {
+          "name": "orange-on-black-contrast",
+          "ok": true,
+          "value": 6.98
+        },
+        {
+          "name": "title-safe-template",
+          "ok": true,
+          "value": "96px minimum inset"
+        },
+        {
+          "name": "font-fallbacks",
+          "ok": true,
+          "value": "Arial/Liberation Sans and Georgia/Liberation Serif"
+        },
+        {
+          "name": "final-master-loudness",
+          "ok": true,
+          "value": {
+            "integratedLufs": -16.34,
+            "loudnessRangeLu": 3,
+            "ok": true,
+            "schemaVersion": 1,
+            "targetIntegratedLufs": -16,
+            "targetTruePeakDbtp": -1.5,
+            "truePeakDbtp": -1.52
+          }
+        },
+        {
+          "name": "caption-audio-start-sync",
+          "ok": true,
+          "value": {
+            "audioStartSeconds": 0,
+            "captionStartSeconds": 0.05,
+            "maximumOffsetSeconds": 0.25,
+            "offsetSeconds": 0.05
+          }
+        },
+        {
+          "name": "subject-matched-visuals",
+          "ok": true,
+          "value": {
+            "genericShotIds": [],
+            "resolvedTemplates": [
+              "showcase-pid"
+            ]
+          }
+        }
+      ],
+      "ok": true,
+      "releaseState": "course-draft",
+      "warnings": []
+    },
+    "render": {
+      "audioQuality": {
+        "integratedLufs": -16.34,
+        "loudnessRangeLu": 3,
+        "ok": true,
+        "schemaVersion": 1,
+        "targetIntegratedLufs": -16,
+        "targetTruePeakDbtp": -1.5,
+        "truePeakDbtp": -1.52
+      },
+      "audioSampleRate": 48000,
+      "audioStartSeconds": 0,
+      "cache": {
+        "draft": false,
+        "draftSkipped": false,
+        "master": false,
+        "sectionCount": 3,
+        "sections": 0
+      },
+      "draftPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/render/documentary-master.DRAFT.mp4",
+      "durationSeconds": 59.021333,
+      "encoder": {
+        "codec": "h264_videotoolbox",
+        "mode": "videotoolbox",
+        "prioritizeSpeed": false,
+        "profile": "high",
+        "quality": "80",
+        "realtime": true
+      },
+      "frameRate": "30000/1001",
+      "height": 1080,
+      "master": "documentary-master.core.mp4",
+      "masterPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/render/documentary-master.core.mp4",
+      "schemaVersion": 1,
+      "sections": [
+        {
+          "beatId": "beat-01",
+          "cacheHit": false,
+          "durationSeconds": 17.136,
+          "output": "beat-01.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/render/sections/beat-01.mp4",
+          "renderSignature": "adc99a6f746cc4f042212de21d6c56ff0bdb551777d0c9290028b5e76b5ea872",
+          "schemaVersion": 1,
+          "sha256": "fe795621ab35c1972b7384aceadfbf479adba76b73f09f4951ae328ac9cabda3"
+        },
+        {
+          "beatId": "beat-02",
+          "cacheHit": false,
+          "durationSeconds": 18.384,
+          "output": "beat-02.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/render/sections/beat-02.mp4",
+          "renderSignature": "9bbe00e92a02915ea0dd80187c5d032d6004197f536f5875ceb1ca7a3b29757e",
+          "schemaVersion": 1,
+          "sha256": "b813c963ea408f79db1d2602a69a407337007f993553a3ab14f251be92f70028"
+        },
+        {
+          "beatId": "beat-03",
+          "cacheHit": false,
+          "durationSeconds": 23.352,
+          "output": "beat-03.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/engineering-technology-pid/work/render/sections/beat-03.mp4",
+          "renderSignature": "d9b77e89443c49300f45150b3baa2b75fd201f466954bb97c44994dc7212ec24",
+          "schemaVersion": 1,
+          "sha256": "349e66024c619add2dd0e7490474b84c36cfa6b0aaa106f224f09554307bee84"
+        }
+      ],
+      "sha256": "a7fd5c252fdaecee3b58e27c7fb8d4bcd5d51f348932e1558c5edf3fbf4677bf",
+      "title": "How a PID Controller Corrects an Error",
+      "width": 1920
+    }
+  },
+  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "inputSha256": "4027cb5ed6ba30ac328cc5eef9ae896046d27c836a3454efe13c3ec6c947e2fe",
+  "mode": "record",
+  "providers": {
+    "edge-narration": {
+      "capabilities": [
+        "speech.synthesize"
+      ],
+      "executionLocation": "hosted",
+      "id": "edge-tts",
+      "mimeTypes": {
+        "speech.synthesize": [
+          "audio/mpeg",
+          "text/vtt"
+        ]
+      },
+      "profileName": "edge-narration",
+      "supportsAsyncJobs": false,
+      "supportsModelDiscovery": false,
+      "supportsSeed": false,
+      "supportsStructuredOutput": false,
+      "version": "7.2.8",
+      "voicePresets": {
+        "female": "en-US-EmmaMultilingualNeural",
+        "male": "en-US-AndrewMultilingualNeural"
+      }
+    }
+  },
+  "requests": [
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 2065,
+      "lookupSha256": "aed2048c4ff1bfaaf427732e180aa45914a548bae2ece578520f8f15fd150506",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "Suppose a motor should hold one thousand revolutions per minute, but the sensor reports nine hundred. The controller does not command a correction from the target alone. It first computes tracking error: the desired output minus the measured output. Here, the error is positive one hundred revolutions per minute."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "375d314a1d93f755becacc7c9cf0d98b63fbeb418759a42c4f8fe97424336ee1",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/e8/e848c0a8f0633bb2c7167d3da11898c71fd7afee9c793385f96ec41d34af9d00.mp3",
+            "sha256": "e848c0a8f0633bb2c7167d3da11898c71fd7afee9c793385f96ec41d34af9d00",
+            "size": 102816
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ff/ff9a286a8968f0e9fc279b58f1cda88a2f4819a5c2af2b05641d74cc770e5662.vtt",
+            "sha256": "ff9a286a8968f0e9fc279b58f1cda88a2f4819a5c2af2b05641d74cc770e5662",
+            "size": 446
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:48:19.513Z"
+    },
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 2221,
+      "lookupSha256": "859f5451c580ff51da427ab90778801b70bea77c9d84670f3034dcf22f7436b1",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "After the motor responds, the sensor measures again and the loop repeats. Larger gains are not automatically better: poor tuning can create overshoot, noise sensitivity, or oscillation. Engineers start with performance requirements, tune deliberately, and keep the controller as simple as the application allows. A PI controller may be enough when derivative action adds little value."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "b5038d4caa80005c913c481d30a7ddf0d1d0503e52c6675348f5a84e4650cc6c",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/5f/5f142cc7f1c23b29d6610f8cc2daa3b8ce8eca08ee5b82bc3ea1352e9aa43f03.mp3",
+            "sha256": "5f142cc7f1c23b29d6610f8cc2daa3b8ce8eca08ee5b82bc3ea1352e9aa43f03",
+            "size": 140112
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/e1/e1a3eead253dfcc8932e411e9b23769eca386b3601d865b9c9349ca0869f33a3.vtt",
+            "sha256": "e1a3eead253dfcc8932e411e9b23769eca386b3601d865b9c9349ca0869f33a3",
+            "size": 517
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:48:19.513Z"
+    },
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 2224,
+      "lookupSha256": "d7855fe7bda51d91dcfaa8f92799c39b494bf0eb13ef965be57c0911686f9810",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "The proportional term reacts to the error right now. The integral term accumulates error over time, helping remove a persistent offset. The derivative term responds to how quickly error is changing, which can anticipate motion and reduce overshoot. Their weighted sum becomes the control input sent to the system."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "4b76dafc42e71368da8fc021e5644c22645129b76328444b647422f48ca335bf",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/22/222a270488cf0beeb336b4be2afd9b0713e0c7fbd98c3c0065be9b9f8d6a5578.mp3",
+            "sha256": "222a270488cf0beeb336b4be2afd9b0713e0c7fbd98c3c0065be9b9f8d6a5578",
+            "size": 110304
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/2d/2dc26b8b887158311b2179ba937e760ece6edfce4359a6f0e140cd8c5cff03a8.vtt",
+            "sha256": "2dc26b8b887158311b2179ba937e760ece6edfce4359a6f0e140cd8c5cff03a8",
+            "size": 446
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:48:19.511Z"
+    }
+  ],
+  "runId": "how-a-pid-controller-corrects-an-error-b77021a9cb91",
+  "schemaVersion": 1,
+  "stages": [
+    {
+      "name": "plan",
+      "status": "complete"
+    },
+    {
+      "name": "script-approval",
+      "status": "complete"
+    },
+    {
+      "name": "visual-approval",
+      "status": "complete"
+    },
+    {
+      "name": "narration",
+      "status": "complete"
+    },
+    {
+      "name": "visual-generation",
+      "status": "complete"
+    },
+    {
+      "name": "render",
+      "status": "complete"
+    },
+    {
+      "name": "release-qa",
+      "status": "complete"
+    },
+    {
+      "name": "release-approval",
+      "status": "waiting"
+    }
+  ],
+  "status": "awaiting-approval",
+  "toolchain": {
+    "ffmpeg": {
+      "available": true,
+      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "available": true,
+      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "gitChangedPaths": [
+      "outreach/README.md",
+      "outreach/general-email.md",
+      "outreach/leadership-confirmation.md"
+    ],
+    "gitDirty": true,
+    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
+    "node": "v22.23.1",
+    "platform": "darwin-arm64",
+    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtimeDirty": false,
+    "sharp": {
+      "aom": "3.14.1",
+      "archive": "3.8.8",
+      "cairo": "1.18.4",
+      "cgif": "0.5.3",
+      "exif": "0.6.26",
+      "expat": "2.8.2",
+      "ffi": "3.6.0",
+      "fontconfig": "2.18.1",
+      "freetype": "2.14.3",
+      "fribidi": "1.0.16",
+      "glib": "2.89.1",
+      "harfbuzz": "14.2.1",
+      "heif": "1.23.1",
+      "highway": "1.4.0",
+      "imagequant": "2.4.1",
+      "lcms": "2.19.1",
+      "mozjpeg": "0826579",
+      "pango": "1.58.0",
+      "pixman": "0.46.4",
+      "png": "1.6.58",
+      "proxy-libintl": "0.5",
+      "rsvg": "2.62.90",
+      "sharp": "0.35.3",
+      "tiff": "d01a94b",
+      "uhdr": "1acdbed",
+      "vips": "8.18.3",
+      "webp": "1.6.0",
+      "xml2": "2.15.3",
+      "zlib-ng": "2.3.3"
+    }
+  },
+  "totalCostUsd": 0
+}

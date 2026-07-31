@@ -1,0 +1,101 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "White-looking light can contain many frequencies. A spectrometer separates those frequencies after light interacts with a sample. Instead of asking only how bright the light is, spectroscopy asks which frequencies are present, which are missing, and how strong each signal is.",
+      "plannedSeconds": 22,
+      "title": "Spread light into frequencies",
+      "visualDirection": "template:showcase-spectroscopy | Pass light through a sample and separate the transmitted light by wavelength."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Atoms and molecules do not interact with every frequency equally. Their internal energy structure produces characteristic patterns of absorption or emission. Those patterns act like spectral fingerprints. Matching the positions of measured peaks or missing bands with trusted reference data can identify substances in an unknown sample.",
+      "plannedSeconds": 25,
+      "title": "Recognize a spectral fingerprint",
+      "visualDirection": "template:showcase-spectroscopy | Compare an unknown spectrum with reference line positions for known atoms or molecules."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "Peak position can indicate identity, while calibrated signal strength can help estimate concentration. Conditions still matter: temperature, excitation, instrument response, and overlapping signals can change what is observed. Spectroscopy is powerful because it connects a precise measurement to reference physics, not because every colored line explains itself.",
+      "plannedSeconds": 25,
+      "title": "Interpret intensity with context",
+      "visualDirection": "template:showcase-spectroscopy | Use peak position for identity and calibrated signal strength for amount, with temperature and conditions noted."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "nist-spectroscopy"
+      ],
+      "text": "Spectroscopy measures how matter absorbs or emits different frequencies of light.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "nist-spectroscopy"
+      ],
+      "text": "Atoms and molecules have characteristic spectral patterns that can be compared with reference data.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "nist-spectroscopy"
+      ],
+      "text": "Spectral measurements can reveal composition and concentration, but interpretation depends on measurement and excitation conditions.",
+      "verified": true
+    }
+  ],
+  "id": "how-spectroscopy-identifies-matter",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "National Institute of Standards and Technology",
+      "excerpt": "Atoms and molecules absorb and radiate light at characteristic frequencies. These sets of frequencies form spectral fingerprints that can reveal identity, composition, concentration, and temperature. In absorption spectroscopy, scientists measure which frequencies are missing after light interacts with a sample. NIST maintains reference spectral data and uses spectroscopy in fields including chemistry, atmospheric science, materials science, medicine, and astronomy.",
+      "id": "nist-spectroscopy",
+      "sha256": "ddd185fc9f72fa5ab0900f1e85fc0ad7a7f2053c13cbad13143ae6def815586e",
+      "title": "Spectroscopy: A Measurement Powerhouse",
+      "type": "url",
+      "uri": "https://www.nist.gov/spectroscopy/what-spectroscopy",
+      "verified": true
+    }
+  ],
+  "title": "How Spectroscopy Identifies Matter"
+}

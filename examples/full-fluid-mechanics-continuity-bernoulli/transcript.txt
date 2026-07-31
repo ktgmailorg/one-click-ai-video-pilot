@@ -1,241 +1,219 @@
-NARRATOR: We begin by isolating a specific region of flowing fluid, which we call a
+We begin by isolating a specific region of flowing fluid, which we call a control volume.
 
-control volume.
+Imagine drawing a transparent box around a section of a water pipe.
 
-NARRATOR: Imagine drawing a transparent box around a section of a water pipe.
+This boundary is purely imaginary, but it allows us to track exactly what enters and
 
-NARRATOR: This boundary is purely imaginary, but it allows us to track exactly what enters
+leaves without worrying about the fluid outside.
 
-and leaves without worrying about the fluid outside.
+The control volume concept transforms a complex, continuous system into a manageable
 
-NARRATOR: The control volume concept transforms a complex, continuous system into a
+mathematical framework.
 
-manageable mathematical framework.
+By focusing only on the mass crossing this imaginary surface, we can apply conservation
 
-NARRATOR: By focusing only on the mass crossing this imaginary surface, we can apply
+laws directly to the flow.
 
-conservation laws directly to the flow.
+This approach is essential because it separates the internal dynamics from external
 
-NARRATOR: This approach is essential because it separates the internal dynamics from
+influences, letting us analyze steady conditions systematically.
 
-external influences, letting us analyze steady conditions systematically.
+We will now examine how mass behaves within this defined space.
 
-NARRATOR: We will now examine how mass behaves within this defined space.
+Density measures how much mass occupies a given volume, acting as the bridge between
 
-NARRATOR: Density measures how much mass occupies a given volume, acting as the bridge
+mass and space.
 
-between mass and space.
+In our control volume, density determines how tightly packed the fluid molecules are.
 
-NARRATOR: In our control volume, density determines how tightly packed the fluid
+If we compress the fluid, density increases, meaning more mass fits into the same volume.
 
-molecules are.
+Conversely, heating the fluid expands it, lowering density.
 
-NARRATOR: If we compress the fluid, density increases, meaning more mass fits into the
+This property is crucial because it dictates how the fluid responds to pressure changes and
 
-same volume.
+area variations.
 
-NARRATOR: Conversely, heating the fluid expands it, lowering density.
+We treat density as a fundamental material property that remains constant for liquids but
 
-NARRATOR: This property is crucial because it dictates how the fluid responds to pressure
+can shift for gases.
 
-changes and area variations.
+Recognizing density allows us to predict how mass distributes itself within our imaginary
 
-NARRATOR: We treat density as a fundamental material property that remains constant for
+boundary before analyzing motion.
 
-liquids but can shift for gases.
+Mass flow rate quantifies how much mass crosses a plane each second.
 
-NARRATOR: Recognizing density allows us to predict how mass distributes itself within our
+Imagine a conveyor belt carrying boxes; the mass flow rate tells you exactly how many
 
-imaginary boundary before analyzing motion.
+boxes pass a checkpoint per minute.
 
-NARRATOR: Mass flow rate quantifies how much mass crosses a plane each second.
+Mathematically, we multiply density by the cross-sectional area and the average velocity
 
-NARRATOR: Imagine a conveyor belt carrying boxes; the mass flow rate tells you exactly
+to get this value.
 
-how many boxes pass a checkpoint per minute.
+This formula works because density gives mass per volume, area gives volume per length, and
 
-NARRATOR: Mathematically, we multiply density by the cross-sectional area and the average
+velocity gives length per time.
 
-velocity to get this value.
+When you combine them, volume and length cancel out, leaving mass per time.
 
-NARRATOR: This formula works because density gives mass per volume, area gives volume per
+This calculation is foundational because it converts spatial dimensions into a temporal
 
-length, and velocity gives length per time.
+rate, allowing us to track material movement through our control volume.
 
-NARRATOR: When you combine them, volume and length cancel out, leaving mass per time.
+Continuity enforces mass conservation within our control volume.
 
-NARRATOR: This calculation is foundational because it converts spatial dimensions into a
+If mass enters at a certain rate, it must exit at the exact same rate when the flow is
 
-temporal rate, allowing us to track material movement through our control volume.
+steady.
 
-NARRATOR: Continuity enforces mass conservation within our control volume.
+No mass accumulates inside the box, and no sources or sinks exist within it.
 
-NARRATOR: If mass enters at a certain rate, it must exit at the exact same rate when the flow
+This principle means the product of density, area, and velocity remains constant along the
 
-is steady.
+pipe.
 
-NARRATOR: No mass accumulates inside the box, and no sources or sinks exist within it.
+If the pipe narrows, the fluid must speed up to maintain the same mass flow rate.
 
-NARRATOR: This principle means the product of density, area, and velocity remains constant
+Conversely, if the pipe widens, the fluid slows down.
 
-along the pipe.
+This relationship holds regardless of the fluid type, provided we account for density
 
-NARRATOR: If the pipe narrows, the fluid must speed up to maintain the same mass flow rate.
+changes in compressible gases.
 
-NARRATOR: Conversely, if the pipe widens, the fluid slows down.
+Continuity is the first law of fluid mechanics in action, dictating how geometry forces
 
-NARRATOR: This relationship holds regardless of the fluid type, provided we account for
+velocity to adjust.
 
-density changes in compressible gases.
+Pressure in a flowing fluid splits into two distinct components.
 
-NARRATOR: Continuity is the first law of fluid mechanics in action, dictating how geometry
+Static pressure measures the fluid's inherent thermodynamic energy, independent of motion.
 
-forces velocity to adjust.
+Dynamic pressure quantifies the kinetic energy associated with the fluid's velocity.
 
-NARRATOR: Pressure in a flowing fluid splits into two distinct components.
+When fluid moves faster, dynamic pressure increases while static pressure typically
 
-NARRATOR: Static pressure measures the fluid's inherent thermodynamic energy, independent of
+decreases.
 
-motion.
+This trade-off occurs because total energy remains constant in ideal conditions.
 
-NARRATOR: Dynamic pressure quantifies the kinetic energy associated with the fluid's
+We visualize this by imagining a stationary observer measuring static pressure with a
 
-velocity.
+wall-mounted gauge, versus a moving observer experiencing dynamic pressure as a ram effect.
 
-NARRATOR: When fluid moves faster, dynamic pressure increases while static pressure
+Understanding both components allows us to predict how forces distribute across pipe
 
-typically decreases.
+walls and how velocity changes affect pressure readings.
 
-NARRATOR: This trade-off occurs because total energy remains constant in ideal conditions.
+Bernoulli's equation links static pressure, dynamic pressure, and total pressure along a
 
-NARRATOR: We visualize this by imagining a stationary observer measuring static pressure
+streamline.
 
-with a wall-mounted gauge, versus a moving observer experiencing dynamic pressure as a
+It states that the sum of static pressure and one-half density times velocity squared equals
 
-ram effect.
+a constant total pressure.
 
-NARRATOR: Understanding both components allows us to predict how forces distribute across
+This relationship emerges from energy conservation, assuming steady, inviscid,
 
-pipe walls and how velocity changes affect pressure readings.
+incompressible flow without heat addition, shaft work, or significant elevation changes.
 
-NARRATOR: Bernoulli's equation links static pressure, dynamic pressure, and total pressure
+These assumptions simplify reality but are critical for accurate predictions.
 
-along a streamline.
+If viscosity, compressibility, pumps, turbines, heat transfer, or unsteady behavior
 
-NARRATOR: It states that the sum of static pressure and one-half density times velocity
+materially affect the flow, Bernoulli's simplified form fails.
 
-squared equals a constant total pressure.
+We must verify these conditions before applying the equation to real-world systems.
 
-NARRATOR: This relationship emerges from energy conservation, assuming steady,
+Combining continuity and Bernoulli's equation reveals how pipe geometry dictates pressure
 
-inviscid, incompressible flow without heat addition, shaft work, or significant elevation
+and velocity.
 
-changes.
+When a pipe narrows, continuity forces velocity to increase.
 
-NARRATOR: These assumptions simplify reality but are critical for accurate predictions.
+Bernoulli's equation then predicts that this velocity increase must be offset by a drop in
 
-NARRATOR: If viscosity, compressibility, pumps, turbines, heat transfer, or unsteady
+static pressure.
 
-behavior materially affect the flow, Bernoulli's simplified form fails.
+Conversely, a widening pipe reduces velocity and raises static pressure.
 
-NARRATOR: We must verify these conditions before applying the equation to real-world
+This inverse relationship between area and pressure is fundamental to designing ducts,
 
-systems.
+nozzles, and Venturi meters.
 
-NARRATOR: Combining continuity and Bernoulli's equation reveals how pipe geometry dictates
+We can visualize this by tracking pressure gauges along a tapered pipe: readings will
 
-pressure and velocity.
+fall in the narrow section and rise in the wide section.
 
-NARRATOR: When a pipe narrows, continuity forces velocity to increase.
+These relationships allow engineers to predict flow behavior without complex simulations.
 
-NARRATOR: Bernoulli's equation then predicts that this velocity increase must be offset by
-
-a drop in static pressure.
-
-NARRATOR: Conversely, a widening pipe reduces velocity and raises static pressure.
-
-NARRATOR: This inverse relationship between area and pressure is fundamental to designing
-
-ducts, nozzles, and Venturi meters.
-
-NARRATOR: We can visualize this by tracking pressure gauges along a tapered pipe: readings
-
-will fall in the narrow section and rise in the wide section.
-
-NARRATOR: These relationships allow engineers to predict flow behavior without complex
-
-simulations.
-
-NARRATOR: Pitot measurement exploits the area-velocity-pressure relationship to
+Pitot measurement exploits the area-velocity-pressure relationship to
 
 determine fluid speed.
 
-NARRATOR: A Pitot tube points directly into the flow, capturing dynamic pressure at its
+A Pitot tube points directly into the flow, capturing dynamic pressure at its stagnation
 
-stagnation point.
+point.
 
-NARRATOR: A static port measures the ambient static pressure.
+A static port measures the ambient static pressure.
 
-NARRATOR: The difference between these two readings equals dynamic pressure, which we
+The difference between these two readings equals dynamic pressure, which we convert to
 
-convert to velocity using Bernoulli's equation.
+velocity using Bernoulli's equation.
 
-NARRATOR: This technique is widely used in aviation and HVAC systems to map airflow
+This technique is widely used in aviation and HVAC systems to map airflow patterns.
 
-patterns.
+By placing multiple Pitot probes along a duct, we can reconstruct the velocity profile and
 
-NARRATOR: By placing multiple Pitot probes along a duct, we can reconstruct the velocity
+verify theoretical predictions.
 
-profile and verify theoretical predictions.
+The method relies on accurate pressure sensing and assumes the flow remains undisturbed by
 
-NARRATOR: The method relies on accurate pressure sensing and assumes the flow remains
+the probe itself.
 
-undisturbed by the probe itself.
+Real flows rarely meet ideal assumptions, introducing energy losses that invalidate
 
-NARRATOR: Real flows rarely meet ideal assumptions, introducing energy losses that
+simple Bernoulli calculations.
 
-invalidate simple Bernoulli calculations.
+Friction against pipe walls, turbulence, and sudden expansions dissipate mechanical energy
 
-NARRATOR: Friction against pipe walls, turbulence, and sudden expansions dissipate
+into heat.
 
-mechanical energy into heat.
+These losses reduce the total pressure available for flow, meaning static and dynamic
 
-NARRATOR: These losses reduce the total pressure available for flow, meaning static
+pressure sums will not remain constant.
 
-and dynamic pressure sums will not remain constant.
+We must recognize invalid applications when viscosity, compressibility, pumps, turbines,
 
-NARRATOR: We must recognize invalid applications when viscosity, compressibility,
+heat transfer, or unsteady behavior materially affect the flow.
 
-pumps, turbines, heat transfer, or unsteady behavior materially affect the flow.
+In such cases, we switch to the general energy equation or use empirical loss coefficients.
 
-NARRATOR: In such cases, we switch to the general energy equation or use empirical loss
+Identifying these limitations prevents erroneous predictions and ensures engineering
 
-coefficients.
+designs account for real-world inefficiencies.
 
-NARRATOR: Identifying these limitations prevents erroneous predictions and ensures
+Let us apply these concepts to a narrowing-pipe example.
 
-engineering designs account for real-world inefficiencies.
+Suppose water flows through a pipe with an inlet area of 0.
 
-NARRATOR: Let us apply these concepts to a narrowing-pipe example.
+05 square meters at 2 meters per second.
 
-NARRATOR: Suppose water flows through a pipe with an inlet area of 0.05 square meters at 2
+The outlet area shrinks to 0.
 
-meters per second.
+025 square meters.
 
-NARRATOR: The outlet area shrinks to 0.025 square meters.
+Using continuity, we find the outlet velocity doubles to 4 meters per second.
 
-NARRATOR: Using continuity, we find the outlet velocity doubles to 4 meters per second.
+Assuming incompressible flow, density remains 1000 kilograms per cubic meter.
 
-NARRATOR: Assuming incompressible flow, density remains 1000 kilograms per cubic
+Applying Bernoulli's equation, we calculate the static pressure drop.
 
-meter.
+The dynamic pressure increases by half density times the velocity change squared, yielding a
 
-NARRATOR: Applying Bernoulli's equation, we calculate the static pressure drop.
+measurable pressure difference.
 
-NARRATOR: The dynamic pressure increases by half density times the velocity change
+This step-by-step calculation demonstrates how area reduction forces velocity increase and
 
-squared, yielding a measurable pressure difference.
-
-NARRATOR: This step-by-step calculation demonstrates how area reduction forces
-
-velocity increase and static pressure decrease, completing our practical analysis.
+static pressure decrease, completing our practical analysis.

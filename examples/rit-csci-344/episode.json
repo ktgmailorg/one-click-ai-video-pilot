@@ -13,10 +13,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Introduction to Course Scope and Objectives as a question about inputs, decisions, and observable results. This course is a study of the syntax and semantics of a diverse set of high-level programming languages. Consider this worked case: Students will examine how Python and Java handle variable declaration and type checking to see how syntax rules differ while serving the same semantic purpose. On screen, display a side-by-side comparison chart of Python and Java variable declarations with callouts highlighting syntax differences and shared semantic goals. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
-      "plannedSeconds": 61,
-      "title": "Introduction to Course Scope and Objectives",
-      "visualDirection": "template:academic-process | Display a side-by-side comparison chart of Python and Java variable declarations with callouts highlighting syntax differences and shared semantic goals."
+      "narration": "Begin by framing Module Structure and IR Representation as a question about inputs, decisions, and observable results. A module contains global values, functions, declarations, and metadata. Consider this worked case: An LLVM module groups all global variables, function definitions, and type declarations into a single unit before compilation begins. On screen, display a hierarchical diagram showing a module node branching into global values, function nodes, and metadata nodes, with clear labels for each component. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 55,
+      "title": "Module Structure and IR Representation",
+      "visualDirection": "template:academic-process | Display a hierarchical diagram showing a module node branching into global values, function nodes, and metadata nodes, with clear labels for each component."
     },
     {
       "accessibility": {
@@ -31,10 +31,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Defining Syntax in Programming Languages precisely enough that another learner could test the definition. The languages chosen are compared and contrasted in order to demonstrate general principles of programming language design and implementation. Consider this worked case: In C++, a missing semicolon at the end of a statement causes a compilation error, demonstrating how syntax rules enforce code structure. On screen, show a code snippet with a syntax error highlighted in red, alongside the corrected version with a green checkmark and a brief annotation explaining the rule. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
-      "plannedSeconds": 62,
-      "title": "Defining Syntax in Programming Languages",
-      "visualDirection": "template:academic-process | Show a code snippet with a syntax error highlighted in red, alongside the corrected version with a green checkmark and a brief annotation explaining the rule."
+      "narration": "Now define Basic Blocks and Control Flow precisely enough that another learner could test the definition. A function contains basic blocks, and every basic block ends with a terminator instruction. Consider this worked case: A conditional branch in a function splits into two basic blocks, each terminating with a jump instruction that routes to the next logical step. On screen, render a flowchart of a function with three basic blocks, highlighting the terminator instruction at the end of each block and arrows indicating control flow paths. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "plannedSeconds": 61,
+      "title": "Basic Blocks and Control Flow",
+      "visualDirection": "template:academic-process | Render a flowchart of a function with three basic blocks, highlighting the terminator instruction at the end of each block and arrows indicating control flow paths."
     },
     {
       "accessibility": {
@@ -49,10 +49,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Defining Semantics in Programming Languages operates in a concrete sequence. A research project narrows a question, reviews literature, defines a reproducible method, evaluates results, and communicates for the intended audience. Consider this worked case: The expression `x = 5 + 3` has the same syntactic structure in multiple languages, but its semantic evaluation depends on the language's operator precedence and variable scoping rules. On screen, display a flowchart showing the evaluation steps of a simple arithmetic expression, with nodes labeled by language-specific semantic rules. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
-      "plannedSeconds": 62,
-      "title": "Defining Semantics in Programming Languages",
-      "visualDirection": "template:academic-process | Display a flowchart showing the evaluation steps of a simple arithmetic expression, with nodes labeled by language-specific semantic rules."
+      "narration": "With the foundation in place, examine how Phi Instructions and Value Selection operates in a concrete sequence. Phi instructions select values according to the predecessor control-flow edge. Consider this worked case: When two branches converge, a phi instruction chooses the value from the branch that was actually executed during runtime. On screen, show a diamond-shaped control flow graph with a phi node at the merge point, labeled with the values from each incoming edge. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "plannedSeconds": 55,
+      "title": "Phi Instructions and Value Selection",
+      "visualDirection": "template:academic-process | Show a diamond-shaped control flow graph with a phi node at the merge point, labeled with the values from each incoming edge."
     },
     {
       "accessibility": {
@@ -67,10 +67,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Comparing Syntax Across Languages and make the decision criteria explicit. Programming projects will be required. Consider this worked case: Python uses indentation to define code blocks, while C# uses curly braces, demonstrating how syntax choices impact readability and structure. On screen, show two code blocks side-by-side, one in Python and one in C#, with arrows pointing to the structural delimiters and a caption explaining the syntactic difference. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "narration": "Next, compare the choices involved in Explicit Memory Operations and make the decision criteria explicit. Load and store instructions make memory access explicit. Consider this worked case: A store instruction assigns a computed value to a specific memory location, while a load instruction retrieves that value for further computation. On screen, illustrate a memory model with a register, a memory address, and arrows showing a store writing to memory and a load reading from it. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
       "plannedSeconds": 55,
-      "title": "Comparing Syntax Across Languages",
-      "visualDirection": "template:academic-process | Show two code blocks side-by-side, one in Python and one in C#, with arrows pointing to the structural delimiters and a caption explaining the syntactic difference."
+      "title": "Explicit Memory Operations",
+      "visualDirection": "template:academic-process | Illustrate a memory model with a register, a memory address, and arrows showing a store writing to memory and a load reading from it."
     },
     {
       "accessibility": {
@@ -85,10 +85,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Comparing Semantics Across Languages to a worked situation instead of treating it as an isolated definition. The ACM Code directs computing professionals to contribute to society and human well-being. Consider this worked case: JavaScript uses dynamic typing where variable types are determined at runtime, whereas Java uses static typing where types are checked at compile time, illustrating different semantic approaches to data handling. On screen, create a table comparing dynamic vs. static typing with columns for type checking time, error detection, and flexibility, using JavaScript and Java as examples. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
-      "plannedSeconds": 65,
-      "title": "Comparing Semantics Across Languages",
-      "visualDirection": "template:academic-process | Create a table comparing dynamic vs. static typing with columns for type checking time, error detection, and flexibility, using JavaScript and Java as examples."
+      "narration": "Apply Structural Verification Rules to a worked situation instead of treating it as an isolated definition. Valid IR must satisfy structural and typing rules. Consider this worked case: The verifier checks that every basic block ends with a terminator and that all variables are properly typed before the compiler proceeds. On screen, display a checklist graphic with three boxes: structural rules, typing rules, and verifier output, showing a red 'X' on a rule violation. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 57,
+      "title": "Structural Verification Rules",
+      "visualDirection": "template:academic-process | Display a checklist graphic with three boxes: structural rules, typing rules, and verifier output, showing a red 'X' on a rule violation."
     },
     {
       "accessibility": {
@@ -103,10 +103,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Identifying General Principles of Language Design, including what improves and what becomes more difficult. The course emphasizes the concepts underpinning modern languages rather than the mastery of particular language details. Consider this worked case: Both Python and C# support object-oriented programming through classes and inheritance, demonstrating how abstraction principles are implemented across different syntaxes. On screen, display a diagram of a class hierarchy with inheritance arrows, labeled with common OOP concepts, and a note explaining how these principles appear in multiple languages. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
-      "plannedSeconds": 61,
-      "title": "Identifying General Principles of Language Design",
-      "visualDirection": "template:academic-process | Display a diagram of a class hierarchy with inheritance arrows, labeled with common OOP concepts, and a note explaining how these principles appear in multiple languages."
+      "narration": "Examine the tradeoffs in Compiler Work Separation, including what improves and what becomes more difficult. Compiler work separates parsing and semantic analysis from lowering, verification, optimization, and target-specific code generation. Consider this worked case: The parser converts source code into an abstract syntax tree, while the semantic analyzer checks types and scopes before the lowering phase begins. On screen, draw a linear pipeline diagram with five stages labeled parsing, semantic analysis, lowering, verification, optimization, and code generation, with arrows flowing left to right. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "plannedSeconds": 60,
+      "title": "Compiler Work Separation",
+      "visualDirection": "template:academic-process | Draw a linear pipeline diagram with five stages labeled parsing, semantic analysis, lowering, verification, optimization, and code generation, with arrows flowing left to right."
     },
     {
       "accessibility": {
@@ -121,10 +121,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Applying Problem-Solving Methods to Language Analysis with an edge case and identify which assumption controls the outcome. They should respect privacy. Consider this worked case: When debugging a loop in a new language, students first verify syntax correctness, then trace semantic execution flow, and finally check for design principle violations like infinite recursion. On screen, show a three-step checklist graphic: 1) Check syntax, 2) Trace semantics, 3) Verify design principles, with each step containing a brief actionable prompt. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
-      "plannedSeconds": 61,
-      "title": "Applying Problem-Solving Methods to Language Analysis",
-      "visualDirection": "template:academic-process | Show a three-step checklist graphic: 1) Check syntax, 2) Trace semantics, 3) Verify design principles, with each step containing a brief actionable prompt."
+      "narration": "Stress-test the reasoning around Lexical Analysis and Scoping with an edge case and identify which assumption controls the outcome. Names are bound to objects within namespaces and scopes. Consider this worked case: A variable declared inside a function belongs to the function's local scope, while a global variable is bound to the module's namespace. On screen, show nested boxes representing global and local scopes, with variable names placed inside the appropriate scope box and arrows indicating binding relationships. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 59,
+      "title": "Lexical Analysis and Scoping",
+      "visualDirection": "template:academic-process | Show nested boxes representing global and local scopes, with variable names placed inside the appropriate scope box and arrows indicating binding relationships."
     },
     {
       "accessibility": {
@@ -139,10 +139,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Connecting to Course Requirements and Projects to diagnose a failure by separating symptoms, causes, and corrective action. They should respect the work required to produce new ideas and creative works. Consider this worked case: Students will write a small utility in two different languages, then document how syntax and semantic differences affected the implementation and final output. On screen, display a project workflow diagram showing language selection, coding, testing, and documentation phases, with callouts linking each phase to core course concepts. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "narration": "Use Data Model and Execution Model to diagnose a failure by separating symptoms, causes, and corrective action. Expressions produce values, while statements control execution and bindings. Consider this worked case: An integer object has a unique memory address, a type tag, and a numeric value, while an assignment statement binds a name to that object. On screen, render a simple object diagram showing an object with three fields: identity (address), type, and value, alongside an assignment arrow binding a name to it. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
       "plannedSeconds": 61,
-      "title": "Connecting to Course Requirements and Projects",
-      "visualDirection": "template:academic-process | Display a project workflow diagram showing language selection, coding, testing, and documentation phases, with callouts linking each phase to core course concepts."
+      "title": "Data Model and Execution Model",
+      "visualDirection": "template:academic-process | Render a simple object diagram showing an object with three fields: identity (address), type, and value, alongside an assignment arrow binding a name to it."
     },
     {
       "accessibility": {
@@ -157,10 +157,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Reviewing Key Takeaways and Next Steps to the earlier ideas and explain how the pieces work as one system. They should honor confidentiality. Consider this worked case: When encountering an unfamiliar language, programmers can quickly identify syntax patterns, predict semantic behavior, and leverage shared design principles to accelerate learning. On screen, show a summary slide with three icons representing syntax, semantics, and design principles, each with a concise bullet point reinforcing the core lesson. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
-      "plannedSeconds": 56,
-      "title": "Reviewing Key Takeaways and Next Steps",
-      "visualDirection": "template:academic-process | Show a summary slide with three icons representing syntax, semantics, and design principles, each with a concise bullet point reinforcing the core lesson."
+      "narration": "Connect Exception Handling and Control Flow to the earlier ideas and explain how the pieces work as one system. Exceptions interrupt normal control flow until a matching handler processes them or they propagate. Consider this worked case: When a division by zero occurs, an exception jumps out of the current block and is caught by a try-except handler that logs the error and continues. On screen, illustrate a control flow path with a normal execution line, a red 'exception' arrow jumping to a handler block, and a green 'propagate' arrow moving upward. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 64,
+      "title": "Exception Handling and Control Flow",
+      "visualDirection": "template:academic-process | Illustrate a control flow path with a normal execution line, a red 'exception' arrow jumping to a handler block, and a green 'propagate' arrow moving upward."
     },
     {
       "accessibility": {
@@ -175,95 +175,95 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Limitations and threats to validity should be made visible. Consider this worked case: Before submitting a code snippet, students check for correct syntax, trace semantic execution paths, and confirm that the implementation follows modular and consistent design practices. On screen, display a printable checklist template with three columns: Syntax Verification, Semantic Trace, and Design Principle Alignment, each with checkboxes and brief instructions. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
-      "plannedSeconds": 58,
-      "title": "Practical Analysis Checklist",
-      "visualDirection": "template:academic-process | Display a printable checklist template with three columns: Syntax Verification, Semantic Trace, and Design Principle Alignment, each with checkboxes and brief instructions."
+      "narration": "Finish with Debugging and Decomposition as a practical checklist that can guide a new analysis. Debugging separates syntax, runtime, and logical failures, while decomposition and abstraction reduce the number of interacting concerns. Consider this worked case: A syntax error is caught by the parser, a runtime error occurs during execution, and a logical error is fixed by breaking the code into smaller, testable functions. On screen, show a three-column table labeled syntax, runtime, and logical failures, with each column containing a brief example and a corresponding debugging tool icon. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 64,
+      "title": "Debugging and Decomposition",
+      "visualDirection": "template:academic-process | Show a three-column table labeled syntax, runtime, and logical failures, with each column containing a brief example and a corresponding debugging tool icon."
     }
   ],
   "claims": [
     {
       "id": "beat-01-claim-01",
       "sourceIds": [
-        "rit-csci-344"
+        "llvm-language-reference"
       ],
-      "text": "This course is a study of the syntax and semantics of a diverse set of high-level programming languages.",
+      "text": "A module contains global values, functions, declarations, and metadata.",
       "verified": true
     },
     {
       "id": "beat-02-claim-01",
       "sourceIds": [
-        "rit-csci-344"
+        "llvm-language-reference"
       ],
-      "text": "The languages chosen are compared and contrasted in order to demonstrate general principles of programming language design and implementation.",
+      "text": "A function contains basic blocks, and every basic block ends with a terminator instruction.",
       "verified": true
     },
     {
       "id": "beat-03-claim-01",
       "sourceIds": [
-        "acm-research-practice"
+        "llvm-language-reference"
       ],
-      "text": "A research project narrows a question, reviews literature, defines a reproducible method, evaluates results, and communicates for the intended audience.",
+      "text": "Phi instructions select values according to the predecessor control-flow edge.",
       "verified": true
     },
     {
       "id": "beat-04-claim-01",
       "sourceIds": [
-        "rit-csci-344"
+        "llvm-language-reference"
       ],
-      "text": "Programming projects will be required.",
+      "text": "Load and store instructions make memory access explicit.",
       "verified": true
     },
     {
       "id": "beat-05-claim-01",
       "sourceIds": [
-        "acm-code-of-ethics"
+        "llvm-language-reference"
       ],
-      "text": "The ACM Code directs computing professionals to contribute to society and human well-being.",
+      "text": "Valid IR must satisfy structural and typing rules.",
       "verified": true
     },
     {
       "id": "beat-06-claim-01",
       "sourceIds": [
-        "rit-csci-344"
+        "llvm-language-reference"
       ],
-      "text": "The course emphasizes the concepts underpinning modern languages rather than the mastery of particular language details.",
+      "text": "Compiler work separates parsing and semantic analysis from lowering, verification, optimization, and target-specific code generation.",
       "verified": true
     },
     {
       "id": "beat-07-claim-01",
       "sourceIds": [
-        "acm-code-of-ethics"
+        "python-language-reference"
       ],
-      "text": "They should respect privacy.",
+      "text": "Names are bound to objects within namespaces and scopes.",
       "verified": true
     },
     {
       "id": "beat-08-claim-01",
       "sourceIds": [
-        "acm-code-of-ethics"
+        "python-language-reference"
       ],
-      "text": "They should respect the work required to produce new ideas and creative works.",
+      "text": "Expressions produce values, while statements control execution and bindings.",
       "verified": true
     },
     {
       "id": "beat-09-claim-01",
       "sourceIds": [
-        "acm-code-of-ethics"
+        "python-language-reference"
       ],
-      "text": "They should honor confidentiality.",
+      "text": "Exceptions interrupt normal control flow until a matching handler processes them or they propagate.",
       "verified": true
     },
     {
       "id": "beat-10-claim-01",
       "sourceIds": [
-        "acm-research-practice"
+        "python-language-reference"
       ],
-      "text": "Limitations and threats to validity should be made visible.",
+      "text": "Debugging separates syntax, runtime, and logical failures, while decomposition and abstraction reduce the number of interacting concerns.",
       "verified": true
     }
   ],
-  "id": "csci-344-programming-language-concepts-foundations-lesson",
+  "id": "introduction-to-programming-language-foundations",
   "learningObjectives": [],
   "pronunciations": [],
   "schemaVersion": 2,
@@ -279,25 +279,25 @@
       "verified": true
     },
     {
-      "author": "Association for Computing Machinery",
-      "excerpt": "The ACM Code directs computing professionals to contribute to society and human well-being. Computing professionals should avoid harm. They should be honest and trustworthy. They should be fair and take action not to discriminate. They should respect the work required to produce new ideas and creative works. They should respect privacy. They should honor confidentiality. Professionals should strive to achieve high quality in both processes and products. They should maintain high standards of professional competence, conduct, and ethical practice. Robust security should be designed and implemented when appropriate. Ethical computing decisions identify stakeholders, foreseeable benefits and harms, uncertainty, alternatives, and obligations.",
-      "id": "acm-code-of-ethics",
-      "sha256": "1203f53a88fec4f506dfc222bef2708f9555dce79269980e1b426d9c8e4ff0be",
-      "title": "ACM Code of Ethics and Professional Conduct",
+      "author": "Python Software Foundation",
+      "excerpt": "The Python language reference specifies lexical analysis, data model behavior, execution, expressions, statements, functions, classes, exceptions, and module import semantics. Python objects have identity, a type, and a value. Names are bound to objects within namespaces and scopes. Expressions produce values, while statements control execution and bindings. Exceptions interrupt normal control flow until a matching handler processes them or they propagate. The import system searches for modules and binds loaded modules into a namespace. Programs should be reasoned about through explicit state, control flow, data representation, contracts, tests, and observable behavior. Debugging separates syntax, runtime, and logical failures, while decomposition and abstraction reduce the number of inter",
+      "id": "python-language-reference",
+      "sha256": "d97135fb881b335209ef4e10ff196f931a1a1af8b246fb330acc26937dc31a47",
+      "title": "Python Language Reference",
       "type": "note",
-      "uri": "https://www.acm.org/code-of-ethics",
+      "uri": "https://docs.python.org/3/reference/",
       "verified": true
     },
     {
-      "author": "Association for Computing Machinery",
-      "excerpt": "Responsible technical communication distinguishes claims from evidence. It cites prior work and identifies the contribution being reported. Methods should be described well enough for readers to evaluate the work. Results should be reported accurately rather than selected to create a misleading conclusion. Limitations and threats to validity should be made visible. Authors should preserve research integrity and avoid plagiarism, fabrication, and falsification. Conflicts and relevant relationships should be disclosed according to publication policy. A research project narrows a question, reviews literature, defines a reproducible method, evaluates results, and communicates for the intended audience.",
-      "id": "acm-research-practice",
-      "sha256": "ce03e5c4b1891abfe579fc708e90cae7770904b783348fc02735db61782f8842",
-      "title": "ACM Publications Policies",
+      "author": "LLVM Project",
+      "excerpt": "LLVM IR is a typed, SSA-based intermediate representation with explicit instructions, basic blocks, functions, memory operations, and control flow. A module contains global values, functions, declarations, and metadata. A function contains basic blocks, and every basic block ends with a terminator instruction. Phi instructions select values according to the predecessor control-flow edge. Load and store instructions make memory access explicit. Valid IR must satisfy structural and typing rules. The verifier reports IR that violates those rules. Compiler work separates parsing and semantic analysis from lowering, verification, optimization, and target-specific code generation.",
+      "id": "llvm-language-reference",
+      "sha256": "a43379c8170e7b9a563e131114cda4ecf3edd42bb450fc24a5d7684fefa888c0",
+      "title": "LLVM Language Reference Manual",
       "type": "note",
-      "uri": "https://www.acm.org/publications/policies",
+      "uri": "https://llvm.org/docs/LangRef.html",
       "verified": true
     }
   ],
-  "title": "CSCI-344: Programming Language Concepts - Foundations Lesson"
+  "title": "Introduction to Programming Language Foundations"
 }

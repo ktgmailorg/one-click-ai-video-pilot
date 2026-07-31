@@ -17,16 +17,16 @@
       "title": "scikit-learn User Guide",
       "uri": "https://scikit-learn.org/stable/user_guide.html",
       "author": "scikit-learn developers",
-      "content": "Machine-learning workflows separate data preparation, training, validation, testing, model selection, and evaluation. Supervised methods learn a mapping from examples paired with target labels. Unsupervised methods identify structure without target labels. Preprocessing must be fitted only on permitted training data to avoid leakage. Pipelines combine preprocessing and estimators so the same transformations are applied consistently. Cross-validation repeats training and validation across defined data splits. Evaluation metrics must match the task and the cost of different errors. Hyperparameter selection must remain separate from final test evaluation. Leakage, distribution shift, overfitting, and unexamined assumptions can invalidate results.",
+      "content": "Data-analysis workflows separate data preparation, exploratory analysis, training, validation, testing, model selection, and evaluation. Supervised methods learn mappings from examples paired with target labels, while unsupervised methods identify structure without targets. Preprocessing must be fitted only on permitted training data to avoid leakage. Pipelines combine transformations and estimators so the same operations are applied consistently. Cross-validation repeats training and validation across defined splits. Grouping, dimensionality reduction, classification, regression, and clustering answer different questions and require appropriate assumptions and metrics. Evaluation must match the task and the cost of errors, while distribution shift, missing data, overfitting, and unexamined sampling choices can invalidate conclusions.",
       "type": "note",
       "verified": true
     },
     {
-      "id": "nist-ai-rmf",
-      "title": "NIST AI Risk Management Framework",
-      "uri": "https://www.nist.gov/itl/ai-risk-management-framework",
-      "author": "National Institute of Standards and Technology",
-      "content": "The NIST AI Risk Management Framework organizes work around Govern, Map, Measure, and Manage. Govern establishes policies, responsibilities, and accountability for AI risk. Map documents context, intended use, affected people, and potential impacts. Measure uses qualitative and quantitative methods to analyze identified risks. Manage prioritizes risks and allocates resources for response and monitoring. Risk analysis considers data quality and uncertainty. It also considers robustness, privacy, security, transparency, and fairness. Monitoring continues after deployment because context and system behavior can change.",
+      "id": "postgresql-documentation",
+      "title": "PostgreSQL Documentation",
+      "uri": "https://www.postgresql.org/docs/current/",
+      "author": "PostgreSQL Global Development Group",
+      "content": "Data systems organize records with declared types, tables, rows, columns, keys, and constraints. Queries select, join, aggregate, order, and transform data. Indexes provide additional access paths for selected workloads. Transactions group operations and isolation controls how concurrent operations observe one another. Query planning and physical storage affect performance without changing logical query meaning. Analytical work should preserve provenance from captured data through cleaning, transformation, grouping, modeling, visualization, and reporting. Data quality analysis makes missingness, duplicates, inconsistent representation, integrity constraints, sampling, and update behavior explicit.",
       "type": "note",
       "verified": true
     }

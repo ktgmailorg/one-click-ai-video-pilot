@@ -1,273 +1,247 @@
-NARRATOR: Begin by visualizing two distinct execution environments operating
+Begin by visualizing two distinct execution environments operating simultaneously on the
 
-simultaneously on the same hardware.
+same hardware.
 
-NARRATOR: User mode handles everyday application logic, while kernel mode manages
+User mode handles everyday application logic, while kernel mode manages hardware resources
 
-hardware resources and enforces security boundaries.
+and enforces security boundaries.
 
-NARRATOR: When a user program needs to access protected services, it deliberately triggers a
+When a user program needs to access protected services, it deliberately triggers a system
 
-system call that transfers control into the kernel.
+call that transfers control into the kernel.
 
-NARRATOR: This deliberate handoff prevents unauthorized hardware manipulation.
+This deliberate handoff prevents unauthorized hardware manipulation.
 
-NARRATOR: Imagine a web browser requesting a network socket; the browser code cannot
+Imagine a web browser requesting a network socket; the browser code cannot directly talk
 
-directly talk to the network card.
+to the network card.
 
-NARRATOR: Instead, it issues a system call, causing the CPU to switch to kernel mode,
+Instead, it issues a system call, causing the CPU to switch to kernel mode, where the OS
 
-where the OS validates the request and executes the appropriate hardware driver.
+validates the request and executes the appropriate hardware driver.
 
-NARRATOR: This separation ensures that a buggy application cannot crash the entire system or
+This separation ensures that a buggy application cannot crash the entire system or
 
 access another program's data.
 
-NARRATOR: The kernel acts as a strict gatekeeper, only allowing operations that
+The kernel acts as a strict gatekeeper, only allowing operations that follow defined,
 
-follow defined,
+Next, observe how the kernel manages multiple applications running on a single processor.
 
-NARRATOR: Next, observe how the kernel manages multiple applications running on a single
+When one program finishes its current task or waits for input, the scheduler must pause it
 
-processor.
+and start another.
 
-NARRATOR: When one program finishes its current task or waits for input, the scheduler
+This transition is called a context switch.
 
-must pause it and start another.
+During this moment, the kernel saves the complete register state of the paused process,
 
-NARRATOR: This transition is called a context switch.
+including instruction pointers and stack addresses.
 
-NARRATOR: During this moment, the kernel saves the complete register state of the paused
+It then restores the saved registers of the next process.
 
-process, including instruction pointers and stack addresses.
+Think of it like a theater stage manager who saves every actor's costume and notes before
 
-NARRATOR: It then restores the saved registers of the next process.
+calling the next performer.
 
-NARRATOR: Think of it like a theater stage manager who saves every actor's costume and
+If the kernel failed to save these registers, the next program would resume with corrupted
 
-notes before calling the next performer.
+data or crash immediately.
 
-NARRATOR: If the kernel failed to save these registers, the next program would resume with
+The scheduler continuously evaluates which process is ready to run, ensuring fair CPU
 
-corrupted data or crash immediately.
+distribution without manual intervention.
 
-NARRATOR: The scheduler continuously evaluates which process is ready to run, ensuring fair
+This automatic handoff keeps the system responsive even when dozens of applications
 
-CPU distribution without manual intervention.
+compete.
 
-NARRATOR: This automatic handoff keeps the system responsive even when dozens of
+Consider how the CPU actually recognizes when to pause user code and enter the kernel.
 
-applications compete.
+This happens through a hardware mechanism called a trap.
 
-NARRATOR: Consider how the CPU actually recognizes when to pause user code and enter
+Traps are not just for system calls; they also handle device interrupts and memory faults.
 
-the kernel.
+When a trap occurs, the CPU automatically switches to kernel mode and jumps to a
 
-NARRATOR: This happens through a hardware mechanism called a trap.
+specific handler routine.
 
-NARRATOR: Traps are not just for system calls; they also handle device interrupts and memory
+Imagine a doorbell ringing in a house: the resident (user mode) is interrupted, and the
 
-faults.
+homeowner (kernel) comes to check the source.
 
-NARRATOR: When a trap occurs, the CPU automatically switches to kernel mode and
+This unified trap mechanism simplifies OS design because the same hardware signal can
 
-jumps to a specific handler routine.
+trigger different software responses depending on the context.
 
-NARRATOR: Imagine a doorbell ringing in a house: the resident (user mode) is
+Whether it is a keyboard press, a disk error, or a network request, the trap ensures the
 
-interrupted, and the homeowner (kernel) comes to check the source.
+kernel intercepts the event before it disrupts normal execution.
 
-NARRATOR: This unified trap mechanism simplifies OS design because the same hardware
+Now, examine how the OS maps the vast virtual address space of a program to limited physical
 
-signal can trigger different software responses depending on the context.
+memory.
 
-NARRATOR: Whether it is a keyboard press, a disk error, or a network request, the trap
+Each process maintains its own page table, which acts like a detailed directory.
 
-ensures the kernel intercepts the event before it disrupts normal execution.
+When the program accesses a specific virtual address, the hardware consults this table to
 
-NARRATOR: Now, examine how the OS maps the vast virtual address space of a program to
+find the corresponding physical location.
 
-limited physical memory.
+If the page is not currently loaded in RAM, the kernel triggers a page fault and loads the
 
-NARRATOR: Each process maintains its own page table, which acts like a detailed directory.
+required data from disk.
 
-NARRATOR: When the program accesses a specific virtual address, the hardware consults this
+This translation happens transparently, allowing programs to use large, contiguous
 
-table to find the corresponding physical location.
+address spaces without worrying about physical memory constraints.
 
-NARRATOR: If the page is not currently loaded in RAM, the kernel triggers a page fault and
+Imagine a library catalog that translates shelf locations into actual room numbers.
 
-loads the required data from disk.
+Without this system, programs would need to manually calculate every memory address,
 
-NARRATOR: This translation happens transparently, allowing programs to use large,
+making development nearly impossible.
 
-contiguous address spaces without worrying about physical memory constraints.
+The page table ensures that virtual addresses remain stable while physical memory is
 
-NARRATOR: Imagine a library catalog that translates shelf locations into actual room
+dynamically managed.
 
-numbers.
+Virtual memory extends this translation system to guarantee strict process isolation.
 
-NARRATOR: Without this system, programs would need to manually calculate every memory
+Each process receives its own private address space, meaning one program cannot accidentally
 
-address, making development nearly impossible.
+or maliciously read another's data.
 
-NARRATOR: The page table ensures that virtual addresses remain stable while physical memory
+The kernel controls which physical pages are mapped to which virtual addresses, allowing it
 
-is dynamically managed.
+to enforce security boundaries.
 
-NARRATOR: Virtual memory extends this translation system to guarantee strict process
+When a process terminates, the kernel simply removes its page table entries, instantly
 
-isolation.
+freeing the memory.
 
-NARRATOR: Each process receives its own private address space, meaning one program
+This design enables multiple applications to run simultaneously without interfering with
 
-cannot accidentally or maliciously read another's data.
+each other's data structures.
 
-NARRATOR: The kernel controls which physical pages are mapped to which virtual addresses,
+Imagine separate rooms in a building where each resident has their own private space, but
 
-allowing it to enforce security boundaries.
+the building manager controls which rooms are open.
 
-NARRATOR: When a process terminates, the kernel simply removes its page table entries,
+This isolation prevents data corruption and ensures system stability, even when
 
-instantly freeing the memory.
+applications crash or behave unpredictably.
 
-NARRATOR: This design enables multiple applications to run simultaneously without
+Let's trace how a new process begins execution.
 
-interfering with each other's data structures.
+When a program calls fork, the kernel creates a new process image that is a logical copy of
 
-NARRATOR: Imagine separate rooms in a building where each resident has their own private
+the parent.
 
-space, but the building manager controls which rooms are open.
+The child receives a unique process identifier and starts executing independently.
 
-NARRATOR: This isolation prevents data corruption and ensures system stability, even
+This duplication happens at the process level, not the memory level.
 
-when applications crash or behave unpredictably.
+Imagine a photocopy machine that duplicates the entire document but allows the copy to be
 
-NARRATOR: Let's trace how a new process begins execution.
+edited separately.
 
-NARRATOR: When a program calls fork, the kernel creates a new process image that is a
+The parent and child now follow different execution paths, each managing its own
 
-logical copy of the parent.
+resources.
 
-NARRATOR: The child receives a unique process identifier and starts executing independently.
+This mechanism enables parallel execution and modular program design.
 
-NARRATOR: This duplication happens at the process level, not the memory level.
+The kernel ensures that the child process has all the necessary initialization data to start
 
-NARRATOR: Imagine a photocopy machine that duplicates the entire document but allows the
+correctly, while maintaining strict separation from the parent's subsequent operations.
 
-copy to be edited separately.
+After the fork operation completes, the parent and child processes receive different return
 
-NARRATOR: The parent and child now follow different execution paths, each managing its
+values.
 
-own resources.
+This distinction allows each process to immediately determine its role and choose its
 
-NARRATOR: This mechanism enables parallel execution and modular program design.
+execution path.
 
-NARRATOR: The kernel ensures that the child process has all the necessary initialization
+The parent typically continues with its original task, while the child branches into a
 
-data to start correctly, while maintaining strict separation from the parent's subsequent
+new routine.
 
-operations.
+Imagine a traffic light system where the main controller sends a signal to a side car,
 
-NARRATOR: After the fork operation completes, the parent and child processes receive
+allowing the side car to take a different route.
 
-different return values.
+This return value mechanism enables flexible program architecture, allowing developers to
 
-NARRATOR: This distinction allows each process to immediately determine its role and choose
+implement complex workflows without hardcoding every possible scenario.
 
-its execution path.
+The kernel ensures that the return values are correctly passed through the system call
 
-NARRATOR: The parent typically continues with its original task, while the child branches
+interface, maintaining the expected behavior across different operating systems.
 
-into a new routine.
+When a process is created, it inherits certain resources from its parent, such as file
 
-NARRATOR: Imagine a traffic light system where the main controller sends a signal to a side
+descriptors and memory mappings.
 
-car, allowing the side car to take a different route.
+These inherited resources follow strict sharing rules that determine whether they are
 
-NARRATOR: This return value mechanism enables flexible program architecture, allowing
+duplicated, shared, or restricted.
 
-developers to implement complex workflows without hardcoding every possible scenario.
+Imagine a family recipe book where each family member gets a copy, but some pages are marked
 
-NARRATOR: The kernel ensures that the return values are correctly passed through the system
+as shared for collaboration.
 
-call interface, maintaining the expected behavior across different operating systems.
+The kernel enforces these rules to prevent resource leaks and ensure proper cleanup.
 
-NARRATOR: When a process is created, it inherits certain resources from its parent,
+If a parent closes a file descriptor, the child may still access it depending on the
 
-such as file descriptors and memory mappings.
+sharing mode.
 
-NARRATOR: These inherited resources follow strict sharing rules that determine whether
+This inheritance model allows applications to pass resources between processes efficiently
 
-they are duplicated, shared, or restricted.
+while maintaining control over access permissions.
 
-NARRATOR: Imagine a family recipe book where each family member gets a copy, but some pages
+The kernel tracks these references to ensure they are released when no longer needed.
 
-are marked as shared for collaboration.
+To improve efficiency, many systems implement copy-on-write virtual memory.
 
-NARRATOR: The kernel enforces these rules to prevent resource leaks and ensure proper
+Instead of duplicating all memory pages when a process forks, the kernel shares the same
 
-cleanup.
+physical pages between parent and child.
 
-NARRATOR: If a parent closes a file descriptor, the child may still access it
+Pages are only copied when one process attempts to write to them.
 
-depending on the sharing mode.
-
-NARRATOR: This inheritance model allows applications to pass resources between
-
-processes efficiently while maintaining control over access permissions.
-
-NARRATOR: The kernel tracks these references to ensure they are released when no longer
-
-needed.
-
-NARRATOR: To improve efficiency, many systems implement copy-on-write virtual memory.
-
-NARRATOR: Instead of duplicating all memory pages when a process forks, the kernel shares
-
-the same physical pages between parent and child.
-
-NARRATOR: Pages are only copied when one process attempts to write to them.
-
-NARRATOR: Imagine two readers sharing a single textbook; they can read simultaneously without
+Imagine two readers sharing a single textbook; they can read simultaneously without
 
 duplication.
 
-NARRATOR: If one reader tries to edit a page, the system creates a private copy for that
+If one reader tries to edit a page, the system creates a private copy for that specific page.
 
-specific page.
+This optimization reduces memory usage and speeds up process creation.
 
-NARRATOR: This optimization reduces memory usage and speeds up process creation.
+However, the kernel must carefully track write attempts to ensure the original data remains
 
-NARRATOR: However, the kernel must carefully track write attempts to ensure the original
+intact for the other process.
 
-data remains intact for the other process.
+This approach preserves the expected process behavior while maximizing resource efficiency.
 
-NARRATOR: This approach preserves the expected process behavior while maximizing resource
+Finally, consider the complete lifecycle of a process from creation to termination.
 
-efficiency.
+The kernel manages execution replacement, waiting states, and termination events,
 
-NARRATOR: Finally, consider the complete lifecycle of a process from creation to
+ensuring that resources are properly reclaimed.
 
-termination.
+If a process crashes or exits unexpectedly, the kernel must handle the failure gracefully,
 
-NARRATOR: The kernel manages execution replacement, waiting states, and termination
+cleaning up memory and releasing file descriptors.
 
-events, ensuring that resources are properly reclaimed.
+Imagine a theater production where actors leave early; the stage manager must reset the
 
-NARRATOR: If a process crashes or exits unexpectedly, the kernel must handle the
+set and notify other performers.
 
-failure gracefully, cleaning up memory and releasing file descriptors.
+The kernel tracks every resource ownership and failure case to maintain system stability.
 
-NARRATOR: Imagine a theater production where actors leave early; the stage manager must
+This disciplined lifecycle management prevents memory leaks and ensures that the operating
 
-reset the set and notify other performers.
-
-NARRATOR: The kernel tracks every resource ownership and failure case to maintain system
-
-stability.
-
-NARRATOR: This disciplined lifecycle management prevents memory leaks and ensures
-
-that the operating system remains responsive even when applications encounter errors.
+system remains responsive even when applications encounter errors.

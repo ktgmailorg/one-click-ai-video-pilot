@@ -1,26 +1,22 @@
-NARRATOR: Begin by framing 1.
+NARRATOR: Begin by framing Foundations of Computational Thinking as a question about
 
-NARRATOR: Course Context & Scope as a question about inputs, decisions, and observable
+inputs, decisions, and observable results.
 
-results.
+NARRATOR: This course focuses on the application of computational thinking using a
 
-NARRATOR: Specific topics include: expression of algorithms in pseudo-code and a programming
+problem-centered approach.
 
-language; elementary data structures such as lists, trees and graphs; problem solving using
+NARRATOR: Consider this worked case: A student breaks down a sorting problem into identifying
 
-recursion; and debugging and testing.
+the input list, comparing elements, and arranging them in order before writing
 
-NARRATOR: Consider this worked case: Students in COMPSCI-MS will solve structured problems
+pseudo-code.
 
-using pseudo-code and a programming language, with assignments requiring both
+NARRATOR: On screen, display a split screen: left side shows a messy real-world problem,
 
-representations.
+right side shows a clean pseudo-code block with labeled abstraction and decomposition
 
-NARRATOR: On screen, display a course roadmap graphic showing the ten teaching beats
-
-arranged linearly, with a badge indicating 'Graduate Bridge Course (COMPSCI-MS only)' and
-
-a note about permission requirements for undergraduates.
+steps.
 
 NARRATOR: List the givens before choosing a method, because an unstated assumption can
 
@@ -28,25 +24,27 @@ change the conclusion.
 
 NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: Now define 2.
+NARRATOR: Now define Pseudo-Code and Language Expression precisely enough that another
 
-NARRATOR: Disciplined Solution Framework precisely enough that another learner could
+learner could test the definition.
 
-test the definition.
+NARRATOR: Specific topics include: expression of algorithms in pseudo-code and a programming
 
-NARRATOR: A disciplined solution states inputs and outputs, proves correctness, and then
+language; elementary data structures such as lists, trees and graphs; problem solving using
 
-analyzes time and space.
+recursion; and debugging and testing.
 
-NARRATOR: Consider this worked case: For a sorting problem, the claim specifies 'sort an
+NARRATOR: Consider this worked case: A pseudo-code function for finding the maximum
 
-array of integers', the proof verifies each element ends in non-decreasing order, and the
+value in a list is converted to Python, preserving the logical flow while adding
 
-analysis shows O(n log n) time and O(1) space.
+syntax and type constraints.
 
-NARRATOR: On screen, show a three-step flowchart labeled 'Inputs/Outputs',
+NARRATOR: On screen, show a side-by-side comparison of the pseudo-code and Python
 
-'Correctness Proof', and 'Resource Analysis', with arrows indicating the mandatory sequence.
+implementation, highlighting how each pseudo-code line maps to a specific Python
+
+statement.
 
 NARRATOR: Separate the formal definition from an implementation detail, then identify what
 
@@ -54,47 +52,39 @@ evidence would distinguish them.
 
 NARRATOR: A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how 3.
+NARRATOR: With the foundation in place, examine how Elementary Data Structures: Lists
 
-NARRATOR: Algorithm Analysis & Asymptotics operates in a concrete sequence.
+operates in a concrete sequence.
 
-NARRATOR: Algorithm analysis connects a precise problem specification to a correctness
+NARRATOR: Load and store instructions make memory access explicit.
 
-argument and resource bounds.
+NARRATOR: Consider this worked case: A student uses a Python list to store test scores, then
 
-NARRATOR: Consider this worked case: If input size doubles, a linear scan's time doubles,
+iterates through it to calculate the average using a simple loop.
 
-while a binary search's time increases by only one additional step, illustrating asymptotic
+NARRATOR: On screen, animate a list growing with each new score added, then show a pointer
 
-growth.
-
-NARRATOR: On screen, render a graph comparing two curves: one linear (O(n)) and one
-
-logarithmic (O(log n)), with a legend explaining how asymptotic notation captures
-
-growth rates.
+moving through the list to demonstrate sequential access during iteration.
 
 NARRATOR: Follow every arrow in order and name the state before and after each transition.
 
 NARRATOR: The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Next, compare the choices involved in 4.
+NARRATOR: Next, compare the choices involved in Elementary Data Structures: Trees and make
 
-NARRATOR: Loop Invariants & Correctness and make the decision criteria explicit.
+the decision criteria explicit.
 
-NARRATOR: A loop invariant supports a proof by initialization, maintenance, and termination.
+NARRATOR: The import system searches for modules and binds loaded modules into a
 
-NARRATOR: Consider this worked case: In a sum loop, the invariant 'sum equals the total of
+namespace.
 
-elements processed so far' holds before each iteration, after each update, and when the
+NARRATOR: Consider this worked case: A binary tree represents a file system where
 
-loop ends.
+directories are nodes and files are leaf nodes, allowing efficient path resolution.
 
-NARRATOR: On screen, display a loop structure with three callouts: 'Initialization (before
+NARRATOR: On screen, render a binary tree diagram with labeled parent-child links,
 
-loop)', 'Maintenance (inside loop)', and 'Termination (after loop)', each linked to the
-
-invariant statement.
+highlighting how a search path branches down to a target leaf node.
 
 NARRATOR: Compare alternatives against the same constraints so the evaluation does not
 
@@ -102,27 +92,21 @@ move the goalposts.
 
 NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: Apply 5.
+NARRATOR: Apply Elementary Data Structures: Graphs to a worked situation instead of
 
-NARRATOR: Divide-and-Conquer Strategy to a worked situation instead of treating it as an
+treating it as an isolated definition.
 
-isolated definition.
+NARRATOR: Programs should be reasoned about through explicit state, control flow, data
 
-NARRATOR: Divide-and-conquer algorithms split a problem, solve subproblems, and combine
+representation, contracts, tests, and observable behavior.
 
-their results.
+NARRATOR: Consider this worked case: A student models a city's road network as a graph where
 
-NARRATOR: Consider this worked case: Merging two sorted lists involves dividing the
+intersections are nodes and roads are edges to find the shortest path.
 
-combined list into halves, recursively sorting each half, and then merging the sorted halves
+NARRATOR: On screen, draw a simple graph with labeled nodes and directed edges, then trace a
 
-back together.
-
-NARRATOR: On screen, illustrate a binary tree where the root is the full problem, children
-
-are subproblems, and leaves are base cases, with arrows showing the 'divide', 'solve', and
-
-'combine' phases.
+path from a start node to an end node using a step-by-step animation.
 
 NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
 
@@ -130,23 +114,21 @@ at each step.
 
 NARRATOR: The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Examine the tradeoffs in 6.
+NARRATOR: Examine the tradeoffs in Recursive Problem Solving, including what improves and
 
-NARRATOR: Recurrence Relations & Cost, including what improves and what becomes more
+what becomes more difficult.
 
-difficult.
+NARRATOR: Exceptions interrupt normal control flow until a matching handler processes them
 
-NARRATOR: Recurrences describe the cost of recursive algorithms.
+or they propagate.
 
-NARRATOR: Consider this worked case: The recurrence T(n) = 2T(n/2) + O(n) describes
+NARRATOR: Consider this worked case: A factorial function calculates n!
 
-merge sort, where the cost is twice the cost of sorting half the input plus linear time to
+NARRATOR: by multiplying n with the result of factorial(n-1), stopping when n equals 1.
 
-merge.
+NARRATOR: On screen, show a recursive call stack expanding downward with each function
 
-NARRATOR: On screen, show a recursive call tree with labeled nodes, each node's cost
-
-calculated using the recurrence formula, and a summary box showing the total cost formula.
+call, then collapsing upward as base cases return values.
 
 NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
 
@@ -154,23 +136,23 @@ acceptable.
 
 NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: Stress-test the reasoning around 7.
+NARRATOR: Stress-test the reasoning around Debugging and Testing Protocols with an edge
 
-NARRATOR: Elementary Data Structures: Lists & Stacks with an edge case and identify which
+case and identify which assumption controls the outcome.
 
-assumption controls the outcome.
+NARRATOR: Debugging separates syntax, runtime, and logical failures, while decomposition and
 
-NARRATOR: Lists represent ordered sequences with position-based operations.
+abstraction reduce the number of interacting concerns.
 
-NARRATOR: Consider this worked case: A stack of function calls pushes new tasks onto the
+NARRATOR: Consider this worked case: A student uses print statements and a test harness to
 
-top and pops the most recently added task first, ensuring LIFO behavior during
+verify that a sorting algorithm correctly handles edge cases like empty lists or
 
-recursion.
+single-element lists.
 
-NARRATOR: On screen, draw two side-by-side diagrams: a horizontal list with index
+NARRATOR: On screen, display a debugger interface highlighting a runtime error, then
 
-pointers and a vertical stack with a 'top' marker and push/pop arrows.
+show a test suite passing/failing based on input/output contracts.
 
 NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
 
@@ -180,25 +162,21 @@ NARRATOR: The edge case reveals the boundary of the claim without discarding the
 
 core idea.
 
-NARRATOR: Use 8.
+NARRATOR: Use State and Control Flow Management to diagnose a failure by separating
 
-NARRATOR: Elementary Data Structures: Queues, Trees, & Hash Tables to diagnose a failure by
+symptoms, causes, and corrective action.
 
-separating symptoms, causes, and corrective action.
+NARRATOR: LLVM IR is a typed, SSA-based intermediate representation with explicit
 
-NARRATOR: Hash tables map keys to locations and require a collision strategy.
+instructions, basic blocks, functions, memory operations, and control flow.
 
-NARRATOR: Consider this worked case: A queue processes tasks in arrival order, a binary
+NARRATOR: Consider this worked case: A student defines a class with explicit attributes and
 
-tree organizes data hierarchically with parent-child links, and a hash table stores
+methods, ensuring that each method updates state according to a documented contract.
 
-key-value pairs with a fallback strategy for duplicate keys.
+NARRATOR: On screen, show a state machine diagram transitioning between states, with
 
-NARRATOR: On screen, create a composite graphic showing a queue with 'front' and
-
-'rear' markers, a tree with root/branch/leaf labels, and a hash table with key buckets and
-
-collision chains.
+arrows labeled by method calls and state updates.
 
 NARRATOR: Locate the first point where observed behavior diverges from expected
 
@@ -208,27 +186,23 @@ NARRATOR: The diagnosis is strongest when another person can reproduce the obser
 
 and the test.
 
-NARRATOR: Connect 9.
+NARRATOR: Connect Verification and Local Expander Preparation to the earlier ideas and
 
-NARRATOR: Graphs & Reachability to the earlier ideas and explain how the pieces work as one
+explain how the pieces work as one system.
 
-system.
+NARRATOR: The verifier reports IR that violates those rules.
 
-NARRATOR: Graphs can be represented with adjacency structures for traversal and path
+NARRATOR: Consider this worked case: A student cross-references the pseudo-code
 
-algorithms.
+implementation with the source excerpts, ensuring that terms like 'basic blocks',
 
-NARRATOR: Consider this worked case: An adjacency list for a city map stores each
+'terminator instruction', and 'namespace' are correctly applied.
 
-intersection as a vertex and roads as edges, allowing algorithms to find the shortest route
+NARRATOR: On screen, display a checklist overlay with checkboxes for each source ID,
 
-between two locations.
+technical term reuse, and claim verification, ready for the local expander to generate full
 
-NARRATOR: On screen, render a network graph with labeled vertices and directed edges,
-
-highlighting a path from start to end node, and annotate the adjacency list representation
-
-below.
+narration.
 
 NARRATOR: Explain each connection explicitly and verify that information retains the same
 
@@ -238,25 +212,25 @@ NARRATOR: The synthesis matters only if every connection remains supported by th
 
 evidence.
 
-NARRATOR: Finish with 10.
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
 
-NARRATOR: Practical Analysis Checklist as a practical checklist that can guide a new
+guide a new analysis.
 
-analysis.
+NARRATOR: The Python language reference specifies lexical analysis, data model
 
-NARRATOR: Asymptotic notation describes how resource use grows with input size.
+behavior, execution, expressions, statements, functions, classes, exceptions, and module
 
-NARRATOR: Consider this worked case: Before running code, verify the input matches the
+import semantics.
 
-specification, check that the output matches expected results, confirm loop invariants
+NARRATOR: Consider this worked case: A student reviews their assignment against the
 
-hold, and use test cases to catch edge cases.
+checklist, confirming that pseudo-code and code match, data structures are correctly
 
-NARRATOR: On screen, display a checklist graphic with four boxes: 'Verify Inputs',
+implemented, recursion is applied, and tests pass.
 
-'Validate Outputs', 'Check Invariants', 'Debug & Test', each with a checkbox and a brief
+NARRATOR: On screen, show a clean, printable checklist with sections for each beat,
 
-action prompt.
+checkboxes for claim verification, and space for instructor notes.
 
 NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
 

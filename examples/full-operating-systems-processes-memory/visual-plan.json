@@ -1,0 +1,426 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "Begin by visualizing two distinct execution environments operating simultaneously on the same hardware.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "User mode handles everyday application logic, while kernel mode manages hardware resources and enforces security boundaries.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "When a user program needs to access protected services, it deliberately triggers a system call that transfers control into the kernel.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-004",
+          "phrase": "This deliberate handoff prevents unauthorized hardware manipulation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-005",
+          "phrase": "Imagine a web browser requesting a network socket; the browser code cannot directly talk to the network card.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-006",
+          "phrase": "Instead, it issues a system call, causing the CPU to switch to kernel mode, where the OS validates the request and executes the appropriate hardware driver.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-007",
+          "phrase": "This separation ensures that a buggy application cannot crash the entire system or access another program's data.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-008",
+          "phrase": "The kernel acts as a strict gatekeeper, only allowing operations that follow defined,",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "Next, observe how the kernel manages multiple applications running on a single processor.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "When one program finishes its current task or waits for input, the scheduler must pause it and start another.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "This transition is called a context switch.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-004",
+          "phrase": "During this moment, the kernel saves the complete register state of the paused process, including instruction pointers and stack addresses.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-005",
+          "phrase": "It then restores the saved registers of the next process.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-006",
+          "phrase": "Think of it like a theater stage manager who saves every actor's costume and notes before calling the next performer.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-007",
+          "phrase": "If the kernel failed to save these registers, the next program would resume with corrupted data or crash immediately.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-008",
+          "phrase": "The scheduler continuously evaluates which process is ready to run, ensuring fair CPU distribution without manual intervention.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-009",
+          "phrase": "This automatic handoff keeps the system responsive even when dozens of applications compete.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "Consider how the CPU actually recognizes when to pause user code and enter the kernel.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "This happens through a hardware mechanism called a trap.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "Traps are not just for system calls; they also handle device interrupts and memory faults.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-004",
+          "phrase": "When a trap occurs, the CPU automatically switches to kernel mode and jumps to a specific handler routine.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-005",
+          "phrase": "Imagine a doorbell ringing in a house: the resident (user mode) is interrupted, and the homeowner (kernel) comes to check the source.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-006",
+          "phrase": "This unified trap mechanism simplifies OS design because the same hardware signal can trigger different software responses depending on the context.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-007",
+          "phrase": "Whether it is a keyboard press, a disk error, or a network request, the trap ensures the kernel intercepts the event before it disrupts normal execution.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "Now, examine how the OS maps the vast virtual address space of a program to limited physical memory.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "Each process maintains its own page table, which acts like a detailed directory.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "When the program accesses a specific virtual address, the hardware consults this table to find the corresponding physical location.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-004",
+          "phrase": "If the page is not currently loaded in RAM, the kernel triggers a page fault and loads the required data from disk.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-005",
+          "phrase": "This translation happens transparently, allowing programs to use large, contiguous address spaces without worrying about physical memory constraints.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-006",
+          "phrase": "Imagine a library catalog that translates shelf locations into actual room numbers.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-007",
+          "phrase": "Without this system, programs would need to manually calculate every memory address, making development nearly impossible.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-008",
+          "phrase": "The page table ensures that virtual addresses remain stable while physical memory is dynamically managed.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "Virtual memory extends this translation system to guarantee strict process isolation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "Each process receives its own private address space, meaning one program cannot accidentally or maliciously read another's data.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "The kernel controls which physical pages are mapped to which virtual addresses, allowing it to enforce security boundaries.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-004",
+          "phrase": "When a process terminates, the kernel simply removes its page table entries, instantly freeing the memory.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-005",
+          "phrase": "This design enables multiple applications to run simultaneously without interfering with each other's data structures.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-006",
+          "phrase": "Imagine separate rooms in a building where each resident has their own private space, but the building manager controls which rooms are open.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-007",
+          "phrase": "This isolation prevents data corruption and ensures system stability, even when applications crash or behave unpredictably.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-06",
+      "shots": [
+        {
+          "id": "beat-06-shot-001",
+          "phrase": "Let's trace how a new process begins execution.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-002",
+          "phrase": "When a program calls fork, the kernel creates a new process image that is a logical copy of the parent.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-003",
+          "phrase": "The child receives a unique process identifier and starts executing independently.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-004",
+          "phrase": "This duplication happens at the process level, not the memory level.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-005",
+          "phrase": "Imagine a photocopy machine that duplicates the entire document but allows the copy to be edited separately.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-006",
+          "phrase": "The parent and child now follow different execution paths, each managing its own resources.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-007",
+          "phrase": "This mechanism enables parallel execution and modular program design.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-008",
+          "phrase": "The kernel ensures that the child process has all the necessary initialization data to start correctly, while maintaining strict separation from the parent's subsequent operations.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-07",
+      "shots": [
+        {
+          "id": "beat-07-shot-001",
+          "phrase": "After the fork operation completes, the parent and child processes receive different return values.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-002",
+          "phrase": "This distinction allows each process to immediately determine its role and choose its execution path.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-003",
+          "phrase": "The parent typically continues with its original task, while the child branches into a new routine.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-004",
+          "phrase": "Imagine a traffic light system where the main controller sends a signal to a side car, allowing the side car to take a different route.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-005",
+          "phrase": "This return value mechanism enables flexible program architecture, allowing developers to implement complex workflows without hardcoding every possible scenario.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-006",
+          "phrase": "The kernel ensures that the return values are correctly passed through the system call interface, maintaining the expected behavior across different operating systems.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-08",
+      "shots": [
+        {
+          "id": "beat-08-shot-001",
+          "phrase": "When a process is created, it inherits certain resources from its parent, such as file descriptors and memory mappings.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-002",
+          "phrase": "These inherited resources follow strict sharing rules that determine whether they are duplicated, shared, or restricted.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-003",
+          "phrase": "Imagine a family recipe book where each family member gets a copy, but some pages are marked as shared for collaboration.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-004",
+          "phrase": "The kernel enforces these rules to prevent resource leaks and ensure proper cleanup.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-005",
+          "phrase": "If a parent closes a file descriptor, the child may still access it depending on the sharing mode.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-006",
+          "phrase": "This inheritance model allows applications to pass resources between processes efficiently while maintaining control over access permissions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-007",
+          "phrase": "The kernel tracks these references to ensure they are released when no longer needed.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-09",
+      "shots": [
+        {
+          "id": "beat-09-shot-001",
+          "phrase": "To improve efficiency, many systems implement copy-on-write virtual memory.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-002",
+          "phrase": "Instead of duplicating all memory pages when a process forks, the kernel shares the same physical pages between parent and child.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-003",
+          "phrase": "Pages are only copied when one process attempts to write to them.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-004",
+          "phrase": "Imagine two readers sharing a single textbook; they can read simultaneously without duplication.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-005",
+          "phrase": "If one reader tries to edit a page, the system creates a private copy for that specific page.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-006",
+          "phrase": "This optimization reduces memory usage and speeds up process creation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-007",
+          "phrase": "However, the kernel must carefully track write attempts to ensure the original data remains intact for the other process.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-008",
+          "phrase": "This approach preserves the expected process behavior while maximizing resource efficiency.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-10",
+      "shots": [
+        {
+          "id": "beat-10-shot-001",
+          "phrase": "Finally, consider the complete lifecycle of a process from creation to termination.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-002",
+          "phrase": "The kernel manages execution replacement, waiting states, and termination events, ensuring that resources are properly reclaimed.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-003",
+          "phrase": "If a process crashes or exits unexpectedly, the kernel must handle the failure gracefully, cleaning up memory and releasing file descriptors.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-004",
+          "phrase": "Imagine a theater production where actors leave early; the stage manager must reset the set and notify other performers.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-005",
+          "phrase": "The kernel tracks every resource ownership and failure case to maintain system stability.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-006",
+          "phrase": "This disciplined lifecycle management prevents memory leaks and ensures that the operating system remains responsive even when applications encounter errors.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "operating-systems-foundations-process-isolation-and-execution-fl",
+  "schemaVersion": 1
+}

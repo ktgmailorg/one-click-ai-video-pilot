@@ -1,16 +1,18 @@
-NARRATOR: Begin by framing Course Scope and Prerequisites as a question about inputs,
+NARRATOR: Begin by framing Foundations of Object Identity and State as a question about
 
-decisions, and observable results.
+inputs, decisions, and observable results.
 
-NARRATOR: This course is restricted to students in COMPSCI-MS. Consider this worked
+NARRATOR: A class declares state and behavior, while an object is an instance with its own
 
-case: A graduate student in the COMPSCI-MS program registers for the course without
+runtime identity and field state.
 
-needing additional approval.
+NARRATOR: Consider this worked case: A `User` instance maintains its own `username` and
 
-NARRATOR: On screen, display a course eligibility matrix highlighting the COMPSCI-MS
+`sessionToken` values independent of other `User` instances.
 
-restriction and permission requirement.
+NARRATOR: On screen, display a side-by-side comparison of two `User` objects with distinct
+
+memory addresses and separate field values, highlighting encapsulation boundaries.
 
 NARRATOR: List the givens before choosing a method, because an unstated assumption can
 
@@ -18,25 +20,23 @@ change the conclusion.
 
 NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+NARRATOR: Now define Inheritance versus Composition for Reuse precisely enough that
 
-throughout the analysis.
+another learner could test the definition.
 
-NARRATOR: Now define Advanced OOP Focus Areas precisely enough that another learner could
+NARRATOR: Inheritance allows a class to derive behavior from base classes, while composition
 
-test the definition.
+connects objects through explicit attributes.
 
-NARRATOR: This course focuses on identifying advanced object-oriented programming concepts
+NARRATOR: Consider this worked case: A `Vehicle` base class provides `move()` logic,
 
-and implementing them in the context of specific problems.
+but a `DeliveryTruck` composes a `CargoContainer` object instead of inheriting
 
-NARRATOR: Consider this worked case: Students analyze a real-world application requiring
+from `Truck` to avoid rigid hierarchies.
 
-modular design to isolate complex business logic.
+NARRATOR: On screen, show a class diagram contrasting a deep inheritance tree with a
 
-NARRATOR: On screen, show a flowchart mapping core topics: event-driven programming, design
-
-patterns, distributed/concurrent programming, and application implementation.
+flat composition graph, using arrows to indicate 'has-a' relationships.
 
 NARRATOR: Separate the formal definition from an implementation detail, then identify what
 
@@ -44,51 +44,43 @@ evidence would distinguish them.
 
 NARRATOR: A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+NARRATOR: With the foundation in place, examine how Dynamic Method Dispatch and
 
-throughout the analysis.
+Polymorphism operates in a concrete sequence.
 
-NARRATOR: With the foundation in place, examine how Event-Driven Programming
+NARRATOR: Inheritance reuses and specializes behavior, but dynamic method dispatch selects
 
-Fundamentals operates in a concrete sequence.
+an implementation from the runtime class of the receiver.
 
-NARRATOR: This course covers advanced concepts such as event-driven programming, design
+NARRATOR: Consider this worked case: Calling `draw()` on a `Shape` reference invokes
 
-patterns, distributed and concurrent programming, and the use, design and
+`Circle.draw()` or `Square.draw()` depending on the actual object at runtime.
 
-implementation of applications.
+NARRATOR: On screen, illustrate a method call flow where a generic `Shape` reference routes
 
-NARRATOR: Consider this worked case: A UI component automatically updates when a network
+to distinct `Circle` and `Square` implementations, emphasizing runtime
 
-request completes without polling.
-
-NARRATOR: On screen, illustrate a publisher-subscriber diagram showing decoupled
-
-event emission and subscription.
+resolution.
 
 NARRATOR: Follow every arrow in order and name the state before and after each transition.
 
 NARRATOR: The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+NARRATOR: Next, compare the choices involved in Encapsulation and Access Control and make
 
-throughout the analysis.
+the decision criteria explicit.
 
-NARRATOR: Next, compare the choices involved in Design Patterns Overview and make the
+NARRATOR: Access modifiers control which declarations are visible.
 
-decision criteria explicit.
+NARRATOR: Consider this worked case: A `BankAccount` class exposes `deposit()` and
 
-NARRATOR: Assignments (both in class and as homework) requiring a solution to a problem
+`withdraw()` methods while keeping the `balance` field private to prevent
 
-and an implementation in code are an integral part of the course.
+unauthorized modification.
 
-NARRATOR: Consider this worked case: Implementing a singleton pattern to manage a
+NARRATOR: On screen, render a class interface with public methods highlighted and private
 
-single database connection pool across modules.
-
-NARRATOR: On screen, display a before-and-after code snippet comparing rigid
-
-inheritance to a flexible pattern implementation.
+fields shaded, showing how access control restricts direct state access.
 
 NARRATOR: Compare alternatives against the same constraints so the evaluation does not
 
@@ -96,21 +88,25 @@ move the goalposts.
 
 NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: Apply Distributed and Concurrent Programming to a worked situation instead of
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
 
-treating it as an isolated definition.
+throughout the analysis.
 
-NARRATOR: Resource pooling serves multiple consumers with dynamically assigned physical
+NARRATOR: Apply Exceptions for Error Handling to a worked situation instead of treating it
 
-and virtual resources.
+as an isolated definition.
 
-NARRATOR: Consider this worked case: Splitting a data processing workload across multiple CPU
+NARRATOR: Exceptions separate normal results from abrupt completion.
 
-cores to reduce execution time.
+NARRATOR: Consider this worked case: A `NetworkRequest` throws a
 
-NARRATOR: On screen, render a parallel processing diagram showing thread/task
+`ConnectionTimeoutException` when a server fails to respond, allowing the caller to
 
-distribution across cores.
+handle the failure gracefully.
+
+NARRATOR: On screen, map a control flow diagram showing a normal execution path
+
+branching into an exception handler block when a timeout occurs.
 
 NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
 
@@ -118,23 +114,21 @@ at each step.
 
 NARRATOR: The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.
-
-NARRATOR: Examine the tradeoffs in Cloud Computing Characteristics, including what
+NARRATOR: Examine the tradeoffs in Generics for Type-Safe Abstractions, including what
 
 improves and what becomes more difficult.
 
-NARRATOR: NIST defines cloud computing with five essential characteristics.
+NARRATOR: Generic types express reusable abstractions while preserving compile-time
 
-NARRATOR: Consider this worked case: A startup dynamically scales compute resources during a
+type constraints.
 
-traffic spike without manual intervention.
+NARRATOR: Consider this worked case: A `Queue` class ensures that only elements of type `T`
 
-NARRATOR: On screen, list the five NIST characteristics with brief definitions and a
+are added or removed, eliminating the need for runtime casting.
 
-scaling graph overlay.
+NARRATOR: On screen, show a generic collection diagram with type parameters `T` and `U`,
+
+highlighting how compile-time checks enforce type safety.
 
 NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
 
@@ -142,25 +136,23 @@ acceptable.
 
 NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+NARRATOR: Stress-test the reasoning around Event-Driven Programming Principles with an
 
-throughout the analysis.
+edge case and identify which assumption controls the outcome.
 
-NARRATOR: Stress-test the reasoning around Cloud Deployment Models with an edge case and
+NARRATOR: This course covers advanced concepts such as event-driven programming, design
 
-identify which assumption controls the outcome.
+patterns, distributed and concurrent programming, and the use, design and
 
-NARRATOR: NIST also identifies private, community, public, and hybrid deployment
+implementation of applications.
 
-models.
+NARRATOR: Consider this worked case: A `UIController` registers a `Button` instance
 
-NARRATOR: Consider this worked case: A financial institution uses a hybrid model to
+to emit `click` events, triggering a `EventHandler` without direct method calls.
 
-keep sensitive data on-premise while using public cloud for analytics.
+NARRATOR: On screen, draw a publisher-subscriber diagram showing an event
 
-NARRATOR: On screen, show a Venn diagram comparing private, community, public, and
-
-hybrid deployment boundaries.
+source broadcasting to multiple independent listeners via a message bus.
 
 NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
 
@@ -170,19 +162,19 @@ NARRATOR: The edge case reveals the boundary of the claim without discarding the
 
 core idea.
 
-NARRATOR: Use Raft Consensus Leader Election to diagnose a failure by separating symptoms,
+NARRATOR: Use Design Patterns for Structural Integrity to diagnose a failure by separating
 
-causes, and corrective action.
+symptoms, causes, and corrective action.
 
-NARRATOR: Raft decomposes consensus into leader election, log replication, and safety.
+NARRATOR: Python objects have identity, a type, and a value.
 
-NARRATOR: Consider this worked case: A server becomes leader after receiving votes from a
+NARRATOR: Consider this worked case: The `Strategy` pattern allows a `PaymentProcessor`
 
-majority during an election timeout period.
+to swap `CreditCard` and `Crypto` algorithms at runtime without modifying the core class.
 
-NARRATOR: On screen, animate state transitions (follower -> candidate -> leader) with term
+NARRATOR: On screen, present a before-and-after class diagram showing how a
 
-counters and vote requests.
+rigid hierarchy is replaced by a flexible strategy interface and implementations.
 
 NARRATOR: Locate the first point where observed behavior diverges from expected
 
@@ -192,23 +184,25 @@ NARRATOR: The diagnosis is strongest when another person can reproduce the obser
 
 and the test.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+NARRATOR: Connect Concurrent and Distributed Programming Foundations to the earlier ideas
 
-throughout the analysis.
+and explain how the pieces work as one system.
 
-NARRATOR: Connect Raft Log Replication and Safety to the earlier ideas and explain how
+NARRATOR: Attribute lookup follows defined rules across an instance and its class
 
-the pieces work as one system.
+hierarchy.
 
-NARRATOR: A leader appends client commands to its log and sends entries to followers.
+NARRATOR: Consider this worked case: A `TaskScheduler` uses thread pools to process
 
-NARRATOR: Consider this worked case: A replicated log ensures all nodes store
+independent jobs concurrently, ensuring that shared resources are accessed via synchronized
 
-identical command sequences before acknowledging client requests.
+locks or immutable data structures.
 
-NARRATOR: On screen, display a log replication sequence showing entry propagation and
+NARRATOR: On screen, render a concurrent execution model with multiple threads
 
-majority acknowledgment.
+accessing a shared resource, highlighting synchronization mechanisms like mutexes or
+
+atomic variables.
 
 NARRATOR: Explain each connection explicitly and verify that information retains the same
 
@@ -218,25 +212,27 @@ NARRATOR: The synthesis matters only if every connection remains supported by th
 
 evidence.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+NARRATOR: Finish with Practical Analysis Checklist for Implementation as a practical
 
-throughout the analysis.
+checklist that can guide a new analysis.
 
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+NARRATOR: Object-oriented design should make responsibilities, invariants, dependencies,
 
-guide a new analysis.
+composition, and substitution behavior explicit.
 
-NARRATOR: Sound cloud analysis makes trust boundaries, tenancy, failure domains, scaling
+NARRATOR: Consider this worked case: Before deploying a `DataProcessor`, developers check
 
-assumptions, observability, and responsibility allocation explicit.
+that each class has a single responsibility, validates that internal state cannot be
 
-NARRATOR: Consider this worked case: A student reviews a distributed system architecture,
+corrupted, and confirms that subclasses can replace base classes without breaking
 
-identifies event-driven components, and implements a consensus module in code.
+contracts.
 
-NARRATOR: On screen, provide a checklist template covering: paradigm identification,
+NARRATOR: On screen, display a checklist graphic with checkboxes for 'Single
 
-pattern selection, concurrency/cloud alignment, and code validation.
+Responsibility', 'Invariant Validation', 'Dependency Minimization', and 'Substitution
+
+Compliance', ready for instructor review.
 
 NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
 

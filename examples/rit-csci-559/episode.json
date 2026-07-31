@@ -13,10 +13,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Course Scope and Faculty Flexibility as a question about inputs, decisions, and observable results. This course examines current topics in Systems. Consider this worked case: Instructors select specific course instances belonging to the Distributed Systems, Architecture and Operating Systems, or Security cluster. On screen, display a flowchart showing three selectable cluster paths (Distributed Systems, Architecture and Operating Systems, Security) converging into a central 'Seminar in Systems' node. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
-      "plannedSeconds": 55,
-      "title": "Course Scope and Faculty Flexibility",
-      "visualDirection": "template:academic-process | Display a flowchart showing three selectable cluster paths (Distributed Systems, Architecture and Operating Systems, Security) converging into a central 'Seminar in Systems' node."
+      "narration": "Begin by framing Process Definition and State as a question about inputs, decisions, and observable results. A process combines an address space with execution state and operating-system resources. Consider this worked case: A web server process maintains its own memory space, open file descriptors, and CPU scheduling context. On screen, display a diagram showing a process boundary with labeled address space, execution state, and OS resource handles. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 58,
+      "title": "Process Definition and State",
+      "visualDirection": "template:academic-process | Display a diagram showing a process boundary with labeled address space, execution state, and OS resource handles."
     },
     {
       "accessibility": {
@@ -31,10 +31,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Secure Software Development Framework Overview precisely enough that another learner could test the definition. The Secure Software Development Framework groups practices into four practice groups. Consider this worked case: Prepare the Organization establishes people, processes, and technology for secure development. On screen, show a four-quadrant diagram labeling each practice group with its core function. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 55,
-      "title": "Secure Software Development Framework Overview",
-      "visualDirection": "template:academic-process | Show a four-quadrant diagram labeling each practice group with its core function."
+      "narration": "Now define System Call Mechanism precisely enough that another learner could test the definition. A system call transfers control from user code to a privileged kernel service. Consider this worked case: A process invokes a read system call to request data from a file, transitioning to kernel mode. On screen, show a flowchart of control transfer between user space and kernel space with a labeled system call instruction. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 58,
+      "title": "System Call Mechanism",
+      "visualDirection": "template:academic-process | Show a flowchart of control transfer between user space and kernel space with a labeled system call instruction."
     },
     {
       "accessibility": {
@@ -49,10 +49,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Prepare the Organization Practice operates in a concrete sequence. Prepare the Organization establishes people, processes, and technology for secure development. Consider this worked case: Teams define security policies and allocate resources before writing code. On screen, illustrate a checklist with three items: 'Define security policies', 'Allocate resources', 'Establish development processes'. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis. Then summarize what the example demonstrates, what it does not establish, and what evidence would be needed next.",
-      "plannedSeconds": 61,
-      "title": "Prepare the Organization Practice",
-      "visualDirection": "template:academic-process | Illustrate a checklist with three items: 'Define security policies', 'Allocate resources', 'Establish development processes'."
+      "narration": "With the foundation in place, examine how Trap Handling and Context Switching operates in a concrete sequence. A trap records processor state so the kernel can handle a system call, exception, or interrupt. Consider this worked case: When a process triggers a page fault, the CPU traps the fault, saves registers, and transfers to the kernel handler. On screen, illustrate a trap sequence with a processor state snapshot, kernel handler entry, and restored state return. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "plannedSeconds": 55,
+      "title": "Trap Handling and Context Switching",
+      "visualDirection": "template:academic-process | Illustrate a trap sequence with a processor state snapshot, kernel handler entry, and restored state return."
     },
     {
       "accessibility": {
@@ -67,10 +67,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Protect the Software Practice and make the decision criteria explicit. Protect the Software prevents unauthorized access to code and development artifacts. Consider this worked case: Repositories use role-based access control to restrict who can view or modify source files. On screen, draw a locked vault icon with three access levels: 'Read', 'Write', 'Admin' labeled around it. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Next, compare the choices involved in Virtual Memory Mapping and make the decision criteria explicit. Page tables map virtual addresses to physical memory with permission bits. Consider this worked case: A page table entry translates a virtual address to a physical frame while enforcing read/write/execute permissions. On screen, render a page table structure with virtual address bits, physical address bits, and permission flags. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
-      "title": "Protect the Software Practice",
-      "visualDirection": "template:academic-process | Draw a locked vault icon with three access levels: 'Read', 'Write', 'Admin' labeled around it."
+      "title": "Virtual Memory Mapping",
+      "visualDirection": "template:academic-process | Render a page table structure with virtual address bits, physical address bits, and permission flags."
     },
     {
       "accessibility": {
@@ -85,10 +85,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Produce Well-Secured Software Practice to a worked situation instead of treating it as an isolated definition. Produce Well-Secured Software addresses security requirements, design, verification, and release. Consider this worked case: Developers verify that security requirements are met before deploying the final software version. On screen, create a pipeline graphic showing 'Requirements' -> 'Design' -> 'Verification' -> 'Release' with checkmarks at each stage. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 58,
-      "title": "Produce Well-Secured Software Practice",
-      "visualDirection": "template:academic-process | Create a pipeline graphic showing 'Requirements' -> 'Design' -> 'Verification' -> 'Release' with checkmarks at each stage."
+      "narration": "Apply Process Scheduling to a worked situation instead of treating it as an isolated definition. The scheduler selects runnable processes and switches processor context. Consider this worked case: A round-robin scheduler picks the next process from the ready queue and saves the current context. On screen, draw a scheduler loop showing ready queue, context save/restore, and CPU allocation. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 56,
+      "title": "Process Scheduling",
+      "visualDirection": "template:academic-process | Draw a scheduler loop showing ready queue, context save/restore, and CPU allocation."
     },
     {
       "accessibility": {
@@ -103,10 +103,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Respond to Vulnerabilities Practice, including what improves and what becomes more difficult. Respond to Vulnerabilities identifies, analyzes, remediates, and learns from discovered weaknesses. Consider this worked case: When a bug is found, the team patches the code and updates the security documentation. On screen, show a circular diagram with arrows labeled 'Identify', 'Analyze', 'Remediate', 'Learn' connecting back to 'Identify'. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 56,
-      "title": "Respond to Vulnerabilities Practice",
-      "visualDirection": "template:academic-process | Show a circular diagram with arrows labeled 'Identify', 'Analyze', 'Remediate', 'Learn' connecting back to 'Identify'."
+      "narration": "Examine the tradeoffs in Concurrency and Locking, including what improves and what becomes more difficult. Locks protect invariants when concurrent execution can access shared state. Consider this worked case: A mutex lock prevents two processes from modifying a shared counter simultaneously. On screen, show a lock acquisition/release sequence with a shared variable and protected critical section. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 55,
+      "title": "Concurrency and Locking",
+      "visualDirection": "template:academic-process | Show a lock acquisition/release sequence with a shared variable and protected critical section."
     },
     {
       "accessibility": {
@@ -121,10 +121,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Security Requirements and Reasoning with an edge case and identify which assumption controls the outcome. Security reasoning identifies assets, trust boundaries, threats, controls, evidence, residual risk, and responsibilities. Consider this worked case: A system tracks user authentication requirements from design through testing. On screen, display a table with columns: 'Asset', 'Trust Boundary', 'Threat', 'Control', 'Evidence', 'Residual Risk', 'Responsibility'. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 58,
-      "title": "Security Requirements and Reasoning",
-      "visualDirection": "template:academic-process | Display a table with columns: 'Asset', 'Trust Boundary', 'Threat', 'Control', 'Evidence', 'Residual Risk', 'Responsibility'."
+      "narration": "Stress-test the reasoning around File System Organization with an edge case and identify which assumption controls the outcome. The file system organizes persistent data through inodes, directories, and logged updates. Consider this worked case: An inode stores metadata for a file while directory entries link names to inode references. On screen, display a file system tree with inode blocks, directory entries, and journal log entries. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 55,
+      "title": "File System Organization",
+      "visualDirection": "template:academic-process | Display a file system tree with inode blocks, directory entries, and journal log entries."
     },
     {
       "accessibility": {
@@ -139,10 +139,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Cryptographic Standards and Confidentiality to diagnose a failure by separating symptoms, causes, and corrective action. Encryption supports confidentiality when keys and modes are used correctly. Consider this worked case: AES-256 encryption protects data in transit when paired with a secure key exchange protocol. On screen, show a padlock icon with a key inside, labeled 'AES-256', and a shield icon labeled 'Confidentiality'. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 58,
-      "title": "Cryptographic Standards and Confidentiality",
-      "visualDirection": "template:academic-process | Show a padlock icon with a key inside, labeled 'AES-256', and a shield icon labeled 'Confidentiality'."
+      "narration": "Use RISC-V Instruction Set Basics to diagnose a failure by separating symptoms, causes, and corrective action. The RISC-V ISA defines programmer-visible instructions, registers, memory operations, control transfer, exceptions, and ordering behavior. Consider this worked case: Integer register x0 always reads as zero, while other registers hold software-visible values. On screen, list RISC-V register file with x0 marked as zero and other registers showing software values. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 55,
+      "title": "RISC-V Instruction Set Basics",
+      "visualDirection": "template:academic-process | List RISC-V register file with x0 marked as zero and other registers showing software values."
     },
     {
       "accessibility": {
@@ -157,10 +157,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Integrity, Authenticity, and Key Management to the earlier ideas and explain how the pieces work as one system. Message authentication and digital signatures address integrity and authenticity in different ways. Consider this worked case: Digital signatures verify that a message was sent by a specific sender without alteration. On screen, draw two side-by-side icons: a stamp icon labeled 'Digital Signature' and a key ring icon labeled 'Key Management'. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "narration": "Connect Memory Ordering and Dependencies to the earlier ideas and explain how the pieces work as one system. Memory-ordering rules constrain how memory operations may be observed. Consider this worked case: Store buffers ensure that writes are visible to other cores in a defined architectural order. On screen, show a memory operation sequence with ordering constraints and dependency arrows. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
-      "title": "Integrity, Authenticity, and Key Management",
-      "visualDirection": "template:academic-process | Draw two side-by-side icons: a stamp icon labeled 'Digital Signature' and a key ring icon labeled 'Key Management'."
+      "title": "Memory Ordering and Dependencies",
+      "visualDirection": "template:academic-process | Show a memory operation sequence with ordering constraints and dependency arrows."
     },
     {
       "accessibility": {
@@ -175,95 +175,95 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Modes of Operation and Side Channels as a practical checklist that can guide a new analysis. Modes of operation define how a primitive processes data larger than one block. Consider this worked case: CBC mode processes data in blocks, but timing attacks can expose vulnerabilities if not implemented securely. On screen, show a block diagram with arrows showing data flowing through multiple blocks, labeled 'Mode of Operation'. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
-      "plannedSeconds": 55,
-      "title": "Modes of Operation and Side Channels",
-      "visualDirection": "template:academic-process | Show a block diagram with arrows showing data flowing through multiple blocks, labeled 'Mode of Operation'."
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Analysis distinguishes user mode, privileged kernel code, hardware translation, interrupt state, resource ownership, and synchronization invariants. Consider this worked case: A security audit checks for proper privilege separation and lock invariants in a kernel module. On screen, provide a checklist template with checkboxes for each analysis category. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "plannedSeconds": 57,
+      "title": "Practical Analysis Checklist",
+      "visualDirection": "template:academic-process | Provide a checklist template with checkboxes for each analysis category."
     }
   ],
   "claims": [
     {
       "id": "beat-01-claim-01",
       "sourceIds": [
-        "rit-csci-559"
+        "mit-xv6-book"
       ],
-      "text": "This course examines current topics in Systems.",
+      "text": "A process combines an address space with execution state and operating-system resources.",
       "verified": true
     },
     {
       "id": "beat-02-claim-01",
       "sourceIds": [
-        "nist-ssdf"
+        "mit-xv6-book"
       ],
-      "text": "The Secure Software Development Framework groups practices into four practice groups.",
+      "text": "A system call transfers control from user code to a privileged kernel service.",
       "verified": true
     },
     {
       "id": "beat-03-claim-01",
       "sourceIds": [
-        "nist-ssdf"
+        "mit-xv6-book"
       ],
-      "text": "Prepare the Organization establishes people, processes, and technology for secure development.",
+      "text": "A trap records processor state so the kernel can handle a system call, exception, or interrupt.",
       "verified": true
     },
     {
       "id": "beat-04-claim-01",
       "sourceIds": [
-        "nist-ssdf"
+        "mit-xv6-book"
       ],
-      "text": "Protect the Software prevents unauthorized access to code and development artifacts.",
+      "text": "Page tables map virtual addresses to physical memory with permission bits.",
       "verified": true
     },
     {
       "id": "beat-05-claim-01",
       "sourceIds": [
-        "nist-ssdf"
+        "mit-xv6-book"
       ],
-      "text": "Produce Well-Secured Software addresses security requirements, design, verification, and release.",
+      "text": "The scheduler selects runnable processes and switches processor context.",
       "verified": true
     },
     {
       "id": "beat-06-claim-01",
       "sourceIds": [
-        "nist-ssdf"
+        "mit-xv6-book"
       ],
-      "text": "Respond to Vulnerabilities identifies, analyzes, remediates, and learns from discovered weaknesses.",
+      "text": "Locks protect invariants when concurrent execution can access shared state.",
       "verified": true
     },
     {
       "id": "beat-07-claim-01",
       "sourceIds": [
-        "nist-ssdf"
+        "mit-xv6-book"
       ],
-      "text": "Security reasoning identifies assets, trust boundaries, threats, controls, evidence, residual risk, and responsibilities.",
+      "text": "The file system organizes persistent data through inodes, directories, and logged updates.",
       "verified": true
     },
     {
       "id": "beat-08-claim-01",
       "sourceIds": [
-        "nist-cryptographic-standards"
+        "riscv-unprivileged"
       ],
-      "text": "Encryption supports confidentiality when keys and modes are used correctly.",
+      "text": "The RISC-V ISA defines programmer-visible instructions, registers, memory operations, control transfer, exceptions, and ordering behavior.",
       "verified": true
     },
     {
       "id": "beat-09-claim-01",
       "sourceIds": [
-        "nist-cryptographic-standards"
+        "riscv-unprivileged"
       ],
-      "text": "Message authentication and digital signatures address integrity and authenticity in different ways.",
+      "text": "Memory-ordering rules constrain how memory operations may be observed.",
       "verified": true
     },
     {
       "id": "beat-10-claim-01",
       "sourceIds": [
-        "nist-cryptographic-standards"
+        "mit-xv6-book"
       ],
-      "text": "Modes of operation define how a primitive processes data larger than one block.",
+      "text": "Analysis distinguishes user mode, privileged kernel code, hardware translation, interrupt state, resource ownership, and synchronization invariants.",
       "verified": true
     }
   ],
-  "id": "csci-559-seminar-in-systems-orientation-companion",
+  "id": "foundations-of-system-abstraction",
   "learningObjectives": [],
   "pronunciations": [],
   "schemaVersion": 2,
@@ -279,25 +279,25 @@
       "verified": true
     },
     {
-      "author": "National Institute of Standards and Technology",
-      "excerpt": "The Secure Software Development Framework groups practices into four practice groups. Prepare the Organization establishes people, processes, and technology for secure development. Protect the Software prevents unauthorized access to code and development artifacts. Produce Well-Secured Software addresses security requirements, design, verification, and release. Respond to Vulnerabilities identifies, analyzes, remediates, and learns from discovered weaknesses. Security requirements should be tracked throughout development. Verification provides evidence that selected practices and controls were performed. Security reasoning identifies assets, trust boundaries, threats, controls, evidence, residual risk, and responsibilities.",
-      "id": "nist-ssdf",
-      "sha256": "17c15c6a3a522d311732bc0022c92ccb85de44ca6a09bde629c605eafbbaf442",
-      "title": "NIST Secure Software Development Framework",
+      "author": "MIT PDOS",
+      "excerpt": "The xv6 book explains processes, system calls, traps, page tables, scheduling, locking, file systems, devices, concurrency, and isolation in a small Unix-like kernel. A process combines an address space with execution state and operating-system resources. A system call transfers control from user code to a privileged kernel service. A trap records processor state so the kernel can handle a system call, exception, or interrupt. Page tables map virtual addresses to physical memory with permission bits. The scheduler selects runnable processes and switches processor context. Locks protect invariants when concurrent execution can access shared state. The file system organizes persistent data through inodes, directories, and logged updates. Analysis distinguishes user mode, privileged kernel co",
+      "id": "mit-xv6-book",
+      "sha256": "38ce71a9d754dfeb4999bf3785859ea08c5809175524375356e2e975438749e3",
+      "title": "xv6: a simple, Unix-like teaching operating system",
       "type": "note",
-      "uri": "https://csrc.nist.gov/pubs/sp/800/218/final",
+      "uri": "https://pdos.csail.mit.edu/6.828/2023/xv6/book-riscv-rev3.pdf",
       "verified": true
     },
     {
-      "author": "National Institute of Standards and Technology",
-      "excerpt": "Cryptographic standards define approved algorithms and parameters. Encryption supports confidentiality when keys and modes are used correctly. Message authentication and digital signatures address integrity and authenticity in different ways. Random number generation supports keys, nonces, and other security parameters. Key management covers generation, distribution, storage, use, rotation, revocation, and destruction. Modes of operation define how a primitive processes data larger than one block. Validation checks implementations against specified requirements. Security depends on the complete protocol and implementation, not only an algorithm name. Analysis also considers side channels and migration requirements.",
-      "id": "nist-cryptographic-standards",
-      "sha256": "a50096140c969dba44c56eabec718ea39e693d3bb01255ae0cb21fa71c53c7e4",
-      "title": "NIST Cryptographic Standards and Guidelines",
+      "author": "RISC-V International",
+      "excerpt": "The RISC-V ISA defines programmer-visible instructions, registers, memory operations, control transfer, exceptions, and ordering behavior. Integer register x0 always reads as zero, while the remaining integer registers hold software-visible values. Load instructions transfer data from memory into registers. Store instructions transfer register data to memory. Branch and jump instructions change control flow. Exceptions report conditions that require a defined transfer of control. Memory-ordering rules constrain how memory operations may be observed. Architecture analysis preserves data dependencies, control dependencies, and architectural state.",
+      "id": "riscv-unprivileged",
+      "sha256": "a27fd29d5bf2cdfaf0bc3c9d84bd4e9441dc438af0858e2e14e91d52af5b52b7",
+      "title": "The RISC-V Instruction Set Manual, Unprivileged ISA",
       "type": "note",
-      "uri": "https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines",
+      "uri": "https://riscv.org/technical/specifications/",
       "verified": true
     }
   ],
-  "title": "CSCI-559: Seminar in Systems - Orientation Companion"
+  "title": "Foundations of System Abstraction"
 }

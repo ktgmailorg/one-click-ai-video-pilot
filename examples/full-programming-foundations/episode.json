@@ -1,0 +1,294 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Programming begins before code. Start by stating what information enters the program, what result must leave it, and which constraints must always hold. For a grade calculator, inputs may be scores and weights; the output may be a numeric average and category. Write ordinary examples, boundary examples, and invalid examples. This creates a behavioral contract that can be checked independently of syntax. Then identify the transformations between input and output. A clear contract prevents a common failure: writing statements that run without knowing whether they solve the intended problem. Code is an executable representation of a model, so the model must be understandable first.",
+      "plannedSeconds": 62,
+      "title": "Define the computational problem",
+      "visualDirection": "template:showcase-programming | Turn a word problem into explicit inputs, required outputs, constraints, and examples."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "A program stores information as values. Numbers support arithmetic, strings represent text, Boolean values represent true-or-false conditions, and collections group related values. A variable is a name bound to a value, not a permanent box with one fixed meaning. Assignment changes which value a name refers to. Good names express the role of the data: total cost is clearer than t. Representation choices affect the rest of the design. A date stored as one ambiguous string is harder to validate than separate year, month, and day values. Ask what operations the program needs, what invalid states are possible, and which representation makes correct behavior easiest to express.",
+      "plannedSeconds": 62,
+      "title": "Represent values and state",
+      "visualDirection": "template:showcase-programming | Show names referring to numbers, text, Boolean values, and collections as program state changes."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "Expressions compute values. Arithmetic operators combine numbers; comparison operators produce Boolean results; Boolean operators combine conditions. Evaluation order matters. Multiplication normally occurs before addition, but parentheses make the intended grouping explicit and easier to review. Avoid packing an entire algorithm into one clever expression. Intermediate names can expose meaning and provide places to inspect behavior. Types matter too: adding numbers differs from concatenating text, and converting user input should be deliberate. When an expression behaves unexpectedly, evaluate it from the inside outward, inspect each intermediate value, and confirm that the data type and unit match the intended calculation.",
+      "plannedSeconds": 62,
+      "title": "Build expressions deliberately",
+      "visualDirection": "template:showcase-programming | Trace an expression tree through arithmetic, comparisons, Boolean operators, and operator precedence."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-04",
+      "narration": "A conditional represents a decision. Each condition should correspond to a meaningful rule in the problem. Order matters when ranges overlap. In a grading rule, check the highest threshold first or express non-overlapping intervals explicitly. Include a final else only when a meaningful default or invalid case exists. Deeply nested conditions are difficult to reason about, so simplify repeated tests and extract named helper functions when a decision has its own concept. Test conditions at boundaries: exactly zero, exactly the threshold, just below, and just above. A condition is correct only when both the true path and the false path match the specification.",
+      "plannedSeconds": 62,
+      "title": "Control decisions with conditions",
+      "visualDirection": "template:showcase-programming | Route one input through mutually exclusive branches and show how ordering changes the selected result."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-05",
+      "narration": "Loops express repetition. A for loop naturally processes each item in a collection, while a while loop repeats until a condition changes. Every loop needs a clear initialization, update, and termination argument. An invariant describes what remains true after each iteration. In a running total, the invariant may be that total equals the sum of all items processed so far. This idea makes loops easier to prove and debug. Watch for off-by-one errors, empty collections, and updates that never occur. Print tracing can help during development, but a final design should make the loop's purpose visible through names and structure rather than relying on debugging output.",
+      "plannedSeconds": 62,
+      "title": "Use loops with an invariant",
+      "visualDirection": "template:showcase-programming | Step through repeated processing while highlighting initialization, update, termination, and the accumulated result."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-06",
+      "narration": "A function gives one piece of behavior a name and a boundary. Parameters describe what the function needs; the return value describes what it produces. Prefer a function that completes one coherent responsibility over a long function that reads input, calculates, prints, modifies global state, and handles every error at once. Pure calculation functions are especially easy to test because the same inputs produce the same outputs without hidden dependencies. Avoid using global variables when a parameter or return value would make the dependency explicit. Good decomposition follows concepts in the problem: validate score, compute weighted average, and format result are meaningful units that can be reviewed separately.",
+      "plannedSeconds": 62,
+      "title": "Decompose behavior into functions",
+      "visualDirection": "template:showcase-programming | Separate input validation, computation, and formatting into small functions connected by explicit parameters and returns."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "Collections are not interchangeable containers. A list preserves order and can contain repeated values. A tuple represents an ordered grouping that is not changed in place. A set emphasizes membership and uniqueness. A dictionary maps keys to values for direct lookup. Choose according to the operations the problem requires. If student records are repeatedly retrieved by identifier, a dictionary may express the relationship better than scanning a list. If order matters, a set alone is insufficient. Consider empty collections, duplicate keys or values, and whether mutation should be allowed. Representation is part of algorithm design because it determines both clarity and performance.",
+      "plannedSeconds": 62,
+      "title": "Choose a collection by behavior",
+      "visualDirection": "template:showcase-programming | Compare ordered lists, immutable tuples, unique sets, and key-value dictionaries with the operations each supports."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "Programs interact with files, users, networks, and data that may be missing or malformed. Validate predictable constraints close to the boundary: required fields, numeric ranges, and allowed choices. Exceptions handle operations that fail despite the intended call, such as converting nonnumeric text or opening a missing file. Catch only exceptions the program can respond to meaningfully. A broad catch that silently continues can hide defects and corrupt results. Error messages should explain what failed and what the user can do next without exposing secrets. Separate the normal path from recovery so that correct behavior remains readable. Robustness is not the absence of errors; it is controlled, observable behavior when errors occur.",
+      "plannedSeconds": 62,
+      "title": "Handle invalid input and exceptions",
+      "visualDirection": "template:showcase-programming | Separate normal computation from validation failures and unexpected exceptional paths."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Testing converts the behavioral contract into repeatable evidence. Begin with a small normal case whose answer can be calculated by hand. Add boundary cases, such as an empty collection, one item, the maximum allowed value, and values immediately around a threshold. Add invalid cases and confirm the intended error. Each test should identify one behavior and produce a clear failure when that behavior changes. Tests do not prove the absence of every defect, but they protect known requirements and make refactoring safer. When a defect is found, first create a test that reproduces it, then repair the code and keep the test as a permanent regression check.",
+      "plannedSeconds": 62,
+      "title": "Test examples, boundaries, and properties",
+      "visualDirection": "template:showcase-programming | Turn the original examples into automated tests and add boundary, invalid, and repeated-run checks."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory computer science lesson.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "A dependable workflow is iterative. Define inputs, outputs, constraints, and examples. Choose representations that support the required operations. Write the smallest correct step and observe it. Add conditions and loops with explicit reasoning. Extract functions around coherent responsibilities. Validate external input and handle recoverable failures. Turn examples and boundaries into automated tests. Then revise names and structure without changing behavior. This process scales better than writing the whole program and debugging at the end. Syntax makes instructions executable, but reliability comes from the chain of reasoning that connects the original problem to data, control flow, functions, tests, and a result another person can understand. Before calling the program complete, ask another person to run one normal example and one failure case from the written contract. Their questions often reveal hidden assumptions about units, input format, or expected output. Record those assumptions as validation rules, documentation, or tests so the next revision begins with stronger evidence.",
+      "plannedSeconds": 62,
+      "title": "Use a complete programming workflow",
+      "visualDirection": "template:showcase-programming | Summarize contract, representation, small steps, decomposition, validation, tests, and revision in one loop."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "python-tutorial"
+      ],
+      "text": "A program should be designed from a precise input-output contract and representative examples.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "python-tutorial"
+      ],
+      "text": "Variables bind names to values, and the chosen data representation determines which operations are natural and safe.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "python-tutorial"
+      ],
+      "text": "Expressions combine values and operators to produce new values, and parentheses can make intended evaluation explicit.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "python-control"
+      ],
+      "text": "Conditional statements select behavior according to Boolean conditions, with branch order determining which matching case runs.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "python-control"
+      ],
+      "text": "A loop repeats an operation while maintaining a condition that connects completed work with remaining work.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "python-control"
+      ],
+      "text": "Functions package reusable behavior behind parameters and return values, supporting decomposition and testing.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "python-tutorial"
+      ],
+      "text": "Lists, tuples, sets, and dictionaries provide different ordering, mutability, uniqueness, and lookup behavior.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "python-tutorial"
+      ],
+      "text": "Exceptions communicate that normal execution could not continue, while validation prevents predictable invalid states from entering the computation.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "python-tutorial"
+      ],
+      "text": "Systematic tests compare observed results with expected behavior across normal, boundary, and invalid cases.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "python-tutorial",
+        "python-control"
+      ],
+      "text": "Reliable programming combines problem modeling, explicit data representation, structured control flow, decomposition, and evidence from tests.",
+      "verified": true
+    }
+  ],
+  "id": "programming-foundations-from-problem-to-tested-program",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "Python Software Foundation",
+      "excerpt": "The official Python tutorial introduces expressions, variables, control flow, functions, data structures, modules, input and output, errors, exceptions, classes, and standard-library tools. Lists, tuples, sets, and dictionaries represent different collection behaviors. Functions group reusable behavior and accept parameters. Exceptions separate error handling from normal control flow.",
+      "id": "python-tutorial",
+      "sha256": "4a183335d6d4b8d93720efc2d72ac6b57f191a273eb07c82f457f67ad5860e3d",
+      "title": "The Python Tutorial",
+      "type": "url",
+      "uri": "https://docs.python.org/3/tutorial/index.html",
+      "verified": true
+    },
+    {
+      "author": "Python Software Foundation",
+      "excerpt": "Python control flow includes conditional statements, for and while loops, range iteration, loop control, pattern matching, and function definitions. Function parameters, return values, documentation strings, and coding style support readable decomposition. Control structures should express the decision and repetition required by the problem.",
+      "id": "python-control",
+      "sha256": "74f7cbae596666edb166d521d8de6603ae500de453467ff19cc0f3a38bf195ee",
+      "title": "More Control Flow Tools",
+      "type": "url",
+      "uri": "https://docs.python.org/3/tutorial/controlflow.html",
+      "verified": true
+    }
+  ],
+  "title": "Programming Foundations: From Problem to Tested Program"
+}

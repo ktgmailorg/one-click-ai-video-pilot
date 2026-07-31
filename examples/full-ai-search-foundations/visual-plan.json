@@ -1,0 +1,446 @@
+{
+  "beats": [
+    {
+      "beatId": "beat-01",
+      "shots": [
+        {
+          "id": "beat-01-shot-001",
+          "phrase": "Artificial intelligence can be organized around agents.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-002",
+          "phrase": "An agent receives percepts through sensors and affects an environment through actuators.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-003",
+          "phrase": "A thermostat senses temperature and controls heating; a game agent observes a board and selects moves.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-004",
+          "phrase": "Calling an action intelligent requires a performance objective and information assumptions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-005",
+          "phrase": "A rational agent selects the action expected to perform best given its percept history and knowledge, not one guaranteed to succeed in every uncertain world.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-006",
+          "phrase": "The environment may be fully or partially observable, deterministic or stochastic, static or changing.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-007",
+          "phrase": "These properties determine which representations and algorithms are appropriate.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-01-shot-008",
+          "phrase": "Begin by specifying the task environment rather than choosing an AI technique because it is fashionable.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-02",
+      "shots": [
+        {
+          "id": "beat-02-shot-001",
+          "phrase": "A reflex agent maps the current situation to an action, such as braking when an obstacle is close.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-002",
+          "phrase": "Reflexes can be fast and effective when local rules cover the environment.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-003",
+          "phrase": "A planning agent represents possible future states and evaluates action sequences before acting.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-004",
+          "phrase": "Planning becomes valuable when an action's benefit depends on later consequences or when several routes compete.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-005",
+          "phrase": "It also has a cost: the state space can grow rapidly, the model may be wrong, and the world may change during computation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-006",
+          "phrase": "Many real systems combine layers—fast safety reflexes around a slower planner.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-02-shot-007",
+          "phrase": "The design question is not whether planning is always smarter, but which consequences must be represented to meet the performance objective.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-03",
+      "shots": [
+        {
+          "id": "beat-03-shot-001",
+          "phrase": "Search requires a precise formulation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-002",
+          "phrase": "A state contains the information needed to choose future actions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-003",
+          "phrase": "Actions specify available choices.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-004",
+          "phrase": "The transition model predicts the next state.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-005",
+          "phrase": "The start state identifies the initial condition, and a goal test recognizes success.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-006",
+          "phrase": "In route finding, a state may be a location, actions may follow roads, and cost may represent distance or time.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-007",
+          "phrase": "Include too little state and the model cannot predict consequences; include irrelevant detail and the search space becomes needlessly large.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-03-shot-008",
+          "phrase": "The formulation determines what solutions mean before any algorithm explores them.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-04",
+      "shots": [
+        {
+          "id": "beat-04-shot-001",
+          "phrase": "The state space is a graph of possible configurations and transitions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-002",
+          "phrase": "A search algorithm builds a tree of paths from the start.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-003",
+          "phrase": "The same state may appear multiple times because different paths reach it.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-004",
+          "phrase": "Tree search can therefore revisit cycles forever or repeat expensive work.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-005",
+          "phrase": "Graph search maintains an explored set or best-known cost information to control repeated expansion.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-006",
+          "phrase": "But duplicate handling must match the algorithm.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-007",
+          "phrase": "In cost-based search, reaching a known state through a cheaper path may require updating the frontier.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-04-shot-008",
+          "phrase": "A search node often stores a state, parent, action, path cost, and depth so the final action sequence can be reconstructed.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-05",
+      "shots": [
+        {
+          "id": "beat-05-shot-001",
+          "phrase": "Breadth-first search uses a first-in, first-out frontier and explores by depth.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-002",
+          "phrase": "With equal action costs, the first goal found has the fewest actions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-003",
+          "phrase": "Its frontier can require large memory.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-004",
+          "phrase": "Depth-first search uses a stack and pursues one branch before backtracking.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-005",
+          "phrase": "It can use less frontier memory but may spend a long time down an unhelpful branch and does not generally find the shortest solution.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-006",
+          "phrase": "Graph search and finite-state assumptions affect completeness.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-007",
+          "phrase": "Neither strategy understands action cost beyond depth.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-05-shot-008",
+          "phrase": "Choose according to the guarantee the problem needs, not a slogan that one is faster.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-06",
+      "shots": [
+        {
+          "id": "beat-06-shot-001",
+          "phrase": "Uniform-cost search orders the frontier by path cost g of n.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-002",
+          "phrase": "It may explore a deeper path before a shallow one when the deeper path is cheaper.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-003",
+          "phrase": "With nonnegative costs and appropriate graph-search handling, the first removed goal is optimal.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-004",
+          "phrase": "The algorithm needs a priority queue and must track the best cost found for states.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-005",
+          "phrase": "A cheaper path to an existing frontier state should replace or supersede the expensive one.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-006",
+          "phrase": "Uniform-cost search uses no estimate of remaining distance, so it can expand many states in directions that are cheap so far but far from a goal.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-06-shot-007",
+          "phrase": "It provides a baseline for understanding how informed search adds guidance without giving up cost reasoning.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-07",
+      "shots": [
+        {
+          "id": "beat-07-shot-001",
+          "phrase": "A heuristic h of n uses problem knowledge to estimate remaining cost.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-002",
+          "phrase": "Straight-line distance can guide geographic routing because it is inexpensive and related to travel distance.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-003",
+          "phrase": "Greedy best-first search chooses the state with smallest h, focusing on apparent closeness while ignoring the cost already paid.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-004",
+          "phrase": "It can be fast but is not generally optimal or complete in all settings.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-005",
+          "phrase": "A heuristic should be cheaper to compute than the search work it saves.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-006",
+          "phrase": "Zero is always an uninformative baseline for nonnegative costs.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-007",
+          "phrase": "Better heuristics distinguish promising states while respecting the guarantees required by the algorithm.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-07-shot-008",
+          "phrase": "Heuristic design is representation design: it encodes a simplified view of the problem.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-08",
+      "shots": [
+        {
+          "id": "beat-08-shot-001",
+          "phrase": "A star balances the cost accumulated so far, g, with the heuristic estimate to the goal, h.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-002",
+          "phrase": "If h is zero, A star behaves like uniform-cost search.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-003",
+          "phrase": "If g is ignored, behavior resembles greedy search.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-004",
+          "phrase": "The sum estimates total solution cost through a frontier node.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-005",
+          "phrase": "An admissible heuristic never overestimates the true remaining optimal cost.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-006",
+          "phrase": "Consistency requires that the heuristic at one state be no greater than one-step cost plus the heuristic at the successor.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-007",
+          "phrase": "Under standard conditions, these properties support optimality and efficient graph-search handling.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-08-shot-008",
+          "phrase": "A star's memory use can still be substantial, and a highly accurate heuristic may itself be expensive.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-09",
+      "shots": [
+        {
+          "id": "beat-09-shot-001",
+          "phrase": "A returned path is only one dimension of quality.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-002",
+          "phrase": "Completeness asks whether an algorithm will find a solution when one exists under stated conditions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-003",
+          "phrase": "Optimality asks whether the solution minimizes the defined cost.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-004",
+          "phrase": "Time and space can be estimated by states expanded and stored, often in terms of branching factor and solution depth.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-005",
+          "phrase": "Practical evaluation also measures frontier size, duplicate handling, and heuristic computation.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-006",
+          "phrase": "Most importantly, a mathematically optimal path in an inaccurate model may be poor in the real environment.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-007",
+          "phrase": "Costs, transitions, and goals must represent what users actually value.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-09-shot-008",
+          "phrase": "Search evaluation joins algorithmic guarantees with model validation rather than treating them as separate worlds.",
+          "type": "deterministic-svg"
+        }
+      ]
+    },
+    {
+      "beatId": "beat-10",
+      "shots": [
+        {
+          "id": "beat-10-shot-001",
+          "phrase": "A complete search design answers nine questions.",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-002",
+          "phrase": "What performance objective defines rational behavior?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-003",
+          "phrase": "Which actions and transitions are possible?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-004",
+          "phrase": "What does path cost represent?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-005",
+          "phrase": "Which frontier rule matches the required guarantee?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-006",
+          "phrase": "How are repeated states and cheaper paths handled?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-007",
+          "phrase": "Finally, how do time, memory, solution quality, and model error behave on representative cases?",
+          "type": "deterministic-svg"
+        },
+        {
+          "id": "beat-10-shot-008",
+          "phrase": "Artificial intelligence is not produced by naming an algorithm.",
+          "type": "deterministic-svg"
+        }
+      ]
+    }
+  ],
+  "episodeId": "artificial-intelligence-foundations-agents-and-search",
+  "schemaVersion": 1
+}

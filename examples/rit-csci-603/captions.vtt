@@ -1,624 +1,574 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:01.937
-NARRATOR: Begin by framing 1.
+00:00:00.050 --> 00:00:06.996
+NARRATOR: Begin by framing Foundations of
+Computational Thinking as a question about
 
 2
-00:00:01.937 --> 00:00:09.670
-NARRATOR: Course Context & Scope as a question
-about inputs, decisions, and observable
+00:00:06.996 --> 00:00:09.890
+inputs, decisions, and observable results.
 
 3
-00:00:09.670 --> 00:00:10.265
-results.
+00:00:09.890 --> 00:00:16.413
+NARRATOR: This course focuses on the
+application of computational thinking using a
 
 4
-00:00:10.265 --> 00:00:17.246
-NARRATOR: Specific topics include: expression
-of algorithms in pseudo-code and a programming
+00:00:16.413 --> 00:00:17.500
+problem-centered approach.
 
 5
-00:00:17.246 --> 00:00:24.809
-language; elementary data structures such as
-lists, trees and graphs; problem solving using
+00:00:17.500 --> 00:00:24.499
+NARRATOR: Consider this worked case: A student
+breaks down a sorting problem into identifying
 
 6
-00:00:24.809 --> 00:00:27.718
-recursion; and debugging and testing.
+00:00:24.499 --> 00:00:30.499
+the input list, comparing elements, and
+arranging them in order before writing
 
 7
-00:00:27.718 --> 00:00:34.998
-NARRATOR: Consider this worked case: Students
-in COMPSCI-MS will solve structured problems
+00:00:30.499 --> 00:00:30.999
+pseudo-code.
 
 8
-00:00:34.998 --> 00:00:41.064
-using pseudo-code and a programming language,
-with assignments requiring both
+00:00:31.000 --> 00:00:38.097
+NARRATOR: On screen, display a split screen:
+left side shows a messy real-world problem,
 
 9
-00:00:41.064 --> 00:00:41.671
-representations.
+00:00:38.097 --> 00:00:44.180
+right side shows a clean pseudo-code block
+with labeled abstraction and decomposition
 
 10
-00:00:41.671 --> 00:00:48.882
-NARRATOR: On screen, display a course roadmap
-graphic showing the ten teaching beats
+00:00:44.180 --> 00:00:44.687
+steps.
 
 11
-00:00:48.882 --> 00:00:55.538
-arranged linearly, with a badge indicating
-'Graduate Bridge Course (COMPSCI-MS only)' and
-
-12
-00:00:55.538 --> 00:00:59.421
-a note about permission requirements for
-undergraduates.
-
-13
-00:00:59.421 --> 00:01:05.553
+00:00:44.687 --> 00:00:50.806
 NARRATOR: List the givens before choosing a
 method, because an unstated assumption can
 
-14
-00:01:05.553 --> 00:01:06.968
+12
+00:00:50.806 --> 00:00:52.218
 change the conclusion.
 
-15
-00:01:06.968 --> 00:01:12.968
+13
+00:00:52.218 --> 00:00:58.312
 NARRATOR: This establishes the vocabulary and
 scope needed for the remaining sections.
 
+14
+00:00:58.418 --> 00:01:04.667
+NARRATOR: Now define Pseudo-Code and Language
+Expression precisely enough that another
+
+15
+00:01:04.667 --> 00:01:07.508
+learner could test the definition.
+
 16
-00:01:13.082 --> 00:01:14.828
-NARRATOR: Now define 2.
+00:01:07.508 --> 00:01:14.458
+NARRATOR: Specific topics include: expression
+of algorithms in pseudo-code and a programming
 
 17
-00:01:14.828 --> 00:01:20.490
-NARRATOR: Disciplined Solution Framework
-precisely enough that another learner could
+00:01:14.458 --> 00:01:21.987
+language; elementary data structures such as
+lists, trees and graphs; problem solving using
 
 18
-00:01:20.490 --> 00:01:22.188
-test the definition.
+00:01:21.987 --> 00:01:24.883
+recursion; and debugging and testing.
 
 19
-00:01:22.188 --> 00:01:29.102
-NARRATOR: A disciplined solution states inputs
-and outputs, proves correctness, and then
+00:01:24.883 --> 00:01:30.758
+NARRATOR: Consider this worked case: A
+pseudo-code function for finding the maximum
 
 20
-00:01:29.102 --> 00:01:31.407
-analyzes time and space.
+00:01:30.758 --> 00:01:37.613
+value in a list is converted to Python,
+preserving the logical flow while adding
 
 21
-00:01:31.407 --> 00:01:38.732
-NARRATOR: Consider this worked case: For a
-sorting problem, the claim specifies 'sort an
+00:01:37.613 --> 00:01:39.571
+syntax and type constraints.
 
 22
-00:01:38.732 --> 00:01:46.057
-array of integers', the proof verifies each
-element ends in non-decreasing order, and the
+00:01:39.571 --> 00:01:45.860
+NARRATOR: On screen, show a side-by-side
+comparison of the pseudo-code and Python
 
 23
-00:01:46.057 --> 00:01:50.766
-analysis shows O(n log n) time and O(1) space.
+00:01:45.860 --> 00:01:51.625
+implementation, highlighting how each
+pseudo-code line maps to a specific Python
 
 24
-00:01:50.766 --> 00:01:57.045
-NARRATOR: On screen, show a three-step
-flowchart labeled 'Inputs/Outputs',
+00:01:51.625 --> 00:01:52.149
+statement.
 
 25
-00:01:57.045 --> 00:02:04.719
-'Correctness Proof', and 'Resource Analysis',
-with arrows indicating the mandatory sequence.
-
-26
-00:02:04.719 --> 00:02:11.481
+00:01:52.149 --> 00:01:59.133
 NARRATOR: Separate the formal definition from
 an implementation detail, then identify what
 
-27
-00:02:11.481 --> 00:02:13.735
+26
+00:01:59.133 --> 00:02:01.461
 evidence would distinguish them.
 
-28
-00:02:13.735 --> 00:02:20.297
+27
+00:02:01.461 --> 00:02:08.008
 NARRATOR: A precise definition makes later
 examples easier to evaluate and revise.
 
-29
-00:02:20.402 --> 00:02:24.664
+28
+00:02:08.114 --> 00:02:14.652
 NARRATOR: With the foundation in place,
-examine how 3.
+examine how Elementary Data Structures: Lists
 
-30
-00:02:24.664 --> 00:02:31.195
-NARRATOR: Algorithm Analysis & Asymptotics
+29
+00:02:14.652 --> 00:02:17.376
 operates in a concrete sequence.
 
+30
+00:02:17.376 --> 00:02:22.595
+NARRATOR: Load and store instructions make
+memory access explicit.
+
 31
-00:02:31.195 --> 00:02:37.554
-NARRATOR: Algorithm analysis connects a
-precise problem specification to a correctness
+00:02:22.595 --> 00:02:29.632
+NARRATOR: Consider this worked case: A student
+uses a Python list to store test scores, then
 
 32
-00:02:37.554 --> 00:02:39.867
-argument and resource bounds.
+00:02:29.632 --> 00:02:34.470
+iterates through it to calculate the average
+using a simple loop.
 
 33
-00:02:39.867 --> 00:02:47.617
-NARRATOR: Consider this worked case: If input
-size doubles, a linear scan's time doubles,
+00:02:34.470 --> 00:02:41.720
+NARRATOR: On screen, animate a list growing
+with each new score added, then show a pointer
 
 34
-00:02:47.617 --> 00:02:54.813
-while a binary search's time increases by only
-one additional step, illustrating asymptotic
+00:02:41.720 --> 00:02:46.251
+moving through the list to demonstrate
+sequential access during iteration.
 
 35
-00:02:54.813 --> 00:02:55.367
-growth.
-
-36
-00:02:55.367 --> 00:03:03.971
-NARRATOR: On screen, render a graph comparing
-two curves: one linear (O(n)) and one
-
-37
-00:03:03.971 --> 00:03:10.732
-logarithmic (O(log n)), with a legend
-explaining how asymptotic notation captures
-
-38
-00:03:10.732 --> 00:03:11.961
-growth rates.
-
-39
-00:03:11.961 --> 00:03:19.617
+00:02:46.251 --> 00:02:53.407
 NARRATOR: Follow every arrow in order and name
 the state before and after each transition.
 
-40
-00:03:19.617 --> 00:03:25.195
+36
+00:02:53.407 --> 00:02:59.001
 NARRATOR: The trace converts an abstract
 statement into an inspectable sequence.
 
-41
-00:03:25.298 --> 00:03:28.716
+37
+00:02:59.114 --> 00:03:06.089
 NARRATOR: Next, compare the choices involved
-in 4.
+in Elementary Data Structures: Trees and make
+
+38
+00:03:06.089 --> 00:03:08.235
+the decision criteria explicit.
+
+39
+00:03:08.235 --> 00:03:14.866
+NARRATOR: The import system searches for
+modules and binds loaded modules into a
+
+40
+00:03:14.866 --> 00:03:15.376
+namespace.
+
+41
+00:03:15.376 --> 00:03:21.852
+NARRATOR: Consider this worked case: A binary
+tree represents a file system where
 
 42
-00:03:28.716 --> 00:03:34.732
-NARRATOR: Loop Invariants & Correctness and
-make the decision criteria explicit.
+00:03:21.852 --> 00:03:27.829
+directories are nodes and files are leaf
+nodes, allowing efficient path resolution.
 
 43
-00:03:34.732 --> 00:03:41.373
-NARRATOR: A loop invariant supports a proof by
-initialization, maintenance, and termination.
+00:03:27.829 --> 00:03:33.321
+NARRATOR: On screen, render a binary tree
+diagram with labeled parent-child links,
 
 44
-00:03:41.373 --> 00:03:48.795
-NARRATOR: Consider this worked case: In a sum
-loop, the invariant 'sum equals the total of
+00:03:33.321 --> 00:03:38.813
+highlighting how a search path branches down
+to a target leaf node.
 
 45
-00:03:48.795 --> 00:03:55.288
-elements processed so far' holds before each
-iteration, after each update, and when the
-
-46
-00:03:55.288 --> 00:03:56.216
-loop ends.
-
-47
-00:03:56.216 --> 00:04:03.521
-NARRATOR: On screen, display a loop structure
-with three callouts: 'Initialization (before
-
-48
-00:04:03.521 --> 00:04:10.826
-loop)', 'Maintenance (inside loop)', and
-'Termination (after loop)', each linked to the
-
-49
-00:04:10.826 --> 00:04:12.044
-invariant statement.
-
-50
-00:04:12.044 --> 00:04:18.744
+00:03:38.813 --> 00:03:45.301
 NARRATOR: Compare alternatives against the
 same constraints so the evaluation does not
 
-51
-00:04:18.744 --> 00:04:20.419
+46
+00:03:45.301 --> 00:03:46.923
 move the goalposts.
 
-52
-00:04:20.419 --> 00:04:27.435
+47
+00:03:46.923 --> 00:03:54.142
 NARRATOR: Using shared criteria turns a
 preference into a defensible technical choice.
 
+48
+00:03:54.242 --> 00:04:00.031
+NARRATOR: Apply Elementary Data Structures:
+Graphs to a worked situation instead of
+
+49
+00:04:00.031 --> 00:04:02.926
+treating it as an isolated definition.
+
+50
+00:04:02.926 --> 00:04:10.863
+NARRATOR: Programs should be reasoned about
+through explicit state, control flow, data
+
+51
+00:04:10.863 --> 00:04:14.832
+representation, contracts, tests, and
+observable behavior.
+
+52
+00:04:14.832 --> 00:04:21.493
+NARRATOR: Consider this worked case: A student
+models a city's road network as a graph where
+
 53
-00:04:27.554 --> 00:04:29.113
-NARRATOR: Apply 5.
+00:04:21.493 --> 00:04:26.488
+intersections are nodes and roads are edges to
+find the shortest path.
 
 54
-00:04:29.113 --> 00:04:35.870
-NARRATOR: Divide-and-Conquer Strategy to a
-worked situation instead of treating it as an
+00:04:26.488 --> 00:04:33.281
+NARRATOR: On screen, draw a simple graph with
+labeled nodes and directed edges, then trace a
 
 55
-00:04:35.870 --> 00:04:36.910
-isolated definition.
+00:04:33.281 --> 00:04:38.801
+path from a start node to an end node using a
+step-by-step animation.
 
 56
-00:04:36.910 --> 00:04:43.199
-NARRATOR: Divide-and-conquer algorithms split
-a problem, solve subproblems, and combine
-
-57
-00:04:43.199 --> 00:04:44.457
-their results.
-
-58
-00:04:44.457 --> 00:04:50.772
-NARRATOR: Consider this worked case: Merging
-two sorted lists involves dividing the
-
-59
-00:04:50.772 --> 00:04:58.139
-combined list into halves, recursively sorting
-each half, and then merging the sorted halves
-
-60
-00:04:58.139 --> 00:04:59.191
-back together.
-
-61
-00:04:59.191 --> 00:05:06.925
-NARRATOR: On screen, illustrate a binary tree
-where the root is the full problem, children
-
-62
-00:05:06.925 --> 00:05:14.144
-are subproblems, and leaves are base cases,
-with arrows showing the 'divide', 'solve', and
-
-63
-00:05:14.144 --> 00:05:15.175
-'combine' phases.
-
-64
-00:05:15.175 --> 00:05:21.854
+00:04:38.801 --> 00:04:45.222
 NARRATOR: Work from the concrete inputs to the
 result, checking units, types, or invariants
 
-65
-00:05:21.854 --> 00:05:23.285
+57
+00:04:45.222 --> 00:04:46.598
 at each step.
 
-66
-00:05:23.285 --> 00:05:28.222
+58
+00:04:46.598 --> 00:04:51.441
 NARRATOR: The worked case shows both how to
 apply the method and how to check it.
 
-67
-00:05:28.346 --> 00:05:31.499
-NARRATOR: Examine the tradeoffs in 6.
+59
+00:04:51.554 --> 00:04:57.634
+NARRATOR: Examine the tradeoffs in Recursive
+Problem Solving, including what improves and
 
-68
-00:05:31.499 --> 00:05:37.859
-NARRATOR: Recurrence Relations & Cost,
-including what improves and what becomes more
+60
+00:04:57.634 --> 00:04:59.660
+what becomes more difficult.
 
-69
-00:05:37.859 --> 00:05:38.389
-difficult.
+61
+00:04:59.660 --> 00:05:05.910
+NARRATOR: Exceptions interrupt normal control
+flow until a matching handler processes them
 
-70
-00:05:38.389 --> 00:05:42.811
-NARRATOR: Recurrences describe the cost of
-recursive algorithms.
+62
+00:05:05.910 --> 00:05:07.472
+or they propagate.
 
-71
-00:05:42.811 --> 00:05:50.866
-NARRATOR: Consider this worked case: The
-recurrence T(n) = 2T(n/2) + O(n) describes
+63
+00:05:07.472 --> 00:05:13.457
+NARRATOR: Consider this worked case: A
+factorial function calculates n!
 
-72
-00:05:50.866 --> 00:06:02.019
-merge sort, where the cost is twice the cost
-of sorting half the input plus linear time to
+64
+00:05:13.457 --> 00:05:22.550
+NARRATOR: by multiplying n with the result of
+factorial(n-1), stopping when n equals 1.
 
-73
-00:06:02.019 --> 00:06:02.639
-merge.
-
-74
-00:06:02.639 --> 00:06:09.257
+65
+00:05:22.550 --> 00:05:29.345
 NARRATOR: On screen, show a recursive call
-tree with labeled nodes, each node's cost
+stack expanding downward with each function
 
-75
-00:06:09.257 --> 00:06:15.874
-calculated using the recurrence formula, and a
-summary box showing the total cost formula.
+66
+00:05:29.345 --> 00:05:34.050
+call, then collapsing upward as base cases
+return values.
 
-76
-00:06:15.874 --> 00:06:22.363
+67
+00:05:34.050 --> 00:05:40.409
 NARRATOR: State the benefit, the cost, and the
 condition under which the tradeoff is
 
-77
-00:06:22.363 --> 00:06:22.827
+68
+00:05:40.409 --> 00:05:40.863
 acceptable.
 
-78
-00:06:22.827 --> 00:06:30.045
+69
+00:05:40.863 --> 00:05:48.269
 NARRATOR: Making the tradeoff visible prevents
 a local improvement from hiding a larger cost.
 
+70
+00:05:48.386 --> 00:05:54.703
+NARRATOR: Stress-test the reasoning around
+Debugging and Testing Protocols with an edge
+
+71
+00:05:54.703 --> 00:05:58.914
+case and identify which assumption controls
+the outcome.
+
+72
+00:05:58.914 --> 00:06:06.601
+NARRATOR: Debugging separates syntax, runtime,
+and logical failures, while decomposition and
+
+73
+00:06:06.601 --> 00:06:11.492
+abstraction reduce the number of interacting
+concerns.
+
+74
+00:06:11.492 --> 00:06:18.648
+NARRATOR: Consider this worked case: A student
+uses print statements and a test harness to
+
+75
+00:06:18.648 --> 00:06:24.850
+verify that a sorting algorithm correctly
+handles edge cases like empty lists or
+
+76
+00:06:24.850 --> 00:06:25.804
+single-element lists.
+
+77
+00:06:25.804 --> 00:06:32.501
+NARRATOR: On screen, display a debugger
+interface highlighting a runtime error, then
+
+78
+00:06:32.501 --> 00:06:37.523
+show a test suite passing/failing based on
+input/output contracts.
+
 79
-00:06:30.146 --> 00:06:33.892
-NARRATOR: Stress-test the reasoning around 7.
-
-80
-00:06:33.892 --> 00:06:41.038
-NARRATOR: Elementary Data Structures: Lists &
-Stacks with an edge case and identify which
-
-81
-00:06:41.038 --> 00:06:43.080
-assumption controls the outcome.
-
-82
-00:06:43.080 --> 00:06:48.533
-NARRATOR: Lists represent ordered sequences
-with position-based operations.
-
-83
-00:06:48.533 --> 00:06:55.524
-NARRATOR: Consider this worked case: A stack
-of function calls pushes new tasks onto the
-
-84
-00:06:55.524 --> 00:07:01.583
-top and pops the most recently added task
-first, ensuring LIFO behavior during
-
-85
-00:07:01.583 --> 00:07:02.049
-recursion.
-
-86
-00:07:02.049 --> 00:07:08.627
-NARRATOR: On screen, draw two side-by-side
-diagrams: a horizontal list with index
-
-87
-00:07:08.627 --> 00:07:15.205
-pointers and a vertical stack with a 'top'
-marker and push/pop arrows.
-
-88
-00:07:15.205 --> 00:07:21.529
+00:06:37.523 --> 00:06:43.994
 NARRATOR: Change one assumption at a time and
 observe which part of the reasoning no longer
 
-89
-00:07:21.529 --> 00:07:21.924
+80
+00:06:43.994 --> 00:06:44.398
 holds.
 
-90
-00:07:21.924 --> 00:07:27.926
+81
+00:06:44.398 --> 00:06:50.550
 NARRATOR: The edge case reveals the boundary
 of the claim without discarding the useful
 
-91
-00:07:27.926 --> 00:07:28.783
+82
+00:06:50.550 --> 00:06:51.429
 core idea.
 
-92
-00:07:28.898 --> 00:07:30.004
-NARRATOR: Use 8.
+83
+00:06:51.530 --> 00:06:58.569
+NARRATOR: Use State and Control Flow
+Management to diagnose a failure by separating
 
-93
-00:07:30.004 --> 00:07:38.076
-NARRATOR: Elementary Data Structures: Queues,
-Trees, & Hash Tables to diagnose a failure by
+84
+00:06:58.569 --> 00:07:01.276
+symptoms, causes, and corrective action.
 
-94
-00:07:38.076 --> 00:07:41.535
-separating symptoms, causes, and corrective
-action.
+85
+00:07:01.276 --> 00:07:09.062
+NARRATOR: LLVM IR is a typed, SSA-based
+intermediate representation with explicit
 
-95
-00:07:41.535 --> 00:07:47.394
-NARRATOR: Hash tables map keys to locations
-and require a collision strategy.
+86
+00:07:09.062 --> 00:07:15.433
+instructions, basic blocks, functions, memory
+operations, and control flow.
 
-96
-00:07:47.394 --> 00:07:54.625
-NARRATOR: Consider this worked case: A queue
-processes tasks in arrival order, a binary
+87
+00:07:15.433 --> 00:07:22.752
+NARRATOR: Consider this worked case: A student
+defines a class with explicit attributes and
 
-97
-00:07:54.625 --> 00:08:00.823
-tree organizes data hierarchically with
-parent-child links, and a hash table stores
+88
+00:07:22.752 --> 00:07:29.026
+methods, ensuring that each method updates
+state according to a documented contract.
 
-98
-00:08:00.823 --> 00:08:05.472
-key-value pairs with a fallback strategy for
-duplicate keys.
+89
+00:07:29.026 --> 00:07:35.223
+NARRATOR: On screen, show a state machine
+diagram transitioning between states, with
 
-99
-00:08:05.472 --> 00:08:12.324
-NARRATOR: On screen, create a composite
-graphic showing a queue with 'front' and
+90
+00:07:35.223 --> 00:07:39.354
+arrows labeled by method calls and state
+updates.
 
-100
-00:08:12.324 --> 00:08:20.231
-'rear' markers, a tree with root/branch/leaf
-labels, and a hash table with key buckets and
-
-101
-00:08:20.231 --> 00:08:21.285
-collision chains.
-
-102
-00:08:21.285 --> 00:08:26.919
+91
+00:07:39.354 --> 00:07:45.007
 NARRATOR: Locate the first point where
 observed behavior diverges from expected
 
-103
-00:08:26.919 --> 00:08:30.504
+92
+00:07:45.007 --> 00:07:48.604
 behavior, then test the smallest plausible
 cause.
 
-104
-00:08:30.504 --> 00:08:36.416
+93
+00:07:48.604 --> 00:07:54.854
 NARRATOR: The diagnosis is strongest when
 another person can reproduce the observation
 
-105
-00:08:36.416 --> 00:08:37.894
+94
+00:07:54.854 --> 00:07:56.417
 and the test.
 
-106
-00:08:38.018 --> 00:08:39.327
-NARRATOR: Connect 9.
+95
+00:07:56.522 --> 00:08:02.154
+NARRATOR: Connect Verification and Local
+Expander Preparation to the earlier ideas and
 
-107
-00:08:39.327 --> 00:08:46.930
-NARRATOR: Graphs & Reachability to the earlier
-ideas and explain how the pieces work as one
+96
+00:08:02.154 --> 00:08:05.909
+explain how the pieces work as one system.
 
-108
-00:08:46.930 --> 00:08:47.405
-system.
+97
+00:08:05.909 --> 00:08:10.268
+NARRATOR: The verifier reports IR that
+violates those rules.
 
-109
-00:08:47.405 --> 00:08:53.708
-NARRATOR: Graphs can be represented with
-adjacency structures for traversal and path
+98
+00:08:10.268 --> 00:08:16.077
+NARRATOR: Consider this worked case: A student
+cross-references the pseudo-code
 
-110
-00:08:53.708 --> 00:08:54.233
-algorithms.
+99
+00:08:16.077 --> 00:08:22.468
+implementation with the source excerpts,
+ensuring that terms like 'basic blocks',
 
-111
-00:08:54.233 --> 00:09:01.335
-NARRATOR: Consider this worked case: An
-adjacency list for a city map stores each
+100
+00:08:22.468 --> 00:08:26.534
+'terminator instruction', and 'namespace' are
+correctly applied.
 
-112
-00:09:01.335 --> 00:09:08.945
-intersection as a vertex and roads as edges,
-allowing algorithms to find the shortest route
+101
+00:08:26.534 --> 00:08:33.360
+NARRATOR: On screen, display a checklist
+overlay with checkboxes for each source ID,
 
-113
-00:09:08.945 --> 00:09:10.467
-between two locations.
+102
+00:08:33.360 --> 00:08:40.712
+technical term reuse, and claim verification,
+ready for the local expander to generate full
 
-114
-00:09:10.468 --> 00:09:17.120
-NARRATOR: On screen, render a network graph
-with labeled vertices and directed edges,
+103
+00:08:40.712 --> 00:08:41.237
+narration.
 
-115
-00:09:17.120 --> 00:09:24.284
-highlighting a path from start to end node,
-and annotate the adjacency list representation
-
-116
-00:09:24.284 --> 00:09:24.796
-below.
-
-117
-00:09:24.796 --> 00:09:33.433
+104
+00:08:41.237 --> 00:08:50.199
 NARRATOR: Explain each connection explicitly
 and verify that information retains the same
 
-118
-00:09:33.433 --> 00:09:35.592
+105
+00:08:50.199 --> 00:08:52.440
 meaning across representations.
 
-119
-00:09:35.592 --> 00:09:42.295
+106
+00:08:52.440 --> 00:08:59.390
 NARRATOR: The synthesis matters only if every
 connection remains supported by the original
 
-120
-00:09:42.295 --> 00:09:42.811
+107
+00:08:59.390 --> 00:08:59.925
 evidence.
 
-121
-00:09:42.914 --> 00:09:44.473
-NARRATOR: Finish with 10.
+108
+00:09:00.026 --> 00:09:05.320
+NARRATOR: Finish with Practical Analysis
+Checklist as a practical checklist that can
 
-122
-00:09:44.473 --> 00:09:50.581
-NARRATOR: Practical Analysis Checklist as a
-practical checklist that can guide a new
+109
+00:09:05.320 --> 00:09:07.085
+guide a new analysis.
 
-123
-00:09:50.581 --> 00:09:51.051
-analysis.
+110
+00:09:07.085 --> 00:09:14.503
+NARRATOR: The Python language reference
+specifies lexical analysis, data model
 
-124
-00:09:51.051 --> 00:09:57.707
-NARRATOR: Asymptotic notation describes how
-resource use grows with input size.
+111
+00:09:14.503 --> 00:09:21.179
+behavior, execution, expressions, statements,
+functions, classes, exceptions, and module
 
-125
-00:09:57.707 --> 00:10:04.447
-NARRATOR: Consider this worked case: Before
-running code, verify the input matches the
+112
+00:09:21.179 --> 00:09:22.663
+import semantics.
 
-126
-00:10:04.447 --> 00:10:10.151
-specification, check that the output matches
-expected results, confirm loop invariants
+113
+00:09:22.663 --> 00:09:28.975
+NARRATOR: Consider this worked case: A student
+reviews their assignment against the
 
-127
-00:10:10.151 --> 00:10:14.817
-hold, and use test cases to catch edge cases.
+114
+00:09:28.975 --> 00:09:34.762
+checklist, confirming that pseudo-code and
+code match, data structures are correctly
 
-128
-00:10:14.817 --> 00:10:21.212
-NARRATOR: On screen, display a checklist
-graphic with four boxes: 'Verify Inputs',
+115
+00:09:34.762 --> 00:09:38.444
+implemented, recursion is applied, and tests
+pass.
 
-129
-00:10:21.212 --> 00:10:28.672
-'Validate Outputs', 'Check Invariants', 'Debug
-& Test', each with a checkbox and a brief
+116
+00:09:38.444 --> 00:09:45.323
+NARRATOR: On screen, show a clean, printable
+checklist with sections for each beat,
 
-130
-00:10:28.672 --> 00:10:29.738
-action prompt.
+117
+00:09:45.323 --> 00:09:50.085
+checkboxes for claim verification, and space
+for instructor notes.
 
-131
-00:10:29.738 --> 00:10:37.419
+118
+00:09:50.085 --> 00:09:57.677
 NARRATOR: For each checklist item, record the
 evidence, the remaining uncertainty, and the
 
-132
-00:10:37.419 --> 00:10:39.192
+119
+00:09:57.677 --> 00:09:59.429
 next verification step.
 
-133
-00:10:39.192 --> 00:10:45.209
+120
+00:09:59.429 --> 00:10:05.243
 NARRATOR: The result is a repeatable
 procedure, not a conclusion that depends on
 
-134
-00:10:45.209 --> 00:10:46.598
+121
+00:10:05.243 --> 00:10:06.585
 memory or intuition.

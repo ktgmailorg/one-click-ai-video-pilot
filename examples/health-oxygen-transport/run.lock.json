@@ -1,0 +1,589 @@
+{
+  "approvals": [
+    {
+      "approvedAt": "2026-07-31T15:49:31.216Z",
+      "notes": "Verifies declared claim-to-source bindings for draft rendering only; this is not instructor or release approval.",
+      "reviewer": "Automated source-pack verification (draft)",
+      "role": "automation",
+      "schemaVersion": 1,
+      "stage": "script",
+      "subjectSha256": "4cc67a389a3a23eb7175c96008c10933b34997fd71396b60447591b4da803429"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/health-oxygen-transport/work/render/documentary-master.core.mp4",
+      "role": "master",
+      "sha256": "0519a0c540de2e55edca897c9ca641dc5dbcb4bce6b6399f4da6691cfe87f152"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/health-oxygen-transport/work/narration/captions.vtt",
+      "role": "captions-vtt",
+      "sha256": "73716bbf990d41f59670e3168bb90e998cb0608dd623e796486d6d9a170d4466"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/health-oxygen-transport/work/narration/captions.srt",
+      "role": "captions-srt",
+      "sha256": "6970d2f293cd41440a87fc466bfdee8c696ce77082b49aea6201f30720a8460b"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/health-oxygen-transport/work/narration/transcript.txt",
+      "role": "transcript-text",
+      "sha256": "d9632b5e07df8bdffe84f2759b54bca97a810abd69e34bcb43734af8e793d09d"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/health-oxygen-transport/work/narration/transcript.html",
+      "role": "transcript-html",
+      "sha256": "5f6b207630a99596e8ef226157f5f1fdeb9b2f4505dcf05d3d7454553d507f80"
+    },
+    {
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/health-oxygen-transport/work/visuals/thumbnail.png",
+      "role": "thumbnail",
+      "sha256": "4522f924b51897b9c93ee1c6cb3fbb682c1f0765c7c54e674a6952edf8ec8feb"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/health-oxygen-transport/work/visuals/beat-01/beat-01-shot-001.png",
+      "role": "shot",
+      "sha256": "856432a4cf662f031768c877132c7aac51d9bdee195ffbb43a46a0020b89dfb5",
+      "shotId": "beat-01-shot-001"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/health-oxygen-transport/work/visuals/beat-01/beat-01-shot-002.png",
+      "role": "shot",
+      "sha256": "be54c8a4a7d591587504005b562ee39508ee7331e8e4f8f6c4ef463a753cb09e",
+      "shotId": "beat-01-shot-002"
+    },
+    {
+      "beatId": "beat-01",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/health-oxygen-transport/work/visuals/beat-01/beat-01-shot-003.png",
+      "role": "shot",
+      "sha256": "de9883272fdff1ed6948fb1d96d9064a627cfc063c1fcf2f1956eadcb9cf800c",
+      "shotId": "beat-01-shot-003"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/health-oxygen-transport/work/visuals/beat-02/beat-02-shot-001.png",
+      "role": "shot",
+      "sha256": "32eb6f899c8454f3fc5f3ec9c23e9f88d9c767e7e52361dfaa0a1242046e2208",
+      "shotId": "beat-02-shot-001"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/health-oxygen-transport/work/visuals/beat-02/beat-02-shot-002.png",
+      "role": "shot",
+      "sha256": "b231ffab9b2042ef58cae83dfb6e1135523af5c117c96bd1d9006202a8f4a566",
+      "shotId": "beat-02-shot-002"
+    },
+    {
+      "beatId": "beat-02",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/health-oxygen-transport/work/visuals/beat-02/beat-02-shot-003.png",
+      "role": "shot",
+      "sha256": "ba32214a92efc962fd7245c951c32092f4a8dfe39aa40af99ba56ec8300a0716",
+      "shotId": "beat-02-shot-003"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/health-oxygen-transport/work/visuals/beat-03/beat-03-shot-001.png",
+      "role": "shot",
+      "sha256": "4902ee9f8267d43e45af8d2825d18104764fed8ae8f99b043de456efb107728d",
+      "shotId": "beat-03-shot-001"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/health-oxygen-transport/work/visuals/beat-03/beat-03-shot-002.png",
+      "role": "shot",
+      "sha256": "bd229fe88597a2568b69756437decde0c591e6b3cb68df55b3d656b60b6f4d65",
+      "shotId": "beat-03-shot-002"
+    },
+    {
+      "beatId": "beat-03",
+      "mimeType": "image/png",
+      "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/health-oxygen-transport/work/visuals/beat-03/beat-03-shot-003.png",
+      "role": "shot",
+      "sha256": "bbcaab9f5773ed11ec76f357069d38d2c1a2ef731a66fad8ec1a991af252bebb",
+      "shotId": "beat-03-shot-003"
+    }
+  ],
+  "configSha256": "8b921b5951c8cf6feb811ea8e4519b501a27ddb3eaa106deb797dc2dbbf8fb2d",
+  "createdAt": "2026-07-31T15:49:54.478Z",
+  "final": {
+    "releaseAudit": {
+      "blockers": [],
+      "checks": [
+        {
+          "name": "frame",
+          "ok": true,
+          "value": "1920x1080"
+        },
+        {
+          "name": "frame-rate",
+          "ok": true,
+          "value": "30000/1001"
+        },
+        {
+          "name": "audio-sample-rate",
+          "ok": true,
+          "value": 48000
+        },
+        {
+          "name": "rit-orange-token",
+          "ok": true,
+          "value": "#F76902"
+        },
+        {
+          "name": "orange-on-black-contrast",
+          "ok": true,
+          "value": 6.98
+        },
+        {
+          "name": "title-safe-template",
+          "ok": true,
+          "value": "96px minimum inset"
+        },
+        {
+          "name": "font-fallbacks",
+          "ok": true,
+          "value": "Arial/Liberation Sans and Georgia/Liberation Serif"
+        },
+        {
+          "name": "final-master-loudness",
+          "ok": true,
+          "value": {
+            "integratedLufs": -16.24,
+            "loudnessRangeLu": 2.5,
+            "ok": true,
+            "schemaVersion": 1,
+            "targetIntegratedLufs": -16,
+            "targetTruePeakDbtp": -1.5,
+            "truePeakDbtp": -1.52
+          }
+        },
+        {
+          "name": "caption-audio-start-sync",
+          "ok": true,
+          "value": {
+            "audioStartSeconds": 0,
+            "captionStartSeconds": 0.05,
+            "maximumOffsetSeconds": 0.25,
+            "offsetSeconds": 0.05
+          }
+        },
+        {
+          "name": "subject-matched-visuals",
+          "ok": true,
+          "value": {
+            "genericShotIds": [],
+            "resolvedTemplates": [
+              "showcase-oxygen"
+            ]
+          }
+        }
+      ],
+      "ok": true,
+      "releaseState": "course-draft",
+      "warnings": []
+    },
+    "render": {
+      "audioQuality": {
+        "integratedLufs": -16.24,
+        "loudnessRangeLu": 2.5,
+        "ok": true,
+        "schemaVersion": 1,
+        "targetIntegratedLufs": -16,
+        "targetTruePeakDbtp": -1.5,
+        "truePeakDbtp": -1.52
+      },
+      "audioSampleRate": 48000,
+      "audioStartSeconds": 0,
+      "cache": {
+        "draft": false,
+        "draftSkipped": false,
+        "master": false,
+        "sectionCount": 3,
+        "sections": 0
+      },
+      "draftPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/health-oxygen-transport/work/render/documentary-master.DRAFT.mp4",
+      "durationSeconds": 60.821333,
+      "encoder": {
+        "codec": "h264_videotoolbox",
+        "mode": "videotoolbox",
+        "prioritizeSpeed": false,
+        "profile": "high",
+        "quality": "80",
+        "realtime": true
+      },
+      "frameRate": "30000/1001",
+      "height": 1080,
+      "master": "documentary-master.core.mp4",
+      "masterPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/health-oxygen-transport/work/render/documentary-master.core.mp4",
+      "schemaVersion": 1,
+      "sections": [
+        {
+          "beatId": "beat-01",
+          "cacheHit": false,
+          "durationSeconds": 19.992,
+          "output": "beat-01.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/health-oxygen-transport/work/render/sections/beat-01.mp4",
+          "renderSignature": "ed3dfdd9f7001649972b47c51a7b9d39829ffbbddf0926d09c0ee1a386c823f5",
+          "schemaVersion": 1,
+          "sha256": "192acc09b9e995ef476168117772df1987f9bff7dc5be1c4010595e69916023e"
+        },
+        {
+          "beatId": "beat-02",
+          "cacheHit": false,
+          "durationSeconds": 17.928,
+          "output": "beat-02.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/health-oxygen-transport/work/render/sections/beat-02.mp4",
+          "renderSignature": "e4c82d65cd85bcce3797ea815c6dd8492771f991281a24d55c9f087f29014640",
+          "schemaVersion": 1,
+          "sha256": "0573916e01f0c146c92ca85ab7946e69654fdaa40d2cde2f9adb87894a309ee4"
+        },
+        {
+          "beatId": "beat-03",
+          "cacheHit": false,
+          "durationSeconds": 22.872,
+          "output": "beat-03.mp4",
+          "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/health-oxygen-transport/work/render/sections/beat-03.mp4",
+          "renderSignature": "52e9bbbfcac6ed7a134ebee2da72ed5203c83a2a1a06ea5e96b3a7080daaf70e",
+          "schemaVersion": 1,
+          "sha256": "f5f9aa2935eb2b5ab1177c9f8f272e05e3ef1a213b72f09a675ff07fe7dfa8ae"
+        }
+      ],
+      "sha256": "0519a0c540de2e55edca897c9ca641dc5dbcb4bce6b6399f4da6691cfe87f152",
+      "title": "How Oxygen Moves from Lungs to Tissue",
+      "width": 1920
+    }
+  },
+  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "inputSha256": "65f368518bdf7d5701ca19ec781cf39497e1192c674bc9b9e3f2ce221f20f527",
+  "mode": "record",
+  "providers": {
+    "edge-narration": {
+      "capabilities": [
+        "speech.synthesize"
+      ],
+      "executionLocation": "hosted",
+      "id": "edge-tts",
+      "mimeTypes": {
+        "speech.synthesize": [
+          "audio/mpeg",
+          "text/vtt"
+        ]
+      },
+      "profileName": "edge-narration",
+      "supportsAsyncJobs": false,
+      "supportsModelDiscovery": false,
+      "supportsSeed": false,
+      "supportsStructuredOutput": false,
+      "version": "7.2.8",
+      "voicePresets": {
+        "female": "en-US-EmmaMultilingualNeural",
+        "male": "en-US-AndrewMultilingualNeural"
+      }
+    }
+  },
+  "requests": [
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 1063,
+      "lookupSha256": "fdd6c4def93c8f97fd4b84f3c5974354cc60df4822eee8257f91b1e052df7d1f",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "Only a small amount of oxygen remains dissolved in plasma. Most enters red blood cells and binds reversibly to hemoglobin. This transport system greatly increases how much oxygen the blood can carry. Oxygenated blood then returns to the heart and is pumped through the systemic circulation."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "4596b2a7fb6f3970ea4b7645e602b28a23bb271c2fb65a87eabf057fd2b5ee8c",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/35/35fd8dc4927c69c050e8ff97adacf3904fc0e55242961895d05c9fe00ef3d848.mp3",
+            "sha256": "35fd8dc4927c69c050e8ff97adacf3904fc0e55242961895d05c9fe00ef3d848",
+            "size": 107568
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ed/edad2a33aaea5ee9a7d032f6ceeeefe7873aa1559686d523a5842daaef15760f.vtt",
+            "sha256": "edad2a33aaea5ee9a7d032f6ceeeefe7873aa1559686d523a5842daaef15760f",
+            "size": 423
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:49:31.414Z"
+    },
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 1183,
+      "lookupSha256": "0a6af9bc1748882fc00e9fecaf2d4c04720450e76049784679cbaf1b0688d45e",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "Active tissues consume oxygen during cellular respiration, lowering oxygen partial pressure around their cells. That gradient favors oxygen leaving the blood, separating from hemoglobin, and diffusing into tissue. The complete path is driven by linked gradients: ventilation refreshes alveolar air, circulation moves blood, and metabolism maintains demand."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "af2bbc038618a33acdf3d432cfe4e68027410cdc1a6ae33a427b301ccdbfbee4",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/59/597500a292b5927dd1d36a339de70865be2c45102d44e44f3aede6db04151c7b.mp3",
+            "sha256": "597500a292b5927dd1d36a339de70865be2c45102d44e44f3aede6db04151c7b",
+            "size": 137232
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/c5/c51656a20da417ae0a0f05c449dc0f00d55a32e9f749ba4c76c2206b425d8872.vtt",
+            "sha256": "c51656a20da417ae0a0f05c449dc0f00d55a32e9f749ba4c76c2206b425d8872",
+            "size": 456
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:49:31.414Z"
+    },
+    {
+      "cacheHit": false,
+      "capability": "speech.synthesize",
+      "durationMs": 3270,
+      "lookupSha256": "f5d04b2836ce2eee41dfdf30eed2c1d228b5b3448c4b662a2604d48216c675a8",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, concise, and paced for an introductory course audience.",
+          "text": "In the lungs, inhaled air reaches tiny alveoli beside pulmonary capillaries. Oxygen crosses the thin respiratory membrane because its partial pressure is higher in alveolar air than in the arriving blood. Diffusion continues toward equilibrium; the membrane does not actively pump oxygen into the bloodstream."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "22d09954f4e9fbf075809ec940a855cfe578cf3479f364966112e302e2c325c0",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/89/8963822af9c8d0c3c205aa373e42fe3f30dc66b0782bf38081e8c01fb77e523f.mp3",
+            "sha256": "8963822af9c8d0c3c205aa373e42fe3f30dc66b0782bf38081e8c01fb77e523f",
+            "size": 119952
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/8c/8cfa78cffe87809306a45f801d6c13dd2c7d5d6e846e023efae07b8ed41f9608.vtt",
+            "sha256": "8cfa78cffe87809306a45f801d6c13dd2c7d5d6e846e023efae07b8ed41f9608",
+            "size": 409
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:49:31.412Z"
+    }
+  ],
+  "runId": "how-oxygen-moves-from-lungs-to-tissue-27c177121fd1",
+  "schemaVersion": 1,
+  "stages": [
+    {
+      "name": "plan",
+      "status": "complete"
+    },
+    {
+      "name": "script-approval",
+      "status": "complete"
+    },
+    {
+      "name": "visual-approval",
+      "status": "complete"
+    },
+    {
+      "name": "narration",
+      "status": "complete"
+    },
+    {
+      "name": "visual-generation",
+      "status": "complete"
+    },
+    {
+      "name": "render",
+      "status": "complete"
+    },
+    {
+      "name": "release-qa",
+      "status": "complete"
+    },
+    {
+      "name": "release-approval",
+      "status": "waiting"
+    }
+  ],
+  "status": "awaiting-approval",
+  "toolchain": {
+    "ffmpeg": {
+      "available": true,
+      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "available": true,
+      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "gitChangedPaths": [
+      "outreach/README.md",
+      "outreach/general-email.md",
+      "outreach/leadership-confirmation.md"
+    ],
+    "gitDirty": true,
+    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
+    "node": "v22.23.1",
+    "platform": "darwin-arm64",
+    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtimeDirty": false,
+    "sharp": {
+      "aom": "3.14.1",
+      "archive": "3.8.8",
+      "cairo": "1.18.4",
+      "cgif": "0.5.3",
+      "exif": "0.6.26",
+      "expat": "2.8.2",
+      "ffi": "3.6.0",
+      "fontconfig": "2.18.1",
+      "freetype": "2.14.3",
+      "fribidi": "1.0.16",
+      "glib": "2.89.1",
+      "harfbuzz": "14.2.1",
+      "heif": "1.23.1",
+      "highway": "1.4.0",
+      "imagequant": "2.4.1",
+      "lcms": "2.19.1",
+      "mozjpeg": "0826579",
+      "pango": "1.58.0",
+      "pixman": "0.46.4",
+      "png": "1.6.58",
+      "proxy-libintl": "0.5",
+      "rsvg": "2.62.90",
+      "sharp": "0.35.3",
+      "tiff": "d01a94b",
+      "uhdr": "1acdbed",
+      "vips": "8.18.3",
+      "webp": "1.6.0",
+      "xml2": "2.15.3",
+      "zlib-ng": "2.3.3"
+    }
+  },
+  "totalCostUsd": 0
+}

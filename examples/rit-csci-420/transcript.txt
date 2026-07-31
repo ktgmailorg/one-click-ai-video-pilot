@@ -1,20 +1,20 @@
-NARRATOR: Begin by framing Lesson Title: Foundations of Data Mining as a question about
+NARRATOR: Begin by framing Course Foundations and Scope as a question about inputs,
 
-inputs, decisions, and observable results.
+decisions, and observable results.
 
-NARRATOR: The emphasis is on how to use data mining to describe datasets rather than making
+NARRATOR: Real-world datasets are often large and can be stored in either main memory or a
 
-predictions.
+database.
 
-NARRATOR: Consider this worked case: A retail company analyzes transaction logs to identify
+NARRATOR: Consider this worked case: Student teams will load a 100,000-row customer
 
-customer purchase frequency and product affinity clusters.
+transaction dataset into a relational database for initial exploration.
 
-NARRATOR: On screen, display a split-screen graphic: left side shows a scatter plot of
+NARRATOR: On screen, display a split-screen graphic showing a database schema on the left
 
-customer purchases over time, right side shows a simple bar chart of top-selling products,
+and an in-memory DataFrame on the right, with arrows indicating data flow between storage
 
-with a caption reading 'Descriptive Analysis vs. Predictive Forecasting'.
+types.
 
 NARRATOR: List the givens before choosing a method, because an unstated assumption can
 
@@ -22,25 +22,23 @@ change the conclusion.
 
 NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: Now define Lesson Title: Data Storage Foundations precisely enough that
+NARRATOR: Now define Knowledge Discovery Process precisely enough that another learner
 
-another learner could test the definition.
+could test the definition.
 
-NARRATOR: Real-world datasets are often large and can be stored in either main memory or a
+NARRATOR: The emphasis is on how to use data mining to describe datasets rather than making
 
-database.
+predictions.
 
-NARRATOR: Consider this worked case: A small customer list fits in RAM for rapid iteration,
+NARRATOR: Consider this worked case: Instructors will demonstrate how clustering
 
-while a national sales database requires a relational system for structured storage and
+customer purchase patterns reveals market segments without forecasting future sales.
 
-integrity.
+NARRATOR: On screen, show a flowchart labeled 'Knowledge Discovery Process' with nodes for
 
-NARRATOR: On screen, show a simple diagram comparing a RAM block (labeled 'Main Memory')
+data collection, cleaning, analysis, and description, explicitly excluding a
 
-with a database server (labeled 'Database'), connected by an arrow labeled 'Storage
-
-Selection Based on Scale and Access Needs'.
+'prediction' node.
 
 NARRATOR: Separate the formal definition from an implementation detail, then identify what
 
@@ -48,45 +46,43 @@ evidence would distinguish them.
 
 NARRATOR: A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Lesson Title: Knowledge Discovery
+NARRATOR: With the foundation in place, examine how Data Exploration and Cleaning
 
-Process operates in a concrete sequence.
+operates in a concrete sequence.
 
-NARRATOR: Topics include knowledge discovery process; data exploration and cleaning; and
+NARRATOR: Data quality analysis makes missingness, duplicates, inconsistent
 
-data mining algorithms.
+representation, integrity constraints, sampling, and update behavior explicit.
 
-NARRATOR: Consider this worked case: Researchers first load a medical dataset,
+NARRATOR: Consider this worked case: Students will run a missingness report on a survey
 
-remove duplicate patient records, apply clustering algorithms, and then document
+dataset, flagging 15% null values in the 'income' column and removing 3% duplicate
 
-disease correlation patterns.
+records.
 
-NARRATOR: On screen, create a circular flowchart with four labeled stages: 'Data
+NARRATOR: On screen, render a heatmap of missing values across columns, with a callout
 
-Loading', 'Cleaning', 'Algorithm Application', 'Interpretation', with arrows connecting each
-
-stage sequentially.
+box highlighting the 'income' column and a duplicate count badge.
 
 NARRATOR: Follow every arrow in order and name the state before and after each transition.
 
 NARRATOR: The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Next, compare the choices involved in Lesson Title: Data Exploration Basics and
+NARRATOR: Next, compare the choices involved in Data Preparation Workflows and make the
 
-make the decision criteria explicit.
+decision criteria explicit.
 
-NARRATOR: Data mining projects and a term paper are required.
+NARRATOR: Data-analysis workflows separate data preparation, exploratory analysis,
 
-NARRATOR: Consider this worked case: An analyst uses summary statistics and frequency
+training, validation, testing, model selection, and evaluation.
 
-tables to detect outliers in temperature sensor readings before proceeding to modeling.
+NARRATOR: Consider this worked case: A pipeline will be built where raw data
 
-NARRATOR: On screen, display a table with columns for 'Metric', 'Value', and 'Status',
+undergoes imputation and normalization before entering the exploratory analysis phase.
 
-showing rows for 'Mean', 'Median', 'Missing Count', and 'Outlier Flag' with checkmarks for
+NARRATOR: On screen, illustrate a horizontal pipeline diagram with seven distinct stages,
 
-completed checks.
+each labeled with a workflow phase and connected by directional arrows.
 
 NARRATOR: Compare alternatives against the same constraints so the evaluation does not
 
@@ -94,21 +90,21 @@ move the goalposts.
 
 NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: Apply Lesson Title: Data Cleaning Techniques to a worked situation instead of
+NARRATOR: Apply Supervised and Unsupervised Methods to a worked situation instead of
 
 treating it as an isolated definition.
 
-NARRATOR: Constraints reject states that violate declared data rules.
+NARRATOR: Supervised methods learn mappings from examples paired with target labels, while
 
-NARRATOR: Consider this worked case: A dataset with inconsistent date formats is converted to
+unsupervised methods identify structure without targets.
 
-ISO 8601, and null values are imputed using median substitution.
+NARRATOR: Consider this worked case: Students will compare a decision tree trained on
 
-NARRATOR: On screen, show a before-and-after data snippet: left side shows messy entries
+labeled customer churn data against a k-means clustering run on the same unlabeled features.
 
-like 'Jan 1, 2023' and 'N/A', right side shows cleaned entries '2023-01-01' and '15.5', with
+NARRATOR: On screen, display two side-by-side scatter plots: one with labeled points and a
 
-a label 'Cleaning Workflow'.
+decision boundary, the other with unlabeled points and cluster centroids.
 
 NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
 
@@ -116,21 +112,23 @@ at each step.
 
 NARRATOR: The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Examine the tradeoffs in Lesson Title: Graph Data Modeling, including what
+NARRATOR: Examine the tradeoffs in Preprocessing and Leakage Prevention,
 
-improves and what becomes more difficult.
+including what improves and what becomes more difficult.
 
-NARRATOR: Property graph models represent domain entities as nodes.
+NARRATOR: Preprocessing must be fitted only on permitted training data to avoid leakage.
 
-NARRATOR: Consider this worked case: A social network graph stores users as nodes,
+NARRATOR: Consider this worked case: Instructors will demonstrate scaling a feature
 
-friendships as directed edges, and attributes like 'age' and 'location' as node properties.
+using only the training set statistics, then applying the same transformation to the
 
-NARRATOR: On screen, render a simple graph with three nodes labeled 'User A', 'User B',
+validation set.
 
-'User C', connected by bidirectional edges labeled 'Friend', each node showing a small
+NARRATOR: On screen, show a before-and-after comparison of a feature distribution, with a
 
-property box with 'age' and 'role'.
+red 'leakage' warning icon over a graph where validation statistics were incorrectly used
+
+for scaling.
 
 NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
 
@@ -138,23 +136,23 @@ acceptable.
 
 NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: Stress-test the reasoning around Lesson Title: Relational Data Modeling with an
+NARRATOR: Stress-test the reasoning around Pipelines and Consistency with an edge case
 
-edge case and identify which assumption controls the outcome.
+and identify which assumption controls the outcome.
 
-NARRATOR: Relational systems organize data with tables, rows, columns, and declared
+NARRATOR: Pipelines combine transformations and estimators so the same operations are
 
-types.
+applied consistently.
 
-NARRATOR: Consider this worked case: A university database stores students in one
+NARRATOR: Consider this worked case: A single pipeline object will chain standardization,
 
-table and courses in another, linked by a foreign key in an enrollment table.
+imputation, and clustering, ensuring identical operations run on every data split.
 
-NARRATOR: On screen, draw two rectangular tables side-by-side: left table 'Students'
+NARRATOR: On screen, render a stacked block diagram where each layer represents a
 
-with columns 'ID', 'Name', 'Major'; right table 'Enrollments' with columns 'StudentID',
+transformation or estimator, with a 'consistent application' label spanning the
 
-'CourseID', 'Credit', with a dashed line connecting them labeled 'Foreign Key Link'.
+entire stack.
 
 NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
 
@@ -164,23 +162,23 @@ NARRATOR: The edge case reveals the boundary of the claim without discarding the
 
 core idea.
 
-NARRATOR: Use Lesson Title: Data Mining Algorithms Overview to diagnose a failure by
+NARRATOR: Use Cross-Validation and Sampling to diagnose a failure by separating symptoms,
 
-separating symptoms, causes, and corrective action.
+causes, and corrective action.
 
-NARRATOR: In this course, students will learn the basic principles and algorithms of data
+NARRATOR: Cross-validation repeats training and validation across defined splits.
 
-mining.
+NARRATOR: Consider this worked case: Students will execute a 5-fold cross-validation
 
-NARRATOR: Consider this worked case: Clustering algorithms segment customers into
+routine, rotating the validation set through each dataset partition and recording accuracy
 
-high-value, medium-value, and low-value groups based on purchase history.
+scores.
 
-NARRATOR: On screen, display a simple bar chart with three segments labeled 'High
+NARRATOR: On screen, illustrate a circular diagram with five segments, each labeled with
 
-Value', 'Medium Value', 'Low Value', and a caption reading 'Algorithm Output: Customer
+a fold number, and arrows showing data rotation between training and validation
 
-Segmentation'.
+phases.
 
 NARRATOR: Locate the first point where observed behavior diverges from expected
 
@@ -190,19 +188,25 @@ NARRATOR: The diagnosis is strongest when another person can reproduce the obser
 
 and the test.
 
-NARRATOR: Connect Lesson Title: Constraints and Indexes to the earlier ideas and explain
+NARRATOR: Connect Algorithm Selection and Evaluation to the earlier ideas and explain
 
 how the pieces work as one system.
 
-NARRATOR: Indexes provide additional access paths for selected queries.
+NARRATOR: Grouping, dimensionality reduction, classification, regression, and clustering
 
-NARRATOR: Consider this worked case: A 'age' column constraint prevents negative values,
+answer different questions and require appropriate assumptions and metrics.
 
-and an index on 'email' speeds up user lookup operations.
+NARRATOR: Consider this worked case: Instructors will match a regression model to
 
-NARRATOR: On screen, show a database table with a red 'X' over a negative age entry, and
+predicting continuous revenue and a clustering algorithm to segment user behavior, explaining
 
-a blue arrow pointing to a search bar labeled 'Indexed Column' with a speed icon.
+the distinct evaluation metrics for each.
+
+NARRATOR: On screen, display a decision tree flowchart where each branch leads to an
+
+algorithm type, with corresponding metric badges (e.g., RMSE, silhouette score) attached
+
+to each leaf.
 
 NARRATOR: Explain each connection explicitly and verify that information retains the same
 
@@ -212,21 +216,23 @@ NARRATOR: The synthesis matters only if every connection remains supported by th
 
 evidence.
 
-NARRATOR: Finish with Lesson Title: Practical Analysis Checklist as a practical checklist
+NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
 
-that can guide a new analysis.
+guide a new analysis.
 
-NARRATOR: Queries select, join, aggregate, insert, update, and delete data.
+NARRATOR: Evaluation must match the task and the cost of errors, while distribution shift,
 
-NARRATOR: Consider this worked case: A team checks for missing values, validates algorithm
+missing data, overfitting, and unexamined sampling choices can invalidate conclusions.
 
-output against domain knowledge, and archives the cleaning script for future reference.
+NARRATOR: Consider this worked case: Students will complete a checklist verifying data
 
-NARRATOR: On screen, list four checklist items with checkboxes: 'Data Quality Verified',
+provenance, checking for distribution drift between train and test sets, and documenting
 
-'Model Selected', 'Results Documented', 'Reproducibility Confirmed', with a clean,
+sampling methodology.
 
-minimalist design.
+NARRATOR: On screen, show a clean checklist graphic with five checkboxes, each paired with
+
+a brief validation step, and a final 'valid conclusions' stamp icon.
 
 NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
 

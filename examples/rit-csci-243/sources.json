@@ -13,20 +13,20 @@
       "verified": true
     },
     {
-      "id": "nist-ssdf",
-      "title": "NIST Secure Software Development Framework",
-      "uri": "https://csrc.nist.gov/pubs/sp/800/218/final",
-      "author": "National Institute of Standards and Technology",
-      "content": "The Secure Software Development Framework groups practices into four practice groups. Prepare the Organization establishes people, processes, and technology for secure development. Protect the Software prevents unauthorized access to code and development artifacts. Produce Well-Secured Software addresses security requirements, design, verification, and release. Respond to Vulnerabilities identifies, analyzes, remediates, and learns from discovered weaknesses. Security requirements should be tracked throughout development. Verification provides evidence that selected practices and controls were performed. Security reasoning identifies assets, trust boundaries, threats, controls, evidence, residual risk, and responsibilities.",
+      "id": "python-language-reference",
+      "title": "Python Language Reference",
+      "uri": "https://docs.python.org/3/reference/",
+      "author": "Python Software Foundation",
+      "content": "The Python language reference specifies lexical analysis, data model behavior, execution, expressions, statements, functions, classes, exceptions, and module import semantics. Python objects have identity, a type, and a value. Names are bound to objects within namespaces and scopes. Expressions produce values, while statements control execution and bindings. Exceptions interrupt normal control flow until a matching handler processes them or they propagate. The import system searches for modules and binds loaded modules into a namespace. Programs should be reasoned about through explicit state, control flow, data representation, contracts, tests, and observable behavior. Debugging separates syntax, runtime, and logical failures, while decomposition and abstraction reduce the number of interacting concerns.",
       "type": "note",
       "verified": true
     },
     {
-      "id": "nist-cryptographic-standards",
-      "title": "NIST Cryptographic Standards and Guidelines",
-      "uri": "https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines",
-      "author": "National Institute of Standards and Technology",
-      "content": "Cryptographic standards define approved algorithms and parameters. Encryption supports confidentiality when keys and modes are used correctly. Message authentication and digital signatures address integrity and authenticity in different ways. Random number generation supports keys, nonces, and other security parameters. Key management covers generation, distribution, storage, use, rotation, revocation, and destruction. Modes of operation define how a primitive processes data larger than one block. Validation checks implementations against specified requirements. Security depends on the complete protocol and implementation, not only an algorithm name. Analysis also considers side channels and migration requirements.",
+      "id": "opendsa-programming-foundations",
+      "title": "OpenDSA Programming, Data Structures, and Algorithms",
+      "uri": "https://opendsa-server.cs.vt.edu/",
+      "author": "OpenDSA Project",
+      "content": "Programming begins with precise problem statements, input and output examples, and algorithms written independently of syntax. Variables represent values and state, expressions compute values, and control structures select or repeat operations. Functions decompose a solution into named operations with parameters and results. Recursion solves a problem through smaller instances and requires a base case. Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in first-out access, trees represent hierarchy, and graphs represent connected entities. Searching and sorting algorithms depend on representation and invariants. Correctness arguments, tests, tracing, and debugging compare intended behavior with observable results, including boundary and error cases.",
       "type": "note",
       "verified": true
     }

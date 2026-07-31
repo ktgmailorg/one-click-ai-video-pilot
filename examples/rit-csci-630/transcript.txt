@@ -1,20 +1,22 @@
-NARRATOR: Begin by framing Pipeline Foundations as a question about inputs,
+NARRATOR: Begin by framing Introduction to AI Foundations as a question about inputs,
 
 decisions, and observable results.
 
-NARRATOR: A rigorous pipeline states the task, representation, assumptions, supervision, and
+NARRATOR: Topics include search algorithms, logic, planning, machine learning, and
 
-decision rule.
+applications from areas such as computer vision, robotics, and natural language
 
-NARRATOR: Consider this worked case: A learner maps the inputs, constraints, and observable
+processing.
 
-result for Pipeline Foundations, then checks each step against the stated claim.
+NARRATOR: Consider this worked case: Students will explore how search algorithms navigate
 
-NARRATOR: On screen, show a flowchart with five labeled boxes: Task, Representation,
+decision trees to find optimal solutions in robotics navigation tasks.
 
-Assumptions, Supervision, Decision Rule.
+NARRATOR: On screen, display a flowchart showing the course structure: search
 
-NARRATOR: Arrow connects each box sequentially.
+algorithms, logic, planning, machine learning, and application domains like computer vision
+
+and NLP.
 
 NARRATOR: List the givens before choosing a method, because an unstated assumption can
 
@@ -22,21 +24,23 @@ change the conclusion.
 
 NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: Now define Image Representation precisely enough that another learner could
+NARRATOR: Now define NIST AI Risk Management Framework Overview precisely enough that
 
-test the definition.
+another learner could test the definition.
 
-NARRATOR: Computer vision pipelines represent images as numeric arrays.
+NARRATOR: The NIST AI Risk Management Framework organizes work around Govern, Map,
 
-NARRATOR: Consider this worked case: A 100x100 pixel grayscale image becomes a 10000-element
+Measure, and Manage.
 
-array where each value ranges from 0 to 255.
+NARRATOR: Consider this worked case: In a healthcare AI deployment, the Map phase
 
-NARRATOR: On screen, display a small grid of pixel values next to a corresponding numeric
+documents the intended use of a diagnostic tool and identifies affected patient
 
-array representation.
+populations.
 
-NARRATOR: Highlight the mapping between spatial coordinates and array indices.
+NARRATOR: On screen, show a four-step circular diagram labeled Govern, Map, Measure, and
+
+Manage, with each node connected to a brief risk-management action.
 
 NARRATOR: Separate the formal definition from an implementation detail, then identify what
 
@@ -44,45 +48,45 @@ evidence would distinguish them.
 
 NARRATOR: A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+NARRATOR: With the foundation in place, examine how Govern Phase: Policies and
 
-throughout the analysis.
+Accountability operates in a concrete sequence.
 
-NARRATOR: With the foundation in place, examine how Color Conversion operates in a
+NARRATOR: Govern establishes policies, responsibilities, and accountability for AI
 
-concrete sequence.
+risk.
 
-NARRATOR: Color conversion changes the coordinate representation of pixel values.
+NARRATOR: Consider this worked case: A university AI ethics board assigns specific
 
-NARRATOR: Consider this worked case: Converting an RGB image to HSV separates color
+roles for reviewing algorithmic bias in automated grading systems.
 
-information from brightness, allowing algorithms to isolate specific hues regardless
+NARRATOR: On screen, create a table mapping governance roles (e.g., AI ethics board,
 
-of lighting intensity.
-
-NARRATOR: On screen, show a side-by-side comparison of an RGB image and its HSV
-
-equivalent, with a legend explaining how hue channels isolate color data.
+compliance officer, developers) to accountability responsibilities.
 
 NARRATOR: Follow every arrow in order and name the state before and after each transition.
 
 NARRATOR: The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Next, compare the choices involved in Filtering and make the decision criteria
+NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
 
-explicit.
+throughout the analysis.
 
-NARRATOR: Filtering combines neighboring samples to smooth, sharpen, or detect
+NARRATOR: Next, compare the choices involved in Map Phase: Context and Impacts and make the
 
-structure.
+decision criteria explicit.
 
-NARRATOR: Consider this worked case: A Gaussian blur filter averages adjacent pixel
+NARRATOR: Map documents context, intended use, affected people, and potential impacts.
 
-values to reduce sensor noise and highlight large-scale object boundaries.
+NARRATOR: Consider this worked case: A self-driving car manufacturer maps the
 
-NARRATOR: On screen, display a noisy image, a filtered image, and a sliding window overlay
+operational design domain, specifying weather conditions and traffic scenarios where the
 
-showing how neighboring pixels are averaged.
+system will operate.
+
+NARRATOR: On screen, illustrate a contextual mapping matrix with columns for context,
+
+intended use, affected people, and potential impacts.
 
 NARRATOR: Compare alternatives against the same constraints so the evaluation does not
 
@@ -94,21 +98,25 @@ NARRATOR: Name each dependency explicitly, and keep labels and representations c
 
 throughout the analysis.
 
-NARRATOR: Apply Feature Methods to a worked situation instead of treating it as an
+NARRATOR: Apply Measure Phase: Risk Analysis Methods to a worked situation instead of
 
-isolated definition.
+treating it as an isolated definition.
 
-NARRATOR: Feature methods locate and describe repeatable image patterns.
+NARRATOR: Measure uses qualitative and quantitative methods to analyze identified
 
-NARRATOR: Consider this worked case: SIFT (Scale-Invariant Feature Transform) identifies
+risks.
 
-keypoints and generates descriptors that remain consistent across scale and rotation
+NARRATOR: Consider this worked case: Researchers conduct A/B testing and
 
-changes.
+statistical analysis to measure the fairness and accuracy of a facial recognition model
 
-NARRATOR: On screen, show an image with detected keypoints marked as circles,
+across different demographics.
 
-connected by lines to corresponding keypoints in a transformed image.
+NARRATOR: On screen, display a split-screen graphic: left side shows qualitative risk
+
+assessment (e.g., stakeholder interviews), right side shows quantitative metrics (e.g.,
+
+accuracy, bias scores).
 
 NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
 
@@ -116,19 +124,23 @@ at each step.
 
 NARRATOR: The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Examine the tradeoffs in Calibration, including what improves and what
+NARRATOR: Examine the tradeoffs in Manage Phase: Prioritization and Monitoring,
 
-becomes more difficult.
+including what improves and what becomes more difficult.
 
-NARRATOR: Calibration estimates camera parameters needed for geometric measurement.
+NARRATOR: Manage prioritizes risks and allocates resources for response and
 
-NARRATOR: Consider this worked case: Using a chessboard pattern, the system calculates
+monitoring.
 
-focal length and principal point to map 2D image coordinates to 3D space accurately.
+NARRATOR: Consider this worked case: A financial institution prioritizes high-risk
 
-NARRATOR: On screen, display a chessboard grid overlaid on a real-world scene, with a diagram
+algorithmic trading models for continuous monitoring and allocates resources for
 
-showing the projection matrix transforming 2D to 3D coordinates.
+real-time anomaly detection.
+
+NARRATOR: On screen, show a risk prioritization matrix with axes for likelihood
+
+and impact, highlighting high-priority risks requiring immediate monitoring.
 
 NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
 
@@ -136,19 +148,23 @@ acceptable.
 
 NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: Stress-test the reasoning around Geometric Transforms with an edge case and
+NARRATOR: Stress-test the reasoning around Machine Learning Workflows: Supervised vs.
 
-identify which assumption controls the outcome.
+Unsupervised with an edge case and identify which assumption controls the outcome.
 
-NARRATOR: Geometric transforms map coordinates between image representations.
+NARRATOR: Supervised methods learn a mapping from examples paired with target labels.
 
-NARRATOR: Consider this worked case: Affine transformation adjusts image coordinates to
+NARRATOR: Consider this worked case: A spam filter uses supervised learning with labeled
 
-correct perspective distortion in a tilted photograph.
+email data, whereas customer segmentation uses unsupervised clustering to group users by
 
-NARRATOR: On screen, show a distorted image and a corrected image, with a transformation
+behavior.
 
-matrix displayed alongside the coordinate mapping lines.
+NARRATOR: On screen, present a side-by-side comparison chart: supervised learning shows
+
+labeled examples mapping to outputs, unsupervised learning shows raw data
+
+clustering into groups.
 
 NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
 
@@ -158,23 +174,19 @@ NARRATOR: The edge case reveals the boundary of the claim without discarding the
 
 core idea.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+NARRATOR: Use Preprocessing and Leakage Prevention to diagnose a failure by separating
 
-throughout the analysis.
+symptoms, causes, and corrective action.
 
-NARRATOR: Use Segmentation to diagnose a failure by separating symptoms, causes, and
+NARRATOR: Preprocessing must be fitted only on permitted training data to avoid leakage.
 
-corrective action.
+NARRATOR: Consider this worked case: A medical imaging pipeline standardizes image dimensions
 
-NARRATOR: Segmentation assigns pixels or regions to selected categories.
+and normalizes pixel values using only the training set statistics before validation.
 
-NARRATOR: Consider this worked case: Thresholding separates foreground objects from
+NARRATOR: On screen, draw a pipeline diagram showing data flowing through preprocessing
 
-the background by classifying pixels based on intensity values above or below a set level.
-
-NARRATOR: On screen, display a binary mask where foreground objects are white and
-
-background is black, overlaid on the original image.
+steps fitted on training data, then applied to validation and test sets without re-fitting.
 
 NARRATOR: Locate the first point where observed behavior diverges from expected
 
@@ -184,19 +196,21 @@ NARRATOR: The diagnosis is strongest when another person can reproduce the obser
 
 and the test.
 
-NARRATOR: Connect Motion Methods to the earlier ideas and explain how the pieces work
+NARRATOR: Connect Cross-Validation and Evaluation Metrics to the earlier ideas and
 
-as one system.
+explain how the pieces work as one system.
 
-NARRATOR: Motion methods compare observations across time.
+NARRATOR: Evaluation metrics must match the task and the cost of different errors.
 
-NARRATOR: Consider this worked case: Optical flow calculates pixel displacement between
+NARRATOR: Consider this worked case: A fraud detection system uses k-fold cross-validation
 
-consecutive frames to track object movement and estimate velocity.
+to assess model stability, with precision and recall metrics weighted to penalize false
 
-NARRATOR: On screen, show a sequence of three frames with vector arrows indicating pixel
+negatives heavily.
 
-movement from frame to frame.
+NARRATOR: On screen, illustrate a k-fold cross-validation cycle with data splits
+
+rotating through training and validation sets, alongside a metrics comparison table.
 
 NARRATOR: Explain each connection explicitly and verify that information retains the same
 
@@ -206,27 +220,23 @@ NARRATOR: The synthesis matters only if every connection remains supported by th
 
 evidence.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+NARRATOR: Finish with Practical Analysis Checklist for AI Deployment as a practical
 
-throughout the analysis.
+checklist that can guide a new analysis.
 
-NARRATOR: Finish with Evaluation & Robustness as a practical checklist that can guide a new
+NARRATOR: It also considers robustness, privacy, security, transparency, and fairness.
 
-analysis.
+NARRATOR: Consider this worked case: A deployment checklist verifies that the AI
 
-NARRATOR: Results depend on sampling, illumination, noise, training data,
+system maintains fairness thresholds, logs privacy compliance, and updates monitoring
 
-thresholds, and evaluation metrics.
+alerts when distribution shift is detected.
 
-NARRATOR: Consider this worked case: Varying the threshold value changes the number of
+NARRATOR: On screen, provide a printable checklist template with checkboxes for
 
-detected edges, demonstrating how sensitivity to illumination and noise affects detection
+robustness, privacy, security, transparency, fairness, and monitoring status, aligned with
 
-accuracy.
-
-NARRATOR: On screen, display a slider adjusting a threshold value, with
-
-corresponding binary masks showing how edge detection changes as the threshold shifts.
+NIST and ML workflow standards.
 
 NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
 

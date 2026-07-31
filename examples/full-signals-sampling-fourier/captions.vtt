@@ -2,597 +2,547 @@ WEBVTT
 
 1
 00:00:00.050 --> 00:00:05.696
-NARRATOR: We begin by distinguishing how
-signals exist in time.
+We begin by distinguishing how signals exist
+in time.
 
 2
-00:00:05.696 --> 00:00:14.013
-NARRATOR: A continuous signal varies smoothly
-without interruption, like the voltage across
+00:00:05.696 --> 00:00:14.567
+A continuous signal varies smoothly without
+interruption, like the voltage across a
 
 3
-00:00:14.013 --> 00:00:16.785
-a capacitor charging gradually.
+00:00:14.567 --> 00:00:16.785
+capacitor charging gradually.
 
 4
-00:00:16.785 --> 00:00:23.719
-NARRATOR: Mathematically, we describe it with
-a function that accepts any real number for
+00:00:16.785 --> 00:00:24.214
+Mathematically, we describe it with a function
+that accepts any real number for time.
 
 5
-00:00:23.719 --> 00:00:24.214
-time.
+00:00:24.214 --> 00:00:32.392
+A discrete signal, however, only exists at
+specific, separate moments.
 
 6
-00:00:24.214 --> 00:00:32.392
-NARRATOR: A discrete signal, however, only
-exists at specific, separate moments.
+00:00:32.392 --> 00:00:40.980
+Think of a metronome ticking or a digital
+audio file recording sound only at fixed
 
 7
-00:00:32.392 --> 00:00:40.475
-NARRATOR: Think of a metronome ticking or a
-digital audio file recording sound only at
-
-8
-00:00:40.475 --> 00:00:41.553
-fixed intervals.
-
-9
-00:00:41.553 --> 00:00:48.985
-NARRATOR: The key difference lies in the
-domain: continuous signals use real-valued
-
-10
-00:00:48.985 --> 00:00:53.321
-time, while discrete signals use integer
-indices.
-
-11
-00:00:53.321 --> 00:01:01.173
-NARRATOR: This distinction shapes how we
-analyze, store, and process information in
-
-12
-00:01:01.173 --> 00:01:02.482
-engineering systems.
-
-13
-00:01:02.482 --> 00:01:09.604
-NARRATOR: Understanding this boundary is
-essential before we model how systems respond
-
-14
-00:01:09.604 --> 00:01:12.571
-to these different input types.
-
-15
-00:01:12.722 --> 00:01:17.761
-NARRATOR: Next, we model how systems process
-these signals.
-
-16
-00:01:17.761 --> 00:01:24.425
-NARRATOR: A linear time-invariant system
-behaves consistently regardless of when you
-
-17
-00:01:24.425 --> 00:01:26.243
-apply an input.
-
-18
-00:01:26.243 --> 00:01:34.003
-NARRATOR: Linearity means doubling the input
-doubles the output, and time-invariance means
-
-19
-00:01:34.003 --> 00:01:38.529
-the system's behavior doesn't shift over time.
-
-20
-00:01:38.529 --> 00:01:45.728
-NARRATOR: We characterize such systems using
-differential equations for continuous domains
-
-21
-00:01:45.728 --> 00:01:49.654
-or difference equations for discrete domains.
-
-22
-00:01:49.654 --> 00:01:56.011
-NARRATOR: These equations capture how the
-system's internal state evolves.
-
-23
-00:01:56.011 --> 00:02:03.379
-NARRATOR: By solving them, we predict output
-behavior without simulating every possible
-
-24
-00:02:03.379 --> 00:02:03.993
-input.
-
-25
-00:02:03.993 --> 00:02:11.897
-NARRATOR: This mathematical framework allows
-us to analyze complex circuits or
-
-26
-00:02:11.897 --> 00:02:18.363
-communication channels using fundamental
-building blocks rather than trial-and-error
-
-27
-00:02:18.363 --> 00:02:19.082
-experimentation.
-
-28
-00:02:19.226 --> 00:02:27.215
-NARRATOR: To fully understand an LTI system,
-we examine its response to a single,
-
-29
-00:02:27.215 --> 00:02:30.068
-instantaneous spike called an impulse.
-
-30
-00:02:30.068 --> 00:02:38.028
-NARRATOR: This impulse response reveals
-exactly how the system reacts to any arbitrary
-
-31
-00:02:38.028 --> 00:02:38.640
-input.
-
-32
-00:02:38.640 --> 00:02:46.675
-NARRATOR: When we feed a general signal into
-the system, the output emerges from combining
-
-33
-00:02:46.675 --> 00:02:50.961
-the impulse response with the input through
-convolution.
-
-34
-00:02:50.961 --> 00:02:56.942
-NARRATOR: Convolution mathematically slides
-the impulse response across the input, scales
-
-35
-00:02:56.942 --> 00:03:01.836
-it, and sums the products at each time point.
-
-36
-00:03:01.836 --> 00:03:09.140
-NARRATOR: This operation captures how past
-inputs influence the current output.
-
-37
-00:03:09.140 --> 00:03:16.525
-NARRATOR: By mastering convolution, we can
-predict system behavior for complex waveforms
-
-38
-00:03:16.525 --> 00:03:23.909
-without solving differential equations from
-scratch, making it a cornerstone of signal
-
-39
-00:03:23.909 --> 00:03:25.140
-processing analysis.
-
-40
-00:03:25.298 --> 00:03:32.301
-NARRATOR: To analyze signals across
-frequencies, we use complex exponentials.
-
-41
-00:03:32.301 --> 00:03:39.353
-NARRATOR: These functions oscillate with
-constant magnitude while rotating in the
-
-42
-00:03:39.353 --> 00:03:45.123
-complex plane, making them ideal for
-representing sinusoidal waves.
-
-43
-00:03:45.123 --> 00:03:54.111
-NARRATOR: The Fourier representation
-decomposes any signal into a sum of these
-
-44
-00:03:54.111 --> 00:03:58.605
-complex exponentials, revealing its frequency
-content.
-
-45
-00:03:58.605 --> 00:04:06.439
-NARRATOR: Instead of working with time-domain
-waveforms, we shift to the frequency domain
-
-46
-00:04:06.439 --> 00:04:10.658
-where signals become vectors of complex
-coefficients.
-
-47
-00:04:10.658 --> 00:04:17.594
-NARRATOR: This transformation simplifies
-system analysis because multiplication in the
-
-48
-00:04:17.594 --> 00:04:23.837
-frequency domain corresponds to convolution in
-the time domain.
-
-49
-00:04:23.837 --> 00:04:31.926
-NARRATOR: Engineers use this view to design
-filters and modulators by manipulating
-
-50
-00:04:31.926 --> 00:04:37.319
-frequency components directly rather than
-solving differential equations.
-
-51
-00:04:37.466 --> 00:04:45.002
-NARRATOR: The frequency response describes how
-an LTI system modifies different frequency
-
-52
-00:04:45.002 --> 00:04:45.630
-components.
-
-53
-00:04:45.630 --> 00:04:53.094
-NARRATOR: It shows both magnitude attenuation
-and phase shift across the spectrum.
-
-54
-00:04:53.094 --> 00:05:00.330
-NARRATOR: When a signal passes through a
-system, each complex exponential component
-
-55
-00:05:00.330 --> 00:05:08.170
-gets scaled and rotated according to the
-system's frequency response at that specific
-
-56
-00:05:08.170 --> 00:05:08.773
-frequency.
-
-57
-00:05:08.773 --> 00:05:16.778
-NARRATOR: This means filters can selectively
-amplify or suppress certain frequencies while
-
-58
-00:05:16.778 --> 00:05:18.112
-preserving others.
-
-59
-00:05:18.112 --> 00:05:25.819
-NARRATOR: By examining the magnitude plot, we
-see which frequencies pass through unchanged,
-
-60
-00:05:25.819 --> 00:05:29.969
-and the phase plot reveals timing delays.
-
-61
-00:05:29.969 --> 00:05:37.606
-NARRATOR: Consistent predictions between time
-and frequency domains confirm our model
-
-62
-00:05:37.606 --> 00:05:45.243
-accurately captures the system's behavior,
-allowing reliable design of audio equalizers
-
-63
-00:05:45.243 --> 00:05:47.326
-or communication channels.
-
-64
-00:05:47.474 --> 00:05:55.396
-NARRATOR: When we convert a continuous signal
-to digital form, we sample it at regular
-
-65
-00:05:55.396 --> 00:05:55.924
+00:00:40.980 --> 00:00:41.553
 intervals.
 
+8
+00:00:41.553 --> 00:00:50.052
+The key difference lies in the domain:
+continuous signals use real-valued time, while
+
+9
+00:00:50.052 --> 00:00:53.321
+discrete signals use integer indices.
+
+10
+00:00:53.321 --> 00:01:01.777
+This distinction shapes how we analyze, store,
+and process information in engineering
+
+11
+00:01:01.777 --> 00:01:02.482
+systems.
+
+12
+00:01:02.482 --> 00:01:10.679
+Understanding this boundary is essential
+before we model how systems respond to these
+
+13
+00:01:10.679 --> 00:01:12.571
+different input types.
+
+14
+00:01:12.722 --> 00:01:17.761
+Next, we model how systems process these
+signals.
+
+15
+00:01:17.761 --> 00:01:25.591
+A linear time-invariant system behaves
+consistently regardless of when you apply an
+
+16
+00:01:25.591 --> 00:01:26.243
+input.
+
+17
+00:01:26.243 --> 00:01:35.116
+Linearity means doubling the input doubles the
+output, and time-invariance means the system's
+
+18
+00:01:35.116 --> 00:01:38.529
+behavior doesn't shift over time.
+
+19
+00:01:38.529 --> 00:01:45.482
+We characterize such systems using
+differential equations for continuous domains
+
+20
+00:01:45.482 --> 00:01:49.654
+or difference equations for discrete domains.
+
+21
+00:01:49.654 --> 00:01:56.011
+These equations capture how the system's
+internal state evolves.
+
+22
+00:01:56.011 --> 00:02:03.993
+By solving them, we predict output behavior
+without simulating every possible input.
+
+23
+00:02:03.993 --> 00:02:12.292
+This mathematical framework allows us to
+analyze complex circuits or communication
+
+24
+00:02:12.292 --> 00:02:19.082
+channels using fundamental building blocks
+rather than trial-and-error experimentation.
+
+25
+00:02:19.226 --> 00:02:28.261
+To fully understand an LTI system, we examine
+its response to a single, instantaneous spike
+
+26
+00:02:28.261 --> 00:02:30.068
+called an impulse.
+
+27
+00:02:30.068 --> 00:02:38.640
+This impulse response reveals exactly how the
+system reacts to any arbitrary input.
+
+28
+00:02:38.640 --> 00:02:47.601
+When we feed a general signal into the system,
+the output emerges from combining the impulse
+
+29
+00:02:47.601 --> 00:02:50.961
+response with the input through convolution.
+
+30
+00:02:50.961 --> 00:02:58.402
+Convolution mathematically slides the impulse
+response across the input, scales it, and sums
+
+31
+00:02:58.402 --> 00:03:01.836
+the products at each time point.
+
+32
+00:03:01.836 --> 00:03:09.140
+This operation captures how past inputs
+influence the current output.
+
+33
+00:03:09.140 --> 00:03:16.820
+By mastering convolution, we can predict
+system behavior for complex waveforms without
+
+34
+00:03:16.820 --> 00:03:24.500
+solving differential equations from scratch,
+making it a cornerstone of signal processing
+
+35
+00:03:24.500 --> 00:03:25.140
+analysis.
+
+36
+00:03:25.298 --> 00:03:32.301
+To analyze signals across frequencies, we use
+complex exponentials.
+
+37
+00:03:32.301 --> 00:03:40.399
+These functions oscillate with constant
+magnitude while rotating in the complex plane,
+
+38
+00:03:40.399 --> 00:03:45.123
+making them ideal for representing sinusoidal
+waves.
+
+39
+00:03:45.123 --> 00:03:54.640
+The Fourier representation decomposes any
+signal into a sum of these complex
+
+40
+00:03:54.640 --> 00:03:58.605
+exponentials, revealing its frequency content.
+
+41
+00:03:58.605 --> 00:04:07.486
+Instead of working with time-domain waveforms,
+we shift to the frequency domain where signals
+
+42
+00:04:07.486 --> 00:04:10.658
+become vectors of complex coefficients.
+
+43
+00:04:10.658 --> 00:04:18.712
+This transformation simplifies system analysis
+because multiplication in the frequency domain
+
+44
+00:04:18.712 --> 00:04:23.837
+corresponds to convolution in the time domain.
+
+45
+00:04:23.837 --> 00:04:32.352
+Engineers use this view to design filters and
+modulators by manipulating frequency
+
+46
+00:04:32.352 --> 00:04:37.319
+components directly rather than solving
+differential equations.
+
+47
+00:04:37.466 --> 00:04:44.950
+The frequency response describes how an LTI
+system modifies different frequency
+
+48
+00:04:44.950 --> 00:04:45.630
+components.
+
+49
+00:04:45.630 --> 00:04:53.094
+It shows both magnitude attenuation and phase
+shift across the spectrum.
+
+50
+00:04:53.094 --> 00:05:01.874
+When a signal passes through a system, each
+complex exponential component gets scaled and
+
+51
+00:05:01.874 --> 00:05:08.773
+rotated according to the system's frequency
+response at that specific frequency.
+
+52
+00:05:08.773 --> 00:05:17.394
+This means filters can selectively amplify or
+suppress certain frequencies while preserving
+
+53
+00:05:17.394 --> 00:05:18.112
+others.
+
+54
+00:05:18.112 --> 00:05:26.849
+By examining the magnitude plot, we see which
+frequencies pass through unchanged, and the
+
+55
+00:05:26.849 --> 00:05:29.969
+phase plot reveals timing delays.
+
+56
+00:05:29.969 --> 00:05:37.924
+Consistent predictions between time and
+frequency domains confirm our model accurately
+
+57
+00:05:37.924 --> 00:05:45.880
+captures the system's behavior, allowing
+reliable design of audio equalizers or
+
+58
+00:05:45.880 --> 00:05:47.326
+communication channels.
+
+59
+00:05:47.474 --> 00:05:55.924
+When we convert a continuous signal to digital
+form, we sample it at regular intervals.
+
+60
+00:05:55.924 --> 00:06:03.900
+This process creates repeated copies of the
+original spectrum, spaced by the sampling
+
+61
+00:06:03.900 --> 00:06:04.513
+frequency.
+
+62
+00:06:04.513 --> 00:06:12.424
+Each copy represents the same frequency
+content but shifted in the frequency domain.
+
+63
+00:06:12.424 --> 00:06:19.510
+If the original signal contains frequencies
+higher than half the sampling rate, these
+
+64
+00:06:19.510 --> 00:06:23.870
+shifted copies will overlap with the base
+spectrum.
+
+65
+00:06:23.870 --> 00:06:32.352
+This overlap makes distinct frequencies
+indistinguishable after sampling, a phenomenon
+
 66
-00:05:55.924 --> 00:06:03.368
-NARRATOR: This process creates repeated copies
-of the original spectrum, spaced by the
+00:06:32.352 --> 00:06:34.049
+called aliasing.
 
 67
-00:06:03.368 --> 00:06:04.513
-sampling frequency.
+00:06:34.049 --> 00:06:42.517
+To prevent this, we must ensure the signal is
+bandlimited and apply anti-aliasing filters
 
 68
-00:06:04.513 --> 00:06:11.859
-NARRATOR: Each copy represents the same
-frequency content but shifted in the frequency
+00:06:42.517 --> 00:06:43.727
+before sampling.
 
 69
-00:06:11.859 --> 00:06:12.424
-domain.
+00:06:43.727 --> 00:06:51.031
+Proper sampling preserves the original
+frequency information without distortion.
 
 70
-00:06:12.424 --> 00:06:18.667
-NARRATOR: If the original signal contains
-frequencies higher than half the sampling
+00:06:51.170 --> 00:06:58.202
+Reconstructing a continuous signal from
+discrete samples requires careful workflow
 
 71
-00:06:18.667 --> 00:06:23.870
-rate, these shifted copies will overlap with
-the base spectrum.
+00:06:58.202 --> 00:06:58.905
+planning.
 
 72
-00:06:23.870 --> 00:06:30.917
-NARRATOR: This overlap makes distinct
-frequencies indistinguishable after sampling,
+00:06:58.905 --> 00:07:06.673
+First, we identify the signal's maximum
+frequency to determine its bandwidth.
 
 73
-00:06:30.917 --> 00:06:34.049
-a phenomenon called aliasing.
+00:07:06.673 --> 00:07:16.104
+Next, we apply an analog low-pass filter to
+remove frequencies above half the sampling
 
 74
-00:06:34.049 --> 00:06:42.019
-NARRATOR: To prevent this, we must ensure the
-signal is bandlimited and apply anti-aliasing
+00:07:16.104 --> 00:07:18.798
+rate, preventing spectral overlap.
 
 75
-00:06:42.019 --> 00:06:43.727
-filters before sampling.
+00:07:18.798 --> 00:07:26.441
+We then select a sample rate with sufficient
+margin to avoid aliasing entirely.
 
 76
-00:06:43.727 --> 00:06:50.301
-NARRATOR: Proper sampling preserves the
-original frequency information without
+00:07:26.441 --> 00:07:34.658
+Finally, we verify that the reconstruction
+process accurately recovers the original
 
 77
-00:06:50.301 --> 00:06:51.031
-distortion.
+00:07:34.658 --> 00:07:35.405
+waveform.
 
 78
-00:06:51.170 --> 00:06:57.616
-NARRATOR: Reconstructing a continuous signal
-from discrete samples requires careful
+00:07:35.405 --> 00:07:43.774
+Increasing the sample rate after aliasing has
+occurred cannot repair the lost information,
 
 79
-00:06:57.616 --> 00:06:58.905
-workflow planning.
+00:07:43.774 --> 00:07:48.280
+as the overlapping frequencies are permanently
+mixed.
 
 80
-00:06:58.905 --> 00:07:06.673
-NARRATOR: First, we identify the signal's
-maximum frequency to determine its bandwidth.
+00:07:48.280 --> 00:07:56.399
+This systematic approach ensures digital
+systems faithfully represent analog signals
 
 81
-00:07:06.673 --> 00:07:15.607
-NARRATOR: Next, we apply an analog low-pass
-filter to remove frequencies above half the
+00:07:56.399 --> 00:08:00.459
+for further processing or storage.
 
 82
-00:07:15.607 --> 00:07:18.798
-sampling rate, preventing spectral overlap.
+00:08:00.602 --> 00:08:07.980
+Let's trace a single sinusoidal signal through
+a practical filter and sampler.
 
 83
-00:07:18.798 --> 00:07:26.441
-NARRATOR: We then select a sample rate with
-sufficient margin to avoid aliasing entirely.
+00:08:07.980 --> 00:08:13.016
+The input is a pure tone at a specific
+frequency.
 
 84
-00:07:26.441 --> 00:07:34.026
-NARRATOR: Finally, we verify that the
-reconstruction process accurately recovers the
+00:08:13.016 --> 00:08:20.427
+The filter first shapes the spectrum,
+attenuating unwanted frequencies while
 
 85
-00:07:34.026 --> 00:07:35.405
-original waveform.
+00:08:20.427 --> 00:08:23.391
+preserving the target tone.
 
 86
-00:07:35.405 --> 00:07:43.375
-NARRATOR: Increasing the sample rate after
-aliasing has occurred cannot repair the lost
+00:08:23.391 --> 00:08:30.373
+The sampler then captures this filtered signal
+at discrete time points.
 
 87
-00:07:43.375 --> 00:07:48.280
-information, as the overlapping frequencies
-are permanently mixed.
+00:08:30.373 --> 00:08:38.384
+If the tone's frequency falls within the
+passband and below the Nyquist limit, the
 
 88
-00:07:48.280 --> 00:07:55.892
-NARRATOR: This systematic approach ensures
-digital systems faithfully represent analog
-
-89
-00:07:55.892 --> 00:08:00.459
-signals for further processing or storage.
-
-90
-00:08:00.602 --> 00:08:07.980
-NARRATOR: Let's trace a single sinusoidal
-signal through a practical filter and sampler.
-
-91
-00:08:07.980 --> 00:08:13.016
-NARRATOR: The input is a pure tone at a
-specific frequency.
-
-92
-00:08:13.016 --> 00:08:19.933
-NARRATOR: The filter first shapes the
-spectrum, attenuating unwanted frequencies
-
-93
-00:08:19.933 --> 00:08:23.391
-while preserving the target tone.
-
-94
-00:08:23.391 --> 00:08:30.373
-NARRATOR: The sampler then captures this
-filtered signal at discrete time points.
-
-95
-00:08:30.373 --> 00:08:38.583
-NARRATOR: If the tone's frequency falls within
-the passband and below the Nyquist limit, the
-
-96
-00:08:38.583 --> 00:08:42.962
+00:08:38.384 --> 00:08:42.962
 sampled values will accurately represent the
 original wave.
 
-97
+89
 00:08:42.962 --> 00:08:50.534
-NARRATOR: We can verify this by reconstructing
-the samples and comparing them to the input.
+We can verify this by reconstructing the
+samples and comparing them to the input.
 
-98
-00:08:50.534 --> 00:08:58.947
-NARRATOR: This end-to-end trace demonstrates
-how filtering and sampling work together to
+90
+00:08:50.534 --> 00:08:58.675
+This end-to-end trace demonstrates how
+filtering and sampling work together to
 
-99
-00:08:58.947 --> 00:09:03.855
+91
+00:08:58.675 --> 00:09:03.855
 preserve frequency information while enabling
 digital processing.
 
+92
+00:09:03.855 --> 00:09:11.955
+Engineers use this principle to design
+communication systems that transmit audio or
+
+93
+00:09:11.955 --> 00:09:13.980
+data without distortion.
+
+94
+00:09:14.138 --> 00:09:23.000
+A fundamental principle in signals and systems
+is that equivalent time- and frequency-domain
+
+95
+00:09:23.000 --> 00:09:26.409
+views must produce consistent predictions.
+
+96
+00:09:26.409 --> 00:09:33.820
+When we analyze a system using differential
+equations in the time domain, we should get
+
+97
+00:09:33.820 --> 00:09:39.748
+the same output as when we use convolution
+with the impulse response.
+
+98
+00:09:39.748 --> 00:09:47.248
+Similarly, frequency-domain multiplication
+should match time-domain results.
+
+99
+00:09:47.248 --> 00:09:55.361
+This consistency allows engineers to switch
+between domains based on which is
+
 100
-00:09:03.855 --> 00:09:10.816
-NARRATOR: Engineers use this principle to
-design communication systems that transmit
-
-101
-00:09:10.816 --> 00:09:13.980
-audio or data without distortion.
-
-102
-00:09:14.138 --> 00:09:22.534
-NARRATOR: A fundamental principle in signals
-and systems is that equivalent time- and
-
-103
-00:09:22.534 --> 00:09:26.409
-frequency-domain views must produce consistent
-predictions.
-
-104
-00:09:26.409 --> 00:09:33.079
-NARRATOR: When we analyze a system using
-differential equations in the time domain, we
-
-105
-00:09:33.079 --> 00:09:39.748
-should get the same output as when we use
-convolution with the impulse response.
-
-106
-00:09:39.748 --> 00:09:46.310
-NARRATOR: Similarly, frequency-domain
-multiplication should match time-domain
-
-107
-00:09:46.310 --> 00:09:47.248
-results.
-
-108
-00:09:47.248 --> 00:09:55.451
-NARRATOR: This consistency allows engineers to
-switch between domains based on which is
-
-109
-00:09:55.451 --> 00:09:56.713
+00:09:55.361 --> 00:09:56.713
 mathematically simpler.
 
-110
-00:09:56.713 --> 00:10:04.504
-NARRATOR: For example, we might solve a
-complex circuit using Laplace transforms in
+101
+00:09:56.713 --> 00:10:05.453
+For example, we might solve a complex circuit
+using Laplace transforms in the frequency
 
-111
-00:10:04.504 --> 00:10:11.695
-the frequency domain, then verify the results
-by simulating the time-domain response.
+102
+00:10:05.453 --> 00:10:11.695
+domain, then verify the results by simulating
+the time-domain response.
 
-112
-00:10:11.695 --> 00:10:18.764
-NARRATOR: This cross-validation ensures our
-models accurately capture physical behavior
+103
+00:10:11.695 --> 00:10:19.206
+This cross-validation ensures our models
+accurately capture physical behavior and
 
-113
-00:10:18.764 --> 00:10:23.713
-and prevents design errors in real-world
+104
+00:10:19.206 --> 00:10:23.713
+prevents design errors in real-world
 applications.
 
-114
+105
 00:10:23.858 --> 00:10:29.700
-NARRATOR: To apply these concepts, we use a
-practical analysis checklist.
+To apply these concepts, we use a practical
+analysis checklist.
 
-115
-00:10:29.700 --> 00:10:37.593
-NARRATOR: First, identify whether the signal
-is continuous or discrete and determine its
+106
+00:10:29.700 --> 00:10:37.546
+First, identify whether the signal is
+continuous or discrete and determine its
 
-116
-00:10:37.593 --> 00:10:38.200
+107
+00:10:37.546 --> 00:10:38.200
 bandwidth.
 
-117
+108
 00:10:38.200 --> 00:10:45.218
-NARRATOR: Next, model the system as LTI and
-obtain its impulse response.
+Next, model the system as LTI and obtain its
+impulse response.
 
-118
-00:10:45.218 --> 00:10:51.811
-NARRATOR: Verify that the signal frequency
-falls within the passband and below the
+109
+00:10:45.218 --> 00:10:52.825
+Verify that the signal frequency falls within
+the passband and below the Nyquist rate.
 
-119
-00:10:51.811 --> 00:10:52.825
-Nyquist rate.
+110
+00:10:52.825 --> 00:11:01.308
+Apply anti-aliasing filtering if necessary,
+then select a sample rate with margin.
 
-120
-00:10:52.825 --> 00:11:00.655
-NARRATOR: Apply anti-aliasing filtering if
-necessary, then select a sample rate with
+111
+00:11:01.308 --> 00:11:09.383
+Finally, trace the signal through the filter
+and sampler, checking that reconstructed
 
-121
-00:11:00.655 --> 00:11:01.308
-margin.
+112
+00:11:09.383 --> 00:11:12.075
+values match the original.
 
-122
-00:11:01.308 --> 00:11:08.908
-NARRATOR: Finally, trace the signal through
-the filter and sampler, checking that
+113
+00:11:12.075 --> 00:11:21.264
+This checklist ensures systematic design,
+prevents aliasing, and validates frequency
 
-123
-00:11:08.908 --> 00:11:12.075
-reconstructed values match the original.
+114
+00:11:21.264 --> 00:11:22.183
+preservation.
 
-124
-00:11:12.075 --> 00:11:20.498
-NARRATOR: This checklist ensures systematic
-design, prevents aliasing, and validates
+115
+00:11:22.183 --> 00:11:30.423
+By following these steps, engineers can
+confidently build reliable signal processing
 
-125
-00:11:20.498 --> 00:11:22.183
-frequency preservation.
-
-126
-00:11:22.183 --> 00:11:30.011
-NARRATOR: By following these steps, engineers
-can confidently build reliable signal
-
-127
-00:11:30.011 --> 00:11:36.415
-processing systems that meet performance
-requirements across diverse applications.
+116
+00:11:30.423 --> 00:11:36.415
+systems that meet performance requirements
+across diverse applications.

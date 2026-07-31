@@ -1,599 +1,566 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:07.507
-NARRATOR: Begin by framing Course Scope and
-Faculty Flexibility as a question about
+00:00:00.050 --> 00:00:07.300
+NARRATOR: Begin by framing Process Definition
+and State as a question about inputs,
 
 2
-00:00:07.507 --> 00:00:10.375
-inputs, decisions, and observable results.
+00:00:07.300 --> 00:00:09.531
+decisions, and observable results.
 
 3
-00:00:10.375 --> 00:00:14.437
-NARRATOR: This course examines current topics
-in Systems.
+00:00:09.531 --> 00:00:16.267
+NARRATOR: A process combines an address space
+with execution state and operating-system
 
 4
-00:00:14.437 --> 00:00:20.694
-NARRATOR: Consider this worked case:
-Instructors select specific course instances
+00:00:16.267 --> 00:00:16.828
+resources.
 
 5
-00:00:20.694 --> 00:00:26.952
-belonging to the Distributed Systems,
-Architecture and Operating Systems, or
+00:00:16.828 --> 00:00:24.682
+NARRATOR: Consider this worked case: A web
+server process maintains its own memory space,
 
 6
-00:00:26.952 --> 00:00:28.203
-Security cluster.
+00:00:24.682 --> 00:00:28.609
+open file descriptors, and CPU scheduling
+context.
 
 7
-00:00:28.203 --> 00:00:34.992
-NARRATOR: On screen, display a flowchart
-showing three selectable cluster paths
+00:00:28.609 --> 00:00:36.462
+NARRATOR: On screen, display a diagram showing
+a process boundary with labeled address space,
 
 8
-00:00:34.992 --> 00:00:41.163
-(Distributed Systems, Architecture and
-Operating Systems, Security) converging into a
+00:00:36.462 --> 00:00:39.828
+execution state, and OS resource handles.
 
 9
-00:00:41.163 --> 00:00:44.249
-central 'Seminar in Systems' node.
-
-10
-00:00:44.249 --> 00:00:50.153
+00:00:39.828 --> 00:00:45.997
 NARRATOR: List the givens before choosing a
 method, because an unstated assumption can
 
-11
-00:00:50.153 --> 00:00:51.515
+10
+00:00:45.997 --> 00:00:47.421
 change the conclusion.
 
-12
-00:00:51.515 --> 00:00:57.531
+11
+00:00:47.421 --> 00:00:53.562
 NARRATOR: This establishes the vocabulary and
 scope needed for the remaining sections.
 
+12
+00:00:53.562 --> 00:01:00.621
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
 13
-00:00:57.650 --> 00:01:02.636
-NARRATOR: Now define Secure Software
-Development Framework Overview precisely
+00:01:00.621 --> 00:01:02.546
+throughout the analysis.
 
 14
-00:01:02.636 --> 00:01:07.068
-enough that another learner could test the
-definition.
+00:01:02.666 --> 00:01:09.188
+NARRATOR: Now define System Call Mechanism
+precisely enough that another learner could
 
 15
-00:01:07.068 --> 00:01:13.428
-NARRATOR: The Secure Software Development
-Framework groups practices into four practice
+00:01:09.188 --> 00:01:10.819
+test the definition.
 
 16
-00:01:13.428 --> 00:01:14.006
-groups.
+00:01:10.819 --> 00:01:17.209
+NARRATOR: A system call transfers control from
+user code to a privileged kernel service.
 
 17
-00:01:14.006 --> 00:01:20.764
-NARRATOR: Consider this worked case: Prepare
-the Organization establishes people,
+00:01:17.209 --> 00:01:23.825
+NARRATOR: Consider this worked case: A process
+invokes a read system call to request data
 
 18
-00:01:20.764 --> 00:01:24.818
-processes, and technology for secure
-development.
+00:01:23.825 --> 00:01:26.912
+from a file, transitioning to kernel mode.
 
 19
-00:01:24.818 --> 00:01:31.210
-NARRATOR: On screen, show a four-quadrant
-diagram labeling each practice group with its
+00:01:26.912 --> 00:01:33.204
+NARRATOR: On screen, show a flowchart of
+control transfer between user space and kernel
 
 20
-00:01:31.210 --> 00:01:32.193
-core function.
+00:01:33.204 --> 00:01:36.350
+space with a labeled system call instruction.
 
 21
-00:01:32.193 --> 00:01:38.932
+00:01:36.350 --> 00:01:43.205
 NARRATOR: Separate the formal definition from
 an implementation detail, then identify what
 
 22
-00:01:38.932 --> 00:01:41.178
+00:01:43.205 --> 00:01:45.490
 evidence would distinguish them.
 
 23
-00:01:41.178 --> 00:01:47.365
+00:01:45.490 --> 00:01:52.287
 NARRATOR: A precise definition makes later
 examples easier to evaluate and revise.
 
 24
-00:01:47.365 --> 00:01:54.744
+00:01:52.287 --> 00:01:59.629
 NARRATOR: Name each dependency explicitly, and
 keep labels and representations consistent
 
 25
-00:01:54.744 --> 00:01:56.756
+00:01:59.629 --> 00:02:01.631
 throughout the analysis.
 
 26
-00:01:56.858 --> 00:02:03.032
+00:02:01.754 --> 00:02:07.408
 NARRATOR: With the foundation in place,
-examine how Prepare the Organization Practice
+examine how Trap Handling and Context
 
 27
-00:02:03.032 --> 00:02:05.604
-operates in a concrete sequence.
+00:02:07.408 --> 00:02:10.235
+Switching operates in a concrete sequence.
 
 28
-00:02:05.604 --> 00:02:13.783
-NARRATOR: Prepare the Organization establishes
-people, processes, and technology for secure
+00:02:10.235 --> 00:02:16.489
+NARRATOR: A trap records processor state so
+the kernel can handle a system call,
 
 29
-00:02:13.783 --> 00:02:14.526
-development.
+00:02:16.489 --> 00:02:17.829
+exception, or interrupt.
 
 30
-00:02:14.526 --> 00:02:21.058
-NARRATOR: Consider this worked case: Teams
-define security policies and allocate
+00:02:17.829 --> 00:02:24.832
+NARRATOR: Consider this worked case: When a
+process triggers a page fault, the CPU traps
 
 31
-00:02:21.058 --> 00:02:23.433
-resources before writing code.
+00:02:24.832 --> 00:02:29.500
+the fault, saves registers, and transfers to
+the kernel handler.
 
 32
-00:02:23.433 --> 00:02:32.024
-NARRATOR: On screen, illustrate a checklist
-with three items: 'Define security policies',
+00:02:29.500 --> 00:02:35.401
+NARRATOR: On screen, illustrate a trap
+sequence with a processor state snapshot,
 
 33
-00:02:32.024 --> 00:02:35.604
-'Allocate resources', 'Establish development
-processes'.
+00:02:35.401 --> 00:02:38.844
+kernel handler entry, and restored state
+return.
 
 34
-00:02:35.604 --> 00:02:42.620
+00:02:38.844 --> 00:02:46.078
 NARRATOR: Follow every arrow in order and name
 the state before and after each transition.
 
 35
-00:02:42.620 --> 00:02:48.151
+00:02:46.078 --> 00:02:51.828
 NARRATOR: The trace converts an abstract
 statement into an inspectable sequence.
 
 36
-00:02:48.151 --> 00:02:55.161
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+00:02:51.938 --> 00:02:57.991
+NARRATOR: Next, compare the choices involved
+in Virtual Memory Mapping and make the
 
 37
-00:02:55.161 --> 00:02:57.073
-throughout the analysis.
-
-38
-00:02:57.073 --> 00:03:02.515
-NARRATOR: Then summarize what the example
-demonstrates, what it does not establish, and
-
-39
-00:03:02.515 --> 00:03:05.026
-what evidence would be needed next.
-
-40
-00:03:05.138 --> 00:03:11.865
-NARRATOR: Next, compare the choices involved
-in Protect the Software Practice and make the
-
-41
-00:03:11.865 --> 00:03:13.306
+00:02:57.991 --> 00:02:59.388
 decision criteria explicit.
 
+38
+00:02:59.388 --> 00:03:06.013
+NARRATOR: Page tables map virtual addresses to
+physical memory with permission bits.
+
+39
+00:03:06.013 --> 00:03:15.789
+NARRATOR: Consider this worked case: A page
+table entry translates a virtual address to a
+
+40
+00:03:15.789 --> 00:03:19.700
+physical frame while enforcing
+read/write/execute permissions.
+
+41
+00:03:19.700 --> 00:03:26.786
+NARRATOR: On screen, render a page table
+structure with virtual address bits, physical
+
 42
-00:03:13.306 --> 00:03:19.723
-NARRATOR: Protect the Software prevents
-unauthorized access to code and development
+00:03:26.786 --> 00:03:29.512
+address bits, and permission flags.
 
 43
-00:03:19.723 --> 00:03:20.306
-artifacts.
-
-44
-00:03:20.306 --> 00:03:26.249
-NARRATOR: Consider this worked case:
-Repositories use role-based access control to
-
-45
-00:03:26.249 --> 00:03:30.572
-restrict who can view or modify source files.
-
-46
-00:03:30.572 --> 00:03:37.900
-NARRATOR: On screen, draw a locked vault icon
-with three access levels: 'Read', 'Write',
-
-47
-00:03:37.900 --> 00:03:39.994
-'Admin' labeled around it.
-
-48
-00:03:39.994 --> 00:03:46.844
+00:03:29.512 --> 00:03:35.862
 NARRATOR: Compare alternatives against the
 same constraints so the evaluation does not
 
-49
-00:03:46.844 --> 00:03:48.556
+44
+00:03:35.862 --> 00:03:37.450
 move the goalposts.
 
-50
-00:03:48.556 --> 00:03:55.416
+45
+00:03:37.450 --> 00:03:44.262
 NARRATOR: Using shared criteria turns a
 preference into a defensible technical choice.
 
-51
-00:03:55.416 --> 00:04:02.610
+46
+00:03:44.262 --> 00:03:51.260
 NARRATOR: Name each dependency explicitly, and
 keep labels and representations consistent
 
-52
-00:04:02.610 --> 00:04:04.572
+47
+00:03:51.260 --> 00:03:53.169
 throughout the analysis.
 
+48
+00:03:53.282 --> 00:04:00.156
+NARRATOR: Apply Process Scheduling to a worked
+situation instead of treating it as an
+
+49
+00:04:00.156 --> 00:04:01.138
+isolated definition.
+
+50
+00:04:01.138 --> 00:04:07.685
+NARRATOR: The scheduler selects runnable
+processes and switches processor context.
+
+51
+00:04:07.685 --> 00:04:13.149
+NARRATOR: Consider this worked case: A
+round-robin scheduler picks the next process
+
+52
+00:04:13.149 --> 00:04:17.247
+from the ready queue and saves the current
+context.
+
 53
-00:04:04.682 --> 00:04:11.190
-NARRATOR: Apply Produce Well-Secured Software
-Practice to a worked situation instead of
+00:04:17.247 --> 00:04:26.022
+NARRATOR: On screen, draw a scheduler loop
+showing ready queue, context save/restore, and
 
 54
-00:04:11.190 --> 00:04:14.444
-treating it as an isolated definition.
+00:04:26.022 --> 00:04:27.372
+CPU allocation.
 
 55
-00:04:14.444 --> 00:04:20.490
-NARRATOR: Produce Well-Secured Software
-addresses security requirements, design,
-
-56
-00:04:20.490 --> 00:04:22.757
-verification, and release.
-
-57
-00:04:22.757 --> 00:04:28.208
-NARRATOR: Consider this worked case:
-Developers verify that security requirements
-
-58
-00:04:28.208 --> 00:04:32.569
-are met before deploying the final software
-version.
-
-59
-00:04:32.569 --> 00:04:38.794
-NARRATOR: On screen, create a pipeline graphic
-showing 'Requirements' -> 'Design' ->
-
-60
-00:04:38.794 --> 00:04:42.944
-'Verification' -> 'Release' with checkmarks at
-each stage.
-
-61
-00:04:42.944 --> 00:04:49.751
+00:04:27.372 --> 00:04:34.127
 NARRATOR: Work from the concrete inputs to the
 result, checking units, types, or invariants
 
-62
-00:04:49.751 --> 00:04:51.210
+56
+00:04:34.127 --> 00:04:35.575
 at each step.
 
-63
-00:04:51.210 --> 00:04:55.991
+57
+00:04:35.575 --> 00:04:40.763
 NARRATOR: The worked case shows both how to
 apply the method and how to check it.
 
-64
-00:04:55.991 --> 00:05:03.198
+58
+00:04:40.763 --> 00:04:48.104
 NARRATOR: Name each dependency explicitly, and
 keep labels and representations consistent
 
-65
-00:05:03.198 --> 00:05:05.163
+59
+00:04:48.104 --> 00:04:50.106
 throughout the analysis.
 
+60
+00:04:50.210 --> 00:04:57.466
+NARRATOR: Examine the tradeoffs in Concurrency
+and Locking, including what improves and what
+
+61
+00:04:57.466 --> 00:04:59.141
+becomes more difficult.
+
+62
+00:04:59.141 --> 00:05:05.144
+NARRATOR: Locks protect invariants when
+concurrent execution can access shared state.
+
+63
+00:05:05.144 --> 00:05:12.800
+NARRATOR: Consider this worked case: A mutex
+lock prevents two processes from modifying a
+
+64
+00:05:12.800 --> 00:05:14.441
+shared counter simultaneously.
+
+65
+00:05:14.441 --> 00:05:20.467
+NARRATOR: On screen, show a lock
+acquisition/release sequence with a shared
+
 66
-00:05:05.282 --> 00:05:11.164
-NARRATOR: Examine the tradeoffs in Respond to
-Vulnerabilities Practice, including what
+00:05:20.467 --> 00:05:23.206
+variable and protected critical section.
 
 67
-00:05:11.164 --> 00:05:14.372
-improves and what becomes more difficult.
-
-68
-00:05:14.372 --> 00:05:20.876
-NARRATOR: Respond to Vulnerabilities
-identifies, analyzes, remediates, and learns
-
-69
-00:05:20.876 --> 00:05:23.044
-from discovered weaknesses.
-
-70
-00:05:23.044 --> 00:05:30.319
-NARRATOR: Consider this worked case: When a
-bug is found, the team patches the code and
-
-71
-00:05:30.319 --> 00:05:32.138
-updates the security documentation.
-
-72
-00:05:32.138 --> 00:05:39.711
-NARRATOR: On screen, show a circular diagram
-with arrows labeled 'Identify', 'Analyze',
-
-73
-00:05:39.711 --> 00:05:43.497
-'Remediate', 'Learn' connecting back to
-'Identify'.
-
-74
-00:05:43.497 --> 00:05:49.826
+00:05:23.206 --> 00:05:29.433
 NARRATOR: State the benefit, the cost, and the
 condition under which the tradeoff is
 
-75
-00:05:49.826 --> 00:05:50.278
+68
+00:05:29.433 --> 00:05:29.878
 acceptable.
 
-76
-00:05:50.278 --> 00:05:57.606
+69
+00:05:29.878 --> 00:05:36.956
 NARRATOR: Making the tradeoff visible prevents
 a local improvement from hiding a larger cost.
 
-77
-00:05:57.606 --> 00:06:04.543
+70
+00:05:36.956 --> 00:05:44.126
 NARRATOR: Name each dependency explicitly, and
 keep labels and representations consistent
 
-78
-00:06:04.543 --> 00:06:06.435
+71
+00:05:44.126 --> 00:05:46.081
 throughout the analysis.
 
-79
-00:06:06.554 --> 00:06:12.516
+72
+00:05:46.202 --> 00:05:53.341
 NARRATOR: Stress-test the reasoning around
-Security Requirements and Reasoning with an
+File System Organization with an edge case and
+
+73
+00:05:53.341 --> 00:05:56.636
+identify which assumption controls the
+outcome.
+
+74
+00:05:56.636 --> 00:06:03.472
+NARRATOR: The file system organizes persistent
+data through inodes, directories, and logged
+
+75
+00:06:03.472 --> 00:06:04.042
+updates.
+
+76
+00:06:04.042 --> 00:06:11.086
+NARRATOR: Consider this worked case: An inode
+stores metadata for a file while directory
+
+77
+00:06:11.086 --> 00:06:14.105
+entries link names to inode references.
+
+78
+00:06:14.105 --> 00:06:21.387
+NARRATOR: On screen, display a file system
+tree with inode blocks, directory entries, and
+
+79
+00:06:21.387 --> 00:06:22.948
+journal log entries.
 
 80
-00:06:12.516 --> 00:06:17.394
-edge case and identify which assumption
-controls the outcome.
-
-81
-00:06:17.394 --> 00:06:25.028
-NARRATOR: Security reasoning identifies
-assets, trust boundaries, threats, controls,
-
-82
-00:06:25.028 --> 00:06:29.269
-evidence, residual risk, and responsibilities.
-
-83
-00:06:29.269 --> 00:06:36.107
-NARRATOR: Consider this worked case: A system
-tracks user authentication requirements from
-
-84
-00:06:36.107 --> 00:06:37.816
-design through testing.
-
-85
-00:06:37.816 --> 00:06:46.739
-NARRATOR: On screen, display a table with
-columns: 'Asset', 'Trust Boundary', 'Threat',
-
-86
-00:06:46.739 --> 00:06:50.457
-'Control', 'Evidence', 'Residual Risk',
-'Responsibility'.
-
-87
-00:06:50.457 --> 00:06:56.413
+00:06:22.948 --> 00:06:29.125
 NARRATOR: Change one assumption at a time and
 observe which part of the reasoning no longer
 
-88
-00:06:56.413 --> 00:06:56.785
+81
+00:06:29.125 --> 00:06:29.511
 holds.
 
-89
-00:06:56.785 --> 00:07:03.047
+82
+00:06:29.511 --> 00:06:35.855
 NARRATOR: The edge case reveals the boundary
 of the claim without discarding the useful
 
-90
-00:07:03.047 --> 00:07:03.941
+83
+00:06:35.855 --> 00:06:36.761
 core idea.
 
+84
+00:06:36.866 --> 00:06:44.582
+NARRATOR: Use RISC-V Instruction Set Basics to
+diagnose a failure by separating symptoms,
+
+85
+00:06:44.582 --> 00:06:46.956
+causes, and corrective action.
+
+86
+00:06:46.956 --> 00:06:53.347
+NARRATOR: The RISC-V ISA defines
+programmer-visible instructions, registers,
+
+87
+00:06:53.347 --> 00:06:59.737
+memory operations, control transfer,
+exceptions, and ordering behavior.
+
+88
+00:06:59.737 --> 00:07:08.912
+NARRATOR: Consider this worked case: Integer
+register x0 always reads as zero, while other
+
+89
+00:07:08.912 --> 00:07:11.534
+registers hold software-visible values.
+
+90
+00:07:11.534 --> 00:07:20.076
+NARRATOR: On screen, list RISC-V register file
+with x0 marked as zero and other registers
+
 91
-00:07:03.941 --> 00:07:10.927
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+00:07:20.076 --> 00:07:21.784
+showing software values.
 
 92
-00:07:10.927 --> 00:07:12.832
-throughout the analysis.
-
-93
-00:07:12.938 --> 00:07:20.003
-NARRATOR: Use Cryptographic Standards and
-Confidentiality to diagnose a failure by
-
-94
-00:07:20.003 --> 00:07:23.856
-separating symptoms, causes, and corrective
-action.
-
-95
-00:07:23.856 --> 00:07:30.263
-NARRATOR: Encryption supports confidentiality
-when keys and modes are used correctly.
-
-96
-00:07:30.263 --> 00:07:37.121
-NARRATOR: Consider this worked case: AES-256
-encryption protects data in transit when
-
-97
-00:07:37.121 --> 00:07:41.122
-paired with a secure key exchange protocol.
-
-98
-00:07:41.122 --> 00:07:51.017
-NARRATOR: On screen, show a padlock icon with
-a key inside, labeled 'AES-256', and a shield
-
-99
-00:07:51.017 --> 00:07:52.872
-icon labeled 'Confidentiality'.
-
-100
-00:07:52.872 --> 00:07:58.582
+00:07:21.784 --> 00:07:27.532
 NARRATOR: Locate the first point where
 observed behavior diverges from expected
 
-101
-00:07:58.582 --> 00:08:02.216
+93
+00:07:27.532 --> 00:07:31.190
 behavior, then test the smallest plausible
 cause.
 
-102
-00:08:02.216 --> 00:08:08.016
+94
+00:07:31.190 --> 00:07:37.190
 NARRATOR: The diagnosis is strongest when
 another person can reproduce the observation
 
-103
-00:08:08.016 --> 00:08:09.466
+95
+00:07:37.190 --> 00:07:38.690
 and the test.
 
-104
-00:08:09.466 --> 00:08:16.549
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+96
+00:07:38.810 --> 00:07:44.630
+NARRATOR: Connect Memory Ordering and
+Dependencies to the earlier ideas and explain
 
-105
-00:08:16.549 --> 00:08:18.481
-throughout the analysis.
+97
+00:07:44.630 --> 00:07:48.025
+how the pieces work as one system.
 
-106
-00:08:18.602 --> 00:08:24.675
-NARRATOR: Connect Integrity, Authenticity, and
-Key Management to the earlier ideas and
+98
+00:07:48.025 --> 00:07:53.853
+NARRATOR: Memory-ordering rules constrain how
+memory operations may be observed.
 
-107
-00:08:24.675 --> 00:08:28.723
-explain how the pieces work as one system.
+99
+00:07:53.853 --> 00:07:59.977
+NARRATOR: Consider this worked case: Store
+buffers ensure that writes are visible to
 
-108
-00:08:28.723 --> 00:08:35.490
-NARRATOR: Message authentication and digital
-signatures address integrity and authenticity
+100
+00:07:59.977 --> 00:08:03.275
+other cores in a defined architectural order.
 
-109
-00:08:35.490 --> 00:08:37.520
-in different ways.
+101
+00:08:03.275 --> 00:08:09.543
+NARRATOR: On screen, show a memory operation
+sequence with ordering constraints and
 
-110
-00:08:37.520 --> 00:08:45.020
-NARRATOR: Consider this worked case: Digital
-signatures verify that a message was sent by a
+102
+00:08:09.543 --> 00:08:10.588
+dependency arrows.
 
-111
-00:08:45.020 --> 00:08:47.020
-specific sender without alteration.
-
-112
-00:08:47.020 --> 00:08:53.627
-NARRATOR: On screen, draw two side-by-side
-icons: a stamp icon labeled 'Digital
-
-113
-00:08:53.627 --> 00:08:58.583
-Signature' and a key ring icon labeled 'Key
-Management'.
-
-114
-00:08:58.583 --> 00:09:07.357
+103
+00:08:10.588 --> 00:08:19.500
 NARRATOR: Explain each connection explicitly
 and verify that information retains the same
 
-115
-00:09:07.357 --> 00:09:09.551
+104
+00:08:19.500 --> 00:08:21.728
 meaning across representations.
 
-116
-00:09:09.551 --> 00:09:16.487
+105
+00:08:21.728 --> 00:08:28.736
 NARRATOR: The synthesis matters only if every
 connection remains supported by the original
 
-117
-00:09:16.487 --> 00:09:17.020
+106
+00:08:28.736 --> 00:08:29.275
 evidence.
 
-118
-00:09:17.138 --> 00:09:23.111
-NARRATOR: Finish with Modes of Operation and
-Side Channels as a practical checklist that
+107
+00:08:29.275 --> 00:08:36.248
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
 
-119
-00:09:23.111 --> 00:09:25.244
-can guide a new analysis.
+108
+00:08:36.248 --> 00:08:38.150
+throughout the analysis.
 
-120
-00:09:25.244 --> 00:09:31.744
-NARRATOR: Modes of operation define how a
-primitive processes data larger than one
+109
+00:08:38.258 --> 00:08:43.822
+NARRATOR: Finish with Practical Analysis
+Checklist as a practical checklist that can
 
-121
-00:09:31.744 --> 00:09:32.244
-block.
+110
+00:08:43.822 --> 00:08:45.676
+guide a new analysis.
 
-122
-00:09:32.244 --> 00:09:39.733
-NARRATOR: Consider this worked case: CBC mode
-processes data in blocks, but timing attacks
+111
+00:08:45.676 --> 00:08:53.388
+NARRATOR: Analysis distinguishes user mode,
+privileged kernel code, hardware translation,
 
-123
-00:09:39.733 --> 00:09:43.478
-can expose vulnerabilities if not implemented
-securely.
+112
+00:08:53.388 --> 00:08:58.786
+interrupt state, resource ownership, and
+synchronization invariants.
 
-124
-00:09:43.478 --> 00:09:50.893
-NARRATOR: On screen, show a block diagram with
-arrows showing data flowing through multiple
+113
+00:08:58.786 --> 00:09:04.373
+NARRATOR: Consider this worked case: A
+security audit checks for proper privilege
 
-125
-00:09:50.893 --> 00:09:53.541
-blocks, labeled 'Mode of Operation'.
+114
+00:09:04.373 --> 00:09:08.098
+separation and lock invariants in a kernel
+module.
 
-126
-00:09:53.541 --> 00:10:01.094
+115
+00:09:08.098 --> 00:09:14.531
+NARRATOR: On screen, provide a checklist
+template with checkboxes for each analysis
+
+116
+00:09:14.531 --> 00:09:15.067
+category.
+
+117
+00:09:15.067 --> 00:09:22.761
 NARRATOR: For each checklist item, record the
 evidence, the remaining uncertainty, and the
 
-127
-00:10:01.094 --> 00:10:02.837
+118
+00:09:22.761 --> 00:09:24.536
 next verification step.
 
-128
-00:10:02.837 --> 00:10:08.804
+119
+00:09:24.536 --> 00:09:30.592
 NARRATOR: The result is a repeatable
 procedure, not a conclusion that depends on
 
-129
-00:10:08.804 --> 00:10:10.181
+120
+00:09:30.592 --> 00:09:31.989
 memory or intuition.
+
+121
+00:09:31.989 --> 00:09:38.974
+NARRATOR: Name each dependency explicitly, and
+keep labels and representations consistent
+
+122
+00:09:38.974 --> 00:09:40.879
+throughout the analysis.

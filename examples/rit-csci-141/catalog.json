@@ -2,14 +2,14 @@
   "id": "rit-csci-141",
   "title": "CSCI 141 — Computer Science I",
   "area": "Computing",
-  "subject": "Algorithms and Theory",
+  "subject": "Programming and Languages",
   "format": "Full lesson",
   "level": "Undergraduate",
   "description": "An independent, catalog-aligned learning companion. It is not an official RIT course section or a replacement for the instructor's syllabus.",
   "outcomes": [
-    "Define and apply the three core components of a disciplined solution: precise problem specification, correctness argument, and resource bounds.",
-    "Explain how loop invariants support proof by initialization, maintenance, and termination to verify algorithm correctness.",
-    "Demonstrate how divide-and-conquer algorithms split problems, solve subproblems, and combine results to achieve efficient solutions."
+    "Define and apply the core components of computational thinking, including precise problem statements, input/output examples, and algorithmic logic.",
+    "Represent algorithms using pseudo code and a programming language, demonstrating functional and imperative techniques, control structures, and data ab",
+    "Evaluate correctness, testing, and debugging by comparing intended behavior with observable results, including boundary and error cases."
   ],
   "paths": [
     "Computing & Engineering",
@@ -22,11 +22,31 @@
     "credits": "4 Credits",
     "sourceUrl": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Undergraduate_Catalog.pdf?2026-02-02="
   },
-  "aiContribution": {
-    "stage": "source-grounded planning and narration draft",
-    "provider": "local-openai-compatible",
-    "model": "prism-ml/Bonsai-27B-gguf",
-    "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
-    "humanReviewRequired": true
-  }
+  "generationProvenance": [
+    {
+      "stage": "Source-grounded planning and narration draft",
+      "provider": "local-openai-compatible",
+      "model": "prism-ml/Bonsai-27B-gguf",
+      "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
+      "executionLocation": "local",
+      "mode": "recorded",
+      "humanReviewRequired": true
+    },
+    {
+      "stage": "Narration voice and timestamps",
+      "provider": "edge-tts",
+      "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+      "executionLocation": "hosted",
+      "mode": "recorded",
+      "humanReviewRequired": true
+    },
+    {
+      "stage": "Educational diagrams and composition",
+      "provider": "deterministic-svg-runtime",
+      "model": "No generative model",
+      "executionLocation": "local",
+      "mode": "deterministic",
+      "humanReviewRequired": true
+    }
+  ]
 }

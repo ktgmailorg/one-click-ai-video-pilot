@@ -1,0 +1,101 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "A suspicious message tries to collapse the time between reading and acting. Pause. Look for urgency, emotional pressure, an unexpected attachment, a request for private information, or a sender address that only resembles the real organization. One red flag is not proof, but it is a reason to stop.",
+      "plannedSeconds": 23,
+      "title": "Pause before acting",
+      "visualDirection": "template:showcase-phishing | Display a message with an urgent subject, unfamiliar sender domain, and unexpected link."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Do not use the message itself to prove the message is legitimate. Instead, open the organization's known website, use a saved phone number, or start a fresh message to a trusted contact. Check the full destination and sender carefully. Independent verification breaks the attacker's control of the path.",
+      "plannedSeconds": 26,
+      "title": "Verify through another path",
+      "visualDirection": "template:showcase-phishing | Move away from the message and open a known website or saved contact independently."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "If the message remains suspicious, report it using your organization's approved process or your email provider's phishing control. Then delete it without opening links or attachments. Reporting helps defenders protect other recipients. The safe sequence is pause, verify independently, report, and remove.",
+      "plannedSeconds": 25,
+      "title": "Report, then remove",
+      "visualDirection": "template:showcase-phishing | Route the message to the organization's reporting tool, then remove it without opening content."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "cisa-phishing"
+      ],
+      "text": "Phishing often uses urgency, impersonation, or unexpected requests to push a recipient into acting quickly.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "cisa-phishing"
+      ],
+      "text": "A suspicious request should be verified without using the links, attachments, or contact details supplied in the message.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "cisa-phishing"
+      ],
+      "text": "CISA recommends reporting suspected phishing and deleting the message rather than engaging with it.",
+      "verified": true
+    }
+  ],
+  "id": "how-to-check-a-suspicious-message",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "Cybersecurity and Infrastructure Security Agency",
+      "excerpt": "Phishing messages may arrive by email, text, direct message, or phone call and often imitate a trusted person or organization. Warning signs include urgent or emotional language, requests for personal information, shortened or untrusted links, and incorrect sender addresses. CISA advises people not to click suspicious links or attachments and to report and then delete suspected phishing messages.",
+      "id": "cisa-phishing",
+      "sha256": "087b2a1a4dcdced76e9d1d3ce95f9c85641735f00517f52c0b4db3d1161408c0",
+      "title": "CISA Secure Our World: Phishing Tip Sheet",
+      "type": "url",
+      "uri": "https://www.cisa.gov/sites/default/files/2024-09/Secure-Our-World-Phishing-Tip-Sheet.pdf",
+      "verified": true
+    }
+  ],
+  "title": "How to Check a Suspicious Message"
+}

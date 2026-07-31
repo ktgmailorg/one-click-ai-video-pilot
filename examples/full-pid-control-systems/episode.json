@@ -1,0 +1,306 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory college lesson.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "A controller is useful when a system must reach and maintain a target despite disturbances and uncertainty. Imagine a motor commanded to run at one thousand revolutions per minute. An open-loop command may work under one load and miss the target under another. Feedback changes the structure of the problem. A sensor measures actual speed, the controller compares it with the desired speed, and the difference becomes an error signal. The controller uses that error to change the motor input. The new speed is measured again, so correction is continuous rather than a one-time guess. This lesson develops the proportional, integral, and derivative terms, then connects their behavior to tuning, noise, saturation, and a practical design workflow.",
+      "plannedSeconds": 62,
+      "title": "Why feedback control exists",
+      "visualDirection": "template:showcase-pid | Show a motor speed drifting under changing load, then close a measurement loop around it."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory college lesson.",
+      "equations": [
+        "e(t) = r(t) − y(t)"
+      ],
+      "id": "beat-02",
+      "narration": "Start by naming every signal. The reference r of t is the desired behavior. The measured output y of t is what the sensor reports. Their difference, e of t, equals reference minus measured output. The controller converts error into a command u of t. An actuator applies that command to the plant, which is the physical or simulated system being controlled. Disturbances can enter the plant, while sensor noise can enter the measurement path. This vocabulary prevents a common mistake: the controller does not directly control the error. It changes the plant input, observes the resulting output, and thereby influences future error. Sign conventions also matter. With negative feedback, a positive error should normally produce a correction that increases the output toward the reference.",
+      "plannedSeconds": 62,
+      "title": "Define the loop and its signals",
+      "visualDirection": "template:showcase-pid | Label reference, error, controller, actuator, plant, output, sensor, and disturbance in one closed loop."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory college lesson.",
+      "equations": [
+        "uP(t) = Kp e(t)"
+      ],
+      "id": "beat-03",
+      "narration": "The proportional term responds to the error that exists right now. Its contribution is K p times e of t. If the error doubles, the proportional correction doubles. Increasing K p usually makes the response more forceful and can reduce rise time, but excessive gain can produce overshoot, oscillation, or instability. Proportional action alone may also leave a steady offset. To hold a load against friction, for example, the actuator may require a nonzero command. If command is proportional to error, a persistent error may be needed to produce that command. This is not a defect in the formula; it is a consequence of the loop and plant. The important skill is to connect gain to observed response rather than memorizing that larger is always better.",
+      "plannedSeconds": 62,
+      "title": "Understand proportional action",
+      "visualDirection": "template:showcase-pid | Increase proportional gain and compare slow correction, fast correction, and oscillatory overreaction."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-04-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory college lesson.",
+      "equations": [
+        "uI(t) = Ki ∫ e(t) dt"
+      ],
+      "id": "beat-04",
+      "narration": "The integral term responds to the history of error. Its state grows while error has one sign and shrinks when the sign reverses. A small error that persists can therefore produce a large enough correction to eliminate the offset left by proportional control. This makes integral action powerful, but it also introduces memory. If the actuator saturates at its maximum while the error remains large, the integral state can continue accumulating even though the plant cannot respond further. When the system finally approaches the target, that stored integral action may drive it far past the reference. This is called integral windup. Practical controllers limit, pause, or back-calculate the integral state during saturation. Integral action solves one problem while creating a responsibility to manage its stored state.",
+      "plannedSeconds": 62,
+      "title": "Use integral action to remove persistent error",
+      "visualDirection": "template:showcase-pid | Accumulate a small error area over time until the controller supplies the missing steady command."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-05-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory college lesson.",
+      "equations": [
+        "uD(t) = Kd de(t)/dt"
+      ],
+      "id": "beat-05",
+      "narration": "The derivative term reacts to how quickly the error is changing. If the output is racing toward the target, the error may still be positive but decreasing rapidly. A derivative contribution can oppose that motion before the target is crossed, adding damping and reducing overshoot. The difficulty is that differentiation amplifies rapid measurement changes, including sensor noise. Real implementations therefore use a filtered derivative rather than an ideal mathematical derivative. Many controllers also differentiate the measurement instead of the error, which avoids a large derivative kick when the reference changes suddenly. Derivative action is not mandatory. A well-tuned PI controller is often sufficient, especially when sensors are noisy or the plant already has adequate damping.",
+      "plannedSeconds": 62,
+      "title": "Use derivative action as damping",
+      "visualDirection": "template:showcase-pid | Compare the slope of error for a rapidly approaching response and a slowly changing response."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-06-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory college lesson.",
+      "equations": [
+        "u(t) = Kp e(t) + Ki ∫e(t)dt + Kd de(t)/dt"
+      ],
+      "id": "beat-06",
+      "narration": "A PID controller adds the three contributions into one command. Proportional action handles present error, integral action handles accumulated error, and derivative action responds to trend. These descriptions are useful, but the terms interact through the same plant. Increasing K p changes the response that the integral and derivative terms observe. Increasing K i may remove offset while reducing stability margin. Increasing K d may add damping while increasing noise sensitivity. The final command is also bounded by actuator voltage, force, valve opening, or another physical limit. A controller equation without limits, sample time, sensor characteristics, and plant dynamics is incomplete. Good tuning treats the loop as one system rather than adjusting three independent knobs in isolation.",
+      "plannedSeconds": 62,
+      "title": "Combine the PID terms",
+      "visualDirection": "template:showcase-pid | Stack present, accumulated, and trend contributions into one actuator command with visible limits."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-07-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory college lesson.",
+      "equations": [],
+      "id": "beat-07",
+      "narration": "A step response turns vague words like fast or stable into measurable criteria. Rise time describes how quickly output moves toward the new target. Peak overshoot measures how far it exceeds the target. Settling time measures how long it takes to remain inside an acceptable band. Steady-state error is the remaining difference after transients decay. These measures can conflict. A gain change that shortens rise time may increase overshoot. Integral action that removes final error may lengthen settling. Stability is the first requirement: a fast response that grows without bound is not useful. Before tuning, define which measures matter for the application and what constraints cannot be violated. A camera gimbal, temperature chamber, and chemical flow controller should not share one generic tuning objective.",
+      "plannedSeconds": 62,
+      "title": "Read time-domain performance",
+      "visualDirection": "template:showcase-pid | Annotate rise time, peak overshoot, settling band, steady-state error, and oscillation on a step response."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-08-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory college lesson.",
+      "equations": [],
+      "id": "beat-08",
+      "narration": "A disciplined tuning process begins with safety and requirements. Confirm sensor polarity, actuator limits, and a safe test range. Start with integral and derivative action disabled. Increase proportional gain until the system responds clearly without unacceptable oscillation. Add integral action gradually to remove persistent error, while watching overshoot and windup. Add derivative action only when extra damping is needed and the measurement is clean enough to support it. Then test reference changes, disturbances, load variation, saturation, and noise. This sequence is not a universal proof of optimality, but it makes cause and effect observable. More formal model-based methods can calculate gains, yet every real implementation still requires validation against unmodeled behavior and physical limits.",
+      "plannedSeconds": 62,
+      "title": "Tune with a disciplined sequence",
+      "visualDirection": "template:showcase-pid | Walk through requirements, safe baseline, proportional response, integral correction, derivative damping, and validation."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-09-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory college lesson.",
+      "equations": [],
+      "id": "beat-09",
+      "narration": "Most PID controllers run in software, so the continuous equation becomes a sampled algorithm. The sample period must be short enough to observe relevant plant dynamics but not so short that noise dominates. The integral becomes a running numerical sum. The derivative becomes a filtered difference between samples. Output clamping enforces actuator limits, and anti-windup keeps the integral state consistent with those limits. Systems that switch between manual and automatic control also need bumpless transfer so the stored controller state does not create a sudden command jump. Record the sample time and exact algorithm with the gains; K p, K i, and K d have meaning only within a defined implementation and unit convention.",
+      "plannedSeconds": 62,
+      "title": "Recognize implementation details",
+      "visualDirection": "template:showcase-pid | Convert continuous PID terms into sampled updates with sample time, filtering, clamping, and bumpless transfer."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-10-claim-01"
+      ],
+      "delivery": "Professional, clear, and appropriately paced for an introductory college lesson.",
+      "equations": [],
+      "id": "beat-10",
+      "narration": "A reliable PID analysis answers six questions. What are the reference, measured output, error, command, plant, and disturbances? What behavior does proportional, integral, and derivative action contribute in this loop? Which performance measures define success? Where can the actuator or sensor saturate? How are sample time, filtering, and anti-windup implemented? And has the design been tested across the real operating range? The goal is not to use all three letters. The goal is a stable, understandable controller that meets requirements with appropriate complexity. Sometimes that is P, often PI, and sometimes full PID. If you can explain the loop and predict the consequence of each change before turning a gain, you are tuning as an engineer rather than searching blindly.",
+      "plannedSeconds": 62,
+      "title": "Use a complete PID reasoning checklist",
+      "visualDirection": "template:showcase-pid | Summarize loop signals, term purposes, performance metrics, limits, tuning, and validation in one engineering checklist."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "umich-feedback"
+      ],
+      "text": "Closed-loop control repeatedly compares measured output with a desired reference and uses their difference to correct the system.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "umich-feedback"
+      ],
+      "text": "Tracking error is the reference minus the measured output, and the controller maps that error into a plant input.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "umich-pid"
+      ],
+      "text": "Proportional action creates a control contribution that is directly scaled from present error.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "umich-pid"
+      ],
+      "text": "Integral action accumulates error history and can drive a persistent steady-state error toward zero.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "umich-pid"
+      ],
+      "text": "Derivative action responds to the rate of change of error and can add anticipatory damping to the response.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "umich-pid"
+      ],
+      "text": "A PID command is the sum of proportional, integral, and derivative contributions, subject to the actuator and implementation limits.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
+        "umich-feedback",
+        "umich-pid"
+      ],
+      "text": "Rise time, overshoot, settling time, and steady-state error describe different aspects of closed-loop time response.",
+      "verified": true
+    },
+    {
+      "id": "beat-08-claim-01",
+      "sourceIds": [
+        "umich-feedback",
+        "umich-pid"
+      ],
+      "text": "PID gains should be selected against explicit performance requirements and validated over expected operating conditions.",
+      "verified": true
+    },
+    {
+      "id": "beat-09-claim-01",
+      "sourceIds": [
+        "umich-pid"
+      ],
+      "text": "A digital PID controller must define sampling, derivative filtering, integral management, and transitions between operating modes.",
+      "verified": true
+    },
+    {
+      "id": "beat-10-claim-01",
+      "sourceIds": [
+        "umich-feedback",
+        "umich-pid"
+      ],
+      "text": "Practical PID design combines feedback structure, term behavior, measured performance, physical constraints, and validation.",
+      "verified": true
+    }
+  ],
+  "id": "pid-control-systems-from-feedback-error-to-practical-tuning",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "University of Michigan Control Tutorials for MATLAB and Simulink",
+      "excerpt": "A PID controller combines proportional, integral, and derivative action. Proportional action scales present error, integral action accumulates error over time, and derivative action responds to the rate of change of error. The three gains influence rise time, overshoot, settling time, steady-state error, and stability in different ways. Many practical designs use only a subset of the three terms.",
+      "id": "umich-pid",
+      "sha256": "e4c02a56451fd4a817dbdee58a3fe442b6a8f705d53a80419d09c28b54508857",
+      "title": "Introduction: PID Controller Design",
+      "type": "url",
+      "uri": "https://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=ControlPID",
+      "verified": true
+    },
+    {
+      "author": "University of Michigan Control Tutorials for MATLAB and Simulink",
+      "excerpt": "Closed-loop control measures system output, compares it with a reference, and uses the resulting error to determine the input. Time-domain response is commonly evaluated using rise time, overshoot, settling time, and steady-state error. Stability and model uncertainty must be considered when selecting controller gains.",
+      "id": "umich-feedback",
+      "sha256": "6aacbb5b5bb8794d942ff00200342e3e15c2803f6d2ed1db98d47fa5c626a8ba",
+      "title": "Introduction: System Analysis",
+      "type": "url",
+      "uri": "https://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=SystemAnalysis",
+      "verified": true
+    }
+  ],
+  "title": "PID Control Systems: From Feedback Error to Practical Tuning"
+}

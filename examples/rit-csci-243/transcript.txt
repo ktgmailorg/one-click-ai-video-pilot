@@ -1,259 +1,221 @@
-NARRATOR: Begin by framing Introduction to Program Structure as a question about inputs,
+Begin by framing Defining the Scope of CSCI-243 as a question about inputs,
 
 decisions, and observable results.
 
-NARRATOR: Modes of operation define how a primitive processes data larger than one
+Students will be introduced to the details of program structure and the mechanics of
 
-block.
+execution as well as supportive operating system features.
 
-NARRATOR: Consider this worked case: A C program divides functionality into functions
+Consider this worked case: A student enrolling in CSCI-243 must have earned a C- or better in
 
-and global variables.
+CSCI-140, CSCI-142, CSCI-242, or an equivalent course such as SWEN-124.
 
-NARRATOR: On screen, display a block diagram showing a main function calling three
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-sub-functions with a shared data structure.
+that the final result satisfies the stated condition.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+List the givens before choosing a method, because an unstated assumption can change the
 
-change the conclusion.
+conclusion.
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Now define The Foundation of Precise Problem Statements precisely enough that another
 
-throughout the analysis.
+learner could test the definition.
 
-NARRATOR: Now define Execution Mechanics Overview precisely enough that another learner
+Programming begins with precise problem statements, input and output examples, and
 
-could test the definition.
+algorithms written independently of syntax.
 
-NARRATOR: Students will be introduced to the details of program structure and the mechanics
+Consider this worked case: Before coding, a student writes a problem statement: 'Given a
 
-of execution as well as supportive operating system features.
+list of integers, return the sum of all positive values,' and provides sample
 
-NARRATOR: Consider this worked case: A for-loop iterates through an array, updating a
+inputs/outputs.
 
-running total each cycle.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: On screen, show a flowchart with a start node, a loop diamond, and exit arrows
+that the final result satisfies the stated condition.
 
-based on a boolean condition.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Memory Management Basics operates
+With the foundation in place, examine how Core Building Blocks: Variables, Expressions, and
 
-in a concrete sequence.
+Control operates in a concrete sequence.
 
-NARRATOR: Protect the Software prevents unauthorized access to code and development
+Variables represent values and state, expressions compute values, and control
 
-artifacts.
+structures select or repeat operations.
 
-NARRATOR: Consider this worked case: An integer variable stores a fixed-size binary
+Consider this worked case: In Python, `x = 5` binds a variable, `x + 3` is an expression
 
-representation in RAM.
+evaluating to 8, and `if x > 0:` is a control structure that repeats or branches based on
 
-NARRATOR: On screen, illustrate a memory map with labeled addresses, data types, and
+the condition.
 
-pointer offsets.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+that the final result satisfies the stated condition.
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+Follow every arrow in order and name the state before and after each transition.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+The trace converts an abstract statement into an inspectable sequence.
 
-throughout the analysis.
+Next, compare the choices involved in Functions as Decomposed Operations and make
 
-NARRATOR: Then summarize what the example demonstrates, what it does not establish, and
+the decision criteria explicit.
 
-what evidence would be needed next.
+Functions decompose a solution into named operations with parameters and results.
 
-NARRATOR: Next, compare the choices involved in Program Translation Process and make the
+Consider this worked case: A function `def sum_positive(nums):` takes a list parameter
 
-decision criteria explicit.
+and returns a single integer result, isolating the summation logic.
 
-NARRATOR: Produce Well-Secured Software addresses security requirements, design,
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-verification, and release.
+that the final result satisfies the stated condition.
 
-NARRATOR: Consider this worked case: A compiler translates C syntax into machine
+Compare alternatives against the same constraints so the evaluation does not move
 
-instructions for the target CPU architecture.
+the goalposts.
 
-NARRATOR: On screen, present a pipeline diagram showing source code, preprocessor,
+Using shared criteria turns a preference into a defensible technical choice.
 
-compiler, linker, and final executable.
+Apply Recursion and Base Cases to a worked situation instead of treating it as an
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+isolated definition.
 
-move the goalposts.
+Recursion solves a problem through smaller instances and requires a base case.
 
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+Consider this worked case: The factorial function `def fact(n): if n == 0: return 1;
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+return n * fact(n-1)` uses the base case `n == 0` to stop infinite recursion.
 
-throughout the analysis.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: Apply Operating System Integration to a worked situation instead of treating it
+that the final result satisfies the stated condition.
 
-as an isolated definition.
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-NARRATOR: Verification provides evidence that selected practices and controls were
+step.
 
-performed.
+The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Consider this worked case: A file I/O operation requests disk access through an
+Examine the tradeoffs in Data Structures: Lists, Stacks, Queues, Trees, Graphs,
 
-OS kernel interface.
+including what improves and what becomes more difficult.
 
-NARRATOR: On screen, draw a layered diagram with application code, OS API, and kernel
+Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in
 
-resource managers.
+first-out access, trees represent hierarchy, and graphs represent connected entities.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+Consider this worked case: A stack of plates is popped from the top (LIFO), while a line of
 
-at each step.
+customers at a ticket booth is served from the front (FIFO).
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+that the final result satisfies the stated condition.
 
-throughout the analysis.
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-NARRATOR: Examine the tradeoffs in Security Design Principles, including what improves and
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-what becomes more difficult.
+Stress-test the reasoning around Searching, Sorting, and Invariants with an edge case and
 
-NARRATOR: Security depends on the complete protocol and implementation, not only an
+identify which assumption controls the outcome.
 
-algorithm name.
+Searching and sorting algorithms depend on representation and invariants.
 
-NARRATOR: Consider this worked case: Using AES-256 with proper key management ensures
+Consider this worked case: Binary search maintains the invariant that the target, if
 
-confidentiality against known attacks.
+present, lies within the current search interval; quicksort maintains partition
 
-NARRATOR: On screen, show a key lifecycle diagram covering generation, distribution,
+invariants to guarantee sorted output.
 
-storage, and revocation.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+that the final result satisfies the stated condition.
 
-acceptable.
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.
-
-NARRATOR: Stress-test the reasoning around Performance Optimization Strategies with an
-
-edge case and identify which assumption controls the outcome.
-
-NARRATOR: Security and performance issues in program design will be discussed.
-
-NARRATOR: Consider this worked case: Replacing nested loops with hash maps reduces average
-
-lookup time from O(n²) to O(1).
-
-NARRATOR: On screen, display a comparison chart of algorithmic time complexity across
-
-different data structures.
-
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
-
-holds.
-
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
-
-core idea.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.
-
-NARRATOR: Use Secure Development Practices to diagnose a failure by separating symptoms,
+Use The Python Translation Pipeline to diagnose a failure by separating symptoms,
 
 causes, and corrective action.
 
-NARRATOR: Security requirements should be tracked throughout development.
+The Python language reference specifies lexical analysis, data model behavior,
 
-NARRATOR: Consider this worked case: Maintaining a threat model document updates
+execution, expressions, statements, functions, classes, exceptions, and module import
 
-trust boundaries as the codebase evolves.
+semantics.
 
-NARRATOR: On screen, present a checklist template with fields for asset, threat,
+Consider this worked case: The string `'def hello(): pass'` is tokenized into identifiers,
 
-control, and residual risk.
+keywords, and delimiters during lexical analysis, then parsed into an abstract syntax
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+tree before the interpreter executes it.
 
-behavior, then test the smallest plausible cause.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+that the final result satisfies the stated condition.
 
-and the test.
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+smallest plausible cause.
 
-throughout the analysis.
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-NARRATOR: Connect Verification and Testing Methods to the earlier ideas and explain how
+Connect Namespaces, Scopes, and Object Identity to the earlier ideas and explain how
 
 the pieces work as one system.
 
-NARRATOR: Security reasoning identifies assets, trust boundaries, threats, controls,
+Names are bound to objects within namespaces and scopes.
 
-evidence, residual risk, and responsibilities.
+Consider this worked case: When `import math` runs, the module object is created, and the
 
-NARRATOR: Consider this worked case: Static analysis tools scan source code for buffer
+name `math` is bound in the current namespace, allowing access to `math.
 
-overflows before compilation.
+sqrt(4)`.
 
-NARRATOR: On screen, show a testing workflow diagram linking unit tests, integration tests,
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-and security scans.
+that the final result satisfies the stated condition.
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+Explain each connection explicitly and verify that information retains the same meaning
 
-meaning across representations.
+across representations.
 
-NARRATOR: The synthesis matters only if every connection remains supported by the original
+The synthesis matters only if every connection remains supported by the original evidence.
 
-evidence.
+Finish with Debugging and Correctness: Tests, Tracing, and Boundaries as a practical
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+checklist that can guide a new analysis.
 
-throughout the analysis.
+Correctness arguments, tests, tracing, and debugging compare intended behavior with
 
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+observable results, including boundary and error cases.
 
-guide a new analysis.
+Consider this worked case: A test suite includes a case where the input list is empty
 
-NARRATOR: Analysis also considers side channels and migration requirements.
+(boundary) and another where the list contains negative numbers (error handling), and tracing
 
-NARRATOR: Consider this worked case: A secure, performant module validates inputs, manages
+reveals the function returns 0 for the empty case.
 
-memory safely, and follows established standards.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: On screen, display a three-column matrix evaluating code against structure,
+that the final result satisfies the stated condition.
 
-performance, and security criteria.
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+verification step.
 
-next verification step.
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.
+intuition.

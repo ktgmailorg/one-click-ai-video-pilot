@@ -1,565 +1,528 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:06.905
-NARRATOR: Begin by isolating any structural
-component and replacing all external
+00:00:00.050 --> 00:00:07.968
+Begin by isolating any structural component
+and replacing all external connections with
 
 2
-00:00:06.905 --> 00:00:11.267
-connections with their equivalent forces and
-moments.
+00:00:07.968 --> 00:00:11.267
+their equivalent forces and moments.
 
 3
-00:00:11.267 --> 00:00:18.490
-NARRATOR: This process creates a free-body
-diagram that visually captures every external
+00:00:11.267 --> 00:00:19.581
+This process creates a free-body diagram that
+visually captures every external load acting
 
 4
-00:00:18.490 --> 00:00:21.500
-load acting on the body.
+00:00:19.581 --> 00:00:21.500
+on the body.
 
 5
-00:00:21.500 --> 00:00:28.483
-NARRATOR: Once drawn, enforce translational
-equilibrium by summing all horizontal and
+00:00:21.500 --> 00:00:29.390
+Once drawn, enforce translational equilibrium
+by summing all horizontal and vertical forces
 
 6
-00:00:28.483 --> 00:00:36.101
-vertical forces to zero, and enforce
-rotational equilibrium by summing all moments
+00:00:29.390 --> 00:00:39.253
+to zero, and enforce rotational equilibrium by
+summing all moments about a chosen pivot to
 
 7
-00:00:36.101 --> 00:00:39.910
-about a chosen pivot to zero.
+00:00:39.253 --> 00:00:39.910
+zero.
 
 8
-00:00:39.910 --> 00:00:47.604
-NARRATOR: These equilibrium conditions allow
-you to solve for unknown reactions or applied
+00:00:39.910 --> 00:00:48.196
+These equilibrium conditions allow you to
+solve for unknown reactions or applied loads.
 
 9
-00:00:47.604 --> 00:00:48.196
-loads.
+00:00:48.196 --> 00:00:56.732
+The diagram must show every force vector with
+its direction, magnitude, and point of
 
 10
-00:00:48.196 --> 00:00:55.849
-NARRATOR: The diagram must show every force
-vector with its direction, magnitude, and
+00:00:56.732 --> 00:01:02.828
+application, ensuring that the mathematical
+system accurately reflects the physical
 
 11
-00:00:55.849 --> 00:01:02.324
-point of application, ensuring that the
-mathematical system accurately reflects the
+00:01:02.828 --> 00:01:05.267
+reality of the structure.
 
 12
-00:01:02.324 --> 00:01:05.267
-physical reality of the structure.
+00:01:05.267 --> 00:01:14.640
+This foundational step prevents sign errors
+and establishes a clear reference frame for
 
 13
-00:01:05.267 --> 00:01:14.089
-NARRATOR: This foundational step prevents sign
-errors and establishes a clear reference frame
+00:01:14.640 --> 00:01:16.803
+all subsequent calculations.
 
 14
-00:01:14.089 --> 00:01:16.803
-for all subsequent calculations.
+00:01:16.946 --> 00:01:24.260
+To understand how a structure responds
+internally, make a conceptual cut through the
 
 15
-00:01:16.946 --> 00:01:23.447
-NARRATOR: To understand how a structure
-responds internally, make a conceptual cut
+00:01:24.260 --> 00:01:31.574
+member and expose the hidden forces that keep
+the two halves in equilibrium.
 
 16
-00:01:23.447 --> 00:01:31.032
-through the member and expose the hidden
-forces that keep the two halves in
+00:01:31.574 --> 00:01:39.771
+These exposed forces are the internal
+resultants, which include axial forces, shear
 
 17
-00:01:31.032 --> 00:01:31.574
-equilibrium.
+00:01:39.771 --> 00:01:42.503
+forces, and bending moments.
 
 18
-00:01:31.574 --> 00:01:38.646
-NARRATOR: These exposed forces are the
-internal resultants, which include axial
+00:01:42.503 --> 00:01:50.529
+The direction of each internal resultant is
+determined by Newton's third law: the cut face
 
 19
-00:01:38.646 --> 00:01:42.503
-forces, shear forces, and bending moments.
+00:01:50.529 --> 00:01:56.949
+must exert forces that balance the external
+loads on the exposed segment.
 
 20
-00:01:42.503 --> 00:01:49.210
-NARRATOR: The direction of each internal
-resultant is determined by Newton's third law:
+00:01:56.949 --> 00:02:05.370
+By analyzing either side of the cut, you can
+compute the exact magnitude and direction of
 
 21
-00:01:49.210 --> 00:01:56.949
-the cut face must exert forces that balance
-the external loads on the exposed segment.
+00:02:05.370 --> 00:02:06.949
+these internal forces.
 
 22
-00:01:56.949 --> 00:02:04.449
-NARRATOR: By analyzing either side of the cut,
-you can compute the exact magnitude and
+00:02:06.949 --> 00:02:14.587
+This technique transforms a complex structural
+problem into manageable equilibrium equations,
 
 23
-00:02:04.449 --> 00:02:06.949
-direction of these internal forces.
+00:02:14.587 --> 00:02:24.309
+revealing how loads are distributed throughout
+the material rather than acting only at the
 
 24
-00:02:06.949 --> 00:02:14.304
-NARRATOR: This technique transforms a complex
-structural problem into manageable equilibrium
+00:02:24.309 --> 00:02:25.003
+boundaries.
 
 25
-00:02:14.304 --> 00:02:22.328
-equations, revealing how loads are distributed
-throughout the material rather than acting
+00:02:25.154 --> 00:02:31.896
+Stress quantifies how internal forces are
+distributed across a material's cross-section
 
 26
-00:02:22.328 --> 00:02:25.003
-only at the boundaries.
+00:02:31.896 --> 00:02:36.800
+rather than treating them as single point
+loads.
 
 27
-00:02:25.154 --> 00:02:31.559
-NARRATOR: Stress quantifies how internal
-forces are distributed across a material's
+00:02:36.800 --> 00:02:44.763
+Normal stress measures the intensity of axial
+forces perpendicular to a chosen section,
 
 28
-00:02:31.559 --> 00:02:36.800
-cross-section rather than treating them as
-single point loads.
+00:02:44.763 --> 00:02:50.889
+calculated by dividing the axial force by the
+cross-sectional area.
 
 29
-00:02:36.800 --> 00:02:44.432
-NARRATOR: Normal stress measures the intensity
-of axial forces perpendicular to a chosen
+00:02:50.889 --> 00:02:58.863
+Shear stress measures the intensity of
+internal forces parallel to that section,
 
 30
-00:02:44.432 --> 00:02:50.889
-section, calculated by dividing the axial
-force by the cross-sectional area.
-
-31
-00:02:50.889 --> 00:02:59.095
-NARRATOR: Shear stress measures the intensity
-of internal forces parallel to that section,
-
-32
-00:02:59.095 --> 00:03:03.514
+00:02:58.863 --> 00:03:03.514
 which resist sliding between adjacent material
 layers.
 
+31
+00:03:03.514 --> 00:03:10.260
+The orientation of the section matters
+significantly, as the same internal force
+
+32
+00:03:10.260 --> 00:03:16.443
+produces different stress values depending on
+how you slice the member.
+
 33
-00:03:03.514 --> 00:03:09.979
-NARRATOR: The orientation of the section
-matters significantly, as the same internal
+00:03:16.443 --> 00:03:24.121
+By explicitly defining the section plane and
+applying the correct force component, you
 
 34
-00:03:09.979 --> 00:03:16.443
-force produces different stress values
-depending on how you slice the member.
+00:03:24.121 --> 00:03:31.208
+ensure that the calculated stress accurately
+represents the actual material intensity at
 
 35
-00:03:16.443 --> 00:03:23.277
-NARRATOR: By explicitly defining the section
-plane and applying the correct force
+00:03:31.208 --> 00:03:32.389
+that location.
 
 36
-00:03:23.277 --> 00:03:29.541
-component, you ensure that the calculated
-stress accurately represents the actual
+00:03:32.546 --> 00:03:40.964
+When a member is loaded, it deforms, and this
+deformation is measured as strain, which
 
 37
-00:03:29.541 --> 00:03:32.389
-material intensity at that location.
+00:03:40.964 --> 00:03:47.138
+represents the fractional change in length
+relative to the original length.
 
 38
-00:03:32.546 --> 00:03:40.653
-NARRATOR: When a member is loaded, it deforms,
-and this deformation is measured as strain,
+00:03:47.138 --> 00:03:55.174
+Normal strain quantifies elongation or
+shortening along the loading axis.
 
 39
-00:03:40.653 --> 00:03:47.138
-which represents the fractional change in
-length relative to the original length.
+00:03:55.174 --> 00:04:03.075
+The relationship between normal stress and
+normal strain is governed by the material's
 
 40
-00:03:47.138 --> 00:03:55.174
-NARRATOR: Normal strain quantifies elongation
-or shortening along the loading axis.
+00:04:03.075 --> 00:04:10.976
+elastic modulus, which acts as a stiffness
+coefficient that links force intensity to
 
 41
-00:03:55.174 --> 00:04:02.803
-NARRATOR: The relationship between normal
-stress and normal strain is governed by the
+00:04:10.976 --> 00:04:12.192
+deformation intensity.
 
 42
-00:04:02.803 --> 00:04:09.845
-material's elastic modulus, which acts as a
-stiffness coefficient that links force
+00:04:12.192 --> 00:04:20.988
+Within a specific range, the material responds
+predictably, meaning that doubling the stress
 
 43
-00:04:09.845 --> 00:04:12.192
-intensity to deformation intensity.
+00:04:20.988 --> 00:04:24.371
+produces exactly double the strain.
 
 44
-00:04:12.192 --> 00:04:19.243
-NARRATOR: Within a specific range, the
-material responds predictably, meaning that
+00:04:24.371 --> 00:04:33.255
+This linear relationship allows engineers to
+predict how much a component will stretch or
 
 45
-00:04:19.243 --> 00:04:24.371
-doubling the stress produces exactly double
-the strain.
+00:04:33.255 --> 00:04:41.503
+compress under known loads, providing a direct
+bridge between mechanical forces and physical
 
 46
-00:04:24.371 --> 00:04:32.336
-NARRATOR: This linear relationship allows
-engineers to predict how much a component will
+00:04:41.503 --> 00:04:42.138
+deformation.
 
 47
-00:04:32.336 --> 00:04:39.687
-stretch or compress under known loads,
-providing a direct bridge between mechanical
+00:04:42.290 --> 00:04:50.017
+Linear elasticity describes the region where
+stress and strain are directly proportional,
 
 48
-00:04:39.687 --> 00:04:42.138
-forces and physical deformation.
+00:04:50.017 --> 00:04:55.168
+forming a straight line on a stress-strain
+curve.
 
 49
-00:04:42.290 --> 00:04:49.649
-NARRATOR: Linear elasticity describes the
-region where stress and strain are directly
+00:04:55.168 --> 00:05:03.667
+This straight-line behavior persists only up
+to a specific stress threshold, beyond which
 
 50
-00:04:49.649 --> 00:04:55.168
-proportional, forming a straight line on a
-stress-strain curve.
+00:05:03.667 --> 00:05:06.936
+the material's response becomes nonlinear.
 
 51
-00:04:55.168 --> 00:05:03.220
-NARRATOR: This straight-line behavior persists
-only up to a specific stress threshold, beyond
+00:05:06.936 --> 00:05:14.651
+The slope of this straight line represents the
+elastic modulus, which remains constant
 
 52
-00:05:03.220 --> 00:05:06.936
-which the material's response becomes
-nonlinear.
+00:05:14.651 --> 00:05:17.025
+throughout the elastic region.
 
 53
-00:05:06.936 --> 00:05:14.223
-NARRATOR: The slope of this straight line
-represents the elastic modulus, which remains
+00:05:17.025 --> 00:05:24.955
+By plotting stress against strain, you can
+visually identify the elastic limit and
 
 54
-00:05:14.223 --> 00:05:17.025
-constant throughout the elastic region.
+00:05:24.955 --> 00:05:31.665
+understand how the material transitions from
+predictable deformation to more complex
 
 55
-00:05:17.025 --> 00:05:24.650
-NARRATOR: By plotting stress against strain,
-you can visually identify the elastic limit
-
-56
-00:05:24.650 --> 00:05:31.688
-and understand how the material transitions
-from predictable deformation to more complex
-
-57
-00:05:31.688 --> 00:05:32.275
+00:05:31.665 --> 00:05:32.275
 behavior.
 
+56
+00:05:32.275 --> 00:05:39.911
+This graphical representation is essential for
+selecting appropriate materials and ensuring
+
+57
+00:05:39.911 --> 00:05:48.242
+that design loads remain within the safe,
+linear range where predictable deformation
+
 58
-00:05:32.275 --> 00:05:38.939
-NARRATOR: This graphical representation is
-essential for selecting appropriate materials
+00:05:48.242 --> 00:05:48.936
+occurs.
 
 59
-00:05:38.939 --> 00:05:47.603
-and ensuring that design loads remain within
-the safe, linear range where predictable
+00:05:49.082 --> 00:05:55.604
+Yielding marks the point where a material
+begins to deform permanently, meaning it will
 
 60
-00:05:47.603 --> 00:05:48.936
-deformation occurs.
+00:05:55.604 --> 00:06:00.728
+not return to its original shape when the load
+is removed.
 
 61
-00:05:49.082 --> 00:05:54.905
-NARRATOR: Yielding marks the point where a
-material begins to deform permanently, meaning
+00:06:00.728 --> 00:06:08.587
+This transition occurs when the applied stress
+exceeds the material's yield strength, causing
 
 62
-00:05:54.905 --> 00:06:00.728
-it will not return to its original shape when
-the load is removed.
+00:06:08.587 --> 00:06:13.424
+internal atomic bonds to slide past one
+another.
 
 63
-00:06:00.728 --> 00:06:07.653
-NARRATOR: This transition occurs when the
-applied stress exceeds the material's yield
+00:06:13.424 --> 00:06:22.407
+Once yielding begins, the stress-strain curve
+bends, and the material enters a plastic
 
 64
-00:06:07.653 --> 00:06:13.424
-strength, causing internal atomic bonds to
-slide past one another.
+00:06:22.407 --> 00:06:29.317
+region where deformation increases rapidly
+with relatively small additional stress.
 
 65
-00:06:13.424 --> 00:06:20.708
-NARRATOR: Once yielding begins, the
-stress-strain curve bends, and the material
+00:06:29.317 --> 00:06:36.880
+Understanding yielding is critical because
+permanent deformation can alter the geometry
 
 66
-00:06:20.708 --> 00:06:27.993
-enters a plastic region where deformation
-increases rapidly with relatively small
+00:06:36.880 --> 00:06:44.442
+of a structure, potentially leading to
+instability or reduced load capacity.
 
 67
-00:06:27.993 --> 00:06:29.317
-additional stress.
+00:06:44.442 --> 00:06:51.799
+Engineers must ensure that design stresses
+remain below the yield point to preserve the
 
 68
-00:06:29.317 --> 00:06:36.551
-NARRATOR: Understanding yielding is critical
-because permanent deformation can alter the
+00:06:51.799 --> 00:06:55.478
+intended shape and function of the component.
 
 69
-00:06:36.551 --> 00:06:44.442
-geometry of a structure, potentially leading
-to instability or reduced load capacity.
+00:06:55.634 --> 00:07:03.223
+Fracture occurs when the material can no
+longer sustain the applied stress, resulting
 
 70
-00:06:44.442 --> 00:06:50.963
-NARRATOR: Engineers must ensure that design
-stresses remain below the yield point to
+00:07:03.223 --> 00:07:06.726
+in sudden rupture or crack propagation.
 
 71
-00:06:50.963 --> 00:06:55.478
-preserve the intended shape and function of
-the component.
+00:07:06.726 --> 00:07:15.105
+Unlike yielding, which involves permanent but
+reversible deformation, fracture represents
 
 72
-00:06:55.634 --> 00:07:02.844
-NARRATOR: Fracture occurs when the material
-can no longer sustain the applied stress,
+00:07:15.105 --> 00:07:17.619
+complete structural failure.
 
 73
-00:07:02.844 --> 00:07:06.726
-resulting in sudden rupture or crack
-propagation.
+00:07:17.619 --> 00:07:25.021
+The stress-strain curve typically shows a
+sharp drop in stress after the ultimate
 
 74
-00:07:06.726 --> 00:07:14.507
-NARRATOR: Unlike yielding, which involves
-permanent but reversible deformation, fracture
+00:07:25.021 --> 00:07:32.423
+strength is reached, indicating that the
+material can no longer carry additional load.
 
 75
-00:07:14.507 --> 00:07:17.619
-represents complete structural failure.
+00:07:32.423 --> 00:07:39.280
+Fatigue is another failure mechanism where
+repeated cyclic loading causes cracks to
 
 76
-00:07:17.619 --> 00:07:24.747
-NARRATOR: The stress-strain curve typically
-shows a sharp drop in stress after the
-
-77
-00:07:24.747 --> 00:07:31.875
-ultimate strength is reached, indicating that
-the material can no longer carry additional
-
-78
-00:07:31.875 --> 00:07:32.423
-load.
-
-79
-00:07:32.423 --> 00:07:39.576
-NARRATOR: Fatigue is another failure mechanism
-where repeated cyclic loading causes cracks to
-
-80
-00:07:39.576 --> 00:07:47.280
+00:07:39.280 --> 00:07:47.280
 initiate and grow over time, even if the
 stress remains below the yield point.
 
+77
+00:07:47.280 --> 00:07:54.519
+Recognizing these failure modes helps
+engineers design components that can withstand
+
+78
+00:07:54.519 --> 00:08:00.441
+both static and dynamic loading conditions
+without catastrophic breakdown.
+
+79
+00:08:00.578 --> 00:08:08.314
+Safety factors provide a margin of protection
+between the predicted mechanical demands and
+
+80
+00:08:08.314 --> 00:08:11.885
+the material's or structure's failure limits.
+
 81
-00:07:47.280 --> 00:07:54.174
-NARRATOR: Recognizing these failure modes
-helps engineers design components that can
+00:08:11.885 --> 00:08:19.726
+By comparing the calculated stress or force to
+the material's yield strength or fracture
 
 82
-00:07:54.174 --> 00:08:00.441
-withstand both static and dynamic loading
-conditions without catastrophic breakdown.
+00:08:19.726 --> 00:08:24.206
+limit, you determine whether the design is
+adequate.
 
 83
-00:08:00.578 --> 00:08:07.362
-NARRATOR: Safety factors provide a margin of
-protection between the predicted mechanical
+00:08:24.206 --> 00:08:32.443
+A higher safety factor reduces the risk of
+failure but may increase material usage and
 
 84
-00:08:07.362 --> 00:08:11.885
-demands and the material's or structure's
-failure limits.
+00:08:32.443 --> 00:08:32.992
+cost.
 
 85
-00:08:11.885 --> 00:08:19.385
-NARRATOR: By comparing the calculated stress
-or force to the material's yield strength or
+00:08:32.992 --> 00:08:41.194
+Design checks require explicit comparison of
+these values, ensuring that the actual demands
 
 86
-00:08:19.385 --> 00:08:24.206
-fracture limit, you determine whether the
-design is adequate.
+00:08:41.194 --> 00:08:44.349
+remain within the acceptable range.
 
 87
-00:08:24.206 --> 00:08:31.442
-NARRATOR: A higher safety factor reduces the
-risk of failure but may increase material
+00:08:44.349 --> 00:08:52.240
+This systematic evaluation process transforms
+theoretical calculations into reliable
 
 88
-00:08:31.442 --> 00:08:32.992
-usage and cost.
+00:08:52.240 --> 00:09:00.131
+engineering decisions, balancing performance
+requirements with structural integrity and
 
 89
-00:08:32.992 --> 00:08:40.165
-NARRATOR: Design checks require explicit
-comparison of these values, ensuring that the
+00:09:00.131 --> 00:09:01.885
+material efficiency.
 
 90
-00:08:40.165 --> 00:08:44.349
-actual demands remain within the acceptable
-range.
+00:09:02.042 --> 00:09:11.421
+To apply these concepts, calculate the stress
+and strain in a complete axial member by first
 
 91
-00:08:44.349 --> 00:08:51.864
-NARRATOR: This systematic evaluation process
-transforms theoretical calculations into
+00:09:11.421 --> 00:09:14.938
+determining the axial force through
+equilibrium.
 
 92
-00:08:51.864 --> 00:08:58.545
-reliable engineering decisions, balancing
-performance requirements with structural
+00:09:14.938 --> 00:09:23.485
+Divide this force by the cross-sectional area
+to find the normal stress, then use the
 
 93
-00:08:58.545 --> 00:09:01.885
-integrity and material efficiency.
+00:09:23.485 --> 00:09:27.474
+elastic modulus to compute the normal strain.
 
 94
-00:09:02.042 --> 00:09:09.892
-NARRATOR: To apply these concepts, calculate
-the stress and strain in a complete axial
+00:09:27.474 --> 00:09:34.456
+Multiply the strain by the original length to
+determine the change in length.
 
 95
-00:09:09.892 --> 00:09:14.938
-member by first determining the axial force
-through equilibrium.
+00:09:34.456 --> 00:09:41.894
+Throughout the process, maintain explicit
+units, verify sign conventions, and confirm
 
 96
-00:09:14.938 --> 00:09:21.479
-NARRATOR: Divide this force by the
-cross-sectional area to find the normal
+00:09:41.894 --> 00:09:49.331
+that the calculated stress remains below the
+yield and fracture limits.
 
 97
-00:09:21.479 --> 00:09:27.474
-stress, then use the elastic modulus to
-compute the normal strain.
+00:09:49.331 --> 00:09:56.777
+This step-by-step calculation integrates
+equilibrium, stress, strain, and material
 
 98
-00:09:27.474 --> 00:09:34.456
-NARRATOR: Multiply the strain by the original
-length to determine the change in length.
+00:09:56.777 --> 00:10:05.051
+properties into a single coherent analysis,
+demonstrating how theoretical principles
 
 99
-00:09:34.456 --> 00:09:41.570
-NARRATOR: Throughout the process, maintain
-explicit units, verify sign conventions, and
+00:10:05.051 --> 00:10:09.188
+translate into practical design values.
 
 100
-00:09:41.570 --> 00:09:49.331
-confirm that the calculated stress remains
-below the yield and fracture limits.
+00:10:09.338 --> 00:10:16.822
+Review your calculations using a structured
+checklist that ensures accuracy and
 
 101
-00:09:49.331 --> 00:09:56.480
-NARRATOR: This step-by-step calculation
-integrates equilibrium, stress, strain, and
-
-102
-00:09:56.480 --> 00:10:04.422
-material properties into a single coherent
-analysis, demonstrating how theoretical
-
-103
-00:10:04.422 --> 00:10:09.188
-principles translate into practical design
-values.
-
-104
-00:10:09.338 --> 00:10:16.874
-NARRATOR: Review your calculations using a
-structured checklist that ensures accuracy and
-
-105
-00:10:16.874 --> 00:10:17.502
+00:10:16.822 --> 00:10:17.502
 completeness.
 
+102
+00:10:17.502 --> 00:10:26.377
+First, verify that the free-body diagram
+includes all external forces and moments.
+
+103
+00:10:26.377 --> 00:10:35.073
+Second, confirm that equilibrium equations are
+solved correctly for unknown reactions.
+
+104
+00:10:35.073 --> 00:10:42.395
+Third, check that internal resultants are
+calculated using the correct section cut.
+
+105
+00:10:42.395 --> 00:10:51.378
+Fourth, ensure stress and strain values use
+consistent units and explicit sign
+
 106
-00:10:17.502 --> 00:10:25.694
-NARRATOR: First, verify that the free-body
-diagram includes all external forces and
-
-107
-00:10:25.694 --> 00:10:26.377
-moments.
-
-108
-00:10:26.377 --> 00:10:34.348
-NARRATOR: Second, confirm that equilibrium
-equations are solved correctly for unknown
-
-109
-00:10:34.348 --> 00:10:35.073
-reactions.
-
-110
-00:10:35.073 --> 00:10:41.269
-NARRATOR: Third, check that internal
-resultants are calculated using the correct
-
-111
-00:10:41.269 --> 00:10:42.395
-section cut.
-
-112
-00:10:42.395 --> 00:10:51.432
-NARRATOR: Fourth, ensure stress and strain
-values use consistent units and explicit sign
-
-113
-00:10:51.432 --> 00:10:52.127
+00:10:51.378 --> 00:10:52.127
 conventions.
 
-114
+107
 00:10:52.127 --> 00:11:00.145
-NARRATOR: Fifth, compare the calculated stress
-to the material's yield and fracture limits.
+Fifth, compare the calculated stress to the
+material's yield and fracture limits.
 
-115
+108
 00:11:00.145 --> 00:11:06.484
-NARRATOR: Sixth, apply the appropriate safety
-factor to validate the design.
+Sixth, apply the appropriate safety factor to
+validate the design.
 
-116
-00:11:06.484 --> 00:11:13.913
-NARRATOR: This systematic review process
-catches common errors and reinforces the
+109
+00:11:06.484 --> 00:11:15.589
+This systematic review process catches common
+errors and reinforces the logical flow from
 
-117
-00:11:13.913 --> 00:11:21.343
-logical flow from equilibrium to material
-response, guaranteeing that your structural
+110
+00:11:15.589 --> 00:11:23.994
+equilibrium to material response, guaranteeing
+that your structural analysis is both reliable
 
-118
-00:11:21.343 --> 00:11:25.395
-analysis is both reliable and defensible.
+111
+00:11:23.994 --> 00:11:25.395
+and defensible.

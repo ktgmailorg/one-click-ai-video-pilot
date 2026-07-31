@@ -1,0 +1,112 @@
+{
+  "beats": [
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-01-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-01",
+      "narration": "Captions are not decorative subtitles added at the end. They carry the information contained in the audio: spoken words, speaker identity when it matters, and meaningful sounds. A viewer should be able to follow the instructional message without relying on hearing the soundtrack.",
+      "plannedSeconds": 21,
+      "title": "Carry the meaning of the audio",
+      "visualDirection": "template:showcase-captions | Pair synchronized text with narration and a meaningful sound cue."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-02-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-02",
+      "narration": "Automatic speech recognition can create a useful first draft, but technical terms, names, punctuation, and timing often need correction. Review captions against the final audio, keep cues synchronized, and break lines at readable phrase boundaries. The reviewed caption file—not the raw machine output—belongs with the release.",
+      "plannedSeconds": 25,
+      "title": "Synchronize and edit for accuracy",
+      "visualDirection": "template:showcase-captions | Correct an automatic-caption error and align the revised cue with the spoken sentence."
+    },
+    {
+      "accessibility": {
+        "audioDescriptionCue": null,
+        "describedInNarration": true
+      },
+      "assetRequests": [],
+      "captionSpeaker": "NARRATOR",
+      "claimIds": [
+        "beat-03-claim-01"
+      ],
+      "delivery": "Professional, concise, and paced for an introductory course audience.",
+      "equations": [],
+      "id": "beat-03",
+      "narration": "Accessibility works best as a production requirement, not an emergency repair. RIT recommends planning accessible media while a course is designed and provides captioning options for Panopto content. Build review time into the schedule, keep a corrected transcript, and verify that visuals also communicate their essential meaning through narration or description.",
+      "plannedSeconds": 26,
+      "title": "Plan accessibility before release",
+      "visualDirection": "template:showcase-captions | Place caption and transcript work inside the production timeline before final approval."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beat-01-claim-01",
+      "sourceIds": [
+        "w3c-captions"
+      ],
+      "text": "Captions convey dialogue and meaningful non-speech audio in synchronized media.",
+      "verified": true
+    },
+    {
+      "id": "beat-02-claim-01",
+      "sourceIds": [
+        "rit-captioning"
+      ],
+      "text": "Automatically generated captions require human review and correction for accuracy and timing.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "rit-captioning",
+        "w3c-captions"
+      ],
+      "text": "RIT recommends planning accessible media during course design and provides captioning options for Panopto media.",
+      "verified": true
+    }
+  ],
+  "id": "how-captions-improve-an-educational-video",
+  "learningObjectives": [],
+  "pronunciations": [],
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "author": "W3C Accessibility Guidelines Working Group",
+      "excerpt": "WCAG requires captions for prerecorded audio content in synchronized media, except when the media is clearly a media alternative for text. Captions provide the audio information needed to understand the presentation. They include dialogue, speaker identification when needed, and meaningful non-speech sounds.",
+      "id": "w3c-captions",
+      "sha256": "317f976c97bb928a5762b4809c5847a2d2d8cf344a7a38e254689398c33f4c0d",
+      "title": "Understanding Captions (Prerecorded)",
+      "type": "url",
+      "uri": "https://www.w3.org/WAI/WCAG20/Understanding/captions-prerecorded",
+      "verified": true
+    },
+    {
+      "author": "RIT Center for Teaching and Learning",
+      "excerpt": "RIT states that accessible media should be planned when a course is designed. For instructor-created Panopto media, instructors can request professional captioning, generate and edit automatic captions, or manually create captions. Automatic captions need review and correction for accuracy. Professional captioning requires lead time.",
+      "id": "rit-captioning",
+      "sha256": "fb6ec74feea5ee30815f56d7acc6b31e3c394be77d75c3d5883f2015f022d1e6",
+      "title": "RIT Center for Teaching and Learning: Captioning",
+      "type": "url",
+      "uri": "https://www.rit.edu/teaching/captioning",
+      "verified": true
+    }
+  ],
+  "title": "How Captions Improve an Educational Video"
+}

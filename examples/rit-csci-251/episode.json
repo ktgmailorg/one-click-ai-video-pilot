@@ -13,10 +13,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Foundations of Parallel and Distributed Architecture as a question about inputs, decisions, and observable results. This course is an introduction to the organization and programming of systems comprising multiple computers. Consider this worked case: A web server cluster distributes incoming HTTP requests across multiple physical machines to handle high traffic loads. On screen, display a diagram showing a single server versus a cluster of three servers connected by a network, highlighting load distribution. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
-      "plannedSeconds": 56,
-      "title": "Foundations of Parallel and Distributed Architecture",
-      "visualDirection": "template:academic-process | Display a diagram showing a single server versus a cluster of three servers connected by a network, highlighting load distribution."
+      "narration": "Begin by framing Foundations of Parallel Architectures as a question about inputs, decisions, and observable results. Topics include the organization of multi-core computers, parallel computer clusters, computing grids, client-server systems, and peer-to-peer systems; computer networks and network protocols; network security; multi-threaded programming; and network programming. Consider this worked case: A multi-core processor shares a single memory space, while a distributed cluster connects independent machines over a network to solve large-scale problems. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 65,
+      "title": "Foundations of Parallel Architectures",
+      "visualDirection": "template:academic-process | Display a side-by-side diagram comparing a single multi-core CPU with a networked cluster of independent nodes, highlighting memory locality versus network communication."
     },
     {
       "accessibility": {
@@ -31,10 +31,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Multi-Core Computer Organization precisely enough that another learner could test the definition. Topics include the organization of multi-core computers, parallel computer clusters, computing grids, client-server systems, and peer-to-peer systems; computer networks and network protocols; network security; multi-threaded programming; and network programming. Consider this worked case: A modern desktop processor with eight cores can execute eight separate program threads simultaneously, reducing execution time for parallelizable workloads. On screen, show a close-up illustration of a CPU die with eight distinct cores, each labeled with a thread ID, connected via an internal interconnect. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
-      "plannedSeconds": 64,
-      "title": "Multi-Core Computer Organization",
-      "visualDirection": "template:academic-process | Show a close-up illustration of a CPU die with eight distinct cores, each labeled with a thread ID, connected via an internal interconnect."
+      "narration": "Now define Distributed-Memory Process Organization precisely enough that another learner could test the definition. Distributed-memory programs must partition data and work, communicate required dependencies, and avoid deadlock. Consider this worked case: In a MPI program, each process holds a unique segment of an array and must explicitly send and receive data to complete a global computation. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "plannedSeconds": 58,
+      "title": "Distributed-Memory Process Organization",
+      "visualDirection": "template:academic-process | Show a flowchart of data partitioning across four processes, with arrows indicating message passing and a highlighted deadlock scenario with circular waits."
     },
     {
       "accessibility": {
@@ -49,10 +49,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Parallel Computer Clusters and Computing Grids operates in a concrete sequence. Programming projects will be required. Consider this worked case: A scientific research cluster runs molecular dynamics simulations in parallel, whereas a computing grid coordinates thousands of university servers to analyze climate data. On screen, draw two side-by-side network maps: one showing a local cluster with direct links, and another showing a grid with regional nodes connected via the internet. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
-      "plannedSeconds": 55,
-      "title": "Parallel Computer Clusters and Computing Grids",
-      "visualDirection": "template:academic-process | Draw two side-by-side network maps: one showing a local cluster with direct links, and another showing a grid with regional nodes connected via the internet."
+      "narration": "With the foundation in place, examine how MPI Communication Mechanisms operates in a concrete sequence. MPI defines communication among processes identified by ranks in communicators. Consider this worked case: A broadcast sends a single message from one rank to all others, while a reduction combines values from all ranks into a single result. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "plannedSeconds": 57,
+      "title": "MPI Communication Mechanisms",
+      "visualDirection": "template:academic-process | Render a star topology for a broadcast and a tree topology for a reduction, labeling each node with its rank and the direction of data flow."
     },
     {
       "accessibility": {
@@ -67,10 +67,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Client-Server and Peer-to-Peer Systems and make the decision criteria explicit. Modes of operation define how a primitive processes data larger than one block. Consider this worked case: A bank's online portal uses a client-server model where users connect to central authentication servers, whereas a file-sharing network uses peer-to-peer nodes to exchange documents directly. On screen, illustrate a star topology for client-server with a central server node, and a mesh topology for peer-to-peer with interconnected user nodes. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
-      "plannedSeconds": 58,
-      "title": "Client-Server and Peer-to-Peer Systems",
-      "visualDirection": "template:academic-process | Illustrate a star topology for client-server with a central server node, and a mesh topology for peer-to-peer with interconnected user nodes."
+      "narration": "Next, compare the choices involved in Blocking and Nonblocking Operations and make the decision criteria explicit. Blocking and nonblocking operations expose different completion and overlap behavior. Consider this worked case: A nonblocking send allows a process to continue executing independent tasks while the message is transmitted, improving pipeline efficiency. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "plannedSeconds": 55,
+      "title": "Blocking and Nonblocking Operations",
+      "visualDirection": "template:academic-process | Illustrate a timeline showing a blocking operation halting execution until completion versus a nonblocking operation allowing overlapping computation and communication."
     },
     {
       "accessibility": {
@@ -85,10 +85,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Computer Networks and Network Protocols to a worked situation instead of treating it as an isolated definition. Security depends on the complete protocol and implementation, not only an algorithm name. Consider this worked case: The TCP/IP protocol suite manages packet routing, congestion control, and end-to-end delivery, ensuring that data reaches the correct destination despite network failures. On screen, show a packet traversing a network with labeled protocol layers (application, transport, network, link) and a status indicator for successful delivery. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "narration": "Apply Shared-Memory Parallel Programming to a worked situation instead of treating it as an isolated definition. OpenMP defines a shared-memory parallel programming model based on directives, library routines, and environment variables. Consider this worked case: A parallel region directive spawns multiple threads that execute concurrently within the same address space, sharing variables unless explicitly marked otherwise. private variable scopes. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
       "plannedSeconds": 60,
-      "title": "Computer Networks and Network Protocols",
-      "visualDirection": "template:academic-process | Show a packet traversing a network with labeled protocol layers (application, transport, network, link) and a status indicator for successful delivery."
+      "title": "Shared-Memory Parallel Programming",
+      "visualDirection": "template:academic-process | Draw a single CPU core with multiple thread execution contexts branching from a parallel region, showing shared vs. private variable scopes."
     },
     {
       "accessibility": {
@@ -103,10 +103,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Network Security and Data Protection, including what improves and what becomes more difficult. Protect the Software prevents unauthorized access to code and development artifacts. Consider this worked case: TLS encryption secures web traffic by encrypting payloads and using digital certificates to authenticate the server, preventing man-in-the-middle attacks. On screen, display a flowchart showing plaintext data entering a TLS handshake, being encrypted with a symmetric key, and exiting as ciphertext with an integrity tag. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
-      "plannedSeconds": 57,
-      "title": "Network Security and Data Protection",
-      "visualDirection": "template:academic-process | Display a flowchart showing plaintext data entering a TLS handshake, being encrypted with a symmetric key, and exiting as ciphertext with an integrity tag."
+      "narration": "Examine the tradeoffs in Worksharing and Data Sharing, including what improves and what becomes more difficult. Data-sharing attributes determine whether variables are shared, private, firstprivate, or reduced across threads. Consider this worked case: A firstprivate clause copies a variable to each thread, ensuring independent execution without race conditions, whereas a shared clause allows concurrent access. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "plannedSeconds": 56,
+      "title": "Worksharing and Data Sharing",
+      "visualDirection": "template:academic-process | Present a table mapping data-sharing attributes to thread behavior, with icons indicating private copies versus shared memory access."
     },
     {
       "accessibility": {
@@ -121,10 +121,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Cryptographic Standards and Key Management with an edge case and identify which assumption controls the outcome. Cryptographic standards define approved algorithms and parameters. Consider this worked case: AES-256 encryption with a properly rotated key protects sensitive database records, while a nonce ensures each encryption operation produces a unique ciphertext. On screen, show a key management lifecycle diagram with stages: generation, distribution, storage, use, rotation, and destruction, each marked with a checkmark. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
-      "plannedSeconds": 58,
-      "title": "Cryptographic Standards and Key Management",
-      "visualDirection": "template:academic-process | Show a key management lifecycle diagram with stages: generation, distribution, storage, use, rotation, and destruction, each marked with a checkmark."
+      "narration": "Stress-test the reasoning around Synchronization and Data Races with an edge case and identify which assumption controls the outcome. Barriers and other synchronization constructs establish ordering where independent execution is not sufficient. Consider this worked case: A barrier forces all threads to wait until every thread reaches the same point, preventing one thread from reading uninitialized data. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 64,
+      "title": "Synchronization and Data Races",
+      "visualDirection": "template:academic-process | Show a race condition scenario where two threads write to the same variable without a barrier, resulting in corrupted output, then show the corrected version with a barrier."
     },
     {
       "accessibility": {
@@ -139,10 +139,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Multi-Threaded Programming Fundamentals to diagnose a failure by separating symptoms, causes, and corrective action. Prepare the Organization establishes people, processes, and technology for secure development. Consider this worked case: A web application uses separate threads for handling database queries, user authentication, and response generation, coordinated by mutex locks to protect shared variables. On screen, illustrate a process with three threads, each with a stack and shared heap, highlighting a mutex lock protecting a critical section. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
-      "plannedSeconds": 58,
-      "title": "Multi-Threaded Programming Fundamentals",
-      "visualDirection": "template:academic-process | Illustrate a process with three threads, each with a stack and shared heap, highlighting a mutex lock protecting a critical section."
+      "narration": "Use Performance Analysis Metrics to diagnose a failure by separating symptoms, causes, and corrective action. Performance analysis considers communication volume, latency, load balance, synchronization, process placement, and the ratio of useful work to coordination overhead. Consider this worked case: A poorly load-balanced cluster wastes resources when some nodes finish early and idle while others process remaining work. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 59,
+      "title": "Performance Analysis Metrics",
+      "visualDirection": "template:academic-process | Create a bar chart comparing communication overhead versus useful computation across different process placements, highlighting the optimal ratio."
     },
     {
       "accessibility": {
@@ -157,10 +157,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Network Programming and Distributed Communication to the earlier ideas and explain how the pieces work as one system. The Secure Software Development Framework groups practices into four practice groups. Consider this worked case: A distributed caching system uses UDP multicast to broadcast cache invalidation messages, while a RPC framework serializes requests and deserializes responses across network boundaries. On screen, show a sequence diagram of an RPC call: client sends request, server processes, server sends response, client receives result, with timeout indicators. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
-      "plannedSeconds": 59,
-      "title": "Network Programming and Distributed Communication",
-      "visualDirection": "template:academic-process | Show a sequence diagram of an RPC call: client sends request, server processes, server sends response, client receives result, with timeout indicators."
+      "narration": "Connect Scalability and Concurrency Evaluation to the earlier ideas and explain how the pieces work as one system. Parallel analysis distinguishes available concurrency, task granularity, dependencies, synchronization cost, memory behavior, and measured scalability. Consider this worked case: Fine-grained tasks increase concurrency but raise synchronization costs, while coarse-grained tasks reduce overhead but limit available concurrency. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 55,
+      "title": "Scalability and Concurrency Evaluation",
+      "visualDirection": "template:academic-process | Plot a graph showing scalability efficiency against task granularity, marking the optimal region where synchronization cost is minimized."
     },
     {
       "accessibility": {
@@ -175,10 +175,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Secure Software Development and Verification as a practical checklist that can guide a new analysis. Security requirements should be tracked throughout development. Consider this worked case: A development team uses a secure software development framework to verify that cryptographic libraries are properly integrated, track security requirements, and remediate vulnerabilities before release. On screen, display a four-box flowchart labeled Prepare, Protect, Produce, Respond, with arrows showing continuous feedback loops and a verification badge. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
-      "plannedSeconds": 57,
-      "title": "Secure Software Development and Verification",
-      "visualDirection": "template:academic-process | Display a four-box flowchart labeled Prepare, Protect, Produce, Respond, with arrows showing continuous feedback loops and a verification badge."
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Incorrectly synchronized accesses can create data races. Consider this worked case: A checklist confirms that MPI ranks are correctly mapped, OpenMP barriers are placed after shared variable updates, and load distribution is balanced across all nodes. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 56,
+      "title": "Practical Analysis Checklist",
+      "visualDirection": "template:academic-process | Display a printable checklist template with checkboxes for deadlock avoidance, model alignment, and race condition prevention, ready for student use."
     }
   ],
   "claims": [
@@ -187,79 +187,79 @@
       "sourceIds": [
         "rit-csci-251"
       ],
-      "text": "This course is an introduction to the organization and programming of systems comprising multiple computers.",
+      "text": "Topics include the organization of multi-core computers, parallel computer clusters, computing grids, client-server systems, and peer-to-peer systems; computer networks and network protocols; network security; multi-threaded programming; and network programming.",
       "verified": true
     },
     {
       "id": "beat-02-claim-01",
       "sourceIds": [
-        "rit-csci-251"
+        "mpi-standard"
       ],
-      "text": "Topics include the organization of multi-core computers, parallel computer clusters, computing grids, client-server systems, and peer-to-peer systems; computer networks and network protocols; network security; multi-threaded programming; and network programming.",
+      "text": "Distributed-memory programs must partition data and work, communicate required dependencies, and avoid deadlock.",
       "verified": true
     },
     {
       "id": "beat-03-claim-01",
       "sourceIds": [
-        "rit-csci-251"
+        "mpi-standard"
       ],
-      "text": "Programming projects will be required.",
+      "text": "MPI defines communication among processes identified by ranks in communicators.",
       "verified": true
     },
     {
       "id": "beat-04-claim-01",
       "sourceIds": [
-        "nist-cryptographic-standards"
+        "mpi-standard"
       ],
-      "text": "Modes of operation define how a primitive processes data larger than one block.",
+      "text": "Blocking and nonblocking operations expose different completion and overlap behavior.",
       "verified": true
     },
     {
       "id": "beat-05-claim-01",
       "sourceIds": [
-        "nist-cryptographic-standards"
+        "openmp-specification"
       ],
-      "text": "Security depends on the complete protocol and implementation, not only an algorithm name.",
+      "text": "OpenMP defines a shared-memory parallel programming model based on directives, library routines, and environment variables.",
       "verified": true
     },
     {
       "id": "beat-06-claim-01",
       "sourceIds": [
-        "nist-ssdf"
+        "openmp-specification"
       ],
-      "text": "Protect the Software prevents unauthorized access to code and development artifacts.",
+      "text": "Data-sharing attributes determine whether variables are shared, private, firstprivate, or reduced across threads.",
       "verified": true
     },
     {
       "id": "beat-07-claim-01",
       "sourceIds": [
-        "nist-cryptographic-standards"
+        "openmp-specification"
       ],
-      "text": "Cryptographic standards define approved algorithms and parameters.",
+      "text": "Barriers and other synchronization constructs establish ordering where independent execution is not sufficient.",
       "verified": true
     },
     {
       "id": "beat-08-claim-01",
       "sourceIds": [
-        "nist-ssdf"
+        "mpi-standard"
       ],
-      "text": "Prepare the Organization establishes people, processes, and technology for secure development.",
+      "text": "Performance analysis considers communication volume, latency, load balance, synchronization, process placement, and the ratio of useful work to coordination overhead.",
       "verified": true
     },
     {
       "id": "beat-09-claim-01",
       "sourceIds": [
-        "nist-ssdf"
+        "openmp-specification"
       ],
-      "text": "The Secure Software Development Framework groups practices into four practice groups.",
+      "text": "Parallel analysis distinguishes available concurrency, task granularity, dependencies, synchronization cost, memory behavior, and measured scalability.",
       "verified": true
     },
     {
       "id": "beat-10-claim-01",
       "sourceIds": [
-        "nist-ssdf"
+        "openmp-specification"
       ],
-      "text": "Security requirements should be tracked throughout development.",
+      "text": "Incorrectly synchronized accesses can create data races.",
       "verified": true
     }
   ],
@@ -279,23 +279,23 @@
       "verified": true
     },
     {
-      "author": "National Institute of Standards and Technology",
-      "excerpt": "The Secure Software Development Framework groups practices into four practice groups. Prepare the Organization establishes people, processes, and technology for secure development. Protect the Software prevents unauthorized access to code and development artifacts. Produce Well-Secured Software addresses security requirements, design, verification, and release. Respond to Vulnerabilities identifies, analyzes, remediates, and learns from discovered weaknesses. Security requirements should be tracked throughout development. Verification provides evidence that selected practices and controls were performed. Security reasoning identifies assets, trust boundaries, threats, controls, evidence, residual risk, and responsibilities.",
-      "id": "nist-ssdf",
-      "sha256": "17c15c6a3a522d311732bc0022c92ccb85de44ca6a09bde629c605eafbbaf442",
-      "title": "NIST Secure Software Development Framework",
+      "author": "OpenMP Architecture Review Board",
+      "excerpt": "OpenMP defines a shared-memory parallel programming model based on directives, library routines, and environment variables. A parallel region creates a team of threads. Worksharing constructs divide loop iterations or sections among the team. Data-sharing attributes determine whether variables are shared, private, firstprivate, or reduced across threads. Barriers and other synchronization constructs establish ordering where independent execution is not sufficient. Incorrectly synchronized accesses can create data races. Scheduling choices influence load balance, locality, and overhead. Parallel analysis distinguishes available concurrency, task granularity, dependencies, synchronization cost, memory behavior, and measured scalability.",
+      "id": "openmp-specification",
+      "sha256": "7401ab2f8615a639563008d68532c478fd5c3a8217ff8dfefdc53695bf9be5e2",
+      "title": "OpenMP API Specification",
       "type": "note",
-      "uri": "https://csrc.nist.gov/pubs/sp/800/218/final",
+      "uri": "https://www.openmp.org/specifications/",
       "verified": true
     },
     {
-      "author": "National Institute of Standards and Technology",
-      "excerpt": "Cryptographic standards define approved algorithms and parameters. Encryption supports confidentiality when keys and modes are used correctly. Message authentication and digital signatures address integrity and authenticity in different ways. Random number generation supports keys, nonces, and other security parameters. Key management covers generation, distribution, storage, use, rotation, revocation, and destruction. Modes of operation define how a primitive processes data larger than one block. Validation checks implementations against specified requirements. Security depends on the complete protocol and implementation, not only an algorithm name. Analysis also considers side channels and migration requirements.",
-      "id": "nist-cryptographic-standards",
-      "sha256": "a50096140c969dba44c56eabec718ea39e693d3bb01255ae0cb21fa71c53c7e4",
-      "title": "NIST Cryptographic Standards and Guidelines",
+      "author": "Message Passing Interface Forum",
+      "excerpt": "MPI defines communication among processes identified by ranks in communicators. Point-to-point operations send and receive typed messages between selected ranks. Collective operations coordinate communication patterns such as broadcast, reduction, gather, scatter, and barrier across a group. Blocking and nonblocking operations expose different completion and overlap behavior. Message matching depends on communicator, source, and tag. Distributed-memory programs must partition data and work, communicate required dependencies, and avoid deadlock. Performance analysis considers communication volume, latency, load balance, synchronization, process placement, and the ratio of useful work to coordination overhead.",
+      "id": "mpi-standard",
+      "sha256": "b70b08b2350577c3164dd22a0f9fb9a0ef464313f326bb12e010221cb85b827a",
+      "title": "MPI 4.1 Standard",
       "type": "note",
-      "uri": "https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines",
+      "uri": "https://www.mpi-forum.org/docs/mpi-4.1/mpi41-report.pdf",
       "verified": true
     }
   ],
