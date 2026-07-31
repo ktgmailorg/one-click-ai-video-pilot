@@ -81,6 +81,21 @@ test("the learning platform exposes accessible, device-local course progress", a
   assert.doesNotMatch(html, /female narration/i);
 });
 
+test("the production media verifier resolves catalog video paths", async () => {
+  const script = await readFile(
+    new URL("scripts/verify-published-catalog.mjs", root),
+    "utf8",
+  );
+  assert.match(
+    script,
+    /verifyVideoResponse\(new URL\(live\.video, baseUrl\), live\.videoBytes\)/,
+  );
+  assert.match(script, /"video\/mp4", undefined, "manual"/);
+  assert.match(script, /\["video\/mp4", "application\/octet-stream"\]/);
+  assert.match(script, /redirect === "manual" && response\.status >= 300/);
+  assert.match(script, /option\("--concurrency"\) \|\| "2"/);
+});
+
 test("the course catalog contains complete, unique lessons", async () => {
   const catalog = JSON.parse(
     await readFile(new URL("course-catalog.json", root), "utf8"),
