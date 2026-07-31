@@ -7,6 +7,12 @@ import { list, put } from "@vercel/blob";
 const catalogPath = resolve(option("--catalog") || "course-catalog.json");
 const maximumStoreBytes = integerOption("--max-store-bytes", 900_000_000);
 const dryRun = process.argv.includes("--dry-run");
+const only = new Set(
+  (option("--only") || "")
+    .split(",")
+    .map((value) => value.trim())
+    .filter(Boolean),
+);
 const token = process.env.BLOB_READ_WRITE_TOKEN;
 
 if (!dryRun && !token) {
@@ -63,8 +69,17 @@ async function writeJsonAtomic(path, value) {
 
 const catalog = JSON.parse(await readFile(catalogPath, "utf8"));
 const candidates = catalog.courses.filter(
-  (course) => course.id.startsWith("rit-csci-") && isLocalPath(course.video),
+  (course) =>
+    course.id.startsWith("rit-csci-") &&
+    isLocalPath(course.video) &&
+    (only.size === 0 || only.has(course.id)),
 );
+if (only.size && candidates.length !== only.size) {
+  const found = new Set(candidates.map((course) => course.id));
+  throw new Error(
+    `Requested course media is missing: ${[...only].filter((id) => !found.has(id)).join(", ")}`,
+  );
+}
 
 const prepared = [];
 for (const course of candidates) {

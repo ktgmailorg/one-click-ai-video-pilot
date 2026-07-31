@@ -3069,6 +3069,42 @@ footer p {
   letter-spacing: 0.02em;
 }
 
+.lesson-provenance {
+  margin: 0 32px 24px;
+  padding: 20px 22px;
+  border: 1px solid rgba(247, 105, 2, 0.32);
+  border-radius: 14px;
+  background: #fff8f2;
+}
+
+.lesson-provenance h3 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+}
+
+.lesson-provenance-list,
+#lesson-provenance-list {
+  display: grid;
+  gap: 8px;
+}
+
+#lesson-provenance-list > div {
+  display: grid;
+  grid-template-columns: minmax(130px, 0.4fr) 1fr;
+  gap: 12px;
+}
+
+#lesson-provenance-list span,
+.lesson-provenance p {
+  color: #4d4d4d;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.lesson-provenance p {
+  margin: 12px 0 0;
+}
+
 .lesson-dialog video {
   width: 100%;
   display: block;

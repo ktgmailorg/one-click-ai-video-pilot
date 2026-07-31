@@ -552,11 +552,11 @@ npm run rit-video -- produce --narration-voice configured</code></pre>
           </p>
         </div>
         <div class="local-model-card">
-          <div><span>Main pilot planner</span><strong>PrismML Bonsai 27B · binary 1-bit</strong></div>
+          <div><span>Local pilot planners</span><strong>Qwythos 9B v2 Q5 · Bonsai 27B binary 1-bit</strong></div>
           <p>
-            Topic planning defaults to a local Q1_0 model served through
+            Topic planning uses an explicitly selected local model served through
             llama.cpp. Course prompts stay on the pilot machine, the exact
-            model-file digest is recorded, and accepted responses are frozen.
+            model-file digest and generation settings are recorded, and accepted responses are frozen.
             The RISC‑V reference master uses an authored storyboard and does
             not claim model authorship.
           </p>
@@ -611,6 +611,11 @@ npm run rit-video -- produce --narration-voice configured</code></pre>
             <span>Local Bonsai 27B plan</span>
             <strong>70.7s <small>representative pass</small></strong>
             <p>One ten-beat CSCI-250 fast plan at roughly 19–24 tokens per second, before narration and rendering.</p>
+          </article>
+          <article>
+            <span>Local Qwythos 9B Q5 plan</span>
+            <strong>65.2s <small>source-grounded CSCI-261 plan</small></strong>
+            <p>Thinking disabled for bounded structured output: 1,633 completion tokens at 26.3 tokens per second, down from 221.2s with unbounded hidden reasoning.</p>
           </article>
         </div>
 
