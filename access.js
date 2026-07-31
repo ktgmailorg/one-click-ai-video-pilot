@@ -3,6 +3,7 @@ const githubConnect = document.querySelector("#github-connect");
 const ritIdentity = document.querySelector("#rit-identity");
 const githubIdentity = document.querySelector("#github-identity");
 const resourceActions = document.querySelector("#resource-actions");
+const ritDownloadActions = document.querySelector("#rit-download-actions");
 const signOut = document.querySelector("#sign-out");
 const message = document.querySelector("#access-message");
 
@@ -67,10 +68,19 @@ async function loadAccessState() {
     ritIdentity.hidden = false;
     signOut.hidden = false;
 
+    if (configuration.repositoryDownloadConfigured) {
+      ritDownloadActions.hidden = false;
+    } else {
+      showMessage(
+        "RIT sign-in is active, but the private source download still needs administrator configuration.",
+        "setup",
+      );
+    }
+
     if (!configuration.githubConfigured) {
       setText("#github-step-state", "Administrator activation required");
       showMessage(
-        "RIT sign-in is active, but automatic GitHub invitations still need administrator configuration.",
+        "Direct source download is available after RIT sign-in. Optional automatic GitHub invitations still need administrator configuration.",
         "setup",
       );
       return;

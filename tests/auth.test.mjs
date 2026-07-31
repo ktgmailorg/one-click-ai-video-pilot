@@ -129,6 +129,7 @@ test("authentication stays disabled until every credential is present", () => {
   }
   assert.deepEqual(authenticationConfiguration(), {
     googleConfigured: false,
+    repositoryDownloadConfigured: false,
     githubConfigured: false,
     repository: "ktgmailorg/video-generator-rit",
   });
@@ -145,6 +146,7 @@ test("authentication stays disabled until every credential is present", () => {
   });
   assert.deepEqual(authenticationConfiguration(), {
     googleConfigured: true,
+    repositoryDownloadConfigured: true,
     githubConfigured: true,
     repository: "ktgmailorg/video-generator-rit",
   });
