@@ -10,7 +10,7 @@
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: A modern CPU processes instructions by fetching, decoding, and executing them in a pipeline, while classic architectures like the Von Neumann model separate instruction and data storage.",
+          "phrase": "Computer Architecture is a study of the design of both modern and classic computer hardware.",
           "type": "deterministic-svg"
         },
         {
@@ -35,7 +35,7 @@
         },
         {
           "id": "beat-02-shot-003",
-          "phrase": "Separate the formal definition from an implementation detail, then identify what evidence would distinguish them.",
+          "phrase": "A precise definition makes later examples easier to evaluate and revise.",
           "type": "deterministic-svg"
         }
       ]
@@ -50,7 +50,7 @@
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: Load instructions transfer data from memory into registers, while store instructions transfer register data to memory, forming the core data movement mechanism.",
+          "phrase": "The RISC-V ISA defines programmer-visible instructions, registers, memory operations, control transfer, exceptions, and ordering behavior.",
           "type": "deterministic-svg"
         },
         {
@@ -75,7 +75,7 @@
         },
         {
           "id": "beat-04-shot-003",
-          "phrase": "Compare alternatives against the same constraints so the evaluation does not move the goalposts.",
+          "phrase": "Using shared criteria turns a preference into a defensible technical choice.",
           "type": "deterministic-svg"
         }
       ]
@@ -95,7 +95,7 @@
         },
         {
           "id": "beat-05-shot-003",
-          "phrase": "indirect addressing with memory maps, showing register-to-memory address resolution steps.",
+          "phrase": "Work from the concrete inputs to the result, checking units, types, or invariants at each step.",
           "type": "deterministic-svg"
         }
       ]
@@ -115,7 +115,7 @@
         },
         {
           "id": "beat-06-shot-003",
-          "phrase": "On screen, show a two-tier memory model with user space and kernel space, highlighting permission bits and privilege levels.",
+          "phrase": "State the benefit, the cost, and the condition under which the tradeoff is acceptable.",
           "type": "deterministic-svg"
         }
       ]
@@ -130,7 +130,7 @@
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: When a process requests file I/O, a system call switches to kernel mode, and a trap captures registers to resume execution after completion.",
+          "phrase": "A system call transfers control from user code to a privileged kernel service.",
           "type": "deterministic-svg"
         },
         {
@@ -150,7 +150,7 @@
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: A page table entry translates a virtual address to a physical frame, with read/write/execute bits controlling access permissions.",
+          "phrase": "Page tables map virtual addresses to physical memory with permission bits.",
           "type": "deterministic-svg"
         },
         {
@@ -170,7 +170,7 @@
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: When a process blocks on I/O, the scheduler picks another runnable process and saves the current processor state for later restoration.",
+          "phrase": "The scheduler selects runnable processes and switches processor context.",
           "type": "deterministic-svg"
         },
         {
@@ -190,7 +190,7 @@
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: A simulation tracks register values, memory operations, and control flow to verify that architectural state remains consistent across instructions.",
+          "phrase": "Architecture analysis preserves data dependencies, control dependencies, and architectural state.",
           "type": "deterministic-svg"
         },
         {

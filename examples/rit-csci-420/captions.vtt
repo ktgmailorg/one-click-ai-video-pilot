@@ -1,577 +1,423 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:07.575
-NARRATOR: Begin by framing Course Foundations
-and Scope as a question about inputs,
+00:00:00.050 --> 00:00:08.578
+Begin by framing Course Foundations and Scope
+as a question about inputs, decisions, and
 
 2
-00:00:07.575 --> 00:00:09.890
-decisions, and observable results.
+00:00:08.578 --> 00:00:09.796
+observable results.
 
 3
-00:00:09.890 --> 00:00:17.258
-NARRATOR: Real-world datasets are often large
-and can be stored in either main memory or a
+00:00:09.796 --> 00:00:17.781
+Real-world datasets are often large and can be
+stored in either main memory or a database.
 
 4
-00:00:17.258 --> 00:00:17.718
-database.
+00:00:17.781 --> 00:00:25.515
+Consider this worked case: Student teams will
+load a 100,000-row customer transaction
 
 5
-00:00:17.718 --> 00:00:25.263
-NARRATOR: Consider this worked case: Student
-teams will load a 100,000-row customer
+00:00:25.515 --> 00:00:30.671
+dataset into a relational database for initial
+exploration.
 
 6
-00:00:25.263 --> 00:00:30.921
-transaction dataset into a relational database
-for initial exploration.
+00:00:30.671 --> 00:00:37.365
+List the givens before choosing a method,
+because an unstated assumption can change the
 
 7
-00:00:30.921 --> 00:00:37.386
-NARRATOR: On screen, display a split-screen
-graphic showing a database schema on the left
+00:00:37.365 --> 00:00:37.843
+conclusion.
 
 8
-00:00:37.386 --> 00:00:43.850
-and an in-memory DataFrame on the right, with
-arrows indicating data flow between storage
+00:00:37.843 --> 00:00:43.531
+This establishes the vocabulary and scope
+needed for the remaining sections.
 
 9
-00:00:43.850 --> 00:00:44.312
-types.
+00:00:43.634 --> 00:00:50.372
+Now define Knowledge Discovery Process
+precisely enough that another learner could
 
 10
-00:00:44.312 --> 00:00:50.456
-NARRATOR: List the givens before choosing a
-method, because an unstated assumption can
+00:00:50.372 --> 00:00:52.209
+test the definition.
 
 11
-00:00:50.456 --> 00:00:51.874
-change the conclusion.
+00:00:52.209 --> 00:00:59.357
+The emphasis is on how to use data mining to
+describe datasets rather than making
 
 12
-00:00:51.874 --> 00:00:57.921
-NARRATOR: This establishes the vocabulary and
-scope needed for the remaining sections.
-
-13
-00:00:58.034 --> 00:01:04.368
-NARRATOR: Now define Knowledge Discovery
-Process precisely enough that another learner
-
-14
-00:01:04.368 --> 00:01:06.671
-could test the definition.
-
-15
-00:01:06.671 --> 00:01:13.759
-NARRATOR: The emphasis is on how to use data
-mining to describe datasets rather than making
-
-16
-00:01:13.759 --> 00:01:14.202
+00:00:59.357 --> 00:00:59.834
 predictions.
 
-17
-00:01:14.202 --> 00:01:20.327
-NARRATOR: Consider this worked case:
-Instructors will demonstrate how clustering
+13
+00:00:59.834 --> 00:01:06.880
+Consider this worked case: Instructors will
+demonstrate how clustering customer purchase
 
-18
-00:01:20.327 --> 00:01:26.452
-customer purchase patterns reveals market
-segments without forecasting future sales.
+14
+00:01:06.880 --> 00:01:12.005
+patterns reveals market segments without
+forecasting future sales.
 
-19
-00:01:26.452 --> 00:01:34.289
-NARRATOR: On screen, show a flowchart labeled
-'Knowledge Discovery Process' with nodes for
+15
+00:01:12.005 --> 00:01:18.582
+Separate the formal definition from an
+implementation detail, then identify what
 
-20
-00:01:34.289 --> 00:01:39.715
-data collection, cleaning, analysis, and
-description, explicitly excluding a
-
-21
-00:01:39.715 --> 00:01:40.921
-'prediction' node.
-
-22
-00:01:40.921 --> 00:01:47.648
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
-
-23
-00:01:47.648 --> 00:01:49.890
+16
+00:01:18.582 --> 00:01:20.974
 evidence would distinguish them.
 
+17
+00:01:20.974 --> 00:01:27.552
+A precise definition makes later examples
+easier to evaluate and revise.
+
+18
+00:01:27.674 --> 00:01:35.095
+With the foundation in place, examine how Data
+Exploration and Cleaning operates in a
+
+19
+00:01:35.095 --> 00:01:36.155
+concrete sequence.
+
+20
+00:01:36.155 --> 00:01:43.030
+Data quality analysis makes missingness,
+duplicates, inconsistent representation,
+
+21
+00:01:43.030 --> 00:01:49.045
+integrity constraints, sampling, and update
+behavior explicit.
+
+22
+00:01:49.045 --> 00:01:57.001
+Consider this worked case: Students will run a
+missingness report on a survey dataset,
+
+23
+00:01:57.001 --> 00:02:04.389
+flagging 15% null values in the 'income'
+column and removing 3% duplicate records.
+
 24
-00:01:49.890 --> 00:01:56.249
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
+00:02:04.389 --> 00:02:11.827
+Follow every arrow in order and name the state
+before and after each transition.
 
 25
-00:01:56.354 --> 00:02:02.539
-NARRATOR: With the foundation in place,
-examine how Data Exploration and Cleaning
+00:02:11.827 --> 00:02:17.686
+The trace converts an abstract statement into
+an inspectable sequence.
 
 26
-00:02:02.539 --> 00:02:05.116
-operates in a concrete sequence.
+00:02:17.810 --> 00:02:24.578
+Next, compare the choices involved in Data
+Preparation Workflows and make the decision
 
 27
-00:02:05.116 --> 00:02:11.530
-NARRATOR: Data quality analysis makes
-missingness, duplicates, inconsistent
+00:02:24.578 --> 00:02:25.619
+criteria explicit.
 
 28
-00:02:11.530 --> 00:02:17.944
-representation, integrity constraints,
-sampling, and update behavior explicit.
+00:02:25.619 --> 00:02:32.771
+Data-analysis workflows separate data
+preparation, exploratory analysis, training,
 
 29
-00:02:17.944 --> 00:02:25.710
-NARRATOR: Consider this worked case: Students
-will run a missingness report on a survey
+00:02:32.771 --> 00:02:38.135
+validation, testing, model selection, and
+evaluation.
 
 30
-00:02:25.710 --> 00:02:32.920
-dataset, flagging 15% null values in the
-'income' column and removing 3% duplicate
+00:02:38.135 --> 00:02:46.348
+Consider this worked case: A pipeline will be
+built where raw data undergoes imputation and
 
 31
-00:02:32.920 --> 00:02:33.475
-records.
+00:02:46.348 --> 00:02:50.181
+normalization before entering the exploratory
+analysis phase.
 
 32
-00:02:33.475 --> 00:02:40.275
-NARRATOR: On screen, render a heatmap of
-missing values across columns, with a callout
+00:02:50.181 --> 00:02:57.387
+Compare alternatives against the same
+constraints so the evaluation does not move
 
 33
-00:02:40.275 --> 00:02:45.132
-box highlighting the 'income' column and a
-duplicate count badge.
+00:02:57.387 --> 00:02:58.588
+the goalposts.
 
 34
-00:02:45.132 --> 00:02:52.632
-NARRATOR: Follow every arrow in order and name
-the state before and after each transition.
+00:02:58.588 --> 00:03:05.447
+Using shared criteria turns a preference into
+a defensible technical choice.
 
 35
-00:02:52.632 --> 00:02:58.350
-NARRATOR: The trace converts an abstract
-statement into an inspectable sequence.
+00:03:05.570 --> 00:03:14.266
+Apply Supervised and Unsupervised Methods to a
+worked situation instead of treating it as an
 
 36
-00:02:58.466 --> 00:03:04.608
-NARRATOR: Next, compare the choices involved
-in Data Preparation Workflows and make the
+00:03:14.266 --> 00:03:15.426
+isolated definition.
 
 37
-00:03:04.608 --> 00:03:06.025
-decision criteria explicit.
+00:03:15.426 --> 00:03:22.786
+Supervised methods learn mappings from
+examples paired with target labels, while
 
 38
-00:03:06.025 --> 00:03:12.608
-NARRATOR: Data-analysis workflows separate
-data preparation, exploratory analysis,
-
-39
-00:03:12.608 --> 00:03:18.369
-training, validation, testing, model
-selection, and evaluation.
-
-40
-00:03:18.369 --> 00:03:25.337
-NARRATOR: Consider this worked case: A
-pipeline will be built where raw data
-
-41
-00:03:25.337 --> 00:03:30.697
-undergoes imputation and normalization before
-entering the exploratory analysis phase.
-
-42
-00:03:30.697 --> 00:03:37.414
-NARRATOR: On screen, illustrate a horizontal
-pipeline diagram with seven distinct stages,
-
-43
-00:03:37.414 --> 00:03:43.572
-each labeled with a workflow phase and
-connected by directional arrows.
-
-44
-00:03:43.572 --> 00:03:50.422
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
-
-45
-00:03:50.422 --> 00:03:52.134
-move the goalposts.
-
-46
-00:03:52.134 --> 00:03:59.306
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
-
-47
-00:03:59.426 --> 00:04:05.778
-NARRATOR: Apply Supervised and Unsupervised
-Methods to a worked situation instead of
-
-48
-00:04:05.778 --> 00:04:08.954
-treating it as an isolated definition.
-
-49
-00:04:08.954 --> 00:04:16.297
-NARRATOR: Supervised methods learn mappings
-from examples paired with target labels, while
-
-50
-00:04:16.297 --> 00:04:19.969
+00:03:22.786 --> 00:03:26.801
 unsupervised methods identify structure
 without targets.
 
-51
-00:04:19.969 --> 00:04:26.612
-NARRATOR: Consider this worked case: Students
-will compare a decision tree trained on
+39
+00:03:26.801 --> 00:03:33.582
+Consider this worked case: Students will
+compare a decision tree trained on labeled
 
-52
-00:04:26.612 --> 00:04:33.766
-labeled customer churn data against a k-means
+40
+00:03:33.582 --> 00:03:40.363
+customer churn data against a k-means
 clustering run on the same unlabeled features.
 
+41
+00:03:40.363 --> 00:03:48.024
+Work from the concrete inputs to the result,
+checking units, types, or invariants at each
+
+42
+00:03:48.024 --> 00:03:48.535
+step.
+
+43
+00:03:48.535 --> 00:03:53.707
+The worked case shows both how to apply the
+method and how to check it.
+
+44
+00:03:53.810 --> 00:04:00.682
+Examine the tradeoffs in Preprocessing and
+Leakage Prevention, including what improves
+
+45
+00:04:00.682 --> 00:04:03.806
+and what becomes more difficult.
+
+46
+00:04:03.806 --> 00:04:10.728
+Preprocessing must be fitted only on permitted
+training data to avoid leakage.
+
+47
+00:04:10.728 --> 00:04:17.927
+Consider this worked case: Instructors will
+demonstrate scaling a feature using only the
+
+48
+00:04:17.927 --> 00:04:24.572
+training set statistics, then applying the
+same transformation to the validation set.
+
+49
+00:04:24.572 --> 00:04:31.228
+State the benefit, the cost, and the condition
+under which the tradeoff is acceptable.
+
+50
+00:04:31.228 --> 00:04:38.681
+Making the tradeoff visible prevents a local
+improvement from hiding a larger cost.
+
+51
+00:04:38.786 --> 00:04:46.908
+Stress-test the reasoning around Pipelines and
+Consistency with an edge case and identify
+
+52
+00:04:46.908 --> 00:04:50.032
+which assumption controls the outcome.
+
 53
-00:04:33.766 --> 00:04:41.094
-NARRATOR: On screen, display two side-by-side
-scatter plots: one with labeled points and a
+00:04:50.032 --> 00:04:57.724
+Pipelines combine transformations and
+estimators so the same operations are applied
 
 54
-00:04:41.094 --> 00:04:46.329
-decision boundary, the other with unlabeled
-points and cluster centroids.
+00:04:57.724 --> 00:04:58.423
+consistently.
 
 55
-00:04:46.329 --> 00:04:53.110
-NARRATOR: Work from the concrete inputs to the
-result, checking units, types, or invariants
+00:04:58.423 --> 00:05:05.685
+Consider this worked case: A single pipeline
+object will chain standardization, imputation,
 
 56
-00:04:53.110 --> 00:04:54.563
-at each step.
+00:05:05.685 --> 00:05:11.736
+and clustering, ensuring identical operations
+run on every data split.
 
 57
-00:04:54.563 --> 00:04:59.391
-NARRATOR: The worked case shows both how to
-apply the method and how to check it.
+00:05:11.736 --> 00:05:18.235
+Change one assumption at a time and observe
+which part of the reasoning no longer holds.
 
 58
-00:04:59.498 --> 00:05:04.584
-NARRATOR: Examine the tradeoffs in
-Preprocessing and Leakage Prevention,
+00:05:18.235 --> 00:05:25.298
+The edge case reveals the boundary of the
+claim without discarding the useful core idea.
 
 59
-00:05:04.584 --> 00:05:09.104
-including what improves and what becomes more
-difficult.
+00:05:25.418 --> 00:05:33.283
+Use Cross-Validation and Sampling to diagnose
+a failure by separating symptoms, causes, and
 
 60
-00:05:09.104 --> 00:05:15.573
-NARRATOR: Preprocessing must be fitted only on
-permitted training data to avoid leakage.
+00:05:33.283 --> 00:05:34.493
+corrective action.
 
 61
-00:05:15.573 --> 00:05:21.417
-NARRATOR: Consider this worked case:
-Instructors will demonstrate scaling a feature
+00:05:34.493 --> 00:05:41.008
+Cross-validation repeats training and
+validation across defined splits.
 
 62
-00:05:21.417 --> 00:05:28.323
-using only the training set statistics, then
-applying the same transformation to the
+00:05:41.008 --> 00:05:47.846
+Consider this worked case: Students will
+execute a 5-fold cross-validation routine,
 
 63
-00:05:28.323 --> 00:05:29.385
-validation set.
+00:05:47.846 --> 00:05:54.683
+rotating the validation set through each
+dataset partition and recording accuracy
 
 64
-00:05:29.385 --> 00:05:35.921
-NARRATOR: On screen, show a before-and-after
-comparison of a feature distribution, with a
-
-65
-00:05:35.921 --> 00:05:42.457
-red 'leakage' warning icon over a graph where
-validation statistics were incorrectly used
-
-66
-00:05:42.457 --> 00:05:43.463
-for scaling.
-
-67
-00:05:43.463 --> 00:05:49.924
-NARRATOR: State the benefit, the cost, and the
-condition under which the tradeoff is
-
-68
-00:05:49.924 --> 00:05:50.385
-acceptable.
-
-69
-00:05:50.385 --> 00:05:57.776
-NARRATOR: Making the tradeoff visible prevents
-a local improvement from hiding a larger cost.
-
-70
-00:05:57.890 --> 00:06:04.687
-NARRATOR: Stress-test the reasoning around
-Pipelines and Consistency with an edge case
-
-71
-00:06:04.687 --> 00:06:08.652
-and identify which assumption controls the
-outcome.
-
-72
-00:06:08.652 --> 00:06:15.858
-NARRATOR: Pipelines combine transformations
-and estimators so the same operations are
-
-73
-00:06:15.858 --> 00:06:17.168
-applied consistently.
-
-74
-00:06:17.168 --> 00:06:24.374
-NARRATOR: Consider this worked case: A single
-pipeline object will chain standardization,
-
-75
-00:06:24.374 --> 00:06:30.980
-imputation, and clustering, ensuring identical
-operations run on every data split.
-
-76
-00:06:30.980 --> 00:06:38.203
-NARRATOR: On screen, render a stacked block
-diagram where each layer represents a
-
-77
-00:06:38.203 --> 00:06:43.760
-transformation or estimator, with a
-'consistent application' label spanning the
-
-78
-00:06:43.760 --> 00:06:44.871
-entire stack.
-
-79
-00:06:44.871 --> 00:06:51.151
-NARRATOR: Change one assumption at a time and
-observe which part of the reasoning no longer
-
-80
-00:06:51.151 --> 00:06:51.543
-holds.
-
-81
-00:06:51.543 --> 00:06:57.531
-NARRATOR: The edge case reveals the boundary
-of the claim without discarding the useful
-
-82
-00:06:57.531 --> 00:06:58.386
-core idea.
-
-83
-00:06:58.490 --> 00:07:05.566
-NARRATOR: Use Cross-Validation and Sampling to
-diagnose a failure by separating symptoms,
-
-84
-00:07:05.566 --> 00:07:07.924
-causes, and corrective action.
-
-85
-00:07:07.924 --> 00:07:14.658
-NARRATOR: Cross-validation repeats training
-and validation across defined splits.
-
-86
-00:07:14.658 --> 00:07:21.261
-NARRATOR: Consider this worked case: Students
-will execute a 5-fold cross-validation
-
-87
-00:07:21.261 --> 00:07:28.464
-routine, rotating the validation set through
-each dataset partition and recording accuracy
-
-88
-00:07:28.464 --> 00:07:29.064
+00:05:54.683 --> 00:05:55.305
 scores.
 
-89
-00:07:29.065 --> 00:07:36.042
-NARRATOR: On screen, illustrate a circular
-diagram with five segments, each labeled with
+65
+00:05:55.305 --> 00:06:02.755
+Locate the first point where observed behavior
+diverges from expected behavior, then test the
 
-90
-00:07:36.042 --> 00:07:42.481
-a fold number, and arrows showing data
-rotation between training and validation
+66
+00:06:02.755 --> 00:06:04.352
+smallest plausible cause.
 
-91
-00:07:42.481 --> 00:07:43.018
-phases.
+67
+00:06:04.352 --> 00:06:12.117
+The diagnosis is strongest when another person
+can reproduce the observation and the test.
 
-92
-00:07:43.018 --> 00:07:48.890
-NARRATOR: Locate the first point where
-observed behavior diverges from expected
+68
+00:06:12.218 --> 00:06:19.094
+Connect Algorithm Selection and Evaluation to
+the earlier ideas and explain how the pieces
 
-93
-00:07:48.890 --> 00:07:52.627
-behavior, then test the smallest plausible
-cause.
+69
+00:06:19.094 --> 00:06:21.058
+work as one system.
 
-94
-00:07:52.627 --> 00:07:58.489
-NARRATOR: The diagnosis is strongest when
-another person can reproduce the observation
-
-95
-00:07:58.489 --> 00:07:59.955
-and the test.
-
-96
-00:08:00.074 --> 00:08:05.717
-NARRATOR: Connect Algorithm Selection and
-Evaluation to the earlier ideas and explain
-
-97
-00:08:05.717 --> 00:08:09.008
-how the pieces work as one system.
-
-98
-00:08:09.008 --> 00:08:14.625
-NARRATOR: Grouping, dimensionality reduction,
+70
+00:06:21.058 --> 00:06:26.247
+Grouping, dimensionality reduction,
 classification, regression, and clustering
 
-99
-00:08:14.625 --> 00:08:20.945
+71
+00:06:26.247 --> 00:06:32.918
 answer different questions and require
 appropriate assumptions and metrics.
 
-100
-00:08:20.945 --> 00:08:27.645
-NARRATOR: Consider this worked case:
-Instructors will match a regression model to
+72
+00:06:32.918 --> 00:06:39.875
+Consider this worked case: Instructors will
+match a regression model to predicting
 
-101
-00:08:27.645 --> 00:08:34.345
-predicting continuous revenue and a clustering
-algorithm to segment user behavior, explaining
+73
+00:06:39.875 --> 00:06:46.831
+continuous revenue and a clustering algorithm
+to segment user behavior, explaining the
 
-102
-00:08:34.345 --> 00:08:37.695
-the distinct evaluation metrics for each.
+74
+00:06:46.831 --> 00:06:49.730
+distinct evaluation metrics for each.
 
-103
-00:08:37.695 --> 00:08:45.492
-NARRATOR: On screen, display a decision tree
-flowchart where each branch leads to an
+75
+00:06:49.730 --> 00:06:55.355
+g. , RMSE, silhouette score) attached to each
+leaf.
 
-104
-00:08:45.492 --> 00:08:51.618
-algorithm type, with corresponding metric
-badges (e.g., RMSE, silhouette score) attached
+76
+00:06:55.355 --> 00:07:04.944
+Explain each connection explicitly and verify
+that information retains the same meaning
 
-105
-00:08:51.618 --> 00:08:53.289
-to each leaf.
+77
+00:07:04.944 --> 00:07:06.542
+across representations.
 
-106
-00:08:53.289 --> 00:09:02.339
-NARRATOR: Explain each connection explicitly
-and verify that information retains the same
+78
+00:07:06.542 --> 00:07:14.308
+The synthesis matters only if every connection
+remains supported by the original evidence.
 
-107
-00:09:02.339 --> 00:09:04.602
-meaning across representations.
+79
+00:07:14.426 --> 00:07:21.349
+Finish with Practical Analysis Checklist as a
+practical checklist that can guide a new
 
-108
-00:09:04.602 --> 00:09:11.580
-NARRATOR: The synthesis matters only if every
-connection remains supported by the original
+80
+00:07:21.349 --> 00:07:21.844
+analysis.
 
-109
-00:09:11.580 --> 00:09:12.117
-evidence.
+81
+00:07:21.844 --> 00:07:30.813
+Evaluation must match the task and the cost of
+errors, while distribution shift, missing
 
-110
-00:09:12.242 --> 00:09:17.736
-NARRATOR: Finish with Practical Analysis
-Checklist as a practical checklist that can
+82
+00:07:30.813 --> 00:07:36.579
+data, overfitting, and unexamined sampling
+choices can invalidate conclusions.
 
-111
-00:09:17.736 --> 00:09:19.567
-guide a new analysis.
+83
+00:07:36.579 --> 00:07:43.007
+Consider this worked case: Students will
+complete a checklist verifying data
 
-112
-00:09:19.567 --> 00:09:27.961
-NARRATOR: Evaluation must match the task and
-the cost of errors, while distribution shift,
-
-113
-00:09:27.961 --> 00:09:33.957
-missing data, overfitting, and unexamined
-sampling choices can invalidate conclusions.
-
-114
-00:09:33.957 --> 00:09:40.433
-NARRATOR: Consider this worked case: Students
-will complete a checklist verifying data
-
-115
-00:09:40.433 --> 00:09:46.909
+84
+00:07:43.007 --> 00:07:50.019
 provenance, checking for distribution drift
 between train and test sets, and documenting
 
-116
-00:09:46.909 --> 00:09:47.988
+85
+00:07:50.019 --> 00:07:51.188
 sampling methodology.
 
-117
-00:09:47.988 --> 00:09:54.743
-NARRATOR: On screen, show a clean checklist
-graphic with five checkboxes, each paired with
+86
+00:07:51.188 --> 00:07:59.082
+For each checklist item, record the evidence,
+the remaining uncertainty, and the next
 
-118
-00:09:54.743 --> 00:10:00.051
-a brief validation step, and a final 'valid
-conclusions' stamp icon.
+87
+00:07:59.082 --> 00:08:00.297
+verification step.
 
-119
-00:10:00.051 --> 00:10:07.643
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
+88
+00:08:00.297 --> 00:08:07.151
+The result is a repeatable procedure, not a
+conclusion that depends on memory or
 
-120
-00:10:07.643 --> 00:10:09.395
-next verification step.
-
-121
-00:10:09.395 --> 00:10:15.221
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-122
-00:10:15.221 --> 00:10:16.566
-memory or intuition.
+89
+00:08:07.151 --> 00:08:07.641
+intuition.

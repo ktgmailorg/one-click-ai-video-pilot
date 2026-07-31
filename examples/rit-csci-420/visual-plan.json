@@ -10,7 +10,7 @@
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: Student teams will load a 100,000-row customer transaction dataset into a relational database for initial exploration.",
+          "phrase": "Real-world datasets are often large and can be stored in either main memory or a database.",
           "type": "deterministic-svg"
         },
         {
@@ -30,7 +30,7 @@
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: Instructors will demonstrate how clustering customer purchase patterns reveals market segments without forecasting future sales.",
+          "phrase": "The emphasis is on how to use data mining to describe datasets rather than making predictions.",
           "type": "deterministic-svg"
         },
         {
@@ -50,7 +50,7 @@
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: Students will run a missingness report on a survey dataset, flagging 15% null values in the 'income' column and removing 3% duplicate records.",
+          "phrase": "Data quality analysis makes missingness, duplicates, inconsistent representation, integrity constraints, sampling, and update behavior explicit.",
           "type": "deterministic-svg"
         },
         {
@@ -70,7 +70,7 @@
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: A pipeline will be built where raw data undergoes imputation and normalization before entering the exploratory analysis phase.",
+          "phrase": "Data-analysis workflows separate data preparation, exploratory analysis, training, validation, testing, model selection, and evaluation.",
           "type": "deterministic-svg"
         },
         {
@@ -90,7 +90,7 @@
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: Students will compare a decision tree trained on labeled customer churn data against a k-means clustering run on the same unlabeled features.",
+          "phrase": "Supervised methods learn mappings from examples paired with target labels, while unsupervised methods identify structure without targets.",
           "type": "deterministic-svg"
         },
         {
@@ -110,7 +110,7 @@
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: Instructors will demonstrate scaling a feature using only the training set statistics, then applying the same transformation to the validation set.",
+          "phrase": "Preprocessing must be fitted only on permitted training data to avoid leakage.",
           "type": "deterministic-svg"
         },
         {
@@ -130,7 +130,7 @@
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: A single pipeline object will chain standardization, imputation, and clustering, ensuring identical operations run on every data split.",
+          "phrase": "Pipelines combine transformations and estimators so the same operations are applied consistently.",
           "type": "deterministic-svg"
         },
         {
@@ -150,7 +150,7 @@
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: Students will execute a 5-fold cross-validation routine, rotating the validation set through each dataset partition and recording accuracy scores.",
+          "phrase": "Cross-validation repeats training and validation across defined splits.",
           "type": "deterministic-svg"
         },
         {
@@ -175,7 +175,7 @@
         },
         {
           "id": "beat-09-shot-003",
-          "phrase": "Explain each connection explicitly and verify that information retains the same meaning across representations.",
+          "phrase": ", RMSE, silhouette score) attached to each leaf.",
           "type": "deterministic-svg"
         }
       ]
@@ -190,7 +190,7 @@
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: Students will complete a checklist verifying data provenance, checking for distribution drift between train and test sets, and documenting sampling methodology.",
+          "phrase": "Evaluation must match the task and the cost of errors, while distribution shift, missing data, overfitting, and unexamined sampling choices can invalidate conclusions.",
           "type": "deterministic-svg"
         },
         {

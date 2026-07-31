@@ -1,584 +1,443 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:07.802
-NARRATOR: Begin by framing Introduction to AI
+00:00:00.050 --> 00:00:07.582
+Begin by framing Introduction to AI
 Foundations as a question about inputs,
 
 2
-00:00:07.802 --> 00:00:10.187
+00:00:07.582 --> 00:00:10.093
 decisions, and observable results.
 
 3
-00:00:10.187 --> 00:00:16.182
-NARRATOR: Topics include search algorithms,
-logic, planning, machine learning, and
+00:00:10.093 --> 00:00:16.299
+Topics include search algorithms, logic,
+planning, machine learning, and applications
 
 4
-00:00:16.182 --> 00:00:22.776
-applications from areas such as computer
-vision, robotics, and natural language
+00:00:16.299 --> 00:00:23.125
+from areas such as computer vision, robotics,
+and natural language processing.
 
 5
-00:00:22.776 --> 00:00:23.375
-processing.
+00:00:23.125 --> 00:00:30.041
+Consider this worked case: Students will
+explore how search algorithms navigate
 
 6
-00:00:23.375 --> 00:00:30.236
-NARRATOR: Consider this worked case: Students
-will explore how search algorithms navigate
-
-7
-00:00:30.236 --> 00:00:35.953
+00:00:30.041 --> 00:00:36.328
 decision trees to find optimal solutions in
 robotics navigation tasks.
 
+7
+00:00:36.328 --> 00:00:43.663
+List the givens before choosing a method,
+because an unstated assumption can change the
+
 8
-00:00:35.953 --> 00:00:42.556
-NARRATOR: On screen, display a flowchart
-showing the course structure: search
+00:00:43.663 --> 00:00:44.187
+conclusion.
 
 9
-00:00:42.556 --> 00:00:49.159
-algorithms, logic, planning, machine learning,
-and application domains like computer vision
+00:00:44.187 --> 00:00:50.328
+This establishes the vocabulary and scope
+needed for the remaining sections.
 
 10
-00:00:49.159 --> 00:00:50.359
-and NLP.
+00:00:50.450 --> 00:00:58.297
+Now define NIST AI Risk Management Framework
+Overview precisely enough that another learner
 
 11
-00:00:50.359 --> 00:00:56.478
-NARRATOR: List the givens before choosing a
-method, because an unstated assumption can
+00:00:58.297 --> 00:01:00.712
+could test the definition.
 
 12
-00:00:56.478 --> 00:00:57.890
-change the conclusion.
+00:01:00.712 --> 00:01:08.467
+The NIST AI Risk Management Framework
+organizes work around Govern, Map, Measure,
 
 13
-00:00:57.890 --> 00:01:03.953
-NARRATOR: This establishes the vocabulary and
-scope needed for the remaining sections.
+00:01:08.467 --> 00:01:09.759
+and Manage.
 
 14
-00:01:04.082 --> 00:01:10.725
-NARRATOR: Now define NIST AI Risk Management
-Framework Overview precisely enough that
+00:01:09.759 --> 00:01:17.144
+Consider this worked case: In a healthcare AI
+deployment, the Map phase documents the
 
 15
-00:01:10.725 --> 00:01:14.047
-another learner could test the definition.
+00:01:17.144 --> 00:01:22.946
+intended use of a diagnostic tool and
+identifies affected patient populations.
 
 16
-00:01:14.047 --> 00:01:20.960
-NARRATOR: The NIST AI Risk Management
-Framework organizes work around Govern, Map,
+00:01:22.946 --> 00:01:29.569
+Separate the formal definition from an
+implementation detail, then identify what
 
 17
-00:01:20.960 --> 00:01:22.688
-Measure, and Manage.
-
-18
-00:01:22.688 --> 00:01:29.633
-NARRATOR: Consider this worked case: In a
-healthcare AI deployment, the Map phase
-
-19
-00:01:29.633 --> 00:01:36.044
-documents the intended use of a diagnostic
-tool and identifies affected patient
-
-20
-00:01:36.044 --> 00:01:36.578
-populations.
-
-21
-00:01:36.578 --> 00:01:43.546
-NARRATOR: On screen, show a four-step circular
-diagram labeled Govern, Map, Measure, and
-
-22
-00:01:43.546 --> 00:01:48.906
-Manage, with each node connected to a brief
-risk-management action.
-
-23
-00:01:48.906 --> 00:01:55.387
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
-
-24
-00:01:55.387 --> 00:01:57.547
+00:01:29.569 --> 00:01:31.978
 evidence would distinguish them.
 
+18
+00:01:31.978 --> 00:01:38.696
+A precise definition makes later examples
+easier to evaluate and revise.
+
+19
+00:01:38.810 --> 00:01:45.899
+With the foundation in place, examine how
+Govern Phase: Policies and Accountability
+
+20
+00:01:45.899 --> 00:01:48.853
+operates in a concrete sequence.
+
+21
+00:01:48.853 --> 00:01:56.697
+Govern establishes policies, responsibilities,
+and accountability for AI risk.
+
+22
+00:01:56.697 --> 00:02:04.680
+Consider this worked case: A university AI
+ethics board assigns specific roles for
+
+23
+00:02:04.680 --> 00:02:08.978
+reviewing algorithmic bias in automated
+grading systems.
+
+24
+00:02:08.978 --> 00:02:16.862
+g. , AI ethics board, compliance officer,
+developers) to accountability
+
 25
-00:01:57.547 --> 00:02:03.703
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
+00:02:16.862 --> 00:02:17.650
+responsibilities.
 
 26
-00:02:03.818 --> 00:02:10.472
-NARRATOR: With the foundation in place,
-examine how Govern Phase: Policies and
+00:02:17.650 --> 00:02:25.009
+Follow every arrow in order and name the state
+before and after each transition.
 
 27
-00:02:10.472 --> 00:02:13.799
-Accountability operates in a concrete
-sequence.
+00:02:25.009 --> 00:02:30.806
+The trace converts an abstract statement into
+an inspectable sequence.
 
 28
-00:02:13.799 --> 00:02:20.717
-NARRATOR: Govern establishes policies,
-responsibilities, and accountability for AI
+00:02:30.806 --> 00:02:37.693
+Name each dependency explicitly, and keep
+labels and representations consistent
 
 29
-00:02:20.717 --> 00:02:21.486
-risk.
+00:02:37.693 --> 00:02:39.759
+throughout the analysis.
 
 30
-00:02:21.486 --> 00:02:28.504
-NARRATOR: Consider this worked case: A
-university AI ethics board assigns specific
+00:02:39.866 --> 00:02:47.416
+Next, compare the choices involved in Map
+Phase: Context and Impacts and make the
 
 31
-00:02:28.504 --> 00:02:33.768
-roles for reviewing algorithmic bias in
-automated grading systems.
-
-32
-00:02:33.768 --> 00:02:42.919
-NARRATOR: On screen, create a table mapping
-governance roles (e.g., AI ethics board,
-
-33
-00:02:42.919 --> 00:02:47.142
-compliance officer, developers) to
-accountability responsibilities.
-
-34
-00:02:47.142 --> 00:02:54.486
-NARRATOR: Follow every arrow in order and name
-the state before and after each transition.
-
-35
-00:02:54.486 --> 00:03:00.205
-NARRATOR: The trace converts an abstract
-statement into an inspectable sequence.
-
-36
-00:03:00.205 --> 00:03:07.141
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-37
-00:03:07.141 --> 00:03:09.033
-throughout the analysis.
-
-38
-00:03:09.146 --> 00:03:16.774
-NARRATOR: Next, compare the choices involved
-in Map Phase: Context and Impacts and make the
-
-39
-00:03:16.774 --> 00:03:18.299
+00:02:47.416 --> 00:02:49.034
 decision criteria explicit.
 
+32
+00:02:49.034 --> 00:02:56.441
+Map documents context, intended use, affected
+people, and potential impacts.
+
+33
+00:02:56.441 --> 00:03:03.222
+Consider this worked case: A self-driving car
+manufacturer maps the operational design
+
+34
+00:03:03.222 --> 00:03:09.438
+domain, specifying weather conditions and
+traffic scenarios where the system will
+
+35
+00:03:09.438 --> 00:03:10.003
+operate.
+
+36
+00:03:10.003 --> 00:03:17.088
+Compare alternatives against the same
+constraints so the evaluation does not move
+
+37
+00:03:17.088 --> 00:03:18.269
+the goalposts.
+
+38
+00:03:18.269 --> 00:03:25.159
+Using shared criteria turns a preference into
+a defensible technical choice.
+
+39
+00:03:25.159 --> 00:03:32.082
+Name each dependency explicitly, and keep
+labels and representations consistent
+
 40
-00:03:18.299 --> 00:03:25.533
-NARRATOR: Map documents context, intended use,
-affected people, and potential impacts.
-
-41
-00:03:25.533 --> 00:03:31.507
-NARRATOR: Consider this worked case: A
-self-driving car manufacturer maps the
-
-42
-00:03:31.507 --> 00:03:37.482
-operational design domain, specifying weather
-conditions and traffic scenarios where the
-
-43
-00:03:37.482 --> 00:03:39.111
-system will operate.
-
-44
-00:03:39.111 --> 00:03:46.108
-NARRATOR: On screen, illustrate a contextual
-mapping matrix with columns for context,
-
-45
-00:03:46.108 --> 00:03:50.189
-intended use, affected people, and potential
-impacts.
-
-46
-00:03:50.189 --> 00:03:56.864
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
-
-47
-00:03:56.864 --> 00:03:58.533
-move the goalposts.
-
-48
-00:03:58.533 --> 00:04:05.252
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
-
-49
-00:04:05.252 --> 00:04:12.446
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-50
-00:04:12.446 --> 00:04:14.408
+00:03:32.082 --> 00:03:34.159
 throughout the analysis.
 
+41
+00:03:34.274 --> 00:03:42.018
+Apply Measure Phase: Risk Analysis Methods to
+a worked situation instead of treating it as
+
+42
+00:03:42.018 --> 00:03:43.567
+an isolated definition.
+
+43
+00:03:43.567 --> 00:03:50.599
+Measure uses qualitative and quantitative
+methods to analyze identified risks.
+
+44
+00:03:50.599 --> 00:03:57.784
+Consider this worked case: Researchers conduct
+A/B testing and statistical analysis to
+
+45
+00:03:57.784 --> 00:04:04.968
+measure the fairness and accuracy of a facial
+recognition model across different
+
+46
+00:04:04.968 --> 00:04:05.567
+demographics.
+
+47
+00:04:05.567 --> 00:04:14.390
+g. , stakeholder interviews), right side shows
+quantitative metrics (e. g. , accuracy, bias
+
+48
+00:04:14.390 --> 00:04:15.020
+scores).
+
+49
+00:04:15.020 --> 00:04:22.418
+Work from the concrete inputs to the result,
+checking units, types, or invariants at each
+
+50
+00:04:22.418 --> 00:04:22.911
+step.
+
 51
-00:04:14.522 --> 00:04:21.137
-NARRATOR: Apply Measure Phase: Risk Analysis
-Methods to a worked situation instead of
+00:04:22.911 --> 00:04:28.067
+The worked case shows both how to apply the
+method and how to check it.
 
 52
-00:04:21.137 --> 00:04:24.190
-treating it as an isolated definition.
+00:04:28.178 --> 00:04:35.102
+Examine the tradeoffs in Manage Phase:
+Prioritization and Monitoring, including what
 
 53
-00:04:24.190 --> 00:04:30.497
-NARRATOR: Measure uses qualitative and
-quantitative methods to analyze identified
+00:04:35.102 --> 00:04:38.878
+improves and what becomes more difficult.
 
 54
-00:04:30.497 --> 00:04:31.128
-risks.
+00:04:38.878 --> 00:04:46.081
+Manage prioritizes risks and allocates
+resources for response and monitoring.
 
 55
-00:04:31.128 --> 00:04:36.933
-NARRATOR: Consider this worked case:
-Researchers conduct A/B testing and
+00:04:46.081 --> 00:04:53.297
+Consider this worked case: A financial
+institution prioritizes high-risk algorithmic
 
 56
-00:04:36.933 --> 00:04:44.480
-statistical analysis to measure the fairness
-and accuracy of a facial recognition model
+00:04:53.297 --> 00:05:01.234
+trading models for continuous monitoring and
+allocates resources for real-time anomaly
 
 57
-00:04:44.480 --> 00:04:46.221
-across different demographics.
+00:05:01.234 --> 00:05:01.956
+detection.
 
 58
-00:04:46.222 --> 00:04:54.172
-NARRATOR: On screen, display a split-screen
-graphic: left side shows qualitative risk
+00:05:01.956 --> 00:05:08.987
+State the benefit, the cost, and the condition
+under which the tradeoff is acceptable.
 
 59
-00:04:54.172 --> 00:05:00.797
-assessment (e.g., stakeholder interviews),
-right side shows quantitative metrics (e.g.,
+00:05:08.987 --> 00:05:16.424
+Making the tradeoff visible prevents a local
+improvement from hiding a larger cost.
 
 60
-00:05:00.797 --> 00:05:02.784
-accuracy, bias scores).
+00:05:16.538 --> 00:05:22.142
+Stress-test the reasoning around Machine
+Learning Workflows: Supervised vs.
 
 61
-00:05:02.784 --> 00:05:09.514
-NARRATOR: Work from the concrete inputs to the
-result, checking units, types, or invariants
-
-62
-00:05:09.514 --> 00:05:10.956
-at each step.
-
-63
-00:05:10.956 --> 00:05:16.346
-NARRATOR: The worked case shows both how to
-apply the method and how to check it.
-
-64
-00:05:16.466 --> 00:05:22.384
-NARRATOR: Examine the tradeoffs in Manage
-Phase: Prioritization and Monitoring,
-
-65
-00:05:22.384 --> 00:05:27.119
-including what improves and what becomes more
-difficult.
-
-66
-00:05:27.119 --> 00:05:33.596
-NARRATOR: Manage prioritizes risks and
-allocates resources for response and
-
-67
-00:05:33.596 --> 00:05:34.244
-monitoring.
-
-68
-00:05:34.244 --> 00:05:40.963
-NARRATOR: Consider this worked case: A
-financial institution prioritizes high-risk
-
-69
-00:05:40.963 --> 00:05:47.681
-algorithmic trading models for continuous
-monitoring and allocates resources for
-
-70
-00:05:47.681 --> 00:05:49.697
-real-time anomaly detection.
-
-71
-00:05:49.697 --> 00:05:56.719
-NARRATOR: On screen, show a risk
-prioritization matrix with axes for likelihood
-
-72
-00:05:56.719 --> 00:06:01.400
-and impact, highlighting high-priority risks
-requiring immediate monitoring.
-
-73
-00:06:01.400 --> 00:06:07.977
-NARRATOR: State the benefit, the cost, and the
-condition under which the tradeoff is
-
-74
-00:06:07.977 --> 00:06:08.447
-acceptable.
-
-75
-00:06:08.447 --> 00:06:15.603
-NARRATOR: Making the tradeoff visible prevents
-a local improvement from hiding a larger cost.
-
-76
-00:06:15.722 --> 00:06:21.672
-NARRATOR: Stress-test the reasoning around
-Machine Learning Workflows: Supervised vs.
-
-77
-00:06:21.672 --> 00:06:28.812
+00:05:22.142 --> 00:05:29.613
 Unsupervised with an edge case and identify
 which assumption controls the outcome.
 
-78
-00:06:28.812 --> 00:06:34.843
-NARRATOR: Supervised methods learn a mapping
-from examples paired with target labels.
+62
+00:05:29.613 --> 00:05:35.581
+Supervised methods learn a mapping from
+examples paired with target labels.
 
-79
-00:06:34.843 --> 00:06:42.632
-NARRATOR: Consider this worked case: A spam
-filter uses supervised learning with labeled
+63
+00:05:35.581 --> 00:05:44.235
+Consider this worked case: A spam filter uses
+supervised learning with labeled email data,
 
-80
-00:06:42.632 --> 00:06:49.822
-email data, whereas customer segmentation uses
+64
+00:05:44.235 --> 00:05:50.416
+whereas customer segmentation uses
 unsupervised clustering to group users by
 
-81
-00:06:49.822 --> 00:06:50.421
+65
+00:05:50.416 --> 00:05:51.034
 behavior.
 
-82
-00:06:50.421 --> 00:06:57.339
-NARRATOR: On screen, present a side-by-side
-comparison chart: supervised learning shows
+66
+00:05:51.034 --> 00:05:57.612
+Change one assumption at a time and observe
+which part of the reasoning no longer holds.
 
-83
-00:06:57.339 --> 00:07:03.628
-labeled examples mapping to outputs,
-unsupervised learning shows raw data
+67
+00:05:57.612 --> 00:06:04.753
+The edge case reveals the boundary of the
+claim without discarding the useful core idea.
 
-84
-00:07:03.628 --> 00:07:05.515
-clustering into groups.
+68
+00:06:04.874 --> 00:06:12.465
+Use Preprocessing and Leakage Prevention to
+diagnose a failure by separating symptoms,
 
-85
-00:07:05.515 --> 00:07:11.648
-NARRATOR: Change one assumption at a time and
-observe which part of the reasoning no longer
+69
+00:06:12.465 --> 00:06:14.995
+causes, and corrective action.
 
-86
-00:07:11.648 --> 00:07:12.031
-holds.
+70
+00:06:14.995 --> 00:06:21.995
+Preprocessing must be fitted only on permitted
+training data to avoid leakage.
 
-87
-00:07:12.031 --> 00:07:18.293
-NARRATOR: The edge case reveals the boundary
-of the claim without discarding the useful
+71
+00:06:21.995 --> 00:06:29.487
+Consider this worked case: A medical imaging
+pipeline standardizes image dimensions and
 
-88
-00:07:18.293 --> 00:07:19.187
-core idea.
-
-89
-00:07:19.298 --> 00:07:26.520
-NARRATOR: Use Preprocessing and Leakage
-Prevention to diagnose a failure by separating
-
-90
-00:07:26.520 --> 00:07:29.529
-symptoms, causes, and corrective action.
-
-91
-00:07:29.529 --> 00:07:36.201
-NARRATOR: Preprocessing must be fitted only on
-permitted training data to avoid leakage.
-
-92
-00:07:36.201 --> 00:07:43.553
-NARRATOR: Consider this worked case: A medical
-imaging pipeline standardizes image dimensions
-
-93
-00:07:43.553 --> 00:07:50.904
-and normalizes pixel values using only the
+72
+00:06:29.487 --> 00:06:36.355
+normalizes pixel values using only the
 training set statistics before validation.
 
+73
+00:06:36.355 --> 00:06:43.946
+Locate the first point where observed behavior
+diverges from expected behavior, then test the
+
+74
+00:06:43.946 --> 00:06:45.573
+smallest plausible cause.
+
+75
+00:06:45.573 --> 00:06:52.667
+The diagnosis is strongest when another person
+can reproduce the observation and the test.
+
+76
+00:06:52.778 --> 00:06:59.057
+Connect Cross-Validation and Evaluation
+Metrics to the earlier ideas and explain how
+
+77
+00:06:59.057 --> 00:07:02.196
+the pieces work as one system.
+
+78
+00:07:02.196 --> 00:07:08.571
+Evaluation metrics must match the task and the
+cost of different errors.
+
+79
+00:07:08.571 --> 00:07:16.149
+Consider this worked case: A fraud detection
+system uses k-fold cross-validation to assess
+
+80
+00:07:16.149 --> 00:07:23.144
+model stability, with precision and recall
+metrics weighted to penalize false negatives
+
+81
+00:07:23.144 --> 00:07:23.727
+heavily.
+
+82
+00:07:23.728 --> 00:07:33.357
+Explain each connection explicitly and verify
+that information retains the same meaning
+
+83
+00:07:33.357 --> 00:07:34.962
+across representations.
+
+84
+00:07:34.962 --> 00:07:42.118
+The synthesis matters only if every connection
+remains supported by the original evidence.
+
+85
+00:07:42.242 --> 00:07:48.796
+Finish with Practical Analysis Checklist for
+AI Deployment as a practical checklist that
+
+86
+00:07:48.796 --> 00:07:51.317
+can guide a new analysis.
+
+87
+00:07:51.317 --> 00:07:59.207
+It also considers robustness, privacy,
+security, transparency, and fairness.
+
+88
+00:07:59.207 --> 00:08:06.554
+Consider this worked case: A deployment
+checklist verifies that the AI system
+
+89
+00:08:06.554 --> 00:08:13.289
+maintains fairness thresholds, logs privacy
+compliance, and updates monitoring alerts when
+
+90
+00:08:13.289 --> 00:08:15.738
+distribution shift is detected.
+
+91
+00:08:15.738 --> 00:08:23.971
+For each checklist item, record the evidence,
+the remaining uncertainty, and the next
+
+92
+00:08:23.971 --> 00:08:25.238
+verification step.
+
+93
+00:08:25.238 --> 00:08:32.151
+The result is a repeatable procedure, not a
+conclusion that depends on memory or
+
 94
-00:07:50.904 --> 00:07:57.380
-NARRATOR: On screen, draw a pipeline diagram
-showing data flowing through preprocessing
-
-95
-00:07:57.380 --> 00:08:04.935
-steps fitted on training data, then applied to
-validation and test sets without re-fitting.
-
-96
-00:08:04.935 --> 00:08:10.569
-NARRATOR: Locate the first point where
-observed behavior diverges from expected
-
-97
-00:08:10.569 --> 00:08:14.154
-behavior, then test the smallest plausible
-cause.
-
-98
-00:08:14.154 --> 00:08:20.066
-NARRATOR: The diagnosis is strongest when
-another person can reproduce the observation
-
-99
-00:08:20.066 --> 00:08:21.544
-and the test.
-
-100
-00:08:21.650 --> 00:08:27.067
-NARRATOR: Connect Cross-Validation and
-Evaluation Metrics to the earlier ideas and
-
-101
-00:08:27.067 --> 00:08:31.006
-explain how the pieces work as one system.
-
-102
-00:08:31.006 --> 00:08:37.537
-NARRATOR: Evaluation metrics must match the
-task and the cost of different errors.
-
-103
-00:08:37.537 --> 00:08:44.259
-NARRATOR: Consider this worked case: A fraud
-detection system uses k-fold cross-validation
-
-104
-00:08:44.259 --> 00:08:51.542
-to assess model stability, with precision and
-recall metrics weighted to penalize false
-
-105
-00:08:51.542 --> 00:08:52.662
-negatives heavily.
-
-106
-00:08:52.662 --> 00:08:59.545
-NARRATOR: On screen, illustrate a k-fold
-cross-validation cycle with data splits
-
-107
-00:08:59.545 --> 00:09:06.428
-rotating through training and validation sets,
-alongside a metrics comparison table.
-
-108
-00:09:06.428 --> 00:09:15.190
-NARRATOR: Explain each connection explicitly
-and verify that information retains the same
-
-109
-00:09:15.190 --> 00:09:17.381
-meaning across representations.
-
-110
-00:09:17.381 --> 00:09:24.505
-NARRATOR: The synthesis matters only if every
-connection remains supported by the original
-
-111
-00:09:24.505 --> 00:09:25.053
-evidence.
-
-112
-00:09:25.178 --> 00:09:30.702
-NARRATOR: Finish with Practical Analysis
-Checklist for AI Deployment as a practical
-
-113
-00:09:30.702 --> 00:09:33.924
-checklist that can guide a new analysis.
-
-114
-00:09:33.924 --> 00:09:41.878
-NARRATOR: It also considers robustness,
-privacy, security, transparency, and fairness.
-
-115
-00:09:41.878 --> 00:09:49.150
-NARRATOR: Consider this worked case: A
-deployment checklist verifies that the AI
-
-116
-00:09:49.150 --> 00:09:55.210
-system maintains fairness thresholds, logs
-privacy compliance, and updates monitoring
-
-117
-00:09:55.210 --> 00:09:58.846
-alerts when distribution shift is detected.
-
-118
-00:09:58.846 --> 00:10:06.071
-NARRATOR: On screen, provide a printable
-checklist template with checkboxes for
-
-119
-00:10:06.071 --> 00:10:12.640
-robustness, privacy, security, transparency,
-fairness, and monitoring status, aligned with
-
-120
-00:10:12.640 --> 00:10:15.924
-NIST and ML workflow standards.
-
-121
-00:10:15.924 --> 00:10:23.618
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
-
-122
-00:10:23.618 --> 00:10:25.393
-next verification step.
-
-123
-00:10:25.393 --> 00:10:31.157
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-124
-00:10:31.157 --> 00:10:32.487
-memory or intuition.
+00:08:32.151 --> 00:08:32.645
+intuition.

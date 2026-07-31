@@ -15,7 +15,7 @@
         },
         {
           "id": "beat-01-shot-003",
-          "phrase": "Annotate each component with its function in the OS model.",
+          "phrase": "List the givens before choosing a method, because an unstated assumption can change the conclusion.",
           "type": "deterministic-svg"
         }
       ]
@@ -30,7 +30,7 @@
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: When a program requests disk I/O, it executes a system call instruction that switches execution to the kernel to handle the request.",
+          "phrase": "A system call transfers control from user code to a privileged kernel service.",
           "type": "deterministic-svg"
         },
         {
@@ -50,7 +50,7 @@
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: When a page fault occurs, the CPU traps the faulting instruction, saves the instruction pointer and registers, and transfers control to the kernel handler.",
+          "phrase": "A trap records processor state so the kernel can handle a system call, exception, or interrupt.",
           "type": "deterministic-svg"
         },
         {
@@ -70,7 +70,7 @@
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: A page table entry for a read-only code segment contains a valid bit, a present bit, and a read-only permission flag.",
+          "phrase": "Page tables map virtual addresses to physical memory with permission bits.",
           "type": "deterministic-svg"
         },
         {
@@ -90,7 +90,7 @@
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: The OS scheduler picks a ready process from the run queue, saves the current process's registers, and loads the new process's context.",
+          "phrase": "The scheduler selects runnable processes and switches processor context.",
           "type": "deterministic-svg"
         },
         {
@@ -115,7 +115,7 @@
         },
         {
           "id": "beat-06-shot-003",
-          "phrase": "State the benefit, the cost, and the condition under which the tradeoff is acceptable.",
+          "phrase": "Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
           "type": "deterministic-svg"
         }
       ]
@@ -130,7 +130,7 @@
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: Two processes each hold one file descriptor and wait for the other's, creating a circular dependency that halts progress.",
+          "phrase": "Analysis distinguishes user mode, privileged kernel code, hardware translation, interrupt state, resource ownership, and synchronization invariants.",
           "type": "deterministic-svg"
         },
         {
@@ -150,7 +150,7 @@
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: A server handles multiple client requests simultaneously by switching between processes on a single CPU core.",
+          "phrase": "Topics include process synchronization, interprocess communication, deadlock, multiprogramming and multiprocessing, processor scheduling and resource management, memory management, static and dynamic relocation, virtual memory, file systems, logical and physical I/O, device allocation, I/O processor scheduling, process and resource protection.",
           "type": "deterministic-svg"
         },
         {
@@ -170,7 +170,7 @@
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: A directory entry points to an inode that stores file metadata, permissions, and block addresses for data storage.",
+          "phrase": "The file system organizes persistent data through inodes, directories, and logged updates.",
           "type": "deterministic-svg"
         },
         {
@@ -190,7 +190,7 @@
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: Audit a kernel module to ensure all shared variables are protected by locks and that page table permissions match access rights.",
+          "phrase": "Architecture analysis preserves data dependencies, control dependencies, and architectural state.",
           "type": "deterministic-svg"
         },
         {

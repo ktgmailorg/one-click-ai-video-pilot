@@ -13,7 +13,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Pipeline Overview as a question about inputs, decisions, and observable results. The OpenGL graphics pipeline processes vertices through programmable shader stages. Consider this worked case: A vertex shader modifies position and color attributes for each triangle vertex before they reach the rasterizer. On screen, display a horizontal flowchart with labeled stages: Vertex Shader -> Geometry Shader -> Rasterizer -> Fragment Shader -> Framebuffer. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Begin by framing Pipeline Overview as a question about inputs, decisions, and observable results. The OpenGL graphics pipeline processes vertices through programmable shader stages. Consider this worked case: A vertex shader modifies position and color attributes for each triangle vertex before they reach the rasterizer. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 57,
       "title": "Pipeline Overview",
       "visualDirection": "template:academic-process | Display a horizontal flowchart with labeled stages: Vertex Shader -> Geometry Shader -> Rasterizer -> Fragment Shader -> Framebuffer."
@@ -31,7 +31,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Primitive Assembly precisely enough that another learner could test the definition. Primitive assembly groups vertices into points, lines, or triangles. Consider this worked case: Three connected vertices form a triangle primitive that the rasterizer will convert into a set of pixel candidates. On screen, show a wireframe triangle with vertices labeled A, B, and C, highlighting the edges connecting them. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Now define Primitive Assembly precisely enough that another learner could test the definition. Primitive assembly groups vertices into points, lines, or triangles. Consider this worked case: Three connected vertices form a triangle primitive that the rasterizer will convert into a set of pixel candidates. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
       "title": "Primitive Assembly",
       "visualDirection": "template:academic-process | Show a wireframe triangle with vertices labeled A, B, and C, highlighting the edges connecting them."
@@ -49,7 +49,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Clipping Process operates in a concrete sequence. Clipping removes portions outside the view volume. Consider this worked case: A large triangle extending beyond the camera's field of view is clipped to fit within the viewport boundaries. On screen, illustrate a triangle partially outside a rectangular viewport, with the clipped portion shaded in gray and the visible portion in white. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "With the foundation in place, examine how Clipping Process operates in a concrete sequence. Clipping removes portions outside the view volume. Consider this worked case: A large triangle extending beyond the camera's field of view is clipped to fit within the viewport boundaries. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 56,
       "title": "Clipping Process",
       "visualDirection": "template:academic-process | Illustrate a triangle partially outside a rectangular viewport, with the clipped portion shaded in gray and the visible portion in white."
@@ -67,7 +67,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Rasterization Conversion and make the decision criteria explicit. Rasterization converts primitives into fragment candidates. Consider this worked case: Each pixel within the clipped triangle receives a set of interpolated vertex attributes for processing. On screen, render a grid of pixels covering a triangle, with each pixel showing a small coordinate index and a dot representing the fragment candidate. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Next, compare the choices involved in Rasterization Conversion and make the decision criteria explicit. Rasterization converts primitives into fragment candidates. Consider this worked case: Each pixel within the clipped triangle receives a set of interpolated vertex attributes for processing. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 56,
       "title": "Rasterization Conversion",
       "visualDirection": "template:academic-process | Render a grid of pixels covering a triangle, with each pixel showing a small coordinate index and a dot representing the fragment candidate."
@@ -85,7 +85,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Interpolation Mechanism to a worked situation instead of treating it as an isolated definition. Interpolation produces per-fragment values from vertex outputs. Consider this worked case: Color and texture coordinates are calculated for each pixel based on the weighted average of the triangle's vertex attributes. On screen, draw a triangle with gradient shading across its surface, showing how values transition smoothly from vertex to vertex. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "narration": "Apply Interpolation Mechanism to a worked situation instead of treating it as an isolated definition. Interpolation produces per-fragment values from vertex outputs. Consider this worked case: Color and texture coordinates are calculated for each pixel based on the weighted average of the triangle's vertex attributes. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
       "plannedSeconds": 55,
       "title": "Interpolation Mechanism",
       "visualDirection": "template:academic-process | Draw a triangle with gradient shading across its surface, showing how values transition smoothly from vertex to vertex."
@@ -103,7 +103,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Fragment Processing, including what improves and what becomes more difficult. Fragment processing computes values for framebuffer operations. Consider this worked case: A fragment shader applies a lighting model to each pixel, calculating final color based on material properties and light direction. On screen, show a side-by-side comparison of a wireframe triangle and a fully shaded triangle with computed colors. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Examine the tradeoffs in Fragment Processing, including what improves and what becomes more difficult. Fragment processing computes values for framebuffer operations. Consider this worked case: A fragment shader applies a lighting model to each pixel, calculating final color based on material properties and light direction. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 56,
       "title": "Fragment Processing",
       "visualDirection": "template:academic-process | Show a side-by-side comparison of a wireframe triangle and a fully shaded triangle with computed colors."
@@ -121,7 +121,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Depth Testing & Visibility with an edge case and identify which assumption controls the outcome. Depth testing resolves visibility according to stored depth values. Consider this worked case: A closer triangle overwrites a farther triangle's pixels because its depth values are smaller than the stored depth buffer. On screen, illustrate two overlapping triangles with depth values displayed as numerical annotations, showing the closer one winning the test. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "narration": "Stress-test the reasoning around Depth Testing & Visibility with an edge case and identify which assumption controls the outcome. Depth testing resolves visibility according to stored depth values. Consider this worked case: A closer triangle overwrites a farther triangle's pixels because its depth values are smaller than the stored depth buffer. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
       "plannedSeconds": 56,
       "title": "Depth Testing & Visibility",
       "visualDirection": "template:academic-process | Illustrate two overlapping triangles with depth values displayed as numerical annotations, showing the closer one winning the test."
@@ -139,7 +139,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Blending Operations to diagnose a failure by separating symptoms, causes, and corrective action. Blending combines a fragment result with an existing framebuffer value. Consider this worked case: A semi-transparent overlay triangle mixes its computed color with the background color using a specified alpha factor. On screen, display a background rectangle and a semi-transparent triangle on top, with a formula showing alpha blending calculation. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "narration": "Use Blending Operations to diagnose a failure by separating symptoms, causes, and corrective action. Blending combines a fragment result with an existing framebuffer value. Consider this worked case: A semi-transparent overlay triangle mixes its computed color with the background color using a specified alpha factor. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
       "plannedSeconds": 55,
       "title": "Blending Operations",
       "visualDirection": "template:academic-process | Display a background rectangle and a semi-transparent triangle on top, with a formula showing alpha blending calculation."
@@ -157,7 +157,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Coordinate Spaces & Projections to the earlier ideas and explain how the pieces work as one system. Coordinate spaces, sampling, and numerical precision must remain explicit. Consider this worked case: Vertices are transformed from model space to clip space using a projection matrix before being converted to normalized device coordinates. On screen, show a diagram of three nested coordinate spaces (model, view, clip) with arrows indicating transformation flow. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "narration": "Connect Coordinate Spaces & Projections to the earlier ideas and explain how the pieces work as one system. Coordinate spaces, sampling, and numerical precision must remain explicit. Consider this worked case: Vertices are transformed from model space to clip space using a projection matrix before being converted to normalized device coordinates. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
       "plannedSeconds": 55,
       "title": "Coordinate Spaces & Projections",
       "visualDirection": "template:academic-process | Show a diagram of three nested coordinate spaces (model, view, clip) with arrows indicating transformation flow."
@@ -175,7 +175,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Topics include an introduction to the basic concepts, 2-D and 3-D modeling and transformations, viewing transformations, projections, rendering techniques, graphical software packages and graphics systems. Consider this worked case: Instructors verify that vertex attributes are correctly interpolated, depth buffers are updated, and blending modes match intended visual outcomes. On screen, list a checklist with checkboxes for: 1. Shader stage execution order, 2. Coordinate transformation accuracy, 3. Depth and blending parameter validation. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Topics include an introduction to the basic concepts, 2-D and 3-D modeling and transformations, viewing transformations, projections, rendering techniques, graphical software packages and graphics systems. Consider this worked case: Instructors verify that vertex attributes are correctly interpolated, depth buffers are updated, and blending modes match intended visual outcomes. Shader stage execution order, 2. Coordinate transformation accuracy, 3. Depth and blending parameter validation. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
       "plannedSeconds": 63,
       "title": "Practical Analysis Checklist",
       "visualDirection": "template:academic-process | List a checklist with checkboxes for: 1. Shader stage execution order, 2. Coordinate transformation accuracy, 3. Depth and blending parameter validation."

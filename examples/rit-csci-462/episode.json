@@ -13,7 +13,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Lesson Title: Foundations of Cryptographic Systems as a question about inputs, decisions, and observable results. The course also provides an introduction to data integrity and authentication. Consider this worked case: AES encryption uses a symmetric key to transform plaintext into ciphertext, ensuring only authorized parties can read the message. On screen, display a side-by-side comparison of plaintext and ciphertext with a symmetric key lock icon, labeled 'Confidentiality via AES'. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "narration": "Begin by framing Lesson Title: Foundations of Cryptographic Systems as a question about inputs, decisions, and observable results. The course also provides an introduction to data integrity and authentication. Consider this worked case: AES encryption uses a symmetric key to transform plaintext into ciphertext, ensuring only authorized parties can read the message. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
       "plannedSeconds": 55,
       "title": "Lesson Title: Foundations of Cryptographic Systems",
       "visualDirection": "template:academic-process | Display a side-by-side comparison of plaintext and ciphertext with a symmetric key lock icon, labeled 'Confidentiality via AES'."
@@ -31,7 +31,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Lesson Title: Classical Cryptosystems Overview precisely enough that another learner could test the definition. It covers classical cryptosystems, private-key cryptosystems (including DES and AES), hashing and public-key cryptosystems (including RSA). Consider this worked case: The Caesar cipher shifts each letter by a fixed number, demonstrating how simple substitution can be broken with frequency analysis. On screen, show a Caesar cipher alphabet wheel with 'A' shifting to 'D', annotated with 'Substitution Vulnerability'. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "narration": "Now define Lesson Title: Classical Cryptosystems Overview precisely enough that another learner could test the definition. It covers classical cryptosystems, private-key cryptosystems (including DES and AES), hashing and public-key cryptosystems (including RSA). Consider this worked case: The Caesar cipher shifts each letter by a fixed number, demonstrating how simple substitution can be broken with frequency analysis. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
       "plannedSeconds": 55,
       "title": "Lesson Title: Classical Cryptosystems Overview",
       "visualDirection": "template:academic-process | Show a Caesar cipher alphabet wheel with 'A' shifting to 'D', annotated with 'Substitution Vulnerability'."
@@ -49,7 +49,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Lesson Title: Private-Key Cryptosystems operates in a concrete sequence. Encryption supports confidentiality when keys and modes are used correctly. Consider this worked case: DES and AES require the same key for encrypting and decrypting data, making them fast but dependent on secure key distribution. On screen, illustrate a two-way arrow between 'Sender' and 'Receiver' with a single key symbol, labeled 'Symmetric Key Exchange'. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "With the foundation in place, examine how Lesson Title: Private-Key Cryptosystems operates in a concrete sequence. Encryption supports confidentiality when keys and modes are used correctly. Consider this worked case: DES and AES require the same key for encrypting and decrypting data, making them fast but dependent on secure key distribution. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 58,
       "title": "Lesson Title: Private-Key Cryptosystems",
       "visualDirection": "template:academic-process | Illustrate a two-way arrow between 'Sender' and 'Receiver' with a single key symbol, labeled 'Symmetric Key Exchange'."
@@ -67,7 +67,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Lesson Title: Public-Key Cryptosystems and make the decision criteria explicit. The Secure Software Development Framework groups practices into four practice groups. Consider this worked case: RSA uses a public key for encryption and a private key for decryption, solving the key distribution problem in symmetric systems. On screen, draw a split key icon: 'Public Key' (open hand) and 'Private Key' (closed fist), labeled 'Asymmetric Key Pair'. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "narration": "Next, compare the choices involved in Lesson Title: Public-Key Cryptosystems and make the decision criteria explicit. The Secure Software Development Framework groups practices into four practice groups. Consider this worked case: RSA uses a public key for encryption and a private key for decryption, solving the key distribution problem in symmetric systems. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
       "plannedSeconds": 55,
       "title": "Lesson Title: Public-Key Cryptosystems",
       "visualDirection": "template:academic-process | Draw a split key icon: 'Public Key' (open hand) and 'Private Key' (closed fist), labeled 'Asymmetric Key Pair'."
@@ -85,7 +85,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Lesson Title: Hashing Functions to a worked situation instead of treating it as an isolated definition. Produce Well-Secured Software addresses security requirements, design, verification, and release. Consider this worked case: SHA-256 generates a unique 256-bit hash for a document, where altering any bit changes the entire output. On screen, show a document entering a hash function box, outputting a long hex string, labeled 'Integrity Check via SHA-256'. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "narration": "Apply Lesson Title: Hashing Functions to a worked situation instead of treating it as an isolated definition. Produce Well-Secured Software addresses security requirements, design, verification, and release. Consider this worked case: SHA-256 generates a unique 256-bit hash for a document, where altering any bit changes the entire output. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
       "plannedSeconds": 55,
       "title": "Lesson Title: Hashing Functions",
       "visualDirection": "template:academic-process | Show a document entering a hash function box, outputting a long hex string, labeled 'Integrity Check via SHA-256'."
@@ -103,7 +103,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Lesson Title: Data Integrity and Authentication, including what improves and what becomes more difficult. Message authentication and digital signatures address integrity and authenticity in different ways. Consider this worked case: A digital signature uses the sender's private key to sign a message, which the receiver verifies with the public key. On screen, display a document with a signature stamp and a verification checkmark, labeled 'Authenticity via Digital Signatures'. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "narration": "Examine the tradeoffs in Lesson Title: Data Integrity and Authentication, including what improves and what becomes more difficult. Message authentication and digital signatures address integrity and authenticity in different ways. Consider this worked case: A digital signature uses the sender's private key to sign a message, which the receiver verifies with the public key. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
       "plannedSeconds": 55,
       "title": "Lesson Title: Data Integrity and Authentication",
       "visualDirection": "template:academic-process | Display a document with a signature stamp and a verification checkmark, labeled 'Authenticity via Digital Signatures'."
@@ -121,7 +121,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Lesson Title: Key Management Practices with an edge case and identify which assumption controls the outcome. Key management covers generation, distribution, storage, use, rotation, revocation, and destruction. Consider this worked case: Keys must be stored in hardware security modules and rotated regularly to limit exposure if compromised. On screen, show a key lifecycle diagram: 'Generate' -> 'Store' -> 'Use' -> 'Rotate' -> 'Destroy', with lock icons at each stage. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "narration": "Stress-test the reasoning around Lesson Title: Key Management Practices with an edge case and identify which assumption controls the outcome. Key management covers generation, distribution, storage, use, rotation, revocation, and destruction. Consider this worked case: Keys must be stored in hardware security modules and rotated regularly to limit exposure if compromised. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
       "plannedSeconds": 57,
       "title": "Lesson Title: Key Management Practices",
       "visualDirection": "template:academic-process | Show a key lifecycle diagram: 'Generate' -> 'Store' -> 'Use' -> 'Rotate' -> 'Destroy', with lock icons at each stage."
@@ -139,7 +139,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Lesson Title: Modes of Operation to diagnose a failure by separating symptoms, causes, and corrective action. Modes of operation define how a primitive processes data larger than one block. Consider this worked case: CBC mode uses a chaining value to link blocks, preventing pattern repetition in encrypted output. On screen, illustrate a block cipher processing two blocks with a feedback loop, labeled 'CBC Mode Chaining'. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "narration": "Use Lesson Title: Modes of Operation to diagnose a failure by separating symptoms, causes, and corrective action. Modes of operation define how a primitive processes data larger than one block. Consider this worked case: CBC mode uses a chaining value to link blocks, preventing pattern repetition in encrypted output. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
       "plannedSeconds": 55,
       "title": "Lesson Title: Modes of Operation",
       "visualDirection": "template:academic-process | Illustrate a block cipher processing two blocks with a feedback loop, labeled 'CBC Mode Chaining'."
@@ -157,7 +157,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Lesson Title: Security Implementation & Validation to the earlier ideas and explain how the pieces work as one system. Security depends on the complete protocol and implementation, not only an algorithm name. Consider this worked case: Timing attacks can exploit variable execution times in cryptographic libraries, requiring constant-time implementations for validation. On screen, show a security checklist with items: 'Algorithm Validated', 'Implementation Tested', 'Side-Channel Mitigated', labeled 'Validation Checklist'. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "narration": "Connect Lesson Title: Security Implementation & Validation to the earlier ideas and explain how the pieces work as one system. Security depends on the complete protocol and implementation, not only an algorithm name. Consider this worked case: Timing attacks can exploit variable execution times in cryptographic libraries, requiring constant-time implementations for validation. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
       "plannedSeconds": 55,
       "title": "Lesson Title: Security Implementation & Validation",
       "visualDirection": "template:academic-process | Show a security checklist with items: 'Algorithm Validated', 'Implementation Tested', 'Side-Channel Mitigated', labeled 'Validation Checklist'."
@@ -175,7 +175,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Lesson Title: Practical Analysis Checklist as a practical checklist that can guide a new analysis. Cryptographic standards define approved algorithms and parameters. Consider this worked case: A secure system uses AES for confidentiality, SHA-256 for integrity, RSA for authentication, and follows NIST key management standards. On screen, display a practical analysis checklist with checkboxes: 'Confidentiality Mechanism', 'Integrity Check', 'Authentication Method', 'Key Management', 'Implementation Validated'. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "narration": "Finish with Lesson Title: Practical Analysis Checklist as a practical checklist that can guide a new analysis. Cryptographic standards define approved algorithms and parameters. Consider this worked case: A secure system uses AES for confidentiality, SHA-256 for integrity, RSA for authentication, and follows NIST key management standards. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
       "plannedSeconds": 55,
       "title": "Lesson Title: Practical Analysis Checklist",
       "visualDirection": "template:academic-process | Display a practical analysis checklist with checkboxes: 'Confidentiality Mechanism', 'Integrity Check', 'Authentication Method', 'Key Management', 'Implementation Validated'."

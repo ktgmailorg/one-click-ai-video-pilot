@@ -1,233 +1,171 @@
-NARRATOR: Begin by framing Introduction to Database System Implementation as a question
+Begin by framing Introduction to Database System Implementation as a question about
 
-about inputs, decisions, and observable results.
+inputs, decisions, and observable results.
 
-NARRATOR: Database system implementation issues are covered next, where the focus is on
+Database system implementation issues are covered next, where the focus is on data
 
-data structures and algorithms used to implement database management systems.
+structures and algorithms used to implement database management systems.
 
-NARRATOR: Consider this worked case: Implementing a student enrollment system
+Consider this worked case: Implementing a student enrollment system requires choosing
 
-requires choosing between B-trees for range queries and hash tables for exact-match
+between B-trees for range queries and hash tables for exact-match lookups.
 
-lookups.
+List the givens before choosing a method, because an unstated assumption can change the
 
-NARRATOR: On screen, display a split-screen diagram showing a B-tree structure on the left
+conclusion.
 
-and a hash table structure on the right, with arrows pointing to their respective use cases.
+This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+Now define Relational Model Foundations precisely enough that another learner could
 
-change the conclusion.
+test the definition.
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+Relational systems organize data with tables, rows, columns, and declared types.
 
-NARRATOR: Now define Relational Model Foundations precisely enough that another
+Consider this worked case: A 'Students' table contains columns for student_id, name, and
 
-learner could test the definition.
+email, each with a specific data type like INTEGER or VARCHAR.
 
-NARRATOR: Relational systems organize data with tables, rows, columns, and declared
-
-types.
-
-NARRATOR: Consider this worked case: A 'Students' table contains columns for
-
-student_id, name, and email, each with a specific data type like INTEGER or VARCHAR.
-
-NARRATOR: On screen, show a simple table schema with column names, data types, and a
-
-sample row, highlighting the row-column structure.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Keys and Constraints operates in a
+With the foundation in place, examine how Keys and Constraints operates in a concrete
 
-concrete sequence.
+sequence.
 
-NARRATOR: Primary keys identify rows, while foreign keys express references between
+Primary keys identify rows, while foreign keys express references between tables.
 
-tables.
+Consider this worked case: A 'Courses' table uses a foreign key to reference the 'Students'
 
-NARRATOR: Consider this worked case: A 'Courses' table uses a foreign key to
+table, ensuring no course is assigned to a non-existent student.
 
-reference the 'Students' table, ensuring no course is assigned to a non-existent student.
+Follow every arrow in order and name the state before and after each transition.
 
-NARRATOR: On screen, illustrate two connected tables with a dashed line labeled 'foreign
+The trace converts an abstract statement into an inspectable sequence.
 
-key', showing how a value in one table must match a primary key in the other.
+Next, compare the choices involved in Query Processing Basics and make the decision
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+criteria explicit.
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+Query planning and physical structures influence performance without changing logical
 
-NARRATOR: Next, compare the choices involved in Query Processing Basics and make the
+query meaning.
 
-decision criteria explicit.
+Consider this worked case: A SQL query joins 'Students' and 'Courses' tables to list all
 
-NARRATOR: Query planning and physical structures influence performance without
+students and their enrolled courses, while the database optimizer chooses the fastest join
 
-changing logical query meaning.
+order based on indexes.
 
-NARRATOR: Consider this worked case: A SQL query joins 'Students' and 'Courses' tables to
+Compare alternatives against the same constraints so the evaluation does not move
 
-list all students and their enrolled courses, while the database optimizer chooses the
+the goalposts.
 
-fastest join order based on indexes.
+Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: On screen, show a logical query tree on the left and a physical execution plan on
-
-the right, with a note indicating that the logical meaning remains unchanged despite
-
-different execution paths.
-
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
-
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Apply Indexing and Hashing to a worked situation instead of treating it as an
+Apply Indexing and Hashing to a worked situation instead of treating it as an
 
 isolated definition.
 
-NARRATOR: Indexes provide additional access paths for selected queries.
+Indexes provide additional access paths for selected queries.
 
-NARRATOR: Consider this worked case: A hash index on the 'email' column allows the
+Consider this worked case: A hash index on the 'email' column allows the database to locate a
 
-database to locate a student record in constant time without scanning the entire
+student record in constant time without scanning the entire table.
 
-table.
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-NARRATOR: On screen, display a hash table with keys mapped to buckets, showing how a query
+step.
 
-for a specific email resolves directly to its bucket without linear search.
+The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+Examine the tradeoffs in Physical Data Organizations, including what improves and
 
-at each step.
+what becomes more difficult.
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+Topics include physical data organizations, indexing and hashing, query processing and
 
-NARRATOR: Examine the tradeoffs in Physical Data Organizations, including what improves
+optimization, database recovery techniques, transaction management, concurrency control,
 
-and what becomes more difficult.
+and database performance evaluation.
 
-NARRATOR: Topics include physical data organizations, indexing and hashing, query
+Consider this worked case: Clustering data by student_id improves performance for queries
 
-processing and optimization, database recovery techniques, transaction management,
+that frequently filter by student, reducing disk I/O operations.
 
-concurrency control, and database performance evaluation.
+unclustered table layout, with clustered data grouped by student_id and unclustered data
 
-NARRATOR: Consider this worked case: Clustering data by student_id improves
+scattered randomly, highlighting I/O differences.
 
-performance for queries that frequently filter by student, reducing disk I/O operations.
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-NARRATOR: On screen, show a clustered vs. unclustered table layout, with clustered data
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-grouped by student_id and unclustered data scattered randomly, highlighting I/O
+Stress-test the reasoning around Transaction Management with an edge case and identify
 
-differences.
+which assumption controls the outcome.
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+Transactions group operations into an atomic unit of work.
 
-acceptable.
+Consider this worked case: A transaction transfers funds between two accounts, and if
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+the debit fails, the credit is automatically rolled back to maintain consistency.
 
-NARRATOR: Stress-test the reasoning around Transaction Management with an edge case and
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-identify which assumption controls the outcome.
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-NARRATOR: Transactions group operations into an atomic unit of work.
+Use Concurrency Control to diagnose a failure by separating symptoms, causes, and corrective
 
-NARRATOR: Consider this worked case: A transaction transfers funds between two
+action.
 
-accounts, and if the debit fails, the credit is automatically rolled back to maintain
+Isolation controls how concurrent transactions observe one another.
 
-consistency.
+Consider this worked case: Two transactions updating the same account balance are
 
-NARRATOR: On screen, illustrate a transaction flow with 'begin', 'commit', and 'rollback'
+serialized so that one completes before the other begins, avoiding lost updates.
 
-states, showing how partial failures trigger automatic reversal of all operations.
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+smallest plausible cause.
 
-holds.
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+Connect Database Performance Evaluation to the earlier ideas and explain how the pieces work
 
-core idea.
+as one system.
 
-NARRATOR: Use Concurrency Control to diagnose a failure by separating symptoms, causes, and
+Current research topics in database system implementation are also explored.
 
-corrective action.
+Consider this worked case: Benchmarking shows that adding a composite index on (department,
 
-NARRATOR: Isolation controls how concurrent transactions observe one another.
+salary) reduces query execution time by 60% for filtered reports.
 
-NARRATOR: Consider this worked case: Two transactions updating the same account balance
+Explain each connection explicitly and verify that information retains the same meaning
 
-are serialized so that one completes before the other begins, avoiding lost updates.
+across representations.
 
-NARRATOR: On screen, show two concurrent transaction timelines with serialization
+The synthesis matters only if every connection remains supported by the original evidence.
 
-points, demonstrating how isolation levels prevent conflicting reads and writes.
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+analysis.
 
-behavior, then test the smallest plausible cause.
+Constraints and indexes support data integrity and efficient lookup.
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+Consider this worked case: Before deploying a new module, check that primary keys are
 
-and the test.
+defined, foreign keys reference valid tables, indexes cover frequent query filters, and
 
-NARRATOR: Connect Database Performance Evaluation to the earlier ideas and explain
+isolation levels match concurrency needs.
 
-how the pieces work as one system.
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-NARRATOR: Current research topics in database system implementation are also explored.
+verification step.
 
-NARRATOR: Consider this worked case: Benchmarking shows that adding a composite
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-index on (department, salary) reduces query execution time by 60% for filtered reports.
-
-NARRATOR: On screen, display a performance graph comparing query execution times with and
-
-without a composite index, highlighting the reduction in I/O and CPU usage.
-
-NARRATOR: Explain each connection explicitly and verify that information retains the same
-
-meaning across representations.
-
-NARRATOR: The synthesis matters only if every connection remains supported by the original
-
-evidence.
-
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
-
-guide a new analysis.
-
-NARRATOR: Constraints and indexes support data integrity and efficient lookup.
-
-NARRATOR: Consider this worked case: Before deploying a new module, check that primary
-
-keys are defined, foreign keys reference valid tables, indexes cover frequent query filters,
-
-and isolation levels match concurrency needs.
-
-NARRATOR: On screen, show a checklist graphic with four boxes: 'Keys & Constraints',
-
-'Indexes & Hashing', 'Transaction Atomicity', 'Isolation & Concurrency', each with a
-
-checkbox and brief validation criteria.
-
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

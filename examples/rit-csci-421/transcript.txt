@@ -1,237 +1,173 @@
-NARRATOR: Begin by framing Foundations of the Relational Model as a question about inputs,
+Begin by framing Foundations of the Relational Model as a question about inputs, decisions,
 
-decisions, and observable results.
+and observable results.
 
-NARRATOR: Relational systems organize data with tables, rows, columns, and declared
+Relational systems organize data with tables, rows, columns, and declared types.
 
-types.
+Consider this worked case: A 'Students' table contains rows for each student, with columns
 
-NARRATOR: Consider this worked case: A 'Students' table contains rows for each
+for ID, name, and major, each assigned a specific data type like INTEGER or VARCHAR.
 
-student, with columns for ID, name, and major, each assigned a specific data type like
+List the givens before choosing a method, because an unstated assumption can change the
 
-INTEGER or VARCHAR.
+conclusion.
 
-NARRATOR: On screen, display a simple table schema diagram with labeled columns and a
+This establishes the vocabulary and scope needed for the remaining sections.
 
-sample row, highlighting the declarative nature of column types.
+Now define Keys and Referential Integrity precisely enough that another learner could
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+test the definition.
 
-change the conclusion.
+Primary keys identify rows, while foreign keys express references between tables.
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+Consider this worked case: A 'Courses' table uses a primary key 'CourseID' to uniquely
 
-NARRATOR: Now define Keys and Referential Integrity precisely enough that another
+identify each course, and a foreign key 'DepartmentID' links it to the 'Departments'
 
-learner could test the definition.
+table.
 
-NARRATOR: Primary keys identify rows, while foreign keys express references between
-
-tables.
-
-NARRATOR: Consider this worked case: A 'Courses' table uses a primary key 'CourseID'
-
-to uniquely identify each course, and a foreign key 'DepartmentID' links it to the
-
-'Departments' table.
-
-NARRATOR: On screen, show two connected tables with arrows indicating the primary key to
-
-foreign key relationship, emphasizing unique identification and referential links.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Constraints and Data Rules
+With the foundation in place, examine how Constraints and Data Rules operates in a
 
-operates in a concrete sequence.
+concrete sequence.
 
-NARRATOR: Constraints reject states that violate declared data rules.
+Constraints reject states that violate declared data rules.
 
-NARRATOR: Consider this worked case: A NOT NULL constraint on a 'StudentID' column
+Consider this worked case: A NOT NULL constraint on a 'StudentID' column prevents
 
-prevents empty entries, while a CHECK constraint ensures 'Age' values remain between
+empty entries, while a CHECK constraint ensures 'Age' values remain between 18 and
 
-18 and 100.
+100.
 
-NARRATOR: On screen, illustrate a database row with a red 'X' over a cell that violates a
+Follow every arrow in order and name the state before and after each transition.
 
-CHECK constraint, alongside a green checkmark for a valid entry.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+Next, compare the choices involved in Query Operations and Schema Design and make the
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+decision criteria explicit.
 
-NARRATOR: Next, compare the choices involved in Query Operations and Schema Design and make
+Queries select, join, aggregate, insert, update, and delete data.
 
-the decision criteria explicit.
+Consider this worked case: A JOIN operation merges 'Enrollments' and 'Courses' tables to
 
-NARRATOR: Queries select, join, aggregate, insert, update, and delete data.
+show which students are taking which classes, demonstrating how schema design supports
 
-NARRATOR: Consider this worked case: A JOIN operation merges 'Enrollments' and 'Courses'
+relational queries.
 
-tables to show which students are taking which classes, demonstrating how schema design
+Compare alternatives against the same constraints so the evaluation does not move
 
-supports relational queries.
+the goalposts.
 
-NARRATOR: On screen, render a before-and-after query result showing a single table versus a
+Using shared criteria turns a preference into a defensible technical choice.
 
-joined result set, highlighting how schema separation enables complex data retrieval.
+Apply Indexing for Efficient Lookup to a worked situation instead of treating it as an
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+isolated definition.
 
-move the goalposts.
+Indexes provide additional access paths for selected queries.
 
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+Consider this worked case: An index on the 'DepartmentID' column allows the database to
 
-NARRATOR: Apply Indexing for Efficient Lookup to a worked situation instead of treating it
+quickly locate all courses in a specific department without scanning every row.
 
-as an isolated definition.
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-NARRATOR: Indexes provide additional access paths for selected queries.
+step.
 
-NARRATOR: Consider this worked case: An index on the 'DepartmentID' column allows the
+The worked case shows both how to apply the method and how to check it.
 
-database to quickly locate all courses in a specific department without scanning every
+Examine the tradeoffs in Hashing for Fast Retrieval, including what improves and what
 
-row.
+becomes more difficult.
 
-NARRATOR: On screen, show a B-tree index structure with sorted leaf nodes, pointing to
+Constraints and indexes support data integrity and efficient lookup.
 
-table row locations, demonstrating how indexes accelerate data retrieval.
+Consider this worked case: A hash table stores 'StudentID' keys, where each ID hashes to a
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+specific bucket, enabling rapid verification of student records during login checks.
 
-at each step.
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: Examine the tradeoffs in Hashing for Fast Retrieval, including what improves and
+Stress-test the reasoning around Transaction Management and Atomicity with an edge case and
 
-what becomes more difficult.
+identify which assumption controls the outcome.
 
-NARRATOR: Constraints and indexes support data integrity and efficient lookup.
+Transactions group operations into an atomic unit of work.
 
-NARRATOR: Consider this worked case: A hash table stores 'StudentID' keys, where each ID
+Consider this worked case: A transaction transfers funds between two accounts, ensuring
 
-hashes to a specific bucket, enabling rapid verification of student records during login
+both the debit and credit succeed together or fail together to maintain balance consistency.
 
-checks.
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-NARRATOR: On screen, display a hash table with multiple buckets, showing how different
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-StudentIDs map to the same or different buckets via hash functions.
+Use Concurrency Control and Isolation to diagnose a failure by separating symptoms,
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+causes, and corrective action.
 
-acceptable.
+Isolation controls how concurrent transactions observe one another.
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+Consider this worked case: Read committed isolation allows multiple transactions to read
 
-NARRATOR: Stress-test the reasoning around Transaction Management and Atomicity with an
+data simultaneously but prevents one transaction from seeing uncommitted changes
 
-edge case and identify which assumption controls the outcome.
+from another.
 
-NARRATOR: Transactions group operations into an atomic unit of work.
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-NARRATOR: Consider this worked case: A transaction transfers funds between two
+smallest plausible cause.
 
-accounts, ensuring both the debit and credit succeed together or fail together to maintain
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-balance consistency.
+Connect Query Processing and Optimization to the earlier ideas and explain how the pieces
 
-NARRATOR: On screen, show a transaction flow diagram with a commit or rollback switch,
+work as one system.
 
-illustrating how grouped operations maintain data integrity.
+Query planning and physical structures influence performance without changing logical
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+query meaning.
 
-holds.
+Consider this worked case: The optimizer chooses a hash join over a nested loop join
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+for large tables, leveraging physical indexes to reduce execution time while preserving the
 
-core idea.
+same result set.
 
-NARRATOR: Use Concurrency Control and Isolation to diagnose a failure by separating
+Explain each connection explicitly and verify that information retains the same meaning
 
-symptoms, causes, and corrective action.
+across representations.
 
-NARRATOR: Isolation controls how concurrent transactions observe one another.
+The synthesis matters only if every connection remains supported by the original evidence.
 
-NARRATOR: Consider this worked case: Read committed isolation allows multiple
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-transactions to read data simultaneously but prevents one transaction from seeing
+analysis.
 
-uncommitted changes from another.
+Topics include physical data organization, indexing and hashing, query processing and
 
-NARRATOR: On screen, illustrate two concurrent transaction windows with visibility
+optimization, database recovery techniques, transaction management, concurrency control,
 
-indicators, showing how isolation levels filter uncommitted data from other processes.
+and database performance evaluation.
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+Consider this worked case: A developer reviews a schema for missing primary keys, adds a hash
 
-behavior, then test the smallest plausible cause.
+index on a frequently queried column, wraps critical updates in a transaction, and sets
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+isolation to serializable for financial records.
 
-and the test.
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-NARRATOR: Connect Query Processing and Optimization to the earlier ideas and explain
+verification step.
 
-how the pieces work as one system.
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-NARRATOR: Query planning and physical structures influence performance without
-
-changing logical query meaning.
-
-NARRATOR: Consider this worked case: The optimizer chooses a hash join over a nested
-
-loop join for large tables, leveraging physical indexes to reduce execution time
-
-while preserving the same result set.
-
-NARRATOR: On screen, compare two execution plans side-by-side, highlighting how physical
-
-structure choices affect cost and resource usage without altering logical output.
-
-NARRATOR: Explain each connection explicitly and verify that information retains the same
-
-meaning across representations.
-
-NARRATOR: The synthesis matters only if every connection remains supported by the original
-
-evidence.
-
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
-
-guide a new analysis.
-
-NARRATOR: Topics include physical data organization, indexing and hashing, query
-
-processing and optimization, database recovery techniques, transaction management,
-
-concurrency control, and database performance evaluation.
-
-NARRATOR: Consider this worked case: A developer reviews a schema for missing primary
-
-keys, adds a hash index on a frequently queried column, wraps critical updates in a
-
-transaction, and sets isolation to serializable for financial records.
-
-NARRATOR: On screen, present a checklist graphic with four checkboxes: Physical
-
-Organization, Indexing Strategy, Transaction Safety, Concurrency Isolation, each linked to
-
-corresponding implementation steps.
-
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

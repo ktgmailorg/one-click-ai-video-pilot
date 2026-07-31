@@ -13,7 +13,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Pipeline Foundation as a question about inputs, decisions, and observable results. The OpenGL graphics pipeline processes vertices through programmable shader stages. Consider this worked case: Vertex data enters the pipeline first, where vertex shaders modify position, color, or normal attributes before downstream stages. On screen, display a left-to-right flowchart showing vertex input → vertex shader → primitive assembly → clipping → rasterization → fragment shader → framebuffer. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "narration": "Begin by framing Pipeline Foundation as a question about inputs, decisions, and observable results. The OpenGL graphics pipeline processes vertices through programmable shader stages. Consider this worked case: Vertex data enters the pipeline first, where vertex shaders modify position, color, or normal attributes before downstream stages. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
       "plannedSeconds": 55,
       "title": "Pipeline Foundation",
       "visualDirection": "template:academic-process | Display a left-to-right flowchart showing vertex input → vertex shader → primitive assembly → clipping → rasterization → fragment shader → framebuffer."
@@ -31,7 +31,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Primitive Assembly precisely enough that another learner could test the definition. Primitive assembly groups vertices into points, lines, or triangles. Consider this worked case: Three connected vertices form a triangle primitive, which the pipeline then processes as a single geometric unit for rendering. On screen, show a wireframe triangle with labeled vertices, highlighting how three points are bound into a single primitive before clipping. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Now define Primitive Assembly precisely enough that another learner could test the definition. Primitive assembly groups vertices into points, lines, or triangles. Consider this worked case: Three connected vertices form a triangle primitive, which the pipeline then processes as a single geometric unit for rendering. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 57,
       "title": "Primitive Assembly",
       "visualDirection": "template:academic-process | Show a wireframe triangle with labeled vertices, highlighting how three points are bound into a single primitive before clipping."
@@ -49,7 +49,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Clipping Stage operates in a concrete sequence. Clipping removes portions outside the view volume. Consider this worked case: A triangle extending beyond the camera's frustum is sliced at the clipping plane boundaries, discarding the exterior segments. On screen, illustrate a 3D cube partially outside a transparent viewing box, with clipped edges highlighted in red and retained portions in blue. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "With the foundation in place, examine how Clipping Stage operates in a concrete sequence. Clipping removes portions outside the view volume. Consider this worked case: A triangle extending beyond the camera's frustum is sliced at the clipping plane boundaries, discarding the exterior segments. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 56,
       "title": "Clipping Stage",
       "visualDirection": "template:academic-process | Illustrate a 3D cube partially outside a transparent viewing box, with clipped edges highlighted in red and retained portions in blue."
@@ -67,7 +67,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Rasterization and make the decision criteria explicit. Rasterization converts primitives into fragment candidates. Consider this worked case: Each triangle is subdivided into pixel-aligned fragments, with each fragment receiving interpolated attributes for downstream processing. On screen, render a grid overlay on a triangle, showing how each pixel cell becomes a fragment candidate with assigned vertex attributes. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Next, compare the choices involved in Rasterization and make the decision criteria explicit. Rasterization converts primitives into fragment candidates. Consider this worked case: Each triangle is subdivided into pixel-aligned fragments, with each fragment receiving interpolated attributes for downstream processing. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
       "title": "Rasterization",
       "visualDirection": "template:academic-process | Render a grid overlay on a triangle, showing how each pixel cell becomes a fragment candidate with assigned vertex attributes."
@@ -85,7 +85,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Interpolation to a worked situation instead of treating it as an isolated definition. Interpolation produces per-fragment values from vertex outputs. Consider this worked case: Color and normal values are linearly interpolated across a triangle's pixels using barycentric coordinates to ensure smooth shading. On screen, display a color gradient across a triangle, with interpolation weights labeled at each vertex and midpoint to show value distribution. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "narration": "Apply Interpolation to a worked situation instead of treating it as an isolated definition. Interpolation produces per-fragment values from vertex outputs. Consider this worked case: Color and normal values are linearly interpolated across a triangle's pixels using barycentric coordinates to ensure smooth shading. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
       "plannedSeconds": 55,
       "title": "Interpolation",
       "visualDirection": "template:academic-process | Display a color gradient across a triangle, with interpolation weights labeled at each vertex and midpoint to show value distribution."
@@ -103,7 +103,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Fragment Processing, including what improves and what becomes more difficult. Fragment processing computes values for framebuffer operations. Consider this worked case: Fragment shaders evaluate lighting equations and material properties to generate final color and alpha values for each pixel. On screen, show a side-by-side comparison of a raw triangle mesh and its shaded output, with a callout box explaining the fragment shader's role. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Examine the tradeoffs in Fragment Processing, including what improves and what becomes more difficult. Fragment processing computes values for framebuffer operations. Consider this worked case: Fragment shaders evaluate lighting equations and material properties to generate final color and alpha values for each pixel. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 58,
       "title": "Fragment Processing",
       "visualDirection": "template:academic-process | Show a side-by-side comparison of a raw triangle mesh and its shaded output, with a callout box explaining the fragment shader's role."
@@ -121,7 +121,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Depth Testing with an edge case and identify which assumption controls the outcome. Depth testing resolves visibility according to stored depth values. Consider this worked case: Each fragment's depth value is compared against the depth buffer; fragments with greater depth are discarded to maintain correct occlusion. On screen, illustrate two overlapping triangles with depth values, highlighting the front triangle as retained and the back triangle as rejected by depth testing. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "narration": "Stress-test the reasoning around Depth Testing with an edge case and identify which assumption controls the outcome. Depth testing resolves visibility according to stored depth values. Consider this worked case: Each fragment's depth value is compared against the depth buffer; fragments with greater depth are discarded to maintain correct occlusion. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
       "plannedSeconds": 57,
       "title": "Depth Testing",
       "visualDirection": "template:academic-process | Illustrate two overlapping triangles with depth values, highlighting the front triangle as retained and the back triangle as rejected by depth testing."
@@ -139,7 +139,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Blending to diagnose a failure by separating symptoms, causes, and corrective action. Blending combines a fragment result with an existing framebuffer value. Consider this worked case: Translucent surfaces blend the new fragment's color with the underlying color using alpha values to produce semi-transparent overlays. On screen, render a semi-transparent square over a solid background, with a legend showing the blending equation and resulting composite color. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "narration": "Use Blending to diagnose a failure by separating symptoms, causes, and corrective action. Blending combines a fragment result with an existing framebuffer value. Consider this worked case: Translucent surfaces blend the new fragment's color with the underlying color using alpha values to produce semi-transparent overlays. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
       "plannedSeconds": 55,
       "title": "Blending",
       "visualDirection": "template:academic-process | Render a semi-transparent square over a solid background, with a legend showing the blending equation and resulting composite color."
@@ -157,7 +157,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Coordinate Spaces to the earlier ideas and explain how the pieces work as one system. Coordinate spaces, sampling, and numerical precision must remain explicit. Consider this worked case: Explicitly defining vertex, fragment, and texture coordinate spaces prevents misalignment during sampling and ensures consistent precision across pipeline stages. On screen, display a diagram of three nested coordinate spaces (world, view, clip) with labeled axes, emphasizing explicit mapping between them. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "narration": "Connect Coordinate Spaces to the earlier ideas and explain how the pieces work as one system. Coordinate spaces, sampling, and numerical precision must remain explicit. Consider this worked case: Explicitly defining vertex, fragment, and texture coordinate spaces prevents misalignment during sampling and ensures consistent precision across pipeline stages. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
       "plannedSeconds": 55,
       "title": "Coordinate Spaces",
       "visualDirection": "template:academic-process | Display a diagram of three nested coordinate spaces (world, view, clip) with labeled axes, emphasizing explicit mapping between them."
@@ -175,7 +175,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Visual correctness follows from explicit conventions, assumptions, sampling decisions, and measurable error. Consider this worked case: Instructor-led review checks that coordinate mappings are explicit, sampling rates match resolution requirements, and error bounds remain within acceptable thresholds. On screen, show a checklist graphic with four boxes: explicit conventions, sampling decisions, measurable error, and coordinate space alignment, each with a tick mark for verification. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Visual correctness follows from explicit conventions, assumptions, sampling decisions, and measurable error. Consider this worked case: Instructor-led review checks that coordinate mappings are explicit, sampling rates match resolution requirements, and error bounds remain within acceptable thresholds. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
       "plannedSeconds": 58,
       "title": "Practical Analysis Checklist",
       "visualDirection": "template:academic-process | Show a checklist graphic with four boxes: explicit conventions, sampling decisions, measurable error, and coordinate space alignment, each with a tick mark for verification."

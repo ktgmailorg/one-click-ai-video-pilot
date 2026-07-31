@@ -13,7 +13,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Pipeline Foundations as a question about inputs, decisions, and observable results. A rigorous pipeline states the task, representation, assumptions, supervision, and decision rule. Consider this worked case: A self-driving car system defines the task as lane detection, uses grayscale intensity as representation, assumes consistent lighting, trains on labeled road images, and outputs a binary lane mask. On screen, display a four-panel diagram showing task definition, representation, assumptions, and decision rule, with arrows linking each stage to the next. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "narration": "Begin by framing Pipeline Foundations as a question about inputs, decisions, and observable results. A rigorous pipeline states the task, representation, assumptions, supervision, and decision rule. Consider this worked case: A self-driving car system defines the task as lane detection, uses grayscale intensity as representation, assumes consistent lighting, trains on labeled road images, and outputs a binary lane mask. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
       "plannedSeconds": 58,
       "title": "Pipeline Foundations",
       "visualDirection": "template:academic-process | Display a four-panel diagram showing task definition, representation, assumptions, and decision rule, with arrows linking each stage to the next."
@@ -31,7 +31,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Image Formation Basics precisely enough that another learner could test the definition. Projective geometry relates three-dimensional points to image coordinates. Consider this worked case: A 3D building corner projects onto a 2D image plane, where perspective distortion is corrected using homography matrices derived from known camera parameters. On screen, show a 3D cube with projected 2D coordinates, highlighting how perspective changes affect pixel mapping. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Now define Image Formation Basics precisely enough that another learner could test the definition. Projective geometry relates three-dimensional points to image coordinates. Consider this worked case: A 3D building corner projects onto a 2D image plane, where perspective distortion is corrected using homography matrices derived from known camera parameters. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 57,
       "title": "Image Formation Basics",
       "visualDirection": "template:academic-process | Show a 3D cube with projected 2D coordinates, highlighting how perspective changes affect pixel mapping."
@@ -49,7 +49,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Appearance Modeling operates in a concrete sequence. Appearance models describe how lighting, material, and viewpoint affect measured pixels. Consider this worked case: A matte white wall and a glossy white wall produce different pixel intensities under identical illumination, necessitating color-invariant features for reliable detection. On screen, display side-by-side images of the same object under varying lighting and material conditions, with color histograms overlaid. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "With the foundation in place, examine how Appearance Modeling operates in a concrete sequence. Appearance models describe how lighting, material, and viewpoint affect measured pixels. Consider this worked case: A matte white wall and a glossy white wall produce different pixel intensities under identical illumination, necessitating color-invariant features for reliable detection. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 58,
       "title": "Appearance Modeling",
       "visualDirection": "template:academic-process | Display side-by-side images of the same object under varying lighting and material conditions, with color histograms overlaid."
@@ -67,7 +67,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Motion Estimation and make the decision criteria explicit. Motion estimation compares observations across frames. Consider this worked case: A video of a moving car is processed by comparing consecutive frames to calculate displacement vectors, enabling smooth trajectory prediction. On screen, animate a sequence of frames with tracked object paths overlaid, showing frame-to-frame comparison. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Next, compare the choices involved in Motion Estimation and make the decision criteria explicit. Motion estimation compares observations across frames. Consider this worked case: A video of a moving car is processed by comparing consecutive frames to calculate displacement vectors, enabling smooth trajectory prediction. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
       "title": "Motion Estimation",
       "visualDirection": "template:academic-process | Animate a sequence of frames with tracked object paths overlaid, showing frame-to-frame comparison."
@@ -85,7 +85,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Object Recognition to a worked situation instead of treating it as an isolated definition. Object recognition maps visual evidence to object hypotheses. Consider this worked case: A traffic sign image is analyzed by matching edge patterns and color distributions to a pre-trained classifier, outputting a 'stop' label with confidence score. On screen, show a traffic sign with bounding boxes, class labels, and confidence metrics, alongside a decision tree diagram. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "narration": "Apply Object Recognition to a worked situation instead of treating it as an isolated definition. Object recognition maps visual evidence to object hypotheses. Consider this worked case: A traffic sign image is analyzed by matching edge patterns and color distributions to a pre-trained classifier, outputting a 'stop' label with confidence score. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
       "plannedSeconds": 55,
       "title": "Object Recognition",
       "visualDirection": "template:academic-process | Show a traffic sign with bounding boxes, class labels, and confidence metrics, alongside a decision tree diagram."
@@ -103,7 +103,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Scene Understanding, including what improves and what becomes more difficult. Scene understanding combines objects, layout, and contextual relationships. Consider this worked case: A classroom image is parsed to identify desks, chairs, and students, with spatial relationships mapped to reconstruct room layout. On screen, display a classroom scene with segmented regions, labeled objects, and a spatial relationship graph. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Examine the tradeoffs in Scene Understanding, including what improves and what becomes more difficult. Scene understanding combines objects, layout, and contextual relationships. Consider this worked case: A classroom image is parsed to identify desks, chairs, and students, with spatial relationships mapped to reconstruct room layout. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
       "title": "Scene Understanding",
       "visualDirection": "template:academic-process | Display a classroom scene with segmented regions, labeled objects, and a spatial relationship graph."
@@ -121,7 +121,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Image Representation with an edge case and identify which assumption controls the outcome. Computer vision pipelines represent images as numeric arrays. Consider this worked case: A color photograph is converted to a 3D array of height, width, and channels, where each pixel value ranges from 0 to 255. On screen, show a color image with a numeric array overlay, highlighting channel separation and pixel value ranges. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "narration": "Stress-test the reasoning around Image Representation with an edge case and identify which assumption controls the outcome. Computer vision pipelines represent images as numeric arrays. Consider this worked case: A color photograph is converted to a 3D array of height, width, and channels, where each pixel value ranges from 0 to 255. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
       "plannedSeconds": 55,
       "title": "Image Representation",
       "visualDirection": "template:academic-process | Show a color image with a numeric array overlay, highlighting channel separation and pixel value ranges."
@@ -139,7 +139,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Color Conversion to diagnose a failure by separating symptoms, causes, and corrective action. Color conversion changes the coordinate representation of pixel values. Consider this worked case: An RGB image is transformed to HSV space to isolate green foliage from background noise, improving segmentation accuracy. On screen, display RGB, HSV, and LAB color space versions of the same image, with channel separation visualized. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Use Color Conversion to diagnose a failure by separating symptoms, causes, and corrective action. Color conversion changes the coordinate representation of pixel values. Consider this worked case: An RGB image is transformed to HSV space to isolate green foliage from background noise, improving segmentation accuracy. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 58,
       "title": "Color Conversion",
       "visualDirection": "template:academic-process | Display RGB, HSV, and LAB color space versions of the same image, with channel separation visualized."
@@ -157,7 +157,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Filtering and Feature Detection to the earlier ideas and explain how the pieces work as one system. Filtering combines neighboring samples to smooth, sharpen, or detect structure. Consider this worked case: A blurred document image is sharpened using a Sobel filter, then analyzed with SIFT to extract keypoints for matching. On screen, show a before/after image with filter kernels and detected feature points overlaid. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Connect Filtering and Feature Detection to the earlier ideas and explain how the pieces work as one system. Filtering combines neighboring samples to smooth, sharpen, or detect structure. Consider this worked case: A blurred document image is sharpened using a Sobel filter, then analyzed with SIFT to extract keypoints for matching. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 57,
       "title": "Filtering and Feature Detection",
       "visualDirection": "template:academic-process | Show a before/after image with filter kernels and detected feature points overlaid."
@@ -175,7 +175,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Evaluation tests sensitivity to viewpoint, lighting, occlusion, and data shift. Consider this worked case: A face detection system is tested with rotated faces, different lighting, partial occlusion, and cross-database samples to measure accuracy drop. On screen, display a checklist graphic with checkboxes for viewpoint, lighting, occlusion, and data shift, alongside performance metrics. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Evaluation tests sensitivity to viewpoint, lighting, occlusion, and data shift. Consider this worked case: A face detection system is tested with rotated faces, different lighting, partial occlusion, and cross-database samples to measure accuracy drop. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
       "plannedSeconds": 55,
       "title": "Practical Analysis Checklist",
       "visualDirection": "template:academic-process | Display a checklist graphic with checkboxes for viewpoint, lighting, occlusion, and data shift, alongside performance metrics."

@@ -13,7 +13,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Workflow Architecture as a question about inputs, decisions, and observable results. Data-analysis workflows separate data preparation, exploratory analysis, training, validation, testing, model selection, and evaluation. Consider this worked case: A pipeline begins by cleaning raw CSV files, then splits them into training and validation sets before fitting a classifier. On screen, display a horizontal flowchart with seven labeled nodes connected by arrows, showing the progression from data preparation to evaluation. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "narration": "Begin by framing Workflow Architecture as a question about inputs, decisions, and observable results. Data-analysis workflows separate data preparation, exploratory analysis, training, validation, testing, model selection, and evaluation. Consider this worked case: A pipeline begins by cleaning raw CSV files, then splits them into training and validation sets before fitting a classifier. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
       "plannedSeconds": 55,
       "title": "Workflow Architecture",
       "visualDirection": "template:academic-process | Display a horizontal flowchart with seven labeled nodes connected by arrows, showing the progression from data preparation to evaluation."
@@ -31,7 +31,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Supervised Learning Foundations precisely enough that another learner could test the definition. Supervised methods learn mappings from examples paired with target labels, while unsupervised methods identify structure without targets. Consider this worked case: Training a logistic regression model on labeled spam emails where the label indicates whether each message is spam or not. On screen, show a split-screen diagram: left side shows unlabeled data points, right side shows the same points with colored target labels, connected by a learning arrow. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "narration": "Now define Supervised Learning Foundations precisely enough that another learner could test the definition. Supervised methods learn mappings from examples paired with target labels, while unsupervised methods identify structure without targets. Consider this worked case: Training a logistic regression model on labeled spam emails where the label indicates whether each message is spam or not. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
       "plannedSeconds": 59,
       "title": "Supervised Learning Foundations",
       "visualDirection": "template:academic-process | Show a split-screen diagram: left side shows unlabeled data points, right side shows the same points with colored target labels, connected by a learning arrow."
@@ -49,7 +49,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Unsupervised Learning Foundations operates in a concrete sequence. Query planning and physical storage affect performance without changing logical query meaning. Consider this worked case: Applying k-means clustering to customer purchase data to group users by spending patterns without predefined categories. On screen, render a scatter plot of data points with colored clusters forming around natural groupings, labeled as 'no target labels'. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "With the foundation in place, examine how Unsupervised Learning Foundations operates in a concrete sequence. Query planning and physical storage affect performance without changing logical query meaning. Consider this worked case: Applying k-means clustering to customer purchase data to group users by spending patterns without predefined categories. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 57,
       "title": "Unsupervised Learning Foundations",
       "visualDirection": "template:academic-process | Render a scatter plot of data points with colored clusters forming around natural groupings, labeled as 'no target labels'."
@@ -67,7 +67,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Preprocessing Constraints and make the decision criteria explicit. Preprocessing must be fitted only on permitted training data to avoid leakage. Consider this worked case: Scaling features using the mean and standard deviation calculated exclusively from the training set before applying to validation data. On screen, illustrate a pipeline where a 'fit' step occurs on the training set, and a 'transform' step applies the same parameters to the validation set, with a warning icon blocking cross-contamination. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "narration": "Next, compare the choices involved in Preprocessing Constraints and make the decision criteria explicit. Preprocessing must be fitted only on permitted training data to avoid leakage. Consider this worked case: Scaling features using the mean and standard deviation calculated exclusively from the training set before applying to validation data. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
       "plannedSeconds": 58,
       "title": "Preprocessing Constraints",
       "visualDirection": "template:academic-process | Illustrate a pipeline where a 'fit' step occurs on the training set, and a 'transform' step applies the same parameters to the validation set, with a warning icon blocking cross-contamination."
@@ -85,7 +85,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Pipeline Consistency to a worked situation instead of treating it as an isolated definition. Pipelines combine transformations and estimators so the same operations are applied consistently. Consider this worked case: A single pipeline object that chains standardization, imputation, and model fitting, ensuring identical operations run during training and prediction. On screen, draw a rectangular block labeled 'Pipeline' containing three stacked sub-blocks (transform, impute, estimator) with input and output arrows, emphasizing unified execution. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "narration": "Apply Pipeline Consistency to a worked situation instead of treating it as an isolated definition. Pipelines combine transformations and estimators so the same operations are applied consistently. Consider this worked case: A single pipeline object that chains standardization, imputation, and model fitting, ensuring identical operations run during training and prediction. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
       "plannedSeconds": 57,
       "title": "Pipeline Consistency",
       "visualDirection": "template:academic-process | Draw a rectangular block labeled 'Pipeline' containing three stacked sub-blocks (transform, impute, estimator) with input and output arrows, emphasizing unified execution."
@@ -103,7 +103,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Cross-Validation Mechanics, including what improves and what becomes more difficult. Cross-validation repeats training and validation across defined splits. Consider this worked case: Using five-fold cross-validation where the dataset is partitioned into five subsets, each serving as a validation set once while the others train the model. On screen, show a circular diagram with five segments, each labeled with a fold number, and arrows indicating rotation through training and validation phases. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "narration": "Examine the tradeoffs in Cross-Validation Mechanics, including what improves and what becomes more difficult. Cross-validation repeats training and validation across defined splits. Consider this worked case: Using five-fold cross-validation where the dataset is partitioned into five subsets, each serving as a validation set once while the others train the model. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
       "plannedSeconds": 55,
       "title": "Cross-Validation Mechanics",
       "visualDirection": "template:academic-process | Show a circular diagram with five segments, each labeled with a fold number, and arrows indicating rotation through training and validation phases."
@@ -121,7 +121,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Evaluation Alignment with an edge case and identify which assumption controls the outcome. Evaluation must match the task and the cost of errors, while distribution shift, missing data, overfitting, and unexamined sampling choices can invalidate conclusions. Consider this worked case: Using precision and recall for fraud detection because false negatives carry higher cost than false positives, and adjusting thresholds based on class imbalance. On screen, present a decision matrix comparing true/false positives and negatives, with cost weights applied to each quadrant to show evaluation trade-offs. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "narration": "Stress-test the reasoning around Evaluation Alignment with an edge case and identify which assumption controls the outcome. Evaluation must match the task and the cost of errors, while distribution shift, missing data, overfitting, and unexamined sampling choices can invalidate conclusions. Consider this worked case: Using precision and recall for fraud detection because false negatives carry higher cost than false positives, and adjusting thresholds based on class imbalance. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
       "plannedSeconds": 65,
       "title": "Evaluation Alignment",
       "visualDirection": "template:academic-process | Present a decision matrix comparing true/false positives and negatives, with cost weights applied to each quadrant to show evaluation trade-offs."
@@ -139,7 +139,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Data Quality Analysis to diagnose a failure by separating symptoms, causes, and corrective action. Data quality analysis makes missingness, duplicates, inconsistent representation, integrity constraints, sampling, and update behavior explicit. Consider this worked case: Running a data profiling script that reports null counts, duplicate row percentages, and value distribution shifts across time periods. On screen, display a dashboard mockup with four metric cards: 'Missingness %', 'Duplicate Rate', 'Value Range', and 'Update Frequency', each with a trend line. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "narration": "Use Data Quality Analysis to diagnose a failure by separating symptoms, causes, and corrective action. Data quality analysis makes missingness, duplicates, inconsistent representation, integrity constraints, sampling, and update behavior explicit. Consider this worked case: Running a data profiling script that reports null counts, duplicate row percentages, and value distribution shifts across time periods. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
       "plannedSeconds": 59,
       "title": "Data Quality Analysis",
       "visualDirection": "template:academic-process | Display a dashboard mockup with four metric cards: 'Missingness %', 'Duplicate Rate', 'Value Range', and 'Update Frequency', each with a trend line."
@@ -157,7 +157,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Query and Storage Impact to the earlier ideas and explain how the pieces work as one system. Queries select, join, aggregate, order, and transform data. Consider this worked case: Adding a B-tree index on a frequently filtered column speeds up SELECT operations while preserving the exact same SQL result set. On screen, show a before-and-after comparison: left side shows a full table scan with slow execution time, right side shows an index lookup with faster execution time and identical output rows. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "narration": "Connect Query and Storage Impact to the earlier ideas and explain how the pieces work as one system. Queries select, join, aggregate, order, and transform data. Consider this worked case: Adding a B-tree index on a frequently filtered column speeds up SELECT operations while preserving the exact same SQL result set. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
       "plannedSeconds": 59,
       "title": "Query and Storage Impact",
       "visualDirection": "template:academic-process | Show a before-and-after comparison: left side shows a full table scan with slow execution time, right side shows an index lookup with faster execution time and identical output rows."
@@ -175,7 +175,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Analytical work should preserve provenance from captured data through cleaning, transformation, grouping, modeling, visualization, and reporting. Consider this worked case: Maintaining a versioned data lineage log that tracks each transformation step, model parameters, and visualization settings for reproducible research. On screen, list a checklist with six checkboxes: 'Provenance Tracked', 'Transformations Documented', 'Model Parameters Logged', 'Visualization Settings Saved', 'Reporting Format Standardized', 'Reproducibility Verified'. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Analytical work should preserve provenance from captured data through cleaning, transformation, grouping, modeling, visualization, and reporting. Consider this worked case: Maintaining a versioned data lineage log that tracks each transformation step, model parameters, and visualization settings for reproducible research. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
       "plannedSeconds": 58,
       "title": "Practical Analysis Checklist",
       "visualDirection": "template:academic-process | List a checklist with six checkboxes: 'Provenance Tracked', 'Transformations Documented', 'Model Parameters Logged', 'Visualization Settings Saved', 'Reporting Format Standardized', 'Reproducibility Verified'."

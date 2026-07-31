@@ -1,7 +1,7 @@
 {
   "approvals": [
     {
-      "approvedAt": "2026-07-31T16:13:21.931Z",
+      "approvedAt": "2026-07-31T19:09:43.305Z",
       "notes": "Verifies declared source bindings for draft rendering; instructor and release approval remain required.",
       "reviewer": "Automated source-pack verification (draft)",
       "role": "automation",
@@ -283,7 +283,7 @@
     }
   ],
   "configSha256": "5eeb9ca8c6f69df9842a9061377092556c78cf011ee61fa9ed4648474b303330",
-  "createdAt": "2026-07-31T16:15:11.598Z",
+  "createdAt": "2026-07-31T19:11:29.614Z",
   "final": {
     "releaseAudit": {
       "blockers": [],
@@ -507,7 +507,7 @@
       "width": 1920
     }
   },
-  "gitRevision": "7cc6a1effbf0137c7d0ddb2f8ad53603de52361c",
+  "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
   "inputSha256": "7757a9027fd7a90faa9811fa3e97d088c6c066d71ff1e37fee56b4481bfd8dc5",
   "mode": "record",
   "providers": {
@@ -862,73 +862,6 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 18598,
-      "lookupSha256": "f9537e1c21a6426a6df713c838b7800adef69dd96a6451e51ef3261f5f9b33b3",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "Begin by framing The Disciplined Solution Framework as a question about inputs, decisions, and observable results. A disciplined solution states inputs and outputs, proves correctness, and then analyzes time and space. Consider this worked case: Sorting an array: Input is an unordered list of numbers; Output is the same list in non-decreasing order; Correctness is proved by loop invariants; Complexity is O(n log n) via divide-and-conquer. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "110ff5c0e65cabafd30f2a7b9d6de24612501ae4d8da618aff801b169bd2ac30",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/d3/d3ae6013cfa38b4c699e1f034c94171ab40f6e131b4b6444433b7267a0286c44.mp3",
-            "sha256": "d3ae6013cfa38b4c699e1f034c94171ab40f6e131b4b6444433b7267a0286c44",
-            "size": 384768
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/e7/e7f60e296a6a9439b91858f46e255247e6d82cb6e58b1e0dd6cf9debe452e951.vtt",
-            "sha256": "e7f60e296a6a9439b91858f46e255247e6d82cb6e58b1e0dd6cf9debe452e951",
-            "size": 961
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-31T13:19:30.976Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
       "durationMs": 19023,
       "lookupSha256": "61454d4b5017b1b096348490492ca071da9a6cf251a08aaa56824a5123bf33fa",
       "model": "edge-tts-7.2.8",
@@ -996,8 +929,8 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 26954,
-      "lookupSha256": "c550f20f74cafc816beeb79f621cf84806fd4a9124350f07e3f8f5d4bcd1f5f2",
+      "durationMs": 18598,
+      "lookupSha256": "f9537e1c21a6426a6df713c838b7800adef69dd96a6451e51ef3261f5f9b33b3",
       "model": "edge-tts-7.2.8",
       "profileName": "edge-narration",
       "request": {
@@ -1015,164 +948,30 @@
         },
         "input": {
           "instructions": "Clear, direct, and conversational.",
-          "text": "Examine the tradeoffs in Core Data Structures: Lists, Stacks, Queues, including what improves and what becomes more difficult. Lists represent ordered sequences with position-based operations. Consider this worked case: A stack of plates: the last plate placed is the first one removed; a queue of customers: the first person in line is served first. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost."
+          "text": "Begin by framing The Disciplined Solution Framework as a question about inputs, decisions, and observable results. A disciplined solution states inputs and outputs, proves correctness, and then analyzes time and space. Consider this worked case: Sorting an array: Input is an unordered list of numbers; Output is the same list in non-decreasing order; Correctness is proved by loop invariants; Complexity is O(n log n) via divide-and-conquer. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections."
         },
         "model": "edge-tts-7.2.8",
         "parameters": {},
         "schemaVersion": 1
       },
-      "requestSha256": "fbcb7b89c6c8f92e4582404959765f0feca5a83ee34706a356669c4e6ebad8e6",
+      "requestSha256": "110ff5c0e65cabafd30f2a7b9d6de24612501ae4d8da618aff801b169bd2ac30",
       "result": {
         "artifacts": [
           {
             "extension": ".mp3",
             "filename": "speech.mp3",
             "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/b5/b5d6c9ad26117ffcb9098a1b2d210deef2f9acb013d66b7d8f29e3893f86504b.mp3",
-            "sha256": "b5d6c9ad26117ffcb9098a1b2d210deef2f9acb013d66b7d8f29e3893f86504b",
-            "size": 327888
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/d3/d3ae6013cfa38b4c699e1f034c94171ab40f6e131b4b6444433b7267a0286c44.mp3",
+            "sha256": "d3ae6013cfa38b4c699e1f034c94171ab40f6e131b4b6444433b7267a0286c44",
+            "size": 384768
           },
           {
             "extension": ".vtt",
             "filename": "speech.vtt",
             "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/b5/b58ab819e027157d878469270573e847b971d279a5c314224007546eb76eb49c.vtt",
-            "sha256": "b58ab819e027157d878469270573e847b971d279a5c314224007546eb76eb49c",
-            "size": 863
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-31T13:19:30.976Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 17542,
-      "lookupSha256": "1a9fb5c9c9bcd1d4bd1cf9f62004990b388b0db28317f7ccb8a71c20d368ee7f",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "Use Hash Tables and Collision Strategies to diagnose a failure by separating symptoms, causes, and corrective action. Hash tables map keys to locations and require a collision strategy. Consider this worked case: With hash function h(k) = k mod 7, keys 10 and 17 both map to index 3; chaining stores both in a linked list at that index. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "b29a812e2980405202d6f44e77d769d4f8e3e7ee33d08502c93b97a260302e73",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/38/385c9cf94a350d91f7fdcf23dee307e7ed9a5ab128dd8fdbd3be476ecd6cc91e.mp3",
-            "sha256": "385c9cf94a350d91f7fdcf23dee307e7ed9a5ab128dd8fdbd3be476ecd6cc91e",
-            "size": 362016
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/19/197c3d687589ca3f19fbfb4767d869b40627cab3e0f272c77e7c6ed0ce8237ef.vtt",
-            "sha256": "197c3d687589ca3f19fbfb4767d869b40627cab3e0f272c77e7c6ed0ce8237ef",
-            "size": 889
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-31T13:19:30.976Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 13657,
-      "lookupSha256": "b77c49533a85d0804b2ced00f6f000729e752ab4e371a11895c0c5b204c720db",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "Stress-test the reasoning around Trees and Hierarchical Representation with an edge case and identify which assumption controls the outcome. Trees represent hierarchical relationships and support recursive traversals. Consider this worked case: A binary search tree stores keys so that left children are smaller and right children are larger, enabling O(log n) search on balanced trees. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "f9b031fc6a09cac886e96bd5655c7e1a12b645b7113e396cda28b0246f4b6eca",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ff/ff5209aac38d95deee4f73271a29fc07cb8494b933ea1117a93f9e831bfb0c8c.mp3",
-            "sha256": "ff5209aac38d95deee4f73271a29fc07cb8494b933ea1117a93f9e831bfb0c8c",
-            "size": 342432
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/48/4885044040991028dde75ad2de8a61eda5ab35a15ac4638c749efac0997bf7d4.vtt",
-            "sha256": "4885044040991028dde75ad2de8a61eda5ab35a15ac4638c749efac0997bf7d4",
-            "size": 906
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/e7/e7f60e296a6a9439b91858f46e255247e6d82cb6e58b1e0dd6cf9debe452e951.vtt",
+            "sha256": "e7f60e296a6a9439b91858f46e255247e6d82cb6e58b1e0dd6cf9debe452e951",
+            "size": 961
           }
         ],
         "costUsd": null,
@@ -1264,6 +1063,207 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
+      "durationMs": 17542,
+      "lookupSha256": "1a9fb5c9c9bcd1d4bd1cf9f62004990b388b0db28317f7ccb8a71c20d368ee7f",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "Use Hash Tables and Collision Strategies to diagnose a failure by separating symptoms, causes, and corrective action. Hash tables map keys to locations and require a collision strategy. Consider this worked case: With hash function h(k) = k mod 7, keys 10 and 17 both map to index 3; chaining stores both in a linked list at that index. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "b29a812e2980405202d6f44e77d769d4f8e3e7ee33d08502c93b97a260302e73",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/38/385c9cf94a350d91f7fdcf23dee307e7ed9a5ab128dd8fdbd3be476ecd6cc91e.mp3",
+            "sha256": "385c9cf94a350d91f7fdcf23dee307e7ed9a5ab128dd8fdbd3be476ecd6cc91e",
+            "size": 362016
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/19/197c3d687589ca3f19fbfb4767d869b40627cab3e0f272c77e7c6ed0ce8237ef.vtt",
+            "sha256": "197c3d687589ca3f19fbfb4767d869b40627cab3e0f272c77e7c6ed0ce8237ef",
+            "size": 889
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T13:19:30.976Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 26954,
+      "lookupSha256": "c550f20f74cafc816beeb79f621cf84806fd4a9124350f07e3f8f5d4bcd1f5f2",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "Examine the tradeoffs in Core Data Structures: Lists, Stacks, Queues, including what improves and what becomes more difficult. Lists represent ordered sequences with position-based operations. Consider this worked case: A stack of plates: the last plate placed is the first one removed; a queue of customers: the first person in line is served first. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "fbcb7b89c6c8f92e4582404959765f0feca5a83ee34706a356669c4e6ebad8e6",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/b5/b5d6c9ad26117ffcb9098a1b2d210deef2f9acb013d66b7d8f29e3893f86504b.mp3",
+            "sha256": "b5d6c9ad26117ffcb9098a1b2d210deef2f9acb013d66b7d8f29e3893f86504b",
+            "size": 327888
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/b5/b58ab819e027157d878469270573e847b971d279a5c314224007546eb76eb49c.vtt",
+            "sha256": "b58ab819e027157d878469270573e847b971d279a5c314224007546eb76eb49c",
+            "size": 863
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T13:19:30.976Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 13657,
+      "lookupSha256": "b77c49533a85d0804b2ced00f6f000729e752ab4e371a11895c0c5b204c720db",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "Stress-test the reasoning around Trees and Hierarchical Representation with an edge case and identify which assumption controls the outcome. Trees represent hierarchical relationships and support recursive traversals. Consider this worked case: A binary search tree stores keys so that left children are smaller and right children are larger, enabling O(log n) search on balanced trees. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "f9b031fc6a09cac886e96bd5655c7e1a12b645b7113e396cda28b0246f4b6eca",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ff/ff5209aac38d95deee4f73271a29fc07cb8494b933ea1117a93f9e831bfb0c8c.mp3",
+            "sha256": "ff5209aac38d95deee4f73271a29fc07cb8494b933ea1117a93f9e831bfb0c8c",
+            "size": 342432
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/48/4885044040991028dde75ad2de8a61eda5ab35a15ac4638c749efac0997bf7d4.vtt",
+            "sha256": "4885044040991028dde75ad2de8a61eda5ab35a15ac4638c749efac0997bf7d4",
+            "size": 906
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T13:19:30.976Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
       "durationMs": 14602,
       "lookupSha256": "e00b511e26a4c6fa2818ab6019215ddf92d04ba1f0ec740d1562b12d877cb23d",
       "model": "edge-tts-7.2.8",
@@ -1331,73 +1331,6 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 20937,
-      "lookupSha256": "ef982445fbc93d1182b65e41095780013dfb3be88df47b6231ebee0f42a67f51",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "Connect Graph Representations and Traversal to the earlier ideas and explain how the pieces work as one system. Graph algorithms operate on vertices and edges to answer reachability, ordering, connectivity, and path questions. Consider this worked case: In a directed graph, a depth-first search (DFS) explores all reachable vertices from a start node, useful for topological ordering. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "63bc0e78aa451fc2d727ef048f006d24dcd635929778a3ced0c2a6c6659ed27a",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/06/064b72bff607fd5963906de8582d96801743e6299a90201f76760d9cb9a793bd.mp3",
-            "sha256": "064b72bff607fd5963906de8582d96801743e6299a90201f76760d9cb9a793bd",
-            "size": 381312
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/47/4730cf27f26e10324e2af6c0bebade76768e7140be408530bd4930b578867b4b.vtt",
-            "sha256": "4730cf27f26e10324e2af6c0bebade76768e7140be408530bd4930b578867b4b",
-            "size": 930
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-31T13:19:44.101Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
       "durationMs": 9889,
       "lookupSha256": "1d7e3057a62e8783a5b99c712119d8a03d858b8400403e140b43e751a44fc247",
       "model": "edge-tts-7.2.8",
@@ -1461,6 +1394,73 @@
       "roleName": "narration",
       "schemaVersion": 1,
       "startedAt": "2026-07-31T13:19:44.696Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 20937,
+      "lookupSha256": "ef982445fbc93d1182b65e41095780013dfb3be88df47b6231ebee0f42a67f51",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "Connect Graph Representations and Traversal to the earlier ideas and explain how the pieces work as one system. Graph algorithms operate on vertices and edges to answer reachability, ordering, connectivity, and path questions. Consider this worked case: In a directed graph, a depth-first search (DFS) explores all reachable vertices from a start node, useful for topological ordering. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "63bc0e78aa451fc2d727ef048f006d24dcd635929778a3ced0c2a6c6659ed27a",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/06/064b72bff607fd5963906de8582d96801743e6299a90201f76760d9cb9a793bd.mp3",
+            "sha256": "064b72bff607fd5963906de8582d96801743e6299a90201f76760d9cb9a793bd",
+            "size": 381312
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/47/4730cf27f26e10324e2af6c0bebade76768e7140be408530bd4930b578867b4b.vtt",
+            "sha256": "4730cf27f26e10324e2af6c0bebade76768e7140be408530bd4930b578867b4b",
+            "size": 930
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T13:19:44.101Z"
     }
   ],
   "runId": "csci-261-foundations-design-analysis-and-data-structures-5b57cf008b26",
@@ -1516,7 +1516,7 @@
       "outreach/subject-showcase/reference-manifest.json"
     ],
     "gitDirty": true,
-    "gitRevision": "7cc6a1effbf0137c7d0ddb2f8ad53603de52361c",
+    "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
     "gitStatusSha256": "add6a4c631c3d463fa2b7e37fa6a50bfab3e6fce98296cf041f8a8d165d4cda8",
     "node": "v22.23.1",
     "platform": "darwin-arm64",

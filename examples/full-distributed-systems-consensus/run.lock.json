@@ -1,7 +1,7 @@
 {
   "approvals": [
     {
-      "approvedAt": "2026-07-31T15:19:07.571Z",
+      "approvedAt": "2026-07-31T19:19:35.277Z",
       "notes": "Verifies declared source bindings for draft rendering; instructor and release approval remain required.",
       "reviewer": "Automated source-pack verification (draft)",
       "role": "automation",
@@ -555,7 +555,7 @@
     }
   ],
   "configSha256": "332f4a66e4b522ae6c47b5615c2c630abcd33adf8d3dfcb6a044c0e2ca5909a4",
-  "createdAt": "2026-07-31T15:21:39.576Z",
+  "createdAt": "2026-07-31T19:22:29.277Z",
   "final": {
     "releaseAudit": {
       "blockers": [],
@@ -774,7 +774,7 @@
       "width": 1920
     }
   },
-  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
   "inputSha256": "55359976c9568573eb2d6d06e0ca22bd123a0830d5c6f754df685b87a2e6c8ad",
   "mode": "record",
   "providers": {
@@ -1230,8 +1230,8 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 17165,
-      "lookupSha256": "b1712ca9dfb8d74d72f454f148ca2230107b2037de0474a3cbb3058c42fe7656",
+      "durationMs": 21336,
+      "lookupSha256": "bd3e702d2dadaeebe191e43d5a1f9a669118641ba5947fbffb3043144b9f2120",
       "model": "edge-tts-7.2.8",
       "profileName": "edge-narration",
       "request": {
@@ -1249,30 +1249,30 @@
         },
         "input": {
           "instructions": "Clear, direct, and conversational.",
-          "text": "To enforce identical execution order, we use a replicated log where every command is appended as a sequential entry. Each log entry contains a unique term number and a sequence index, creating a total order across all servers. When a client submits a request, the leader appends it to its log before acknowledging success. Followers replicate the entry by appending it to their own logs at the same index. This log structure ensures that every server records the exact same operations in the exact same order. The log becomes the single source of truth for system state, preventing conflicting histories and enabling reliable recovery after crashes or network partitions."
+          "text": "An entry becomes committed when it is replicated to a majority of servers and the leader's term matches the entry's term. This rule ensures that only entries from the current leader are committed, preventing stale leaders from overwriting newer data. Once committed, the entry is applied to the state machine in order. The commit rule relies on the log-matching property to guarantee that all servers applying the entry share identical preceding history. This prevents conflicting state updates and ensures that committed operations are durable across crashes. The term-based commitment rule also handles leader changes gracefully, ensuring that only the most recent leader's entries are finalized."
         },
         "model": "edge-tts-7.2.8",
         "parameters": {},
         "schemaVersion": 1
       },
-      "requestSha256": "65419c9b743086b60d331ee54e7574855d131dccef0e3b77bb3d3810cbe394c1",
+      "requestSha256": "57c26946135e2a33b182721bbf8cff36224ce9b1f82ef2027820d08d505dc99a",
       "result": {
         "artifacts": [
           {
             "extension": ".mp3",
             "filename": "speech.mp3",
             "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/a8/a8cc4c1b3441b1a1683393b1b01659485d0c7b28309f336cf1100e1de4e66adf.mp3",
-            "sha256": "a8cc4c1b3441b1a1683393b1b01659485d0c7b28309f336cf1100e1de4e66adf",
-            "size": 374544
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/04/04a7c33b297b4c06f869256f1c4cd3973a5f9faff33220b415147d2cee558c3f.mp3",
+            "sha256": "04a7c33b297b4c06f869256f1c4cd3973a5f9faff33220b415147d2cee558c3f",
+            "size": 374256
           },
           {
             "extension": ".vtt",
             "filename": "speech.vtt",
             "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/cd/cdee6f622e5a71a64ca65e98a592661841db737d4d1c10f30e28eacc33d2082c.vtt",
-            "sha256": "cdee6f622e5a71a64ca65e98a592661841db737d4d1c10f30e28eacc33d2082c",
-            "size": 870
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/cd/cdbcada6c3ee2c5b12de78919a437baf9aae4a206825689e68682fd30068d400.vtt",
+            "sha256": "cdbcada6c3ee2c5b12de78919a437baf9aae4a206825689e68682fd30068d400",
+            "size": 897
           }
         ],
         "costUsd": null,
@@ -1292,74 +1292,7 @@
       },
       "roleName": "narration",
       "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:32:31.423Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 35643,
-      "lookupSha256": "156126799ed364cfc593c2b1f32c70e5937da9031b61ce27a2baba855894f11a",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "To guarantee consistency across multiple nodes, we replicate state machines that process identical operations in the exact same order. Each server maintains a local copy of the system state, but the critical challenge is ensuring they apply operations in identical sequences despite network delays. If servers apply commands differently, the system diverges into conflicting states. By forcing all nodes to execute the same sequence of operations, we eliminate state divergence. This approach transforms distributed coordination into a single-threaded execution problem, where correctness depends entirely on the order of applied operations rather than complex distributed state synchronization."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "12461e15349aa1fc90f04260d3e2a2249a1fadc4bfade2b91aee780752fadb89",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ed/ed1734bc65cf708c68f03d9805f374a5b887576d3985c58c3966015b5bf5f038.mp3",
-            "sha256": "ed1734bc65cf708c68f03d9805f374a5b887576d3985c58c3966015b5bf5f038",
-            "size": 379152
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/31/3179b04df22b1d5429f7b68f281dc25407c5b1c4b148c05b6a667c13144911fe.vtt",
-            "sha256": "3179b04df22b1d5429f7b68f281dc25407c5b1c4b148c05b6a667c13144911fe",
-            "size": 861
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:32:31.423Z"
+      "startedAt": "2026-07-30T04:33:07.159Z"
     },
     {
       "cacheHit": true,
@@ -1431,8 +1364,8 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 21336,
-      "lookupSha256": "bd3e702d2dadaeebe191e43d5a1f9a669118641ba5947fbffb3043144b9f2120",
+      "durationMs": 35643,
+      "lookupSha256": "156126799ed364cfc593c2b1f32c70e5937da9031b61ce27a2baba855894f11a",
       "model": "edge-tts-7.2.8",
       "profileName": "edge-narration",
       "request": {
@@ -1450,30 +1383,30 @@
         },
         "input": {
           "instructions": "Clear, direct, and conversational.",
-          "text": "An entry becomes committed when it is replicated to a majority of servers and the leader's term matches the entry's term. This rule ensures that only entries from the current leader are committed, preventing stale leaders from overwriting newer data. Once committed, the entry is applied to the state machine in order. The commit rule relies on the log-matching property to guarantee that all servers applying the entry share identical preceding history. This prevents conflicting state updates and ensures that committed operations are durable across crashes. The term-based commitment rule also handles leader changes gracefully, ensuring that only the most recent leader's entries are finalized."
+          "text": "To guarantee consistency across multiple nodes, we replicate state machines that process identical operations in the exact same order. Each server maintains a local copy of the system state, but the critical challenge is ensuring they apply operations in identical sequences despite network delays. If servers apply commands differently, the system diverges into conflicting states. By forcing all nodes to execute the same sequence of operations, we eliminate state divergence. This approach transforms distributed coordination into a single-threaded execution problem, where correctness depends entirely on the order of applied operations rather than complex distributed state synchronization."
         },
         "model": "edge-tts-7.2.8",
         "parameters": {},
         "schemaVersion": 1
       },
-      "requestSha256": "57c26946135e2a33b182721bbf8cff36224ce9b1f82ef2027820d08d505dc99a",
+      "requestSha256": "12461e15349aa1fc90f04260d3e2a2249a1fadc4bfade2b91aee780752fadb89",
       "result": {
         "artifacts": [
           {
             "extension": ".mp3",
             "filename": "speech.mp3",
             "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/04/04a7c33b297b4c06f869256f1c4cd3973a5f9faff33220b415147d2cee558c3f.mp3",
-            "sha256": "04a7c33b297b4c06f869256f1c4cd3973a5f9faff33220b415147d2cee558c3f",
-            "size": 374256
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ed/ed1734bc65cf708c68f03d9805f374a5b887576d3985c58c3966015b5bf5f038.mp3",
+            "sha256": "ed1734bc65cf708c68f03d9805f374a5b887576d3985c58c3966015b5bf5f038",
+            "size": 379152
           },
           {
             "extension": ".vtt",
             "filename": "speech.vtt",
             "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/cd/cdbcada6c3ee2c5b12de78919a437baf9aae4a206825689e68682fd30068d400.vtt",
-            "sha256": "cdbcada6c3ee2c5b12de78919a437baf9aae4a206825689e68682fd30068d400",
-            "size": 897
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/31/3179b04df22b1d5429f7b68f281dc25407c5b1c4b148c05b6a667c13144911fe.vtt",
+            "sha256": "3179b04df22b1d5429f7b68f281dc25407c5b1c4b148c05b6a667c13144911fe",
+            "size": 861
           }
         ],
         "costUsd": null,
@@ -1493,7 +1426,141 @@
       },
       "roleName": "narration",
       "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:33:07.159Z"
+      "startedAt": "2026-07-30T04:32:31.423Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 17165,
+      "lookupSha256": "b1712ca9dfb8d74d72f454f148ca2230107b2037de0474a3cbb3058c42fe7656",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "To enforce identical execution order, we use a replicated log where every command is appended as a sequential entry. Each log entry contains a unique term number and a sequence index, creating a total order across all servers. When a client submits a request, the leader appends it to its log before acknowledging success. Followers replicate the entry by appending it to their own logs at the same index. This log structure ensures that every server records the exact same operations in the exact same order. The log becomes the single source of truth for system state, preventing conflicting histories and enabling reliable recovery after crashes or network partitions."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "65419c9b743086b60d331ee54e7574855d131dccef0e3b77bb3d3810cbe394c1",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/a8/a8cc4c1b3441b1a1683393b1b01659485d0c7b28309f336cf1100e1de4e66adf.mp3",
+            "sha256": "a8cc4c1b3441b1a1683393b1b01659485d0c7b28309f336cf1100e1de4e66adf",
+            "size": 374544
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/cd/cdee6f622e5a71a64ca65e98a592661841db737d4d1c10f30e28eacc33d2082c.vtt",
+            "sha256": "cdee6f622e5a71a64ca65e98a592661841db737d4d1c10f30e28eacc33d2082c",
+            "size": 870
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T04:32:31.423Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 29270,
+      "lookupSha256": "64275eeae620fb48e1db11ba1a48825714f4f727305cf828090b4fc1d0a5b72c",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "Distributed systems operate across multiple networked computers where components inevitably experience partial failure. When a node slows down, it becomes indistinguishable from a crashed server, forcing designers to make explicit assumptions about timing and communication. This uncertainty means we cannot rely on simple timeouts to detect outages. Instead, we must design protocols that tolerate delayed messages, duplicated transmissions, and unpredictable network schedules. Understanding these constraints is the first step toward building reliable consensus mechanisms that survive real-world network chaos without assuming perfect synchronization or instantaneous failure detection."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "9ab6b01f10918be3027c1619b195783a8b01ad202916cafb205f30966c6738ab",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/c9/c9ab99e483965477704d898af09c15a9960e42a746589fb529d69fb9ea660867.mp3",
+            "sha256": "c9ab99e483965477704d898af09c15a9960e42a746589fb529d69fb9ea660867",
+            "size": 390960
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ce/ce0bc6074cc222ae959ad048f0a0eddf7304383fd9d51d78352592d2f2fd5017.vtt",
+            "sha256": "ce0bc6074cc222ae959ad048f0a0eddf7304383fd9d51d78352592d2f2fd5017",
+            "size": 856
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T04:32:31.416Z"
     },
     {
       "cacheHit": true,
@@ -1628,73 +1695,6 @@
       "roleName": "narration",
       "schemaVersion": 1,
       "startedAt": "2026-07-30T04:33:28.398Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 29270,
-      "lookupSha256": "64275eeae620fb48e1db11ba1a48825714f4f727305cf828090b4fc1d0a5b72c",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "Distributed systems operate across multiple networked computers where components inevitably experience partial failure. When a node slows down, it becomes indistinguishable from a crashed server, forcing designers to make explicit assumptions about timing and communication. This uncertainty means we cannot rely on simple timeouts to detect outages. Instead, we must design protocols that tolerate delayed messages, duplicated transmissions, and unpredictable network schedules. Understanding these constraints is the first step toward building reliable consensus mechanisms that survive real-world network chaos without assuming perfect synchronization or instantaneous failure detection."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "9ab6b01f10918be3027c1619b195783a8b01ad202916cafb205f30966c6738ab",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/c9/c9ab99e483965477704d898af09c15a9960e42a746589fb529d69fb9ea660867.mp3",
-            "sha256": "c9ab99e483965477704d898af09c15a9960e42a746589fb529d69fb9ea660867",
-            "size": 390960
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ce/ce0bc6074cc222ae959ad048f0a0eddf7304383fd9d51d78352592d2f2fd5017.vtt",
-            "sha256": "ce0bc6074cc222ae959ad048f0a0eddf7304383fd9d51d78352592d2f2fd5017",
-            "size": 856
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:32:31.416Z"
     },
     {
       "cacheHit": true,
@@ -1936,8 +1936,27 @@
   ],
   "status": "awaiting-approval",
   "toolchain": {
+    "ffmpeg": {
+      "available": true,
+      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "available": true,
+      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "gitChangedPaths": [
+      "outreach/README.md",
+      "outreach/general-email.md",
+      "outreach/leadership-confirmation.md",
+      "outreach/subject-showcase/reference-manifest.json"
+    ],
+    "gitDirty": true,
+    "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
+    "gitStatusSha256": "add6a4c631c3d463fa2b7e37fa6a50bfab3e6fce98296cf041f8a8d165d4cda8",
     "node": "v22.23.1",
     "platform": "darwin-arm64",
+    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtimeDirty": false,
     "sharp": {
       "aom": "3.14.1",
       "archive": "3.8.8",
@@ -1961,32 +1980,14 @@
       "png": "1.6.58",
       "proxy-libintl": "0.5",
       "rsvg": "2.62.90",
+      "sharp": "0.35.3",
       "tiff": "d01a94b",
       "uhdr": "1acdbed",
       "vips": "8.18.3",
       "webp": "1.6.0",
       "xml2": "2.15.3",
-      "zlib-ng": "2.3.3",
-      "sharp": "0.35.3"
-    },
-    "ffmpeg": {
-      "available": true,
-      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
-    },
-    "ffprobe": {
-      "available": true,
-      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
-    },
-    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
-    "gitDirty": true,
-    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
-    "gitChangedPaths": [
-      "outreach/README.md",
-      "outreach/general-email.md",
-      "outreach/leadership-confirmation.md"
-    ],
-    "runtimeDirty": false,
-    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "zlib-ng": "2.3.3"
+    }
   },
   "totalCostUsd": 0
 }

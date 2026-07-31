@@ -1,7 +1,7 @@
 {
   "approvals": [
     {
-      "approvedAt": "2026-07-31T15:43:55.606Z",
+      "approvedAt": "2026-07-31T19:23:12.479Z",
       "notes": "Verifies declared source bindings for draft rendering; instructor and release approval remain required.",
       "reviewer": "Automated source-pack verification (draft)",
       "role": "automation",
@@ -756,7 +756,7 @@
     }
   ],
   "configSha256": "838a6f556a3634b7d7a20418a23562360f911c94a2c3a8eee7b658cbfdbd517b",
-  "createdAt": "2026-07-31T15:46:57.522Z",
+  "createdAt": "2026-07-31T19:25:54.511Z",
   "final": {
     "releaseAudit": {
       "blockers": [],
@@ -1011,7 +1011,7 @@
       "width": 1920
     }
   },
-  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
   "inputSha256": "49b4dd504275d7c6897d25589a9fdea0bd05de4ca12b3a9a29efe55416382ff2",
   "mode": "record",
   "providers": {
@@ -1040,73 +1040,6 @@
     }
   },
   "requests": [
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 35474,
-      "lookupSha256": "3a9f43cd3701ff1d850d408a170f8b6ae83f37001c65cabc79f4b2c780f8dd7f",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Emphasize \"contract\" and \"same software-visible result.\"",
-          "text": "First, separate the contract from the machinery. The RISC-V ISA says what ADD means: read two source registers, add their values, and write the low XLEN bits into the destination register. It also specifies the instruction fields that identify that operation. Software depends on this promise. Internally, one processor might execute an instruction in several simple stages, another might issue multiple instructions at once, and a small controller might reuse hardware across many cycles. Those designs may look very different, yet a correct implementation must produce the same software-visible result. This distinction keeps our reasoning disciplined: begin with what must happen, then study how one pipeline makes it happen."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "9a96893e591bc4baf7e52a6cf65bd107502024a33b0575c2cfa22ba481a8316b",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/a4/a479e3e633fcc4401d5d1e7202474151cab316f634cf60e779cc0b0c0f8bbe16.mp3",
-            "sha256": "a479e3e633fcc4401d5d1e7202474151cab316f634cf60e779cc0b0c0f8bbe16",
-            "size": 293040
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/1c/1c6ec6866bb8ace1876b12c2382b60cd95a44bc560a278b1e6810a946e5efafa.vtt",
-            "sha256": "1c6ec6866bb8ace1876b12c2382b60cd95a44bc560a278b1e6810a946e5efafa",
-            "size": 960
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-29T23:59:38.747Z"
-    },
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
@@ -1177,6 +1110,140 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
+      "durationMs": 35474,
+      "lookupSha256": "3a9f43cd3701ff1d850d408a170f8b6ae83f37001c65cabc79f4b2c780f8dd7f",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Emphasize \"contract\" and \"same software-visible result.\"",
+          "text": "First, separate the contract from the machinery. The RISC-V ISA says what ADD means: read two source registers, add their values, and write the low XLEN bits into the destination register. It also specifies the instruction fields that identify that operation. Software depends on this promise. Internally, one processor might execute an instruction in several simple stages, another might issue multiple instructions at once, and a small controller might reuse hardware across many cycles. Those designs may look very different, yet a correct implementation must produce the same software-visible result. This distinction keeps our reasoning disciplined: begin with what must happen, then study how one pipeline makes it happen."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "9a96893e591bc4baf7e52a6cf65bd107502024a33b0575c2cfa22ba481a8316b",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/a4/a479e3e633fcc4401d5d1e7202474151cab316f634cf60e779cc0b0c0f8bbe16.mp3",
+            "sha256": "a479e3e633fcc4401d5d1e7202474151cab316f634cf60e779cc0b0c0f8bbe16",
+            "size": 293040
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/1c/1c6ec6866bb8ace1876b12c2382b60cd95a44bc560a278b1e6810a946e5efafa.vtt",
+            "sha256": "1c6ec6866bb8ace1876b12c2382b60cd95a44bc560a278b1e6810a946e5efafa",
+            "size": 960
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-29T23:59:38.747Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 31402,
+      "lookupSha256": "28e2e6a79965f16a2a89892054a1db145cfec226f454972a9a83615f1fe21279",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Treat the program counter as an address register, not as an instruction count.",
+          "text": "Assume the program counter contains zero x one thousand. Fetch presents that address to instruction memory and receives the thirty-two-bit ADD word. At the same time, the processor forms the sequential next address, zero x one thousand four. That plus-four step is valid for this RV32I teaching example because we are not using compressed instructions. Fetch does not yet know whether control flow will remain sequential. A branch or jump may later redirect the program counter. For now, the current address, instruction bits, and predicted next address must remain aligned as the instruction moves forward. Pipeline state records the information the Decode stage will need on the next clock cycle."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "43d4ca6dad0db64e6d801e36940a100e2d7af2170f63c6bf664176889423a4df",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/57/57edd3e4c86162242fa5fff3ca84b55ecf2d7bc78a38c6f9386263d32ad163c4.mp3",
+            "sha256": "57edd3e4c86162242fa5fff3ca84b55ecf2d7bc78a38c6f9386263d32ad163c4",
+            "size": 285264
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/6c/6c09583fb74e86d0e5384a0d8d692d2974700a81966cab2d399ddb868d2b07f6.vtt",
+            "sha256": "6c09583fb74e86d0e5384a0d8d692d2974700a81966cab2d399ddb868d2b07f6",
+            "size": 963
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T00:00:55.604Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
       "durationMs": 51163,
       "lookupSha256": "01b698743ba22d36c277b406cfabe898170a6edbcc18251583f285890d482e93",
       "model": "edge-tts-7.2.8",
@@ -1240,6 +1307,73 @@
       "roleName": "narration",
       "schemaVersion": 1,
       "startedAt": "2026-07-30T00:02:04.778Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 37731,
+      "lookupSha256": "43ce066bd3436200c4e9732d33058abb0537806bd126b986bf9911482034a3fc",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Stress that data and control travel together.",
+          "text": "In Decode, the instruction fields drive two related jobs. First, the register file uses rs1 and rs2 as read addresses. If x6 contains nineteen and x7 contains twenty-three, those values appear on the two read ports. Second, control logic interprets the opcode and function fields. It selects an integer addition, chooses two register operands for the ALU, disables a data-memory write, and enables a later register write to x5. Data alone is not enough. The destination register number and every control decision needed by later stages must advance beside the operands. If a value and its control signal become misaligned, the processor could compute correctly but write the result to the wrong place."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "6b1f650dbbc715468f84106ecc5abb7741e1a142f1ea3601f6da73a575872713",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/d1/d1d37916745e694ab899b52a003d786ad315201a139f6d9189e2401ded4970a7.mp3",
+            "sha256": "d1d37916745e694ab899b52a003d786ad315201a139f6d9189e2401ded4970a7",
+            "size": 309312
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/2a/2a9ecb70535e7ae2dda9dbba3d0da1bc31d8389a48d117498cbb7122e9fefc28.vtt",
+            "sha256": "2a9ecb70535e7ae2dda9dbba3d0da1bc31d8389a48d117498cbb7122e9fefc28",
+            "size": 966
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T00:01:27.026Z"
     },
     {
       "cacheHit": true,
@@ -1445,8 +1579,8 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 37731,
-      "lookupSha256": "43ce066bd3436200c4e9732d33058abb0537806bd126b986bf9911482034a3fc",
+      "durationMs": 30827,
+      "lookupSha256": "86861132f3a224a5b1686dfb36974ad75b5cd0b4ce47a1660ae47e22a249005f",
       "model": "edge-tts-7.2.8",
       "profileName": "edge-narration",
       "request": {
@@ -1463,31 +1597,31 @@
           ]
         },
         "input": {
-          "instructions": "Stress that data and control travel together.",
-          "text": "In Decode, the instruction fields drive two related jobs. First, the register file uses rs1 and rs2 as read addresses. If x6 contains nineteen and x7 contains twenty-three, those values appear on the two read ports. Second, control logic interprets the opcode and function fields. It selects an integer addition, chooses two register operands for the ALU, disables a data-memory write, and enables a later register write to x5. Data alone is not enough. The destination register number and every control decision needed by later stages must advance beside the operands. If a value and its control signal become misaligned, the processor could compute correctly but write the result to the wrong place."
+          "instructions": "Use \"younger instruction\" once, then restate it as \"later instruction.\"",
+          "text": "Now place sub x8, x5, x9 immediately after the ADD. The subtraction needs the new x5 as an input, but ordinary register-file timing may not provide that value when the subtraction reaches Execute. This is a read-after-write hazard: the later instruction reads a register that the earlier instruction will write. Hazard logic compares the source registers of younger instructions with destination registers already in the pipeline. Detecting the name match is only the first step. The processor must also know whether the value is ready and where it currently resides. Correctness requires the subtraction to use forty-two, not the stale value previously stored in x5."
         },
         "model": "edge-tts-7.2.8",
         "parameters": {},
         "schemaVersion": 1
       },
-      "requestSha256": "6b1f650dbbc715468f84106ecc5abb7741e1a142f1ea3601f6da73a575872713",
+      "requestSha256": "2b5271146ecf0c156697e26caf164b2ee5dc77ec140b1e954f3db8509518767c",
       "result": {
         "artifacts": [
           {
             "extension": ".mp3",
             "filename": "speech.mp3",
             "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/d1/d1d37916745e694ab899b52a003d786ad315201a139f6d9189e2401ded4970a7.mp3",
-            "sha256": "d1d37916745e694ab899b52a003d786ad315201a139f6d9189e2401ded4970a7",
-            "size": 309312
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/a7/a75658a9a5648d7a093e83d0dc27fb2f41d61e4efc1e6113e04d653226c3e5e2.mp3",
+            "sha256": "a75658a9a5648d7a093e83d0dc27fb2f41d61e4efc1e6113e04d653226c3e5e2",
+            "size": 273600
           },
           {
             "extension": ".vtt",
             "filename": "speech.vtt",
             "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/2a/2a9ecb70535e7ae2dda9dbba3d0da1bc31d8389a48d117498cbb7122e9fefc28.vtt",
-            "sha256": "2a9ecb70535e7ae2dda9dbba3d0da1bc31d8389a48d117498cbb7122e9fefc28",
-            "size": 966
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/78/78ecaccb33d18a60f8b10c6472dd27c74c9cfa3c3e41039178e8b1ab704f15e2.vtt",
+            "sha256": "78ecaccb33d18a60f8b10c6472dd27c74c9cfa3c3e41039178e8b1ab704f15e2",
+            "size": 899
           }
         ],
         "costUsd": null,
@@ -1507,13 +1641,13 @@
       },
       "roleName": "narration",
       "schemaVersion": 1,
-      "startedAt": "2026-07-30T00:01:27.026Z"
+      "startedAt": "2026-07-30T00:04:07.031Z"
     },
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 31402,
-      "lookupSha256": "28e2e6a79965f16a2a89892054a1db145cfec226f454972a9a83615f1fe21279",
+      "durationMs": 40028,
+      "lookupSha256": "1cadb014c090ea9a7f644022b144df6af089bad45fb36ce4d559c6d9da6ea849",
       "model": "edge-tts-7.2.8",
       "profileName": "edge-narration",
       "request": {
@@ -1530,31 +1664,31 @@
           ]
         },
         "input": {
-          "instructions": "Treat the program counter as an address register, not as an instruction count.",
-          "text": "Assume the program counter contains zero x one thousand. Fetch presents that address to instruction memory and receives the thirty-two-bit ADD word. At the same time, the processor forms the sequential next address, zero x one thousand four. That plus-four step is valid for this RV32I teaching example because we are not using compressed instructions. Fetch does not yet know whether control flow will remain sequential. A branch or jump may later redirect the program counter. For now, the current address, instruction bits, and predicted next address must remain aligned as the instruction moves forward. Pipeline state records the information the Decode stage will need on the next clock cycle."
+          "instructions": "Emphasize that wrong-path instructions must not commit.",
+          "text": "Branches create a different uncertainty. Fetch wants a next address every cycle, but the branch decision and target may not be known immediately. A simple processor can wait. A faster design may predict a direction and continue fetching. If the prediction is wrong, the processor redirects the program counter and flushes younger wrong-path instructions before they change architectural state. A flush is not merely erasing a diagram box. It disables the invalid instructions' control effects so they cannot write registers or memory. Prediction can improve average performance, but recovery logic preserves correctness when speculation is wrong."
         },
         "model": "edge-tts-7.2.8",
         "parameters": {},
         "schemaVersion": 1
       },
-      "requestSha256": "43d4ca6dad0db64e6d801e36940a100e2d7af2170f63c6bf664176889423a4df",
+      "requestSha256": "377de7e4c76dc277db69e25011a27d90190eeedcd19ef5e5a501818452bdd3f4",
       "result": {
         "artifacts": [
           {
             "extension": ".mp3",
             "filename": "speech.mp3",
             "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/57/57edd3e4c86162242fa5fff3ca84b55ecf2d7bc78a38c6f9386263d32ad163c4.mp3",
-            "sha256": "57edd3e4c86162242fa5fff3ca84b55ecf2d7bc78a38c6f9386263d32ad163c4",
-            "size": 285264
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/b4/b48dd4d3dad6639dc6e044ab07ac3c3b22b82ec15d8193b52ea64bc40bc3db2d.mp3",
+            "sha256": "b48dd4d3dad6639dc6e044ab07ac3c3b22b82ec15d8193b52ea64bc40bc3db2d",
+            "size": 252864
           },
           {
             "extension": ".vtt",
             "filename": "speech.vtt",
             "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/6c/6c09583fb74e86d0e5384a0d8d692d2974700a81966cab2d399ddb868d2b07f6.vtt",
-            "sha256": "6c09583fb74e86d0e5384a0d8d692d2974700a81966cab2d399ddb868d2b07f6",
-            "size": 963
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/b9/b99a0bd18eea0709216cb5c4a4a07ce0329db16e5d6a86e186c465dff04ebeb2.vtt",
+            "sha256": "b99a0bd18eea0709216cb5c4a4a07ce0329db16e5d6a86e186c465dff04ebeb2",
+            "size": 911
           }
         ],
         "costUsd": null,
@@ -1574,7 +1708,7 @@
       },
       "roleName": "narration",
       "schemaVersion": 1,
-      "startedAt": "2026-07-30T00:00:55.604Z"
+      "startedAt": "2026-07-30T00:05:06.466Z"
     },
     {
       "cacheHit": true,
@@ -1713,140 +1847,6 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 30827,
-      "lookupSha256": "86861132f3a224a5b1686dfb36974ad75b5cd0b4ce47a1660ae47e22a249005f",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Use \"younger instruction\" once, then restate it as \"later instruction.\"",
-          "text": "Now place sub x8, x5, x9 immediately after the ADD. The subtraction needs the new x5 as an input, but ordinary register-file timing may not provide that value when the subtraction reaches Execute. This is a read-after-write hazard: the later instruction reads a register that the earlier instruction will write. Hazard logic compares the source registers of younger instructions with destination registers already in the pipeline. Detecting the name match is only the first step. The processor must also know whether the value is ready and where it currently resides. Correctness requires the subtraction to use forty-two, not the stale value previously stored in x5."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "2b5271146ecf0c156697e26caf164b2ee5dc77ec140b1e954f3db8509518767c",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/a7/a75658a9a5648d7a093e83d0dc27fb2f41d61e4efc1e6113e04d653226c3e5e2.mp3",
-            "sha256": "a75658a9a5648d7a093e83d0dc27fb2f41d61e4efc1e6113e04d653226c3e5e2",
-            "size": 273600
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/78/78ecaccb33d18a60f8b10c6472dd27c74c9cfa3c3e41039178e8b1ab704f15e2.vtt",
-            "sha256": "78ecaccb33d18a60f8b10c6472dd27c74c9cfa3c3e41039178e8b1ab704f15e2",
-            "size": 899
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T00:04:07.031Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 40028,
-      "lookupSha256": "1cadb014c090ea9a7f644022b144df6af089bad45fb36ce4d559c6d9da6ea849",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Emphasize that wrong-path instructions must not commit.",
-          "text": "Branches create a different uncertainty. Fetch wants a next address every cycle, but the branch decision and target may not be known immediately. A simple processor can wait. A faster design may predict a direction and continue fetching. If the prediction is wrong, the processor redirects the program counter and flushes younger wrong-path instructions before they change architectural state. A flush is not merely erasing a diagram box. It disables the invalid instructions' control effects so they cannot write registers or memory. Prediction can improve average performance, but recovery logic preserves correctness when speculation is wrong."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "377de7e4c76dc277db69e25011a27d90190eeedcd19ef5e5a501818452bdd3f4",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/b4/b48dd4d3dad6639dc6e044ab07ac3c3b22b82ec15d8193b52ea64bc40bc3db2d.mp3",
-            "sha256": "b48dd4d3dad6639dc6e044ab07ac3c3b22b82ec15d8193b52ea64bc40bc3db2d",
-            "size": 252864
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/b9/b99a0bd18eea0709216cb5c4a4a07ce0329db16e5d6a86e186c465dff04ebeb2.vtt",
-            "sha256": "b99a0bd18eea0709216cb5c4a4a07ce0329db16e5d6a86e186c465dff04ebeb2",
-            "size": 911
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T00:05:06.466Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
       "durationMs": 65284,
       "lookupSha256": "a1d067fe30f7707c29eaa52c361f5640e24a5e4159d9ce7a833b4c5b36e9b101",
       "model": "edge-tts-7.2.8",
@@ -1950,8 +1950,27 @@
   ],
   "status": "awaiting-approval",
   "toolchain": {
+    "ffmpeg": {
+      "available": true,
+      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "available": true,
+      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "gitChangedPaths": [
+      "outreach/README.md",
+      "outreach/general-email.md",
+      "outreach/leadership-confirmation.md",
+      "outreach/subject-showcase/reference-manifest.json"
+    ],
+    "gitDirty": true,
+    "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
+    "gitStatusSha256": "add6a4c631c3d463fa2b7e37fa6a50bfab3e6fce98296cf041f8a8d165d4cda8",
     "node": "v22.23.1",
     "platform": "darwin-arm64",
+    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtimeDirty": false,
     "sharp": {
       "aom": "3.14.1",
       "archive": "3.8.8",
@@ -1975,32 +1994,14 @@
       "png": "1.6.58",
       "proxy-libintl": "0.5",
       "rsvg": "2.62.90",
+      "sharp": "0.35.3",
       "tiff": "d01a94b",
       "uhdr": "1acdbed",
       "vips": "8.18.3",
       "webp": "1.6.0",
       "xml2": "2.15.3",
-      "zlib-ng": "2.3.3",
-      "sharp": "0.35.3"
-    },
-    "ffmpeg": {
-      "available": true,
-      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
-    },
-    "ffprobe": {
-      "available": true,
-      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
-    },
-    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
-    "gitDirty": true,
-    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
-    "gitChangedPaths": [
-      "outreach/README.md",
-      "outreach/general-email.md",
-      "outreach/leadership-confirmation.md"
-    ],
-    "runtimeDirty": false,
-    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "zlib-ng": "2.3.3"
+    }
   },
   "totalCostUsd": 0
 }

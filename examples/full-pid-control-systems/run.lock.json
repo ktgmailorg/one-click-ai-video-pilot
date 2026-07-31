@@ -1,7 +1,7 @@
 {
   "approvals": [
     {
-      "approvedAt": "2026-07-31T15:33:09.134Z",
+      "approvedAt": "2026-07-31T18:45:57.438Z",
       "notes": "Verifies declared source bindings for draft rendering; instructor and release approval remain required.",
       "reviewer": "Automated source-pack verification (draft)",
       "role": "automation",
@@ -675,7 +675,7 @@
     }
   ],
   "configSha256": "44f91f41fc36e991067154d5a3472ec300da663682aa9b887687250312c9f6f6",
-  "createdAt": "2026-07-31T15:35:45.324Z",
+  "createdAt": "2026-07-31T18:47:33.486Z",
   "final": {
     "releaseAudit": {
       "blockers": [],
@@ -894,7 +894,7 @@
       "width": 1920
     }
   },
-  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "gitRevision": "55b21f672dde62b4972270e6255e1f1fdd97e277",
   "inputSha256": "1bb10b9c166ec395b93a23cb8da96c10187d7b2789291aeef6242952e553b9a7",
   "mode": "record",
   "providers": {
@@ -923,6 +923,274 @@
     }
   },
   "requests": [
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 54270,
+      "lookupSha256": "48c71cd5f042b77a4bd5faac5200898d0e2dffd0ebb46e877c0417607a53585d",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, clear, and appropriately paced for an introductory college lesson.",
+          "text": "Start by naming every signal. The reference r of t is the desired behavior. The measured output y of t is what the sensor reports. Their difference, e of t, equals reference minus measured output. The controller converts error into a command u of t. An actuator applies that command to the plant, which is the physical or simulated system being controlled. Disturbances can enter the plant, while sensor noise can enter the measurement path. This vocabulary prevents a common mistake: the controller does not directly control the error. It changes the plant input, observes the resulting output, and thereby influences future error. Sign conventions also matter. With negative feedback, a positive error should normally produce a correction that increases the output toward the reference."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "eeed50aae428c2720e29addeaffd497e7b92f94f23a64f30a220a88cdead7804",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/09/09c3bf2817d4082999fa6873eb105e03dffa7ec9484a65d304358d71f3501871.mp3",
+            "sha256": "09c3bf2817d4082999fa6873eb105e03dffa7ec9484a65d304358d71f3501871",
+            "size": 312048
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/0e/0ea9ea2f5667fe8c291aa02e0f95f87c7cf53999cfce1e6e78436934d5b533ae.vtt",
+            "sha256": "0ea9ea2f5667fe8c291aa02e0f95f87c7cf53999cfce1e6e78436934d5b533ae",
+            "size": 1154
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T00:54:09.750Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 40280,
+      "lookupSha256": "0c8cb754c538d945eddd767f82ba25702840108375093734accc12eab2aa61d5",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, clear, and appropriately paced for an introductory college lesson.",
+          "text": "The proportional term responds to the error that exists right now. Its contribution is K p times e of t. If the error doubles, the proportional correction doubles. Increasing K p usually makes the response more forceful and can reduce rise time, but excessive gain can produce overshoot, oscillation, or instability. Proportional action alone may also leave a steady offset. To hold a load against friction, for example, the actuator may require a nonzero command. If command is proportional to error, a persistent error may be needed to produce that command. This is not a defect in the formula; it is a consequence of the loop and plant. The important skill is to connect gain to observed response rather than memorizing that larger is always better."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "b528af7015cb38e9239be75ad302d9308629d38f4e0af3272f807599905ce476",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ac/ac807b267a730f57c0bf24a4e8642711ea6f139e32d21bc75502fe4d4e239987.mp3",
+            "sha256": "ac807b267a730f57c0bf24a4e8642711ea6f139e32d21bc75502fe4d4e239987",
+            "size": 312192
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/6a/6a961a6cbd60d6700778301e077f156f6eaddc7eca15984c6b480757abdbeaea.vtt",
+            "sha256": "6a961a6cbd60d6700778301e077f156f6eaddc7eca15984c6b480757abdbeaea",
+            "size": 1050
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T00:54:09.754Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 33767,
+      "lookupSha256": "156fa44f37e1c531fee9cba95a71ad176ce362262191447021fc05870284716b",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, clear, and appropriately paced for an introductory college lesson.",
+          "text": "A controller is useful when a system must reach and maintain a target despite disturbances and uncertainty. Imagine a motor commanded to run at one thousand revolutions per minute. An open-loop command may work under one load and miss the target under another. Feedback changes the structure of the problem. A sensor measures actual speed, the controller compares it with the desired speed, and the difference becomes an error signal. The controller uses that error to change the motor input. The new speed is measured again, so correction is continuous rather than a one-time guess. This lesson develops the proportional, integral, and derivative terms, then connects their behavior to tuning, noise, saturation, and a practical design workflow."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "2ff13f7c1a79cea10edb321df048f988778178c008c2bbb7fc664a0e6c5078b1",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/41/413b28209a9b4a478e6103da289555e2f2a9361ceda3e99b2976c80a53ad8da4.mp3",
+            "sha256": "413b28209a9b4a478e6103da289555e2f2a9361ceda3e99b2976c80a53ad8da4",
+            "size": 289584
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/d2/d2db1a283820f174bdb65d21ddd2f90828cf7d35e6ad5a47e6f49ec188d0781f.vtt",
+            "sha256": "d2db1a283820f174bdb65d21ddd2f90828cf7d35e6ad5a47e6f49ec188d0781f",
+            "size": 1011
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T00:54:09.748Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 38021,
+      "lookupSha256": "d876931f0ed1a4241c391d9c4fd855390b14e1910e2221362834fb0232fc50ba",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Professional, clear, and appropriately paced for an introductory college lesson.",
+          "text": "The derivative term reacts to how quickly the error is changing. If the output is racing toward the target, the error may still be positive but decreasing rapidly. A derivative contribution can oppose that motion before the target is crossed, adding damping and reducing overshoot. The difficulty is that differentiation amplifies rapid measurement changes, including sensor noise. Real implementations therefore use a filtered derivative rather than an ideal mathematical derivative. Many controllers also differentiate the measurement instead of the error, which avoids a large derivative kick when the reference changes suddenly. Derivative action is not mandatory. A well-tuned PI controller is often sufficient, especially when sensors are noisy or the plant already has adequate damping."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "bddc622c144ae91c22388c7a72cdb163690c9fc533036ac8da3301edfcee18e3",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/58/585a9f7cea620ac5f04c0a188af58507b93a889bdbc1cb9da510f4654bf71b2c.mp3",
+            "sha256": "585a9f7cea620ac5f04c0a188af58507b93a889bdbc1cb9da510f4654bf71b2c",
+            "size": 310176
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/b3/b31b680889191fd4668372ff9fb24e9e56b9dc8fd466eb3601b8e783fc5112c2.vtt",
+            "sha256": "b31b680889191fd4668372ff9fb24e9e56b9dc8fd466eb3601b8e783fc5112c2",
+            "size": 1058
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T00:54:50.051Z"
+    },
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
@@ -1060,207 +1328,6 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 43465,
-      "lookupSha256": "1f4b24530e1f3232a79ef377144312630b47c7c0f88b49bf719969f9365bb60e",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Professional, clear, and appropriately paced for an introductory college lesson.",
-          "text": "A disciplined tuning process begins with safety and requirements. Confirm sensor polarity, actuator limits, and a safe test range. Start with integral and derivative action disabled. Increase proportional gain until the system responds clearly without unacceptable oscillation. Add integral action gradually to remove persistent error, while watching overshoot and windup. Add derivative action only when extra damping is needed and the measurement is clean enough to support it. Then test reference changes, disturbances, load variation, saturation, and noise. This sequence is not a universal proof of optimality, but it makes cause and effect observable. More formal model-based methods can calculate gains, yet every real implementation still requires validation against unmodeled behavior and physical limits."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "4e737bb7d740079e542b726009de9cfdff50ee38bea8d42d2c157c836d77f1be",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/9c/9c06c8fbbb21a3504c1341d532136002a762f51ebbb127779b5304940263d8ca.mp3",
-            "sha256": "9c06c8fbbb21a3504c1341d532136002a762f51ebbb127779b5304940263d8ca",
-            "size": 342864
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/3d/3de68169da6161021aadf8ef244171cad405d47c04dde928238353247a213302.vtt",
-            "sha256": "3de68169da6161021aadf8ef244171cad405d47c04dde928238353247a213302",
-            "size": 1112
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T00:55:28.101Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 54270,
-      "lookupSha256": "48c71cd5f042b77a4bd5faac5200898d0e2dffd0ebb46e877c0417607a53585d",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Professional, clear, and appropriately paced for an introductory college lesson.",
-          "text": "Start by naming every signal. The reference r of t is the desired behavior. The measured output y of t is what the sensor reports. Their difference, e of t, equals reference minus measured output. The controller converts error into a command u of t. An actuator applies that command to the plant, which is the physical or simulated system being controlled. Disturbances can enter the plant, while sensor noise can enter the measurement path. This vocabulary prevents a common mistake: the controller does not directly control the error. It changes the plant input, observes the resulting output, and thereby influences future error. Sign conventions also matter. With negative feedback, a positive error should normally produce a correction that increases the output toward the reference."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "eeed50aae428c2720e29addeaffd497e7b92f94f23a64f30a220a88cdead7804",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/09/09c3bf2817d4082999fa6873eb105e03dffa7ec9484a65d304358d71f3501871.mp3",
-            "sha256": "09c3bf2817d4082999fa6873eb105e03dffa7ec9484a65d304358d71f3501871",
-            "size": 312048
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/0e/0ea9ea2f5667fe8c291aa02e0f95f87c7cf53999cfce1e6e78436934d5b533ae.vtt",
-            "sha256": "0ea9ea2f5667fe8c291aa02e0f95f87c7cf53999cfce1e6e78436934d5b533ae",
-            "size": 1154
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T00:54:09.750Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 33767,
-      "lookupSha256": "156fa44f37e1c531fee9cba95a71ad176ce362262191447021fc05870284716b",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Professional, clear, and appropriately paced for an introductory college lesson.",
-          "text": "A controller is useful when a system must reach and maintain a target despite disturbances and uncertainty. Imagine a motor commanded to run at one thousand revolutions per minute. An open-loop command may work under one load and miss the target under another. Feedback changes the structure of the problem. A sensor measures actual speed, the controller compares it with the desired speed, and the difference becomes an error signal. The controller uses that error to change the motor input. The new speed is measured again, so correction is continuous rather than a one-time guess. This lesson develops the proportional, integral, and derivative terms, then connects their behavior to tuning, noise, saturation, and a practical design workflow."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "2ff13f7c1a79cea10edb321df048f988778178c008c2bbb7fc664a0e6c5078b1",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/41/413b28209a9b4a478e6103da289555e2f2a9361ceda3e99b2976c80a53ad8da4.mp3",
-            "sha256": "413b28209a9b4a478e6103da289555e2f2a9361ceda3e99b2976c80a53ad8da4",
-            "size": 289584
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/d2/d2db1a283820f174bdb65d21ddd2f90828cf7d35e6ad5a47e6f49ec188d0781f.vtt",
-            "sha256": "d2db1a283820f174bdb65d21ddd2f90828cf7d35e6ad5a47e6f49ec188d0781f",
-            "size": 1011
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T00:54:09.748Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
       "durationMs": 40949,
       "lookupSha256": "3daa4473618f350628b559e5a93972f26992a6b1d6aa9e7f252cf59f6f16929f",
       "model": "edge-tts-7.2.8",
@@ -1328,8 +1395,8 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 38021,
-      "lookupSha256": "d876931f0ed1a4241c391d9c4fd855390b14e1910e2221362834fb0232fc50ba",
+      "durationMs": 43465,
+      "lookupSha256": "1f4b24530e1f3232a79ef377144312630b47c7c0f88b49bf719969f9365bb60e",
       "model": "edge-tts-7.2.8",
       "profileName": "edge-narration",
       "request": {
@@ -1347,30 +1414,30 @@
         },
         "input": {
           "instructions": "Professional, clear, and appropriately paced for an introductory college lesson.",
-          "text": "The derivative term reacts to how quickly the error is changing. If the output is racing toward the target, the error may still be positive but decreasing rapidly. A derivative contribution can oppose that motion before the target is crossed, adding damping and reducing overshoot. The difficulty is that differentiation amplifies rapid measurement changes, including sensor noise. Real implementations therefore use a filtered derivative rather than an ideal mathematical derivative. Many controllers also differentiate the measurement instead of the error, which avoids a large derivative kick when the reference changes suddenly. Derivative action is not mandatory. A well-tuned PI controller is often sufficient, especially when sensors are noisy or the plant already has adequate damping."
+          "text": "A disciplined tuning process begins with safety and requirements. Confirm sensor polarity, actuator limits, and a safe test range. Start with integral and derivative action disabled. Increase proportional gain until the system responds clearly without unacceptable oscillation. Add integral action gradually to remove persistent error, while watching overshoot and windup. Add derivative action only when extra damping is needed and the measurement is clean enough to support it. Then test reference changes, disturbances, load variation, saturation, and noise. This sequence is not a universal proof of optimality, but it makes cause and effect observable. More formal model-based methods can calculate gains, yet every real implementation still requires validation against unmodeled behavior and physical limits."
         },
         "model": "edge-tts-7.2.8",
         "parameters": {},
         "schemaVersion": 1
       },
-      "requestSha256": "bddc622c144ae91c22388c7a72cdb163690c9fc533036ac8da3301edfcee18e3",
+      "requestSha256": "4e737bb7d740079e542b726009de9cfdff50ee38bea8d42d2c157c836d77f1be",
       "result": {
         "artifacts": [
           {
             "extension": ".mp3",
             "filename": "speech.mp3",
             "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/58/585a9f7cea620ac5f04c0a188af58507b93a889bdbc1cb9da510f4654bf71b2c.mp3",
-            "sha256": "585a9f7cea620ac5f04c0a188af58507b93a889bdbc1cb9da510f4654bf71b2c",
-            "size": 310176
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/9c/9c06c8fbbb21a3504c1341d532136002a762f51ebbb127779b5304940263d8ca.mp3",
+            "sha256": "9c06c8fbbb21a3504c1341d532136002a762f51ebbb127779b5304940263d8ca",
+            "size": 342864
           },
           {
             "extension": ".vtt",
             "filename": "speech.vtt",
             "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/b3/b31b680889191fd4668372ff9fb24e9e56b9dc8fd466eb3601b8e783fc5112c2.vtt",
-            "sha256": "b31b680889191fd4668372ff9fb24e9e56b9dc8fd466eb3601b8e783fc5112c2",
-            "size": 1058
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/3d/3de68169da6161021aadf8ef244171cad405d47c04dde928238353247a213302.vtt",
+            "sha256": "3de68169da6161021aadf8ef244171cad405d47c04dde928238353247a213302",
+            "size": 1112
           }
         ],
         "costUsd": null,
@@ -1390,74 +1457,7 @@
       },
       "roleName": "narration",
       "schemaVersion": 1,
-      "startedAt": "2026-07-30T00:54:50.051Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 40280,
-      "lookupSha256": "0c8cb754c538d945eddd767f82ba25702840108375093734accc12eab2aa61d5",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Professional, clear, and appropriately paced for an introductory college lesson.",
-          "text": "The proportional term responds to the error that exists right now. Its contribution is K p times e of t. If the error doubles, the proportional correction doubles. Increasing K p usually makes the response more forceful and can reduce rise time, but excessive gain can produce overshoot, oscillation, or instability. Proportional action alone may also leave a steady offset. To hold a load against friction, for example, the actuator may require a nonzero command. If command is proportional to error, a persistent error may be needed to produce that command. This is not a defect in the formula; it is a consequence of the loop and plant. The important skill is to connect gain to observed response rather than memorizing that larger is always better."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "b528af7015cb38e9239be75ad302d9308629d38f4e0af3272f807599905ce476",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ac/ac807b267a730f57c0bf24a4e8642711ea6f139e32d21bc75502fe4d4e239987.mp3",
-            "sha256": "ac807b267a730f57c0bf24a4e8642711ea6f139e32d21bc75502fe4d4e239987",
-            "size": 312192
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/6a/6a961a6cbd60d6700778301e077f156f6eaddc7eca15984c6b480757abdbeaea.vtt",
-            "sha256": "6a961a6cbd60d6700778301e077f156f6eaddc7eca15984c6b480757abdbeaea",
-            "size": 1050
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T00:54:09.754Z"
+      "startedAt": "2026-07-30T00:55:28.101Z"
     },
     {
       "cacheHit": true,
@@ -1632,8 +1632,27 @@
   ],
   "status": "awaiting-approval",
   "toolchain": {
+    "ffmpeg": {
+      "available": true,
+      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "available": true,
+      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "gitChangedPaths": [
+      "outreach/README.md",
+      "outreach/general-email.md",
+      "outreach/leadership-confirmation.md",
+      "outreach/subject-showcase/reference-manifest.json"
+    ],
+    "gitDirty": true,
+    "gitRevision": "55b21f672dde62b4972270e6255e1f1fdd97e277",
+    "gitStatusSha256": "add6a4c631c3d463fa2b7e37fa6a50bfab3e6fce98296cf041f8a8d165d4cda8",
     "node": "v22.23.1",
     "platform": "darwin-arm64",
+    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtimeDirty": false,
     "sharp": {
       "aom": "3.14.1",
       "archive": "3.8.8",
@@ -1657,32 +1676,14 @@
       "png": "1.6.58",
       "proxy-libintl": "0.5",
       "rsvg": "2.62.90",
+      "sharp": "0.35.3",
       "tiff": "d01a94b",
       "uhdr": "1acdbed",
       "vips": "8.18.3",
       "webp": "1.6.0",
       "xml2": "2.15.3",
-      "zlib-ng": "2.3.3",
-      "sharp": "0.35.3"
-    },
-    "ffmpeg": {
-      "available": true,
-      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
-    },
-    "ffprobe": {
-      "available": true,
-      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
-    },
-    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
-    "gitDirty": true,
-    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
-    "gitChangedPaths": [
-      "outreach/README.md",
-      "outreach/general-email.md",
-      "outreach/leadership-confirmation.md"
-    ],
-    "runtimeDirty": false,
-    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "zlib-ng": "2.3.3"
+    }
   },
   "totalCostUsd": 0
 }

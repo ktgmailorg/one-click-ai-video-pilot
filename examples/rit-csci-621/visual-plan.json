@@ -10,7 +10,7 @@
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: Implementing a student enrollment system requires choosing between B-trees for range queries and hash tables for exact-match lookups.",
+          "phrase": "Database system implementation issues are covered next, where the focus is on data structures and algorithms used to implement database management systems.",
           "type": "deterministic-svg"
         },
         {
@@ -30,7 +30,7 @@
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: A 'Students' table contains columns for student_id, name, and email, each with a specific data type like INTEGER or VARCHAR.",
+          "phrase": "Relational systems organize data with tables, rows, columns, and declared types.",
           "type": "deterministic-svg"
         },
         {
@@ -50,7 +50,7 @@
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: A 'Courses' table uses a foreign key to reference the 'Students' table, ensuring no course is assigned to a non-existent student.",
+          "phrase": "Primary keys identify rows, while foreign keys express references between tables.",
           "type": "deterministic-svg"
         },
         {
@@ -70,7 +70,7 @@
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: A SQL query joins 'Students' and 'Courses' tables to list all students and their enrolled courses, while the database optimizer chooses the fastest join order based on indexes.",
+          "phrase": "Query planning and physical structures influence performance without changing logical query meaning.",
           "type": "deterministic-svg"
         },
         {
@@ -90,7 +90,7 @@
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: A hash index on the 'email' column allows the database to locate a student record in constant time without scanning the entire table.",
+          "phrase": "Indexes provide additional access paths for selected queries.",
           "type": "deterministic-svg"
         },
         {
@@ -115,7 +115,7 @@
         },
         {
           "id": "beat-06-shot-003",
-          "phrase": "unclustered table layout, with clustered data grouped by student_id and unclustered data scattered randomly, highlighting I/O differences.",
+          "phrase": "State the benefit, the cost, and the condition under which the tradeoff is acceptable.",
           "type": "deterministic-svg"
         }
       ]
@@ -130,7 +130,7 @@
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: A transaction transfers funds between two accounts, and if the debit fails, the credit is automatically rolled back to maintain consistency.",
+          "phrase": "Transactions group operations into an atomic unit of work.",
           "type": "deterministic-svg"
         },
         {
@@ -150,7 +150,7 @@
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: Two transactions updating the same account balance are serialized so that one completes before the other begins, avoiding lost updates.",
+          "phrase": "Isolation controls how concurrent transactions observe one another.",
           "type": "deterministic-svg"
         },
         {
@@ -170,7 +170,7 @@
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: Benchmarking shows that adding a composite index on (department, salary) reduces query execution time by 60% for filtered reports.",
+          "phrase": "Current research topics in database system implementation are also explored.",
           "type": "deterministic-svg"
         },
         {
@@ -190,7 +190,7 @@
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: Before deploying a new module, check that primary keys are defined, foreign keys reference valid tables, indexes cover frequent query filters, and isolation levels match concurrency needs.",
+          "phrase": "Constraints and indexes support data integrity and efficient lookup.",
           "type": "deterministic-svg"
         },
         {

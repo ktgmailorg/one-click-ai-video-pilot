@@ -10,7 +10,7 @@
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: A self-driving car system defines the task as lane detection, uses grayscale intensity as representation, assumes consistent lighting, trains on labeled road images, and outputs a binary lane mask.",
+          "phrase": "A rigorous pipeline states the task, representation, assumptions, supervision, and decision rule.",
           "type": "deterministic-svg"
         },
         {
@@ -35,7 +35,7 @@
         },
         {
           "id": "beat-02-shot-003",
-          "phrase": "Separate the formal definition from an implementation detail, then identify what evidence would distinguish them.",
+          "phrase": "A precise definition makes later examples easier to evaluate and revise.",
           "type": "deterministic-svg"
         }
       ]
@@ -55,7 +55,7 @@
         },
         {
           "id": "beat-03-shot-003",
-          "phrase": "Follow every arrow in order and name the state before and after each transition.",
+          "phrase": "The trace converts an abstract statement into an inspectable sequence.",
           "type": "deterministic-svg"
         }
       ]
@@ -75,7 +75,7 @@
         },
         {
           "id": "beat-04-shot-003",
-          "phrase": "Compare alternatives against the same constraints so the evaluation does not move the goalposts.",
+          "phrase": "Using shared criteria turns a preference into a defensible technical choice.",
           "type": "deterministic-svg"
         }
       ]
@@ -90,7 +90,7 @@
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: A traffic sign image is analyzed by matching edge patterns and color distributions to a pre-trained classifier, outputting a 'stop' label with confidence score.",
+          "phrase": "Object recognition maps visual evidence to object hypotheses.",
           "type": "deterministic-svg"
         },
         {
@@ -115,7 +115,7 @@
         },
         {
           "id": "beat-06-shot-003",
-          "phrase": "State the benefit, the cost, and the condition under which the tradeoff is acceptable.",
+          "phrase": "Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
           "type": "deterministic-svg"
         }
       ]
@@ -130,7 +130,7 @@
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: A color photograph is converted to a 3D array of height, width, and channels, where each pixel value ranges from 0 to 255.",
+          "phrase": "Computer vision pipelines represent images as numeric arrays.",
           "type": "deterministic-svg"
         },
         {
@@ -155,7 +155,7 @@
         },
         {
           "id": "beat-08-shot-003",
-          "phrase": "Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause.",
+          "phrase": "The diagnosis is strongest when another person can reproduce the observation and the test.",
           "type": "deterministic-svg"
         }
       ]
@@ -175,7 +175,7 @@
         },
         {
           "id": "beat-09-shot-003",
-          "phrase": "Explain each connection explicitly and verify that information retains the same meaning across representations.",
+          "phrase": "The synthesis matters only if every connection remains supported by the original evidence.",
           "type": "deterministic-svg"
         }
       ]
@@ -190,7 +190,7 @@
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: A face detection system is tested with rotated faces, different lighting, partial occlusion, and cross-database samples to measure accuracy drop.",
+          "phrase": "Evaluation tests sensitivity to viewpoint, lighting, occlusion, and data shift.",
           "type": "deterministic-svg"
         },
         {

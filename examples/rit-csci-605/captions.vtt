@@ -1,576 +1,431 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:08.049
-NARRATOR: Begin by framing Foundations of
-Object Identity and State as a question about
+00:00:00.050 --> 00:00:08.372
+Begin by framing Foundations of Object
+Identity and State as a question about inputs,
 
 2
-00:00:08.049 --> 00:00:10.906
-inputs, decisions, and observable results.
+00:00:08.372 --> 00:00:10.750
+decisions, and observable results.
 
 3
-00:00:10.906 --> 00:00:17.977
-NARRATOR: A class declares state and behavior,
-while an object is an instance with its own
+00:00:10.750 --> 00:00:18.312
+A class declares state and behavior, while an
+object is an instance with its own runtime
 
 4
-00:00:17.977 --> 00:00:20.187
-runtime identity and field state.
+00:00:18.312 --> 00:00:20.203
+identity and field state.
 
 5
-00:00:20.187 --> 00:00:27.530
-NARRATOR: Consider this worked case: A `User`
-instance maintains its own `username` and
+00:00:20.203 --> 00:00:27.446
+Consider this worked case: A `User` instance
+maintains its own `username` and
 
 6
-00:00:27.530 --> 00:00:31.484
+00:00:27.446 --> 00:00:31.671
 `sessionToken` values independent of other
 `User` instances.
 
 7
-00:00:31.484 --> 00:00:39.572
-NARRATOR: On screen, display a side-by-side
-comparison of two `User` objects with distinct
+00:00:31.671 --> 00:00:38.482
+List the givens before choosing a method,
+because an unstated assumption can change the
 
 8
-00:00:39.572 --> 00:00:45.171
-memory addresses and separate field values,
-highlighting encapsulation boundaries.
+00:00:38.482 --> 00:00:38.968
+conclusion.
 
 9
-00:00:45.171 --> 00:00:51.176
-NARRATOR: List the givens before choosing a
-method, because an unstated assumption can
+00:00:38.968 --> 00:00:44.765
+This establishes the vocabulary and scope
+needed for the remaining sections.
 
 10
-00:00:51.176 --> 00:00:52.562
-change the conclusion.
+00:00:44.882 --> 00:00:52.860
+Now define Inheritance versus Composition for
+Reuse precisely enough that another learner
 
 11
-00:00:52.562 --> 00:00:58.749
-NARRATOR: This establishes the vocabulary and
-scope needed for the remaining sections.
+00:00:52.860 --> 00:00:55.519
+could test the definition.
 
 12
-00:00:58.874 --> 00:01:05.898
-NARRATOR: Now define Inheritance versus
-Composition for Reuse precisely enough that
+00:00:55.519 --> 00:01:03.214
+Inheritance allows a class to derive behavior
+from base classes, while composition connects
 
 13
-00:01:05.898 --> 00:01:09.730
-another learner could test the definition.
+00:01:03.214 --> 00:01:05.582
+objects through explicit attributes.
 
 14
-00:01:09.730 --> 00:01:16.997
-NARRATOR: Inheritance allows a class to derive
-behavior from base classes, while composition
+00:01:05.582 --> 00:01:13.187
+Consider this worked case: A `Vehicle` base
+class provides `move()` logic, but a
 
 15
-00:01:16.997 --> 00:01:19.792
-connects objects through explicit attributes.
+00:01:13.187 --> 00:01:19.623
+`DeliveryTruck` composes a `CargoContainer`
+object instead of inheriting from `Truck` to
 
 16
-00:01:19.792 --> 00:01:26.268
-NARRATOR: Consider this worked case: A
-`Vehicle` base class provides `move()` logic,
+00:01:19.623 --> 00:01:21.378
+avoid rigid hierarchies.
 
 17
-00:01:26.268 --> 00:01:31.664
-but a `DeliveryTruck` composes a
-`CargoContainer` object instead of inheriting
+00:01:21.378 --> 00:01:27.692
+Separate the formal definition from an
+implementation detail, then identify what
 
 18
-00:01:31.664 --> 00:01:34.902
-from `Truck` to avoid rigid hierarchies.
-
-19
-00:01:34.902 --> 00:01:42.606
-NARRATOR: On screen, show a class diagram
-contrasting a deep inheritance tree with a
-
-20
-00:01:42.606 --> 00:01:47.558
-flat composition graph, using arrows to
-indicate 'has-a' relationships.
-
-21
-00:01:47.558 --> 00:01:54.191
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
-
-22
-00:01:54.191 --> 00:01:56.402
+00:01:27.692 --> 00:01:29.988
 evidence would distinguish them.
 
+19
+00:01:29.988 --> 00:01:36.628
+A precise definition makes later examples
+easier to evaluate and revise.
+
+20
+00:01:36.746 --> 00:01:43.494
+With the foundation in place, examine how
+Dynamic Method Dispatch and Polymorphism
+
+21
+00:01:43.494 --> 00:01:46.305
+operates in a concrete sequence.
+
+22
+00:01:46.305 --> 00:01:53.153
+Inheritance reuses and specializes behavior,
+but dynamic method dispatch selects an
+
 23
-00:01:56.402 --> 00:02:02.886
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
+00:01:53.153 --> 00:01:58.133
+implementation from the runtime class of the
+receiver.
 
 24
-00:02:03.002 --> 00:02:09.573
-NARRATOR: With the foundation in place,
-examine how Dynamic Method Dispatch and
+00:01:58.133 --> 00:02:05.024
+Consider this worked case: Calling `draw()` on
+a `Shape` reference invokes `Circle.
 
 25
-00:02:09.573 --> 00:02:12.858
-Polymorphism operates in a concrete sequence.
+00:02:05.024 --> 00:02:06.961
+draw()` or `Square.
 
 26
-00:02:12.858 --> 00:02:18.899
-NARRATOR: Inheritance reuses and specializes
-behavior, but dynamic method dispatch selects
+00:02:06.961 --> 00:02:10.602
+draw()` depending on the actual object at
+runtime.
 
 27
-00:02:18.899 --> 00:02:23.842
-an implementation from the runtime class of
-the receiver.
+00:02:10.602 --> 00:02:18.133
+Follow every arrow in order and name the state
+before and after each transition.
 
 28
-00:02:23.842 --> 00:02:30.413
-NARRATOR: Consider this worked case: Calling
-`draw()` on a `Shape` reference invokes
+00:02:18.133 --> 00:02:23.930
+The trace converts an abstract statement into
+an inspectable sequence.
 
 29
-00:02:30.413 --> 00:02:35.889
-`Circle.draw()` or `Square.draw()` depending
-on the actual object at runtime.
+00:02:24.050 --> 00:02:31.017
+Next, compare the choices involved in
+Encapsulation and Access Control and make the
 
 30
-00:02:35.889 --> 00:02:44.220
-NARRATOR: On screen, illustrate a method call
-flow where a generic `Shape` reference routes
+00:02:31.017 --> 00:02:32.625
+decision criteria explicit.
 
 31
-00:02:44.220 --> 00:02:48.981
-to distinct `Circle` and `Square`
-implementations, emphasizing runtime
+00:02:32.625 --> 00:02:37.968
+Access modifiers control which declarations
+are visible.
 
 32
-00:02:48.981 --> 00:02:49.576
-resolution.
+00:02:37.968 --> 00:02:44.336
+Consider this worked case: A `BankAccount`
+class exposes `deposit()` and `withdraw()`
 
 33
-00:02:49.576 --> 00:02:56.592
-NARRATOR: Follow every arrow in order and name
-the state before and after each transition.
+00:02:44.336 --> 00:02:50.703
+methods while keeping the `balance` field
+private to prevent unauthorized modification.
 
 34
-00:02:56.592 --> 00:03:02.326
-NARRATOR: The trace converts an abstract
-statement into an inspectable sequence.
+00:02:50.703 --> 00:02:58.002
+Compare alternatives against the same
+constraints so the evaluation does not move
 
 35
-00:03:02.450 --> 00:03:09.078
-NARRATOR: Next, compare the choices involved
-in Encapsulation and Access Control and make
+00:02:58.002 --> 00:02:59.218
+the goalposts.
 
 36
-00:03:09.078 --> 00:03:11.118
-the decision criteria explicit.
+00:02:59.218 --> 00:03:06.062
+Using shared criteria turns a preference into
+a defensible technical choice.
 
 37
-00:03:11.118 --> 00:03:16.400
-NARRATOR: Access modifiers control which
-declarations are visible.
+00:03:06.062 --> 00:03:13.094
+Name each dependency explicitly, and keep
+labels and representations consistent
 
 38
-00:03:16.400 --> 00:03:22.677
-NARRATOR: Consider this worked case: A
-`BankAccount` class exposes `deposit()` and
-
-39
-00:03:22.677 --> 00:03:28.384
-`withdraw()` methods while keeping the
-`balance` field private to prevent
-
-40
-00:03:28.384 --> 00:03:29.525
-unauthorized modification.
-
-41
-00:03:29.525 --> 00:03:36.334
-NARRATOR: On screen, render a class interface
-with public methods highlighted and private
-
-42
-00:03:36.334 --> 00:03:41.571
-fields shaded, showing how access control
-restricts direct state access.
-
-43
-00:03:41.571 --> 00:03:48.321
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
-
-44
-00:03:48.321 --> 00:03:50.009
-move the goalposts.
-
-45
-00:03:50.009 --> 00:03:56.743
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
-
-46
-00:03:56.743 --> 00:04:03.716
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-47
-00:04:03.716 --> 00:04:05.618
+00:03:13.094 --> 00:03:15.203
 throughout the analysis.
 
+39
+00:03:15.314 --> 00:03:22.342
+Apply Exceptions for Error Handling to a
+worked situation instead of treating it as an
+
+40
+00:03:22.342 --> 00:03:23.279
+isolated definition.
+
+41
+00:03:23.279 --> 00:03:28.185
+Exceptions separate normal results from abrupt
+completion.
+
+42
+00:03:28.185 --> 00:03:34.754
+Consider this worked case: A `NetworkRequest`
+throws a `ConnectionTimeoutException` when a
+
+43
+00:03:34.754 --> 00:03:41.920
+server fails to respond, allowing the caller
+to handle the failure gracefully.
+
+44
+00:03:41.920 --> 00:03:49.566
+Work from the concrete inputs to the result,
+checking units, types, or invariants at each
+
+45
+00:03:49.566 --> 00:03:50.076
+step.
+
+46
+00:03:50.076 --> 00:03:55.092
+The worked case shows both how to apply the
+method and how to check it.
+
+47
+00:03:55.202 --> 00:04:00.845
+Examine the tradeoffs in Generics for
+Type-Safe Abstractions, including what
+
 48
-00:04:05.738 --> 00:04:11.885
-NARRATOR: Apply Exceptions for Error Handling
-to a worked situation instead of treating it
-
-49
-00:04:11.885 --> 00:04:13.641
-as an isolated definition.
-
-50
-00:04:13.641 --> 00:04:18.375
-NARRATOR: Exceptions separate normal results
-from abrupt completion.
-
-51
-00:04:18.375 --> 00:04:23.578
-NARRATOR: Consider this worked case: A
-`NetworkRequest` throws a
-
-52
-00:04:23.578 --> 00:04:29.938
-`ConnectionTimeoutException` when a server
-fails to respond, allowing the caller to
-
-53
-00:04:29.938 --> 00:04:32.250
-handle the failure gracefully.
-
-54
-00:04:32.250 --> 00:04:38.723
-NARRATOR: On screen, map a control flow
-diagram showing a normal execution path
-
-55
-00:04:38.723 --> 00:04:43.703
-branching into an exception handler block when
-a timeout occurs.
-
-56
-00:04:43.703 --> 00:04:50.458
-NARRATOR: Work from the concrete inputs to the
-result, checking units, types, or invariants
-
-57
-00:04:50.458 --> 00:04:51.906
-at each step.
-
-58
-00:04:51.906 --> 00:04:56.922
-NARRATOR: The worked case shows both how to
-apply the method and how to check it.
-
-59
-00:04:57.026 --> 00:05:03.161
-NARRATOR: Examine the tradeoffs in Generics
-for Type-Safe Abstractions, including what
-
-60
-00:05:03.161 --> 00:05:06.507
+00:04:00.845 --> 00:04:04.230
 improves and what becomes more difficult.
 
-61
-00:05:06.507 --> 00:05:13.027
-NARRATOR: Generic types express reusable
-abstractions while preserving compile-time
+49
+00:04:04.230 --> 00:04:11.331
+Generic types express reusable abstractions
+while preserving compile-time type
 
-62
-00:05:13.027 --> 00:05:14.476
-type constraints.
+50
+00:04:11.331 --> 00:04:12.120
+constraints.
 
-63
-00:05:14.476 --> 00:05:21.676
-NARRATOR: Consider this worked case: A `Queue`
-class ensures that only elements of type `T`
+51
+00:04:12.120 --> 00:04:19.845
+Consider this worked case: A `Queue` class
+ensures that only elements of type `T` are
 
-64
-00:05:21.676 --> 00:05:26.476
-are added or removed, eliminating the need for
+52
+00:04:19.845 --> 00:04:24.480
+added or removed, eliminating the need for
 runtime casting.
 
+53
+00:04:24.480 --> 00:04:31.089
+State the benefit, the cost, and the condition
+under which the tradeoff is acceptable.
+
+54
+00:04:31.089 --> 00:04:38.573
+Making the tradeoff visible prevents a local
+improvement from hiding a larger cost.
+
+55
+00:04:38.690 --> 00:04:45.979
+Stress-test the reasoning around Event-Driven
+Programming Principles with an edge case and
+
+56
+00:04:45.979 --> 00:04:49.624
+identify which assumption controls the
+outcome.
+
+57
+00:04:49.624 --> 00:04:56.088
+This course covers advanced concepts such as
+event-driven programming, design patterns,
+
+58
+00:04:56.088 --> 00:05:02.552
+distributed and concurrent programming, and
+the use, design and implementation of
+
+59
+00:05:02.552 --> 00:05:03.140
+applications.
+
+60
+00:05:03.140 --> 00:05:10.597
+Consider this worked case: A `UIController`
+registers a `Button` instance to emit `click`
+
+61
+00:05:10.597 --> 00:05:15.186
+events, triggering a `EventHandler` without
+direct method calls.
+
+62
+00:05:15.186 --> 00:05:21.858
+Change one assumption at a time and observe
+which part of the reasoning no longer holds.
+
+63
+00:05:21.858 --> 00:05:29.264
+The edge case reveals the boundary of the
+claim without discarding the useful core idea.
+
+64
+00:05:29.378 --> 00:05:36.592
+Use Design Patterns for Structural Integrity
+to diagnose a failure by separating symptoms,
+
 65
-00:05:26.476 --> 00:05:33.913
-NARRATOR: On screen, show a generic collection
-diagram with type parameters `T` and `U`,
+00:05:36.592 --> 00:05:38.812
+causes, and corrective action.
 
 66
-00:05:33.913 --> 00:05:37.632
-highlighting how compile-time checks enforce
-type safety.
+00:05:38.812 --> 00:05:43.453
+Python objects have identity, a type, and a
+value.
 
 67
-00:05:37.632 --> 00:05:43.902
-NARRATOR: State the benefit, the cost, and the
-condition under which the tradeoff is
+00:05:43.453 --> 00:05:50.097
+Consider this worked case: The `Strategy`
+pattern allows a `PaymentProcessor` to swap
 
 68
-00:05:43.902 --> 00:05:44.350
-acceptable.
+00:05:50.097 --> 00:05:56.187
+`CreditCard` and `Crypto` algorithms at
+runtime without modifying the core class.
 
 69
-00:05:44.350 --> 00:05:51.772
-NARRATOR: Making the tradeoff visible prevents
-a local improvement from hiding a larger cost.
+00:05:56.187 --> 00:06:03.817
+Locate the first point where observed behavior
+diverges from expected behavior, then test the
 
 70
-00:05:51.890 --> 00:05:57.752
-NARRATOR: Stress-test the reasoning around
-Event-Driven Programming Principles with an
+00:06:03.817 --> 00:06:05.452
+smallest plausible cause.
 
 71
-00:05:57.752 --> 00:06:03.027
-edge case and identify which assumption
-controls the outcome.
+00:06:05.452 --> 00:06:12.827
+The diagnosis is strongest when another person
+can reproduce the observation and the test.
 
 72
-00:06:03.027 --> 00:06:09.343
-NARRATOR: This course covers advanced concepts
-such as event-driven programming, design
+00:06:12.938 --> 00:06:19.064
+Connect Concurrent and Distributed Programming
+Foundations to the earlier ideas and explain
 
 73
-00:06:09.343 --> 00:06:15.085
-patterns, distributed and concurrent
-programming, and the use, design and
+00:06:19.064 --> 00:06:22.638
+how the pieces work as one system.
 
 74
-00:06:15.085 --> 00:06:16.808
-implementation of applications.
+00:06:22.638 --> 00:06:29.388
+Attribute lookup follows defined rules across
+an instance and its class hierarchy.
 
 75
-00:06:16.808 --> 00:06:22.871
-NARRATOR: Consider this worked case: A
-`UIController` registers a `Button` instance
+00:06:29.388 --> 00:06:37.001
+Consider this worked case: A `TaskScheduler`
+uses thread pools to process independent jobs
 
 76
-00:06:22.871 --> 00:06:28.933
-to emit `click` events, triggering a
-`EventHandler` without direct method calls.
+00:06:37.001 --> 00:06:43.443
+concurrently, ensuring that shared resources
+are accessed via synchronized locks or
 
 77
-00:06:28.933 --> 00:06:34.371
-NARRATOR: On screen, draw a
-publisher-subscriber diagram showing an event
+00:06:43.443 --> 00:06:45.200
+immutable data structures.
 
 78
-00:06:34.371 --> 00:06:39.808
-source broadcasting to multiple independent
-listeners via a message bus.
+00:06:45.200 --> 00:06:54.910
+Explain each connection explicitly and verify
+that information retains the same meaning
 
 79
-00:06:39.808 --> 00:06:46.220
-NARRATOR: Change one assumption at a time and
-observe which part of the reasoning no longer
+00:06:54.910 --> 00:06:56.528
+across representations.
 
 80
-00:06:46.220 --> 00:06:46.621
-holds.
+00:06:56.528 --> 00:07:03.809
+The synthesis matters only if every connection
+remains supported by the original evidence.
 
 81
-00:06:46.621 --> 00:06:52.883
-NARRATOR: The edge case reveals the boundary
-of the claim without discarding the useful
+00:07:03.914 --> 00:07:09.823
+Finish with Practical Analysis Checklist for
+Implementation as a practical checklist that
 
 82
-00:06:52.883 --> 00:06:53.777
-core idea.
+00:07:09.823 --> 00:07:12.285
+can guide a new analysis.
 
 83
-00:06:53.882 --> 00:07:00.955
-NARRATOR: Use Design Patterns for Structural
-Integrity to diagnose a failure by separating
-
-84
-00:07:00.955 --> 00:07:03.675
-symptoms, causes, and corrective action.
-
-85
-00:07:03.675 --> 00:07:08.207
-NARRATOR: Python objects have identity, a
-type, and a value.
-
-86
-00:07:08.207 --> 00:07:14.029
-NARRATOR: Consider this worked case: The
-`Strategy` pattern allows a `PaymentProcessor`
-
-87
-00:07:14.029 --> 00:07:20.910
-to swap `CreditCard` and `Crypto` algorithms
-at runtime without modifying the core class.
-
-88
-00:07:20.910 --> 00:07:27.043
-NARRATOR: On screen, present a
-before-and-after class diagram showing how a
-
-89
-00:07:27.043 --> 00:07:33.175
-rigid hierarchy is replaced by a flexible
-strategy interface and implementations.
-
-90
-00:07:33.175 --> 00:07:38.847
-NARRATOR: Locate the first point where
-observed behavior diverges from expected
-
-91
-00:07:38.847 --> 00:07:42.456
-behavior, then test the smallest plausible
-cause.
-
-92
-00:07:42.456 --> 00:07:48.456
-NARRATOR: The diagnosis is strongest when
-another person can reproduce the observation
-
-93
-00:07:48.456 --> 00:07:49.956
-and the test.
-
-94
-00:07:50.066 --> 00:07:55.470
-NARRATOR: Connect Concurrent and Distributed
-Programming Foundations to the earlier ideas
-
-95
-00:07:55.470 --> 00:07:59.891
-and explain how the pieces work as one system.
-
-96
-00:07:59.891 --> 00:08:05.818
-NARRATOR: Attribute lookup follows defined
-rules across an instance and its class
-
-97
-00:08:05.818 --> 00:08:06.312
-hierarchy.
-
-98
-00:08:06.312 --> 00:08:13.022
-NARRATOR: Consider this worked case: A
-`TaskScheduler` uses thread pools to process
-
-99
-00:08:13.022 --> 00:08:19.173
-independent jobs concurrently, ensuring that
-shared resources are accessed via synchronized
-
-100
-00:08:19.173 --> 00:08:21.969
-locks or immutable data structures.
-
-101
-00:08:21.969 --> 00:08:28.926
-NARRATOR: On screen, render a concurrent
-execution model with multiple threads
-
-102
-00:08:28.926 --> 00:08:35.250
-accessing a shared resource, highlighting
-synchronization mechanisms like mutexes or
-
-103
-00:08:35.250 --> 00:08:36.515
-atomic variables.
-
-104
-00:08:36.515 --> 00:08:45.453
-NARRATOR: Explain each connection explicitly
-and verify that information retains the same
-
-105
-00:08:45.453 --> 00:08:47.687
-meaning across representations.
-
-106
-00:08:47.687 --> 00:08:54.434
-NARRATOR: The synthesis matters only if every
-connection remains supported by the original
-
-107
-00:08:54.434 --> 00:08:54.953
-evidence.
-
-108
-00:08:55.058 --> 00:09:00.584
-NARRATOR: Finish with Practical Analysis
-Checklist for Implementation as a practical
-
-109
-00:09:00.584 --> 00:09:04.101
-checklist that can guide a new analysis.
-
-110
-00:09:04.101 --> 00:09:10.745
-NARRATOR: Object-oriented design should make
+00:07:12.285 --> 00:07:18.675
+Object-oriented design should make
 responsibilities, invariants, dependencies,
 
-111
-00:09:10.745 --> 00:09:14.898
+84
+00:07:18.675 --> 00:07:23.239
 composition, and substitution behavior
 explicit.
 
-112
-00:09:14.898 --> 00:09:20.976
-NARRATOR: Consider this worked case: Before
-deploying a `DataProcessor`, developers check
+85
+00:07:23.239 --> 00:07:30.021
+Consider this worked case: Before deploying a
+`DataProcessor`, developers check that each
 
-113
-00:09:20.976 --> 00:09:28.159
-that each class has a single responsibility,
-validates that internal state cannot be
+86
+00:07:30.021 --> 00:07:37.368
+class has a single responsibility, validates
+that internal state cannot be corrupted, and
 
-114
-00:09:28.159 --> 00:09:34.236
-corrupted, and confirms that subclasses can
-replace base classes without breaking
+87
+00:07:37.368 --> 00:07:43.020
+confirms that subclasses can replace base
+classes without breaking contracts.
 
-115
-00:09:34.236 --> 00:09:34.789
-contracts.
+88
+00:07:43.020 --> 00:07:50.969
+For each checklist item, record the evidence,
+the remaining uncertainty, and the next
 
-116
-00:09:34.789 --> 00:09:42.284
-NARRATOR: On screen, display a checklist
-graphic with checkboxes for 'Single
+89
+00:07:50.969 --> 00:07:52.192
+verification step.
 
-117
-00:09:42.284 --> 00:09:47.054
-Responsibility', 'Invariant Validation',
-'Dependency Minimization', and 'Substitution
+90
+00:07:52.192 --> 00:07:58.900
+The result is a repeatable procedure, not a
+conclusion that depends on memory or
 
-118
-00:09:47.054 --> 00:09:50.461
-Compliance', ready for instructor review.
-
-119
-00:09:50.461 --> 00:09:58.040
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
-
-120
-00:09:58.040 --> 00:09:59.789
-next verification step.
-
-121
-00:09:59.789 --> 00:10:05.552
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-122
-00:10:05.552 --> 00:10:06.882
-memory or intuition.
+91
+00:07:58.900 --> 00:07:59.379
+intuition.

@@ -1,249 +1,187 @@
-NARRATOR: Begin by framing Search Engine Architecture Overview as a question about
+Begin by framing Search Engine Architecture Overview as a question about inputs,
 
-inputs, decisions, and observable results.
+decisions, and observable results.
 
-NARRATOR: Data systems organize records with declared types, tables, rows, columns, keys,
+Data systems organize records with declared types, tables, rows, columns, keys, and
 
-and constraints.
+constraints.
 
-NARRATOR: Consider this worked case: A document database stores text in tables with
+Consider this worked case: A document database stores text in tables with columns for title,
 
-columns for title, content, and metadata, using primary keys to uniquely identify each
+content, and metadata, using primary keys to uniquely identify each record.
 
-record.
+List the givens before choosing a method, because an unstated assumption can change the
 
-NARRATOR: On screen, display a simplified block diagram showing a query input, an index
+conclusion.
 
-lookup module, a retrieval stage, and a ranking output, with arrows indicating data
+This establishes the vocabulary and scope needed for the remaining sections.
 
-flow.
+Now define Query Processing and Indexing precisely enough that another learner could
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+test the definition.
 
-change the conclusion.
+Indexes provide additional access paths for selected workloads.
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+Consider this worked case: A term frequency index stores each unique word alongside its
 
-NARRATOR: Now define Query Processing and Indexing precisely enough that another learner
+document IDs, allowing the system to instantly locate all documents containing a specific
 
-could test the definition.
+query term.
 
-NARRATOR: Indexes provide additional access paths for selected workloads.
-
-NARRATOR: Consider this worked case: A term frequency index stores each unique word
-
-alongside its document IDs, allowing the system to instantly locate all documents
-
-containing a specific query term.
-
-NARRATOR: On screen, show a side-by-side comparison of a full corpus scan versus an
-
-index lookup, highlighting the reduced number of records examined in the latter.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Traditional Statistical Retrieval
+With the foundation in place, examine how Traditional Statistical Retrieval Models
 
-Models operates in a concrete sequence.
+operates in a concrete sequence.
 
-NARRATOR: Topics include search interfaces, traditional retrieval models (for example,
+Topics include search interfaces, traditional retrieval models (for example, TF-IDF, BM25),
 
-TF-IDF, BM25), modern retrieval techniques (for example, neural reranking and retrieval),
+modern retrieval techniques (for example, neural reranking and retrieval), search engine
 
-search engine evaluation, and search applications (for example, conversational IR,
+evaluation, and search applications (for example, conversational IR, enterprise
 
-enterprise search).
+search).
 
-NARRATOR: Consider this worked case: In a TF-IDF calculation, the term 'machine'
+Consider this worked case: In a TF-IDF calculation, the term 'machine' receives a
 
-receives a high score in a short technical manual but a low score in a lengthy general
+high score in a short technical manual but a low score in a lengthy general encyclopedia
 
-encyclopedia article.
+article.
 
-NARRATOR: On screen, render a bar chart comparing TF-IDF scores for a single query
+Follow every arrow in order and name the state before and after each transition.
 
-term across three documents of varying lengths and term frequencies.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+Next, compare the choices involved in BM25 Ranking Formula and make the decision criteria
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+explicit.
 
-NARRATOR: Next, compare the choices involved in BM25 Ranking Formula and make the decision
+Queries select, join, aggregate, order, and transform data.
 
-criteria explicit.
+Consider this worked case: BM25 assigns higher relevance scores to documents where the query
 
-NARRATOR: Queries select, join, aggregate, order, and transform data.
+term appears near the beginning, reflecting stronger user intent alignment.
 
-NARRATOR: Consider this worked case: BM25 assigns higher relevance scores to documents
+Compare alternatives against the same constraints so the evaluation does not move
 
-where the query term appears near the beginning, reflecting stronger user intent
+the goalposts.
 
-alignment.
+Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: On screen, illustrate a document snippet with highlighted query terms, showing
-
-position-weighted score increments for earlier occurrences versus later ones.
-
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
-
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Apply Modern Neural Retrieval Techniques to a worked situation instead of
+Apply Modern Neural Retrieval Techniques to a worked situation instead of treating it as an
 
-treating it as an isolated definition.
+isolated definition.
 
-NARRATOR: Supervised methods learn mappings from examples paired with target labels, while
+Supervised methods learn mappings from examples paired with target labels, while
 
 unsupervised methods identify structure without targets.
 
-NARRATOR: Consider this worked case: A neural reranker takes a list of initially retrieved
+Consider this worked case: A neural reranker takes a list of initially retrieved documents
 
-documents and reorders them by predicting the probability that each document satisfies the
+and reorders them by predicting the probability that each document satisfies the
 
 user's underlying intent.
 
-NARRATOR: On screen, display a two-stage pipeline graphic: a fast retrieval stage
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-followed by a neural reranking stage that outputs a refined ranked list.
+step.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+The worked case shows both how to apply the method and how to check it.
 
-at each step.
+Examine the tradeoffs in Search Engine Evaluation Metrics, including what improves
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+and what becomes more difficult.
 
-NARRATOR: Examine the tradeoffs in Search Engine Evaluation Metrics, including what
+An introduction to the theories and techniques used to construct search engines.
 
-improves and what becomes more difficult.
+Consider this worked case: Precision at K measures the proportion of relevant documents
 
-NARRATOR: An introduction to the theories and techniques used to construct search engines.
+among the top K results, providing a direct measure of immediate query satisfaction.
 
-NARRATOR: Consider this worked case: Precision at K measures the proportion of relevant
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-documents among the top K results, providing a direct measure of immediate query
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-satisfaction.
+Stress-test the reasoning around Search Applications and Conversational IR with an
 
-NARRATOR: On screen, show a table comparing Precision@10 and Recall@10 scores for three
+edge case and identify which assumption controls the outcome.
 
-different retrieval models on a benchmark dataset.
+Students will also review current IR research, provide written summaries of current research
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+papers, and complete a group project in which they will design and execute experiments for
 
-acceptable.
+search engine components.
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+Consider this worked case: A conversational IR system maintains session state to resolve
 
-NARRATOR: Stress-test the reasoning around Search Applications and Conversational IR with
+pronouns and follow-up questions, improving relevance across multiple turns.
 
-an edge case and identify which assumption controls the outcome.
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-NARRATOR: Students will also review current IR research, provide written summaries of current
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-research papers, and complete a group project in which they will design and execute
+Use Data Quality and Retrieval Integrity to diagnose a failure by separating symptoms,
 
-experiments for search engine components.
+causes, and corrective action.
 
-NARRATOR: Consider this worked case: A conversational IR system maintains session
+Data quality analysis makes missingness, duplicates, inconsistent representation,
 
-state to resolve pronouns and follow-up questions, improving relevance across multiple
+integrity constraints, sampling, and update behavior explicit.
 
-turns.
+Consider this worked case: Before indexing, a preprocessing step removes duplicate document
 
-NARRATOR: On screen, present a dialogue flow diagram showing a user query, system context
+entries and standardizes formatting to prevent skewed ranking results.
 
-tracking, and an improved retrieval result for a follow-up question.
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+smallest plausible cause.
 
-holds.
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+Connect Evaluation and Error Analysis to the earlier ideas and explain how the pieces work
 
-core idea.
+as one system.
 
-NARRATOR: Use Data Quality and Retrieval Integrity to diagnose a failure by separating
+Evaluation must match the task and the cost of errors, while distribution shift, missing
 
-symptoms, causes, and corrective action.
+data, overfitting, and unexamined sampling choices can invalidate conclusions.
 
-NARRATOR: Data quality analysis makes missingness, duplicates, inconsistent
+Consider this worked case: A retrieval model trained on technical documents may fail on
 
-representation, integrity constraints, sampling, and update behavior explicit.
+general queries due to distribution shift, requiring separate validation sets for each
 
-NARRATOR: Consider this worked case: Before indexing, a preprocessing step removes
+domain.
 
-duplicate document entries and standardizes formatting to prevent skewed ranking results.
+Explain each connection explicitly and verify that information retains the same meaning
 
-NARRATOR: On screen, visualize a data cleaning workflow with icons representing
+across representations.
 
-deduplication, normalization, and missing-value handling before the indexing
+The synthesis matters only if every connection remains supported by the original evidence.
 
-stage.
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+analysis.
 
-behavior, then test the smallest plausible cause.
+Preprocessing must be fitted only on permitted training data to avoid leakage.
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+Consider this worked case: A group project requires defining a baseline retrieval model,
 
-and the test.
-
-NARRATOR: Connect Evaluation and Error Analysis to the earlier ideas and explain how
-
-the pieces work as one system.
-
-NARRATOR: Evaluation must match the task and the cost of errors, while distribution shift,
-
-missing data, overfitting, and unexamined sampling choices can invalidate conclusions.
-
-NARRATOR: Consider this worked case: A retrieval model trained on technical documents
-
-may fail on general queries due to distribution shift, requiring separate
-
-validation sets for each domain.
-
-NARRATOR: On screen, display a confusion matrix or error breakdown chart showing false
-
-positives and false negatives across different query types.
-
-NARRATOR: Explain each connection explicitly and verify that information retains the same
-
-meaning across representations.
-
-NARRATOR: The synthesis matters only if every connection remains supported by the original
-
-evidence.
-
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
-
-guide a new analysis.
-
-NARRATOR: Preprocessing must be fitted only on permitted training data to avoid leakage.
-
-NARRATOR: Consider this worked case: A group project requires defining a baseline retrieval
-
-model, selecting a validation split, running cross-validation, and documenting how
+selecting a validation split, running cross-validation, and documenting how
 
 preprocessing choices affected final rankings.
 
-NARRATOR: On screen, list a step-by-step checklist graphic covering experiment design,
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-data splitting, model training, evaluation, and documentation requirements.
+verification step.
 
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

@@ -1,253 +1,193 @@
-NARRATOR: Begin by framing Pipeline Foundations as a question about inputs,
+Begin by framing Pipeline Foundations as a question about inputs, decisions, and
 
-decisions, and observable results.
+observable results.
 
-NARRATOR: A rigorous pipeline states the task, representation, assumptions, supervision, and
+A rigorous pipeline states the task, representation, assumptions, supervision, and
 
 decision rule.
 
-NARRATOR: Consider this worked case: A self-driving car system defines the task as
+Consider this worked case: A self-driving car system defines the task as lane detection,
 
-lane detection, uses grayscale intensity as representation, assumes consistent lighting,
+uses grayscale intensity as representation, assumes consistent lighting, trains on labeled
 
-trains on labeled road images, and outputs a binary lane mask.
+road images, and outputs a binary lane mask.
 
-NARRATOR: On screen, display a four-panel diagram showing task definition,
+List the givens before choosing a method, because an unstated assumption can change the
 
-representation, assumptions, and decision rule, with arrows linking each stage to the
+conclusion.
 
-next.
+This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+Now define Image Formation Basics precisely enough that another learner could test the
 
-change the conclusion.
+definition.
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+Projective geometry relates three-dimensional points to image coordinates.
 
-NARRATOR: Now define Image Formation Basics precisely enough that another learner could
+Consider this worked case: A 3D building corner projects onto a 2D image plane, where
 
-test the definition.
+perspective distortion is corrected using homography matrices derived from known camera
 
-NARRATOR: Projective geometry relates three-dimensional points to image coordinates.
+parameters.
 
-NARRATOR: Consider this worked case: A 3D building corner projects onto a 2D image
-
-plane, where perspective distortion is corrected using homography matrices derived
-
-from known camera parameters.
-
-NARRATOR: On screen, show a 3D cube with projected 2D coordinates, highlighting how
-
-perspective changes affect pixel mapping.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: With the foundation in place, examine how Appearance Modeling operates in a
+With the foundation in place, examine how Appearance Modeling operates in a concrete
 
-concrete sequence.
+sequence.
 
-NARRATOR: Appearance models describe how lighting, material, and viewpoint affect
+Appearance models describe how lighting, material, and viewpoint affect measured
 
-measured pixels.
+pixels.
 
-NARRATOR: Consider this worked case: A matte white wall and a glossy white wall produce
+Consider this worked case: A matte white wall and a glossy white wall produce different
 
-different pixel intensities under identical illumination, necessitating color-invariant
+pixel intensities under identical illumination, necessitating color-invariant
 
 features for reliable detection.
 
-NARRATOR: On screen, display side-by-side images of the same object under varying
+Follow every arrow in order and name the state before and after each transition.
 
-lighting and material conditions, with color histograms overlaid.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
-
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Next, compare the choices involved in Motion Estimation and make the decision
+Next, compare the choices involved in Motion Estimation and make the decision criteria
 
-criteria explicit.
+explicit.
 
-NARRATOR: Motion estimation compares observations across frames.
+Motion estimation compares observations across frames.
 
-NARRATOR: Consider this worked case: A video of a moving car is processed by comparing
+Consider this worked case: A video of a moving car is processed by comparing consecutive
 
-consecutive frames to calculate displacement vectors, enabling smooth trajectory
+frames to calculate displacement vectors, enabling smooth trajectory prediction.
 
-prediction.
+Compare alternatives against the same constraints so the evaluation does not move
 
-NARRATOR: On screen, animate a sequence of frames with tracked object paths overlaid,
+the goalposts.
 
-showing frame-to-frame comparison.
+Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
-
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Apply Object Recognition to a worked situation instead of treating it as an
+Apply Object Recognition to a worked situation instead of treating it as an isolated
 
-isolated definition.
+definition.
 
-NARRATOR: Object recognition maps visual evidence to object hypotheses.
+Object recognition maps visual evidence to object hypotheses.
 
-NARRATOR: Consider this worked case: A traffic sign image is analyzed by matching edge
+Consider this worked case: A traffic sign image is analyzed by matching edge patterns
 
-patterns and color distributions to a pre-trained classifier, outputting a 'stop'
+and color distributions to a pre-trained classifier, outputting a 'stop' label with
 
-label with confidence score.
+confidence score.
 
-NARRATOR: On screen, show a traffic sign with bounding boxes, class labels, and confidence
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-metrics, alongside a decision tree diagram.
+step.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+The worked case shows both how to apply the method and how to check it.
 
-at each step.
+Examine the tradeoffs in Scene Understanding, including what improves and what becomes more
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+difficult.
 
-NARRATOR: Examine the tradeoffs in Scene Understanding, including what improves and
+Scene understanding combines objects, layout, and contextual relationships.
 
-what becomes more difficult.
+Consider this worked case: A classroom image is parsed to identify desks, chairs, and
 
-NARRATOR: Scene understanding combines objects, layout, and contextual relationships.
+students, with spatial relationships mapped to reconstruct room layout.
 
-NARRATOR: Consider this worked case: A classroom image is parsed to identify desks,
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-chairs, and students, with spatial relationships mapped to reconstruct room
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-layout.
-
-NARRATOR: On screen, display a classroom scene with segmented regions, labeled objects, and a
-
-spatial relationship graph.
-
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
-
-acceptable.
-
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Stress-test the reasoning around Image Representation with an edge case and
+Stress-test the reasoning around Image Representation with an edge case and identify
 
-identify which assumption controls the outcome.
+which assumption controls the outcome.
 
-NARRATOR: Computer vision pipelines represent images as numeric arrays.
+Computer vision pipelines represent images as numeric arrays.
 
-NARRATOR: Consider this worked case: A color photograph is converted to a 3D array of
+Consider this worked case: A color photograph is converted to a 3D array of height, width,
 
-height, width, and channels, where each pixel value ranges from 0 to 255.
+and channels, where each pixel value ranges from 0 to 255.
 
-NARRATOR: On screen, show a color image with a numeric array overlay, highlighting channel
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-separation and pixel value ranges.
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+Use Color Conversion to diagnose a failure by separating symptoms, causes, and corrective
 
-holds.
+action.
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+Color conversion changes the coordinate representation of pixel values.
 
-core idea.
+Consider this worked case: An RGB image is transformed to HSV space to isolate green
 
-NARRATOR: Use Color Conversion to diagnose a failure by separating symptoms, causes, and
+foliage from background noise, improving segmentation accuracy.
 
-corrective action.
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-NARRATOR: Color conversion changes the coordinate representation of pixel values.
+smallest plausible cause.
 
-NARRATOR: Consider this worked case: An RGB image is transformed to HSV space to isolate
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-green foliage from background noise, improving segmentation accuracy.
-
-NARRATOR: On screen, display RGB, HSV, and LAB color space versions of the same image, with
-
-channel separation visualized.
-
-NARRATOR: Locate the first point where observed behavior diverges from expected
-
-behavior, then test the smallest plausible cause.
-
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
-
-and the test.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Connect Filtering and Feature Detection to the earlier ideas and explain how
+Connect Filtering and Feature Detection to the earlier ideas and explain how the pieces work
 
-the pieces work as one system.
+as one system.
 
-NARRATOR: Filtering combines neighboring samples to smooth, sharpen, or detect
+Filtering combines neighboring samples to smooth, sharpen, or detect structure.
 
-structure.
+Consider this worked case: A blurred document image is sharpened using a Sobel filter, then
 
-NARRATOR: Consider this worked case: A blurred document image is sharpened using a Sobel
+analyzed with SIFT to extract keypoints for matching.
 
-filter, then analyzed with SIFT to extract keypoints for matching.
+Explain each connection explicitly and verify that information retains the same meaning
 
-NARRATOR: On screen, show a before/after image with filter kernels and detected feature
+across representations.
 
-points overlaid.
+The synthesis matters only if every connection remains supported by the original evidence.
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
-
-meaning across representations.
-
-NARRATOR: The synthesis matters only if every connection remains supported by the original
-
-evidence.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-guide a new analysis.
+analysis.
 
-NARRATOR: Evaluation tests sensitivity to viewpoint, lighting, occlusion, and data
+Evaluation tests sensitivity to viewpoint, lighting, occlusion, and data shift.
 
-shift.
+Consider this worked case: A face detection system is tested with rotated faces, different
 
-NARRATOR: Consider this worked case: A face detection system is tested with rotated faces,
-
-different lighting, partial occlusion, and cross-database samples to measure accuracy
+lighting, partial occlusion, and cross-database samples to measure accuracy
 
 drop.
 
-NARRATOR: On screen, display a checklist graphic with checkboxes for viewpoint,
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-lighting, occlusion, and data shift, alongside performance metrics.
+verification step.
 
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

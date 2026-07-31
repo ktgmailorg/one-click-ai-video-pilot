@@ -1,241 +1,185 @@
-NARRATOR: Begin by framing Course Foundations and Prerequisites as a question about inputs,
+Begin by framing Course Foundations and Prerequisites as a question about inputs,
 
 decisions, and observable results.
 
-NARRATOR: The course will introduce students into the algorithmic foundations and modern
+The course will introduce students into the algorithmic foundations and modern methods
 
-methods used for security evaluation and tools design.
+used for security evaluation and tools design.
 
-NARRATOR: Consider this worked case: Students must verify they have completed CSCI-351 or
+Consider this worked case: Students must verify they have completed CSCI-351 or the
 
-the combined 4003-420 and 4003-440 sequence before enrolling.
+combined 4003-420 and 4003-440 sequence before enrolling.
 
-NARRATOR: On screen, display a prerequisite flowchart showing CSCI-351 or the
+List the givens before choosing a method, because an unstated assumption can change the
 
-4003-420/4003-440 path leading to CSCI-531 enrollment.
+conclusion.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+This establishes the vocabulary and scope needed for the remaining sections.
 
-change the conclusion.
+Now define Secure Software Development Framework Overview precisely enough that
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+another learner could test the definition.
 
-NARRATOR: Now define Secure Software Development Framework Overview precisely
+The Secure Software Development Framework groups practices into four practice groups.
 
-enough that another learner could test the definition.
+Consider this worked case: Prepare the Organization establishes people, processes,
 
-NARRATOR: The Secure Software Development Framework groups practices into four practice
+and technology for secure development, while Protect the Software prevents unauthorized
 
-groups.
+access to code.
 
-NARRATOR: Consider this worked case: Prepare the Organization establishes people,
-
-processes, and technology for secure development, while Protect the Software
-
-prevents unauthorized access to code.
-
-NARRATOR: On screen, show a four-quadrant diagram labeling each practice group with its
-
-core function.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: With the foundation in place, examine how Prepare the Organization Practice
+With the foundation in place, examine how Prepare the Organization Practice operates in
 
-operates in a concrete sequence.
+a concrete sequence.
 
-NARRATOR: Prepare the Organization establishes people, processes, and technology for secure
+Prepare the Organization establishes people, processes, and technology for secure
 
 development.
 
-NARRATOR: Consider this worked case: A team creates a secure development policy and
+Consider this worked case: A team creates a secure development policy and assigns security
 
-assigns security roles before writing code begins.
+roles before writing code begins.
 
-NARRATOR: On screen, illustrate a checklist of people, processes, and technology setup with
+Follow every arrow in order and name the state before and after each transition.
 
-icons for each category.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
-
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Next, compare the choices involved in Protect the Software Practice and make the
+Next, compare the choices involved in Protect the Software Practice and make the decision
 
-decision criteria explicit.
+criteria explicit.
 
-NARRATOR: Protect the Software prevents unauthorized access to code and development
+Protect the Software prevents unauthorized access to code and development artifacts.
 
-artifacts.
+Consider this worked case: Source code repositories use role-based access control to
 
-NARRATOR: Consider this worked case: Source code repositories use role-based access
+restrict who can view or modify specific modules.
 
-control to restrict who can view or modify specific modules.
+Compare alternatives against the same constraints so the evaluation does not move
 
-NARRATOR: On screen, draw a locked vault icon over a code repository with access control
+the goalposts.
 
-badges indicating restricted permissions.
+Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
-
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Apply Produce Well-Secured Software Practice to a worked situation instead of
+Apply Produce Well-Secured Software Practice to a worked situation instead of treating it
 
-treating it as an isolated definition.
+as an isolated definition.
 
-NARRATOR: Produce Well-Secured Software addresses security requirements, design,
+Produce Well-Secured Software addresses security requirements, design, verification,
 
-verification, and release.
+and release.
 
-NARRATOR: Consider this worked case: Developers complete a security requirements
+Consider this worked case: Developers complete a security requirements document and run
 
-document and run automated verification tests before deploying the software.
+automated verification tests before deploying the software.
 
-NARRATOR: On screen, display a pipeline diagram showing requirements, design,
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-verification, and release stages with checkmarks.
+step.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+The worked case shows both how to apply the method and how to check it.
 
-at each step.
-
-NARRATOR: The worked case shows both how to apply the method and how to check it.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Examine the tradeoffs in Respond to Vulnerabilities Practice, including what
+Examine the tradeoffs in Respond to Vulnerabilities Practice, including what
 
 improves and what becomes more difficult.
 
-NARRATOR: Respond to Vulnerabilities identifies, analyzes, remediates, and learns
+Respond to Vulnerabilities identifies, analyzes, remediates, and learns from
 
-from discovered weaknesses.
+discovered weaknesses.
 
-NARRATOR: Consider this worked case: A security audit finds a buffer overflow, which
+Consider this worked case: A security audit finds a buffer overflow, which is patched, and
 
-is patched, and the team updates their threat model based on the lesson learned.
+the team updates their threat model based on the lesson learned.
 
-NARRATOR: On screen, show a circular feedback loop with arrows labeled identify, analyze,
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-remediate, and learn.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+Stress-test the reasoning around Security Reasoning Process with an edge case and
 
-acceptable.
+identify which assumption controls the outcome.
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+Security reasoning identifies assets, trust boundaries, threats, controls, evidence,
 
-NARRATOR: Stress-test the reasoning around Security Reasoning Process with an edge case
+residual risk, and responsibilities.
 
-and identify which assumption controls the outcome.
+Consider this worked case: An analyst maps a web application's database as an asset,
 
-NARRATOR: Security reasoning identifies assets, trust boundaries, threats, controls,
+defines the browser as a trust boundary, and lists SQL injection as a threat.
 
-evidence, residual risk, and responsibilities.
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-NARRATOR: Consider this worked case: An analyst maps a web application's database as
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-an asset, defines the browser as a trust boundary, and lists SQL injection as a threat.
+Use Cryptographic Standards and Algorithms to diagnose a failure by separating symptoms,
 
-NARRATOR: On screen, create a flowchart connecting assets to trust boundaries, then to
+causes, and corrective action.
 
-threats, controls, and residual risk calculations.
+Encryption supports confidentiality when keys and modes are used correctly.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
-
-holds.
-
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
-
-core idea.
-
-NARRATOR: Use Cryptographic Standards and Algorithms to diagnose a failure by separating
-
-symptoms, causes, and corrective action.
-
-NARRATOR: Encryption supports confidentiality when keys and modes are used correctly.
-
-NARRATOR: Consider this worked case: AES-256 is an approved algorithm that provides
+Consider this worked case: AES-256 is an approved algorithm that provides
 
 confidentiality for data at rest when implemented with proper key management.
 
-NARRATOR: On screen, list approved algorithms like AES and RSA with their corresponding
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-security parameters and use cases.
+smallest plausible cause.
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-behavior, then test the smallest plausible cause.
+Connect Modes of Operation and Key Management to the earlier ideas and explain how the
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+pieces work as one system.
 
-and the test.
+Modes of operation define how a primitive processes data larger than one block.
 
-NARRATOR: Connect Modes of Operation and Key Management to the earlier ideas and explain
+Consider this worked case: CBC mode processes multi-block data by chaining ciphertext
 
-how the pieces work as one system.
+blocks, and key management ensures keys are rotated regularly to limit exposure.
 
-NARRATOR: Modes of operation define how a primitive processes data larger than one
+Explain each connection explicitly and verify that information retains the same meaning
 
-block.
+across representations.
 
-NARRATOR: Consider this worked case: CBC mode processes multi-block data by chaining
+The synthesis matters only if every connection remains supported by the original evidence.
 
-ciphertext blocks, and key management ensures keys are rotated regularly to limit exposure.
+Finish with Security Evaluation and Practical Application as a practical checklist that can
 
-NARRATOR: On screen, illustrate a block cipher processing multiple data blocks sequentially,
+guide a new analysis.
 
-alongside a key lifecycle diagram showing rotation and revocation steps.
+Security depends on the complete protocol and implementation, not only an algorithm name.
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+Consider this worked case: A system using a standard encryption algorithm fails security
 
-meaning across representations.
+evaluation because the implementation has a side-channel vulnerability.
 
-NARRATOR: The synthesis matters only if every connection remains supported by the original
+implementation security, highlighting side-channel risks and validation checkpoints.
 
-evidence.
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-NARRATOR: Finish with Security Evaluation and Practical Application as a practical checklist
+verification step.
 
-that can guide a new analysis.
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-NARRATOR: Security depends on the complete protocol and implementation, not only an
-
-algorithm name.
-
-NARRATOR: Consider this worked case: A system using a standard encryption algorithm fails
-
-security evaluation because the implementation has a side-channel vulnerability.
-
-NARRATOR: On screen, show a comparison chart between algorithm name vs. implementation
-
-security, highlighting side-channel risks and validation checkpoints.
-
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

@@ -5,7 +5,7 @@ const catalogPath = resolve(option("--catalog") || "course-catalog.json");
 const baseUrl = new URL(
   option("--base-url") || "https://one-click-ai-video-pilot.vercel.app/",
 );
-const expected = Number.parseInt(option("--expected") || "113", 10);
+const expected = Number.parseInt(option("--expected") || "63", 10);
 const concurrency = Number.parseInt(option("--concurrency") || "8", 10);
 
 if (!Number.isInteger(expected) || expected < 1) {
@@ -68,7 +68,7 @@ const localCourses = localCatalog.courses.filter((course) =>
 );
 if (localCourses.length !== expected) {
   throw new Error(
-    `Expected ${expected} local CSCI courses, found ${localCourses.length}`,
+    `Expected ${expected} catalog CSCI courses, found ${localCourses.length}`,
   );
 }
 

@@ -1,241 +1,229 @@
-NARRATOR: Begin by framing Foundations of Computational Thinking as a question about
+Begin by framing Defining the Computational Problem as a question about inputs, decisions,
 
-inputs, decisions, and observable results.
+and observable results.
 
-NARRATOR: This course focuses on the application of computational thinking using a
+Programming begins with precise problem statements, input and output examples, and
 
-problem-centered approach.
+algorithms written independently of syntax.
 
-NARRATOR: Consider this worked case: A student breaks down a sorting problem into identifying
+Consider this worked case: A student must write a function that takes a list of integers
 
-the input list, comparing elements, and arranging them in order before writing
+and returns the sum of all even numbers, clearly defining the input format and expected
 
-pseudo-code.
+output before writing any code.
 
-NARRATOR: On screen, display a split screen: left side shows a messy real-world problem,
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-right side shows a clean pseudo-code block with labeled abstraction and decomposition
+that the final result satisfies the stated condition.
 
-steps.
+List the givens before choosing a method, because an unstated assumption can change the
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+conclusion.
 
-change the conclusion.
+This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+Now define Decomposing with Functions precisely enough that another learner could
 
-NARRATOR: Now define Pseudo-Code and Language Expression precisely enough that another
+test the definition.
 
-learner could test the definition.
+Functions decompose a solution into named operations with parameters and results.
 
-NARRATOR: Specific topics include: expression of algorithms in pseudo-code and a programming
+Consider this worked case: To calculate the average of a dataset, one function reads the
+
+input, a second function filters out non-numeric values, and a third computes the
+
+mean, each with clear parameters and return values.
+
+Trace each intermediate state in the example, connect it to the formal claim, and verify
+
+that the final result satisfies the stated condition.
+
+Separate the formal definition from an implementation detail, then identify what
+
+evidence would distinguish them.
+
+A precise definition makes later examples easier to evaluate and revise.
+
+With the foundation in place, examine how Understanding Recursion operates in a concrete
+
+sequence.
+
+Recursion solves a problem through smaller instances and requires a base case.
+
+Consider this worked case: Calculating the factorial of 5 involves calling the function
+
+with 4, then 3, down to 1 (the base case), where the result is returned without further
+
+recursive calls.
+
+Trace each intermediate state in the example, connect it to the formal claim, and verify
+
+that the final result satisfies the stated condition.
+
+Follow every arrow in order and name the state before and after each transition.
+
+The trace converts an abstract statement into an inspectable sequence.
+
+Next, compare the choices involved in Elementary Data Structures: Lists and make the
+
+decision criteria explicit.
+
+Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in
+
+first-out access, trees represent hierarchy, and graphs represent connected entities.
+
+Consider this worked case: A student's grade list [85, 90, 78, 92] allows sequential access
+
+to each score and supports operations like appending a new grade or removing the lowest
+
+one.
+
+Trace each intermediate state in the example, connect it to the formal claim, and verify
+
+that the final result satisfies the stated condition.
+
+Compare alternatives against the same constraints so the evaluation does not move
+
+the goalposts.
+
+Using shared criteria turns a preference into a defensible technical choice.
+
+Apply Elementary Data Structures: Trees to a worked situation instead of treating it as an
+
+isolated definition.
+
+Specific topics include: expression of algorithms in pseudo-code and a programming
 
 language; elementary data structures such as lists, trees and graphs; problem solving using
 
 recursion; and debugging and testing.
 
-NARRATOR: Consider this worked case: A pseudo-code function for finding the maximum
+Consider this worked case: A file system directory structure is a tree where the root
 
-value in a list is converted to Python, preserving the logical flow while adding
+is the main drive, branches are folders, and leaves are individual files, enabling
 
-syntax and type constraints.
+efficient traversal and organization.
 
-NARRATOR: On screen, show a side-by-side comparison of the pseudo-code and Python
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-implementation, highlighting how each pseudo-code line maps to a specific Python
+that the final result satisfies the stated condition.
 
-statement.
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+step.
 
-evidence would distinguish them.
+The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+Examine the tradeoffs in Elementary Data Structures: Graphs, including what improves
 
-NARRATOR: With the foundation in place, examine how Elementary Data Structures: Lists
+and what becomes more difficult.
 
-operates in a concrete sequence.
+Python objects have identity, a type, and a value.
 
-NARRATOR: Load and store instructions make memory access explicit.
+Consider this worked case: A social network graph connects users as nodes and friendships
 
-NARRATOR: Consider this worked case: A student uses a Python list to store test scores, then
+as edges, allowing algorithms to find the shortest path between two people or identify
 
-iterates through it to calculate the average using a simple loop.
+communities.
 
-NARRATOR: On screen, animate a list growing with each new score added, then show a pointer
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-moving through the list to demonstrate sequential access during iteration.
+that the final result satisfies the stated condition.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: Next, compare the choices involved in Elementary Data Structures: Trees and make
+Stress-test the reasoning around Algorithmic Invariants and Correctness with an edge case
 
-the decision criteria explicit.
+and identify which assumption controls the outcome.
 
-NARRATOR: The import system searches for modules and binds loaded modules into a
+Searching and sorting algorithms depend on representation and invariants.
 
-namespace.
+Consider this worked case: In a sorting algorithm, the invariant 'the subarray to the
 
-NARRATOR: Consider this worked case: A binary tree represents a file system where
+left of the current index is sorted' holds true after each iteration, guaranteeing the
 
-directories are nodes and files are leaf nodes, allowing efficient path resolution.
+final array is fully sorted.
 
-NARRATOR: On screen, render a binary tree diagram with labeled parent-child links,
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-highlighting how a search path branches down to a target leaf node.
+that the final result satisfies the stated condition.
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-move the goalposts.
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+Use Debugging and Testing Strategies to diagnose a failure by separating symptoms,
 
-NARRATOR: Apply Elementary Data Structures: Graphs to a worked situation instead of
+causes, and corrective action.
 
-treating it as an isolated definition.
+Correctness arguments, tests, tracing, and debugging compare intended behavior with
 
-NARRATOR: Programs should be reasoned about through explicit state, control flow, data
+observable results, including boundary and error cases.
+
+Consider this worked case: A tester runs a function with an empty list (boundary case)
+
+and a list containing only negative numbers (error case) to verify the program handles
+
+these scenarios without crashing.
+
+Trace each intermediate state in the example, connect it to the formal claim, and verify
+
+that the final result satisfies the stated condition.
+
+Locate the first point where observed behavior diverges from expected behavior, then test the
+
+smallest plausible cause.
+
+The diagnosis is strongest when another person can reproduce the observation and the test.
+
+Connect Pseudo-code to Implementation to the earlier ideas and explain how the pieces work
+
+as one system.
+
+Assignments (both in class and homework) requiring a pseudo-code solution and
+
+implementation in a programming language are an integral part of the course.
+
+Consider this worked case: A student writes a step-by-step pseudo-code description of a
+
+binary search algorithm, then converts each step into Python syntax, ensuring the logic
+
+remains unchanged.
+
+Trace each intermediate state in the example, connect it to the formal claim, and verify
+
+that the final result satisfies the stated condition.
+
+Explain each connection explicitly and verify that information retains the same meaning
+
+across representations.
+
+The synthesis matters only if every connection remains supported by the original evidence.
+
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
+
+analysis.
+
+Programs should be reasoned about through explicit state, control flow, data
 
 representation, contracts, tests, and observable behavior.
 
-NARRATOR: Consider this worked case: A student models a city's road network as a graph where
+Consider this worked case: A checklist item asks: 'Does the algorithm handle the edge case
 
-intersections are nodes and roads are edges to find the shortest path.
+where the input list is empty?
 
-NARRATOR: On screen, draw a simple graph with labeled nodes and directed edges, then trace a
+' followed by 'Are all recursive calls reducing the problem size.
 
-path from a start node to an end node using a step-by-step animation.
+Trace each intermediate state in the example, connect it to the formal claim, and verify
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+that the final result satisfies the stated condition.
 
-at each step.
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+verification step.
 
-NARRATOR: Examine the tradeoffs in Recursive Problem Solving, including what improves and
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-what becomes more difficult.
-
-NARRATOR: Exceptions interrupt normal control flow until a matching handler processes them
-
-or they propagate.
-
-NARRATOR: Consider this worked case: A factorial function calculates n!
-
-NARRATOR: by multiplying n with the result of factorial(n-1), stopping when n equals 1.
-
-NARRATOR: On screen, show a recursive call stack expanding downward with each function
-
-call, then collapsing upward as base cases return values.
-
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
-
-acceptable.
-
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
-
-NARRATOR: Stress-test the reasoning around Debugging and Testing Protocols with an edge
-
-case and identify which assumption controls the outcome.
-
-NARRATOR: Debugging separates syntax, runtime, and logical failures, while decomposition and
-
-abstraction reduce the number of interacting concerns.
-
-NARRATOR: Consider this worked case: A student uses print statements and a test harness to
-
-verify that a sorting algorithm correctly handles edge cases like empty lists or
-
-single-element lists.
-
-NARRATOR: On screen, display a debugger interface highlighting a runtime error, then
-
-show a test suite passing/failing based on input/output contracts.
-
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
-
-holds.
-
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
-
-core idea.
-
-NARRATOR: Use State and Control Flow Management to diagnose a failure by separating
-
-symptoms, causes, and corrective action.
-
-NARRATOR: LLVM IR is a typed, SSA-based intermediate representation with explicit
-
-instructions, basic blocks, functions, memory operations, and control flow.
-
-NARRATOR: Consider this worked case: A student defines a class with explicit attributes and
-
-methods, ensuring that each method updates state according to a documented contract.
-
-NARRATOR: On screen, show a state machine diagram transitioning between states, with
-
-arrows labeled by method calls and state updates.
-
-NARRATOR: Locate the first point where observed behavior diverges from expected
-
-behavior, then test the smallest plausible cause.
-
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
-
-and the test.
-
-NARRATOR: Connect Verification and Local Expander Preparation to the earlier ideas and
-
-explain how the pieces work as one system.
-
-NARRATOR: The verifier reports IR that violates those rules.
-
-NARRATOR: Consider this worked case: A student cross-references the pseudo-code
-
-implementation with the source excerpts, ensuring that terms like 'basic blocks',
-
-'terminator instruction', and 'namespace' are correctly applied.
-
-NARRATOR: On screen, display a checklist overlay with checkboxes for each source ID,
-
-technical term reuse, and claim verification, ready for the local expander to generate full
-
-narration.
-
-NARRATOR: Explain each connection explicitly and verify that information retains the same
-
-meaning across representations.
-
-NARRATOR: The synthesis matters only if every connection remains supported by the original
-
-evidence.
-
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
-
-guide a new analysis.
-
-NARRATOR: The Python language reference specifies lexical analysis, data model
-
-behavior, execution, expressions, statements, functions, classes, exceptions, and module
-
-import semantics.
-
-NARRATOR: Consider this worked case: A student reviews their assignment against the
-
-checklist, confirming that pseudo-code and code match, data structures are correctly
-
-implemented, recursion is applied, and tests pass.
-
-NARRATOR: On screen, show a clean, printable checklist with sections for each beat,
-
-checkboxes for claim verification, and space for instructor notes.
-
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

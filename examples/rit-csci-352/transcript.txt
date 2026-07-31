@@ -1,233 +1,181 @@
-NARRATOR: Begin by framing Process Model & State as a question about inputs, decisions,
+Begin by framing Process Model & State as a question about inputs, decisions, and
 
-and observable results.
+observable results.
 
-NARRATOR: A process combines an address space with execution state and operating-system
+A process combines an address space with execution state and operating-system
 
 resources.
 
-NARRATOR: Consider this worked case: A running web server process maintains its own stack,
+Consider this worked case: A running web server process maintains its own stack, heap,
 
-heap, and open file descriptors while executing user-level code.
+and open file descriptors while executing user-level code.
 
-NARRATOR: On screen, show a diagram of a process with labeled components: address
+Annotate each component with its function in the OS model.
 
-space, execution state, and resource ownership.
+List the givens before choosing a method, because an unstated assumption can change the
 
-NARRATOR: Annotate each component with its function in the OS model.
+conclusion.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+This establishes the vocabulary and scope needed for the remaining sections.
 
-change the conclusion.
+Now define System Calls & Privilege Levels precisely enough that another learner could
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+test the definition.
 
-NARRATOR: Now define System Calls & Privilege Levels precisely enough that another learner
+A system call transfers control from user code to a privileged kernel service.
 
-could test the definition.
+Consider this worked case: When a program requests disk I/O, it executes a system call
 
-NARRATOR: A system call transfers control from user code to a privileged kernel service.
+instruction that switches execution to the kernel to handle the request.
 
-NARRATOR: Consider this worked case: When a program requests disk I/O, it executes a
-
-system call instruction that switches execution to the kernel to handle the request.
-
-NARRATOR: On screen, display a flowchart showing user mode code calling a system call,
-
-transitioning to kernel mode, and returning to user mode with a result.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Traps & Processor State operates
+With the foundation in place, examine how Traps & Processor State operates in a concrete
 
-in a concrete sequence.
+sequence.
 
-NARRATOR: A trap records processor state so the kernel can handle a system call,
+A trap records processor state so the kernel can handle a system call, exception, or
 
-exception, or interrupt.
+interrupt.
 
-NARRATOR: Consider this worked case: When a page fault occurs, the CPU traps the faulting
+Consider this worked case: When a page fault occurs, the CPU traps the faulting
 
 instruction, saves the instruction pointer and registers, and transfers control to the kernel
 
 handler.
 
-NARRATOR: On screen, illustrate a trap sequence with arrows showing state capture,
+Follow every arrow in order and name the state before and after each transition.
 
-kernel entry, exception handling, and state restoration.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
+Next, compare the choices involved in Page Tables & Virtual Memory and make the decision
 
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
+criteria explicit.
 
-NARRATOR: Next, compare the choices involved in Page Tables & Virtual Memory and make the
+Page tables map virtual addresses to physical memory with permission bits.
 
-decision criteria explicit.
+Consider this worked case: A page table entry for a read-only code segment contains a valid
 
-NARRATOR: Page tables map virtual addresses to physical memory with permission bits.
+bit, a present bit, and a read-only permission flag.
 
-NARRATOR: Consider this worked case: A page table entry for a read-only code segment
+Compare alternatives against the same constraints so the evaluation does not move
 
-contains a valid bit, a present bit, and a read-only permission flag.
+the goalposts.
 
-NARRATOR: On screen, show a page table structure with columns for virtual address,
+Using shared criteria turns a preference into a defensible technical choice.
 
-physical address, and permission bits, highlighting how mappings are resolved.
-
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
-
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Apply Processor Scheduling to a worked situation instead of treating it as an
+Apply Processor Scheduling to a worked situation instead of treating it as an
 
 isolated definition.
 
-NARRATOR: The scheduler selects runnable processes and switches processor context.
+The scheduler selects runnable processes and switches processor context.
 
-NARRATOR: Consider this worked case: The OS scheduler picks a ready process from the run
+Consider this worked case: The OS scheduler picks a ready process from the run queue,
 
-queue, saves the current process's registers, and loads the new process's context.
+saves the current process's registers, and loads the new process's context.
 
-NARRATOR: On screen, draw a scheduler loop with states: ready queue, running, blocked,
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-and context switch arrows between processes.
+step.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+The worked case shows both how to apply the method and how to check it.
 
-at each step.
-
-NARRATOR: The worked case shows both how to apply the method and how to check it.
-
-NARRATOR: Examine the tradeoffs in Locks & Synchronization, including what improves and
+Examine the tradeoffs in Locks & Synchronization, including what improves and
 
 what becomes more difficult.
 
-NARRATOR: Locks protect invariants when concurrent execution can access shared state.
+Locks protect invariants when concurrent execution can access shared state.
 
-NARRATOR: Consider this worked case: A mutex lock ensures that only one thread can modify a
+Consider this worked case: A mutex lock ensures that only one thread can modify a
 
 shared counter at a time, preventing race conditions.
 
-NARRATOR: On screen, show a lock acquisition/release sequence with two
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-concurrent threads, highlighting mutual exclusion and invariant protection.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
-
-acceptable.
-
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Stress-test the reasoning around Deadlock & Resource Management with an edge
+Stress-test the reasoning around Deadlock & Resource Management with an edge case and
 
-case and identify which assumption controls the outcome.
+identify which assumption controls the outcome.
 
-NARRATOR: Analysis distinguishes user mode, privileged kernel code, hardware translation,
+Analysis distinguishes user mode, privileged kernel code, hardware translation, interrupt
 
-interrupt state, resource ownership, and synchronization invariants.
+state, resource ownership, and synchronization invariants.
 
-NARRATOR: Consider this worked case: Two processes each hold one file descriptor and
+Consider this worked case: Two processes each hold one file descriptor and wait for the
 
-wait for the other's, creating a circular dependency that halts progress.
+other's, creating a circular dependency that halts progress.
 
-NARRATOR: On screen, illustrate a deadlock scenario with two processes and two resources,
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-showing circular wait arrows and resource ownership.
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+Use Multiprogramming & Multiprocessing to diagnose a failure by separating symptoms,
 
-holds.
+causes, and corrective action.
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+Topics include process synchronization, interprocess communication, deadlock,
 
-core idea.
+multiprogramming and multiprocessing, processor scheduling and resource management,
 
-NARRATOR: Use Multiprogramming & Multiprocessing to diagnose a failure by
+memory management, static and dynamic relocation, virtual memory, file systems,
 
-separating symptoms, causes, and corrective action.
+logical and physical I/O, device allocation, I/O processor scheduling, process and resource
 
-NARRATOR: Topics include process synchronization, interprocess communication,
+protection.
 
-deadlock, multiprogramming and multiprocessing, processor scheduling and
+Consider this worked case: A server handles multiple client requests simultaneously by
 
-resource management, memory management, static and dynamic relocation, virtual memory, file
+switching between processes on a single CPU core.
 
-systems, logical and physical I/O, device allocation, I/O processor scheduling, process
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-and resource protection.
+smallest plausible cause.
 
-NARRATOR: Consider this worked case: A server handles multiple client requests
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-simultaneously by switching between processes on a single CPU core.
+Connect File Systems & I/O to the earlier ideas and explain how the pieces work as one
 
-NARRATOR: On screen, show a CPU core with multiple process contexts interleaved,
+system.
 
-emphasizing time-sharing and resource allocation.
-
-NARRATOR: Locate the first point where observed behavior diverges from expected
-
-behavior, then test the smallest plausible cause.
-
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
-
-and the test.
-
-NARRATOR: Connect File Systems & I/O to the earlier ideas and explain how the pieces work
-
-as one system.
-
-NARRATOR: The file system organizes persistent data through inodes, directories, and logged
+The file system organizes persistent data through inodes, directories, and logged
 
 updates.
 
-NARRATOR: Consider this worked case: A directory entry points to an inode that stores
+Consider this worked case: A directory entry points to an inode that stores file metadata,
 
-file metadata, permissions, and block addresses for data storage.
+permissions, and block addresses for data storage.
 
-NARRATOR: On screen, display a file system tree with directories, inodes, and block
+Explain each connection explicitly and verify that information retains the same meaning
 
-clusters, showing how data is organized and updated.
+across representations.
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+The synthesis matters only if every connection remains supported by the original evidence.
 
-meaning across representations.
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-NARRATOR: The synthesis matters only if every connection remains supported by the original
+analysis.
 
-evidence.
-
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
-
-guide a new analysis.
-
-NARRATOR: Architecture analysis preserves data dependencies, control dependencies, and
+Architecture analysis preserves data dependencies, control dependencies, and
 
 architectural state.
 
-NARRATOR: Consider this worked case: Audit a kernel module to ensure all shared variables
+Consider this worked case: Audit a kernel module to ensure all shared variables are
 
-are protected by locks and that page table permissions match access rights.
+protected by locks and that page table permissions match access rights.
 
-NARRATOR: On screen, provide a checklist graphic with checkboxes for each invariant:
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-user/kernel mode, hardware translation, interrupt handling, resource ownership, and
+verification step.
 
-synchronization.
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

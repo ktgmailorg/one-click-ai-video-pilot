@@ -1,241 +1,187 @@
-NARRATOR: Begin by framing Algorithm Analysis Basics as a question about inputs, decisions,
+Begin by framing Algorithm Analysis Basics as a question about inputs, decisions, and
 
-and observable results.
+observable results.
 
-NARRATOR: Algorithm analysis connects a precise problem specification to a correctness
+Algorithm analysis connects a precise problem specification to a correctness argument and
 
-argument and resource bounds.
+resource bounds.
 
-NARRATOR: Consider this worked case: A sorting algorithm must guarantee that the output array
+Consider this worked case: A sorting algorithm must guarantee that the output array contains
 
-contains all input elements in non-decreasing order.
+all input elements in non-decreasing order.
 
-NARRATOR: On screen, display a split screen showing a problem specification on the left
+List the givens before choosing a method, because an unstated assumption can change the
 
-and a resource bound graph on the right.
+conclusion.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+This establishes the vocabulary and scope needed for the remaining sections.
 
-change the conclusion.
+Now define Asymptotic Notation precisely enough that another learner could test the
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+definition.
 
-NARRATOR: Now define Asymptotic Notation precisely enough that another learner could
+Asymptotic notation describes how resource use grows with input size.
 
-test the definition.
+Consider this worked case: Big-O notation indicates that a search algorithm's time
 
-NARRATOR: Asymptotic notation describes how resource use grows with input size.
+complexity increases proportionally to the number of items searched.
 
-NARRATOR: Consider this worked case: Big-O notation indicates that a search algorithm's
-
-time complexity increases proportionally to the number of items searched.
-
-NARRATOR: On screen, show a line graph where the x-axis represents input size and the
-
-y-axis represents resource usage, highlighting a linear trend.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.
-
-NARRATOR: With the foundation in place, examine how Loop Invariants operates in a
-
-concrete sequence.
-
-NARRATOR: A loop invariant supports a proof by initialization, maintenance, and termination.
-
-NARRATOR: Consider this worked case: In a for-loop that sums an array, the invariant
-
-states that the running total equals the sum of the first i elements.
-
-NARRATOR: On screen, animate a loop counter and a running total, updating them
-
-step-by-step to demonstrate the invariant holding true.
-
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
-
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Next, compare the choices involved in Divide-and-Conquer and make the decision
+With the foundation in place, examine how Loop Invariants operates in a concrete sequence.
+
+A loop invariant supports a proof by initialization, maintenance, and termination.
+
+Consider this worked case: In a for-loop that sums an array, the invariant states that the
+
+running total equals the sum of the first i elements.
+
+Follow every arrow in order and name the state before and after each transition.
+
+The trace converts an abstract statement into an inspectable sequence.
+
+Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+Next, compare the choices involved in Divide-and-Conquer and make the decision
 
 criteria explicit.
 
-NARRATOR: Divide-and-conquer algorithms split a problem, solve subproblems, and combine
+Divide-and-conquer algorithms split a problem, solve subproblems, and combine their results.
 
-their results.
+Consider this worked case: Merge sort divides an array into halves, recursively sorts each
 
-NARRATOR: Consider this worked case: Merge sort divides an array into halves, recursively
+half, and merges the sorted halves.
 
-sorts each half, and merges the sorted halves.
+Compare alternatives against the same constraints so the evaluation does not move
 
-NARRATOR: On screen, illustrate a recursive tree where each node splits into two children
+the goalposts.
 
-until reaching base cases.
+Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
-
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Apply Recurrence Relations to a worked situation instead of treating it as an
+Apply Recurrence Relations to a worked situation instead of treating it as an
 
 isolated definition.
 
-NARRATOR: Recurrences describe the cost of recursive algorithms.
+Recurrences describe the cost of recursive algorithms.
 
-NARRATOR: Consider this worked case: The recurrence T(n) = 2T(n/2) + O(n) describes the
+Consider this worked case: The recurrence T(n) = 2T(n/2) + O(n) describes the time complexity
 
-time complexity of merge sort.
+of merge sort.
 
-NARRATOR: On screen, display a mathematical recurrence equation alongside a corresponding
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-recursion tree diagram.
+step.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+The worked case shows both how to apply the method and how to check it.
 
-at each step.
-
-NARRATOR: The worked case shows both how to apply the method and how to check it.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Examine the tradeoffs in Graph Algorithms, including what improves and what
+Examine the tradeoffs in Graph Algorithms, including what improves and what becomes more
 
-becomes more difficult.
+difficult.
 
-NARRATOR: Graph algorithms operate on vertices and edges to answer reachability, ordering,
+Graph algorithms operate on vertices and edges to answer reachability, ordering,
 
 connectivity, and path questions.
 
-NARRATOR: Consider this worked case: Dijkstra's algorithm finds the shortest path
+Consider this worked case: Dijkstra's algorithm finds the shortest path between two
 
-between two nodes in a weighted graph by exploring adjacent vertices iteratively.
+nodes in a weighted graph by exploring adjacent vertices iteratively.
 
-NARRATOR: On screen, render a graph with labeled vertices and edges, highlighting the
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-path explored by the algorithm.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+Stress-test the reasoning around Dynamic Programming with an edge case and identify
 
-acceptable.
+which assumption controls the outcome.
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+Dynamic programming records solutions to overlapping subproblems.
 
-NARRATOR: Stress-test the reasoning around Dynamic Programming with an edge case and
+Consider this worked case: The Fibonacci sequence uses memoization to store previously
 
-identify which assumption controls the outcome.
+computed values, avoiding redundant calculations.
 
-NARRATOR: Dynamic programming records solutions to overlapping subproblems.
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-NARRATOR: Consider this worked case: The Fibonacci sequence uses memoization to store
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-previously computed values, avoiding redundant calculations.
-
-NARRATOR: On screen, show a table filling in values for Fibonacci numbers, with arrows
-
-pointing to reused entries.
-
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
-
-holds.
-
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
-
-core idea.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Use Data Structure Foundations to diagnose a failure by separating symptoms,
+Use Data Structure Foundations to diagnose a failure by separating symptoms, causes, and
 
-causes, and corrective action.
+corrective action.
 
-NARRATOR: Lists represent ordered sequences with position-based operations.
+Lists represent ordered sequences with position-based operations.
 
-NARRATOR: Consider this worked case: A stack processes function calls by executing the most
+Consider this worked case: A stack processes function calls by executing the most recently
 
-recently pushed task first.
+pushed task first.
 
-NARRATOR: On screen, compare a list with indexed positions and a stack with push/pop
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-operations on a single end.
+smallest plausible cause.
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-behavior, then test the smallest plausible cause.
-
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
-
-and the test.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Connect Hash Tables and Trees to the earlier ideas and explain how the pieces work
+Connect Hash Tables and Trees to the earlier ideas and explain how the pieces work as one
 
-as one system.
+system.
 
-NARRATOR: Hash tables map keys to locations and require a collision strategy.
+Hash tables map keys to locations and require a collision strategy.
 
-NARRATOR: Consider this worked case: A hash table stores key-value pairs using a hash
+Consider this worked case: A hash table stores key-value pairs using a hash function,
 
-function, resolving collisions via chaining or open addressing.
+resolving collisions via chaining or open addressing.
 
-NARRATOR: On screen, display a hash table with buckets and a binary tree with parent-child
+Explain each connection explicitly and verify that information retains the same meaning
 
-node relationships.
+across representations.
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+The synthesis matters only if every connection remains supported by the original evidence.
 
-meaning across representations.
-
-NARRATOR: The synthesis matters only if every connection remains supported by the original
-
-evidence.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-guide a new analysis.
+analysis.
 
-NARRATOR: A disciplined solution states inputs and outputs, proves correctness, and then
+A disciplined solution states inputs and outputs, proves correctness, and then analyzes
 
-analyzes time and space.
+time and space.
 
-NARRATOR: Consider this worked case: Before coding a graph traversal, students document
+Consider this worked case: Before coding a graph traversal, students document the start
 
-the start node, visited set, and expected O(V+E) time complexity.
+node, visited set, and expected O(V+E) time complexity.
 
-NARRATOR: On screen, present a checklist graphic with three checkboxes: 'Inputs/Outputs
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-Defined', 'Correctness Proven', 'Complexity Analyzed'.
+verification step.
 
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

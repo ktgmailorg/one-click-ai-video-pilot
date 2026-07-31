@@ -1,555 +1,409 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:06.839
-NARRATOR: Begin by framing Introduction to
-Database System Implementation as a question
+00:00:00.050 --> 00:00:07.404
+Begin by framing Introduction to Database
+System Implementation as a question about
 
 2
-00:00:06.839 --> 00:00:10.234
-about inputs, decisions, and observable
-results.
+00:00:07.404 --> 00:00:10.468
+inputs, decisions, and observable results.
 
 3
-00:00:10.234 --> 00:00:17.193
-NARRATOR: Database system implementation
-issues are covered next, where the focus is on
+00:00:10.468 --> 00:00:17.337
+Database system implementation issues are
+covered next, where the focus is on data
 
 4
-00:00:17.193 --> 00:00:22.546
-data structures and algorithms used to
-implement database management systems.
+00:00:17.337 --> 00:00:22.093
+structures and algorithms used to implement
+database management systems.
 
 5
-00:00:22.546 --> 00:00:28.253
-NARRATOR: Consider this worked case:
-Implementing a student enrollment system
+00:00:22.093 --> 00:00:28.624
+Consider this worked case: Implementing a
+student enrollment system requires choosing
 
 6
-00:00:28.253 --> 00:00:35.100
-requires choosing between B-trees for range
-queries and hash tables for exact-match
+00:00:28.624 --> 00:00:35.156
+between B-trees for range queries and hash
+tables for exact-match lookups.
 
 7
-00:00:35.100 --> 00:00:35.671
-lookups.
+00:00:35.156 --> 00:00:42.141
+List the givens before choosing a method,
+because an unstated assumption can change the
 
 8
-00:00:35.671 --> 00:00:41.782
-NARRATOR: On screen, display a split-screen
-diagram showing a B-tree structure on the left
+00:00:42.141 --> 00:00:42.640
+conclusion.
 
 9
-00:00:41.782 --> 00:00:48.765
-and a hash table structure on the right, with
-arrows pointing to their respective use cases.
+00:00:42.640 --> 00:00:48.609
+This establishes the vocabulary and scope
+needed for the remaining sections.
 
 10
-00:00:48.765 --> 00:00:54.846
-NARRATOR: List the givens before choosing a
-method, because an unstated assumption can
+00:00:48.722 --> 00:00:55.312
+Now define Relational Model Foundations
+precisely enough that another learner could
 
 11
-00:00:54.846 --> 00:00:56.249
-change the conclusion.
+00:00:55.312 --> 00:00:57.109
+test the definition.
 
 12
-00:00:56.249 --> 00:01:02.015
-NARRATOR: This establishes the vocabulary and
-scope needed for the remaining sections.
+00:00:57.109 --> 00:01:04.906
+Relational systems organize data with tables,
+rows, columns, and declared types.
 
 13
-00:01:02.138 --> 00:01:07.761
-NARRATOR: Now define Relational Model
-Foundations precisely enough that another
+00:01:04.906 --> 00:01:12.337
+Consider this worked case: A 'Students' table
+contains columns for student_id, name, and
 
 14
-00:01:07.761 --> 00:01:10.572
-learner could test the definition.
+00:01:12.337 --> 00:01:18.625
+email, each with a specific data type like
+INTEGER or VARCHAR.
 
 15
-00:01:10.572 --> 00:01:17.877
-NARRATOR: Relational systems organize data
-with tables, rows, columns, and declared
+00:01:18.625 --> 00:01:25.144
+Separate the formal definition from an
+implementation detail, then identify what
 
 16
-00:01:17.877 --> 00:01:18.541
-types.
-
-17
-00:01:18.541 --> 00:01:24.426
-NARRATOR: Consider this worked case: A
-'Students' table contains columns for
-
-18
-00:01:24.426 --> 00:01:31.916
-student_id, name, and email, each with a
-specific data type like INTEGER or VARCHAR.
-
-19
-00:01:31.916 --> 00:01:39.371
-NARRATOR: On screen, show a simple table
-schema with column names, data types, and a
-
-20
-00:01:39.371 --> 00:01:42.353
-sample row, highlighting the row-column
-structure.
-
-21
-00:01:42.353 --> 00:01:48.928
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
-
-22
-00:01:48.928 --> 00:01:51.119
+00:01:25.144 --> 00:01:27.515
 evidence would distinguish them.
 
+17
+00:01:27.515 --> 00:01:33.718
+A precise definition makes later examples
+easier to evaluate and revise.
+
+18
+00:01:33.842 --> 00:01:41.874
+With the foundation in place, examine how Keys
+and Constraints operates in a concrete
+
+19
+00:01:41.874 --> 00:01:42.448
+sequence.
+
+20
+00:01:42.448 --> 00:01:50.526
+Primary keys identify rows, while foreign keys
+express references between tables.
+
+21
+00:01:50.526 --> 00:01:58.279
+Consider this worked case: A 'Courses' table
+uses a foreign key to reference the 'Students'
+
+22
+00:01:58.279 --> 00:02:03.448
+table, ensuring no course is assigned to a
+non-existent student.
+
 23
-00:01:51.119 --> 00:01:57.728
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
+00:02:03.448 --> 00:02:10.588
+Follow every arrow in order and name the state
+before and after each transition.
 
 24
-00:01:57.842 --> 00:02:04.921
-NARRATOR: With the foundation in place,
-examine how Keys and Constraints operates in a
+00:02:10.588 --> 00:02:16.260
+The trace converts an abstract statement into
+an inspectable sequence.
 
 25
-00:02:04.921 --> 00:02:05.932
-concrete sequence.
+00:02:16.370 --> 00:02:23.273
+Next, compare the choices involved in Query
+Processing Basics and make the decision
 
 26
-00:02:05.932 --> 00:02:13.209
-NARRATOR: Primary keys identify rows, while
-foreign keys express references between
+00:02:23.273 --> 00:02:24.335
+criteria explicit.
 
 27
-00:02:13.209 --> 00:02:13.870
-tables.
+00:02:24.335 --> 00:02:30.872
+Query planning and physical structures
+influence performance without changing logical
 
 28
-00:02:13.870 --> 00:02:20.198
-NARRATOR: Consider this worked case: A
-'Courses' table uses a foreign key to
+00:02:30.872 --> 00:02:32.179
+query meaning.
 
 29
-00:02:20.198 --> 00:02:26.526
-reference the 'Students' table, ensuring no
-course is assigned to a non-existent student.
+00:02:32.179 --> 00:02:39.489
+Consider this worked case: A SQL query joins
+'Students' and 'Courses' tables to list all
 
 30
-00:02:26.526 --> 00:02:32.143
-NARRATOR: On screen, illustrate two connected
-tables with a dashed line labeled 'foreign
+00:02:39.489 --> 00:02:45.824
+students and their enrolled courses, while the
+database optimizer chooses the fastest join
 
 31
-00:02:32.143 --> 00:02:39.057
-key', showing how a value in one table must
-match a primary key in the other.
+00:02:45.824 --> 00:02:47.773
+order based on indexes.
 
 32
-00:02:39.057 --> 00:02:46.573
-NARRATOR: Follow every arrow in order and name
-the state before and after each transition.
+00:02:47.773 --> 00:02:54.724
+Compare alternatives against the same
+constraints so the evaluation does not move
 
 33
-00:02:46.573 --> 00:02:52.120
-NARRATOR: The trace converts an abstract
-statement into an inspectable sequence.
+00:02:54.724 --> 00:02:55.882
+the goalposts.
 
 34
-00:02:52.226 --> 00:02:58.685
-NARRATOR: Next, compare the choices involved
-in Query Processing Basics and make the
+00:02:55.882 --> 00:03:02.898
+Using shared criteria turns a preference into
+a defensible technical choice.
 
 35
-00:02:58.685 --> 00:03:00.176
-decision criteria explicit.
+00:03:03.002 --> 00:03:10.177
+Apply Indexing and Hashing to a worked
+situation instead of treating it as an
 
 36
-00:03:00.176 --> 00:03:05.757
-NARRATOR: Query planning and physical
-structures influence performance without
-
-37
-00:03:05.757 --> 00:03:08.238
-changing logical query meaning.
-
-38
-00:03:08.238 --> 00:03:14.999
-NARRATOR: Consider this worked case: A SQL
-query joins 'Students' and 'Courses' tables to
-
-39
-00:03:14.999 --> 00:03:21.277
-list all students and their enrolled courses,
-while the database optimizer chooses the
-
-40
-00:03:21.277 --> 00:03:24.175
-fastest join order based on indexes.
-
-41
-00:03:24.176 --> 00:03:32.032
-NARRATOR: On screen, show a logical query tree
-on the left and a physical execution plan on
-
-42
-00:03:32.032 --> 00:03:38.039
-the right, with a note indicating that the
-logical meaning remains unchanged despite
-
-43
-00:03:38.039 --> 00:03:39.425
-different execution paths.
-
-44
-00:03:39.425 --> 00:03:46.313
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
-
-45
-00:03:46.313 --> 00:03:48.035
-move the goalposts.
-
-46
-00:03:48.035 --> 00:03:54.925
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
-
-47
-00:03:55.034 --> 00:04:01.952
-NARRATOR: Apply Indexing and Hashing to a
-worked situation instead of treating it as an
-
-48
-00:04:01.952 --> 00:04:02.874
+00:03:10.177 --> 00:03:11.202
 isolated definition.
 
+37
+00:03:11.202 --> 00:03:16.795
+Indexes provide additional access paths for
+selected queries.
+
+38
+00:03:16.795 --> 00:03:24.646
+Consider this worked case: A hash index on the
+'email' column allows the database to locate a
+
+39
+00:03:24.646 --> 00:03:29.264
+student record in constant time without
+scanning the entire table.
+
+40
+00:03:29.264 --> 00:03:36.910
+Work from the concrete inputs to the result,
+checking units, types, or invariants at each
+
+41
+00:03:36.910 --> 00:03:37.420
+step.
+
+42
+00:03:37.420 --> 00:03:42.467
+The worked case shows both how to apply the
+method and how to check it.
+
+43
+00:03:42.578 --> 00:03:48.969
+Examine the tradeoffs in Physical Data
+Organizations, including what improves and
+
+44
+00:03:48.969 --> 00:03:51.293
+what becomes more difficult.
+
+45
+00:03:51.293 --> 00:03:59.730
+Topics include physical data organizations,
+indexing and hashing, query processing and
+
+46
+00:03:59.730 --> 00:04:05.866
+optimization, database recovery techniques,
+transaction management, concurrency control,
+
+47
+00:04:05.866 --> 00:04:08.934
+and database performance evaluation.
+
+48
+00:04:08.934 --> 00:04:16.595
+Consider this worked case: Clustering data by
+student_id improves performance for queries
+
 49
-00:04:02.874 --> 00:04:08.234
-NARRATOR: Indexes provide additional access
-paths for selected queries.
+00:04:16.595 --> 00:04:22.340
+that frequently filter by student, reducing
+disk I/O operations.
 
 50
-00:04:08.234 --> 00:04:14.656
-NARRATOR: Consider this worked case: A hash
-index on the 'email' column allows the
+00:04:22.340 --> 00:04:31.263
+unclustered table layout, with clustered data
+grouped by student_id and unclustered data
 
 51
-00:04:14.656 --> 00:04:20.618
-database to locate a student record in
-constant time without scanning the entire
-
-52
-00:04:20.618 --> 00:04:21.077
-table.
-
-53
-00:04:21.077 --> 00:04:28.264
-NARRATOR: On screen, display a hash table with
-keys mapped to buckets, showing how a query
-
-54
-00:04:28.264 --> 00:04:33.655
-for a specific email resolves directly to its
-bucket without linear search.
-
-55
-00:04:33.655 --> 00:04:40.681
-NARRATOR: Work from the concrete inputs to the
-result, checking units, types, or invariants
-
-56
-00:04:40.681 --> 00:04:42.187
-at each step.
-
-57
-00:04:42.187 --> 00:04:46.733
-NARRATOR: The worked case shows both how to
-apply the method and how to check it.
-
-58
-00:04:46.850 --> 00:04:52.992
-NARRATOR: Examine the tradeoffs in Physical
-Data Organizations, including what improves
-
-59
-00:04:52.992 --> 00:04:55.784
-and what becomes more difficult.
-
-60
-00:04:55.784 --> 00:05:03.160
-NARRATOR: Topics include physical data
-organizations, indexing and hashing, query
-
-61
-00:05:03.160 --> 00:05:09.061
-processing and optimization, database recovery
-techniques, transaction management,
-
-62
-00:05:09.061 --> 00:05:13.487
-concurrency control, and database performance
-evaluation.
-
-63
-00:05:13.487 --> 00:05:19.588
-NARRATOR: Consider this worked case:
-Clustering data by student_id improves
-
-64
-00:05:19.588 --> 00:05:26.909
-performance for queries that frequently filter
-by student, reducing disk I/O operations.
-
-65
-00:05:26.909 --> 00:05:34.915
-NARRATOR: On screen, show a clustered vs.
-unclustered table layout, with clustered data
-
-66
-00:05:34.915 --> 00:05:41.074
-grouped by student_id and unclustered data
+00:04:31.263 --> 00:04:34.981
 scattered randomly, highlighting I/O
-
-67
-00:05:41.074 --> 00:05:41.690
 differences.
 
+52
+00:04:34.981 --> 00:04:41.777
+State the benefit, the cost, and the condition
+under which the tradeoff is acceptable.
+
+53
+00:04:41.777 --> 00:04:49.293
+Making the tradeoff visible prevents a local
+improvement from hiding a larger cost.
+
+54
+00:04:49.394 --> 00:04:56.130
+Stress-test the reasoning around Transaction
+Management with an edge case and identify
+
+55
+00:04:56.130 --> 00:04:58.937
+which assumption controls the outcome.
+
+56
+00:04:58.937 --> 00:05:04.250
+Transactions group operations into an atomic
+unit of work.
+
+57
+00:05:04.250 --> 00:05:11.051
+Consider this worked case: A transaction
+transfers funds between two accounts, and if
+
+58
+00:05:11.051 --> 00:05:17.328
+the debit fails, the credit is automatically
+rolled back to maintain consistency.
+
+59
+00:05:17.328 --> 00:05:23.781
+Change one assumption at a time and observe
+which part of the reasoning no longer holds.
+
+60
+00:05:23.781 --> 00:05:30.703
+The edge case reveals the boundary of the
+claim without discarding the useful core idea.
+
+61
+00:05:30.818 --> 00:05:38.359
+Use Concurrency Control to diagnose a failure
+by separating symptoms, causes, and corrective
+
+62
+00:05:38.359 --> 00:05:38.939
+action.
+
+63
+00:05:38.939 --> 00:05:44.877
+Isolation controls how concurrent transactions
+observe one another.
+
+64
+00:05:44.877 --> 00:05:51.314
+Consider this worked case: Two transactions
+updating the same account balance are
+
+65
+00:05:51.314 --> 00:05:57.752
+serialized so that one completes before the
+other begins, avoiding lost updates.
+
+66
+00:05:57.752 --> 00:06:05.511
+Locate the first point where observed behavior
+diverges from expected behavior, then test the
+
+67
+00:06:05.511 --> 00:06:07.174
+smallest plausible cause.
+
 68
-00:05:41.690 --> 00:05:48.208
-NARRATOR: State the benefit, the cost, and the
-condition under which the tradeoff is
+00:06:07.174 --> 00:06:14.799
+The diagnosis is strongest when another person
+can reproduce the observation and the test.
 
 69
-00:05:48.208 --> 00:05:48.674
-acceptable.
+00:06:14.906 --> 00:06:21.813
+Connect Database Performance Evaluation to the
+earlier ideas and explain how the pieces work
 
 70
-00:05:48.674 --> 00:05:56.112
-NARRATOR: Making the tradeoff visible prevents
-a local improvement from hiding a larger cost.
+00:06:21.813 --> 00:06:23.293
+as one system.
 
 71
-00:05:56.234 --> 00:06:02.877
-NARRATOR: Stress-test the reasoning around
-Transaction Management with an edge case and
+00:06:23.293 --> 00:06:29.512
+Current research topics in database system
+implementation are also explored.
 
 72
-00:06:02.877 --> 00:06:06.199
-identify which assumption controls the
-outcome.
+00:06:29.512 --> 00:06:37.257
+Consider this worked case: Benchmarking shows
+that adding a composite index on (department,
 
 73
-00:06:06.199 --> 00:06:11.668
-NARRATOR: Transactions group operations into
-an atomic unit of work.
+00:06:37.257 --> 00:06:43.215
+salary) reduces query execution time by 60%
+for filtered reports.
 
 74
-00:06:11.668 --> 00:06:17.360
-NARRATOR: Consider this worked case: A
-transaction transfers funds between two
+00:06:43.215 --> 00:06:52.697
+Explain each connection explicitly and verify
+that information retains the same meaning
 
 75
-00:06:17.360 --> 00:06:24.604
-accounts, and if the debit fails, the credit
-is automatically rolled back to maintain
+00:06:52.697 --> 00:06:54.277
+across representations.
 
 76
-00:06:24.604 --> 00:06:25.121
-consistency.
+00:06:54.277 --> 00:07:01.605
+The synthesis matters only if every connection
+remains supported by the original evidence.
 
 77
-00:06:25.121 --> 00:06:32.132
-NARRATOR: On screen, illustrate a transaction
-flow with 'begin', 'commit', and 'rollback'
+00:07:01.730 --> 00:07:08.639
+Finish with Practical Analysis Checklist as a
+practical checklist that can guide a new
 
 78
-00:06:32.132 --> 00:06:38.558
-states, showing how partial failures trigger
-automatic reversal of all operations.
+00:07:08.639 --> 00:07:09.133
+analysis.
 
 79
-00:06:38.558 --> 00:06:44.632
-NARRATOR: Change one assumption at a time and
-observe which part of the reasoning no longer
+00:07:09.133 --> 00:07:15.711
+Constraints and indexes support data integrity
+and efficient lookup.
 
 80
-00:06:44.632 --> 00:06:45.012
-holds.
+00:07:15.711 --> 00:07:23.784
+Consider this worked case: Before deploying a
+new module, check that primary keys are
 
 81
-00:06:45.012 --> 00:06:51.177
-NARRATOR: The edge case reveals the boundary
-of the claim without discarding the useful
+00:07:23.784 --> 00:07:30.703
+defined, foreign keys reference valid tables,
+indexes cover frequent query filters, and
 
 82
-00:06:51.177 --> 00:06:52.058
-core idea.
+00:07:30.703 --> 00:07:33.586
+isolation levels match concurrency needs.
 
 83
-00:06:52.178 --> 00:06:59.474
-NARRATOR: Use Concurrency Control to diagnose
-a failure by separating symptoms, causes, and
+00:07:33.586 --> 00:07:41.670
+For each checklist item, record the evidence,
+the remaining uncertainty, and the next
 
 84
-00:06:59.474 --> 00:07:00.596
-corrective action.
+00:07:41.670 --> 00:07:42.914
+verification step.
 
 85
-00:07:00.596 --> 00:07:06.190
-NARRATOR: Isolation controls how concurrent
-transactions observe one another.
+00:07:42.914 --> 00:07:49.608
+The result is a repeatable procedure, not a
+conclusion that depends on memory or
 
 86
-00:07:06.190 --> 00:07:12.422
-NARRATOR: Consider this worked case: Two
-transactions updating the same account balance
-
-87
-00:07:12.422 --> 00:07:19.174
-are serialized so that one completes before
-the other begins, avoiding lost updates.
-
-88
-00:07:19.174 --> 00:07:25.370
-NARRATOR: On screen, show two concurrent
-transaction timelines with serialization
-
-89
-00:07:25.370 --> 00:07:31.565
-points, demonstrating how isolation levels
-prevent conflicting reads and writes.
-
-90
-00:07:31.565 --> 00:07:37.437
-NARRATOR: Locate the first point where
-observed behavior diverges from expected
-
-91
-00:07:37.437 --> 00:07:41.174
-behavior, then test the smallest plausible
-cause.
-
-92
-00:07:41.174 --> 00:07:47.149
-NARRATOR: The diagnosis is strongest when
-another person can reproduce the observation
-
-93
-00:07:47.149 --> 00:07:48.643
-and the test.
-
-94
-00:07:48.746 --> 00:07:53.852
-NARRATOR: Connect Database Performance
-Evaluation to the earlier ideas and explain
-
-95
-00:07:53.852 --> 00:07:57.102
-how the pieces work as one system.
-
-96
-00:07:57.102 --> 00:08:03.446
-NARRATOR: Current research topics in database
-system implementation are also explored.
-
-97
-00:08:03.446 --> 00:08:09.769
-NARRATOR: Consider this worked case:
-Benchmarking shows that adding a composite
-
-98
-00:08:09.769 --> 00:08:17.242
-index on (department, salary) reduces query
-execution time by 60% for filtered reports.
-
-99
-00:08:17.242 --> 00:08:24.400
-NARRATOR: On screen, display a performance
-graph comparing query execution times with and
-
-100
-00:08:24.400 --> 00:08:31.008
-without a composite index, highlighting the
-reduction in I/O and CPU usage.
-
-101
-00:08:31.008 --> 00:08:40.221
-NARRATOR: Explain each connection explicitly
-and verify that information retains the same
-
-102
-00:08:40.221 --> 00:08:42.524
-meaning across representations.
-
-103
-00:08:42.524 --> 00:08:49.647
-NARRATOR: The synthesis matters only if every
-connection remains supported by the original
-
-104
-00:08:49.647 --> 00:08:50.195
-evidence.
-
-105
-00:08:50.306 --> 00:08:56.022
-NARRATOR: Finish with Practical Analysis
-Checklist as a practical checklist that can
-
-106
-00:08:56.022 --> 00:08:57.927
-guide a new analysis.
-
-107
-00:08:57.927 --> 00:09:04.193
-NARRATOR: Constraints and indexes support data
-integrity and efficient lookup.
-
-108
-00:09:04.193 --> 00:09:11.423
-NARRATOR: Consider this worked case: Before
-deploying a new module, check that primary
-
-109
-00:09:11.423 --> 00:09:18.653
-keys are defined, foreign keys reference valid
-tables, indexes cover frequent query filters,
-
-110
-00:09:18.653 --> 00:09:21.990
-and isolation levels match concurrency needs.
-
-111
-00:09:21.990 --> 00:09:29.751
-NARRATOR: On screen, show a checklist graphic
-with four boxes: 'Keys & Constraints',
-
-112
-00:09:29.751 --> 00:09:36.317
-'Indexes & Hashing', 'Transaction Atomicity',
-'Isolation & Concurrency', each with a
-
-113
-00:09:36.317 --> 00:09:39.302
-checkbox and brief validation criteria.
-
-114
-00:09:39.302 --> 00:09:46.907
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
-
-115
-00:09:46.907 --> 00:09:48.662
-next verification step.
-
-116
-00:09:48.662 --> 00:09:54.616
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-117
-00:09:54.616 --> 00:09:55.990
-memory or intuition.
+00:07:49.608 --> 00:07:50.086
+intuition.

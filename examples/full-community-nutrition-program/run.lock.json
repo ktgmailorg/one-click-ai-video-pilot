@@ -1,7 +1,7 @@
 {
   "approvals": [
     {
-      "approvedAt": "2026-07-31T15:15:34.649Z",
+      "approvedAt": "2026-07-31T19:15:53.174Z",
       "notes": "Verifies declared source bindings for draft rendering; instructor and release approval remain required.",
       "reviewer": "Automated source-pack verification (draft)",
       "role": "automation",
@@ -683,7 +683,7 @@
     }
   ],
   "configSha256": "4480c43269fdbee2932558fb35403361ff3bdc813777fe4685b89300b4525fcb",
-  "createdAt": "2026-07-31T15:18:00.576Z",
+  "createdAt": "2026-07-31T19:18:44.281Z",
   "final": {
     "releaseAudit": {
       "blockers": [],
@@ -783,7 +783,7 @@
         "draftSkipped": true,
         "master": false,
         "sectionCount": 10,
-        "sections": 1
+        "sections": 0
       },
       "draftPath": "/Users/kt/Documents/video-generator-rit/.demo-output/long-form-lessons/community-nutrition-program/work/render/documentary-master.core.mp4",
       "durationSeconds": 581.8192,
@@ -833,7 +833,7 @@
         },
         {
           "beatId": "beat-04",
-          "cacheHit": true,
+          "cacheHit": false,
           "durationSeconds": 57.648,
           "output": "beat-04.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/long-form-lessons/community-nutrition-program/work/render/sections/beat-04.mp4",
@@ -907,7 +907,7 @@
       "width": 1920
     }
   },
-  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
   "inputSha256": "76fee07981feeef43c026c5d031fc3efdf505e61f6854266a908d79e5cacb56d",
   "mode": "record",
   "providers": {
@@ -936,207 +936,6 @@
     }
   },
   "requests": [
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 24722,
-      "lookupSha256": "56094065380314e67eb5c16a885e49c7a0580d54db9b50760d3296e2711948da",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Distinguish consultation from shared decision-making.",
-          "text": "Engagement is not one feedback meeting after the program has been designed. Identify residents affected by the issue, organizations already doing related work, implementers, funders, data stewards, and people who can remove barriers. Clarify which decisions each partner can influence. Compensate participation when possible and provide information in accessible forms. Ask whose interpretation is missing, who may be burdened by data collection, and whose trust is required for the work to continue. Then establish a transparent priority rule. A team might compare magnitude, disparity, urgency, feasibility, existing assets, community concern, and potential benefit. The weights are value judgments, so they should be visible. Collaborative priority setting improves both relevance and the chances that a program will be used."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "fd0b6edbb8df1606070558b6cc4aa202b7a38cccfd08d36d88a7ea41e79c3a88",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/43/438d557f087894f0670c1ff5ccb27b2a47b5c01d249baefa0c89bbc68e997d80.mp3",
-            "sha256": "438d557f087894f0670c1ff5ccb27b2a47b5c01d249baefa0c89bbc68e997d80",
-            "size": 342432
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/07/07d59ea4d4dc726258ef237e987fc21200b4c663662e51b9e0675ce13e278d67.vtt",
-            "sha256": "07d59ea4d4dc726258ef237e987fc21200b4c663662e51b9e0675ce13e278d67",
-            "size": 1126
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T14:12:40.137Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 29045,
-      "lookupSha256": "59aef320131046d1caceef7f46232fb834dd124fc6aabc2aa40d8f043e655168",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Tie every activity to an assessed mechanism and level.",
-          "text": "Match the intervention to the cause the assessment identifies. A knowledge barrier may justify education, but education alone cannot change store inventory, transportation, prices, scheduling, or organizational policy. Individual-level strategies can build skills and confidence. Setting-level strategies can change availability, placement, procurement, or service routines. Partnership and sector strategies can coordinate resources or policies across organizations. A multilevel program should explain how the parts reinforce one another. Define the dose, reach, delivery setting, implementer, adaptation rules, and fidelity elements that must remain. Also name what the program does not claim to change. A well-bounded strategy directs resources toward a modifiable mechanism instead of asking participants to overcome a structural barrier the program leaves untouched."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "96d8d8a7f9c2eea074fa994ab616c9f3d9bf21bb991d8f590bbb06d7f494bca3",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/0c/0c7b716e8018422fe2972303fd41db0d7793e3edb1d553fc704c886401e284e0.mp3",
-            "sha256": "0c7b716e8018422fe2972303fd41db0d7793e3edb1d553fc704c886401e284e0",
-            "size": 368640
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/53/53b80dea60d90d14265d7b9c17a1f4aeae465366e67800266b6b6e3f3332a949.vtt",
-            "sha256": "53b80dea60d90d14265d7b9c17a1f4aeae465366e67800266b6b6e3f3332a949",
-            "size": 1170
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T14:14:01.536Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 26932,
-      "lookupSha256": "e119ced2140112be5dbc3858e5a794e249e823dcb4263593e3a0829a20d38004",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Keep activities, outputs, and outcomes conceptually separate.",
-          "text": "A logic model makes the program's causal story reviewable. Inputs are resources such as staff, partner time, space, food, data, and funding. Activities are what the program does. Outputs are direct products: sessions delivered, people reached, referrals completed, or environmental changes adopted. Outcomes are changes expected after those outputs. Short-term outcomes can include knowledge, confidence, goals, readiness, or partner capacity. Medium-term outcomes can include behavior or setting changes. Long-term outcomes concern maintenance and population results. Draw arrows only when the team can state why one element should influence the next. Beneath each arrow, record assumptions and external factors. A logic model is not proof. It is a compact set of hypotheses that tells the evaluator what evidence would strengthen or weaken the program theory."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "263556e9c514341eb41856ff4c7e3c9a8bb8654e7ae07edd7827b2e22914978c",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/05/055b118cbadc6169f54b659c174a3c51bae139f55915213f33a219204a520559.mp3",
-            "sha256": "055b118cbadc6169f54b659c174a3c51bae139f55915213f33a219204a520559",
-            "size": 361872
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/24/24f29493b2b47a5f3771c2e847f4f83d3b365a6be8f30de5e5689954b2d18e58.vtt",
-            "sha256": "24f29493b2b47a5f3771c2e847f4f83d3b365a6be8f30de5e5689954b2d18e58",
-            "size": 1261
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T14:13:34.552Z"
-    },
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
@@ -1207,8 +1006,8 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 30688,
-      "lookupSha256": "165860e593098336935a2488e73f838a74988edb87390f39252b62261a91bbd9",
+      "durationMs": 24722,
+      "lookupSha256": "56094065380314e67eb5c16a885e49c7a0580d54db9b50760d3296e2711948da",
       "model": "edge-tts-7.2.8",
       "profileName": "edge-narration",
       "request": {
@@ -1225,31 +1024,31 @@
           ]
         },
         "input": {
-          "instructions": "Explain error structure without implying any instrument is error-free.",
-          "text": "Choose measures from the evaluation question, not from convenience alone. A 24-hour recall, food record, food-frequency questionnaire, and brief screener capture different time frames and impose different burdens. Self-report is affected by memory, reactivity, day-to-day variation, and systematic reporting bias. Repeating a measure can reduce some random variability, but repetition does not automatically remove systematic bias. Administrative records, direct observation, environmental audits, or biomarkers may answer different questions and introduce different constraints. Use a validated instrument for the intended population when available, pilot the process, and document missing data. State whether the outcome concerns an individual, a group mean, change over time, reach, or implementation. Measurement is part of the program design because weak evidence can produce a confident but wrong decision."
+          "instructions": "Distinguish consultation from shared decision-making.",
+          "text": "Engagement is not one feedback meeting after the program has been designed. Identify residents affected by the issue, organizations already doing related work, implementers, funders, data stewards, and people who can remove barriers. Clarify which decisions each partner can influence. Compensate participation when possible and provide information in accessible forms. Ask whose interpretation is missing, who may be burdened by data collection, and whose trust is required for the work to continue. Then establish a transparent priority rule. A team might compare magnitude, disparity, urgency, feasibility, existing assets, community concern, and potential benefit. The weights are value judgments, so they should be visible. Collaborative priority setting improves both relevance and the chances that a program will be used."
         },
         "model": "edge-tts-7.2.8",
         "parameters": {},
         "schemaVersion": 1
       },
-      "requestSha256": "20a18003832b6e893a389d3e09c8beaf9f256742e9efc6a17813693a560fa386",
+      "requestSha256": "fd0b6edbb8df1606070558b6cc4aa202b7a38cccfd08d36d88a7ea41e79c3a88",
       "result": {
         "artifacts": [
           {
             "extension": ".mp3",
             "filename": "speech.mp3",
             "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/3a/3af97e9adfce13d85597988e898b475e17d39a1dbf199ea856a81c3655b5991c.mp3",
-            "sha256": "3af97e9adfce13d85597988e898b475e17d39a1dbf199ea856a81c3655b5991c",
-            "size": 362736
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/43/438d557f087894f0670c1ff5ccb27b2a47b5c01d249baefa0c89bbc68e997d80.mp3",
+            "sha256": "438d557f087894f0670c1ff5ccb27b2a47b5c01d249baefa0c89bbc68e997d80",
+            "size": 342432
           },
           {
             "extension": ".vtt",
             "filename": "speech.vtt",
             "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/0f/0fe6747fa0572b86311b55daadf73b5a0229f41a996eacb8ba4b42c607c9c1e9.vtt",
-            "sha256": "0fe6747fa0572b86311b55daadf73b5a0229f41a996eacb8ba4b42c607c9c1e9",
-            "size": 1177
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/07/07d59ea4d4dc726258ef237e987fc21200b4c663662e51b9e0675ce13e278d67.vtt",
+            "sha256": "07d59ea4d4dc726258ef237e987fc21200b4c663662e51b9e0675ce13e278d67",
+            "size": 1126
           }
         ],
         "costUsd": null,
@@ -1269,74 +1068,7 @@
       },
       "roleName": "narration",
       "schemaVersion": 1,
-      "startedAt": "2026-07-30T14:14:30.639Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 30235,
-      "lookupSha256": "4b822b4837c87afc5bfa36b75eba0b99e677652d93b9374544d76c6a6d36b84f",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Practical and respectful; frame evaluation as learning for action.",
-          "text": "A community nutrition program is not defined by the information it distributes. It is defined by a nutrition need, a community context, a plausible change strategy, and a decision process. Begin by asking who needs to decide what. A health department may need to choose which neighborhood to serve. A school partnership may need to revise delivery. A funder may need evidence of reach and benefit. That decision determines which community voices, data, activities, and outcomes matter. In this lesson, we will move from assessment to a logic model, then from measurement to action. The result is not a fictional perfect program. It is a bounded design that makes assumptions visible, treats community members as partners, and can be improved when evidence contradicts the plan."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "de2917ccb1c02226657037b99b0e2664274fb26a6a15a2493bad246afa5ba3da",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/b1/b1c0f8b630cdfef0d4864d0db6d80795f62617f2e44d256d211df575f6aca753.mp3",
-            "sha256": "b1c0f8b630cdfef0d4864d0db6d80795f62617f2e44d256d211df575f6aca753",
-            "size": 304704
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/b8/b8608e4bff55fc9270e8bc82fe0fff8a7c59d2d3414969fb2d099ce63b6a8aca.vtt",
-            "sha256": "b8608e4bff55fc9270e8bc82fe0fff8a7c59d2d3414969fb2d099ce63b6a8aca",
-            "size": 1109
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T14:11:41.120Z"
+      "startedAt": "2026-07-30T14:12:40.137Z"
     },
     {
       "cacheHit": true,
@@ -1408,6 +1140,274 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
+      "durationMs": 30235,
+      "lookupSha256": "4b822b4837c87afc5bfa36b75eba0b99e677652d93b9374544d76c6a6d36b84f",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Practical and respectful; frame evaluation as learning for action.",
+          "text": "A community nutrition program is not defined by the information it distributes. It is defined by a nutrition need, a community context, a plausible change strategy, and a decision process. Begin by asking who needs to decide what. A health department may need to choose which neighborhood to serve. A school partnership may need to revise delivery. A funder may need evidence of reach and benefit. That decision determines which community voices, data, activities, and outcomes matter. In this lesson, we will move from assessment to a logic model, then from measurement to action. The result is not a fictional perfect program. It is a bounded design that makes assumptions visible, treats community members as partners, and can be improved when evidence contradicts the plan."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "de2917ccb1c02226657037b99b0e2664274fb26a6a15a2493bad246afa5ba3da",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/b1/b1c0f8b630cdfef0d4864d0db6d80795f62617f2e44d256d211df575f6aca753.mp3",
+            "sha256": "b1c0f8b630cdfef0d4864d0db6d80795f62617f2e44d256d211df575f6aca753",
+            "size": 304704
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/b8/b8608e4bff55fc9270e8bc82fe0fff8a7c59d2d3414969fb2d099ce63b6a8aca.vtt",
+            "sha256": "b8608e4bff55fc9270e8bc82fe0fff8a7c59d2d3414969fb2d099ce63b6a8aca",
+            "size": 1109
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T14:11:41.120Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 26932,
+      "lookupSha256": "e119ced2140112be5dbc3858e5a794e249e823dcb4263593e3a0829a20d38004",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Keep activities, outputs, and outcomes conceptually separate.",
+          "text": "A logic model makes the program's causal story reviewable. Inputs are resources such as staff, partner time, space, food, data, and funding. Activities are what the program does. Outputs are direct products: sessions delivered, people reached, referrals completed, or environmental changes adopted. Outcomes are changes expected after those outputs. Short-term outcomes can include knowledge, confidence, goals, readiness, or partner capacity. Medium-term outcomes can include behavior or setting changes. Long-term outcomes concern maintenance and population results. Draw arrows only when the team can state why one element should influence the next. Beneath each arrow, record assumptions and external factors. A logic model is not proof. It is a compact set of hypotheses that tells the evaluator what evidence would strengthen or weaken the program theory."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "263556e9c514341eb41856ff4c7e3c9a8bb8654e7ae07edd7827b2e22914978c",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/05/055b118cbadc6169f54b659c174a3c51bae139f55915213f33a219204a520559.mp3",
+            "sha256": "055b118cbadc6169f54b659c174a3c51bae139f55915213f33a219204a520559",
+            "size": 361872
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/24/24f29493b2b47a5f3771c2e847f4f83d3b365a6be8f30de5e5689954b2d18e58.vtt",
+            "sha256": "24f29493b2b47a5f3771c2e847f4f83d3b365a6be8f30de5e5689954b2d18e58",
+            "size": 1261
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T14:13:34.552Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 30688,
+      "lookupSha256": "165860e593098336935a2488e73f838a74988edb87390f39252b62261a91bbd9",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Explain error structure without implying any instrument is error-free.",
+          "text": "Choose measures from the evaluation question, not from convenience alone. A 24-hour recall, food record, food-frequency questionnaire, and brief screener capture different time frames and impose different burdens. Self-report is affected by memory, reactivity, day-to-day variation, and systematic reporting bias. Repeating a measure can reduce some random variability, but repetition does not automatically remove systematic bias. Administrative records, direct observation, environmental audits, or biomarkers may answer different questions and introduce different constraints. Use a validated instrument for the intended population when available, pilot the process, and document missing data. State whether the outcome concerns an individual, a group mean, change over time, reach, or implementation. Measurement is part of the program design because weak evidence can produce a confident but wrong decision."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "20a18003832b6e893a389d3e09c8beaf9f256742e9efc6a17813693a560fa386",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/3a/3af97e9adfce13d85597988e898b475e17d39a1dbf199ea856a81c3655b5991c.mp3",
+            "sha256": "3af97e9adfce13d85597988e898b475e17d39a1dbf199ea856a81c3655b5991c",
+            "size": 362736
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/0f/0fe6747fa0572b86311b55daadf73b5a0229f41a996eacb8ba4b42c607c9c1e9.vtt",
+            "sha256": "0fe6747fa0572b86311b55daadf73b5a0229f41a996eacb8ba4b42c607c9c1e9",
+            "size": 1177
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T14:14:30.639Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 29045,
+      "lookupSha256": "59aef320131046d1caceef7f46232fb834dd124fc6aabc2aa40d8f043e655168",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Tie every activity to an assessed mechanism and level.",
+          "text": "Match the intervention to the cause the assessment identifies. A knowledge barrier may justify education, but education alone cannot change store inventory, transportation, prices, scheduling, or organizational policy. Individual-level strategies can build skills and confidence. Setting-level strategies can change availability, placement, procurement, or service routines. Partnership and sector strategies can coordinate resources or policies across organizations. A multilevel program should explain how the parts reinforce one another. Define the dose, reach, delivery setting, implementer, adaptation rules, and fidelity elements that must remain. Also name what the program does not claim to change. A well-bounded strategy directs resources toward a modifiable mechanism instead of asking participants to overcome a structural barrier the program leaves untouched."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "96d8d8a7f9c2eea074fa994ab616c9f3d9bf21bb991d8f590bbb06d7f494bca3",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/0c/0c7b716e8018422fe2972303fd41db0d7793e3edb1d553fc704c886401e284e0.mp3",
+            "sha256": "0c7b716e8018422fe2972303fd41db0d7793e3edb1d553fc704c886401e284e0",
+            "size": 368640
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/53/53b80dea60d90d14265d7b9c17a1f4aeae465366e67800266b6b6e3f3332a949.vtt",
+            "sha256": "53b80dea60d90d14265d7b9c17a1f4aeae465366e67800266b6b6e3f3332a949",
+            "size": 1170
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T14:14:01.536Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
       "durationMs": 29530,
       "lookupSha256": "75d54af6dc355245bf12708d56922ff463e78afebf75f194fcbfb8e881ee4ceb",
       "model": "edge-tts-7.2.8",
@@ -1475,73 +1475,6 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 42174,
-      "lookupSha256": "92f64e7adebef2e86bb9d7dce0b2183b2269e74d83cec10e76bdc50969ab9c65",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "End with a reusable checklist and a clear action orientation.",
-          "text": "Complete the design with a decision record. What context and community boundary are in scope? Who shares authority? Which assessed priority was selected, and by what rule? What change mechanism does the logic model propose? Which activities and outputs operationalize it? What outcomes and measures match the decision? What evidence and comparison support the conclusion? How did reach, burden, and results differ across groups? Which limitations could change the interpretation? Finally, who will act, by when, and what result will trigger continuation, revision, scale, or stop? Share findings in forms each audience can use, including negative or uncertain results. Community nutrition improves when evaluation is not an after-action report, but a transparent learning system embedded from assessment through the next decision."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "e45f0f88d47bc5162e94f177c2088fde288cc1a2dcad55f4475f3a3d5576c621",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/cf/cf6d24a3762e2806b993194a036ecd55c72a0dbc5f5161103e82bd0978d645da.mp3",
-            "sha256": "cf6d24a3762e2806b993194a036ecd55c72a0dbc5f5161103e82bd0978d645da",
-            "size": 343008
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/31/3130a31bb5ea55510c3fc803a5272fd585457a22691d0d7c842f680a93264147.vtt",
-            "sha256": "3130a31bb5ea55510c3fc803a5272fd585457a22691d0d7c842f680a93264147",
-            "size": 1264
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T14:16:27.801Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
       "durationMs": 56853,
       "lookupSha256": "a71103f638a6db2483c8a0dc2a6d7ec6e91b1e43c6403c4b42bbe60f0001cbe9",
       "model": "edge-tts-7.2.8",
@@ -1605,6 +1538,73 @@
       "roleName": "narration",
       "schemaVersion": 1,
       "startedAt": "2026-07-30T14:15:30.926Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 42174,
+      "lookupSha256": "92f64e7adebef2e86bb9d7dce0b2183b2269e74d83cec10e76bdc50969ab9c65",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "End with a reusable checklist and a clear action orientation.",
+          "text": "Complete the design with a decision record. What context and community boundary are in scope? Who shares authority? Which assessed priority was selected, and by what rule? What change mechanism does the logic model propose? Which activities and outputs operationalize it? What outcomes and measures match the decision? What evidence and comparison support the conclusion? How did reach, burden, and results differ across groups? Which limitations could change the interpretation? Finally, who will act, by when, and what result will trigger continuation, revision, scale, or stop? Share findings in forms each audience can use, including negative or uncertain results. Community nutrition improves when evaluation is not an after-action report, but a transparent learning system embedded from assessment through the next decision."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "e45f0f88d47bc5162e94f177c2088fde288cc1a2dcad55f4475f3a3d5576c621",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/cf/cf6d24a3762e2806b993194a036ecd55c72a0dbc5f5161103e82bd0978d645da.mp3",
+            "sha256": "cf6d24a3762e2806b993194a036ecd55c72a0dbc5f5161103e82bd0978d645da",
+            "size": 343008
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/31/3130a31bb5ea55510c3fc803a5272fd585457a22691d0d7c842f680a93264147.vtt",
+            "sha256": "3130a31bb5ea55510c3fc803a5272fd585457a22691d0d7c842f680a93264147",
+            "size": 1264
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T14:16:27.801Z"
     }
   ],
   "runId": "community-nutrition-programs-from-needs-assessment-to-evaluation-51736612084f",
@@ -1645,8 +1645,27 @@
   ],
   "status": "awaiting-approval",
   "toolchain": {
+    "ffmpeg": {
+      "available": true,
+      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "available": true,
+      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "gitChangedPaths": [
+      "outreach/README.md",
+      "outreach/general-email.md",
+      "outreach/leadership-confirmation.md",
+      "outreach/subject-showcase/reference-manifest.json"
+    ],
+    "gitDirty": true,
+    "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
+    "gitStatusSha256": "add6a4c631c3d463fa2b7e37fa6a50bfab3e6fce98296cf041f8a8d165d4cda8",
     "node": "v22.23.1",
     "platform": "darwin-arm64",
+    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtimeDirty": false,
     "sharp": {
       "aom": "3.14.1",
       "archive": "3.8.8",
@@ -1670,32 +1689,14 @@
       "png": "1.6.58",
       "proxy-libintl": "0.5",
       "rsvg": "2.62.90",
+      "sharp": "0.35.3",
       "tiff": "d01a94b",
       "uhdr": "1acdbed",
       "vips": "8.18.3",
       "webp": "1.6.0",
       "xml2": "2.15.3",
-      "zlib-ng": "2.3.3",
-      "sharp": "0.35.3"
-    },
-    "ffmpeg": {
-      "available": true,
-      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
-    },
-    "ffprobe": {
-      "available": true,
-      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
-    },
-    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
-    "gitDirty": true,
-    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
-    "gitChangedPaths": [
-      "outreach/README.md",
-      "outreach/general-email.md",
-      "outreach/leadership-confirmation.md"
-    ],
-    "runtimeDirty": false,
-    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "zlib-ng": "2.3.3"
+    }
   },
   "totalCostUsd": 0
 }

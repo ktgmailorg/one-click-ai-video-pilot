@@ -34,8 +34,8 @@ function option(name) {
   return index >= 0 ? process.argv[index + 1] : "";
 }
 
-function isLocalPath(value) {
-  return typeof value === "string" && value.startsWith("./");
+function isStagedVideoPath(value) {
+  return typeof value === "string" && value.startsWith("./examples/");
 }
 
 async function sha256(path) {
@@ -87,8 +87,8 @@ async function releaseAssets() {
 const catalog = JSON.parse(await readFile(catalogPath, "utf8"));
 const candidates = catalog.courses.filter(
   (course) =>
-    isLocalPath(course.video) &&
-    (only.size === 0 || only.has(course.id)),
+    (only.size === 0 && isStagedVideoPath(course.video)) ||
+    (only.size > 0 && only.has(course.id)),
 );
 if (only.size && candidates.length !== only.size) {
   const found = new Set(candidates.map((course) => course.id));
@@ -101,7 +101,9 @@ if (only.size && candidates.length !== only.size) {
 
 const prepared = [];
 for (const course of candidates) {
-  const path = resolve(course.video.slice(2));
+  const path = isStagedVideoPath(course.video)
+    ? resolve(course.video.slice(2))
+    : resolve("examples", course.id, "video.mp4");
   const file = await stat(path);
   const digest = await sha256(path);
   prepared.push({

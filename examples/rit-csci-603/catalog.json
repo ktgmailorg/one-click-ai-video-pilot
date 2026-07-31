@@ -7,9 +7,9 @@
   "level": "Graduate",
   "description": "An independent, catalog-aligned learning companion. It is not an official RIT course section or a replacement for the instructor's syllabus.",
   "outcomes": [
-    "1. Define and apply the core components of computational thinking: abstraction, decomposition, and algorithmic expression in pseudo-code and a target ",
-    "2. Demonstrate the construction and manipulation of elementary data structures (lists, trees, graphs) to model problem domains accurately.",
-    "3. Execute recursive problem-solving strategies and implement systematic debugging and testing protocols to verify program correctness."
+    "Identify and articulate the core components of a computational problem statement including inputs, outputs, and constraints.",
+    "Apply recursive decomposition to solve problems by defining base cases and reducing complex instances to simpler sub-problems.",
+    "Evaluate the correctness of an algorithm through systematic testing, tracing, and debugging of boundary and error cases."
   ],
   "paths": [
     "Computing & Engineering",
@@ -22,11 +22,31 @@
     "credits": "3 Credits",
     "sourceUrl": "https://www.rit.edu/marketing/sites/rit.edu.marketing/files/docs/pdfs/Graduate_Catalog.pdf?2026-02-02="
   },
-  "aiContribution": {
-    "stage": "source-grounded planning and narration draft",
-    "provider": "local-openai-compatible",
-    "model": "prism-ml/Bonsai-27B-gguf",
-    "modelRevision": "sha256:17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0",
-    "humanReviewRequired": true
-  }
+  "generationProvenance": [
+    {
+      "stage": "Source-grounded planning and narration draft",
+      "provider": "local-openai-compatible",
+      "model": "empero-ai/Qwythos-9B-v2-GGUF",
+      "modelRevision": "sha256:fc5251e8e3e87d58946522833eb896c84375a715b6f89c54cdd10082ecc6ea8d",
+      "executionLocation": "local",
+      "mode": "recorded",
+      "humanReviewRequired": true
+    },
+    {
+      "stage": "Narration voice and timestamps",
+      "provider": "edge-tts",
+      "model": "edge-tts-7.2.8 / en-US-AndrewMultilingualNeural",
+      "executionLocation": "hosted",
+      "mode": "recorded",
+      "humanReviewRequired": true
+    },
+    {
+      "stage": "Educational diagrams and composition",
+      "provider": "deterministic-svg-runtime",
+      "model": "No generative model",
+      "executionLocation": "local",
+      "mode": "deterministic",
+      "humanReviewRequired": true
+    }
+  ]
 }

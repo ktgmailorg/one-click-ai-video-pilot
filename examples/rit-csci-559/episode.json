@@ -13,7 +13,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Process Definition and State as a question about inputs, decisions, and observable results. A process combines an address space with execution state and operating-system resources. Consider this worked case: A web server process maintains its own memory space, open file descriptors, and CPU scheduling context. On screen, display a diagram showing a process boundary with labeled address space, execution state, and OS resource handles. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Begin by framing Process Definition and State as a question about inputs, decisions, and observable results. A process combines an address space with execution state and operating-system resources. Consider this worked case: A web server process maintains its own memory space, open file descriptors, and CPU scheduling context. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 58,
       "title": "Process Definition and State",
       "visualDirection": "template:academic-process | Display a diagram showing a process boundary with labeled address space, execution state, and OS resource handles."
@@ -31,7 +31,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define System Call Mechanism precisely enough that another learner could test the definition. A system call transfers control from user code to a privileged kernel service. Consider this worked case: A process invokes a read system call to request data from a file, transitioning to kernel mode. On screen, show a flowchart of control transfer between user space and kernel space with a labeled system call instruction. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Now define System Call Mechanism precisely enough that another learner could test the definition. A system call transfers control from user code to a privileged kernel service. Consider this worked case: A process invokes a read system call to request data from a file, transitioning to kernel mode. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 58,
       "title": "System Call Mechanism",
       "visualDirection": "template:academic-process | Show a flowchart of control transfer between user space and kernel space with a labeled system call instruction."
@@ -49,7 +49,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Trap Handling and Context Switching operates in a concrete sequence. A trap records processor state so the kernel can handle a system call, exception, or interrupt. Consider this worked case: When a process triggers a page fault, the CPU traps the fault, saves registers, and transfers to the kernel handler. On screen, illustrate a trap sequence with a processor state snapshot, kernel handler entry, and restored state return. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "narration": "With the foundation in place, examine how Trap Handling and Context Switching operates in a concrete sequence. A trap records processor state so the kernel can handle a system call, exception, or interrupt. Consider this worked case: When a process triggers a page fault, the CPU traps the fault, saves registers, and transfers to the kernel handler. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
       "plannedSeconds": 55,
       "title": "Trap Handling and Context Switching",
       "visualDirection": "template:academic-process | Illustrate a trap sequence with a processor state snapshot, kernel handler entry, and restored state return."
@@ -67,7 +67,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Virtual Memory Mapping and make the decision criteria explicit. Page tables map virtual addresses to physical memory with permission bits. Consider this worked case: A page table entry translates a virtual address to a physical frame while enforcing read/write/execute permissions. On screen, render a page table structure with virtual address bits, physical address bits, and permission flags. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Next, compare the choices involved in Virtual Memory Mapping and make the decision criteria explicit. Page tables map virtual addresses to physical memory with permission bits. Consider this worked case: A page table entry translates a virtual address to a physical frame while enforcing read/write/execute permissions. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
       "title": "Virtual Memory Mapping",
       "visualDirection": "template:academic-process | Render a page table structure with virtual address bits, physical address bits, and permission flags."
@@ -85,7 +85,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Process Scheduling to a worked situation instead of treating it as an isolated definition. The scheduler selects runnable processes and switches processor context. Consider this worked case: A round-robin scheduler picks the next process from the ready queue and saves the current context. On screen, draw a scheduler loop showing ready queue, context save/restore, and CPU allocation. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Apply Process Scheduling to a worked situation instead of treating it as an isolated definition. The scheduler selects runnable processes and switches processor context. Consider this worked case: A round-robin scheduler picks the next process from the ready queue and saves the current context. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 56,
       "title": "Process Scheduling",
       "visualDirection": "template:academic-process | Draw a scheduler loop showing ready queue, context save/restore, and CPU allocation."
@@ -103,7 +103,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Concurrency and Locking, including what improves and what becomes more difficult. Locks protect invariants when concurrent execution can access shared state. Consider this worked case: A mutex lock prevents two processes from modifying a shared counter simultaneously. On screen, show a lock acquisition/release sequence with a shared variable and protected critical section. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Examine the tradeoffs in Concurrency and Locking, including what improves and what becomes more difficult. Locks protect invariants when concurrent execution can access shared state. Consider this worked case: A mutex lock prevents two processes from modifying a shared counter simultaneously. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
       "title": "Concurrency and Locking",
       "visualDirection": "template:academic-process | Show a lock acquisition/release sequence with a shared variable and protected critical section."
@@ -121,7 +121,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around File System Organization with an edge case and identify which assumption controls the outcome. The file system organizes persistent data through inodes, directories, and logged updates. Consider this worked case: An inode stores metadata for a file while directory entries link names to inode references. On screen, display a file system tree with inode blocks, directory entries, and journal log entries. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "narration": "Stress-test the reasoning around File System Organization with an edge case and identify which assumption controls the outcome. The file system organizes persistent data through inodes, directories, and logged updates. Consider this worked case: An inode stores metadata for a file while directory entries link names to inode references. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
       "plannedSeconds": 55,
       "title": "File System Organization",
       "visualDirection": "template:academic-process | Display a file system tree with inode blocks, directory entries, and journal log entries."
@@ -139,7 +139,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use RISC-V Instruction Set Basics to diagnose a failure by separating symptoms, causes, and corrective action. The RISC-V ISA defines programmer-visible instructions, registers, memory operations, control transfer, exceptions, and ordering behavior. Consider this worked case: Integer register x0 always reads as zero, while other registers hold software-visible values. On screen, list RISC-V register file with x0 marked as zero and other registers showing software values. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "narration": "Use RISC-V Instruction Set Basics to diagnose a failure by separating symptoms, causes, and corrective action. The RISC-V ISA defines programmer-visible instructions, registers, memory operations, control transfer, exceptions, and ordering behavior. Consider this worked case: Integer register x0 always reads as zero, while other registers hold software-visible values. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
       "plannedSeconds": 55,
       "title": "RISC-V Instruction Set Basics",
       "visualDirection": "template:academic-process | List RISC-V register file with x0 marked as zero and other registers showing software values."
@@ -157,7 +157,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Memory Ordering and Dependencies to the earlier ideas and explain how the pieces work as one system. Memory-ordering rules constrain how memory operations may be observed. Consider this worked case: Store buffers ensure that writes are visible to other cores in a defined architectural order. On screen, show a memory operation sequence with ordering constraints and dependency arrows. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Connect Memory Ordering and Dependencies to the earlier ideas and explain how the pieces work as one system. Memory-ordering rules constrain how memory operations may be observed. Consider this worked case: Store buffers ensure that writes are visible to other cores in a defined architectural order. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
       "title": "Memory Ordering and Dependencies",
       "visualDirection": "template:academic-process | Show a memory operation sequence with ordering constraints and dependency arrows."
@@ -175,7 +175,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Analysis distinguishes user mode, privileged kernel code, hardware translation, interrupt state, resource ownership, and synchronization invariants. Consider this worked case: A security audit checks for proper privilege separation and lock invariants in a kernel module. On screen, provide a checklist template with checkboxes for each analysis category. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Analysis distinguishes user mode, privileged kernel code, hardware translation, interrupt state, resource ownership, and synchronization invariants. Consider this worked case: A security audit checks for proper privilege separation and lock invariants in a kernel module. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 57,
       "title": "Practical Analysis Checklist",
       "visualDirection": "template:academic-process | Provide a checklist template with checkboxes for each analysis category."

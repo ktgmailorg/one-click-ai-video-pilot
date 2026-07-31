@@ -10,7 +10,7 @@
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: A navigation stack uses a perception node to publish camera data, a localization node to estimate pose, a planner to generate waypoints, a controller to compute velocities, and an actuator driver to send commands to wheels.",
+          "phrase": "Robot software separates sensing, state estimation, planning, control, and actuation while making message contracts and timing assumptions explicit.",
           "type": "deterministic-svg"
         },
         {
@@ -30,7 +30,7 @@
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: A localization node subscribes to a topic publishing IMU data, while a planning service handles a request-response call to compute a path between two waypoints.",
+          "phrase": "ROS 2 organizes a robot application as nodes that communicate through typed interfaces.",
           "type": "deterministic-svg"
         },
         {
@@ -50,7 +50,7 @@
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: A controller node uses a parameter named 'max_speed' to cap wheel velocity, which can be updated via a ROS 2 parameter server during simulation.",
+          "phrase": "Parameters configure node behavior.",
           "type": "deterministic-svg"
         },
         {
@@ -70,7 +70,7 @@
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: A camera's local image coordinates are transformed into the robot's base link frame using a rotation matrix and translation vector to align with the map.",
+          "phrase": "Coordinate transforms describe relationships among reference frames.",
           "type": "deterministic-svg"
         },
         {
@@ -90,7 +90,7 @@
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: LiDAR scans are tagged with a precise timestamp and attached to the robot's odometry frame, ensuring they align temporally with camera and IMU data.",
+          "phrase": "Sensors produce observations that must be timestamped and interpreted in the correct frame.",
           "type": "deterministic-svg"
         },
         {
@@ -110,7 +110,7 @@
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: A velocity controller reduces forward speed when a proximity sensor detects an obstacle within two meters, preventing collisions without full replanning.",
+          "phrase": "This course covers standard and novel techniques for mobile robot programming, including software architectures, reactive motion control, map building, localization and path planning.",
           "type": "deterministic-svg"
         },
         {
@@ -130,7 +130,7 @@
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: A SLAM algorithm fuses wheel odometry and camera images to update a grid map, then uses feature matching to locate the robot's current pose.",
+          "phrase": "Other topics may include multiple robot systems, robot vision and non-traditional and dynamic robots.",
           "type": "deterministic-svg"
         },
         {
@@ -150,7 +150,7 @@
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: A reactive planner recalculates a route when a moving pedestrian enters the robot's path, inserting a detour that maintains safety margins and task completion time.",
+          "phrase": "Students will implement various algorithms in simulation as well as on a real robot, and investigate and report on current research in the area.",
           "type": "deterministic-svg"
         },
         {
@@ -170,7 +170,7 @@
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: A navigation algorithm is first validated in a physics engine simulation, then deployed on a wheeled robot to verify real-world performance and adjust parameters accordingly.",
+          "phrase": "Testing should consider latency, dropped messages, sensor noise, actuator limits, safety boundaries, and the difference between simulation and physical operation.",
           "type": "deterministic-svg"
         },
         {
@@ -190,7 +190,7 @@
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: A developer checks that message latency stays below 50 milliseconds, verifies sensor noise does not exceed calibration thresholds, and confirms safety zones are enforced before field testing.",
+          "phrase": "Results depend on sampling, illumination, noise, thresholds, coordinate frames, and evaluation metrics.",
           "type": "deterministic-svg"
         },
         {

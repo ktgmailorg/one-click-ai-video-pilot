@@ -13,10 +13,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Foundations of Computational Thinking as a question about inputs, decisions, and observable results. This course focuses on the application of computational thinking using a problem-centered approach. Consider this worked case: A student breaks down a sorting problem into identifying the input list, comparing elements, and arranging them in order before writing pseudo-code. On screen, display a split screen: left side shows a messy real-world problem, right side shows a clean pseudo-code block with labeled abstraction and decomposition steps. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
-      "plannedSeconds": 58,
-      "title": "Foundations of Computational Thinking",
-      "visualDirection": "template:academic-process | Display a split screen: left side shows a messy real-world problem, right side shows a clean pseudo-code block with labeled abstraction and decomposition steps."
+      "narration": "Begin by framing Defining the Computational Problem as a question about inputs, decisions, and observable results. Programming begins with precise problem statements, input and output examples, and algorithms written independently of syntax. Consider this worked case: A student must write a function that takes a list of integers and returns the sum of all even numbers, clearly defining the input format and expected output before writing any code. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 63,
+      "title": "Defining the Computational Problem",
+      "visualDirection": "template:academic-process | Display a structured template with labeled sections for 'Problem Statement', 'Input Specification', 'Output Specification', and 'Constraints' to guide the learner in drafting their own problem definition."
     },
     {
       "accessibility": {
@@ -31,10 +31,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Pseudo-Code and Language Expression precisely enough that another learner could test the definition. Specific topics include: expression of algorithms in pseudo-code and a programming language; elementary data structures such as lists, trees and graphs; problem solving using recursion; and debugging and testing. Consider this worked case: A pseudo-code function for finding the maximum value in a list is converted to Python, preserving the logical flow while adding syntax and type constraints. On screen, show a side-by-side comparison of the pseudo-code and Python implementation, highlighting how each pseudo-code line maps to a specific Python statement. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
-      "plannedSeconds": 66,
-      "title": "Pseudo-Code and Language Expression",
-      "visualDirection": "template:academic-process | Show a side-by-side comparison of the pseudo-code and Python implementation, highlighting how each pseudo-code line maps to a specific Python statement."
+      "narration": "Now define Decomposing with Functions precisely enough that another learner could test the definition. Functions decompose a solution into named operations with parameters and results. Consider this worked case: To calculate the average of a dataset, one function reads the input, a second function filters out non-numeric values, and a third computes the mean, each with clear parameters and return values. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "plannedSeconds": 60,
+      "title": "Decomposing with Functions",
+      "visualDirection": "template:academic-process | Show a flowchart where a large 'Compute Average' block branches into three smaller, labeled blocks: 'Read Input', 'Filter Data', and 'Calculate Mean', illustrating functional decomposition."
     },
     {
       "accessibility": {
@@ -49,10 +49,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Elementary Data Structures: Lists operates in a concrete sequence. Load and store instructions make memory access explicit. Consider this worked case: A student uses a Python list to store test scores, then iterates through it to calculate the average using a simple loop. On screen, animate a list growing with each new score added, then show a pointer moving through the list to demonstrate sequential access during iteration. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
-      "plannedSeconds": 55,
-      "title": "Elementary Data Structures: Lists",
-      "visualDirection": "template:academic-process | Animate a list growing with each new score added, then show a pointer moving through the list to demonstrate sequential access during iteration."
+      "narration": "With the foundation in place, examine how Understanding Recursion operates in a concrete sequence. Recursion solves a problem through smaller instances and requires a base case. Consider this worked case: Calculating the factorial of 5 involves calling the function with 4, then 3, down to 1 (the base case), where the result is returned without further recursive calls. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "plannedSeconds": 57,
+      "title": "Understanding Recursion",
+      "visualDirection": "template:academic-process | Render a tree diagram where the root node is 'Factorial(5)' and each child node represents a recursive call (e.g., 'Factorial(4)'), terminating at leaf nodes labeled 'Base Case: n=1'."
     },
     {
       "accessibility": {
@@ -67,10 +67,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Elementary Data Structures: Trees and make the decision criteria explicit. The import system searches for modules and binds loaded modules into a namespace. Consider this worked case: A binary tree represents a file system where directories are nodes and files are leaf nodes, allowing efficient path resolution. On screen, render a binary tree diagram with labeled parent-child links, highlighting how a search path branches down to a target leaf node. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
-      "plannedSeconds": 55,
-      "title": "Elementary Data Structures: Trees",
-      "visualDirection": "template:academic-process | Render a binary tree diagram with labeled parent-child links, highlighting how a search path branches down to a target leaf node."
+      "narration": "Next, compare the choices involved in Elementary Data Structures: Lists and make the decision criteria explicit. Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in first-out access, trees represent hierarchy, and graphs represent connected entities. Consider this worked case: A student's grade list [85, 90, 78, 92] allows sequential access to each score and supports operations like appending a new grade or removing the lowest one. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "plannedSeconds": 63,
+      "title": "Elementary Data Structures: Lists",
+      "visualDirection": "template:academic-process | Present a horizontal array graphic with numbered indices above each element, highlighting the ordered nature of the list and demonstrating an 'append' action adding a new value at the end."
     },
     {
       "accessibility": {
@@ -85,10 +85,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Elementary Data Structures: Graphs to a worked situation instead of treating it as an isolated definition. Programs should be reasoned about through explicit state, control flow, data representation, contracts, tests, and observable behavior. Consider this worked case: A student models a city's road network as a graph where intersections are nodes and roads are edges to find the shortest path. On screen, draw a simple graph with labeled nodes and directed edges, then trace a path from a start node to an end node using a step-by-step animation. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
-      "plannedSeconds": 65,
-      "title": "Elementary Data Structures: Graphs",
-      "visualDirection": "template:academic-process | Draw a simple graph with labeled nodes and directed edges, then trace a path from a start node to an end node using a step-by-step animation."
+      "narration": "Apply Elementary Data Structures: Trees to a worked situation instead of treating it as an isolated definition. Specific topics include: expression of algorithms in pseudo-code and a programming language; elementary data structures such as lists, trees and graphs; problem solving using recursion; and debugging and testing. Consider this worked case: A file system directory structure is a tree where the root is the main drive, branches are folders, and leaves are individual files, enabling efficient traversal and organization. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 70,
+      "title": "Elementary Data Structures: Trees",
+      "visualDirection": "template:academic-process | Draw a binary tree with a root node labeled 'Root', two child nodes labeled 'Left' and 'Right', and further descendants to visually demonstrate hierarchical nesting."
     },
     {
       "accessibility": {
@@ -103,10 +103,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Recursive Problem Solving, including what improves and what becomes more difficult. Exceptions interrupt normal control flow until a matching handler processes them or they propagate. Consider this worked case: A factorial function calculates n! by multiplying n with the result of factorial(n-1), stopping when n equals 1. On screen, show a recursive call stack expanding downward with each function call, then collapsing upward as base cases return values. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
-      "plannedSeconds": 55,
-      "title": "Recursive Problem Solving",
-      "visualDirection": "template:academic-process | Show a recursive call stack expanding downward with each function call, then collapsing upward as base cases return values."
+      "narration": "Examine the tradeoffs in Elementary Data Structures: Graphs, including what improves and what becomes more difficult. Python objects have identity, a type, and a value. Consider this worked case: A social network graph connects users as nodes and friendships as edges, allowing algorithms to find the shortest path between two people or identify communities. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "plannedSeconds": 57,
+      "title": "Elementary Data Structures: Graphs",
+      "visualDirection": "template:academic-process | Illustrate a network of circles (nodes) linked by lines (edges), with one node highlighted to show its connections, emphasizing the relational aspect of graphs."
     },
     {
       "accessibility": {
@@ -121,10 +121,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Debugging and Testing Protocols with an edge case and identify which assumption controls the outcome. Debugging separates syntax, runtime, and logical failures, while decomposition and abstraction reduce the number of interacting concerns. Consider this worked case: A student uses print statements and a test harness to verify that a sorting algorithm correctly handles edge cases like empty lists or single-element lists. On screen, display a debugger interface highlighting a runtime error, then show a test suite passing/failing based on input/output contracts. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
-      "plannedSeconds": 63,
-      "title": "Debugging and Testing Protocols",
-      "visualDirection": "template:academic-process | Display a debugger interface highlighting a runtime error, then show a test suite passing/failing based on input/output contracts."
+      "narration": "Stress-test the reasoning around Algorithmic Invariants and Correctness with an edge case and identify which assumption controls the outcome. Searching and sorting algorithms depend on representation and invariants. Consider this worked case: In a sorting algorithm, the invariant 'the subarray to the left of the current index is sorted' holds true after each iteration, guaranteeing the final array is fully sorted. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 62,
+      "title": "Algorithmic Invariants and Correctness",
+      "visualDirection": "template:academic-process | Show a timeline of a loop with a highlighted invariant statement persisting across iterations, visually reinforcing that the condition is maintained throughout the process."
     },
     {
       "accessibility": {
@@ -139,10 +139,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use State and Control Flow Management to diagnose a failure by separating symptoms, causes, and corrective action. LLVM IR is a typed, SSA-based intermediate representation with explicit instructions, basic blocks, functions, memory operations, and control flow. Consider this worked case: A student defines a class with explicit attributes and methods, ensuring that each method updates state according to a documented contract. On screen, show a state machine diagram transitioning between states, with arrows labeled by method calls and state updates. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
-      "plannedSeconds": 60,
-      "title": "State and Control Flow Management",
-      "visualDirection": "template:academic-process | Show a state machine diagram transitioning between states, with arrows labeled by method calls and state updates."
+      "narration": "Use Debugging and Testing Strategies to diagnose a failure by separating symptoms, causes, and corrective action. Correctness arguments, tests, tracing, and debugging compare intended behavior with observable results, including boundary and error cases. Consider this worked case: A tester runs a function with an empty list (boundary case) and a list containing only negative numbers (error case) to verify the program handles these scenarios without crashing. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 65,
+      "title": "Debugging and Testing Strategies",
+      "visualDirection": "template:academic-process | Display a split-screen view: one side shows a code snippet with a syntax error highlighted, the other shows a test case output indicating a logical failure, illustrating the debugging workflow."
     },
     {
       "accessibility": {
@@ -157,10 +157,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Verification and Local Expander Preparation to the earlier ideas and explain how the pieces work as one system. The verifier reports IR that violates those rules. Consider this worked case: A student cross-references the pseudo-code implementation with the source excerpts, ensuring that terms like 'basic blocks', 'terminator instruction', and 'namespace' are correctly applied. On screen, display a checklist overlay with checkboxes for each source ID, technical term reuse, and claim verification, ready for the local expander to generate full narration. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
-      "plannedSeconds": 59,
-      "title": "Verification and Local Expander Preparation",
-      "visualDirection": "template:academic-process | Display a checklist overlay with checkboxes for each source ID, technical term reuse, and claim verification, ready for the local expander to generate full narration."
+      "narration": "Connect Pseudo-code to Implementation to the earlier ideas and explain how the pieces work as one system. Assignments (both in class and homework) requiring a pseudo-code solution and implementation in a programming language are an integral part of the course. Consider this worked case: A student writes a step-by-step pseudo-code description of a binary search algorithm, then converts each step into Python syntax, ensuring the logic remains unchanged. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 64,
+      "title": "Pseudo-code to Implementation",
+      "visualDirection": "template:academic-process | Present a side-by-side comparison: the left column contains high-level pseudo-code steps, and the right column shows the corresponding Python code lines, with arrows linking matching operations."
     },
     {
       "accessibility": {
@@ -175,23 +175,47 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. The Python language reference specifies lexical analysis, data model behavior, execution, expressions, statements, functions, classes, exceptions, and module import semantics. Consider this worked case: A student reviews their assignment against the checklist, confirming that pseudo-code and code match, data structures are correctly implemented, recursion is applied, and tests pass. On screen, show a clean, printable checklist with sections for each beat, checkboxes for claim verification, and space for instructor notes. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
-      "plannedSeconds": 62,
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Programs should be reasoned about through explicit state, control flow, data representation, contracts, tests, and observable behavior. Consider this worked case: A checklist item asks: 'Does the algorithm handle the edge case where the input list is empty? ' followed by 'Are all recursive calls reducing the problem size. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 63,
       "title": "Practical Analysis Checklist",
-      "visualDirection": "template:academic-process | Show a clean, printable checklist with sections for each beat, checkboxes for claim verification, and space for instructor notes."
+      "visualDirection": "template:academic-process | Render a compact checklist graphic with four tick-box items: 'Precise Problem Statement', 'Appropriate Data Structures', 'Valid Recursive Base Case', and 'Comprehensive Test Coverage', each with a brief prompt."
     }
   ],
   "claims": [
     {
       "id": "beat-01-claim-01",
       "sourceIds": [
-        "rit-csci-603"
+        "opendsa-programming-foundations"
       ],
-      "text": "This course focuses on the application of computational thinking using a problem-centered approach.",
+      "text": "Programming begins with precise problem statements, input and output examples, and algorithms written independently of syntax.",
       "verified": true
     },
     {
       "id": "beat-02-claim-01",
+      "sourceIds": [
+        "opendsa-programming-foundations"
+      ],
+      "text": "Functions decompose a solution into named operations with parameters and results.",
+      "verified": true
+    },
+    {
+      "id": "beat-03-claim-01",
+      "sourceIds": [
+        "opendsa-programming-foundations"
+      ],
+      "text": "Recursion solves a problem through smaller instances and requires a base case.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "opendsa-programming-foundations"
+      ],
+      "text": "Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in first-out access, trees represent hierarchy, and graphs represent connected entities.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
       "sourceIds": [
         "rit-csci-603"
       ],
@@ -199,59 +223,35 @@
       "verified": true
     },
     {
-      "id": "beat-03-claim-01",
-      "sourceIds": [
-        "llvm-language-reference"
-      ],
-      "text": "Load and store instructions make memory access explicit.",
-      "verified": true
-    },
-    {
-      "id": "beat-04-claim-01",
-      "sourceIds": [
-        "python-language-reference"
-      ],
-      "text": "The import system searches for modules and binds loaded modules into a namespace.",
-      "verified": true
-    },
-    {
-      "id": "beat-05-claim-01",
-      "sourceIds": [
-        "python-language-reference"
-      ],
-      "text": "Programs should be reasoned about through explicit state, control flow, data representation, contracts, tests, and observable behavior.",
-      "verified": true
-    },
-    {
       "id": "beat-06-claim-01",
       "sourceIds": [
         "python-language-reference"
       ],
-      "text": "Exceptions interrupt normal control flow until a matching handler processes them or they propagate.",
+      "text": "Python objects have identity, a type, and a value.",
       "verified": true
     },
     {
       "id": "beat-07-claim-01",
       "sourceIds": [
-        "python-language-reference"
+        "opendsa-programming-foundations"
       ],
-      "text": "Debugging separates syntax, runtime, and logical failures, while decomposition and abstraction reduce the number of interacting concerns.",
+      "text": "Searching and sorting algorithms depend on representation and invariants.",
       "verified": true
     },
     {
       "id": "beat-08-claim-01",
       "sourceIds": [
-        "llvm-language-reference"
+        "opendsa-programming-foundations"
       ],
-      "text": "LLVM IR is a typed, SSA-based intermediate representation with explicit instructions, basic blocks, functions, memory operations, and control flow.",
+      "text": "Correctness arguments, tests, tracing, and debugging compare intended behavior with observable results, including boundary and error cases.",
       "verified": true
     },
     {
       "id": "beat-09-claim-01",
       "sourceIds": [
-        "llvm-language-reference"
+        "rit-csci-603"
       ],
-      "text": "The verifier reports IR that violates those rules.",
+      "text": "Assignments (both in class and homework) requiring a pseudo-code solution and implementation in a programming language are an integral part of the course.",
       "verified": true
     },
     {
@@ -259,11 +259,11 @@
       "sourceIds": [
         "python-language-reference"
       ],
-      "text": "The Python language reference specifies lexical analysis, data model behavior, execution, expressions, statements, functions, classes, exceptions, and module import semantics.",
+      "text": "Programs should be reasoned about through explicit state, control flow, data representation, contracts, tests, and observable behavior.",
       "verified": true
     }
   ],
-  "id": "csci-603-computational-problem-solving",
+  "id": "csci-603-computational-problem-solving-foundations",
   "learningObjectives": [],
   "pronunciations": [],
   "schemaVersion": 2,
@@ -289,15 +289,15 @@
       "verified": true
     },
     {
-      "author": "LLVM Project",
-      "excerpt": "LLVM IR is a typed, SSA-based intermediate representation with explicit instructions, basic blocks, functions, memory operations, and control flow. A module contains global values, functions, declarations, and metadata. A function contains basic blocks, and every basic block ends with a terminator instruction. Phi instructions select values according to the predecessor control-flow edge. Load and store instructions make memory access explicit. Valid IR must satisfy structural and typing rules. The verifier reports IR that violates those rules. Compiler work separates parsing and semantic analysis from lowering, verification, optimization, and target-specific code generation.",
-      "id": "llvm-language-reference",
-      "sha256": "a43379c8170e7b9a563e131114cda4ecf3edd42bb450fc24a5d7684fefa888c0",
-      "title": "LLVM Language Reference Manual",
+      "author": "OpenDSA Project",
+      "excerpt": "Programming begins with precise problem statements, input and output examples, and algorithms written independently of syntax. Variables represent values and state, expressions compute values, and control structures select or repeat operations. Functions decompose a solution into named operations with parameters and results. Recursion solves a problem through smaller instances and requires a base case. Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in first-out access, trees represent hierarchy, and graphs represent connected entities. Searching and sorting algorithms depend on representation and invariants. Correctness arguments, tests, tracing, and debugging compare intended behavior with observable results, including boundary and error cases.",
+      "id": "opendsa-programming-foundations",
+      "sha256": "853127e4dd63e3809a5c69fd46259846f13da31b0d141c311e782a72d07f4bc9",
+      "title": "OpenDSA Programming, Data Structures, and Algorithms",
       "type": "note",
-      "uri": "https://llvm.org/docs/LangRef.html",
+      "uri": "https://opendsa-server.cs.vt.edu/",
       "verified": true
     }
   ],
-  "title": "CSCI-603: Computational Problem Solving"
+  "title": "CSCI-603: Computational Problem Solving Foundations"
 }

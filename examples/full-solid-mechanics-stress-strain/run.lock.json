@@ -1,7 +1,7 @@
 {
   "approvals": [
     {
-      "approvedAt": "2026-07-31T15:39:32.380Z",
+      "approvedAt": "2026-07-31T19:26:35.253Z",
       "notes": "Verifies declared source bindings for draft rendering; instructor and release approval remain required.",
       "reviewer": "Automated source-pack verification (draft)",
       "role": "automation",
@@ -475,7 +475,7 @@
     }
   ],
   "configSha256": "9e23bc934f733345c7b01b201ddd08178d38dfbd959ad60f7a7b16d3a72df6df",
-  "createdAt": "2026-07-31T15:42:40.332Z",
+  "createdAt": "2026-07-31T19:29:56.956Z",
   "final": {
     "releaseAudit": {
       "blockers": [],
@@ -694,7 +694,7 @@
       "width": 1920
     }
   },
-  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
   "inputSha256": "81cd96cee964da1cd214705688b330057642a653f9f8e557495b53ec4806d86c",
   "mode": "record",
   "providers": {
@@ -1150,274 +1150,6 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 18274,
-      "lookupSha256": "b36319ee7ee0f6dc9c5766cca6129d8bdc250fd6e643a5090e0d76526d9865c1",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "To understand how a structure responds internally, make a conceptual cut through the member and expose the hidden forces that keep the two halves in equilibrium. These exposed forces are the internal resultants, which include axial forces, shear forces, and bending moments. The direction of each internal resultant is determined by Newton's third law: the cut face must exert forces that balance the external loads on the exposed segment. By analyzing either side of the cut, you can compute the exact magnitude and direction of these internal forces. This technique transforms a complex structural problem into manageable equilibrium equations, revealing how loads are distributed throughout the material rather than acting only at the boundaries."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "39e734b8c77c4cd9887f0040bff4bc05a4dba814b3a2bbad887f6b45be83b80a",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/62/62e9d63c0a5fc7209555eb661c3b2ec5dbfeee8877fd1955a82dd1bccb8860be.mp3",
-            "sha256": "62e9d63c0a5fc7209555eb661c3b2ec5dbfeee8877fd1955a82dd1bccb8860be",
-            "size": 409248
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ad/ad2b5bcc6c049a76fd512cc29d6af1eae0a74460d63a261a3451f0b09c695cf0.vtt",
-            "sha256": "ad2b5bcc6c049a76fd512cc29d6af1eae0a74460d63a261a3451f0b09c695cf0",
-            "size": 915
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:48:36.150Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 21964,
-      "lookupSha256": "4c7cedb4ee0317ba3e8c52bee2bdcbeed21ff81a6a7c6cfa61f81fd5263da895",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "Stress quantifies how internal forces are distributed across a material's cross-section rather than treating them as single point loads. Normal stress measures the intensity of axial forces perpendicular to a chosen section, calculated by dividing the axial force by the cross-sectional area. Shear stress measures the intensity of internal forces parallel to that section, which resist sliding between adjacent material layers. The orientation of the section matters significantly, as the same internal force produces different stress values depending on how you slice the member. By explicitly defining the section plane and applying the correct force component, you ensure that the calculated stress accurately represents the actual material intensity at that location."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "e843b4269c80f61ba72031bc4f05069410cf642862f911b6b89c200102e4e073",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/8d/8daec27336b0c516ad7712eda6aec7b7c513ec8e6ee26efa95303aaf5c415046.mp3",
-            "sha256": "8daec27336b0c516ad7712eda6aec7b7c513ec8e6ee26efa95303aaf5c415046",
-            "size": 404352
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/7d/7d32650a128e3180bcc6be33a63dc4f216c18b7311d34b82e3c2d359bf54fbe2.vtt",
-            "sha256": "7d32650a128e3180bcc6be33a63dc4f216c18b7311d34b82e3c2d359bf54fbe2",
-            "size": 938
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:48:53.953Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 16336,
-      "lookupSha256": "f479a28e3873aa456d518dda0d88a3e45ec93997f8bf7997c0cb0a5a4a862223",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "Safety factors provide a margin of protection between the predicted mechanical demands and the material's or structure's failure limits. By comparing the calculated stress or force to the material's yield strength or fracture limit, you determine whether the design is adequate. A higher safety factor reduces the risk of failure but may increase material usage and cost. Design checks require explicit comparison of these values, ensuring that the actual demands remain within the acceptable range. This systematic evaluation process transforms theoretical calculations into reliable engineering decisions, balancing performance requirements with structural integrity and material efficiency."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "f087e4c05cdafd54738ef21eb075745a29afb2209b0cc5e98538cce3bf96b8da",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/a2/a2a0a99cdb15c4a152466d18c1568d23c4bc375635a602a41ece09c80862e8c5.mp3",
-            "sha256": "a2a0a99cdb15c4a152466d18c1568d23c4bc375635a602a41ece09c80862e8c5",
-            "size": 368784
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/57/5754d0e92f797feda4c59c0cbb10e6860b42e44e6cbd69511bc31ee8ef15e16e.vtt",
-            "sha256": "5754d0e92f797feda4c59c0cbb10e6860b42e44e6cbd69511bc31ee8ef15e16e",
-            "size": 859
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:49:40.137Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 18088,
-      "lookupSha256": "2d2e64f354e91f0184e85929848ba4ce5f30684a5a1fb89331ae28d04f1b05a8",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "Fracture occurs when the material can no longer sustain the applied stress, resulting in sudden rupture or crack propagation. Unlike yielding, which involves permanent but reversible deformation, fracture represents complete structural failure. The stress-strain curve typically shows a sharp drop in stress after the ultimate strength is reached, indicating that the material can no longer carry additional load. Fatigue is another failure mechanism where repeated cyclic loading causes cracks to initiate and grow over time, even if the stress remains below the yield point. Recognizing these failure modes helps engineers design components that can withstand both static and dynamic loading conditions without catastrophic breakdown."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "145bcfd85caad09aa37f24d40ef608d61a6bf2948e9efc2e2f0b22e2f2af1392",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/14/143b00504f69368963ae69dd033f8e38f38a797ae2f09fcf4547bbea2c2b6786.mp3",
-            "sha256": "143b00504f69368963ae69dd033f8e38f38a797ae2f09fcf4547bbea2c2b6786",
-            "size": 389664
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/f4/f40fcae8b4b89eb8fac658872eac5b594c038b531d1c2172f067eeeb0e80949f.vtt",
-            "sha256": "f40fcae8b4b89eb8fac658872eac5b594c038b531d1c2172f067eeeb0e80949f",
-            "size": 902
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:49:30.927Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
       "durationMs": 22561,
       "lookupSha256": "8ed9cd8c7f39f94b1d6678b992684bc5ecdb6a38fba2e499a99993067b78d251",
       "model": "edge-tts-7.2.8",
@@ -1552,6 +1284,140 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
+      "durationMs": 21964,
+      "lookupSha256": "4c7cedb4ee0317ba3e8c52bee2bdcbeed21ff81a6a7c6cfa61f81fd5263da895",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "Stress quantifies how internal forces are distributed across a material's cross-section rather than treating them as single point loads. Normal stress measures the intensity of axial forces perpendicular to a chosen section, calculated by dividing the axial force by the cross-sectional area. Shear stress measures the intensity of internal forces parallel to that section, which resist sliding between adjacent material layers. The orientation of the section matters significantly, as the same internal force produces different stress values depending on how you slice the member. By explicitly defining the section plane and applying the correct force component, you ensure that the calculated stress accurately represents the actual material intensity at that location."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "e843b4269c80f61ba72031bc4f05069410cf642862f911b6b89c200102e4e073",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/8d/8daec27336b0c516ad7712eda6aec7b7c513ec8e6ee26efa95303aaf5c415046.mp3",
+            "sha256": "8daec27336b0c516ad7712eda6aec7b7c513ec8e6ee26efa95303aaf5c415046",
+            "size": 404352
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/7d/7d32650a128e3180bcc6be33a63dc4f216c18b7311d34b82e3c2d359bf54fbe2.vtt",
+            "sha256": "7d32650a128e3180bcc6be33a63dc4f216c18b7311d34b82e3c2d359bf54fbe2",
+            "size": 938
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T04:48:53.953Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 18088,
+      "lookupSha256": "2d2e64f354e91f0184e85929848ba4ce5f30684a5a1fb89331ae28d04f1b05a8",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "Fracture occurs when the material can no longer sustain the applied stress, resulting in sudden rupture or crack propagation. Unlike yielding, which involves permanent but reversible deformation, fracture represents complete structural failure. The stress-strain curve typically shows a sharp drop in stress after the ultimate strength is reached, indicating that the material can no longer carry additional load. Fatigue is another failure mechanism where repeated cyclic loading causes cracks to initiate and grow over time, even if the stress remains below the yield point. Recognizing these failure modes helps engineers design components that can withstand both static and dynamic loading conditions without catastrophic breakdown."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "145bcfd85caad09aa37f24d40ef608d61a6bf2948e9efc2e2f0b22e2f2af1392",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/14/143b00504f69368963ae69dd033f8e38f38a797ae2f09fcf4547bbea2c2b6786.mp3",
+            "sha256": "143b00504f69368963ae69dd033f8e38f38a797ae2f09fcf4547bbea2c2b6786",
+            "size": 389664
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/f4/f40fcae8b4b89eb8fac658872eac5b594c038b531d1c2172f067eeeb0e80949f.vtt",
+            "sha256": "f40fcae8b4b89eb8fac658872eac5b594c038b531d1c2172f067eeeb0e80949f",
+            "size": 902
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T04:49:30.927Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
       "durationMs": 17780,
       "lookupSha256": "f86e90aa1aa8e9a98727fc85d735dc85a07554aabe534927dd3fef619e0775fe",
       "model": "edge-tts-7.2.8",
@@ -1682,6 +1548,140 @@
       "roleName": "narration",
       "schemaVersion": 1,
       "startedAt": "2026-07-30T04:49:15.937Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 18274,
+      "lookupSha256": "b36319ee7ee0f6dc9c5766cca6129d8bdc250fd6e643a5090e0d76526d9865c1",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "To understand how a structure responds internally, make a conceptual cut through the member and expose the hidden forces that keep the two halves in equilibrium. These exposed forces are the internal resultants, which include axial forces, shear forces, and bending moments. The direction of each internal resultant is determined by Newton's third law: the cut face must exert forces that balance the external loads on the exposed segment. By analyzing either side of the cut, you can compute the exact magnitude and direction of these internal forces. This technique transforms a complex structural problem into manageable equilibrium equations, revealing how loads are distributed throughout the material rather than acting only at the boundaries."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "39e734b8c77c4cd9887f0040bff4bc05a4dba814b3a2bbad887f6b45be83b80a",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/62/62e9d63c0a5fc7209555eb661c3b2ec5dbfeee8877fd1955a82dd1bccb8860be.mp3",
+            "sha256": "62e9d63c0a5fc7209555eb661c3b2ec5dbfeee8877fd1955a82dd1bccb8860be",
+            "size": 409248
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ad/ad2b5bcc6c049a76fd512cc29d6af1eae0a74460d63a261a3451f0b09c695cf0.vtt",
+            "sha256": "ad2b5bcc6c049a76fd512cc29d6af1eae0a74460d63a261a3451f0b09c695cf0",
+            "size": 915
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T04:48:36.150Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 16336,
+      "lookupSha256": "f479a28e3873aa456d518dda0d88a3e45ec93997f8bf7997c0cb0a5a4a862223",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "Safety factors provide a margin of protection between the predicted mechanical demands and the material's or structure's failure limits. By comparing the calculated stress or force to the material's yield strength or fracture limit, you determine whether the design is adequate. A higher safety factor reduces the risk of failure but may increase material usage and cost. Design checks require explicit comparison of these values, ensuring that the actual demands remain within the acceptable range. This systematic evaluation process transforms theoretical calculations into reliable engineering decisions, balancing performance requirements with structural integrity and material efficiency."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "f087e4c05cdafd54738ef21eb075745a29afb2209b0cc5e98538cce3bf96b8da",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/a2/a2a0a99cdb15c4a152466d18c1568d23c4bc375635a602a41ece09c80862e8c5.mp3",
+            "sha256": "a2a0a99cdb15c4a152466d18c1568d23c4bc375635a602a41ece09c80862e8c5",
+            "size": 368784
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/57/5754d0e92f797feda4c59c0cbb10e6860b42e44e6cbd69511bc31ee8ef15e16e.vtt",
+            "sha256": "5754d0e92f797feda4c59c0cbb10e6860b42e44e6cbd69511bc31ee8ef15e16e",
+            "size": 859
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T04:49:40.137Z"
     },
     {
       "cacheHit": true,
@@ -1856,8 +1856,27 @@
   ],
   "status": "awaiting-approval",
   "toolchain": {
+    "ffmpeg": {
+      "available": true,
+      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "available": true,
+      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "gitChangedPaths": [
+      "outreach/README.md",
+      "outreach/general-email.md",
+      "outreach/leadership-confirmation.md",
+      "outreach/subject-showcase/reference-manifest.json"
+    ],
+    "gitDirty": true,
+    "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
+    "gitStatusSha256": "add6a4c631c3d463fa2b7e37fa6a50bfab3e6fce98296cf041f8a8d165d4cda8",
     "node": "v22.23.1",
     "platform": "darwin-arm64",
+    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtimeDirty": false,
     "sharp": {
       "aom": "3.14.1",
       "archive": "3.8.8",
@@ -1881,32 +1900,14 @@
       "png": "1.6.58",
       "proxy-libintl": "0.5",
       "rsvg": "2.62.90",
+      "sharp": "0.35.3",
       "tiff": "d01a94b",
       "uhdr": "1acdbed",
       "vips": "8.18.3",
       "webp": "1.6.0",
       "xml2": "2.15.3",
-      "zlib-ng": "2.3.3",
-      "sharp": "0.35.3"
-    },
-    "ffmpeg": {
-      "available": true,
-      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
-    },
-    "ffprobe": {
-      "available": true,
-      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
-    },
-    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
-    "gitDirty": true,
-    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
-    "gitChangedPaths": [
-      "outreach/README.md",
-      "outreach/general-email.md",
-      "outreach/leadership-confirmation.md"
-    ],
-    "runtimeDirty": false,
-    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "zlib-ng": "2.3.3"
+    }
   },
   "totalCostUsd": 0
 }

@@ -13,7 +13,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing 1. Multiprogramming Environment Overview as a question about inputs, decisions, and observable results. A process combines an address space with execution state and operating-system resources. Consider this worked case: A server running multiple web requests simultaneously uses separate address spaces for each process to prevent memory corruption. On screen, display a diagram showing three isolated process bubbles sharing a central CPU and memory bus, with arrows indicating context switches. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "narration": "Begin by framing 1. Multiprogramming Environment Overview as a question about inputs, decisions, and observable results. A process combines an address space with execution state and operating-system resources. Consider this worked case: A server running multiple web requests simultaneously uses separate address spaces for each process to prevent memory corruption. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
       "plannedSeconds": 55,
       "title": "1. Multiprogramming Environment Overview",
       "visualDirection": "template:academic-process | Display a diagram showing three isolated process bubbles sharing a central CPU and memory bus, with arrows indicating context switches."
@@ -31,7 +31,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define 2. Process Definition and State precisely enough that another learner could test the definition. Locks protect invariants when concurrent execution can access shared state. Consider this worked case: Each running application maintains its own stack, heap, and open file descriptors, preventing data leakage between applications. On screen, show a split-screen comparison of a process structure containing an address space block, execution state register, and resource list. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Now define 2. Process Definition and State precisely enough that another learner could test the definition. Locks protect invariants when concurrent execution can access shared state. Consider this worked case: Each running application maintains its own stack, heap, and open file descriptors, preventing data leakage between applications. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 58,
       "title": "2. Process Definition and State",
       "visualDirection": "template:academic-process | Show a split-screen comparison of a process structure containing an address space block, execution state register, and resource list."
@@ -49,7 +49,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how 3. User Mode vs. Privileged Kernel Mode operates in a concrete sequence. Analysis distinguishes user mode, privileged kernel code, hardware translation, interrupt state, resource ownership, and synchronization invariants. Consider this worked case: A user program cannot directly modify the page table or interrupt controller registers without triggering a protection fault. On screen, illustrate a two-tiered architecture diagram with a 'User Mode' zone and a 'Kernel Mode' zone separated by a security boundary line. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "narration": "With the foundation in place, examine how 3. User Mode vs. Privileged Kernel Mode operates in a concrete sequence. Analysis distinguishes user mode, privileged kernel code, hardware translation, interrupt state, resource ownership, and synchronization invariants. Consider this worked case: A user program cannot directly modify the page table or interrupt controller registers without triggering a protection fault. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
       "plannedSeconds": 57,
       "title": "3. User Mode vs. Privileged Kernel Mode",
       "visualDirection": "template:academic-process | Illustrate a two-tiered architecture diagram with a 'User Mode' zone and a 'Kernel Mode' zone separated by a security boundary line."
@@ -67,7 +67,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in 4. System Call Mechanism and make the decision criteria explicit. A system call transfers control from user code to a privileged kernel service. Consider this worked case: Calling read() from a user program triggers a trap that switches execution to the kernel's file system driver. On screen, draw a flowchart showing user code invoking a system call, transitioning to kernel code, and returning control with results. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "narration": "Next, compare the choices involved in 4. System Call Mechanism and make the decision criteria explicit. A system call transfers control from user code to a privileged kernel service. Consider this worked case: Calling read() from a user program triggers a trap that switches execution to the kernel's file system driver. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
       "plannedSeconds": 55,
       "title": "4. System Call Mechanism",
       "visualDirection": "template:academic-process | Draw a flowchart showing user code invoking a system call, transitioning to kernel code, and returning control with results."
@@ -85,7 +85,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply 5. Trap Handling and Processor State to a worked situation instead of treating it as an isolated definition. A trap records processor state so the kernel can handle a system call, exception, or interrupt. Consider this worked case: When an interrupt occurs, the CPU automatically saves the instruction pointer, registers, and flags to a stack frame for later restoration. On screen, display a stack diagram showing saved registers and the instruction pointer pushed onto the kernel stack during a trap. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "narration": "Apply 5. Trap Handling and Processor State to a worked situation instead of treating it as an isolated definition. A trap records processor state so the kernel can handle a system call, exception, or interrupt. Consider this worked case: When an interrupt occurs, the CPU automatically saves the instruction pointer, registers, and flags to a stack frame for later restoration. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
       "plannedSeconds": 61,
       "title": "5. Trap Handling and Processor State",
       "visualDirection": "template:academic-process | Display a stack diagram showing saved registers and the instruction pointer pushed onto the kernel stack during a trap."
@@ -103,7 +103,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in 6. Virtual to Physical Memory Mapping, including what improves and what becomes more difficult. Page tables map virtual addresses to physical memory with permission bits. Consider this worked case: A virtual address is decomposed into a page number and offset, then translated by the MMU using the page table to locate the actual physical frame. On screen, show a two-column table mapping virtual page numbers to physical page numbers, with checkmarks indicating read/write/execute permissions. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "narration": "Examine the tradeoffs in 6. Virtual to Physical Memory Mapping, including what improves and what becomes more difficult. Page tables map virtual addresses to physical memory with permission bits. Consider this worked case: A virtual address is decomposed into a page number and offset, then translated by the MMU using the page table to locate the actual physical frame. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
       "plannedSeconds": 57,
       "title": "6. Virtual to Physical Memory Mapping",
       "visualDirection": "template:academic-process | Show a two-column table mapping virtual page numbers to physical page numbers, with checkmarks indicating read/write/execute permissions."
@@ -121,7 +121,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around 7. RISC-V ISA and Memory Operations with an edge case and identify which assumption controls the outcome. The RISC-V ISA defines programmer-visible instructions, registers, memory operations, control transfer, exceptions, and ordering behavior. Consider this worked case: Load instructions transfer data from memory into registers, while store instructions transfer register data to memory according to defined rules. On screen, present a side-by-side comparison of a load instruction and a store instruction with register and memory operand labels. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "narration": "Stress-test the reasoning around 7. RISC-V ISA and Memory Operations with an edge case and identify which assumption controls the outcome. The RISC-V ISA defines programmer-visible instructions, registers, memory operations, control transfer, exceptions, and ordering behavior. Consider this worked case: Load instructions transfer data from memory into registers, while store instructions transfer register data to memory according to defined rules. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
       "plannedSeconds": 60,
       "title": "7. RISC-V ISA and Memory Operations",
       "visualDirection": "template:academic-process | Present a side-by-side comparison of a load instruction and a store instruction with register and memory operand labels."
@@ -139,7 +139,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use 8. Memory Ordering and Dependencies to diagnose a failure by separating symptoms, causes, and corrective action. Memory-ordering rules constrain how memory operations may be observed. Consider this worked case: A compiler or CPU may reorder independent memory accesses for performance, but must maintain the relative order of dependent operations. On screen, show a sequence of memory operations with arrows indicating dependency chains and ordering constraints between them. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "narration": "Use 8. Memory Ordering and Dependencies to diagnose a failure by separating symptoms, causes, and corrective action. Memory-ordering rules constrain how memory operations may be observed. Consider this worked case: A compiler or CPU may reorder independent memory accesses for performance, but must maintain the relative order of dependent operations. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
       "plannedSeconds": 55,
       "title": "8. Memory Ordering and Dependencies",
       "visualDirection": "template:academic-process | Show a sequence of memory operations with arrows indicating dependency chains and ordering constraints between them."
@@ -157,7 +157,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect 9. Locks and Concurrency Invariants to the earlier ideas and explain how the pieces work as one system. Exceptions report conditions that require a defined transfer of control. Consider this worked case: A mutex lock ensures that only one process can modify the process control block at a time during context switching. On screen, illustrate a lock acquisition and release cycle with two concurrent threads waiting for and releasing a shared resource. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "narration": "Connect 9. Locks and Concurrency Invariants to the earlier ideas and explain how the pieces work as one system. Exceptions report conditions that require a defined transfer of control. Consider this worked case: A mutex lock ensures that only one process can modify the process control block at a time during context switching. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
       "plannedSeconds": 55,
       "title": "9. Locks and Concurrency Invariants",
       "visualDirection": "template:academic-process | Illustrate a lock acquisition and release cycle with two concurrent threads waiting for and releasing a shared resource."
@@ -175,7 +175,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with 10. Practical Analysis Checklist as a practical checklist that can guide a new analysis. Application of operating system concepts to the design of hardware interfaces for a multiprogramming environment. Consider this worked case: A driver must validate interrupt flags, update page table entries, and acquire locks before modifying shared device registers. On screen, list a checklist with checkboxes for: interrupt handling, page table validation, lock acquisition, and isolation verification. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "narration": "Finish with 10. Practical Analysis Checklist as a practical checklist that can guide a new analysis. Application of operating system concepts to the design of hardware interfaces for a multiprogramming environment. Consider this worked case: A driver must validate interrupt flags, update page table entries, and acquire locks before modifying shared device registers. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
       "plannedSeconds": 55,
       "title": "10. Practical Analysis Checklist",
       "visualDirection": "template:academic-process | List a checklist with checkboxes for: interrupt handling, page table validation, lock acquisition, and isolation verification."

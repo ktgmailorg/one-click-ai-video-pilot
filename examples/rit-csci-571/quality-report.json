@@ -35,9 +35,50 @@
       "name": "font-fallbacks",
       "ok": true,
       "value": "Arial/Liberation Sans and Georgia/Liberation Serif"
+    },
+    {
+      "name": "final-master-loudness",
+      "ok": true,
+      "value": {
+        "integratedLufs": -16.04,
+        "loudnessRangeLu": 3.6,
+        "ok": true,
+        "schemaVersion": 1,
+        "targetIntegratedLufs": -16,
+        "targetTruePeakDbtp": -1.5,
+        "truePeakDbtp": -1.48
+      }
+    },
+    {
+      "name": "caption-audio-start-sync",
+      "ok": true,
+      "value": {
+        "audioStartSeconds": 0,
+        "captionStartSeconds": 0.05,
+        "maximumOffsetSeconds": 0.25,
+        "offsetSeconds": 0.05
+      }
+    },
+    {
+      "name": "subject-matched-visuals",
+      "ok": true,
+      "value": {
+        "genericShotIds": [],
+        "resolvedTemplates": [
+          "showcase-analysis-framework",
+          "showcase-checklist",
+          "showcase-comparison",
+          "showcase-process",
+          "showcase-stakeholders"
+        ]
+      }
     }
   ],
   "ok": true,
   "releaseState": "course-draft",
-  "warnings": []
+  "warnings": [
+    "beat-06 narration is planned below 80 words per minute",
+    "beat-07 narration is planned below 80 words per minute",
+    "beat-10 narration is planned below 80 words per minute"
+  ]
 }

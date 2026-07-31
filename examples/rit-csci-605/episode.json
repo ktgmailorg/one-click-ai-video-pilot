@@ -13,7 +13,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Foundations of Object Identity and State as a question about inputs, decisions, and observable results. A class declares state and behavior, while an object is an instance with its own runtime identity and field state. Consider this worked case: A `User` instance maintains its own `username` and `sessionToken` values independent of other `User` instances. On screen, display a side-by-side comparison of two `User` objects with distinct memory addresses and separate field values, highlighting encapsulation boundaries. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "narration": "Begin by framing Foundations of Object Identity and State as a question about inputs, decisions, and observable results. A class declares state and behavior, while an object is an instance with its own runtime identity and field state. Consider this worked case: A `User` instance maintains its own `username` and `sessionToken` values independent of other `User` instances. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
       "plannedSeconds": 57,
       "title": "Foundations of Object Identity and State",
       "visualDirection": "template:academic-process | Display a side-by-side comparison of two `User` objects with distinct memory addresses and separate field values, highlighting encapsulation boundaries."
@@ -31,7 +31,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Inheritance versus Composition for Reuse precisely enough that another learner could test the definition. Inheritance allows a class to derive behavior from base classes, while composition connects objects through explicit attributes. Consider this worked case: A `Vehicle` base class provides `move()` logic, but a `DeliveryTruck` composes a `CargoContainer` object instead of inheriting from `Truck` to avoid rigid hierarchies. On screen, show a class diagram contrasting a deep inheritance tree with a flat composition graph, using arrows to indicate 'has-a' relationships. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "narration": "Now define Inheritance versus Composition for Reuse precisely enough that another learner could test the definition. Inheritance allows a class to derive behavior from base classes, while composition connects objects through explicit attributes. Consider this worked case: A `Vehicle` base class provides `move()` logic, but a `DeliveryTruck` composes a `CargoContainer` object instead of inheriting from `Truck` to avoid rigid hierarchies. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
       "plannedSeconds": 59,
       "title": "Inheritance versus Composition for Reuse",
       "visualDirection": "template:academic-process | Show a class diagram contrasting a deep inheritance tree with a flat composition graph, using arrows to indicate 'has-a' relationships."
@@ -49,7 +49,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Dynamic Method Dispatch and Polymorphism operates in a concrete sequence. Inheritance reuses and specializes behavior, but dynamic method dispatch selects an implementation from the runtime class of the receiver. Consider this worked case: Calling `draw()` on a `Shape` reference invokes `Circle.draw()` or `Square.draw()` depending on the actual object at runtime. On screen, illustrate a method call flow where a generic `Shape` reference routes to distinct `Circle` and `Square` implementations, emphasizing runtime resolution. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "narration": "With the foundation in place, examine how Dynamic Method Dispatch and Polymorphism operates in a concrete sequence. Inheritance reuses and specializes behavior, but dynamic method dispatch selects an implementation from the runtime class of the receiver. Consider this worked case: Calling `draw()` on a `Shape` reference invokes `Circle. draw()` or `Square. draw()` depending on the actual object at runtime. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
       "plannedSeconds": 56,
       "title": "Dynamic Method Dispatch and Polymorphism",
       "visualDirection": "template:academic-process | Illustrate a method call flow where a generic `Shape` reference routes to distinct `Circle` and `Square` implementations, emphasizing runtime resolution."
@@ -67,7 +67,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Encapsulation and Access Control and make the decision criteria explicit. Access modifiers control which declarations are visible. Consider this worked case: A `BankAccount` class exposes `deposit()` and `withdraw()` methods while keeping the `balance` field private to prevent unauthorized modification. On screen, render a class interface with public methods highlighted and private fields shaded, showing how access control restricts direct state access. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Next, compare the choices involved in Encapsulation and Access Control and make the decision criteria explicit. Access modifiers control which declarations are visible. Consider this worked case: A `BankAccount` class exposes `deposit()` and `withdraw()` methods while keeping the `balance` field private to prevent unauthorized modification. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 57,
       "title": "Encapsulation and Access Control",
       "visualDirection": "template:academic-process | Render a class interface with public methods highlighted and private fields shaded, showing how access control restricts direct state access."
@@ -85,7 +85,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Exceptions for Error Handling to a worked situation instead of treating it as an isolated definition. Exceptions separate normal results from abrupt completion. Consider this worked case: A `NetworkRequest` throws a `ConnectionTimeoutException` when a server fails to respond, allowing the caller to handle the failure gracefully. On screen, map a control flow diagram showing a normal execution path branching into an exception handler block when a timeout occurs. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "narration": "Apply Exceptions for Error Handling to a worked situation instead of treating it as an isolated definition. Exceptions separate normal results from abrupt completion. Consider this worked case: A `NetworkRequest` throws a `ConnectionTimeoutException` when a server fails to respond, allowing the caller to handle the failure gracefully. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
       "plannedSeconds": 55,
       "title": "Exceptions for Error Handling",
       "visualDirection": "template:academic-process | Map a control flow diagram showing a normal execution path branching into an exception handler block when a timeout occurs."
@@ -103,7 +103,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Generics for Type-Safe Abstractions, including what improves and what becomes more difficult. Generic types express reusable abstractions while preserving compile-time type constraints. Consider this worked case: A `Queue<T>` class ensures that only elements of type `T` are added or removed, eliminating the need for runtime casting. On screen, show a generic collection diagram with type parameters `T` and `U`, highlighting how compile-time checks enforce type safety. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "narration": "Examine the tradeoffs in Generics for Type-Safe Abstractions, including what improves and what becomes more difficult. Generic types express reusable abstractions while preserving compile-time type constraints. Consider this worked case: A `Queue<T>` class ensures that only elements of type `T` are added or removed, eliminating the need for runtime casting. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
       "plannedSeconds": 55,
       "title": "Generics for Type-Safe Abstractions",
       "visualDirection": "template:academic-process | Show a generic collection diagram with type parameters `T` and `U`, highlighting how compile-time checks enforce type safety."
@@ -121,7 +121,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Event-Driven Programming Principles with an edge case and identify which assumption controls the outcome. This course covers advanced concepts such as event-driven programming, design patterns, distributed and concurrent programming, and the use, design and implementation of applications. Consider this worked case: A `UIController` registers a `Button` instance to emit `click` events, triggering a `EventHandler` without direct method calls. On screen, draw a publisher-subscriber diagram showing an event source broadcasting to multiple independent listeners via a message bus. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "narration": "Stress-test the reasoning around Event-Driven Programming Principles with an edge case and identify which assumption controls the outcome. This course covers advanced concepts such as event-driven programming, design patterns, distributed and concurrent programming, and the use, design and implementation of applications. Consider this worked case: A `UIController` registers a `Button` instance to emit `click` events, triggering a `EventHandler` without direct method calls. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
       "plannedSeconds": 61,
       "title": "Event-Driven Programming Principles",
       "visualDirection": "template:academic-process | Draw a publisher-subscriber diagram showing an event source broadcasting to multiple independent listeners via a message bus."
@@ -139,7 +139,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Design Patterns for Structural Integrity to diagnose a failure by separating symptoms, causes, and corrective action. Python objects have identity, a type, and a value. Consider this worked case: The `Strategy` pattern allows a `PaymentProcessor` to swap `CreditCard` and `Crypto` algorithms at runtime without modifying the core class. On screen, present a before-and-after class diagram showing how a rigid hierarchy is replaced by a flexible strategy interface and implementations. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "narration": "Use Design Patterns for Structural Integrity to diagnose a failure by separating symptoms, causes, and corrective action. Python objects have identity, a type, and a value. Consider this worked case: The `Strategy` pattern allows a `PaymentProcessor` to swap `CreditCard` and `Crypto` algorithms at runtime without modifying the core class. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
       "plannedSeconds": 55,
       "title": "Design Patterns for Structural Integrity",
       "visualDirection": "template:academic-process | Present a before-and-after class diagram showing how a rigid hierarchy is replaced by a flexible strategy interface and implementations."
@@ -157,7 +157,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Concurrent and Distributed Programming Foundations to the earlier ideas and explain how the pieces work as one system. Attribute lookup follows defined rules across an instance and its class hierarchy. Consider this worked case: A `TaskScheduler` uses thread pools to process independent jobs concurrently, ensuring that shared resources are accessed via synchronized locks or immutable data structures. On screen, render a concurrent execution model with multiple threads accessing a shared resource, highlighting synchronization mechanisms like mutexes or atomic variables. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "narration": "Connect Concurrent and Distributed Programming Foundations to the earlier ideas and explain how the pieces work as one system. Attribute lookup follows defined rules across an instance and its class hierarchy. Consider this worked case: A `TaskScheduler` uses thread pools to process independent jobs concurrently, ensuring that shared resources are accessed via synchronized locks or immutable data structures. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
       "plannedSeconds": 58,
       "title": "Concurrent and Distributed Programming Foundations",
       "visualDirection": "template:academic-process | Render a concurrent execution model with multiple threads accessing a shared resource, highlighting synchronization mechanisms like mutexes or atomic variables."
@@ -175,7 +175,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Practical Analysis Checklist for Implementation as a practical checklist that can guide a new analysis. Object-oriented design should make responsibilities, invariants, dependencies, composition, and substitution behavior explicit. Consider this worked case: Before deploying a `DataProcessor`, developers check that each class has a single responsibility, validates that internal state cannot be corrupted, and confirms that subclasses can replace base classes without breaking contracts. On screen, display a checklist graphic with checkboxes for 'Single Responsibility', 'Invariant Validation', 'Dependency Minimization', and 'Substitution Compliance', ready for instructor review. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "narration": "Finish with Practical Analysis Checklist for Implementation as a practical checklist that can guide a new analysis. Object-oriented design should make responsibilities, invariants, dependencies, composition, and substitution behavior explicit. Consider this worked case: Before deploying a `DataProcessor`, developers check that each class has a single responsibility, validates that internal state cannot be corrupted, and confirms that subclasses can replace base classes without breaking contracts. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
       "plannedSeconds": 63,
       "title": "Practical Analysis Checklist for Implementation",
       "visualDirection": "template:academic-process | Display a checklist graphic with checkboxes for 'Single Responsibility', 'Invariant Validation', 'Dependency Minimization', and 'Substitution Compliance', ready for instructor review."

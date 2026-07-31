@@ -1,237 +1,187 @@
-NARRATOR: Begin by framing Search Engine Architecture Overview as a question about
+Begin by framing Search Engine Architecture Overview as a question about inputs,
 
-inputs, decisions, and observable results.
+decisions, and observable results.
 
-NARRATOR: An introduction to the theories and techniques used to construct search engines.
+An introduction to the theories and techniques used to construct search engines.
 
-NARRATOR: Consider this worked case: A web crawler indexes HTML pages by extracting text,
+Consider this worked case: A web crawler indexes HTML pages by extracting text,
 
 building an inverted index, and storing term frequencies.
 
-NARRATOR: On screen, display a flowchart showing query input, index lookup, and result
+List the givens before choosing a method, because an unstated assumption can change the
 
-output with labeled components.
+conclusion.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+This establishes the vocabulary and scope needed for the remaining sections.
 
-change the conclusion.
-
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Now define Query Processing and Parsing precisely enough that another learner
+Now define Query Processing and Parsing precisely enough that another learner could
 
-could test the definition.
+test the definition.
 
-NARRATOR: Queries select, join, aggregate, order, and transform data.
+Queries select, join, aggregate, order, and transform data.
 
-NARRATOR: Consider this worked case: A natural language query like 'climate change effects'
+Consider this worked case: A natural language query like 'climate change effects' is
 
-is tokenized and normalized to match indexed terms.
+tokenized and normalized to match indexed terms.
 
-NARRATOR: On screen, show a side-by-side comparison of raw query text versus parsed
-
-query components with highlighted tokens.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.
-
-NARRATOR: With the foundation in place, examine how Inverted Index Construction
-
-operates in a concrete sequence.
-
-NARRATOR: Indexes provide additional access paths for selected workloads.
-
-NARRATOR: Consider this worked case: The term 'machine' points to document IDs [101, 105,
-
-112], allowing direct access to containing pages.
-
-NARRATOR: On screen, render a simplified inverted index table with term columns and
-
-document ID lists.
-
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
-
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Next, compare the choices involved in TF-IDF Relevance Scoring and make the
+With the foundation in place, examine how Inverted Index Construction operates in a
 
-decision criteria explicit.
+concrete sequence.
 
-NARRATOR: Topics include search interfaces, traditional retrieval models (for example,
+Indexes provide additional access paths for selected workloads.
 
-TF-IDF, BM25), modern retrieval techniques (for example, neural reranking and retrieval),
+Consider this worked case: The term 'machine' points to document IDs [101, 105, 112],
 
-search engine evaluation, and search applications (for example, conversational IR,
+allowing direct access to containing pages.
 
-enterprise search).
+Follow every arrow in order and name the state before and after each transition.
 
-NARRATOR: Consider this worked case: A term appearing in many documents receives a lower
+The trace converts an abstract statement into an inspectable sequence.
 
-IDF weight, reducing its relevance score.
+Name each dependency explicitly, and keep labels and representations consistent
 
-NARRATOR: On screen, illustrate TF-IDF calculation with a small document corpus
+throughout the analysis.
 
-showing term frequencies and IDF values.
+Next, compare the choices involved in TF-IDF Relevance Scoring and make the decision
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+criteria explicit.
 
-move the goalposts.
+Topics include search interfaces, traditional retrieval models (for example, TF-IDF, BM25),
 
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
+modern retrieval techniques (for example, neural reranking and retrieval), search engine
 
-NARRATOR: Apply BM25 Ranking Algorithm to a worked situation instead of treating it as an
+evaluation, and search applications (for example, conversational IR, enterprise
+
+search).
+
+Consider this worked case: A term appearing in many documents receives a lower IDF weight,
+
+reducing its relevance score.
+
+Compare alternatives against the same constraints so the evaluation does not move
+
+the goalposts.
+
+Using shared criteria turns a preference into a defensible technical choice.
+
+Apply BM25 Ranking Algorithm to a worked situation instead of treating it as an
 
 isolated definition.
 
-NARRATOR: Students may not take and receive credit for CSCI-536 and CSCI-636.
+Students may not take and receive credit for CSCI-536 and CSCI-636.
 
-NARRATOR: Consider this worked case: Short documents receive higher scores for rare
+Consider this worked case: Short documents receive higher scores for rare terms, while
 
-terms, while BM25 adjusts scores based on term position in text.
+BM25 adjusts scores based on term position in text.
 
-NARRATOR: On screen, display a comparison table of TF-IDF versus BM25 scores for the
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-same query across different documents.
+step.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+The worked case shows both how to apply the method and how to check it.
 
-at each step.
+Examine the tradeoffs in Neural Reranking Techniques, including what improves and what
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+becomes more difficult.
 
-NARRATOR: Examine the tradeoffs in Neural Reranking Techniques, including what improves
+Data-analysis workflows separate data preparation, exploratory analysis, training,
 
-and what becomes more difficult.
+validation, testing, model selection, and evaluation.
 
-NARRATOR: Data-analysis workflows separate data preparation, exploratory analysis,
+Consider this worked case: A transformer-based model scores query-document pairs by analyzing
 
-training, validation, testing, model selection, and evaluation.
+semantic similarity in high-dimensional space.
 
-NARRATOR: Consider this worked case: A transformer-based model scores query-document
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-pairs by analyzing semantic similarity in high-dimensional space.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: On screen, show a neural network diagram with query and document embeddings
-
-merging into a relevance score output.
-
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
-
-acceptable.
-
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Stress-test the reasoning around Search Evaluation Metrics with an edge case
+Stress-test the reasoning around Search Evaluation Metrics with an edge case and
 
-and identify which assumption controls the outcome.
+identify which assumption controls the outcome.
 
-NARRATOR: Query planning and physical storage affect performance without changing logical
+Query planning and physical storage affect performance without changing logical query
 
-query meaning.
+meaning.
 
-NARRATOR: Consider this worked case: Precision measures the fraction of retrieved documents
+Consider this worked case: Precision measures the fraction of retrieved documents that are
 
-that are relevant, while NDCG accounts for ranking order.
+relevant, while NDCG accounts for ranking order.
 
-NARRATOR: On screen, present a precision-recall curve and NDCG graph with
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-labeled axes and example points.
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+Use Conversational and Enterprise Search to diagnose a failure by separating symptoms,
 
-holds.
+causes, and corrective action.
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+Students will also review current IR research topics, and complete a group project in which
 
-core idea.
+they will design and execute experiments for search engine components.
 
-NARRATOR: Use Conversational and Enterprise Search to diagnose a failure by separating
+Consider this worked case: Enterprise search indexes internal documents with role-based
 
-symptoms, causes, and corrective action.
+access and contextual filters for business users.
 
-NARRATOR: Students will also review current IR research topics, and complete a group project
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-in which they will design and execute experiments for search engine components.
+smallest plausible cause.
 
-NARRATOR: Consider this worked case: Enterprise search indexes internal documents
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-with role-based access and contextual filters for business users.
+Connect Experimental Design in IR to the earlier ideas and explain how the pieces work
 
-NARRATOR: On screen, show a dialogue flow for conversational search and a dashboard for
+as one system.
 
-enterprise search filters.
-
-NARRATOR: Locate the first point where observed behavior diverges from expected
-
-behavior, then test the smallest plausible cause.
-
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
-
-and the test.
-
-NARRATOR: Connect Experimental Design in IR to the earlier ideas and explain how the pieces
-
-work as one system.
-
-NARRATOR: Supervised methods learn mappings from examples paired with target labels, while
+Supervised methods learn mappings from examples paired with target labels, while
 
 unsupervised methods identify structure without targets.
 
-NARRATOR: Consider this worked case: A group project tests BM25 versus neural reranking on
+Consider this worked case: A group project tests BM25 versus neural reranking on a
 
-a benchmark corpus to measure score improvements.
+benchmark corpus to measure score improvements.
 
-NARRATOR: On screen, display an experimental setup diagram with baseline, variant, and
+Explain each connection explicitly and verify that information retains the same meaning
 
-evaluation metrics.
+across representations.
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+The synthesis matters only if every connection remains supported by the original evidence.
 
-meaning across representations.
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-NARRATOR: The synthesis matters only if every connection remains supported by the original
+analysis.
 
-evidence.
+Evaluation must match the task and the cost of errors, while distribution shift, missing
 
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+data, overfitting, and unexamined sampling choices can invalidate conclusions.
 
-guide a new analysis.
+Consider this worked case: The checklist verifies index coverage, ranking consistency,
 
-NARRATOR: Evaluation must match the task and the cost of errors, while distribution shift,
+metric alignment, and error cost assessment.
 
-missing data, overfitting, and unexamined sampling choices can invalidate conclusions.
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-NARRATOR: Consider this worked case: The checklist verifies index coverage, ranking
+verification step.
 
-consistency, metric alignment, and error cost assessment.
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-NARRATOR: On screen, show a printable checklist template with checkboxes for each
-
-evaluation criterion.
-
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

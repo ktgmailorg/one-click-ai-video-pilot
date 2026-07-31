@@ -1,241 +1,179 @@
-NARRATOR: Begin by framing Course Foundations and Scope as a question about inputs,
+Begin by framing Course Foundations and Scope as a question about inputs, decisions, and
 
-decisions, and observable results.
+observable results.
 
-NARRATOR: Topics include search algorithms, logic, planning, machine learning, and
+Topics include search algorithms, logic, planning, machine learning, and applications
 
-applications from areas such as computer vision, robotics, and natural language
+from areas such as computer vision, robotics, and natural language processing.
 
-processing.
+Consider this worked case: Students will explore how AI algorithms power real-world
 
-NARRATOR: Consider this worked case: Students will explore how AI algorithms power
+systems like recommendation engines and autonomous navigation.
 
-real-world systems like recommendation engines and autonomous navigation.
+List the givens before choosing a method, because an unstated assumption can change the
 
-NARRATOR: On screen, display a slide with the course title, core topics, and a simple
+conclusion.
 
-diagram linking AI algorithms to application areas.
+This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
-
-change the conclusion.
-
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
-
-NARRATOR: Now define Prerequisites and Course Constraints precisely enough that another
+Now define Prerequisites and Course Constraints precisely enough that another
 
 learner could test the definition.
 
-NARRATOR: Students cannot take and receive credit for this course if they have taken
+Students cannot take and receive credit for this course if they have taken CSCI-630.
 
-CSCI-630.
-
-NARRATOR: Consider this worked case: A student with a background in software engineering and
+Consider this worked case: A student with a background in software engineering and
 
 statistics can proceed, while one who completed CSCI-630 must take an alternative
 
 path.
 
-NARRATOR: On screen, show a prerequisite flowchart highlighting required courses and
-
-the exclusion of CSCI-630.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how NIST AI Risk Management Framework
+With the foundation in place, examine how NIST AI Risk Management Framework operates in a
 
-operates in a concrete sequence.
+concrete sequence.
 
-NARRATOR: The NIST AI Risk Management Framework organizes work around Govern, Map,
+The NIST AI Risk Management Framework organizes work around Govern, Map, Measure,
 
-Measure, and Manage.
+and Manage.
 
-NARRATOR: Consider this worked case: Govern establishes policies, Map documents context
+Consider this worked case: Govern establishes policies, Map documents context and impacts,
 
-and impacts, Measure analyzes risks, and Manage prioritizes responses.
+Measure analyzes risks, and Manage prioritizes responses.
 
-NARRATOR: On screen, create a four-step cycle diagram labeled Govern, Map, Measure, Manage
+Follow every arrow in order and name the state before and after each transition.
 
-with brief labels for each phase.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
-
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Next, compare the choices involved in Risk Analysis Considerations and make the
+Next, compare the choices involved in Risk Analysis Considerations and make the decision
 
-decision criteria explicit.
+criteria explicit.
 
-NARRATOR: Risk analysis considers data quality and uncertainty.
+Risk analysis considers data quality and uncertainty.
 
-NARRATOR: Consider this worked case: In a healthcare AI system, data quality and
+Consider this worked case: In a healthcare AI system, data quality and fairness are critical
 
-fairness are critical to ensure accurate diagnoses and equitable outcomes.
+to ensure accurate diagnoses and equitable outcomes.
 
-NARRATOR: On screen, list the seven risk considerations in a circular diagram centered
+Compare alternatives against the same constraints so the evaluation does not move
 
-on 'Risk Analysis' to show their interconnected roles.
+the goalposts.
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+Using shared criteria turns a preference into a defensible technical choice.
 
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Apply Monitoring and Context Changes to a worked situation instead of treating it
+Apply Monitoring and Context Changes to a worked situation instead of treating it as an
 
-as an isolated definition.
+isolated definition.
 
-NARRATOR: Monitoring continues after deployment because context and system behavior
+Monitoring continues after deployment because context and system behavior can change.
 
-can change.
+Consider this worked case: A self-driving car's AI must continuously monitor road
 
-NARRATOR: Consider this worked case: A self-driving car's AI must continuously
+conditions and sensor data to adapt to new environments.
 
-monitor road conditions and sensor data to adapt to new environments.
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-NARRATOR: On screen, show a timeline graphic with 'Deployment' followed by an ongoing
+step.
 
-'Monitoring' loop with arrows indicating continuous feedback.
+The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+Examine the tradeoffs in Machine Learning Workflow Overview, including what improves and
 
-at each step.
+what becomes more difficult.
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+Machine-learning workflows separate data preparation, training, validation, testing,
 
-NARRATOR: Examine the tradeoffs in Machine Learning Workflow Overview, including what
+model selection, and evaluation.
 
-improves and what becomes more difficult.
+Consider this worked case: Developing a spam filter involves cleaning email data, training
 
-NARRATOR: Machine-learning workflows separate data preparation, training, validation,
+a classifier, validating on unseen data, and testing performance.
 
-testing, model selection, and evaluation.
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-NARRATOR: Consider this worked case: Developing a spam filter involves cleaning
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-email data, training a classifier, validating on unseen data, and testing performance.
-
-NARRATOR: On screen, display a linear flowchart with six boxes representing each
-
-workflow stage, connected by arrows.
-
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
-
-acceptable.
-
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Stress-test the reasoning around Supervised and Unsupervised Methods with an
+Stress-test the reasoning around Supervised and Unsupervised Methods with an edge case and
 
-edge case and identify which assumption controls the outcome.
+identify which assumption controls the outcome.
 
-NARRATOR: Supervised methods learn a mapping from examples paired with target labels.
+Supervised methods learn a mapping from examples paired with target labels.
 
-NARRATOR: Consider this worked case: Supervised learning trains a model to classify
+Consider this worked case: Supervised learning trains a model to classify images as cats or
 
-images as cats or dogs, whereas unsupervised learning groups similar images by color
+dogs, whereas unsupervised learning groups similar images by color patterns.
 
-patterns.
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-NARRATOR: On screen, show a side-by-side comparison: left side shows labeled examples
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-for supervised learning, right side shows unlabeled data clustering for unsupervised
+Use Preprocessing and Leakage Prevention to diagnose a failure by separating symptoms,
 
-learning.
+causes, and corrective action.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+Preprocessing must be fitted only on permitted training data to avoid leakage.
 
-holds.
+Consider this worked case: Scaling features using only training data statistics prevents
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+test data information from influencing the model's performance.
 
-core idea.
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-NARRATOR: Use Preprocessing and Leakage Prevention to diagnose a failure by separating
+smallest plausible cause.
 
-symptoms, causes, and corrective action.
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-NARRATOR: Preprocessing must be fitted only on permitted training data to avoid leakage.
+Connect Pipelines and Cross-Validation to the earlier ideas and explain how the pieces work
 
-NARRATOR: Consider this worked case: Scaling features using only training data statistics
+as one system.
 
-prevents test data information from influencing the model's performance.
+Cross-validation repeats training and validation across defined data splits.
 
-NARRATOR: On screen, illustrate a pipeline where 'Preprocessing' is applied only to the
+Consider this worked case: A single pipeline ensures that image resizing and normalization
 
-'Training Data' box, with a red 'X' over applying it to test data.
+are applied identically during training and testing, while cross-validation evaluates
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+model stability across multiple data folds.
 
-behavior, then test the smallest plausible cause.
+Explain each connection explicitly and verify that information retains the same meaning
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+across representations.
 
-and the test.
+The synthesis matters only if every connection remains supported by the original evidence.
 
-NARRATOR: Connect Pipelines and Cross-Validation to the earlier ideas and
-
-explain how the pieces work as one system.
-
-NARRATOR: Cross-validation repeats training and validation across defined data splits.
-
-NARRATOR: Consider this worked case: A single pipeline ensures that image resizing and
-
-normalization are applied identically during training and testing, while cross-validation
-
-evaluates model stability across multiple data folds.
-
-NARRATOR: On screen, draw a pipeline block containing 'Preprocessing' and 'Estimator'
-
-components, with a cross-validation loop showing multiple data splits feeding into the
-
-pipeline.
-
-NARRATOR: Explain each connection explicitly and verify that information retains the same
-
-meaning across representations.
-
-NARRATOR: The synthesis matters only if every connection remains supported by the original
-
-evidence.
-
-NARRATOR: Finish with Evaluation Metrics and Hyperparameter Selection as a practical
+Finish with Evaluation Metrics and Hyperparameter Selection as a practical
 
 checklist that can guide a new analysis.
 
-NARRATOR: Evaluation metrics must match the task and the cost of different errors.
+Evaluation metrics must match the task and the cost of different errors.
 
-NARRATOR: Consider this worked case: For medical diagnosis, precision and recall are
+Consider this worked case: For medical diagnosis, precision and recall are
 
 prioritized over accuracy, and hyperparameters are tuned only on validation data before final
 
 testing.
 
-NARRATOR: On screen, show a decision matrix matching metrics to task costs, alongside a
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-separate 'Hyperparameter Tuning' box that does not touch the final test set.
+verification step.
 
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

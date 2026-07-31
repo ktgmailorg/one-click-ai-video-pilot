@@ -13,7 +13,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Algorithm Analysis Basics as a question about inputs, decisions, and observable results. Algorithm analysis connects a precise problem specification to a correctness argument and resource bounds. Consider this worked case: A sorting algorithm must guarantee that the output array contains all input elements in non-decreasing order. On screen, display a split screen showing a problem specification on the left and a resource bound graph on the right. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "narration": "Begin by framing Algorithm Analysis Basics as a question about inputs, decisions, and observable results. Algorithm analysis connects a precise problem specification to a correctness argument and resource bounds. Consider this worked case: A sorting algorithm must guarantee that the output array contains all input elements in non-decreasing order. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
       "plannedSeconds": 55,
       "title": "Algorithm Analysis Basics",
       "visualDirection": "template:academic-process | Display a split screen showing a problem specification on the left and a resource bound graph on the right."
@@ -31,7 +31,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Asymptotic Notation precisely enough that another learner could test the definition. Asymptotic notation describes how resource use grows with input size. Consider this worked case: Big-O notation indicates that a search algorithm's time complexity increases proportionally to the number of items searched. On screen, show a line graph where the x-axis represents input size and the y-axis represents resource usage, highlighting a linear trend. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Now define Asymptotic Notation precisely enough that another learner could test the definition. Asymptotic notation describes how resource use grows with input size. Consider this worked case: Big-O notation indicates that a search algorithm's time complexity increases proportionally to the number of items searched. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 57,
       "title": "Asymptotic Notation",
       "visualDirection": "template:academic-process | Show a line graph where the x-axis represents input size and the y-axis represents resource usage, highlighting a linear trend."
@@ -49,7 +49,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Loop Invariants operates in a concrete sequence. A loop invariant supports a proof by initialization, maintenance, and termination. Consider this worked case: In a for-loop that sums an array, the invariant states that the running total equals the sum of the first i elements. On screen, animate a loop counter and a running total, updating them step-by-step to demonstrate the invariant holding true. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "With the foundation in place, examine how Loop Invariants operates in a concrete sequence. A loop invariant supports a proof by initialization, maintenance, and termination. Consider this worked case: In a for-loop that sums an array, the invariant states that the running total equals the sum of the first i elements. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 58,
       "title": "Loop Invariants",
       "visualDirection": "template:academic-process | Animate a loop counter and a running total, updating them step-by-step to demonstrate the invariant holding true."
@@ -67,7 +67,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Divide-and-Conquer and make the decision criteria explicit. Divide-and-conquer algorithms split a problem, solve subproblems, and combine their results. Consider this worked case: Merge sort divides an array into halves, recursively sorts each half, and merges the sorted halves. On screen, illustrate a recursive tree where each node splits into two children until reaching base cases. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Next, compare the choices involved in Divide-and-Conquer and make the decision criteria explicit. Divide-and-conquer algorithms split a problem, solve subproblems, and combine their results. Consider this worked case: Merge sort divides an array into halves, recursively sorts each half, and merges the sorted halves. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
       "title": "Divide-and-Conquer",
       "visualDirection": "template:academic-process | Illustrate a recursive tree where each node splits into two children until reaching base cases."
@@ -85,7 +85,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Recurrence Relations to a worked situation instead of treating it as an isolated definition. Recurrences describe the cost of recursive algorithms. Consider this worked case: The recurrence T(n) = 2T(n/2) + O(n) describes the time complexity of merge sort. On screen, display a mathematical recurrence equation alongside a corresponding recursion tree diagram. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Apply Recurrence Relations to a worked situation instead of treating it as an isolated definition. Recurrences describe the cost of recursive algorithms. Consider this worked case: The recurrence T(n) = 2T(n/2) + O(n) describes the time complexity of merge sort. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
       "title": "Recurrence Relations",
       "visualDirection": "template:academic-process | Display a mathematical recurrence equation alongside a corresponding recursion tree diagram."
@@ -103,7 +103,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Graph Algorithms, including what improves and what becomes more difficult. Graph algorithms operate on vertices and edges to answer reachability, ordering, connectivity, and path questions. Consider this worked case: Dijkstra's algorithm finds the shortest path between two nodes in a weighted graph by exploring adjacent vertices iteratively. On screen, render a graph with labeled vertices and edges, highlighting the path explored by the algorithm. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "narration": "Examine the tradeoffs in Graph Algorithms, including what improves and what becomes more difficult. Graph algorithms operate on vertices and edges to answer reachability, ordering, connectivity, and path questions. Consider this worked case: Dijkstra's algorithm finds the shortest path between two nodes in a weighted graph by exploring adjacent vertices iteratively. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
       "plannedSeconds": 55,
       "title": "Graph Algorithms",
       "visualDirection": "template:academic-process | Render a graph with labeled vertices and edges, highlighting the path explored by the algorithm."
@@ -121,7 +121,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Dynamic Programming with an edge case and identify which assumption controls the outcome. Dynamic programming records solutions to overlapping subproblems. Consider this worked case: The Fibonacci sequence uses memoization to store previously computed values, avoiding redundant calculations. On screen, show a table filling in values for Fibonacci numbers, with arrows pointing to reused entries. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Stress-test the reasoning around Dynamic Programming with an edge case and identify which assumption controls the outcome. Dynamic programming records solutions to overlapping subproblems. Consider this worked case: The Fibonacci sequence uses memoization to store previously computed values, avoiding redundant calculations. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 56,
       "title": "Dynamic Programming",
       "visualDirection": "template:academic-process | Show a table filling in values for Fibonacci numbers, with arrows pointing to reused entries."
@@ -139,7 +139,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Data Structure Foundations to diagnose a failure by separating symptoms, causes, and corrective action. Lists represent ordered sequences with position-based operations. Consider this worked case: A stack processes function calls by executing the most recently pushed task first. On screen, compare a list with indexed positions and a stack with push/pop operations on a single end. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Use Data Structure Foundations to diagnose a failure by separating symptoms, causes, and corrective action. Lists represent ordered sequences with position-based operations. Consider this worked case: A stack processes function calls by executing the most recently pushed task first. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 55,
       "title": "Data Structure Foundations",
       "visualDirection": "template:academic-process | Compare a list with indexed positions and a stack with push/pop operations on a single end."
@@ -157,7 +157,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Hash Tables and Trees to the earlier ideas and explain how the pieces work as one system. Hash tables map keys to locations and require a collision strategy. Consider this worked case: A hash table stores key-value pairs using a hash function, resolving collisions via chaining or open addressing. On screen, display a hash table with buckets and a binary tree with parent-child node relationships. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Connect Hash Tables and Trees to the earlier ideas and explain how the pieces work as one system. Hash tables map keys to locations and require a collision strategy. Consider this worked case: A hash table stores key-value pairs using a hash function, resolving collisions via chaining or open addressing. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
       "plannedSeconds": 58,
       "title": "Hash Tables and Trees",
       "visualDirection": "template:academic-process | Display a hash table with buckets and a binary tree with parent-child node relationships."
@@ -175,7 +175,7 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. A disciplined solution states inputs and outputs, proves correctness, and then analyzes time and space. Consider this worked case: Before coding a graph traversal, students document the start node, visited set, and expected O(V+E) time complexity. On screen, present a checklist graphic with three checkboxes: 'Inputs/Outputs Defined', 'Correctness Proven', 'Complexity Analyzed'. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. A disciplined solution states inputs and outputs, proves correctness, and then analyzes time and space. Consider this worked case: Before coding a graph traversal, students document the start node, visited set, and expected O(V+E) time complexity. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
       "plannedSeconds": 55,
       "title": "Practical Analysis Checklist",
       "visualDirection": "template:academic-process | Present a checklist graphic with three checkboxes: 'Inputs/Outputs Defined', 'Correctness Proven', 'Complexity Analyzed'."

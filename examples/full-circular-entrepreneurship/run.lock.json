@@ -1,7 +1,7 @@
 {
   "approvals": [
     {
-      "approvedAt": "2026-07-31T15:15:34.649Z",
+      "approvedAt": "2026-07-31T18:45:25.030Z",
       "notes": "Verifies declared source bindings for draft rendering; instructor and release approval remain required.",
       "reviewer": "Automated source-pack verification (draft)",
       "role": "automation",
@@ -19,22 +19,22 @@
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/long-form-lessons/circular-entrepreneurship/work/narration/captions.vtt",
       "role": "captions-vtt",
-      "sha256": "922d7ca05fcfcdb7e76a872809b9aaaf0e39dde23333789d8cd1d83d5304c3e0"
+      "sha256": "b0e0802cf323154684e67edb8ac92b0291e3fec17100119d02fee95dfa89bff1"
     },
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/long-form-lessons/circular-entrepreneurship/work/narration/captions.srt",
       "role": "captions-srt",
-      "sha256": "5d3c2f9d0ad1efc04fd2052bbd31fa1199d4718259c9f7b798eafeae09709348"
+      "sha256": "1836287347d5b95436567f24f8729804839c47bd68b9c39c8e280d372af2a80f"
     },
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/long-form-lessons/circular-entrepreneurship/work/narration/transcript.txt",
       "role": "transcript-text",
-      "sha256": "b44b2b02a93a24dc0cb638160dd7969c8db13077c3f1e65d328438c3df583cd5"
+      "sha256": "209832bf8199fd1bc92e5737c8f697183afb83faaaf3ff0b9572c09656000ca1"
     },
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/long-form-lessons/circular-entrepreneurship/work/narration/transcript.html",
       "role": "transcript-html",
-      "sha256": "863351983975bfd146f02a148b38d7a2bde3443157f85913637463fe0a4572ca"
+      "sha256": "36be38d3db158637d5d4902f94efdab2d2db7565451ac034c77ae808cc85b8be"
     },
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/long-form-lessons/circular-entrepreneurship/work/visuals/thumbnail.png",
@@ -659,7 +659,7 @@
     }
   ],
   "configSha256": "da7a0d946ad8799f67b789ab16ad3af3863455bde2ee1e9ffd7b659e41a59dfb",
-  "createdAt": "2026-07-31T15:15:34.996Z",
+  "createdAt": "2026-07-31T18:45:25.380Z",
   "final": {
     "releaseAudit": {
       "blockers": [],
@@ -880,7 +880,7 @@
       "width": 1920
     }
   },
-  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "gitRevision": "55b21f672dde62b4972270e6255e1f1fdd97e277",
   "inputSha256": "0a82c56d054be10b4a952afeeec64272690040a295cc5e6e0a95802a4905814c",
   "mode": "record",
   "providers": {
@@ -909,73 +909,6 @@
     }
   },
   "requests": [
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 29991,
-      "lookupSha256": "63eecf11aad782a5ccd697eacd6bae1fb0422779c40d68e07d5de77188c796be",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Use the map as a decision tool, not decorative sustainability imagery.",
-          "text": "Opportunity discovery begins with a boundary. NIST's reference model separates five connected activities: design the product, acquire materials, produce the product, use and consume it, and treat it at end of life. For each stage, record material inputs, information, responsible actors, controls, costs, and outputs. Then mark where products become idle, damaged, obsolete, contaminated, geographically dispersed, or difficult to identify. A discarded item at one stage may be a valuable feedstock or service opportunity at another. Do not draw only the forward flow. Downstream information—failure modes, repair history, composition, ownership, and residual performance—can improve the next design. A useful map makes missing relationships visible before a team commits to a circular business model."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "637e808b5a8fd27c1ac430ede79360070942b533e1689a1cce7c806c5ac2300f",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/3d/3d12dd6342ec938b8ccfc45856c91b46f3480c7f06de3d7f33fbd7f20faaff95.mp3",
-            "sha256": "3d12dd6342ec938b8ccfc45856c91b46f3480c7f06de3d7f33fbd7f20faaff95",
-            "size": 337536
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/31/3159ff199c9830dbc5c755f0b4b9b97e5d5e91716571dd34d2e6f601f44daf55.vtt",
-            "sha256": "3159ff199c9830dbc5c755f0b4b9b97e5d5e91716571dd34d2e6f601f44daf55",
-            "size": 1070
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T13:56:39.859Z"
-    },
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
@@ -1046,8 +979,8 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 24725,
-      "lookupSha256": "81f34d56d1b29d531c88c6495eb2a8efadde697b93a515bd378560bd63f94541",
+      "durationMs": 29991,
+      "lookupSha256": "63eecf11aad782a5ccd697eacd6bae1fb0422779c40d68e07d5de77188c796be",
       "model": "edge-tts-7.2.8",
       "profileName": "edge-narration",
       "request": {
@@ -1064,31 +997,31 @@
           ]
         },
         "input": {
-          "instructions": "Separate benefits, beneficiaries, revenue, and evidence.",
-          "text": "A viable circular venture must create value for more than one stakeholder. The customer may receive lower total cost, reliable maintenance, convenient take-back, verified quality, or access without ownership. The venture may earn through resale margin, repair fees, subscriptions, leasing, deposits, service contracts, or recovered components. Suppliers may gain stable secondary materials or better failure data. Environmental value may come from avoided extraction, longer product life, reduced waste, or more efficient recovery, but it must be measured rather than assumed. Write the value proposition as a causal statement: because the venture performs a specific recovery activity for a defined customer, a measurable cost, risk, convenience, performance, or resource outcome changes. That statement becomes a hypothesis, not a slogan."
+          "instructions": "Use the map as a decision tool, not decorative sustainability imagery.",
+          "text": "Opportunity discovery begins with a boundary. NIST's reference model separates five connected activities: design the product, acquire materials, produce the product, use and consume it, and treat it at end of life. For each stage, record material inputs, information, responsible actors, controls, costs, and outputs. Then mark where products become idle, damaged, obsolete, contaminated, geographically dispersed, or difficult to identify. A discarded item at one stage may be a valuable feedstock or service opportunity at another. Do not draw only the forward flow. Downstream information—failure modes, repair history, composition, ownership, and residual performance—can improve the next design. A useful map makes missing relationships visible before a team commits to a circular business model."
         },
         "model": "edge-tts-7.2.8",
         "parameters": {},
         "schemaVersion": 1
       },
-      "requestSha256": "e35cf6734f15587465fbfe967989e157b721a4ab2a860415b60bb146de07dec6",
+      "requestSha256": "637e808b5a8fd27c1ac430ede79360070942b533e1689a1cce7c806c5ac2300f",
       "result": {
         "artifacts": [
           {
             "extension": ".mp3",
             "filename": "speech.mp3",
             "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/2e/2e486f800d01b94d42f8f02ded704dce24500c4865cbd3f6c2460cf014960a95.mp3",
-            "sha256": "2e486f800d01b94d42f8f02ded704dce24500c4865cbd3f6c2460cf014960a95",
-            "size": 342144
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/3d/3d12dd6342ec938b8ccfc45856c91b46f3480c7f06de3d7f33fbd7f20faaff95.mp3",
+            "sha256": "3d12dd6342ec938b8ccfc45856c91b46f3480c7f06de3d7f33fbd7f20faaff95",
+            "size": 337536
           },
           {
             "extension": ".vtt",
             "filename": "speech.vtt",
             "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/67/676bcfd3aea3677fcfb1665eee1bbdefa7e1d00c25b9f9cc47eb1106df56b60a.vtt",
-            "sha256": "676bcfd3aea3677fcfb1665eee1bbdefa7e1d00c25b9f9cc47eb1106df56b60a",
-            "size": 1072
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/31/3159ff199c9830dbc5c755f0b4b9b97e5d5e91716571dd34d2e6f601f44daf55.vtt",
+            "sha256": "3159ff199c9830dbc5c755f0b4b9b97e5d5e91716571dd34d2e6f601f44daf55",
+            "size": 1070
           }
         ],
         "costUsd": null,
@@ -1108,74 +1041,7 @@
       },
       "roleName": "narration",
       "schemaVersion": 1,
-      "startedAt": "2026-07-30T13:58:10.891Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 31362,
-      "lookupSha256": "8aa37d6f4026ffd54891289694f20c89e6d6b588037b7940387f40df31ee4135",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Treat reverse logistics as a core capability rather than an afterthought.",
-          "text": "A circular model fails when the return path is vague. Specify collection points, shipping or pickup, inspection, grading, data capture, storage, repair, redistribution, and final recovery. Then align incentives. A customer needs a reason to return the item. A service partner needs compensation and standards. A buyer of recovered output needs predictable quantity and quality. The venture needs enough margin to absorb failed returns, transport, testing, cleaning, and warranty risk. Safety and regulatory requirements can change which items may be reused or remanufactured. Build the reverse network around observable states: received, inspected, accepted, routed, restored, resold, or responsibly rejected. Coordination is part of the product. Without it, even a technically recoverable item can remain economically stranded."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "7367b2d0636107e64e58b1dde551bddb64ffc995c347dc1ce4f7d4dd0ab71c20",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/d7/d728ec6da125ea96ff42df3cb70cf70cc078eb8a449136780198bdbc6f85307f.mp3",
-            "sha256": "d728ec6da125ea96ff42df3cb70cf70cc078eb8a449136780198bdbc6f85307f",
-            "size": 365040
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/2c/2c0e42a8a44943063986a46927427a807cbe21429c941559eec045ba018f5e7e.vtt",
-            "sha256": "2c0e42a8a44943063986a46927427a807cbe21429c941559eec045ba018f5e7e",
-            "size": 1194
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T13:59:19.222Z"
+      "startedAt": "2026-07-30T13:56:39.859Z"
     },
     {
       "cacheHit": true,
@@ -1310,6 +1176,140 @@
       "roleName": "narration",
       "schemaVersion": 1,
       "startedAt": "2026-07-30T13:57:09.872Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 31362,
+      "lookupSha256": "8aa37d6f4026ffd54891289694f20c89e6d6b588037b7940387f40df31ee4135",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Treat reverse logistics as a core capability rather than an afterthought.",
+          "text": "A circular model fails when the return path is vague. Specify collection points, shipping or pickup, inspection, grading, data capture, storage, repair, redistribution, and final recovery. Then align incentives. A customer needs a reason to return the item. A service partner needs compensation and standards. A buyer of recovered output needs predictable quantity and quality. The venture needs enough margin to absorb failed returns, transport, testing, cleaning, and warranty risk. Safety and regulatory requirements can change which items may be reused or remanufactured. Build the reverse network around observable states: received, inspected, accepted, routed, restored, resold, or responsibly rejected. Coordination is part of the product. Without it, even a technically recoverable item can remain economically stranded."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "7367b2d0636107e64e58b1dde551bddb64ffc995c347dc1ce4f7d4dd0ab71c20",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/d7/d728ec6da125ea96ff42df3cb70cf70cc078eb8a449136780198bdbc6f85307f.mp3",
+            "sha256": "d728ec6da125ea96ff42df3cb70cf70cc078eb8a449136780198bdbc6f85307f",
+            "size": 365040
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/2c/2c0e42a8a44943063986a46927427a807cbe21429c941559eec045ba018f5e7e.vtt",
+            "sha256": "2c0e42a8a44943063986a46927427a807cbe21429c941559eec045ba018f5e7e",
+            "size": 1194
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T13:59:19.222Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 24725,
+      "lookupSha256": "81f34d56d1b29d531c88c6495eb2a8efadde697b93a515bd378560bd63f94541",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Separate benefits, beneficiaries, revenue, and evidence.",
+          "text": "A viable circular venture must create value for more than one stakeholder. The customer may receive lower total cost, reliable maintenance, convenient take-back, verified quality, or access without ownership. The venture may earn through resale margin, repair fees, subscriptions, leasing, deposits, service contracts, or recovered components. Suppliers may gain stable secondary materials or better failure data. Environmental value may come from avoided extraction, longer product life, reduced waste, or more efficient recovery, but it must be measured rather than assumed. Write the value proposition as a causal statement: because the venture performs a specific recovery activity for a defined customer, a measurable cost, risk, convenience, performance, or resource outcome changes. That statement becomes a hypothesis, not a slogan."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "e35cf6734f15587465fbfe967989e157b721a4ab2a860415b60bb146de07dec6",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/2e/2e486f800d01b94d42f8f02ded704dce24500c4865cbd3f6c2460cf014960a95.mp3",
+            "sha256": "2e486f800d01b94d42f8f02ded704dce24500c4865cbd3f6c2460cf014960a95",
+            "size": 342144
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/67/676bcfd3aea3677fcfb1665eee1bbdefa7e1d00c25b9f9cc47eb1106df56b60a.vtt",
+            "sha256": "676bcfd3aea3677fcfb1665eee1bbdefa7e1d00c25b9f9cc47eb1106df56b60a",
+            "size": 1072
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T13:58:10.891Z"
     },
     {
       "cacheHit": true,
@@ -1618,8 +1618,27 @@
   ],
   "status": "awaiting-approval",
   "toolchain": {
+    "ffmpeg": {
+      "available": true,
+      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "available": true,
+      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "gitChangedPaths": [
+      "outreach/README.md",
+      "outreach/general-email.md",
+      "outreach/leadership-confirmation.md",
+      "outreach/subject-showcase/reference-manifest.json"
+    ],
+    "gitDirty": true,
+    "gitRevision": "55b21f672dde62b4972270e6255e1f1fdd97e277",
+    "gitStatusSha256": "add6a4c631c3d463fa2b7e37fa6a50bfab3e6fce98296cf041f8a8d165d4cda8",
     "node": "v22.23.1",
     "platform": "darwin-arm64",
+    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtimeDirty": false,
     "sharp": {
       "aom": "3.14.1",
       "archive": "3.8.8",
@@ -1643,32 +1662,14 @@
       "png": "1.6.58",
       "proxy-libintl": "0.5",
       "rsvg": "2.62.90",
+      "sharp": "0.35.3",
       "tiff": "d01a94b",
       "uhdr": "1acdbed",
       "vips": "8.18.3",
       "webp": "1.6.0",
       "xml2": "2.15.3",
-      "zlib-ng": "2.3.3",
-      "sharp": "0.35.3"
-    },
-    "ffmpeg": {
-      "available": true,
-      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
-    },
-    "ffprobe": {
-      "available": true,
-      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
-    },
-    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
-    "gitDirty": true,
-    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
-    "gitChangedPaths": [
-      "outreach/README.md",
-      "outreach/general-email.md",
-      "outreach/leadership-confirmation.md"
-    ],
-    "runtimeDirty": false,
-    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "zlib-ng": "2.3.3"
+    }
   },
   "totalCostUsd": 0
 }

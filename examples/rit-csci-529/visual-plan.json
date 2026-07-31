@@ -10,7 +10,7 @@
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: A pipeline begins by cleaning raw CSV files, then splits them into training and validation sets before fitting a classifier.",
+          "phrase": "Data-analysis workflows separate data preparation, exploratory analysis, training, validation, testing, model selection, and evaluation.",
           "type": "deterministic-svg"
         },
         {
@@ -30,7 +30,7 @@
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: Training a logistic regression model on labeled spam emails where the label indicates whether each message is spam or not.",
+          "phrase": "Supervised methods learn mappings from examples paired with target labels, while unsupervised methods identify structure without targets.",
           "type": "deterministic-svg"
         },
         {
@@ -55,7 +55,7 @@
         },
         {
           "id": "beat-03-shot-003",
-          "phrase": "Follow every arrow in order and name the state before and after each transition.",
+          "phrase": "The trace converts an abstract statement into an inspectable sequence.",
           "type": "deterministic-svg"
         }
       ]
@@ -70,7 +70,7 @@
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: Scaling features using the mean and standard deviation calculated exclusively from the training set before applying to validation data.",
+          "phrase": "Preprocessing must be fitted only on permitted training data to avoid leakage.",
           "type": "deterministic-svg"
         },
         {
@@ -90,7 +90,7 @@
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: A single pipeline object that chains standardization, imputation, and model fitting, ensuring identical operations run during training and prediction.",
+          "phrase": "Pipelines combine transformations and estimators so the same operations are applied consistently.",
           "type": "deterministic-svg"
         },
         {
@@ -110,7 +110,7 @@
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: Using five-fold cross-validation where the dataset is partitioned into five subsets, each serving as a validation set once while the others train the model.",
+          "phrase": "Cross-validation repeats training and validation across defined splits.",
           "type": "deterministic-svg"
         },
         {
@@ -130,7 +130,7 @@
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: Using precision and recall for fraud detection because false negatives carry higher cost than false positives, and adjusting thresholds based on class imbalance.",
+          "phrase": "Evaluation must match the task and the cost of errors, while distribution shift, missing data, overfitting, and unexamined sampling choices can invalidate conclusions.",
           "type": "deterministic-svg"
         },
         {
@@ -150,7 +150,7 @@
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: Running a data profiling script that reports null counts, duplicate row percentages, and value distribution shifts across time periods.",
+          "phrase": "Data quality analysis makes missingness, duplicates, inconsistent representation, integrity constraints, sampling, and update behavior explicit.",
           "type": "deterministic-svg"
         },
         {
@@ -170,7 +170,7 @@
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: Adding a B-tree index on a frequently filtered column speeds up SELECT operations while preserving the exact same SQL result set.",
+          "phrase": "Queries select, join, aggregate, order, and transform data.",
           "type": "deterministic-svg"
         },
         {
@@ -190,7 +190,7 @@
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: Maintaining a versioned data lineage log that tracks each transformation step, model parameters, and visualization settings for reproducible research.",
+          "phrase": "Analytical work should preserve provenance from captured data through cleaning, transformation, grouping, modeling, visualization, and reporting.",
           "type": "deterministic-svg"
         },
         {

@@ -13,10 +13,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Module Structure and IR Representation as a question about inputs, decisions, and observable results. A module contains global values, functions, declarations, and metadata. Consider this worked case: An LLVM module groups all global variables, function definitions, and type declarations into a single unit before compilation begins. On screen, display a hierarchical diagram showing a module node branching into global values, function nodes, and metadata nodes, with clear labels for each component. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
-      "plannedSeconds": 55,
-      "title": "Module Structure and IR Representation",
-      "visualDirection": "template:academic-process | Display a hierarchical diagram showing a module node branching into global values, function nodes, and metadata nodes, with clear labels for each component."
+      "narration": "Begin by framing Course Scope and Prerequisites as a question about inputs, decisions, and observable results. This course is a study of the syntax and semantics of a diverse set of high-level programming languages. Consider this worked case: A learner maps the inputs, constraints, and observable result for Course Scope and Prerequisites, then checks each step against the stated claim. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
+      "plannedSeconds": 59,
+      "title": "Course Scope and Prerequisites",
+      "visualDirection": "template:academic-process | Create an editable process diagram for Course Scope and Prerequisites with labeled inputs, decisions, state changes, and a checked output."
     },
     {
       "accessibility": {
@@ -31,10 +31,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Basic Blocks and Control Flow precisely enough that another learner could test the definition. A function contains basic blocks, and every basic block ends with a terminator instruction. Consider this worked case: A conditional branch in a function splits into two basic blocks, each terminating with a jump instruction that routes to the next logical step. On screen, render a flowchart of a function with three basic blocks, highlighting the terminator instruction at the end of each block and arrows indicating control flow paths. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
-      "plannedSeconds": 61,
-      "title": "Basic Blocks and Control Flow",
-      "visualDirection": "template:academic-process | Render a flowchart of a function with three basic blocks, highlighting the terminator instruction at the end of each block and arrows indicating control flow paths."
+      "narration": "Now define Problem-Solving Foundations precisely enough that another learner could test the definition. Programming begins with precise problem statements, input and output examples, and algorithms written independently of syntax. Consider this worked case: A learner maps the inputs, constraints, and observable result for Problem-Solving Foundations, then checks each step against the stated claim. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "plannedSeconds": 56,
+      "title": "Problem-Solving Foundations",
+      "visualDirection": "template:academic-process | Create an editable process diagram for Problem-Solving Foundations with labeled inputs, decisions, state changes, and a checked output."
     },
     {
       "accessibility": {
@@ -49,10 +49,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Phi Instructions and Value Selection operates in a concrete sequence. Phi instructions select values according to the predecessor control-flow edge. Consider this worked case: When two branches converge, a phi instruction chooses the value from the branch that was actually executed during runtime. On screen, show a diamond-shaped control flow graph with a phi node at the merge point, labeled with the values from each incoming edge. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "narration": "With the foundation in place, examine how Core Language Constructs operates in a concrete sequence. Variables represent values and state, expressions compute values, and control structures select or repeat operations. Consider this worked case: In both Python and C++, a variable holds a state (e. g. , a counter), an expression calculates a new value (e. g. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
       "plannedSeconds": 55,
-      "title": "Phi Instructions and Value Selection",
-      "visualDirection": "template:academic-process | Show a diamond-shaped control flow graph with a phi node at the merge point, labeled with the values from each incoming edge."
+      "title": "Core Language Constructs",
+      "visualDirection": "template:academic-process | Create an editable process diagram for Core Language Constructs with labeled inputs, decisions, state changes, and a checked output."
     },
     {
       "accessibility": {
@@ -67,10 +67,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Explicit Memory Operations and make the decision criteria explicit. Load and store instructions make memory access explicit. Consider this worked case: A store instruction assigns a computed value to a specific memory location, while a load instruction retrieves that value for further computation. On screen, illustrate a memory model with a register, a memory address, and arrows showing a store writing to memory and a load reading from it. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "narration": "Next, compare the choices involved in Functions and Decomposition and make the decision criteria explicit. Functions decompose a solution into named operations with parameters and results. Consider this worked case: A learner maps the inputs, constraints, and observable result for Functions and Decomposition, then checks each step against the stated claim. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
       "plannedSeconds": 55,
-      "title": "Explicit Memory Operations",
-      "visualDirection": "template:academic-process | Illustrate a memory model with a register, a memory address, and arrows showing a store writing to memory and a load reading from it."
+      "title": "Functions and Decomposition",
+      "visualDirection": "template:academic-process | Create an editable process diagram for Functions and Decomposition with labeled inputs, decisions, state changes, and a checked output."
     },
     {
       "accessibility": {
@@ -85,10 +85,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Structural Verification Rules to a worked situation instead of treating it as an isolated definition. Valid IR must satisfy structural and typing rules. Consider this worked case: The verifier checks that every basic block ends with a terminator and that all variables are properly typed before the compiler proceeds. On screen, display a checklist graphic with three boxes: structural rules, typing rules, and verifier output, showing a red 'X' on a rule violation. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
-      "plannedSeconds": 57,
-      "title": "Structural Verification Rules",
-      "visualDirection": "template:academic-process | Display a checklist graphic with three boxes: structural rules, typing rules, and verifier output, showing a red 'X' on a rule violation."
+      "narration": "Apply Recursion and Base Cases to a worked situation instead of treating it as an isolated definition. Recursion solves a problem through smaller instances and requires a base case. Consider this worked case: A learner maps the inputs, constraints, and observable result for Recursion and Base Cases, then checks each step against the stated claim. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 59,
+      "title": "Recursion and Base Cases",
+      "visualDirection": "template:academic-process | Draw a tree diagram showing factorial(5) branching into factorial(4), factorial(3), etc."
     },
     {
       "accessibility": {
@@ -103,10 +103,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in Compiler Work Separation, including what improves and what becomes more difficult. Compiler work separates parsing and semantic analysis from lowering, verification, optimization, and target-specific code generation. Consider this worked case: The parser converts source code into an abstract syntax tree, while the semantic analyzer checks types and scopes before the lowering phase begins. On screen, draw a linear pipeline diagram with five stages labeled parsing, semantic analysis, lowering, verification, optimization, and code generation, with arrows flowing left to right. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
-      "plannedSeconds": 60,
-      "title": "Compiler Work Separation",
-      "visualDirection": "template:academic-process | Draw a linear pipeline diagram with five stages labeled parsing, semantic analysis, lowering, verification, optimization, and code generation, with arrows flowing left to right."
+      "narration": "Examine the tradeoffs in Data Structures and Representations, including what improves and what becomes more difficult. Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in first-out access, trees represent hierarchy, and graphs represent connected entities. Consider this worked case: A learner maps the inputs, constraints, and observable result for Data Structures and Representations, then checks each step against the stated claim. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "plannedSeconds": 62,
+      "title": "Data Structures and Representations",
+      "visualDirection": "template:academic-process | Create an editable process diagram for Data Structures and Representations with labeled inputs, decisions, state changes, and a checked output."
     },
     {
       "accessibility": {
@@ -121,10 +121,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Lexical Analysis and Scoping with an edge case and identify which assumption controls the outcome. Names are bound to objects within namespaces and scopes. Consider this worked case: A variable declared inside a function belongs to the function's local scope, while a global variable is bound to the module's namespace. On screen, show nested boxes representing global and local scopes, with variable names placed inside the appropriate scope box and arrows indicating binding relationships. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
-      "plannedSeconds": 59,
-      "title": "Lexical Analysis and Scoping",
-      "visualDirection": "template:academic-process | Show nested boxes representing global and local scopes, with variable names placed inside the appropriate scope box and arrows indicating binding relationships."
+      "narration": "Stress-test the reasoning around Python-Specific Language Mechanics with an edge case and identify which assumption controls the outcome. Names are bound to objects within namespaces and scopes. Consider this worked case: A learner maps the inputs, constraints, and observable result for Python-Specific Language Mechanics, then checks each step against the stated claim. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 58,
+      "title": "Python-Specific Language Mechanics",
+      "visualDirection": "template:academic-process | Create an editable process diagram for Python-Specific Language Mechanics with labeled inputs, decisions, state changes, and a checked output."
     },
     {
       "accessibility": {
@@ -139,10 +139,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Data Model and Execution Model to diagnose a failure by separating symptoms, causes, and corrective action. Expressions produce values, while statements control execution and bindings. Consider this worked case: An integer object has a unique memory address, a type tag, and a numeric value, while an assignment statement binds a name to that object. On screen, render a simple object diagram showing an object with three fields: identity (address), type, and value, alongside an assignment arrow binding a name to it. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
-      "plannedSeconds": 61,
-      "title": "Data Model and Execution Model",
-      "visualDirection": "template:academic-process | Render a simple object diagram showing an object with three fields: identity (address), type, and value, alongside an assignment arrow binding a name to it."
+      "narration": "Use Correctness and Testing to diagnose a failure by separating symptoms, causes, and corrective action. Correctness arguments, tests, tracing, and debugging compare intended behavior with observable results, including boundary and error cases. Consider this worked case: A learner maps the inputs, constraints, and observable result for Correctness and Testing, then checks each step against the stated claim. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 60,
+      "title": "Correctness and Testing",
+      "visualDirection": "template:academic-process | Create an editable process diagram for Correctness and Testing with labeled inputs, decisions, state changes, and a checked output."
     },
     {
       "accessibility": {
@@ -157,10 +157,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Exception Handling and Control Flow to the earlier ideas and explain how the pieces work as one system. Exceptions interrupt normal control flow until a matching handler processes them or they propagate. Consider this worked case: When a division by zero occurs, an exception jumps out of the current block and is caught by a try-except handler that logs the error and continues. On screen, illustrate a control flow path with a normal execution line, a red 'exception' arrow jumping to a handler block, and a green 'propagate' arrow moving upward. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
-      "plannedSeconds": 64,
-      "title": "Exception Handling and Control Flow",
-      "visualDirection": "template:academic-process | Illustrate a control flow path with a normal execution line, a red 'exception' arrow jumping to a handler block, and a green 'propagate' arrow moving upward."
+      "narration": "Connect Abstraction and Contracts to the earlier ideas and explain how the pieces work as one system. Programs should be reasoned about through explicit state, control flow, data representation, contracts, tests, and observable behavior. Consider this worked case: A learner maps the inputs, constraints, and observable result for Abstraction and Contracts, then checks each step against the stated claim. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 59,
+      "title": "Abstraction and Contracts",
+      "visualDirection": "template:academic-process | Create an editable process diagram for Abstraction and Contracts with labeled inputs, decisions, state changes, and a checked output."
     },
     {
       "accessibility": {
@@ -175,59 +175,59 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Debugging and Decomposition as a practical checklist that can guide a new analysis. Debugging separates syntax, runtime, and logical failures, while decomposition and abstraction reduce the number of interacting concerns. Consider this worked case: A syntax error is caught by the parser, a runtime error occurs during execution, and a logical error is fixed by breaking the code into smaller, testable functions. On screen, show a three-column table labeled syntax, runtime, and logical failures, with each column containing a brief example and a corresponding debugging tool icon. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
-      "plannedSeconds": 64,
-      "title": "Debugging and Decomposition",
-      "visualDirection": "template:academic-process | Show a three-column table labeled syntax, runtime, and logical failures, with each column containing a brief example and a corresponding debugging tool icon."
+      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. The Python language reference specifies lexical analysis, data model behavior, execution, expressions, statements, functions, classes, exceptions, and module import semantics. Consider this worked case: A learner maps the inputs, constraints, and observable result for Practical Analysis Checklist, then checks each step against the stated claim. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 61,
+      "title": "Practical Analysis Checklist",
+      "visualDirection": "template:academic-process | Render a checklist graphic with five numbered items, each accompanied by a small icon (e.g."
     }
   ],
   "claims": [
     {
       "id": "beat-01-claim-01",
       "sourceIds": [
-        "llvm-language-reference"
+        "rit-csci-344"
       ],
-      "text": "A module contains global values, functions, declarations, and metadata.",
+      "text": "This course is a study of the syntax and semantics of a diverse set of high-level programming languages.",
       "verified": true
     },
     {
       "id": "beat-02-claim-01",
       "sourceIds": [
-        "llvm-language-reference"
+        "opendsa-programming-foundations"
       ],
-      "text": "A function contains basic blocks, and every basic block ends with a terminator instruction.",
+      "text": "Programming begins with precise problem statements, input and output examples, and algorithms written independently of syntax.",
       "verified": true
     },
     {
       "id": "beat-03-claim-01",
       "sourceIds": [
-        "llvm-language-reference"
+        "opendsa-programming-foundations"
       ],
-      "text": "Phi instructions select values according to the predecessor control-flow edge.",
+      "text": "Variables represent values and state, expressions compute values, and control structures select or repeat operations.",
       "verified": true
     },
     {
       "id": "beat-04-claim-01",
       "sourceIds": [
-        "llvm-language-reference"
+        "opendsa-programming-foundations"
       ],
-      "text": "Load and store instructions make memory access explicit.",
+      "text": "Functions decompose a solution into named operations with parameters and results.",
       "verified": true
     },
     {
       "id": "beat-05-claim-01",
       "sourceIds": [
-        "llvm-language-reference"
+        "opendsa-programming-foundations"
       ],
-      "text": "Valid IR must satisfy structural and typing rules.",
+      "text": "Recursion solves a problem through smaller instances and requires a base case.",
       "verified": true
     },
     {
       "id": "beat-06-claim-01",
       "sourceIds": [
-        "llvm-language-reference"
+        "opendsa-programming-foundations"
       ],
-      "text": "Compiler work separates parsing and semantic analysis from lowering, verification, optimization, and target-specific code generation.",
+      "text": "Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in first-out access, trees represent hierarchy, and graphs represent connected entities.",
       "verified": true
     },
     {
@@ -241,9 +241,9 @@
     {
       "id": "beat-08-claim-01",
       "sourceIds": [
-        "python-language-reference"
+        "opendsa-programming-foundations"
       ],
-      "text": "Expressions produce values, while statements control execution and bindings.",
+      "text": "Correctness arguments, tests, tracing, and debugging compare intended behavior with observable results, including boundary and error cases.",
       "verified": true
     },
     {
@@ -251,7 +251,7 @@
       "sourceIds": [
         "python-language-reference"
       ],
-      "text": "Exceptions interrupt normal control flow until a matching handler processes them or they propagate.",
+      "text": "Programs should be reasoned about through explicit state, control flow, data representation, contracts, tests, and observable behavior.",
       "verified": true
     },
     {
@@ -259,11 +259,11 @@
       "sourceIds": [
         "python-language-reference"
       ],
-      "text": "Debugging separates syntax, runtime, and logical failures, while decomposition and abstraction reduce the number of interacting concerns.",
+      "text": "The Python language reference specifies lexical analysis, data model behavior, execution, expressions, statements, functions, classes, exceptions, and module import semantics.",
       "verified": true
     }
   ],
-  "id": "introduction-to-programming-language-foundations",
+  "id": "csci-344-programming-language-concepts-foundations",
   "learningObjectives": [],
   "pronunciations": [],
   "schemaVersion": 2,
@@ -289,15 +289,15 @@
       "verified": true
     },
     {
-      "author": "LLVM Project",
-      "excerpt": "LLVM IR is a typed, SSA-based intermediate representation with explicit instructions, basic blocks, functions, memory operations, and control flow. A module contains global values, functions, declarations, and metadata. A function contains basic blocks, and every basic block ends with a terminator instruction. Phi instructions select values according to the predecessor control-flow edge. Load and store instructions make memory access explicit. Valid IR must satisfy structural and typing rules. The verifier reports IR that violates those rules. Compiler work separates parsing and semantic analysis from lowering, verification, optimization, and target-specific code generation.",
-      "id": "llvm-language-reference",
-      "sha256": "a43379c8170e7b9a563e131114cda4ecf3edd42bb450fc24a5d7684fefa888c0",
-      "title": "LLVM Language Reference Manual",
+      "author": "OpenDSA Project",
+      "excerpt": "Programming begins with precise problem statements, input and output examples, and algorithms written independently of syntax. Variables represent values and state, expressions compute values, and control structures select or repeat operations. Functions decompose a solution into named operations with parameters and results. Recursion solves a problem through smaller instances and requires a base case. Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in first-out access, trees represent hierarchy, and graphs represent connected entities. Searching and sorting algorithms depend on representation and invariants. Correctness arguments, tests, tracing, and debugging compare intended behavior with observable results, including boundary and error cases.",
+      "id": "opendsa-programming-foundations",
+      "sha256": "853127e4dd63e3809a5c69fd46259846f13da31b0d141c311e782a72d07f4bc9",
+      "title": "OpenDSA Programming, Data Structures, and Algorithms",
       "type": "note",
-      "uri": "https://llvm.org/docs/LangRef.html",
+      "uri": "https://opendsa-server.cs.vt.edu/",
       "verified": true
     }
   ],
-  "title": "Introduction to Programming Language Foundations"
+  "title": "CSCI-344: Programming Language Concepts - Foundations"
 }

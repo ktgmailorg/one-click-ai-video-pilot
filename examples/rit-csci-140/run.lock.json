@@ -1,7 +1,7 @@
 {
   "approvals": [
     {
-      "approvedAt": "2026-07-31T15:59:06.008Z",
+      "approvedAt": "2026-07-31T18:58:51.343Z",
       "notes": "Verifies declared source bindings for draft rendering; instructor and release approval remain required.",
       "reviewer": "Automated source-pack verification (draft)",
       "role": "automation",
@@ -14,7 +14,7 @@
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/rit-cs-catalog/csci-140/work/render/documentary-master.core.mp4",
       "role": "master",
-      "sha256": "77c15b6b78be9704458bb2cef9c6cbb8c4c7a25786ee4cf876c1c86710c74427"
+      "sha256": "44a80b1dc5178234ba3f9c00bd18281a425e7c82d06c6590879d4342652819ec"
     },
     {
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/rit-cs-catalog/csci-140/work/narration/captions.vtt",
@@ -166,7 +166,7 @@
       "mimeType": "image/png",
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/rit-cs-catalog/csci-140/work/visuals/beat-06/beat-06-shot-001.png",
       "role": "shot",
-      "sha256": "c4db7eeb735a261b9b970c280faefe58cfa1b6be32e72b825ac9d1e6f61b9d37",
+      "sha256": "5e81bed7e2faabe0bca756933a82b4d2595c1d2818d87a36e1de426066ad93ad",
       "shotId": "beat-06-shot-001"
     },
     {
@@ -174,7 +174,7 @@
       "mimeType": "image/png",
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/rit-cs-catalog/csci-140/work/visuals/beat-06/beat-06-shot-002.png",
       "role": "shot",
-      "sha256": "4e93f1c199f13c7408ab95d5a1d0bf81236439f61d219129146c64b78cc6b7ef",
+      "sha256": "70a1cf988843208301103afcf70143c7cdca17797e5071d62299df5c21e03ad2",
       "shotId": "beat-06-shot-002"
     },
     {
@@ -182,7 +182,7 @@
       "mimeType": "image/png",
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/rit-cs-catalog/csci-140/work/visuals/beat-06/beat-06-shot-003.png",
       "role": "shot",
-      "sha256": "1262c7bbeff3967a799182909b1b3b6bc7ac53053f64f67ae63b35eb13ec0043",
+      "sha256": "a1beb93592cf14063300fa44ade221718728819feafc9e2ebcbc9d8f17bf4bee",
       "shotId": "beat-06-shot-003"
     },
     {
@@ -283,7 +283,7 @@
     }
   ],
   "configSha256": "e8d039e62db7591a07db6a99e4fdeb648991e182a64736d3d7b476ae0e63674a",
-  "createdAt": "2026-07-31T16:03:29.857Z",
+  "createdAt": "2026-07-31T19:01:53.505Z",
   "final": {
     "releaseAudit": {
       "blockers": [],
@@ -456,9 +456,9 @@
           "durationSeconds": 59.64,
           "output": "beat-06.mp4",
           "path": "/Users/kt/Documents/video-generator-rit/.demo-output/rit-cs-catalog/csci-140/work/render/sections/beat-06.mp4",
-          "renderSignature": "edfc9cff6fa679fb5da29e644329c2ce04dcece9a0bdde2cd44c97d849455298",
+          "renderSignature": "bb3aa9df430186382f9b5ef0aa1e2247525bcc4af13c154ab6e738c1f763335c",
           "schemaVersion": 1,
-          "sha256": "df870f3e85bfb84700cf85b410977d160f0f2cc884e9e4a31a300f7c68a27909"
+          "sha256": "50898d6a6740f1095c049f3c703bf61bda0013f971ba083a4ee4e5b3dc40c4fa"
         },
         {
           "beatId": "beat-07",
@@ -501,12 +501,12 @@
           "sha256": "1220276b111c853a4eaa656a20b1cf45e180bbbbfc7e7fb2e74d7e6bc9505130"
         }
       ],
-      "sha256": "77c15b6b78be9704458bb2cef9c6cbb8c4c7a25786ee4cf876c1c86710c74427",
+      "sha256": "44a80b1dc5178234ba3f9c00bd18281a425e7c82d06c6590879d4342652819ec",
       "title": "CSCI-140 Foundations Companion",
       "width": 1920
     }
   },
-  "gitRevision": "7cc6a1effbf0137c7d0ddb2f8ad53603de52361c",
+  "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
   "inputSha256": "7f3683ae6a846a672ae04f2da20ae844fbe63487d5c2854d76a4202197556843",
   "mode": "record",
   "providers": {
@@ -793,342 +793,7 @@
       "startedAt": "2026-07-31T14:24:04.235Z"
     },
     {
-      "cacheHit": false,
-      "capability": "speech.synthesize",
-      "durationMs": 52537,
-      "lookupSha256": "167434572f7f54ef1a7b04e1615be923d73bed8932007f3f44acb6cf7a6d7c9a",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "Begin by framing Problem Statement and Algorithmic Foundations as a question about inputs, decisions, and observable results. Programming begins with precise problem statements, input and output examples, and algorithms written independently of syntax. Consider this worked case: A student defines a sorting problem by listing input arrays and expected sorted outputs before writing any code. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "a5ffd412e46f678acfd091e6755d7f9d9178e2cb077ce3a0fd8b77b8dd1ee9bd",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/1a/1a169e3e8cd347c96c3e6a1b4046af5b006df3a3b0c8108bf466f3b86be78136.mp3",
-            "sha256": "1a169e3e8cd347c96c3e6a1b4046af5b006df3a3b0c8108bf466f3b86be78136",
-            "size": 348912
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/24/24f6a15178e15537992c6701a71c29633391eca3ae221ee8c594578324c0f479.vtt",
-            "sha256": "24f6a15178e15537992c6701a71c29633391eca3ae221ee8c594578324c0f479",
-            "size": 911
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-31T15:59:06.111Z"
-    },
-    {
-      "cacheHit": false,
-      "capability": "speech.synthesize",
-      "durationMs": 53218,
-      "lookupSha256": "ac23257913ddefcff6849b6fde5a5e4d382d3217dd4f421dc20c8bc44e63fb99",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "Examine the tradeoffs in Abstract Data Types and Collection Libraries, including what improves and what becomes more difficult. This accelerated course covers material from the first-year sequence of courses and provides the foundation for all subsequent Computer Science courses. Consider this worked case: Using Python's collections module, a developer instantiates a deque as a stack or a defaultdict as a map without writing low-level logic. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "2e2201fd9a70f7daab59e8a730931bba5a547b04df7eca4edb173b05cd9c18d4",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/71/714a8de70a7a5c653de4ea2dc82b0cb5222c69321c5048b776c9a14782b88d69.mp3",
-            "sha256": "714a8de70a7a5c653de4ea2dc82b0cb5222c69321c5048b776c9a14782b88d69",
-            "size": 357840
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ec/ecc4246fbbd415e27aff1bf2e14231d4fff6d1749c40a9433fcb9dacc5680571.vtt",
-            "sha256": "ecc4246fbbd415e27aff1bf2e14231d4fff6d1749c40a9433fcb9dacc5680571",
-            "size": 958
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-31T15:59:06.113Z"
-    },
-    {
-      "cacheHit": false,
-      "capability": "speech.synthesize",
-      "durationMs": 57542,
-      "lookupSha256": "487d6fffe1eb9c2e818933c0a246d1204838fc42bac6abdf822331eecb3c513f",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "Use Input and Output Streams to diagnose a failure by separating symptoms, causes, and corrective action. Input and output streams, graphical user interfaces, and exception handling are covered. Consider this worked case: A program reads a text file using sys. stdin and writes formatted results to a log file using open('log. txt', 'w'). Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "c5d1a70872d68819a44952b5eff3788d6ca5cd30accd9dbcacb59bc363e45576",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/e8/e873537ba14f4399b1fbec466ecf65ee53deafd321124f442c86e65c5e3a08e0.mp3",
-            "sha256": "e873537ba14f4399b1fbec466ecf65ee53deafd321124f442c86e65c5e3a08e0",
-            "size": 361008
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/9c/9cefb5e6f6cc4fd81b499bf989faa6cec51938e2e79c6c2bd6633821298c69df.vtt",
-            "sha256": "9cefb5e6f6cc4fd81b499bf989faa6cec51938e2e79c6c2bd6633821298c69df",
-            "size": 957
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-31T15:59:06.115Z"
-    },
-    {
-      "cacheHit": false,
-      "capability": "speech.synthesize",
-      "durationMs": 58733,
-      "lookupSha256": "6fb3cf9cba204aed2b3c9bfd8d0ea5bf7b619a90c92d4681bce4724a767ad960",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "With the foundation in place, examine how Hierarchical and Connected Structures operates in a concrete sequence. Topics include tree and graph structures, nested data structures, objects, classes, inheritance, interfaces, object-oriented collection class libraries for abstract data types (for example stacks, queues, maps, and trees), and static versus dynamic data types. Consider this worked case: A family tree illustrates hierarchical relationships, while a subway map illustrates a graph of connected stations. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "27c6586caacdf2ef3d290c7dcbe72ffe79791ec412d7a891140530a8b739426a",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/a7/a767d82e7d20c75f512eed185579ab080d5a29a124be492688b4a8be6a1eb03a.mp3",
-            "sha256": "a767d82e7d20c75f512eed185579ab080d5a29a124be492688b4a8be6a1eb03a",
-            "size": 412992
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/a7/a7a7676bd09e6141b10c499cae93c048cec683c05acfc3510e4a3a232d576797.vtt",
-            "sha256": "a7a7676bd09e6141b10c499cae93c048cec683c05acfc3510e4a3a232d576797",
-            "size": 1010
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-31T15:59:06.113Z"
-    },
-    {
-      "cacheHit": false,
-      "capability": "speech.synthesize",
-      "durationMs": 59274,
-      "lookupSha256": "dfcbeae2ca6af7abc64df7b1f7b6c0f1e0ecc234e0b29c42b9fddf6c981a131d",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "Apply Software Qualities: Cohesion and Coupling to a worked situation instead of treating it as an isolated definition. Software qualities related to object orientation, namely cohesion, minimal coupling, modifiability, and extensibility, are all introduced in this course, as well as a few elementary object-oriented design patterns. Consider this worked case: A 'PaymentProcessor' class has high cohesion because it handles only payment logic, and low coupling because it does not directly access database tables. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "8d44ad2c39451072c446ef9693aa243c81473566a8d68e1058102dba6fe5a22b",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/aa/aa60fd8788aeccd4b617213d909f8e2f8cd1dbd17c8dcf6824cdc918e351e4e0.mp3",
-            "sha256": "aa60fd8788aeccd4b617213d909f8e2f8cd1dbd17c8dcf6824cdc918e351e4e0",
-            "size": 396432
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/e7/e7f14c350655611ef2523fb227d01e0c0b6ac0aaeaf32728141c0953af635eff.vtt",
-            "sha256": "e7f14c350655611ef2523fb227d01e0c0b6ac0aaeaf32728141c0953af635eff",
-            "size": 1025
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-31T15:59:06.113Z"
-    },
-    {
-      "cacheHit": false,
+      "cacheHit": true,
       "capability": "speech.synthesize",
       "durationMs": 67163,
       "lookupSha256": "6cd15547260514f3e04bd3c10209007dcaf72565c69b652227c873eb8a30e564",
@@ -1195,7 +860,141 @@
       "startedAt": "2026-07-31T15:59:06.113Z"
     },
     {
-      "cacheHit": false,
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 53218,
+      "lookupSha256": "ac23257913ddefcff6849b6fde5a5e4d382d3217dd4f421dc20c8bc44e63fb99",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "Examine the tradeoffs in Abstract Data Types and Collection Libraries, including what improves and what becomes more difficult. This accelerated course covers material from the first-year sequence of courses and provides the foundation for all subsequent Computer Science courses. Consider this worked case: Using Python's collections module, a developer instantiates a deque as a stack or a defaultdict as a map without writing low-level logic. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "2e2201fd9a70f7daab59e8a730931bba5a547b04df7eca4edb173b05cd9c18d4",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/71/714a8de70a7a5c653de4ea2dc82b0cb5222c69321c5048b776c9a14782b88d69.mp3",
+            "sha256": "714a8de70a7a5c653de4ea2dc82b0cb5222c69321c5048b776c9a14782b88d69",
+            "size": 357840
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ec/ecc4246fbbd415e27aff1bf2e14231d4fff6d1749c40a9433fcb9dacc5680571.vtt",
+            "sha256": "ecc4246fbbd415e27aff1bf2e14231d4fff6d1749c40a9433fcb9dacc5680571",
+            "size": 958
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:59:06.113Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 58733,
+      "lookupSha256": "6fb3cf9cba204aed2b3c9bfd8d0ea5bf7b619a90c92d4681bce4724a767ad960",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "With the foundation in place, examine how Hierarchical and Connected Structures operates in a concrete sequence. Topics include tree and graph structures, nested data structures, objects, classes, inheritance, interfaces, object-oriented collection class libraries for abstract data types (for example stacks, queues, maps, and trees), and static versus dynamic data types. Consider this worked case: A family tree illustrates hierarchical relationships, while a subway map illustrates a graph of connected stations. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "27c6586caacdf2ef3d290c7dcbe72ffe79791ec412d7a891140530a8b739426a",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/a7/a767d82e7d20c75f512eed185579ab080d5a29a124be492688b4a8be6a1eb03a.mp3",
+            "sha256": "a767d82e7d20c75f512eed185579ab080d5a29a124be492688b4a8be6a1eb03a",
+            "size": 412992
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/a7/a7a7676bd09e6141b10c499cae93c048cec683c05acfc3510e4a3a232d576797.vtt",
+            "sha256": "a7a7676bd09e6141b10c499cae93c048cec683c05acfc3510e4a3a232d576797",
+            "size": 1010
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:59:06.113Z"
+    },
+    {
+      "cacheHit": true,
       "capability": "speech.synthesize",
       "durationMs": 67474,
       "lookupSha256": "0f0b6cf57d30466def2f0cece749de1a0f0005c73d3f383d4a92f130ebde1877",
@@ -1262,7 +1061,74 @@
       "startedAt": "2026-07-31T15:59:06.113Z"
     },
     {
-      "cacheHit": false,
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 59274,
+      "lookupSha256": "dfcbeae2ca6af7abc64df7b1f7b6c0f1e0ecc234e0b29c42b9fddf6c981a131d",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "Apply Software Qualities: Cohesion and Coupling to a worked situation instead of treating it as an isolated definition. Software qualities related to object orientation, namely cohesion, minimal coupling, modifiability, and extensibility, are all introduced in this course, as well as a few elementary object-oriented design patterns. Consider this worked case: A 'PaymentProcessor' class has high cohesion because it handles only payment logic, and low coupling because it does not directly access database tables. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "8d44ad2c39451072c446ef9693aa243c81473566a8d68e1058102dba6fe5a22b",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/aa/aa60fd8788aeccd4b617213d909f8e2f8cd1dbd17c8dcf6824cdc918e351e4e0.mp3",
+            "sha256": "aa60fd8788aeccd4b617213d909f8e2f8cd1dbd17c8dcf6824cdc918e351e4e0",
+            "size": 396432
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/e7/e7f14c350655611ef2523fb227d01e0c0b6ac0aaeaf32728141c0953af635eff.vtt",
+            "sha256": "e7f14c350655611ef2523fb227d01e0c0b6ac0aaeaf32728141c0953af635eff",
+            "size": 1025
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:59:06.113Z"
+    },
+    {
+      "cacheHit": true,
       "capability": "speech.synthesize",
       "durationMs": 68254,
       "lookupSha256": "2ed5ade61b66a8653cfa3226f85476de024e237dd8de22248d85006190eaf3a0",
@@ -1329,7 +1195,141 @@
       "startedAt": "2026-07-31T15:59:06.115Z"
     },
     {
-      "cacheHit": false,
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 52537,
+      "lookupSha256": "167434572f7f54ef1a7b04e1615be923d73bed8932007f3f44acb6cf7a6d7c9a",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "Begin by framing Problem Statement and Algorithmic Foundations as a question about inputs, decisions, and observable results. Programming begins with precise problem statements, input and output examples, and algorithms written independently of syntax. Consider this worked case: A student defines a sorting problem by listing input arrays and expected sorted outputs before writing any code. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "a5ffd412e46f678acfd091e6755d7f9d9178e2cb077ce3a0fd8b77b8dd1ee9bd",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/1a/1a169e3e8cd347c96c3e6a1b4046af5b006df3a3b0c8108bf466f3b86be78136.mp3",
+            "sha256": "1a169e3e8cd347c96c3e6a1b4046af5b006df3a3b0c8108bf466f3b86be78136",
+            "size": 348912
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/24/24f6a15178e15537992c6701a71c29633391eca3ae221ee8c594578324c0f479.vtt",
+            "sha256": "24f6a15178e15537992c6701a71c29633391eca3ae221ee8c594578324c0f479",
+            "size": 911
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:59:06.111Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 57542,
+      "lookupSha256": "487d6fffe1eb9c2e818933c0a246d1204838fc42bac6abdf822331eecb3c513f",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "Use Input and Output Streams to diagnose a failure by separating symptoms, causes, and corrective action. Input and output streams, graphical user interfaces, and exception handling are covered. Consider this worked case: A program reads a text file using sys. stdin and writes formatted results to a log file using open('log. txt', 'w'). Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "c5d1a70872d68819a44952b5eff3788d6ca5cd30accd9dbcacb59bc363e45576",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/e8/e873537ba14f4399b1fbec466ecf65ee53deafd321124f442c86e65c5e3a08e0.mp3",
+            "sha256": "e873537ba14f4399b1fbec466ecf65ee53deafd321124f442c86e65c5e3a08e0",
+            "size": 361008
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/9c/9cefb5e6f6cc4fd81b499bf989faa6cec51938e2e79c6c2bd6633821298c69df.vtt",
+            "sha256": "9cefb5e6f6cc4fd81b499bf989faa6cec51938e2e79c6c2bd6633821298c69df",
+            "size": 957
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-31T15:59:06.115Z"
+    },
+    {
+      "cacheHit": true,
       "capability": "speech.synthesize",
       "durationMs": 41716,
       "lookupSha256": "6f40dfabfdb522a3b478edd0dd35f3e0bfd455b2a85bc878c72ea97b08dc9c1b",
@@ -1396,7 +1396,7 @@
       "startedAt": "2026-07-31T15:59:58.669Z"
     },
     {
-      "cacheHit": false,
+      "cacheHit": true,
       "capability": "speech.synthesize",
       "durationMs": 46392,
       "lookupSha256": "bc44d06513642afd72071f6b337ab6878a8af012795a9726dc4462f7bcaf8abb",
@@ -1516,7 +1516,7 @@
       "outreach/subject-showcase/reference-manifest.json"
     ],
     "gitDirty": true,
-    "gitRevision": "7cc6a1effbf0137c7d0ddb2f8ad53603de52361c",
+    "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
     "gitStatusSha256": "add6a4c631c3d463fa2b7e37fa6a50bfab3e6fce98296cf041f8a8d165d4cda8",
     "node": "v22.23.1",
     "platform": "darwin-arm64",

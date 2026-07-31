@@ -1,539 +1,396 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:07.449
-NARRATOR: Begin by framing Lesson Title:
-Foundations of Cryptographic Systems as a
+00:00:00.050 --> 00:00:08.432
+Begin by framing Lesson Title: Foundations of
+Cryptographic Systems as a question about
 
 2
-00:00:07.449 --> 00:00:11.765
-question about inputs, decisions, and
-observable results.
+00:00:08.432 --> 00:00:11.656
+inputs, decisions, and observable results.
 
 3
-00:00:11.765 --> 00:00:17.466
-NARRATOR: The course also provides an
-introduction to data integrity and
+00:00:11.656 --> 00:00:18.078
+The course also provides an introduction to
+data integrity and authentication.
 
 4
-00:00:17.466 --> 00:00:17.984
-authentication.
+00:00:18.078 --> 00:00:26.609
+Consider this worked case: AES encryption uses
+a symmetric key to transform plaintext into
 
 5
-00:00:17.984 --> 00:00:25.508
-NARRATOR: Consider this worked case: AES
-encryption uses a symmetric key to transform
+00:00:26.609 --> 00:00:32.093
+ciphertext, ensuring only authorized parties
+can read the message.
 
 6
-00:00:25.508 --> 00:00:31.874
-plaintext into ciphertext, ensuring only
-authorized parties can read the message.
+00:00:32.093 --> 00:00:39.297
+List the givens before choosing a method,
+because an unstated assumption can change the
 
 7
-00:00:31.875 --> 00:00:39.622
-NARRATOR: On screen, display a side-by-side
-comparison of plaintext and ciphertext with a
+00:00:39.297 --> 00:00:39.812
+conclusion.
 
 8
-00:00:39.622 --> 00:00:44.390
-symmetric key lock icon, labeled
-'Confidentiality via AES'.
+00:00:39.812 --> 00:00:45.999
+This establishes the vocabulary and scope
+needed for the remaining sections.
 
 9
-00:00:44.390 --> 00:00:50.560
-NARRATOR: List the givens before choosing a
-method, because an unstated assumption can
-
-10
-00:00:50.560 --> 00:00:51.984
-change the conclusion.
-
-11
-00:00:51.984 --> 00:00:57.656
-NARRATOR: This establishes the vocabulary and
-scope needed for the remaining sections.
-
-12
-00:00:57.770 --> 00:01:04.420
-NARRATOR: Now define Lesson Title: Classical
+00:00:46.106 --> 00:00:52.490
+Now define Lesson Title: Classical
 Cryptosystems Overview precisely enough that
 
-13
-00:01:04.420 --> 00:01:08.048
+10
+00:00:52.490 --> 00:00:56.321
 another learner could test the definition.
 
+11
+00:00:56.321 --> 00:01:05.624
+It covers classical cryptosystems, private-key
+cryptosystems (including DES and AES), hashing
+
+12
+00:01:05.624 --> 00:01:09.852
+and public-key cryptosystems (including RSA).
+
+13
+00:01:09.852 --> 00:01:17.244
+Consider this worked case: The Caesar cipher
+shifts each letter by a fixed number,
+
 14
-00:01:08.048 --> 00:01:15.732
-NARRATOR: It covers classical cryptosystems,
-private-key cryptosystems (including DES and
+00:01:17.244 --> 00:01:22.524
+demonstrating how simple substitution can be
+broken with frequency analysis.
 
 15
-00:01:15.732 --> 00:01:21.110
-AES), hashing and public-key cryptosystems
-(including RSA).
+00:01:22.524 --> 00:01:29.113
+Separate the formal definition from an
+implementation detail, then identify what
 
 16
-00:01:21.110 --> 00:01:28.241
-NARRATOR: Consider this worked case: The
-Caesar cipher shifts each letter by a fixed
-
-17
-00:01:28.241 --> 00:01:33.844
-number, demonstrating how simple substitution
-can be broken with frequency analysis.
-
-18
-00:01:33.844 --> 00:01:41.392
-NARRATOR: On screen, show a Caesar cipher
-alphabet wheel with 'A' shifting to 'D',
-
-19
-00:01:41.392 --> 00:01:43.548
-annotated with 'Substitution Vulnerability'.
-
-20
-00:01:43.548 --> 00:01:50.380
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
-
-21
-00:01:50.380 --> 00:01:52.657
+00:01:29.113 --> 00:01:31.509
 evidence would distinguish them.
 
+17
+00:01:31.509 --> 00:01:37.946
+A precise definition makes later examples
+easier to evaluate and revise.
+
+18
+00:01:38.066 --> 00:01:44.907
+With the foundation in place, examine how
+Lesson Title: Private-Key Cryptosystems
+
+19
+00:01:44.907 --> 00:01:48.016
+operates in a concrete sequence.
+
+20
+00:01:48.016 --> 00:01:54.344
+Encryption supports confidentiality when keys
+and modes are used correctly.
+
+21
+00:01:54.344 --> 00:02:02.200
+Consider this worked case: DES and AES require
+the same key for encrypting and decrypting
+
 22
-00:01:52.657 --> 00:01:59.344
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
+00:02:02.200 --> 00:02:07.437
+data, making them fast but dependent on secure
+key distribution.
 
 23
-00:01:59.450 --> 00:02:05.948
-NARRATOR: With the foundation in place,
-examine how Lesson Title: Private-Key
+00:02:07.437 --> 00:02:14.890
+Follow every arrow in order and name the state
+before and after each transition.
 
 24
-00:02:05.948 --> 00:02:09.493
-Cryptosystems operates in a concrete sequence.
+00:02:14.890 --> 00:02:20.531
+The trace converts an abstract statement into
+an inspectable sequence.
 
 25
-00:02:09.493 --> 00:02:15.806
-NARRATOR: Encryption supports confidentiality
-when keys and modes are used correctly.
+00:02:20.531 --> 00:02:27.586
+Name each dependency explicitly, and keep
+labels and representations consistent
 
 26
-00:02:15.806 --> 00:02:23.459
-NARRATOR: Consider this worked case: DES and
-AES require the same key for encrypting and
-
-27
-00:02:23.459 --> 00:02:29.071
-decrypting data, making them fast but
-dependent on secure key distribution.
-
-28
-00:02:29.071 --> 00:02:36.252
-NARRATOR: On screen, illustrate a two-way
-arrow between 'Sender' and 'Receiver' with a
-
-29
-00:02:36.252 --> 00:02:40.118
-single key symbol, labeled 'Symmetric Key
-Exchange'.
-
-30
-00:02:40.118 --> 00:02:47.290
-NARRATOR: Follow every arrow in order and name
-the state before and after each transition.
-
-31
-00:02:47.290 --> 00:02:52.899
-NARRATOR: The trace converts an abstract
-statement into an inspectable sequence.
-
-32
-00:02:52.899 --> 00:02:59.738
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-33
-00:02:59.738 --> 00:03:01.603
+00:02:27.586 --> 00:02:29.703
 throughout the analysis.
 
-34
-00:03:01.706 --> 00:03:08.795
-NARRATOR: Next, compare the choices involved
-in Lesson Title: Public-Key Cryptosystems and
+27
+00:02:29.810 --> 00:02:37.577
+Next, compare the choices involved in Lesson
+Title: Public-Key Cryptosystems and make the
 
-35
-00:03:08.795 --> 00:03:11.749
-make the decision criteria explicit.
+28
+00:02:37.577 --> 00:02:39.369
+decision criteria explicit.
 
-36
-00:03:11.749 --> 00:03:18.008
-NARRATOR: The Secure Software Development
-Framework groups practices into four practice
+29
+00:02:39.369 --> 00:02:46.416
+The Secure Software Development Framework
+groups practices into four practice groups.
 
-37
-00:03:18.008 --> 00:03:18.577
-groups.
+30
+00:02:46.416 --> 00:02:55.116
+Consider this worked case: RSA uses a public
+key for encryption and a private key for
 
-38
-00:03:18.577 --> 00:03:26.366
-NARRATOR: Consider this worked case: RSA uses
-a public key for encryption and a private key
-
-39
-00:03:26.366 --> 00:03:31.234
-for decryption, solving the key distribution
+31
+00:02:55.116 --> 00:03:00.009
+decryption, solving the key distribution
 problem in symmetric systems.
 
+32
+00:03:00.010 --> 00:03:07.309
+Compare alternatives against the same
+constraints so the evaluation does not move
+
+33
+00:03:07.309 --> 00:03:08.525
+the goalposts.
+
+34
+00:03:08.525 --> 00:03:15.463
+Using shared criteria turns a preference into
+a defensible technical choice.
+
+35
+00:03:15.578 --> 00:03:23.392
+Apply Lesson Title: Hashing Functions to a
+worked situation instead of treating it as an
+
+36
+00:03:23.392 --> 00:03:24.434
+isolated definition.
+
+37
+00:03:24.434 --> 00:03:31.346
+Produce Well-Secured Software addresses
+security requirements, design, verification,
+
+38
+00:03:31.346 --> 00:03:33.074
+and release.
+
+39
+00:03:33.074 --> 00:03:42.407
+Consider this worked case: SHA-256 generates a
+unique 256-bit hash for a document, where
+
 40
-00:03:31.234 --> 00:03:39.292
-NARRATOR: On screen, draw a split key icon:
-'Public Key' (open hand) and 'Private Key'
+00:03:42.407 --> 00:03:47.074
+altering any bit changes the entire output.
 
 41
-00:03:39.292 --> 00:03:42.515
-(closed fist), labeled 'Asymmetric Key Pair'.
+00:03:47.074 --> 00:03:54.252
+Work from the concrete inputs to the result,
+checking units, types, or invariants at each
 
 42
-00:03:42.515 --> 00:03:49.215
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
+00:03:54.252 --> 00:03:54.731
+step.
 
 43
-00:03:49.215 --> 00:03:50.890
-move the goalposts.
+00:03:54.731 --> 00:03:59.621
+The worked case shows both how to apply the
+method and how to check it.
 
 44
-00:03:50.890 --> 00:03:57.437
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
+00:03:59.738 --> 00:04:07.111
+Examine the tradeoffs in Lesson Title: Data
+Integrity and Authentication, including what
 
 45
-00:03:57.554 --> 00:04:03.499
-NARRATOR: Apply Lesson Title: Hashing
-Functions to a worked situation instead of
+00:04:07.111 --> 00:04:10.797
+improves and what becomes more difficult.
 
 46
-00:04:03.499 --> 00:04:06.472
-treating it as an isolated definition.
+00:04:10.797 --> 00:04:18.232
+Message authentication and digital signatures
+address integrity and authenticity in
 
 47
-00:04:06.472 --> 00:04:12.484
-NARRATOR: Produce Well-Secured Software
-addresses security requirements, design,
+00:04:18.232 --> 00:04:19.719
+different ways.
 
 48
-00:04:12.484 --> 00:04:14.738
-verification, and release.
+00:04:19.719 --> 00:04:26.936
+Consider this worked case: A digital signature
+uses the sender's private key to sign a
 
 49
-00:04:14.738 --> 00:04:22.715
-NARRATOR: Consider this worked case: SHA-256
-generates a unique 256-bit hash for a
+00:04:26.936 --> 00:04:31.266
+message, which the receiver verifies with the
+public key.
 
 50
-00:04:22.715 --> 00:04:28.238
-document, where altering any bit changes the
-entire output.
+00:04:31.266 --> 00:04:37.844
+State the benefit, the cost, and the condition
+under which the tradeoff is acceptable.
 
 51
-00:04:28.238 --> 00:04:37.847
-NARRATOR: On screen, show a document entering
-a hash function box, outputting a long hex
+00:04:37.844 --> 00:04:45.031
+Making the tradeoff visible prevents a local
+improvement from hiding a larger cost.
 
 52
-00:04:37.847 --> 00:04:41.691
-string, labeled 'Integrity Check via SHA-256'.
+00:04:45.146 --> 00:04:53.445
+Stress-test the reasoning around Lesson Title:
+Key Management Practices with an edge case and
 
 53
-00:04:41.691 --> 00:04:48.215
-NARRATOR: Work from the concrete inputs to the
-result, checking units, types, or invariants
+00:04:53.445 --> 00:04:57.002
+identify which assumption controls the
+outcome.
 
 54
-00:04:48.215 --> 00:04:49.613
-at each step.
-
-55
-00:04:49.613 --> 00:04:54.660
-NARRATOR: The worked case shows both how to
-apply the method and how to check it.
-
-56
-00:04:54.770 --> 00:05:01.263
-NARRATOR: Examine the tradeoffs in Lesson
-Title: Data Integrity and Authentication,
-
-57
-00:05:01.263 --> 00:05:05.985
-including what improves and what becomes more
-difficult.
-
-58
-00:05:05.985 --> 00:05:12.643
-NARRATOR: Message authentication and digital
-signatures address integrity and authenticity
-
-59
-00:05:12.643 --> 00:05:14.641
-in different ways.
-
-60
-00:05:14.641 --> 00:05:21.020
-NARRATOR: Consider this worked case: A digital
-signature uses the sender's private key to
-
-61
-00:05:21.020 --> 00:05:26.032
-sign a message, which the receiver verifies
-with the public key.
-
-62
-00:05:26.032 --> 00:05:34.540
-NARRATOR: On screen, display a document with a
-signature stamp and a verification checkmark,
-
-63
-00:05:34.540 --> 00:05:37.579
-labeled 'Authenticity via Digital Signatures'.
-
-64
-00:05:37.579 --> 00:05:43.864
-NARRATOR: State the benefit, the cost, and the
-condition under which the tradeoff is
-
-65
-00:05:43.864 --> 00:05:44.313
-acceptable.
-
-66
-00:05:44.313 --> 00:05:51.501
-NARRATOR: Making the tradeoff visible prevents
-a local improvement from hiding a larger cost.
-
-67
-00:05:51.602 --> 00:05:58.243
-NARRATOR: Stress-test the reasoning around
-Lesson Title: Key Management Practices with an
-
-68
-00:05:58.243 --> 00:06:03.223
-edge case and identify which assumption
-controls the outcome.
-
-69
-00:06:03.223 --> 00:06:10.794
-NARRATOR: Key management covers generation,
+00:04:57.002 --> 00:05:04.161
+Key management covers generation,
 distribution, storage, use, rotation,
 
-70
-00:06:10.794 --> 00:06:13.317
+55
+00:05:04.161 --> 00:05:06.846
 revocation, and destruction.
 
-71
-00:06:13.317 --> 00:06:20.713
-NARRATOR: Consider this worked case: Keys must
-be stored in hardware security modules and
+56
+00:05:06.846 --> 00:05:14.414
+Consider this worked case: Keys must be stored
+in hardware security modules and rotated
 
-72
-00:06:20.713 --> 00:06:24.411
-rotated regularly to limit exposure if
-compromised.
+57
+00:05:14.414 --> 00:05:17.658
+regularly to limit exposure if compromised.
 
-73
-00:06:24.411 --> 00:06:31.420
-NARRATOR: On screen, show a key lifecycle
-diagram: 'Generate' -> 'Store' -> 'Use' ->
+58
+00:05:17.658 --> 00:05:24.064
+Change one assumption at a time and observe
+which part of the reasoning no longer holds.
 
-74
-00:06:31.420 --> 00:06:35.926
-'Rotate' -> 'Destroy', with lock icons at each
-stage.
+59
+00:05:24.064 --> 00:05:31.424
+The edge case reveals the boundary of the
+claim without discarding the useful core idea.
 
-75
-00:06:35.926 --> 00:06:41.912
-NARRATOR: Change one assumption at a time and
-observe which part of the reasoning no longer
+60
+00:05:31.538 --> 00:05:38.764
+Use Lesson Title: Modes of Operation to
+diagnose a failure by separating symptoms,
 
-76
-00:06:41.912 --> 00:06:42.286
-holds.
-
-77
-00:06:42.286 --> 00:06:48.671
-NARRATOR: The edge case reveals the boundary
-of the claim without discarding the useful
-
-78
-00:06:48.671 --> 00:06:49.583
-core idea.
-
-79
-00:06:49.706 --> 00:06:56.995
-NARRATOR: Use Lesson Title: Modes of Operation
-to diagnose a failure by separating symptoms,
-
-80
-00:06:56.995 --> 00:06:59.077
+61
+00:05:38.764 --> 00:05:40.988
 causes, and corrective action.
 
-81
-00:06:59.077 --> 00:07:05.200
-NARRATOR: Modes of operation define how a
-primitive processes data larger than one
+62
+00:05:40.988 --> 00:05:47.659
+Modes of operation define how a primitive
+processes data larger than one block.
 
-82
-00:07:05.200 --> 00:07:05.671
-block.
+63
+00:05:47.659 --> 00:05:55.430
+Consider this worked case: CBC mode uses a
+chaining value to link blocks, preventing
 
-83
-00:07:05.671 --> 00:07:12.803
-NARRATOR: Consider this worked case: CBC mode
-uses a chaining value to link blocks,
+64
+00:05:55.430 --> 00:05:58.206
+pattern repetition in encrypted output.
 
-84
-00:07:12.803 --> 00:07:15.859
-preventing pattern repetition in encrypted
-output.
+65
+00:05:58.206 --> 00:06:05.914
+Locate the first point where observed behavior
+diverges from expected behavior, then test the
 
-85
-00:07:15.859 --> 00:07:23.612
-NARRATOR: On screen, illustrate a block cipher
-processing two blocks with a feedback loop,
+66
+00:06:05.914 --> 00:06:07.566
+smallest plausible cause.
 
-86
-00:07:23.612 --> 00:07:25.827
-labeled 'CBC Mode Chaining'.
+67
+00:06:07.566 --> 00:06:15.097
+The diagnosis is strongest when another person
+can reproduce the observation and the test.
 
-87
-00:07:25.827 --> 00:07:31.509
-NARRATOR: Locate the first point where
-observed behavior diverges from expected
+68
+00:06:15.218 --> 00:06:21.888
+Connect Lesson Title: Security Implementation
+& Validation to the earlier ideas and explain
 
-88
-00:07:31.509 --> 00:07:35.124
-behavior, then test the smallest plausible
-cause.
+69
+00:06:21.888 --> 00:06:25.480
+how the pieces work as one system.
 
-89
-00:07:35.124 --> 00:07:41.062
-NARRATOR: The diagnosis is strongest when
-another person can reproduce the observation
+70
+00:06:25.480 --> 00:06:32.089
+Security depends on the complete protocol and
+implementation, not only an algorithm name.
 
-90
-00:07:41.062 --> 00:07:42.546
-and the test.
+71
+00:06:32.089 --> 00:06:40.428
+Consider this worked case: Timing attacks can
+exploit variable execution times in
 
-91
-00:07:42.650 --> 00:07:48.042
-NARRATOR: Connect Lesson Title: Security
-Implementation & Validation to the earlier
-
-92
-00:07:48.042 --> 00:07:52.943
-ideas and explain how the pieces work as one
-system.
-
-93
-00:07:52.943 --> 00:07:58.836
-NARRATOR: Security depends on the complete
-protocol and implementation, not only an
-
-94
-00:07:58.836 --> 00:07:59.818
-algorithm name.
-
-95
-00:07:59.818 --> 00:08:07.571
-NARRATOR: Consider this worked case: Timing
-attacks can exploit variable execution times
-
-96
-00:08:07.571 --> 00:08:12.740
-in cryptographic libraries, requiring
+72
+00:06:40.428 --> 00:06:45.293
+cryptographic libraries, requiring
 constant-time implementations for validation.
 
-97
-00:08:12.740 --> 00:08:20.990
-NARRATOR: On screen, show a security checklist
-with items: 'Algorithm Validated',
+73
+00:06:45.293 --> 00:06:54.975
+Explain each connection explicitly and verify
+that information retains the same meaning
 
-98
-00:08:20.990 --> 00:08:26.240
-'Implementation Tested', 'Side-Channel
-Mitigated', labeled 'Validation Checklist'.
+74
+00:06:54.975 --> 00:06:56.589
+across representations.
 
-99
-00:08:26.240 --> 00:08:35.165
-NARRATOR: Explain each connection explicitly
-and verify that information retains the same
+75
+00:06:56.589 --> 00:07:03.980
+The synthesis matters only if every connection
+remains supported by the original evidence.
 
-100
-00:08:35.165 --> 00:08:37.396
-meaning across representations.
+76
+00:07:04.082 --> 00:07:10.986
+Finish with Lesson Title: Practical Analysis
+Checklist as a practical checklist that can
 
-101
-00:08:37.396 --> 00:08:44.564
-NARRATOR: The synthesis matters only if every
-connection remains supported by the original
+77
+00:07:10.986 --> 00:07:13.110
+guide a new analysis.
 
-102
-00:08:44.564 --> 00:08:45.115
-evidence.
+78
+00:07:13.110 --> 00:07:19.328
+Cryptographic standards define approved
+algorithms and parameters.
 
-103
-00:08:45.218 --> 00:08:51.237
-NARRATOR: Finish with Lesson Title: Practical
-Analysis Checklist as a practical checklist
+79
+00:07:19.328 --> 00:07:28.707
+Consider this worked case: A secure system
+uses AES for confidentiality, SHA-256 for
 
-104
-00:08:51.237 --> 00:08:54.246
-that can guide a new analysis.
+80
+00:07:28.707 --> 00:07:35.922
+integrity, RSA for authentication, and follows
+NIST key management standards.
 
-105
-00:08:54.246 --> 00:09:00.386
-NARRATOR: Cryptographic standards define
-approved algorithms and parameters.
+81
+00:07:35.922 --> 00:07:43.871
+For each checklist item, record the evidence,
+the remaining uncertainty, and the next
 
-106
-00:09:00.386 --> 00:09:09.256
-NARRATOR: Consider this worked case: A secure
-system uses AES for confidentiality, SHA-256
+82
+00:07:43.871 --> 00:07:45.094
+verification step.
 
-107
-00:09:09.256 --> 00:09:16.761
-for integrity, RSA for authentication, and
-follows NIST key management standards.
+83
+00:07:45.094 --> 00:07:51.832
+The result is a repeatable procedure, not a
+conclusion that depends on memory or
 
-108
-00:09:16.761 --> 00:09:24.402
-NARRATOR: On screen, display a practical
-analysis checklist with checkboxes:
-
-109
-00:09:24.402 --> 00:09:29.750
-'Confidentiality Mechanism', 'Integrity
-Check', 'Authentication Method', 'Key
-
-110
-00:09:29.750 --> 00:09:32.042
-Management', 'Implementation Validated'.
-
-111
-00:09:32.042 --> 00:09:39.685
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
-
-112
-00:09:39.685 --> 00:09:41.449
-next verification step.
-
-113
-00:09:41.449 --> 00:09:47.390
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-114
-00:09:47.390 --> 00:09:48.761
-memory or intuition.
+84
+00:07:51.832 --> 00:07:52.313
+intuition.

@@ -1,581 +1,449 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:07.539
-NARRATOR: Begin by framing Course Scope and
-Flexibility as a question about inputs,
+00:00:00.050 --> 00:00:08.811
+Begin by framing Course Scope and Flexibility
+as a question about inputs, decisions, and
 
 2
-00:00:07.539 --> 00:00:09.843
-decisions, and observable results.
+00:00:08.811 --> 00:00:10.062
+observable results.
 
 3
-00:00:09.843 --> 00:00:14.515
-NARRATOR: This course examines current topics
-in Computer Science.
+00:00:10.062 --> 00:00:14.750
+This course examines current topics in
+Computer Science.
 
 4
-00:00:14.515 --> 00:00:21.453
-NARRATOR: Consider this worked case: A
-department might use this course to test a new
+00:00:14.750 --> 00:00:22.497
+Consider this worked case: A department might
+use this course to test a new AI ethics module
 
 5
-00:00:21.453 --> 00:00:26.078
-AI ethics module before adding it to the
-standard curriculum.
+00:00:22.497 --> 00:00:25.687
+before adding it to the standard curriculum.
 
 6
-00:00:26.078 --> 00:00:33.916
-NARRATOR: On screen, display a flexible course
-outline template with placeholders for topics,
+00:00:25.687 --> 00:00:32.498
+List the givens before choosing a method,
+because an unstated assumption can change the
 
 7
-00:00:33.916 --> 00:00:36.328
-prerequisites, and assessment methods.
+00:00:32.498 --> 00:00:32.984
+conclusion.
 
 8
-00:00:36.328 --> 00:00:42.294
-NARRATOR: List the givens before choosing a
-method, because an unstated assumption can
+00:00:32.984 --> 00:00:39.171
+This establishes the vocabulary and scope
+needed for the remaining sections.
 
 9
-00:00:42.294 --> 00:00:43.671
-change the conclusion.
+00:00:39.171 --> 00:00:46.034
+Name each dependency explicitly, and keep
+labels and representations consistent
 
 10
-00:00:43.671 --> 00:00:49.656
-NARRATOR: This establishes the vocabulary and
-scope needed for the remaining sections.
-
-11
-00:00:49.656 --> 00:00:56.752
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-12
-00:00:56.752 --> 00:00:58.687
+00:00:46.034 --> 00:00:48.093
 throughout the analysis.
 
+11
+00:00:48.194 --> 00:00:55.204
+Now define Faculty Role and Customization
+precisely enough that another learner could
+
+12
+00:00:55.204 --> 00:00:56.956
+test the definition.
+
 13
-00:00:58.802 --> 00:01:05.245
-NARRATOR: Now define Faculty Role and
-Customization precisely enough that another
-
-14
-00:01:05.245 --> 00:01:08.173
-learner could test the definition.
-
-15
-00:01:08.173 --> 00:01:14.090
-NARRATOR: Specific course details (such as
+00:00:56.956 --> 00:01:02.498
+Specific course details (such as
 prerequisites, course topics, format, learning
 
-16
-00:01:14.090 --> 00:01:20.544
+14
+00:01:02.498 --> 00:01:09.148
 outcomes, assessment methods, and resource
 needs) will be determined by the faculty
 
-17
-00:01:20.544 --> 00:01:25.923
+15
+00:01:09.148 --> 00:01:14.690
 member(s) who propose a specific seminar
 course in this area.
 
+16
+00:01:14.690 --> 00:01:22.033
+Consider this worked case: An instructor could
+adapt the course to focus on cybersecurity,
+
+17
+00:01:22.033 --> 00:01:26.753
+machine learning, or software engineering
+based on departmental needs.
+
 18
-00:01:25.923 --> 00:01:32.659
-NARRATOR: Consider this worked case: An
-instructor could adapt the course to focus on
+00:01:26.753 --> 00:01:33.307
+Separate the formal definition from an
+implementation detail, then identify what
 
 19
-00:01:32.659 --> 00:01:37.470
-cybersecurity, machine learning, or software
-engineering based on departmental needs.
-
-20
-00:01:37.470 --> 00:01:43.720
-NARRATOR: On screen, show a checklist of
-customizable course parameters with checkboxes
-
-21
-00:01:43.720 --> 00:01:45.283
-for each element.
-
-22
-00:01:45.283 --> 00:01:51.798
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
-
-23
-00:01:51.798 --> 00:01:53.970
+00:01:33.307 --> 00:01:35.690
 evidence would distinguish them.
 
+20
+00:01:35.690 --> 00:01:42.331
+A precise definition makes later examples
+easier to evaluate and revise.
+
+21
+00:01:42.434 --> 00:01:50.353
+With the foundation in place, examine how
+Cluster Classification operates in a concrete
+
+22
+00:01:50.353 --> 00:01:50.962
+sequence.
+
+23
+00:01:50.962 --> 00:01:58.108
+Specific course instances will be identified
+as belonging to no cluster; hence, such
+
 24
-00:01:53.970 --> 00:02:00.626
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
+00:01:58.108 --> 00:02:03.055
+courses will count only as general Computer
+Science electives.
 
 25
-00:02:00.746 --> 00:02:07.343
-NARRATOR: With the foundation in place,
-examine how Cluster Classification operates in
+00:02:03.055 --> 00:02:11.982
+Consider this worked case: Students can enroll
+in CSCI-509 to fulfill general elective
 
 26
-00:02:07.343 --> 00:02:08.992
-a concrete sequence.
+00:02:11.982 --> 00:02:16.102
+requirements without meeting specific cluster
+prerequisites.
 
 27
-00:02:08.992 --> 00:02:15.907
-NARRATOR: Specific course instances will be
-identified as belonging to no cluster; hence,
+00:02:16.102 --> 00:02:23.555
+Follow every arrow in order and name the state
+before and after each transition.
 
 28
-00:02:15.907 --> 00:02:21.227
-such courses will count only as general
-Computer Science electives.
+00:02:23.555 --> 00:02:29.274
+The trace converts an abstract statement into
+an inspectable sequence.
 
 29
-00:02:21.227 --> 00:02:29.687
-NARRATOR: Consider this worked case: Students
-can enroll in CSCI-509 to fulfill general
+00:02:29.378 --> 00:02:36.403
+Next, compare the choices involved in ACM
+Ethics Foundation and make the decision
 
 30
-00:02:29.687 --> 00:02:34.242
-elective requirements without meeting specific
-cluster prerequisites.
-
-31
-00:02:34.242 --> 00:02:41.697
-NARRATOR: On screen, illustrate a course
-catalog map showing CSCI-509 as a standalone
-
-32
-00:02:41.697 --> 00:02:45.711
-elective node rather than a cluster member.
-
-33
-00:02:45.711 --> 00:02:53.070
-NARRATOR: Follow every arrow in order and name
-the state before and after each transition.
-
-34
-00:02:53.070 --> 00:02:58.789
-NARRATOR: The trace converts an abstract
-statement into an inspectable sequence.
-
-35
-00:02:58.898 --> 00:03:06.168
-NARRATOR: Next, compare the choices involved
-in ACM Ethics Foundation and make the decision
-
-36
-00:03:06.168 --> 00:03:07.207
+00:02:36.403 --> 00:02:37.484
 criteria explicit.
 
+31
+00:02:37.484 --> 00:02:45.749
+The ACM Code directs computing professionals
+to contribute to society and human well-being.
+
+32
+00:02:45.749 --> 00:02:51.956
+Consider this worked case: Developing
+accessible software tools that help people
+
+33
+00:02:51.956 --> 00:02:55.906
+with disabilities aligns with this ethical
+directive.
+
+34
+00:02:55.906 --> 00:03:03.071
+Compare alternatives against the same
+constraints so the evaluation does not move
+
+35
+00:03:03.071 --> 00:03:04.265
+the goalposts.
+
+36
+00:03:04.265 --> 00:03:11.234
+Using shared criteria turns a preference into
+a defensible technical choice.
+
 37
-00:03:07.207 --> 00:03:13.836
-NARRATOR: The ACM Code directs computing
-professionals to contribute to society and
+00:03:11.234 --> 00:03:18.277
+Name each dependency explicitly, and keep
+labels and representations consistent
 
 38
-00:03:13.836 --> 00:03:14.941
-human well-being.
-
-39
-00:03:14.941 --> 00:03:20.848
-NARRATOR: Consider this worked case:
-Developing accessible software tools that help
-
-40
-00:03:20.848 --> 00:03:25.144
-people with disabilities aligns with this
-ethical directive.
-
-41
-00:03:25.144 --> 00:03:32.073
-NARRATOR: On screen, present a circular
-diagram linking 'society' and 'human
-
-42
-00:03:32.073 --> 00:03:35.222
-well-being' to core computing practices.
-
-43
-00:03:35.222 --> 00:03:41.997
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
-
-44
-00:03:41.997 --> 00:03:43.691
-move the goalposts.
-
-45
-00:03:43.691 --> 00:03:50.519
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
-
-46
-00:03:50.519 --> 00:03:57.836
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-47
-00:03:57.836 --> 00:03:59.832
+00:03:18.277 --> 00:03:20.390
 throughout the analysis.
 
-48
-00:03:59.954 --> 00:04:07.937
-NARRATOR: Apply Avoiding Harm and Honesty to a
-worked situation instead of treating it as an
+39
+00:03:20.498 --> 00:03:27.981
+Apply Avoiding Harm and Honesty to a worked
+situation instead of treating it as an
 
-49
-00:04:07.937 --> 00:04:08.935
+40
+00:03:27.981 --> 00:03:28.979
 isolated definition.
 
-50
-00:04:08.935 --> 00:04:12.107
-NARRATOR: Computing professionals should avoid
-harm.
+41
+00:03:28.979 --> 00:03:32.182
+Computing professionals should avoid harm.
 
-51
-00:04:12.107 --> 00:04:18.984
-NARRATOR: Consider this worked case: Auditing
-an algorithm for biased training data and
+42
+00:03:32.182 --> 00:03:38.857
+Consider this worked case: Auditing an
+algorithm for biased training data and
 
-52
-00:04:18.984 --> 00:04:23.216
+43
+00:03:38.857 --> 00:03:43.307
 correcting it prevents discriminatory outcomes
 in hiring tools.
 
+44
+00:03:43.307 --> 00:03:50.587
+Work from the concrete inputs to the result,
+checking units, types, or invariants at each
+
+45
+00:03:50.587 --> 00:03:51.072
+step.
+
+46
+00:03:51.073 --> 00:03:55.869
+The worked case shows both how to apply the
+method and how to check it.
+
+47
+00:03:55.869 --> 00:04:02.961
+Name each dependency explicitly, and keep
+labels and representations consistent
+
+48
+00:04:02.961 --> 00:04:05.088
+throughout the analysis.
+
+49
+00:04:05.210 --> 00:04:12.037
+Examine the tradeoffs in Respecting Work and
+Privacy, including what improves and what
+
+50
+00:04:12.037 --> 00:04:13.613
+becomes more difficult.
+
+51
+00:04:13.613 --> 00:04:19.550
+They should respect the work required to
+produce new ideas and creative works.
+
+52
+00:04:19.550 --> 00:04:27.312
+Consider this worked case: Citing open-source
+libraries properly and encrypting user data in
+
 53
-00:04:23.216 --> 00:04:30.678
-NARRATOR: On screen, show a balance scale with
-'fairness' on one side and 'bias' on the
+00:04:27.312 --> 00:04:30.894
+a mobile application demonstrates these
+values.
 
 54
-00:04:30.678 --> 00:04:32.544
-other, emphasizing corrective action.
+00:04:30.894 --> 00:04:37.909
+State the benefit, the cost, and the condition
+under which the tradeoff is acceptable.
 
 55
-00:04:32.544 --> 00:04:39.055
-NARRATOR: Work from the concrete inputs to the
-result, checking units, types, or invariants
+00:04:37.910 --> 00:04:44.972
+Making the tradeoff visible prevents a local
+improvement from hiding a larger cost.
 
 56
-00:04:39.055 --> 00:04:40.450
-at each step.
+00:04:44.972 --> 00:04:51.991
+Name each dependency explicitly, and keep
+labels and representations consistent
 
 57
-00:04:40.450 --> 00:04:45.028
-NARRATOR: The worked case shows both how to
-apply the method and how to check it.
+00:04:51.991 --> 00:04:54.097
+throughout the analysis.
 
 58
-00:04:45.028 --> 00:04:52.689
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+00:04:54.218 --> 00:05:01.272
+Stress-test the reasoning around Quality and
+Security Standards with an edge case and
 
 59
-00:04:52.689 --> 00:04:54.778
-throughout the analysis.
+00:05:01.272 --> 00:05:04.527
+identify which assumption controls the
+outcome.
 
 60
-00:04:54.890 --> 00:05:01.411
-NARRATOR: Examine the tradeoffs in Respecting
-Work and Privacy, including what improves and
+00:05:04.527 --> 00:05:11.918
+Professionals should strive to achieve high
+quality in both processes and products.
 
 61
-00:05:01.411 --> 00:05:03.418
-what becomes more difficult.
+00:05:11.918 --> 00:05:19.480
+Consider this worked case: Implementing
+rigorous code reviews and automated testing
 
 62
-00:05:03.418 --> 00:05:09.076
-NARRATOR: They should respect the work
-required to produce new ideas and creative
+00:05:19.480 --> 00:05:24.980
+ensures both reliable software and sustainable
+development workflows.
 
 63
-00:05:09.076 --> 00:05:09.511
-works.
+00:05:24.980 --> 00:05:31.589
+Change one assumption at a time and observe
+which part of the reasoning no longer holds.
 
 64
-00:05:09.511 --> 00:05:15.707
-NARRATOR: Consider this worked case: Citing
-open-source libraries properly and encrypting
+00:05:31.589 --> 00:05:38.808
+The edge case reveals the boundary of the
+claim without discarding the useful core idea.
 
 65
-00:05:15.707 --> 00:05:20.777
-user data in a mobile application demonstrates
-these values.
+00:05:38.930 --> 00:05:45.985
+Use Responsible Technical Communication to
+diagnose a failure by separating symptoms,
 
 66
-00:05:20.777 --> 00:05:27.027
-NARRATOR: On screen, display icons
-representing citation practices and data
+00:05:45.985 --> 00:05:48.551
+causes, and corrective action.
 
 67
-00:05:27.027 --> 00:05:30.152
-encryption alongside a respect symbol.
+00:05:48.551 --> 00:05:53.926
+It cites prior work and identifies the
+contribution being reported.
 
 68
-00:05:30.152 --> 00:05:36.569
-NARRATOR: State the benefit, the cost, and the
-condition under which the tradeoff is
+00:05:53.926 --> 00:06:01.761
+Consider this worked case: A research paper
+clearly separates its novel algorithm from
 
 69
-00:05:36.569 --> 00:05:37.027
-acceptable.
+00:06:01.761 --> 00:06:06.583
+existing methods and explicitly states the new
+findings.
 
 70
-00:05:37.027 --> 00:05:44.668
-NARRATOR: Making the tradeoff visible prevents
-a local improvement from hiding a larger cost.
+00:06:06.583 --> 00:06:13.982
+Locate the first point where observed behavior
+diverges from expected behavior, then test the
 
 71
-00:05:44.668 --> 00:05:51.886
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
+00:06:13.982 --> 00:06:15.567
+smallest plausible cause.
 
 72
-00:05:51.886 --> 00:05:53.855
-throughout the analysis.
+00:06:15.567 --> 00:06:23.333
+The diagnosis is strongest when another person
+can reproduce the observation and the test.
 
 73
-00:05:53.978 --> 00:06:00.117
-NARRATOR: Stress-test the reasoning around
-Quality and Security Standards with an edge
+00:06:23.333 --> 00:06:30.833
+Name each dependency explicitly, and keep
+labels and representations consistent
 
 74
-00:06:00.117 --> 00:06:04.209
-case and identify which assumption controls
-the outcome.
+00:06:30.833 --> 00:06:33.083
+throughout the analysis.
 
 75
-00:06:04.209 --> 00:06:10.627
-NARRATOR: Professionals should strive to
-achieve high quality in both processes and
+00:06:33.194 --> 00:06:40.313
+Connect Methods and Results Integrity to the
+earlier ideas and explain how the pieces work
 
 76
-00:06:10.627 --> 00:06:11.162
-products.
+00:06:40.313 --> 00:06:41.737
+as one system.
 
 77
-00:06:11.162 --> 00:06:17.686
-NARRATOR: Consider this worked case:
-Implementing rigorous code reviews and
+00:06:41.737 --> 00:06:48.357
+Results should be reported accurately rather
+than selected to create a misleading
 
 78
-00:06:17.686 --> 00:06:23.557
-automated testing ensures both reliable
-software and sustainable development
+00:06:48.357 --> 00:06:48.909
+conclusion.
 
 79
-00:06:23.557 --> 00:06:24.209
-workflows.
+00:06:48.909 --> 00:06:56.977
+Consider this worked case: Publishing raw data
+alongside statistical analysis allows
 
 80
-00:06:24.209 --> 00:06:30.672
-NARRATOR: On screen, create a flowchart
-showing 'process quality' leading to 'product
+00:06:56.977 --> 00:07:00.644
+independent verification of experimental
+outcomes.
 
 81
-00:06:30.672 --> 00:06:33.365
-quality' with a competence badge.
+00:07:00.644 --> 00:07:10.433
+Explain each connection explicitly and verify
+that information retains the same meaning
 
 82
-00:06:33.365 --> 00:06:39.747
-NARRATOR: Change one assumption at a time and
-observe which part of the reasoning no longer
+00:07:10.433 --> 00:07:12.065
+across representations.
 
 83
-00:06:39.747 --> 00:06:40.146
-holds.
+00:07:12.065 --> 00:07:19.315
+The synthesis matters only if every connection
+remains supported by the original evidence.
 
 84
-00:06:40.146 --> 00:06:46.422
-NARRATOR: The edge case reveals the boundary
-of the claim without discarding the useful
+00:07:19.315 --> 00:07:26.467
+Name each dependency explicitly, and keep
+labels and representations consistent
 
 85
-00:06:46.422 --> 00:06:47.318
-core idea.
+00:07:26.467 --> 00:07:28.612
+throughout the analysis.
 
 86
-00:06:47.426 --> 00:06:53.410
-NARRATOR: Use Responsible Technical
-Communication to diagnose a failure by
+00:07:28.730 --> 00:07:35.299
+Finish with Research Integrity and Practical
+Analysis as a practical checklist that can
 
 87
-00:06:53.410 --> 00:06:57.001
-separating symptoms, causes, and corrective
-action.
+00:07:35.299 --> 00:07:37.320
+guide a new analysis.
 
 88
-00:06:57.001 --> 00:07:02.547
-NARRATOR: It cites prior work and identifies
-the contribution being reported.
+00:07:37.320 --> 00:07:44.820
+Authors should preserve research integrity and
+avoid plagiarism, fabrication, and
 
 89
-00:07:02.547 --> 00:07:09.400
-NARRATOR: Consider this worked case: A
-research paper clearly separates its novel
+00:07:44.820 --> 00:07:45.570
+falsification.
 
 90
-00:07:09.400 --> 00:07:15.110
-algorithm from existing methods and explicitly
-states the new findings.
+00:07:45.570 --> 00:07:52.981
+Consider this worked case: Using reference
+managers to track citations and disclosing
 
 91
-00:07:15.110 --> 00:07:22.735
-NARRATOR: On screen, show a two-column layout:
-left for 'claims/evidence', right for
+00:07:52.981 --> 00:07:58.539
+funding sources maintains academic honesty in
+computer science research.
 
 92
-00:07:22.735 --> 00:07:26.547
-'contributions/prior work' with arrows linking
-them.
+00:07:58.539 --> 00:08:06.569
+For each checklist item, record the evidence,
+the remaining uncertainty, and the next
 
 93
-00:07:26.547 --> 00:07:32.391
-NARRATOR: Locate the first point where
-observed behavior diverges from expected
+00:08:06.569 --> 00:08:07.804
+verification step.
 
 94
-00:07:32.391 --> 00:07:36.110
-behavior, then test the smallest plausible
-cause.
+00:08:07.804 --> 00:08:14.644
+The result is a repeatable procedure, not a
+conclusion that depends on memory or
 
 95
-00:07:36.110 --> 00:07:41.910
-NARRATOR: The diagnosis is strongest when
-another person can reproduce the observation
-
-96
-00:07:41.910 --> 00:07:43.360
-and the test.
-
-97
-00:07:43.360 --> 00:07:50.517
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-98
-00:07:50.517 --> 00:07:52.469
-throughout the analysis.
-
-99
-00:07:52.586 --> 00:07:58.431
-NARRATOR: Connect Methods and Results
-Integrity to the earlier ideas and explain how
-
-100
-00:07:58.431 --> 00:08:01.129
-the pieces work as one system.
-
-101
-00:08:01.129 --> 00:08:07.022
-NARRATOR: Results should be reported
-accurately rather than selected to create a
-
-102
-00:08:07.022 --> 00:08:08.004
-misleading conclusion.
-
-103
-00:08:08.004 --> 00:08:14.888
-NARRATOR: Consider this worked case:
-Publishing raw data alongside statistical
-
-104
-00:08:14.888 --> 00:08:19.707
-analysis allows independent verification of
-experimental outcomes.
-
-105
-00:08:19.707 --> 00:08:27.594
-NARRATOR: On screen, illustrate a magnifying
-glass over a methodology section and a graph
-
-106
-00:08:27.594 --> 00:08:29.848
-with clear, unaltered axes.
-
-107
-00:08:29.848 --> 00:08:38.898
-NARRATOR: Explain each connection explicitly
-and verify that information retains the same
-
-108
-00:08:38.898 --> 00:08:41.160
-meaning across representations.
-
-109
-00:08:41.160 --> 00:08:47.892
-NARRATOR: The synthesis matters only if every
-connection remains supported by the original
-
-110
-00:08:47.892 --> 00:08:48.410
-evidence.
-
-111
-00:08:48.410 --> 00:08:55.568
-NARRATOR: Name each dependency explicitly, and
-keep labels and representations consistent
-
-112
-00:08:55.568 --> 00:08:57.520
-throughout the analysis.
-
-113
-00:08:57.626 --> 00:09:03.353
-NARRATOR: Finish with Research Integrity and
-Practical Analysis as a practical checklist
-
-114
-00:09:03.353 --> 00:09:06.216
-that can guide a new analysis.
-
-115
-00:09:06.216 --> 00:09:13.313
-NARRATOR: Authors should preserve research
-integrity and avoid plagiarism, fabrication,
-
-116
-00:09:13.313 --> 00:09:14.732
-and falsification.
-
-117
-00:09:14.732 --> 00:09:21.882
-NARRATOR: Consider this worked case: Using
-reference managers to track citations and
-
-118
-00:09:21.882 --> 00:09:27.841
-disclosing funding sources maintains academic
-honesty in computer science research.
-
-119
-00:09:27.841 --> 00:09:35.928
-NARRATOR: On screen, provide a practical
-analysis checklist with items: 'Citations
-
-120
-00:09:35.928 --> 00:09:41.075
-verified', 'Conflicts disclosed', 'Methods
-reproducible', 'Results accurate'.
-
-121
-00:09:41.075 --> 00:09:48.667
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
-
-122
-00:09:48.667 --> 00:09:50.419
-next verification step.
-
-123
-00:09:50.419 --> 00:09:56.196
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-124
-00:09:56.196 --> 00:09:57.529
-memory or intuition.
+00:08:14.644 --> 00:08:15.133
+intuition.

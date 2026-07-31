@@ -1,229 +1,173 @@
-NARRATOR: Begin by framing Introduction to Machine Learning Workflow as a question about
+Begin by framing Introduction to Machine Learning Workflow as a question about inputs,
 
-inputs, decisions, and observable results.
+decisions, and observable results.
 
-NARRATOR: Machine-learning workflows separate data preparation, training, validation,
+Machine-learning workflows separate data preparation, training, validation, testing,
 
-testing, model selection, and evaluation.
+model selection, and evaluation.
 
-NARRATOR: Consider this worked case: A developer uses a pipeline to standardize
+Consider this worked case: A developer uses a pipeline to standardize features, train a
 
-features, train a classifier, and evaluate accuracy without mixing training and testing
+classifier, and evaluate accuracy without mixing training and testing data.
 
-data.
+List the givens before choosing a method, because an unstated assumption can change the
 
-NARRATOR: On screen, display a horizontal flowchart with six labeled nodes connected by
+conclusion.
 
-arrows, representing the sequential workflow stages.
+This establishes the vocabulary and scope needed for the remaining sections.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+Now define Data Preparation and Leakage Prevention precisely enough that another
 
-change the conclusion.
+learner could test the definition.
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+Preprocessing must be fitted only on permitted training data to avoid leakage.
 
-NARRATOR: Now define Data Preparation and Leakage Prevention precisely enough that
-
-another learner could test the definition.
-
-NARRATOR: Preprocessing must be fitted only on permitted training data to avoid leakage.
-
-NARRATOR: Consider this worked case: Scaling features using the mean and standard deviation
+Consider this worked case: Scaling features using the mean and standard deviation
 
 calculated solely from the training set before splitting the data.
 
-NARRATOR: On screen, show a split diagram with 'Training Data' and 'Test Data' boxes,
-
-highlighting that preprocessing parameters are derived exclusively from the training box.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Supervised vs. Unsupervised
+With the foundation in place, examine how Supervised vs. Unsupervised Learning operates
 
-Learning operates in a concrete sequence.
+in a concrete sequence.
 
-NARRATOR: Supervised methods learn a mapping from examples paired with target labels.
+Supervised methods learn a mapping from examples paired with target labels.
 
-NARRATOR: Consider this worked case: Classifying email as spam or ham uses labeled
+Consider this worked case: Classifying email as spam or ham uses labeled data, whereas
 
-data, whereas clustering customers by purchasing behavior uses unlabeled data.
+clustering customers by purchasing behavior uses unlabeled data.
 
-NARRATOR: On screen, present two side-by-side icons: a labeled dataset with a target column
+Follow every arrow in order and name the state before and after each transition.
 
-for supervised learning, and a scatter plot of unlabeled points for unsupervised learning.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
-
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
-
-NARRATOR: Next, compare the choices involved in Statistical Analysis and Data Visualization
+Next, compare the choices involved in Statistical Analysis and Data Visualization
 
 and make the decision criteria explicit.
 
-NARRATOR: Topics include: Mathematical background of machine learning (for example
+Topics include: Mathematical background of machine learning (for example statistical
 
-statistical analysis and visualization of data), Bayesian decision theory, parametric
+analysis and visualization of data), Bayesian decision theory, parametric and
 
-and non-parameteric classification models (for example, SVMs and Nearest Neighbor models) and
+non-parameteric classification models (for example, SVMs and Nearest Neighbor models) and
 
 neural network models (for example Convolutional, Recurrent, and Deep Neural
 
 Networks).
 
-NARRATOR: Consider this worked case: Plotting a histogram and box plot to detect outliers
+Consider this worked case: Plotting a histogram and box plot to detect outliers and
 
-and skewness before selecting a regression model.
+skewness before selecting a regression model.
 
-NARRATOR: On screen, render a composite image showing a histogram, a box plot, and a scatter
+Compare alternatives against the same constraints so the evaluation does not move
 
-plot with a regression line, each labeled with its statistical purpose.
+the goalposts.
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
+Using shared criteria turns a preference into a defensible technical choice.
 
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Apply Bayesian Decision Theory to a worked situation instead of treating it as an
+Apply Bayesian Decision Theory to a worked situation instead of treating it as an
 
 isolated definition.
 
-NARRATOR: The NIST AI Risk Management Framework organizes work around Govern, Map,
+The NIST AI Risk Management Framework organizes work around Govern, Map, Measure,
 
-Measure, and Manage.
+and Manage.
 
-NARRATOR: Consider this worked case: Calculating the posterior probability of a
+Consider this worked case: Calculating the posterior probability of a medical diagnosis
 
-medical diagnosis given a test result, using prior prevalence and test
+given a test result, using prior prevalence and test sensitivity/specificity.
 
-sensitivity/specificity.
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-NARRATOR: On screen, illustrate a Bayesian update cycle with three boxes: Prior,
+step.
 
-Likelihood, and Posterior, connected by arrows showing probability adjustment.
+The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
-
-at each step.
-
-NARRATOR: The worked case shows both how to apply the method and how to check it.
-
-NARRATOR: Examine the tradeoffs in Parametric Classification Models, including what improves
+Examine the tradeoffs in Parametric Classification Models, including what improves
 
 and what becomes more difficult.
 
-NARRATOR: An introduction to both foundational and modern machine learning theories and
+An introduction to both foundational and modern machine learning theories and
 
 algorithms, and their application in classification and regression.
 
-NARRATOR: Consider this worked case: Training an SVM on a dataset of handwritten digits to
+Consider this worked case: Training an SVM on a dataset of handwritten digits to draw a
 
-draw a hyperplane that separates correct from incorrect digit classifications.
+hyperplane that separates correct from incorrect digit classifications.
 
-NARRATOR: On screen, draw a 2D scatter plot with a straight decision boundary line,
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-highlighting the margin distance between the boundary and the nearest data points.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
-
-acceptable.
-
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
-
-NARRATOR: Stress-test the reasoning around Non-Parametric Classification Models with an
+Stress-test the reasoning around Non-Parametric Classification Models with an
 
 edge case and identify which assumption controls the outcome.
 
-NARRATOR: Unsupervised methods identify structure without target labels.
+Unsupervised methods identify structure without target labels.
 
-NARRATOR: Consider this worked case: Assigning a new customer to a segment by finding the
+Consider this worked case: Assigning a new customer to a segment by finding the three
 
-three closest historical customers in feature space and taking their majority class.
+closest historical customers in feature space and taking their majority class.
 
-NARRATOR: On screen, show a 2D plot with a query point surrounded by a circle,
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-highlighting the three nearest training points and their assigned labels.
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+Use Neural Network Architectures to diagnose a failure by separating symptoms, causes, and
 
-holds.
+corrective action.
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+Risk analysis considers data quality and uncertainty.
 
-core idea.
-
-NARRATOR: Use Neural Network Architectures to diagnose a failure by separating symptoms,
-
-causes, and corrective action.
-
-NARRATOR: Risk analysis considers data quality and uncertainty.
-
-NARRATOR: Consider this worked case: Using a Convolutional Neural Network to detect edges
+Consider this worked case: Using a Convolutional Neural Network to detect edges
 
 and textures in images, or a Recurrent Neural Network to predict the next word in a sentence
 
 sequence.
 
-NARRATOR: On screen, display a simplified diagram of a three-layer neural network with
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-input, hidden, and output nodes, showing weighted connections and activation functions.
+smallest plausible cause.
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-behavior, then test the smallest plausible cause.
+Connect Model Evaluation and Hyperparameter Selection to the earlier ideas and explain how
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+the pieces work as one system.
 
-and the test.
+Evaluation metrics must match the task and the cost of different errors.
 
-NARRATOR: Connect Model Evaluation and Hyperparameter Selection to the earlier ideas
+Consider this worked case: Using precision and recall for imbalanced classification tasks,
 
-and explain how the pieces work as one system.
+and tuning learning rate via cross-validation before testing on held-out data.
 
-NARRATOR: Evaluation metrics must match the task and the cost of different errors.
+Explain each connection explicitly and verify that information retains the same meaning
 
-NARRATOR: Consider this worked case: Using precision and recall for imbalanced
+across representations.
 
-classification tasks, and tuning learning rate via cross-validation before testing on
+The synthesis matters only if every connection remains supported by the original evidence.
 
-held-out data.
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-NARRATOR: On screen, show a confusion matrix and a learning curve graph, with annotations
+analysis.
 
-indicating metric selection and cross-validation folds.
+It also considers robustness, privacy, security, transparency, and fairness.
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+Consider this worked case: Before deployment, verify that preprocessing parameters were not
 
-meaning across representations.
+fitted on test data, check for bias in predictions across demographic groups, and
 
-NARRATOR: The synthesis matters only if every connection remains supported by the original
+schedule post-deployment monitoring.
 
-evidence.
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+verification step.
 
-guide a new analysis.
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-NARRATOR: It also considers robustness, privacy, security, transparency, and fairness.
-
-NARRATOR: Consider this worked case: Before deployment, verify that preprocessing
-
-parameters were not fitted on test data, check for bias in predictions across demographic
-
-groups, and schedule post-deployment monitoring.
-
-NARRATOR: On screen, list a five-item checklist with checkboxes: Data Quality
-
-Verified, Leakage Prevented, Metrics Matched, Fairness Audited, Monitoring Scheduled.
-
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

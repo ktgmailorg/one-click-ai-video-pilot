@@ -5,12 +5,12 @@
       "shots": [
         {
           "id": "beat-01-shot-001",
-          "phrase": "Begin by framing Course Scope and Faculty Pilot Framework as a question about inputs, decisions, and observable results.",
+          "phrase": "Begin by framing Course Scope and Flexibility as a question about inputs, decisions, and observable results.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-01-shot-002",
-          "phrase": "Consider this worked case: A department head proposes a new undergraduate offering focused on compiler design.",
+          "phrase": "Consider this worked case: A faculty member might propose a seminar on 'Secure Coding Practices' or 'Natural Language Processing Pipelines' as a pilot course.",
           "type": "deterministic-svg"
         },
         {
@@ -25,12 +25,12 @@
       "shots": [
         {
           "id": "beat-02-shot-001",
-          "phrase": "Now define Cluster Classification System precisely enough that another learner could test the definition.",
+          "phrase": "Now define Cluster Affiliations precisely enough that another learner could test the definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-02-shot-002",
-          "phrase": "Consider this worked case: A proposed seminar on memory safety analysis is classified under both clusters.",
+          "phrase": "Consider this worked case: A course focusing on 'Python for Security Analysis' would be tagged with both clusters, while a course on 'Graph Algorithms' would belong solely to the Languages and Tools cluster.",
           "type": "deterministic-svg"
         },
         {
@@ -45,12 +45,12 @@
       "shots": [
         {
           "id": "beat-03-shot-001",
-          "phrase": "With the foundation in place, examine how Language Reference Structure operates in a concrete sequence.",
+          "phrase": "With the foundation in place, examine how Foundational Programming Concepts operates in a concrete sequence.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-03-shot-002",
-          "phrase": "Consider this worked case: A reference document outlines how Python handles variable binding and exception propagation.",
+          "phrase": "Consider this worked case: Before writing code, one defines a problem like 'Sort a list of integers' and outlines an algorithm using variables for the list and a loop (control structure) to iterate.",
           "type": "deterministic-svg"
         },
         {
@@ -65,12 +65,12 @@
       "shots": [
         {
           "id": "beat-04-shot-001",
-          "phrase": "Next, compare the choices involved in Object Model and Namespaces and make the decision criteria explicit.",
+          "phrase": "Next, compare the choices involved in Data Structures and Representation and make the decision criteria explicit.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-04-shot-002",
-          "phrase": "Consider this worked case: A function call binds the parameter name to a specific object instance in the local scope.",
+          "phrase": "Consider this worked case: A queue data structure is appropriate for modeling a print job spooler where the first job submitted is the first to be processed.",
           "type": "deterministic-svg"
         },
         {
@@ -85,12 +85,12 @@
       "shots": [
         {
           "id": "beat-05-shot-001",
-          "phrase": "Apply Control Flow and Exceptions to a worked situation instead of treating it as an isolated definition.",
+          "phrase": "Apply Functions and Decomposition to a worked situation instead of treating it as an isolated definition.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-05-shot-002",
-          "phrase": "Consider this worked case: A division by zero triggers an exception that jumps to a try-except block.",
+          "phrase": "Consider this worked case: A function named 'calculate_average' takes a list of numbers as a parameter and returns a single float value, isolating the math logic from the rest of the program.",
           "type": "deterministic-svg"
         },
         {
@@ -105,12 +105,12 @@
       "shots": [
         {
           "id": "beat-06-shot-001",
-          "phrase": "Examine the tradeoffs in LLVM Intermediate Representation, including what improves and what becomes more difficult.",
+          "phrase": "Examine the tradeoffs in Recursion and Base Cases, including what improves and what becomes more difficult.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-06-shot-002",
-          "phrase": "Consider this worked case: A compiler translates a high-level loop into a sequence of LLVM IR basic blocks with phi nodes.",
+          "phrase": "Consider this worked case: Calculating the factorial of 5 involves recursively calling the function for 4, 3, 2, and 1, with the base case defined as factorial(0) = 1.",
           "type": "deterministic-svg"
         },
         {
@@ -125,12 +125,12 @@
       "shots": [
         {
           "id": "beat-07-shot-001",
-          "phrase": "Stress-test the reasoning around Phi Instructions and Control Flow with an edge case and identify which assumption controls the outcome.",
+          "phrase": "Stress-test the reasoning around Python Language Semantics with an edge case and identify which assumption controls the outcome.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-07-shot-002",
-          "phrase": "Consider this worked case: A phi node chooses between two loop iteration values based on whether the loop condition was true or false.",
+          "phrase": "Consider this worked case: When a script imports a module, Python searches for it and binds the module object to a name in the current namespace, allowing subsequent code to access its functions.",
           "type": "deterministic-svg"
         },
         {
@@ -145,12 +145,12 @@
       "shots": [
         {
           "id": "beat-08-shot-001",
-          "phrase": "Use Memory Operations and Verification to diagnose a failure by separating symptoms, causes, and corrective action.",
+          "phrase": "Use Correctness and Testing to diagnose a failure by separating symptoms, causes, and corrective action.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-08-shot-002",
-          "phrase": "Consider this worked case: The verifier rejects an IR module where a store instruction targets an untyped memory location.",
+          "phrase": "Consider this worked case: A test suite for a sorting function must include not only sorted lists but also empty lists, single-element lists, and lists with duplicate values to verify robustness.",
           "type": "deterministic-svg"
         },
         {
@@ -165,12 +165,12 @@
       "shots": [
         {
           "id": "beat-09-shot-001",
-          "phrase": "Connect Compiler Phase Separation to the earlier ideas and explain how the pieces work as one system.",
+          "phrase": "Connect Debugging and Exception Handling to the earlier ideas and explain how the pieces work as one system.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-09-shot-002",
-          "phrase": "Consider this worked case: A frontend parser generates ASTs, while a backend optimizer restructures the IR for a specific CPU architecture.",
+          "phrase": "Consider this worked case: If a division by zero occurs, Python raises a ZeroDivisionError; a try-except block catches this exception, preventing the program from crashing and allowing graceful recovery.",
           "type": "deterministic-svg"
         },
         {
@@ -185,12 +185,12 @@
       "shots": [
         {
           "id": "beat-10-shot-001",
-          "phrase": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis.",
+          "phrase": "Finish with Planning and Evaluation Checklist as a practical checklist that can guide a new analysis.",
           "type": "deterministic-svg"
         },
         {
           "id": "beat-10-shot-002",
-          "phrase": "Consider this worked case: A review checklist verifies that the proposed course includes defined learning outcomes, assessment methods, and resource needs.",
+          "phrase": "Consider this worked case: A checklist for a new 'Intro to Python Security' course includes verifying that students have basic programming knowledge, defining weekly lecture topics, and setting up a final project assessment.",
           "type": "deterministic-svg"
         },
         {
@@ -201,6 +201,6 @@
       ]
     }
   ],
-  "episodeId": "csci-549-seminar-in-languages-and-tools",
+  "episodeId": "csci-549-orientation-companion",
   "schemaVersion": 1
 }

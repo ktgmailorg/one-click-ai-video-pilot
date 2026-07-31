@@ -13,10 +13,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-01",
-      "narration": "Begin by framing Course Scope and Faculty Pilot Framework as a question about inputs, decisions, and observable results. This course examines current topics in Languages and Tools. Consider this worked case: A department head proposes a new undergraduate offering focused on compiler design. On screen, display a flowchart showing faculty proposal -> pilot course -> cluster classification (Languages and Tools or Security). List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
+      "narration": "Begin by framing Course Scope and Flexibility as a question about inputs, decisions, and observable results. This is intended to allow faculty to pilot potential new undergraduate offerings. Consider this worked case: A faculty member might propose a seminar on 'Secure Coding Practices' or 'Natural Language Processing Pipelines' as a pilot course. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. List the givens before choosing a method, because an unstated assumption can change the conclusion. This establishes the vocabulary and scope needed for the remaining sections.",
       "plannedSeconds": 55,
-      "title": "Course Scope and Faculty Pilot Framework",
-      "visualDirection": "template:academic-process | Display a flowchart showing faculty proposal -> pilot course -> cluster classification (Languages and Tools or Security)."
+      "title": "Course Scope and Flexibility",
+      "visualDirection": "template:academic-process | Display the official catalog description text in a centered, high-contrast box with a subtle gradient background to emphasize its authoritative yet flexible nature."
     },
     {
       "accessibility": {
@@ -31,10 +31,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-02",
-      "narration": "Now define Cluster Classification System precisely enough that another learner could test the definition. Specific course instances will be identified as belonging to the Languages and Tools cluster, the Security cluster, or both clusters. Consider this worked case: A proposed seminar on memory safety analysis is classified under both clusters. On screen, show a Venn diagram with two overlapping circles labeled 'Languages and Tools' and 'Security', with a course title in the intersection. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
-      "plannedSeconds": 55,
-      "title": "Cluster Classification System",
-      "visualDirection": "template:academic-process | Show a Venn diagram with two overlapping circles labeled 'Languages and Tools' and 'Security', with a course title in the intersection."
+      "narration": "Now define Cluster Affiliations precisely enough that another learner could test the definition. Specific course instances will be identified as belonging to the Languages and Tools cluster, the Security cluster, or both clusters. Consider this worked case: A course focusing on 'Python for Security Analysis' would be tagged with both clusters, while a course on 'Graph Algorithms' would belong solely to the Languages and Tools cluster. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Separate the formal definition from an implementation detail, then identify what evidence would distinguish them. A precise definition makes later examples easier to evaluate and revise.",
+      "plannedSeconds": 62,
+      "title": "Cluster Affiliations",
+      "visualDirection": "template:academic-process | Render a Venn diagram with two overlapping circles labeled 'Languages and Tools' and 'Security'; place a third, smaller circle labeled 'Both' at the intersection to visually represent the dual-affiliation possibility."
     },
     {
       "accessibility": {
@@ -49,10 +49,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-03",
-      "narration": "With the foundation in place, examine how Language Reference Structure operates in a concrete sequence. The Python language reference specifies lexical analysis, data model behavior, execution, expressions, statements, functions, classes, exceptions, and module import semantics. Consider this worked case: A reference document outlines how Python handles variable binding and exception propagation. On screen, list the specified reference components in a hierarchical outline format. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 55,
-      "title": "Language Reference Structure",
-      "visualDirection": "template:academic-process | List the specified reference components in a hierarchical outline format."
+      "narration": "With the foundation in place, examine how Foundational Programming Concepts operates in a concrete sequence. Programming begins with precise problem statements, input and output examples, and algorithms written independently of syntax. Consider this worked case: Before writing code, one defines a problem like 'Sort a list of integers' and outlines an algorithm using variables for the list and a loop (control structure) to iterate. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Follow every arrow in order and name the state before and after each transition. The trace converts an abstract statement into an inspectable sequence.",
+      "plannedSeconds": 60,
+      "title": "Foundational Programming Concepts",
+      "visualDirection": "template:academic-process | Show a split-screen: left side displays a plain-text problem statement and pseudocode; right side shows a blank code editor window ready for syntax-specific implementation."
     },
     {
       "accessibility": {
@@ -67,10 +67,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-04",
-      "narration": "Next, compare the choices involved in Object Model and Namespaces and make the decision criteria explicit. Names are bound to objects within namespaces and scopes. Consider this worked case: A function call binds the parameter name to a specific object instance in the local scope. On screen, illustrate a namespace tree with nested scopes and object references pointing to shared memory addresses. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 55,
-      "title": "Object Model and Namespaces",
-      "visualDirection": "template:academic-process | Illustrate a namespace tree with nested scopes and object references pointing to shared memory addresses."
+      "narration": "Next, compare the choices involved in Data Structures and Representation and make the decision criteria explicit. Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in first-out access, trees represent hierarchy, and graphs represent connected entities. Consider this worked case: A queue data structure is appropriate for modeling a print job spooler where the first job submitted is the first to be processed. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Compare alternatives against the same constraints so the evaluation does not move the goalposts. Using shared criteria turns a preference into a defensible technical choice.",
+      "plannedSeconds": 61,
+      "title": "Data Structures and Representation",
+      "visualDirection": "template:academic-process | Animate a simple queue: boxes labeled 'A', 'B', 'C' enter from the left, and 'A' exits from the right, with arrows indicating the FIFO flow."
     },
     {
       "accessibility": {
@@ -85,10 +85,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-05",
-      "narration": "Apply Control Flow and Exceptions to a worked situation instead of treating it as an isolated definition. Exceptions interrupt normal control flow until a matching handler processes them or they propagate. Consider this worked case: A division by zero triggers an exception that jumps to a try-except block. On screen, draw a control flow graph with a normal path and an exception path branching to a handler node. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
-      "plannedSeconds": 55,
-      "title": "Control Flow and Exceptions",
-      "visualDirection": "template:academic-process | Draw a control flow graph with a normal path and an exception path branching to a handler node."
+      "narration": "Apply Functions and Decomposition to a worked situation instead of treating it as an isolated definition. Functions decompose a solution into named operations with parameters and results. Consider this worked case: A function named 'calculate_average' takes a list of numbers as a parameter and returns a single float value, isolating the math logic from the rest of the program. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Work from the concrete inputs to the result, checking units, types, or invariants at each step. The worked case shows both how to apply the method and how to check it.",
+      "plannedSeconds": 61,
+      "title": "Functions and Decomposition",
+      "visualDirection": "template:academic-process | Illustrate a block diagram where a large 'Main Program' block is broken down into smaller, labeled blocks representing individual functions, connected by arrows showing data flow."
     },
     {
       "accessibility": {
@@ -103,10 +103,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-06",
-      "narration": "Examine the tradeoffs in LLVM Intermediate Representation, including what improves and what becomes more difficult. LLVM IR is a typed, SSA-based intermediate representation with explicit instructions, basic blocks, functions, memory operations, and control flow. Consider this worked case: A compiler translates a high-level loop into a sequence of LLVM IR basic blocks with phi nodes. On screen, render a simplified LLVM IR module showing a function, basic blocks, and a phi instruction at a merge point. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
-      "plannedSeconds": 56,
-      "title": "LLVM Intermediate Representation",
-      "visualDirection": "template:academic-process | Render a simplified LLVM IR module showing a function, basic blocks, and a phi instruction at a merge point."
+      "narration": "Examine the tradeoffs in Recursion and Base Cases, including what improves and what becomes more difficult. Recursion solves a problem through smaller instances and requires a base case. Consider this worked case: Calculating the factorial of 5 involves recursively calling the function for 4, 3, 2, and 1, with the base case defined as factorial(0) = 1. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. State the benefit, the cost, and the condition under which the tradeoff is acceptable. Making the tradeoff visible prevents a local improvement from hiding a larger cost.",
+      "plannedSeconds": 58,
+      "title": "Recursion and Base Cases",
+      "visualDirection": "template:academic-process | Draw a nested set of brackets or a tree diagram where each level represents a recursive call, clearly marking the bottom-most node as the 'Base Case'."
     },
     {
       "accessibility": {
@@ -121,10 +121,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-07",
-      "narration": "Stress-test the reasoning around Phi Instructions and Control Flow with an edge case and identify which assumption controls the outcome. Phi instructions select values according to the predecessor control-flow edge. Consider this worked case: A phi node chooses between two loop iteration values based on whether the loop condition was true or false. On screen, show a control flow graph with two incoming edges to a block containing a phi instruction that selects between two values. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
-      "plannedSeconds": 58,
-      "title": "Phi Instructions and Control Flow",
-      "visualDirection": "template:academic-process | Show a control flow graph with two incoming edges to a block containing a phi instruction that selects between two values."
+      "narration": "Stress-test the reasoning around Python Language Semantics with an edge case and identify which assumption controls the outcome. The Python language reference specifies lexical analysis, data model behavior, execution, expressions, statements, functions, classes, exceptions, and module import semantics. Consider this worked case: When a script imports a module, Python searches for it and binds the module object to a name in the current namespace, allowing subsequent code to access its functions. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Change one assumption at a time and observe which part of the reasoning no longer holds. The edge case reveals the boundary of the claim without discarding the useful core idea.",
+      "plannedSeconds": 67,
+      "title": "Python Language Semantics",
+      "visualDirection": "template:academic-process | Present a flowchart starting with 'Import Statement', branching to 'Search Path', then to 'Module Object', and finally to 'Namespace Binding', with icons representing each step."
     },
     {
       "accessibility": {
@@ -139,10 +139,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-08",
-      "narration": "Use Memory Operations and Verification to diagnose a failure by separating symptoms, causes, and corrective action. Load and store instructions make memory access explicit. Consider this worked case: The verifier rejects an IR module where a store instruction targets an untyped memory location. On screen, display a before-and-after comparison of invalid IR (with a type mismatch) and valid IR (with explicit memory types). Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test. Name each dependency explicitly, and keep labels and representations consistent throughout the analysis.",
-      "plannedSeconds": 58,
-      "title": "Memory Operations and Verification",
-      "visualDirection": "template:academic-process | Display a before-and-after comparison of invalid IR (with a type mismatch) and valid IR (with explicit memory types)."
+      "narration": "Use Correctness and Testing to diagnose a failure by separating symptoms, causes, and corrective action. Correctness arguments, tests, tracing, and debugging compare intended behavior with observable results, including boundary and error cases. Consider this worked case: A test suite for a sorting function must include not only sorted lists but also empty lists, single-element lists, and lists with duplicate values to verify robustness. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause. The diagnosis is strongest when another person can reproduce the observation and the test.",
+      "plannedSeconds": 63,
+      "title": "Correctness and Testing",
+      "visualDirection": "template:academic-process | Show a side-by-side comparison: the left panel displays the 'Intended Behavior' (expected output), and the right panel shows the 'Actual Output' with a highlighted discrepancy indicating a bug."
     },
     {
       "accessibility": {
@@ -157,10 +157,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-09",
-      "narration": "Connect Compiler Phase Separation to the earlier ideas and explain how the pieces work as one system. Compiler work separates parsing and semantic analysis from lowering, verification, optimization, and target-specific code generation. Consider this worked case: A frontend parser generates ASTs, while a backend optimizer restructures the IR for a specific CPU architecture. On screen, present a linear pipeline diagram with distinct stages: Parsing -> Semantic Analysis -> Lowering -> Verification -> Optimization -> Code Generation. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
-      "plannedSeconds": 56,
-      "title": "Compiler Phase Separation",
-      "visualDirection": "template:academic-process | Present a linear pipeline diagram with distinct stages: Parsing -> Semantic Analysis -> Lowering -> Verification -> Optimization -> Code Generation."
+      "narration": "Connect Debugging and Exception Handling to the earlier ideas and explain how the pieces work as one system. Exceptions interrupt normal control flow until a matching handler processes them or they propagate. Consider this worked case: If a division by zero occurs, Python raises a ZeroDivisionError; a try-except block catches this exception, preventing the program from crashing and allowing graceful recovery. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. Explain each connection explicitly and verify that information retains the same meaning across representations. The synthesis matters only if every connection remains supported by the original evidence.",
+      "plannedSeconds": 60,
+      "title": "Debugging and Exception Handling",
+      "visualDirection": "template:academic-process | Render a code snippet with a `try` block containing a risky operation and an `except` block below it, with a visual indicator (like a red flag) appearing when the exception is triggered."
     },
     {
       "accessibility": {
@@ -175,10 +175,10 @@
       "delivery": "Clear, direct, and conversational.",
       "equations": [],
       "id": "beat-10",
-      "narration": "Finish with Practical Analysis Checklist as a practical checklist that can guide a new analysis. Specific course details (such as prerequisites, course seminar, format, learning outcomes, assessment methods, and resource needs) will be determined by the faculty member(s) who propose a specific seminar course in this area. Consider this worked case: A review checklist verifies that the proposed course includes defined learning outcomes, assessment methods, and resource needs. On screen, show a checklist template with checkboxes for prerequisites, format, learning outcomes, assessment methods, and resource needs. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
-      "plannedSeconds": 63,
-      "title": "Practical Analysis Checklist",
-      "visualDirection": "template:academic-process | Show a checklist template with checkboxes for prerequisites, format, learning outcomes, assessment methods, and resource needs."
+      "narration": "Finish with Planning and Evaluation Checklist as a practical checklist that can guide a new analysis. Specific course details (such as prerequisites, course seminar, format, learning outcomes, assessment methods, and resource needs) will be determined by the faculty member(s) who propose a specific seminar course in this area. Consider this worked case: A checklist for a new 'Intro to Python Security' course includes verifying that students have basic programming knowledge, defining weekly lecture topics, and setting up a final project assessment. Trace each intermediate state in the example, connect it to the formal claim, and verify that the final result satisfies the stated condition. For each checklist item, record the evidence, the remaining uncertainty, and the next verification step. The result is a repeatable procedure, not a conclusion that depends on memory or intuition.",
+      "plannedSeconds": 70,
+      "title": "Planning and Evaluation Checklist",
+      "visualDirection": "template:academic-process | Display a clean, bulleted checklist graphic with checkboxes next to items like 'Define Prerequisites', 'Set Learning Outcomes', 'Choose Format', and 'Plan Assessments', styled to look like a printable handout."
     }
   ],
   "claims": [
@@ -187,7 +187,7 @@
       "sourceIds": [
         "rit-csci-549"
       ],
-      "text": "This course examines current topics in Languages and Tools.",
+      "text": "This is intended to allow faculty to pilot potential new undergraduate offerings.",
       "verified": true
     },
     {
@@ -201,57 +201,57 @@
     {
       "id": "beat-03-claim-01",
       "sourceIds": [
+        "opendsa-programming-foundations"
+      ],
+      "text": "Programming begins with precise problem statements, input and output examples, and algorithms written independently of syntax.",
+      "verified": true
+    },
+    {
+      "id": "beat-04-claim-01",
+      "sourceIds": [
+        "opendsa-programming-foundations"
+      ],
+      "text": "Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in first-out access, trees represent hierarchy, and graphs represent connected entities.",
+      "verified": true
+    },
+    {
+      "id": "beat-05-claim-01",
+      "sourceIds": [
+        "opendsa-programming-foundations"
+      ],
+      "text": "Functions decompose a solution into named operations with parameters and results.",
+      "verified": true
+    },
+    {
+      "id": "beat-06-claim-01",
+      "sourceIds": [
+        "opendsa-programming-foundations"
+      ],
+      "text": "Recursion solves a problem through smaller instances and requires a base case.",
+      "verified": true
+    },
+    {
+      "id": "beat-07-claim-01",
+      "sourceIds": [
         "python-language-reference"
       ],
       "text": "The Python language reference specifies lexical analysis, data model behavior, execution, expressions, statements, functions, classes, exceptions, and module import semantics.",
       "verified": true
     },
     {
-      "id": "beat-04-claim-01",
-      "sourceIds": [
-        "python-language-reference"
-      ],
-      "text": "Names are bound to objects within namespaces and scopes.",
-      "verified": true
-    },
-    {
-      "id": "beat-05-claim-01",
-      "sourceIds": [
-        "python-language-reference"
-      ],
-      "text": "Exceptions interrupt normal control flow until a matching handler processes them or they propagate.",
-      "verified": true
-    },
-    {
-      "id": "beat-06-claim-01",
-      "sourceIds": [
-        "llvm-language-reference"
-      ],
-      "text": "LLVM IR is a typed, SSA-based intermediate representation with explicit instructions, basic blocks, functions, memory operations, and control flow.",
-      "verified": true
-    },
-    {
-      "id": "beat-07-claim-01",
-      "sourceIds": [
-        "llvm-language-reference"
-      ],
-      "text": "Phi instructions select values according to the predecessor control-flow edge.",
-      "verified": true
-    },
-    {
       "id": "beat-08-claim-01",
       "sourceIds": [
-        "llvm-language-reference"
+        "opendsa-programming-foundations"
       ],
-      "text": "Load and store instructions make memory access explicit.",
+      "text": "Correctness arguments, tests, tracing, and debugging compare intended behavior with observable results, including boundary and error cases.",
       "verified": true
     },
     {
       "id": "beat-09-claim-01",
       "sourceIds": [
-        "llvm-language-reference"
+        "python-language-reference"
       ],
-      "text": "Compiler work separates parsing and semantic analysis from lowering, verification, optimization, and target-specific code generation.",
+      "text": "Exceptions interrupt normal control flow until a matching handler processes them or they propagate.",
       "verified": true
     },
     {
@@ -263,7 +263,7 @@
       "verified": true
     }
   ],
-  "id": "csci-549-seminar-in-languages-and-tools",
+  "id": "csci-549-orientation-companion",
   "learningObjectives": [],
   "pronunciations": [],
   "schemaVersion": 2,
@@ -289,15 +289,15 @@
       "verified": true
     },
     {
-      "author": "LLVM Project",
-      "excerpt": "LLVM IR is a typed, SSA-based intermediate representation with explicit instructions, basic blocks, functions, memory operations, and control flow. A module contains global values, functions, declarations, and metadata. A function contains basic blocks, and every basic block ends with a terminator instruction. Phi instructions select values according to the predecessor control-flow edge. Load and store instructions make memory access explicit. Valid IR must satisfy structural and typing rules. The verifier reports IR that violates those rules. Compiler work separates parsing and semantic analysis from lowering, verification, optimization, and target-specific code generation.",
-      "id": "llvm-language-reference",
-      "sha256": "a43379c8170e7b9a563e131114cda4ecf3edd42bb450fc24a5d7684fefa888c0",
-      "title": "LLVM Language Reference Manual",
+      "author": "OpenDSA Project",
+      "excerpt": "Programming begins with precise problem statements, input and output examples, and algorithms written independently of syntax. Variables represent values and state, expressions compute values, and control structures select or repeat operations. Functions decompose a solution into named operations with parameters and results. Recursion solves a problem through smaller instances and requires a base case. Lists represent ordered sequences, stacks use last-in first-out access, queues use first-in first-out access, trees represent hierarchy, and graphs represent connected entities. Searching and sorting algorithms depend on representation and invariants. Correctness arguments, tests, tracing, and debugging compare intended behavior with observable results, including boundary and error cases.",
+      "id": "opendsa-programming-foundations",
+      "sha256": "853127e4dd63e3809a5c69fd46259846f13da31b0d141c311e782a72d07f4bc9",
+      "title": "OpenDSA Programming, Data Structures, and Algorithms",
       "type": "note",
-      "uri": "https://llvm.org/docs/LangRef.html",
+      "uri": "https://opendsa-server.cs.vt.edu/",
       "verified": true
     }
   ],
-  "title": "CSCI-549: Seminar in Languages and Tools"
+  "title": "CSCI-549 Orientation Companion"
 }

@@ -9,23 +9,22 @@
     "truePeakDbtp": -1.51
   },
   "audioSampleRate": 48000,
-  "audioStartSeconds": 0,
+  "audioStartSeconds": 0.024,
   "cache": {
-    "draft": false,
+    "draft": true,
     "draftSkipped": false,
-    "master": false,
+    "master": true,
     "sectionCount": 3,
-    "sections": 0
+    "sections": 3
   },
   "draftPath": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/individualized-study-question/work/render/documentary-master.DRAFT.mp4",
   "durationSeconds": 57.732967,
   "encoder": {
-    "codec": "h264_videotoolbox",
-    "mode": "videotoolbox",
-    "prioritizeSpeed": false,
-    "profile": "high",
-    "quality": "80",
-    "realtime": true
+    "codec": "libx264",
+    "crf": "20",
+    "mode": "software",
+    "preset": "veryfast",
+    "threads": "1"
   },
   "frameRate": "30000/1001",
   "height": 1080,
@@ -35,36 +34,36 @@
   "sections": [
     {
       "beatId": "beat-01",
-      "cacheHit": false,
+      "cacheHit": true,
       "durationSeconds": 15.792,
       "output": "beat-01.mp4",
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/individualized-study-question/work/render/sections/beat-01.mp4",
-      "renderSignature": "85b04614e5b687b7d83a1b93509a459b45d6233f97b04295d28ebb88dd2e74ce",
+      "renderSignature": "e2e863a960c27a2e33d3956c7bde4cda1423506ccf1db95baafa0e2014d1e49e",
       "schemaVersion": 1,
-      "sha256": "e4732bfe17b40bb2a4de60a4b1f9d3d5b15b7f6091370203cd6b1af8597b5fc8"
+      "sha256": "4ee2fad536931a62ddf5fa9828f0b5d2770cc755254eb4899e27d2e41374fc3d"
     },
     {
       "beatId": "beat-02",
-      "cacheHit": false,
+      "cacheHit": true,
       "durationSeconds": 18.768,
       "output": "beat-02.mp4",
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/individualized-study-question/work/render/sections/beat-02.mp4",
-      "renderSignature": "497653ddcab6dca69701776881d0d4110eecb299b12c68ab46e0832205047c13",
+      "renderSignature": "b1e23694e3dc06481f7209a3aaa83a171d77638118ed3eaf2eb423009a7d548b",
       "schemaVersion": 1,
-      "sha256": "72b370d21be399ef9817712f641ed3f3052ff7e10565806493481e0c8a224709"
+      "sha256": "8ddfcbac8bcd84915e9424838e838a08f30a63e91792dca5d70815ec505cd056"
     },
     {
       "beatId": "beat-03",
-      "cacheHit": false,
+      "cacheHit": true,
       "durationSeconds": 23.16,
       "output": "beat-03.mp4",
       "path": "/Users/kt/Documents/video-generator-rit/.demo-output/subject-showcase/individualized-study-question/work/render/sections/beat-03.mp4",
-      "renderSignature": "04f286b1acf2f69a9e605d079d7e1d72fcce278372c3b7ef6a0102dd83d1d89d",
+      "renderSignature": "2b9ad83f0ab1e9a5fe647b8680f575e9e9ca0705a1c841017d2bc2dc029fc081",
       "schemaVersion": 1,
-      "sha256": "0a9b4c04ae88c4510d5e83c32914bd9ad8532756b96e1cde36564ac838f19869"
+      "sha256": "046e9062adcd43366e9f94b0e2d07a5f6566b3d2b1b18620a9b0e703fa5c5812"
     }
   ],
-  "sha256": "ef6ef94bd74c4e2da26d20b64e22a464ce64347076c0786654ba8f36b5327636",
+  "sha256": "fbb572eda8f87019f95cfd958aa67c8a5fed50a1fff657d789977e43585f71c0",
   "title": "How to Shape an Interdisciplinary Study Question",
   "width": 1920
 }

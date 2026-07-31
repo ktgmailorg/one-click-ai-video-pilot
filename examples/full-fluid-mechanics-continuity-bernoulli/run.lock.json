@@ -1,7 +1,7 @@
 {
   "approvals": [
     {
-      "approvedAt": "2026-07-31T15:24:29.025Z",
+      "approvedAt": "2026-07-31T19:22:31.232Z",
       "notes": "Verifies declared source bindings for draft rendering; instructor and release approval remain required.",
       "reviewer": "Automated source-pack verification (draft)",
       "role": "automation",
@@ -595,7 +595,7 @@
     }
   ],
   "configSha256": "42bc075661808607bdd085f1b4d687fbd85d5d31a8fd5ae2084f50a77bf8e275",
-  "createdAt": "2026-07-31T15:27:38.210Z",
+  "createdAt": "2026-07-31T19:25:41.652Z",
   "final": {
     "releaseAudit": {
       "blockers": [],
@@ -814,7 +814,7 @@
       "width": 1920
     }
   },
-  "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
+  "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
   "inputSha256": "2a7ffba2d7f436635fd9243c8fbce1a81144a024a7b68c02b987d3f5aa2cbf6c",
   "mode": "record",
   "providers": {
@@ -1270,8 +1270,8 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 23556,
-      "lookupSha256": "04ccdb796992804cc5cfd8384736edbb75eb21107d556c2f712570c1291ec51c",
+      "durationMs": 2563,
+      "lookupSha256": "035668372bb2328e84cda821b3e9ac28fd3365fc975b8037cbf960d3faaf00d1",
       "model": "edge-tts-7.2.8",
       "profileName": "edge-narration",
       "request": {
@@ -1289,30 +1289,30 @@
         },
         "input": {
           "instructions": "Clear, direct, and conversational.",
-          "text": "Pressure in a flowing fluid splits into two distinct components. Static pressure measures the fluid's inherent thermodynamic energy, independent of motion. Dynamic pressure quantifies the kinetic energy associated with the fluid's velocity. When fluid moves faster, dynamic pressure increases while static pressure typically decreases. This trade-off occurs because total energy remains constant in ideal conditions. We visualize this by imagining a stationary observer measuring static pressure with a wall-mounted gauge, versus a moving observer experiencing dynamic pressure as a ram effect. Understanding both components allows us to predict how forces distribute across pipe walls and how velocity changes affect pressure readings."
+          "text": "Density measures how much mass occupies a given volume, acting as the bridge between mass and space. In our control volume, density determines how tightly packed the fluid molecules are. If we compress the fluid, density increases, meaning more mass fits into the same volume. Conversely, heating the fluid expands it, lowering density. This property is crucial because it dictates how the fluid responds to pressure changes and area variations. We treat density as a fundamental material property that remains constant for liquids but can shift for gases. Recognizing density allows us to predict how mass distributes itself within our imaginary boundary before analyzing motion."
         },
         "model": "edge-tts-7.2.8",
         "parameters": {},
         "schemaVersion": 1
       },
-      "requestSha256": "b211658ab7acb41cdb839e7862b13ac67bb059b1f3346ee0a8ce8a4448692937",
+      "requestSha256": "5e21b2611b791f861c7a45e53272bf3be1d3bc4d9e964b1573579fa9eca6f285",
       "result": {
         "artifacts": [
           {
             "extension": ".mp3",
             "filename": "speech.mp3",
             "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ad/ad4b9efe46611893e6a339430a8a8d60ba4e249518e0574ce10537cbb2c7ecea.mp3",
-            "sha256": "ad4b9efe46611893e6a339430a8a8d60ba4e249518e0574ce10537cbb2c7ecea",
-            "size": 425376
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/8f/8febdafac03fc90e245fedc1b36e8b83c73fe1109da1a5972b15f54f835e5457.mp3",
+            "sha256": "8febdafac03fc90e245fedc1b36e8b83c73fe1109da1a5972b15f54f835e5457",
+            "size": 397296
           },
           {
             "extension": ".vtt",
             "filename": "speech.vtt",
             "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/e5/e55b88bdb0cd3ba880063d104c504863868a7fbb9d849ed91d526ce2e76ab3b1.vtt",
-            "sha256": "e55b88bdb0cd3ba880063d104c504863868a7fbb9d849ed91d526ce2e76ab3b1",
-            "size": 968
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/f3/f3e1f3b58b2e081c178a51e9fd1760ffe17d0365ad007121809996634d118891.vtt",
+            "sha256": "f3e1f3b58b2e081c178a51e9fd1760ffe17d0365ad007121809996634d118891",
+            "size": 912
           }
         ],
         "costUsd": null,
@@ -1332,141 +1332,7 @@
       },
       "roleName": "narration",
       "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:43:49.055Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 24500,
-      "lookupSha256": "b6b3e13f00c2ebc2f5a93a7ffcf666ca114ee08e421350eba364ffd0d0327885",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "Continuity enforces mass conservation within our control volume. If mass enters at a certain rate, it must exit at the exact same rate when the flow is steady. No mass accumulates inside the box, and no sources or sinks exist within it. This principle means the product of density, area, and velocity remains constant along the pipe. If the pipe narrows, the fluid must speed up to maintain the same mass flow rate. Conversely, if the pipe widens, the fluid slows down. This relationship holds regardless of the fluid type, provided we account for density changes in compressible gases. Continuity is the first law of fluid mechanics in action, dictating how geometry forces velocity to adjust."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "1972d940313e36bc72cdd53da7f29b97042ded3831cca3799b384599f63d0e3a",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/67/671ba27bd3f93b393f7d2f1b23f3e934043b892bac0abc18281c4c09d0e679e7.mp3",
-            "sha256": "671ba27bd3f93b393f7d2f1b23f3e934043b892bac0abc18281c4c09d0e679e7",
-            "size": 413424
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/37/37c370b751d5fafee687348e2d28841bd0603c6f7fc474d6b98d03a4de2f5bcc.vtt",
-            "sha256": "37c370b751d5fafee687348e2d28841bd0603c6f7fc474d6b98d03a4de2f5bcc",
-            "size": 959
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:43:32.266Z"
-    },
-    {
-      "cacheHit": true,
-      "capability": "speech.synthesize",
-      "durationMs": 19943,
-      "lookupSha256": "4c64838b8318135789b2bf8357c8b129a118549f83da1f5126900d2b2770b25a",
-      "model": "edge-tts-7.2.8",
-      "profileName": "edge-narration",
-      "request": {
-        "capability": "speech.synthesize",
-        "dataClassification": "public",
-        "expectedOutput": {
-          "maximumBytes": 100000000,
-          "mimeTypes": [
-            "audio/mpeg",
-            "audio/wav",
-            "audio/ogg",
-            "audio/webm",
-            "text/vtt"
-          ]
-        },
-        "input": {
-          "instructions": "Clear, direct, and conversational.",
-          "text": "Combining continuity and Bernoulli's equation reveals how pipe geometry dictates pressure and velocity. When a pipe narrows, continuity forces velocity to increase. Bernoulli's equation then predicts that this velocity increase must be offset by a drop in static pressure. Conversely, a widening pipe reduces velocity and raises static pressure. This inverse relationship between area and pressure is fundamental to designing ducts, nozzles, and Venturi meters. We can visualize this by tracking pressure gauges along a tapered pipe: readings will fall in the narrow section and rise in the wide section. These relationships allow engineers to predict flow behavior without complex simulations."
-        },
-        "model": "edge-tts-7.2.8",
-        "parameters": {},
-        "schemaVersion": 1
-      },
-      "requestSha256": "d861568a2176363afb68de26139f44397425354ecbce832589f28e346c737bf1",
-      "result": {
-        "artifacts": [
-          {
-            "extension": ".mp3",
-            "filename": "speech.mp3",
-            "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/b6/b616efc6f603fc58cad57ec8d15f019f2e0250660c4e9b1857227399159a058d.mp3",
-            "sha256": "b616efc6f603fc58cad57ec8d15f019f2e0250660c4e9b1857227399159a058d",
-            "size": 412848
-          },
-          {
-            "extension": ".vtt",
-            "filename": "speech.vtt",
-            "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/5b/5b1bffd6d1c7951be5cb2f5bcd61337feebc79236eddc282a8a67a5e470f8106.vtt",
-            "sha256": "5b1bffd6d1c7951be5cb2f5bcd61337feebc79236eddc282a8a67a5e470f8106",
-            "size": 926
-          }
-        ],
-        "costUsd": null,
-        "finishReason": "stop",
-        "modelRevision": "edge-tts-7.2.8",
-        "output": {},
-        "rawResponse": {
-          "extension": ".json",
-          "filename": "provider-response.json",
-          "mimeType": "application/json",
-          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
-          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
-          "size": 101
-        },
-        "schemaVersion": 1,
-        "usage": {}
-      },
-      "roleName": "narration",
-      "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:44:12.632Z"
+      "startedAt": "2026-07-30T04:43:17.479Z"
     },
     {
       "cacheHit": true,
@@ -1605,8 +1471,8 @@
     {
       "cacheHit": true,
       "capability": "speech.synthesize",
-      "durationMs": 2563,
-      "lookupSha256": "035668372bb2328e84cda821b3e9ac28fd3365fc975b8037cbf960d3faaf00d1",
+      "durationMs": 24500,
+      "lookupSha256": "b6b3e13f00c2ebc2f5a93a7ffcf666ca114ee08e421350eba364ffd0d0327885",
       "model": "edge-tts-7.2.8",
       "profileName": "edge-narration",
       "request": {
@@ -1624,30 +1490,30 @@
         },
         "input": {
           "instructions": "Clear, direct, and conversational.",
-          "text": "Density measures how much mass occupies a given volume, acting as the bridge between mass and space. In our control volume, density determines how tightly packed the fluid molecules are. If we compress the fluid, density increases, meaning more mass fits into the same volume. Conversely, heating the fluid expands it, lowering density. This property is crucial because it dictates how the fluid responds to pressure changes and area variations. We treat density as a fundamental material property that remains constant for liquids but can shift for gases. Recognizing density allows us to predict how mass distributes itself within our imaginary boundary before analyzing motion."
+          "text": "Continuity enforces mass conservation within our control volume. If mass enters at a certain rate, it must exit at the exact same rate when the flow is steady. No mass accumulates inside the box, and no sources or sinks exist within it. This principle means the product of density, area, and velocity remains constant along the pipe. If the pipe narrows, the fluid must speed up to maintain the same mass flow rate. Conversely, if the pipe widens, the fluid slows down. This relationship holds regardless of the fluid type, provided we account for density changes in compressible gases. Continuity is the first law of fluid mechanics in action, dictating how geometry forces velocity to adjust."
         },
         "model": "edge-tts-7.2.8",
         "parameters": {},
         "schemaVersion": 1
       },
-      "requestSha256": "5e21b2611b791f861c7a45e53272bf3be1d3bc4d9e964b1573579fa9eca6f285",
+      "requestSha256": "1972d940313e36bc72cdd53da7f29b97042ded3831cca3799b384599f63d0e3a",
       "result": {
         "artifacts": [
           {
             "extension": ".mp3",
             "filename": "speech.mp3",
             "mimeType": "audio/mpeg",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/8f/8febdafac03fc90e245fedc1b36e8b83c73fe1109da1a5972b15f54f835e5457.mp3",
-            "sha256": "8febdafac03fc90e245fedc1b36e8b83c73fe1109da1a5972b15f54f835e5457",
-            "size": 397296
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/67/671ba27bd3f93b393f7d2f1b23f3e934043b892bac0abc18281c4c09d0e679e7.mp3",
+            "sha256": "671ba27bd3f93b393f7d2f1b23f3e934043b892bac0abc18281c4c09d0e679e7",
+            "size": 413424
           },
           {
             "extension": ".vtt",
             "filename": "speech.vtt",
             "mimeType": "text/vtt",
-            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/f3/f3e1f3b58b2e081c178a51e9fd1760ffe17d0365ad007121809996634d118891.vtt",
-            "sha256": "f3e1f3b58b2e081c178a51e9fd1760ffe17d0365ad007121809996634d118891",
-            "size": 912
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/37/37c370b751d5fafee687348e2d28841bd0603c6f7fc474d6b98d03a4de2f5bcc.vtt",
+            "sha256": "37c370b751d5fafee687348e2d28841bd0603c6f7fc474d6b98d03a4de2f5bcc",
+            "size": 959
           }
         ],
         "costUsd": null,
@@ -1667,7 +1533,74 @@
       },
       "roleName": "narration",
       "schemaVersion": 1,
-      "startedAt": "2026-07-30T04:43:17.479Z"
+      "startedAt": "2026-07-30T04:43:32.266Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 19943,
+      "lookupSha256": "4c64838b8318135789b2bf8357c8b129a118549f83da1f5126900d2b2770b25a",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "Combining continuity and Bernoulli's equation reveals how pipe geometry dictates pressure and velocity. When a pipe narrows, continuity forces velocity to increase. Bernoulli's equation then predicts that this velocity increase must be offset by a drop in static pressure. Conversely, a widening pipe reduces velocity and raises static pressure. This inverse relationship between area and pressure is fundamental to designing ducts, nozzles, and Venturi meters. We can visualize this by tracking pressure gauges along a tapered pipe: readings will fall in the narrow section and rise in the wide section. These relationships allow engineers to predict flow behavior without complex simulations."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "d861568a2176363afb68de26139f44397425354ecbce832589f28e346c737bf1",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/b6/b616efc6f603fc58cad57ec8d15f019f2e0250660c4e9b1857227399159a058d.mp3",
+            "sha256": "b616efc6f603fc58cad57ec8d15f019f2e0250660c4e9b1857227399159a058d",
+            "size": 412848
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/5b/5b1bffd6d1c7951be5cb2f5bcd61337feebc79236eddc282a8a67a5e470f8106.vtt",
+            "sha256": "5b1bffd6d1c7951be5cb2f5bcd61337feebc79236eddc282a8a67a5e470f8106",
+            "size": 926
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T04:44:12.632Z"
     },
     {
       "cacheHit": true,
@@ -1735,6 +1668,73 @@
       "roleName": "narration",
       "schemaVersion": 1,
       "startedAt": "2026-07-30T04:43:20.088Z"
+    },
+    {
+      "cacheHit": true,
+      "capability": "speech.synthesize",
+      "durationMs": 23556,
+      "lookupSha256": "04ccdb796992804cc5cfd8384736edbb75eb21107d556c2f712570c1291ec51c",
+      "model": "edge-tts-7.2.8",
+      "profileName": "edge-narration",
+      "request": {
+        "capability": "speech.synthesize",
+        "dataClassification": "public",
+        "expectedOutput": {
+          "maximumBytes": 100000000,
+          "mimeTypes": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/ogg",
+            "audio/webm",
+            "text/vtt"
+          ]
+        },
+        "input": {
+          "instructions": "Clear, direct, and conversational.",
+          "text": "Pressure in a flowing fluid splits into two distinct components. Static pressure measures the fluid's inherent thermodynamic energy, independent of motion. Dynamic pressure quantifies the kinetic energy associated with the fluid's velocity. When fluid moves faster, dynamic pressure increases while static pressure typically decreases. This trade-off occurs because total energy remains constant in ideal conditions. We visualize this by imagining a stationary observer measuring static pressure with a wall-mounted gauge, versus a moving observer experiencing dynamic pressure as a ram effect. Understanding both components allows us to predict how forces distribute across pipe walls and how velocity changes affect pressure readings."
+        },
+        "model": "edge-tts-7.2.8",
+        "parameters": {},
+        "schemaVersion": 1
+      },
+      "requestSha256": "b211658ab7acb41cdb839e7862b13ac67bb059b1f3346ee0a8ce8a4448692937",
+      "result": {
+        "artifacts": [
+          {
+            "extension": ".mp3",
+            "filename": "speech.mp3",
+            "mimeType": "audio/mpeg",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/ad/ad4b9efe46611893e6a339430a8a8d60ba4e249518e0574ce10537cbb2c7ecea.mp3",
+            "sha256": "ad4b9efe46611893e6a339430a8a8d60ba4e249518e0574ce10537cbb2c7ecea",
+            "size": 425376
+          },
+          {
+            "extension": ".vtt",
+            "filename": "speech.vtt",
+            "mimeType": "text/vtt",
+            "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/e5/e55b88bdb0cd3ba880063d104c504863868a7fbb9d849ed91d526ce2e76ab3b1.vtt",
+            "sha256": "e55b88bdb0cd3ba880063d104c504863868a7fbb9d849ed91d526ce2e76ab3b1",
+            "size": 968
+          }
+        ],
+        "costUsd": null,
+        "finishReason": "stop",
+        "modelRevision": "edge-tts-7.2.8",
+        "output": {},
+        "rawResponse": {
+          "extension": ".json",
+          "filename": "provider-response.json",
+          "mimeType": "application/json",
+          "path": "/Users/kt/Documents/video-generator-rit/.video-cache/v2/sha256/56/56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2.json",
+          "sha256": "56ea934ee4fdad4e40fefab7831145e5507629c2620fad2872fe8afbc469c5c2",
+          "size": 101
+        },
+        "schemaVersion": 1,
+        "usage": {}
+      },
+      "roleName": "narration",
+      "schemaVersion": 1,
+      "startedAt": "2026-07-30T04:43:49.055Z"
     },
     {
       "cacheHit": true,
@@ -1976,8 +1976,27 @@
   ],
   "status": "awaiting-approval",
   "toolchain": {
+    "ffmpeg": {
+      "available": true,
+      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "available": true,
+      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "gitChangedPaths": [
+      "outreach/README.md",
+      "outreach/general-email.md",
+      "outreach/leadership-confirmation.md",
+      "outreach/subject-showcase/reference-manifest.json"
+    ],
+    "gitDirty": true,
+    "gitRevision": "cedc458fb07653279271241e9cf4cd274ac1c005",
+    "gitStatusSha256": "add6a4c631c3d463fa2b7e37fa6a50bfab3e6fce98296cf041f8a8d165d4cda8",
     "node": "v22.23.1",
     "platform": "darwin-arm64",
+    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtimeDirty": false,
     "sharp": {
       "aom": "3.14.1",
       "archive": "3.8.8",
@@ -2001,32 +2020,14 @@
       "png": "1.6.58",
       "proxy-libintl": "0.5",
       "rsvg": "2.62.90",
+      "sharp": "0.35.3",
       "tiff": "d01a94b",
       "uhdr": "1acdbed",
       "vips": "8.18.3",
       "webp": "1.6.0",
       "xml2": "2.15.3",
-      "zlib-ng": "2.3.3",
-      "sharp": "0.35.3"
-    },
-    "ffmpeg": {
-      "available": true,
-      "version": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers"
-    },
-    "ffprobe": {
-      "available": true,
-      "version": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers"
-    },
-    "gitRevision": "d0f872f5972b0bf517ed3b59e7ea0c3a938bdaba",
-    "gitDirty": true,
-    "gitStatusSha256": "a7e2557bfc257cfba8e7d16aaa09b35baf3d29d375399f795fbccaf5b302ad5d",
-    "gitChangedPaths": [
-      "outreach/README.md",
-      "outreach/general-email.md",
-      "outreach/leadership-confirmation.md"
-    ],
-    "runtimeDirty": false,
-    "runtimeDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "zlib-ng": "2.3.3"
+    }
   },
   "totalCostUsd": 0
 }

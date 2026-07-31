@@ -1,249 +1,197 @@
-NARRATOR: Begin by framing Foundations of the Relational Model as a question about inputs,
+Begin by framing Foundations of the Relational Model as a question about inputs, decisions,
 
-decisions, and observable results.
+and observable results.
 
-NARRATOR: Relational systems organize data with tables, rows, columns, and declared
+Relational systems organize data with tables, rows, columns, and declared types.
 
-types.
+Consider this worked case: A 'Students' table contains rows for each student, with columns
 
-NARRATOR: Consider this worked case: A 'Students' table contains rows for each
+for ID, name, and major, each with a specific data type like INTEGER or VARCHAR.
 
-student, with columns for ID, name, and major, each with a specific data type like INTEGER or
+List the givens before choosing a method, because an unstated assumption can change the
 
-VARCHAR.
+conclusion.
 
-NARRATOR: On screen, display a simple table schema diagram with labeled columns and data
+This establishes the vocabulary and scope needed for the remaining sections.
 
-types.
+Now define Entity-Relationship Modeling Basics precisely enough that another learner could
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+test the definition.
 
-change the conclusion.
+Property graph models represent domain entities as nodes.
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+Consider this worked case: Modeling a 'Library' system involves entities like Books,
 
-NARRATOR: Now define Entity-Relationship Modeling Basics precisely enough that another
-
-learner could test the definition.
-
-NARRATOR: Property graph models represent domain entities as nodes.
-
-NARRATOR: Consider this worked case: Modeling a 'Library' system involves entities like
-
-Books, Authors, and Members, connected by relationships like 'writtenBy' and
+Authors, and Members, connected by relationships like 'writtenBy' and
 
 'checkedOutBy'.
 
-NARRATOR: On screen, show a simple ER diagram with three rectangles (Book, Author, Member)
-
-and lines connecting them.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
-
-throughout the analysis.
-
-NARRATOR: With the foundation in place, examine how Primary Keys and Unique
-
-Identifiers operates in a concrete sequence.
-
-NARRATOR: Primary keys identify rows, while foreign keys express references between
-
-tables.
-
-NARRATOR: Consider this worked case: A 'Products' table uses a 'ProductID' column as
-
-the primary key to uniquely identify each item.
-
-NARRATOR: On screen, highlight a primary key column in a table diagram with a unique key
-
-symbol.
-
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
-
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Next, compare the choices involved in Foreign Keys and Referential Integrity and
+With the foundation in place, examine how Primary Keys and Unique Identifiers operates
 
-make the decision criteria explicit.
+in a concrete sequence.
 
-NARRATOR: Constraints and indexes support data integrity and efficient lookup.
+Primary keys identify rows, while foreign keys express references between tables.
 
-NARRATOR: Consider this worked case: A 'Orders' table includes a 'CustomerID' foreign
+Consider this worked case: A 'Products' table uses a 'ProductID' column as the primary key
 
-key that links to the 'Customers' table.
+to uniquely identify each item.
 
-NARRATOR: On screen, draw a line from the 'Orders' table to the 'Customers' table
+Follow every arrow in order and name the state before and after each transition.
 
-labeled 'CustomerID'.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
-
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Apply Constraints for Data Validation to a worked situation instead of
+Next, compare the choices involved in Foreign Keys and Referential Integrity and make the
 
-treating it as an isolated definition.
+decision criteria explicit.
 
-NARRATOR: Constraints reject states that violate declared data rules.
+Constraints and indexes support data integrity and efficient lookup.
 
-NARRATOR: Consider this worked case: A 'Salary' column constraint prevents negative
+Consider this worked case: A 'Orders' table includes a 'CustomerID' foreign key that links
 
-values, and a 'Email' column constraint enforces a valid email format.
+to the 'Customers' table.
 
-NARRATOR: On screen, show a table with constraint symbols (e.g., NOT NULL, CHECK)
+Compare alternatives against the same constraints so the evaluation does not move
 
-next to relevant columns.
+the goalposts.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+Using shared criteria turns a preference into a defensible technical choice.
 
-at each step.
-
-NARRATOR: The worked case shows both how to apply the method and how to check it.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Examine the tradeoffs in Normalization and Update Anomalies, including
+Apply Constraints for Data Validation to a worked situation instead of treating it as an
 
-what improves and what becomes more difficult.
+isolated definition.
 
-NARRATOR: Schema design separates entities and relationships, while normalization addresses
+Constraints reject states that violate declared data rules.
+
+Consider this worked case: A 'Salary' column constraint prevents negative values, and a
+
+'Email' column constraint enforces a valid email format.
+
+g. , NOT NULL, CHECK) next to relevant columns.
+
+Work from the concrete inputs to the result, checking units, types, or invariants at each
+
+step.
+
+The worked case shows both how to apply the method and how to check it.
+
+Name each dependency explicitly, and keep labels and representations consistent
+
+throughout the analysis.
+
+Examine the tradeoffs in Normalization and Update Anomalies, including what improves and
+
+what becomes more difficult.
+
+Schema design separates entities and relationships, while normalization addresses
 
 update anomalies.
 
-NARRATOR: Consider this worked case: Splitting a 'Department' table into separate tables for
+Consider this worked case: Splitting a 'Department' table into separate tables for
 
 DepartmentName and DepartmentLocation prevents duplicate data and update errors.
 
-NARRATOR: On screen, display a before-and-after table structure showing
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-normalization steps.
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
-
-acceptable.
-
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Stress-test the reasoning around Relational Algebra and Query Logic with an
+Stress-test the reasoning around Relational Algebra and Query Logic with an edge case and
 
-edge case and identify which assumption controls the outcome.
+identify which assumption controls the outcome.
 
-NARRATOR: This course provides a broad introduction to the principles and practice of
+This course provides a broad introduction to the principles and practice of modern data
 
-modern data management, with an emphasis on the relational database model.
+management, with an emphasis on the relational database model.
 
-NARRATOR: Consider this worked case: A SELECT statement with a JOIN clause combines data
+Consider this worked case: A SELECT statement with a JOIN clause combines data from
 
-from 'Employees' and 'Departments' tables based on a common key.
+'Employees' and 'Departments' tables based on a common key.
 
-NARRATOR: On screen, show a simplified relational algebra expression (e.g., σ, ⨝)
+g. , σ, ⨝) alongside a corresponding SQL query snippet.
 
-alongside a corresponding SQL query snippet.
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-holds.
+Use Transactions and Atomicity to diagnose a failure by separating symptoms, causes, and
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+corrective action.
 
-core idea.
+Transactions group operations into an atomic unit of work.
 
-NARRATOR: Use Transactions and Atomicity to diagnose a failure by separating symptoms,
-
-causes, and corrective action.
-
-NARRATOR: Transactions group operations into an atomic unit of work.
-
-NARRATOR: Consider this worked case: A banking transaction transfers funds between two
+Consider this worked case: A banking transaction transfers funds between two
 
 accounts; if one step fails, both are rolled back.
 
-NARRATOR: On screen, illustrate a transaction flow with steps (Start, Process,
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-Commit/Rollback) and a lock icon.
+smallest plausible cause.
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-behavior, then test the smallest plausible cause.
-
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
-
-and the test.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Connect Indexing and Query Performance to the earlier ideas and explain
+Connect Indexing and Query Performance to the earlier ideas and explain how the pieces work
 
-how the pieces work as one system.
+as one system.
 
-NARRATOR: Indexes provide additional access paths for selected queries.
+Indexes provide additional access paths for selected queries.
 
-NARRATOR: Consider this worked case: An index on the 'LastName' column speeds up searches
+Consider this worked case: An index on the 'LastName' column speeds up searches for
 
-for employees by surname.
+employees by surname.
 
-NARRATOR: On screen, show a table with a B-tree index structure diagram next to a query
+Explain each connection explicitly and verify that information retains the same meaning
 
-execution path.
+across representations.
 
-NARRATOR: Explain each connection explicitly and verify that information retains the same
+The synthesis matters only if every connection remains supported by the original evidence.
 
-meaning across representations.
-
-NARRATOR: The synthesis matters only if every connection remains supported by the original
-
-evidence.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-guide a new analysis.
+analysis.
 
-NARRATOR: Topics in relational database systems include data modeling; the relational
+Topics in relational database systems include data modeling; the relational model;
 
-model; relational algebra; Structured Query Language (SQL); and data quality,
+relational algebra; Structured Query Language (SQL); and data quality, transactions,
 
-transactions, integrity and security.
+integrity and security.
 
-NARRATOR: Consider this worked case: Check that all foreign keys reference valid primary
+Consider this worked case: Check that all foreign keys reference valid primary keys,
 
-keys, indexes cover frequent query columns, and constraints prevent invalid data entry.
+indexes cover frequent query columns, and constraints prevent invalid data entry.
 
-NARRATOR: On screen, display a checklist graphic with three boxes: Integrity,
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-Performance, Query Requirements.
+verification step.
 
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

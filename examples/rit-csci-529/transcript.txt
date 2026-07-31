@@ -1,241 +1,181 @@
-NARRATOR: Begin by framing Workflow Architecture as a question about inputs,
+Begin by framing Workflow Architecture as a question about inputs, decisions, and
 
-decisions, and observable results.
+observable results.
 
-NARRATOR: Data-analysis workflows separate data preparation, exploratory analysis,
+Data-analysis workflows separate data preparation, exploratory analysis, training,
 
-training, validation, testing, model selection, and evaluation.
+validation, testing, model selection, and evaluation.
 
-NARRATOR: Consider this worked case: A pipeline begins by cleaning raw CSV files,
+Consider this worked case: A pipeline begins by cleaning raw CSV files, then splits them
 
-then splits them into training and validation sets before fitting a classifier.
+into training and validation sets before fitting a classifier.
 
-NARRATOR: On screen, display a horizontal flowchart with seven labeled nodes connected
+List the givens before choosing a method, because an unstated assumption can change the
 
-by arrows, showing the progression from data preparation to evaluation.
+conclusion.
 
-NARRATOR: List the givens before choosing a method, because an unstated assumption can
+This establishes the vocabulary and scope needed for the remaining sections.
 
-change the conclusion.
+Now define Supervised Learning Foundations precisely enough that another learner could
 
-NARRATOR: This establishes the vocabulary and scope needed for the remaining sections.
+test the definition.
 
-NARRATOR: Now define Supervised Learning Foundations precisely enough that another
-
-learner could test the definition.
-
-NARRATOR: Supervised methods learn mappings from examples paired with target labels, while
+Supervised methods learn mappings from examples paired with target labels, while
 
 unsupervised methods identify structure without targets.
 
-NARRATOR: Consider this worked case: Training a logistic regression model on labeled spam
+Consider this worked case: Training a logistic regression model on labeled spam emails where
 
-emails where the label indicates whether each message is spam or not.
+the label indicates whether each message is spam or not.
 
-NARRATOR: On screen, show a split-screen diagram: left side shows unlabeled data
-
-points, right side shows the same points with colored target labels, connected by a learning
-
-arrow.
-
-NARRATOR: Separate the formal definition from an implementation detail, then identify what
+Separate the formal definition from an implementation detail, then identify what
 
 evidence would distinguish them.
 
-NARRATOR: A precise definition makes later examples easier to evaluate and revise.
+A precise definition makes later examples easier to evaluate and revise.
 
-NARRATOR: With the foundation in place, examine how Unsupervised Learning Foundations
+With the foundation in place, examine how Unsupervised Learning Foundations operates in
 
-operates in a concrete sequence.
+a concrete sequence.
 
-NARRATOR: Query planning and physical storage affect performance without changing logical
+Query planning and physical storage affect performance without changing logical query
 
-query meaning.
+meaning.
 
-NARRATOR: Consider this worked case: Applying k-means clustering to customer purchase data
+Consider this worked case: Applying k-means clustering to customer purchase data to group
 
-to group users by spending patterns without predefined categories.
+users by spending patterns without predefined categories.
 
-NARRATOR: On screen, render a scatter plot of data points with colored clusters forming
+Follow every arrow in order and name the state before and after each transition.
 
-around natural groupings, labeled as 'no target labels'.
+The trace converts an abstract statement into an inspectable sequence.
 
-NARRATOR: Follow every arrow in order and name the state before and after each transition.
-
-NARRATOR: The trace converts an abstract statement into an inspectable sequence.
-
-NARRATOR: Name each dependency explicitly, and keep labels and representations consistent
+Name each dependency explicitly, and keep labels and representations consistent
 
 throughout the analysis.
 
-NARRATOR: Next, compare the choices involved in Preprocessing Constraints and make the
+Next, compare the choices involved in Preprocessing Constraints and make the
 
 decision criteria explicit.
 
-NARRATOR: Preprocessing must be fitted only on permitted training data to avoid leakage.
+Preprocessing must be fitted only on permitted training data to avoid leakage.
 
-NARRATOR: Consider this worked case: Scaling features using the mean and standard deviation
+Consider this worked case: Scaling features using the mean and standard deviation
 
 calculated exclusively from the training set before applying to validation data.
 
-NARRATOR: On screen, illustrate a pipeline where a 'fit' step occurs on the training set,
+Compare alternatives against the same constraints so the evaluation does not move
 
-and a 'transform' step applies the same parameters to the validation set, with a
+the goalposts.
 
-warning icon blocking cross-contamination.
+Using shared criteria turns a preference into a defensible technical choice.
 
-NARRATOR: Compare alternatives against the same constraints so the evaluation does not
-
-move the goalposts.
-
-NARRATOR: Using shared criteria turns a preference into a defensible technical choice.
-
-NARRATOR: Apply Pipeline Consistency to a worked situation instead of treating it as an
+Apply Pipeline Consistency to a worked situation instead of treating it as an
 
 isolated definition.
 
-NARRATOR: Pipelines combine transformations and estimators so the same operations are
+Pipelines combine transformations and estimators so the same operations are applied
 
-applied consistently.
+consistently.
 
-NARRATOR: Consider this worked case: A single pipeline object that chains standardization,
+Consider this worked case: A single pipeline object that chains standardization,
 
 imputation, and model fitting, ensuring identical operations run during training and
 
 prediction.
 
-NARRATOR: On screen, draw a rectangular block labeled 'Pipeline' containing three stacked
+Work from the concrete inputs to the result, checking units, types, or invariants at each
 
-sub-blocks (transform, impute, estimator) with input and output arrows, emphasizing unified
+step.
 
-execution.
+The worked case shows both how to apply the method and how to check it.
 
-NARRATOR: Work from the concrete inputs to the result, checking units, types, or invariants
+Examine the tradeoffs in Cross-Validation Mechanics, including what improves and what
 
-at each step.
+becomes more difficult.
 
-NARRATOR: The worked case shows both how to apply the method and how to check it.
+Cross-validation repeats training and validation across defined splits.
 
-NARRATOR: Examine the tradeoffs in Cross-Validation Mechanics, including what
+Consider this worked case: Using five-fold cross-validation where the dataset is
 
-improves and what becomes more difficult.
+partitioned into five subsets, each serving as a validation set once while the others train
 
-NARRATOR: Cross-validation repeats training and validation across defined splits.
+the model.
 
-NARRATOR: Consider this worked case: Using five-fold cross-validation where the dataset
+State the benefit, the cost, and the condition under which the tradeoff is acceptable.
 
-is partitioned into five subsets, each serving as a validation set once while the others
+Making the tradeoff visible prevents a local improvement from hiding a larger cost.
 
-train the model.
+Stress-test the reasoning around Evaluation Alignment with an edge case and identify which
 
-NARRATOR: On screen, show a circular diagram with five segments, each labeled with a fold
+assumption controls the outcome.
 
-number, and arrows indicating rotation through training and validation phases.
+Evaluation must match the task and the cost of errors, while distribution shift, missing
 
-NARRATOR: State the benefit, the cost, and the condition under which the tradeoff is
+data, overfitting, and unexamined sampling choices can invalidate conclusions.
 
-acceptable.
+Consider this worked case: Using precision and recall for fraud detection because false
 
-NARRATOR: Making the tradeoff visible prevents a local improvement from hiding a larger cost.
+negatives carry higher cost than false positives, and adjusting thresholds based on
 
-NARRATOR: Stress-test the reasoning around Evaluation Alignment with an edge case and
+class imbalance.
 
-identify which assumption controls the outcome.
+Change one assumption at a time and observe which part of the reasoning no longer holds.
 
-NARRATOR: Evaluation must match the task and the cost of errors, while distribution shift,
+The edge case reveals the boundary of the claim without discarding the useful core idea.
 
-missing data, overfitting, and unexamined sampling choices can invalidate conclusions.
+Use Data Quality Analysis to diagnose a failure by separating symptoms, causes, and
 
-NARRATOR: Consider this worked case: Using precision and recall for fraud detection
+corrective action.
 
-because false negatives carry higher cost than false positives, and adjusting thresholds
+Data quality analysis makes missingness, duplicates, inconsistent representation,
 
-based on class imbalance.
+integrity constraints, sampling, and update behavior explicit.
 
-NARRATOR: On screen, present a decision matrix comparing true/false positives and negatives,
+Consider this worked case: Running a data profiling script that reports null counts,
 
-with cost weights applied to each quadrant to show evaluation trade-offs.
+duplicate row percentages, and value distribution shifts across time periods.
 
-NARRATOR: Change one assumption at a time and observe which part of the reasoning no longer
+Locate the first point where observed behavior diverges from expected behavior, then test the
 
-holds.
+smallest plausible cause.
 
-NARRATOR: The edge case reveals the boundary of the claim without discarding the useful
+The diagnosis is strongest when another person can reproduce the observation and the test.
 
-core idea.
+Connect Query and Storage Impact to the earlier ideas and explain how the pieces work
 
-NARRATOR: Use Data Quality Analysis to diagnose a failure by separating symptoms,
+as one system.
 
-causes, and corrective action.
+Queries select, join, aggregate, order, and transform data.
 
-NARRATOR: Data quality analysis makes missingness, duplicates, inconsistent
+Consider this worked case: Adding a B-tree index on a frequently filtered column speeds
 
-representation, integrity constraints, sampling, and update behavior explicit.
+up SELECT operations while preserving the exact same SQL result set.
 
-NARRATOR: Consider this worked case: Running a data profiling script that reports null
+Explain each connection explicitly and verify that information retains the same meaning
 
-counts, duplicate row percentages, and value distribution shifts across time periods.
+across representations.
 
-NARRATOR: On screen, display a dashboard mockup with four metric cards: 'Missingness
+The synthesis matters only if every connection remains supported by the original evidence.
 
-%', 'Duplicate Rate', 'Value Range', and 'Update Frequency', each with a trend line.
+Finish with Practical Analysis Checklist as a practical checklist that can guide a new
 
-NARRATOR: Locate the first point where observed behavior diverges from expected
+analysis.
 
-behavior, then test the smallest plausible cause.
+Analytical work should preserve provenance from captured data through cleaning,
 
-NARRATOR: The diagnosis is strongest when another person can reproduce the observation
+transformation, grouping, modeling, visualization, and reporting.
 
-and the test.
+Consider this worked case: Maintaining a versioned data lineage log that tracks each
 
-NARRATOR: Connect Query and Storage Impact to the earlier ideas and explain how the pieces
+transformation step, model parameters, and visualization settings for reproducible
 
-work as one system.
+research.
 
-NARRATOR: Queries select, join, aggregate, order, and transform data.
+For each checklist item, record the evidence, the remaining uncertainty, and the next
 
-NARRATOR: Consider this worked case: Adding a B-tree index on a frequently filtered column
+verification step.
 
-speeds up SELECT operations while preserving the exact same SQL result set.
+The result is a repeatable procedure, not a conclusion that depends on memory or
 
-NARRATOR: On screen, show a before-and-after comparison: left side shows a full table scan
-
-with slow execution time, right side shows an index lookup with faster execution time and
-
-identical output rows.
-
-NARRATOR: Explain each connection explicitly and verify that information retains the same
-
-meaning across representations.
-
-NARRATOR: The synthesis matters only if every connection remains supported by the original
-
-evidence.
-
-NARRATOR: Finish with Practical Analysis Checklist as a practical checklist that can
-
-guide a new analysis.
-
-NARRATOR: Analytical work should preserve provenance from captured data through
-
-cleaning, transformation, grouping, modeling, visualization, and reporting.
-
-NARRATOR: Consider this worked case: Maintaining a versioned data lineage log that
-
-tracks each transformation step, model parameters, and visualization settings for
-
-reproducible research.
-
-NARRATOR: On screen, list a checklist with six checkboxes: 'Provenance Tracked',
-
-'Transformations Documented', 'Model Parameters Logged', 'Visualization Settings
-
-Saved', 'Reporting Format Standardized', 'Reproducibility Verified'.
-
-NARRATOR: For each checklist item, record the evidence, the remaining uncertainty, and the
-
-next verification step.
-
-NARRATOR: The result is a repeatable procedure, not a conclusion that depends on
-
-memory or intuition.
+intuition.

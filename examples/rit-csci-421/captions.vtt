@@ -1,562 +1,412 @@
 WEBVTT
 
 1
-00:00:00.050 --> 00:00:07.509
-NARRATOR: Begin by framing Foundations of the
-Relational Model as a question about inputs,
+00:00:00.050 --> 00:00:08.270
+Begin by framing Foundations of the Relational
+Model as a question about inputs, decisions,
 
 2
-00:00:07.509 --> 00:00:09.640
-decisions, and observable results.
+00:00:08.270 --> 00:00:10.031
+and observable results.
 
 3
-00:00:09.640 --> 00:00:17.203
-NARRATOR: Relational systems organize data
-with tables, rows, columns, and declared
+00:00:10.031 --> 00:00:18.015
+Relational systems organize data with tables,
+rows, columns, and declared types.
 
 4
-00:00:17.203 --> 00:00:17.890
-types.
+00:00:18.015 --> 00:00:25.505
+Consider this worked case: A 'Students' table
+contains rows for each student, with columns
 
 5
-00:00:17.890 --> 00:00:23.946
-NARRATOR: Consider this worked case: A
-'Students' table contains rows for each
+00:00:25.505 --> 00:00:33.531
+for ID, name, and major, each assigned a
+specific data type like INTEGER or VARCHAR.
 
 6
-00:00:23.946 --> 00:00:31.517
-student, with columns for ID, name, and major,
-each assigned a specific data type like
+00:00:33.531 --> 00:00:40.618
+List the givens before choosing a method,
+because an unstated assumption can change the
 
 7
-00:00:31.517 --> 00:00:33.031
-INTEGER or VARCHAR.
+00:00:40.618 --> 00:00:41.124
+conclusion.
 
 8
-00:00:33.031 --> 00:00:39.727
-NARRATOR: On screen, display a simple table
-schema diagram with labeled columns and a
+00:00:41.124 --> 00:00:47.281
+This establishes the vocabulary and scope
+needed for the remaining sections.
 
 9
-00:00:39.727 --> 00:00:44.031
-sample row, highlighting the declarative
-nature of column types.
+00:00:47.402 --> 00:00:54.649
+Now define Keys and Referential Integrity
+precisely enough that another learner could
 
 10
-00:00:44.031 --> 00:00:50.188
-NARRATOR: List the givens before choosing a
-method, because an unstated assumption can
+00:00:54.649 --> 00:00:56.461
+test the definition.
 
 11
-00:00:50.188 --> 00:00:51.609
-change the conclusion.
+00:00:56.461 --> 00:01:04.445
+Primary keys identify rows, while foreign keys
+express references between tables.
 
 12
-00:00:51.609 --> 00:00:57.499
-NARRATOR: This establishes the vocabulary and
-scope needed for the remaining sections.
+00:01:04.445 --> 00:01:12.086
+Consider this worked case: A 'Courses' table
+uses a primary key 'CourseID' to uniquely
 
 13
-00:00:57.602 --> 00:01:04.088
-NARRATOR: Now define Keys and Referential
-Integrity precisely enough that another
+00:01:12.086 --> 00:01:19.180
+identify each course, and a foreign key
+'DepartmentID' links it to the 'Departments'
 
 14
-00:01:04.088 --> 00:01:07.036
-learner could test the definition.
+00:01:19.180 --> 00:01:19.726
+table.
 
 15
-00:01:07.036 --> 00:01:14.255
-NARRATOR: Primary keys identify rows, while
-foreign keys express references between
+00:01:19.727 --> 00:01:26.350
+Separate the formal definition from an
+implementation detail, then identify what
 
 16
-00:01:14.255 --> 00:01:14.911
-tables.
-
-17
-00:01:14.911 --> 00:01:21.621
-NARRATOR: Consider this worked case: A
-'Courses' table uses a primary key 'CourseID'
-
-18
-00:01:21.621 --> 00:01:28.848
-to uniquely identify each course, and a
-foreign key 'DepartmentID' links it to the
-
-19
-00:01:28.848 --> 00:01:29.880
-'Departments' table.
-
-20
-00:01:29.880 --> 00:01:38.221
-NARRATOR: On screen, show two connected tables
-with arrows indicating the primary key to
-
-21
-00:01:38.221 --> 00:01:43.583
-foreign key relationship, emphasizing unique
-identification and referential links.
-
-22
-00:01:43.583 --> 00:01:50.169
-NARRATOR: Separate the formal definition from
-an implementation detail, then identify what
-
-23
-00:01:50.169 --> 00:01:52.364
+00:01:26.350 --> 00:01:28.758
 evidence would distinguish them.
 
+17
+00:01:28.758 --> 00:01:35.336
+A precise definition makes later examples
+easier to evaluate and revise.
+
+18
+00:01:35.450 --> 00:01:42.516
+With the foundation in place, examine how
+Constraints and Data Rules operates in a
+
+19
+00:01:42.516 --> 00:01:43.525
+concrete sequence.
+
+20
+00:01:43.525 --> 00:01:48.384
+Constraints reject states that violate
+declared data rules.
+
+21
+00:01:48.384 --> 00:01:55.094
+Consider this worked case: A NOT NULL
+constraint on a 'StudentID' column prevents
+
+22
+00:01:55.094 --> 00:02:01.805
+empty entries, while a CHECK constraint
+ensures 'Age' values remain between 18 and
+
+23
+00:02:01.805 --> 00:02:02.321
+100.
+
 24
-00:01:52.364 --> 00:01:58.567
-NARRATOR: A precise definition makes later
-examples easier to evaluate and revise.
+00:02:02.321 --> 00:02:09.478
+Follow every arrow in order and name the state
+before and after each transition.
 
 25
-00:01:58.682 --> 00:02:04.426
-NARRATOR: With the foundation in place,
-examine how Constraints and Data Rules
+00:02:09.478 --> 00:02:15.274
+The trace converts an abstract statement into
+an inspectable sequence.
 
 26
-00:02:04.426 --> 00:02:06.819
-operates in a concrete sequence.
+00:02:15.386 --> 00:02:22.692
+Next, compare the choices involved in Query
+Operations and Schema Design and make the
 
 27
-00:02:06.819 --> 00:02:11.803
-NARRATOR: Constraints reject states that
-violate declared data rules.
+00:02:22.692 --> 00:02:24.257
+decision criteria explicit.
 
 28
-00:02:11.803 --> 00:02:18.361
-NARRATOR: Consider this worked case: A NOT
-NULL constraint on a 'StudentID' column
+00:02:24.257 --> 00:02:31.226
+Queries select, join, aggregate, insert,
+update, and delete data.
 
 29
-00:02:18.361 --> 00:02:24.415
-prevents empty entries, while a CHECK
-constraint ensures 'Age' values remain between
+00:02:31.226 --> 00:02:38.057
+Consider this worked case: A JOIN operation
+merges 'Enrollments' and 'Courses' tables to
 
 30
-00:02:24.415 --> 00:02:25.928
-18 and 100.
+00:02:38.057 --> 00:02:44.363
+show which students are taking which classes,
+demonstrating how schema design supports
 
 31
-00:02:25.928 --> 00:02:33.198
-NARRATOR: On screen, illustrate a database row
-with a red 'X' over a cell that violates a
+00:02:44.363 --> 00:02:45.414
+relational queries.
 
 32
-00:02:33.198 --> 00:02:37.475
-CHECK constraint, alongside a green checkmark
-for a valid entry.
+00:02:45.414 --> 00:02:52.605
+Compare alternatives against the same
+constraints so the evaluation does not move
 
 33
-00:02:37.475 --> 00:02:44.475
-NARRATOR: Follow every arrow in order and name
-the state before and after each transition.
+00:02:52.605 --> 00:02:53.804
+the goalposts.
 
 34
-00:02:44.475 --> 00:02:50.288
-NARRATOR: The trace converts an abstract
-statement into an inspectable sequence.
+00:02:53.804 --> 00:03:00.585
+Using shared criteria turns a preference into
+a defensible technical choice.
 
 35
-00:02:50.402 --> 00:02:57.278
-NARRATOR: Next, compare the choices involved
-in Query Operations and Schema Design and make
+00:03:00.698 --> 00:03:08.140
+Apply Indexing for Efficient Lookup to a
+worked situation instead of treating it as an
 
 36
-00:02:57.278 --> 00:02:59.242
-the decision criteria explicit.
+00:03:08.140 --> 00:03:09.132
+isolated definition.
 
 37
-00:02:59.242 --> 00:03:06.508
-NARRATOR: Queries select, join, aggregate,
-insert, update, and delete data.
+00:03:09.132 --> 00:03:14.257
+Indexes provide additional access paths for
+selected queries.
 
 38
-00:03:06.508 --> 00:03:12.622
-NARRATOR: Consider this worked case: A JOIN
-operation merges 'Enrollments' and 'Courses'
+00:03:14.257 --> 00:03:21.274
+Consider this worked case: An index on the
+'DepartmentID' column allows the database to
 
 39
-00:03:12.622 --> 00:03:19.245
-tables to show which students are taking which
-classes, demonstrating how schema design
+00:03:21.274 --> 00:03:27.288
+quickly locate all courses in a specific
+department without scanning every row.
 
 40
-00:03:19.245 --> 00:03:20.773
-supports relational queries.
+00:03:27.288 --> 00:03:34.890
+Work from the concrete inputs to the result,
+checking units, types, or invariants at each
 
 41
-00:03:20.773 --> 00:03:28.185
-NARRATOR: On screen, render a before-and-after
-query result showing a single table versus a
+00:03:34.890 --> 00:03:35.397
+step.
 
 42
-00:03:28.185 --> 00:03:34.008
-joined result set, highlighting how schema
-separation enables complex data retrieval.
+00:03:35.397 --> 00:03:40.382
+The worked case shows both how to apply the
+method and how to check it.
 
 43
-00:03:34.008 --> 00:03:40.746
-NARRATOR: Compare alternatives against the
-same constraints so the evaluation does not
+00:03:40.490 --> 00:03:48.002
+Examine the tradeoffs in Hashing for Fast
+Retrieval, including what improves and what
 
 44
-00:03:40.746 --> 00:03:42.430
-move the goalposts.
+00:03:48.002 --> 00:03:49.736
+becomes more difficult.
 
 45
-00:03:42.430 --> 00:03:49.289
-NARRATOR: Using shared criteria turns a
-preference into a defensible technical choice.
+00:03:49.736 --> 00:03:56.080
+Constraints and indexes support data integrity
+and efficient lookup.
 
 46
-00:03:49.394 --> 00:03:55.857
-NARRATOR: Apply Indexing for Efficient Lookup
-to a worked situation instead of treating it
+00:03:56.080 --> 00:04:05.015
+Consider this worked case: A hash table stores
+'StudentID' keys, where each ID hashes to a
 
 47
-00:03:55.857 --> 00:03:57.703
-as an isolated definition.
+00:04:05.015 --> 00:04:11.158
+specific bucket, enabling rapid verification
+of student records during login checks.
 
 48
-00:03:57.703 --> 00:04:02.984
-NARRATOR: Indexes provide additional access
-paths for selected queries.
+00:04:11.158 --> 00:04:18.049
+State the benefit, the cost, and the condition
+under which the tradeoff is acceptable.
 
 49
-00:04:02.984 --> 00:04:09.236
-NARRATOR: Consider this worked case: An index
-on the 'DepartmentID' column allows the
+00:04:18.049 --> 00:04:25.564
+Making the tradeoff visible prevents a local
+improvement from hiding a larger cost.
 
 50
-00:04:09.236 --> 00:04:15.488
-database to quickly locate all courses in a
-specific department without scanning every
+00:04:25.682 --> 00:04:34.072
+Stress-test the reasoning around Transaction
+Management and Atomicity with an edge case and
 
 51
-00:04:15.488 --> 00:04:15.969
-row.
+00:04:34.072 --> 00:04:37.944
+identify which assumption controls the
+outcome.
 
 52
-00:04:15.969 --> 00:04:23.710
-NARRATOR: On screen, show a B-tree index
-structure with sorted leaf nodes, pointing to
+00:04:37.944 --> 00:04:43.257
+Transactions group operations into an atomic
+unit of work.
 
 53
-00:04:23.710 --> 00:04:28.687
-table row locations, demonstrating how indexes
-accelerate data retrieval.
+00:04:43.257 --> 00:04:50.173
+Consider this worked case: A transaction
+transfers funds between two accounts, ensuring
 
 54
-00:04:28.687 --> 00:04:35.404
-NARRATOR: Work from the concrete inputs to the
-result, checking units, types, or invariants
+00:04:50.173 --> 00:04:58.241
+both the debit and credit succeed together or
+fail together to maintain balance consistency.
 
 55
-00:04:35.404 --> 00:04:36.843
-at each step.
+00:04:58.241 --> 00:05:04.741
+Change one assumption at a time and observe
+which part of the reasoning no longer holds.
 
 56
-00:04:36.843 --> 00:04:41.328
-NARRATOR: The worked case shows both how to
-apply the method and how to check it.
+00:05:04.741 --> 00:05:12.022
+The edge case reveals the boundary of the
+claim without discarding the useful core idea.
 
 57
-00:04:41.450 --> 00:04:48.210
-NARRATOR: Examine the tradeoffs in Hashing for
-Fast Retrieval, including what improves and
+00:05:12.146 --> 00:05:19.655
+Use Concurrency Control and Isolation to
+diagnose a failure by separating symptoms,
 
 58
-00:04:48.210 --> 00:04:50.290
-what becomes more difficult.
+00:05:19.655 --> 00:05:22.158
+causes, and corrective action.
 
 59
-00:04:50.290 --> 00:04:56.556
-NARRATOR: Constraints and indexes support data
-integrity and efficient lookup.
+00:05:22.158 --> 00:05:28.033
+Isolation controls how concurrent transactions
+observe one another.
 
 60
-00:04:56.556 --> 00:05:04.111
-NARRATOR: Consider this worked case: A hash
-table stores 'StudentID' keys, where each ID
+00:05:28.033 --> 00:05:35.268
+Consider this worked case: Read committed
+isolation allows multiple transactions to read
 
 61
-00:05:04.111 --> 00:05:11.125
-hashes to a specific bucket, enabling rapid
-verification of student records during login
+00:05:35.268 --> 00:05:41.296
+data simultaneously but prevents one
+transaction from seeing uncommitted changes
 
 62
-00:05:11.125 --> 00:05:11.665
-checks.
+00:05:41.296 --> 00:05:42.502
+from another.
 
 63
-00:05:11.665 --> 00:05:18.300
-NARRATOR: On screen, display a hash table with
-multiple buckets, showing how different
+00:05:42.502 --> 00:05:50.248
+Locate the first point where observed behavior
+diverges from expected behavior, then test the
 
 64
-00:05:18.300 --> 00:05:23.915
-StudentIDs map to the same or different
-buckets via hash functions.
+00:05:50.248 --> 00:05:51.908
+smallest plausible cause.
 
 65
-00:05:23.915 --> 00:05:30.521
-NARRATOR: State the benefit, the cost, and the
-condition under which the tradeoff is
+00:05:51.908 --> 00:05:59.267
+The diagnosis is strongest when another person
+can reproduce the observation and the test.
 
 66
-00:05:30.521 --> 00:05:30.993
-acceptable.
+00:05:59.378 --> 00:06:06.290
+Connect Query Processing and Optimization to
+the earlier ideas and explain how the pieces
 
 67
-00:05:30.993 --> 00:05:38.321
-NARRATOR: Making the tradeoff visible prevents
-a local improvement from hiding a larger cost.
+00:06:06.290 --> 00:06:08.265
+work as one system.
 
 68
-00:05:38.426 --> 00:05:44.990
-NARRATOR: Stress-test the reasoning around
-Transaction Management and Atomicity with an
+00:06:08.265 --> 00:06:15.023
+Query planning and physical structures
+influence performance without changing logical
 
 69
-00:05:44.990 --> 00:05:50.360
-edge case and identify which assumption
-controls the outcome.
+00:06:15.023 --> 00:06:16.374
+query meaning.
 
 70
-00:05:50.360 --> 00:05:55.688
-NARRATOR: Transactions group operations into
-an atomic unit of work.
+00:06:16.374 --> 00:06:24.078
+Consider this worked case: The optimizer
+chooses a hash join over a nested loop join
 
 71
-00:05:55.688 --> 00:06:01.716
-NARRATOR: Consider this worked case: A
-transaction transfers funds between two
+00:06:24.078 --> 00:06:30.755
+for large tables, leveraging physical indexes
+to reduce execution time while preserving the
 
 72
-00:06:01.716 --> 00:06:09.389
-accounts, ensuring both the debit and credit
-succeed together or fail together to maintain
+00:06:30.755 --> 00:06:32.296
+same result set.
 
 73
-00:06:09.389 --> 00:06:10.485
-balance consistency.
+00:06:32.296 --> 00:06:42.180
+Explain each connection explicitly and verify
+that information retains the same meaning
 
 74
-00:06:10.485 --> 00:06:18.058
-NARRATOR: On screen, show a transaction flow
-diagram with a commit or rollback switch,
+00:06:42.180 --> 00:06:43.827
+across representations.
 
 75
-00:06:18.058 --> 00:06:21.844
-illustrating how grouped operations maintain
-data integrity.
+00:06:43.827 --> 00:06:51.218
+The synthesis matters only if every connection
+remains supported by the original evidence.
 
 76
-00:06:21.844 --> 00:06:27.771
-NARRATOR: Change one assumption at a time and
-observe which part of the reasoning no longer
+00:06:51.338 --> 00:06:58.218
+Finish with Practical Analysis Checklist as a
+practical checklist that can guide a new
 
 77
-00:06:27.771 --> 00:06:28.141
-holds.
+00:06:58.218 --> 00:06:58.709
+analysis.
 
 78
-00:06:28.141 --> 00:06:34.171
-NARRATOR: The edge case reveals the boundary
-of the claim without discarding the useful
+00:06:58.709 --> 00:07:07.221
+Topics include physical data organization,
+indexing and hashing, query processing and
 
 79
-00:06:34.171 --> 00:06:35.032
-core idea.
+00:07:07.221 --> 00:07:13.411
+optimization, database recovery techniques,
+transaction management, concurrency control,
 
 80
-00:06:35.138 --> 00:06:41.952
-NARRATOR: Use Concurrency Control and
-Isolation to diagnose a failure by separating
+00:07:13.411 --> 00:07:16.506
+and database performance evaluation.
 
 81
-00:06:41.952 --> 00:06:44.791
-symptoms, causes, and corrective action.
+00:07:16.506 --> 00:07:25.145
+Consider this worked case: A developer reviews
+a schema for missing primary keys, adds a hash
 
 82
-00:06:44.791 --> 00:06:50.541
-NARRATOR: Isolation controls how concurrent
-transactions observe one another.
+00:07:25.145 --> 00:07:32.704
+index on a frequently queried column, wraps
+critical updates in a transaction, and sets
 
 83
-00:06:50.541 --> 00:06:56.378
-NARRATOR: Consider this worked case: Read
-committed isolation allows multiple
+00:07:32.704 --> 00:07:35.944
+isolation to serializable for financial
+records.
 
 84
-00:06:56.378 --> 00:07:02.799
-transactions to read data simultaneously but
-prevents one transaction from seeing
+00:07:35.944 --> 00:07:43.920
+For each checklist item, record the evidence,
+the remaining uncertainty, and the next
 
 85
-00:07:02.799 --> 00:07:05.134
-uncommitted changes from another.
+00:07:43.920 --> 00:07:45.147
+verification step.
 
 86
-00:07:05.134 --> 00:07:11.897
-NARRATOR: On screen, illustrate two concurrent
-transaction windows with visibility
+00:07:45.147 --> 00:07:51.943
+The result is a repeatable procedure, not a
+conclusion that depends on memory or
 
 87
-00:07:11.897 --> 00:07:19.337
-indicators, showing how isolation levels
-filter uncommitted data from other processes.
-
-88
-00:07:19.337 --> 00:07:25.028
-NARRATOR: Locate the first point where
-observed behavior diverges from expected
-
-89
-00:07:25.028 --> 00:07:28.650
-behavior, then test the smallest plausible
-cause.
-
-90
-00:07:28.650 --> 00:07:34.563
-NARRATOR: The diagnosis is strongest when
-another person can reproduce the observation
-
-91
-00:07:34.563 --> 00:07:36.041
-and the test.
-
-92
-00:07:36.146 --> 00:07:41.878
-NARRATOR: Connect Query Processing and
-Optimization to the earlier ideas and explain
-
-93
-00:07:41.878 --> 00:07:45.221
-how the pieces work as one system.
-
-94
-00:07:45.221 --> 00:07:50.748
-NARRATOR: Query planning and physical
-structures influence performance without
-
-95
-00:07:50.748 --> 00:07:53.205
-changing logical query meaning.
-
-96
-00:07:53.205 --> 00:08:00.096
-NARRATOR: Consider this worked case: The
-optimizer chooses a hash join over a nested
-
-97
-00:08:00.096 --> 00:08:06.002
-loop join for large tables, leveraging
-physical indexes to reduce execution time
-
-98
-00:08:06.002 --> 00:08:08.955
-while preserving the same result set.
-
-99
-00:08:08.955 --> 00:08:15.720
-NARRATOR: On screen, compare two execution
-plans side-by-side, highlighting how physical
-
-100
-00:08:15.720 --> 00:08:22.486
-structure choices affect cost and resource
-usage without altering logical output.
-
-101
-00:08:22.486 --> 00:08:31.286
-NARRATOR: Explain each connection explicitly
-and verify that information retains the same
-
-102
-00:08:31.286 --> 00:08:33.486
-meaning across representations.
-
-103
-00:08:33.486 --> 00:08:40.465
-NARRATOR: The synthesis matters only if every
-connection remains supported by the original
-
-104
-00:08:40.465 --> 00:08:41.002
-evidence.
-
-105
-00:08:41.114 --> 00:08:46.396
-NARRATOR: Finish with Practical Analysis
-Checklist as a practical checklist that can
-
-106
-00:08:46.396 --> 00:08:48.157
-guide a new analysis.
-
-107
-00:08:48.157 --> 00:08:55.449
-NARRATOR: Topics include physical data
-organization, indexing and hashing, query
-
-108
-00:08:55.449 --> 00:09:01.282
-processing and optimization, database recovery
-techniques, transaction management,
-
-109
-00:09:01.282 --> 00:09:05.657
-concurrency control, and database performance
-evaluation.
-
-110
-00:09:05.657 --> 00:09:12.272
-NARRATOR: Consider this worked case: A
-developer reviews a schema for missing primary
-
-111
-00:09:12.272 --> 00:09:19.905
-keys, adds a hash index on a frequently
-queried column, wraps critical updates in a
-
-112
-00:09:19.905 --> 00:09:24.485
-transaction, and sets isolation to
-serializable for financial records.
-
-113
-00:09:24.485 --> 00:09:32.298
-NARRATOR: On screen, present a checklist
-graphic with four checkboxes: Physical
-
-114
-00:09:32.298 --> 00:09:39.401
-Organization, Indexing Strategy, Transaction
-Safety, Concurrency Isolation, each linked to
-
-115
-00:09:39.401 --> 00:09:41.532
-corresponding implementation steps.
-
-116
-00:09:41.532 --> 00:09:49.264
-NARRATOR: For each checklist item, record the
-evidence, the remaining uncertainty, and the
-
-117
-00:09:49.264 --> 00:09:51.048
-next verification step.
-
-118
-00:09:51.048 --> 00:09:56.887
-NARRATOR: The result is a repeatable
-procedure, not a conclusion that depends on
-
-119
-00:09:56.887 --> 00:09:58.235
-memory or intuition.
+00:07:51.943 --> 00:07:52.428
+intuition.

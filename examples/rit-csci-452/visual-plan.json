@@ -15,7 +15,7 @@
         },
         {
           "id": "beat-01-shot-003",
-          "phrase": "On screen, display a diagram showing three isolated process bubbles sharing a central CPU and memory bus, with arrows indicating context switches.",
+          "phrase": "List the givens before choosing a method, because an unstated assumption can change the conclusion.",
           "type": "deterministic-svg"
         }
       ]
@@ -55,7 +55,7 @@
         },
         {
           "id": "beat-03-shot-003",
-          "phrase": "On screen, illustrate a two-tiered architecture diagram with a 'User Mode' zone and a 'Kernel Mode' zone separated by a security boundary line.",
+          "phrase": "Consider this worked case: A user program cannot directly modify the page table or interrupt controller registers without triggering a protection fault.",
           "type": "deterministic-svg"
         }
       ]
@@ -75,7 +75,7 @@
         },
         {
           "id": "beat-04-shot-003",
-          "phrase": "On screen, draw a flowchart showing user code invoking a system call, transitioning to kernel code, and returning control with results.",
+          "phrase": "Compare alternatives against the same constraints so the evaluation does not move the goalposts.",
           "type": "deterministic-svg"
         }
       ]
@@ -95,7 +95,7 @@
         },
         {
           "id": "beat-05-shot-003",
-          "phrase": "On screen, display a stack diagram showing saved registers and the instruction pointer pushed onto the kernel stack during a trap.",
+          "phrase": "Work from the concrete inputs to the result, checking units, types, or invariants at each step.",
           "type": "deterministic-svg"
         }
       ]
@@ -115,7 +115,7 @@
         },
         {
           "id": "beat-06-shot-003",
-          "phrase": "On screen, show a two-column table mapping virtual page numbers to physical page numbers, with checkmarks indicating read/write/execute permissions.",
+          "phrase": "State the benefit, the cost, and the condition under which the tradeoff is acceptable.",
           "type": "deterministic-svg"
         }
       ]
@@ -135,7 +135,7 @@
         },
         {
           "id": "beat-07-shot-003",
-          "phrase": "On screen, present a side-by-side comparison of a load instruction and a store instruction with register and memory operand labels.",
+          "phrase": "Change one assumption at a time and observe which part of the reasoning no longer holds.",
           "type": "deterministic-svg"
         }
       ]
@@ -155,7 +155,7 @@
         },
         {
           "id": "beat-08-shot-003",
-          "phrase": "On screen, show a sequence of memory operations with arrows indicating dependency chains and ordering constraints between them.",
+          "phrase": "Locate the first point where observed behavior diverges from expected behavior, then test the smallest plausible cause.",
           "type": "deterministic-svg"
         }
       ]
@@ -175,7 +175,7 @@
         },
         {
           "id": "beat-09-shot-003",
-          "phrase": "On screen, illustrate a lock acquisition and release cycle with two concurrent threads waiting for and releasing a shared resource.",
+          "phrase": "Explain each connection explicitly and verify that information retains the same meaning across representations.",
           "type": "deterministic-svg"
         }
       ]
@@ -195,7 +195,7 @@
         },
         {
           "id": "beat-10-shot-003",
-          "phrase": "On screen, list a checklist with checkboxes for: interrupt handling, page table validation, lock acquisition, and isolation verification.",
+          "phrase": "For each checklist item, record the evidence, the remaining uncertainty, and the next verification step.",
           "type": "deterministic-svg"
         }
       ]
