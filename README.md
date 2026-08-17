@@ -1,28 +1,26 @@
-# One-Click AI Video Generator — public pilot page
+# One-Click AI Video Generator — public site
 
-This public repository contains only the static outreach page and approved demo
-media for the official RIT AI Club project. The implementation repository,
-provider traces, and contributor materials remain private.
+The overview and example-gallery site for the One-Click AI Video Generator,
+a community project of the RIT AI Club.
 
-The page is intentionally conservative: it describes a supervised,
-source-grounded pilot with no fixed duration limit; identifies current
-capabilities and limitations; provides verified-RIT contributor instructions;
-and includes captioned examples across sixteen educational topics. Short
-demonstrations are used for browsing, while the workflow also supports
-full-length lessons.
+The implementation is **open source** under Apache 2.0:
+https://github.com/ktgmailorg/video-generator-rit
 
-The public `professor-guide.html` provides a nontechnical faculty quick start,
-including pilot preparation, private GitHub access, GitHub Desktop cloning,
-browser-studio operation, data boundaries, review requirements, and
-troubleshooting. Technical provider setup remains in `local-studio.html`.
+The page describes a supervised, source-grounded course-video workflow;
+identifies current capabilities and limitations; and includes captioned
+examples across sixteen educational topics. Short demonstrations are used for
+browsing, while the workflow also supports full-length lessons.
 
-`rit-access.html` provides a disabled-by-default RIT Google and GitHub identity
-flow. When activated, a Google-verified `rit.edu` identity connects its own
-GitHub account and receives an automatic read-only repository invitation.
-Write-enabled `RIT Contributors` membership remains manual. See
-`docs/AUTHENTICATION_SETUP.md` and `.env.example`; no OAuth or repository
-credentials belong in this repository.
+- `professor-guide.html` — nontechnical faculty quick start (download,
+  browser-studio operation, data boundaries, review requirements,
+  troubleshooting)
+- `local-studio.html` — technical provider setup
+- `rit-access.html` — retired identity-verification portal, now a pointer to
+  the public repository (kept so old links keep working)
 
-The interest form stores nothing on GitHub Pages. It opens a prefilled email
-draft addressed to the project lead, and the visitor chooses whether to send it
-from an RIT account.
+The interest form stores nothing: it opens a prefilled email draft addressed
+to the project lead, and the visitor chooses whether to send it.
+
+Historic note: before 2026-08-17 the implementation repository was private
+and this site ran an RIT Google + GitHub invitation flow (`api/`,
+`access.js`). Those endpoints are retired.

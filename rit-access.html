@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Verified RIT access portal for the One-Click AI Video Generator."
+      content="The One-Click AI Video Generator is now open source — no sign-in required."
     >
     <meta name="robots" content="noindex">
-    <title>RIT Access · One-Click AI Video Generator</title>
+    <title>Open Source Access · One-Click AI Video Generator</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./access.js" defer></script>
   </head>
   <body class="access-page">
     <main>
-      <nav class="site-nav" aria-label="RIT access navigation">
+      <nav class="site-nav" aria-label="Access navigation">
         <a class="wordmark" href="./index.html" aria-label="Return to the pilot site">
           <span class="wordmark-mark" aria-hidden="true">1</span>
-          <span>One-Click AI<small>Verified RIT Access</small></span>
+          <span>One-Click AI<small>Open Source Access</small></span>
         </a>
         <div class="nav-links">
           <a href="./professor-guide.html">Professor guide</a>
@@ -28,124 +27,102 @@
 
       <header class="access-hero">
         <div>
-          <p class="section-kicker">Identity-verified access</p>
-          <h1>One RIT sign-in. Immediate source download.</h1>
+          <p class="section-kicker">Open source</p>
+          <h1>No sign-in needed. The project is public.</h1>
           <p>
-            RIT Google verifies university affiliation and unlocks a temporary
-            download of the complete private source. Connecting GitHub is
-            optional and adds ongoing repository access for updates.
+            The One-Click AI Video Generator is open source under the
+            Apache 2.0 license. The previous RIT identity-verification flow is
+            retired — anyone can download, run, and contribute to the project
+            directly on GitHub.
           </p>
         </div>
         <aside class="access-policy-card">
-          <span>Automatic permission</span>
+          <span>Everyone</span>
           <strong>Repository read access</strong>
-          <p>Enough to clone, install, and run the local studio.</p>
+          <p>Clone, install, and run the local studio — no account required.</p>
           <hr>
-          <span>Manual approval</span>
-          <strong>Contributor write access</strong>
-          <p>Granted separately through the RIT Contributors team.</p>
+          <span>Contributors</span>
+          <strong>Pull requests welcome</strong>
+          <p>Reviewed and merged through the normal GitHub workflow.</p>
         </aside>
       </header>
 
-      <section class="access-flow" aria-label="Access steps">
-        <article data-step="rit">
+      <section class="access-flow" aria-label="Get the project">
+        <article>
           <span>01</span>
           <div>
-            <p class="access-step-state" id="rit-step-state">Checking configuration</p>
-            <h2>Verify your RIT Google account</h2>
+            <h2>Get the source</h2>
             <p>
-              Google must return a verified account from the
-              <code>rit.edu</code> Workspace domain. RIT Google addresses
-              normally end in <code>@g.rit.edu</code>; being signed into a
-              personal Gmail account is not sufficient.
+              Clone with Git or GitHub Desktop, or select
+              <strong>Code → Download ZIP</strong> on the repository page.
             </p>
-            <a id="rit-sign-in" class="button button-primary" href="/api/auth/google-start" hidden>
-              Continue with RIT Google <span aria-hidden="true">↗</span>
-            </a>
-            <div id="rit-identity" class="verified-identity" hidden>
-              <span aria-hidden="true">✓</span>
-              <div><strong id="rit-name">RIT participant</strong><small id="rit-email"></small></div>
-            </div>
-            <div id="rit-download-actions" class="resource-actions" hidden>
-              <a id="repository-download" class="button button-primary" href="/api/repository-download">Download complete source (.zip) <span aria-hidden="true">↓</span></a>
-              <small>Generated on demand from the private repository. The link is not exposed to anonymous visitors.</small>
+            <div class="resource-actions">
+              <a class="button button-primary" href="https://github.com/ktgmailorg/video-generator-rit">Open the GitHub repository <span aria-hidden="true">↗</span></a>
             </div>
           </div>
         </article>
 
-        <article data-step="github">
+        <article>
           <span>02</span>
           <div>
-            <p class="access-step-state" id="github-step-state">RIT verification required first</p>
-            <h2>Optional: connect a GitHub account</h2>
+            <h2>Install and launch</h2>
             <p>
-              Connect GitHub if you want updates, issue tracking, or GitHub
-              Desktop cloning. The site sends that exact account a read-only
-              invitation to the private implementation repository.
+              Node.js 22 and FFmpeg are the only requirements for the
+              zero-key generic preset. A one-download desktop app that bundles
+              everything is in progress.
             </p>
-            <a id="github-connect" class="button button-primary" href="/api/auth/github-start" hidden>
-              Connect GitHub and request access <span aria-hidden="true">↗</span>
-            </a>
-            <div id="github-identity" class="verified-identity" hidden>
-              <span aria-hidden="true">✓</span>
-              <div><strong>GitHub connected</strong><small id="github-login"></small></div>
+            <div class="resource-actions">
+              <a class="button button-primary" href="https://github.com/ktgmailorg/video-generator-rit/releases">Releases and desktop builds <span aria-hidden="true">↗</span></a>
+              <a href="http://127.0.0.1:4173">Open installed local studio</a>
             </div>
           </div>
         </article>
 
-        <article data-step="access">
+        <article>
           <span>03</span>
           <div>
-            <p class="access-step-state" id="access-step-state">Complete both identity checks</p>
-            <h2>Accept the GitHub invitation</h2>
+            <h2>Contribute</h2>
             <p>
-              GitHub controls the final acceptance step. Once accepted, clone
-              with GitHub Desktop and launch the browser studio locally.
+              Bug reports, provider adapters, visual templates, accessibility
+              improvements, and documentation are all welcome from anyone.
             </p>
-            <div id="resource-actions" class="resource-actions" hidden>
-              <a class="button button-primary" href="https://github.com/ktgmailorg/video-generator-rit/invitations">Review GitHub invitation <span aria-hidden="true">↗</span></a>
-              <a href="https://github.com/ktgmailorg/video-generator-rit">Open private repository</a>
-              <a href="http://127.0.0.1:4173">Open installed local studio</a>
+            <div class="resource-actions">
+              <a class="button button-primary" href="https://github.com/ktgmailorg/video-generator-rit/issues">Open an issue <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/ktgmailorg/video-generator-rit/blob/main/CONTRIBUTING.md">Read the contributing guide</a>
             </div>
           </div>
         </article>
       </section>
 
-      <section id="access-message" class="access-message" role="status" aria-live="polite" hidden></section>
-
       <section class="access-boundaries">
         <div>
-          <p class="section-kicker">Safety boundary</p>
-          <h2>Automatic access is deliberately narrow.</h2>
+          <p class="section-kicker">Still separate</p>
+          <h2>What the repository deliberately does not include.</h2>
         </div>
         <div class="boundary-list">
-          <div><span>01</span><p>Only Google-verified <code>@g.rit.edu</code> or <code>@rit.edu</code> identities in RIT's Workspace qualify.</p></div>
-          <div><span>02</span><p>The invited GitHub account must authorize itself; users cannot type someone else's username.</p></div>
-          <div><span>03</span><p>Automatic access is read-only. Push, administration, and RIT Contributors team membership require human approval.</p></div>
-          <div><span>04</span><p>OAuth tokens are used server-side for the immediate identity check and are not placed in browser storage.</p></div>
-          <div><span>05</span><p>GitHub model weights, credentials, official brand assets, and course files remain separate from repository access.</p></div>
+          <div><span>01</span><p>AI model weights — installed separately from their own sources.</p></div>
+          <div><span>02</span><p>Official RIT logos, licensed fonts, and brand assets.</p></div>
+          <div><span>03</span><p>Course files, student information, and provider credentials.</p></div>
+          <div><span>04</span><p>Outputs become <code>official-rit</code> only through the separate brand-pack and approval workflow.</p></div>
         </div>
       </section>
 
       <section class="access-help">
         <div>
-          <h2>Access did not work?</h2>
+          <h2>Questions?</h2>
           <p>
-            Confirm you selected your RIT Google account, accepted both
-            authorization screens, and are signed into the intended GitHub
-            account. Organization policy may require the invitation to be
-            approved by an administrator.
+            Open a GitHub issue for technical problems, or use the pilot
+            interest form on the main page for RIT course pilots.
           </p>
         </div>
         <div>
-          <a href="mailto:kt7432@rit.edu?subject=RIT%20video%20repository%20access">kt7432@rit.edu</a>
-          <button id="sign-out" type="button" hidden>Sign out</button>
+          <a href="https://github.com/ktgmailorg/video-generator-rit/issues">github.com/ktgmailorg/video-generator-rit/issues</a>
         </div>
       </section>
 
       <footer>
-        <div><strong>One-Click AI Video Generator</strong><span>An official project of the RIT AI Club</span></div>
-        <p>Identity verification grants project access, not institutional production certification.</p>
+        <div><strong>One-Click AI Video Generator</strong><span>A community project of the RIT AI Club</span></div>
+        <p>Open source under Apache 2.0. Not an official RIT product.</p>
         <a href="./index.html">Return to pilot site ↑</a>
       </footer>
     </main>
