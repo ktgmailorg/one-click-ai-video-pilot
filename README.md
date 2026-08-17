@@ -15,12 +15,12 @@ browsing, while the workflow also supports full-length lessons.
   browser-studio operation, data boundaries, review requirements,
   troubleshooting)
 - `local-studio.html` — technical provider setup
-- `rit-access.html` — retired identity-verification portal, now a pointer to
-  the public repository (kept so old links keep working)
+- `rit-access.html` — retired identity-verification portal, now direct
+  download links (kept so old links keep working)
 
 The interest form stores nothing: it opens a prefilled email draft addressed
 to the project lead, and the visitor chooses whether to send it.
 
 Historic note: before 2026-08-17 the implementation repository was private
-and this site ran an RIT Google + GitHub invitation flow (`api/`,
-`access.js`). Those endpoints are retired.
+and this site ran an RIT Google + GitHub invitation flow. That code has been
+removed.
