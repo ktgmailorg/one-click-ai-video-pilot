@@ -51,11 +51,11 @@
             every consequential stage and no fixed duration limit.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#interest">
-              Propose a course-video pilot <span aria-hidden="true">↗</span>
-            </a>
-            <a class="button button-secondary" href="https://github.com/ktgmailorg/video-generator-rit/releases/latest/download/RIT-Video-Studio-Setup.exe">
+            <a class="button button-primary" href="https://github.com/ktgmailorg/video-generator-rit/releases/latest/download/RIT-Video-Studio-Setup.exe">
               Download for Windows <span aria-hidden="true">↓</span>
+            </a>
+            <a class="button button-secondary" href="https://github.com/ktgmailorg/video-generator-rit">
+              View the source on GitHub <span aria-hidden="true">↗</span>
             </a>
           </div>
           <p class="hero-note">Also available for
@@ -536,45 +536,47 @@
         <div class="software-grid">
           <article class="software-path recommended-path">
             <div class="software-path-topline">
-              <span>Faculty and staff pilots</span><b>Recommended</b>
+              <span>Anyone · no setup</span><b>Recommended</b>
             </div>
-            <h3>Your subject expertise; our production setup.</h3>
+            <h3>Download the app and make a video.</h3>
             <p>
-              The project team completes the one-time installation on an
-              RIT-controlled machine. After that, you add instructor-approved
-              material in the browser and select <strong>Create draft
-              video</strong>. Planning, narration, visuals, captions,
-              transcripts, QA, and rendering run automatically; you review the
-              academic content, accessibility work, and final release.
+              One installer contains the whole studio: the video renderer,
+              FFmpeg, and free narration voices with captions. No account, no
+              Git, no command line, and no API keys required to start. Paste a
+              script, pick a voice, and select <strong>Create draft
+              video</strong>.
             </p>
             <ul>
-              <li>Lowest setup and support burden</li>
-              <li>Consistent toolchain and reproducible rendering</li>
-              <li>Best fit for the first supervised pilot cohort</li>
+              <li>Free mode works offline-ish with zero configuration</li>
+              <li>Optionally connect your own AI provider keys later</li>
+              <li>Automatic updates from the open-source releases</li>
             </ul>
             <div class="software-actions">
-              <a class="button button-primary" href="#interest">Request assisted setup <span aria-hidden="true">↗</span></a>
-              <a class="software-guide-link" href="./professor-guide.html">Read the professor quick-start guide</a>
+              <a class="button button-primary" href="https://github.com/ktgmailorg/video-generator-rit/releases/latest/download/RIT-Video-Studio-Setup.exe">Download for Windows (.exe) <span aria-hidden="true">↓</span></a>
+              <a class="software-guide-link" href="https://github.com/ktgmailorg/video-generator-rit/releases/latest/download/RIT-Video-Studio.dmg">Download for macOS (.dmg)</a>
+              <a class="software-guide-link" href="https://github.com/ktgmailorg/video-generator-rit/releases/latest/download/RIT-Video-Studio.AppImage">Download for Linux (.AppImage)</a>
+              <a class="software-guide-link" href="./professor-guide.html">Read the quick-start guide</a>
+              <span>Beta · unsigned builds prompt on first launch</span>
             </div>
           </article>
 
           <article class="software-path">
             <div class="software-path-topline">
-              <span>Technical contributors</span><b>Local option</b>
+              <span>Developers and contributors</span><b>Source option</b>
             </div>
-            <h3>Run the full CLI on your own machine.</h3>
+            <h3>Run or extend the source on GitHub.</h3>
             <p>
-              The project is open source under Apache 2.0 — anyone can clone
-              the repository and connect local or hosted providers. Local
-              profiles support OpenAI-compatible model servers, Bonsai 27B
-              through llama.cpp, ComfyUI, Piper, and whisper.cpp. Model
-              weights are installed separately.
+              The project is open source under Apache 2.0 — clone the
+              repository and connect local or hosted providers. Local profiles
+              support OpenAI-compatible model servers, Bonsai 27B through
+              llama.cpp, ComfyUI, Piper, and whisper.cpp. Model weights are
+              installed separately.
             </p>
             <p>
-              Faculty can supply approved narration or ask the configured
+              Instructors can supply approved narration or ask the configured
               planner to draft a transcript from a learning objective and
               reviewed source notes. AI drafts remain blocked from release
-              until instructor script and evidence review.
+              until script and evidence review.
             </p>
             <pre><code>git clone https://github.com/ktgmailorg/video-generator-rit.git
 cd video-generator-rit
@@ -582,13 +584,11 @@ npm ci
 npm run rit-video -- doctor
 npm run rit-video -- produce --narration-voice configured</code></pre>
             <div class="software-actions">
-              <a class="button button-primary" href="https://github.com/ktgmailorg/video-generator-rit/releases/latest/download/RIT-Video-Studio-Setup.exe">Download for Windows (.exe) <span aria-hidden="true">↓</span></a>
-              <a class="software-guide-link" href="https://github.com/ktgmailorg/video-generator-rit/releases/latest/download/RIT-Video-Studio.dmg">Download for macOS (.dmg)</a>
-              <a class="software-guide-link" href="https://github.com/ktgmailorg/video-generator-rit/releases/latest/download/RIT-Video-Studio.AppImage">Download for Linux (.AppImage)</a>
-              <a class="software-guide-link" href="https://github.com/ktgmailorg/video-generator-rit">View the source on GitHub</a>
-              <a class="software-guide-link" href="./professor-guide.html">Professor quick-start guide</a>
+              <a class="button button-primary" href="https://github.com/ktgmailorg/video-generator-rit">View the source on GitHub <span aria-hidden="true">↗</span></a>
+              <a class="software-guide-link" href="https://github.com/ktgmailorg/video-generator-rit/blob/main/CONTRIBUTING.md">Contributing guide</a>
+              <a class="software-guide-link" href="https://github.com/ktgmailorg/video-generator-rit/issues">Issues and roadmap</a>
               <a class="software-guide-link" href="./local-studio.html">Read the local setup guide</a>
-              <span>Open source · Apache 2.0 · macOS · Windows · Linux</span>
+              <span>Node.js 22 · FFmpeg · provider runtimes</span>
             </div>
           </article>
         </div>
